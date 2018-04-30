@@ -30,7 +30,7 @@ A service's *endpoint identity*is a value generated from the service Web Service
 > [!NOTE]
 >  When you use NT LanMan (NTLM) for authentication, the service identity is not checked because, under NTLM, the client is unable to authenticate the server. NTLM is used when computers are part of a Windows workgroup, or when running an older version of Windows that does not support Kerberos authentication.  
   
- When the client initiates a secure channel to send a message to a service over it, the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure authenticates the service, and only sends the message if the service identity matches the identity specified in the endpoint address the client uses.  
+ When the client initiates a secure channel to send a message to a service over it, the Windows Communication Foundation (WCF) infrastructure authenticates the service, and only sends the message if the service identity matches the identity specified in the endpoint address the client uses.  
   
  Identity processing consists of the following stages:  
   

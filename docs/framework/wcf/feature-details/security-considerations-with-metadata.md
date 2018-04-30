@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Considerations with Metadata
-When using the metadata features in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], consider the security implications of publishing, retrieving, and using service metadata.  
+When using the metadata features in Windows Communication Foundation (WCF), consider the security implications of publishing, retrieving, and using service metadata.  
   
 ## When to Publish Metadata  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services do not publish metadata by default. To publish metadata for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service you must explicitly enable metadata publishing by adding metadata endpoints to your service (see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)). Leaving metadata publishing disabled reduces the attack surface for your service and lowers the risk of unintentional information disclosure. Not all services must publish metadata. If you do not have to publish metadata, consider leaving it turned off. Note that you can still generate metadata and client code directly from your service assemblies using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). For more information about using Svcutil.exe to export metadata, see [How to: Use Svcutil.exe to Export Metadata from Compiled Service Code](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md).  

@@ -26,7 +26,7 @@ ms.workload:
   - "dotnet"
 ---
 # SAML Tokens and Claims
-Security Assertions Markup Language (SAML) *tokens* are XML representations of claims. By default, SAML tokens [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses in federated security scenarios are *issued tokens*.  
+Security Assertions Markup Language (SAML) *tokens* are XML representations of claims. By default, SAML tokens Windows Communication Foundation (WCF) uses in federated security scenarios are *issued tokens*.  
   
  SAML tokens carry statements that are sets of claims made by one entity about another entity. For example, in federated security scenarios, the statements are made by a security token service about a user in the system. The security token service signs the SAML token to indicate the veracity of the statements contained in the token. In addition, the SAML token is associated with cryptographic key material that the user of the SAML token proves knowledge of. This proof satisfies the relying party that the SAML token was, in fact, issued to that user. For example, in a typical scenario:  
   

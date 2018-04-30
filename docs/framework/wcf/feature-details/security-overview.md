@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Overview
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is a SOAP message-based distributed programming platform, and securing messages between clients and services is essential to protecting data. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a versatile and interoperable platform for exchanging secure messages based upon both the existing security infrastructure and the recognized security standards for SOAP messages.  
+Windows Communication Foundation (WCF) is a SOAP message-based distributed programming platform, and securing messages between clients and services is essential to protecting data. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a versatile and interoperable platform for exchanging secure messages based upon both the existing security infrastructure and the recognized security standards for SOAP messages.  
   
 > [!NOTE]
 >  For a comprehensive guide to WCF security, see [WCF Security Guidance](http://go.microsoft.com/fwlink/?LinkID=158912).  

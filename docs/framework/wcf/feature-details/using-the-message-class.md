@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using the Message Class
-The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  
+The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows Communication Foundation (WCF). All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  
   
  You would not usually interact with the <xref:System.ServiceModel.Channels.Message> class directly. Instead, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service model constructs, such as data contracts, message contracts, and operation contracts, are used to describe incoming and outgoing messages. However, in some advanced scenarios you can program using the <xref:System.ServiceModel.Channels.Message> class directly. For example, you might want to use the <xref:System.ServiceModel.Channels.Message> class:  
   

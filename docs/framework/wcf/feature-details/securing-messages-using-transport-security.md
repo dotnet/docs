@@ -23,7 +23,7 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
 > [!NOTE]
 >  Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
   
- The following illustration provides a conceptual model of queued communication using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This illustration and terminology is used to explain transport security concepts.  
+ The following illustration provides a conceptual model of queued communication using Windows Communication Foundation (WCF). This illustration and terminology is used to explain transport security concepts.  
   
  ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   

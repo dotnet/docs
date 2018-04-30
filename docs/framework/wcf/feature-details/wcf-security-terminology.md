@@ -24,7 +24,7 @@ ms.workload:
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
   
- For more information about terms used in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] documentation, see [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md).  
+ For more information about terms used in Windows Communication Foundation (WCF) documentation, see [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md).  
   
  access control list (ACL)  
  A list of security protections that applies to an object. (An object can be a file, process, event, or anything else having a security descriptor.) An entry in an ACL is an access control entry (ACE). There are two types of ACLs: discretionary and system.  

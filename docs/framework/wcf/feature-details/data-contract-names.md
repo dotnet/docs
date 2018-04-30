@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Contract Names
-Sometimes a client and a service do not share the same types. They can still pass data to each other as long as the data contracts are equivalent on both sides. [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md) is based on data contract and data member names, and therefore a mechanism is provided to map types and members to those names. This topic explains the rules for naming data contracts as well as the default behavior of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure when creating names.  
+Sometimes a client and a service do not share the same types. They can still pass data to each other as long as the data contracts are equivalent on both sides. [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md) is based on data contract and data member names, and therefore a mechanism is provided to map types and members to those names. This topic explains the rules for naming data contracts as well as the default behavior of the Windows Communication Foundation (WCF) infrastructure when creating names.  
   
 ## Basic Rules  
  Basic rules regarding naming data contracts include:  

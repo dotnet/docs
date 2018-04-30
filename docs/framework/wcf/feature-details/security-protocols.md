@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Protocols
-The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  
+The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  
   
 |Specification/Document|Link|  
 |-|-|  

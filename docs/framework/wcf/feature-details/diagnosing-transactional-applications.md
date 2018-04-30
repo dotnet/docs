@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Diagnosing Transactional Applications
-This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] management and diagnostics feature to troubleshoot a transactional application.  
+This topic describes how to use the Windows Communication Foundation (WCF) management and diagnostics feature to troubleshoot a transactional application.  
   
 ## Performance Counters  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a standard set of performance counters for you to measure your transactional application's performance. For more information, see [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  

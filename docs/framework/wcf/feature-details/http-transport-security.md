@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # HTTP Transport Security
-When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in Windows Communication Foundation (WCF).  
   
 ## Basic SSL  
  How SSL works is best explained through a typical scenario, in this case, a bank's Web site. The site allows a customer to log on with a user name and password. After being authenticated, the user can perform transactions, such as view account balances, pay bills, and move money from one account to another.  

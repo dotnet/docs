@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Guidance and Best Practices
-The topics in this section present guidance for and items to consider when creating secure [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications. For more information about Windows Server AppFabric and security see, [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
+The topics in this section present guidance for and items to consider when creating secure Windows Communication Foundation (WCF) applications. For more information about Windows Server AppFabric and security see, [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
   
 ## In this Section  
  [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)  

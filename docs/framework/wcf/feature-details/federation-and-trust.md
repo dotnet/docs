@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Federation and Trust
-This topic covers various aspects related to federated applications, trust boundaries and configuration, and use of issued tokens in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This topic covers various aspects related to federated applications, trust boundaries and configuration, and use of issued tokens in Windows Communication Foundation (WCF).  
   
 ## Services, Security Token Services, and Trust  
  Services that expose federated endpoints typically expect clients to authenticate using a token provided by a specific issuer. It is important that the service is configured with the correct credentials for the issuer; otherwise, it will not be able to verify signatures over the issued tokens, and the client will be unable to communicate with the service. For more information about configuring issuer credentials on the service, see [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Queuing in WCF
-This section describes how to use queued communication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section describes how to use queued communication in Windows Communication Foundation (WCF).  
   
 ## Queues as a WCF transport binding  
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the contracts specify what is being exchanged. Contracts are business-dependent or application-specific message exchanges. The mechanism used to exchange messages (or the "how") is specified in the bindings. Bindings in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] encapsulate details of the message exchange. They expose configuration knobs for the user to control various aspects of the transport or the protocol that the bindings represent. Queuing in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is treated like any other transport binding, which is a big advantage for many queuing applications. Today, many queuing applications are written differently from other remote procedure call (RPC)-style distributed applications, making it harder to follow and maintain. With [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the style of writing a distributed application is much the same, making it easier to follow and maintain. Moreover, by factoring out the mechanism of exchange separately from the business logic, it is easier to configure the transport or make changes to it without affecting application specific code. The following figure illustrates the structure of a WCF service and client using MSMQ as a transport.  

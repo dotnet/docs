@@ -28,7 +28,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
  Demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
  [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)  
- Describes the correspondence between JavaScript Object Notation (JSON) encodings and the XML infoset, which is used internally by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to represent JSON-encoded data and documents.  
+ Describes the correspondence between JavaScript Object Notation (JSON) encodings and the XML infoset, which is used internally by Windows Communication Foundation (WCF) to represent JSON-encoded data and documents.  
   
 ## See Also  
  <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>  

@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Bindings and Security
-The system-provided bindings included with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] offer a quick way to program [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  
+The system-provided bindings included with Windows Communication Foundation (WCF) offer a quick way to program [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  
   
  For an overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). For more information about programming [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] using bindings, see [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md).  
   

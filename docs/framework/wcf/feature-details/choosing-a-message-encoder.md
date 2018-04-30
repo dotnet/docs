@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Choosing a Message Encoder
-This topic discusses criteria for choosing among the message encoders that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: binary, text, and Message Transmission Optimization Mechanism (MTOM).  
+This topic discusses criteria for choosing among the message encoders that are included in Windows Communication Foundation (WCF): binary, text, and Message Transmission Optimization Mechanism (MTOM).  
   
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you specify how to transfer data across a network between endpoints by means of a *binding*, which is made up of a sequence of *binding elements*. A message encoder is represented by a message encoding binding element in the binding stack. A binding includes optional protocol binding elements, such as a security binding element or reliable messaging binding element, a required message encoding binding element, and a required transport binding element.  
   

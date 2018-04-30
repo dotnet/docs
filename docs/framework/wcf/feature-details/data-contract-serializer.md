@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Contract Serializer
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure uses the <xref:System.Runtime.Serialization.DataContractSerializer> class as the default serializer. The topics in this section provide more details for using it as a stand-alone serializer.  
+The Windows Communication Foundation (WCF) infrastructure uses the <xref:System.Runtime.Serialization.DataContractSerializer> class as the default serializer. The topics in this section provide more details for using it as a stand-alone serializer.  
   
 ## In This Section  
  [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)  

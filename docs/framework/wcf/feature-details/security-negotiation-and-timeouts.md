@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Negotiation and Timeouts
-When clients and services authenticate, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports a mode where the service credential is negotiated as part of authentication. In such scenarios, a potentially multi-leg exchange occurs between the client and the service to propagate the service credential to the client. The <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.NegotiationTimeout%2A> property controls how long the multi-leg exchange can take to complete. However, this timeout only applies if the exchange actually takes more that a single request-response. In cases where the negotiation completes in a single round trip, the timeout does not apply.  
+When clients and services authenticate, Windows Communication Foundation (WCF) supports a mode where the service credential is negotiated as part of authentication. In such scenarios, a potentially multi-leg exchange occurs between the client and the service to propagate the service credential to the client. The <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.NegotiationTimeout%2A> property controls how long the multi-leg exchange can take to complete. However, this timeout only applies if the exchange actually takes more that a single request-response. In cases where the negotiation completes in a single round trip, the timeout does not apply.  
   
 ## See Also  
  <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>  

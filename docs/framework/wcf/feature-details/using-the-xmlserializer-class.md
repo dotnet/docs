@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using the XmlSerializer Class
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can use two different serialization technologies to turn the data in your application into XML that is transmitted between clients and services, a process called serialization.  
+Windows Communication Foundation (WCF) can use two different serialization technologies to turn the data in your application into XML that is transmitted between clients and services, a process called serialization.  
   
 ## DataContractSerializer as the Default  
  By default [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the <xref:System.Runtime.Serialization.DataContractSerializer> class to serialize data types. This serializer supports the following types:  

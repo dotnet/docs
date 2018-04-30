@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a Federated Client
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client for a *federated service* consists of three main steps:  
+In Windows Communication Foundation (WCF), creating a client for a *federated service* consists of three main steps:  
   
 1.  Configure a [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) or similar custom binding. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md). Alternatively, run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) against the metadata endpoint of the federated service to generate a configuration file for communicating with the federated service and one or more security token services.  
   

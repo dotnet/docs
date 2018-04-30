@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Streaming Message Transfer
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports support two modes for transferring messages:  
+Windows Communication Foundation (WCF) transports support two modes for transferring messages:  
   
 -   Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
   

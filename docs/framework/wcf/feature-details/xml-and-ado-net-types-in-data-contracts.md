@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # XML and ADO.NET Types in Data Contracts
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model supports certain types that represent XML directly. When these types are serialized to XML, the serializer writes out the XML contents of these types without any further processing. Supported types are <xref:System.Xml.XmlElement>, arrays of <xref:System.Xml.XmlNode> (but not the `XmlNode` type itself), as well as types that implement <xref:System.Xml.Serialization.IXmlSerializable>. The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> type, as well as typed datasets, are commonly used in database programming. These types implement the `IXmlSerializable` interface and are therefore serializable in the data contract model. Some special considerations for these types are listed at the end of this topic.  
+The Windows Communication Foundation (WCF) data contract model supports certain types that represent XML directly. When these types are serialized to XML, the serializer writes out the XML contents of these types without any further processing. Supported types are <xref:System.Xml.XmlElement>, arrays of <xref:System.Xml.XmlNode> (but not the `XmlNode` type itself), as well as types that implement <xref:System.Xml.Serialization.IXmlSerializable>. The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> type, as well as typed datasets, are commonly used in database programming. These types implement the `IXmlSerializable` interface and are therefore serializable in the data contract model. Some special considerations for these types are listed at the end of this topic.  
   
 ## XML Types  
   

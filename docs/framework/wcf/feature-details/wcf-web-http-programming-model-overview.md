@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Web HTTP Programming Model Overview
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WEB HTTP programming model provides the basic elements required to build WEB HTTP services with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP services are designed to be accessed by the widest range of possible clients, including Web browsers and have the following unique requirements:  
+The Windows Communication Foundation (WCF) WEB HTTP programming model provides the basic elements required to build WEB HTTP services with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP services are designed to be accessed by the widest range of possible clients, including Web browsers and have the following unique requirements:  
   
 -   **URIs and URI Processing** URIs play a central role in the design of WEB HTTP services. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP programming model uses the <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to provide URI processing capabilities.  
   

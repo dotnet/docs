@@ -32,7 +32,7 @@ Transactions provide a way to group a set of actions or operations into a single
   
 -   Durability. This means that once committed, updates to managed resources (such as a database record) will be persistent in the face of failures.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich set of features that enable you to create distributed transactions in your Web service application.  
+ Windows Communication Foundation (WCF) provides a rich set of features that enable you to create distributed transactions in your Web service application.  
   
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements support for the WS-AtomicTransaction (WS-AT) protocol that enables [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications to flow transactions to interoperable applications, such as interoperable Web services built using third-party technology. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also implements support for the OLE Transactions protocol, which can be used in scenarios where you do not need interop functionality to enable transaction flow.  
   

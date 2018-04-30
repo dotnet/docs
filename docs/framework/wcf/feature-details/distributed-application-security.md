@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Distributed Application Security
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  
+Windows Communication Foundation (WCF) security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  
   
  For an overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). For more information about the other two pieces of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md) and [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   

@@ -38,7 +38,7 @@ This topic itemizes and discusses the components of the Windows Process Activati
  ![WAS Architecture](../../../../docs/framework/wcf/feature-details/media/wasarchitecture.gif "WASArchitecture")  
   
 ### Listener Adapters  
- Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] protocols.  
+ Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for Windows Communication Foundation (WCF) protocols.  
   
 |Listener adapter service name|Protocol|Notes|  
 |-----------------------------------|--------------|-----------|  

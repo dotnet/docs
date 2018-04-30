@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Concepts Used in WCF
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security is built upon concepts already in use and deployed in various security infrastructures.  
+Windows Communication Foundation (WCF) security is built upon concepts already in use and deployed in various security infrastructures.  
   
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports some of those infrastructures, such as Secure Sockets Layer (SSL) over HTTP (HTTPS). However, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] goes beyond supporting existing security infrastructures by implementing newer interoperable security standards (such as WS-Security) over SOAP-encoded messages. Whether you are using existing mechanisms or new interoperable standards, the security concepts behind both are the same. Understanding the concepts behind existing infrastructures and the newer standards is central to implementing the best security model for an application.  
   

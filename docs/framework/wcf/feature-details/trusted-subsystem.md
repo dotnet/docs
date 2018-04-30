@@ -40,7 +40,7 @@ A client accesses one or more Web services that are distributed across a network
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] only.|  
+|Interoperability|Windows Communication Foundation (WCF) only.|  
 |Authentication (service)|Security token service authenticates and authorizes clients.|  
 |Authentication (client)|The trusted subsystem authenticates the client and the resource authenticates the trusted subsystem service.|  
 |Integrity|Yes|  

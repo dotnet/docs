@@ -37,7 +37,7 @@ Client applications must create, configure, and use [!INCLUDE[indigo2](../../../
 -   Initializing channels interactively.  
   
 ### Channel and Session Lifetimes  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications includes two categories of channels, datagram and sessionful.  
+ Windows Communication Foundation (WCF) applications includes two categories of channels, datagram and sessionful.  
   
  A *datagram* channel is a channel in which all messages are uncorrelated. With a datagram channel, if an input or output operation fails, the next operation is typically unaffected, and the same channel can be reused. Because of this, datagram channels typically do not fault.  
   

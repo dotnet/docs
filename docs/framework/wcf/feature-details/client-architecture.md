@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Client Architecture
-Applications use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client objects to invoke service operations. This topic discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channels, and their relationships to the underlying channel architecture. For a basic overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md). For more information about the channel layer, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
+Applications use Windows Communication Foundation (WCF) client objects to invoke service operations. This topic discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channels, and their relationships to the underlying channel architecture. For a basic overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md). For more information about the channel layer, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
   
 ## Overview  
  The service model run time creates [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients, which are composed of the following:  

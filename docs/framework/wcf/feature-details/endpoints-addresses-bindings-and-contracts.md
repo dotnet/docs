@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Endpoints: Addresses, Bindings, and Contracts
-All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality offered by a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+All communication with a Windows Communication Foundation (WCF) service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality offered by a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
   
  Each endpoint consists of four properties:  
   

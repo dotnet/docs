@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Security
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service security.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) service security.  
   
 ## In This Section  
  [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md)  

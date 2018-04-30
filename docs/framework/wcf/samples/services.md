@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Services
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) services.  
   
 ## In This Section  
  [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Client Interoperability
-This section contains samples that demonstrate interoperability between [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and other technologies.  
+This section contains samples that demonstrate interoperability between Windows Communication Foundation (WCF) and other technologies.  
   
 ## In This Section  
  [Interoperating with ASMX Web Services](../../../../docs/framework/wcf/samples/interoperating-with-asmx-web-services.md)  

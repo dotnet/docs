@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Communication Foundation (WCF) Samples
-These samples provide instruction on various aspects of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+These samples provide instruction on various aspects of Windows Communication Foundation (WCF).  
   
 -   For C# versions of the samples, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780).  
   

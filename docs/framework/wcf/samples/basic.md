@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Basic
-This section includes sections of samples that demonstrate basic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]functionality.  
+This section includes sections of samples that demonstrate basic Windows Communication Foundation (WCF)functionality.  
   
 ## In This Section  
  [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Contracts
-This section contains samples that demonstrate message contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate message contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Default Message Contract](../../../../docs/framework/wcf/samples/default-message-contract.md)  

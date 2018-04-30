@@ -88,7 +88,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across computers. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## Requirements  
  This sample requires that MSMQ is installed and running.  
@@ -96,7 +96,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
 ## Demonstrates  
  The client encrypts the message using the public key of the service and signs the message using its own certificate. The service reading the message from the queue authenticates the client certificate with the certificate in its trusted people store. It then decrypts the message and dispatches the message to the service operation.  
   
- Because the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] message is carried as a payload in the body of the MSMQ message, the body remains encrypted in the MSMQ store. This secures the message from unwanted disclosure of the message. Note that MSMQ itself is not aware whether the message it is carrying is encrypted.  
+ Because the Windows Communication Foundation (WCF) message is carried as a payload in the body of the MSMQ message, the body remains encrypted in the MSMQ store. This secures the message from unwanted disclosure of the message. Note that MSMQ itself is not aware whether the message it is carrying is encrypted.  
   
  The sample demonstrates how mutual authentication at the message level can be used with MSMQ. The certificates are exchanged out-of-band. This is always the case with queued application because the service and the client do not have to be up and running at the same time.  
   
@@ -308,7 +308,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
   
 -   Installing the client certificate into server’s trusted certificate store.  
   
-     The following line in the batch file copies the client certificate into the server's TrustedPeople store so that the server can make the relevant trust or no-trust decisions. For a certificate installed in the TrustedPeople store to be trusted by a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service, the client certificate validation mode must be set to `PeerOrChainTrust` or `PeerTrust` value. See the previous service configuration sample to learn how this can be done using a configuration file.  
+     The following line in the batch file copies the client certificate into the server's TrustedPeople store so that the server can make the relevant trust or no-trust decisions. For a certificate installed in the TrustedPeople store to be trusted by a Windows Communication Foundation (WCF) service, the client certificate validation mode must be set to `PeerOrChainTrust` or `PeerTrust` value. See the previous service configuration sample to learn how this can be done using a configuration file.  
   
     ```bat
     echo ************  
@@ -349,7 +349,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\MessageSecurity`  
   

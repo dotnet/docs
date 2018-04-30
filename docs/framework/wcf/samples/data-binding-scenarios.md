@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Binding Scenarios
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data binding scenarios.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) data binding scenarios.  
   
 ## In This Section  
  [Data Binding in a Windows Forms Client](../../../../docs/framework/wcf/samples/data-binding-in-a-windows-forms-client.md)  

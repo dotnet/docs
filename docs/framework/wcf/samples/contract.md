@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Contract
-This section contains samples that demonstrate contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Data Contracts](../../../../docs/framework/wcf/samples/data-contracts.md)  

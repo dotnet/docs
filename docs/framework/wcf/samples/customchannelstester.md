@@ -36,7 +36,7 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
   
      Using the `/binding` option is required.  
   
-     `/dll` is required if "binding" is not a system-provided binding provided by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+     `/dll` is required if "binding" is not a system-provided binding provided by Windows Communication Foundation (WCF).  
   
      `/testspec` is optional.  
   

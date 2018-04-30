@@ -1,15 +1,15 @@
 ---
 title: When not to deploy to Windows Containers
-description: .NET Microservices Architecture for Containerized .NET Applications | When not to deploy to Windows Containers
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | When not to deploy to Windows Containers
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/28/2018
 ---
 # When not to deploy to Windows Containers
 
 Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to standards VMs, usually with just Windows and IIS.
 
-Cases not supported in Windows Containers, as of mid-2017:
+Cases not supported in Windows Containers, as of early-2018: 
 
 -   Microsoft Message Queuing (MSMQ) currently is not supported in Windows Containers.
 

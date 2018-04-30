@@ -1,15 +1,15 @@
 ---
 title: Deploy existing .NET apps as Windows containers
-description: .NET Microservices Architecture for Containerized .NET Applications | Deploy existing .NET apps as Windows containers
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | Deploy existing .NET apps as Windows containers
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/28/2018
 ---
 # Deploy existing .NET apps as Windows containers
 
-Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications, cloud-native applications, and Cloud DevOps-Ready applications.
+Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
-The focus in this guide and in the following sections is on using Windows Containers for *Cloud DevOps-Ready* applications, when you lift and shift existing .NET applications.
+However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don’t need to re-architect your application.
 
 ## What are containers? (Linux or Windows)
 

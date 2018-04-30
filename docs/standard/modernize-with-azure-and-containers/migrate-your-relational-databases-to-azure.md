@@ -3,7 +3,7 @@ title: Migrate your relational databases to azure
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | migrate your relational databases to azure
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/28/2018
 ---
 # Migrate your relational databases to azure
 
@@ -94,7 +94,7 @@ The automated workflow, with assessment reporting, guides you through the change
 
 Whenever you change an original RDBMS, you might need to retest. You also might need to change the SQL sentences or Object-Relational Mapping (ORM) code in your application, depending on testing results.
 
-If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort, because you'd be migrating to a different database type with new schema and different programming libraries.
+If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort because you'd be migrating to a different database type with new schema and different programming libraries.
 
 To learn how to migrate databases by using Azure Database Migration Service, see [Get to the cloud faster with Azure SQL Database Managed Instance and Azure Database Migration Service](https://channel9.msdn.com/Events/Build/2017/P4008).
 
@@ -122,4 +122,4 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
 >[!div class="step-by-step"]
 [Previous](lift-and-shift-existing-apps-azure-iaas.md)
-[Next](lift-and-shift-existing-apps-devops/index.md)
+[Next](modernize-existing-apps-to-cloud-optimized/index.md)

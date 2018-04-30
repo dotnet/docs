@@ -35,7 +35,7 @@
   
 -   You only do so only in controlled debugging scenarios.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the security issues related to managed exception information, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+ For more information about the security issues related to managed exception information, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
  The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageEnabled%2A> and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageEnabled%2A> properties instruct the service to publish HTML help files when the service is viewed using an HTML browser.  
   

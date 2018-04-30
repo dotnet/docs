@@ -38,7 +38,7 @@
   
  The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is also intended to be used with dictionary types to handle keyed collections. Dictionary types are classes that implement either the <xref:System.Collections.IDictionary> or the <xref:System.Collections.Generic.IDictionary%602> interface, for example, the <xref:System.Collections.Generic.Dictionary%602>. Use the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> and <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> properties to set custom names when using the <xref:System.Collections.Generic.Dictionary%602> class.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ For more information about using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
    
   

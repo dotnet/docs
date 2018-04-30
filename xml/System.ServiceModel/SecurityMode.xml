@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any `ProtectionLevel` settings of a transport are ignored if the <xref:System.ServiceModel.SecurityMode> is set to None. [!INCLUDE[crabout](~/includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
+ Any `ProtectionLevel` settings of a transport are ignored if the <xref:System.ServiceModel.SecurityMode> is set to None. For more information about the `ProtectionLevel` property, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
  For more information about Windows Communication Foundation (WCF) security and how this property affects general security features, see [Securing Services](~/docs/framework/wcf/securing-services.md) and [Programming WCF Security](~/docs/framework/wcf/feature-details/programming-wcf-security.md). For more information about the transport mode, see [Transport Security](~/docs/framework/wcf/feature-details/transport-security.md).  
   

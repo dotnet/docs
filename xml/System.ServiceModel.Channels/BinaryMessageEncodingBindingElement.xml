@@ -36,9 +36,9 @@
   
  The <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> is the binding element that specified the .NET Binary Format for XML should be used for encoding messages, and has options to specify the character encoding and the SOAP and WS-Addressing version to be used. Binary encoding is most efficient but least interoperable of the encoding options.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
+ For more information about the binding element that specifies messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
+ For more information about the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
   
  To implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
   

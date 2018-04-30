@@ -75,7 +75,7 @@
       </Parameters>
       <Docs>
         <param name="value">The value object.</param>
-        <param name="options">The options for the value object. [!INCLUDE[crdefault](~/includes/crabout-md.md)] <see cref="T:System.Runtime.DurableInstancing.InstanceValueOptions" />.</param>
+        <param name="options">The options for the value object. For more information, see <see cref="T:System.Runtime.DurableInstancing.InstanceValueOptions" />.</param>
         <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> class by using the value Object and the options for those values passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>

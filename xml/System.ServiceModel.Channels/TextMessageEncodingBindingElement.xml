@@ -36,11 +36,11 @@
   
  The text encoding represented by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is the most interoperable, but the least efficient encoder for XML messages. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the .NET Binary Format for XML, see <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
+ For more information about the binding element that specifies messages are encoded using the .NET Binary Format for XML, see <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
+ For more information about the binding element that specifies messages are encoded using the MTOM message encoding, see <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] how to implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
+ For more information about how to implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
   
  ]]></format>
     </remarks>

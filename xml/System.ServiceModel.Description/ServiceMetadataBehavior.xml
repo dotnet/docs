@@ -26,7 +26,7 @@
   
 -   To enable WS-Transfer GET metadata retrieval, you must also add an endpoint to your service in which the contract is `IMetadataExchange`. For an example, see [How to: Publish Metadata for a Service Using Code](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md). The `IMetadataExchange` endpoint can be configured as can any other endpoint.  
   
--   To enable HTTP GET metadata retrieval, set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`. [!INCLUDE[crabout](~/includes/crabout-md.md)] the address of HTTP GET metadata, see <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A>.  
+-   To enable HTTP GET metadata retrieval, set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`. For more information about the address of HTTP GET metadata, see <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A>.  
   
  The address of the `IMetadataExchange` endpoint follows the normal rules regarding the combination of base addresses and endpoint addresses. For more information, see [Publishing Metadata](~/docs/framework/wcf/feature-details/publishing-metadata.md).  
   

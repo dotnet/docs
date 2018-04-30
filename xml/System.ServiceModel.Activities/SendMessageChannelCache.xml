@@ -26,7 +26,7 @@
   
  By default, in a workflow hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache used by <xref:System.ServiceModel.Activities.Send> messaging activities is shared across all workflow instances in the <xref:System.ServiceModel.WorkflowServiceHost> (host-level caching). For a client workflow that is not hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache is available only to the workflow instance (instance-level caching). Caching is disabled by default for any send activity in your workflow that has endpoints defined in configuration.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](~/docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
+ For more information about how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](~/docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
   
    
   
@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+ For more information about channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
   
  You can choose to use only the channel factory cache and disable the channel cache by passing the `channelSettings` parameter to this constructor initialized to a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance with a <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> value of 0. To disable the cache completely for both the channel factory cache and the channel cache, pass the `factorySettings` parameter to this constructor initialized to a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance with a <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> value of 0. Note that you cannot turn the channel cache on if the channel factory cache is disabled.  
   
@@ -131,7 +131,7 @@
 ## Remarks  
  By default, the cache is only available for <xref:System.ServiceModel.Activities.Send> activities that don’t use endpoints defined in configuration. However, if you want to turn caching on in this case call this constructor with the `allowUnsafeCaching` parameter set to `true`. Next, add the new instance of this class as an extension to a workflow service host or a workflow instance.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+ For more information about channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
   
  ]]></format>
         </remarks>
@@ -229,7 +229,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The channel factory cache represents cached channel factories. [!INCLUDE[crabout](~/includes/crabout-md.md)] channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+ The channel factory cache represents cached channel factories. For more information about channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
   
  ]]></format>
         </remarks>

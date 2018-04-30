@@ -22,7 +22,7 @@
   
  Specifically, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>:  
   
--   Enables the HTTP programming model, including dispatch to operations based on a URL suffix, support for HTTP verb selection (POST or GET) and HTTP cache duration control. [!INCLUDE[crabout](~/includes/crabout-md.md)] the HTTP programming model, see [WCF Web HTTP Programming Model Overview](~/docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md). Note that the default HTTP verb is POST when using this behavior.  
+-   Enables the HTTP programming model, including dispatch to operations based on a URL suffix, support for HTTP verb selection (POST or GET) and HTTP cache duration control. For more information about the HTTP programming model, see [WCF Web HTTP Programming Model Overview](~/docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md). Note that the default HTTP verb is POST when using this behavior.  
   
 -   Enables the correct formatter for each operation's request and response messages - for example, support for URL parameters.  
   
@@ -30,7 +30,7 @@
   
  To call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service from an ASP.NET AJAX client, the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> binding and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> must be added to the endpoint behavior collection. This can be done either in configuration by adding the <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> or without using configuration by activating the AJAX endpoint with the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> instead of the default factory in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] different ways to enable a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
+ For more information about different ways to enable a WCF service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
   
  ]]></format>
     </remarks>
@@ -194,7 +194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] automatic format selection, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
+ For more information about automatic format selection, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
   
  ]]></format>
         </remarks>
@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page, see [WCF Web HTTP Service Help Page](~/docs/framework/wcf/feature-details/wcf-web-http-service-help-page.md).  
+ For more information about the WCF REST Help page, see [WCF Web HTTP Service Help Page](~/docs/framework/wcf/feature-details/wcf-web-http-service-help-page.md).  
   
  ]]></format>
         </remarks>

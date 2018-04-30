@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is a combination of the WS-Addressing version and SOAP version that the protocol mandates. The underlying binding used for discovery must support this version of WS-Addressing and SOAP. [!INCLUDE[crabout](~/includes/crabout-md.md)] message version, see <xref:System.ServiceModel.Channels.MessageVersion>.  
+ This property is a combination of the WS-Addressing version and SOAP version that the protocol mandates. The underlying binding used for discovery must support this version of WS-Addressing and SOAP. For more information about message version, see <xref:System.ServiceModel.Channels.MessageVersion>.  
   
  ]]></format>
         </remarks>

@@ -34,14 +34,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to types (classes, structures, or enumerations) that are used in serialization and deserialization operations by the <xref:System.Runtime.Serialization.DataContractSerializer>. If you send or receive messages by using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure, you should also apply the <xref:System.Runtime.Serialization.DataContractAttribute> to any classes that hold and manipulate data sent in messages. [!INCLUDE[crabout](~/includes/crabout-md.md)] data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to types (classes, structures, or enumerations) that are used in serialization and deserialization operations by the <xref:System.Runtime.Serialization.DataContractSerializer>. If you send or receive messages by using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure, you should also apply the <xref:System.Runtime.Serialization.DataContractAttribute> to any classes that hold and manipulate data sent in messages. For more information about data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
  You must also apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to any field, property, or event that holds values you want to serialize. By applying the <xref:System.Runtime.Serialization.DataContractAttribute>, you explicitly enable the <xref:System.Runtime.Serialization.DataContractSerializer> to serialize and deserialize the data.  
   
 > [!CAUTION]
 >  You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to private fields. Be aware that the data returned by the field (even if it is private) is serialized and deserialized, and thus can be viewed or intercepted by a malicious user or process.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] data contracts, see the topics listed in [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ For more information about data contracts, see the topics listed in [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
 ## Data Contracts  
  A *data contract* is an abstract description of a set of fields with a name and data type for each field. The data contract exists outside of any single implementation to allow services on different platforms to interoperate. As long as the data passed between the services conforms to the same contract, all the services can process the data. This processing is also known as a *loosely coupled system*. A data contract is also similar to an interface in that the contract specifies how data must be delivered so that it can be processed by an application. For example, the data contract may call for a data type named "Person" that has two text fields, named "FirstName" and "LastName". To create a data contract, apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to any fields or properties that must be serialized. When serialized, the data conforms to the data contract that is implicitly built into the type.  
@@ -65,7 +65,7 @@
 ## Versioning  
  A data contract can also accommodate later versions of itself. That is, when a later version of the contract includes extra data, that data is stored and returned to a sender untouched. To do this, implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] versioning, see [Data Contract Versioning](~/docs/framework/wcf/feature-details/data-contract-versioning.md).  
+ For more information about versioning, see [Data Contract Versioning](~/docs/framework/wcf/feature-details/data-contract-versioning.md).  
   
    
   

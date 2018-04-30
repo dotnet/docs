@@ -30,11 +30,11 @@
 ## Remarks  
  The <xref:System.Runtime.Serialization.XsdDataContractExporter> is used to generate XSD schemas from a type or assembly. You can also use the <xref:System.Runtime.Serialization.XsdDataContractImporter> to generate [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] code from a schema document.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] importing and exporting schemas, see [Schema Import and Export](~/docs/framework/wcf/feature-details/schema-import-and-export.md) and [Exporting Schemas from Classes](~/docs/framework/wcf/feature-details/exporting-schemas-from-classes.md).  
+ For more information about importing and exporting schemas, see [Schema Import and Export](~/docs/framework/wcf/feature-details/schema-import-and-export.md) and [Exporting Schemas from Classes](~/docs/framework/wcf/feature-details/exporting-schemas-from-classes.md).  
   
- The <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph. [!INCLUDE[crabout](~/includes/crabout-md.md)] the data contract and known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ The <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph. For more information about the data contract and known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ For more information about data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
    
   
@@ -134,7 +134,7 @@
 ## Remarks  
  The <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph (set using the <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A?displayProperty=nameWithType> property).  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the data contract and known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ For more information about the data contract and known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
    
   

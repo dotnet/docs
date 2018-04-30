@@ -35,9 +35,9 @@
 > [!NOTE]
 >  The value of the parameter names in the operation signature are part of the contract and are case sensitive. Use this attribute when you need to distinguish between the local parameter name and the metadata that describes the operation for client applications.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ For more information about controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] creating message contracts, see [Using Message Contracts](~/docs/framework/wcf/feature-details/using-message-contracts.md).  
+ For more information about creating message contracts, see [Using Message Contracts](~/docs/framework/wcf/feature-details/using-message-contracts.md).  
   
    
   

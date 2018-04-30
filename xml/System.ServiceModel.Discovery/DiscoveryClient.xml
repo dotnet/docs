@@ -317,7 +317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Discovery.FindCompletedEventArgs.Result%2A> property contains information about all matching services. [!INCLUDE[crabout](~/includes/crabout-md.md)] this event see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
+ The <xref:System.ServiceModel.Discovery.FindCompletedEventArgs.Result%2A> property contains information about all matching services. For more information about this event, see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
   
  ]]></format>
         </remarks>
@@ -343,7 +343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is useful if you are processing the results as they arrive. [!INCLUDE[crabout](~/includes/crabout-md.md)] this event see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
+ This event is useful if you are processing the results as they arrive. For more information about this event, see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
   
  ]]></format>
         </remarks>

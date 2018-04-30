@@ -331,7 +331,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property should be used in conjunction with the <xref:System.Runtime.Serialization.DataContractSerializer>. It is ignored if <xref:System.Xml.Serialization.XmlSerializer> is used. [!INCLUDE[crabout](~/includes/crabout-md.md)] known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md). Known types specified in this property will be added to the <xref:System.ServiceModel.Description.OperationDescription.KnownTypes%2A> collection of the corresponding <xref:System.ServiceModel.Description.OperationDescription> for this operation.  
+ This property should be used in conjunction with the <xref:System.Runtime.Serialization.DataContractSerializer>. It is ignored if <xref:System.Xml.Serialization.XmlSerializer> is used. For more information about known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md). Known types specified in this property will be added to the <xref:System.ServiceModel.Description.OperationDescription.KnownTypes%2A> collection of the corresponding <xref:System.ServiceModel.Description.OperationDescription> for this operation.  
   
  ]]></format>
         </remarks>

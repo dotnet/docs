@@ -97,7 +97,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Discovery can be performed in two modes ad-hoc and managed. In ad-hoc discovery, discovery messages are sent out in a multicast manner to all available services. In managed discovery, messages are sent in a unicast manner to a discovery proxy/discovery service. [!INCLUDE[crabout](~/includes/crabout-md.md)] the discovery modes, see [WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md).  
+ Discovery can be performed in two modes ad-hoc and managed. In ad-hoc discovery, discovery messages are sent out in a multicast manner to all available services. In managed discovery, messages are sent in a unicast manner to a discovery proxy/discovery service. For more information about the discovery modes, see [WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md).  
   
  ]]></format>
         </remarks>

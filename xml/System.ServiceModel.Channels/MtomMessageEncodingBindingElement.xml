@@ -29,9 +29,9 @@
   
  The <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> represents the binding element that specifies the character encoding and message versioning and other settings used for messages using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] messages. The MTOM encoder attempts to create a balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to their base64 encoded format.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies that messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
+ For more information about the binding element that specifies that messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the binding element that specifies messages are encoded using the .NET Binary Format for XML, see <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
+ For more information about the binding element that specifies messages are encoded using the .NET Binary Format for XML, see <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
   
  To implement a custom message encoder, use the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class.  
   

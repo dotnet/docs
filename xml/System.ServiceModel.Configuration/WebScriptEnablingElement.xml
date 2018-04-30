@@ -22,12 +22,12 @@
   
  The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, in turn, allows an endpoint to be accessed by ASP.NET AJAX Web pages when it is configured with the <xref:System.ServiceModel.WebHttpBinding>.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] how to enable a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
+ For more information about how to enable a WCF service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
   
    
   
 ## Examples  
- The following is an example of using this configuration element to configure a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] endpoint to be accessed by ASP.NET AJAX Web page.  
+ The following is an example of using this configuration element to configure a WCF endpoint to be accessed by ASP.NET AJAX Web page.  
   
 ```  
 <system.serviceModel>  

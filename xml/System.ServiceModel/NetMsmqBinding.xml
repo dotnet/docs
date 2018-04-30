@@ -299,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlDictionaryReaderQuotas> object defines constraints on the complexity of SOAP messages that can be processed by endpoints configured with a binding. These constraints include `maxArrayLength`, `maxBytesPerRead`, `maxDepth`, `maxNameTableCharCount`, and `maxStringContentLength`. These values aid in the prevention of denial of service attacks. [!INCLUDE[crdefault](~/includes/crabout-md.md)] <xref:System.Xml.XmlDictionaryReaderQuotas>.  
+ The <xref:System.Xml.XmlDictionaryReaderQuotas> object defines constraints on the complexity of SOAP messages that can be processed by endpoints configured with a binding. These constraints include `maxArrayLength`, `maxBytesPerRead`, `maxDepth`, `maxNameTableCharCount`, and `maxStringContentLength`. These values aid in the prevention of denial of service attacks. For more information, see <xref:System.Xml.XmlDictionaryReaderQuotas>.  
   
    
   

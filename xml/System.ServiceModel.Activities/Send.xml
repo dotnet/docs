@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] correlation see [Correlation](~/docs/framework/wcf/feature-details/correlation.md).  
+ For more information about correlation see [Correlation](~/docs/framework/wcf/feature-details/correlation.md).  
   
  ]]></format>
         </remarks>
@@ -304,7 +304,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property should be used in conjunction with the <xref:System.Runtime.Serialization.DataContractSerializer>. It is ignored if <xref:System.Xml.Serialization.XmlSerializer> has been selected as the serializer. [!INCLUDE[crabout](~/includes/crabout-md.md)] known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ This property should be used in conjunction with the <xref:System.Runtime.Serialization.DataContractSerializer>. It is ignored if <xref:System.Xml.Serialization.XmlSerializer> has been selected as the serializer. For more information about known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
  ]]></format>
         </remarks>

@@ -32,7 +32,7 @@
 ## Remarks  
  This attribute is similar to the <xref:System.ServiceModel.DataContractFormatAttribute> attribute. Both attributes can be applied to a method, class, or interface.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the <xref:System.Xml.Serialization.XmlSerializer>, see [Using the XmlSerializer Class](~/docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+ For more information about the <xref:System.Xml.Serialization.XmlSerializer>, see [Using the XmlSerializer Class](~/docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
   
  A method can have either of the two attributes applied, but not both. Any operation that has neither applied uses the attribute applied to the containing class. If the containing class does not have either attribute applied, the <xref:System.Runtime.Serialization.DataContractSerializer> is used.  
   

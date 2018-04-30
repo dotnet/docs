@@ -27,7 +27,7 @@
   
 -   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `false`, the <xref:System.UriTemplateTable> checks to make sure the table contains no multiple structurally-equivalent templates. If it finds such templates, it throws an exception. This type of validation is used in conjunction with <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> when you want to ensure only one template matches an incoming URI.  
   
--   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `true`, multiple structurally-equivalent templates can be contained within a <xref:System.UriTemplateTable>. However, any query strings in the templates must not be ambiguous; identical query strings are allowed. [!INCLUDE[crabout](~/includes/crabout-md.md)] ambiguous query strings, see [UriTemplate and UriTemplateTable](~/docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md).  
+-   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `true`, multiple structurally-equivalent templates can be contained within a <xref:System.UriTemplateTable>. However, any query strings in the templates must not be ambiguous; identical query strings are allowed. For more information about ambiguous query strings, see [UriTemplate and UriTemplateTable](~/docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md).  
   
    
   

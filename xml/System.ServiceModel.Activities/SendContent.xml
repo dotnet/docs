@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.SendReply> activity. This example uses a lambda expression to specify the <xref:System.Activities.InArgument>. [!INCLUDE[crabout](~/includes/crabout-md.md)] lambda expressions, see [Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=182082)  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.SendReply> activity. This example uses a lambda expression to specify the <xref:System.Activities.InArgument>. For more information about lambda expressions, see [Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=182082)  
   
  [!code-csharp[ContentBasedCorrelation#2](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/service.cs#2)]  
   
@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the declared message type, see <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>.  
+ For more information about the declared message type, see <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>.  
   
  ]]></format>
         </remarks>

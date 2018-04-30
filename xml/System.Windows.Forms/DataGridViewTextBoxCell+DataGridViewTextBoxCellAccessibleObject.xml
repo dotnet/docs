@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the accessibility object for the current <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewCell" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The control to which this object belongs.</param>
+        <summary>Instantiates a new instance of the <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -993,9 +993,9 @@
         <Parameter Name="dpi" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dpi">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dpi">The DPI value for the current display device.</param>
+        <summary>Gets the width of the horizontal scroll bar arrow bitmap in pixels.</summary>
+        <returns>The default width, in pixels, of the horizontal scroll bar arrow.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

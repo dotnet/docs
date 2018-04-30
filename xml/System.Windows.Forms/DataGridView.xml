@@ -13955,10 +13955,12 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyData">A bitwise combination of values that represents the key or keys to process.</param>
+        <summary>Processes the F3 key by sorting the current column.</summary>
+        <returns>
+          <see langword="true" /> if the key was processed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ProcessHomeKey">

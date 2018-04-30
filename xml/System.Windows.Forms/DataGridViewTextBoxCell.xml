@@ -123,9 +123,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new <see cref="T:System.Windows.Forms.AccessibleObject" /> for this <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" /> instance.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> instance that supports the ControlType UI Automation property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+The <xref:System.Windows.Forms.AccessibleObject> object returned by the `CreateAccessibilityInstance` method supports the <see cref="T:System.Windows.Automation.ControlType" /> [UI Automation](~/docs/framework/ui-automation/ui-automation-overview.md) property only in applications that are recompiled to target versions of the .NET Framework starting with the .NET Framework 4.7.2. 
+Applications that target an earlier version of the .NET Framework but are running on the .NET Framework 4.7.2 can opt in to this feature by using a compatibility switch.
+For additional information, see [What's New in Accessibility in the .NET Framework](~/docs/framework/whats-new/whats-new-in-accessibility.md).
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DetachEditingControl">

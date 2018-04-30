@@ -120,9 +120,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new <see cref="T:System.Windows.Forms.AccessibleObject" /> for this <see cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" /> instance.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> instance that supports the ControlType UIA property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new <xref:System.Windows.Forms.AccessibleObject> object is only available in applications that are recompiled to target versions of the .NET Framework starting with the .NET Framework 4.7.2. Applications that target an earlier version of the .NET Framework but are running on the .NET Framework 4.7.2 can opt in to this feature by using a compatibility switch. For additional information, see  [What's New in Accessibility in the .NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/whats-new/whats-new-in-accessibility).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingControlDataGridView">

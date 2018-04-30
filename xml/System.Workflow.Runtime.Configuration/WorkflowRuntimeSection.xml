@@ -175,7 +175,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> are initialized by the workflow run-time engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore the services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> must follow certain rules about the signatures of their constructors. [!INCLUDE[crdefault](~/includes/crabout-md.md)] <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+ The services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> are initialized by the workflow run-time engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore the services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> must follow certain rules about the signatures of their constructors. For more information, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
   
  ]]></format>
         </remarks>

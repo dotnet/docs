@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used to encode and decode the content of the security context token when a binding with message security that uses a stateful security context token is used. [!INCLUDE[crabout](~/includes/crabout-md.md)] stateful security context tokens, see [How to: Create a Security Context Token for a Secure Session](~/docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md) topic.  
+ This class is used to encode and decode the content of the security context token when a binding with message security that uses a stateful security context token is used. For more information about stateful security context tokens, see [How to: Create a Security Context Token for a Secure Session](~/docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md) topic.  
   
  Microsoft’s version of <xref:System.ServiceModel.Security.SecurityStateEncoder> is <xref:System.ServiceModel.Security.DataProtectionSecurityStateEncoder>. It uses Microsoft’s [Windows Data Protection (DPAPI)](http://go.microsoft.com/fwlink/?LinkId=96704) technology to encrypt/decrypt the cookie. You can plug in a different mechanism for encrypting and decrypting cookies by implementing this class.  
   

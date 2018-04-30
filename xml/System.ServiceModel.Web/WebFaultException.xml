@@ -20,7 +20,7 @@
 ## Remarks  
  When using a WCF REST endpoint (<xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> or <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>) the HTTP status code on the response is set accordingly. However, <xref:System.ServiceModel.Web.WebFaultException> can be used with non-REST endpoints and behaves like a regular <xref:System.ServiceModel.FaultException>.  
   
- When using a WCF REST endpoint, the response format of the serialized fault is determined in the same way as a non-fault response. [!INCLUDE[crabout](~/includes/crabout-md.md)] WCF REST formatting, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
+ When using a WCF REST endpoint, the response format of the serialized fault is determined in the same way as a non-fault response. For more information about WCF REST formatting, see [WCF Web HTTP Formatting](~/docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
   
  ]]></format>
     </remarks>

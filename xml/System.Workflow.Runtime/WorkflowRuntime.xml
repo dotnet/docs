@@ -286,7 +286,7 @@
 ## Remarks  
  Before the <xref:System.Workflow.Runtime.WorkflowInstance> is created, validation is executed on it. If any validation errors occur, the <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown. This works well for simple scenarios, but in a server environment, revalidating a workflow for every activation might be unnecessary overhead.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
+ For more information about disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
   
    
   
@@ -333,7 +333,7 @@
   
  Before the <xref:System.Workflow.Runtime.WorkflowInstance> is created, validation is executed on it. If any validation errors occur, the <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown. This works well for simple scenarios, but in a server environment, revalidating a workflow for every activation might be unnecessary overhead.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
+ For more information about disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
   
    
   
@@ -408,7 +408,7 @@ static void Main(string[] args)
 ## Remarks  
  Before the <xref:System.Workflow.Runtime.WorkflowInstance> is created, validation is executed on it. If any validation errors occur, the <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown. This works well for simple scenarios, but in a server environment, revalidating a workflow for every activation might be unnecessary overhead.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
+ For more information about disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
   
  For an example of passing in parameters to `CreateWorkflow`, see [Workflow with Parameters Sample](http://go.microsoft.com/fwlink/?LinkId=157403).  
   
@@ -449,7 +449,7 @@ static void Main(string[] args)
 ## Remarks  
  Before the <xref:System.Workflow.Runtime.WorkflowInstance> is created, validation is executed on it. If any validation errors occur, the <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown. This works well for simple scenarios, but in a server environment, revalidating a workflow for every activation might be unnecessary overhead.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
+ For more information about disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
   
  The workflow `instanceId` for any running workflows loaded by the <xref:System.Workflow.Runtime.WorkflowRuntime> must be unique. If you pass an `instanceId` to create a workflow and a running workflow is already using that `instanceId`, an <xref:System.InvalidOperationException> is thrown.  
   
@@ -494,7 +494,7 @@ static void Main(string[] args)
   
  Before the <xref:System.Workflow.Runtime.WorkflowInstance> is created, validation is executed on it. If any validation errors occur, the <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown. This works well for simple scenarios, but in a server environment, revalidating a workflow for every activation might be unnecessary overhead.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
+ For more information about disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
   
  For an example of passing in parameters to `CreateWorkflow`, see [Workflow with Parameters Sample](http://go.microsoft.com/fwlink/?LinkID=157403).  
   
@@ -540,7 +540,7 @@ static void Main(string[] args)
 ## Remarks  
  Before the <xref:System.Workflow.Runtime.WorkflowInstance> is created, validation is executed on it. If any validation errors occur, the <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown. This works well for simple scenarios, but in a server environment, revalidating a workflow for every activation might be unnecessary overhead.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
+ For more information about disabling validation, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate%2A>.  
   
  The workflow `instanceId` for any running workflows loaded by the <xref:System.Workflow.Runtime.WorkflowRuntime> must be unique. If you pass an `instanceId` to create a workflow and a running workflow is already using that `instanceId`, an <xref:System.InvalidOperationException> is thrown.  
   
@@ -984,7 +984,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Guid> of the workflow instance that was using the service and the <xref:System.Exception> that could not be handled.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1022,7 +1022,7 @@ static void Main(string[] args)
 ## Remarks  
  The <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A> method raises the <xref:System.Workflow.Runtime.WorkflowRuntime.Started> event after it has validated the core service configuration of the workflow run-time engine, has invoked the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Start%2A> method implemented by each of its services that derive from the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService> class, and has set <xref:System.Workflow.Runtime.WorkflowRuntime.IsStarted%2A> to `true`. There is no guarantee about the order in which the services that derive from the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService> class are started by the workflow run-time engine, and some of these workflow run-time engine services may depend on functionality supplied by other of these services to complete their startup tasks. Workflow run-time engine services can override the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.OnStarted%2A?displayProperty=nameWithType> method to perform any final startup tasks that require the support of other workflow run-time engine services when the <xref:System.Workflow.Runtime.WorkflowRuntime.Started> event is raised.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1107,7 +1107,7 @@ static void Main(string[] args)
 ## Remarks  
  The <xref:System.Workflow.Runtime.WorkflowRuntime.StopRuntime%2A> method raises the <xref:System.Workflow.Runtime.WorkflowRuntime.Stopped> event after it has invoked the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Stop%2A> method implemented by each of its services that derive from the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService> class.  There is no guarantee about the order in which these workflow run-time engine services are stopped, and some of these services may need to preserve some functionality that is relied on by other services until they too are stopped. Such services can override the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.OnStopped%2A?displayProperty=nameWithType> method to perform any residual shutdown logic when the <xref:System.Workflow.Runtime.WorkflowRuntime.Stopped> event is raised.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1187,7 +1187,7 @@ static void Main(string[] args)
   
  For this event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkId=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkId=157352).  
   
    
   
@@ -1227,7 +1227,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> and its output parameters.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkId=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkId=157352).  
   
    
   
@@ -1265,7 +1265,7 @@ static void Main(string[] args)
 ## Remarks  
  The workflow run-time engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowCreated> event after the workflow instance is completely constructed but before activities are processed. For this event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkId=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkId=157352).  
   
    
   
@@ -1305,7 +1305,7 @@ static void Main(string[] args)
   
  For this event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [Consuming Events](https://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67(v=vs.100)).  
   
    
   
@@ -1345,7 +1345,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowLoaded> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1385,7 +1385,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1425,7 +1425,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowResumed> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1463,7 +1463,7 @@ static void Main(string[] args)
 ## Remarks  
  The workflow run-time engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowStarted> event after the workflow instance is started by scheduling the root activity for execution. For this event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1502,7 +1502,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowSuspendedEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> and a string that describes the reason the instance was suspended.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1542,7 +1542,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> and information about the reason the instance was terminated in the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A?displayProperty=nameWithType> property.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   
@@ -1586,7 +1586,7 @@ static void Main(string[] args)
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
+ For more information about handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
    
   

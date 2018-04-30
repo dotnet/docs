@@ -37,7 +37,7 @@
   
  The <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> supports locking of workflow instances. This feature is used when several workflow runtimes share the same database. A column in the SQL database table is used to mark a workflow instance as locked whenever it is being used by a workflow runtime. The <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> does not load a workflow instance that is marked as "in use" by another runtime. Typically these locks are released when the workflow instance is persisted, for example, on idle, completion, or termination. The locks can also be released automatically after a period of inactivity. This period of inactivity can be set using the constructor of the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class.  It can also be set through the configuration file.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] persistence services in general, see the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class.  
+ For more information about persistence services in general, see the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class.  
   
  Workflow instances can contain timers, for example, if they have a <xref:System.Workflow.Activities.DelayActivity>. For workflows that contain timers, the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> records the time when the workflow's next timer expires. The <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> periodically polls the database, looking for workflows whose timers have expired. The frequency of the polling interval can be set using the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> constructor or using a configuration file.  
   
@@ -178,7 +178,7 @@
   
 -   Calling <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.GetAllWorkflows%2A>.  
   
- Besides being set programmatically, this functionality can be enabled through a configuration file. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/library/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
+ Besides being set programmatically, this functionality can be enabled through a configuration file. For more information about how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/library/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
   
  For general information about retrying work batch transactions, see [Batching State Information in Workflows](http://msdn.microsoft.com/library/ecda18ba-9140-4bd7-b13d-6787fdf5959d).  
   

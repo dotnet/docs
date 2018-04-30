@@ -1,6 +1,6 @@
 # F# component design guidelines
 
-This document is a set of component design guidelines for F# programming, based on [the F# Component Design Guidelines, v14, Microsoft Research, and [another version](http://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
+This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and [another version](http://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
 
 This document assumes you are familiar with F# programming. Many thanks to the F# community for their contributions and helpful feedback on various versions of this guide.
 
@@ -61,7 +61,7 @@ The following table follows .NET naming and capitalization conventions. There ar
 |-----------|------|------|----------|-------|
 | Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types.
 | DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
-| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as `type Teams = TAlpha | TBeta | TDelta.` |
+| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as ```type Teams = TAlpha | TBeta | TDelta.``` |
 | Event          | PascalCase | Verb | ValueChanged |  |
 | Exceptions     | PascalCase |      | WebException | Name should end with “Exception”. |
 | Field          | PascalCase | Noun | CurrentName  | |
@@ -247,14 +247,14 @@ This guidance corresponds to general .NET guidance for these types. However, it 
 
 #### Consider using `[<CompiledName>]` to provide a .NET-friendly name for other .NET language consumers
 
-Sometimes you may wish name something in one style for F# consumers (such as a static member in lower case), but have a different style for the name when it is compiled into an assembly. You can use the `[<CompiledName>]` attribute to provide a different style for non F# code consuming the assembly.
+Sometimes you may wish name something in one style for F# consumers (such as a static member in lower case so that it appears as if it were a module-bound function), but have a different style for the name when it is compiled into an assembly. You can use the `[<CompiledName>]` attribute to provide a different style for non F# code consuming the assembly.
 
 ```fsharp
 type Vector(x:float, y:float) =
 
     member v.X = x
     member v.Y = y
-    
+
     [<CompiledName("Create")>]
     static member create x y = Vector (x, y)
 
@@ -275,6 +275,8 @@ type Logger() =
     member this.Log(message, retryPolicy) =
         ...
 ```
+
+In F#, it is more common to overload on number of arguments rather than types of arguments.
 
 #### Hide the representations of record and union types if the design of these types is likely to evolve
 

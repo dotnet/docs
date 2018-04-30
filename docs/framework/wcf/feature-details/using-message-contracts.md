@@ -39,7 +39,7 @@ Typically when building [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] 
 public BankingTransactionResponse PostBankingTransaction(BankingTransaction bt);  
 ```  
   
- Normally, a data contract is sufficient to define the schema for the messages. For instance, in the preceding example, it is sufficient for most applications if `BankingTransaction` and `BankingTransactionResponse` have data contracts to define the contents of the underlying SOAP messages. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
+ Normally, a data contract is sufficient to define the schema for the messages. For instance, in the preceding example, it is sufficient for most applications if `BankingTransaction` and `BankingTransactionResponse` have data contracts to define the contents of the underlying SOAP messages. For more information about data contracts, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
  However, occasionally it is necessary to precisely control how the structure of the SOAP message transmitted over the wire. The most common scenario for this is inserting custom SOAP headers. Another common scenario is to define security properties for the message's headers and body, that is, to decide whether these elements are digitally signed and encrypted. Finally, some third-party SOAP stacks require messages be in a specific format. Messaging-style operations provide this control.  
   

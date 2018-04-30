@@ -30,7 +30,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
   
  The code that results from the procedures outlined in this topic is provided in the example following the procedures.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] exposing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service through an AJAX-enabled endpoint, see the [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md) topic.  
+ For more information about exposing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service through an AJAX-enabled endpoint, see the [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md) topic.  
   
 ### To create and test the ASP.NET Web service application  
   

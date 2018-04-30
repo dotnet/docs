@@ -42,7 +42,7 @@ ms.workload:
 ## Map Exceptions to SOAP Faults  
  The first step in creating an operation that handles error conditions is to decide under what conditions a client application should be informed about errors. Some operations have error conditions specific to their functionality. For example, a `PurchaseOrder` operation might return specific information to customers who are no longer permitted to initiate a purchase order. In other cases, such as a `Calculator` service, a more general `MathFault` SOAP fault may be able to describe all error conditions across an entire service. Once the error conditions of clients of your service are identified, a custom SOAP fault can be constructed and the operation can be marked as returning that SOAP fault when its corresponding error condition arises.  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] this step of developing your service or client, see [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md).  
+ For more information about this step of developing your service or client, see [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md).  
   
 ## Clients and Services Handle SOAP Faults as Exceptions  
  Identifying operation error conditions, defining custom SOAP faults, and marking those operations as returning those faults are the first steps in successful error handling in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications. The next step is to properly implement the sending and receiving of these faults. Typically services send faults to inform client applications about error conditions, but duplex clients can also send SOAP faults to services.  

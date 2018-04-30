@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # AspNetRouteIntegration
-This sample demonstrates how to host a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST service using ASP.NET routes. The [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample shows a self-hosted version of this scenario and discusses the service implementation in depth. This topic focuses on the ASP.NET integration feature. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] ASP.NET Routing, see <xref:System.Web.Routing>.  
+This sample demonstrates how to host a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST service using ASP.NET routes. The [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample shows a self-hosted version of this scenario and discusses the service implementation in depth. This topic focuses on the ASP.NET integration feature. For more information about ASP.NET Routing, see <xref:System.Web.Routing>.  
   
 ## Sample Details  
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service exposes a collection of customers in a resource-oriented/REST manner. Just like a SOAP-based [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, the service can be hosted in ASP.NET using a .svc file. However, this is often not preferred for HTTP scenarios because it requires having .svc in the URL for the service. In addition, it requires deploying a .svc file along with the service library. These limitations can be avoided by hosting the service using ASP.NET routes, as is demonstrated in this sample.  

@@ -39,7 +39,7 @@ When [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] receives a SOAP mes
   
          In the Microsoft Management Console (MMC), open the Certificates snap-in. For the certificate store that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is configured to retrieve X.509 certificates from, select the **Trusted Root** **Certification Authorities**folder. Under the **Trusted Root Certification Authorities** folder, right-click the **Certificates**folder, point to **All Tasks**, and then click **Import**. Provide the file exported in step a.  
   
-         [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the Certificates snap-in with MMC, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
+         For more information about using the Certificates snap-in with MMC, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   
 ## See Also  
  [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

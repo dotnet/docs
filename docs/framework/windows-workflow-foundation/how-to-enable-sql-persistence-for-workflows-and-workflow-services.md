@@ -36,7 +36,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
 >   
 >  System.Data.SqlClient.SqlException: Could not find stored procedure 'System.Activities.DurableInstancing.CreateLockOwner'  
   
- The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. [!INCLUDE[crabout](../../../includes/crabout-md.md)] properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).  
+ The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. For more information about properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).  
   
 ## Enabling Persistence for Self-Hosted Workflows that use WorkflowApplication  
  You can enable persistence for self-hosted workflows that use <xref:System.Activities.WorkflowApplication> programmatically by using the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> object model. The following procedure contains steps to do this.  

@@ -53,7 +53,7 @@ This topic describes how you can configure message logging for different scenari
 </system.serviceModel>  
 ```  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] message logging settings, see [Recommended Settings for Tracing and Message Logging](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md).  
+ For more information about message logging settings, see [Recommended Settings for Tracing and Message Logging](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md).  
   
  You can use `add` to specify the name and type of the listener you want to use. In the example configuration, the Listener is named "messages" and adds the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) as the type to use. If you use `System.Diagnostics.XmlWriterTraceListener`, you must specify the output file location and name in the configuration file. This is done by setting `initializeData` to the name of the log file. Otherwise, the system throws an exception. You can also implement a custom listener that emits logs to a default file.  
   
@@ -68,7 +68,7 @@ This topic describes how you can configure message logging for different scenari
 <source name="System.ServiceModel.MessageLogging" switchValue="Verbose">  
 ```  
   
- If you want to disable the trace source, you should use the `logMessagesAtServiceLevel`, `logMalformedMessages`, and `logMessagesAtTransportLevel` attributes of the `messageLogging` element instead. You should set all these attributes to `false`. This can be done by using the configuration file in the previous code example, through the Configuration Editor UI interface, or using WMI. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the Configuration Editor tool, see [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] WMI, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ If you want to disable the trace source, you should use the `logMessagesAtServiceLevel`, `logMalformedMessages`, and `logMessagesAtTransportLevel` attributes of the `messageLogging` element instead. You should set all these attributes to `false`. This can be done by using the configuration file in the previous code example, through the Configuration Editor UI interface, or using WMI. For more information about the Configuration Editor tool, see [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md). For more information about WMI, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
   
 ## Logging Levels and Options  
  For incoming messages, logging happens immediately after the message is formed, immediately before the message gets to user code in the service level, and when malformed messages are detected.  
@@ -86,7 +86,7 @@ This topic describes how you can configure message logging for different scenari
  Messages logged at this layer are ready to be encoded or decoded for or after transportation on the wire. If filters have been defined, only messages that match the filters are logged. Otherwise, all messages at the transport layer are logged. All infrastructure messages are logged at this layer, including reliable messaging messages. On streamed messages, only the headers are logged. In addition, secure messages are logged as encrypted at this level, except if a secure transport such as HTTPS is used.  
   
 ### Malformed Level  
- Malformed messages are messages that are rejected by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] stack at any stage of processing. Malformed messages are logged as-is: encrypted if they are so, with non-proper XML, and so on. `maxSizeOfMessageToLog` defined the size of the message to be logged as CDATA. By default, `maxSizeOfMessageToLog` is equal to 256K. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this attribute, see the Other Options section.  
+ Malformed messages are messages that are rejected by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] stack at any stage of processing. Malformed messages are logged as-is: encrypted if they are so, with non-proper XML, and so on. `maxSizeOfMessageToLog` defined the size of the message to be logged as CDATA. By default, `maxSizeOfMessageToLog` is equal to 256K. For more information about this attribute, see the Other Options section.  
   
 ### Other Options  
  In addition to the logging levels, the user can specify the following options:  

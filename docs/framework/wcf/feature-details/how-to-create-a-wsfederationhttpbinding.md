@@ -43,7 +43,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
   
      The URI for a SAML 1.1 token is "http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1".  
   
-4.  Optional. On federated services, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A> property to the metadata URL of a security token service. The metadata endpoint enables clients of the service to select an appropriate binding/endpoint pair, if the service is configured to publish metadata. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] publishing metadata, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
+4.  Optional. On federated services, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A> property to the metadata URL of a security token service. The metadata endpoint enables clients of the service to select an appropriate binding/endpoint pair, if the service is configured to publish metadata. For more information about publishing metadata, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
   
  You can also set other properties, including the type of key used as a proof key in the issued token, the algorithm suite to use between the client and the service, whether to negotiate or explicitly specify the service credential, any specific claims the service expects the issued token to contain, and any additional XML elements that must be added to the request the client sends to the security token service.  
   
@@ -98,7 +98,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
   
 12. For more information, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
-13. Required on the client if no local issuer is specified; not used on the service. Create a [\<binding>](../../../../docs/framework/misc/binding.md) element in the bindings section that can be used to communicate with the security token service. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a binding, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
+13. Required on the client if no local issuer is specified; not used on the service. Create a [\<binding>](../../../../docs/framework/misc/binding.md) element in the bindings section that can be used to communicate with the security token service. For more information about creating a binding, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
   
 14. Specify the binding created in the previous step by setting the `binding` and `bindingConfiguration` attributes of the `<issuer>` element.  
   

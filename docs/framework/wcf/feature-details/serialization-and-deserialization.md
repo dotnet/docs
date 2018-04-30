@@ -49,7 +49,7 @@ ms.workload:
  [!code-vb[c_StandaloneDataContractSerializer#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_standalonedatacontractserializer/vb/source.vb#2)]  
   
 ### Specifying Known Types  
- If polymorphism is involved in the types being serialized that is not already handled using the <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute or some other mechanism, a list of possible known types must be passed to the serializer’s constructor using the `knownTypes` parameter. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ If polymorphism is involved in the types being serialized that is not already handled using the <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute or some other mechanism, a list of possible known types must be passed to the serializer’s constructor using the `knownTypes` parameter. For more information about known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
  The following example shows a class, `LibraryPatron`, that includes a collection of a specific type, the `LibraryItem`. The second class defines the `LibraryItem` type. The third and four classes (`Book` and `Newspaper`) inherit from the `LibraryItem` class.  
   
@@ -262,7 +262,7 @@ ms.workload:
   
 -   The <xref:System.Runtime.Serialization.NetDataContractSerializer.Serialize%2A> and <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize%2A> methods are aliases for the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> methods. These exist to provide a more consistent programming model with binary or SOAP serialization.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these features, see [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md).  
+ For more information about these features, see [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md).  
   
  The XML formats that the `NetDataContractSerializer` and the `DataContractSerializer` use are normally not compatible. That is, attempting to serialize with one of these serializers and deserialize with the other is not a supported scenario.  
   

@@ -69,7 +69,7 @@ public sealed class Add : CodeActivity<int>
   
  **Value for a required activity argument 'Operand1' was not supplied.**  
 > [!NOTE]
->  [!INCLUDE[crabout](../../../includes/crabout-md.md)] about checking for and handling validation errors and warnings, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).  
+>  For more information about about checking for and handling validation errors and warnings, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).  
   
 ## Using Overload Groups  
  Overload groups provide a method for indicating which combinations of arguments are valid in an activity. Arguments are grouped together by using <xref:System.Activities.OverloadGroupAttribute>. Each group is given a name that is specified by the <xref:System.Activities.OverloadGroupAttribute>, The activity is valid when only one set of arguments in an overload group are bound. In the following example, taken from the [OverloadGroups](../../../docs/framework/windows-workflow-foundation/samples/overloadgroups.md) sample, a `CreateLocation` class is defined.  

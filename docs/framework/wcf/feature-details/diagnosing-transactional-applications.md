@@ -53,7 +53,7 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
 |Transactions Flowed Per Second|The number of transactions that flowed to operations at this endpoint within each second. This counter is incremented any time a transaction is present in the message that is sent to the endpoint.|  
   
 ## Windows Management Instrumentation  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] exposes inspection data of a service at run time through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] exposes inspection data of a service at run time through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider. For more information about accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
   
  A number of read-only WMI properties indicate the applied transaction settings for a service. The following tables list all of these settings.  
   

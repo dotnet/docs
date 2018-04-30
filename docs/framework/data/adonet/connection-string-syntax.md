@@ -133,9 +133,9 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
  The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at run time by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.  
   
 ### OleDb Connection String Syntax  
- You must specify a provider name for an <xref:System.Data.OleDb.OleDbConnection> connection string. The following connection string connects to a Microsoft Access database using the Jet provider. Note that the `UserID` and `Password` keywords are optional if the database is unsecured (the default).  
+ You must specify a provider name for an <xref:System.Data.OleDb.OleDbConnection> connection string. The following connection string connects to a Microsoft Access database using the Jet provider. Note that the `User ID` and `Password` keywords are optional if the database is unsecured (the default).  
   
-```  
+```   
 Provider=Microsoft.Jet.OLEDB.4.0; Data Source=d:\Northwind.mdb;User ID=Admin;Password=;   
 ```  
   

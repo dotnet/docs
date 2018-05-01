@@ -61,7 +61,7 @@ The `behavior` element contains a collection of settings for the behavior of an 
 |[\<soapProcessing>](../../../../../docs/framework/configure-apps/file-schema/wcf/soapprocessing.md)|Defines the client endpoint behavior used to marshal messages between different binding types and message versions.|  
 |[\<synchronousReceive>](../../../../../docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md)|Specifies run-time behavior for receiving messages in either a service or client application. It does not have any attributes or child elements.|  
 |[\<transactedBatching>](../../../../../docs/framework/configure-apps/file-schema/wcf/transactedbatching.md)|Specifies whether transaction batching is supported for receive operations.|  
-|[\<webHttp>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md)|Specifies the WebHttpBehavior on an endpoint through configuration. This behavior, when used in conjunction with the \<webHttpBinding> standard binding, enables the Web programming model for a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service.|  
+|[\<webHttp>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md)|Specifies the WebHttpBehavior on an endpoint through configuration. This behavior, when used in conjunction with the \<webHttpBinding> standard binding, enables the Web programming model for a WCF service.|  
   
 ### Parent Elements  
   

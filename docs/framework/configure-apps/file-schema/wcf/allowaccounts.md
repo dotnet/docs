@@ -40,7 +40,7 @@ Contains a collection of configuration elements that specify user accounts for p
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowaccounts.md)|Adds a user account for processes that host [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services, and are granted connection access to the sharing service|  
+|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowaccounts.md)|Adds a user account for processes that host WCF services, and are granted connection access to the sharing service|  
   
 ### Parent Elements  
   

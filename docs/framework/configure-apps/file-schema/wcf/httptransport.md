@@ -75,7 +75,7 @@ IntegratedWindowsAuthentication: Specifies Windows authentication"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
- The `httpTransport` element is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other non-[!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Web services stacks.  
+ The `httpTransport` element is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other non-WCF Web services stacks.  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.HttpTransportElement>  

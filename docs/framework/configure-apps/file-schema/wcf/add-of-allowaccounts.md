@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;add&gt; of &lt;allowAccounts&gt;
-Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services, and are granted connection access to the sharing service.  
+Specifies a user account for processes that host WCF services, and are granted connection access to the sharing service.  
   
  \<system.serviceModel.activation>  
   
@@ -46,7 +46,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|A collection of configuration elements that contain a `securityIdentifier` attribute to specify user accounts for processes that host [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services, and are granted connection access to the sharing service.|  
+|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|A collection of configuration elements that contain a `securityIdentifier` attribute to specify user accounts for processes that host WCF services, and are granted connection access to the sharing service.|  
   
 ## Example  
  The following configuration example adds the five default identifiers for user accounts to this collection.  

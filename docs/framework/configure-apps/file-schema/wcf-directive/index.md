@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Directive Syntax
-Specifies settings used by the Windows Communication Foundation (WCF) directives in the .svc files to direct the compilers. Each directive can contain one or more attributes (paired with values) that are specific to that directive. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] has only the [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  
+Specifies settings used by the Windows Communication Foundation (WCF) directives in the .svc files to direct the compilers. Each directive can contain one or more attributes (paired with values) that are specific to that directive. WCF has only the [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  
   
 ## In This Section  
  [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)  

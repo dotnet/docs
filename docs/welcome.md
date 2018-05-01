@@ -11,7 +11,7 @@ ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
-See [Getting Started with .NET Core](core/get-started.md) to learn how to create .NET Core apps.
+See [Get started with .NET Core](core/get-started.md) to learn how to create .NET Core apps.
 
 Build many types of apps with .NET, such as cloud, IoT, and games using free cross-platform tools. Your apps can run on Android, iOS, Linux, macOS, and Windows. Deploy apps to servers or desktops and publish to app stores for deployment on mobile devices. .NET is accessible to students and hobbyists, and all are welcome to participate in a lively international developer community and make direct contributions to many of the .NET technologies.
 

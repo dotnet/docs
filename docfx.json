@@ -83,9 +83,9 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
-      "_displayLangs": [
-        "csharp"
-      ],
+      "_displayLangs": ["csharp"],
+      "dev_langs": ["csharp"],
+      "ms.devlang": "dotnet",
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
       "manager": "wpickett",
@@ -102,29 +102,39 @@
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
       },
       "ms.prod": {
-        "_csharplang/spec/*.md": ".net",
-        "_vblang/spec/*.md": ".net"
+        "_csharplang/spec/*.md": "dotnet-csharp",
+        "_vblang/spec/*.md": "dotnet-visualbasic",
+        "docs/core/**/**.md": "dotnet-core",
+        "docs/csharp/**/**.md": "dotnet-csharp",
+        "docs/framework/**/**.md": "dotnet-framework",
+        "docs/fsharp/**/**.md": "dotnet-fsharp",
+        "docs/standard/**/**.md": "dotnet",
+        "docs/visual-basic/**/**.md": "dotnet-visualbasic"
       },
       "ms.topic": {
         "_csharplang/spec/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference"
-     },
+      },
       "dev_langs": {
-        "docs/core/**/**.md": ["csharp"],
-        "docs/csharp/**/**.md": ["csharp"],
-        "docs/framework/**/**.md": ["csharp"],
         "docs/fsharp/**/**.md": ["fsharp"],
-        "docs/standard/**/**.md": ["csharp"],
         "docs/visual-basic/**/**.md": ["vb"]
+      },
+      "ms.devlang": {
+        "docs/csharp/**/**.md": "csharp",
+        "docs/fsharp/**/**.md": "fsharp",
+        "docs/visual-basic/**/**.md": "vb"
+      },
+      "author": {
+        "docs/core/**/**.md": "mairaw",
+        "docs/csharp/**/**.md": "billwagner",
+        "docs/fsharp/**/**.md": "cartermp"
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",
-        "_vblang/spec/*.md": "wiwagn"
-      },
-      "ms.technology": {
-        "_csharplang/spec/*.md": "devlang-csharp",
-        "csharp/quick-starts/**": "csharp-interactive",
-        "_vblang/spec/*.md": "devlang-visual-basic"
+        "_vblang/spec/*.md": "wiwagn",
+        "docs/core/**/**.md": "mairaw",
+        "docs/csharp/**/**.md": "wiwagn",
+        "docs/fsharp/**/**.md": "phcart"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",

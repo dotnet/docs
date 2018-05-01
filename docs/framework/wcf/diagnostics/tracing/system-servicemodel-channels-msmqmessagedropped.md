@@ -21,7 +21,7 @@ ms.workload:
 MSMQ dropped the message.  
   
 ## Description  
- The trace indicates that an MSMQ message was dropped. MSMQ messages can be dropped when [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] (used with either the NetMsmqBinding or MsmqIntegrationBinding) is unable to process them. Such messages are referred to as poison messages.  
+ The trace indicates that an MSMQ message was dropped. MSMQ messages can be dropped when Windows Communication Foundation (WCF) (used with either the NetMsmqBinding or MsmqIntegrationBinding) is unable to process them. Such messages are referred to as poison messages.  
   
  A poison message is dropped when the `ReceiveErrorHandling` property on the NetMsmqBinding or MsmqIntegrationBinding is set to `Drop`. A dropped message is removed from the queue and is no longer recoverable.  
   

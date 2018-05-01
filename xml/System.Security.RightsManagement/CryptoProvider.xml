@@ -362,7 +362,7 @@
 ## Remarks  
  The byte length of the `clearText` buffer should be a multiple of the cipher <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> property.  
   
- The digital rights management system uses [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] block cipher.  With [!INCLUDE[TLA2#tla_aes](~/includes/tla2sharptla-aes-md.md)], blocks are encrypted independently such that two blocks of identical clear text produce identical cipher text results.  To minimize potential decryption threats from independent block encryption, applications should employ methods to modify content, such as compression, to avoid encrypting identical clear text blocks.  
+ The digital rights management system uses [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] block cipher.  With AES, blocks are encrypted independently such that two blocks of identical clear text produce identical cipher text results.  To minimize potential decryption threats from independent block encryption, applications should employ methods to modify content, such as compression, to avoid encrypting identical clear text blocks.  
   
    
   

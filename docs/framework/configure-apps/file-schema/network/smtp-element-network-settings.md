@@ -1,14 +1,6 @@
 ---
 title: "&lt;smtp&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#smtp"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "<smtp> element"
   - "smtp element"
 ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;smtp&gt; Element (Network Settings)
 Configures the delivery format, delivery method, and from address for sending emails.  

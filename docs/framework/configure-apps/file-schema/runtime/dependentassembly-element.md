@@ -1,14 +1,6 @@
 ---
 title: "&lt;dependentAssembly&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#dependentAssembly"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "dependentAssembly element"
   - "<dependentAssembly> element"
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;dependentAssembly&gt; Element
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.  

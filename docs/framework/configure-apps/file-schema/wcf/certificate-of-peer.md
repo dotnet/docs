@@ -1,21 +1,7 @@
 ---
 title: "&lt;certificate&gt; of &lt;peer&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 48b69142-c957-4305-a042-c9d0c9a55c0e
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;certificate&gt; of &lt;peer&gt;
 Specifies a certificate used by a peer.  

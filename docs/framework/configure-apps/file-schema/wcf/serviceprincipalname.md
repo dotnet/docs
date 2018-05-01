@@ -1,21 +1,7 @@
 ---
 title: "&lt;servicePrincipalName&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;servicePrincipalName&gt;
 Specifies the identity of a service by its Service Principal Name (SPN).  

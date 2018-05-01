@@ -1,21 +1,9 @@
 ---
 title: "&lt;security&gt; of &lt;msmqIntegrationBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
-caps.latest.revision: 13
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;security&gt; of &lt;msmqIntegrationBinding&gt;
 Defines the transport security settings for the Message Queuing (MSMQ) integration channel.  

@@ -1,26 +1,15 @@
 ---
 title: "Mapping Algorithm Names to Cryptography Classes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "mapping algorithm names"
   - "cryptography, mapping algorithm names"
   - "cryptographic algorithms"
   - "names [.NET Framework], algorithm mapping"
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Mapping Algorithm Names to Cryptography Classes
 There are four ways a developer can create a cryptography object using the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  

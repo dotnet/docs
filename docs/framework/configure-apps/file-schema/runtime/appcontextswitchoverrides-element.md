@@ -2,12 +2,6 @@
 title: "&lt;AppContextSwitchOverrides&gt; Element"
 ms.custom: "updateeachrelease"
 ms.date: "04/19/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "AppContextSwitchOverrides"
   - "compatibility switches"
@@ -16,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;AppContextSwitchOverrides&gt; Element
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  

@@ -1,10 +1,6 @@
 ---
 title: "Delay Signing an Assembly"
 ms.date: "07/31/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-bcl"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +12,8 @@ helpviewer_keywords:
   - "strong-named assemblies, delaying assembly signing"
   - "partial assembly signing"
 ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Delay Signing an Assembly
 An organization can have a closely guarded key pair that developers do not have access to on a daily basis. The public key is often available, but access to the private key is restricted to only a few individuals. When developing assemblies with strong names, each assembly that references the strong-named target assembly contains the token of the public key used to give the target assembly a strong name. This requires that the public key be available during the development process.  

@@ -1,14 +1,8 @@
 ---
 title: "DataMemberListEditor Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "System.Windows.Forms.Design.DataMemberListEditor"
 api_location: 
@@ -18,12 +12,8 @@ api_type:
 ms.assetid: c11d5231-78f2-45a7-9210-3b2d0969370e
 topic_type: 
   - "apiref"
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # DataMemberListEditor Class

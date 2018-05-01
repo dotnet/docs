@@ -121,7 +121,7 @@ throw new SoapException(
      exception.ToXML());  
 ```  
   
- These exception classes will be readily reusable with theWCF<xref:System.ServiceModel.FaultException%601> class to throw a new `FaultException<AnticipatedException>(anticipatedException);`  
+ These exception classes will be readily reusable with the WCF<xref:System.ServiceModel.FaultException%601> class to throw a new `FaultException<AnticipatedException>(anticipatedException);`  
   
 ## Security  
  The following are some security recommendations.  

@@ -139,6 +139,31 @@
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
+      },
+      "ms.technology": {
+        "_csharplang/spec/*.md": "csharp-spec",
+        "_vblang/spec/*.md": "vb-spec",
+        "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
+        "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
+        "docs/csharp/misc/**/**.md": "csharp-diagnostics",
+        "docs/core/tools/**/**.md": "dotnet-cli",
+        "docs/core/docker/**/**.md": "dotnet-docker",
+        "docs/framework/data/adonet/**/**.md": "dotnet-data",
+        "docs/framework/data/wcf/**/**.md": "dotnet-wcf",
+        "docs/framework/docker/**/**.md": "dotnet-docker",
+        "docs/framework/install/**/**.md": "dotnet-install",
+        "docs/framework/migration-guide/**/**.md": "dotnet-appcompat",
+        "docs/framework/network-programming/**/**.md": "dotnet-networking",
+        "docs/framework/wcf/**/**.md": "dotnet-wcf",
+        "docs/framework/windows-workflow-foundation/**/**.md": "dotnet-wf",
+        "docs/framework/winforms/**/**.md": "dotnet-winforms",
+        "docs/framework/wpf/**/**.md": "dotnet-wpf",
+        "docs/standard/containerized-lifecycle-architecture/**/**.md": "dotnet-ebooks",
+        "docs/standard/microservices-architecture/**/**.md": "dotnet-ebooks",
+        "docs/standard/modern-web-apps-azure-architecture/**/**.md": "dotnet-ebooks",
+        "docs/standard/modernize-with-azure-and-containers/**/**.md": "dotnet-ebooks",
+        "docs/standard/security/**/**.md": "dotnet-security",
+        "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       }
     },
     "dest": "_site",

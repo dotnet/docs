@@ -28,7 +28,7 @@
   
  The effects of disabling processing are as follows:  
   
--   [!INCLUDE[TLA2#tla_clr#initcap](~/includes/tla2sharptla-clrsharpinitcap-md.md)] locks will not pump messages internally.  
+-   CLR locks will not pump messages internally.  
   
 -   <xref:System.Windows.Threading.DispatcherFrame> objects are not allowed to be pushed.  
   
@@ -77,7 +77,7 @@
   
  The effects of disabling processing are as follows:  
   
--   [!INCLUDE[TLA2#tla_clr#initcap](~/includes/tla2sharptla-clrsharpinitcap-md.md)] locks will not pump messages internally.  
+-   CLR locks will not pump messages internally.  
   
 -   <xref:System.Windows.Threading.DispatcherFrame> objects are not allowed to be pushed.  
   

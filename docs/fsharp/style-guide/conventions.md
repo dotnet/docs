@@ -237,11 +237,7 @@ with
 | :? System.Security.SecurityException as e -> // Do something with it here
 ```
 
-Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this is to use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, consider consuming an API that, when it throws an exception, encloses valuable information in that the exception metadata:
-
-```fsharp
-// TODO
-```
+Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this is to use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, you may be consuming an API that, when it throws an exception, encloses valuable information in that the exception metadata. Unwrapping a useful value in the body of the captured exception inside the Active Pattern and returning that value can be helpful in some situations.
 
 ### Do not use monadic error handling to replace exceptions
 

@@ -21,13 +21,13 @@ ms.workload:
 This section contains common questions and troubleshooting help for using queues in Windows Communication Foundation (WCF).  
   
 ## Common Questions  
- **Q:** I used [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Beta 1 and I installed the MSMQ hotfix. Do I need to remove the hotfix?  
+ **Q:** I used WCF Beta 1 and I installed the MSMQ hotfix. Do I need to remove the hotfix?  
   
- **A:** Yes. This hotfix is no longer supported. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] now works on MSMQ without a hotfix requirement.  
+ **A:** Yes. This hotfix is no longer supported. WCF now works on MSMQ without a hotfix requirement.  
   
  **Q:** There are two bindings for MSMQ: <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. What should I use and when?  
   
- **A:** Use the <xref:System.ServiceModel.NetMsmqBinding> when you want to use MSMQ as a transport for queued communication between two [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. Use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> when you want to use existing MSMQ applications to communicate with new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications.  
+ **A:** Use the <xref:System.ServiceModel.NetMsmqBinding> when you want to use MSMQ as a transport for queued communication between two WCF applications. Use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> when you want to use existing MSMQ applications to communicate with new WCF applications.  
   
  **Q:** Do I have to upgrade MSMQ to use the <xref:System.ServiceModel.NetMsmqBinding> and `MsmqIntegration` bindings?  
   
@@ -49,7 +49,7 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** Yes.  
   
- **Q:** I want to integrate existing MSMQ applications with new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients or servers. Do I need to upgrade both sides of my MSMQ infrastructure?  
+ **Q:** I want to integrate existing MSMQ applications with new WCF clients or servers. Do I need to upgrade both sides of my MSMQ infrastructure?  
   
  **A:** No. You do not have to upgrade to MSMQ 4.0 on either side.  
   
@@ -140,9 +140,9 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **Q:** When I use a public or private format name and open the service host on [!INCLUDE[wv](../../../../includes/wv-md.md)], I get an error. Why?  
   
- **A:** The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] integration channel on [!INCLUDE[wv](../../../../includes/wv-md.md)] checks to see if a sub-queue can be opened for the main application queue for handling poison messages. The sub-queue name is derived from an msmq.formatname URI passed to the listener. The sub-queue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.  
+ **A:** The WCF integration channel on [!INCLUDE[wv](../../../../includes/wv-md.md)] checks to see if a sub-queue can be opened for the main application queue for handling poison messages. The sub-queue name is derived from an msmq.formatname URI passed to the listener. The sub-queue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.  
   
- **Q:** When receiving a message from an MSMQ application, the message sits in the queue and is not read by the receiving [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. Why?  
+ **Q:** When receiving a message from an MSMQ application, the message sits in the queue and is not read by the receiving WCF application. Why?  
   
  **A:** Check to see whether the message has a body. If the message has no body, the MSMQ integration channel ignores the message. Implement `IErrorHandler` to be notified of exceptions and check the traces.  
   
@@ -188,7 +188,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
  **A:** Check the binding configuration. The default binding has MSMQ transport security turned on to sign the message. Turn it off.  
   
 ### Remote Transacted Receives  
- **Q:** When I have a queue on machine A, and a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that reads messages from a queue on machine B (the remote transacted receive scenario), messages are not read from the queue. Tracing information indicates the receive failed with the message "Transaction cannot be imported." What can I do to fix this?  
+ **Q:** When I have a queue on machine A, and a WCF service that reads messages from a queue on machine B (the remote transacted receive scenario), messages are not read from the queue. Tracing information indicates the receive failed with the message "Transaction cannot be imported." What can I do to fix this?  
   
  **A:** There are three possible reasons for this:  
   

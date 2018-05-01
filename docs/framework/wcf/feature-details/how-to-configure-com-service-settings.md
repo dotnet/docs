@@ -57,7 +57,7 @@ public interface IFinancesContract : IDisposable
   
  Client applications that use this service would need to conform to this contract, along with using a binding that is compatible with the one specified in the application configuration.  
   
- The following code example shows a default configuration file. Being a Windows Communication Foundation (WCF) Web service, this conforms to the standard service model configuration schema and can be edited in the same way as other [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services configuration files.  
+ The following code example shows a default configuration file. Being a Windows Communication Foundation (WCF) Web service, this conforms to the standard service model configuration schema and can be edited in the same way as other WCF services configuration files.  
   
  Typical modifications would include:  
   

@@ -27,7 +27,7 @@ The topics in this section catalog a number of possible client and service secur
  An example of a public, unsecured client and service.  
   
  [Intranet Unsecured Client and Service](../../../../docs/framework/wcf/feature-details/intranet-unsecured-client-and-service.md)  
- A basic Windows Communication Foundation (WCF) service developed to provide information on a secure private network to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application.  
+ A basic Windows Communication Foundation (WCF) service developed to provide information on a secure private network to a WCF application.  
   
  [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)  
  The application allows clients to log on using custom authentication.  
@@ -42,7 +42,7 @@ The topics in this section catalog a number of possible client and service secur
  Shows a client and service secured by a certificate.  
   
  [Message Security with an Anonymous Client](../../../../docs/framework/wcf/feature-details/message-security-with-an-anonymous-client.md)  
- Shows a client and service secured by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security.  
+ Shows a client and service secured by WCF message security.  
   
  [Message Security with a User Name Client](../../../../docs/framework/wcf/feature-details/message-security-with-a-user-name-client.md)  
  The client is a Windows Forms application that allows clients to log on using a domain user name and password.  

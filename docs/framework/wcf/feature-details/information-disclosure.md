@@ -42,7 +42,7 @@ Information disclosure enables an attacker to gain valuable information about a 
   
 -   Service references are assumed to be trustworthy. Take care whenever transferring service reference instances to ensure that they have not been tampered with.  
   
--   Some applications can present a user experience that allows interactive establishment of trust based on data in the service reference and trust data proven by the remote host. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides extensibility points for such a facility, but the user must implemented them.  
+-   Some applications can present a user experience that allows interactive establishment of trust based on data in the service reference and trust data proven by the remote host. WCF provides extensibility points for such a facility, but the user must implemented them.  
   
 ## NTLM  
  By default, in the Windows domain environment, Windows authentication uses the Kerberos protocol to authenticate and authorize users. If the Kerberos protocol cannot be used for some reason, NT LAN Manager (NTLM) is used as a fallback. You can disable this behavior by setting the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property to `false`. Issues to be aware of when allowing NTLM include:  

@@ -18,11 +18,11 @@ ms.workload:
   - "dotnet"
 ---
 # Creating WCF AJAX Services without ASP.NET
-Windows Communication Foundation (WCF) AJAX services can be accessed from any JavaScript-enabled Web page, without requiring ASP.NET AJAX. This topic describes how to create such a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+Windows Communication Foundation (WCF) AJAX services can be accessed from any JavaScript-enabled Web page, without requiring ASP.NET AJAX. This topic describes how to create such a WCF service.  
   
- For instructions on using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] with ASP.NET AJAX, see [Creating WCF Services for ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
+ For instructions on using WCF with ASP.NET AJAX, see [Creating WCF Services for ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
   
- There are three parts to a creating a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] AJAX service:  
+ There are three parts to a creating a WCF AJAX service:  
   
 -   Creating an AJAX endpoint that can be accessed from the browser.  
   
@@ -31,7 +31,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
 -   Accessing WCF AJAX services.  
   
 ## Creating an AJAX Endpoint  
- The most basic way to enable AJAX support in a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is to use the <xref:System.ServiceModel.Activation.WebServiceHostFactory> in the .svc file associated with the service, as in the following example.  
+ The most basic way to enable AJAX support in a WCF service is to use the <xref:System.ServiceModel.Activation.WebServiceHostFactory> in the .svc file associated with the service, as in the following example.  
   
 ```  
 <%ServiceHost   
@@ -110,7 +110,7 @@ string[] GetCities(string firstLetters, int maxNumber);
 ```  
   
 ## Accessing AJAX Services  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] AJAX endpoints always accept both JSON and XML requests.  
+ WCF AJAX endpoints always accept both JSON and XML requests.  
   
  HTTP POST requests with a content-type of "application/json" are treated as JSON, and those with content-type that indicate XML (for example, "text/xml") are treated as XML.  
   

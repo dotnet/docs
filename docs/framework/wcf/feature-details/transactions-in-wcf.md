@@ -25,16 +25,16 @@ The Windows Communication Foundation (WCF) transactions feature allows several c
   
 ## In This Section  
  [Windows Communication Foundation Transactions Overview](../../../../docs/framework/wcf/feature-details/transactions-overview.md)  
- An overview of the transactions feature provided by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ An overview of the transactions feature provided by WCF.  
   
  [Transaction Models](../../../../docs/framework/wcf/feature-details/transaction-models.md)  
  Compares various transaction programming models provided by Microsoft.  
   
  [Using WS-AtomicTransaction](../../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)  
- Describes WS-AtomicTransaction (WS-AT), an interoperable transaction propagation protocol that is implemented in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes WS-AtomicTransaction (WS-AT), an interoperable transaction propagation protocol that is implemented in WCF.  
   
  [Transactional Support in System.ServiceModel](../../../../docs/framework/wcf/feature-details/transactional-support-in-system-servicemodel.md)  
- Describes the transactional functionalities provided by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes the transactional functionalities provided by WCF.  
   
 ## Reference  
   

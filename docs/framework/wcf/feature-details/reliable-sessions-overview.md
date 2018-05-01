@@ -26,9 +26,9 @@ This topic describes reliable sessions, how and when to use them, and how to sec
 
 ## WCF reliable sessions
 
-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] reliable sessions is an implementation of SOAP reliable messaging as defined by the WS-ReliableMessaging protocol.
+WCF reliable sessions is an implementation of SOAP reliable messaging as defined by the WS-ReliableMessaging protocol.
 
-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] SOAP reliable messaging provides an end-to-end reliable session between two endpoints, regardless of the number or type of intermediaries that separate the messaging endpoints. This includes any transport intermediaries that don't use SOAP (for example, HTTP proxies) or intermediaries that use SOAP (for example, SOAP-based routers or bridges) that are required for messages to flow between the endpoints. A reliable session channel supports *interactive* communication so that the services connected by such a channel run concurrently and exchange and process messages under conditions of low latency, that is, within relatively short intervals of time. This coupling means that these components make progress together or fail together, so there's no isolation provided between them.
+WCF SOAP reliable messaging provides an end-to-end reliable session between two endpoints, regardless of the number or type of intermediaries that separate the messaging endpoints. This includes any transport intermediaries that don't use SOAP (for example, HTTP proxies) or intermediaries that use SOAP (for example, SOAP-based routers or bridges) that are required for messages to flow between the endpoints. A reliable session channel supports *interactive* communication so that the services connected by such a channel run concurrently and exchange and process messages under conditions of low latency, that is, within relatively short intervals of time. This coupling means that these components make progress together or fail together, so there's no isolation provided between them.
 
 A reliable session masks two kinds of failures:
 
@@ -50,7 +50,7 @@ A reliable session provides for SOAP messages what TCP provides for IP packets. 
 
 ## Reliable sessions and bindings
 
-As mentioned earlier, a reliable session is transport neutral. Also, you can establish a reliable session over many message exchange patterns, such as request-reply or duplex. A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] reliable session is exposed as a property of a set of bindings.
+As mentioned earlier, a reliable session is transport neutral. Also, you can establish a reliable session over many message exchange patterns, such as request-reply or duplex. A WCF reliable session is exposed as a property of a set of bindings.
 
 Use a reliable session on endpoints that use:
 
@@ -100,7 +100,7 @@ The only exception is when using HTTPS. The Secure Sockets Layer (SSL) session i
 
 ## Using reliable sessions
 
-To use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] reliable sessions, create an endpoint with a binding that supports a reliable session. Use one of the system-provided bindings that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides with the reliable session enabled or create your own custom binding that does this.
+To use WCF reliable sessions, create an endpoint with a binding that supports a reliable session. Use one of the system-provided bindings that WCF provides with the reliable session enabled or create your own custom binding that does this.
 
 The system-defined bindings that support and enable a reliable session by default include:
 
@@ -116,11 +116,11 @@ The system-provided bindings that support a reliable session as an option but do
 
 For an example of how to create a custom binding, see [How to: Create a Custom Reliable Session Binding with HTTPS](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-reliable-session-binding-with-https.md).
 
-For a discussion of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] bindings that support reliable sessions, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).
+For a discussion of WCF bindings that support reliable sessions, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).
 
 ## When to use reliable sessions
 
-It's important to understand when to use reliable sessions in your application. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports reliable sessions between endpoints that are active and alive at the same time. If your application requires one of the endpoints be unavailable for a duration of time, then use queues to achieve reliability.
+It's important to understand when to use reliable sessions in your application. WCF supports reliable sessions between endpoints that are active and alive at the same time. If your application requires one of the endpoints be unavailable for a duration of time, then use queues to achieve reliability.
 
 If the scenario requires two endpoints connected over TCP, then TCP may be sufficient to provide reliable message exchanges. Although, it isn't necessary to use a reliable session, since TCP ensures that the packets arrive in order and only once.
 

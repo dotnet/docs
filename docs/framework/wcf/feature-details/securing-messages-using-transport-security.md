@@ -27,7 +27,7 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
   
  ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
- When sending queued messages using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] with <xref:System.ServiceModel.NetMsmqBinding>, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message is attached as a body of the MSMQ message. Transport security secures the entire MSMQ message (MSMQ message headers or properties and the message body). Because it is the body of the MSMQ message, using transport security also secures the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message.  
+ When sending queued messages using WCF with <xref:System.ServiceModel.NetMsmqBinding>, the WCF message is attached as a body of the MSMQ message. Transport security secures the entire MSMQ message (MSMQ message headers or properties and the message body). Because it is the body of the MSMQ message, using transport security also secures the WCF message.  
   
  The key concept behind transport security is that the client has to meet security requirements to get the message to the target queue. This is unlike Message security, where the message is secured for the application that receives the message.  
   
@@ -46,19 +46,19 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
   
  MSMQ also provides the ability to attach a certificate with the message that is not registered with Active Directory. In this case, it ensures that the message was signed using the attached certificate.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides both these options as part of MSMQ transport security and they are the key pivot for transport security.  
+ WCF provides both these options as part of MSMQ transport security and they are the key pivot for transport security.  
   
  By default, transport security is turned on.  
   
  Given these basics, the following sections detail transport security properties bundled with <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>.  
   
 #### MSMQ Authentication Mode  
- The <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> dictates whether to use the Windows domain security or an external certificate-based security to secure the message. In both authentication modes, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] queued transport channel uses the `CertificateValidationMode` specified in the service configuration. The certificate validation mode specifies the mechanism used to check the validity of the certificate.  
+ The <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> dictates whether to use the Windows domain security or an external certificate-based security to secure the message. In both authentication modes, the WCF queued transport channel uses the `CertificateValidationMode` specified in the service configuration. The certificate validation mode specifies the mechanism used to check the validity of the certificate.  
   
  When transport security is turned on, the default setting is <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain>.  
   
 #### Windows Domain Authentication Mode  
- The choice of using Windows security requires Active Directory integration. <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain> is the default transport security mode. When this is set, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel attaches the Windows SID to the MSMQ message and uses its internal certificate obtained from Active Directory. MSMQ uses this internal certificate to secure the message. The receiving queue manager uses Active Directory to search and find a matching certificate to authenticate the client and checks that the SID also matches that of the client. This authentication step is executed if a certificate, either internally generated in the case of `WindowsDomain` authentication mode or externally generated in the case of `Certificate` authentication mode, is attached to the message even if the target queue is not marked as requiring authentication.  
+ The choice of using Windows security requires Active Directory integration. <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain> is the default transport security mode. When this is set, the WCF channel attaches the Windows SID to the MSMQ message and uses its internal certificate obtained from Active Directory. MSMQ uses this internal certificate to secure the message. The receiving queue manager uses Active Directory to search and find a matching certificate to authenticate the client and checks that the SID also matches that of the client. This authentication step is executed if a certificate, either internally generated in the case of `WindowsDomain` authentication mode or externally generated in the case of `Certificate` authentication mode, is attached to the message even if the target queue is not marked as requiring authentication.  
   
 > [!NOTE]
 >  When creating a queue, you can mark the queue as an authenticated queue to indicate that the queue requires authentication of the client sending messages to the queue. This ensures that no unauthenticated messages are accepted in the queue.  
@@ -68,9 +68,9 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
 #### Certificate Authentication Mode  
  The choice of using certificate authentication mode does not require Active Directory integration. In fact, in some cases, such as when MSMQ is installed in workgroup mode (without Active Directory integration) or when using the SOAP Reliable Messaging Protocol (SRMP) transfer protocol to send messages to the queue, only <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate> works.  
   
- When sending a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message with <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate>, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel does not attach a Windows SID to the MSMQ message. As such, the target queue ACL must allow for `Anonymous` user access to send to the queue. The receiving queue manager checks whether the MSMQ message was signed with the certificate but does not perform any authentication.  
+ When sending a WCF message with <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate>, the WCF channel does not attach a Windows SID to the MSMQ message. As such, the target queue ACL must allow for `Anonymous` user access to send to the queue. The receiving queue manager checks whether the MSMQ message was signed with the certificate but does not perform any authentication.  
   
- The certificate with its claims and identity information is populated in the <xref:System.ServiceModel.ServiceSecurityContext> by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] queued transport channel. The service can use this information to perform its own authentication of the sender.  
+ The certificate with its claims and identity information is populated in the <xref:System.ServiceModel.ServiceSecurityContext> by the WCF queued transport channel. The service can use this information to perform its own authentication of the sender.  
   
 ### MSMQ Protection Level  
  The protection level dictates how to protect the MSMQ message to ensure that it is not tampered with. It is specified in the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property. The default value is <xref:System.Net.Security.ProtectionLevel.Sign>.  

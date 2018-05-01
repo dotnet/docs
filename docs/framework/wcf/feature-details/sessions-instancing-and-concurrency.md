@@ -25,7 +25,7 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
 ## Sessions  
  When a service contract sets the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType>, that contract is saying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not. If the session ends and a message is sent over the same session-based channel an exception is thrown.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions have the following main conceptual features:  
+ WCF sessions have the following main conceptual features:  
   
 -   They are explicitly initiated and terminated by the calling application.  
   
@@ -33,9 +33,9 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
 -   Sessions correlate a group of messages into a conversation. The meaning of that correlation is an abstraction. For instance, one session-based channel may correlate messages based on a shared network connection while another session-based channel may correlate messages based on a shared tag in the message body. The features that can be derived from the session depend on the nature of the correlation.  
   
--   There is no general data store associated with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] session.  
+-   There is no general data store associated with a WCF session.  
   
- If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions:  
+ If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
   
 -   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are always server-initiated.  
   
@@ -87,7 +87,7 @@ public class CalculatorService : ICalculatorInstance
   
 -   <xref:System.ServiceModel.ConcurrencyMode.Multiple>: Each service instance can have multiple threads processing messages concurrently. The service implementation must be thread-safe to use this concurrency mode.  
   
--   <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client object.  
+-   <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a WCF client object.  
   
 > [!NOTE]
 >  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. For more information, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  

@@ -29,10 +29,10 @@ This section describes the steps required to implement a discovery proxy. A disc
  Describes how to implement a discovery proxy.  
   
  [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)  
- Describes how to implement a discoverable [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that registers with the discovery proxy.  
+ Describes how to implement a discoverable WCF service that registers with the discovery proxy.  
   
  [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)  
- Describes how to implement a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application that uses the discovery proxy to search for a service.  
+ Describes how to implement a WCF client application that uses the discovery proxy to search for a service.  
   
  [How to: Test the Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md)  
  Describes how to test the code written in the previous three topics.  

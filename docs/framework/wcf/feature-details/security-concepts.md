@@ -25,10 +25,10 @@ This section briefly explains the concepts associated with Windows Communication
  A high-level overview of concepts used in security implementations.  
   
  [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
- An overview of how [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides security in distributed application topography.  
+ An overview of how WCF provides security in distributed application topography.  
   
  [Security Terminology](../../../../docs/framework/wcf/feature-details/wcf-security-terminology.md)  
- A glossary of terms used when discussing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security.  
+ A glossary of terms used when discussing WCF security.  
   
 ## Reference  
  <xref:System.ServiceModel>  

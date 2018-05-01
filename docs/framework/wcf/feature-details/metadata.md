@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Metadata
-The Windows Communication Foundation (WCF) provides an infrastructure for exporting, publishing, retrieving, and importing service metadata. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  
+The Windows Communication Foundation (WCF) provides an infrastructure for exporting, publishing, retrieving, and importing service metadata. WCF services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  
   
 ## In This Section  
  [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)  
@@ -33,7 +33,7 @@ The Windows Communication Foundation (WCF) provides an infrastructure for export
  Describes how to export and import metadata.  
   
  [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
- Describes how [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] publishes metadata.  
+ Describes how WCF publishes metadata.  
   
  [Retrieving Metadata](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)  
  Describes the different ways to retrieve metadata.  

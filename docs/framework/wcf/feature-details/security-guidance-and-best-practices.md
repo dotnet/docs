@@ -27,7 +27,7 @@ The topics in this section present guidance for and items to consider when creat
  Recommendations to help you secure your applications.  
   
  [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- Items to consider when creating a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application.  
+ Items to consider when creating a WCF application.  
   
  [Performance Considerations](../../../../docs/framework/wcf/feature-details/performance-considerations.md)  
  Contains entries related to performance and security.  

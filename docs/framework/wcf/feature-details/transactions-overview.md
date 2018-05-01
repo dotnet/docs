@@ -34,7 +34,7 @@ Transactions provide a way to group a set of actions or operations into a single
   
  Windows Communication Foundation (WCF) provides a rich set of features that enable you to create distributed transactions in your Web service application.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements support for the WS-AtomicTransaction (WS-AT) protocol that enables [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications to flow transactions to interoperable applications, such as interoperable Web services built using third-party technology. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also implements support for the OLE Transactions protocol, which can be used in scenarios where you do not need interop functionality to enable transaction flow.  
+ WCF implements support for the WS-AtomicTransaction (WS-AT) protocol that enables WCF applications to flow transactions to interoperable applications, such as interoperable Web services built using third-party technology. WCF also implements support for the OLE Transactions protocol, which can be used in scenarios where you do not need interop functionality to enable transaction flow.  
   
  You can use an application configuration file to configure bindings to enable or disable transaction flow, as well as set the desired transaction protocol on a binding. In addition, you can set transaction time-outs at the service level using the configuration file. For more information, see [Enabling Transaction Flow](../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   

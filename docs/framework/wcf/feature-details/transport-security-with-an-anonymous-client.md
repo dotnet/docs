@@ -33,7 +33,7 @@ This Windows Communication Foundation (WCF) scenario uses transport security (HT
 |--------------------|-----------------|  
 |Security Mode|Transport|  
 |Interoperability|With existing Web services and clients|  
-|Authentication (Server)<br /><br /> Authentication (Client)|Yes<br /><br /> Application level (no [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] support)|  
+|Authentication (Server)<br /><br /> Authentication (Client)|Yes<br /><br /> Application level (no WCF support)|  
 |Integrity|Yes|  
 |Confidentiality|Yes|  
 |Transport|HTTPS|  

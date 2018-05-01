@@ -33,7 +33,7 @@ The information in this section focuses on programming security in Windows Commu
  Summarizes reasons for using message-level security in Windows Communication Foundation (WCF).  
   
  [Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-sessions.md)  
- A discussion of the considerations required when securing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] session.  
+ A discussion of the considerations required when securing a WCF session.  
   
  [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  An explanation of some of the common tasks required when using X.509 certificates.  

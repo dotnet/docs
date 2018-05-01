@@ -82,7 +82,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
   
 -   Any customization that uses the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is ignored in the JSON representation.  
   
--   Dictionaries are not a way to work directly with JSON. Dictionary\<string,object> may not be supported in the same way in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] as expected from working with other JSON technologies. For example, if "abc" is mapped to "xyz" and "def" is mapped to 42 in a dictionary, the JSON representation is not {"abc":"xyz","def":42} but is [{"Key":"abc","Value":"xyz"},{"Key":"def","Value":42}] instead.  
+-   Dictionaries are not a way to work directly with JSON. Dictionary\<string,object> may not be supported in the same way in WCF as expected from working with other JSON technologies. For example, if "abc" is mapped to "xyz" and "def" is mapped to 42 in a dictionary, the JSON representation is not {"abc":"xyz","def":42} but is [{"Key":"abc","Value":"xyz"},{"Key":"def","Value":42}] instead.  
   
 -   If you would like to work with JSON directly (accessing keys and values dynamically, without pre-defining a rigid contract), you have several options:  
   
@@ -103,7 +103,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
  The JSON type does not have to match the preceding table on deserialization. For example, an `Int` normally maps to a JSON number, but it can also be successfully deserialized from a JSON string as long as that string contains a valid number. That is, both {"q":42} and {"q":"42"} are valid if there is an `Int` data member called "q".  
   
 ### Polymorphism  
- Polymorphic serialization consists of the ability to serialize a derived type where its base type is expected. This is supported for JSON serialization by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] comparable to the way XML serialization is supported. For example, you can serialize `MyDerivedType` where `MyBaseType` is expected, or serialize `Int` where `Object` is expected.  
+ Polymorphic serialization consists of the ability to serialize a derived type where its base type is expected. This is supported for JSON serialization by WCF comparable to the way XML serialization is supported. For example, you can serialize `MyDerivedType` where `MyBaseType` is expected, or serialize `Int` where `Object` is expected.  
   
  Type information may be lost when deserializing a derived type if the base type is expected, unless you are deserializing a complex type. For example, if <xref:System.Uri> is serialized where <xref:System.Object> is expected, it results in a JSON string. If this string is then deserialized back into <xref:System.Object>, a .NET <xref:System.String> is returned. The deserializer does not know that the string was initially of type <xref:System.Uri>. Generally, when expecting <xref:System.Object>, all JSON strings are deserialized as .NET strings, and all JSON arrays used to serialize .NET collections, dictionaries, and arrays are deserialized as .NET <xref:System.Array> of type <xref:System.Object>, regardless of what the actual original type had been. A JSON boolean maps to a .NET <xref:System.Boolean>. However when expecting an <xref:System.Object>, JSON numbers are deserialized as either .NET <xref:System.Int32>, <xref:System.Decimal> or <xref:System.Double>, where the most appropriate type is automatically picked.  
   
@@ -146,7 +146,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  The ASP.NET AJAX client JavaScript code automatically converts such strings into JavaScript `DateTime` instances. If there are other strings that have a similar form that are not of type <xref:System.DateTime> in .NET, they are converted as well.  
   
- The conversion only takes place if the "/" characters are escaped (that is, the JSON looks like "\\/Date(700000+0500)\\/"), and for this reason [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]'s JSON encoder (enabled by the <xref:System.ServiceModel.WebHttpBinding>) always escapes the "/" character.  
+ The conversion only takes place if the "/" characters are escaped (that is, the JSON looks like "\\/Date(700000+0500)\\/"), and for this reason WCF's JSON encoder (enabled by the <xref:System.ServiceModel.WebHttpBinding>) always escapes the "/" character.  
   
 ### XML in JSON Strings  
   
@@ -204,7 +204,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 {"x":50,"y":70,"radius":10,"__type":"Circle:#MyApp.Shapes"}  
 ```  
   
- Both the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> used by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and ASP.NET AJAX client pages always emit the type hint first.  
+ Both the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> used by WCF and ASP.NET AJAX client pages always emit the type hint first.  
   
 #### Type Hints Apply Only to Complex Types  
  There is no way to emit a type hint for non-complex types. For example, if an operation has an <xref:System.Object> return type but returns a Circle, the JSON representation can be as shown earlier and the type information is preserved. However, if Uri is returned, the JSON representation is a string and the fact that the string used to represent a Uri is lost. This applies not only to primitive types but also to collections and arrays.  

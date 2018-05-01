@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Web HTTP Programming Model
-The Windows Communication Foundation (WCF) Web HTTP Programming Model allows developers to expose [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
+The Windows Communication Foundation (WCF) Web HTTP Programming Model allows developers to expose WCF service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
   
 ## In This Section  
  [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  

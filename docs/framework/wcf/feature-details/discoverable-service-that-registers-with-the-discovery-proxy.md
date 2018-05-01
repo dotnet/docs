@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Implement a Discoverable Service that Registers with the Discovery Proxy
-This topic is the second of four topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md), you implemented a discovery proxy. In this topic, you create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that sends announcement messages (`Hello` and `Bye`) to the discovery proxy, causing it to register and unregister itself with the discovery proxy.  
+This topic is the second of four topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md), you implemented a discovery proxy. In this topic, you create a WCF service that sends announcement messages (`Hello` and `Bye`) to the discovery proxy, causing it to register and unregister itself with the discovery proxy.  
   
 ### To define the service contract  
   

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # UriTemplate and UriTemplateTable
-Web developers require the ability to describe the shape and layout of the URIs that their services respond to. Windows Communication Foundation (WCF) added two new classes to give developers control over their URIs. <xref:System.UriTemplate> and <xref:System.UriTemplateTable> form the basis of the URI-based dispatch engine in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. These classes can also be used on their own, allowing developers to take advantage of templates and the URI mapping mechanism without implementing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+Web developers require the ability to describe the shape and layout of the URIs that their services respond to. Windows Communication Foundation (WCF) added two new classes to give developers control over their URIs. <xref:System.UriTemplate> and <xref:System.UriTemplateTable> form the basis of the URI-based dispatch engine in WCF. These classes can also be used on their own, allowing developers to take advantage of templates and the URI mapping mechanism without implementing a WCF service.  
   
 ## Templates  
  A template is a way to describe a set of relative URIs. The set of URI templates in the following table shows how a system that retrieves various types of weather information might be defined.  
@@ -30,7 +30,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 |City Forecast|weather/{state}/{city}|  
 |Activity Forecast|weather/{state}/{city}/{activity}|  
   
- This table describes a set of structurally similar URIs. Each entry is a URI template. The segments in curly braces describe variables. The segments not in curly braces describe literal strings. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] template classes allow a developer to take an incoming URI, for example, "/weather/wa/seattle/cycling", and match it to a template that describes it, "/weather/{state}/{city}/{activity}".  
+ This table describes a set of structurally similar URIs. Each entry is a URI template. The segments in curly braces describe variables. The segments not in curly braces describe literal strings. The WCF template classes allow a developer to take an incoming URI, for example, "/weather/wa/seattle/cycling", and match it to a template that describes it, "/weather/{state}/{city}/{activity}".  
   
 ## UriTemplate  
  <xref:System.UriTemplate> is a class that encapsulates a URI template. The constructor takes a string parameter that defines the template. This string contains the template in the format described in the next section. The <xref:System.UriTemplate> class provides methods that allow you match an incoming URI to a template, generate a URI from a template, retrieve a collection of variable names used in the template, determine whether two templates are equivalent, and return the template's string.  

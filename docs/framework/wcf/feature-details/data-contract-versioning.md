@@ -105,7 +105,7 @@ As applications evolve, you may also have to change the data contracts the servi
 ## Schema Considerations  
  For an explanation of what schema is produced for data contract types, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
- The schema [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] produces for data contract types makes no provisions for versioning. That is, the schema exported from a certain version of a type contains only those data members present in that version. Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface does not change the schema for a type.  
+ The schema WCF produces for data contract types makes no provisions for versioning. That is, the schema exported from a certain version of a type contains only those data members present in that version. Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface does not change the schema for a type.  
   
  Data members are exported to the schema as optional elements by default. That is, the `minOccurs` (XML attribute) value is set to 0. Required data members are exported with `minOccurs` set to 1.  
   

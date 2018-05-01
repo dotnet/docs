@@ -47,7 +47,7 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
   
  Operations that occur across a streamed transport can have a contract with at most one input or output parameter. That parameter corresponds to the entire body of the message and must be a <xref:System.ServiceModel.Channels.Message>, a derived type of <xref:System.IO.Stream>, or an <xref:System.Xml.Serialization.IXmlSerializable> implementation. Having a return value for an operation is equivalent to having an output parameter.  
   
- Some [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] features, such as reliable messaging, transactions, and SOAP message-level security, rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport-level security only or use transport-level security plus authentication-only message security.  
+ Some WCF features, such as reliable messaging, transactions, and SOAP message-level security, rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport-level security only or use transport-level security plus authentication-only message security.  
   
  SOAP headers are always buffered, even when the transfer mode is set to streamed. The headers for a message must not exceed the size of the `MaxBufferSize` transport quota. For more information about this setting, see [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   

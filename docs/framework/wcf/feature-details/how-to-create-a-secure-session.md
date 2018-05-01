@@ -31,7 +31,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
 -   Configure a service to use a system-provided binding that supports message security.  
   
-     With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, when the system-provided bindings are configured to use message security, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] automatically uses secure sessions. The following table lists the system-provided bindings that support message security and whether message security is the default security mechanism.  
+     With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, when the system-provided bindings are configured to use message security, WCF automatically uses secure sessions. The following table lists the system-provided bindings that support message security and whether message security is the default security mechanism.  
   
     |System-provided binding|Configuration element|Message security on by default|  
     |------------------------------|---------------------------|------------------------------------|  

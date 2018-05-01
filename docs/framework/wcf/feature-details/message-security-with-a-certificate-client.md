@@ -30,7 +30,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] only|  
+|Interoperability|WCF only|  
 |Authentication (Server)|Using service certificate|  
 |Authentication (Client)|Using client certificate|  
 |Integrity|Yes|  

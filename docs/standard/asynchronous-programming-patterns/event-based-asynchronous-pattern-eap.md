@@ -9,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: c6baed9f-2a25-4728-9a9a-53b7b14840cf
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Event-based Asynchronous Pattern (EAP)
 There are a number of ways to expose asynchronous features to client code. The Event-based Asynchronous Pattern prescribes one way for classes to present asynchronous behavior.  

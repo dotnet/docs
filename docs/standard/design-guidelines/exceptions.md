@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: bc177b2f-7528-4ae4-83db-aacfb04b86d0
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Design Guidelines for Exceptions
 Exception handling has many advantages over return-value-based error reporting. Good framework design helps the application developer realize the benefits of exceptions. This section discusses the benefits of exceptions and presents guidelines for using them effectively.  

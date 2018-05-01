@@ -4,10 +4,6 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/02/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Implementing reads/queries in a CQRS microservice
 

@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 8cb620e5-c6a6-4267-a52e-beeb73cd1a34
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Instantiate a TimeZoneInfo object
 

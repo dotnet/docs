@@ -19,9 +19,6 @@ helpviewer_keywords:
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Encrypt XML Elements with Asymmetric Keys
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption is a standard way to exchange or store encrypted XML data, without worrying about the data being easily read.  For more information about the XML Encryption standard, see the World Wide Web Consortium (W3C) specification for XML Encryption located at http://www.w3.org/TR/xmldsig-core/.  

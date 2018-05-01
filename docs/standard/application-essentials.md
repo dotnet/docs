@@ -7,9 +7,6 @@ helpviewer_keywords:
 ms.assetid: 653da4ba-3752-4d1f-a08a-de017dc86ecc
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Framework Application Essentials
 This section of the .NET Framework documentation provides information about basic application development tasks in the .NET Framework.  

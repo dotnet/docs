@@ -5,7 +5,6 @@ author: billwagner
 ms.author: billwagner
 ms.date: 01/25/2018
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ---
 # The .NET Framework Analyzer
 

@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Serialization in .NET
 Serialization is the process of converting the state of an object into a form that can be persisted or transported. The complement of serialization is deserialization, which converts a stream into an object. Together, these processes allow data to be easily stored and transferred.  

@@ -5,11 +5,7 @@ author: richlander
 ms.author: ronpet
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Framework Libraries
 

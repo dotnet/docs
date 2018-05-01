@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: 25819a5a-f915-4fc8-b924-a76915674e04
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to create user-defined exceptions
 

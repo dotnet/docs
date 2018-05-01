@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Listen for Multiple Cancellation Requests
 This example shows how to listen to two cancellation tokens simultaneously so that you can cancel an operation if either token requests it.  

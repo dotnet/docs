@@ -6,9 +6,6 @@ ms.date: "04/12/2018"
 ms.technology: dotnet-standard
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # What's new in the .NET Standard
 

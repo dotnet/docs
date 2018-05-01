@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: 12af9ff3-8587-4f31-90cf-6c2244e0fdae
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to use specific exceptions in a catch block
 

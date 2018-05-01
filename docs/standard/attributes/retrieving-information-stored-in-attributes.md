@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Retrieving Information Stored in Attributes
 Retrieving a custom attribute is a simple process. First, declare an instance of the attribute you want to retrieve. Then, use the <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType> method to initialize the new attribute to the value of the attribute you want to retrieve. Once the new attribute is initialized, you simply use its properties to get the values.  

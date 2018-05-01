@@ -9,9 +9,6 @@ dev_langs:
   - "CSharp"
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Basic serialization
 

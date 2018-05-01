@@ -4,9 +4,6 @@ description: A guide on which implementation of .NET you should consider when bu
 author: cartermp
 ms.author: mairaw
 ms.date: 03/15/2018
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Choosing between .NET Core and .NET Framework for server apps
 

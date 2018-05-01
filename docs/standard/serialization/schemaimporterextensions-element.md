@@ -8,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # &lt;schemaImporterExtensions&gt; Element
 Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  

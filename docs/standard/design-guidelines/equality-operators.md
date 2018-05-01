@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Equality Operators
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.  

@@ -13,9 +13,6 @@ ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "vb"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Blocking Application Execution by Ending an Async Operation
 Applications that cannot continue to do other work while waiting for the results of an asynchronous operation must block until the operation completes. Use one of the following options to block your application's main thread while waiting for an asynchronous operation to complete:  

@@ -5,7 +5,6 @@ author: billwagner
 ms.author: billwagner
 ms.date: 01/24/2018
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ---
 # The Roslyn based Analyzers
 

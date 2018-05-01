@@ -16,9 +16,6 @@ helpviewer_keywords:
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Quantifiers in Regular Expressions
 Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.  The following table lists the quantifiers supported by .NET.  

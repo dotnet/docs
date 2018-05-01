@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generic Interfaces
 This topic provides an overview of generic interfaces that provide common functionality across families of generic types.  

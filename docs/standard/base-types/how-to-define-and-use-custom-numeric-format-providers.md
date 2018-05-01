@@ -17,9 +17,6 @@ helpviewer_keywords:
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Define and Use Custom Numeric Format Providers
 The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:  

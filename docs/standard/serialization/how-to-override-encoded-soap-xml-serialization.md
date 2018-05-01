@@ -7,9 +7,6 @@ helpviewer_keywords:
 ms.assetid: d0791df8-04e3-46b4-a6be-fe0ed09267e8
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Override Encoded SOAP XML Serialization
 [Code Example](#tskhowtooverrideencodedsoapxmlserializationanchor1)  

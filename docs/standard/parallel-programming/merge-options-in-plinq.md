@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: e8f7be3b-88de-4f33-ab14-dc008e76c1ba
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Merge Options in PLINQ
 When a query is executing as parallel, PLINQ partitions the source sequence so that multiple threads can work on different parts concurrently, typically on separate threads. If the results are to be consumed on one thread, for example, in a `foreach` (`For Each` in Visual Basic) loop, then the results from every thread must be merged back into one sequence. The kind of merge that PLINQ performs depends on the operators that are present in the query. For example, operators that impose a new order on the results must buffer all elements from all threads. From the perspective of the consuming thread (which is also that of the application user) a fully buffered query might run for a noticeable period of time before it produces its first result. Other operators, by default, are partially buffered; they yield their results in batches. One operator, <xref:System.Linq.ParallelEnumerable.ForAll%2A> is not buffered by default. It yields all elements from all threads immediately.  

@@ -1,13 +1,9 @@
 ---
 title: Docker containers, images, and registries
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.technology: dotnet-ebooks
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Docker containers, images, and registries
 

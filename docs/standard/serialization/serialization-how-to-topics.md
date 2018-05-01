@@ -6,9 +6,6 @@ helpviewer_keywords:
 ms.assetid: 46c972ab-2193-4f72-9413-eca4521ed4b0
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Serialization How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for serialization.  

@@ -15,9 +15,6 @@ helpviewer_keywords:
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Read Characters from a String
 The following code examples show how to read characters synchronously and asynchronously from a string.  

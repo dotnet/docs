@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Basic Serialization Technology Sample
 [Download sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/Basic.zip.exe)  

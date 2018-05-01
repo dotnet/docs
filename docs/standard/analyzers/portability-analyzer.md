@@ -5,11 +5,7 @@ author: blackdwarf
 ms.author: mairaw
 ms.date: 07/26/2017
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # The .NET Portability Analyzer
 

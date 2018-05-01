@@ -5,9 +5,6 @@ ms.technology: dotnet-standard
 ms.assetid: d74ce896-717d-4871-8fd9-b070e2f53cb0
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Rules for Inferring Schema Node Types and Structure
 This topic describes how the schema inference process translates the node types in an XML document to an XML Schema definition language (XSD) structure.  

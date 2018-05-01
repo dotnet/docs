@@ -5,11 +5,7 @@ author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Async in depth
 

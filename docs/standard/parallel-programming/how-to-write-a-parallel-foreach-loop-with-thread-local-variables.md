@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Write a Parallel.ForEach Loop with Thread-Local Variables
 The following example shows how to write a <xref:System.Threading.Tasks.Parallel.ForEach%2A> method that uses thread-local variables. When a <xref:System.Threading.Tasks.Parallel.ForEach%2A> loop executes, it divides its source collection into multiple partitions. Each partition will get its own copy of the "thread-local" variable. (The term "thread-local" is slightly inaccurate here, because in some cases two partitions may run on the same thread.)  

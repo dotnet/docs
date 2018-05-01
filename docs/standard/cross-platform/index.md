@@ -5,9 +5,6 @@ ms.technology: dotnet-standard
 ms.assetid: b153baaa-130c-4169-860b-e580591de91e
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Developing for Multiple Platforms with the .NET Framework
 You can develop apps for both Microsoft and non-Microsoft platforms by using the .NET Framework and Visual Studio.  

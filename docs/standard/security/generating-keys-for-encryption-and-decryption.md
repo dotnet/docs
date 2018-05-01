@@ -16,9 +16,6 @@ helpviewer_keywords:
 ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generating Keys for Encryption and Decryption
 Creating and managing keys is an important part of the cryptographic process. Symmetric algorithms require the creation of a key and an initialization vector (IV). The key must be kept secret from anyone who should not decrypt your data. The IV does not have to be secret, but should be changed for each session. Asymmetric algorithms require the creation of a public key and a private key. The public key can be made public to anyone, while the private key must known only by the party who will decrypt the data encrypted with the public key. This section describes how to generate and manage keys for both symmetric and asymmetric algorithms.  

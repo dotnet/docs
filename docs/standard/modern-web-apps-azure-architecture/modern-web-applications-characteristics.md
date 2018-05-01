@@ -4,10 +4,6 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | cha
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Characteristics of Modern Web Applications
 

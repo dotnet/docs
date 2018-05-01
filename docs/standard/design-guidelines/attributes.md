@@ -8,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Attributes
 <xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.  

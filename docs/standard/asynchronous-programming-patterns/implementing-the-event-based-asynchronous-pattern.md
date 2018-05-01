@@ -19,9 +19,6 @@ helpviewer_keywords:
 ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
 author: dotnet-bot
 ms.author: dotnetcontent
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Implementing the Event-based Asynchronous Pattern
 If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  

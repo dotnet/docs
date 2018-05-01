@@ -5,11 +5,7 @@ author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Assembly File Format
 

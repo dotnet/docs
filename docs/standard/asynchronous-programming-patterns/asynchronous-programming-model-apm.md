@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Asynchronous Programming Model (APM)
 An asynchronous operation that uses the <xref:System.IAsyncResult> design pattern is implemented as two methods named **Begin***OperationName* and **End***OperationName* that begin and end the asynchronous operation *OperationName* respectively. For example, the <xref:System.IO.FileStream> class provides the <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> methods to asynchronously read bytes from a file. These methods implement the asynchronous version of the <xref:System.IO.FileStream.Read%2A> method.  

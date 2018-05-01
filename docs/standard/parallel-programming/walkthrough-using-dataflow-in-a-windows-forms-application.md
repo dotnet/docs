@@ -9,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Walkthrough: Using Dataflow in a Windows Forms Application
 This document demonstrates how to create a network of dataflow blocks that perform image processing in a Windows Forms application.  

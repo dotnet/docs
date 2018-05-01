@@ -15,9 +15,6 @@ helpviewer_keywords:
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Regular Expression Example: Scanning for HREFs
 The following example searches an input string and displays all the href="…" values and their locations in the string.  

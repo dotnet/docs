@@ -18,9 +18,6 @@ helpviewer_keywords:
   - "format specifiers, standard numeric format strings"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Standard Numeric Format Strings
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  

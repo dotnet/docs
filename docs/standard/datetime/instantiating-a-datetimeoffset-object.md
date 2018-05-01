@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: 9648375f-d368-4373-a976-3332ece00c0a
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Instantiating a DateTimeOffset object
 

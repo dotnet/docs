@@ -5,9 +5,6 @@ author: BillWagner
 ms.author: wiwagn
 ms.date: 10/26/2017
 ms.technology: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Architecture Guidance
 

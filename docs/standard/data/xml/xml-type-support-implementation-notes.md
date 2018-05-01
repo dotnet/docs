@@ -5,9 +5,6 @@ ms.technology: dotnet-standard
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML Type Support Implementation Notes
 This topic describes some implementation details that you want to be aware of.  

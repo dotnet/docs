@@ -5,11 +5,7 @@ author: mairaw
 ms.author: mairaw
 ms.date: 08/13/2017
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Standard
 

@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Security and Race Conditions
 Another area of concern is the potential for security holes exploited by race conditions. There are several ways in which this might happen. The subtopics that follow outline some of the major pitfalls that the developer must avoid.  

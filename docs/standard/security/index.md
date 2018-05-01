@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 9a9621d7-8883-4a4f-a874-65e8e09e20a6
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Security in the .NET Framework
 The common language runtime and the .NET Framework provide many useful classes and services that enable developers to easily write secure code and enable system administrators to customize the permissions granted to code so that it can access protected resources. In addition, the runtime and the .NET Framework provide useful classes and services that facilitate the use of cryptography and role-based security.  

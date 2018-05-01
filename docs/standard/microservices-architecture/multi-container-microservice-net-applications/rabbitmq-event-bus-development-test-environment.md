@@ -4,10 +4,6 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 

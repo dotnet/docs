@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Type Design Guidelines
 From the CLR perspective, there are only two categories of types—reference types and value types—but for the purpose of a discussion about framework design, we divide types into more logical groups, each with its own specific design rules.  

@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Write Characters to a String
 The following code examples write characters synchronously and asynchronously from a character array into a string.  

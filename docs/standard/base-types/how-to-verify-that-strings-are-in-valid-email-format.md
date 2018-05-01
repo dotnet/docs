@@ -20,9 +20,6 @@ helpviewer_keywords:
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Verify that Strings Are in Valid Email Format
 The following example uses a regular expression to verify that a string is in valid email format.  

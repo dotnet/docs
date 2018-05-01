@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 2a183664-bfbf-4ff0-96f6-c836284ea916
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Version Tolerant Serialization Technology Sample
 [Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/VTS.zip.exe)  

@@ -14,9 +14,6 @@ helpviewer_keywords:
 ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Names of Classes, Structs, and Interfaces
 The naming guidelines that follow apply to general type naming.  

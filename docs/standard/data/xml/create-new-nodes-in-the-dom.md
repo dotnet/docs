@@ -5,9 +5,6 @@ ms.technology: dotnet-standard
 ms.assetid: 6c2b9789-b61a-49f9-b33f-db01a945edf2
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Create New Nodes in the DOM
 The <xref:System.Xml.XmlDocument> has a create method for all of the node types. Supply the method with a name when required, and content or other parameters for those nodes that have content (for example, a text node), and the node is created. The following methods are ones that need a name and a few other parameters filled to create an appropriate node.  

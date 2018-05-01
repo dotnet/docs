@@ -12,9 +12,6 @@ helpviewer_keywords:
 ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Nested Types
 A nested type is a type defined within the scope of another type, which is called the enclosing type. A nested type has access to all members of its enclosing type. For example, it has access to private fields defined in the enclosing type and to protected fields defined in all ascendants of the enclosing type.  

@@ -14,9 +14,6 @@ helpviewer_keywords:
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Constructor Design
 There are two kinds of constructors: type constructors and instance constructors.  

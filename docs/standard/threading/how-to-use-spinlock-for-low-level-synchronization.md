@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Use SpinLock for Low-Level Synchronization
 The following example demonstrates how to use a <xref:System.Threading.SpinLock>.  

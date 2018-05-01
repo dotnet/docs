@@ -7,9 +7,6 @@ helpviewer_keywords:
 ms.assetid: 38f7302a-ddf6-4179-ba19-f49e00395b9f
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Parallel Diagnostic Tools
 Visual Studio provides extensive support for debugging and profiling multi-threaded applications.  

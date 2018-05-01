@@ -9,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 028d0ce8-ebc2-4a88-a16f-17508f6d0bd6
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Working with Base Types in .NET
 This section describes .NET base type operations, including formatting, conversion, and common operations.  

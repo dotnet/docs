@@ -4,10 +4,6 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/06/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Designing a DDD-oriented microservice
 

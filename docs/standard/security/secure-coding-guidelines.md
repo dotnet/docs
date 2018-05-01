@@ -17,9 +17,6 @@ helpviewer_keywords:
 ms.assetid: 4f882d94-262b-4494-b0a6-ba9ba1f5f177
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Secure Coding Guidelines
 Evidence-based security and code access security provide very powerful, explicit mechanisms to implement security. Most application code can simply use the infrastructure implemented by the .NET Framework. In some cases, additional application-specific security is required, built either by extending the security system or by using new ad hoc methods.  

@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: e1a253ff-e0fb-4df8-95ff-d01a90d4cb19
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Synchronize Concurrent Operations with a Barrier
 The following example shows how to synchronize concurrent tasks with a <xref:System.Threading.Barrier>.  

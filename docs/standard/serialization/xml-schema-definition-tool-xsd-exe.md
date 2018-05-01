@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML Schema Definition Tool (Xsd.exe)
 The XML Schema Definition (Xsd.exe) tool generates XML schema or common language runtime classes from XDR, XML, and XSD files, or from classes in a runtime assembly.  

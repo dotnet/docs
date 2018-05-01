@@ -8,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Threading Objects and Features
 The .NET Framework provides a number of objects that help you create and manage multithreaded applications. Managed threads are represented by the <xref:System.Threading.Thread> class. The <xref:System.Threading.ThreadPool> class provides easy creation and management of multithreaded background tasks. The <xref:System.ComponentModel.BackgroundWorker> class does the same for tasks that interact with the user interface. The <xref:System.Threading.Timer> class executes background tasks at timed intervals.  

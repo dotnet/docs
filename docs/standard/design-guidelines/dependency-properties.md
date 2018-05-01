@@ -5,9 +5,6 @@ ms.technology: dotnet-standard
 ms.assetid: 212cfb1e-cec4-4047-94a6-47209b387f6f
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Dependency Properties
 A dependency property (DP) is a regular property that stores its value in a property store instead of storing it in a type variable (field), for example.  

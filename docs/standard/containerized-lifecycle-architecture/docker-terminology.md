@@ -1,13 +1,9 @@
 ---
 title: Docker terminology
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.technology: dotnet-ebooks
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Docker terminology
 

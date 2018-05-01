@@ -8,11 +8,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Language independence and language-independent components
 

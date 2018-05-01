@@ -8,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # &lt;xmlSerializer&gt; Element
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.  

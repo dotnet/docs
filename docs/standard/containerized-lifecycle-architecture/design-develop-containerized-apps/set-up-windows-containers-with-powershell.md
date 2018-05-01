@@ -1,13 +1,9 @@
 ---
 title: Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.technology: dotnet-ebooks
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 

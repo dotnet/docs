@@ -9,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: a016bd18-6710-4358-9438-9f190a295392
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Interface Design
 Although most APIs are best modeled using classes and structs, there are cases in which interfaces are more appropriate or are the only option.  

@@ -5,11 +5,7 @@ author: cartermp
 ms.author: wiwagn
 ms.date: 05/22/2017
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Tour of .NET
 

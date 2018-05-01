@@ -12,9 +12,6 @@ api_location:
 ms.assetid: dcc72283-caed-49ee-b45d-ccaf94e97129
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method
 [Supported in the .NET Framework 4.5.1 and later versions]  

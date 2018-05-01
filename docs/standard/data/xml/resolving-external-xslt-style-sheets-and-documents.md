@@ -5,9 +5,6 @@ ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Resolving External XSLT Style Sheets and Documents
 There are several times during a transformation when you may need to resolve external resources.  

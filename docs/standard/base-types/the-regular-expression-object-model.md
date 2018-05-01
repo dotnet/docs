@@ -37,9 +37,6 @@ helpviewer_keywords:
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  

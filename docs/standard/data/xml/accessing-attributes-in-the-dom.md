@@ -8,9 +8,6 @@ dev_langs:
 ms.assetid: ce2df341-a1a4-4e97-8e1b-cd45b8e3e71e
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Accessing Attributes in the DOM
 Attributes are properties of the element, not children of the element. This distinction is important because of the methods used to navigate sibling, parent, and child nodes of the XML Document Object Model (DOM). For example, the **PreviousSibling** and **NextSibling** methods are not used to navigate from an element to an attribute or between attributes. Instead, an attribute is a property of an element and is owned by an element, has an **OwnerElement** property and not a **parentNode** property, and has distinct methods of navigation.  

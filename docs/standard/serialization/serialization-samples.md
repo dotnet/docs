@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 6a56f66d-c80a-43e9-8e50-fb9b61120222
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Serialization Samples for the .NET Framework
 This section demonstrates serializing objects in the .NET Framework.  

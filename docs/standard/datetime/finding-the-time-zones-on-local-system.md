@@ -13,9 +13,6 @@ helpviewer_keywords:
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Finding the time zones defined on a local system
 

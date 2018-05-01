@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 0202d3f1-a50b-427d-a5bb-79208b8f1c22
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Web Services IXmlSerializable Technology Sample
 [Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/IXmlSerializable.zip.exe)  

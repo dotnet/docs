@@ -15,9 +15,6 @@ helpviewer_keywords:
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
 

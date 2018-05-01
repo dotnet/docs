@@ -8,9 +8,6 @@ dev_langs:
 ms.assetid: 910beb2f-cfb3-4e8e-9936-f7e0c5f4064a
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Migrate Your XslTransform Code
 The new XSLT classes have been designed to be very similar to the existing classes. The <xref:System.Xml.Xsl.XslCompiledTransform> class replaces the <xref:System.Xml.Xsl.XslTransform> class. Style sheets are compiled using the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. Transforms are executed using the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. The following procedures show common XSLT tasks, and compare the code using the <xref:System.Xml.Xsl.XslTransform> class versus the <xref:System.Xml.Xsl.XslCompiledTransform> class.  

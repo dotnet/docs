@@ -10,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  

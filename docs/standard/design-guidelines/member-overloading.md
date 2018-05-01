@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 964ba19e-8b94-4b5b-b1e3-5a0b531a0bb1
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Member Overloading
 Member overloading means creating two or more members on the same type that differ only in the number or type of parameters but have the same name. For example, in the following, the `WriteLine` method is overloaded:  

@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Best practices for exceptions
 

@@ -14,9 +14,6 @@ helpviewer_keywords:
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Culture-Insensitive String Operations
 Culture-sensitive string operations can be an advantage if you are creating applications designed to display results to users on a per-culture basis. By default, culture-sensitive methods obtain the culture to use from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property for the current thread.  

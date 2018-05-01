@@ -8,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # &lt;dateTimeSerialization&gt; Element
 Determines the serialization mode of <xref:System.DateTime> objects.  

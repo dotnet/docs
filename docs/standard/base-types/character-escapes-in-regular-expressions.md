@@ -16,9 +16,6 @@ helpviewer_keywords:
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Character Escapes in Regular Expressions
 The backslash (\\) in a regular expression indicates one of the following:  

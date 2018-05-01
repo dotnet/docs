@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Dates, times, and time zones
 

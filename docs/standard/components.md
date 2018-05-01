@@ -5,9 +5,6 @@ author: cartermp
 ms.author: mairaw
 ms.date: 08/23/2017
 ms.technology: dotnet-standard
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET architectural components
 

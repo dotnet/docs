@@ -16,9 +16,6 @@ helpviewer_keywords:
   - "time strings"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Parsing Date and Time Strings in .NET
 

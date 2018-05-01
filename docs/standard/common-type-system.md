@@ -5,11 +5,7 @@ author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Common Type System & Common Language Specification
 

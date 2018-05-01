@@ -14,9 +14,6 @@ helpviewer_keywords:
 ms.assetid: 72bdd157-caa9-4478-9ee3-cb4500b84528
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to explicitly throw exceptions
 

@@ -15,9 +15,6 @@ helpviewer_keywords:
 ms.assetid: 84a9f142-3244-4c90-ba02-21af9bbaff71
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Padding Strings in .NET
 

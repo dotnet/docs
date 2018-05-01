@@ -4,10 +4,6 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | wor
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Working with Data in ASP.NET Core Apps
 

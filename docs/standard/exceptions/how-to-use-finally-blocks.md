@@ -15,9 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4b9c0137-04af-4468-91d1-b9014df8ddd2
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to use finally blocks
 

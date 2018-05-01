@@ -8,9 +8,6 @@ dev_langs:
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 author: "mairaw"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  

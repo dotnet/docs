@@ -10,9 +10,6 @@ helpviewer_keywords:
   - "objects, serializing steps"
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Determine if a .NET Standard object is serializable
 

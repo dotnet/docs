@@ -15,9 +15,6 @@ helpviewer_keywords:
 ms.assetid: 958d6617-5e70-4b36-b5db-63c16dc35e43
 author: dotnet-bot
 ms.author: dotnetcontent
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Multithreaded Programming with the Event-based Asynchronous Pattern
 There are a number of ways to expose asynchronous features to client code. The Event-based Asynchronous Pattern prescribes the recommended way for classes to present asynchronous behavior.  

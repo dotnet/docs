@@ -4,10 +4,6 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | dev
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 
 # Develop ASP.NET Core MVC Apps

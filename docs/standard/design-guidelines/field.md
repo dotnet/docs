@@ -9,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Field Design
 The principle of encapsulation is one of the most important notions in object-oriented design. This principle states that data stored inside an object should be accessible only to that object.  

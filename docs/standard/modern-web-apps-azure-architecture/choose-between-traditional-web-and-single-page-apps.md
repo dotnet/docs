@@ -4,10 +4,6 @@ description: Architect modern web applications with ASP.NET Core and Microsoft A
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
-ms.technology: dotnet-ebooks
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
 

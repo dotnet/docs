@@ -5,10 +5,6 @@ author: tdykstra
 ms.author: tdykstra
 ms.date: 07/08/2017
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Glossary
 

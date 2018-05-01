@@ -6,9 +6,6 @@ ms.author: mairaw
 ms.date: 04/16/2018
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Target frameworks
 

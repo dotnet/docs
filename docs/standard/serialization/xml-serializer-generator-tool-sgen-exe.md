@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML Serializer Generator Tool (Sgen.exe)
 The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly in order to improve the startup performance of a <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types.  

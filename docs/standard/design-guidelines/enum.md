@@ -11,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Enum Design
 Enums are a special kind of value type. There are two kinds of enums: simple enums and flag enums.  

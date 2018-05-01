@@ -7,8 +7,6 @@ helpviewer_keywords:
 ms.assetid: d899d43c-335a-433e-a589-cd187192984f
 dev_langs: 
   - "CSharp"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # Basic serialization
 

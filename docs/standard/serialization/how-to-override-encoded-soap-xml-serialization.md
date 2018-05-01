@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "overriding XML serialization"
   - "SOAP, overriding encoded XML serialization"
 ms.assetid: d0791df8-04e3-46b4-a6be-fe0ed09267e8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # How to: Override Encoded SOAP XML Serialization
 [Code Example](#tskhowtooverrideencodedsoapxmlserializationanchor1)  

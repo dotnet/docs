@@ -2,8 +2,6 @@
 title: "SchemaImporterExtension Technology Sample"
 ms.date: "03/30/2017"
 ms.assetid: 3f5eb78f-0ef6-433a-b095-3a63b1ce0bc9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # SchemaImporterExtension Technology Sample
 [Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/SchemaImporterExtension.zip.exe)  

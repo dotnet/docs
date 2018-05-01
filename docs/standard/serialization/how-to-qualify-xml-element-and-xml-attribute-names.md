@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "qualifying XML elements"
   - "XML namespaces, qualifying elements and names in"
 ms.assetid: 44719f90-7e15-42e8-a9e2-282287e2b5bf
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # How to: Qualify XML Element and XML Attribute Names
 [Code Example](#cpconworkingwithxmlnamespacesanchor1)  

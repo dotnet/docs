@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "serialization, how-tos"
 ms.assetid: 46c972ab-2193-4f72-9413-eca4521ed4b0
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # Serialization How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for serialization.  

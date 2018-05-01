@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "XML serialization, SOAP"
   - "serialization, SOAP"
 ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # How to: Serialize an Object as a SOAP-Encoded XML Stream
   

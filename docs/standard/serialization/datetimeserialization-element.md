@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "XML serialization, configuration"
   - "<dateTimeSerialization> element"
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # &lt;dateTimeSerialization&gt; Element
 Determines the serialization mode of <xref:System.DateTime> objects.  

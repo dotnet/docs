@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "serialization, examples"
   - "binary serialization, examples"
 ms.assetid: 22f1b818-7e0d-428a-8680-f17d6ebdd185
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # How to: chunk serialized data
 

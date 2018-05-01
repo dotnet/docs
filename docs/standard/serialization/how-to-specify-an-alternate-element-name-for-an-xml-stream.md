@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "classes, overriding"
   - "overriding classes"
 ms.assetid: 5cc1c0b0-f94b-4525-9a41-88a582cd6668
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # How to: Specify an Alternate Element Name for an XML Stream
 [Code Example](#cpconoverridingserializationofclasseswithxmlattributeoverridesclassanchor1)  

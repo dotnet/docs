@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "threading [Windows Forms], asynchronous features"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Use Components That Support the Event-based Asynchronous Pattern
 Many components provide you with the option of performing their work asynchronously. The <xref:System.Media.SoundPlayer> and <xref:System.Windows.Forms.PictureBox> components, for example, enable you to load sounds and images "in the background" while your main thread continues running without interruption.  

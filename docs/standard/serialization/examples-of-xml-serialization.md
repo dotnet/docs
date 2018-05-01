@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "DataSet class, serializing"
   - "XML Schema, serializing"
 ms.assetid: eec46337-9696-435b-a375-dc5effae6992
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # Examples of XML Serialization
 XML serialization can take more than one form, from simple to complex. For example, you can serialize a class that simply consists of public fields and properties, as shown in [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md). The following code examples address various advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to a specific XML Schema (XSD) document.  

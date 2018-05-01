@@ -2,8 +2,6 @@
 title: "Custom Serialization Order With XmlSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 975abd20-2a1d-42db-aed3-e898025ccce7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # Custom Serialization Order With XmlSerializer
 [Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/CustomOrder.zip.exe)  

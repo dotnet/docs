@@ -2,8 +2,6 @@
 title: "Serialization Tools"
 ms.date: "03/30/2017"
 ms.assetid: 593b675f-938c-44ff-807b-0ca9fea30103
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # Serialization Tools
 This section contains detailed information about the serialization tools. You can run all the tools from the command line.  

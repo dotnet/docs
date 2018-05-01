@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "BinaryFormatter class, samples"
   - "serialization, attributes"
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
 ---
 # Version tolerant serialization
 In version 1.0 and 1.1 of the .NET Framework, creating serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:  

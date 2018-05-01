@@ -1,26 +1,15 @@
 ---
 title: "Operator Overloads"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "operators [.NET Framework], overloads"
   - "names [.NET Framework], overloaded operators"
   - "member design guidelines, operators"
   - "overloaded operators"
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Operator Overloads
 Operator overloads allow framework types to appear as if they were built-in language primitives.  

@@ -1,26 +1,15 @@
 ---
 title: "Pipe Operations in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "pipes [.NET Framework]"
   - "pipe operations [.NET Framework]"
   - "interprocess communication [.NET Framework], pipes"
   - "I/O [.NET Framework], pipes"
 ms.assetid: 7b964ebd-7a4f-4d28-8194-7841f9e4c702
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Pipe Operations in the .NET Framework
 Pipes provide a means for interprocess communication. There are two types of pipes:  

@@ -1,16 +1,9 @@
 ---
 title: State and data in Docker applications
 description: .NET Microservices Architecture for Containerized .NET Applications | State and data in Docker applications
-keywords: Docker, Microservices, ASP.NET, Container, SQL, CosmosDB, Docker
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # State and data in Docker applications
 

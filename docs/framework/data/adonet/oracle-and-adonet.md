@@ -1,24 +1,13 @@
 ---
 title: "Oracle and ADO.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
-caps.latest.revision: 4
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Oracle and ADO.NET
 > [!NOTE]

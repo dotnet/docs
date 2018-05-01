@@ -1,24 +1,13 @@
 ---
 title: "SQL XML Column Values"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: d97ce4da-f09c-4d1e-85b7-a0ccedd7246a
-caps.latest.revision: 5
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL XML Column Values
 SQL Server supports the `xml` data type, and developers can retrieve result sets including this type using standard behavior of the <xref:System.Data.SqlClient.SqlCommand> class. An `xml` column can be retrieved just as any column is retrieved (into a <xref:System.Data.SqlClient.SqlDataReader>, for example) but if you want to work with the content of the column as XML, you must use an <xref:System.Xml.XmlReader>.  

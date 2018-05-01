@@ -1,20 +1,13 @@
 ---
 title: "ADO.NET code examples"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-ado"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-caps.latest.revision: 7
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # ADO.NET code examples
 The code listings in this topic demonstrate how to retrieve data from a database by using the following ADO.NET technologies:

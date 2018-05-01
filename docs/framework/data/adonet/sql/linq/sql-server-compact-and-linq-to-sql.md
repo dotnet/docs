@@ -1,21 +1,10 @@
 ---
 title: "SQL Server Compact and LINQ to SQL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 59022359-a5a2-4c42-9a6a-5c0259c3ad17
-caps.latest.revision: 5
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL Server Compact and LINQ to SQL
 SQL Server Compact is the default database installed with Visual Studio. For more information, see [PAVE OVER Using SQL Server Compact (Visual Studio)](http://msdn.microsoft.com/library/13320dd1-94e5-4077-bf76-8df253695ccc).  

@@ -1,24 +1,13 @@
 ---
 title: "SQL-CLR Type Mismatches"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
-caps.latest.revision: 2
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL-CLR Type Mismatches
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automates much of the translation between the object model and SQL Server. Nevertheless, some situations prevent exact translation. These key mismatches between the common language runtime (CLR) types and the SQL Server database types are summarized in the following sections. You can find more details about specific type mappings and function translation at [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) and [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md).  

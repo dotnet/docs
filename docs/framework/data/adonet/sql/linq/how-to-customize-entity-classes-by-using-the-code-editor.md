@@ -1,21 +1,10 @@
 ---
 title: "How to: Customize Entity Classes by Using the Code Editor"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ec28332f-9f3c-4e0a-baca-60f9141a68c0
-caps.latest.revision: 3
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Customize Entity Classes by Using the Code Editor
 Developers using Visual Studio can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to create or customize their entity classes.  

@@ -1,21 +1,10 @@
 ---
 title: "How to: Validate DBML and External Mapping Files"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d9ea37f5-0a9e-4401-8fc3-1e6fd44c49f9
-caps.latest.revision: 2
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Validate DBML and External Mapping Files
 External mapping files and .dbml files that you modify must be validated against their respective schema definitions. This topic provides Visual Studio users with the steps to implement the validation process.  

@@ -1,21 +1,10 @@
 ---
 title: "Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-caps.latest.revision: 3
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Reference
 This section provides reference information for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] developers.  

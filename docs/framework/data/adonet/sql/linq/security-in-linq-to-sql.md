@@ -1,21 +1,10 @@
 ---
 title: "Security in LINQ to SQL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d49787f7-414e-4c71-aa33-80a5895536b1
-caps.latest.revision: 2
 author: "douglaslMS"
 ms.author: "douglasl"
 manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Security in LINQ to SQL
 Security risks are always present when you connect to a database. Although LINQ to SQL may include some new ways to work with data in SQL Server, it does not provide any additional security mechanisms.  

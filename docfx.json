@@ -113,7 +113,9 @@
       },
       "ms.topic": {
         "_csharplang/spec/*.md": "language-reference",
-        "_vblang/spec/*.md": "language-reference"
+        "_vblang/spec/*.md": "language-reference",
+        "docs/framework/additional-apis/**/**.md": "managed-reference",
+        "docs/framework/unmanaged-api/**/**.md": "reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],
@@ -139,6 +141,11 @@
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
+      },
+      "ms.workload": {
+        "docs/core/**/**.md": ["dotnetcore"],
+        "docs/framework/**/**.md": ["dotnet"],
+        "docs/standard/**/**.md": ["dotnet", "dotnetcore"]
       },
       "ms.technology": {
         "_csharplang/spec/*.md": "csharp-spec",

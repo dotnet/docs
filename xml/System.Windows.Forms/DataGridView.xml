@@ -4413,7 +4413,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control copies the text representation of each selected cell to the Clipboard. This value is the cell value converted to a string or, for image cells, the value of the <xref:System.Windows.Forms.DataGridViewImageCell.Description%2A> property.  
   
- Values are copied to the Clipboard in <xref:System.Windows.Forms.DataFormats.Text>, <xref:System.Windows.Forms.DataFormats.UnicodeText>, <xref:System.Windows.Forms.DataFormats.Html>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue> formats. These formats are useful for pasting content into applications such as Notepad, [!INCLUDE[ofprexcel](~/includes/ofprexcel-md.md)], and [!INCLUDE[ofprword](~/includes/ofprword-md.md)].  
+ Values are copied to the Clipboard in <xref:System.Windows.Forms.DataFormats.Text>, <xref:System.Windows.Forms.DataFormats.UnicodeText>, <xref:System.Windows.Forms.DataFormats.Html>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue> formats. These formats are useful for pasting content into applications such as Notepad, Microsoft Excel, and [!INCLUDE[ofprword](~/includes/ofprword-md.md)].  
   
  The <xref:System.Windows.Forms.DataGridView> control copies the cells contained in the smallest rectangle that includes all selected cells. Rows and columns that do not contain any selected cells are not represented in the copied data. Any unselected cells in the remaining rows and columns are represented by blank placeholders. Depending on the copy mode and the selection mode, header values for the copied rows and columns may be copied, as well.  
   

@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Data.DataSourceProvider> is a convenience wrapper around an existing data model; it does not replace any data model. A data provider does not attempt to condense the complexity and versatility of a data model such as [!INCLUDE[TLA2#tla_ado](~/includes/tla2sharptla-ado-md.md)] into one single object with a few properties.  
+ <xref:System.Windows.Data.DataSourceProvider> is a convenience wrapper around an existing data model; it does not replace any data model. A data provider does not attempt to condense the complexity and versatility of a data model such as ADO into one single object with a few properties.  
   
  <xref:System.Windows.Data.DataSourceProvider> is an abstract class. Use one of the derived classes, which are <xref:System.Windows.Data.XmlDataProvider> and <xref:System.Windows.Data.ObjectDataProvider>. The <xref:System.Windows.Data.DataSourceProvider> is aware of the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] threading and dispatcher model. It assumes the thread at creation time to be the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread. Events will get marshaled from a worker thread to the UI thread of the application.  
   

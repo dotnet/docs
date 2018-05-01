@@ -1,5 +1,5 @@
 ---
-title: "File and Stream I-O"
+title: "File and Stream I/O"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

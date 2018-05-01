@@ -58,4 +58,4 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
  <xref:System.IO.Compression.ZipArchiveEntry>  
  <xref:System.IO.Compression.DeflateStream>  
  <xref:System.IO.Compression.GZipStream>  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

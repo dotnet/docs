@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Tool Samples
-This section contains [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] tools.  
+This section contains Windows Communication Foundation (WCF) tools.  
   
 ## In This Section  
  [ConfigurationCodeGenerator](../../../../docs/framework/wcf/samples/configurationcodegenerator.md)  

@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transports in Windows Communication Foundation
-The transport layer is at the lowest level of the channel stack. The main transports used in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] are HTTP, HTTPS, TCP, and named pipes. The topics in this section discuss choosing among these transports, configuring the transport, and setting tuning properties.  
+The transport layer is at the lowest level of the channel stack. The main transports used in Windows Communication Foundation (WCF) are HTTP, HTTPS, TCP, and named pipes. The topics in this section discuss choosing among these transports, configuring the transport, and setting tuning properties.  
   
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes additional transports. For information about Message Queuing (also known as MSMQ) transport, see [Queues and Reliable Sessions](../../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md). For information about peer-to-peer transport, see [Peer-to-Peer Networking](../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
   

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Large Data and Streaming
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
+Windows Communication Foundation (WCF) is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
   
 ## Basic Considerations  
  To provide background information about the following information for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], this section highlights some general concerns and considerations for encodings, binary data, and streaming that generally apply to connected systems infrastructures.  
@@ -36,7 +36,7 @@ ms.workload:
   
  As a result, deciding between text or binary is not quite as easy as assuming that binary messages are always smaller than XML-text messages.  
   
- A clear advantage of XML-text messages is that they are standards-based and offer the broadest choice of interoperability options and platform support. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Encodings" section later in this topic.  
+ A clear advantage of XML-text messages is that they are standards-based and offer the broadest choice of interoperability options and platform support. For more information, see the "Encodings" section later in this topic.  
   
 ### Binary Content  
  One area where binary encodings are superior to text-based encodings in terms of the resulting message size are large binary data items such as pictures, videos, sound clips, or any other form of opaque, binary data that must be exchanged between services and their consumers. To fit these types of data into XML text, the common approach is to encode them using the Base64 encoding.  
@@ -47,7 +47,7 @@ ms.workload:
   
  An MTOM SOAP message is modified from its un-encoded version so that special element tags that refer to the respective MIME parts take the place of the original elements in the message that contained binary data. As a result, the SOAP message refers to binary content by pointing to the MIME parts sent with it, but otherwise just carries XML text data. Because this model is closely aligned with the well-established SMTP model, there is broad tooling support to encode and decode MTOM messages on many platforms, which makes it an extremely interoperable choice.  
   
- Still, as with Base64, MTOM also comes with some necessary overhead for the MIME format, so that advantages of using MTOM are only seen when the size of a binary data element exceeds about 1 KB. Due to the overhead, MTOM-encoded messages might be larger than messages that use Base64 encoding for binary data, if the binary payload remains under that threshold. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Encodings" section later in this topic.  
+ Still, as with Base64, MTOM also comes with some necessary overhead for the MIME format, so that advantages of using MTOM are only seen when the size of a binary data element exceeds about 1 KB. Due to the overhead, MTOM-encoded messages might be larger than messages that use Base64 encoding for binary data, if the binary payload remains under that threshold. For more information, see the "Encodings" section later in this topic.  
   
 ### Large Data Content  
  Wire-footprint aside, the previously mentioned 500-MB payload also poses a great local challenge at for the service and the client. By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] processes messages in *buffered mode*. This means that the entire content of a message is present in memory before it is sent or after it is received. While that is a good strategy for most scenarios, and necessary for messaging features such as digital signatures and reliable delivery, large messages could exhaust a system's resources.  
@@ -62,7 +62,7 @@ ms.workload:
   
 -   Are not available in their entirety when the transfer is initiated.  
   
- For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Streaming Data" section later in this topic.  
+ For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. For more information, see the "Streaming Data" section later in this topic.  
   
  When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](http://go.microsoft.com/fwlink/?LinkId=253165)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). The `maxAllowedContentLength` property defaults to 28.6 M and the `maxReceivedMessageSize` property defaults to 64KB.  
   
@@ -241,7 +241,7 @@ public class UploadStreamMessage
   
  Therefore, restricting the maximum incoming message size is not enough in this case. The `MaxBufferSize` property is required to constrain the memory that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] buffers. It is important to set this to a safe value (or keep it at the default value) when streaming. For example, suppose your service must receive files up to 4 GB in size and store them on the local disk. Suppose also that your memory is constrained in such a way that you can only buffer 64 KB of data at a time. Then you would set the `MaxReceivedMessageSize` to 4 GB and `MaxBufferSize` to 64 KB. Also, in your service implementation, you must ensure that you read only from the incoming stream in 64-KB chunks and do not read the next chunk before the previous one has been written to disk and discarded from memory.  
   
- It is also important to understand that this quota only limits the buffering done by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and cannot protect you against any buffering that you do in your own service or client implementation. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] additional security considerations, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ It is also important to understand that this quota only limits the buffering done by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and cannot protect you against any buffering that you do in your own service or client implementation. For more information about additional security considerations, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
 > [!NOTE]
 >  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  

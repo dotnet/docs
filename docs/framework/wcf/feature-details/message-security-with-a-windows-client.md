@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Security with a Windows Client
-This scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and server secured by message security mode. The client and service are authenticated using Windows credentials.  
+This scenario shows a Windows Communication Foundation (WCF) client and server secured by message security mode. The client and service are authenticated using Windows credentials.  
   
  ![Message security with a Windows client](../../../../docs/framework/wcf/feature-details/media/1c8618d4-0005-4022-beb6-32fd087a8c3c.gif "1c8618d4-0005-4022-beb6-32fd087a8c3c")  
   

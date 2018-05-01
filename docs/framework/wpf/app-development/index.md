@@ -22,7 +22,7 @@ ms.workload:
 ---
 # Application Development
 <a name="introduction"></a>
-[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] is a presentation framework that can be used to develop the following types of applications:  
+Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
 -   Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
   

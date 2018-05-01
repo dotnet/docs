@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Middle-Tier Client Applications
-This topic discusses various issues specific to middle-tier client applications that use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This topic discusses various issues specific to middle-tier client applications that use Windows Communication Foundation (WCF).  
   
 ## Increasing Middle-Tier Client Performance  
  Compared to previous communications technologies, such as Web services using [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], the creation of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client instance can be more complex due to the rich feature set of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. For example, when a <xref:System.ServiceModel.ChannelFactory%601> object is opened it can establish a secure session with the service, a procedure that increases the startup time for the client instance. Typically, these additional feature capabilities do not affect client applications greatly since the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client makes several calls, and then closes.  

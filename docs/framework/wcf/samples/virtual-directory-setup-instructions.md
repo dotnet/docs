@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Virtual Directory Setup Instructions
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.  
+The Windows Communication Foundation (WCF) samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.  
   
 > [!NOTE]
 >  %SystemDrive% is usually C: or D:, depending on the drive location where Internet Information Services (IIS) is installed.  

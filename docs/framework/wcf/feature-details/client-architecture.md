@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Client Architecture
-Applications use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client objects to invoke service operations. This topic discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channels, and their relationships to the underlying channel architecture. For a basic overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the channel layer, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
+Applications use Windows Communication Foundation (WCF) client objects to invoke service operations. This topic discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channels, and their relationships to the underlying channel architecture. For a basic overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md). For more information about the channel layer, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
   
 ## Overview  
  The service model run time creates [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients, which are composed of the following:  
@@ -45,7 +45,7 @@ Applications use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client 
   
  The important thing to remember about channel factories is that they create new instances of client channels for the configuration provided to them prior to calling <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType>. Once you call <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A> (or <xref:System.ServiceModel.ClientBase%601.Open%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.ClientBase%601.CreateChannel%2A?displayProperty=nameWithType>, or any operation on a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client object), you cannot modify the channel factory and expect to get channels to different service instances, even if you are merely changing the target endpoint address. If you want to create a client object or client channel with a different configuration, you must create a new channel factory first.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] various issues using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channels, see [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+ For more information about various issues using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channels, see [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
   
  The following two sections describe the creation and use of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client channel objects.  
   

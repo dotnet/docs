@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WSDL and Policy
-This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements WS-Policy and WS-PolicyAttachment specifications submitted to W3C with constraints and clarifications described in this document.  
   

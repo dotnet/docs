@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;webHttpBinding&gt;
-Defines a binding element that is used to configure endpoints for [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] Web services that respond to HTTP requests instead of SOAP messages.  
+Defines a binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.  
   
 \<system.ServiceModel>  
 \<bindings>  

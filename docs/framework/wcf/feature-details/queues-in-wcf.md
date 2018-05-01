@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Queues in Windows Communication Foundation
-The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] support for queues. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
+The topics in this section discuss Windows Communication Foundation (WCF) support for queues. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
   
 -   Loosely coupled applications. Sending applications can send messages to queues without needing to know whether the receiving application is available to process the message. The queue provides processing independence that allows a sending application to send messages to the queue at a rate that does not depend on how fast the receiving applications can process the messages. Overall system availability increases when sending messages to a queue is not tightly coupled to message processing.  
   
@@ -30,7 +30,7 @@ The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indig
   
 -   Disconnected operations. Sending, receiving, and processing operations can become disconnected when communicating over high-latency networks or limited-availability networks, such as in the case of mobile devices. Queues allow these operations to continue, even when the endpoints are disconnected. When the connection is reestablished, the queue forwards messages to the receiving application.  
   
- To use the queues feature in a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, you can use one of the standard bindings, or you can create a custom binding if one of the standard bindings does not satisfy your requirements. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] relevant standard bindings and how to choose one, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
+ To use the queues feature in a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, you can use one of the standard bindings, or you can create a custom binding if one of the standard bindings does not satisfy your requirements. For more information about relevant standard bindings and how to choose one, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md). For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
 ## In This Section  
  [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  

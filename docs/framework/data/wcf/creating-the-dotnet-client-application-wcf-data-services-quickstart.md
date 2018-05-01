@@ -86,7 +86,7 @@ This is the final task of the [!INCLUDE[ssAstoria](../../../../includes/ssastori
     >  This version of the NorthwindClient application does not support adding and deleting of entities.  
   
 ## Next Steps  
- You have successfully created the client application that accesses the sample Northwind [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. You have also completed the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] quickstart. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] accessing an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).  
+ You have successfully created the client application that accesses the sample Northwind [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. You have also completed the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] quickstart. For more information about accessing an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).  
   
 ## See Also  
  [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  

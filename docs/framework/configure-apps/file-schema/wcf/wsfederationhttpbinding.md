@@ -145,7 +145,7 @@ wsFederationBinding element
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
+ Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides Windows Communication Foundation (WCF) support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
   
  Bindings consist of a stack of binding elements. The stack of binding elements in  
   

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WS Binding
-This section contains samples that demonstrate Windows Service binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate Windows Service binding in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [WS Transaction Flow](../../../../docs/framework/wcf/samples/ws-transaction-flow.md)  

@@ -43,7 +43,7 @@ This topic shows how to configure [!INCLUDE[indigo1](../../../../includes/indigo
   
  ![Chart showing how client credentials are used](../../../../docs/framework/wcf/extending/media/e4971edd-a59f-4571-b36f-7e6b2f0d610f.gif "e4971edd-a59f-4571-b36f-7e6b2f0d610f")  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom credentials, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
+ For more information about custom credentials, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
  In addition, you must create a custom identity verifier, and link it to a security binding element in a custom binding. You must also use the custom credentials instead of the default credentials.  
   
@@ -51,7 +51,7 @@ This topic shows how to configure [!INCLUDE[indigo1](../../../../includes/indigo
   
  ![Chart showing a custom binding element](../../../../docs/framework/wcf/extending/media/dddea4a2-0bb4-4921-9bf4-20d4d82c3da5.gif "dddea4a2-0bb4-4921-9bf4-20d4d82c3da5")  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a custom identity verifier, see How to: [How to: Create a Custom Client Identity Verifier](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md).  
+ For more information about creating a custom identity verifier, see How to: [How to: Create a Custom Client Identity Verifier](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md).  
   
 ### To use separate certificates for signing and encryption  
   

@@ -31,7 +31,7 @@ This topic discusses how to create custom encoders.
 ## System-Provided Encoders  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides several system-provided bindings that are designed to cover the most common application scenarios. Each of these bindings combine a transport, message encoder, and other options (security, for example). This topic describes how to extend the `Text`, `Binary`, and `MTOM` message encoders that are included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], or create your own custom encoder. The text message encoder supports both a plain XML encoding as well as SOAP encodings. The plain XML encoding mode of the text message encoder is called the POX ("Plain Old XML") encoder to distinguish it from the text-based SOAP encoding.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
+ For more information about the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
 ## How to Work with System-Provided Encoders  
  An encoding is added to a binding using a class derived from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  

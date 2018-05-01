@@ -59,7 +59,7 @@ The `behavior` element contains a collection of settings for the behavior of a s
 |[\<serviceAuthenticationManager>](../../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthenticationmanager.md)|Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator..|  
 |[\<serviceAuthorization>](../../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md)|Specifies settings that authorize access to service operations.|  
 |[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service and the client credential validation-related settings.|  
-|[\<serviceDebug>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicedebug.md)|Specifies debugging and help information features for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.|  
+|[\<serviceDebug>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicedebug.md)|Specifies debugging and help information features for a Windows Communication Foundation (WCF) service.|  
 |[\<serviceDiscovery>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicediscovery.md)|Specifies the discoverability of service endpoints.|  
 |[\<serviceMetadata>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md)|Specifies the publication of service metadata and associated information.|  
 |[\<serviceSecurityAudit>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)|Specifies settings that enable auditing of security events during service operations.|  

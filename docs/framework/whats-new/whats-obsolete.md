@@ -1,7 +1,7 @@
 ---
 title: "What&#39;s Obsolete in the .NET Framework Class Library"
 ms.custom: "updateeachrelease"
-ms.date: "10/17/2017"
+ms.date: "04/10/2018"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -59,7 +59,7 @@ The .NET Framework changes over time. Each new version adds new types and type m
   
 |.NET Framework version|`version` string|
 |-|-|  
-|4.7 (including 4.7.1)|v4.0|  
+|4.7 (including 4.7.1 and 4.7.2)|v4.0|  
 |4.6 (including 4.6.1 and 4.6.2)|v4.0|  
 |4.5 (including 4.5.1 and 4.5.2)|v4.0|  
 |4|v4.0|  
@@ -68,7 +68,7 @@ The .NET Framework changes over time. Each new version adds new types and type m
 |1.1|v1.1.4322|  
 |1.0|v1.0.3705|  
   
-## Obsolete Lists for the .NET Framework 4.5 and 4.6  
+## Obsolete Lists for the .NET Framework 4.5 and later versions  
  [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md)  
   
  [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)  

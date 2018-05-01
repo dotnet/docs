@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # &lt;workflowRuntime&gt;
-Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] services.  
+Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.  
   
  \<system.ServiceModel>  
 \<behaviors>  

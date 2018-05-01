@@ -61,9 +61,9 @@ class MathService
   
  Note that the preceding services expose different contracts because the contract names are different. In the first case, the exposed contract is named "`IMath`" while in the second case the contract is named "`MathService`".  
   
- You can set a few things at the service and operation implementation levels, such as concurrency and instancing. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md).  
+ You can set a few things at the service and operation implementation levels, such as concurrency and instancing. For more information, see [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md).  
   
- After implementing a service contract, you must create one or more endpoints for the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to run a service, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+ After implementing a service contract, you must create one or more endpoints for the service. For more information, see [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). For more information about how to run a service, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
 ## See Also  
  [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Adopting Windows Communication Foundation
-You can choose to use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] for new development, while continuing to maintain existing applications developed using ASP.NET. Because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is intended to be the most suitable choice for facilitating communication with applications built with the .NET Framework in any scenario, it can serve as a standard tool for solving a wide variety of software communications problems in a way that ASP.NET cannot.  
+You can choose to use Windows Communication Foundation (WCF) for new development, while continuing to maintain existing applications developed using ASP.NET. Because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is intended to be the most suitable choice for facilitating communication with applications built with the .NET Framework in any scenario, it can serve as a standard tool for solving a wide variety of software communications problems in a way that ASP.NET cannot.  
   
  New [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications can be deployed on the same machines as existing ASP.NET Web services. If the existing ASP.NET Web services use a version of the .NET Framework prior to version 2.0, then you can use the ASP.NET IIS Registration Tool to selectively deploy the .NET Framework 2.0 to IIS applications in which new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications are to be hosted. That tool is documented at [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](http://go.microsoft.com/fwlink/?LinkId=94687), and has a user interface built into the IIS 6.0 management console.  
   

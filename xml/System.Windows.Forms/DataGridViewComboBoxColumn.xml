@@ -504,7 +504,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property affects the behavior and appearance of the drop-down arrows for the cells in this column.  
   
- Starting with the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], when the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property is set to `Flat` or `Popup` the drop-down arrows are resized according to the system DPI settings when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.6, when the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property is set to `Flat` or `Popup` the drop-down arrows are resized according to the system DPI settings when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  

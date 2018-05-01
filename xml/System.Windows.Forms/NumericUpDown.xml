@@ -47,7 +47,7 @@
   
  When the <xref:System.Windows.Forms.NumericUpDown.UpButton%2A> or <xref:System.Windows.Forms.NumericUpDown.DownButton%2A> methods are called, either in code or by the click of the up or down buttons, the new value is validated and the control is updated with the new value in the appropriate format. Specifically, if the <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> property is set to `true`, the <xref:System.Windows.Forms.NumericUpDown.ParseEditText%2A> method is called prior to validating or updating the value. The value is then verified to be between the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> and <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> values, and the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called.  
   
- Starting with the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the <xref:System.Windows.Forms.NumericUpDown> control will be resized based on the system DPI setting when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.6, the <xref:System.Windows.Forms.NumericUpDown> control will be resized based on the system DPI setting when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  

@@ -645,7 +645,7 @@
         <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
         <summary>Overrides the <see cref="M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)" /> method so that the operation is cancelled if specified, but no other action is performed.  
   
- Available starting in [!INCLUDE[net_2015](~/includes/net-2015-md.md)]</summary>
+ Available starting in .NET Framework 4.6</summary>
         <returns>A task that represents the asynchronous flush operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1085,7 +1085,7 @@
         <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
         <summary>Asynchronously reads the specified number of bytes into the specified array.  
   
- Available starting in [!INCLUDE[net_2015](~/includes/net-2015-md.md)]</summary>
+ Available starting in .NET Framework 4.6</summary>
         <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1418,7 +1418,7 @@
         <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
         <summary>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.  
   
- Available starting in [!INCLUDE[net_2015](~/includes/net-2015-md.md)]</summary>
+ Available starting in .NET Framework 4.6</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

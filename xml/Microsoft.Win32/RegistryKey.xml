@@ -2076,7 +2076,7 @@
         <param name="rights">The rights for the registry key.</param>
         <summary>Retrieves a subkey with the specified name and .  
   
- Available starting in [!INCLUDE[net_2015](~/includes/net-2015-md.md)]</summary>
+ Available starting in .NET Framework 4.6</summary>
         <returns>The subkey requested, or <see langword="null" /> if the operation failed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

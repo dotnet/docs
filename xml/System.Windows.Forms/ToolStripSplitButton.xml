@@ -634,7 +634,7 @@
       </ReturnValue>
       <Docs>
         <summary>The width, in pixels, of the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
-        <value>An <see cref="T:System.Int32" /> representing the width in pixels. The default is 11. Starting with the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the default value is based on the DPI setting of the device running the app.</value>
+        <value>An <see cref="T:System.Int32" /> representing the width in pixels. The default is 11. Starting with the .NET Framework 4.6, the default value is based on the DPI setting of the device running the app.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than zero (0).</exception>
         <altmember cref="M:System.Windows.Forms.ToolStripSplitButton.ResetDropDownButtonWidth" />

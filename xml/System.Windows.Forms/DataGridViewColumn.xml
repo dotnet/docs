@@ -1208,7 +1208,7 @@
 ## Remarks  
  When a <xref:System.Windows.Forms.DataGridView> control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>, a sorting glyph is automatically displayed in the column header.  
   
- Starting in the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the sorting glyph is resized according to the system DPI settings when the app.config file contains the following entry:  
+ Starting in the .NET Framework 4.6, the sorting glyph is resized according to the system DPI settings when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  

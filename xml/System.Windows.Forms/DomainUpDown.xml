@@ -41,7 +41,7 @@
   
  When the <xref:System.Windows.Forms.DomainUpDown.UpButton%2A> or <xref:System.Windows.Forms.DomainUpDown.DownButton%2A> methods are called, either in code or by the click of the up or down buttons, <xref:System.Windows.Forms.DomainUpDown.UpdateEditText%2A> is called to update the control with the new string. If <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> is set to `true`, the string is matched to one of the values in the collection prior to updating the control's text display.  
   
- Starting with the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the <xref:System.Windows.Forms.DomainUpDown> control will be resized based on the system DPI setting when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.6, the <xref:System.Windows.Forms.DomainUpDown> control will be resized based on the system DPI setting when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  

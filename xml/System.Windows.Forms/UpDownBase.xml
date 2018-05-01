@@ -35,7 +35,7 @@
   
  The <xref:System.Windows.Forms.UpDownBase.UpButton%2A> and <xref:System.Windows.Forms.UpDownBase.DownButton%2A> methods, when overridden, handle the clicking of the up or down buttons. When overridden, the <xref:System.Windows.Forms.UpDownBase.ValidateEditText%2A> and <xref:System.Windows.Forms.UpDownBase.UpdateEditText%2A> methods validate the value (either selected or entered) and update the text displayed in the spin box. If the value fails validation, use the <xref:System.Windows.Forms.UpDownBase.Select%2A> method to select the text that is not valid. This allows the user to quickly correct the text by simply typing in a new value without having to manually select or delete the existing text.  
   
- Starting with the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the <xref:System.Windows.Forms.UpDownBase> control will be resized based on the system DPI setting when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.6, the <xref:System.Windows.Forms.UpDownBase> control will be resized based on the system DPI setting when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  

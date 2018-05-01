@@ -25,7 +25,7 @@
 ## Remarks  
  To enable or disable one of the `ServiceDebugElement` features using a configuration file, you must:  
   
-1.  Add a behavior configuration attribute to the service element of your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service. Endpoint behaviors are configured on `endpoint` elements; service behaviors are configured on `service` elements.  
+1.  Add a behavior configuration attribute to the service element of your WCF service. Endpoint behaviors are configured on `endpoint` elements; service behaviors are configured on `service` elements.  
   
 2.  Create a `serviceBehaviors` section, and add a behavior element with the name that corresponds to the `behaviorConfiguration` attribute value from step 1.  
   

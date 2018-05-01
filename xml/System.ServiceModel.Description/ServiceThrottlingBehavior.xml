@@ -170,7 +170,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property specifies the maximum number of sessions a <xref:System.ServiceModel.ServiceHost> object can accept. It is important to understand that sessions in this case does not mean only channels that support reliable sessions (for example, <xref:System.ServiceModel.NetNamedPipeBinding?displayProperty=nameWithType> supports sessions but does not include reliable sessions).  
   
- Each listener object can have one pending channel session that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> until [!INCLUDE[indigo2](~/includes/indigo2-md.md)] accepts the channel session and begins processing messages on it. This property is most useful in scenarios that make use of sessions.  
+ Each listener object can have one pending channel session that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> until WCF accepts the channel session and begins processing messages on it. This property is most useful in scenarios that make use of sessions.  
   
  When this property is set to a value less than the number of client threads, the requests from multiple clients may get queued in the same socket connection. The requests from the client that has not created a session with the service will be blocked till the service closes its session with the other clients if number of open sessions on the service has reached `MaxConcurrentSessions`. The client requests that are not served get timed out and the service closes the session abruptly.  
   

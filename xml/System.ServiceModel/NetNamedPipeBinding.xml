@@ -24,7 +24,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.NetNamedPipeBinding> generates a run-time communication stack by default, which uses transport security, named pipes for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system-provided choice for on-machine communication. It also supports transactions.  
   
- The default configuration for the <xref:System.ServiceModel.NetNamedPipeBinding> is similar to the configuration provided by the <xref:System.ServiceModel.NetTcpBinding>, but it is simpler because the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the <xref:System.ServiceModel.SecurityMode> setting only offers the <xref:System.ServiceModel.SecurityMode.None> and <xref:System.ServiceModel.SecurityMode.Transport> options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` parameter in <xref:System.ServiceModel.NetNamedPipeBinding.%23ctor%28System.ServiceModel.NetNamedPipeSecurityMode%29> the constructor.  
+ The default configuration for the <xref:System.ServiceModel.NetNamedPipeBinding> is similar to the configuration provided by the <xref:System.ServiceModel.NetTcpBinding>, but it is simpler because the WCF implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the <xref:System.ServiceModel.SecurityMode> setting only offers the <xref:System.ServiceModel.SecurityMode.None> and <xref:System.ServiceModel.SecurityMode.Transport> options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` parameter in <xref:System.ServiceModel.NetNamedPipeBinding.%23ctor%28System.ServiceModel.NetNamedPipeSecurityMode%29> the constructor.  
   
    
   
@@ -553,7 +553,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.ReaderQuotas" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for XAML integration.</summary>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.ReaderQuotas" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.NetNamedPipeBinding.ReaderQuotas" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -580,7 +580,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.Security" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for XAML integration.</summary>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.Security" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.NetNamedPipeBinding.Security" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -607,7 +607,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.TransactionProtocol" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for XAML integration.</summary>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.TransactionProtocol" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.NetNamedPipeBinding.TransactionProtocol" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

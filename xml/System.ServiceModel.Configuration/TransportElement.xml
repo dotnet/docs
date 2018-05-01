@@ -172,7 +172,7 @@
       <Docs>
         <summary>Gets or sets a Boolean value that specifies whether the user takes control of message addressing.</summary>
         <value>
-          <see langword="true" /> if the user can address every message individually; <see langword="false" /> if the default [!INCLUDE[indigo2](~/includes/indigo2-md.md)] addressing mechanism automatically creates addresses for all messages. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the user can address every message individually; <see langword="false" /> if the default WCF addressing mechanism automatically creates addresses for all messages. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Many parts of [!INCLUDE[indigo2](~/includes/indigo2-md.md)] use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.  
+ Many parts of WCF use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.  
   
  ]]></format>
         </remarks>

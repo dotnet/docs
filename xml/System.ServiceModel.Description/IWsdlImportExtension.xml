@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> (the `WsdlDocumentationImporter`, in this case) to modify generated [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client code at the interface and operation level.  
+ The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> (the `WsdlDocumentationImporter`, in this case) to modify generated WCF client code at the interface and operation level.  
   
  [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
   
@@ -102,7 +102,7 @@
    
   
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> (the `WsdlDocumentationImporter`, in this case) to modify generated [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client code at the interface and operation level.  
+ The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> (the `WsdlDocumentationImporter`, in this case) to modify generated WCF client code at the interface and operation level.  
   
  [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
   

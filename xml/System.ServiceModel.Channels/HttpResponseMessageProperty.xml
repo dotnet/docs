@@ -302,7 +302,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property enables users to write content into the <xref:System.Web.HttpResponseBase.OutputStream%2A> from within a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] operation body. This takes effect only on webhosted scenarios. The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is `false` by default.  
+ The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property enables users to write content into the <xref:System.Web.HttpResponseBase.OutputStream%2A> from within a WCF operation body. This takes effect only on webhosted scenarios. The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is `false` by default.  
   
 > [!WARNING]
 >  If the <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is set to `true`, you must set the headers, content-type, status code on the response because WCF will no longer do it.  

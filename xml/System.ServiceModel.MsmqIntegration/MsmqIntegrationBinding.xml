@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This binding can be used to enable [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications to send and receive messages to and from existing MSMQ applications that use COM, native C++ APIs or the types defined in the <xref:System.Messaging> namespace.  
+ This binding can be used to enable WCF applications to send and receive messages to and from existing MSMQ applications that use COM, native C++ APIs or the types defined in the <xref:System.Messaging> namespace.  
   
    
   
@@ -217,7 +217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns an enumeration value that specifies how a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] message will be serialized and deserialized. For more information, see <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat>.  
+ This property returns an enumeration value that specifies how a WCF message will be serialized and deserialized. For more information, see <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat>.  
   
    
   

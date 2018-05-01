@@ -532,7 +532,7 @@
 ## Remarks  
  The dispatcher accesses this property to determine whether a transaction is required for a receive operation.  
   
- The queued transport in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] returns `true` for this property if, and only if, <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> is set to `true`.  
+ The queued transport in WCF returns `true` for this property if, and only if, <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> is set to `true`.  
   
  ]]></format>
         </remarks>

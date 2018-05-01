@@ -28,14 +28,14 @@
   
 3.  WeakWildcard  
   
- The first value, StrongWildcard, ignores the host name when matching and it takes the highest precedence of the three different matching modes. It is the default value for a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] system-provided binding or binding element. This indicates that a service endpoint can be reached using any valid host name. For example, if MyService is hosted using http://localhost/MyService, it is still reachable using http://www.adatum.com/MyService because the (presumably valid) host name, "adatum.com", is ignored. Note that the port is a wildcard here as well.  
+ The first value, StrongWildcard, ignores the host name when matching and it takes the highest precedence of the three different matching modes. It is the default value for a WCF system-provided binding or binding element. This indicates that a service endpoint can be reached using any valid host name. For example, if MyService is hosted using http://localhost/MyService, it is still reachable using http://www.adatum.com/MyService because the (presumably valid) host name, "adatum.com", is ignored. Note that the port is a wildcard here as well.  
   
  The second value, Exact, requires that an exact match is found with the URI specified, including the hostname, if no strong match is found. This mode, for example, does not perform equivalence between short hostnames and fully-qualified domain names. This allows hostnames to be used as match criteria in the scenarios where multiple hosts are assigned a single IP address and it enables different services to be hosted on the same machine with distinct endpoints. Note that the port is a wildcard here as well.  
   
  The third value, WeakWildcard, matches by ignoring the hostname if no strong or exact match was found. The behavior is the same as for StrongWildcard other than the order of matching: it runs after the strong and exact bindings have been tried.  
   
 > [!NOTE]
->  These values have no effect when used inside of the Internet Information Services (IIS) or Windows Process Activation Service (WAS) hosting environment. In those cases, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses whatever hostname comparison mode is provided by the IIS Web Site hosting the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services.  
+>  These values have no effect when used inside of the Internet Information Services (IIS) or Windows Process Activation Service (WAS) hosting environment. In those cases, WCF uses whatever hostname comparison mode is provided by the IIS Web Site hosting the WCF services.  
   
    
   

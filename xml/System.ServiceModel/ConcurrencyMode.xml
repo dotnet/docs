@@ -31,7 +31,7 @@
    
   
 ## Examples  
- The following code example demonstrates the different between using Single, Reentrant, and Multiple. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that [!INCLUDE[indigo2](~/includes/indigo2-md.md)] makes and what that means for your operation code.  
+ The following code example demonstrates the different between using Single, Reentrant, and Multiple. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that WCF makes and what that means for your operation code.  
   
  [!code-csharp[C_BestPractices-Concurrency#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_bestpractices-concurrency/cs/reentrantandmultiple.cs#1)]  
   
@@ -76,7 +76,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The service instance is single-threaded and accepts reentrant calls. The reentrant service accepts calls when you call another service; it is therefore your responsibility to leave your object state consistent before callouts and you must confirm that operation-local data is valid after callouts. Note that the service instance is unlocked only by calling another service over a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] channel. In this case, the called service can reenter the first service via a callback. If the first service is not reentrant, the sequence of calls results in a deadlock. For details, see <see cref="P:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode" />.</summary>
+        <summary>The service instance is single-threaded and accepts reentrant calls. The reentrant service accepts calls when you call another service; it is therefore your responsibility to leave your object state consistent before callouts and you must confirm that operation-local data is valid after callouts. Note that the service instance is unlocked only by calling another service over a WCF channel. In this case, the called service can reenter the first service via a callback. If the first service is not reentrant, the sequence of calls results in a deadlock. For details, see <see cref="P:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">

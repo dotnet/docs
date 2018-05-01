@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.DuplexClientBase%601> class to create a channel to a service that specifies a callback object. The <xref:System.ServiceModel.DuplexClientBase%601> object wraps a <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=nameWithType> object, which provides the connectivity for the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] object. You can use either type to connect to a duplex service. For more information about duplex services, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md).  
+ Use the <xref:System.ServiceModel.DuplexClientBase%601> class to create a channel to a service that specifies a callback object. The <xref:System.ServiceModel.DuplexClientBase%601> object wraps a <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=nameWithType> object, which provides the connectivity for the WCF object. You can use either type to connect to a duplex service. For more information about duplex services, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md).  
   
  Special note for Managed C++ users deriving from this class:  
   
@@ -51,7 +51,7 @@
    
   
 ## Examples  
- The following example shows the use in the client of a duplex [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client type, the `SampleDuplexHelloClient`, to pass a new <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object with the callback object to listen for callbacks.  
+ The following example shows the use in the client of a duplex WCF client type, the `SampleDuplexHelloClient`, to pass a new <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object with the callback object to listen for callbacks.  
   
  [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
  [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+ WCF creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
   
  ]]></format>
         </remarks>
@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+ WCF creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
   
  ]]></format>
         </remarks>
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+ WCF creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
   
  ]]></format>
         </remarks>
@@ -308,7 +308,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+ WCF creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
   
  ]]></format>
         </remarks>
@@ -423,7 +423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+ WCF creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
   
  ]]></format>
         </remarks>

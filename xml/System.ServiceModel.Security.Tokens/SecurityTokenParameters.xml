@@ -402,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] needs to derive keys from the token's key when performing signature and encryption using the token.  
+ WCF needs to derive keys from the token's key when performing signature and encryption using the token.  
   
  Derived keys originate in Secure Conversations where there is a shared security context so that the same security can be applied across all messages in the conversation. A security context token involves a shared secret, which is used for message signing and encryption. The shared secret is used to create derived keys. To maintain a high level of security through a lengthy conversation, new derived keys can be created periodically.  
   

@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and add it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> collection to inspect or modify messages as they pass through a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object. For details, see <xref:System.ServiceModel.Dispatcher.ClientRuntime>.  
+ Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and add it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> collection to inspect or modify messages as they pass through a WCF client object. For details, see <xref:System.ServiceModel.Dispatcher.ClientRuntime>.  
   
    
   
@@ -78,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply%2A> to inspect or modify a reply message after it has been received by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object but before it is deserialized into objects that are returned to the client application.  
+ Implement <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply%2A> to inspect or modify a reply message after it has been received by the WCF client object but before it is deserialized into objects that are returned to the client application.  
   
  The `correlationState` is the object returned by the user when <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest%2A> is called for this message. The best practice is to make this a <xref:System.Guid?displayProperty=nameWithType> to ensure that no two `correlationState` objects are the same.  
   
@@ -130,7 +130,7 @@
       </Parameters>
       <Docs>
         <param name="request">The message to be sent to the service.</param>
-        <param name="channel">The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object channel.</param>
+        <param name="channel">The WCF client object channel.</param>
         <summary>Enables inspection or modification of a message before a request message is sent to a service.</summary>
         <returns>The object that is returned as the <paramref name="correlationState" /> argument of the <see cref="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" /> method. This is <see langword="null" /> if no correlation state is used.  
   

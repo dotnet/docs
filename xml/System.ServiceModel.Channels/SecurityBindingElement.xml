@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is the base class for the SOAP message security binding elements in [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. There are three implementations of this abstract class: <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>, <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>, and <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>. These implementations model the bindings defined in the WS-Security Policy specification.  
+ This class is the base class for the SOAP message security binding elements in WCF. There are three implementations of this abstract class: <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>, <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>, and <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>. These implementations model the bindings defined in the WS-Security Policy specification.  
   
  A custom binding contains a collection of binding elements arranged in a specific order: the element that represents the top of the binding stack is added first, the next element down in the binding stack is added second, and so on.  
   
@@ -1529,9 +1529,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether [!INCLUDE[indigo2](~/includes/indigo2-md.md)] can send and receive unsecured responses to secured requests.</summary>
+        <summary>Gets or sets a value that indicates whether WCF can send and receive unsecured responses to secured requests.</summary>
         <value>
-          <see langword="true" /> if [!INCLUDE[indigo2](~/includes/indigo2-md.md)] can send and receive unsecured responses to secured requests; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if WCF can send and receive unsecured responses to secured requests; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1653,7 +1653,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> property is `true` and if `DetectReplays` is `true`, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] detects a replay attack.  
+ If the <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> property is `true` and if `DetectReplays` is `true`, WCF detects a replay attack.  
   
  ]]></format>
         </remarks>

@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.Activities.SendParametersContent> is interoperable with regular [!INCLUDE[indigo2](~/includes/indigo2-md.md)] clients and services. The <xref:System.ServiceModel.Activities.SendParametersContent> collection is similar to the argument declaration on a C# method signature.The <xref:System.ServiceModel.Activities.SendParametersContent> collection cannot contain an argument that is a message contract or of type <xref:System.ServiceModel.Channels.Message>. Use <xref:System.ServiceModel.Activities.SendMessageContent> for these types of data.  
+ <xref:System.ServiceModel.Activities.SendParametersContent> is interoperable with regular WCF clients and services. The <xref:System.ServiceModel.Activities.SendParametersContent> collection is similar to the argument declaration on a C# method signature.The <xref:System.ServiceModel.Activities.SendParametersContent> collection cannot contain an argument that is a message contract or of type <xref:System.ServiceModel.Channels.Message>. Use <xref:System.ServiceModel.Activities.SendMessageContent> for these types of data.  
   
    
   

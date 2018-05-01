@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class represents a factory class for a fully-functional, durable service persistence provider. You can use this system-provided provider to persist and retrieve state information about a durable [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+ The <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class represents a factory class for a fully-functional, durable service persistence provider. You can use this system-provided provider to persist and retrieve state information about a durable WCF service.  
   
  In addition to persistence, the provider created by the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class implements locking of service state data records by inheriting from the abstract <xref:System.ServiceModel.Persistence.LockingPersistenceProvider> class.  Methods that interact with persisted data (such as <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.Create%2A> or <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.Update%2A>) have an optional parameter (`lockInstance`) that defines whether locks on the data in question are released or maintained.  
   

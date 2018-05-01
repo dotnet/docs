@@ -556,7 +556,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContext.OperationCompleted> event to dispose parameters or a return value if you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=nameWithType> to `false`. Normally you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=nameWithType> to `false` to prevent [!INCLUDE[indigo2](~/includes/indigo2-md.md)] from calling <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> on the parameter and return value objects.  However, if some parameters need to be preserved while others need to be disposed, this event is the best place to dispose those parameters.  
+ Use the <xref:System.ServiceModel.OperationContext.OperationCompleted> event to dispose parameters or a return value if you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=nameWithType> to `false`. Normally you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=nameWithType> to `false` to prevent WCF from calling <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> on the parameter and return value objects.  However, if some parameters need to be preserved while others need to be disposed, this event is the best place to dispose those parameters.  
   
  Also, with duplex bindings, this event can be used to send a request on the callback channel after the reply for the current operation is sent.  
   
@@ -595,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to add reply headers that are sent by a service operation or request headers that are sent by a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object.  
+ Use this property to add reply headers that are sent by a service operation or request headers that are sent by a WCF client object.  
   
    
   

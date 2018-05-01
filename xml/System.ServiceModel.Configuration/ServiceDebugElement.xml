@@ -29,7 +29,7 @@
   
  To enable or disable one of the <xref:System.ServiceModel.Configuration.ServiceDebugElement> features using a configuration file, you must:  
   
-1.  Add a `behaviorConfiguration` attribute to the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service. (Endpoint behaviors are configured on `<endpoint>` elements; service behaviors on [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) elements.)  
+1.  Add a `behaviorConfiguration` attribute to the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for your WCF service. (Endpoint behaviors are configured on `<endpoint>` elements; service behaviors on [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) elements.)  
   
 2.  Add to or create a [&lt;serviceBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) section and add a [&lt;behavior&gt;](~/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. (Endpoint behaviors are configured using an [&lt;endpointBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element; service behaviors are configured using a [&lt;serviceBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) element.  
   

@@ -120,7 +120,7 @@
 -   **UserName**: This allows the service to require that the client be authenticated using a UserName credential. This credential must be specified using <xref:System.ServiceModel.Description.ClientCredentials> class.  
   
 > [!NOTE]
->  [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not support sending a password digest or deriving keys using password and using such keys for message security. As such, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] enforces that the exchange is secured when using UserName credentials. This mode requires that the service certificate be specified on the client using `ClientCredential` behavior and `serviceCertificate`:  
+>  WCF does not support sending a password digest or deriving keys using password and using such keys for message security. As such, WCF enforces that the exchange is secured when using UserName credentials. This mode requires that the service certificate be specified on the client using `ClientCredential` behavior and `serviceCertificate`:  
   
 -   `Certificate`: This allows the service to require that the client be authenticated using a certificate. The client credential in this case must be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior. The service credential in this case must be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior by specifying the `serviceCertificate`.  
   

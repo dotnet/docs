@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Using <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to issue a new thread to pump for each accepted channel. If there are a lot of channels there is the possibility of running out of threads.  
+ Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Using <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> instructs WCF to issue a new thread to pump for each accepted channel. If there are a lot of channels there is the possibility of running out of threads.  
   
  You can also set this value using the [&lt;synchronousReceive&gt;](~/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md) in an application configuration file.  
   

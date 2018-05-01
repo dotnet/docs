@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When applied to an endpoint, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior enables [!INCLUDE[indigo2](~/includes/indigo2-md.md)] and ASP.NET AJAX integration, except for the support required for JavaScript Object Notation (JSON) encoding. Various types of encoding, including JSON, are enabled by the <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> or by an appropriately configured <xref:System.ServiceModel.WebHttpBinding>. The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior implements the <xref:System.ServiceModel.Description.IEndpointBehavior> and inherits from <xref:System.ServiceModel.Description.WebHttpBehavior>, which enables the more general Web programming model for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services exposing non-SOAP endpoints.  
+ When applied to an endpoint, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior enables WCF and ASP.NET AJAX integration, except for the support required for JavaScript Object Notation (JSON) encoding. Various types of encoding, including JSON, are enabled by the <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> or by an appropriately configured <xref:System.ServiceModel.WebHttpBinding>. The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior implements the <xref:System.ServiceModel.Description.IEndpointBehavior> and inherits from <xref:System.ServiceModel.Description.WebHttpBehavior>, which enables the more general Web programming model for WCF services exposing non-SOAP endpoints.  
   
  Specifically, the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>:  
   
@@ -28,7 +28,7 @@
   
 -   Enables the JavaScript Proxy endpoint.  
   
- To call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service from an ASP.NET AJAX client, the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> binding and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> must be added to the endpoint behavior collection. This can be done either in configuration by adding the <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> or without using configuration by activating the AJAX endpoint with the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> instead of the default factory in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file.  
+ To call a WCF service from an ASP.NET AJAX client, the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> binding and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> must be added to the endpoint behavior collection. This can be done either in configuration by adding the <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> or without using configuration by activating the AJAX endpoint with the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> instead of the default factory in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file.  
   
  For more information about different ways to enable a WCF service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
   
@@ -328,9 +328,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines if the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page is enabled.</summary>
+        <summary>Gets or sets a value that determines if the WCF REST Help page is enabled.</summary>
         <value>
-          <see langword="true" /> if the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST Help page is enabled; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the WCF REST Help page is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

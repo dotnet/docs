@@ -128,7 +128,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpSecurity.Message" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for XAML integration.</summary>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpSecurity.Message" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.WSHttpSecurity.Message" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -155,7 +155,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpSecurity.Mode" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for XAML integration.</summary>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpSecurity.Mode" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.ServiceModel.WSHttpSecurity.Mode" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

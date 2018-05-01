@@ -34,7 +34,7 @@
 ## Examples  
  The following code example shows the most common use of <xref:System.ServiceModel.Channels.MessageFault>. Both the <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> and <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> pass in a <xref:System.ServiceModel.Channels.MessageFault> object that can be modified and returned to the system (in the case of <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A>) or used to perform some custom fault-related behavior (in the case of <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A>).  
   
- In this example, the <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> method converts all <xref:System.Exception> objects into a <xref:System.ServiceModel.Channels.MessageFault> object that contains a <xref:System.ServiceModel.FaultException%601> object of type `GreetingFault` and returns that customized <xref:System.ServiceModel.Channels.MessageFault> to [!INCLUDE[indigo2](~/includes/indigo2-md.md)].  
+ In this example, the <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> method converts all <xref:System.Exception> objects into a <xref:System.ServiceModel.Channels.MessageFault> object that contains a <xref:System.ServiceModel.FaultException%601> object of type `GreetingFault` and returns that customized <xref:System.ServiceModel.Channels.MessageFault> to WCF.  
   
  [!code-csharp[IErrorHandler#6](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/ierrorhandler.cs#6)]
  [!code-vb[IErrorHandler#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/ierrorhandler.vb#6)]  

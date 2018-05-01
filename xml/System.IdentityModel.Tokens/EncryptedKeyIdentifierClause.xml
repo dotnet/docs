@@ -20,7 +20,7 @@
 ## Remarks  
  Typically, the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> class to reference an encrypted key. The <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey%2A> method returns the encrypted key.  
   
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] accepts wrapped keys that are well formed with respect to the wire format. The key wrap algorithm specified on the wire is accepted and used. It is not verified to be compatible with the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> specified by the endpoint.  
+ WCF accepts wrapped keys that are well formed with respect to the wire format. The key wrap algorithm specified on the wire is accepted and used. It is not verified to be compatible with the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> specified by the endpoint.  
   
  ]]></format>
     </remarks>

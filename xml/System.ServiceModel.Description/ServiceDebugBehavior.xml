@@ -24,7 +24,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.Description.ServiceDebugBehavior> properties from a configuration file or programmatically to enable the flow of managed exception information to the client for debugging purposes as well as the publication of HTML information files for users browsing the service in Web browsers.  
   
- Set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to return managed exception information in SOAP faults to clients for debugging purposes.  
+ Set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` to instruct WCF to return managed exception information in SOAP faults to clients for debugging purposes.  
   
 > [!CAUTION]
 >  Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. In addition, although the <xref:System.ServiceModel.Description.ServiceDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> when deploying.  
@@ -43,7 +43,7 @@
   
  To enable or disable one of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> features using a configuration file:  
   
-1.  Add a `behaviorConfiguration` attribute to the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service. Endpoint behaviors are configured on [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) elements; service behaviors on [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) elements.  
+1.  Add a `behaviorConfiguration` attribute to the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for your WCF service. Endpoint behaviors are configured on [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) elements; service behaviors on [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) elements.  
   
 2.  Add to or create a [&lt;serviceBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) section and add a [&lt;behavior&gt;](~/docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. Endpoint behaviors are configured using an [&lt;endpointBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element; service behaviors are configured using a [&lt;serviceBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) element.  
   
@@ -144,7 +144,7 @@
       <Docs>
         <summary>Gets or sets a value that controls whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] publishes an HTML help page at the address controlled by the <see cref="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl" /> property.</summary>
         <value>
-          <see langword="true" /> if [!INCLUDE[indigo2](~/includes/indigo2-md.md)] publishes an HTML help page; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if WCF publishes an HTML help page; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -352,7 +352,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` to instruct [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to return managed exception information to the client in SOAP faults to ease debugging.  
+ Set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` to instruct WCF to return managed exception information to the client in SOAP faults to ease debugging.  
   
 > [!CAUTION]
 >  Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. In addition, although the <xref:System.ServiceModel.Description.ServiceDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> when deploying.  

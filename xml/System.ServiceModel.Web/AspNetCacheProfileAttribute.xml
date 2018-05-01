@@ -100,7 +100,7 @@
       <Docs>
         <param name="operationDescription">The operation description.</param>
         <param name="bindingParameters">The binding parameters.</param>
-        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +127,7 @@
       <Docs>
         <param name="operationDescription">The operation description.</param>
         <param name="clientOperation">The client operation..</param>
-        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +154,7 @@
       <Docs>
         <param name="operationDescription">The operation being examined.</param>
         <param name="dispatchOperation">The run-time object that exposes customization properties for the operation described by <c>operationDescription</c>.</param>
-        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
       </Parameters>
       <Docs>
         <param name="operationDescription">Not implemented.</param>
-        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" /> method. Used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used by developers.</summary>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" /> method. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

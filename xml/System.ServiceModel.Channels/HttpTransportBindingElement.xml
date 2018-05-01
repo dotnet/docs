@@ -32,9 +32,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to ensure interoperability with other non-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web services stacks.  
+ The <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to ensure interoperability with other non-WCF Web services stacks.  
   
- The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTP protocol.  
+ The WCF service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTP protocol.  
   
  You configure the factories that this class creates by setting its properties, such as <xref:System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme%2A>, <xref:System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode%2A>, and <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize%2A>.  
   
@@ -396,7 +396,7 @@ int odd=calc.Add(5,4);
 ## Remarks  
  A local address is one that is on the local LAN or intranet.  
   
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always ignores the proxy if the service address begins with `http://localhost`. You should use the host name (rather than `localhost`) if you want clients to go through a proxy when talking to services on the same machine.  
+ WCF always ignores the proxy if the service address begins with `http://localhost`. You should use the host name (rather than `localhost`) if you want clients to go through a proxy when talking to services on the same machine.  
   
    
   

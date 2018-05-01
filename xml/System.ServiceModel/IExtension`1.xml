@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] allows you to extend <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=nameWithType> objects (the <xref:System.ServiceModel.IContextChannel?displayProperty=nameWithType>, <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>, <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType>, and <xref:System.ServiceModel.OperationContext?displayProperty=nameWithType> classes) by adding a new state or behavior by using its extensible object pattern. The extensible object pattern is used in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to either extend existing run-time classes with new functionality or to add new state features to an object.  
+ WCF allows you to extend <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=nameWithType> objects (the <xref:System.ServiceModel.IContextChannel?displayProperty=nameWithType>, <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>, <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType>, and <xref:System.ServiceModel.OperationContext?displayProperty=nameWithType> classes) by adding a new state or behavior by using its extensible object pattern. The extensible object pattern is used in WCF to either extend existing run-time classes with new functionality or to add new state features to an object.  
   
  ]]></format>
     </remarks>

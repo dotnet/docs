@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Transports that use a stream-oriented protocol such as TCP and named pipes support stream-based transport upgrades. Specifically, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] provides security upgrades. The configuration of this transport security is encapsulated by this class as well as by <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>, which can be configured and added to a custom binding. In addition, a third party can write its own custom `StreamSecurityBindingElement`. These binding elements extend the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement> class that is called to build the client and server stream upgrade providers.  
+ Transports that use a stream-oriented protocol such as TCP and named pipes support stream-based transport upgrades. Specifically, WCF provides security upgrades. The configuration of this transport security is encapsulated by this class as well as by <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>, which can be configured and added to a custom binding. In addition, a third party can write its own custom `StreamSecurityBindingElement`. These binding elements extend the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement> class that is called to build the client and server stream upgrade providers.  
   
  A custom binding contains a collection of binding elements arranged in a specific order: the element representing the top of the binding stack is added first, the next element down in the binding stack is added second, and so on.  
   
@@ -643,7 +643,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
+ This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by WCF to communicate to clients the existence of this custom binding element in the binding stack.  
   
  This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
   

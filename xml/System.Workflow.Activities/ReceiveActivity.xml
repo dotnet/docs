@@ -43,7 +43,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- The <xref:System.Workflow.Activities.ReceiveActivity> activity is used when a workflow implements an operation defined in a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service contract. The <xref:System.Workflow.Activities.ReceiveActivity> can implement an operation from an already defined service contract or can define the service contract and operation within the workflow itself. The latter is known as a workflow-first contract.  
+ The <xref:System.Workflow.Activities.ReceiveActivity> activity is used when a workflow implements an operation defined in a WCF service contract. The <xref:System.Workflow.Activities.ReceiveActivity> can implement an operation from an already defined service contract or can define the service contract and operation within the workflow itself. The latter is known as a workflow-first contract.  
   
  The <xref:System.Workflow.Activities.ReceiveActivity> activity supports a set of predefined message exchange patterns. These patterns include:  
   

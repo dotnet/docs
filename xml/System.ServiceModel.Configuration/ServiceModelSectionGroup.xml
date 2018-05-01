@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All [!INCLUDE[indigo2](~/includes/indigo2-md.md)] configuration elements are nested in the `system.serviceModel` element of the configuration file. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not add elements to the configuration sections of other products.  
+ All WCF configuration elements are nested in the `system.serviceModel` element of the configuration file. WCF does not add elements to the configuration sections of other products.  
   
  ]]></format>
     </remarks>
@@ -150,13 +150,13 @@
         <ReturnType>System.ServiceModel.Configuration.CommonBehaviorsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section that contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</summary>
-        <value>The configuration section that contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</value>
+        <summary>Gets the configuration section that contains a list of behaviors that is applied to all WCF services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</summary>
+        <value>The configuration section that contains a list of behaviors that is applied to all WCF services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This section is defined in the Machine.config file. It contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the behaviors collection are applied. If a behavior is defined in both sections, the behavior in the behaviors sections is given preference.  
+ This section is defined in the Machine.config file. It contains a list of behaviors that is applied to all WCF services on the machine before the behaviors in the behaviors collection are applied. If a behavior is defined in both sections, the behavior in the behaviors sections is given preference.  
   
  ]]></format>
         </remarks>
@@ -177,13 +177,13 @@
         <ReturnType>System.ServiceModel.Configuration.DiagnosticSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].</summary>
-        <value>The configuration section for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].</value>
+        <summary>Gets the configuration section for the diagnostics features of WCF.</summary>
+        <value>The configuration section for the diagnostics features of WCF.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `diagnostics` section contains settings for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.  
+ The `diagnostics` section contains settings for the diagnostics features of WCF. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.  
   
  ]]></format>
         </remarks>

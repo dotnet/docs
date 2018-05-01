@@ -62,7 +62,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the user accounts for processes that host [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services and are granted connection access to the sharing service.</summary>
-        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection" /> that contains user accounts for processes that host [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services and are granted connection access to the sharing service. The default values returned are LocalSystem, Admin, NS, LS, and IIS_USRS.</value>
+        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection" /> that contains user accounts for processes that host WCF services and are granted connection access to the sharing service. The default values returned are LocalSystem, Admin, NS, LS, and IIS_USRS.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services.</summary>
-        <value>The maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The default is 10.</value>
+        <summary>Gets or sets the maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to WCF services.</summary>
+        <value>The maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to WCF. The default is 10.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,9 +252,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services.</summary>
+        <summary>Gets or sets a Boolean value that indicates whether the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of WCF services.</summary>
         <value>
-          <see langword="true" /> if the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of WCF services; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

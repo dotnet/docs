@@ -239,7 +239,7 @@
 > [!IMPORTANT]
 >  Even though <xref:System.ServiceModel.ConcurrencyMode.Single> restricts instances of the service to one thread of execution at a time, you must also set <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> to 1 to guarantee no out-of-order messages.  
 >   
->  Also, it is your responsibility to leave your object state consistent before callouts and you must confirm that operation-local data is valid after callouts. Note that the service instance is unlocked only by calling another service over a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] channel. In this case, the called service can reenter the first service via a callback. If the first service is not reentrant, the sequence of calls results in a deadlock. For details, see <xref:System.ServiceModel.ConcurrencyMode>.  
+>  Also, it is your responsibility to leave your object state consistent before callouts and you must confirm that operation-local data is valid after callouts. Note that the service instance is unlocked only by calling another service over a WCF channel. In this case, the called service can reenter the first service via a callback. If the first service is not reentrant, the sequence of calls results in a deadlock. For details, see <xref:System.ServiceModel.ConcurrencyMode>.  
   
  During any outbound call from a processing operation, data not local to the operation can be modified. (Local state data is guaranteed to be valid when the original message resumes processing.) As a result, before your outbound call you must ensure that non-local data is valid for other incoming calls and revalidate non-local data after the outbound call returns.  
   
@@ -401,7 +401,7 @@ public void MyMethod()
 ## Remarks  
  If a type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, it stores any extra data it doesn’t know about that comes over the wire when deserializing into that type. For example, if a type `Person` has members `FirstName` and `LastName`, and an element called `PhoneNumber` comes in, it is stored. When later serializing the type, `PhoneNumber` will be re-emitted. The problem is that the schema for `Person` exported by that service only has `FirstName` and `LastName`, so [!INCLUDE[indigo1](~/includes/indigo1-md.md)] generates a schema-invalid instance! If strict schema compliance is important, you can set <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> to `true` to turn this re-emitting behavior off.  
   
- Regardless <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always processes known data (both in and out) and does not throw exceptions when extra data comes in. You can also set this property using the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
+ Regardless <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, WCF always processes known data (both in and out) and does not throw exceptions when extra data comes in. You can also set this property using the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
   
    
   
@@ -443,7 +443,7 @@ public void MyMethod()
 ## Remarks  
  Set <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` to enable exception information to flow to clients for debugging purposes. This property requires a binding that supports either request-response or duplex messaging.  
   
- In all managed applications, processing errors are represented by <xref:System.Exception> objects. In SOAP-based applications such as [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications, methods that implement service operations communicate error information using SOAP fault messages. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications execute under both types of error systems, any managed exception information that needs to be sent to the client must be converted from exceptions into SOAP faults. For more information, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+ In all managed applications, processing errors are represented by <xref:System.Exception> objects. In SOAP-based applications such as WCF applications, methods that implement service operations communicate error information using SOAP fault messages. Because WCF applications execute under both types of error systems, any managed exception information that needs to be sent to the client must be converted from exceptions into SOAP faults. For more information, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
  During development, you may want your service to also send other exceptions back to the client to assist you in debugging. This is a development-only feature and should not be employed in deployed services.  
   

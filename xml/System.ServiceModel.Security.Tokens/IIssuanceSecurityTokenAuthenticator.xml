@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The token authenticators used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for issuing SSLNEGO/SPNEGO `SecurityContextToken`s or SecureConversation-based `SecurityContextToken`s are `IIssuanceSecurityTokenAuthenticator`s.  
+ The token authenticators used by WCF for issuing SSLNEGO/SPNEGO `SecurityContextToken`s or SecureConversation-based `SecurityContextToken`s are `IIssuanceSecurityTokenAuthenticator`s.  
   
  ]]></format>
     </remarks>

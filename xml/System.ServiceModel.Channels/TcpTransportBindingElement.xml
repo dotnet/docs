@@ -27,9 +27,9 @@
 ## Remarks  
  This transport uses URIs of the form "`net.tcp`://`hostname`:`port`/`path`". Other URI components are optional.  
   
- The <xref:System.ServiceModel.Channels.TcpTransportBindingElement> class is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for [!INCLUDE[indigo2](~/includes/indigo2-md.md)]-to-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] communication.  
+ The <xref:System.ServiceModel.Channels.TcpTransportBindingElement> class is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for WCF communication.  
   
- The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create and accept the channels that transmit SOAP messages using the TCP protocol.  
+ The WCF service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create and accept the channels that transmit SOAP messages using the TCP protocol.  
   
  You configure the factories that this class creates by setting its properties, such as <xref:System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled%2A> and <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings.LeaseTimeout%2A>.  
   
@@ -441,7 +441,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using this setting requires enabling the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] TCP Port Sharing Service by changing its Startup Type to Manual or Automatic.  
+ Using this setting requires enabling the WCF TCP Port Sharing Service by changing its Startup Type to Manual or Automatic.  
   
  For information about the TCP Listener and how to start it, see [Net.TCP Port Sharing](~/docs/framework/wcf/feature-details/net-tcp-port-sharing.md).  
   

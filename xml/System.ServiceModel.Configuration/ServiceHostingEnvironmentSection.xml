@@ -150,7 +150,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service can be activated.</summary>
-        <value>An integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service can be activated.</value>
+        <value>An integer that specifies the minimum amount of free memory that should be available to the system, before a WCF service can be activated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

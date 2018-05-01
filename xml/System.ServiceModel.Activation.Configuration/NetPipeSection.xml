@@ -62,7 +62,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the user accounts for processes that host [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services and are granted connection access to the sharing service.</summary>
-        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection" /> that contains user accounts for processes that host [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services and are granted connection access to the sharing service. The default values returned are LocalSystem, Admin, NS, LS, and IIS_USRS.</value>
+        <value>A <see cref="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection" /> that contains user accounts for processes that host WCF services and are granted connection access to the sharing service. The default values returned are LocalSystem, Admin, NS, LS, and IIS_USRS.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -67,7 +67,7 @@ evaluationContext.Properties["Principal"]=new CustomPrincipal(identity);
 ```  
   
 ## Background  
- The role-based security in [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] enables applications to specify authorizations through code. By specifying the <xref:System.Security.Permissions.PrincipalPermission> demand, the <xref:System.Threading.Thread.CurrentPrincipal%2A> must satisfy the `PrincipalPermission` requirement. For example, that the user must be in a specific role or group. Otherwise, the thread is not authorized to execute the code, which results in an exception. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] provides a set of <xref:System.ServiceModel.Description.PrincipalPermissionMode> selections to specify the <xref:System.Threading.Thread.CurrentPrincipal%2A> based on <xref:System.Security.SecurityContext> accordingly.  
+ The role-based security in [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] enables applications to specify authorizations through code. By specifying the <xref:System.Security.Permissions.PrincipalPermission> demand, the <xref:System.Threading.Thread.CurrentPrincipal%2A> must satisfy the `PrincipalPermission` requirement. For example, that the user must be in a specific role or group. Otherwise, the thread is not authorized to execute the code, which results in an exception. WCF provides a set of <xref:System.ServiceModel.Description.PrincipalPermissionMode> selections to specify the <xref:System.Threading.Thread.CurrentPrincipal%2A> based on <xref:System.Security.SecurityContext> accordingly.  
   
    
   

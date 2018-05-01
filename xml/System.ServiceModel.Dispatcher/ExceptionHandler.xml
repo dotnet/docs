@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Extend the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and override the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method to determine whether an exception should terminate the application. Then create a new instance of your custom <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and assign it to the static <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> or <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property prior to creating [!INCLUDE[indigo2](~/includes/indigo2-md.md)] clients or services.  
+ Extend the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and override the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method to determine whether an exception should terminate the application. Then create a new instance of your custom <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and assign it to the static <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> or <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property prior to creating WCF clients or services.  
   
    
   
@@ -28,7 +28,7 @@
  [!code-csharp[S_UEExceptionHandler#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#0)]
  [!code-vb[S_UEExceptionHandler#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#0)]  
   
- The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
+ The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the WCF runtime.  
   
  [!code-csharp[S_UEExceptionHandler#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#1)]
  [!code-vb[S_UEExceptionHandler#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#1)]  
@@ -103,9 +103,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> property is `null`, and unhandled exceptions on asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] threads terminate the application.  Set this property to an <xref:System.ServiceModel.Dispatcher.ExceptionHandler> object to receive and react to these exceptions.  
+ By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> property is `null`, and unhandled exceptions on asynchronous WCF threads terminate the application.  Set this property to an <xref:System.ServiceModel.Dispatcher.ExceptionHandler> object to receive and react to these exceptions.  
   
- If an unhandled exception occurs on an asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] thread and reaches this handler, the state of the application domain may be compromised.  <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> should not return `true` for these exceptions.  
+ If an unhandled exception occurs on an asynchronous WCF thread and reaches this handler, the state of the application domain may be compromised.  <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> should not return `true` for these exceptions.  
   
  ]]></format>
         </remarks>
@@ -145,7 +145,7 @@
   
   
   
- The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
+ The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the WCF runtime.  
   
   
   
@@ -174,9 +174,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property is set to the value of <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle%2A>, causing unhandled exceptions within [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transports to be ignored.  Set this property to an instance of <xref:System.ServiceModel.Dispatcher.ExceptionHandler> to receive and react to these exceptions.  
+ By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property is set to the value of <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle%2A>, causing unhandled exceptions within WCF transports to be ignored.  Set this property to an instance of <xref:System.ServiceModel.Dispatcher.ExceptionHandler> to receive and react to these exceptions.  
   
- If an unhandled exception occurs within a global [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transport and reaches this handler, there is a possibility that the state of the application domain is compromised. <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> can return `false` for these exceptions to cause the application to be terminated.  
+ If an unhandled exception occurs within a global WCF transport and reaches this handler, there is a possibility that the state of the application domain is compromised. <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> can return `false` for these exceptions to cause the application to be terminated.  
   
  ]]></format>
         </remarks>

@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The following code shows how to use the <xref:System.ServiceModel.Web.WebChannelFactory%601> class to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+ The following code shows how to use the <xref:System.ServiceModel.Web.WebChannelFactory%601> class to call a WCF service.  
   
  [!code-csharp[BasicWebProgramming#0](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#0)]
  [!code-vb[BasicWebProgramming#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#0)]  
@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a WCF service.  
   
  [!code-csharp[BasicWebProgramming#1](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#1)]
  [!code-vb[BasicWebProgramming#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#1)]  
@@ -124,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a WCF service.  
   
  [!code-csharp[BasicWebProgramming#2](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#2)]
  [!code-vb[BasicWebProgramming#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#2)]  
@@ -229,7 +229,7 @@
    
   
 ## Examples  
- The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and use it to call a WCF service.  
   
  [!code-csharp[BasicWebProgramming#3](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#3)]
  [!code-vb[BasicWebProgramming#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#3)]  

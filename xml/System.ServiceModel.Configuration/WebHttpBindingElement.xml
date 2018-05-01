@@ -18,9 +18,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web programming model allows developers to expose [!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web services through HTTP requests that use "plain old XML" (POX) style messaging instead of SOAP-based messaging. For clients to communicate with a service using HTTP requests, an endpoint of the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> that has the <xref:System.ServiceModel.Description.WebHttpBehavior> attached to it. The Web model also requires that the individual operations are annotated with either the <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute> to bind them to a unique combination of HTTP method, such as POST (the default) or GET, and a URI path suffix, which defaults to the operation name.  
+ The WCF Web programming model allows developers to expose WCF Web services through HTTP requests that use "plain old XML" (POX) style messaging instead of SOAP-based messaging. For clients to communicate with a service using HTTP requests, an endpoint of the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> that has the <xref:System.ServiceModel.Description.WebHttpBehavior> attached to it. The Web model also requires that the individual operations are annotated with either the <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute> to bind them to a unique combination of HTTP method, such as POST (the default) or GET, and a URI path suffix, which defaults to the operation name.  
   
- Support in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for syndication and ASP.AJAX integration are both built on top of the Web programming model. For more information about the model, see [WCF Web HTTP Programming Model](~/docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).  
+ Support in WCF for syndication and ASP.AJAX integration are both built on top of the Web programming model. For more information about the model, see [WCF Web HTTP Programming Model](~/docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).  
   
  ]]></format>
     </remarks>

@@ -60,7 +60,7 @@
   
 -   A service class.  In this case, the behavior is applied only to endpoints the contract of which is the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
--   A callback class.  In this case, the behavior is applied to the duplex client's endpoint and [!INCLUDE[indigo2](~/includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
+-   A callback class.  In this case, the behavior is applied to the duplex client's endpoint and WCF ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
  To perform the customization task on the client for which it is intended, the <xref:System.ServiceModel.Description.IContractBehavior> object must be added to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the construction of the client runtime, which occurs when <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> is called. There are two ways to do this:  
   

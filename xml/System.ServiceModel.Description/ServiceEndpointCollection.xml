@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%28System.Type%29> overload is specific to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model. It looks at the <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property for each endpoint. The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> may be `null` if the <xref:System.ServiceModel.Description.ContractDescription> was not created from the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] programming model (types with *Contract attributes).  
+ This <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%28System.Type%29> overload is specific to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model. It looks at the <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property for each endpoint. The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> may be `null` if the <xref:System.ServiceModel.Description.ContractDescription> was not created from the WCF programming model (types with *Contract attributes).  
   
  There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
   

@@ -57,7 +57,7 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the IIS or WAS application that hosts the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.</summary>
+        <summary>Gets the virtual path of the IIS or WAS application that hosts the WCF service.</summary>
         <value>The virtual path of the IIS or WAS application that hosts the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +89,7 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
+ This method supports the WCF infrastructure and is not intended to be called directly from your code.  
   
  ]]></format>
         </remarks>
@@ -117,12 +117,12 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       </Parameters>
       <Docs>
         <param name="owner">The <see cref="T:System.ServiceModel.ServiceHostBase" /> using the virtual path.</param>
-        <summary>This method is provided to support the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure.</summary>
+        <summary>This method is provided to support the WCF infrastructure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
+ This method supports the WCF infrastructure and is not intended to be called directly from your code.  
   
  ]]></format>
         </remarks>
@@ -143,7 +143,7 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the site name of the IIS or WAS application that hosts the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.</summary>
+        <summary>Gets the site name of the IIS or WAS application that hosts the WCF service.</summary>
         <value>The site name of the IIS or WAS application that hosts the service.</value>
         <remarks>To be added.</remarks>
       </Docs>

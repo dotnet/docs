@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to expose and access Web style services. <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
+ The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables WCF to expose and access Web style services. <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
   
  ]]></format>
     </remarks>
@@ -354,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> maps calls to [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service operations based on the Uniform Resource Identifier (URI) suffix and the HTTP method used. This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> that maps the incoming HTTP request to a service operation.  
+ The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> maps calls to WCF service operations based on the Uniform Resource Identifier (URI) suffix and the HTTP method used. This is an extensibility point that derived behaviors can use to supply their own implementation of <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> that maps the incoming HTTP request to a service operation.  
   
  ]]></format>
         </remarks>
@@ -537,9 +537,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines if the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] Help page is enabled.</summary>
+        <summary>Gets or sets a value that determines if the WCF Help page is enabled.</summary>
         <value>
-          <see langword="true" /> if the [!INCLUDE[indigo2](~/includes/indigo2-md.md)]Help page is enabled; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the WCFHelp page is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

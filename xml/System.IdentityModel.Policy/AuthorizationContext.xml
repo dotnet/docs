@@ -156,7 +156,7 @@
  The <xref:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime%2A> property is in Universal Coordinated Time (UTC).  
   
 > [!NOTE]
->  The service model in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not check the value of the <xref:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime%2A> property. This property is set by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] using the <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property of the security token on which the authorization context is based. The <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property is checked by [!INCLUDE[indigo2](~/includes/indigo2-md.md)], however. The authorization context's expiration time is meant for scenarios such as an authorization policy which has to take some action upon expiration.  
+>  The service model in WCF does not check the value of the <xref:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime%2A> property. This property is set by WCF using the <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property of the security token on which the authorization context is based. The <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property is checked by WCF, however. The authorization context's expiration time is meant for scenarios such as an authorization policy which has to take some action upon expiration.  
   
  ]]></format>
         </remarks>

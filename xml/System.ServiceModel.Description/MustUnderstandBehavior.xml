@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client or service runtime throws an exception when it encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=nameWithType> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=nameWithType> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=nameWithType> property for the message.  
+ By default the WCF client or service runtime throws an exception when it encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=nameWithType> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=nameWithType> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=nameWithType> property for the message.  
   
  To prevent this behavior, use the <xref:System.ServiceModel.Description.MustUnderstandBehavior> and set the <xref:System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A> property to `false`. Typically, this is used in scenarios where the message content is meant to be relayed somewhere else and not processed, such as a router service.  
   

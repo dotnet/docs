@@ -22,7 +22,7 @@
  If a message is vulnerable to a digest attack (for example, if the message is short or the entropy is low), you should use the SignBeforeEncryptAndEncryptSignature or EncryptBeforeSign option. (*Entropy* is random data provided by a server, a client, or both, and is used to create a shared key for encrypting and decrypting data.)  
   
 ## What Is Ordered?  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] offers three different protection levels that determine how messages are secured using SOAP message security. The default is SignBeforeEncryptAndEncryptSignature. This setting first signs the message, encrypts the message body, and then encrypts the XML signature. This reduces the likelihood of a successful cryptographic guessing attack against the signature.  
+ WCF offers three different protection levels that determine how messages are secured using SOAP message security. The default is SignBeforeEncryptAndEncryptSignature. This setting first signs the message, encrypts the message body, and then encrypts the XML signature. This reduces the likelihood of a successful cryptographic guessing attack against the signature.  
   
  However, using the default has performance implications. In effect, there is a tradeoff of performance for increased security. Encrypting the signature can decrease performance between 10 percent and 40 percent. If the data content of the message is of low value, and performance throughput is more significant, use SignBeforeEncrypt. With this setting, the signature digest is sent in clear text, and thus the message is more vulnerable to guess-and-verify attacks on low entropy.  
   

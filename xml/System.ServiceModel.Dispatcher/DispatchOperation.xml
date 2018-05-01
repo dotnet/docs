@@ -659,7 +659,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired%2A> property is `true`,  [!INCLUDE[indigo2](~/includes/indigo2-md.md)] sets the current transaction to the transaction used to receive the message if using a transacted transport; or the transaction flowed over the channel if the message had a transaction; or the dispatcher will create a new one.  
+ If the <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired%2A> property is `true`,  WCF sets the current transaction to the transaction used to receive the message if using a transacted transport; or the transaction flowed over the channel if the message had a transaction; or the dispatcher will create a new one.  
   
  ]]></format>
         </remarks>

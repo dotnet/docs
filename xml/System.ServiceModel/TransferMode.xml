@@ -40,11 +40,11 @@
   
  The decision to use either buffered or streamed transfers is a local decision of the endpoint for HTTP transports. For HTTP transports, the transfer mode does not propagate across a connection, or to proxy servers or other intermediaries. Setting the transfer mode is not reflected in the description of the service contract. After generating a proxy to a service, you can (it is allowed but not required) edit the configuration file for services intended to be used with streamed transfers to set the transfer mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
- Using the Streamed transfer mode causes the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime to enforce some restrictions.  
+ Using the Streamed transfer mode causes the WCF runtime to enforce some restrictions.  
   
 -   Operations that occur across a streamed transport can have a contract with at most one input and/or one output parameter at the programming model layer. That parameter corresponds to the entire body of the message and must be a <xref:System.ServiceModel.Channels.Message>, be a subtype of <xref:System.IO.Stream>, or implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. Having a return value for an operation is equivalent to having an output parameter.  
   
--   Some [!INCLUDE[indigo2](~/includes/indigo2-md.md)] features such as Reliable Messaging and SOAP message-level security rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport level security only or use mixed-mode security, which combines WS-Security claims with transport security.  
+-   Some WCF features such as Reliable Messaging and SOAP message-level security rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport level security only or use mixed-mode security, which combines WS-Security claims with transport security.  
   
 -   SOAP headers are always buffered, even when the transfer mode is set to Streamed. The headers for a message must not exceed the size of the MaxBufferSize transport quota which is exposed on the various bindings and binding elements.  
   

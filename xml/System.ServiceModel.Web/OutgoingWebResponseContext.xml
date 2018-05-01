@@ -409,7 +409,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets and sets a value that indicates whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
-        <value>If <see langword="true" />, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] omits any data that is normally written to the entity body of the response and forces an empty response to be returned. The default value is <see langword="false" />.</value>
+        <value>If <see langword="true" />, WCF omits any data that is normally written to the entity body of the response and forces an empty response to be returned. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

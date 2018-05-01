@@ -26,7 +26,7 @@
   
  Use this class to specify which event log is written to, as well as kinds of authentication events to write. You can also specify whether to suppress audit failures by setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `false` (the default is `true`).  
   
- For more information about auditing security events for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications, see [Auditing](~/docs/framework/wcf/feature-details/auditing-security-events.md).  
+ For more information about auditing security events for WCF applications, see [Auditing](~/docs/framework/wcf/feature-details/auditing-security-events.md).  
   
  To specify audit behavior in configuration, use the [&lt;serviceSecurityAudit&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
   

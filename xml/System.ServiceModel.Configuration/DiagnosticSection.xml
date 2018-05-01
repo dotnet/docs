@@ -108,7 +108,7 @@
       </ReturnValue>
       <Docs>
         <summary>Describes the settings for [!INCLUDE[indigo1](~/includes/indigo1-md.md)] message logging.</summary>
-        <value>A <see cref="T:System.ServiceModel.Configuration.MessageLoggingElement" /> that describes the settings for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] message logging.</value>
+        <value>A <see cref="T:System.ServiceModel.Configuration.MessageLoggingElement" /> that describes the settings for WCF message logging.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The WMI provider is required for users to gain runtime access to the inspection and control features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].  
+ The WMI provider is required for users to gain runtime access to the inspection and control features of WCF.  
   
  ]]></format>
         </remarks>

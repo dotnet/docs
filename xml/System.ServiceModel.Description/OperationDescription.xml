@@ -34,7 +34,7 @@
   
  A <xref:System.ServiceModel.Description.ContractDescription> object is used to describe contracts and their operations. Within a <xref:System.ServiceModel.Description.ContractDescription>, each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the operation, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> also describes the messages that make up the operation using a collection of <xref:System.ServiceModel.Description.MessageDescription> objects. <xref:System.ServiceModel.Description.ContractDescription> contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute>, and its methods that correspond to endpoint operations are marked with <xref:System.ServiceModel.OperationContractAttribute>.  
   
- Many of the properties on <xref:System.ServiceModel.Description.OperationDescription> have corresponding properties in the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] programming model on <xref:System.ServiceModel.OperationContractAttribute>, for example, <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>.  
+ Many of the properties on <xref:System.ServiceModel.Description.OperationDescription> have corresponding properties in the WCF programming model on <xref:System.ServiceModel.OperationContractAttribute>, for example, <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>.  
   
    
   

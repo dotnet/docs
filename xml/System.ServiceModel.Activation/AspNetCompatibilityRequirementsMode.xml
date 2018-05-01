@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode allows [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services to use ASP features such as identity impersonation. It is enabled at the application level through the Web.config file and cannot be overridden by Web.config files nested in the application. When the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> value is not specified for a service, it gets Allowed behavior by default. For more information, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+ [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode allows WCF services to use ASP features such as identity impersonation. It is enabled at the application level through the Web.config file and cannot be overridden by Web.config files nested in the application. When the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> value is not specified for a service, it gets Allowed behavior by default. For more information, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
    
   
@@ -52,7 +52,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>[!INCLUDE[indigo2](~/includes/indigo2-md.md)] services can run in an application domain with [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode set to <see langword="true" /> or <see langword="false" />.</summary>
+        <summary>WCF services can run in an application domain with [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode set to <see langword="true" /> or <see langword="false" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAllowed">
@@ -72,7 +72,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>[!INCLUDE[indigo2](~/includes/indigo2-md.md)] services must run in an application domain with [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode set to <see langword="false" />.</summary>
+        <summary>WCF services must run in an application domain with [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode set to <see langword="false" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -92,7 +92,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>[!INCLUDE[indigo2](~/includes/indigo2-md.md)] services must run in an application domain with [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode set to <see langword="true" />.</summary>
+        <summary>WCF services must run in an application domain with [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode set to <see langword="true" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -30,7 +30,7 @@
   
 3.  Modify the binding stack or the contract by either adding a required custom <xref:System.ServiceModel.Channels.BindingElement> to the <xref:System.ServiceModel.Description.PolicyConversionContext.BindingElements%2A> property or by modifying the <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A?displayProperty=nameWithType> property.  
   
- Step 2 is important. After all policy importers have been called, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] checks for the existence of any policy assertions that remain. If one exists, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] assumes that the policy import was unsuccessful and does not import the associated binding.  
+ Step 2 is important. After all policy importers have been called, WCF checks for the existence of any policy assertions that remain. If one exists, WCF assumes that the policy import was unsuccessful and does not import the associated binding.  
   
 > [!IMPORTANT]
 >  A malicious metadata supplier can attempt to send malformed XML as part of metadata in an attempt to exploit a policy importer. It is strongly recommended that custom policy importers be robust to all forms of XML that can be passed to it.  
@@ -101,7 +101,7 @@
   
 3.  Modifies the binding stack or the contract by either adding a required custom <xref:System.ServiceModel.Channels.BindingElement> to the <xref:System.ServiceModel.Description.PolicyConversionContext.BindingElements%2A> property or by modifying the <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A?displayProperty=nameWithType> property.  
   
- Step 2 is important. After all policy importers have been called, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] checks for the existence of any policy assertions that remain. If one exists, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] assumes that the policy import was unsuccessful and does not import the associated binding.  
+ Step 2 is important. After all policy importers have been called, WCF checks for the existence of any policy assertions that remain. If one exists, WCF assumes that the policy import was unsuccessful and does not import the associated binding.  
   
    
   

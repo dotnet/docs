@@ -95,7 +95,7 @@
       </Parameters>
       <Docs>
         <param name="messageVersion">The version of the SOAP message to use.</param>
-        <param name="parameters">The parameters passed to the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client operation.</param>
+        <param name="parameters">The parameters passed to the WCF client operation.</param>
         <summary>Converts an <see cref="T:System.Object" /> array into an outbound <see cref="T:System.ServiceModel.Channels.Message" />.</summary>
         <returns>The SOAP message sent to the service operation.</returns>
         <remarks>

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this endpoint when writing a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST service.  
+ Use this endpoint when writing a WCF REST service.  
   
  ]]></format>
     </remarks>
@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When automatic format selection is enabled, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure parses the `Accept` header of the request message and determines the most appropriate response format. If the `Accept` header does not specify a suitable response format, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure uses the `Content-Type` of the request message or the default response format of the operation.  
+ When automatic format selection is enabled, the WCF infrastructure parses the `Accept` header of the request message and determines the most appropriate response format. If the `Accept` header does not specify a suitable response format, the WCF infrastructure uses the `Content-Type` of the request message or the default response format of the operation.  
   
  ]]></format>
         </remarks>

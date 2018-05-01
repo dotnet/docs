@@ -40,7 +40,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Extend the <xref:System.ServiceModel.ClientBase%601> class to create a custom [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object that can be used to connect to a service. Typically, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client base class is extended by a tool such as the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) on your behalf. For an example, see the Example section.  
+ Extend the <xref:System.ServiceModel.ClientBase%601> class to create a custom WCF client object that can be used to connect to a service. Typically, the WCF client base class is extended by a tool such as the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) on your behalf. For an example, see the Example section.  
   
  The <xref:System.ServiceModel.ClientBase%601> class can be used quickly and easily by developers who prefer objects to the use of the interfaces and the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. In all cases this class wraps or exposes the methods and functionality of the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class and the <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface.  
   
@@ -59,7 +59,7 @@
    
   
 ## Examples  
- The following code example shows how the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) extends the <xref:System.ServiceModel.ClientBase%601> class to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client class.  
+ The following code example shows how the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) extends the <xref:System.ServiceModel.ClientBase%601> class to create a WCF client class.  
   
  [!code-csharp[ClientBase#1](~/samples/snippets/csharp/VS_Snippets_CFX/clientbase/cs/clientbase.cs#1)]
  [!code-vb[ClientBase#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/clientbase/vb/clientbase.vb#1)]  
@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object from the endpoint information in the application configuration file. The main function of the constructor is to create a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> where the type parameter is the type of the target service contract.  
+ Use to create a WCF client object from the endpoint information in the application configuration file. The main function of the constructor is to create a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> where the type parameter is the type of the target service contract.  
   
  ]]></format>
         </remarks>
@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object to invoke a service. This constructor uses the type parameter as the target contract and the binding and address information from the application configuration file.  
+ Use this constructor to create a WCF client object to invoke a service. This constructor uses the type parameter as the target contract and the binding and address information from the application configuration file.  
   
    
   
@@ -791,7 +791,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the target endpoint for the service to which the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client can connect.</summary>
+        <summary>Gets the target endpoint for the service to which the WCF client can connect.</summary>
         <value>The target endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -859,7 +859,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the underlying <see cref="T:System.ServiceModel.IClientChannel" /> implementation.</summary>
-        <value>The client channel for the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object.</value>
+        <value>The client channel for the WCF client object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

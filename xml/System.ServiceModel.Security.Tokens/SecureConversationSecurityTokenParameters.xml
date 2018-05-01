@@ -498,7 +498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When Windows authentication is used in combination with a security context token, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not populate the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property with the actual caller's identity, but instead sets the property to anonymous. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] security must re-create the content of the service security context for every request from the incoming security context token, the server does not keep track of the security session in the memory. Because it is impossible to serialize the <xref:System.Security.Principal.WindowsIdentity> instance into the security context token, the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property returns an anonymous identity.  
+ When Windows authentication is used in combination with a security context token, WCF does not populate the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property with the actual caller's identity, but instead sets the property to anonymous. Because WCF security must re-create the content of the service security context for every request from the incoming security context token, the server does not keep track of the security session in the memory. Because it is impossible to serialize the <xref:System.Security.Principal.WindowsIdentity> instance into the security context token, the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property returns an anonymous identity.  
   
  The following configuration exhibits this behavior.  
   

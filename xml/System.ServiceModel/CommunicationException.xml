@@ -35,7 +35,7 @@
 > [!NOTE]
 >  When implementing custom channels and binding elements, it is strongly recommended that your components throw only <xref:System.TimeoutException?displayProperty=nameWithType> or <xref:System.ServiceModel.CommunicationException>-derived objects. In the case where your components throw a recoverable exception that is specific to the component, wrap that exception inside a <xref:System.ServiceModel.CommunicationException> object.  
   
- For more details about designing and using the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] fault system, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+ For more details about designing and using the WCF fault system, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
 > [!IMPORTANT]
 >  The WCF Runtime will not throw a <xref:System.ServiceModel.CommunicationException> that is unsafe to handle at the point where it leaves the WCF Runtime and enters user code.  

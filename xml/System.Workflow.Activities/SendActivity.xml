@@ -36,7 +36,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- The <xref:System.Workflow.Activities.SendActivity> activity enables you to participate in a conversation with a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service using a predefined message exchange pattern.  
+ The <xref:System.Workflow.Activities.SendActivity> activity enables you to participate in a conversation with a WCF service using a predefined message exchange pattern.  
   
 > [!NOTE]
 >  The <xref:System.Workflow.Activities.SendActivity> activity is a blocking activity, meaning that workflow execution is blocked until the activity completes execution.  

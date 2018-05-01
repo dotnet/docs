@@ -22,7 +22,7 @@
   
  Use the <xref:System.ServiceModel.ServiceHost> class to configure and expose a service for use by client applications when you are not using Internet Information Services (IIS) or Windows Activation Services (WAS) to expose a service. Both IIS and WAS interact with a <xref:System.ServiceModel.ServiceHost> object on your behalf.  
   
- To expose a service for use by callers, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] requires a complete service description (represented by the <xref:System.ServiceModel.Description.ServiceDescription> class). The <xref:System.ServiceModel.ServiceHost> class creates a <xref:System.ServiceModel.Description.ServiceDescription> from the service type and configuration information and then uses that description to create <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects for each endpoint in the description.  
+ To expose a service for use by callers, WCF requires a complete service description (represented by the <xref:System.ServiceModel.Description.ServiceDescription> class). The <xref:System.ServiceModel.ServiceHost> class creates a <xref:System.ServiceModel.Description.ServiceDescription> from the service type and configuration information and then uses that description to create <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects for each endpoint in the description.  
   
  Use a <xref:System.ServiceModel.ServiceHost> object to load a service, configure endpoints, apply security settings, and start listeners to handle incoming requests.  
   

@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class represents the syndication versions that [!INCLUDE[indigo2](~/includes/indigo2-md.md)] supports by default. You can add support for additional syndication versions by implementing your own <xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, and <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> classes.  
+ This class represents the syndication versions that WCF supports by default. You can add support for additional syndication versions by implementing your own <xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, and <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> classes.  
   
  ]]></format>
     </remarks>

@@ -31,7 +31,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTPS transport protocol. HTTPS is the primary transport used for secure interoperability purposes. HTTPS is supported by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to ensure interoperability with other Web services stacks.  
   
- The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTPS protocol.  
+ The WCF service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTPS protocol.  
   
  You control the configuration of the factories that this class creates by setting its properties, such as: <xref:System.ServiceModel.Channels.HttpsTransportBindingElement.RequireClientCertificate%2A>.  
   

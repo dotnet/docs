@@ -29,11 +29,11 @@
 ## Remarks  
  When applied to a service implementation class, this attribute indicates whether this service requires or supports [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode to be enabled for the hosting application domain (AppDomain).  
   
- AppDomains hosting [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services can run in two different hosting modes:  
+ AppDomains hosting WCF services can run in two different hosting modes:  
   
--   Mixed Transports Mode (Default): In this mode, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services do not participate in the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] HTTP pipeline. This guarantees that a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service behaves consistently, independent of hosting environment and transport.  
+-   Mixed Transports Mode (Default): In this mode, WCF services do not participate in the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] HTTP pipeline. This guarantees that a WCF service behaves consistently, independent of hosting environment and transport.  
   
--   [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Compatibility Mode: In this mode, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services participate in the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] HTTP pipeline in a manner similar to ASMX services. [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] features such as File Authorization, UrlAuthorization, and HTTP Session State are applicable to [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services running in this mode.  
+-   [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Compatibility Mode: In this mode, WCF services participate in the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] HTTP pipeline in a manner similar to ASMX services. [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] features such as File Authorization, UrlAuthorization, and HTTP Session State are applicable to WCF services running in this mode.  
   
  The hosting mode is controlled by the application-level configuration flag `aspNetCompatibilityEnabled`.  
   
@@ -43,7 +43,7 @@
   
  `</system.serviceModel>`  
   
- This flag is `false` by default and thus [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services run in the Mixed Transports Mode unless you explicitly opt into the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode.  
+ This flag is `false` by default and thus WCF services run in the Mixed Transports Mode unless you explicitly opt into the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode.  
   
  For more informaiton about ASP.NET compatibility mode, see [&lt;serviceHostingEnvironment&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used directly from your code.  
+ This method supports the WCF infrastructure and is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used directly from your code.  
+ This method supports the WCF infrastructure and is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>
@@ -220,7 +220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used directly from your code.  
+ This method supports the WCF infrastructure and is not intended to be used directly from your code.  
   
  ]]></format>
         </remarks>

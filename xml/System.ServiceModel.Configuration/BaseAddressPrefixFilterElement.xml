@@ -22,7 +22,7 @@
   
  IIS websites are containers for virtual applications which contain virtual directories. The application in a site can be accessed through one or more IIS binding. IIS bindings provide two pieces of information: binding protocol and binding information. Binding protocol (e.g., HTTP) defines the scheme over which communication occurs, and binding information (e.g., IPAddress, Port, Hostheader) contains data used to access the site.  
   
- IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. Since a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service hosted under a site allows binding to only one base address per scheme, you can use the prefix filter feature to pick the required base address of the hosted service.  The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list filter.  
+ IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. Since a WCF service hosted under a site allows binding to only one base address per scheme, you can use the prefix filter feature to pick the required base address of the hosted service.  The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list filter.  
   
  For example, your site can contain the following base addresses  
   

@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a DNS claim that represents this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain a DNS claim that represents this identity.  
   
  This static method creates an instance of <xref:System.ServiceModel.DnsEndpointIdentity> by calling its constructor <xref:System.ServiceModel.DnsEndpointIdentity.%23ctor%2A>.  
   
@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
   
  This method can create an identity of type <xref:System.ServiceModel.DnsEndpointIdentity>, <xref:System.ServiceModel.SpnEndpointIdentity>, <xref:System.ServiceModel.UpnEndpointIdentity>, or <xref:System.ServiceModel.RsaEndpointIdentity>.  
   
@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
   
  One of these static methods creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
   
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key obtained from the certificate used to construct this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key obtained from the certificate used to construct this identity.  
   
  This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
   
@@ -227,7 +227,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
   
  This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
   
@@ -262,7 +262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
+ A secure WCF client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
   
  This static method creates an instance of <xref:System.ServiceModel.SpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.SpnEndpointIdentity.%23ctor%2A>, using `spnName` as the input parameter.  
   
@@ -306,11 +306,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
+ A secure WCF client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
   
  This static method creates an instance of <xref:System.ServiceModel.UpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.UpnEndpointIdentity.%23ctor%2A>, using `upnName` as the input parameter.  
   
- If `upnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] makes a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+ If `upnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, WCF makes a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
   
    
   
@@ -338,7 +338,7 @@
 ## Remarks  
  Choose between these two constructors based on whether you have supporting certificates.  
   
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
   
  ]]></format>
         </remarks>
@@ -369,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+ A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
   
  This `static` method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `certificate` as the input parameter.  
   
@@ -408,7 +408,7 @@
         <param name="primaryCertificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the primary certificate for the identity.</param>
         <param name="supportingCertificates">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> that contains the supporting certificates for the identity.</param>
         <summary>Creates an X509Certificate identity with the specified primary and supporting certificates.</summary>
-        <returns>A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+        <returns>A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
   
  An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and <paramref name="supportingCertificates." /></returns>
         <remarks>

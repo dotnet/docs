@@ -36,7 +36,7 @@
  Instances of the <xref:System.ServiceModel.Description.MetadataReference> class are commonly used when processing a <xref:System.ServiceModel.Description.MetadataSet>, which represents the total metadata exchange point. The <xref:System.ServiceModel.Description.MetadataResolver> class is designed to resolve all references used to return the metadata. If, however, you need to examine each reference, use the <xref:System.ServiceModel.Description.MetadataReference> class to represent each endpoint.  
   
 ## Specifications  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implements the Web Services Metadata Exchange (WS-MetadataExchange) specification for returning metadata. That specification further uses the Web Services Transfer (WS-Transfer) specification to define the mechanism for retrieving XML-based data.  
+ WCF implements the Web Services Metadata Exchange (WS-MetadataExchange) specification for returning metadata. That specification further uses the Web Services Transfer (WS-Transfer) specification to define the mechanism for retrieving XML-based data.  
   
  ]]></format>
     </remarks>

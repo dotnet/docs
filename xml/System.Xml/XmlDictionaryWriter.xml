@@ -117,7 +117,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes WCF binary XML format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -171,7 +171,7 @@ binarywriter.WriteEndAttribute();
       </Parameters>
       <Docs>
         <param name="stream">The stream to write to.</param>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes WCF binary XML format.</summary>
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +207,7 @@ binarywriter.WriteEndAttribute();
       <Docs>
         <param name="stream">The stream to write to.</param>
         <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use as the shared dictionary.</param>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes WCF binary XML format.</summary>
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +245,7 @@ binarywriter.WriteEndAttribute();
         <param name="stream">The stream to write to.</param>
         <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use as the shared dictionary.</param>
         <param name="session">The <see cref="T:System.Xml.XmlBinaryWriterSession" /> to use.</param>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes WCF binary XML format.</summary>
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,7 +286,7 @@ binarywriter.WriteEndAttribute();
         <param name="session">The <see cref="T:System.Xml.XmlBinaryWriterSession" /> to use.</param>
         <param name="ownsStream">
           <see langword="true" /> to indicate that the stream is closed by the writer when done; otherwise <see langword="false" />.</param>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes WCF binary XML format.</summary>
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

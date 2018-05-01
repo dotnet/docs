@@ -27,7 +27,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Web.WebServiceHost> class to host a service that makes use of the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST programming model.  
+ The following example shows how to use the <xref:System.ServiceModel.Web.WebServiceHost> class to host a service that makes use of the WCF REST programming model.  
   
  [!code-csharp[WebServiceHost#0](~/samples/snippets/csharp/VS_Snippets_CFX/webservicehost/cs/program.cs#0)]
  [!code-vb[WebServiceHost#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/webservicehost/vb/program.vb#0)]  

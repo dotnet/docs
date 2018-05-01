@@ -45,7 +45,7 @@
   
 -   <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: represents the binding element that specifies the character encoding and message versioning used for binary-based XML messages. This is most efficient but least interoperable of the encoding options.  
   
--   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] messages. The MTOM encoder attempts to balance efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
+-   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to balance efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
   
    
   

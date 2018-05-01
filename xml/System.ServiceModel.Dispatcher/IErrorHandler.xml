@@ -96,7 +96,7 @@
   
  All <xref:System.ServiceModel.Dispatcher.IErrorHandler> implementations are called. By default (when the return value is `false`), if there is an exception, the dispatcher aborts any session and aborts the <xref:System.ServiceModel.InstanceContext> if the <xref:System.ServiceModel.InstanceContextMode> is anything other than <xref:System.ServiceModel.InstanceContextMode.Single>.  The exception is then considered unhandled and any state is considered corrupt.  
   
- Return `true` from <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> to prevent this default behavior. If any error handler returns `true` it instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] that it is safe to continue using state associated with the failed request.  
+ Return `true` from <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> to prevent this default behavior. If any error handler returns `true` it instructs WCF that it is safe to continue using state associated with the failed request.  
   
  If no error handler returns `true` from the <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method the exception is considered unhandled and the default response applies, potentially resulting in an aborted <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> and channel when communicating on a session channel or the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property is not set to <xref:System.ServiceModel.InstanceContextMode.Single?displayProperty=nameWithType>.  
   

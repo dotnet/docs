@@ -32,11 +32,11 @@
   
 -   Programmatically add the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property prior to the point where the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method is called on the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> object.  
   
--   Create a custom attribute that implements <xref:System.ServiceModel.Description.IServiceBehavior> and use it to mark service classes that are to be modified. When a <xref:System.ServiceModel.ServiceHost> object is constructed, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses reflection to discover the attributes on the service type. If any attributes implement <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>.  
+-   Create a custom attribute that implements <xref:System.ServiceModel.Description.IServiceBehavior> and use it to mark service classes that are to be modified. When a <xref:System.ServiceModel.ServiceHost> object is constructed, WCF uses reflection to discover the attributes on the service type. If any attributes implement <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>.  
   
 -   Extend the <xref:System.ServiceModel.Configuration.BehaviorExtensionElement?displayProperty=nameWithType> class to support the specification of the behavior in an application or machine configuration file. See the Example section for more information.  
   
- Examples of service behaviors in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior?displayProperty=nameWithType>, the <xref:System.ServiceModel.Description.ServiceDebugBehavior?displayProperty=nameWithType> and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> behavior.  
+ Examples of service behaviors in WCF include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior?displayProperty=nameWithType>, the <xref:System.ServiceModel.Description.ServiceDebugBehavior?displayProperty=nameWithType> and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> behavior.  
   
    
   

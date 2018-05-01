@@ -34,7 +34,7 @@
   
  Use the <xref:System.ServiceModel.OperationContractAttribute> properties to control the structure of the operation and the values expressed in metadata:  
   
--   The <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property specifies the action that uniquely identifies this operation. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] dispatches request messages to methods based on their action.  
+-   The <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property specifies the action that uniquely identifies this operation. WCF dispatches request messages to methods based on their action.  
   
 -   The <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property indicates that the operation is implemented or can be called asynchronously using a Begin/End method pair.  
   
@@ -44,7 +44,7 @@
   
 -   The <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property specifies whether this operation can be the initial operation in a session.  
   
--   The <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property specifies whether [!INCLUDE[indigo2](~/includes/indigo2-md.md)] attempts to terminate the current session after the operation completes.  
+-   The <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property specifies whether WCF attempts to terminate the current session after the operation completes.  
   
 -   The <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property specifies the message-level security that an operation requires at run time.  
   
@@ -64,7 +64,7 @@
 > [!NOTE]
 >  If the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is set to `false`, (the default), even methods that return `void` are two-way methods at the underlying message level. In this case, the infrastructure creates and sends an empty message to indicate to the caller that the method has returned. Using this approach enables the application and the infrastructure to send error information (such as a SOAP fault) back to the client. Setting <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` is the only way to prevent the creation and dispatch of a reply message. For more information, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
   
- The <xref:System.ServiceModel.OperationContractAttribute.Action%2A> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> properties can be used not only to modify the default action of SOAP messages but also to create handlers for unrecognized messages or to disable adding actions for direct message programming. Use the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to prevent clients from calling a particular service operation prior to other operations. Use the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property to have [!INCLUDE[indigo2](~/includes/indigo2-md.md)] close the channel after clients call a particular service operation. For more information, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
+ The <xref:System.ServiceModel.OperationContractAttribute.Action%2A> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> properties can be used not only to modify the default action of SOAP messages but also to create handlers for unrecognized messages or to disable adding actions for direct message programming. Use the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to prevent clients from calling a particular service operation prior to other operations. Use the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property to have WCF close the channel after clients call a particular service operation. For more information, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
   
  The <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property enables you to specify on the operation contract whether the operation messages are signed, encrypted, or signed and encrypted. If a binding cannot provide the security level required by the contract, an exception is thrown at run time. For more information, see <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> and [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
@@ -164,7 +164,7 @@ public class OneAndTwoWay
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property to control the action of the method's input message. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses this action to dispatch an incoming message to the appropriate method, messages used within a contract operation must have unique actions. The default action value is a combination of the contract namespace (the default value is "http://tempuri.org/"), the contract name (interface name or the class name, if no explicit service interface is used), the operation name, and an additional string ("Response") if the message is a correlated response. You can override this default with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property.  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property to control the action of the method's input message. Because WCF uses this action to dispatch an incoming message to the appropriate method, messages used within a contract operation must have unique actions. The default action value is a combination of the contract namespace (the default value is "http://tempuri.org/"), the contract name (interface name or the class name, if no explicit service interface is used), the operation name, and an additional string ("Response") if the message is a correlated response. You can override this default with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property.  
   
  To indicate that a service operation handles all messages that the service receives but cannot be directed to a service operation, specify the value "*" (an asterisk). This type of operation, called an unmatched message handler, must have one of following method signatures, or a <xref:System.InvalidOperationException> is thrown:  
   
@@ -223,7 +223,7 @@ public class OneAndTwoWay
 ## Remarks  
  Use the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property to build service operations that can be called asynchronously on the server, the client, or both. The <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property informs the runtime that a `Begin` method has a matched `End` method that conforms to the .NET Framework asynchronous method design pattern. Building server asynchronous methods that implement a service operation increases server scalability and performance without affecting the clients of the service, and is recommended when a service operation must return something to the client after performing a lengthy operation that can be performed asynchronously.  
   
- Clients remain unaffected because the asynchronous method pair on the server is an implementation detail that does not affect the underlying Web Services Description Language (WSDL) description of the operation. Such methods appear to clients as a single operation with `<input>` and correlated `<output>` messages. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] automatically routes inbound messages to the `Begin`\<*methodName*> method and routes the results of the `End`\<*methodName*> call to the outbound message. Client channels, therefore, can represent the method pair as either a single synchronous operation or as an asynchronous operation pair. In no case does the client representation affect the asynchronous implementation on the server in any way.  
+ Clients remain unaffected because the asynchronous method pair on the server is an implementation detail that does not affect the underlying Web Services Description Language (WSDL) description of the operation. Such methods appear to clients as a single operation with `<input>` and correlated `<output>` messages. WCF automatically routes inbound messages to the `Begin`\<*methodName*> method and routes the results of the `End`\<*methodName*> call to the outbound message. Client channels, therefore, can represent the method pair as either a single synchronous operation or as an asynchronous operation pair. In no case does the client representation affect the asynchronous implementation on the server in any way.  
   
  Client contracts can use the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property to indicate an asynchronous method pair that the client can use to invoke the operation asynchronously. Typically, client applications use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool and the `/async` option to generate a `Begin`\<*methodName*> and `End`\<*methodName*> method pair that the client can use to invoke the operation asynchronously.  
   
@@ -483,7 +483,7 @@ public class OneAndTwoWay
 ## Remarks  
  Use the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property to indicate that calling a service operation terminates the communication session.  
   
- In a client application, a value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> set to `true` instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to close the channel after the reply arrives.  
+ In a client application, a value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> set to `true` instructs WCF to close the channel after the reply arrives.  
   
  In a service, a timer is set and the channel aborts if the client does not close the channel within that period.  
   
@@ -661,7 +661,7 @@ public class InitializeAndTerminateService
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to specifying a particular value for the action header of the reply message, you can also specify the string "*" (an asterisk). Specifying an asterisk in the service instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] not to add a reply action to the message, which is useful if you are programming against messages directly. Specifying an asterisk in a client application instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] not to validate the reply action.  
+ In addition to specifying a particular value for the action header of the reply message, you can also specify the string "*" (an asterisk). Specifying an asterisk in the service instructs WCF not to add a reply action to the message, which is useful if you are programming against messages directly. Specifying an asterisk in a client application instructs WCF not to validate the reply action.  
   
    
   

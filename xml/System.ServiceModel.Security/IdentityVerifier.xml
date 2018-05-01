@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure calls the <xref:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity%2A> method first to retrieve the service's identity from the message. Next, the infrastructure calls the <xref:System.ServiceModel.Security.IdentityVerifier.CheckAccess%2A> method with the returned <xref:System.ServiceModel.EndpointIdentity> and <xref:System.IdentityModel.Policy.AuthorizationContext>.  
+ The WCF infrastructure calls the <xref:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity%2A> method first to retrieve the service's identity from the message. Next, the infrastructure calls the <xref:System.ServiceModel.Security.IdentityVerifier.CheckAccess%2A> method with the returned <xref:System.ServiceModel.EndpointIdentity> and <xref:System.IdentityModel.Policy.AuthorizationContext>.  
   
  For more information about implementing the class, see [How to: Create a Custom Client Identity Verifier](~/docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md).  
   

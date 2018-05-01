@@ -34,7 +34,7 @@
  Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> from XML documents that represent Atom1.0 feeds. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter%601> formatter.  
   
 > [!NOTE]
->  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation ignores the fractional seconds.  
+>  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing, the WCF implementation ignores the fractional seconds.  
   
    
   

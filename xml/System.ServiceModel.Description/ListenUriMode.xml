@@ -26,7 +26,7 @@
   
 -   For TCP in exclusive mode (<xref:System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled%2A> is `false`) this means binding to a uniquely available port number.  
   
--   For TCP in port sharing mode (<xref:System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled%2A> is `true`) and for all of the other existing [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transports, this means appending a unique path (a GUID) to the end of the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A>.  
+-   For TCP in port sharing mode (<xref:System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled%2A> is `true`) and for all of the other existing WCF transports, this means appending a unique path (a GUID) to the end of the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A>.  
   
  When the value of the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUriMode%2A> is set to Explicit mode, the transport uses the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> exactly as it is provided, without modifying it to make it unique.  
   

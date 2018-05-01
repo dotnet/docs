@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions%2A> property specifies the maximum number of channels a <xref:System.ServiceModel.ServiceHost> can accept. Each listener object can have one pending channel that does not count against the value of <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions%2A> until [!INCLUDE[indigo2](~/includes/indigo2-md.md)] accepts the channel and begins processing messages on it. This property is most useful in scenarios that make use of sessions.  
+ The <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions%2A> property specifies the maximum number of channels a <xref:System.ServiceModel.ServiceHost> can accept. Each listener object can have one pending channel that does not count against the value of <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions%2A> until WCF accepts the channel and begins processing messages on it. This property is most useful in scenarios that make use of sessions.  
   
 > [!NOTE]
 >  A trace is written every time the value of this property is exceeded. The first trace is written as a warning.  

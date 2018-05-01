@@ -1,4 +1,4 @@
-﻿<Type Name="WebSocketReceiveResult" FullName="System.Net.WebSockets.WebSocketReceiveResult">
+<Type Name="WebSocketReceiveResult" FullName="System.Net.WebSockets.WebSocketReceiveResult">
   <TypeSignature Language="C#" Value="public class WebSocketReceiveResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSocketReceiveResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketReceiveResult" />
@@ -210,7 +210,7 @@
   
 1.  The WebSocket received an empty message. In this case the <xref:System.Net.WebSockets.WebSocketReceiveResult.CloseStatus%2A> property is None.  
   
-2.  The WebSocket received a close message was received from the remote endpoint. In this case the <xref:System.Net.WebSockets.WebSocketReceiveResult.CloseStatus%2A> property is set to a value other than None.  
+2.  The WebSocket received a close message from the remote endpoint. In this case, the <xref:System.Net.WebSockets.WebSocketReceiveResult.CloseStatus%2A> property is set to a value other than None.  
   
  ]]></format>
         </remarks>

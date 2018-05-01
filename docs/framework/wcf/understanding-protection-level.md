@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # Understanding Protection Level
-The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] feature and how it works.  
+The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the Windows Communication Foundation (WCF) feature and how it works.  
   
  For instructions on setting the protection level, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md).  
   

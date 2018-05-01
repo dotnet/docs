@@ -38,7 +38,7 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
  Note that in the case of multiple upgrades, the Initiator and Acceptor encapsulate state machines to enforce which upgrade transitions are valid for each Initiation.  
   
 ## How to Implement a Stream Upgrade  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides four `abstract` classes that you can implement:  
+ Windows Communication Foundation (WCF) provides four `abstract` classes that you can implement:  
   
 -   <xref:System.ServiceModel.Channels.StreamUpgradeInitiator?displayProperty=nameWithType>  
   

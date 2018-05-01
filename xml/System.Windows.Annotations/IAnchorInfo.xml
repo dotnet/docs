@@ -14,11 +14,6 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- <xref:System.Windows.Annotations.IAnchorInfo> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
-  
 ## Examples  
  Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
   
@@ -49,14 +44,7 @@
       <Docs>
         <summary>Gets the anchor of the annotation.</summary>
         <value>The anchor that is resolved.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.IAnchorInfo.Anchor%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Annotations.IAnchorInfo.ResolvedAnchor" />
       </Docs>
     </Member>
@@ -77,14 +65,7 @@
       <Docs>
         <summary>Gets the annotation object.</summary>
         <value>The annotation object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.IAnchorInfo.Annotation%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolvedAnchor">
@@ -106,11 +87,6 @@
         <value>The object that represents the location on the tree where the <see cref="P:System.Windows.Annotations.IAnchorInfo.Anchor" /> is resolved. The type is specified by the type of the annotated object. Sticky notes and highlights in flow or fixed documents always resolve to a <see cref="T:System.Windows.Annotations.TextAnchor" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.IAnchorInfo.ResolvedAnchor%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
   
 ## Examples  
  Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  

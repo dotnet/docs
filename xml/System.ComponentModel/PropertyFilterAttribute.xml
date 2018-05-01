@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.PropertyFilterAttribute> [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] supports an internal mechanism that limits the number of properties on a type that are returned by the custom <xref:System.Windows.DependencyObject> type descriptor. If the [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] is found, the type descriptor narrows the scope of returned properties. <xref:System.ComponentModel.PropertyFilterAttribute> differs from typical [!INCLUDE[TLA#tla_netframewkattr#plural](~/includes/tlasharptla-netframewkattrsharpplural-md.md)] because you cannot apply it to a class as metadata. The filter mechanism works through code instead of through static metadata.  
+ The <xref:System.ComponentModel.PropertyFilterAttribute> supports an internal mechanism that limits the number of properties on a type that are returned by the custom <xref:System.Windows.DependencyObject> type descriptor. If the attribute is found, the type descriptor narrows the scope of returned properties. <xref:System.ComponentModel.PropertyFilterAttribute> differs from typical attributes because you cannot apply it to a class as metadata. The filter mechanism works through code instead of through static metadata.  
   
  ]]></format>
     </remarks>
@@ -65,7 +65,7 @@
         <ReturnType>System.ComponentModel.PropertyFilterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member supports the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

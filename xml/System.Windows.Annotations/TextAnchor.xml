@@ -20,10 +20,6 @@
 ## Remarks  
  <xref:System.Windows.Annotations.TextAnchor> is the object type of the returned <xref:System.Windows.Annotations.IAnchorInfo.ResolvedAnchor%2A> if you are using sticky notes and highlights in flow or fixed documents.  
   
- <xref:System.Windows.Annotations.TextAnchor> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
-  
 ## Examples  
  Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
   
@@ -55,14 +51,7 @@
       <Docs>
         <summary>Gets the end position of the text anchor.</summary>
         <value>The end position of the text anchor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.TextAnchor.BoundingEnd%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Annotations.IAnchorInfo" />
         <altmember cref="M:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo(System.Windows.Annotations.AnnotationService,System.Windows.Annotations.Annotation)" />
       </Docs>
@@ -86,11 +75,6 @@
         <value>The beginning position of the text anchor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.TextAnchor.BoundingStart%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
   
 ## Examples  
  Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
@@ -128,14 +112,7 @@
         <summary>Returns a value that indicates whether the text anchor is equal to the specified object.</summary>
         <returns>
           <see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.TextAnchor.Equals%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -156,14 +133,7 @@
       <Docs>
         <summary>Returns the hash code of the text anchor instance.</summary>
         <returns>The hash code of the text anchor instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Annotations.TextAnchor.GetHashCode%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

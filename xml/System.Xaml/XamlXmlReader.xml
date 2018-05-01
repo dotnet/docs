@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you construct a <xref:System.Xaml.XamlXmlReader>, an <xref:System.Xml.XmlReader> is required. The purpose of this design is to use established [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] APIs for XML processing in order to handle stream input, to obtain a stream from a file, and so on.  
+ When you construct a <xref:System.Xaml.XamlXmlReader>, an <xref:System.Xml.XmlReader> is required. The purpose of this design is to use established .NET Framework APIs for XML processing in order to handle stream input, to obtain a stream from a file, and so on.  
   
  <xref:System.Xml.XmlReader> is the first component of the standard load path for XAML operations and is incorporated by <xref:System.Xaml.XamlServices.Load%2A?displayProperty=nameWithType> as well as by several existing framework XAML implementations for loading XAML.  
   

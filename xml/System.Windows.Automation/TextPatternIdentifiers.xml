@@ -181,9 +181,9 @@
   
  Values for this attribute are of type <xref:System.Globalization.CultureInfo>.  
   
- See <xref:System.Globalization.CultureInfo> in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] for more detail on the language code format.  
+ See <xref:System.Globalization.CultureInfo> for more detail on the language code format.  
   
- The default value is the language of the application [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+ The default value is the language of the application user interface.  
   
 > [!NOTE]
 >  There might be cases where the server does not support the language tag or authors cannot use it. In those cases the default applies.  

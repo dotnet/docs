@@ -226,9 +226,9 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Globalization.CultureInfo>. The default value is the language of the application [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+ Values for this attribute are of type <xref:System.Globalization.CultureInfo>. The default value is the language of the application user interface.  
   
- See <xref:System.Globalization.CultureInfo> in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] for more detail on the language code format.  
+ See <xref:System.Globalization.CultureInfo> for more detail on the language code format.  
   
 > [!NOTE]
 >  There might be cases where the server does not support the language tag or authors cannot use it. In those cases the default applies.  

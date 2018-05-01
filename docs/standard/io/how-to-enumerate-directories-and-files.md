@@ -71,4 +71,4 @@ You can enumerate directories and files by using methods that return an enumerab
      [!code-vb[System.IO.DirectoryInfo.EnumerateDirectories#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumeratedirectories/vb/program.vb#1)]  
   
 ## See Also  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

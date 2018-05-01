@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous File I-O"
+title: "Asynchronous File I/O"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

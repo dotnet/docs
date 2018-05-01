@@ -44,7 +44,7 @@ The following code examples write characters synchronously and asynchronously fr
  <xref:System.IO.StringWriter>  
  <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>  
  <xref:System.Text.StringBuilder>  
- [File and Stream I-O](../../../docs/standard/io/index.md)  
+ [File and Stream I/O](../../../docs/standard/io/index.md)  
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
  [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
  [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  

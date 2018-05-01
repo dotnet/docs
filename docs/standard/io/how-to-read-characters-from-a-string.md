@@ -53,4 +53,4 @@ The following code examples show how to read characters synchronously and asynch
  [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
  [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
  [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

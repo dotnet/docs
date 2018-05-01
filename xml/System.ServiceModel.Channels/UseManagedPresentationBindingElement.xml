@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used by an identity provider to express in its policy the fact that it supports the [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile.  
+ This class is used by an identity provider to express in its policy the fact that it supports the CardSpace profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that CardSpace profile.  
   
  ]]></format>
     </remarks>

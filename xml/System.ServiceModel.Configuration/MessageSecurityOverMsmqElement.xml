@@ -109,7 +109,7 @@
   
 -   Certificate: This enables the service to require that the client be authenticated using a certificate. The client credential in this case needs to be specified using the <xref:System.ServiceModel.Description.ClientCredentials> class or ClientCredentials behavior. The service credential in this case needs to be specified using the <xref:System.ServiceModel.Description.ClientCredentials> class or ClientCredentials behavior by specifying the serviceCertificate.  
   
--   CardSpace: This allows the service to require that the client be authenticated using a [!INCLUDE[infocard1](~/includes/infocard1-md.md)]. The serviceCertiifcate must be provisioned in the ClientCredential behavior.  
+-   CardSpace: This allows the service to require that the client be authenticated using a CardSpace. The serviceCertiifcate must be provisioned in the ClientCredential behavior.  
   
  The Certificate credential for the `MessageSecurityOverMsmq` is relevant only when the security mode is set to `Both` or `Message`.  
   

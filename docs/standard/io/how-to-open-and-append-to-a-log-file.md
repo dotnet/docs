@@ -36,4 +36,4 @@ ms.author: "mairaw"
  [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
  [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
  [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

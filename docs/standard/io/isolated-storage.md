@@ -161,7 +161,7 @@ ms.author: "mairaw"
 |[How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|  
 |[How to: Read and Write to Files in Isolated Storage](../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|  
 |[How to: Delete Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|  
-|[File and Stream I-O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|  
+|[File and Stream I/O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|  
   
 <a name="reference"></a>   
 ## Reference  

@@ -212,6 +212,25 @@ ms.custom: "updateeachrelease"
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/dotnet-internal/images/hub/netcore.svg?branch=master" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3><a href="/dotnet-internal/machine-learning?branch=pr-en-us-73">ML.NET Guide</a></h3>
+                                                <p><a href="/dotnet-internal/machine-learning/tutorials?branch=pr-en-us-73">Tutorials</a></p>
+                                                <p><a href="/dotnet-internal/machine-learning/resources?branch=pr-en-us-73">Resources</a></p>
+                                                <p><a href="/dotnet-internal/machine-learning/resources/glossary?branch=pr-en-us-73">Glossary</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
@@ -648,6 +667,68 @@ ms.custom: "updateeachrelease"
                                                     <p>Learn how to use Unity to build 2D and 3D games with C# with the Unity
                                                         Manual.
                                                     </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#ml-ai">Machine Learning and AI</a>
+                        <ul id="ml-ai" class="cardsC">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img src="/dotnet-internal/images/hub/swimlane-machine-learning-brain-lightbulb.svg?branch=pr-en-us-73" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <a href="/dotnet-internal/machine-learning?branch=pr-en-us-73">
+                                                    <h3>ML.NET</h3>
+                                                    <p>Build custom AI solutions and integrate them into your .NET applications.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img src="/dotnet-internal/images/hub/swimlane-cognitive-services.svg?branch=pr-en-us-73" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <a href="/azure/cognitive-services">
+                                                    <h3>Cognitive Services</h3>
+                                                    <p>Infuse apps, websites, and bots with intelligence to see, hear, speak, and understand.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img src="/dotnet-internal/images/hub/swimlane-azure-machine-learning.svg?branch=pr-en-us-73" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <a href="/azure/machine-learning">
+                                                    <h3>Azure Machine Learning</h3>
+                                                    <p>Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management.</p>
                                                 </a>
                                             </div>
                                         </div>

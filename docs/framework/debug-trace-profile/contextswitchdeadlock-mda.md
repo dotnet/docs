@@ -1,14 +1,6 @@
 ---
 title: "contextSwitchDeadlock MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "deadlocks [.NET Framework]"
   - "pumping messages"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "message pumping"
   - "context switching deadlocks"
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
-caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # contextSwitchDeadlock MDA
 The `contextSwitchDeadlock` managed debugging assistant (MDA) is activated when a deadlock is detected during an attempted COM context transition.  

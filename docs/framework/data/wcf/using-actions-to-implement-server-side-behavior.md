@@ -1,21 +1,7 @@
 ---
 title: "Using actions to implement server-side behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 11a372db-7168-498b-80d2-9419ff557ba5
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using actions to implement server-side behavior
 OData Actions provide a way to implement a behavior that acts upon a resource retrieved from an OData service.  For example consider a digital movie as a resource, there are many things you may do with a digital movie: check-out, rate/comment, or check-in. These are all examples of Actions that may be implemented by a WCF Data Service that manages digital movies. Actions are described in an OData response that contains a resource on which the Action can be invoked. When a user requests a resource that represents a digital movie the response returned from the WCF Data Service contains information about the Actions that are available for that resource. The availability of an Action can depend on the state of the data service or resource. For example once a digital movie is checked out it cannot be checked out by another user. Clients can invoke an action simply by specifying a URL. For example http://MyServer/MovieService.svc/Movies(6) would identify a specific digital movie and http://MyServer/MovieService.svc/Movies(6)/Checkout would invoke the action on the specific movie. Actions allow you to expose you service model without exposing your data model. Continuing with the movie service example, you may wish to allow a user to rate a movie, but not directly expose the rating data as a resource. You could implement a Rate Action to allow the user to rate a movie but not directly access the rating data as a resource.  

@@ -331,17 +331,17 @@ Exceptions are exceptional in .NET; that is, they should not occur frequently at
 
 #### Follow the .NET guidelines for exceptions
 
-The [.NET Library Design Guidelines](../../standard/design-guidelines/exceptions) give excellent advice on the use of exceptions in the context of all .NET programming. Some of these guidelines are as follows:
+The [.NET Library Design Guidelines](../../standard/design-guidelines/exceptions.md) give excellent advice on the use of exceptions in the context of all .NET programming. Some of these guidelines are as follows:
 
 * Do not use exceptions for normal flow of control. Although this technique is often used in languages such as OCaml, it is bug-prone and can be inefficient on .NET. Instead, consider returning a `None` option value to indicate a failure that is a common or expected occurrence.
 
 * Document exceptions thrown by your components when a function is used incorrectly.
 
-* Where possible, employ existing exceptions from the System namespaces. Avoid <xref:System.ApplicationExceptoin>, though.
+* Where possible, employ existing exceptions from the System namespaces. Avoid <xref:System.ApplicationException>, though.
 
 * Do not throw <xref:System.Exception> when it will escape to user code. This includes avoiding the use of `failwith`, `failwithf`, which are handy functions for use in scripting and for code under development, but should be removed from F# library code in favor of throwing a more specific exception type.
 
-* Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw <xref:ArgumentNullException>, <xref:ArgumentException>, and <xref:InvalidOperationException> when appropriate.
+* Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw <xref:System.ArgumentnullException>, <xref:System.ArgumentException>, and <xref:System.InvalidOperationException> when appropriate.
 
 #### Consider using option values for return types when failure is not an exceptional scenario
 

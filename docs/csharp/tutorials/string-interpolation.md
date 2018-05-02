@@ -26,7 +26,7 @@ As the example above shows, you embed an expression into an interpolated string 
 
 At compile time an interpolated string is transformed to the <xref:System.String.Format%2A?displayProperty=nameWithType> call or to the expression that produces a <xref:System.FormattableString?displayProperty=nameWithType> instance. That makes all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature available to you to use with interpolated strings as well.
 
-## How to specify a format string for interpolated expressions
+## How to specify a format string for an interpolated expression
 
 You specify a format string that is supported by the type of the expression result by following the interpolated expression with a colon (":") and the format string:
 
@@ -40,7 +40,7 @@ The following example shows how to specify standard and custom format strings fo
 
 For more information, see the [Format String Component](../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic. That section provides links to the topics that describe standard and custom format strings supported by .NET base types.
 
-## How to control field width and alignment
+## How to control field width and alignment of the formatted interpolated expression
 
 You specify the minimum field width in which string representation of the expression result is inserted and the alignment within that field by following the interpolated expression with a comma (",") and the constant expression that defines alignment:
 
@@ -58,19 +58,25 @@ When you need to specify both alignment and a format string, start with the alig
 
 The following example shows how to specify alignment:
 
-[!code-csharp-interactive[alignment example](TODO#2)]
+[!code-csharp-interactive[alignment example](TODO#3)]
 
 For more information, see the [Alignment Component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
 
-## How to include special symbols into an interpolated string
+## How to use escape characters in an interpolated string
 
-Link to the string section on escaping.
-Special case for braces.
-Verbatim strings.
+Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences). To include a brace, "{" or "}", in the result string, use two braces, "{{" or "}}". For more information, see the [Escaping Braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
 
-## How to use a conditional operator within an interpolated expression
+[Verbatim](../language-reference/tokens/verbatim.md) interpolated strings start with the `$` character followed by the `@` character.
 
-Copy from the feature description and example.
+The following code shows how to include braces into the result string and construct a verbatim interpolated string:
+
+[!code-csharp-interactive[escape sequence example](TODO#4)]
+
+## How to use a ternary conditional operator in an interpolated expression
+
+As the colon (":") has special meaning in an item with an interpolated expression, in order to use a [conditional operator](../language-reference/operators/conditional-operator.md) in an expression, enclose it in parentheses, as the following code shows:
+
+[!code-csharp-interactive[conditional operator example](TODO#5)]
 
 ## How to specify culture information of an interpolated string
 

@@ -1,3 +1,14 @@
+---
+title: F# coding conventions
+description: Learn general guidelines and idioms when writing F# code.
+author: cartermp
+ms.author: phcart
+ms.date: 05/07/2018
+ms.topic: conceptual
+ms.prod: dotnet-fsharp
+ms.technology: devlang-fsharp
+ms.devlang: fsharp
+---
 # F# coding conventions
 
 The following conventions are formulated from experience working with large F# codebases. The [Five principles of good F# code](index.md#five-principles-of-good-f-code) are the foundation of each recommendation. They are related to the [F# component design guidelines](component-design-guidelines.md), but are applicable for any F# code, not just components such as libraries.
@@ -497,7 +508,7 @@ type Closure1Table() =
         | (false, _) -> false
 ```
 
-`Closure1Table` encapsulates the underlying mutation-based data structure, thereby not forcing callers to maintain a the underlying data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
+`Closure1Table` encapsulates the underlying mutation-based data structure, thereby not forcing callers to maintain the underlying data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
 
 ### Prefer `let mutable` to reference cells
 
@@ -595,9 +606,9 @@ For example, here is the code that is run in [Ionide](http://ionide.io/) to prov
         }
 ```
 
-Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an ad-hoc manner.
+Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an ad hoc manner.
 
-## Type abbreviations
+## Type Abbreviations
 
 [Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://www.microsoft.com/cognitive-toolkit/), a deep learning library:
 
@@ -610,7 +621,7 @@ type Computation = DeviceDescriptor -> Variable -> Function
 
 The `Computation` name is a convenient way to denote any function that matches the signature it is aliasing. Using Type Abbreviations like this is convenient and allows for more succinct code.
 
-### Avoid using type abbreviations to represent your domain
+### Avoid using Type Abbreviations to represent your domain
 
 Although Type Abbreviations are convenient for giving a name to function signatures, they can be confusing when abbreviating other types. Consider this abbreviation:
 
@@ -634,4 +645,4 @@ module Networking =
         ...
 ```
 
-In summary, the pitfall with type abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.
+In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.

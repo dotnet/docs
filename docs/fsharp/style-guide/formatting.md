@@ -1,3 +1,14 @@
+---
+title: F# code formattin guidelines
+description: Learn guidelines for formatting F# code.
+author: cartermp
+ms.author: phcart
+ms.date: 05/07/2018
+ms.topic: conceptual
+ms.prod: dotnet-fsharp
+ms.technology: devlang-fsharp
+ms.devlang: fsharp
+---
 # F# code formatting guidelines
 
 This article offers guidelines for how to format your code so that your F# code is:
@@ -110,7 +121,7 @@ The same rules apply for list and array elements.
 
 Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces) and `[1; 2; 3]` (`;` is a delimiter, hence followed by a space).
 
-Always use at least one space between two distinct brace-like operators (e.g. leave a space between a `[` and a `{`).
+Always use at least one space between two distinct brace-like operators. For example, leave a space between a `[` and a `{`.
 
 ```fsharp
 // OK
@@ -406,7 +417,7 @@ let makeStreamReader x = new System.IO.StreamReader(path = x)
 
 * Separate top-level function and class definitions with two blank lines.
 * Method definitions inside a class are separated by a single blank line.
-* Extra blank lines may be used (sparingly) to separate groups of related functions. Blank lines may be omitted between a bunch of related one-liners (e.g. a set of dummy implementations).
+* Extra blank lines may be used (sparingly) to separate groups of related functions. Blank lines may be omitted between a bunch of related one-liners (for example, a set of dummy implementations).
 * Use blank lines in functions, sparingly, to indicate logical sections.
 
 ## Formatting comments
@@ -480,7 +491,7 @@ Some exceptions includes interoperating with native components, where underscore
 
 ### Use standard F# operators
 
-The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. Developers with a background in OCaml or other functional programming language may be accustomed to different idioms, and this list summarizes the recommended F# operators.
+The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. Developers with a background in OCaml or other functional programming language may be accustomed to different idioms. The following list summarizes the recommended F# operators.
 
 ```fsharp
 x |> f // Forward pipeline
@@ -502,4 +513,11 @@ x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 
 ### Use prefix syntax for generics (`Foo<T>`) in preference to postfix syntax (`T Foo`)
 
-F# inherits both the postfix ML style of naming generic types, e.g. `int list` as well as the prefix .NET style, e.g. `list<int>`. You should prefer the .NET style, except for four specific types. For F# lists, use the postfix form: `int list` rather than `list<int>`. For options, use the postfix form: `int option` rather than `option<int>`. For arrays, use the syntactic name `int[]` rather than either `int array` or `array<int>`. For refs, use `int ref` rather than `ref<int>` or `Ref<int>`. For all other types, use the prefix form: `HashSet<int>`, `Dictionary<string,int>`, since this conforms to .NET standards.
+F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for four specific types:
+
+1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
+2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
+3. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+4. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+
+For all other types, use the prefix form.

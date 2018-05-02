@@ -1,3 +1,14 @@
+---
+title: F# component design guidelines
+description: Learn the guidelines for writing F# components intended for consumption by other callers.
+author: cartermp
+ms.author: phcart
+ms.date: 05/07/2018
+ms.topic: conceptual
+ms.prod: dotnet-fsharp
+ms.technology: devlang-fsharp
+ms.devlang: fsharp
+---
 # F# component design guidelines
 
 This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and [another version](http://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
@@ -8,16 +19,16 @@ This document assumes you are familiar with F# programming. Many thanks to the F
 
 This document looks at some of the issues related to F# component design and coding. A component can mean any of the following:
 
-* A layer in your F# project that has external consumers within that project
-* A library intended for consumption by F# code across assembly boundaries
-* A library intended for consumption by any .NET language across assembly boundaries
-* A library intended for distribution via a package repository, such as [NuGet](https://nuget.org)
+* A layer in your F# project that has external consumers within that project.
+* A library intended for consumption by F# code across assembly boundaries.
+* A library intended for consumption by any .NET language across assembly boundaries.
+* A library intended for distribution via a package repository, such as [NuGet](https://nuget.org).
 
 Techniques described in this article follow the [Five principles of good F# code](index.md#five-principles-of-good-f-code), and thus utilize both functional and object programming as appropriate.
 
 Regardless of the methodology, the component and library designer faces a number of practical and prosaic issues when trying to craft an API that is most easily usable by developers. Conscientious application of the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md) will steer you towards creating a consistent set of APIs that are pleasant to consume.
 
-## General Guidelines
+## General guidelines
 
 There are a few universal guidelines that apply to F# libraries, regardless of the intended audience for the library.
 
@@ -47,11 +58,11 @@ Using explicit signatures files in an F# library provides a succinct summary of 
 
 Follow [Best Practices for Using Strings in .NET](../../standard/base-types/best-practices-strings.md) guidance. In particular, always explicitly state *cultural intent* in the conversion and comparison of strings (where applicable).
 
-## Guidelines for F#-Facing Libraries
+## Guidelines for F#-facing libraries
 
-In this section, we present recommendations for developing public F#-facing libraries; that is, libraries exposing public APIs that are intended to be consumed by F# developers. There are a variety of library-design recommendations applicable specifically to F#. In the absence of specific recommendations below, the .NET Library Design Guidelines are the fallback guidance.
+This section presents recommendations for developing public F#-facing libraries; that is, libraries exposing public APIs that are intended to be consumed by F# developers. There are a variety of library-design recommendations applicable specifically to F#. In the absence of the specific recommendations that follow, the .NET Library Design Guidelines are the fallback guidance.
 
-### Naming Conventions
+### Naming conventions
 
 #### Use .NET naming and capitalization conventions
 
@@ -73,8 +84,6 @@ The following table follows .NET naming and capitalization conventions. There ar
 | let values (external) | camelCase or PascalCase | Noun/verb  | List.map, Dates.Today | let-bound values are often public when following traditional functional design patterns. However, generally use PascalCase when the identifier can be used from other .NET languages. |
 | Property  | PascalCase  | Noun/ adjective  | IsEndOfFile, BackColor  | Boolean properties generally use Is and Can and should be affirmative, as in IsEndOfFile, not IsNotEndOfFile.
 
-In addition to the previous table, be aware of the following:
-
 #### Avoid abbreviations
 
 The .NET guidelines discourage the use of abbreviations (for example, “use `OnButtonClick` rather than `OnBtnClick`”). Common abbreviations, such as `Async` for “Asynchronous”, are tolerated. This guideline is sometimes ignored for functional programming; for example, `List.iter` uses an abbreviation for “iterate”. For this reason, using abbreviations tends to be tolerated to a greater degree in F#-to-F# programming, but should still generally be avoided in public component design.
@@ -95,7 +104,7 @@ Do use PascalCase for generic parameter names in public APIs, including for F#-f
 
 camelCase is used for public functions that are designed to be used unqualified (for example, `invalidArg`), and for the “standard collection functions” (for example, List.map). In both these cases, the function names act much like keywords in the language.
 
-### Object, Type, and Module Design
+### Object, Type, and Module design
 
 #### Use namespaces or modules to contain your types and modules
 
@@ -213,7 +222,7 @@ For example, `Microsoft.FSharp.Core.Operators` is an automatically opened collec
 
 Likewise, a statistics library might include a module with functions `erf` and `erfc`, where this module is designed to be explicitly or automatically opened.
 
-#### Consider using `[<RequireQualifiedAccess>]` and carefully apply `[<AutoOpen>]` attributes
+#### Consider using RequireQualifiedAccess and carefully apply AutoOpen attributes
 
 Adding the `[<RequireQualifiedAccess>]` attribute to a module indicates that the module may not be opened and that references to the elements of the module require explicit qualified access. For example, the `Microsoft.FSharp.Collections.List` module has this attribute.
 
@@ -221,7 +230,7 @@ This is useful when functions and values in the module have names that are likel
 
 Adding the `[<AutoOpen>]` attribute to a module means the module will be opened when the containing namespace is opened. The `[<AutoOpen>]` attribute may also be applied to an assembly to indicate a module that is automatically opened when the assembly is referenced.
 
-For example, a statistics library **MathsHeaven.Statistics** might contain a `module MathsHeaven.Statistics.Operators` containing functions `erf` and `erfc` . It is reasonable to mark this module as `[<AutoOpen>]`. This means `open MathsHeaven.Statistics` will also open this module and bring the names `erf` and `erfc` into scope. Another good use of `[<AutoOpen>]` is for modules containing extension methods.
+For example, a statistics library **MathsHeaven.Statistics** might contain a `module MathsHeaven.Statistics.Operators` containing functions `erf` and `erfc`. It is reasonable to mark this module as `[<AutoOpen>]`. This means `open MathsHeaven.Statistics` will also open this module and bring the names `erf` and `erfc` into scope. Another good use of `[<AutoOpen>]` is for modules containing extension methods.
 
 Overuse of `[<AutoOpen>]` leads to polluted namespaces, and the attribute should be used with care. For specific libraries in specific domains, judicious use of `[<AutoOpen>]` can lead to better usability.
 
@@ -243,7 +252,7 @@ let v = Vector(5.0)
 let u = v * 10.0
 ```
 
-This guidance corresponds to general .NET guidance for these types. However, it can be additionally important in F# coding as this will allow these types to be used in conjunction with F# functions and methods with member constraints, such as List.sumBy.
+This guidance corresponds to general .NET guidance for these types. However, it can be additionally important in F# coding as this allows these types to be used in conjunction with F# functions and methods with member constraints, such as List.sumBy.
 
 #### Consider using `[<CompiledName>]` to provide a .NET-friendly name for other .NET language consumers
 
@@ -280,13 +289,13 @@ In F#, it is more common to overload on number of arguments rather than types of
 
 #### Hide the representations of record and union types if the design of these types is likely to evolve
 
-Avoid revealing concrete representations of objects. For example, the concrete representation of **System.DateTime** values is not revealed by the external, public API of the .NET library design. At runtime the Common Language Runtime knows the committed implementation that will be used throughout execution. However, compiled code does not itself pick up dependencies on the concrete representation.
+Avoid revealing concrete representations of objects. For example, the concrete representation of **System.DateTime** values is not revealed by the external, public API of the .NET library design. At run time, the Common Language Runtime knows the committed implementation that will be used throughout execution. However, compiled code doesn't itself pick up dependencies on the concrete representation.
 
 #### Avoid the use of implementation inheritance for extensibility
 
 In F#, implementation inheritance is rarely used. Furthermore, inheritance hierarchies are often complex and difficult to change when new requirements arrive. Inheritance implementation still exists in F# for compatibility and rare cases where it is the best solution to a problem, but alternative techniques should be sought in your F# programs when designing for polymorphism.
 
-### Function and Member Signatures
+### Function and member signatures
 
 #### Use tuples when appropriate for return values
 
@@ -320,9 +329,7 @@ Exceptions are exceptional in .NET; that is, they should not occur frequently at
 
 #### Follow the .NET guidelines for exceptions
 
-The .NET Library Design Guidelines give excellent advice on the use of exceptions in the context of all .NET programming. Some of these guidelines are as follows:
-
-* Do not return error codes. Exceptions are the main way of reporting errors in frameworks.
+The [.NET Library Design Guidelines](../../standard/design-guidelines/exceptions) give excellent advice on the use of exceptions in the context of all .NET programming. Some of these guidelines are as follows:
 
 * Do not use exceptions for normal flow of control. Although this technique is often used in languages such as OCaml, it is bug-prone and can be inefficient on .NET. Instead, consider returning a `None` option value to indicate a failure that is a common or expected occurrence.
 
@@ -330,9 +337,9 @@ The .NET Library Design Guidelines give excellent advice on the use of exception
 
 * Where possible, employ existing exceptions from the System namespaces.
 
-* Do not throw `System.Exception` when it will escape to user code. This includes avoiding the use of `failwith`, `failwithf`, which are handy functions for use in scripting and for code under development, but should be removed from F# library code in favor of throwing a more specific exception type.
+* Do not throw <xref:System.Exception> when it will escape to user code. This includes avoiding the use of `failwith`, `failwithf`, which are handy functions for use in scripting and for code under development, but should be removed from F# library code in favor of throwing a more specific exception type.
 
-* Use `nullArg`, , and `invalidOp` as the mechanism to throw `ArgumentNullException`, , and `InvalidOperationException` when appropriate.
+* Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw <xref:ArgumentNullException>, <xref:ArgumentException>, and <xref:InvalidOperationException> when appropriate.
 
 #### Consider using option values for return types when failure is not an exceptional scenario
 
@@ -381,11 +388,11 @@ type BST<'T> =
     | Node of 'T * BST<'T> * BST<'T>
 ```
 
-Representing tree-like data with Discriminated Unions will also allow you to benefit from exhaustiveness in pattern matching.
+Representing tree-like data with Discriminated Unions also allows you to benefit from exhaustiveness in pattern matching.
 
 #### Use `[<RequireQualifiedAccess>]` on union types whose case names are not sufficiently unique
 
-You may find yourself in a domain where the same name is the best name for different things, such as DU cases. You can use `[<RequireQualifiedAccess>]` to disambiguate case names in order to avoid triggering confusing errors due to shadowing dependent on the ordering of `open` statements
+You may find yourself in a domain where the same name is the best name for different things, such as Discriminated Union cases. You can use `[<RequireQualifiedAccess>]` to disambiguate case names in order to avoid triggering confusing errors due to shadowing dependent on the ordering of `open` statements
 
 #### Hide the representations of discriminated unions for binary compatible APIs if the design of these types is likely to evolve
 
@@ -408,7 +415,7 @@ Active patterns provide an alternate way to provide F# consumers with pattern ma
 
 #### Define generic numeric algorithms using inline functions with implied member constraints and statically resolved generic types
 
-Arithmetic member constraints and F# comparison constraints are a highly regular standard for F# programming. For example, consider the following
+Arithmetic member constraints and F# comparison constraints are a highly regular standard for F# programming. For example, consider the following code:
 
 ```fsharp
 let inline highestCommonFactor a b =
@@ -445,15 +452,15 @@ As a result, it is best to publish your functionality as named functions and mem
 
 ### Units of Measure
 
-#### Use units of measure for added type safety in F# code
+#### Carefully use units of measure for added type safety in F# code
 
-This type information is erased when viewed by other .NET languages, so be aware that .NET components, tools and reflection will just see types-sans-units (for example, `float` rather than `float<kg>`) after this information has been erased.
+Additional typing information for units of measure is erased when viewed by other .NET languages. Be aware that .NET components, tools, and reflection will see types-sans-units. For example, C# consumers will see `float` rather than `float<kg>`.
 
 ### Type Abbreviations
 
 #### Carefully use type abbreviations to simplify F# code
 
-Be aware that .NET components, tools and reflection will just see the types-being-abbreviated. Over-use of type abbreviations can also make a domain appear more complex than it actually is, which could confuse consumers.
+.NET components, tools, and reflection will not see abbreviated names for types. Significant usage of type abbreviations can also make a domain appear more complex than it actually is, which could confuse consumers.
 
 #### Avoid type abbreviations for public types whose members and properties should be intrinsically different to those available on the type being abbreviated
 
@@ -467,11 +474,11 @@ type MultiMap<'Key,'Value> = Map<'Key,'Value list>
 
 However, the logical dot-notation operations on this type are not the same as the operations on a Map – for example, it is reasonable that the lookup operator map.[key] return the empty list if the key is not in the dictionary, rather than raising an exception.
 
-## Guidelines for Libraries for Use from other .NET Languages
+## Guidelines for libraries for Use from other .NET Languages
 
-When designing libraries for use from other .NET languages, it is important to adhere to the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). In this document, we label these libraries vanilla .NET libraries, as opposed to F#-facing libraries that use F# constructs without restriction and are mostly intended for use by F# applications. Designing vanilla .NET libraries means providing familiar and idiomatic APIs consistent with the rest of the .NET Framework by minimizing the use of F#-specific constructs in the public API. We propose the rules in the following sections.
+When designing libraries for use from other .NET languages, it is important to adhere to the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). In this document, these libraries are labeled as vanilla .NET libraries, as opposed to F#-facing libraries that use F# constructs without restriction. Designing vanilla .NET libraries means providing familiar and idiomatic APIs consistent with the rest of the .NET Framework by minimizing the use of F#-specific constructs in the public API. The rules are explained in the following sections.
 
-### Namespace and Type Design (for libraries for use from other .NET Languages)
+### Namespace and Type sesign (for libraries for use from other .NET Languages)
 
 #### Apply the .NET naming conventions to the public API of your components
 
@@ -516,11 +523,11 @@ type Utilities =
     static member Add(x,y,z) = x + y + z
 ```
 
-#### Use F# record types in vanilla .NET APIs if the design of the types will not evolve
+#### Use F# record types in vanilla .NET APIs if the design of the types won't evolve
 
-F# record types compile to a simple .NET class. These are suitable for some simple, stable types in APIs. You should consider using the `[<NoEquality>]` and `[<NoComparison>]` attributes to suppress the automatic generation of interfaces. Also avoid using mutable record fields in vanilla .NET APIs as these will expose a public field. Always consider whether a class would provide a more flexible option for future evolution of the API.
+F# record types compile to a simple .NET class. These are suitable for some simple, stable types in APIs. You should consider using the `[<NoEquality>]` and `[<NoComparison>]` attributes to suppress the automatic generation of interfaces. Also avoid using mutable record fields in vanilla .NET APIs as these exposes a public field. Always consider whether a class would provide a more flexible option for future evolution of the API.
 
-For example, this F# code will expose the public API below to a C# consumer.
+For example, the following F# code exposes the public API to a C# consumer:
 
 F#:
 
@@ -578,9 +585,9 @@ type PropLogic =
 
 #### Design GUI and other components using the design patterns of the framework
 
-There are many different frameworks available within .NET, such as WinForms, WPF, and ASP.NET. Dame and design conventions for each should be used if you are designing components for use in these frameworks. For example, for WPF programming, adopt WPF design patterns for the classes you are designing. For models in user interface programming, use design patterns such as events and notification-based collections such as those found in `System.Collections.ObjectModel`.
+There are many different frameworks available within .NET, such as WinForms, WPF, and ASP.NET. Naming and design conventions for each should be used if you are designing components for use in these frameworks. For example, for WPF programming, adopt WPF design patterns for the classes you are designing. For models in user interface programming, use design patterns such as events and notification-based collections such as those found in <xref:System.Collections.ObjectModel>.
 
-### Object and Member Design  (for libraries for use from other .NET Languages)
+### Object and Member design (for libraries for use from other .NET Languages)
 
 #### Use the CLIEvent attribute to expose .NET events
 
@@ -605,11 +612,11 @@ type MyGoodType() =
     member this.MyEvent = myEv.Publish
 ```
 
-#### Expose asynchronous operations as methods returning .NET tasks (`Task<T>`)
+#### Expose asynchronous operations as methods which return .NET tasks
 
 Tasks are used in .NET to represent active asynchronous computations. Tasks are in general less compositional than F# `Async<T>` objects, since they represent “already executing” tasks and can’t be composed together in ways that perform parallel composition, or which hide the propagation of cancellation signals and other contextual parameters.
 
-However, despite this, methods-returning-Tasks are the standard representation of asynchronous programming on .NET.
+However, despite this, methods which return Tasks are the standard representation of asynchronous programming on .NET.
 
 ```fsharp
 /// A type in a component designed for use from other .NET languages
@@ -629,7 +636,7 @@ type MyType() =
     member this.ComputeAsTask(x, cancellationToken) = Async.StartAsTask(compute x, cancellationToken)
 ```
 
-#### Use .NET delegate types in preference to F# function types
+#### Use .NET delegate types instead of F# function types
 
 Here “F# function types” mean “arrow” types like `int -> int`.
 
@@ -651,9 +658,9 @@ The F# function type appears as `class FSharpFunc<T,U>` to other .NET languages,
 
 On the flip side, .NET delegates are not natural for F#-facing libraries (see the next Section on F#-facing libraries). As a result, a common implementation strategy when developing higher-order methods for vanilla .NET libraries is to author all the implementation using F# function types, and then create the public API using delegates as a thin façade atop the actual F# implementation.
 
-#### Use the TryGetValue pattern instead of returning F# option values (`Option<T>`), and prefer method overloading to taking F# option values as arguments
+#### Use the TryGetValue pattern instead of returning F# option values (Option<T>), and prefer method overloading to taking F# option values as arguments
 
-Common patterns of use for the F# option type in APIs are better implemented in vanilla .NET APIs using standard .NET design techniques. Instead of returning an F# option value, consider using the bool return type plus an out parameter as in the TryGetValue pattern. And instead of taking F# option values as parameters, consider using method overloading or optional arguments.
+Common patterns of use for the F# option type in APIs are better implemented in vanilla .NET APIs using standard .NET design techniques. Instead of returning an F# option value, consider using the bool return type plus an out parameter as in the "TryGetValue" pattern. And instead of taking F# option values as parameters, consider using method overloading or optional arguments.
 
 ```fsharp
 member this.ReturnOption() = Some 3
@@ -672,7 +679,7 @@ member this.ParamOverload(x : int) = x
 member this.ParamOverload(x : int, y : int) = x + y
 ```
 
-#### Use the .NET collection interface types `IEnumerable<T>` and `IDictionary<Key,Value>` for parameters and return values
+#### Use the .NET collection interface types IEnumerable<T> and IDictionary<Key,Value> for parameters and return values
 
 Avoid the use of concrete collection types such as .NET arrays `T[]`, F# types `list<T>`, `Map<Key,Value>` and `Set<T>`, and .NET concrete collection types such as `Dictionary<Key,Value>`. The .NET Library Design Guidelines have good advice regarding when to use various collection types like `IEnumerable<T>`. Some use of arrays (`T[]`) is acceptable in some circumstances, on performance grounds. Note especially that `seq<T>` is just the F# alias for `IEnumerable<T>`, and thus seq is often an appropriate type for a vanilla .NET API.
 
@@ -767,7 +774,7 @@ type Point1 =
     member Radius : double
 ```
 
-Let’s take a look at how this F# type will appear to a programmer using another .NET language. For example, the approximate C# “signature” is as follows:
+Let’s take a look at how this F# type appears to a programmer using another .NET language. For example, the approximate C# “signature” is as follows:
 
 ```csharp
 // C# signature for the unadjusted Point1 class
@@ -799,7 +806,7 @@ There are some important points to notice about how F# represents constructs her
 
 The full rules for how F# types, modules, and members are represented in the .NET Common Intermediate Language are explained in the F# language reference on the F# website.
 
-The code below shows how to adjust this code to take these things into account.
+The following code shows how to adjust this code to take these things into account.
 
 ```fsharp
 namespace SuperDuperFSharpLibrary.Types
@@ -864,12 +871,12 @@ public class RadialPoint
 }
 ```
 
-The fixes we have made to prepare this type for use as part of a vanilla .NET library are as follows:
+The fixes made to prepare this type for use as part of a vanilla .NET library are as follows:
 
-* We adjusted several names: `Point1`, `n`, `l`, and `f` became `RadialPoint`, `count`, `factor`, and `transform`, respectively.
+* Adjusted several names: `Point1`, `n`, `l`, and `f` became `RadialPoint`, `count`, `factor`, and `transform`, respectively.
 
-* We used a return type of `seq<RadialPoint>` instead of `RadialPoint list` by changing a list construction using `[ ... ]` to a sequence construction using `IEnumerable<RadialPoint>`.
+* Used a return type of `seq<RadialPoint>` instead of `RadialPoint list` by changing a list construction using `[ ... ]` to a sequence construction using `IEnumerable<RadialPoint>`.
 
-* We used the .NET delegate type `System.Func` instead of an F# function type.
+* Used the .NET delegate type `System.Func` instead of an F# function type.
 
 This makes it far nicer to consume in C# code.

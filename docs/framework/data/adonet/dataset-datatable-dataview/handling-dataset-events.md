@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 54edefe0-bc38-419b-b486-3d8a0c356f13
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Handling DataSet Events
 The <xref:System.Data.DataSet> object provides three events: <xref:System.ComponentModel.MarshalByValueComponent.Disposed>, <xref:System.Data.DataSet.Initialized>, and <xref:System.Data.DataSet.MergeFailed>.  

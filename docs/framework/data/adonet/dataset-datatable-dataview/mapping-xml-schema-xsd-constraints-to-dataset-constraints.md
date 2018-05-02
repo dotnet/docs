@@ -2,9 +2,6 @@
 title: "Mapping XML Schema (XSD) Constraints to DataSet Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 3d0d1a4b-9104-434f-ac04-6c01ab5716b5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Mapping XML Schema (XSD) Constraints to DataSet Constraints
 The XML Schema definition language (XSD) allows constraints to be specified on the elements and attributes it defines. When mapping an XML Schema to relational schema in a <xref:System.Data.DataSet>, XML Schema constraints are mapped to appropriate relational constraints on the tables and columns within the **DataSet**.  

@@ -2,9 +2,6 @@
 title: "Oracle LOBs"
 ms.date: "03/30/2017"
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Oracle LOBs
 The .NET Framework Data Provider for Oracle includes the <xref:System.Data.OracleClient.OracleLob> class, which is used to work with Oracle **LOB** data types.  

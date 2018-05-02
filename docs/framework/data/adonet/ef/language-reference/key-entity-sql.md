@@ -2,9 +2,6 @@
 title: "KEY (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: cbaa97a8-c89c-4460-8c74-00474695789f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # KEY (Entity SQL)
 Extracts the key of a reference or of an entity expression.  

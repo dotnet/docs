@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d8072ede-0521-4670-9bec-1778ceeb875b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Formulate Joins and Cross-Product Queries
 The following examples show how to combine results from multiple tables.  

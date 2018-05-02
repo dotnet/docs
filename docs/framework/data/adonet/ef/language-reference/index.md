@@ -2,9 +2,6 @@
 title: "Entity SQL Language Reference"
 ms.date: "03/30/2017"
 ms.assetid: bb07282c-161d-47e8-856d-b2374ba18181
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Entity SQL Language Reference
 This section provides detailed documentation [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], [!INCLUDE[esql](../../../../../../includes/esql-md.md)], and the modeling and mapping languages used by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  

@@ -2,9 +2,6 @@
 title: "-- (Comment) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 5d9de735-2099-47f1-b7e7-60856f494924
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # -- (Comment) (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries can contain comments. Two dashes (`--`) start a comment line.  

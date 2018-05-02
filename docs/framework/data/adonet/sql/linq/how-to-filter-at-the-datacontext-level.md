@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 15505cd7-0df2-427a-9f86-e0f96f60ee2e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Filter at the DataContext Level
 You can filter `EntitySets` at the `DataContext` level. Such filters apply to all queries done with that <xref:System.Data.Linq.DataContext> instance.  

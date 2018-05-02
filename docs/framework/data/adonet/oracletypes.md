@@ -2,9 +2,6 @@
 title: "OracleTypes"
 ms.date: "03/30/2017"
 ms.assetid: 18143304-d5c7-4c95-9995-678088d0c142
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # OracleTypes
 The .NET Framework Data Provider for Oracle includes several structures you can use to work with Oracle data types. These include <xref:System.Data.OracleClient.OracleNumber> and <xref:System.Data.OracleClient.OracleString>.  

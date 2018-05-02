@@ -2,9 +2,6 @@
 title: "OLE DB Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: 6380c36b-658e-4d67-91e8-7131ef4a7c2c
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # OLE DB Schema Collections
 This section discusses schema collection support for the OLE DB providers for Microsoft SQL Server, Oracle, and Microsoft Jet.  

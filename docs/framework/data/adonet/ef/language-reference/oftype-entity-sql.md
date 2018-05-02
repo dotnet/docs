@@ -2,9 +2,6 @@
 title: "OFTYPE (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 6d259ca7-bbf0-40f8-a154-181d25c0d67e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # OFTYPE (Entity SQL)
 Returns a collection of objects from a query expression that is of a specific type.  

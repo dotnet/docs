@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: eedf2fbd-f407-4f62-bb1a-c00eb001b1dd
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Method-Based Query Syntax Examples: Element Operators (LINQ to DataSet)
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.First%2A> and <xref:System.Linq.Enumerable.ElementAt%2A> methods to get <xref:System.Data.DataRow> elements from a <xref:System.Data.DataSet> using the query expression syntax.  

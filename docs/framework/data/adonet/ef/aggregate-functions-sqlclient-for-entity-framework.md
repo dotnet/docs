@@ -2,9 +2,6 @@
 title: "Aggregate Functions (SqlClient for Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Aggregate Functions (SqlClient for Entity Framework)
 The .NET Framework Data Provider for SQL Server (SqlClient) provides aggregate functions. Aggregate functions perform calculations on a set of input values and return a value. These functions are in the SqlServer namespace, which is available when you use SqlClient. A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.  

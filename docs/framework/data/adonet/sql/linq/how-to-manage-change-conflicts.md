@@ -2,9 +2,6 @@
 title: "How to: Manage Change Conflicts"
 ms.date: "03/30/2017"
 ms.assetid: cd292c51-a3d1-4c6f-8d8e-04323c36054e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Manage Change Conflicts
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides a collection of APIs to help you discover, evaluate, and resolve concurrency conflicts.  

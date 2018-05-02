@@ -2,9 +2,6 @@
 title: "CAST (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 07b6d750-dfd4-48a9-b86c-3badcbba6f70
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # CAST (Entity SQL)
 Converts an expression of one data type to another.  

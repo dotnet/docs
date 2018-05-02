@@ -2,9 +2,6 @@
 title: "FUNCTION (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # FUNCTION (Entity SQL)
 Defines a function in the scope of an Entity SQL query command.  

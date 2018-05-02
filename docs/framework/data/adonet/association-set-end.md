@@ -2,9 +2,6 @@
 title: "association set end"
 ms.date: "03/30/2017"
 ms.assetid: fe4bf1d3-047a-4a37-98c5-a66e70811346
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # association set end
 An *association set end* identifies the [entity type](../../../../docs/framework/data/adonet/entity-type.md) and the [entity set](../../../../docs/framework/data/adonet/entity-set.md) at the end of an [association set](../../../../docs/framework/data/adonet/association-set.md). Association set ends are defined as part of an association set; an association set must have exactly two association set ends.  

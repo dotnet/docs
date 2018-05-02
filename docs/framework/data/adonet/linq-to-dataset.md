@@ -2,9 +2,6 @@
 title: "LINQ to DataSet"
 ms.date: "03/30/2017"
 ms.assetid: 743e3755-3ecb-45a2-8d9b-9ed41f0dcf17
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # LINQ to DataSet
 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] makes it easier and faster to query over data cached in a <xref:System.Data.DataSet> object. Specifically, [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] simplifies querying by enabling developers to write queries from the programming language itself, instead of by using a separate query language. This is especially useful for Visual Studio developers, who can now take advantage of the compile-time syntax checking, static typing, and IntelliSense support provided by the Visual Studio in their queries.  

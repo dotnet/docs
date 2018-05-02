@@ -2,9 +2,6 @@
 title: "How to: Generate the Object Model as an External File"
 ms.date: "03/30/2017"
 ms.assetid: 2496fa06-3df4-4ecb-86c4-70a49ea08565
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Generate the Object Model as an External File
 As an alternative to attribute-based mapping, you can generate your object model as an external XML file by using the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). By using an external XML mapping file, you reduce clutter in your code. You can also change behavior by modifying the external file without recompiling the binaries of your application. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  

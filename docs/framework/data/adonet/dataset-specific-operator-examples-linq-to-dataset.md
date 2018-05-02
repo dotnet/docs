@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8fdd64af-6ad0-46cd-91c8-dbe26620eeb1
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # DataSet-Specific Operator Examples (LINQ to DataSet)
 The examples in this topic demonstrate how to use the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method and the <xref:System.Data.DataRowComparer> class.  

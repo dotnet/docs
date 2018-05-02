@@ -2,9 +2,6 @@
 title: "Oracle BFILEs"
 ms.date: "03/30/2017"
 ms.assetid: 341bbf84-4734-4d44-8723-ccedee954e21
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Oracle BFILEs
 The .NET Framework Data Provider for Oracle includes the <xref:System.Data.OracleClient.OracleBFile> class, which is used to work with the Oracle <xref:System.Data.OracleClient.OracleType.BFile> data type.  

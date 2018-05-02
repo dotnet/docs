@@ -2,9 +2,6 @@
 title: "Unsupported Functionality"
 ms.date: "03/30/2017"
 ms.assetid: e480cfb5-697e-42c8-bed5-9264c945c4f9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Unsupported Functionality
 In LINQ to SQL, the following SQL functionality cannot be exposed through translation of existing common language runtime (CLR) and .NET Framework constructs:  

@@ -2,9 +2,6 @@
 title: "Map keyref XML Schema (XSD) Constraints to DataSet Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 5b634fea-cc1e-4f6b-9454-10858105b1c8
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Map keyref XML Schema (XSD) Constraints to DataSet Constraints
 The **keyref** element allows you to establish links between elements within a document. This is similar to a foreign key relationship in a relational database. If a schema specifies the **keyref** element, the element is converted during the schema mapping process to a corresponding foreign key constraint on the columns in the tables of the <xref:System.Data.DataSet>. By default, the **keyref** element also generates a relation, with the **ParentTable**, **ChildTable**, **ParentColumn**, and **ChildColumn** properties specified on the relation.  

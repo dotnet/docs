@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 126e7245-c5a0-4ebf-800d-cc1fcf9cd0ab
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Display a ChangeSet
 You can view changes tracked by a <xref:System.Data.Linq.DataContext> by using <xref:System.Data.Linq.DataContext.GetChangeSet%2A>.  

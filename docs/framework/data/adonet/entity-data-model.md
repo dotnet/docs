@@ -2,9 +2,6 @@
 title: "Entity Data Model"
 ms.date: "03/30/2017"
 ms.assetid: 2dda3d5b-4582-4ba0-a91d-fcd7a1498137
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Entity Data Model
 The Entity Data Model (EDM) is a set of concepts that describe the structure of data, regardless of its stored form. The EDM borrows from the Entity-Relationship Model described by Peter Chen in 1976, but it also builds on the Entity-Relationship Model and extends its traditional uses.  

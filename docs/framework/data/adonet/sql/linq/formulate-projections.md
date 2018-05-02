@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 745742df-0eda-479b-83f8-29bd8a80db96
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Formulate Projections
 The following examples show how the `select` statement in C# and `Select` statement in Visual Basic can be combined with other features to form query projections.  

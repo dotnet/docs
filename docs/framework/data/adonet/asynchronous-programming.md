@@ -2,9 +2,6 @@
 title: "Asynchronous Programming"
 ms.date: "03/30/2017"
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Asynchronous Programming
 

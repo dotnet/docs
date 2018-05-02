@@ -2,9 +2,6 @@
 title: "&gt;= (Greater Than or Equal To) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 70780ac4-0123-4da8-b731-8af856daffe3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # &gt;= (Greater Than or Equal To) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value greater than or equal to the right expression.  

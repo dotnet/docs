@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f4d86667-3392-470d-a076-5ca6cbb660f6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Query Expression Syntax Examples: Join Operators (LINQ to DataSet)
 Joining is an important operation in queries that target data sources that have no navigable relationships to each other, such as relational database tables. A join of two data sources is the association of objects in one data source with objects that share a common attribute in the other data source. For more information, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  

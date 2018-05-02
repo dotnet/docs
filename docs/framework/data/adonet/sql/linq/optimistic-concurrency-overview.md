@@ -2,9 +2,6 @@
 title: "Optimistic Concurrency: Overview"
 ms.date: "03/30/2017"
 ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Optimistic Concurrency: Overview
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports optimistic concurrency control. The following table describes terms that apply to optimistic concurrency in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation:  

@@ -2,9 +2,6 @@
 title: "model-declared function"
 ms.date: "03/30/2017"
 ms.assetid: aba87f13-5685-4f6b-ad14-918e8a7d5c2a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # model-declared function
 A *model-declared function* is a function that is declared in a conceptual model, but is not defined in that conceptual model. The function might be defined in the hosting or storage environment. For example, a model-declared function might be mapped to a function that is defined in a database, thus exposing server-side functionality in the conceptual model.  

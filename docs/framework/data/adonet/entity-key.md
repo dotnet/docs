@@ -2,9 +2,6 @@
 title: "entity key"
 ms.date: "03/30/2017"
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # entity key
 An *entity key* is a [property](../../../../docs/framework/data/adonet/property.md) or a set of properties of an [entity type](../../../../docs/framework/data/adonet/entity-type.md) that are used to determine identity. The properties that make up an entity key are chosen at design time. The values of entity key properties must uniquely identify an entity type instance within an [entity set](../../../../docs/framework/data/adonet/entity-set.md) at run time. The properties that make up an entity key should be chosen to guarantee uniqueness of instances in an entity set.  

@@ -2,9 +2,6 @@
 title: "Architecture and Design"
 ms.date: "03/30/2017"
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Architecture and Design
 The SQL generation module in the [Sample Provider](http://go.microsoft.com/fwlink/?LinkId=180616) is implemented as a visitor on the expression tree that represents the command tree. The generation is done in a single pass over the expression tree.  

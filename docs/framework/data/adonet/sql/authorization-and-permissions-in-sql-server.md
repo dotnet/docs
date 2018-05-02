@@ -2,9 +2,6 @@
 title: "Authorization and Permissions in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: d340405c-91f4-4837-a3cc-a238ee89888a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Authorization and Permissions in SQL Server
 When you create database objects, you must explicitly grant permissions to make them accessible to users. Every securable object has permissions that can be granted to a principal using permission statements.  

@@ -2,9 +2,6 @@
 title: "EXISTS (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: d28ead43-4afb-4bdc-af64-efd2e05005d7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # EXISTS (Entity SQL)
 Determines if a collection is empty.  

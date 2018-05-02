@@ -2,9 +2,6 @@
 title: "Map key XML Schema (XSD) Constraints to DataSet Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 22664196-f270-4ebc-a169-70e16a83dfa1
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Map key XML Schema (XSD) Constraints to DataSet Constraints
 In a schema, you can specify a key constraint on an element or attribute using the **key** element. The element or attribute on which a key constraint is specified must have unique values in any schema instance, and cannot have null values.  

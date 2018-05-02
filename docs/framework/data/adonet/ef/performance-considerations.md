@@ -2,9 +2,6 @@
 title: "Performance Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 61913f3b-4f42-4d9b-810f-2a13c2388a4a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Performance Considerations (Entity Framework)
 This topic describes performance characteristics of the ADO.NET Entity Framework and provides some considerations to help improve the performance of Entity Framework applications.  

@@ -2,9 +2,6 @@
 title: "LIKE (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 8300e6d2-875b-481e-9ef4-e1e7c12d46fa
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # LIKE (Entity SQL)
 Determines whether a specific character `String` matches a specified pattern.  

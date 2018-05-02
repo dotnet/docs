@@ -2,9 +2,6 @@
 title: "How to: Specify Database Names"
 ms.date: "03/30/2017"
 ms.assetid: b80f0fd2-7f75-45fe-9e12-496f80f183df
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Specify Database Names
 Use the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property on a <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute to specify the name of a database when a name is not supplied by the connection.  

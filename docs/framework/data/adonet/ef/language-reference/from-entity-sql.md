@@ -2,9 +2,6 @@
 title: "FROM (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: ff3e3048-0d5d-4502-ae5c-9187fcbd0514
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # FROM (Entity SQL)
 Specifies the collection used in [SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) statements.  

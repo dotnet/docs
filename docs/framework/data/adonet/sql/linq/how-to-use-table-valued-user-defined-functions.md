@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5a4ae2b4-3290-4aa1-bc95-fc70c51b54cf
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Use Table-Valued User-Defined Functions
 A table-valued function returns a single rowset (unlike stored procedures, which can return multiple result shapes). Because the return type of a table-valued function is `Table`, you can use a table-valued function anywhere in SQL that you can use a table. You can also treat the table-valued function just as you would a table.  

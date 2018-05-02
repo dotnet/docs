@@ -2,9 +2,6 @@
 title: "Entity SQL Reference"
 ms.date: "03/30/2017"
 ms.assetid: 61ce7ee1-ffe2-477d-8a9f-835b0a11d900
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Entity SQL Reference
 This section contains [!INCLUDE[esql](../../../../../../includes/esql-md.md)] reference topics. This topic summarizes and groups the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] operators by category.  

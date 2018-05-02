@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 252ed666-0679-4eea-b71b-2f14117ef443
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Frequently Asked Questions
 The following sections answer some common issues that you might encounter when you implement [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].  

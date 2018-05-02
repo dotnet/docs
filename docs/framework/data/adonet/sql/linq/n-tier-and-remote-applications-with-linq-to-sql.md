@@ -2,9 +2,6 @@
 title: "N-Tier and Remote Applications with LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: 854a1cdd-53cb-45f5-83ca-63962a9b3598
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # N-Tier and Remote Applications with LINQ to SQL
 You can create n-tier or multitier applications that use [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Typically, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] data context, entity classes, and query construction logic are located on the middle tier as the data access layer (DAL). Business logic and any non-persistent data can be implemented completely in partial classes and methods of entities and the data context, or it can be implemented in separate classes.  

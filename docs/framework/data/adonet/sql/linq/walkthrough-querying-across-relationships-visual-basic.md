@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: a7da43e3-769f-4e07-bcd6-552b8bde66f4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Walkthrough: Querying Across Relationships (Visual Basic)
 This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] *associations* to represent foreign-key relationships in the database.  

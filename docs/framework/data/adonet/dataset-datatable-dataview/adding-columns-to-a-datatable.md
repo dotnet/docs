@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e85c4a0e-4f3f-458c-b58b-0ddbc06bf974
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Adding Columns to a DataTable
 A <xref:System.Data.DataTable> contains a collection of <xref:System.Data.DataColumn> objects referenced by the **Columns** property of the table. This collection of columns, along with any constraints, defines the schema, or structure, of the table.  

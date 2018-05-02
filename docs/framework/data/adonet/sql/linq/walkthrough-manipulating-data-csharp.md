@@ -2,9 +2,6 @@
 title: "Walkthrough: Manipulating Data (C#)"
 ms.date: "03/30/2017"
 ms.assetid: 24adfbe0-0ad6-449f-997d-8808e0770d2e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Walkthrough: Manipulating Data (C#)
 This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database. You will use a copy of the sample Northwind database to add a customer, change the name of a customer, and delete an order.  

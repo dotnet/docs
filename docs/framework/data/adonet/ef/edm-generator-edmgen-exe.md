@@ -2,9 +2,6 @@
 title: "EDM Generator (EdmGen.exe)"
 ms.date: "03/30/2017"
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # EDM Generator (EdmGen.exe)
 EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] model and mapping files. You can use the EdmGen.exe tool to do the following:  

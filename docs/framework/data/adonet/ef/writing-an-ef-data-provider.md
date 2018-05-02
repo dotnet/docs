@@ -2,9 +2,6 @@
 title: "Writing an Entity Framework Data Provider"
 ms.date: "03/30/2017"
 ms.assetid: 092e88c4-a301-453a-b5c3-5740c6575a9f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Writing an Entity Framework Data Provider
 This section discusses how to write an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provider to support a data source other than SQL Server. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a provider that supports SQL Server.  

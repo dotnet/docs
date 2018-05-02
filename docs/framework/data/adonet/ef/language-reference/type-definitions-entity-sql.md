@@ -2,9 +2,6 @@
 title: "Type Definitions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Type Definitions (Entity SQL)
 A type definition is used in the declaration statement of an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] Inline function.  

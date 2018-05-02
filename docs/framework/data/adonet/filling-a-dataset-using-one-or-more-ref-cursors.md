@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: 99863e79-5b00-467e-a105-4ffa42de3ff7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Filling a DataSet Using One or More REF CURSORs
 This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.  

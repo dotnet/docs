@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 441e8ef3-998c-4d12-8825-ce66a178f90f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Customizing Operations by Using Stored Procedures Exclusively
 Access to data by using only stored procedures is a common scenario.  

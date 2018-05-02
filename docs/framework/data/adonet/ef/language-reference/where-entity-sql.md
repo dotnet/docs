@@ -2,9 +2,6 @@
 title: "WHERE (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # WHERE (Entity SQL)
 The WHERE clause is applied directly after the [FROM](../../../../../../docs/framework/data/adonet/ef/language-reference/from-entity-sql.md) clause.  

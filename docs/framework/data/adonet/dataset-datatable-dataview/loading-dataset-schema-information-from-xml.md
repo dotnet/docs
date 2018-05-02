@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 43dfb23b-5cef-46f2-8d87-78f0fba1eb8c
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Loading DataSet Schema Information from XML
 The schema of a <xref:System.Data.DataSet> (its tables, columns, relations, and constraints) can be defined programmatically, created by the **Fill** or **FillSchema** methods of a <xref:System.Data.Common.DataAdapter>, or loaded from an XML document. To load **DataSet** schema information from an XML document, you can use either the **ReadXmlSchema** or the **InferXmlSchema** method of the **DataSet**. **ReadXmlSchema** allows you to load or infer **DataSet** schema information from the document containing XML Schema definition language (XSD) schema, or an XML document with inline XML Schema. **InferXmlSchema** allows you to infer the schema from the XML document while ignoring certain XML namespaces that you specify.  

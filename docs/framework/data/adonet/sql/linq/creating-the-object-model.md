@@ -2,9 +2,6 @@
 title: "Creating the Object Model"
 ms.date: "03/30/2017"
 ms.assetid: 27afce86-9b1d-45fb-8e0b-636bf671a236
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Creating the Object Model
 You can create your object model from an existing database and use the model in its default state. You can also customize many aspects of the model and its behavior.  

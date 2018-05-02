@@ -2,9 +2,6 @@
 title: "entity container"
 ms.date: "03/30/2017"
 ms.assetid: 16e80405-2c75-42fc-b0e4-b1df53b1c584
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # entity container
 An *entity container* is a logical grouping of [entity sets](../../../../docs/framework/data/adonet/entity-set.md), [association sets](../../../../docs/framework/data/adonet/association-set.md), and [function imports](../../../../docs/framework/data/adonet/model-declared-function.md).  

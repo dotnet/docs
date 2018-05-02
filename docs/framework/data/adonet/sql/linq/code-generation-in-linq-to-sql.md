@@ -2,9 +2,6 @@
 title: "Code Generation in LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Code Generation in LINQ to SQL
 You can generate code to represent a database by using either the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] or the SQLMetal command-line tool. In either case, end-to-end code generation occurs in three stages:  

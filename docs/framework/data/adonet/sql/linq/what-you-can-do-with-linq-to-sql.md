@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # What You Can Do With LINQ to SQL
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports all the key capabilities you would expect as a SQL developer. You can query for information, and insert, update, and delete information from tables.  

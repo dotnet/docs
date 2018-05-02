@@ -2,9 +2,6 @@
 title: "- (Subtract) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: bc4327f9-09c0-438f-a008-927c5c478040
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # - (Subtract) (Entity SQL)
 Subtracts two numbers.  

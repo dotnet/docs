@@ -2,9 +2,6 @@
 title: "Transactions and Concurrency"
 ms.date: "03/30/2017"
 ms.assetid: f46570de-9e50-4fe6-8710-a8c31fa8569b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Transactions and Concurrency
 A transaction consists of a single command or a group of commands that execute as a package. Transactions allow you to combine multiple operations into a single unit of work. If a failure occurs at one point in the transaction, all of the updates can be rolled back to their pre-transaction state.  

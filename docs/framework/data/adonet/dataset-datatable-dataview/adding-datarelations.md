@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a4a564fb-c1c4-4135-b6c2-b030e51195e4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Adding DataRelations
 In a <xref:System.Data.DataSet> with multiple <xref:System.Data.DataTable> objects, you can use <xref:System.Data.DataRelation> objects to relate one table to another, to navigate through the tables, and to return child or parent rows from a related table.  

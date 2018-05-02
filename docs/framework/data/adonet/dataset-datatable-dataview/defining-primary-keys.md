@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2ea85959-e763-4669-8bd9-46a9dab894bd
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Defining Primary Keys
 A database table commonly has a column or group of columns that uniquely identifies each row in the table. This identifying column or group of columns is called the primary key.  

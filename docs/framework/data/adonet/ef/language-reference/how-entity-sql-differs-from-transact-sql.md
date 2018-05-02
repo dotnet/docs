@@ -2,9 +2,6 @@
 title: "How Entity SQL Differs from Transact-SQL"
 ms.date: "03/30/2017"
 ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How Entity SQL Differs from Transact-SQL
 This topic describes the differences between [!INCLUDE[esql](../../../../../../includes/esql-md.md)] and [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)].  

@@ -2,9 +2,6 @@
 title: "Programming Guide"
 ms.date: "03/30/2017"
 ms.assetid: ed1012d4-3ff2-4877-af27-93125c4180ea
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Programming Guide
 This section contains information about how to create and use your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model. If you are using Visual Studio, you can also use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to perform many of these same tasks.  

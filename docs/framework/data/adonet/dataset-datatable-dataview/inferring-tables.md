@@ -2,9 +2,6 @@
 title: "Inferring Tables"
 ms.date: "03/30/2017"
 ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Inferring Tables
 When inferring a schema for a <xref:System.Data.DataSet> from an XML document, ADO.NET first determines which XML elements represent tables. The following XML structures result in a table for the **DataSet** schema:  

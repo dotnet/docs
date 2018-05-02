@@ -2,9 +2,6 @@
 title: "How to: Use EdmGen.exe to Generate Object-Layer Code"
 ms.date: "03/30/2017"
 ms.assetid: c44d2ebe-f66f-42cb-9741-4a3f0c2dcffb
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Use EdmGen.exe to Generate Object-Layer Code
 This topic shows how to use the [EDM Generator (EdmGen.exe)](../../../../../docs/framework/data/adonet/ef/edm-generator-edmgen-exe.md) tool to generate object-layer code  based on the .csdl file.  

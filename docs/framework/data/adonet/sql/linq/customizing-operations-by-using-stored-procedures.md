@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Customizing Operations By Using Stored Procedures
 Stored procedures represent a common approach to overriding default behavior. The examples in this topic show how you can use generated method wrappers for stored procedures, and how you can call stored procedures directly.  

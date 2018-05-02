@@ -2,9 +2,6 @@
 title: "! (NOT) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: a1447a34-df06-4393-93c3-0612ebd41abc
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ! (NOT) (Entity SQL)
 Negates a `Boolean` expression.  

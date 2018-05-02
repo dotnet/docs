@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Remote vs. Local Execution
 You can decide to execute your queries either remotely (that is, the database engine executes the query against the database) or locally ([!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] executes the query against a local cache).  

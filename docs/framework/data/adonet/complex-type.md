@@ -2,9 +2,6 @@
 title: "complex type"
 ms.date: "03/30/2017"
 ms.assetid: 63efbd23-11d4-4871-bc88-ad01b9837553
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # complex type
 A *complex type* is a template for defining rich, structured properties on [entity types](../../../../docs/framework/data/adonet/entity-type.md) or on other complex types. Each template contains the following:  

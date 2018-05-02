@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1daf42c2-c9f4-4cda-b291-7641b9c6d3fe
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Query Expression Syntax Examples: Restriction (LINQ to DataSet)
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.Where%2A> method to query a <xref:System.Data.DataSet> using the query expression syntax.  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fb09e298-0b53-47e5-97fb-ab318bcd4fad
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Retrieve Information As Read-Only
 When you do not intend to change the data, you can increase the performance of queries by seeking read-only results.  

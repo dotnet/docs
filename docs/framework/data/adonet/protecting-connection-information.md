@@ -2,9 +2,6 @@
 title: "Protecting Connection Information"
 ms.date: "03/30/2017"
 ms.assetid: 1471f580-bcd4-4046-bdaf-d2541ecda2f4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Protecting Connection Information
 Protecting access to your data source is one of the most important goals when securing an application. A connection string presents a potential vulnerability if it is not secured. Storing connection information in plain text or persisting it in memory risks compromising your entire system. Connection strings embedded in your source code can be read using the [Ildasm.exe (IL Disassembler)](../../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) in a compiled assembly.  

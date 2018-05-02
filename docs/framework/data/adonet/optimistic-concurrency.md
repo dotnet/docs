@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Optimistic Concurrency
 In a multiuser environment, there are two models for updating data in a database: optimistic concurrency and pessimistic concurrency. The <xref:System.Data.DataSet> object is designed to encourage the use of optimistic concurrency for long-running activities, such as remoting data and interacting with data.  

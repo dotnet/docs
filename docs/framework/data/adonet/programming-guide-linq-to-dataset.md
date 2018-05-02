@@ -2,9 +2,6 @@
 title: "Programming Guide (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: 977aedd7-0084-46a0-b56f-345787a55da1
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Programming Guide (LINQ to DataSet)
 This section provides conceptual information and examples for programming with [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)].  

@@ -2,9 +2,6 @@
 title: "Other Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 729bd47b-8e41-494c-a9a9-dcabf8b74312
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Other Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes canonical functions not classified as bitwise, aggregate, math, date/time, or string.  

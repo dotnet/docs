@@ -2,9 +2,6 @@
 title: "+ (String Concatenation) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 580130fa-6c7c-4f76-a47d-d22c27ccadf6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # + (String Concatenation) (Entity SQL)
 Concatenates two strings.  

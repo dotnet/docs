@@ -2,9 +2,6 @@
 title: "DataTableReaders"
 ms.date: "03/30/2017"
 ms.assetid: 97546ae2-0e42-4d26-961d-e0b244d81ded
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # DataTableReaders
 The <xref:System.Data.DataTableReader> presents the contents of a <xref:System.Data.DataTable> or a <xref:System.Data.DataSet> in the form of one or more read-only, forward-only result sets.  

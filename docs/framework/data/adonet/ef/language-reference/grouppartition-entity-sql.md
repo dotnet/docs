@@ -2,9 +2,6 @@
 title: "GROUPPARTITION (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: d0482e9b-086c-451c-9dfa-ccb024a9efb6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # GROUPPARTITION (Entity SQL)
 Returns a collection of argument values that are projected off the current group partition to which the aggregate is related. The `GroupPartition` aggregate is a group-based aggregate and has no collection-based form.  

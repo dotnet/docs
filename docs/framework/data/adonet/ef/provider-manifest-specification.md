@@ -2,9 +2,6 @@
 title: "Provider Manifest Specification"
 ms.date: "03/30/2017"
 ms.assetid: bb450b47-8951-4f99-9350-26f05a4d4e46
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Provider Manifest Specification
 This section discusses how a data store provider can support the types and functions in the data store.  

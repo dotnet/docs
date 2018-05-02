@@ -2,9 +2,6 @@
 title: "FLATTEN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 1a670c63-0a29-4738-80e6-101f66af05c3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # FLATTEN (Entity SQL)
 Converts a collection of collections into a flattened collection. The new collection contains all the same elements as the old collection, but without a nested structure.  

@@ -2,9 +2,6 @@
 title: "Query Expressions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: c36f327b-e230-48d4-bbd5-78dc6478c447
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Query Expressions (Entity SQL)
 A query expression combines many different query operators into a single syntax. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides various kinds of expressions, including the following: [literals](../../../../../../docs/framework/data/adonet/ef/language-reference/literals-entity-sql.md), [parameters](../../../../../../docs/framework/data/adonet/ef/language-reference/parameters-entity-sql.md), [variables](../../../../../../docs/framework/data/adonet/ef/language-reference/variables-entity-sql.md), operators, [functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md), set operators, and so on. For more information, see [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md).  

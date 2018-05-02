@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 49c083b7-a5ed-41cf-aabc-5aaba96f00e6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Loading a DataSet from XML
 The contents of an ADO.NET <xref:System.Data.DataSet> can be created from an XML stream or document. In addition, with the .NET Framework you have great flexibility over what information is loaded from XML, and how the schema or relational structure of the <xref:System.Data.DataSet> is created.  

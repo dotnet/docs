@@ -2,9 +2,6 @@
 title: "TREAT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 5b77f156-55de-4cb4-8154-87f707d4c635
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # TREAT (Entity SQL)
 Treats an object of a particular base type as an object of the specified derived type.  

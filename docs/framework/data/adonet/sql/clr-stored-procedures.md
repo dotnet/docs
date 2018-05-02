@@ -2,9 +2,6 @@
 title: "CLR Stored Procedures"
 ms.date: "03/30/2017"
 ms.assetid: fd7eea9b-218a-4988-8c9a-8abcc6031c66
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # CLR Stored Procedures
 Stored procedures are routines that cannot be used in scalar expressions. They can return tabular results and messages to the client, invoke data definition language (DDL) and data manipulation language (DML) statements, and return output parameters.  

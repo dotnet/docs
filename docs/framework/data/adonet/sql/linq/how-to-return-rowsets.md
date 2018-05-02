@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 725718f5-da29-4841-9f53-aafef64ba977
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Return Rowsets
 This example returns a rowset from the database, and includes an input parameter to filter the result.  

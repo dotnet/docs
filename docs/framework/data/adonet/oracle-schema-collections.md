@@ -2,9 +2,6 @@
 title: "Oracle Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: 89a75de8-dee8-45e2-a97f-254d7e62e7e1
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Oracle Schema Collections
 The Microsoft .NET Framework Data Provider for Oracle supports the following specific schema collections in addition to the common schema collections:  

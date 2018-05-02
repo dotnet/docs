@@ -2,9 +2,6 @@
 title: "Bulk Copy Operations in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 83a7a0d2-8018-4354-97b9-0b1d99f8342b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Bulk Copy Operations in SQL Server
 Microsoft SQL Server includes a popular command-line utility named **bcp** for quickly bulk copying large files into tables or views in SQL Server databases. The <xref:System.Data.SqlClient.SqlBulkCopy> class allows you to write managed code solutions that provide similar functionality. There are other ways to load data into a SQL Server table (INSERT statements, for example) but <xref:System.Data.SqlClient.SqlBulkCopy> offers a significant performance advantage over them.  

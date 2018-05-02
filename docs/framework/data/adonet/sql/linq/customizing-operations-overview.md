@@ -2,9 +2,6 @@
 title: "Customizing Operations: Overview"
 ms.date: "03/30/2017"
 ms.assetid: a3546296-1443-4b88-aa6e-d41011041ba7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Customizing Operations: Overview
 By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates dynamic SQL for insert, update, and delete operations based on mapping. However, in practice you typically want to add your own business logic to provide for security, validation, and so forth.  

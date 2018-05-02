@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Oracle and ADO.NET
 > [!NOTE]

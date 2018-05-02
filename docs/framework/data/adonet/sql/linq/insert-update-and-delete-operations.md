@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 26a43a4f-83c9-4732-806d-bb23aad0ff6b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Insert, Update, and Delete Operations
 You perform `Insert`, `Update`, and `Delete` operations in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] by adding, changing, and removing objects in your object model. By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates your actions to SQL and submits the changes to the database.  

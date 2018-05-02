@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2b224a84-bad5-4843-adcc-14e784d280f5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Eliminate Duplicate Elements from a Sequence
 Use the <xref:System.Linq.Queryable.Distinct%2A> operator to eliminate duplicate elements from a sequence.  

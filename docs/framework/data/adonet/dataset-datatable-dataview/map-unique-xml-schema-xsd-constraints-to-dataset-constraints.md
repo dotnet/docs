@@ -2,9 +2,6 @@
 title: "Map unique XML Schema (XSD) Constraints to DataSet Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 56da90bf-21d3-4d1a-8bb8-de908866b78d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Map unique XML Schema (XSD) Constraints to DataSet Constraints
 In an XML Schema definition language (XSD) schema, the **unique** element specifies the uniqueness constraint on an element or attribute. In the process of translating an XML Schema into a relational schema, the unique constraint specified on an element or attribute in the XML Schema is mapped to a unique constraint in the <xref:System.Data.DataTable> in the corresponding <xref:System.Data.DataSet> that is generated.  

@@ -2,9 +2,6 @@
 title: "= (Equals) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 948eb588-7080-4046-bb48-633b007393bf
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # = (Equals) (Entity SQL)
 Compares the equality of two expressions.  

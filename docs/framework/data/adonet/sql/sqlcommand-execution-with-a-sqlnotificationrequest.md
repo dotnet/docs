@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1776f48f-9bea-41f6-83a4-c990c7a2c991
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SqlCommand Execution with a SqlNotificationRequest
 A <xref:System.Data.SqlClient.SqlCommand> can be configured to generate a notification when data changes after it has been fetched from the server and the result set would be different if the query were executed again. This is useful for scenarios where you want to use custom notification queues on the server or when you do not want to maintain live objects.  

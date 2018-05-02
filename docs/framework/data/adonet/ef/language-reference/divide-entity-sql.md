@@ -2,9 +2,6 @@
 title: "- (Divide) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: ef48c368-f3ed-4275-8ada-4e9649781262
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # / (Divide) (Entity SQL)
 Divides one number by another.  

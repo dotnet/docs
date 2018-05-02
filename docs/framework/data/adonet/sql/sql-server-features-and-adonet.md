@@ -2,9 +2,6 @@
 title: "SQL Server Features and ADO.NET"
 ms.date: "03/30/2017"
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SQL Server Features and ADO.NET
 The topics in this section discuss features in SQL Server that are targeted at developing database applications using ADO.NET.  

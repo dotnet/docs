@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c788f2f9-65cc-4455-9907-e8388a268e00
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Object Identity
 Objects in the runtime have unique identities. Two variables that refer to the same object actually refer to the same instance of the object. Because of this fact, changes that you make by way of a path through one variable are immediately visible through the other.  

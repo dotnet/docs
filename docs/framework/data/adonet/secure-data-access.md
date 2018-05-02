@@ -2,9 +2,6 @@
 title: "Secure Data Access"
 ms.date: "03/30/2017"
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Secure Data Access
 To write secure ADO.NET code, you have to understand the security mechanisms available in the underlying data store, or database. You also need to consider the security implications of other features or components that your application may contain.  

@@ -2,9 +2,6 @@
 title: "ORDER BY (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: c0b61572-ecee-41eb-9d7f-74132ec8a26c
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ORDER BY (Entity SQL)
 Specifies the sort order used on objects returned in a SELECT statement.  

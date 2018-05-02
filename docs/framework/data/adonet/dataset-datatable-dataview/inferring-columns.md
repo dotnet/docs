@@ -2,9 +2,6 @@
 title: "Inferring Columns"
 ms.date: "03/30/2017"
 ms.assetid: 0e022699-c922-454c-93e2-957dd7e7247a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Inferring Columns
 After ADO.NET has determined from an XML document which elements to infer as tables for a <xref:System.Data.DataSet>, it then infers the columns for those tables. ADO.NET 2.0 introduced a new schema inference engine that infers a strongly typed data type for each **simpleType** element. In previous versions, the data type of an inferred **simpleType** element was always **xsd:string**.  

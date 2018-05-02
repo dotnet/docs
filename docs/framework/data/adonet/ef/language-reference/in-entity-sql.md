@@ -2,9 +2,6 @@
 title: "IN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 51662950-ee01-4857-b7b9-311dd8515966
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # IN (Entity SQL)
 Determines whether a value matches any value in a collection.  

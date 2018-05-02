@@ -2,9 +2,6 @@
 title: "DEREF (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4c78e833-b260-453d-9bf4-eb39857dd0fa
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # DEREF (Entity SQL)
 Dereferences a reference value and produces the result of that dereference.  

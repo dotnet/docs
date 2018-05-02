@@ -2,9 +2,6 @@
 title: "SqlClient for the Entity Framework"
 ms.date: "03/30/2017"
 ms.assetid: 9a5d6d39-d955-43a5-a5c2-931c239398f1
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SqlClient for the Entity Framework
 This section describes the .NET Framework Data Provider for SQL Server (SqlClient), which enables the Entity Framework to work over Microsoft SQL Server.  

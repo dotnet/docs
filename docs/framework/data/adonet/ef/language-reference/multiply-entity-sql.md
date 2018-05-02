@@ -2,9 +2,6 @@
 title: "* (Multiply) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 508ce246-4e86-47dd-a605-4af4bebb9891
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # * (Multiply) (Entity SQL)
 Multiplies two expressions.  

@@ -2,9 +2,6 @@
 title: "ROW (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 06da96e8-55d7-486c-991a-4e514d837ff9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ROW (Entity SQL)
 Constructs anonymous, structurally typed records from one or more values.  

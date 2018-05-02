@@ -2,9 +2,6 @@
 title: "Deployment Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 3a847a22-4eb8-4565-b18b-453bbca070db
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Deployment Considerations (Entity Framework)
 This topic provides information about deploying applications that use the ADO.NET Entity Framework for data access. For more information about the Entity Framework, see [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md).  

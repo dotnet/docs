@@ -2,9 +2,6 @@
 title: "Query Plan Caching (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 90b0c685-5ef2-461b-98b4-c3c0a2b253c7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Query Plan Caching (Entity SQL)
 Whenever an attempt to execute a query is made, the query pipeline looks up its query plan cache to see whether the exact query is already compiled and available. If so, it reuses the cached plan rather than building a new one. If a match is not found in the query plan cache, the query is compiled and cached. A query is identified by its [!INCLUDE[esql](../../../../../../includes/esql-md.md)] text and parameter collection (names and types). All text comparisons are case-sensitive.  

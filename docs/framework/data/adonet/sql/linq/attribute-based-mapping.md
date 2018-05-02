@@ -2,9 +2,6 @@
 title: "Attribute-Based Mapping"
 ms.date: "03/30/2017"
 ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Attribute-Based Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps a SQL Server database to a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model by either applying attributes or by using an external mapping file. This topic outlines the attribute-based approach.  

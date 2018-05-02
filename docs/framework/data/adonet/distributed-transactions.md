@@ -2,9 +2,6 @@
 title: "Distributed Transactions"
 ms.date: "03/30/2017"
 ms.assetid: 718b257c-bcb2-408e-b004-a7b0adb1c176
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Distributed Transactions
 A transaction is a set of related tasks that either succeeds (commit) or fails (abort) as a unit, among other things. A *distributed transaction* is a transaction that affects several resources. For a distributed transaction to commit, all participants must guarantee that any change to data will be permanent. Changes must persist despite system crashes or other unforeseen events. If even a single participant fails to make this guarantee, the entire transaction fails, and any changes to data within the scope of the transaction are rolled back.  

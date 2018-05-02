@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: e22e5812-89c6-41f0-9302-bb899a46dbff
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # The Load Method
 You can use the <xref:System.Data.DataTable.Load%2A> method to load a <xref:System.Data.DataTable> with rows from a data source. This is an overloaded method which, in its simplest form, accepts a single parameter, a **DataReader**. In this form, it simply loads the **DataTable** with rows. Optionally, you can specify the **LoadOption** parameter to control how data is added to the **DataTable**.  

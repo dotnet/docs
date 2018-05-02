@@ -2,9 +2,6 @@
 title: "SQL-CLR Custom Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: d916c7fb-4b56-4214-acbe-5e23365047b2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SQL-CLR Custom Type Mappings
 Type mapping between SQL Server and the common language runtime (CLR) is automatically specified when you use the SQLMetal command-line tool, Object Relational Designer (O/R Designer).  

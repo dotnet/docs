@@ -2,9 +2,6 @@
 title: "Entity Framework Data Providers"
 ms.date: "03/30/2017"
 ms.assetid: 5252e639-ff11-4818-82e7-07221ed6ae23
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Entity Framework Data Providers
 This section provides information on data providers that support the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  

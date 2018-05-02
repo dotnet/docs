@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fd15f8a5-3b4c-46d0-a561-4559ab2a4705
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Writing DataSet Contents as XML Data
 In ADO.NET you can write an XML representation of a <xref:System.Data.DataSet>, with or without its schema. If schema information is included inline with the XML, it is written using the XML Schema definition language (XSD). The schema contains the table definitions of the <xref:System.Data.DataSet> as well as the relation and constraint definitions.  

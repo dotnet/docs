@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1d50c8b4-f550-4775-bbb6-eab6e874cb43
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Group Elements in a Sequence
 The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a sequence. The following examples use the Northwind database.  

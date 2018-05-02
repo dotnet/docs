@@ -2,9 +2,6 @@
 title: "Writing Secure Dynamic SQL in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: df5512b0-c249-40d2-82f9-f9a2ce6665bc
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Writing Secure Dynamic SQL in SQL Server
 SQL Injection is the process by which a malicious user enters Transact-SQL statements instead of valid input. If the input is passed directly to the server without being validated and if the application inadvertently executes the injected code, the attack has the potential to damage or destroy data.  

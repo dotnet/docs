@@ -2,9 +2,6 @@
 title: "How to: Make Entities Serializable"
 ms.date: "03/30/2017"
 ms.assetid: a6c5bf6e-064a-4f77-b74c-76b3a5dec309
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Make Entities Serializable
 You can make entities serializable when you generate your code. Entity classes are decorated with the <xref:System.Runtime.Serialization.DataContractAttribute> attribute, and columns with the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute.  

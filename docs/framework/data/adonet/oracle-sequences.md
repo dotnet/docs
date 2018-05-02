@@ -2,9 +2,6 @@
 title: "Oracle Sequences"
 ms.date: "03/30/2017"
 ms.assetid: 27cd371d-8252-414d-b5b2-5d31fa44b585
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Oracle Sequences
 The .NET Framework Data Provider for Oracle provides support for retrieving the server-generated key Oracle Sequence values after performing inserts by using the <xref:System.Data.OracleClient.OracleDataAdapter>.  

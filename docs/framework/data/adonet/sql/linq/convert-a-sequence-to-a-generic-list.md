@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7ab76d93-6898-4e75-b76f-290a66ecead8
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Convert a Sequence to a Generic List
 Use <xref:System.Linq.Enumerable.ToList%2A> to create a generic List from a sequence.  

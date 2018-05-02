@@ -2,9 +2,6 @@
 title: "Data Types and Functions"
 ms.date: "03/30/2017"
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Data Types and Functions
 The topics listed in the following table describe LINQ to SQL support for members, constructs, and casts of the common language runtime (CLR). Supported members and constructs are available to use in your LINQ to SQL queries.  

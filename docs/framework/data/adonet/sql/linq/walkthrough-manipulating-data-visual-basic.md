@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: 1f6a54f6-ec33-452a-a37d-48122207bf14
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Walkthrough: Manipulating Data (Visual Basic)
 This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database. You will use a copy of the sample Northwind database to add a customer, change the name of a customer, and delete an order.  

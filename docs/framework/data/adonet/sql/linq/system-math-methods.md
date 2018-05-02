@@ -2,9 +2,6 @@
 title: "System.Math Methods"
 ms.date: "03/30/2017"
 ms.assetid: 0f299521-6f41-4720-bd70-67c93fc50948
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # System.Math Methods
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the following <xref:System.Math> methods.  

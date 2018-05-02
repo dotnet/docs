@@ -2,9 +2,6 @@
 title: "GROUP BY (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: cf4f4972-4724-4945-ba44-943a08549139
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # GROUP BY (Entity SQL)
 Specifies groups into which objects returned by a query ([SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)) expression are to be placed.  

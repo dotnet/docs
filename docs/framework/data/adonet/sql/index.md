@@ -2,9 +2,6 @@
 title: "SQL Server and ADO.NET"
 ms.date: "03/30/2017"
 ms.assetid: c18b1fb1-2af1-4de7-80a4-95e56fd976cb
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SQL Server and ADO.NET
 This section describes features and behaviors that are specific to the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>).  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Handling DataAdapter Events
 The ADO.NET <xref:System.Data.Common.DataAdapter> exposes three events that you can use to respond to changes made to data at the data source. The following table shows the `DataAdapter` events.  

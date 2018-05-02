@@ -2,9 +2,6 @@
 title: "LINQ to SQL Queries"
 ms.date: "03/30/2017"
 ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # LINQ to SQL Queries
 You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries by using the same syntax as you would in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)]. The only difference is that the objects referenced in your queries are mapped to elements in a database. For more information, see [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  

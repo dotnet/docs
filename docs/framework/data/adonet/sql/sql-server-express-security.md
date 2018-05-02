@@ -2,9 +2,6 @@
 title: "SQL Server Express Security"
 ms.date: "03/30/2017"
 ms.assetid: cf9cf6d9-4b05-43e9-ac7b-6cefbfcd6d4e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SQL Server Express Security
 Microsoft SQL Server Express Edition (SQL Server Express) is based on Microsoft SQL Server, and supports most of the features of the database engine. It is designed so that nonessential features and network connectivity are off by default. This reduces the surface area available for attack by a malicious user.  

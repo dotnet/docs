@@ -2,9 +2,6 @@
 title: "How to: Use EdmGen.exe to Generate the Model and Mapping Files"
 ms.date: "03/30/2017"
 ms.assetid: 40db462d-2fd2-4cc1-ad86-d280403e63fa
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Use EdmGen.exe to Generate the Model and Mapping Files
 This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the following files based on the School database:  

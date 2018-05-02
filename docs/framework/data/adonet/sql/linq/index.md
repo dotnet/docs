@@ -2,9 +2,6 @@
 title: "LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # LINQ to SQL
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is a component of [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] version 3.5 that provides a run-time infrastructure for managing relational data as objects.  

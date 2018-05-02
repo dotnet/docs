@@ -2,9 +2,6 @@
 title: "THEN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 54222642-23c6-4f61-9861-67caca53ac5f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # THEN (Entity SQL)
 The result of a WHEN clause when it evaluates to `true`.  

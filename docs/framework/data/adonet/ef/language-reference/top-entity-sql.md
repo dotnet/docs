@@ -2,9 +2,6 @@
 title: "TOP (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4a4a0954-82e2-4eae-bcaf-7c4552f3532d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # TOP (Entity SQL)
 The SELECT clause can have an optional TOP sub-clause following the optional ALL/DISTINCT modifier. The TOP sub-clause specifies that only the first set of rows will be returned from the query result.  

@@ -2,9 +2,6 @@
 title: "System.TimeSpan Methods"
 ms.date: "03/30/2017"
 ms.assetid: 9333fee8-1454-4374-855b-8c14c002f48f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # System.TimeSpan Methods
 Member support for <xref:System.TimeSpan?displayProperty=nameWithType> greatly depends on the versions of the .NET Framework and Microsoft SQL Server that you are using.  

@@ -2,9 +2,6 @@
 title: "Specify Relations Between Elements with No Nesting"
 ms.date: "03/30/2017"
 ms.assetid: e31325da-7691-4d33-acf4-99fccca67006
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Specify Relations Between Elements with No Nesting
 When elements are not nested, no implicit relations are created. You can, however, explicitly specify relations between elements that are not nested by using the **msdata:Relationship** annotation.  

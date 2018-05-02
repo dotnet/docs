@@ -2,9 +2,6 @@
 title: "SSDL Specification"
 ms.date: "03/30/2017"
 ms.assetid: 9d6b29da-b363-4930-ba57-989f9d6dbf3f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SSDL Specification
 The [msdn.microsoft.com/data/ef](http://msdn.microsoft.com/data/ef) site is now the main location for the Entity Framework content.  

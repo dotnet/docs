@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a582c53f-f203-44ae-a797-d7f169a4fbb5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Method-Based Query Syntax Examples: Partitioning (LINQ
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.Skip%2A>, <xref:System.Linq.Enumerable.SkipWhile%2A>, <xref:System.Linq.Enumerable.Take%2A>, and <xref:System.Linq.Enumerable.TakeWhile%2A> methods to query a <xref:System.Data.DataSet> using the query expression syntax.  

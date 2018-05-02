@@ -2,9 +2,6 @@
 title: "ISOF (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 5b2b0d34-d0a7-4bcd-baf2-58aa8456d00b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ISOF (Entity SQL)
 Determines whether the type of an expression is of the specified type or one of its subtypes.  

@@ -2,9 +2,6 @@
 title: "Literals (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 092ef693-6e5f-41b4-b868-5b9e82928abf
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Literals (Entity SQL)
 This topic describes [!INCLUDE[esql](../../../../../../includes/esql-md.md)] support for literals.  

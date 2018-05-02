@@ -2,9 +2,6 @@
 title: "Authentication in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Authentication in SQL Server
 SQL Server supports two authentication modes, Windows authentication mode and mixed mode.  

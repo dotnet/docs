@@ -2,9 +2,6 @@
 title: "Known Issues in SqlClient for Entity Framework"
 ms.date: "03/30/2017"
 ms.assetid: 48fe4912-4d0f-46b6-be96-3a42c54780f6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Known Issues in SqlClient for Entity Framework
 This section describes known issues related to the .NET Framework Data Provider for SQL Server (SqlClient).  

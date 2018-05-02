@@ -2,9 +2,6 @@
 title: "Connecting to a Data Source in ADO.NET"
 ms.date: "03/30/2017"
 ms.assetid: 9abc3f92-1be3-4e1a-b360-762dc689650e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Connecting to a Data Source in ADO.NET
 In ADO.NET you use a **Connection** object to connect to a specific data source by supplying necessary authentication information in a connection string. The **Connection** object you use depends on the type of data source.  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: db8a557a-fef8-4f4f-bb91-8cff7250ee25
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Getting Started
 By using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], you can use the [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technology to access SQL databases just as you would access an in-memory collection.  

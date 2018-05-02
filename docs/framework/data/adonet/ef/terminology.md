@@ -2,9 +2,6 @@
 title: "Entity Framework Terminology"
 ms.date: "03/30/2017"
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Entity Framework Terminology
 This topic defines terms frequently referenced in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation. Links are provided to relevant topics where additional information is available.  

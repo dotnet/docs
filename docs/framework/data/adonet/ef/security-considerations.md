@@ -2,9 +2,6 @@
 title: "Security Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Security Considerations (Entity Framework)
 This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications. You should also follow recommendations for creating secure [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] applications. For more information, see [Security Overview](../../../../../docs/framework/data/adonet/security-overview.md).  

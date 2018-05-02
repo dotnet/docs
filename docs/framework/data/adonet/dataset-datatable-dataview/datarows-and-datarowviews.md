@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8f5eec26-b809-4aca-8778-7e202356d856
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # DataRows and DataRowViews
 A <xref:System.Data.DataView> exposes an enumerable collection of <xref:System.Data.DataRowView> objects. The **DataRowView** objects expose values as object arrays that are indexed by either the name or the ordinal reference of the column in the underlying table. You can access the <xref:System.Data.DataRow> that is exposed by the **DataRowView** by using the <xref:System.Data.DataRowView.Row%2A> property of the **DataRowView**.  

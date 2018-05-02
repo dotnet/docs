@@ -2,9 +2,6 @@
 title: "Floating-Point Numbers"
 ms.date: "03/30/2017"
 ms.assetid: 73c218c6-1c44-4402-a167-4f6262629a91
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Floating-Point Numbers
 This topic describes some of the issues that developers frequently encounter when they work with floating-point numbers in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]. These issues are caused by the way that computers store floating-point numbers, and are not specific to a particular provider such as <xref:System.Data.SqlClient> or <xref:System.Data.OracleClient>.  

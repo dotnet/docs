@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f6f0cbc9-f7bf-4d6e-875f-ad1ba0b4aa62
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Transaction and Bulk Copy Operations
 Bulk copy operations can be performed as isolated operations or as part of a multiple step transaction. This latter option enables you to perform more than one bulk copy operation within the same transaction, as well as perform other database operations (such as inserts, updates, and deletes) while still being able to commit or roll back the entire transaction.  

@@ -2,9 +2,6 @@
 title: "Query Concepts"
 ms.date: "03/30/2017"
 ms.assetid: 9a125749-ccb5-49d5-999d-d2db7171d74d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Query Concepts
 This section describes key concepts for designing [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  

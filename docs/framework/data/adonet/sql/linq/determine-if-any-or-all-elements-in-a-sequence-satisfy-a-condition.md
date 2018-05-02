@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 339ec145-826c-46d2-8cf2-3acd252cd072
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Determine if Any or All Elements in a Sequence Satisfy a Condition
 The <xref:System.Linq.Enumerable.All%2A> operator returns `true` if all elements in a sequence satisfy a condition.  

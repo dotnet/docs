@@ -2,9 +2,6 @@
 title: "System.DateTime Methods"
 ms.date: "03/30/2017"
 ms.assetid: 4f80700c-e83f-4ab6-af0f-1c9a606e1133
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # System.DateTime Methods
 The following LINQ to SQL-supported methods, operators, and properties are available to use in LINQ to SQL queries. When a method, operator or property is unsupported, LINQ to SQL cannot translate the member for execution on the SQL Server. You may use these members in your code, however, they must be evaluated before the query is translated to Transact-SQL or after the results have been retrieved from the database.  

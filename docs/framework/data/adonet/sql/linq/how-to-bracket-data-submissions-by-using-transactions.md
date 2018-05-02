@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 94044a31-de90-479b-935a-8159b4ae5c5a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Bracket Data Submissions by Using Transactions
 You can use <xref:System.Transactions.TransactionScope> to bracket your submissions to the database. For more information, see [Transaction Support](../../../../../../docs/framework/data/adonet/sql/linq/transaction-support.md).  

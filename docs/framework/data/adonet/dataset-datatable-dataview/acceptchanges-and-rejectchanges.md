@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e2d1a6fe-31f9-4b83-9728-06c406a3394e
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # AcceptChanges and RejectChanges
 After verifying the accuracy of changes made to data in a <xref:System.Data.DataTable>, you can accept the changes using the <xref:System.Data.DataRow.AcceptChanges%2A> method of the <xref:System.Data.DataRow>, <xref:System.Data.DataTable>, or <xref:System.Data.DataSet>, which will set the **Current** row values to be the **Original** values and will set the **RowState** property to **Unchanged**. Accepting or rejecting changes clears out any **RowError** information and sets the **HasErrors** property to **false**. Accepting or rejecting changes can also affect updating data in the data source. For more information, see [Updating Data Sources with DataAdapters](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c2b84dfe-7fec-489a-92de-45215cec4518
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Use Stored Procedures Mapped for Multiple Result Shapes
 When a stored procedure can return multiple result shapes, the return type cannot be strongly typed to a single projection shape. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can generate all possible projection types, it cannot know the order in which they will be returned.  

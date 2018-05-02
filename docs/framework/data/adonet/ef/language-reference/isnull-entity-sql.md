@@ -2,9 +2,6 @@
 title: "ISNULL (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: dc7a0173-3664-4c90-a57b-5cbb0a8ed7ee
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ISNULL (Entity SQL)
 Determines if a query expression is null.  

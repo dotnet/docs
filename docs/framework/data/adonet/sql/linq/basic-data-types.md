@@ -2,9 +2,6 @@
 title: "Basic Data Types"
 ms.date: "03/30/2017"
 ms.assetid: eca2c472-9548-4800-bd31-5d8d9f11752b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Basic Data Types
 Because LINQ to SQL queries translate to Transact-SQL before they are executed on the Microsoft SQL Server. LINQ to SQL supports much of the same built-in functionality that SQL Server does for basic data types.  

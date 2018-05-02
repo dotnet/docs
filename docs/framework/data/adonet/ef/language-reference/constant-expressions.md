@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9d98a7be-b110-4edb-8eba-bed10f250b6d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Constant Expressions
 A constant expression consists of a constant value. Constant values are directly converted to constant command tree expressions, without any translation on the client. This includes expressions that result in a constant value. Therefore, data source behavior should be expected for all expressions involving constants. This can result in behavior that differs from CLR behavior.  

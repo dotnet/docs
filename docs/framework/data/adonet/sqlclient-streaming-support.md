@@ -2,9 +2,6 @@
 title: "SqlClient Streaming Support"
 ms.date: "03/30/2017"
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SqlClient Streaming Support
 Streaming support between SQL Server and an application (new in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]) supports unstructured data on the server (documents, images, and media files). A SQL Server database can store binary large objects (BLOBs), but retrieving BLOBS can use a lot of memory.  

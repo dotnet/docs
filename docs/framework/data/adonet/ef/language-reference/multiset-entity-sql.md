@@ -2,9 +2,6 @@
 title: "MULTISET (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: eb90a377-e47a-43a5-b308-e993b6d611e6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # MULTISET (Entity SQL)
 Creates an instance of a multiset from a list of values. All the values in the MULTISET constructor must be of a compatible type `T`. Empty multiset constructors are not allowed.  

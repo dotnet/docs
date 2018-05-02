@@ -2,9 +2,6 @@
 title: "Retrieving Database Schema Information"
 ms.date: "03/30/2017"
 ms.assetid: 79038d52-f122-4fd4-9bfb-aaa22d6a114b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Retrieving Database Schema Information
 Obtaining schema information from a database is accomplished with the process of schema discovery. Schema discovery allows applications to request that managed providers find and return information about the database schema, also known as *metadata*, of a given database. Different database schema elements such as tables, columns, and stored-procedures are exposed through schema collections. Each schema collection contains a variety of schema information specific to the provider being used.  

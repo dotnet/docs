@@ -2,9 +2,6 @@
 title: "Reference"
 ms.date: "03/30/2017"
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Reference
 This section provides reference information for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] developers.  

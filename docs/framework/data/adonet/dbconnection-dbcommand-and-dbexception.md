@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 58aab611-7e6f-4749-b983-28ab7ae87dbe
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # DbConnection, DbCommand and DbException
 Once you have created a <xref:System.Data.Common.DbProviderFactory> and a <xref:System.Data.Common.DbConnection>, you can then work with commands and data readers to retrieve data from the data source.  

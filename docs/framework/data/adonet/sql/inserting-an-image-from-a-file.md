@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 35900aa2-5615-4174-8212-ba184c6b82fb
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Inserting an Image from a File
 You can write a binary large object (BLOB) to a database as either binary or character data, depending on the type of field at your data source. BLOB is a generic term that refers to the `text`, `ntext`, and `image` data types, which typically contain documents and pictures.  

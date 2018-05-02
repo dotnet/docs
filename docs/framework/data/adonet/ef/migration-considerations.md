@@ -2,9 +2,6 @@
 title: "Migration Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Migration Considerations (Entity Framework)
 The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framework provides several benefits to an existing application. One of the most important of these benefits is the ability to use a conceptual model to separate data structures used by the application from the schema in the data source. This enables you to easily make future changes to the storage model or to the data source itself without making compensating changes to the application. For more information about the benefits of using the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], see [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md) and [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md).  

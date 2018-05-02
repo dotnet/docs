@@ -2,9 +2,6 @@
 title: "Walkthrough: Using Only Stored Procedures (C#)"
 ms.date: "03/30/2017"
 ms.assetid: ecde4bf2-fa4d-4252-b5e4-96a46b9e097d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Walkthrough: Using Only Stored Procedures (C#)
 This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for accessing data by executing stored procedures only. This approach is often used by database administrators to limit how the datastore is accessed.  

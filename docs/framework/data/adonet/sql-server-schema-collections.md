@@ -2,9 +2,6 @@
 title: "SQL Server Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # SQL Server Schema Collections
 The Microsoft .NET Framework Data Provider for SQL Server supports additional schema collections in addition to the common schema collections. The schema collections vary slightly by the version of SQL Server you are using. To determine the list of supported schema collections, call the **GetSchema** method with no arguments, or with the schema collection name "MetaDataCollections". This will return a <xref:System.Data.DataTable> with a list of the supported schema collections, the number of restrictions that they each support, and the number of identifier parts that they use.  

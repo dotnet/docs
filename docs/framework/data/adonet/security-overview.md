@@ -2,9 +2,6 @@
 title: "Security Overview2"
 ms.date: "03/30/2017"
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Security Overview
 Securing an application is an ongoing process. There will never be a point where a developer can guarantee that an application is safe from all attacks, because it is impossible to predict what kinds of future attacks new technologies will bring about. Conversely, just because nobody has yet discovered (or published) security flaws in a system does not mean that none exist or could exist. You need to plan for security during the design phase of the project, as well as plan how security will be maintained over the lifetime of the application.  

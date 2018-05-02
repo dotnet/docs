@@ -2,9 +2,6 @@
 title: "UNION (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: df98a4db-b00d-4c8b-bd74-0d285f27e1df
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # UNION (Entity SQL)
 Combines the results of two or more queries into a single collection.  

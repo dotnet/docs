@@ -2,9 +2,6 @@
 title: "Oracle Data Type Mappings1"
 ms.date: "03/30/2017"
 ms.assetid: ec34ae21-bbbb-4adb-b672-83865e2a8451
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Oracle Data Type Mappings
 The following table lists Oracle data types and their mappings to the <xref:System.Data.OracleClient.OracleDataReader>.  

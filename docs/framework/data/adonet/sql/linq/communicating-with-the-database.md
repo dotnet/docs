@@ -2,9 +2,6 @@
 title: "Communicating with the Database"
 ms.date: "03/30/2017"
 ms.assetid: 659d9817-bcaa-457f-9639-169394177274
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Communicating with the Database
 The topics in this section describe some basic aspects of how you establish and maintain communication with the database.  

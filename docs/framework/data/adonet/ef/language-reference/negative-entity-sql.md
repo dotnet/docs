@@ -2,9 +2,6 @@
 title: "- (Negative) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 208e54ef-4741-4ec5-89d6-6ff700863cb0
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # - (Negative) (Entity SQL)
 Returns the negative of the value of a numeric expression.  

@@ -2,9 +2,6 @@
 title: "Type System (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Type System (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a number of types:  

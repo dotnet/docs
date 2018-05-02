@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5bd1a748-3df7-4d0a-a607-14f25e3175e9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Build an EntityConnection Connection String
 This topic provides an example of how to build an <xref:System.Data.EntityClient.EntityConnection>.  

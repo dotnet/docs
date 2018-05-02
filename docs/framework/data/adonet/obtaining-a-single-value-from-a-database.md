@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b38526cd-a62a-48cb-822a-e91dfa68e02d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Obtaining a Single Value from a Database
 You may need to return database information that is simply a single value rather than in the form of a table or data stream. For example, you may want to return the result of an aggregate function such as COUNT(\*), SUM(Price), or AVG(Quantity). The **Command** object provides the capability to return single values using the **ExecuteScalar** method. The **ExecuteScalar** method returns, as a scalar value, the value of the first column of the first row of the result set.  

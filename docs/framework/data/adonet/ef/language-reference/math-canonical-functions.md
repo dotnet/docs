@@ -2,9 +2,6 @@
 title: "Math Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 6f6cddc6-b561-4ebe-84b6-841ef5b4113b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Math Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes math canonical functions.  

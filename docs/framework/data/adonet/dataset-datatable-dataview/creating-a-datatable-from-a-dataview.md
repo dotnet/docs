@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2d45cf41-d8ae-4409-af3e-a96a7e476d85
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Creating a DataTable from a DataView
 Once you have retrieved data from a data source, and have filled a <xref:System.Data.DataTable> with the data, you may want to sort, filter, or otherwise limit the returned data without retrieving it again. The <xref:System.Data.DataView> class makes this possible. In addition, if you need to create a new <xref:System.Data.DataTable> from the <xref:System.Data.DataView>, you can use the <xref:System.Data.DataView.ToTable%2A> method to copy all the rows and columns, or a subset of the data into a new <xref:System.Data.DataTable>. The <xref:System.Data.DataView.ToTable%2A> method provides overloads to:  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 64774fb5-7447-4296-ad3b-8a94346f99a1
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Convert a Type to a Generic IEnumerable
 Use <xref:System.Linq.Enumerable.AsEnumerable%2A> to return the argument typed as a generic `IEnumerable`.  

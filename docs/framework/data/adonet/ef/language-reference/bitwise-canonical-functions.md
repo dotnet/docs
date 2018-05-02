@@ -2,9 +2,6 @@
 title: "Bitwise Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 993868ca-16e3-47b6-9915-c29cd63b0a21
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Bitwise Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes bitwise canonical functions.  

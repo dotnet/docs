@@ -2,9 +2,6 @@
 title: "ODBC Data Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: 43c35d32-831d-480f-a150-78f7e869d17f
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ODBC Data Type Mappings
 The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type for data types from the .NET Framework Data Provider for ODBC (<xref:System.Data.Odbc>). The typed accessor methods for the <xref:System.Data.Odbc.OdbcDataReader> are also listed.  

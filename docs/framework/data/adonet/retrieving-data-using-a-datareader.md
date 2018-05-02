@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Retrieving Data Using a DataReader
 Retrieving data using a **DataReader** involves creating an instance of the **Command** object and then creating a **DataReader** by calling **Command.ExecuteReader** to retrieve rows from a data source. The following example illustrates using a **DataReader** where `reader` represents a valid DataReader and `command` represents a valid Command object.  

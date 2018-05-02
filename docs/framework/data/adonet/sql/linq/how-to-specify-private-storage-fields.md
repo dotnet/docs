@@ -2,9 +2,6 @@
 title: "How to: Specify Private Storage Fields"
 ms.date: "03/30/2017"
 ms.assetid: 5a40e816-cc6e-43a0-b32a-9caaa0ab6912
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Specify Private Storage Fields
 Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A> property on the <xref:System.Data.Linq.Mapping.DataAttribute> attribute to designate the name of an underlying storage field.  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Return Or Skip Elements in a Sequence
 Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number of elements in a sequence and then skip over the remainder.  

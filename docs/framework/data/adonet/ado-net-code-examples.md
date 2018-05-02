@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ADO.NET code examples
 The code listings in this topic demonstrate how to retrieve data from a database by using the following ADO.NET technologies:

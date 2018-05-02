@@ -2,9 +2,6 @@
 title: "Modeling and Mapping"
 ms.date: "03/30/2017"
 ms.assetid: ec8a9515-3708-4cde-a688-4d8e6975f150
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Modeling and Mapping
 In the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], you can define the conceptual model, storage model, and the mapping between the two in the way that best suits your application. The Entity Data Model Tools in Visual Studio allow you to create an .[edmx file](http://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4) from a database or a graphical model and then update that file when either the database or model changes.  

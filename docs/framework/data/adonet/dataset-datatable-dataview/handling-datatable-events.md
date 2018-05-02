@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 62f404a5-13ea-4b93-a29f-55b74a16c9d3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Handling DataTable Events
 The <xref:System.Data.DataTable> object provides a series of events that can be processed by an application. The following table describes `DataTable` events.  

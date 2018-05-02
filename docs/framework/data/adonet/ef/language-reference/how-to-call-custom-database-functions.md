@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 4354e5eb-dd45-469d-97fb-1c495705ee59
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # How to: Call Custom Database Functions
 This topic describes how to call custom functions that are defined in the database from within LINQ to Entities queries.  

@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fa360c46-e5f8-411e-a711-46997771133d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Paging Through a Query Result
 Paging through a query result is the process of returning the results of a query in smaller subsets of data, or pages. This is a common practice for displaying results to a user in small, easy-to-manage chunks.  

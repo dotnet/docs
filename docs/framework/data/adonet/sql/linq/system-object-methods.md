@@ -2,9 +2,6 @@
 title: "System.Object Methods"
 ms.date: "03/30/2017"
 ms.assetid: 5397fca0-689e-443e-802f-e1cbdc866427
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # System.Object Methods
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the following <xref:System.Object> methods.  

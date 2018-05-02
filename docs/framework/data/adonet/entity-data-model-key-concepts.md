@@ -2,9 +2,6 @@
 title: "Entity Data Model Key Concepts"
 ms.date: "03/30/2017"
 ms.assetid: c635a16d-6674-45aa-9344-dcb7df992bab
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Entity Data Model Key Concepts
 The Entity Data Model (EDM) uses three key concepts to describe the structure of data: *entity type*, *association type*, and *property*. These are the most important concepts in describing the structure of data in any implementation of the EDM.  

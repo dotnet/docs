@@ -2,9 +2,6 @@
 title: "Making and Submitting Data Changes"
 ms.date: "03/30/2017"
 ms.assetid: d68c2dc3-99b3-49ab-b547-2ca5b386429a
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Making and Submitting Data Changes
 The topics in this section describe how to make and transmit changes to the database and how to handle optimistic concurrency conflicts.  

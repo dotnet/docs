@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 09f2e4ee-1d08-4ba8-8936-83394fee319d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Applying an XSLT Transform to a DataSet
 The **WriteXml** method of the <xref:System.Data.DataSet> enables you to write the contents of a **DataSet** as XML data. A common task is to then transform that XML to another format using XSL transformations (XSLT). However, synchronizing a **DataSet** with an <xref:System.Xml.XmlDataDocument> enables you to apply an XSLT stylesheet to the contents of a **DataSet** without having to first write the contents of the **DataSet** as XML data using **WriteXml**.  

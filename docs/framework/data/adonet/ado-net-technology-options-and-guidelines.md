@@ -2,9 +2,6 @@
 title: "ADO.NET Technology Options and Guidelines"
 ms.date: "03/30/2017"
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ADO.NET Technology Options and Guidelines
 The ADO.NET Data Platform is a multi-release strategy to decrease the amount of coding and maintenance required for developers by enabling them to program against conceptual entity data models. This platform includes the ADO.NET Entity Framework and related technologies.  

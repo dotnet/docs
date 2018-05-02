@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e5e9309a-3ebb-4a9c-9d78-21c4e2bafc5b
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Merging DataSet Contents
 You can use the <xref:System.Data.DataSet.Merge%2A> method to merge the contents of a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or <xref:System.Data.DataRow> array into an existing `DataSet`. Several factors and options affect how new data is merged into an existing `DataSet`.  

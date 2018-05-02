@@ -2,9 +2,6 @@
 title: "ADO.NET Overview"
 ms.date: "03/30/2017"
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # ADO.NET Overview
 ADO.NET provides consistent access to data sources such as SQL Server and XML, and to data sources exposed through OLE DB and ODBC. Data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.  

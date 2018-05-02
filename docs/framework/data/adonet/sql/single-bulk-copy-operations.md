@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5e7ff0be-3f23-4996-a92c-bd54d65c3836
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Single Bulk Copy Operations
 The simplest approach to performing a SQL Server bulk copy operation is to perform a single operation against a database. By default, a bulk copy operation is performed as an isolated operation: the copy operation occurs in a non-transacted way, with no opportunity for rolling it back.  

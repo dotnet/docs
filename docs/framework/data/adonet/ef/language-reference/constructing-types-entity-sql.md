@@ -2,9 +2,6 @@
 title: "Constructing Types (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # Constructing Types (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides three kinds of constructors: row constructors, named type constructors, and collection constructors.  

@@ -2,9 +2,6 @@
 title: "System.DateTimeOffset Methods"
 ms.date: "03/30/2017"
 ms.assetid: 25b3e5c0-7603-4a70-b3e5-2149e3da69a2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # System.DateTimeOffset Methods
 Once mapped in the object model or external mapping file, LINQ to SQL allows you to call most of the <xref:System.DateTimeOffset?displayProperty=nameWithType> methods, operators, and properties from within your LINQ to SQL queries.  

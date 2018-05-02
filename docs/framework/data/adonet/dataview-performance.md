@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 90820e49-9d46-41f6-9a3d-6c0741bbd8eb
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
 ---
 # DataView Performance
 This topic discusses the performance benefits of using the <xref:System.Data.DataView.Find%2A> and <xref:System.Data.DataView.FindRows%2A> methods of the <xref:System.Data.DataView> class, and of caching a <xref:System.Data.DataView> in a Web application.  

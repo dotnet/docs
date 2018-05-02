@@ -341,7 +341,7 @@ The [.NET Library Design Guidelines](../../standard/design-guidelines/exceptions
 
 * Do not throw <xref:System.Exception> when it will escape to user code. This includes avoiding the use of `failwith`, `failwithf`, which are handy functions for use in scripting and for code under development, but should be removed from F# library code in favor of throwing a more specific exception type.
 
-* Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw <xref:System.ArgumentnullException>, <xref:System.ArgumentException>, and <xref:System.InvalidOperationException> when appropriate.
+* Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, and <xref:System.InvalidOperationException> when appropriate.
 
 #### Consider using option values for return types when failure is not an exceptional scenario
 

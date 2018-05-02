@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using Windows Management Instrumentation for Diagnostics
-[!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] exposes inspection data of a service at runtime through a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider.  
+Windows Communication Foundation (WCF) exposes inspection data of a service at runtime through a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider.  
   
 ## Enabling WMI  
  WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/aa394582.aspx). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  

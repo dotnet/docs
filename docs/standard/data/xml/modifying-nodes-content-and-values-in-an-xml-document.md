@@ -1,21 +1,10 @@
 ---
 title: "Modifying Nodes, Content, and Values in an XML Document"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 761773e0-db72-4986-b9f5-a522213d8397
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Modifying Nodes, Content, and Values in an XML Document
 There are many ways you can modify the nodes and content in a document. You can:  

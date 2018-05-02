@@ -1,16 +1,9 @@
 ---
 title: Decision table. .NET frameworks to use for Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Decision table, .NET frameworks to use for Docker
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Decision table: .NET frameworks to use for Docker
 

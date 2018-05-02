@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Configure a Custom WS-Metadata Exchange Binding
-This topic will explain how to configure a custom WS-Metadata exchange binding. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
+This topic will explain how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
 ### Using a configuration file  
   

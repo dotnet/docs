@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Specifying and Handling Faults in Contracts and Services
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications handle error situations by mapping managed exception objects to SOAP fault objects and SOAP fault objects to managed exception objects. The topics in this section discuss how to design contracts to expose error conditions as custom SOAP faults, how to return such faults as part of service implementation, and how clients catch such faults.  
+Windows Communication Foundation (WCF) applications handle error situations by mapping managed exception objects to SOAP fault objects and SOAP fault objects to managed exception objects. The topics in this section discuss how to design contracts to expose error conditions as custom SOAP faults, how to return such faults as part of service implementation, and how clients catch such faults.  
   
 ## Error Handling Overview  
  In all managed applications, processing errors are represented by <xref:System.Exception> objects. In SOAP-based applications such as [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications, service methods communicate processing error information using SOAP fault messages. SOAP faults are message types that are included in the metadata for a service operation and therefore create a fault contract that clients can use to make their operation more robust or interactive. In addition, because SOAP faults are expressed to clients in XML form, it is a highly interoperable type system that clients on any SOAP platform can use, increasing the reach of your [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] application.  

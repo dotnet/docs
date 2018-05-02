@@ -1,13 +1,7 @@
 ---
 title: ".NET Framework Support for Windows Store Apps and Windows Runtime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Store apps, .NET Framework support for"
   - "Windows Runtime, .NET Framework support for"
@@ -15,13 +9,8 @@ helpviewer_keywords:
   - ".NET Framework, and Windows Store apps"
   - ".NET Framework, and Windows Runtime"
 ms.assetid: 6fa7d044-ae12-4c54-b8ee-50915607a565
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Framework Support for Windows Store Apps and Windows Runtime
 The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:  

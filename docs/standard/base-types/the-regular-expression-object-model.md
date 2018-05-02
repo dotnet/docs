@@ -1,13 +1,7 @@
 ---
 title: "The Regular Expression Object Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -41,13 +35,8 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, classes"
   - "GroupCollection class"
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Activity List
-This topic lists all the activities defined by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)].  
+This topic lists all the activities defined by Windows Communication Foundation (WCF).  
   
 > [!NOTE]
 >  You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md).  

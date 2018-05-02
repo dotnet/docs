@@ -1,26 +1,15 @@
 ---
 title: "Type Design Guidelines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "type design guidelines"
   - "type design guidelines, about type design guidelines"
   - "class library design guidelines [.NET Framework], type design guidelines"
   - "types [.NET Framework], design guidelines"
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Type Design Guidelines
 From the CLR perspective, there are only two categories of types—reference types and value types—but for the purpose of a discussion about framework design, we divide types into more logical groups, each with its own specific design rules.  

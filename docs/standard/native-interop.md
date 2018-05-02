@@ -1,20 +1,12 @@
 ---
 title: Native interoperability
 description: Learn how to interface with native components in .NET.
-keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: ronpet
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Native Interoperability
 
 In this document, we will dive a little bit deeper into all three ways of doing "native interoperability" that are available using .NET.

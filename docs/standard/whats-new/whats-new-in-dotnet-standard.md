@@ -3,15 +3,9 @@ title: "What's new in the .NET Standard"
 description: This article summarizes new features and enhancements found in each new version of .NET Standard.
 ms.custom: "updateeachrelease"
 ms.date: "04/12/2018"
-ms.prod: ".net"
-ms.topic: "article"
 ms.technology: dotnet-standard
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # What's new in the .NET Standard
 

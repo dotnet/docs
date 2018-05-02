@@ -1,24 +1,11 @@
 ---
 title: "&lt;dateTimeSerialization&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dateTimeSerialization element"
   - "XML serialization, configuration"
   - "<dateTimeSerialization> element"
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # &lt;dateTimeSerialization&gt; Element
 Determines the serialization mode of <xref:System.DateTime> objects.  

@@ -2,9 +2,7 @@
 title: "Common Language Runtime (CLR)"
 ms.custom: "updateeachrelease"
 ms.date: "04/16/2018"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
   - "code, execution"
@@ -20,10 +18,6 @@ helpviewer_keywords:
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Common Language Runtime (CLR) overview
 

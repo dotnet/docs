@@ -1,17 +1,12 @@
 ---
 title: "For Further Reading (Parallel Programming)"
 ms.date: "04/26/2018"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, further reading"
+ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # For Further Reading (Parallel Programming)
 

@@ -1,20 +1,12 @@
 ---
 title: .NET Platform Guide
 description: Learn about the .NET Platform.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: ronpet
 ms.date: 05/02/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Guide
 
 The .NET Guide provides a large amount of information about .NET.  Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other sections of the .NET documentation.

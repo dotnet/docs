@@ -1,21 +1,7 @@
 ---
 title: "&lt;transport&gt; of &lt;basicHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4c5ba293-3d7e-47a6-b84e-e9022857b7e5
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;basicHttpBinding&gt;
 Defines properties that control authentication parameters for the HTTP transport.  

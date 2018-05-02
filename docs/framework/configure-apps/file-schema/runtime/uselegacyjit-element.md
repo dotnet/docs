@@ -1,22 +1,9 @@
 ---
 title: "&lt;useLegacyJit&gt; Element"
-ms.custom: ""
 ms.date: "04/26/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # &lt;useLegacyJit&gt; Element

@@ -1,26 +1,15 @@
 ---
 title: "&lt;add&gt; Element for &lt;switches&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches/add"
 helpviewer_keywords: 
   - "<add> element for <switches>"
   - "add element for <switches>"
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;switches&gt;
 Specifies the level where a trace switch is set.  

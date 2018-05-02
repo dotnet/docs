@@ -1,14 +1,6 @@
 ---
 title: "&lt;remove&gt; Element for connectionManagement (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement/remove"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#remove"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "<connectionManagement>, remove element"
   - "remove element, connectionManagement"
 ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;remove&gt; Element for connectionManagement (Network Settings)
 Removes an IP address or DNS name from the connection management list.  

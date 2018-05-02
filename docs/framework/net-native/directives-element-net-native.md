@@ -1,21 +1,9 @@
 ---
 title: "&lt;Directives&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Directives&gt; Element (.NET Native)
 The root element in every runtime directives file for [!INCLUDE[net_native](../../../includes/net-native-md.md)].  

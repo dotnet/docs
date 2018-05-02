@@ -4,13 +4,7 @@ ms.custom: "updateeachrelease"
 description: Learn how to install .NET Framework on Windows 8.1
 author: rlander
 ms.author: mairaw
-keywords: .NET Framework, Install
 ms.date: 10/22/2017
-ms.topic: article
-ms.prod: .net-framework
-ms.devlang: dotnet
-ms.workload: 
-  - dotnet
 ---
 
 # Install the .NET Framework on Windows 8.1 and Windows Server 2012 R2

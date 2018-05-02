@@ -4,12 +4,7 @@ ms.custom: "updateeachrelease"
 description: Learn how to install the .NET Framework on Windows 7 SP1.
 author: rlander
 ms.author: mairaw
-keywords: .NET Framework, Install
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: .net-framework
-ms.workload: 
-  - dotnet
 ---
 
 # Install the .NET Framework on Windows 7 SP1 and Windows Server 2008 R2

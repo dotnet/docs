@@ -1,22 +1,9 @@
 ---
 title: "Mitigation: WCF Services and Certificate Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef19c91a-b9df-4bf0-a28e-eb1e99c4bc95
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mitigation: WCF Services and Certificate Authentication
 The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default list. When both client and server machines have  the .NET Framework 4.6 or later installed, TLS 1.2 is used for negotiation.  

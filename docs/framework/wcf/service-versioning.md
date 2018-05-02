@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Versioning
-After initial deployment, and potentially several times during their lifetime, services (and the endpoints they expose) may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. Each change introduces a new version of the service. This topic explains how to consider versioning in [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  
+After initial deployment, and potentially several times during their lifetime, services (and the endpoints they expose) may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. Each change introduces a new version of the service. This topic explains how to consider versioning in Windows Communication Foundation (WCF).  
   
 ## Four Categories of Service Changes  
  The changes to services that may be required can be classified into four categories:  

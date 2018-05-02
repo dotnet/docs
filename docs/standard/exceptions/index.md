@@ -1,13 +1,7 @@
 ---
 title: "Handling and Throwing Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions [.NET Framework], handling"
   - "runtime, exceptions"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "exceptions [.NET Framework]"
   - "common language runtime, exceptions"
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Handling and throwing exceptions in .NET
 

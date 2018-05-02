@@ -1,10 +1,6 @@
 ---
 title: "&lt;supportedRuntime&gt; Element"
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 ms.custom: "updateeachrelease"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime"
@@ -16,8 +12,6 @@ ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;supportedRuntime&gt; Element
 

@@ -1,25 +1,14 @@
 ---
 title: "EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "wait handles"
   - "threading [.NET Framework], EventWaitHandle class"
   - "event wait handles [.NET Framework]"
 ms.assetid: cd94fc34-ac15-427f-b723-a1240a4fab7d
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
 Event wait handles allow threads to synchronize activities by signaling each other and by waiting on each other's signals. These synchronization events are based on Win32 wait handles and can be divided into two types: those that reset automatically when signaled and those that are reset manually.  

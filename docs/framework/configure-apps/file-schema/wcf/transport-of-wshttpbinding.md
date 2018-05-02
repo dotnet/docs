@@ -1,21 +1,7 @@
 ---
 title: "&lt;transport&gt; of &lt;wsHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 21e38acf-450a-4bda-82b6-de305e1f7cd8
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;wsHttpBinding&gt;
 Defines authentication settings for the HTTP transport.  

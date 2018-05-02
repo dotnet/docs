@@ -1,13 +1,7 @@
 ---
 title: "Regular Expression Language - Quick Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "VS.RegularExpressionBuilder"
 helpviewer_keywords: 
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "cheat sheet"
   - ".NET Framework regular expressions, language elements"
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
-caps.latest.revision: 56
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Regular Expression Language - Quick Reference
 <a name="top"></a> A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  

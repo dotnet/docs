@@ -1,21 +1,7 @@
 ---
 title: "&lt;claimTypeRequirements&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a26efe73-4bad-4731-8cad-27f00d54354b
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;claimTypeRequirements&gt; element
 Specifies a collection of required claim types.  

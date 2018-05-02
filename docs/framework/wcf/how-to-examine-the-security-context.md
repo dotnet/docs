@@ -25,7 +25,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Examine the Security Context
-When programming [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services, the service security context enables you to determine details about the client credentials and claims used to authenticate with the service. This is done by using the properties of the <xref:System.ServiceModel.ServiceSecurityContext> class.  
+When programming Windows Communication Foundation (WCF) services, the service security context enables you to determine details about the client credentials and claims used to authenticate with the service. This is done by using the properties of the <xref:System.ServiceModel.ServiceSecurityContext> class.  
   
  For example, you can retrieve the identity of the current client by using the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> or the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property. To determine whether the client is anonymous, use the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property.  
   

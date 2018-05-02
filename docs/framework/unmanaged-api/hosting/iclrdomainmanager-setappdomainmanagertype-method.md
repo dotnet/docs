@@ -1,14 +1,6 @@
 ---
 title: "ICLRDomainManager::SetAppDomainManagerType Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDomainManager.SetAppDomainManagerType"
 api_location: 
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]"
   - "ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]"
 ms.assetid: ee91abb0-cb74-41dd-927b-e117fb8ffdf4
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDomainManager::SetAppDomainManagerType Method
 Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=nameWithType> class, of the application domain manager that will be used to initialize the default application domain.  

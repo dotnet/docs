@@ -11,7 +11,7 @@ ms.devlang: fsharp
 ---
 # F# component design guidelines
 
-This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and [another version](http://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
+This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and [another version](https://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
 
 This document assumes you are familiar with F# programming. Many thanks to the F# community for their contributions and helpful feedback on various versions of this guide.
 
@@ -658,7 +658,7 @@ The F# function type appears as `class FSharpFunc<T,U>` to other .NET languages,
 
 On the flip side, .NET delegates are not natural for F#-facing libraries (see the next Section on F#-facing libraries). As a result, a common implementation strategy when developing higher-order methods for vanilla .NET libraries is to author all the implementation using F# function types, and then create the public API using delegates as a thin façade atop the actual F# implementation.
 
-#### Use the TryGetValue pattern instead of returning F# option values (Option<T>), and prefer method overloading to taking F# option values as arguments
+#### Use the TryGetValue pattern instead of returning F# option values, and prefer method overloading to taking F# option values as arguments
 
 Common patterns of use for the F# option type in APIs are better implemented in vanilla .NET APIs using standard .NET design techniques. Instead of returning an F# option value, consider using the bool return type plus an out parameter as in the "TryGetValue" pattern. And instead of taking F# option values as parameters, consider using method overloading or optional arguments.
 
@@ -679,7 +679,7 @@ member this.ParamOverload(x : int) = x
 member this.ParamOverload(x : int, y : int) = x + y
 ```
 
-#### Use the .NET collection interface types IEnumerable<T> and IDictionary<Key,Value> for parameters and return values
+#### Use the .NET collection interface types IEnumerable\<T\> and IDictionary\<Key,Value\> for parameters and return values
 
 Avoid the use of concrete collection types such as .NET arrays `T[]`, F# types `list<T>`, `Map<Key,Value>` and `Set<T>`, and .NET concrete collection types such as `Dictionary<Key,Value>`. The .NET Library Design Guidelines have good advice regarding when to use various collection types like `IEnumerable<T>`. Some use of arrays (`T[]`) is acceptable in some circumstances, on performance grounds. Note especially that `seq<T>` is just the F# alias for `IEnumerable<T>`, and thus seq is often an appropriate type for a vanilla .NET API.
 

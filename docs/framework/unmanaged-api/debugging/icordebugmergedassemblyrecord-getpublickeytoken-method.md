@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugMergedAssemblyRecord::GetPublicKeyToken Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 72020b72-9611-4bc3-b1e7-5a16b023bfa3
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugMergedAssemblyRecord::GetPublicKeyToken Method
 Gets the assembly's public key token.  

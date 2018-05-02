@@ -1,25 +1,13 @@
 ---
 title: "Debugging Structures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "unmanaged structures [.NET Framework], debugging"
   - "debugging structures [.NET Framework]"
   - "structures [.NET Framework debugging]"
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Debugging Structures
 This section describes the unmanaged structures that the debugging API uses.  

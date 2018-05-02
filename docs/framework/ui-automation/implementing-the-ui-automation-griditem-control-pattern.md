@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation GridItem Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, GridItem"
   - "UI Automation GridItem control pattern"
   - "GridItem control pattern"
 ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
-caps.latest.revision: 15
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation GridItem Control Pattern
 > [!NOTE]

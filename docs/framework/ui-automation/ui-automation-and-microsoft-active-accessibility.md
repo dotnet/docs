@@ -1,26 +1,15 @@
 ---
 title: "UI Automation and Microsoft Active Accessibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Active Accessibility"
   - "UI Automation, Active Accessibility compared to"
   - "UI Automation, Microsoft Active Accessibility"
   - "Active Accessibility, UI Automation compared to"
 ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
-caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation and Microsoft Active Accessibility
 > [!NOTE]

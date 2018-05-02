@@ -1,24 +1,13 @@
 ---
 title: "UI Automation Properties Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, properties"
   - "properties, UI Automation"
 ms.assetid: a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8
-caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Properties Overview
 > [!NOTE]

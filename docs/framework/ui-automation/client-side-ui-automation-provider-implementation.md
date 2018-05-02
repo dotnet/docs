@@ -1,25 +1,14 @@
 ---
 title: "Client-Side UI Automation Provider Implementation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, client-side provider implementation"
   - "client-side UI Automation provider, implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
-caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Client-Side UI Automation Provider Implementation
 > [!NOTE]

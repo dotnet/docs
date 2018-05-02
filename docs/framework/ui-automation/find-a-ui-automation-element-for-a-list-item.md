@@ -1,14 +1,6 @@
 ---
 title: "Find a UI Automation Element for a List Item"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "elements, finding for list items"
   - "UI Automation, finding elements for List items"
 ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
-caps.latest.revision: 5
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Find a UI Automation Element for a List Item
 > [!NOTE]

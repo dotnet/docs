@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the StatusBar Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "StatusBar control type"
   - "UI Automation, Status Bar control type"
   - "control types, Status Bar"
 ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
-caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the StatusBar Control Type
 > [!NOTE]

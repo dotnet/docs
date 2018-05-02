@@ -32,7 +32,7 @@ Regardless of the methodology, the component and library designer faces a number
 
 There are a few universal guidelines that apply to F# libraries, regardless of the intended audience for the library.
 
-### Be familiar with the .NET Library Design Guidelines
+### Learn the .NET Library Design Guidelines
 
 Regardless of the kind of F# coding you are doing, it is valuable to have a working knowledge of the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). Most other F# and .NET programmers will be familiar with these guidelines, and expect .NET code to conform to them.
 
@@ -49,6 +49,8 @@ type Point =
     /// Computes the distance between this point and another
     member DistanceTo : otherPoint:Point -> float
 ```
+
+You can use either the short form XML comments (`/// comment`), or standard XML comments (`///<summary>comment</summary>`).
 
 ### Consider using explicit signature files (.fsi) for stable library and component APIs
 
@@ -73,7 +75,7 @@ The following table follows .NET naming and capitalization conventions. There ar
 | Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types.
 | DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
 | Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as ```type Teams = TAlpha | TBeta | TDelta.``` |
-| Event          | PascalCase | Verb | ValueChanged |  |
+| Event          | PascalCase | Verb | ValueChanged / ValueChanging |  |
 | Exceptions     | PascalCase |      | WebException | Name should end with “Exception”. |
 | Field          | PascalCase | Noun | CurrentName  | |
 | Interface types |  PascalCase | Noun/ adjective | IDisposable | Name should start with “I”. |
@@ -185,7 +187,7 @@ type Counter() =
 
 #### Use interfaces to group related operations
 
-We recommend you use interface types to represent a set of operations. This in preferred to other options, such as tuples of functions or records of functions.
+We recommend you use interface types to represent a set of operations. This is preferred to other options, such as tuples of functions or records of functions.
 
 ```fsharp
 type Serializer =
@@ -202,7 +204,7 @@ type Serializer<'T> = {
 }
 ```
 
-#### Use the “module of collection functions” pattern
+#### Use a module to group functions which act on collections
 
 When you define a collection type, consider providing a standard set of operations like `CollectionType.map` and `CollectionType.iter`) for new collection types.
 
@@ -216,7 +218,7 @@ module CollectionType =
 
 If you include such a module, follow the standard naming conventions for functions found in FSharp.Core.
 
-#### Use the “module of top-level functions” design pattern for common, canonical functions, especially in math and DSL libraries
+#### Use a module to group functions for common, canonical functions, especially in math and DSL libraries
 
 For example, `Microsoft.FSharp.Core.Operators` is an automatically opened collection of top-level functions (like `abs` and `sin`) provided by FSharp.Core.dll.
 
@@ -254,9 +256,9 @@ let u = v * 10.0
 
 This guidance corresponds to general .NET guidance for these types. However, it can be additionally important in F# coding as this allows these types to be used in conjunction with F# functions and methods with member constraints, such as List.sumBy.
 
-#### Consider using `[<CompiledName>]` to provide a .NET-friendly name for other .NET language consumers
+#### Consider using CompiledName to provide a .NET-friendly name for other .NET language consumers
 
-Sometimes you may wish name something in one style for F# consumers (such as a static member in lower case so that it appears as if it were a module-bound function), but have a different style for the name when it is compiled into an assembly. You can use the `[<CompiledName>]` attribute to provide a different style for non F# code consuming the assembly.
+Sometimes you may wish to name something in one style for F# consumers (such as a static member in lower case so that it appears as if it were a module-bound function), but have a different style for the name when it is compiled into an assembly. You can use the `[<CompiledName>]` attribute to provide a different style for non F# code consuming the assembly.
 
 ```fsharp
 type Vector(x:float, y:float) =
@@ -274,7 +276,7 @@ By using `[<CompiledName>]`, you can use .NET naming conventions for non F# cons
 
 #### Use method overloading for member functions, if doing so provides a simpler API
 
-Method overloading is a powerful tool for simplifying an API that may need to do multiple related things.
+Method overloading is a powerful tool for simplifying an API that may need to perform similar functionality, but with different options or arguments.
 
 ```fsharp
 type Logger() =
@@ -289,15 +291,15 @@ In F#, it is more common to overload on number of arguments rather than types of
 
 #### Hide the representations of record and union types if the design of these types is likely to evolve
 
-Avoid revealing concrete representations of objects. For example, the concrete representation of **System.DateTime** values is not revealed by the external, public API of the .NET library design. At run time, the Common Language Runtime knows the committed implementation that will be used throughout execution. However, compiled code doesn't itself pick up dependencies on the concrete representation.
+Avoid revealing concrete representations of objects. For example, the concrete representation of <xref:System.DateTime> values is not revealed by the external, public API of the .NET library design. At run time, the Common Language Runtime knows the committed implementation that will be used throughout execution. However, compiled code doesn't itself pick up dependencies on the concrete representation.
 
 #### Avoid the use of implementation inheritance for extensibility
 
-In F#, implementation inheritance is rarely used. Furthermore, inheritance hierarchies are often complex and difficult to change when new requirements arrive. Inheritance implementation still exists in F# for compatibility and rare cases where it is the best solution to a problem, but alternative techniques should be sought in your F# programs when designing for polymorphism.
+In F#, implementation inheritance is rarely used. Furthermore, inheritance hierarchies are often complex and difficult to change when new requirements arrive. Inheritance implementation still exists in F# for compatibility and rare cases where it is the best solution to a problem, but alternative techniques should be sought in your F# programs when designing for polymorphism, such as interface implementation.
 
 ### Function and member signatures
 
-#### Use tuples when appropriate for return values
+#### Use tuples for return values when returning a small number of multiple unrelated values
 
 Here is a good example of using a tuple in a return type:
 
@@ -333,9 +335,9 @@ The [.NET Library Design Guidelines](../../standard/design-guidelines/exceptions
 
 * Do not use exceptions for normal flow of control. Although this technique is often used in languages such as OCaml, it is bug-prone and can be inefficient on .NET. Instead, consider returning a `None` option value to indicate a failure that is a common or expected occurrence.
 
-* Document all exceptions thrown by your components when a function is used incorrectly.
+* Document exceptions thrown by your components when a function is used incorrectly.
 
-* Where possible, employ existing exceptions from the System namespaces.
+* Where possible, employ existing exceptions from the System namespaces. Avoid <xref:System.ApplicationExceptoin>, though.
 
 * Do not throw <xref:System.Exception> when it will escape to user code. This includes avoiding the use of `failwith`, `failwithf`, which are handy functions for use in scripting and for code under development, but should be removed from F# library code in favor of throwing a more specific exception type.
 
@@ -415,7 +417,7 @@ Active patterns provide an alternate way to provide F# consumers with pattern ma
 
 #### Define generic numeric algorithms using inline functions with implied member constraints and statically resolved generic types
 
-Arithmetic member constraints and F# comparison constraints are a highly regular standard for F# programming. For example, consider the following code:
+Arithmetic member constraints and F# comparison constraints are a standard for F# programming. For example, consider the following code:
 
 ```fsharp
 let inline highestCommonFactor a b =
@@ -442,11 +444,13 @@ This is a suitable function for a public API in a mathematical library.
 
 It is possible to simulate “duck typing” using F# member constraints. However, members that make use of this should not in general be used in F#-to-F# library designs. This is because library designs based on unfamiliar or non-standard implicit constraints tend to cause user code to become inflexible and tied to one particular framework pattern.
 
+Additionally, there is a good chance that heavy use of member constraints in this manner can result in very long compile times.
+
 ### Operator Definitions
 
 #### Avoid defining custom symbolic operators
 
-Custom operators are essential in some situations and are highly useful notational devices within a large body of implementation code. For new users of a library, named functions are often easier to use. In addition custom symbolic operators can be hard to document, and users find it more difficult to look up help on operators, due to existing limitations in IDE and search engines.
+Custom operators are essential in some situations and are highly useful notational devices within a large body of implementation code. For new users of a library, named functions are often easier to use. In addition, custom symbolic operators can be hard to document, and users find it more difficult to look up help on operators, due to existing limitations in IDE and search engines.
 
 As a result, it is best to publish your functionality as named functions and members, and additionally expose operators for this functionality only if the notational benefits outweigh the documentation and cognitive cost of having them.
 
@@ -803,8 +807,6 @@ There are some important points to notice about how F# represents constructs her
 * F# methods that take two arguments become C# methods that take two arguments.
 
 * Functions and lists become references to corresponding types in the F# library.
-
-The full rules for how F# types, modules, and members are represented in the .NET Common Intermediate Language are explained in the F# language reference on the F# website.
 
 The following code shows how to adjust this code to take these things into account.
 

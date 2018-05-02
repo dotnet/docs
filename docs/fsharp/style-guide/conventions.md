@@ -36,7 +36,7 @@ type MyClass() =
     ...
 ```
 
-Using a top-level module may not appear different when called only from F#, but if your code changes to be consumed by C#, callers may be surprised by having to qualify `MyClass` with the `MyCode` module.
+Using a top-level module may not appear different when called only from F#, but for C# consumers, callers may be surprised by having to qualify `MyClass` with the `MyCode` module.
 
 ```fsharp
 // Bad!
@@ -188,7 +188,7 @@ Error management in large systems is a complex and nuanced endeavor, and there a
 
 ### Represent error cases and illegal state in types intrinsic to your domain
 
-With Discriminated Unions, F# gives you the ability to represent faulty program state in your type system. For example:
+With [Discriminated Unions](../language-reference/discriminated-unions.md), F# gives you the ability to represent faulty program state in your type system. For example:
 
 ```fsharp
 type MoneyWithdrawalResult =
@@ -210,7 +210,7 @@ let handleWithdrawal amount =
     | UndisclosedFailure -> printfn "Failed: unknown"
 ```
 
-In general, if you can model the different ways that something can **fail** in your domain, then error handling code is no longer treated as something you must deal with in addition to regular program flow. It is simply a part of normal program flow. There are two primary benefits to this:
+In general, if you can model the different ways that something can **fail** in your domain, then error handling code is no longer treated as something you must deal with in addition to regular program flow. It is simply a part of normal program flow, and not considered **exceptional**. There are two primary benefits to this:
 
 1. It is easier to maintain as your domain changes over time.
 2. Error cases are easier to unit test.
@@ -248,7 +248,7 @@ with
 | :? System.Security.SecurityException as e -> // Do something with it here
 ```
 
-Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this is to use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, you may be consuming an API that, when it throws an exception, encloses valuable information in that the exception metadata. Unwrapping a useful value in the body of the captured exception inside the Active Pattern and returning that value can be helpful in some situations.
+Reconciling functionality to perform in the face of an exception with pattern matching can be a bit tricky if you wish to keep the code clean. One such way to handle this is to use [active patterns](../language-reference/active-patterns.md) as a means to group functionality surrounding an error case with an exception itself. For example, you may be consuming an API that, when it throws an exception, encloses valuable information in the exception metadata. Unwrapping a useful value in the body of the captured exception inside the Active Pattern and returning that value can be helpful in some situations.
 
 ### Do not use monadic error handling to replace exceptions
 
@@ -444,7 +444,7 @@ Finally, automatic generalization is not always a boon for people who are new to
 
 F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.
 
-However, use of `mutable` in F# may feel at odds with functional purity. This is fine, if you adjust expectations from purity to referential transparency. We argue that referential transparency - not purity - is the end goal when writing F# functions. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
+However, use of `mutable` in F# may feel at odds with functional purity. This is fine, if you adjust expectations from purity to [referential transparency](https://en.wikipedia.org/wiki/Referential_transparency). Referential transparency - not purity - is the end goal when writing F# functions. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
 
 ### Wrap mutable code in immutable interfaces
 
@@ -556,7 +556,7 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 * Named and Optional arguments
 * Interfaces and interface implementations
 
-**Don't reach for these features first, but do judiciously apply them when they make sense:**
+**Don't reach for these features first, but do judiciously apply them when they are convenient to solve a problem:**
 
 * Method overloading
 * Encapsulated mutable data

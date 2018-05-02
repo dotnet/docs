@@ -13,11 +13,11 @@ ms.devlang: fsharp
 
 The following articles describe guidelines for formatting F# code and topical guidance for features of the language and how they should be used.
 
-This guidance has been formulated based on the use of F# in large codebases with a diverse group of programmers. This guidance will generally lead to successful use of F# and minimize frustrations when requirements for programs change over time.
+This guidance has been formulated based on the use of F# in large codebases with a diverse group of programmers. This guidance generally leads to successful use of F# and minimizes frustrations when requirements for programs change over time.
 
 ## Five principles of good F# code
 
-The following principles should be kept in mind any time you write F# code, especially in systems that will change over time. Every piece of guidance in further articles stems from these five points.
+You should keep the following principles in mind any time you write F# code, especially in systems that will change over time. Every piece of guidance in further articles stems from these five points.
 
 1. **Good F# code is succinct and expressive**
 
@@ -33,11 +33,11 @@ The following principles should be kept in mind any time you write F# code, espe
 
 4. **Good F# code performs well without exposing mutation**
 
-    It's no secret that to write high-performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and difficult to get right. Exposing that mutation to callers should be avoided. A functional interface over a mutation-based implementation should be sought instead.
+    It's no secret that to write high-performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and difficult to get right. Avoid exposing mutation to callers. Seek a functional interface over a mutation-based implementation.
 
 5. **Good F# code is toolable**
 
-    Tools are invaluable for working in large codebases, and there are ways to write F# code such that it can be used more effectively with tools. One example is making sure you don't overdo it with a point-free style of programming, so that intermediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
+    Tools are invaluable for working in large codebases, you can write F# code such that it can be used more effectively with F# language tooling. One example is making sure you don't overdo it with a point-free style of programming, so that intermediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
 
 ## Next steps
 

@@ -1,13 +1,7 @@
 ---
 title: "Performing Culture-Insensitive String Operations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "case mappings"
   - "custom case mappings"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "culture, custom case mappings"
   - "culture-insensitive string operations, method overloads"
 ms.assetid: 579ef891-1f83-4c63-9ebd-2f40406b5b91
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Performing Culture-Insensitive String Operations
 Most .NET Framework methods that perform culture-sensitive string operations by default provide method overloads that allow you to explicitly specify the culture to use by passing a <xref:System.Globalization.CultureInfo> parameter. These overloads allow you to eliminate cultural variations in case mappings and sorting rules and guarantee culture-insensitive results.  

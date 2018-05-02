@@ -26,7 +26,7 @@ This topic describes best practices for security in applications when you use XA
 ## Untrusted XAML in Applications  
  In the most general sense, untrusted XAML is any XAML source that your application did not specifically include or emit.  
   
- XAML that is compiled into or stored as a `resx`-type resource within a trusted and signed assembly is not inherently untrusted. You can trust the XAML as much as you trust the assembly as a whole. In most cases, you are only concerned with the trust aspects of loose XAML, which is a XAML source that you load from a stream or other IO. Loose XAML is not a specific component or feature of an application model with a deployment and packaging infrastructure. However, an assembly might implement a behavior that involves loading loose XAML.  
+ XAML that is compiled into or stored as a `resx`-type resource within a trusted and signed assembly is not inherently untrusted. You can trust the XAML as much as you trust the assembly as a whole. In most cases, you are only concerned with the trust aspects of loose XAML, which is a XAML source that you load from a stream or other I/O. Loose XAML is not a specific component or feature of an application model with a deployment and packaging infrastructure. However, an assembly might implement a behavior that involves loading loose XAML.  
   
  For untrusted XAML, you should treat it generally the same as if it were untrusted code. Use sandboxing or other metaphors to prevent possibly untrusted XAML from accessing your trusted code.  
   

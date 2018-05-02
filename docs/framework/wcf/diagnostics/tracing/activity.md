@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Activity
-This topic describes activity traces in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] tracing model. Activities are processing units that help the user narrow down the scope of a failure. Errors that occur in the same activity are directly related. For example, an operation fails because message decryption has failed. The traces for both the operation and message decryption failure appear in the same activity, showing direct correlation between the decryption error and the request error.  
+This topic describes activity traces in the Windows Communication Foundation (WCF) tracing model. Activities are processing units that help the user narrow down the scope of a failure. Errors that occur in the same activity are directly related. For example, an operation fails because message decryption has failed. The traces for both the operation and message decryption failure appear in the same activity, showing direct correlation between the decryption error and the request error.  
   
 ## Configuring Activity Tracing  
  [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] provides pre-defined activities for processing applications (see [Activity List](../../../../../docs/framework/wcf/diagnostics/tracing/activity-list.md)). You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md).  

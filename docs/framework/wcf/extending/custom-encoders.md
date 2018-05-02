@@ -20,7 +20,7 @@ ms.workload:
 # Custom Encoders
 This topic discusses how to create custom encoders.  
   
- In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you use a *binding* to specify how to transfer data across a network between endpoints. A binding is made up of a sequence of *binding elements*. A binding includes optional protocol binding elements such as security, a required *Message Encoder* binding element, and a required transport binding element. A message encoder is represented by a message encoding binding element. Three message encoders are included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]: Binary, Message Transmission Optimization Mechanism (MTOM), and Text.  
+ In Windows Communication Foundation (WCF), you use a *binding* to specify how to transfer data across a network between endpoints. A binding is made up of a sequence of *binding elements*. A binding includes optional protocol binding elements such as security, a required *Message Encoder* binding element, and a required transport binding element. A message encoder is represented by a message encoding binding element. Three message encoders are included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]: Binary, Message Transmission Optimization Mechanism (MTOM), and Text.  
   
  A message encoding binding element serializes an outgoing <xref:System.ServiceModel.Channels.Message> and passes it to the transport, or receives the serialized form of a message from the transport and passes it to the protocol layer if present, or to the application, if not present.  
   

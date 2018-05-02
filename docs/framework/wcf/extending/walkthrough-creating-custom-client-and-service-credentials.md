@@ -24,7 +24,7 @@ ms.workload:
 This topic shows how to implement custom client and service credentials and how to use custom credentials from application code.  
   
 ## Credentials Extensibility Classes  
- The <xref:System.ServiceModel.Description.ClientCredentials> and <xref:System.ServiceModel.Description.ServiceCredentials> classes are the main entry points to the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security extensibility. These credentials classes provide the APIs that enable application code to set credentials information and to convert credential types into security tokens. (*Security tokens* are the form used to transmit credential information inside SOAP messages.) The responsibilities of these credentials classes can be divided into two areas:  
+ The <xref:System.ServiceModel.Description.ClientCredentials> and <xref:System.ServiceModel.Description.ServiceCredentials> classes are the main entry points to the Windows Communication Foundation (WCF) security extensibility. These credentials classes provide the APIs that enable application code to set credentials information and to convert credential types into security tokens. (*Security tokens* are the form used to transmit credential information inside SOAP messages.) The responsibilities of these credentials classes can be divided into two areas:  
   
 -   Provide the APIs for applications to set credentials information.  
   

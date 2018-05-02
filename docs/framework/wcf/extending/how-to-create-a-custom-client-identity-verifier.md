@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a Custom Client Identity Verifier
-The *identity* feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] enables a client to specify in advance the expected identity of the service. Whenever a server authenticates itself to the client, the identity is checked against the expected identity. (For an explanation of identity and how it works, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).)  
+The *identity* feature of Windows Communication Foundation (WCF) enables a client to specify in advance the expected identity of the service. Whenever a server authenticates itself to the client, the identity is checked against the expected identity. (For an explanation of identity and how it works, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).)  
   
  If needed, the verification can be customized using a custom identity verifier. For example, you can perform additional service identity verification checks. In this example, the custom identity verifier checks additional claims in the X.509 certificate returned from the server. For a sample application, see [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md).  
   

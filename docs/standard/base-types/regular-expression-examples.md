@@ -1,25 +1,14 @@
 ---
 title: "Regular Expression Examples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "regular expressions [.NET Framework], examples"
   - "regular expressions [.NET Framework]"
   - "strings [.NET Framework], regular expressions"
 ms.assetid: e9fd53f2-ed56-4b09-b2ea-e9bc9d65e6d6
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Regular Expression Examples
 This section contains code examples that illustrate the use of regular expressions in common applications.  

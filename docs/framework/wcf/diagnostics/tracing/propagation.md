@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Propagation
-This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] tracing model.  
+This topic describes activity propagation in the Windows Communication Foundation (WCF) tracing model.  
   
 ## Using Propagation to Correlate Activities Across Endpoints  
  Propagation provides the user with direct correlation of error traces for the same unit of processing across application endpoints, for example, a request. Errors emitted at different endpoints for the same unit of processing are grouped in the same activity, even across application domains. This is done through propagation of the activity ID in the message headers. Therefore, if a client times out because of an internal error in the server, both errors appear in the same activity for direct correlation.  

@@ -1,26 +1,15 @@
 ---
 title: "Events and Callbacks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "events [.NET Framework], extensibility"
   - "methods [.NET Framework], callback"
   - "callback methods"
   - "callbacks"
 ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Events and Callbacks
 Callbacks are extensibility points that allow a framework to call back into user code through a delegate. These delegates are usually passed to the framework through a parameter of a method.  

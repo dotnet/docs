@@ -6,7 +6,6 @@ ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
 ms.custom: mvc
-manager: wpickett
 ---
 # Building Docker Images for .NET Core Applications
 

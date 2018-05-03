@@ -4,7 +4,6 @@ description: Understanding Docker and .NET Core
 author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
-manager: wpickett
 ms.custom: mvc
 ---
 # Introduction to .NET and Docker

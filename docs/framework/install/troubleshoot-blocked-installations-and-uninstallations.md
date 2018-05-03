@@ -1,10 +1,6 @@
 ---
 title: "Troubleshoot blocked .NET Framework installations and uninstallations"
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - ".NET Framework, troubleshooting blocked installations"
@@ -12,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: c3fdfbc1-ed99-4202-a2b0-8c4f1646385d
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Troubleshoot blocked .NET Framework installations and uninstallations

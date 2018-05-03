@@ -1,14 +1,6 @@
 ---
 title: "Identifying Functions in DLLs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "platform invoke, identifying functions"
   - "COM interop, DLL functions"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "identifying DLL functions"
   - "DLL functions"
 ms.assetid: 3e3f6780-6d90-4413-bad7-ba641220364d
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Identifying Functions in DLLs
 The identity of a DLL function consists of the following elements:  

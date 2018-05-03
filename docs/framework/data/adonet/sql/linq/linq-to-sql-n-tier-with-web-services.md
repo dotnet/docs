@@ -1,21 +1,7 @@
 ---
 title: "LINQ to SQL N-Tier with Web Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # LINQ to SQL N-Tier with Web Services
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is designed especially for use on the middle tier in a loosely-coupled data access layer (DAL) such as a Web service. If the presentation tier is an ASP.NET Web page, then you use the <xref:System.Web.UI.WebControls.LinqDataSource> Web server control to manage the data transfer between the user interface and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] on the middle-tier. If the presentation tier is not an ASP.NET page, then both the middle-tier and the presentation tier must do some additional work to manage the serialization and deserialization of data.  

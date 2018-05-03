@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Troubleshooting Setup Issues
-This topic describes how to troubleshoot [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] set up issues.  
+This topic describes how to troubleshoot Windows Communication Foundation (WCF) set up issues.  
   
 ## Some Windows Communication Foundation Registry Keys are not Repaired by Performing an MSI Repair Operation on the .NET Framework 3.0  
  If you delete any of the following registry keys:  

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugExceptionDebugEvent::GetFlags Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 73225303-8852-487e-9a0e-9f0cb95e99d9
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugExceptionDebugEvent::GetFlags Method
 Gets a flag that indicates whether the exception can be intercepted.  

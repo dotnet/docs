@@ -1,24 +1,13 @@
 ---
 title: "&lt;add&gt; Element for &lt;namedCaches&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "add element for <namedCaches>"
   - "<add> element for <namedCaches>"
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;namedCaches&gt;
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.  

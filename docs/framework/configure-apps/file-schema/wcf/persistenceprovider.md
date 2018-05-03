@@ -1,21 +1,7 @@
 ---
 title: "&lt;persistenceProvider&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;persistenceProvider&gt;
 Specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations.  

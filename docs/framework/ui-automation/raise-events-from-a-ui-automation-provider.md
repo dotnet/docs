@@ -1,24 +1,13 @@
 ---
 title: "Raise Events from a UI Automation Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, raising events"
   - "raising UI Automation events"
 ms.assetid: 9fe2f01b-f7d8-49a8-a185-d4472b9976c0
-caps.latest.revision: 13
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Raise Events from a UI Automation Provider
 > [!NOTE]

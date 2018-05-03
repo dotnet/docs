@@ -1,21 +1,7 @@
 ---
 title: "&lt;peerAuthentication&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ad545e6f-f06e-4549-ac92-09d758d5c636
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;peerAuthentication&gt;
 Specifies authentication settings for a peer certificate used by a peer node.  

@@ -1,24 +1,10 @@
 ---
 title: "How to: Store and Reuse Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: a012bd79-1809-45e3-adea-0229532396cc
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Store and Reuse Queries
 When you have an application that executes structurally similar queries many times, you can often increase performance by compiling the query one time and executing it several times with different parameters. For example, an application might have to retrieve all the customers who are in a particular city, where the city is specified at runtime by the user in a form. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the use of *compiled queries* for this purpose.  

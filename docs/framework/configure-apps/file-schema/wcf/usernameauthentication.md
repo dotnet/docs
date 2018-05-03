@@ -1,21 +1,7 @@
 ---
 title: "&lt;userNameAuthentication&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;userNameAuthentication&gt;
 Specifies a service's credentials based on user name and password.  

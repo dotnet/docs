@@ -1,14 +1,6 @@
 ---
 title: "&lt;settings&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#settings"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "settings element"
   - "<settings> element"
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
-caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;settings&gt; Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  

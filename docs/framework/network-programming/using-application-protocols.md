@@ -1,12 +1,6 @@
 ---
 title: "Using Application Protocols"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application protocols, types"
   - "protocols, application"
@@ -19,12 +13,9 @@ helpviewer_keywords:
   - "receiving data, application protocols"
   - "requesting data from Internet, application protocols"
 ms.assetid: 3aab4bcc-8397-4e1a-a1b6-bbd837a21430
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Application Protocols
 The .NET Framework supports commonly used Internet application protocols. This section includes information on using the [HTTP](../../../docs/framework/network-programming/http.md), "TCP", and "UDP" protocols, as well as information on using the [Windows Sockets](../../../docs/framework/network-programming/sockets.md) interface to implement custom protocols.  

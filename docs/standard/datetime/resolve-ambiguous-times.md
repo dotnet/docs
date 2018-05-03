@@ -1,13 +1,7 @@
 ---
 title: "How to: Resolve ambiguous times"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,15 +9,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], ambiguous time"
   - "ambiguous time [.NET Framework]"
 ms.assetid: 2cf5fb25-492c-4875-9245-98cac8348e97
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Resolve ambiguous times
 
 An ambiguous time is a time that maps to more than one Coordinated Universal Time (UTC). It occurs when the clock time is adjusted back in time, such as during the transition from a time zone's daylight saving time to its standard time. When handling an ambiguous time, you can do one of the following:

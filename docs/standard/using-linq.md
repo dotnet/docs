@@ -1,20 +1,12 @@
 ---
 title: LINQ (Language Integrated Query)
 description: Learn how LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # LINQ (Language Integrated Query)
 
 ## What is it?

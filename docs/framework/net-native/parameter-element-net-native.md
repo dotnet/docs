@@ -1,21 +1,9 @@
 ---
 title: "&lt;Parameter&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Parameter&gt; Element (.NET Native)
 Applies reflection policy to the type of the argument passed to a method.  

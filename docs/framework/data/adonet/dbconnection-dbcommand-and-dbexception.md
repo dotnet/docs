@@ -1,24 +1,10 @@
 ---
 title: "DbConnection, DbCommand and DbException"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 58aab611-7e6f-4749-b983-28ab7ae87dbe
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # DbConnection, DbCommand and DbException
 Once you have created a <xref:System.Data.Common.DbProviderFactory> and a <xref:System.Data.Common.DbConnection>, you can then work with commands and data readers to retrieve data from the data source.  

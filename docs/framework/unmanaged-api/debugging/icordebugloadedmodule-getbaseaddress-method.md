@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugLoadedModule::GetBaseAddress Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 7c036772-d58a-47f1-a5fa-31779898ef0d
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugLoadedModule::GetBaseAddress Method
 Gets the base address of the loaded module.  

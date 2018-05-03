@@ -1,14 +1,6 @@
 ---
 title: "Gacutil.exe (Global Assembly Cache Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "global assembly cache, viewing contents"
@@ -25,12 +17,8 @@ helpviewer_keywords:
   - "global assembly cache, Gacutil.exe"
   - "Global Assembly Cache tool"
 ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Gacutil.exe (Global Assembly Cache Tool)
 The Global Assembly Cache tool allows you to view and manipulate the contents of the global assembly cache and download cache.  

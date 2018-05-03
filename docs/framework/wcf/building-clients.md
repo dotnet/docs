@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 28dfff47-d95b-4cc2-9d5c-b3b9ba71fd50
 ---
 # Building Clients
-The topics in this section demonstrate how to create and use a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] client.  
+The topics in this section demonstrate how to create and use a Windows Communication Foundation (WCF) client.  
   
 ## In This Section  
  [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md)  

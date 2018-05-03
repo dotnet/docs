@@ -1,14 +1,6 @@
 ---
 title: "COR_ARRAY_LAYOUT Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "COR_ARRAY_LAYOUT"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_ARRAY_LAYOUT Structure
 Provides information about the layout of an array object in memory.  

@@ -1,24 +1,10 @@
 ---
 title: "Handling DataSet Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 54edefe0-bc38-419b-b486-3d8a0c356f13
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Handling DataSet Events
 The <xref:System.Data.DataSet> object provides three events: <xref:System.ComponentModel.MarshalByValueComponent.Disposed>, <xref:System.Data.DataSet.Initialized>, and <xref:System.Data.DataSet.MergeFailed>.  

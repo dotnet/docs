@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 503fae4b-014c-44df-a9c7-c76ec4ed4229
 ---
 # Conceptual Overview
-This topic summarizes information about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] messaging system and the classes that support its use.  
+This topic summarizes information about the Windows Communication Foundation (WCF) messaging system and the classes that support its use.  
   
 ## In This Section  
  [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  

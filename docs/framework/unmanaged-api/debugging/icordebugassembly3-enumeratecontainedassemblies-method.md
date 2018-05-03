@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugAssembly3::EnumerateContainedAssemblies Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 98f15b05-afad-4616-9e2a-1a9af31948b6
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAssembly3::EnumerateContainedAssemblies Method
 Gets an enumerator for the assemblies contained in this assembly.  

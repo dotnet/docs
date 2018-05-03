@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
 ---
 # Windows Communication Foundation Privacy Information
-Microsoft is committed to protecting end-users' privacy. When you build an application using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  
+Microsoft is committed to protecting end-users' privacy. When you build an application using Windows Communication Foundation (WCF), version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  
   
 ## WCF in Brief  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is a distributed messaging framework using the Microsoft .NET Framework that allows developers to build distributed applications. Messages communicated between two applications contain header and body information.  

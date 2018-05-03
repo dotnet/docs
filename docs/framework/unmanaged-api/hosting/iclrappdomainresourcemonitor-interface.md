@@ -1,14 +1,6 @@
 ---
 title: "ICLRAppDomainResourceMonitor Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAppDomainResourceMonitor"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 72fa83a1-8997-41d7-b355-ab177a24a303
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAppDomainResourceMonitor Interface
 Provides methods that inspect an application domain's memory and CPU usage.  

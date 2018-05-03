@@ -1,21 +1,7 @@
 ---
 title: "Common Schema Collections"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 50127ced-2ac8-4d7a-9cd1-5c98c655ff03
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Common Schema Collections
 The common schema collections are the schema collections that are implemented by each of the .NET Framework managed providers. You can query a .NET Framework managed provider to determine the list of supported schema collections by calling the **GetSchema** method with no arguments, or with the schema collection name "MetaDataCollections". This will return a <xref:System.Data.DataTable> with a list of the supported schema collections, the number of restrictions that they each support, and the number of identifier parts that they use. These collections describe all of the required columns. Providers are free to add additional columns if they wish. For example, `SqlClient` and `OracleClient` add ParameterName to the restrictions collection.  

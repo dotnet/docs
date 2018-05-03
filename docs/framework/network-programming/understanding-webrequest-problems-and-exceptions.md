@@ -1,19 +1,10 @@
 ---
 title: "Understanding WebRequest Problems and Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
-caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Understanding WebRequest Problems and Exceptions
 <xref:System.Net.WebRequest> and its derived classes (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, and <xref:System.Net.FileWebRequest>) throw exceptions to signal an abnormal condition. Sometimes the resolution of these problems is not obvious.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugStringValue::GetLength Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStringValue.GetLength"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a1ebfc69-46a6-4225-8788-b7cfb2f15e1d
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStringValue::GetLength Method
 Gets the number of characters in the string referenced by this ICorDebugStringValue.  

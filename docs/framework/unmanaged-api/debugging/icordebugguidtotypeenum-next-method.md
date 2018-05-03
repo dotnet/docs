@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugGuidToTypeEnum::Next Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugGuidToTypeEnum.Next"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c9937666-8e18-484d-9fe0-b9ac95199530
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugGuidToTypeEnum::Next Method
 Gets the specified number of [CorDebugGuidToTypeMapping](../../../../docs/framework/unmanaged-api/debugging/cordebugguidtotypemapping-structure.md) instances that map GUIDs to type information.  

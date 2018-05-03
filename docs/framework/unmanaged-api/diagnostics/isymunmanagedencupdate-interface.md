@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedENCUpdate Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedENCUpdate"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 63a9ef45-01a6-46da-b958-5c6dc2dc232c
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedENCUpdate Interface
 Provides functions for the Edit and Continue feature.  

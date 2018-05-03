@@ -1,21 +1,7 @@
 ---
 title: "&lt;tcpTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;tcpTransport&gt;
 Defines a TCP transport that can be used by a channel to transfers messages for a custom binding.  

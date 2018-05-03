@@ -1,9 +1,7 @@
 ---
 title: "How to: Write Messages to and Read Messages from a Dataflow Block"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,10 +11,6 @@ helpviewer_keywords:
 ms.assetid: 1a9bf078-aa82-46eb-b95a-f87237f028c5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Write Messages to and Read Messages from a Dataflow Block
 This document describes how to use the TPL Dataflow Library to write messages to and read messages from a dataflow block. The TPL Dataflow Library provides both synchronous and asynchronous methods for writing messages to and reading messages from a dataflow block. This document uses the <xref:System.Threading.Tasks.Dataflow.BufferBlock%601?displayProperty=nameWithType> class. The <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> class buffers messages and behaves as both a message source and as a message target.  

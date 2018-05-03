@@ -1,21 +1,7 @@
 ---
 title: "&lt;commonParameters&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ffc20832-34d6-4622-8174-81924fd53514
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;commonParameters&gt;
 Represents a collection of parameters that are used globally across multiple services. This collection will typically include the database connection string that might be shared by durable services.  

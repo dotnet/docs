@@ -1,21 +1,7 @@
 ---
 title: "&lt;serviceThrottling&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceThrottling&gt;
 Specifies the throttling mechanism of a Windows Communication Foundation (WCF) service.  

@@ -28,9 +28,9 @@ ms.workload:
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
- This event is emitted when the IO Thread scheduler callback invoke ends.  
+ This event is emitted when the I/O Thread scheduler callback invoke ends.  
   
 ## Message  
- IO Thread scheduler callback invoked.  
+ I/O Thread scheduler callback invoked.  
   
 ## Details

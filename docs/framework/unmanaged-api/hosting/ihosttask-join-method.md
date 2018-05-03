@@ -1,14 +1,6 @@
 ---
 title: "IHostTask::Join Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostTask.Join"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2cffcc52-19e0-4ced-a440-fc7375078ac9
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostTask::Join Method
 Blocks the calling task until the task represented by the current [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance completes, the specified time interval elapses, or [IHostTask::Alert](../../../../docs/framework/unmanaged-api/hosting/ihosttask-alert-method.md) is called.  

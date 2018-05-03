@@ -1,14 +1,6 @@
 ---
 title: "Working with Assemblies and the Global Assembly Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "global assembly cache, benefits"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "GAC (global assembly cache), benefits"
   - "access control lists [.NET Framework]"
 ms.assetid: 8a18e5c2-d41d-49ef-abcb-7c27e2469433
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Working with Assemblies and the Global Assembly Cache
 If you intend to share an assembly among several applications, you can install it into the global assembly cache. Each computer where the common language runtime is installed has this machine-wide code cache. The global assembly cache stores assemblies specifically designated to be shared by several applications on the computer. An assembly must have a strong name to be installed in the global assembly cache.  

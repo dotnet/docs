@@ -1,14 +1,6 @@
 ---
 title: "&lt;clear&gt; Element for connectionManagement (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement/clear"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#clear"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "clear element, connectionManagement"
   - "<connectionManagement>, clear element"
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;clear&gt; Element for connectionManagement (Network Settings)
 Clears the connection management list.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::GetConfiguration Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.GetConfiguration"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c431617a-b055-44a0-8730-48b7a86d9610
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorRuntimeHost::GetConfiguration Method
 Gets an object that allows the host to specify the callback configuration of the common language runtime (CLR).  

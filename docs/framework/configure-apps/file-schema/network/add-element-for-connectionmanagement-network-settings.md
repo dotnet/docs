@@ -1,14 +1,6 @@
 ---
 title: "&lt;add&gt; Element for connectionManagement (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement/add"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "add element, connectionManagement"
   - "connectionManagement, add element"
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; Element for connectionManagement (Network Settings)
 Adds an IP address or DNS name to the connection management list.  

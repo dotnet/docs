@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugAppDomain3 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugAppDomain3"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 875ef5be-c1e7-4d95-97e9-d3a667aeaba0
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAppDomain3 Interface
 Provides methods to retrieve information about the managed representations of [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types currently loaded in an application domain. This interface is an extension of the ICorDebugAppDomain and ICorDebugAppDomain2 interfaces.  

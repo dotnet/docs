@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
 ---
 # How to: Implement a Windows Communication Foundation Service Contract
-This is the second of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service and a client that can call the service. For an overview of all six tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
+This is the second of six tasks required to create a basic Windows Communication Foundation (WCF) service and a client that can call the service. For an overview of all six tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
   
  The next step in creating a WCF application is to implement the service interface. This involves creating a class called `CalculatorService` that implements the user-defined `ICalculator` interface..  
   

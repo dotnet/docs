@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugThread::SetDebugState Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugThread.SetDebugState"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 6382bdf6-d488-4952-b653-cb09b6e1c6c2
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugThread::SetDebugState Method
 Sets flags that describe the debugging state of this ICorDebugThread.  

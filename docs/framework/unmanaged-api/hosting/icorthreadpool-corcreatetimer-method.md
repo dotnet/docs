@@ -1,14 +1,6 @@
 ---
 title: "ICorThreadpool::CorCreateTimer Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorThreadpool.CorCreateTimer"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0d56ef25-30f1-4499-8a1f-76e7654ec614
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorThreadpool::CorCreateTimer Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

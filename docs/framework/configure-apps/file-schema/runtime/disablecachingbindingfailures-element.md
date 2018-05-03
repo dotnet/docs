@@ -1,14 +1,6 @@
 ---
 title: "&lt;disableCachingBindingFailures&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCachingBindingFailures"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCachingBindingFailures"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "<disableCachingBindingFailures> element"
   - "disableCachingBindingFailures element"
 ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;disableCachingBindingFailures&gt; Element
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  

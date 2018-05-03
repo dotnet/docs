@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: bd0c310f-dd9f-4081-9be2-3db5909850b6
 ---
 # Windows Communication Foundation Endpoints
-All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality that a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service offers.  
+All communication with a Windows Communication Foundation (WCF) service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality that a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service offers.  
   
  For an overview about how to create an endpoint, see [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). Each endpoint contains:  
   

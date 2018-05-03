@@ -1,19 +1,8 @@
 ---
 title: "&lt;channelSettings&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 94a4457f-f43f-458d-a47e-2d11103ee75e
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;channelSettings&gt;
 Specifies the settings of the channel cache.  

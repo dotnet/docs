@@ -1,14 +1,6 @@
 ---
 title: "CorDebugCodeInvokeKind Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorDebugCodeInvokeKind"
 api_location: 
@@ -18,12 +10,8 @@ api_type:
 ms.assetid: e795e6a2-1008-4a81-af88-d777888e942e
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugCodeInvokeKind Enumeration
 Describes how an exported function invokes managed code.  

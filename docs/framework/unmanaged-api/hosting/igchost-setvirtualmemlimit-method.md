@@ -1,14 +1,6 @@
 ---
 title: "IGCHost::SetVirtualMemLimit Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IGCHost.SetVirtualMemLimit"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c7e7c2d0-e58c-4650-b40c-47b2be2cda45
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IGCHost::SetVirtualMemLimit Method
 Sets the maximum size of the runtime's virtual memory.  

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
 ---
 # Using Sessions
-In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session* correlates a group of messages into a conversation. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] sessions are different than the session object available in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications and how to use them.  
+In Windows Communication Foundation (WCF) applications, a *session* correlates a group of messages into a conversation. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] sessions are different than the session object available in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications and how to use them.  
   
 ## Sessions in Windows Communication Foundation Applications  
  When a service contract specifies that it requires a session, that contract is specifying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not establish a session. If the session ends and a message is sent through the same channel an exception is thrown.  

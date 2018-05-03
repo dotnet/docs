@@ -1,21 +1,7 @@
 ---
 title: "Data Tracing in ADO.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a6a752a5-d2a9-4335-a382-b58690ccb79f
-caps.latest.revision: 9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Tracing in ADO.NET
 ADO.NET features built-in data tracing functionality that is supported by the .NET data providers for SQL Server, Oracle, OLE DB and ODBC, as well as the ADO.NET <xref:System.Data.DataSet>, and the SQL Server network protocols.  

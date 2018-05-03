@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
 ---
 # Reliable Services
-Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
+Queues and reliable sessions are the Windows Communication Foundation (WCF) features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
   
  *Reliable messaging* is how a reliable messaging source (called the *source*) transfers messages reliably to a reliable messaging destination (called the *destination*).  
   

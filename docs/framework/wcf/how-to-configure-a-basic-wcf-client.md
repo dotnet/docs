@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
 ---
 # How to: Configure a Basic Windows Communication Foundation Client
-This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
+This is the fifth of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
   
  This topic disuccess the client configuration file that was generated using the Add Service Reference functionality of [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). Configuring the client consists of specifying the endpoint that the client uses to access the service. An endpoint has an address, a binding and a contract, and each of these must be specified in the process of configuring the client.  
   

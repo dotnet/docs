@@ -1,19 +1,8 @@
 ---
 title: "&lt;sqlWorkflowInstanceStore&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;sqlWorkflowInstanceStore&gt;
 A service behavior that allows you to configure the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> feature, which supports persisting state information for workflow service instances into an SQL Server 2005 or SQL Server 2008 database. For more information on this feature, see [SQL Workflow Instance Store](../../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md).  

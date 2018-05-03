@@ -1,21 +1,7 @@
 ---
 title: "Modification SQL Generation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2188a39d-46ed-4a8b-906a-c9f15e6fefd1
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Modification SQL Generation
 This section discusses how to develop a modification SQL generation module for your (SQL:1999-compliant database) provider. This module is responsible for translating a modification command tree into the appropriate SQL INSERT, UPDATE or DELETE statements.  

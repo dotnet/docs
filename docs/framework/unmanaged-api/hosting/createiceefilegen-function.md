@@ -1,14 +1,6 @@
 ---
 title: "CreateICeeFileGen Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CreateICeeFileGen"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: e36e1fd8-8456-4359-bdc3-3ec1765f041f
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CreateICeeFileGen Function
 Creates an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  

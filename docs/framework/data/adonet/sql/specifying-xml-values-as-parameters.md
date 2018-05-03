@@ -1,24 +1,10 @@
 ---
 title: "Specifying XML Values as Parameters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 2c4d08b8-fc29-4614-97fa-29c8ff7ca5b3
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying XML Values as Parameters
 If a query requires a parameter whose value is an XML string, developers can supply that value using an instance of the **SqlXml** data type. There really are no tricks; XML columns in SQL Server accept parameter values in exactly the same way as other data types.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugValue3::GetSize64 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugValue3::GetSize64"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fee56a29-3154-4192-958d-71da2ced3740
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugValue3::GetSize64 Method
 Gets the size, in bytes, of this [ICorDebugValue3](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md) object.  

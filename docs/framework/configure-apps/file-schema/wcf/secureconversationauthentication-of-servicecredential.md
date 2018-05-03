@@ -1,21 +1,9 @@
 ---
 title: "&lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0bd3fac7-befd-4a45-ba51-c200b33be0fd
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;
 Specifies the settings for a secure conversation service.  

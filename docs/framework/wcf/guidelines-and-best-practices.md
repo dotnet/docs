@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
 ---
 # Guidelines and Best Practices
-This section contains topics that provide guidelines for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  
+This section contains topics that provide guidelines for creating Windows Communication Foundation (WCF) applications.  
   
 ## In This Section  
  [Best Practices: Data Contract Versioning](../../../docs/framework/wcf/best-practices-data-contract-versioning.md)  

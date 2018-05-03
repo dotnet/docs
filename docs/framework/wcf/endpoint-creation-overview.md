@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: f4dce0fb-6f54-47e6-8054-86d7f574b91c
 ---
 # Endpoint Creation Overview
-All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide the clients access to the functionality that a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service offers. This section describes the structure of an endpoint and outlines how to define an endpoint in configuration and in code.  
+All communication with a Windows Communication Foundation (WCF) service occurs through the *endpoints* of the service. Endpoints provide the clients access to the functionality that a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service offers. This section describes the structure of an endpoint and outlines how to define an endpoint in configuration and in code.  
   
 ## The Structure of an Endpoint  
  Each endpoint contains an address that indicates where to find the endpoint, a binding that specifies how a client can communicate with the endpoint, and a contract that identifies the methods available.  

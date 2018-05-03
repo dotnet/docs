@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: ef56c251-d63c-4b3f-944f-b0c67bfb0f68
 ---
 # Introduction to Extensibility
-The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application model is designed to solve the greater part of the communication requirements of any distributed application. But there are always scenarios that the default application model and system-provided implementations do not support. The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] extensibility model is intended to support custom scenarios by enabling you to modify system behavior at every level, even to the point of replacing the entire application model. This topic outlines the various areas of extension and points to more information about each.  
+The Windows Communication Foundation (WCF) application model is designed to solve the greater part of the communication requirements of any distributed application. But there are always scenarios that the default application model and system-provided implementations do not support. The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] extensibility model is intended to support custom scenarios by enabling you to modify system behavior at every level, even to the point of replacing the entire application model. This topic outlines the various areas of extension and points to more information about each.  
   
 ## Areas to Extend  
  You can extend:  

@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
 ---
 # Controlling Resource Consumption and Improving Performance
-This topic describes various properties in different areas of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture that work to control resource consumption and affect performance metrics.  
+This topic describes various properties in different areas of the Windows Communication Foundation (WCF) architecture that work to control resource consumption and affect performance metrics.  
   
 ## Properties that Constrain Resource Consumption in WCF  
- [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applies constraints on certain types of processes for either security or performance purposes. These constraints come in two main forms, either quotas and throttles. *Quotas* are limits that when reached or exceeded trigger an immediate exception at some point in the system. *Throttles* are limits that do not immediately cause an exception to be thrown. Instead, when a throttle limit is reached, processing continues but within the limits set by that throttle value. This limited processing might trigger an exception elsewhere, but this depends upon the application.  
+ Windows Communication Foundation (WCF) applies constraints on certain types of processes for either security or performance purposes. These constraints come in two main forms, either quotas and throttles. *Quotas* are limits that when reached or exceeded trigger an immediate exception at some point in the system. *Throttles* are limits that do not immediately cause an exception to be thrown. Instead, when a throttle limit is reached, processing continues but within the limits set by that throttle value. This limited processing might trigger an exception elsewhere, but this depends upon the application.  
   
  In addition to the distinction between quotas and throttles, some constraining properties are located at the serialization level, some at the transport level, and some at the application level. For example, the quota <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A?displayProperty=nameWithType>, which is implemented by all system-supplied transport binding elements, is set to 65,536 bytes by default to hinder malicious clients from engaging in denial-of-service attacks against a service by causing excessive memory consumption. (Typically, you can increase performance by lowering this value.)  
   

@@ -10,9 +10,9 @@ helpviewer_keywords:
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
 ---
 # How to: Host and Run a Basic Windows Communication Foundation Service
-This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
+This is the third of six tasks required to create a Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
   
- This topic describes how to host a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service in a console application. This procedure consists of the following steps:  
+ This topic describes how to host a Windows Communication Foundation (WCF) service in a console application. This procedure consists of the following steps:  
   
 -   Create a console application project to host the service.  
   

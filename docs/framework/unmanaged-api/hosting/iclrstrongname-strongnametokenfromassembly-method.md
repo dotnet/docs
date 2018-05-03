@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::StrongNameTokenFromAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.StrongNameTokenFromAssembly"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fc725afb-b66b-4015-aa44-1c0d1304197f
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::StrongNameTokenFromAssembly Method
 Creates a strong name token from the specified assembly file.  

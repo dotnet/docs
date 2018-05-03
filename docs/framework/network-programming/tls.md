@@ -2,8 +2,6 @@
 title: Transport Layer Security (TLS) best practices with the .NET Framework
 description: Describes best practices using Transport Layer Security (TLS) with the .NET Framework
 ms.date: 03/15/2018
-ms.prod: ".net-framework"
-ms.topic: "article"
 helpviewer_keywords: 
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -15,10 +13,6 @@ helpviewer_keywords:
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
 author: "blowdart"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Layer Security (TLS) best practices with the .NET Framework
 

@@ -1,14 +1,6 @@
 ---
 title: "Application Domains"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "process boundaries for isolation"
   - "application isolation"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "code, verification process"
   - "verification testing code"
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Application Domains
 Operating systems and runtime environments typically provide some form of isolation between applications. For example, Windows uses processes to isolate applications. This isolation is necessary to ensure that code running in one application cannot adversely affect other, unrelated applications.  

@@ -28,7 +28,7 @@ This topic shows how to create new token types with a custom security token prov
 > [!NOTE]
 >  Create a custom token provider if the system-provided tokens found in the <xref:System.IdentityModel.Tokens> namespace do not match your requirements.  
   
- The security token provider creates a security token representation based on information in the client or service credentials. To use the custom security token provider in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, you must create custom credentials and security token manager implementations.  
+ The security token provider creates a security token representation based on information in the client or service credentials. To use the custom security token provider in Windows Communication Foundation (WCF) security, you must create custom credentials and security token manager implementations.  
   
  For more information about custom credentials and security token manager see the [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   

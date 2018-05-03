@@ -1,25 +1,13 @@
 ---
 title: "Running Intranet Applications in Full Trust"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "full trust, running intranet applications in"
   - "intranet applications, running in full trust"
   - "running intranet applications in full trust"
 ms.assetid: ee13c0a8-ab02-49f7-b8fb-9eab16c6c4f0
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Running Intranet Applications in Full Trust
 Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), applications and their library assemblies can be run as full-trust assemblies from a network share. <xref:System.Security.SecurityZone.MyComputer> zone evidence is automatically added to assemblies that are loaded from a share on the intranet. This evidence gives those assemblies the same grant set (which is typically full trust) as the assemblies that reside on the computer. This functionality does not apply to ClickOnce applications or to applications that are designed to run on a host.  

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f
 ---
 # WCF Visual Studio Templates
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Visual Studio templates are predefined project and item templates you can use in Visual Studio to quickly build [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services and surrounding applications.  
+Windows Communication Foundation (WCF) Visual Studio templates are predefined project and item templates you can use in Visual Studio to quickly build [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services and surrounding applications.  
   
 ## Using the WCF Templates  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Visual Studio templates provide a basic class structure for service development. Specifically, these templates provide the basic definitions for service contract, data contract, service implementation, and configuration. You can use these templates to create a simple service with minimal code interaction, as well as a building block for more advanced services.  

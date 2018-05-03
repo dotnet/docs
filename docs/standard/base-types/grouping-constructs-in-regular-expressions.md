@@ -1,13 +1,7 @@
 ---
 title: "Grouping Constructs in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Grouping Constructs in Regular Expressions
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  

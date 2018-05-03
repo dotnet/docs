@@ -1,14 +1,6 @@
 ---
 title: "IHostTaskManager::ReverseEnterRuntime Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostTaskManager.ReverseEnterRuntime"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b1e26bff-d3ea-436e-9867-29720df999f4
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostTaskManager::ReverseEnterRuntime Method
 Notifies the host that a call is being made into the common language runtime (CLR) from unmanaged code.  

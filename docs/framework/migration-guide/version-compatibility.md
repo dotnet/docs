@@ -2,10 +2,6 @@
 title: "Version Compatibility in the .NET Framework"
 ms.custom: "updateeachrelease"
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, version compatibility"
   - ".NET Framework 4.5, compatibility with earlier versions"
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Version Compatibility in the .NET Framework
 Backward compatibility means that an app that was developed for a particular version of a platform will run on later versions of that platform. The .NET Framework tries to maximize backward compatibility: Source code written for one version of the .NET Framework should compile on later versions of the .NET Framework, and binaries that run on one version of the .NET Framework should behave identically on later versions of the .NET Framework.  

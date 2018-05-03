@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 82293d7f-471a-4549-8f19-0be890e7b074
 ---
 # How to: Specify Client Credential Values
-Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can specify how a client is authenticated to the service. For example, a service can stipulate that the client be authenticated with a certificate.  
+Using Windows Communication Foundation (WCF), the service can specify how a client is authenticated to the service. For example, a service can stipulate that the client be authenticated with a certificate.  
   
 ### To determine the client credential type  
   

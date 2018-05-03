@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Performance Counters
-[!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] includes a large set of performance counters to help you gauge your application's performance.  
+Windows Communication Foundation (WCF) includes a large set of performance counters to help you gauge your application's performance.  
   
 ## Enabling Performance Counters  
  You can enable performance counters for a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service through the app.config configuration file of the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service as follows:  

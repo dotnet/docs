@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedMethod::GetToken Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedMethod.GetToken"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4effbe95-c36e-4a45-8b2a-ee21339415fb
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetToken Method
 Returns the metadata token for this method.  

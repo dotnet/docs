@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "dynamic objects"
   - "dynamic objects [C#]"
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)
 

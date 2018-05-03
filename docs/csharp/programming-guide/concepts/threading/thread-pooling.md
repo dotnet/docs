@@ -1,17 +1,7 @@
 ---
 title: "Thread Pooling (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 98ae68c1-ace8-44b9-9317-8920ac9ef2b6
-caps.latest.revision: 5
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Thread Pooling (C#)
 A *thread pool* is a collection of threads that can be used to perform several tasks in the background. (See [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md) for background information.) This leaves the primary thread free to perform other tasks asynchronously.  

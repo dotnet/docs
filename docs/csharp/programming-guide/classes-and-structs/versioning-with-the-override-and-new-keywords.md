@@ -1,17 +1,10 @@
 ---
 title: "Versioning with the Override and New Keywords (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, versioning"
   - "C# language, override and new"
 ms.assetid: 88247d07-bd0d-49e9-a619-45ccbbfdf0c5
-caps.latest.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Versioning with the Override and New Keywords (C# Programming Guide)
 The C# language is designed so that versioning between [base](../../../csharp/language-reference/keywords/base.md) and derived classes in different libraries can evolve and maintain backward compatibility. This means, for example, that the introduction of a new member in a base [class](../../../csharp/language-reference/keywords/class.md) with the same name as a member in a derived class is completely supported by C# and does not lead to unexpected behavior. It also means that a class must explicitly state whether a method is intended to override an inherited method, or whether a method is a new method that hides a similarly named inherited method.  

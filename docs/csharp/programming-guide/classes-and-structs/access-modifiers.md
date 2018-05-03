@@ -1,17 +1,10 @@
 ---
 title: "Access Modifiers (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
-caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Access Modifiers (C# Programming Guide)
 All types and type members have an accessibility level, which controls whether they can be used from other code in your assembly or other assemblies. You can use the following access modifiers to specify the accessibility of a type or member when you declare it:  

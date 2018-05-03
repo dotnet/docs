@@ -1,14 +1,7 @@
 ---
 title: "Collections (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "get-started-article"
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
-caps.latest.revision: 6
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Collections (C#)
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  

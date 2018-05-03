@@ -1,14 +1,7 @@
 ---
 title: "Source name specified in EventLogSource is registered to a log other than that specified in EventLogName"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: 7317e100-098b-408d-86e5-7c74cf8558c7
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Source name specified in EventLogSource is registered to a log other than that specified in EventLogName
 The `EventLog` is attempting to refer to a source that is registered to a different log. If you are writing entries to an event log, you must specify the <xref:System.Diagnostics.EventLog.Source%2A> property. The <xref:System.Diagnostics.EventLog.Source%2A> property registers your component with the event log as a valid source of entries. A single source can be associated with (and therefore write entries to) only one event log at a time.  

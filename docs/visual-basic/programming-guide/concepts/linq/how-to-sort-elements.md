@@ -1,19 +1,7 @@
 ---
 title: "How to: Sort Elements (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Sort Elements (Visual Basic)
 This example shows how to write a query that sorts its results.  

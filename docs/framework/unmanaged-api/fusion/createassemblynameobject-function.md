@@ -1,14 +1,6 @@
 ---
 title: "CreateAssemblyNameObject Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CreateAssemblyNameObject"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: 55c8b41e-fbe4-4ae0-aa29-68fbb2311691
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CreateAssemblyNameObject Function
 Gets an interface pointer to an [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) instance that represents the unique identity of the assembly with the specified name.  

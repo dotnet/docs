@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Security with a User Name Client
-The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
+The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
   
  For a sample application, see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md).  
   
@@ -30,7 +30,7 @@ The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indi
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] only|  
+|Interoperability|Windows Communication Foundation (WCF) only|  
 |Authentication (Server)|Initial negotiation requires server authentication|  
 |Authentication (Client)|User name/password|  
 |Integrity|Yes, using shared security context|  

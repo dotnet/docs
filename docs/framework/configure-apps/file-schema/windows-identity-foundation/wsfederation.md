@@ -1,21 +1,9 @@
 ---
 title: "&lt;wsFederation&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c537f770-68bd-4f82-96ad-6424ad91369f
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;wsFederation&gt;
 Provides configuration for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM).  

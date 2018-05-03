@@ -24,7 +24,7 @@ This topic discusses best practices for reliable sessions.
 
 ## Setting MaxTransferWindowSize
 
-Reliable sessions in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] use a transfer window to hold messages on the client and service. The configurable property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indicates how many messages the transfer window can hold.
+Reliable sessions in Windows Communication Foundation (WCF) use a transfer window to hold messages on the client and service. The configurable property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indicates how many messages the transfer window can hold.
 
 On the sender, this indicates how many messages the transfer window can hold while waiting for acknowledgements; on the receiver, it indicates how many messages to buffer for the service.
 

@@ -1,12 +1,6 @@
 ---
 title: "How to: Set a Location-Based Cache Policy for an Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +11,9 @@ helpviewer_keywords:
   - "request cache policies"
   - "cache [.NET Framework], location-based policies"
 ms.assetid: 683bb88e-3411-4f46-9686-3411b6ba511c
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Set a Location-Based Cache Policy for an Application
 Location-based cache policies allow an application to explicitly define caching behavior based on the location of the requested resource. This topic demonstrates setting the cache policy programmatically. For information on setting the policy for an application using the configuration files, see [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  

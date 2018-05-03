@@ -1,24 +1,10 @@
 ---
 title: "How to: Call Custom Database Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 4354e5eb-dd45-469d-97fb-1c495705ee59
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Call Custom Database Functions
 This topic describes how to call custom functions that are defined in the database from within LINQ to Entities queries.  

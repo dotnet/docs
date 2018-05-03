@@ -25,7 +25,7 @@ This sample demonstrates how a client application can create a channel with the 
   
  This sample uses the <xref:System.ServiceModel.ChannelFactory%601> class to create a channel to a service endpoint. Typically, to create a channel to a service endpoint you generate a client type with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) and create an instance of the generated type. You can also create a channel by using the <xref:System.ServiceModel.ChannelFactory%601> class, as demonstrated in this sample. The service created by the following sample code is identical to the service in the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
-```  
+```csharp  
 EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");  
 WSHttpBinding binding = new WSHttpBinding();  
 ChannelFactory<ICalculator> factory = new   
@@ -38,7 +38,7 @@ ICalculator channel = factory.CreateChannel();
   
  Once the channel is created, service operations can be invoked just as with a generated client.  
   
-```  
+```csharp  
 // Call the Add service operation.  
 double value1 = 100.00D;  
 double value2 = 15.99D;  
@@ -48,7 +48,7 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
   
  To close the channel, it must first be cast to an <xref:System.ServiceModel.IClientChannel> interface. This is because the channel as generated is declared in the client application using the `ICalculator` interface, which has methods like `Add` and `Subtract` but not `Close`. The `Close` method originates on the <xref:System.ServiceModel.ICommunicationObject> interface.  
   
-```  
+```csharp  
 // Close the channel.  
  ((IClientChannel)client).Close();  
 ```  
@@ -76,7 +76,7 @@ Press <ENTER> to terminate client.
   
 1.  Replace "localhost" in the following code with the fully-qualified name of the machine that is running the service.  
   
-    ```  
+    ```csharp  
     EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");  
     ```  
   
@@ -85,7 +85,7 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\ChannelFactory`  
   

@@ -24,7 +24,7 @@ ms.workload:
   - dotnet
 ---
 # How-to Topics
-The following topics show how to create [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] add-ins.  
+The following topics show how to create Windows Presentation Foundation (WPF) add-ins.  
   
 ## In This Section  
  [Create an Add-In That Returns a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-returns-a-ui.md)  

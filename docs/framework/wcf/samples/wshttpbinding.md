@@ -20,14 +20,14 @@ ms.workload:
   - "dotnet"
 ---
 # WSHttpBinding
-This sample demonstrates how to implement a typical service and a typical client using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This sample consists of a client console program (client.exe) and a service library hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (add, subtract, multiply, and divide). The client makes synchronous requests to a given math operation and the service replies with the result. Client activity is visible in the console window.  
+This sample demonstrates how to implement a typical service and a typical client using Windows Communication Foundation (WCF). This sample consists of a client console program (client.exe) and a service library hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (add, subtract, multiply, and divide). The client makes synchronous requests to a given math operation and the service replies with the result. Client activity is visible in the console window.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\wsHttp`  
   

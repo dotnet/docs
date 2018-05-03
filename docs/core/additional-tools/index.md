@@ -5,9 +5,11 @@ author: mlacouture
 manager: wpickett
 ms.author: johalex
 ms.date: 01/19/2018
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.custom: mvc
+ms.workload: 
+  - dotnetcore
 ---
 # .NET Core additional tools
 

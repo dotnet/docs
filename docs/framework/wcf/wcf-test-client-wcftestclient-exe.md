@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Test Client (WcfTestClient.exe)
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Test Client (WcfTestClient.exe) is a GUI tool that enables users to input test parameters, submit that input to the service, and view the response that the service sends back. It provides a seamless service testing experience when combined with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host.  
+Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) is a GUI tool that enables users to input test parameters, submit that input to the service, and view the response that the service sends back. It provides a seamless service testing experience when combined with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host.  
   
  You can typically find the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client (WcfTestClient.exe) in the following location: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE - Community may be one of "Enterprise", "Professional" or "Community" depending on which level of Visual Studio is installed.
   
@@ -169,9 +169,9 @@ ms.workload:
 ## Closing WCF Test Client  
  You can close [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client in the following ways:  
   
--   On the **File** menu, click **Exit**. Alternatively, in the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client main window, click **Close**. Both of these actions also shut down [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and stop the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugging process if [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client was launched by [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+-   On the **File** menu, click **Exit**. Alternatively, in the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client main window, click **Close**. Both of these actions also shut down [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and stop the Visual Studio debugging process if [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client was launched by Visual Studio.  
   
--   Right-click the **WCF Service Host** icon in the notification area, and then click **Exit.** This shuts down both [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client and stops the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugging process.  
+-   Right-click the **WCF Service Host** icon in the notification area, and then click **Exit.** This shuts down both [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Auto Host and [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client and stops the Visual Studio debugging process.  
   
 ## See Also  
  [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

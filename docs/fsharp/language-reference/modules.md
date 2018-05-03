@@ -1,17 +1,13 @@
 ---
 title: Modules (F#)
 description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program. 
-keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
 ms.date: 04/24/2017
 ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
-ms.assetid: 46de2d18-da51-40fa-a262-92edecada79d
 ---
-
 # Modules
 
 In the context of the F# language, a *module* is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.

@@ -21,11 +21,11 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Customize a System-Provided Binding
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes several system-provided bindings that allow you to configure some of the properties of the underlying binding elements, but not all of the properties. This topic demonstrates how to set properties on the binding elements to create a custom binding.  
+Windows Communication Foundation (WCF) includes several system-provided bindings that allow you to configure some of the properties of the underlying binding elements, but not all of the properties. This topic demonstrates how to set properties on the binding elements to create a custom binding.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to directly create and configure binding elements without using the system-provided bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
+ For more information about how to directly create and configure binding elements without using the system-provided bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating and extending custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  
+ For more information about creating and extending custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  
   
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] all bindings are made up of *binding elements*. Each binding element derives from the <xref:System.ServiceModel.Channels.BindingElement> class. System-provided bindings such as <xref:System.ServiceModel.BasicHttpBinding> create and configure their own binding elements. This topic shows you how to access and change the properties of these binding elements, which are not directly exposed on the binding; specifically, the <xref:System.ServiceModel.BasicHttpBinding> class.  
   

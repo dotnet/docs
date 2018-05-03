@@ -136,7 +136,7 @@ ms.workload:
   
 <a name="communication"></a>   
 ## Implement Communication Between the Control and the Page  
- You manipulate the control by sending it [!INCLUDE[TLA2#tla_win](../../../../includes/tla2sharptla-win-md.md)] messages. The control notifies you when the user interacts with it by sending notifications to its host window. The [Hosting a Win32 ListBox Control in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159998) sample includes a UI that provides several examples of how this works:  
+ You manipulate the control by sending it Windows messages. The control notifies you when the user interacts with it by sending notifications to its host window. The [Hosting a Win32 ListBox Control in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159998) sample includes a UI that provides several examples of how this works:  
   
 -   Append an item to the list.  
   

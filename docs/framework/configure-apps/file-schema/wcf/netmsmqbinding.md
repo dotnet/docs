@@ -1,21 +1,7 @@
 ---
 title: "&lt;netMsmqBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a68b44d7-7799-43a3-9e63-f07c782810a6
-caps.latest.revision: 35
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;netMsmqBinding&gt;
 Defines a queued binding suitable for cross-machine communication.  
@@ -87,7 +73,7 @@ Defines a queued binding suitable for cross-machine communication.
 |`retryCycleDelay`|A TimeSpan value that specifies the time delay between retry cycles when attempting to deliver a message that could not be delivered immediately. The value defines only the minimum wait time because actual wait time can be longer. The default value is 00:10:00. For more information, see <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A>.|  
 |`sendTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
 |`timeToLive`|A TimeSpan value that specifies how long the messages are valid before they are expired and put into the dead-letter queue. The default is 1.00:00:00.<br /><br /> This attribute is set to ensure that time-sensitive messages do not become stale before they are processed by the receiving applications. A message in a queue that is not consumed by the receiving application within the time interval specified is said to be expired. Expired messages are sent to special queue called the dead letter queue. The location of the dead letter queue is set with the `DeadLetterQueue` attribute or to the appropriate default, based on assurances.|  
-|`usingActiveDirectory`|A Boolean value that specifies if queue addresses should be converted using Active Directory.<br /><br /> MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the computer name using DNS, NetBIOS or IP. With a path name, MSMQ resolves the computer name using Active Directory.<br /><br /> By default, [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the `UseActiveDirectory` property to true, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.|  
+|`usingActiveDirectory`|A Boolean value that specifies if queue addresses should be converted using Active Directory.<br /><br /> MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the computer name using DNS, NetBIOS or IP. With a path name, MSMQ resolves the computer name using Active Directory.<br /><br /> By default, Windows Communication Foundation (WCF) queued transport converts the URI of a message queue to a direct format name. By setting the `UseActiveDirectory` property to true, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.|  
 |`useMsmqTracing`|A Boolean value that specifies whether messages processed by this binding should be traced. The default is `false`. When tracing is enabled, report messages are created and sent to the report queue each time the message leaves or arrives at a Message Queuing computer.|  
 |`useSourceJournal`|A Boolean value that specifies copies of messages processed by this binding should be stored in the source journal. The default is `false`.<br /><br /> Queued applications that want to keep a record of messages that have left the computer's outgoing queue can copy the messages to a journal queue. Once a message leaves the outgoing queue and an acknowledgment is received that the message was received on the destination computer, a copy of the message is kept in the sending computer's system journal queue.|  
   

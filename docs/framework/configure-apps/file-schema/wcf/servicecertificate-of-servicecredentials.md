@@ -1,21 +1,7 @@
 ---
 title: "&lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  
@@ -61,7 +47,7 @@ x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/
 ## Remarks  
  Use this element to specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode. If you are using a certificate that will be periodically renewed, then its thumbprint will change. In that case, use the subject name as the `x509FindType` because the certificate can be reissued with the same subject name.  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] using the element, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ For more information about using the element, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>  

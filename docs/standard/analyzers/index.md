@@ -1,16 +1,11 @@
 ---
 title: The Roslyn based Analyzers - .NET
 description: Learn about Roslyn based analyzers that find issues and suggest fixes for those issues.
-keywords: .NET, .NET Core
 author: billwagner
 ms.author: billwagner
 ms.date: 01/24/2018
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ---
-
 # The Roslyn based Analyzers
 
 Roslyn-based analyzers use the .NET Compiler SDK (Roslyn APIs) to analyze your project's source code to find issues and suggest corrections. Different analyzers look for different classes of issues, ranging from practices that are likely to cause bugs to security concerns to API compatibility.

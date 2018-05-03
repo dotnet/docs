@@ -1,12 +1,11 @@
 ---
 title: What's new in .NET Core 2.0
 description: Learn about the new features found in .NET Core.
-keywords: .NET, .NET Core
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/13/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.workload: 
   - dotnetcore
 ---

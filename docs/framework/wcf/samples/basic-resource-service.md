@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Basic Resource Service
-This sample demonstrates how to implement a HTTP-based service using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST Programming model that exposes a collection of customers that supports the retrieve, add, delete and replace operations. This sample consists of 2 components - a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] HTTP service (Service.cs) and a console application (program.cs) that creates the service and makes calls to it.  
+This sample demonstrates how to implement a HTTP-based service using the Windows Communication Foundation (WCF) REST Programming model that exposes a collection of customers that supports the retrieve, add, delete and replace operations. This sample consists of 2 components - a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] HTTP service (Service.cs) and a console application (program.cs) that creates the service and makes calls to it.  
   
 ## Sample Details  
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service exposes a collection of customers in a resource-oriented/REST manner. In short, this involves having unique URIs for the collection of customers and every customer in the collection. The service supports sending an HTTP `GET` at the collection URI to retrieve the entire collection and HTTP `POST` at the collection URI to add a new customer to the collection. Also at the URI for an individual customer, it supports HTTP `GET` to get the customer details, HTTP `PUT` to replace the details of the customer and HTTP `DELETE` to remove the customer from the collection. When a new customer is added to the collection, the service assigns it a unique URI and stores the URI as part of the customer’s details. Also, it communicates the URI to the client using the Location HTTP header of the response.  
@@ -42,7 +42,7 @@ This sample demonstrates how to implement a HTTP-based service using the [!INCLU
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\BasicResourceService`  
   

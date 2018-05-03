@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Partial Trust Feature Compatibility
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports a limited subset of functionality when running in a partially-trusted environment. The features supported in partial trust are designed around a specific set of scenarios as described in the [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md) topic.  
+Windows Communication Foundation (WCF) supports a limited subset of functionality when running in a partially-trusted environment. The features supported in partial trust are designed around a specific set of scenarios as described in the [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md) topic.  
   
 ## Minimum Permission Requirements  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports a subset of features in applications running under either of the following standard named permission sets:  
@@ -100,7 +100,7 @@ ms.workload:
   
 -   Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a partial trust environment. If they can do so, the behavior does not run and no exception is thrown. To ensure this, see the **levelfinal** option using [Caspol.exe (Code Access Security Policy Tool)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md).  
   
- [!INCLUDE[crexample](../../../../includes/crexample-md.md)] a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
+ For an example of a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
   
 ## Configuration  
  With one exception, partially-trusted code can only load [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections in the local `app.config` file. To load [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections that reference [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sections in machine.config or in a root web.config file requires ConfigurationPermission(Unrestricted). Without this permission, references to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections (behaviors, bindings) outside of the local configuration file results in an exception when the configuration is loaded.  
@@ -149,7 +149,7 @@ ms.workload:
 >  To avoid flooding the trace files with duplicate errors, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
   
 ## WCF Service Host  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service host does not support partial trust. If you want to use a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in partial trust, do not use the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Service Library Project template in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to build your service. Instead, create a new Web site in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by choosing the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service Web site template, which can host the service in a Web server on which [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] partial trust is supported.  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service host does not support partial trust. If you want to use a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in partial trust, do not use the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Service Library Project template in Visual Studio to build your service. Instead, create a new Web site in Visual Studio by choosing the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service Web site template, which can host the service in a Web server on which [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] partial trust is supported.  
   
 ## Other Limitations  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is generally limited to the security considerations imposed upon it by the hosting application. For example, if [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](http://go.microsoft.com/fwlink/?LinkId=89138).  

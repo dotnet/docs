@@ -1,24 +1,10 @@
 ---
 title: "Frequently Asked Questions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 252ed666-0679-4eea-b71b-2f14117ef443
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Frequently Asked Questions
 The following sections answer some common issues that you might encounter when you implement [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].  
@@ -28,7 +14,7 @@ The following sections answer some common issues that you might encounter when y
 ## Cannot Connect  
  Q. I cannot connect to my database.  
   
- A. Make sure your connection string is correct and that your [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] instance is running. Note also that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires the Named Pipes protocol to be enabled. For more information, see [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).  
+ A. Make sure your connection string is correct and that your SQL Server instance is running. Note also that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires the Named Pipes protocol to be enabled. For more information, see [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).  
   
 ## Changes to Database Lost  
  Q. I made a change to data in the database, but when I reran my application, the change was no longer there.  
@@ -152,7 +138,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ## Provider Model  
  Q. Is a public provider model available?  
   
- A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
+ A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
   
 ## SQL-Injection Attacks  
  Q. How is [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] protected from SQL-injection attacks?  

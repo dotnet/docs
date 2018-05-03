@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Feature Details
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows extensive control over the messaging functions of an application. The topics in this section go into detail about the available features. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] basic programming, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
+Windows Communication Foundation (WCF) allows extensive control over the messaging functions of an application. The topics in this section go into detail about the available features. For more information about basic programming, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
   
 ## In This Section  
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  

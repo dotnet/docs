@@ -1,26 +1,12 @@
 ---
 title: "&lt;dataContractSerializer&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dataContractSerializer element"
   - "<dataContractSerializer> element"
   - "DataContractSerializer"
   - "KnownTypes"
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;dataContractSerializer&gt;
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>. This element occurs in two different hierarchies. One is listed the following Schema Hierarchy section and the other is listed in the Remarks section.  

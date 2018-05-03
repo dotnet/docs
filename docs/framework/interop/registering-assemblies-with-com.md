@@ -1,22 +1,14 @@
 ---
 title: "Registering Assemblies with COM"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop, registering assemblies"
   - "unregistering assemblies"
   - "interoperation with unmanaged code, registering assemblies"
   - "registering assemblies"
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Registering Assemblies with COM
 You can run a command-line tool called the [Assembly Registration Tool (Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md) to register or unregister an assembly for use with COM. Regasm.exe adds information about the class to the system registry so COM clients can use the .NET Framework class transparently. The <xref:System.Runtime.InteropServices.RegistrationServices> class provides the equivalent functionality.  

@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Custom Activities
-This section contains samples that demonstrate how to create custom activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate how to create custom activities in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Code-Bodied](../../../../docs/framework/windows-workflow-foundation/samples/code-bodied.md)  

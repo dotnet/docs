@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Tracking Using a Text File
-This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../includes/wf-md.md)] by creating a custom tracking participant. Tracking participants are .NET Framework classes that receive tracking records from the runtime as they are emitted. You can create a tracking participant to transport the tracking events to whichever destination is required for your scenario. For example, ETW (Event Tracing for Windows) Tracking Participant is provided as part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]. The tracking participant in this sample writes the records in XML format to a text file.  
+This sample demonstrates how to extend tracking in Windows Workflow Foundation (WF) by creating a custom tracking participant. Tracking participants are .NET Framework classes that receive tracking records from the runtime as they are emitted. You can create a tracking participant to transport the tracking events to whichever destination is required for your scenario. For example, ETW (Event Tracing for Windows) Tracking Participant is provided as part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]. The tracking participant in this sample writes the records in XML format to a text file.  
   
 ## Sample details  
  To optimize the usefulness and robustness of your tracking participant, some additional steps must be completed to properly wire the tracking participant to the runtime. The following table describes the classes used in this sample to create a tracking participant that complies with best practices.  
@@ -93,7 +93,7 @@ This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../inc
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\TextFileTracking`  
   

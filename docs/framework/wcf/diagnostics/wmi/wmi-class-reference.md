@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WMI Class Reference
-This section lists all the WMI classes exposed by the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] WMI provider.  
+This section lists all the WMI classes exposed by the Windows Communication Foundation (WCF) WMI provider.  
   
 ## Accessing WMI Instances  
  All the classes listed in the WMI Object Reference cannot be directly instantiated, except for Service, AppDomain, Contract, ServiceAppDomain, ServiceToEndpointAssociation and Endpoint. To access other instances, you can access the properties of the previously mentioned top level classes. For example, you can access the TransportBindingElement instance from the Endpoint instance -> Binding -> BindingElements.  

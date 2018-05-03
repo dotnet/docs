@@ -124,7 +124,7 @@ Binding a data source to a control is essential for providing users with access 
      [!code-xaml[WPFWithWFAndDatabinding#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#7)]  
   
 ## Adding the Data Source to the Project  
- With [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)], you can easily add a data source to your project. This procedure adds a strongly typed data set to your project. Several other support classes, such as table adapters for each of the chosen tables, are also added.  
+ With Visual Studio, you can easily add a data source to your project. This procedure adds a strongly typed data set to your project. Several other support classes, such as table adapters for each of the chosen tables, are also added.  
   
 #### To add the data source  
   

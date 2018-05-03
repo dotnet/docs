@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create an AJAX-Enabled WCF Service and an ASP.NET Client that Accesses the Service
-This topic shows how to use Visual Studio 2008 to create an AJAX-enabled [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service and an ASP.NET client that accesses the service. The code for the service and for the client are provided in the Example section after the steps for creating them are described in the Procedures section.  
+This topic shows how to use Visual Studio 2008 to create an AJAX-enabled Windows Communication Foundation (WCF) service and an ASP.NET client that accesses the service. The code for the service and for the client are provided in the Example section after the steps for creating them are described in the Procedures section.  
   
 ### To create the ASP.NET client application  
   

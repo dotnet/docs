@@ -1,19 +1,10 @@
 ---
 title: "Enabling and Disabling IPv6"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6408d3ef-c9ba-49d9-b15e-fe74bd3ef031
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Enabling and Disabling IPv6
 To use the IPv6 protocol, ensure that you are running a version of the operating system that supports IPv6 and ensure that the operating system and the networking classes are configured properly.  

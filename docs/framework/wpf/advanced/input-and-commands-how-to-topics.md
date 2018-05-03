@@ -23,7 +23,7 @@ ms.workload:
   - dotnet
 ---
 # Input and Commands How-to Topics
-The topics in this section describe how to use the input and commanding infrastructure in [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)].  
+The topics in this section describe how to use the input and commanding infrastructure in Windows Presentation Foundation (WPF).  
   
 ## In This Section  
  [Enable a Command](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)  

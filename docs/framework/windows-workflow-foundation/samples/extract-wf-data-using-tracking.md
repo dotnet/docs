@@ -19,7 +19,7 @@ ms.workload:
 This sample demonstrates how to use workflow tracking to extract workflow variables and arguments from activities. It also shows the addition of annotations to tracking records and the extraction of data payload within custom tracking records. The sample uses the Event Tracing for Windows (ETW) tracking participant to extract data from the workflow.  
   
 ## Sample Details  
- [!INCLUDE[wf](../../../../includes/wf-md.md)] provides tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. Along with the workflow tracking records, data within the workflow instance can be extracted from the workflow. The following list details the types of data that can be extracted from tracking records:  
+ Windows Workflow Foundation (WF) provides tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. Along with the workflow tracking records, data within the workflow instance can be extracted from the workflow. The following list details the types of data that can be extracted from tracking records:  
   
 1.  Workflow variables within an activity and tracking records during activity execution.  
   
@@ -157,7 +157,7 @@ This sample demonstrates how to use workflow tracking to extract workflow variab
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\ExtractWfData`  
   

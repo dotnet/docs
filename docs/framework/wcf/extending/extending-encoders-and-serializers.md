@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Extending Encoders and Serializers
-The topics in this section describe how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] serialization system.  
+The topics in this section describe how to extend the Windows Communication Foundation (WCF) serialization system.  
   
 ## In This Section  
  [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)  

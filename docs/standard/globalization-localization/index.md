@@ -1,13 +1,7 @@
 ---
 title: "Globalizing and Localizing .NET Framework Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "international applications [.NET Framework]"
   - "globalization [.NET Framework], encoding"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "application development [.NET Framework], globalization"
   - "multilingual application development"
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
-caps.latest.revision: 42
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Globalizing and Localizing .NET Framework Applications
 Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb978433.aspx), including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.  

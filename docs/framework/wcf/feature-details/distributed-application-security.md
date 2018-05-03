@@ -21,9 +21,9 @@ ms.workload:
   - "dotnet"
 ---
 # Distributed Application Security
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  
+Windows Communication Foundation (WCF) security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  
   
- For an overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the other two pieces of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md) and [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ For an overview of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). For more information about the other two pieces of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md) and [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ## Transfer Security Scenarios  
  Common scenarios that employ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transfer security include the following:  
@@ -65,7 +65,7 @@ ms.workload:
   
  In the certificate credential, the subject name, subject alternative name, or specific fields within the certificate can be used to represent the claimed identity and/or capabilities. Proof of possession of the data in the credential is established by using the associated private key to generate a signature.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] programming transfer security and specifying credentials, see [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md) and [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md).  
+ For more information about programming transfer security and specifying credentials, see [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md) and [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md).  
   
 ### Transport Client Credential Types  
  The following table shows the possible values used when creating an application that uses transfer security. You can use these values in either code or binding settings.  

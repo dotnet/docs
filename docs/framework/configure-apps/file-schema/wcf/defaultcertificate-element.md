@@ -1,21 +1,7 @@
 ---
 title: "&lt;defaultCertificate&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;defaultCertificate&gt; Element
 Specifies an X.509 certificate to be used when a service or STS does not provide one via a negotiation protocol.  

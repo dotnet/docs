@@ -1,9 +1,7 @@
 ---
 title: "Walkthrough: Using Dataflow in a Windows Forms Application"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "TPL dataflow library, in Windows Forms"
   - "Task Parallel Library, dataflows"
@@ -11,10 +9,6 @@ helpviewer_keywords:
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Walkthrough: Using Dataflow in a Windows Forms Application
 This document demonstrates how to create a network of dataflow blocks that perform image processing in a Windows Forms application.  
@@ -43,7 +37,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
 #### To Create the Windows Forms Application  
   
-1.  In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], create a Visual C# or Visual Basic **Windows Forms Application** project. In this document, the project is named `CompositeImages`.  
+1.  In Visual Studio, create a Visual C# or Visual Basic **Windows Forms Application** project. In this document, the project is named `CompositeImages`.  
   
 2.  On the form designer for the main form, Form1.cs (Form1.vb for Visual Basic), add a <xref:System.Windows.Forms.ToolStrip> control.  
   

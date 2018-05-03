@@ -1,19 +1,8 @@
 ---
 title: "&lt;channelSettings&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 94a4457f-f43f-458d-a47e-2d11103ee75e
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;channelSettings&gt;
 Specifies the settings of the channel cache.  
@@ -66,7 +55,7 @@ Specifies the settings of the channel cache.
   
  By default, in a workflow hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache used by <xref:System.ServiceModel.Activities.Send> messaging activities is shared across all workflow instances in the <xref:System.ServiceModel.WorkflowServiceHost> (host-level caching). For a client workflow that is not hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache is available only to the workflow instance (instance-level caching). Caching is disabled by default for any send activity in your workflow that has endpoints defined in configuration.  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
+ For more information about how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
   
 ## Example  
  In a hosted workflow service, you can specify the factory cache and channel cache settings in the application configuration file. To do so, add a service behavior that contains the cache settings for the factory and channel cache and add this service behavior to your service. The following example shows the contents of a configuration file that contains the **MyChannelCacheBehavior**  service behavior with the custom factory cache and channel cache settings. This service behavior is added to the service through the **behaviorConfiguarion** attribute.  

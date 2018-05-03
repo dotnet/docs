@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the TreeItem Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Tree Item"
   - "Tree Item control type"
   - "UI Automation, Tree Item control type"
 ms.assetid: 229f341a-477f-434e-b877-4db9973068eb
-caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the TreeItem Control Type
 > [!NOTE]

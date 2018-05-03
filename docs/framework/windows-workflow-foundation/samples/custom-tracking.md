@@ -19,7 +19,7 @@ ms.workload:
 This sample demonstrates how to create a custom tracking participant and write the contents of the tracking data to console. In addition, the sample demonstrates how to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects populated with user defined data. The console-based tracking participant filters the <xref:System.Activities.Tracking.TrackingRecord> objects emitted by the workflow using a tracking profile object created in code.  
   
 ## Sample Details  
- [!INCLUDE[wf](../../../../includes/wf-md.md)] provides a tracking infrastructure to track execution of a workflow instance. The tracking runtime implements a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom tracking events. The following table details the primary components of the tracking infrastructure.  
+ Windows Workflow Foundation (WF) provides a tracking infrastructure to track execution of a workflow instance. The tracking runtime implements a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom tracking events. The following table details the primary components of the tracking infrastructure.  
   
 |Component|Description|  
 |---------------|-----------------|  
@@ -150,7 +150,7 @@ context.Track(customRecord);
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   

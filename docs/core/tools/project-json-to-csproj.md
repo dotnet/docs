@@ -1,19 +1,16 @@
 ---
 title: project.json and csproj comparison - .NET Core
 description: See a mapping between project.json and csproj elements.
-keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
 ms.date: 03/13/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 79c50621-a24a-4e64-bbb9-b953113e841c
 ms.workload: 
   - dotnetcore
 ---
-
 # A mapping between project.json and csproj properties
 
 By [Nate McMaster](https://github.com/natemcmaster)

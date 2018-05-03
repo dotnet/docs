@@ -1,26 +1,14 @@
 ---
 title: "Deprecated CLR Hosting Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - ".NET Framework 1.1, hosting global static functions"
   - "global static functions [.NET Framework hosting], version 2.0"
   - ".NET Framework 2.0, hosting global static functions"
   - "hosting global static functions [.NET Framework], version 2.0"
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Deprecated CLR Hosting Functions
 This section describes the unmanaged global static functions that earlier versions of the hosting API used.  

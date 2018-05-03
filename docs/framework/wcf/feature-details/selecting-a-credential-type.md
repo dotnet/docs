@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Selecting a Credential Type
-*Credentials* are the data [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses to establish either a claimed identity or capabilities. For example, a passport is a credential a government issues to prove citizenship in a country or region. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], credentials can take many forms, such as user name tokens and X.509 certificates. This topic discusses credentials, how they are used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and how to select the right credential for your application.  
+*Credentials* are the data Windows Communication Foundation (WCF) uses to establish either a claimed identity or capabilities. For example, a passport is a credential a government issues to prove citizenship in a country or region. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], credentials can take many forms, such as user name tokens and X.509 certificates. This topic discusses credentials, how they are used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and how to select the right credential for your application.  
   
  In many countries and regions, a driver’s license is an example of a credential. A license contains data that represents a person's identity and capabilities. It contains proof of possession in the form of the possessor's picture. The license is issued by a trusted authority, usually a governmental department of licensing. The license is sealed, and can contain a hologram, showing that it has not been tampered with or counterfeited.  
   
@@ -50,7 +50,7 @@ ms.workload:
 |Windows|Allows SOAP message exchanges to occur under the security context established with a Windows credential.|  
 |Username|Allows the service to require that the client be authenticated with a user name credential. Note that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not allow any cryptographic operations with user names, such as generating a signature or encrypting data. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ensures that the transport is secured when using user name credentials.|  
 |Certificate|Allows the service to require that the client be authenticated using an X.509 certificate.|  
-|Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
   
 ### Negotiation Model of Service Credentials  
  *Negotiation* is the process of establishing trust between a client and a service by exchanging credentials. The process is performed iteratively between the client and the service, so as to disclose only the information necessary for the next step in the negotiation process. In practice, the end result is the delivery of a service's credential to the client to be used in subsequent operations.  
@@ -72,7 +72,7 @@ ms.workload:
  Depending on whether you are programming a service or a client, the method for setting the credential value differs slightly.  
   
 ### Setting Service Credentials  
- If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md) and [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+ If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. For more information, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md) and [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
  To provision a service with credentials in code, create an instance of the <xref:System.ServiceModel.ServiceHost> class and specify the appropriate credential using the <xref:System.ServiceModel.Description.ServiceCredentials> class, accessed through the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property.  
   
@@ -103,7 +103,7 @@ ms.workload:
 > [!IMPORTANT]
 >  There is a situation to be aware of when the identity cannot be switched (that is, when establish security context is on, the default behavior). If you create a service that communicates with a second service, the identity used to open the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to the second service cannot be changed. This becomes a problem if multiple clients are allowed to use the first service and the service impersonates the clients when accessing the second service. If the service reuses the same client for all callers, all calls to the second service are done under the identity of the first caller that was used to open the client to the second service. In other words, the service uses the identity of the first client for all its clients to communicate with the second service. This can lead to the elevation of privilege. If this is not the desired behavior of your service, you must track each caller and create a new client to the second service for every distinct caller, and ensure that the service uses only the right client for the right caller to communicate with the second service.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
+ For more information about credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
   
 ## See Also  
  <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  

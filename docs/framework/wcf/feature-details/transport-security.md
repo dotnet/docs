@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transport Security
-Transport security in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] depends on the binding selected. The transport that the binding implements determines the actual security mechanism. The topics in this section explain the mechanisms that are implemented and their options.  
+Transport security in Windows Communication Foundation (WCF) depends on the binding selected. The transport that the binding implements determines the actual security mechanism. The topics in this section explain the mechanisms that are implemented and their options.  
   
 ## In This Section  
  [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  

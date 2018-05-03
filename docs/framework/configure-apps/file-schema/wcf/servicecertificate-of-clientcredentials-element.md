@@ -1,21 +1,7 @@
 ---
 title: "&lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element
 Specifies a certificate to use when authenticating a service to the client.  

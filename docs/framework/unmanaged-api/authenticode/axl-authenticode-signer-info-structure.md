@@ -1,21 +1,9 @@
 ---
 title: "AXL_AUTHENTICODE_SIGNER_INFO Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 81c0f8b4-ce35-4716-8651-b642d40648a2
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AXL_AUTHENTICODE_SIGNER_INFO Structure
 Defines the Authenticode signer information.  

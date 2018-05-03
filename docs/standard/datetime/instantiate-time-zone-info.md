@@ -1,13 +1,7 @@
 ---
 title: "How to: Instantiate a TimeZoneInfo object"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,15 +9,9 @@ helpviewer_keywords:
   - "instantiating time zone objects"
   - "time zone objects [.NET Framework], instantiation"
 ms.assetid: 8cb620e5-c6a6-4267-a52e-beeb73cd1a34
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Instantiate a TimeZoneInfo object
 
 The most common way to instantiate a <xref:System.TimeZoneInfo> object is to retrieve information about it from the registry. This topic discusses how to instantiate a <xref:System.TimeZoneInfo> object from the local system registry.

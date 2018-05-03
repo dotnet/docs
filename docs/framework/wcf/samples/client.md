@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Client
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) client applications.  
   
 ## In This Section  
  [Client Interoperability](../../../../docs/framework/wcf/samples/client-interoperability.md)  

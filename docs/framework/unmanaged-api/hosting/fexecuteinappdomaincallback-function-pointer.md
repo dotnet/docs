@@ -1,14 +1,6 @@
 ---
 title: "FExecuteInAppDomainCallback Function Pointer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "FExecuteInAppDomainCallback"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 2709f18f-3eee-497f-bc33-3ab7a485599b
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FExecuteInAppDomainCallback Function Pointer
 Points to a function that is called by the common language runtime (CLR) to execute managed code.  

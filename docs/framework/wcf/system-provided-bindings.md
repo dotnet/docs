@@ -28,7 +28,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
   
 -   The encoding determines the wire encoding to use for messages that are sent to the endpoint, for example, text/XML, binary, or Message Transmission Optimization Mechanism (MTOM).  
   
- This topic presents all of the system-provided [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] bindings. If none of these meets the exact criteria for your application, you can create a custom binding. [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating custom bindings, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
+ This topic presents all of the system-provided Windows Communication Foundation (WCF) bindings. If none of these meets the exact criteria for your application, you can create a custom binding. For more information about creating custom bindings, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
   
  A secure and interoperable binding that supports the WS-Federation protocol enables organizations that are in a federation to efficiently authenticate and authorize users.  
   

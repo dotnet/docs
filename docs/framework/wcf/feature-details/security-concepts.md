@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Security Concepts
-This section briefly explains the concepts associated with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security.  
+This section briefly explains the concepts associated with Windows Communication Foundation (WCF) security.  
   
 ## In This Section  
  [Security Concepts Used in WCF](../../../../docs/framework/wcf/feature-details/security-concepts-used-in-wcf.md)  

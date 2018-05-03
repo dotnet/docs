@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Services and ASP.NET
-This topic discusses hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services side-by-side with ASP.NET and hosting them in ASP.NET compatibility mode.  
+This topic discusses hosting Windows Communication Foundation (WCF) services side-by-side with ASP.NET and hosting them in ASP.NET compatibility mode.  
   
 ## Hosting WCF Side-by-Side with ASP.NET  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in Internet Information Services (IIS) can be located with .ASPX pages and ASMX Web services inside of a single, common Application Domain. ASP.NET provides common infrastructure services such as AppDomain management and dynamic compilation for both [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and the ASP.NET HTTP runtime. The default configuration for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is side-by-side with ASP.NET.  

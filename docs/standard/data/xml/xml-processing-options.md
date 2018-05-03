@@ -1,21 +1,10 @@
 ---
 title: "XML Processing Options"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
-caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML Processing Options
 See the following tables for a list of Microsoft technologies you can use to process XML data.  

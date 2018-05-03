@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a Basic WCF Web HTTP Service
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to create a service that exposes a Web endpoint. Web endpoints send data by XML or JSON, there is no SOAP envelope. This topic demonstrates how to expose such an endpoint.  
+Windows Communication Foundation (WCF) allows you to create a service that exposes a Web endpoint. Web endpoints send data by XML or JSON, there is no SOAP envelope. This topic demonstrates how to expose such an endpoint.  
   
 > [!NOTE]
 >  The only way to secure a Web endpoint is to expose it through HTTPS, using transport security. When using message-based security, security information is usually placed in SOAP headers and because the messages sent to non-SOAP endpoints contain no SOAP envelope, there is nowhere to place the security information and you must rely on transport security.  

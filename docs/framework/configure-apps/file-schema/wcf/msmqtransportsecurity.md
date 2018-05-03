@@ -1,21 +1,9 @@
 ---
 title: "&lt;msmqTransportSecurity&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-caps.latest.revision: 10
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;msmqTransportSecurity&gt;
 Specifies MSMQ transport security settings for a custom binding.  

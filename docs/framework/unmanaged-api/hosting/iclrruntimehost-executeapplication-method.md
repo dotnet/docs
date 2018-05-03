@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeHost::ExecuteApplication Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeHost.ExecuteApplication"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5f28cc4e-7176-4e00-aa1f-58ae6ee52fe4
 topic_type: 
   - "apiref"
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeHost::ExecuteApplication Method
 Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain. For more information about these scenarios, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  

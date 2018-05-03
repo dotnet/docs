@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Troubleshooting Setup Issues
-This topic describes how to troubleshoot [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] set up issues.  
+This topic describes how to troubleshoot Windows Communication Foundation (WCF) set up issues.  
   
 ## Some Windows Communication Foundation Registry Keys are not Repaired by Performing an MSI Repair Operation on the .NET Framework 3.0  
  If you delete any of the following registry keys:  
@@ -60,7 +60,7 @@ This topic describes how to troubleshoot [!INCLUDE[indigo1](../../../includes/in
   
  The following steps must be followed to resolve the problem described previously.  
   
-1.  Run [the WMI Diagnosis Utility, version 2.0](http://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] using this tool, see the [WMI Diagnosis Utility](http://go.microsoft.com/fwlink/?LinkId=94686) topic.  
+1.  Run [the WMI Diagnosis Utility, version 2.0](http://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](http://go.microsoft.com/fwlink/?LinkId=94686) topic.  
   
  Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.  
   

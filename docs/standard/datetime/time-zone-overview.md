@@ -1,13 +1,7 @@
 ---
 title: "Time zone overview"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "time zones [.NET Framework], about time zones"
   - "transition time [.NET Framework]"
@@ -21,15 +15,9 @@ helpviewer_keywords:
   - "adjustment rule [.NET Framework]"
   - "time zones [.NET Framework], terminology"
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Time zone overview
 
 The <xref:System.TimeZoneInfo> class simplifies the creation of time zone-aware applications. The <xref:System.TimeZone> class supports working with the local time zone and Coordinated Universal Time (UTC). The <xref:System.TimeZoneInfo> class supports both of these zones as well as any time zone about which information is predefined in the registry. You can also use <xref:System.TimeZoneInfo> to define custom time zones that the system has no information about.

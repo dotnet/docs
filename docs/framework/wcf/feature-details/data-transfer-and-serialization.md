@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Transfer and Serialization
-In a connected system, services and clients depend on the exchange of data to accomplish any task. As a developer of a service or client, you must also understand how [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] handles data and data serialization in order to create applications that are efficient and easy to maintain.  
+In a connected system, services and clients depend on the exchange of data to accomplish any task. As a developer of a service or client, you must also understand how Windows Communication Foundation (WCF) handles data and data serialization in order to create applications that are efficient and easy to maintain.  
   
 ## In This Section  
  [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  

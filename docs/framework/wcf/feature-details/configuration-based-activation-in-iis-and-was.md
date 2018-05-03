@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Configuration-Based Activation in IIS and WAS
-Normally when hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service under Internet Information Services (IIS) or Windows Process Activation Service (WAS), you must provide a .svc file. The .svc file contains the name of the service and an optional custom service host factory. This additional file adds manageability overhead. The configuration-based activation feature removes the requirement to have a .svc file and therefore the associated overhead.  
+Normally when hosting a Windows Communication Foundation (WCF) service under Internet Information Services (IIS) or Windows Process Activation Service (WAS), you must provide a .svc file. The .svc file contains the name of the service and an optional custom service host factory. This additional file adds manageability overhead. The configuration-based activation feature removes the requirement to have a .svc file and therefore the associated overhead.  
   
 ## Configuration-Based Activation  
  Configuration-based activation takes the metadata that used to be placed in the .svc file and places it in the Web.config file. Within the<`serviceHostingEnvironment`> element there is a <`serviceActivations`> element. Within the <`serviceActivations`> element are one or more <`add`> elements, one for each hosted service. The <`add`> element contains attributes that let you set the relative address for the service and the service type or a service host factory. The following configuration example code shows how this section is used.  

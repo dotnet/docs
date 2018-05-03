@@ -56,7 +56,7 @@ Svcutil.exe <list of WSDL and XSD files on file system>
 Svcutil.exe <file1 [,file2]>  
 ```  
   
- If only one file name is given, that is the name of the output file. If two file names are given, then the first file is an input configuration file whose contents are merged with the generated configuration and written out into the second file. [!INCLUDE[crabout](../../../includes/crabout-md.md)] configuration, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md).  
+ If only one file name is given, that is the name of the output file. If two file names are given, then the first file is an input configuration file whose contents are merged with the generated configuration and written out into the second file. For more information about configuration, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md).  
   
 > [!IMPORTANT]
 >  Unsecured metadata requests pose certain risks in the same way that any unsecured network request does: If you are not certain that the endpoint you are communicating with is who it says it is, the information you retrieve might be metadata from a malicious service.  
@@ -189,7 +189,7 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
   
 -   <xref:System.ServiceModel.CommunicationObjectAbortedException>: The socket connection was aborted. This could be caused by an error processing your message, a receive time-out being exceeded by the remote host, or an underlying network resource issue.  
   
- When these types of exceptions occur, the best way to solve the problem is to turn on tracing on the service side and determine what exception occurred there. [!INCLUDE[crabout](../../../includes/crabout-md.md)] tracing, see [Tracing](../../../docs/framework/wcf/diagnostics/tracing/index.md) and [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).  
+ When these types of exceptions occur, the best way to solve the problem is to turn on tracing on the service side and determine what exception occurred there. For more information about tracing, see [Tracing](../../../docs/framework/wcf/diagnostics/tracing/index.md) and [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).  
   
 ## See Also  
  [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  

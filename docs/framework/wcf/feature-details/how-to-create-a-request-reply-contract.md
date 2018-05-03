@@ -51,7 +51,7 @@ public interface ICalculator
 }
 ```
   
--   [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to specify operation contracts, see the <xref:System.ServiceModel.OperationContractAttribute> class and the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property.  
+-   For more information about how to specify operation contracts, see the <xref:System.ServiceModel.OperationContractAttribute> class and the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property.  
   
 -   Applying the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes causes the automatic generation of service contract definitions in a Web Services Description Language (WSDL) document once the service is deployed. The document is downloaded by appending `?wsdl` to the HTTP base address for the service. For example, `http://microsoft/CalculatorService?wsdl`  
   

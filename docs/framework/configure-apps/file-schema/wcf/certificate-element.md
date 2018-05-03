@@ -1,21 +1,7 @@
 ---
 title: "&lt;certificate&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9b3d9233-ef35-477a-bf5d-efd1e80a52f4
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;certificate&gt; Element
 Specifies an X.509 certificate to use for signing and encrypting messages for peer-to-peer clients.  

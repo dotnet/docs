@@ -31,4 +31,4 @@ This section contains samples that demonstrate custom instancing.
  Demonstrates how to customize the initialization of an object.  
   
  [Pooling](../../../../docs/framework/wcf/samples/pooling.md)  
- Demonstrates how to extend [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to support object pooling.
+ Demonstrates how to extend Windows Communication Foundation (WCF) to support object pooling.

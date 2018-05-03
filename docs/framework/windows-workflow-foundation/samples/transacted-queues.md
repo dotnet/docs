@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transacted Queues
-This sample shows how to integrate queues and transactions in [!INCLUDE[wf](../../../../includes/wf-md.md)] to create reliable and scalable services. A <!--zz <xref:System.Activities.TransactionScope>--> `System.Activities.TransactionScope` is used in the client workflow to send message to a queue under a transaction using the <xref:System.ServiceModel.NetMsmqBinding>. A <xref:System.ServiceModel.Activities.TransactedReceiveScope> is used on the server to receive messages from the queue and update the state of the workflow under the same transaction.  
+This sample shows how to integrate queues and transactions in Windows Workflow Foundation (WF) to create reliable and scalable services. A <!--zz <xref:System.Activities.TransactionScope>--> `System.Activities.TransactionScope` is used in the client workflow to send message to a queue under a transaction using the <xref:System.ServiceModel.NetMsmqBinding>. A <xref:System.ServiceModel.Activities.TransactedReceiveScope> is used on the server to receive messages from the queue and update the state of the workflow under the same transaction.  
   
 ## Demonstrates  
  <xref:System.Activities.Statements.TransactionScope>, <xref:System.ServiceModel.Activities.TransactedReceiveScope>, <xref:System.ServiceModel.NetMsmqBinding>, <xref:System.ServiceModel.Activities.Receive>, and content-based correlation.  
@@ -41,6 +41,6 @@ This sample shows how to integrate queues and transactions in [!INCLUDE[wf](../.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\Transactions\TransactedQueues`

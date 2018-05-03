@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using the Message Class
-The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  
+The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows Communication Foundation (WCF). All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  
   
  You would not usually interact with the <xref:System.ServiceModel.Channels.Message> class directly. Instead, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service model constructs, such as data contracts, message contracts, and operation contracts, are used to describe incoming and outgoing messages. However, in some advanced scenarios you can program using the <xref:System.ServiceModel.Channels.Message> class directly. For example, you might want to use the <xref:System.ServiceModel.Channels.Message> class:  
   
@@ -169,7 +169,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
   
  Retrieve a particular header using the <xref:System.ServiceModel.Channels.MessageHeaders.FindHeader%2A> method. This method takes the name and namespace of the header to find, and returns its index. If the header occurs more than once, an exception is thrown. If the header is not found, it returns -1.  
   
- In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the SOAP specification.  
+ In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. For more information, see the SOAP specification.  
   
  A <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> method is provided to copy headers from a <xref:System.ServiceModel.Channels.MessageHeaders> collection to an array of <xref:System.ServiceModel.Channels.MessageHeaderInfo> objects.  
   

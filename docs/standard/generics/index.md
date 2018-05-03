@@ -1,13 +1,7 @@
 ---
-title: "Generics in the .NET Framework"
-ms.custom: ""
+title: "Generics in .NET"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -32,18 +26,14 @@ helpviewer_keywords:
   - "generic types"
   - "generic type parameters"
 ms.assetid: 2994d786-c5c7-4666-ab23-4c83129fe39c
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-# Generics in the .NET Framework
+# Generics in .NET
+
 <a name="top"></a> Generics let you tailor a method, class, structure, or interface to the precise data type it acts upon. For example, instead of using the <xref:System.Collections.Hashtable> class, which allows keys and values to be of any type, you can use the <xref:System.Collections.Generic.Dictionary%602> generic class and specify the type allowed for the key and the type allowed for the value. Among the benefits of generics are increased code reusability and type safety.  
   
- This topic provides an overview of generics in the .NET Framework and a summary of generic types or methods. It contains the following sections:  
+ This topic provides an overview of generics in .NET and a summary of generic types or methods. It contains the following sections:  
   
 -   [Defining and Using Generics](#defining_and_using_generics)  
   
@@ -73,7 +63,7 @@ ms.workload:
   
 <a name="generics_terminology"></a>   
 ### Generics terminology  
- The following terms are used to discuss generics in the .NET Framework:  
+ The following terms are used to discuss generics in .NET:  
   
 -   A *generic type definition* is a class, structure, or interface declaration that functions as a template, with placeholders for the types that it can contain or use. For example, the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> class can contain two types: keys and values. Because a generic type definition is only a template, you cannot create instances of a class, structure, or interface that is a generic type definition.  
   
@@ -140,11 +130,11 @@ ms.workload:
   
 <a name="class_library_and_language_support"></a>   
 ## Class Library and Language Support  
- The .NET Framework provides a number of generic collection classes in the following namespaces:  
+ .NET provides a number of generic collection classes in the following namespaces:  
   
--   The <xref:System.Collections.Generic> namespace catalogs most of the generic collection types provided by the .NET Framework, such as the <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602> generic classes.  
+-   The <xref:System.Collections.Generic> namespace contains most of the generic collection types provided by .NET, such as the <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602> generic classes.  
   
--   The <xref:System.Collections.ObjectModel> namespace catalogs additional generic collection types, such as the <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> generic class, that are useful for exposing object models to users of your classes.  
+-   The <xref:System.Collections.ObjectModel> namespace contains additional generic collection types, such as the <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> generic class, that are useful for exposing object models to users of your classes.  
   
  Generic interfaces for implementing sort and equality comparisons are provided in the <xref:System> namespace, along with generic delegate types for event handlers, conversions, and search predicates.  
   
@@ -167,11 +157,11 @@ ms.workload:
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)|Describes generic collection classes and other generic types in the .NET Framework.|  
+|[Generic Collections in .NET](../../../docs/standard/generics/collections.md)|Describes generic collection classes and other generic types in .NET.|  
 |[Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)|Describes generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.|  
 |[Generic Interfaces](../../../docs/standard/generics/interfaces.md)|Describes generic interfaces that provide common functionality across families of generic types.|  
 |[Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)|Describes covariance and contravariance in generic type parameters.|  
-|[Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)|Provides summary information about the characteristics and usage scenarios of the collection types in the .NET Framework, including generic types.|  
+|[Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)|Provides summary information about the characteristics and usage scenarios of the collection types in .NET, including generic types.|  
 |[When to Use Generic Collections](../../../docs/standard/collections/when-to-use-generic-collections.md)|Describes general rules for determining when to use generic collection types.|  
 |[How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|  
 |[Generic Types in Visual Basic](~/docs/visual-basic/programming-guide/language-features/data-types/generic-types.md)|Describes the generics feature for Visual Basic users, including how-to topics for using and defining generic types.|  

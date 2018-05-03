@@ -16,10 +16,10 @@ ms.workload:
   - "dotnet"
 ---
 # Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer
-[!INCLUDE[wf](../../../includes/wf-md.md)] in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] introduced many new features, including several enhancements to the workflow designer experience. This topic details which of these features are supported in the rehosted designer, and which ones are currently not supported.  
+Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] introduced many new features, including several enhancements to the workflow designer experience. This topic details which of these features are supported in the rehosted designer, and which ones are currently not supported.  
   
 > [!NOTE]
->  For a list of all of the new [!INCLUDE[wf](../../../includes/wf-md.md)] features introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], including those that are unrelated to designer rehosting, see [What's New in Windows Workflow Foundation in .NET 4.5](../../../docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md).  
+>  For a list of all of the new Windows Workflow Foundation (WF) features introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], including those that are unrelated to designer rehosting, see [What's New in Windows Workflow Foundation in .NET 4.5](../../../docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md).  
   
 ## Activities  
  The built-in activity library contains new activities and new features for existing activities. All of these new activities are supported in the rehosted designer. For more information on these new activities, see the [Activities](../../../docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md#BKMK_NewActivities) section of [What's New in Windows Workflow Foundation in .NET 4.5](../../../docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md).  

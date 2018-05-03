@@ -1,26 +1,15 @@
 ---
 title: "EventWaitHandle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], EventWaitHandle class"
   - "EventWaitHandle class"
   - "event wait handles [.NET Framework]"
   - "threading [.NET Framework], cross-process synchronization"
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # EventWaitHandle
 The <xref:System.Threading.EventWaitHandle> class allows threads to communicate with each other by signaling and by waiting for signals. Event wait handles (also referred to simply as events) are wait handles that can be signaled in order to release one or more waiting threads. After it is signaled, an event wait handle is reset either manually or automatically. The <xref:System.Threading.EventWaitHandle> class can represent either a local event wait handle (local event) or a named system event wait handle (named event or system event, visible to all processes).  

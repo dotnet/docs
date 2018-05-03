@@ -19,7 +19,7 @@ ms.workload:
 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract.  
   
 > [!NOTE]
->  This topic provides step-by-step guidance on creating a contract-first workflow service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] contract-first workflow service development, see [Contract First Workflow Service Development](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md).  
+>  This topic provides step-by-step guidance on creating a contract-first workflow service. For more information about contract-first workflow service development, see [Contract First Workflow Service Development](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md).  
   
 ### Creating the workflow project  
   

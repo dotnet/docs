@@ -18,7 +18,7 @@ ms.workload:
 # Workflow Management Endpoint Sample
 This sample shows how a workflow control endpoint can be used to create and run workflows both locally and remotely. The sample demonstrates how to host a control endpoint and write clients that call the control endpoint to create and run the instance of a workflow. The workflow is not a service.  
   
- On the service side of the sample a workflow is hosted with WorkflowServiceHost and a WorkflowControlEndpoint is added so that clients can perform control operations (Suspend, Start, etc). A user-defined CreationEndpoint is also added to allow the workflow to be created. The service then uses these endpoints to start the workflow in a suspended state and then resume the workflow. The client performs the same operations but from the client code. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these interfaces see, [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md) and [How to: Host a non-service workflow in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md)  
+ On the service side of the sample a workflow is hosted with WorkflowServiceHost and a WorkflowControlEndpoint is added so that clients can perform control operations (Suspend, Start, etc). A user-defined CreationEndpoint is also added to allow the workflow to be created. The service then uses these endpoints to start the workflow in a suspended state and then resume the workflow. The client performs the same operations but from the client code. For more information about these interfaces see, [Workflow Control Endpoint](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md) and [How to: Host a non-service workflow in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md)  
   
 #### To run the sample  
   
@@ -37,6 +37,6 @@ This sample shows how a workflow control endpoint can be used to create and run 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Execution\ManagementEndpoint`

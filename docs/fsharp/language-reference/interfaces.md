@@ -1,17 +1,13 @@
 ---
 title: Interfaces (F#)
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
-keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
+ms.prod: dotnet-fsharp
 ms.devlang: fsharp
-ms.assetid: 3a082459-17d4-45cf-9153-0b7550a154ec 
 ---
-
 # Interfaces
 
 *Interfaces* specify sets of related members that other classes implement.

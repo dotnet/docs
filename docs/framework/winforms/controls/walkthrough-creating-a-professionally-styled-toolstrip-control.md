@@ -46,7 +46,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] is installed.  
+-   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating a Windows Control Library Project  
  The first step is to create the control library project.  

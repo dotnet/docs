@@ -1,26 +1,15 @@
 ---
 title: "Application Settings schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "schema application settings"
   - "application settings, schema [Windows Forms]"
   - "Windows Forms, application settings schema"
   - "configuration schema [.NET Framework], application settings"
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
-caps.latest.revision: 3
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Application Settings schema

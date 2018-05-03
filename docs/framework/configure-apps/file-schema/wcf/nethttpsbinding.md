@@ -1,24 +1,10 @@
 ---
 title: "&lt;netHttpsBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;netHttpsBinding&gt;
-Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service can use to configure and expose endpoints that are able to communicate over HTTPS. When used with a duplex contract, Web Sockets will be used, otherwise HTTPS will be used.  
+Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTPS. When used with a duplex contract, Web Sockets will be used, otherwise HTTPS will be used.  
   
  Root Element  
 Next Element  

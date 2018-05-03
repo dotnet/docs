@@ -1,16 +1,7 @@
 ---
 title: "Unsupported Expressions (Entity SQL)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-ado"
-ms.topic: "article"
 ms.assetid: 5e79da7e-e78a-413c-8fb0-f3f9cd84f579
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 dev_langs: 
   - "sql"
 ---

@@ -1,25 +1,12 @@
 ---
 title: "How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "generating XML classes using XML Schema Definition tool"
   - "generating XML Schema Document using XML Schema Definition tool"
   - "XML Schema Definition tool, using to generate classes that conform to specific schema"
   - "XML Schema Definition tool, using to generate XML Schema Document"
 ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents
 The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema that describes a class or to generate the class defined by an XML schema. The following procedures show how to perform these operations.  

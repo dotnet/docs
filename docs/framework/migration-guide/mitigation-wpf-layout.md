@@ -1,21 +1,9 @@
 ---
 title: "Mitigation: WPF Layout"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 805ffd7f-8d1e-427e-a648-601ca8ec37a5
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mitigation: WPF Layout
 The layout of WPF controls can change slightly.  

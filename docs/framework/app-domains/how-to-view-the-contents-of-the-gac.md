@@ -1,14 +1,6 @@
 ---
 title: "How to: View the Contents of the Global Assembly Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "global assembly cache, viewing contents"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "list of assemblies in global assembly cache"
   - "Global Assembly Cache tool"
 ms.assetid: c5f786a0-969b-4f14-9f02-e77c3384d9af
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: View the Contents of the Global Assembly Cache
 Use the [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) to view the contents of the global assembly cache.  

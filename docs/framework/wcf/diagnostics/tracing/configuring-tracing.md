@@ -28,7 +28,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 >  On Windows 8 you must run your application elevated (Run as Administrator) in order for your application to generate trace logs.  
   
 ## Enabling Tracing  
- [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] outputs the following data for diagnostic tracing:  
+ Windows Communication Foundation (WCF) outputs the following data for diagnostic tracing:  
   
 -   Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events.  
   

@@ -1,14 +1,6 @@
 ---
 title: "&lt;defaultHttpCachePolicy&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching/defaultHttpCachePolicy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultHttpCachePolicy"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "defaultHttpCachePolicy element"
   - "<defaultHttpCachePolicy> element"
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;defaultHttpCachePolicy&gt; Element (Network Settings)
 Describes whether HTTP caching is active and describes the default caching policy.  

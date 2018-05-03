@@ -1,14 +1,6 @@
 ---
 title: "Get UI Automation Element Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "properties, retrieving"
   - "UI Automation, retrieving properties of elements"
 ms.assetid: 09576b1a-291f-435c-980e-dee32d899ae1
-caps.latest.revision: 5
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Get UI Automation Element Properties
 > [!NOTE]

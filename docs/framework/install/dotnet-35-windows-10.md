@@ -4,10 +4,6 @@ description: Learn how to install the .NET Framework 3.5 on Windows 10, Windows 
 author: rlander
 ms.author: mairaw
 ms.date: 03/30/2018
-ms.topic: article
-ms.prod: .net-framework
-ms.workload: 
-  - dotnet
 ---
 # Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 

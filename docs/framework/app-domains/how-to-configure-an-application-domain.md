@@ -1,14 +1,6 @@
 ---
 title: "How to: Configure an Application Domain"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "application domains, configuring"
   - "ApplicationBase property"
 ms.assetid: 07ea8438-7a34-49f0-a7e8-3d6ff7e4a482
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure an Application Domain
 You can provide the common language runtime with configuration information for a new application domain using the <xref:System.AppDomainSetup> class. When creating your own application domains, the most important property is <xref:System.AppDomainSetup.ApplicationBase%2A>. The other **AppDomainSetup** properties are used mainly by runtime hosts to configure a particular application domain.  

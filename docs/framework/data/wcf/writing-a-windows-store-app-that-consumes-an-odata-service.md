@@ -1,23 +1,9 @@
 ---
 title: "Writing a Windows Store App that consumes an OData Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
 ms.assetid: 9917a0e9-ec93-49e5-a366-fd39b892eb8b
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Writing a Windows Store App that consumes an OData Service
 Windows 8 introduces a new type of application: the Windows Store app. Windows Store apps have a brand new look and feel, run on a variety of devices, and are made available on the Windows Store. This topic describes how to write a Windows Store app that consumes an OData service, specifically the NetFlix Catalog OData service. For more information about Windows Store Apps, please read [Getting Started with Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br211386.aspx).  

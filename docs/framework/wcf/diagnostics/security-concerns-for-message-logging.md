@@ -23,7 +23,7 @@ This topic describes how you can protect sensitive data from being exposed in me
 ## Security Concerns  
   
 ### Logging Sensitive Information  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] does not modify any data in application-specific headers and body. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also does not track personal information in application-specific headers or body data.  
+ Windows Communication Foundation (WCF) does not modify any data in application-specific headers and body. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also does not track personal information in application-specific headers or body data.  
   
  When message logging is enabled, personal information in application-specific headers, such as, a query string; and body information, such as, a credit card number, can become visible in the logs. The application deployer is responsible for enforcing access control on the configuration and log files. If you do not want this kind of information to be visible, you should disable logging, or filter out part of the data if you want to share the logs.  
   

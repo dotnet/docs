@@ -1,21 +1,9 @@
 ---
 title: "WIF Code Sample Index"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6711f01a-4743-43ce-95ab-5e2302a363ea
-caps.latest.revision: 3
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # WIF Code Sample Index
 The following are code samples for Windows Identity Foundation 4.5:  

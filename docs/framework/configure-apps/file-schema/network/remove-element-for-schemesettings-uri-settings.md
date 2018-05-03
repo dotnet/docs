@@ -1,21 +1,10 @@
 ---
 title: "&lt;remove&gt; Element for schemeSettings (Uri Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
-caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;remove&gt; Element for schemeSettings (Uri Settings)
 Removes a scheme setting for a scheme name.  

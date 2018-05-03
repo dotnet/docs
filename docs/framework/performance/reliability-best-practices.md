@@ -1,14 +1,6 @@
 ---
 title: "Reliability Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "marking locks"
   - "rebooting databases"
@@ -46,12 +38,8 @@ helpviewer_keywords:
   - "STA-dependent features"
   - "fibers"
 ms.assetid: cf624c1f-c160-46a1-bb2b-213587688da7
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Reliability Best Practices
 The following reliability rules are oriented to SQL Server; however, they also apply to any host-based server application. It is extremely important that servers such as SQL Server not leak resources and not be brought down.  However, that cannot be done by writing back-out code for every method that alters an object’s state.  The goal is not to write 100 percent reliable managed code that will recover from any errors in every location with back-out code.  That would be a daunting task with little chance of success.  The common language runtime (CLR) cannot easily provide strong enough guarantees to managed code to make writing perfect code feasible.  Note that unlike ASP.NET, SQL Server uses only one process that cannot be recycled without taking a database down for an unacceptably long time.  

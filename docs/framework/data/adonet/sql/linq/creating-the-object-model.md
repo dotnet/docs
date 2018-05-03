@@ -1,21 +1,7 @@
 ---
 title: "Creating the Object Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 27afce86-9b1d-45fb-8e0b-636bf671a236
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating the Object Model
 You can create your object model from an existing database and use the model in its default state. You can also customize many aspects of the model and its behavior.  

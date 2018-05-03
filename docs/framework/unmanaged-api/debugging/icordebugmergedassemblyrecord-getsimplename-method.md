@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugMergedAssemblyRecord::GetSimpleName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: bc3410f6-ebca-4bca-9b45-fc38c74fa9cb
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugMergedAssemblyRecord::GetSimpleName Method
 Gets the simple name of the assembly.  

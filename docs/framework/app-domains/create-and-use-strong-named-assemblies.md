@@ -1,10 +1,6 @@
 ---
 title: "Creating and Using Strong-Named Assemblies"
 ms.date: "08/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-bcl"
-ms.topic: "article"
 helpviewer_keywords: 
   - "strong-name bypass feature"
   - "strong-named assemblies, about strong-named assemblies"
@@ -16,12 +12,8 @@ helpviewer_keywords:
   - "strong-named assemblies, loading into trusted application domains"
   - "assembly binding, strong-named"
 ms.assetid: ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating and Using Strong-Named Assemblies
 <a name="top"></a> A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. (The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.)  

@@ -28,7 +28,7 @@ ms.workload:
 # How to: Create a Custom Token
 This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](../../../../docs/framework/wcf/samples/custom-token.md) sample.  
   
- A *security token* is essentially an XML element that is used by the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security framework to represent claims about a sender inside the SOAP message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
+ A *security token* is essentially an XML element that is used by the Windows Communication Foundation (WCF) security framework to represent claims about a sender inside the SOAP message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
   
  Sometimes an authentication mode or credential is not supported by the provided types. In that case, it is necessary to create a custom security token to provide an XML representation of the custom credential inside the SOAP message.  
   

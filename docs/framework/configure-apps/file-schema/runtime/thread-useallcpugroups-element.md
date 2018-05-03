@@ -1,21 +1,9 @@
 ---
 title: "&lt;Thread_UseAllCpuGroups&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Thread_UseAllCpuGroups&gt; Element
 Specifies whether the runtime distributes managed threads across all CPU groups.  

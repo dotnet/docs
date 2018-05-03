@@ -8,10 +8,10 @@ This section contains samples that demonstrate custom instancing.
   
 ## In This Section  
  [Durable Instance Context](../../../../docs/framework/wcf/samples/durable-instance-context.md)  
- Demonstrates how to customize the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime to enable durable instance contexts.  
+ Demonstrates how to customize the WCF runtime to enable durable instance contexts.  
   
  [Custom Lifetime](../../../../docs/framework/wcf/samples/custom-lifetime.md)  
- Demonstrates how to write a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] extension to provide custom lifetime services for shared [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service instances.  
+ Demonstrates how to write a WCF extension to provide custom lifetime services for shared WCF service instances.  
   
  [Instancing Initialization](../../../../docs/framework/wcf/samples/instancing-initialization.md)  
  Demonstrates how to customize the initialization of an object.  

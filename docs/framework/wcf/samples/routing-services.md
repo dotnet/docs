@@ -8,13 +8,13 @@ This section includes samples that demonstrate how to use the Windows Communicat
   
 ## In This Section  
  [Hello World with the Routing Service](../../../../docs/framework/wcf/samples/hello-world-with-the-routing-service.md)  
- Demonstrates how to use the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Router.  
+ Demonstrates how to use the WCF Router.  
   
  [Bridging and Error Handling](../../../../docs/framework/wcf/samples/bridging-and-error-handling.md)  
- Demonstrates how the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] routing service is used for bridging communication between a client and a service that use different bindings.  
+ Demonstrates how the WCF routing service is used for bridging communication between a client and a service that use different bindings.  
   
  [Advanced Filters](../../../../docs/framework/wcf/samples/advanced-filters.md)  
- Demonstrates how to adapt the standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Calculator sample to communicate using the routing service.  
+ Demonstrates how to adapt the standard WCF Calculator sample to communicate using the routing service.  
   
  [Dynamic Reconfiguration](../../../../docs/framework/wcf/samples/dynamic-reconfiguration.md)  
  Demonstrates how the routing service can be dynamically reconfigured during runtime.  

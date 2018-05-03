@@ -70,7 +70,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 ##### To use a binding in a client with code  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
+1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
   
 2.  This procedure's code is inserted at the beginning of the `Main` method of the client program.  
   

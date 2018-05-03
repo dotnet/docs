@@ -8,7 +8,7 @@ This section contains samples that demonstrate using a custom binding attribute 
   
 ## In This Section  
  [Custom Binding Imperative](../../../../docs/framework/wcf/samples/custom-binding-imperative.md)  
- Demonstrates how to write imperative code to define and use custom bindings without using a configuration file or a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generated client.  
+ Demonstrates how to write imperative code to define and use custom bindings without using a configuration file or a WCF generated client.  
   
  [Custom Binding Transport and Encoding](../../../../docs/framework/wcf/samples/custom-binding-transport-and-encoding.md)  
  Demonstrates how to configure a custom binding with various transport and message encoding elements.  

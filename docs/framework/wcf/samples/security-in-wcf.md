@@ -10,4 +10,4 @@ This section contains samples relating to Windows Communication Foundation (WCF)
   
 ## In This Section  
  [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md)  
- Demonstrates how to specify in a standard or custom algorithm to provide a cryptographic, agile implementation in a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and service.
+ Demonstrates how to specify in a standard or custom algorithm to provide a cryptographic, agile implementation in a WCF client and service.

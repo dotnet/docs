@@ -24,7 +24,7 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
   
 1.  A client subscribes to be a user in the approval process system.  
   
-2.  A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client sends to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted by the approval manager application.  
+2.  A WCF client sends to a WCF service hosted by the approval manager application.  
   
 3.  A unique user ID is returned to the client. The client can now participate in approval processes.  
   
@@ -42,19 +42,19 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
   
 10. A client may receive an approval request and respond to the request at any point in time.  
   
-11. A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted on the client can receive an approval request from the approval manager application.  
+11. A WCF service hosted on the client can receive an approval request from the approval manager application.  
   
 12. The document information is presented on the client for review.  
   
 13. The user can approve or reject the document.  
   
-14. A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client is used to send an approval response back to the approval manager application.  
+14. A WCF client is used to send an approval response back to the approval manager application.  
   
  From the approval manager application’s point of view, the approval process functions as follows:  
   
 1.  A client requests to participate to the approval process system.  
   
-2.  A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service on the approval manager receives a request to be part of the approval process system.  
+2.  A WCF service on the approval manager receives a request to be part of the approval process system.  
   
 3.  A unique ID is generated for the client. The user information is stored in a database.  
   

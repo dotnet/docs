@@ -54,7 +54,7 @@ public interface ICalculatorSession
  The service uses the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] session to store the result for each client session. This allows the service to maintain the running result for each client across multiple calls to the service.  
   
 > [!NOTE]
->  [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] session state and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions are very different things.  See the [Session](../../../../docs/framework/wcf/samples/session.md) for details on [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions.  
+>  [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] session state and WCF sessions are very different things.  See the [Session](../../../../docs/framework/wcf/samples/session.md) for details on WCF sessions.  
   
  The service has an intimate dependency on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] session state and requires [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode to function correctly. These requirements are expressed declaratively by applying the `AspNetCompatibilityRequirements` attribute.  
   

@@ -6,7 +6,7 @@ author: "BrucePerlerMS"
 manager: "mbaldwin"
 ---
 # Message Security Binding
-This section contains samples that demonstrate message security binding in Windows Services in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+This section contains samples that demonstrate message security binding in Windows Services in WCF.  
   
 ## In This Section  
  [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md)  

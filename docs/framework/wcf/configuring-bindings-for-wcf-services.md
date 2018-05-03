@@ -34,9 +34,9 @@ When creating an application, you often want to defer decisions to the administr
   
  For example, specifying the [\<basicHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element indicates to use HTTP as the transport for an endpoint. This is used to wire up the endpoint at run time when the service using this endpoint is opened.  
   
- There are two kinds of bindings: predefined and custom. Predefined bindings contain useful combinations of elements that are used in common scenarios. For a list of predefined binding types that [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). If no predefined binding collection has the correct combination of features that a service application needs, you can construct custom bindings to meet the application's requirements. For more information about custom bindings, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+ There are two kinds of bindings: predefined and custom. Predefined bindings contain useful combinations of elements that are used in common scenarios. For a list of predefined binding types that WCF provides, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). If no predefined binding collection has the correct combination of features that a service application needs, you can construct custom bindings to meet the application's requirements. For more information about custom bindings, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
- The following four examples illustrate the most common binding configurations used for setting up a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service.  
+ The following four examples illustrate the most common binding configurations used for setting up a WCF service.  
   
 #### Specifying an Endpoint to Use a Binding Type  
  The first example illustrates how to specify an endpoint configured with an address, a contract, and a binding.  

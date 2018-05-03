@@ -21,7 +21,7 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ExtendingTracing`  
   
 ## Tracing and Activity Propagation  
- User-defined activity tracing allows the user to create their own trace activities to group traces into logical units of work, correlate activities through transfers and propagation, and lessen the performance cost of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing (for example, the disk space cost of a log file).  
+ User-defined activity tracing allows the user to create their own trace activities to group traces into logical units of work, correlate activities through transfers and propagation, and lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
   
 ### Adding Custom Sources  
  User-defined traces can be added to both client and service code. Adding trace sources to the client or service configuration files allow for these custom traces to be recorded and displayed in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). The following code shows how to add a user-defined trace source named `ServerCalculatorTraceSource` to the configuration file.  
@@ -62,7 +62,7 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
 ```  
   
 ### Correlating Activities  
- To correlate activities directly across endpoints, the `propagateActivity` attribute must be set to `true` in the `System.ServiceModel` trace source. Also, to propagate traces without going through [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] activities, ServiceModel Activity Tracing must be turned off. This can be seen in the following code example.  
+ To correlate activities directly across endpoints, the `propagateActivity` attribute must be set to `true` in the `System.ServiceModel` trace source. Also, to propagate traces without going through WCF activities, ServiceModel Activity Tracing must be turned off. This can be seen in the following code example.  
   
 > [!NOTE]
 >  Turning off ServiceModel Activity Tracing is not the same as having the trace level, denoted by the `switchValue` property, set to off.  
@@ -80,7 +80,7 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
 ```  
   
 ### Lessening Performance Cost  
- Setting `ActivityTracing` to off in the `System.ServiceModel` trace source generates a trace file that contains only user-defined activity traces, without any of the ServiceModel activity traces included. This results in a log file of much smaller size. However, the opportunity to correlate [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] processing traces is lost.  
+ Setting `ActivityTracing` to off in the `System.ServiceModel` trace source generates a trace file that contains only user-defined activity traces, without any of the ServiceModel activity traces included. This results in a log file of much smaller size. However, the opportunity to correlate WCF processing traces is lost.  
   
 ##### To set up, build, and run the sample  
   

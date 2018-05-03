@@ -1,12 +1,7 @@
 ---
 title: Getting Started with F#
 description: Find out how to get started with the F# programming language in .NET.
-author: cartermp
-ms.author: phcart
 ms.date: 09/06/2016
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Getting Started with F# #
 

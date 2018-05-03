@@ -1,12 +1,7 @@
 ---
 title: Tuples (F#)
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Tuples
 

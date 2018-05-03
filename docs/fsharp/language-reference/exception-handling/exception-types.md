@@ -1,12 +1,7 @@
 ---
 title: Exception Types (F#)
 description: Learn how to define and use F# exception types.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Exception Types
 

@@ -1,12 +1,7 @@
 ---
 title: Arithmetic Operators (F#)
 description: Learn about the arithmetic operators that are available in the F# programming language.
-author: cartermp
-ms.author: phcart
 ms.date: 04/04/2018
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Arithmetic Operators
 

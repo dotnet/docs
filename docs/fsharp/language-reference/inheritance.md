@@ -1,12 +1,7 @@
 ---
 title: Inheritance (F#)
 description: Learn how to specify F# inheritance relationships using the 'inherit' keyword.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Inheritance
 

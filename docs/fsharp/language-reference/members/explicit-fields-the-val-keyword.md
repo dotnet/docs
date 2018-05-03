@@ -1,12 +1,7 @@
 ---
 title: "Explicit Fields: The val Keyword (F#)"
 description: Learn about the F# 'val' keyword, which is used to declare a location to store a value in a class or structure type without initializing the type.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Explicit Fields: The val Keyword
 

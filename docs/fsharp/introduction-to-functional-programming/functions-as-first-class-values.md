@@ -1,12 +1,7 @@
 ---
 title: Functions as First-Class Values (F#)
 description: Learn how functions are elevated to first-class status in the F# programming language.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Functions as First-Class Values
 

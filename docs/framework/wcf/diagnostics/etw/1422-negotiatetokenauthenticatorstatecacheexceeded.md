@@ -1,21 +1,7 @@
 ---
 title: "1422 - NegotiateTokenAuthenticatorStateCacheExceeded"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bfabfb52-ebfb-489f-bdb4-408536c24e52
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1422 - NegotiateTokenAuthenticatorStateCacheExceeded
 ## Properties  

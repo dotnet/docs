@@ -1,21 +1,7 @@
 ---
 title: "UnhandledStateMachineExceptionRecordDescription"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f4a0e8af-7d6c-4091-8d6c-b99e8ff3a07b
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # UnhandledStateMachineExceptionRecordDescription
 Id: 136  

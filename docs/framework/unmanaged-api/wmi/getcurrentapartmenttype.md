@@ -2,10 +2,6 @@
 title: GetCurrentApartmentType function (Unmanaged API Reference)
 description: The GetCurrentApartmentType function retrieves the type of apartment in which the caller is executing.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetCurrentApartmentType"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetCurrentApartmentType function
 Retrieves the type of apartment in which the caller is executing.   

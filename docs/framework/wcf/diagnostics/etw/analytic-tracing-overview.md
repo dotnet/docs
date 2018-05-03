@@ -1,23 +1,9 @@
 ---
 title: "Analytic Tracing Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "analytic tracing [WCF], overview"
 ms.assetid: ae55e9cc-0809-442f-921f-d644290ebf15
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Analytic Tracing Overview
 Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-current-long-md.md)] is a high performance and low verbosity tracing feature set on top of Event Tracing for Windows (ETW). ETW runs at the kernel-level to greatly reduce the overhead of tracing operations. It efficiently buffers user- and kernel-mode events, and allows dynamic enabling of logging without requiring service restarts. The tracing data is available in the event logs after it has been emitted and received.  

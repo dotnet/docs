@@ -22,7 +22,7 @@ A URL reservation allows you to restrict who can receive messages from a URL or 
   
  As part of the default operating system configuration, Windows Communication Foundation (WCF) creates a globally accessible reservation for port 80 to enable all users to run applications that use a dual HTTP binding for duplex communication. Because the ACL on this reservation is for everyone, administrators cannot explicitly allow or disallow permission to listen on a URL or set of URLs. This topic explains how to delete this reservation and how to re-create the reservation with a restricted ACL.  
   
- On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)] you can view all of the HTTP URL reservations from an elevated command prompt by typing `netsh http show urlacl`.  The following example shows what a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] URL reservation should resemble.  
+ On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)] you can view all of the HTTP URL reservations from an elevated command prompt by typing `netsh http show urlacl`.  The following example shows what a WCF URL reservation should resemble.  
   
 ```  
 Reserved URL : http://+:80/Temporary_Listen_Addresses/  
@@ -32,7 +32,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
             SDDL: D:(A;;GX;;;WD)  
 ```  
   
- The reservation consists of a URL template used when a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application is using an HTTP dual binding for duplex communication. URLs of this form are used for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service to send messages back to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client when communicating over a HTTP dual binding. Everyone is given permission to listen on the URL but not to delegate listening to another process. Finally, the ACL is described in Security Descriptor Definition Language (SSDL). For more information about SSDL, see [SSDL](http://go.microsoft.com/fwlink/?LinkId=136789)  
+ The reservation consists of a URL template used when a WCF application is using an HTTP dual binding for duplex communication. URLs of this form are used for a WCF service to send messages back to the WCF client when communicating over a HTTP dual binding. Everyone is given permission to listen on the URL but not to delegate listening to another process. Finally, the ACL is described in Security Descriptor Definition Language (SSDL). For more information about SSDL, see [SSDL](http://go.microsoft.com/fwlink/?LinkId=136789)  
   
 ### To delete the WCF URL reservation  
   
@@ -43,7 +43,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
 3.  If the reservation is deleted successfully, the following message is displayed. **URL reservation successfully deleted**  
   
 ## Creating a New Security Group and New Restricted URL Reservation  
- To replace the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] URL reservation with a restricted reservation you must first create a new security group. You can do this in one of two ways: from a command prompt or from the computer management console. You only have to do one.  
+ To replace the WCF URL reservation with a restricted reservation you must first create a new security group. You can do this in one of two ways: from a command prompt or from the computer management console. You only have to do one.  
   
 #### To create a new security group from a command prompt  
   

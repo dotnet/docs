@@ -28,7 +28,7 @@ This scenario shows a Windows Communication Foundation (WCF) client and server s
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Only|  
+|Interoperability|WCF Only|  
 |Authentication (Server)|Mutual authentication of the server and client|  
 |Authentication (Client)|Mutual authentication of the server and client|  
 |Integrity|Yes, using shared security context|  

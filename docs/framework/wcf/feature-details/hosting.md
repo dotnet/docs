@@ -27,16 +27,16 @@ The topics in the section describe service hosting. A service can be hosted by I
  Describes how a Windows Communication Foundation (WCF) service is hosted in Internet Information Services or [Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkId=196496).  
   
  [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md)  
- Describes how a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is hosted by Windows Process Activation Service.  
+ Describes how a WCF service is hosted by Windows Process Activation Service.  
   
  [Hosting in a Windows Service Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-windows-service-application.md)  
- Describes how a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is hosted by a Windows service.  
+ Describes how a WCF service is hosted by a Windows service.  
   
  [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)  
- Describes how a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is hosted in a managed application.  
+ Describes how a WCF service is hosted in a managed application.  
   
  [Configuration-Based Activation in IIS and WAS](../../../../docs/framework/wcf/feature-details/configuration-based-activation-in-iis-and-was.md)  
- Describes how a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is hosted under IIS or WAS without using a .svc file.  
+ Describes how a WCF service is hosted under IIS or WAS without using a .svc file.  
   
  [Supporting Multiple IIS Site Bindings](../../../../docs/framework/wcf/feature-details/supporting-multiple-iis-site-bindings.md)  
  Describes how to specify multiple base addresses for a service using the same URI scheme on a single Web site.  

@@ -100,7 +100,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`choice`|Forbidden|  
 |`sequence`|Supported, maps to data members of a data contract.|  
 |`attribute`|Forbidden, even if use="prohibited" (with one exception). Only optional attributes from the Standard Serialization Schema namespace are supported. They do not map to data members in the data contract programming model. Currently, only one such attribute has meaning and is discussed in the ISerializable section. All others are ignored.|  
-|`attributeGroup`|Forbidden. In the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] v1 release, `DataContractSerializer` ignores the presence of `attributeGroup` inside `xs:complexType`.|  
+|`attributeGroup`|Forbidden. In the WCF v1 release, `DataContractSerializer` ignores the presence of `attributeGroup` inside `xs:complexType`.|  
 |`anyAttribute`|Forbidden.|  
 |(empty)|Maps to a data contract with no data members.|  
   
@@ -210,7 +210,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
  \* When using the `simpleType` and `complexType,` mapping for anonymous types is the same as for non-anonymous types, except that there is no anonymous data contracts, and so a named data contract is created, with a generated name derived from the element name. The rules for anonymous types are in the following list:  
   
--   [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
+-   WCF implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
   
 -   The generated data contract name of the inner type is the data contract name of the outer type followed by a period, the name of the element, and the string "Type".  
   

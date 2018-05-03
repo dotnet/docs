@@ -25,13 +25,13 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Make X.509 Certificates Accessible to WCF
-To make an X.509 certificate accessible to Windows Communication Foundation (WCF), application code must specify the certificate store name and location. In certain circumstances, the process identity must have access to the file that contains the private key associated with the X.509 certificate. To obtain the private key associated with an X.509 certificate in a certificate store, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] must have permission to do so. By default, only the owner and the System account can access the private key of a certificate.  
+To make an X.509 certificate accessible to Windows Communication Foundation (WCF), application code must specify the certificate store name and location. In certain circumstances, the process identity must have access to the file that contains the private key associated with the X.509 certificate. To obtain the private key associated with an X.509 certificate in a certificate store, WCF must have permission to do so. By default, only the owner and the System account can access the private key of a certificate.  
   
 ### To make X.509 certificates accessible to WCF  
   
-1.  Give the account under which [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is running read access to the file that contains the private key associated with the X.509 certificate.  
+1.  Give the account under which WCF is running read access to the file that contains the private key associated with the X.509 certificate.  
   
-    1.  Determine whether [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] requires read access to the private key for the X.509 certificate.  
+    1.  Determine whether WCF requires read access to the private key for the X.509 certificate.  
   
          The following table details whether a private key must be available when using an X.509 certificate.  
   
@@ -59,9 +59,9 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         findprivatekey.exe My CurrentUser -t "46 dd 0e 7a ed 0b 7a 31 9b 02 a3 a0 43 7a d8 3f 60 40 92 9d" -a  
         ```  
   
-    4.  Determine the account that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is running under.  
+    4.  Determine the account that WCF is running under.  
   
-         The following table details the account under which [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is running for a given scenario.  
+         The following table details the account under which WCF is running for a given scenario.  
   
         |Scenario|Process identity|  
         |--------------|----------------------|  
@@ -70,7 +70,7 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         |Service that is hosted in IIS 6.0 ([!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]) or IIS 7.0 ([!INCLUDE[wv](../../../../includes/wv-md.md)]).|NETWORK SERVICE|  
         |Service that is hosted in IIS 5.X ([!INCLUDE[wxp](../../../../includes/wxp-md.md)]).|Controlled by the `<processModel>` element in the Machine.config file. The default account is ASPNET.|  
   
-    5.  Grant read access to the file that contains the private key to the account that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is running under, using a tool such as cacls.exe.  
+    5.  Grant read access to the file that contains the private key to the account that WCF is running under, using a tool such as cacls.exe.  
   
          The following code example edits (/E) the access control list (ACL) for the specified file to grant (/G) the NETWORK SERVICE account read (:R) access to the file.  
   

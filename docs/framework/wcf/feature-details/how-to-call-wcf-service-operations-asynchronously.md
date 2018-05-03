@@ -36,7 +36,7 @@ This topic covers how a client can access a service operation asynchronously. Th
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a /tcv:Version35  
     ```  
   
-     This generates, in addition to the synchronous and standard delegate-based asynchronous operations, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class that contains:  
+     This generates, in addition to the synchronous and standard delegate-based asynchronous operations, a WCF client class that contains:  
   
     -   Two <`operationName`>`Async` operations for use with the event-based asynchronous calling approach. For example:  
   

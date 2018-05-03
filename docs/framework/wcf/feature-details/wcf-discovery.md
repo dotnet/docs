@@ -22,11 +22,11 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Discovery
-Windows Communication Foundation (WCF) provides support to enable services to be discoverable at runtime in an interoperable way using the WS-Discovery protocol. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services can announce their availability to the network using a multicast message or to a discovery proxy server. Client applications can search the network or a discovery proxy server to find services that meet a set of criteria. The topics in this section provide an overview and describe the programming model for this feature in detail.  
+Windows Communication Foundation (WCF) provides support to enable services to be discoverable at runtime in an interoperable way using the WS-Discovery protocol. WCF services can announce their availability to the network using a multicast message or to a discovery proxy server. Client applications can search the network or a discovery proxy server to find services that meet a set of criteria. The topics in this section provide an overview and describe the programming model for this feature in detail.  
   
 ## In This Section  
  [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
- Provides an overview of WS-Discovery support provided by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Provides an overview of WS-Discovery support provided by WCF.  
   
  [WCF Discovery Object Model](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)  
  Describes the classes in the object model and extensibility of WS-Discovery support.  
@@ -44,4 +44,4 @@ Windows Communication Foundation (WCF) provides support to enable services to be
  Shows how to configure Discovery in configuration.  
   
  [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)  
- Shows how to use a Discovery Client Channel when writing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application.
+ Shows how to use a Discovery Client Channel when writing a WCF client application.

@@ -23,9 +23,9 @@ ms.workload:
   - "dotnet"
 ---
 # Working with Certificates
-To program Windows Communication Foundation (WCF) security, X.509 digital certificates are commonly used to authenticate clients and servers, encrypt, and digitally sign messages. This topic briefly explains X.509 digital certificate features and how to use them in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and includes links to topics that explain these concepts further or that show how to accomplish common tasks using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and certificates.  
+To program Windows Communication Foundation (WCF) security, X.509 digital certificates are commonly used to authenticate clients and servers, encrypt, and digitally sign messages. This topic briefly explains X.509 digital certificate features and how to use them in WCF, and includes links to topics that explain these concepts further or that show how to accomplish common tasks using WCF and certificates.  
   
- In brief, a digital certificate is a part of a *public key infrastructure* (PKI), which is a system of digital certificates, certificate authorities, and other registration authorities that verify and authenticate the validity of each party involved in an electronic transaction through the use of public key cryptography. A certification authority issues certificates and each certificate has a set of fields that contain data, such as *subject* (the entity to which the certificate is issued), validity dates (when the certificate is valid), issuer (the entity that issued the certificate), and a public key. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], each of these properties is processed as a <xref:System.IdentityModel.Claims.Claim>, and each claim is further divided into two types: identity and right. For more information about X.509 certificates see [X.509 Public Key Certificates](http://go.microsoft.com/fwlink/?LinkId=209952)For more information about Claims and Authorization in WCF see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md). For more information about implementing a PKI, see [Windows Server 2008 R2 - Certificate Services](http://go.microsoft.com/fwlink/?LinkId=209949).  
+ In brief, a digital certificate is a part of a *public key infrastructure* (PKI), which is a system of digital certificates, certificate authorities, and other registration authorities that verify and authenticate the validity of each party involved in an electronic transaction through the use of public key cryptography. A certification authority issues certificates and each certificate has a set of fields that contain data, such as *subject* (the entity to which the certificate is issued), validity dates (when the certificate is valid), issuer (the entity that issued the certificate), and a public key. In WCF, each of these properties is processed as a <xref:System.IdentityModel.Claims.Claim>, and each claim is further divided into two types: identity and right. For more information about X.509 certificates see [X.509 Public Key Certificates](http://go.microsoft.com/fwlink/?LinkId=209952)For more information about Claims and Authorization in WCF see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md). For more information about implementing a PKI, see [Windows Server 2008 R2 - Certificate Services](http://go.microsoft.com/fwlink/?LinkId=209949).  
   
  A primary function of the certificate is to authenticate the identity of the owner of the certificate to others. A certificate contains the *public key* of the owner, while the owner retains the private key. The public key can be used to encrypt messages sent to the owner of the certificate. Only the owner has access to the private key, so only the owner can decrypt those messages.  
   
@@ -41,7 +41,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
 -   **The current user store**. Interactive applications typically place certificates here for the computer's current user. If you are creating a client application, this is where you typically place certificates that authenticate a user to a service.  
   
- These two stores are further divided into sub-stores. The most important of these when programming with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include:  
+ These two stores are further divided into sub-stores. The most important of these when programming with WCF include:  
   
 -   **Trusted Root Certification Authorities**. You can use the certificates in this store to create a chain of certificates, which can be traced back to a certification authority certificate in this store.  
   
@@ -94,7 +94,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
  When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](../../../../docs/framework/wcf/samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md).  
   
 ## Using Makecert.exe to Build a Certificate Chain  
- The Certificate Creation Tool (Makecert.exe) creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The tool is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, use the following steps to build a chain of trust with Makecert.exe.  
+ The Certificate Creation Tool (Makecert.exe) creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The tool is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing an WCF service, use the following steps to build a chain of trust with Makecert.exe.  
   
 #### To build a chain of trust with Makecert.exe  
   
@@ -132,7 +132,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
  You can also set the mode in configuration using the `revocationMode` attribute of both the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md)) and the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md)).  
   
 ## The SetCertificate Method  
- In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you must often specify a certificate or set of certificates a service or client is to use to authenticate, encrypt, or digitally sign a message. You can do this programmatically by using the `SetCertificate` method of various classes that represent X.509 certificates. The following classes use the `SetCertificate` method to specify a certificate.  
+ In WCF, you must often specify a certificate or set of certificates a service or client is to use to authenticate, encrypt, or digitally sign a message. You can do this programmatically by using the `SetCertificate` method of various classes that represent X.509 certificates. The following classes use the `SetCertificate` method to specify a certificate.  
   
 |Class|Method|  
 |-----------|------------|  
@@ -174,9 +174,9 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
  Mapping an X.509 certificate to the token that represents a Windows user account is considered an elevation of privilege because, once mapped, the Windows token can be used to gain access to protected resources. Therefore, domain policy requires the X.509 certificate to comply with its policy prior to mapping. The *SChannel* security package enforces this requirement.  
   
- When using [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] or later, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ensures the certificate conforms to domain policy before it is mapped to a Windows account.  
+ When using [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] or later, WCF ensures the certificate conforms to domain policy before it is mapped to a Windows account.  
   
- In the first release of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], mapping is done without consulting the domain policy. Therefore it is possible that older applications that used to work when running under the first release, fails if the mapping is enabled and the X.509 certificate does not satisfy the domain policy.  
+ In the first release of WCF, mapping is done without consulting the domain policy. Therefore it is possible that older applications that used to work when running under the first release, fails if the mapping is enabled and the X.509 certificate does not satisfy the domain policy.  
   
 ## See Also  
  <xref:System.ServiceModel.Channels>  

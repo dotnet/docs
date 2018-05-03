@@ -24,7 +24,7 @@ Windows Communication Foundation (WCF) provides support to easily work with synd
   
 ## In This Section  
  [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  
- Provides an overview of syndication support provided by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Provides an overview of syndication support provided by WCF.  
   
  [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)  
  Describes the classes in the object model and the extensibility of syndication.  

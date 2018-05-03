@@ -36,7 +36,7 @@ The preferred way of creating a Windows Communication Foundation (WCF) contract 
   
 3.  Create methods in the class.  
   
-4.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] contract.  
+4.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
   
 ## Example  
  The following code example shows a class that defines a service contract.  

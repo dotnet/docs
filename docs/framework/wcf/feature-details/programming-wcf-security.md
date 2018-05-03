@@ -26,12 +26,12 @@ ms.workload:
 This topic describes the fundamental programming tasks used to create a secure Windows Communication Foundation (WCF) application. This topic covers only authentication, confidentiality, and integrity, collectively known as *transfer security*. This topic does not cover authorization (the control of access to resources or services); for information on authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
   
 > [!NOTE]
->  For a valuable introduction to security concepts, especially in regard to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see the set of patterns and practices tutorials on MSDN at [Scenarios, Patterns, and Implementation Guidance for Web Services Enhancements (WSE) 3.0](http://go.microsoft.com/fwlink/?LinkID=88250).  
+>  For a valuable introduction to security concepts, especially in regard to WCF, see the set of patterns and practices tutorials on MSDN at [Scenarios, Patterns, and Implementation Guidance for Web Services Enhancements (WSE) 3.0](http://go.microsoft.com/fwlink/?LinkID=88250).  
   
- Programming [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security is based on three steps setting the following: the security mode, a client credential type, and the credential values. You can perform these steps either through code or configuration.  
+ Programming WCF security is based on three steps setting the following: the security mode, a client credential type, and the credential values. You can perform these steps either through code or configuration.  
   
 ## Setting the Security Mode  
- The following explains the general steps for programming with the security mode in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]:  
+ The following explains the general steps for programming with the security mode in WCF:  
   
 1.  Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)).  
   

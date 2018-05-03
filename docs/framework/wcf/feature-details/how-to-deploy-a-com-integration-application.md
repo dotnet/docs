@@ -22,7 +22,7 @@ Once you have written a COM+ integration application, you may want to deploy it 
   
 ### Moving a COM+ hosted Integration App  
   
-1.  Ensure that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is installed on both machines.  
+1.  Ensure that WCF is installed on both machines.  
   
 2.  Export the application from machine A.  
   
@@ -36,7 +36,7 @@ Once you have written a COM+ integration application, you may want to deploy it 
   
 ### Moving a Web-hosted integration application  
   
-1.  Ensure that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is installed on both machines.  
+1.  Ensure that WCF is installed on both machines.  
   
 2.  Export the application from machine A.  
   

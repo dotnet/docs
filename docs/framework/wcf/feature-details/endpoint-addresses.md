@@ -58,7 +58,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 -   Binding Information: IP Address, Port, Host header  
   
- IIS can specify multiple bindings for each site, which results in multiple base addresses for each scheme. Prior to [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] did not support multiple addresses for a schema and, if they were specified, threw a <xref:System.ArgumentException> during activation.  
+ IIS can specify multiple bindings for each site, which results in multiple base addresses for each scheme. Prior to [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], WCF did not support multiple addresses for a schema and, if they were specified, threw a <xref:System.ArgumentException> during activation.  
   
  The [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] enables Internet service providers to host multiple applications with different base addresses for the same scheme on the same site.  
   
@@ -106,7 +106,7 @@ Every endpoint has an address associated with it, which is used to locate and id
  For details and examples, see [Supporting Multiple IIS Site Bindings](../../../../docs/framework/wcf/feature-details/supporting-multiple-iis-site-bindings.md) and <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A>.  
   
 ## Extending Addressing in WCF Services  
- The default addressing model of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services uses the endpoint address URI for the following purposes:  
+ The default addressing model of WCF services uses the endpoint address URI for the following purposes:  
   
 -   To specify the service listening address, the location at which the endpoint listens for messages,  
   

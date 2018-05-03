@@ -81,7 +81,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  During serialization, when the declared type is an interface, the actual instance type used can be any type that implements that interface. Restrictions discussed previously (having a default constructor and an `Add` method) do not apply. For example, you can set addresses in Customer2 to an instance of Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of Address, even though you cannot directly declare a data member of type Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>.  
   
- During deserialization, when the declared type is an interface, the serialization engine chooses a type that implements the declared interface, and the type is instantiated. The known types mechanism (described in [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)) has no effect here; the choice of type is built into [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ During deserialization, when the declared type is an interface, the serialization engine chooses a type that implements the declared interface, and the type is instantiated. The known types mechanism (described in [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)) has no effect here; the choice of type is built into WCF.  
   
 ## Customizing Collection Types  
  You can customize collection types by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute, which has several uses.  
@@ -230,7 +230,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
 ## Collections and Schema  
  All equivalent collections have the same representation in XML Schema definition language (XSD) schema. Because of this, you normally do not get the same collection type in the generated client code as the one on the server. For example, the server may use a data contract with a Generic <xref:System.Collections.Generic.List%601> of Integer data member, but in the generated client code the same data member may become an array of integers.  
   
- Dictionary collections are marked with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-specific schema annotation that indicate that they are dictionaries; otherwise, they are indistinguishable from simple lists that contain entries with a key and a value. For an exact description of how collections are represented in data contract schema, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+ Dictionary collections are marked with a WCF-specific schema annotation that indicate that they are dictionaries; otherwise, they are indistinguishable from simple lists that contain entries with a key and a value. For an exact description of how collections are represented in data contract schema, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  By default, types are not generated for non-customized collections in imported code. Data members of list collection types are imported as arrays, and data members of dictionary collection types are imported as Generic Dictionary.  
   

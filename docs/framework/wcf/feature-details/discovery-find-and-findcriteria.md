@@ -28,7 +28,7 @@ A discovery find operation is initiated by a client to discover one or more serv
   
  Search criteria include:  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - Optional. The contract name of the service being searched for and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts reply. Note that in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] an endpoint can only support one contract.  
+-   <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - Optional. The contract name of the service being searched for and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts reply. Note that in WCF an endpoint can only support one contract.  
   
 -   <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - Optional. Scopes are absolute URIs that are used to categorize individual service endpoints. You may want to use this in scenarios where multiple endpoints expose the same contract and you want a way to search for a subset of the endpoints. If more than one scope is specified, only service endpoints matching ALL scopes reply.  
   

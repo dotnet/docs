@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Expose a Feed as Both Atom and RSS
-Windows Communication Foundation (WCF) allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes a syndication feed using both Atom 1.0 and RSS 2.0. This service exposes one endpoint that can return either syndication format. For simplicity the service used in this sample is self hosted. In a production environment a service of this type would be hosted under IIS or WAS. For more information about the different [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting options, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
+Windows Communication Foundation (WCF) allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes a syndication feed using both Atom 1.0 and RSS 2.0. This service exposes one endpoint that can return either syndication format. For simplicity the service used in this sample is self hosted. In a production environment a service of this type would be hosted under IIS or WAS. For more information about the different WCF hosting options, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
   
 ### To create a basic syndication service  
   

@@ -47,7 +47,7 @@ This topic describes how to create a long-running workflow service. Long running
   
 1.  Create an empty [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] solution, name it `OrderProcessing`.  
   
-2.  Add a new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Workflow Service Application project called `OrderService` to the solution.  
+2.  Add a new WCF Workflow Service Application project called `OrderService` to the solution.  
   
 3.  In the project properties dialog, select the **Web** tab.  
   

@@ -32,7 +32,7 @@ With Windows Communication Foundation (WCF), you can create clients that communi
  Lists the design issues to be aware of when creating federated services or clients.  
   
  [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- Describes the basics of creating a federated client with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes the basics of creating a federated client with WCF.  
   
  [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
  Describes the steps of creating a federated service.  

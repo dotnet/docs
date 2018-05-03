@@ -27,7 +27,7 @@ ms.workload:
 |-------------------------|-----------------|  
 |None|The server application does not attempt to impersonate the client.|  
 |Anonymous|The server application can perform access checks against the client's credentials, but does not receive any information about the client's identity. This impersonation level is meaningful only for on-machine communication, such as named pipes. Using `Anonymous` with a remote connection promotes the impersonation level to Identify.|  
-|Identify|The server application knows the client's identity and can perform access validation against the client's credentials, but cannot impersonate the client. Identify is the default impersonation level used with SSPI credentials in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] unless the token provider provides a different impersonation level.|  
+|Identify|The server application knows the client's identity and can perform access validation against the client's credentials, but cannot impersonate the client. Identify is the default impersonation level used with SSPI credentials in WCF unless the token provider provides a different impersonation level.|  
 |Impersonate|The server application can access resources on the server machine as the client in addition to performing access checks. The server application cannot access resources on remote machines using the client's identity because the impersonated token does not have network credentials|  
 |Delegate|In addition to having the same capabilities as `Impersonate`, the Delegate impersonation level also enables the server application to access resources on remote machines using the client's identity and to pass the identity to other applications.<br /><br /> **Important** The server domain account must be marked as trusted for delegation on the domain controller to use these additional features. This level of impersonation cannot be used with client domain accounts marked as sensitive.|  
   
@@ -36,12 +36,12 @@ ms.workload:
  Using impersonation at the `Impersonate` or `Delegate` levels requires the server application to have the `SeImpersonatePrivilege` privilege. An application has this privilege by default if it is running on an account in the Administrators group or on an account with a Service SID (Network Service, Local Service, or Local System). Impersonation does not require mutual authentication of the client and server. Some authentication schemes that support impersonation, such as NTLM, cannot be used with mutual authentication.  
   
 ## Transport-Specific Issues with Impersonation  
- The choice of a transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] affects the possible choices for impersonation. This section describes issues affecting the standard HTTP and named pipe transports in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Custom transports have their own restrictions on support for impersonation.  
+ The choice of a transport in WCF affects the possible choices for impersonation. This section describes issues affecting the standard HTTP and named pipe transports in WCF. Custom transports have their own restrictions on support for impersonation.  
   
 ### Named Pipe Transport  
  The following items are used with the named pipe transport:  
   
--   The named pipe transport is intended for use only on the local machine. The named pipe transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] explicitly disallows cross-machine connections.  
+-   The named pipe transport is intended for use only on the local machine. The named pipe transport in WCF explicitly disallows cross-machine connections.  
   
 -   Named pipes cannot be used with the `Impersonate` or `Delegate` impersonation level. The named pipe cannot enforce the on-machine guarantee at these impersonation levels.  
   

@@ -32,7 +32,7 @@ Sometimes a client and a service do not share the same types. They can still pas
   
 -   Data members have only names, but no namespaces.  
   
--   When processing data contracts, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure is case-sensitive to both the namespaces and the names of data contracts and data members.  
+-   When processing data contracts, the WCF infrastructure is case-sensitive to both the namespaces and the names of data contracts and data members.  
   
 ## Data Contract Namespaces  
  A data contract namespace takes the form of a Uniform Resource Identifier (URI). The URI can be either absolute or relative. By default, data contracts for a particular type are assigned a namespace that comes from the common language runtime (CLR) namespace of that type.  

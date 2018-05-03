@@ -30,7 +30,7 @@ The following scenario shows a client and service secured by Windows Communicati
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] only|  
+|Interoperability|WCF only|  
 |Authentication (Server)|Initial negotiation requires server authentication, but not client authentication|  
 |Authentication (Client)|None|  
 |Integrity|Yes, using shared security context|  

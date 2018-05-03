@@ -84,7 +84,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 ### Implement the workflow service  
   
-1.  Add a new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Workflow Service, called `WorkflowService` to the `Common` project. To do this right click the `Common` project, select **Add**, **New Item ...**, Select **Workflow** under **Installed Templates** and select **WCF Workflow Service**.  
+1.  Add a new WCF Workflow Service, called `WorkflowService` to the `Common` project. To do this right click the `Common` project, select **Add**, **New Item ...**, Select **Workflow** under **Installed Templates** and select **WCF Workflow Service**.  
   
      ![Adding a Workflow Service](../../../../docs/framework/wcf/feature-details/media/addwfservice.JPG "AddWFService")  
   

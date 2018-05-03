@@ -52,7 +52,7 @@ In a connected system, services and clients depend on the exchange of data to ac
  Describes items to be aware of when programming data transfer and serialization.  
   
  [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)  
- Describes a view of the overall design of data transfer in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes a view of the overall design of data transfer in WCF.  
   
 ## Reference  
  <xref:System.ServiceModel>  

@@ -23,7 +23,7 @@ ms.workload:
 # Access Control Mechanisms
 You can control access in several way with Windows Communication Foundation (WCF). This topic briefly discusses the various mechanisms and provides suggestions on when to use each; it is intended to help you select the correct mechanism to use. The access technologies are listed in order of complexity. The simplest is the <xref:System.Security.Permissions.PrincipalPermissionAttribute>; the most complex is the Identity Model.  
   
- In addition to these mechanisms, impersonation and delegation with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is explained in [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+ In addition to these mechanisms, impersonation and delegation with WCF is explained in [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
 ## PrincipalPermissionAttribute  
  The <xref:System.Security.Permissions.PrincipalPermissionAttribute> is used to restrict access to a service method. When the attribute is applied to a method, it can be used to demand a specific caller's identity or membership in a Windows group or [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role. If the client is authenticated using an X.509 certificate, it is given a primary identity that consists of the subject name plus the thumbprint of the certificate.  
@@ -36,16 +36,16 @@ You can control access in several way with Windows Communication Foundation (WCF
  A feature of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] is the membership provider. Even though the membership provider is not technically an access control mechanism, it allows controlling access to the service by limiting the set of possible identities that can access the service's endpoint. The membership feature includes a database that can be populated with user name/password combinations that enable users of a Web site to establish accounts with the site. To access a service that uses the membership provider, a user must log on with his or her user name and password.  
   
 > [!NOTE]
->  You must first populate the database using the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] feature before a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service can use it for authorization purposes.  
+>  You must first populate the database using the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] feature before a WCF service can use it for authorization purposes.  
   
  You can also use the membership feature if you already have a membership database from an existing [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site and you want to enable the same users to use your service, authorized with the same user names and passwords.  
   
- For more information about using the membership feature in a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, see [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md).  
+ For more information about using the membership feature in a WCF service, see [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md).  
   
 ## ASP.NET Role Provider  
- Another feature of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] is the ability to manage authorization using roles. The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider enables a developer to create roles for users and to assign each user to a role or roles. As with the membership provider, the roles and assignments are stored in a database, and can be populated using tools provided by a particular implementation of the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider. As with the membership feature, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] developers can use the information in the database to authorize service users by roles. They can, for example, use the role provider in combination with the `PrincipalPermissionAttribute` access control mechanism described above.  
+ Another feature of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] is the ability to manage authorization using roles. The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider enables a developer to create roles for users and to assign each user to a role or roles. As with the membership provider, the roles and assignments are stored in a database, and can be populated using tools provided by a particular implementation of the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider. As with the membership feature, WCF developers can use the information in the database to authorize service users by roles. They can, for example, use the role provider in combination with the `PrincipalPermissionAttribute` access control mechanism described above.  
   
- You can also use the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider if you have an existing [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider database and want to use the same set of rules and user assignments in your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+ You can also use the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider if you have an existing [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider database and want to use the same set of rules and user assignments in your WCF service.  
   
  For more information about using the role provider feature, see [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md).  
   
@@ -54,7 +54,7 @@ You can control access in several way with Windows Communication Foundation (WCF
   
  You can also use AzMan and the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider if you already have access to an existing AzMan installation and want to authorize your service users using the features of the AzMan/role provider combination.  
   
- For more information about AzMan and the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider, see [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](http://go.microsoft.com/fwlink/?LinkId=88951). For more information about using AzMan and the role provider for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services, see [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
+ For more information about AzMan and the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider, see [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](http://go.microsoft.com/fwlink/?LinkId=88951). For more information about using AzMan and the role provider for WCF services, see [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
   
 ## Identity Model  
  The Identity Model is a set of APIs that enable you to manage claims and policies to authorize clients. With the Identity Model, you can examine every claim contained in credentials that the caller used to authenticate itself to the service, compare the claims to the set of policies for the service, and grant or deny access based on the comparison.  

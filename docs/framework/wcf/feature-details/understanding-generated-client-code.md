@@ -30,7 +30,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framewor
   
 -   Identifying service contract interfaces.  
   
--   Identifying the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class.  
+-   Identifying the WCF client class.  
   
 -   Identifying data types.  
   
@@ -47,14 +47,14 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framewor
   
  [!code-csharp[C_GeneratedCodeFiles#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#12)]  
   
- You can use the generated service contract interface along with the <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> class to create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel object with which to invoke service operations. For more information, see [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md).  
+ You can use the generated service contract interface along with the <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> class to create a WCF channel object with which to invoke service operations. For more information, see [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md).  
   
 ### Finding WCF Client Classes  
- To locate the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class that implements the service contract you want to use, search for an extension of <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>, where the type parameter is the service contract interface that you previously located and that extends that interface. The following code example shows the <xref:System.ServiceModel.ClientBase%601> class of type `ISampleService`.  
+ To locate the WCF client class that implements the service contract you want to use, search for an extension of <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>, where the type parameter is the service contract interface that you previously located and that extends that interface. The following code example shows the <xref:System.ServiceModel.ClientBase%601> class of type `ISampleService`.  
   
  [!code-csharp[C_GeneratedCodeFiles#14](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#14)]  
   
- You can use this [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class by creating a new instance of it and calling the methods it implements. Those methods invoke the service operation with which it is designed and configured to interact. For more information, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md).  
+ You can use this WCF client class by creating a new instance of it and calling the methods it implements. Those methods invoke the service operation with which it is designed and configured to interact. For more information, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md).  
   
 > [!NOTE]
 >  When SvcUtil.exe generates a WCF client class, it adds a <xref:System.Diagnostics.DebuggerStepThroughAttribute> to the client class that prevents debuggers from stepping through the WCF client class.  

@@ -61,7 +61,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
   
 -   Application messages.  
   
- The first three message classes are considered Transaction Manager messages and their binding configuration is described in the "Application Message Exchange" later in this topic. The fourth class of message is application to application messages and is described in the "Message Examples" section later in this topic. This section describes the protocol bindings used for each of these classes by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ The first three message classes are considered Transaction Manager messages and their binding configuration is described in the "Application Message Exchange" later in this topic. The fourth class of message is application to application messages and is described in the "Message Examples" section later in this topic. This section describes the protocol bindings used for each of these classes by WCF.  
   
  The following XML Namespaces and associated prefixes are used throughout this document.  
   
@@ -91,12 +91,12 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 -   B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
   
 #### Activation and Registration Binding Configuration  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
+ WCF requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
   
 #### 2PC Protocol Binding Configuration  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
+ WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
- B2131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s 2PC messages.  
+ B2131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ### Transaction Manager Mixed Security Binding  
  This is an alternate (mixed mode) binding that uses transport security combined with the  WS-Coordination Issued Token model for identity establishment purposes.  Activation and Registration are the only elements that differ between the two bindings.  
@@ -107,7 +107,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 #### Activation Message Binding Configuration  
  Activation Messages usually do not participate in interoperability because they typically occur between an application and its local Transaction Manager.  
   
- B1221: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08.  
+ B1221: WCF uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08.  
   
  WS-Atomic Transaction specification, Section 8, describes further details about correlation and the message exchange patterns.  
   
@@ -118,7 +118,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
  A new `t:IssuedTokens` header should be generated for attaching to the outgoing `wscoor:CreateCoordinationContextResponse` message.  
   
 #### Registration Message Binding Configuration  
- B1231: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08.  
+ B1231: WCF uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08.  
   
  WS-AtomicTransaction, Section 8, describes further details about correlation and descriptions of the message exchange patterns.  
   
@@ -127,9 +127,9 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
  The `wsse:Timestamp` element must be signed using the `SecurityContextToken``STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
+ WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
- B2131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s 2PC messages.  
+ B2131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ## Application Message Exchange  
  Applications are free to use any particular binding for application-to-application messages, as long as the binding meets the following security requirements:  
@@ -138,9 +138,9 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
   
 -   R2002: Integrity and confidentiality of `t:IssuedToken` must be provided.  
   
- The `CoordinationContext` header contains `wscoor:Identifier`. While the definition of `xsd:AnyURI` allows the use of both absolute and relative URIs, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports only `wscoor:Identifiers`, which are absolute URIs.  
+ The `CoordinationContext` header contains `wscoor:Identifier`. While the definition of `xsd:AnyURI` allows the use of both absolute and relative URIs, WCF supports only `wscoor:Identifiers`, which are absolute URIs.  
   
- If the `wscoor:Identifier` of the `wscoor:CoordinationContext` is a relative URI, faults will be returned from transactional [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
+ If the `wscoor:Identifier` of the `wscoor:CoordinationContext` is a relative URI, faults will be returned from transactional WCF services.  
   
 ## Message Examples  
   

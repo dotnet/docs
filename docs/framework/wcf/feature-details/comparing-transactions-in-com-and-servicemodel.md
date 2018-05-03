@@ -21,9 +21,9 @@ ms.workload:
 This topic discusses how to simulate the behavior of a transactional COM+ service using the Windows Communication Foundation (WCF) attributes the <xref:System.ServiceModel> namespace provides.  
   
 ## Emulating COM+ Using ServiceModel Attributes  
- The following table compares the <xref:System.EnterpriseServices.TransactionOption> enumeration used to create an `EnterpriseServices` transaction and how they correlate to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] attributes the <xref:System.ServiceModel> namespace provides.  
+ The following table compares the <xref:System.EnterpriseServices.TransactionOption> enumeration used to create an `EnterpriseServices` transaction and how they correlate to the WCF attributes the <xref:System.ServiceModel> namespace provides.  
   
-|COM+ attribute|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] attributes|  
+|COM+ attribute|WCF attributes|  
 |---------------------|------------------------------------------------------------------------|  
 |RequiresNew|<xref:System.ServiceModel.TransactionFlowAttribute> is set to <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `true`.<br /><br /> The `TransactionFlow` attribute in the binding element is `false`.|  
 |Required|<xref:System.ServiceModel.TransactionFlowAttribute> is set to <xref:System.ServiceModel.TransactionFlowOption.Allowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `true`.<br /><br /> The `TransactionFlow` attribute in the binding element is `true`.|  

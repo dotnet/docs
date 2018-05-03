@@ -23,7 +23,7 @@ A *replay attack* occurs when an attacker copies a stream of messages between tw
 ## Bindings May Be Subject to Reflection Attacks  
  *Reflection attacks* are replays of messages back to a sender as if they came from the receiver as the reply. The standard *replay detection* in the Windows Communication Foundation (WCF) mechanism does not automatically handle this.  
   
- Reflection attacks are mitigated by default because the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service model adds a signed message ID to request messages and expects a signed `relates-to` header on response messages. Consequently, the request message cannot be replayed as a response. In secure reliable message (RM) scenarios, reflection attacks are mitigated because:  
+ Reflection attacks are mitigated by default because the WCF service model adds a signed message ID to request messages and expects a signed `relates-to` header on response messages. Consequently, the request message cannot be replayed as a response. In secure reliable message (RM) scenarios, reflection attacks are mitigated because:  
   
 -   The create sequence and create sequence response message schemas are different.  
   

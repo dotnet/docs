@@ -12,25 +12,26 @@ manager: wpickett
 ---
 # ML.NET Guide
 
-ML.NET is a free, open-source, and cross-platform machine learning framework to build custom AI solutions and integrate them into your .NET applications. This guide provides many resources about working with ML.NET.
+ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications. This guide provides many resources about working with ML.NET.
 
 For more information about ML.NET, visit our [What is ML.NET]() page.
 
 ## Get started
-To get started with ML.NET right away, visit the [in-browser tutorial]() or [download the UI](). Or, check out the [tutorials](tutorials/index.md) below for more in-depth samples.
+To get started with ML.NET check out the [Iris Petal Prediction quickstart]() or the more in-depth [tutorials](tutorials/index.md) below.
 
 ## How the ML.NET guide is organized
 
 There are several sections in the ML.NET Guide. You can read them in order, or jump directly to what interests you the most.
 
 **[Tutorials](tutorials/index.md)**
-   In this section you will find step-by-step tutorials that will guide you through building custom AI models for common developer scenarios. You can also find more information on [What Scenario Should I Choose?]().
+   
 
-**[UI Overview]()**
-   Learn about how to use the UI to build your custom AI models and then generate C# code to infuse into your .NET application.
+In this section you will find step-by-step tutorials that will guide you through building custom machine learning models for common developer scenarios. 
 
 **[Glossary](resources/glossary.md)**
-   Find a list of Machine Learning terminology and their definitions.
+  
+
+ Find a list of Machine Learning terminology and their definitions.
 
 ## See also
 ## API reference

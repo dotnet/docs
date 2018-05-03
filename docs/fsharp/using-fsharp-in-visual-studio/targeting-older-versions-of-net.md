@@ -1,12 +1,7 @@
 ---
 title: Targeting .NET Framework 2.0 on Windows 8
 description: Learn about targeting older version of the .NET Framework when using F#.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Targeting Older Versions of .NET
 

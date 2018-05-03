@@ -1,12 +1,7 @@
 ---
 title: let Bindings (F#)
 description: Learn how to use an F# 'let' binding, which associates an identifier with a value or function.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # let Bindings
 

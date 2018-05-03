@@ -1,12 +1,7 @@
 ---
 title: Indexed Properties (F#)
 description: Learn about F# indexed properties, which are properties that provide array-like access to ordered data.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Indexed Properties
 

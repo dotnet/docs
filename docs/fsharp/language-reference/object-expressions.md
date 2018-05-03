@@ -1,12 +1,7 @@
 ---
 title: Object Expressions (F#)
 description: Learn how to use F# object expressions when you want to avoid the extra code and overhead required to create a new, named type.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Object Expressions
 

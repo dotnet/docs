@@ -1,12 +1,7 @@
 ---
 title: Events (F#)
 description: Learn how F# events enable you to associate function calls with user actions, which are important in GUI programming.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Events
 

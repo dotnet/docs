@@ -1,12 +1,7 @@
 ---
 title: Flexible Types (F#)
 description: Learn how to use F# flexible type annotation, which indicates that a parameter, variable, or value has a type that is compatible with a specified type.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Flexible Types
 

@@ -1,12 +1,7 @@
 ---
 title: "Tutorial: Create a Type Provider (F#)"
 description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Tutorial: Create a Type Provider
 

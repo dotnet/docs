@@ -1,12 +1,7 @@
 ---
 title: Enumerations (F#)
 description: Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Enumerations
 

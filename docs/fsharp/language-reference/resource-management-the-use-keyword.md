@@ -1,12 +1,7 @@
 ---
 title: "Resource Management: The use Keyword (F#)"
 description: Learn about the F# keyword 'use' and the 'using' function, which can control the initialization and release of resources.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Resource Management: The use Keyword
 

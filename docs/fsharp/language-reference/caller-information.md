@@ -1,12 +1,7 @@
 ---
 title: Caller information (F#)
 description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
-author: cartermp
-ms.author: phcart
 ms.date: 04/25/2017
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Caller information
 

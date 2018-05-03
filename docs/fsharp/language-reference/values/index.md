@@ -1,12 +1,7 @@
 ---
 title: Values (F#)
 description: Learn how values in F# are quantities that have a specific type.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Values
 

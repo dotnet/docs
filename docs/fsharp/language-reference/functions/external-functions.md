@@ -1,12 +1,7 @@
 ---
 title: External Functions (F#)
 description: Learn about the F# language support for calling functions in native code.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # External Functions
 

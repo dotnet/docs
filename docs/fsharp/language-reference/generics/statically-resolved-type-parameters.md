@@ -1,12 +1,7 @@
 ---
 title: Statically Resolved Type Parameters (F#)
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Statically Resolved Type Parameters
 

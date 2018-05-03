@@ -1,12 +1,7 @@
 ---
 title: Properties (F#)
 description: Learn about F# properties, which are members that represent values associated with an object.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Properties
 

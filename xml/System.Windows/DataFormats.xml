@@ -41,7 +41,7 @@
 |<xref:System.Windows.DataFormats.Serializable>|"PersistentObject"|Specifies a data format that encapsulates any type of serializable data objects.|  
 |<xref:System.Windows.DataFormats.StringFormat>|"System.String"|Specifies the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] string class data format.|  
 |<xref:System.Windows.DataFormats.SymbolicLink>|"SymbolicLink"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] symbolic link data format.|  
-|<xref:System.Windows.DataFormats.Text>|"Text"|Specifies the [!INCLUDE[TLA#tla_ansi](~/includes/tlasharptla-ansi-md.md)] text data format.|  
+|<xref:System.Windows.DataFormats.Text>|"Text"|Specifies the ANSI text data format.|  
 |<xref:System.Windows.DataFormats.Tiff>|"TaggedImageFileFormat"|Specifies the [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] data format.|  
 |<xref:System.Windows.DataFormats.UnicodeText>|"UnicodeText"|Specifies the [!INCLUDE[TLA#tla_unicode](~/includes/tlasharptla-unicode-md.md)] text data format.|  
 |<xref:System.Windows.DataFormats.WaveAudio>|"WaveAudio"|Specifies the wave audio data format.|  
@@ -664,7 +664,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the [!INCLUDE[TLA#tla_ansi](~/includes/tlasharptla-ansi-md.md)] text data format.</summary>
+        <summary>Specifies the ANSI text data format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

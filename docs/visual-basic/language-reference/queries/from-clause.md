@@ -1,12 +1,6 @@
 ---
 title: "From Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QueryFrom"
   - "vb.QueryFromIn"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "From clause [Visual Basic]"
   - "From statement [Visual Basic]"
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # From Clause (Visual Basic)
 Specifies one or more range variables and a collection to query.  

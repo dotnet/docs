@@ -1,21 +1,12 @@
 ---
 title: "End of statement expected"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30205"
   - "vbc30205"
 helpviewer_keywords: 
   - "BC30205"
 ms.assetid: 53c7f825-a737-4b76-a1fa-f67745b8bd40
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # End of statement expected
 The statement is syntactically complete, but an additional programming element follows the element that completes the statement. A line terminator is required at the end of every statement.

@@ -1,11 +1,6 @@
 ---
 title: "-link (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"
   - "EmbedInteropTypes"
@@ -16,8 +11,6 @@ helpviewer_keywords:
   - "-l compiler option [Visual Basic]"
   - "/l compiler option [Visual Basic]"
 ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -link (Visual Basic)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  

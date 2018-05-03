@@ -1,21 +1,12 @@
 ---
 title: "IsTrue Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.istrue"
 helpviewer_keywords: 
   - "IsTrue operator [Visual Basic]"
   - "OrElse operator [Visual Basic]"
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # IsTrue Operator (Visual Basic)
 Determines whether an expression is `True`.  

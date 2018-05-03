@@ -1,12 +1,6 @@
 ---
 title: "Dim Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Dim"
   - "Dim"
@@ -35,9 +29,6 @@ helpviewer_keywords:
   - "Dim statement [Visual Basic], syntax"
   - "variables [Visual Basic], member and local"
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
-caps.latest.revision: 72
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Dim Statement (Visual Basic)
 Declares and allocates storage space for one or more variables.  

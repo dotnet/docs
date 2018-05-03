@@ -1,12 +1,6 @@
 ---
 title: "Xor Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Xor"
 helpviewer_keywords: 
@@ -20,9 +14,6 @@ helpviewer_keywords:
   - "Xor keyword [Visual Basic]"
   - "bitwise comparison [Visual Basic]"
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Xor Operator (Visual Basic)
 Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusion on two numeric expressions.  

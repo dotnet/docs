@@ -1,20 +1,12 @@
 ---
 title: "Array bounds cannot appear in type specifiers"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30638"
   - "bc30638"
 helpviewer_keywords: 
   - "BC30638"
 ms.assetid: 93b654f4-70fa-4a48-baed-ffae42075550
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Array bounds cannot appear in type specifiers
 Array sizes cannot be declared as part of a data type specifier.  

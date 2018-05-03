@@ -1,11 +1,6 @@
 ---
 title: "User-Defined Data Type"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "UserDefined"
   - "UDT"
@@ -28,9 +23,6 @@ helpviewer_keywords:
   - "user-defined data types"
   - "types [Visual Basic], user-defined"
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # User-Defined Data Type
 Holds data in a format you define. The `Structure` statement defines the format.  

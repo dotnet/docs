@@ -1,20 +1,12 @@
 ---
 title: "Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.WebServices object [Visual Basic], developing applications"
   - "My.Forms object [Visual Basic], developing applications"
   - "rapid application development (RAD), My.Forms"
   - "rapid application development (RAD), My.WebServices"
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic)
 The [My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md) and [My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md) objects provide access to forms, data sources, and XML Web services used by your application. They do this by providing collections of *default instances* of each of these objects.  

@@ -1,12 +1,6 @@
 ---
 title: "Option Strict Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Strict"
   - "vb.OptionStrict"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "late binding [Visual Basic]"
   - "implicit conversions [Visual Basic]"
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
-caps.latest.revision: 49
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Strict Statement
 Restricts implicit data type conversions to only widening conversions, disallows late binding, and disallows implicit typing that results in an `Object` type.  

@@ -1,21 +1,12 @@
 ---
 title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc40032"
   - "bc40032"
 helpviewer_keywords: 
   - "BC40032"
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Underlying type &lt;typename&gt; of Enum is not CLS-compliant
 The data type specified for this enumeration is not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS). This is not an error within your component, because the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] and Visual Basic support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.  

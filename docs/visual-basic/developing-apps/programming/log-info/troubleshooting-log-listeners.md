@@ -1,21 +1,11 @@
 ---
 title: "Troubleshooting: Log Listeners (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "event logs, troubleshooting"
   - "troubleshooting Visual Basic, event logs"
   - "troubleshooting event logs"
 ms.assetid: ac6eb760-3d5d-461e-aedd-40599ee22e49
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting: Log Listeners (Visual Basic)
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application.  

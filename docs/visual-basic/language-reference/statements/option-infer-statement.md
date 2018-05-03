@@ -1,12 +1,6 @@
 ---
 title: "Option Infer Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.OptionInfer"
   - "vb.Infer"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "declaring variables [Visual Basic], inferred"
   - "inferred variable declaration"
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
-caps.latest.revision: 72
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Infer Statement
 Enables the use of local type inference in declaring variables.  

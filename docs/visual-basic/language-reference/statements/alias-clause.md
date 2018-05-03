@@ -1,20 +1,11 @@
 ---
 title: "Alias Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Alias"
 helpviewer_keywords: 
   - "Alias keyword [Visual Basic]"
 ms.assetid: 58c06b11-465d-4d87-906a-73200a3d7f19
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Alias Clause (Visual Basic)
 Indicates that an external procedure has another name in its DLL.  

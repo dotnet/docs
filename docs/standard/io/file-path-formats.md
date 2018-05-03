@@ -1,7 +1,6 @@
 ---
 title: "File path formats on Windows systems"
 ms.date: "04/25/2018"
-ms.prod: ".net"
 ms.technology: dotnet-standard
 ms.topic: "article"
 helpviewer_keywords: 
@@ -26,7 +25,7 @@ A standard DOS path can consist of three components:
 - A directory name. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates subdirectories within the nested directory hierarchy.
 - An optional filename. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates the file path and the filename.
 
-If all three components are present, the path is absolute. If no volume or drive letter is specified and the directory names begins with the [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>), the path is relative from the root of the current drive is assumed. Otherwise, the path is relative to the current directory. The following table shows some possible directory and file paths.
+If all three components are present, the path is absolute. If no volume or drive letter is specified and the directory names begins with the [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>), the path is relative from the root of the current drive. Otherwise, the path is relative to the current directory. The following table shows some possible directory and file paths.
 
 |Path  |Description  |
 | -- | -- |
@@ -118,7 +117,7 @@ If a path isn't fully qualified, Windows applies the current directory to it. UN
 
 If the path starts with a single component separator, the drive from the current directory is applied. For example, if the file path is `\utilities` and the current directory is `C:\temp\`, normalization produces `C:\utilities`.
 
-If the path starts with a drive letter, volume separator, and no component separator, the last current directory set from the command shell for the specified drive is applied. If the last current directory was not set, the drive alone is applied. For example, if the file path is `D:sources`, the current directory is `C:\Documents\`, and the last current directory on drive D: was `D:\sources\`, the result is `D:\sources\sources. These "drive relative" paths are a common source of program and script logic errors. Assuming that a path beginning with a letter and a colon isn't relative is obviously not correct.
+If the path starts with a drive letter, volume separator, and no component separator, the last current directory set from the command shell for the specified drive is applied. If the last current directory was not set, the drive alone is applied. For example, if the file path is `D:sources`, the current directory is `C:\Documents\`, and the last current directory on drive D: was `D:\sources\`, the result is `D:\sources\sources`. These "drive relative" paths are a common source of program and script logic errors. Assuming that a path beginning with a letter and a colon isn't relative is obviously not correct.
 
 If the path starts with something other than a separator, the current drive and current directory are applied. For example, if the path is `filecompare` and the current directory is `C:\utilities\`, the result is `C:\utilities\filecompare\`.
 
@@ -150,7 +149,7 @@ Along with the runs of separators and relative segments removed earlier, some ad
 
 - If the path doesn't end in a separator, all trailing periods and spaces (U+0020) are removed. If the last segment is simply a single or double period, it falls under the relative components rule above. 
 
-   This rule leads to the possibly surprising ability to create a directory with a trailing space. You simply need to add a trailing separator to do so.
+   This rule mans that you can create a directory name with a trailing space by adding a trailing separator after the space. Trailing spaces can make it difficult to access a directory.
 
 ## Skipping normalization
 
@@ -160,9 +159,9 @@ Why would you want to skip normalization? There are three major reasons:
 
 1. To get access to paths that are normally unavailable but are legal. A file or directory called `hidden.`, for example, is impossible to access in any other way. 
 
-2. To improve performance by skipping normalization if you've already normalized.
+1. To improve performance by skipping normalization if you've already normalized.
 
-3. To skip the `MAX_PATH` check for path length to allowing for paths that are greater than 259 characters. Most APIs allow this, with some notable exceptions, such as the [GetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa364934(v=vs.85).aspx) and [SetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa365530(v=vs.85).aspx) functions.
+1. To skip the `MAX_PATH` check for path length to allowing for paths that are greater than 259 characters. Most APIs allow this, with some notable exceptions, such as the [GetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa364934(v=vs.85).aspx) and [SetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa365530(v=vs.85).aspx) functions.
 
 Skipping normalization and max path checks is the only difference between the two device path syntaxes; they are otherwise identical. Be carefully with skipping normalization, since you can easily create paths that are difficult for "normal" applications to deal with.
 

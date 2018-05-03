@@ -1,26 +1,12 @@
 ---
 title: "Arranging Controls on Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "VisualSelection"
 helpviewer_keywords: 
   - "controls [Windows Forms], positioning"
   - "Windows Forms controls, positioning on form"
 ms.assetid: b2d62ed8-c391-4a7e-b72e-6bbabfca73dc
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Arranging Controls on Windows Forms
 By placing and manipulating controls on forms in different ways, you can create user interfaces that are both intuitive and functional for users.  

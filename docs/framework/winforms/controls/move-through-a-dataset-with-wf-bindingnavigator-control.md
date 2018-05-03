@@ -1,14 +1,6 @@
 ---
 title: "How to: Move Through a DataSet with the Windows Forms BindingNavigator Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "BindingNavigator control [Windows Forms], moving through datasets"
   - "examples [Windows Forms], BindingNavigator control"
 ms.assetid: 146d97be-3d97-400e-accb-860bbf47729d
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Move Through a DataSet with the Windows Forms BindingNavigator Control
 As you build data-driven applications, you will often need to display collections of data to users. The <xref:System.Windows.Forms.BindingNavigator> control, in conjunction with the <xref:System.Windows.Forms.BindingSource> component, provides a convenient and extensible solution for moving through a collection and displaying items sequentially.  

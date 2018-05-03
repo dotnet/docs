@@ -1,14 +1,6 @@
 ---
 title: "How to: Add a Control to a Tab Page"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "tab controls [Windows Forms], tab order"
   - "tab pages [Windows Forms], adding controls"
 ms.assetid: b092532e-7346-469f-b9a1-897f9bea4fb7
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add a Control to a Tab Page
 You can use the Windows Forms <xref:System.Windows.Forms.TabControl> to display other controls in an organized fashion. The following procedure shows how to add a button to the first tab. For information about adding an icon to the label part of a tab page, see [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md).  

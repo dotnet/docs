@@ -1,14 +1,6 @@
 ---
 title: "When to Use a Windows Forms ComboBox Instead of a ListBox"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListBox control [Windows Forms], adding and removing items"
   - "ListBox control [Windows Forms], vs. ComboBox"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], accessing items"
   - "ListCount property"
 ms.assetid: 7bcaea58-1cfa-46db-9baf-b75a69d8f9ec
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # When to Use a Windows Forms ComboBox Instead of a ListBox
 The <xref:System.Windows.Forms.ComboBox> and the <xref:System.Windows.Forms.ListBox> controls have similar behaviors, and in some cases may be interchangeable. There are times, however, when one or the other is more appropriate to a task.  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Add a ToolStripContainer to a Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], built-in rafting"
   - "ToolStripContainer control [Windows Forms], adding to Windows Forms"
 ms.assetid: d0f55095-a833-453e-be5a-644906d75d54
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add a ToolStripContainer to a Form
 You can programmatically add a <xref:System.Windows.Forms.ToolStripContainer> to a Windows Form and populate it with controls.  

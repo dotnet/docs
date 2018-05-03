@@ -1,14 +1,6 @@
 ---
 title: "DataGrid Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DataGrid"
 helpviewer_keywords: 
@@ -28,12 +20,6 @@ helpviewer_keywords:
   - "parent table navigation in DataGrid"
   - "child tables [Windows Forms], dataGrid control"
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid Control Overview (Windows Forms)
 > [!NOTE]

@@ -1,24 +1,10 @@
 ---
 title: "StatusStrip Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "StatusStrip control [Windows Forms]"
   - "status bars"
 ms.assetid: eb1e59da-0a48-4ce5-af7d-13b8e75af4b1
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # StatusStrip Control
 The Windows Forms `StatusStrip` control is used on forms as an area, usually displayed at the bottom of a window, in which an application can display various kinds of status information. `StatusStrip` controls typically have `ToolStripStatusLabel` controls on them that display text or icons to indicate state, or a <xref:System.Windows.Forms.ToolStripProgressBar> that graphically displays the completion state of a process.  

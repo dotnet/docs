@@ -1,19 +1,7 @@
 ---
 title: "Custom Activity to Switch on a Range of Values"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 441e0a17-421f-430c-ba97-59e4cc6c88e3
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Activity to Switch on a Range of Values
 This sample demonstrates how to create a custom activity that extends the use of a <xref:System.Activities.Statements.Switch%601>. A conventional <xref:System.Activities.Statements.Switch%601> statement allows switching based upon a single value. But, there are business scenarios where an activity must switch based upon a range of values. For example, an activity might execute one action when the value being switched upon is between 1 and 5, another action when the value is between 6 and 10, and a default action for all other values. This custom activity enables exactly that scenario.  

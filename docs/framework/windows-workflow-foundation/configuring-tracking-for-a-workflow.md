@@ -1,19 +1,7 @@
 ---
 title: "Configuring Tracking for a Workflow"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 905adcc9-30a0-4918-acd6-563f86db988a
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Tracking for a Workflow
 A workflow can execute in three ways:  

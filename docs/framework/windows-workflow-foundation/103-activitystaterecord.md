@@ -1,19 +1,7 @@
 ---
 title: "103 - ActivityStateRecord"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 103 - ActivityStateRecord
 ## Properties  

@@ -1,19 +1,7 @@
 ---
 title: "Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 065205cc-52dd-4f30-9578-b17d8d113136
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Exceptions
 Workflows can use the <xref:System.Activities.Statements.TryCatch> activity to handle exceptions that are raised during the execution of a workflow. These exceptions can be handled or they can be re-thrown using the <xref:System.Activities.Statements.Rethrow> activity. Activities in the <xref:System.Activities.Statements.TryCatch.Finally%2A> section are executed when either the <xref:System.Activities.Statements.TryCatch.Try%2A> section or the <xref:System.Activities.Statements.TryCatch.Catches%2A> section completes. Workflows hosted by a <xref:System.Activities.WorkflowApplication> instance can also use the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> event handler to handle exceptions that are not handled by a <xref:System.Activities.Statements.TryCatch> activity.  

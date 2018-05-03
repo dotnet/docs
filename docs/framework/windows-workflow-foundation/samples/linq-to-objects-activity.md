@@ -1,19 +1,7 @@
 ---
 title: "LINQ to Objects Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 403c82e8-7f2b-42f6-93cd-95c35bc76ead
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # LINQ to Objects Activity
 This sample demonstrates how to create an activity to use LINQ to Objects to query elements in a collection.  

@@ -1,19 +1,7 @@
 ---
 title: "Getting Started Writing a Custom Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3902f5fa-8a43-4048-8a6a-6b15472f90f0
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Getting Started Writing a Custom Activity
 This sample demonstrates how to define a simple custom activity in XAML. The activity is given the name `Rhyme`, and its logic is a sequence of three <xref:System.Activities.Statements.WriteLine> activities.  

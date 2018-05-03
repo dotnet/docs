@@ -1,19 +1,7 @@
 ---
 title: "Asynchronous Communication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 128dc092-9eb2-4e33-9470-9a7f62b60df6
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Asynchronous Communication
 This sample demonstrates how the communication between two different Windows Workflow Foundation (WF) services is done asynchronously by default.  

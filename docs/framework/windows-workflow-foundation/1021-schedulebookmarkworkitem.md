@@ -1,19 +1,7 @@
 ---
 title: "1021 - ScheduleBookmarkWorkItem"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2e0da311-b219-4637-9460-90cdafcc4ecd
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1021 - ScheduleBookmarkWorkItem
 ## Properties  

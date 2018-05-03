@@ -1,19 +1,7 @@
 ---
 title: "441- StopSignpostEvent1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fc9850a5-0dc3-4b84-a09a-744301c7c18e
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 441- StopSignpostEvent1
 ## Properties  

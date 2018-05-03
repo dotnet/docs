@@ -1,13 +1,6 @@
 ---
 title: "How to: Find the Minimum or Maximum Value in a Query Result by Using LINQ (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "max operator [LINQ in Visual Basic]"
   - "aggregate operator [LINQ in Visual Basic]"
@@ -21,9 +14,6 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], aggregate queries"
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Find the Minimum or Maximum Value in a Query Result by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  

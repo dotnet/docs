@@ -1,14 +1,6 @@
 ---
 title: "Names of Declared XML Elements and Attributes (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "declarations [XML in Visual Basic]"
   - "element names [XML in Visual Basic]"
@@ -16,9 +8,6 @@ helpviewer_keywords:
   - "attribute names [XML in Visual Basic]"
   - "XML literals [Visual Basic], element names"
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Names of Declared XML Elements and Attributes (Visual Basic)
 This topic provides Visual Basic guidelines for naming XML elements and attributes in XML literals.  In an XML literal, you can specify a local name or a qualified name. A qualified name consists of an XML namespace prefix, a colon, and a local name. For more information about XML namespace prefixes, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  

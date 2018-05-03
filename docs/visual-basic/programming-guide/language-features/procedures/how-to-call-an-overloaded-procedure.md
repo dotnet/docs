@@ -1,13 +1,6 @@
 ---
 title: "How to: Call an Overloaded Procedure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], overloading"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "procedures [Visual Basic], multiple versions"
   - "procedure calls [Visual Basic], overloaded"
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Call an Overloaded Procedure (Visual Basic)
 The advantage of overloading a procedure is in the flexibility of the call. The calling code can obtain the information it needs to pass to the procedure and then call a single procedure name, no matter what arguments it is passing.  

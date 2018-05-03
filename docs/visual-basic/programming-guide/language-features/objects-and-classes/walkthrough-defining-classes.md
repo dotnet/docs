@@ -1,10 +1,6 @@
 ---
 title: "Defining Classes (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "execution [Visual Basic], ending"
   - "objects [Visual Basic], initializing"
@@ -19,8 +15,6 @@ helpviewer_keywords:
   - "Terminate event [Visual Basic]"
   - "execution [Visual Basic], stopping"
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Defining Classes (Visual Basic)
 

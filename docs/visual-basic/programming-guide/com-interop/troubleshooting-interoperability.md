@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting Interoperability (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "interop, deploying assemblies"
   - "assemblies [Visual Basic]"
@@ -23,9 +16,6 @@ helpviewer_keywords:
   - "interoperability, sharing components"
   - "shared components, using with assemblies"
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Interoperability (Visual Basic)
 When you interoperate between COM and the managed code of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], you may encounter one or more of the following common issues.  

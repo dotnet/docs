@@ -1,13 +1,6 @@
 ---
 title: "Enumerations and Name Qualification (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declarations [Visual Basic], enumerations"
   - "Imports statement [Visual Basic], namespace declarations"
@@ -24,9 +17,6 @@ helpviewer_keywords:
   - "naming conventions [Visual Basic], naming conflicts"
   - "declarations [Visual Basic], namespaces"
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Enumerations and Name Qualification (Visual Basic)
 Normally, when referring to a member of an enumeration, you must qualify the member name with the enumeration name. For example, to refer to the `Sunday` member of your `Days` enumeration, you would use the following syntax:  

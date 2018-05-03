@@ -1,22 +1,12 @@
 ---
 title: "How to: Label Statements (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "colons (:)"
   - "statements [Visual Basic], labels"
   - ": separator character"
   - "Visual Basic code, labeling statements"
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Label Statements (Visual Basic)
 Statement blocks are made up of lines of code delimited by colons. Lines of code preceded by an identifying string or integer are said to be *labeled*. Statement labels are used to mark a line of code to identify it for use with statements such as `On Error Goto`.  

@@ -1,13 +1,6 @@
 ---
 title: "Error Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions, types"
   - "errors [Visual Basic], types"
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "run-time errors [Visual Basic], types of errors"
   - "syntax errors [Visual Basic], Visual Basic"
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Error Types (Visual Basic)
 In Visual Basic, errors (also called *exceptions*) fall into one of three categories: syntax errors, run-time errors, and logic errors.  

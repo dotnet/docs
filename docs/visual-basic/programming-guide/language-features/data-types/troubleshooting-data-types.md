@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Char data type [Visual Basic], converting"
   - "Decimal data type [Visual Basic], conversions"
@@ -26,9 +19,6 @@ helpviewer_keywords:
   - "floating-point numbers [Visual Basic], comparison"
   - "floating-point numbers"
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Data Types (Visual Basic)
 This page lists some common problems that can occur when you perform operations on intrinsic data types.  

@@ -553,7 +553,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[TLA2#tla_rtf](~/includes/tla2sharptla-rtf-md.md)] is an adaptation of Document Content Architecture that is used for transferring formatted text documents between applications.  
+ RTF is an adaptation of Document Content Architecture that is used for transferring formatted text documents between applications.  
   
  This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
   

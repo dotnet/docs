@@ -61,7 +61,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the cipher block size, in bytes.</summary>
-        <value>The cipher block size, in bytes.  The default block size for [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] is 8.</value>
+        <value>The cipher block size, in bytes.  The default block size for Advanced Encryption Standard (AES) is 8.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -198,7 +198,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> can accept buffers that are different block sizes in length.</summary>
-        <value>**true** if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, **false** if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] the default is **true**.</value>
+        <value>**true** if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, **false** if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For AES the default is **true**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -362,7 +362,7 @@
 ## Remarks  
  The byte length of the `clearText` buffer should be a multiple of the cipher <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> property.  
   
- The digital rights management system uses [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] block cipher.  With AES, blocks are encrypted independently such that two blocks of identical clear text produce identical cipher text results.  To minimize potential decryption threats from independent block encryption, applications should employ methods to modify content, such as compression, to avoid encrypting identical clear text blocks.  
+ The digital rights management system uses AES block cipher.  With AES, blocks are encrypted independently such that two blocks of identical clear text produce identical cipher text results.  To minimize potential decryption threats from independent block encryption, applications should employ methods to modify content, such as compression, to avoid encrypting identical clear text blocks.  
   
    
   

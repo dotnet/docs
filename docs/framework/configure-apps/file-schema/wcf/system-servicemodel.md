@@ -57,7 +57,7 @@ This configuration section contains all the Windows Communication Foundation (WC
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This section holds a collection of standard and custom bindings. Each entry is identified by its unique `name`. Services use bindings by linking them using the `name`.|  
 |[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|This section contains a list of endpoints a client uses to connect to a service.|  
 |[\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)|This section defines COM contracts enabled for WCF and COM interop.|  
-|[\<commonBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md)|This section can only be defined in the machine.config file. It defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by all [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] endpoints and services on the machine respectively.  If a behavior is defined in both `<commonBehaviors>` and `<behaviors>` sections, the behavior in the \<behaviors> section is given preference.|  
+|[\<commonBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md)|This section can only be defined in the machine.config file. It defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by all WCF endpoints and services on the machine respectively.  If a behavior is defined in both `<commonBehaviors>` and `<behaviors>` sections, the behavior in the \<behaviors> section is given preference.|  
 |[\<extensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/extensions-section.md)|This section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.|  
 |[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|This section contains settings for the diagnostics features of WCF. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.|  
 |[\<protocolMapping>](../../../../../docs/framework/configure-apps/file-schema/wcf/protocolmapping.md)|This section defines a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings.|  
@@ -73,9 +73,9 @@ This configuration section contains all the Windows Communication Foundation (WC
 |\<configuration>|The root element for all configuration elements in a .NET configuration file.|  
   
 ## Remarks  
- [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] does not add elements to the configuration sections of other products.  
+ WCF does not add elements to the configuration sections of other products.  
   
- [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services are defined in the `services` section of the configuration file. An assembly can contain any number of services. Each service has its own `service` configuration section. The section and its content define the service contract, behavior, and endpoints of the particular service.  
+ WCF services are defined in the `services` section of the configuration file. An assembly can contain any number of services. Each service has its own `service` configuration section. The section and its content define the service contract, behavior, and endpoints of the particular service.  
   
  Only a service's `name` attribute is required.  By default, a service's name describes the underlying CLR type used to implement a service; however, you may change the ConfigurationName property on a <xref:System.ServiceModel.ServiceContractAttribute> to override the CLR type requirement.  
   

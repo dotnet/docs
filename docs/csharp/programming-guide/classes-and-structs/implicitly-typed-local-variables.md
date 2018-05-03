@@ -1,17 +1,10 @@
 ---
 title: "Implicitly Typed Local Variables (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "implicitly-typed local variables [C#]"
   - "var [C#]"
 ms.assetid: b9218fb2-ef5d-4814-8a8e-2bc29b0bbc9b
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Implicitly Typed Local Variables (C# Programming Guide)
 Local variables can be declared without giving an explicit type. The `var` keyword instructs the compiler to infer the type of the variable from the expression on the right side of the initialization statement. The inferred type may be a built-in type, an anonymous type, a user-defined type, or a type defined in the .NET Framework class library. For more information about how to initialize arrays with `var`, see [Implicitly Typed Arrays](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md).  

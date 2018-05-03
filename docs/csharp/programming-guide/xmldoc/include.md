@@ -1,10 +1,6 @@
 ---
 title: "&lt;include&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "include"
   - "<include>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "<include> C# XML tag"
   - "include C# XML tag"
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;include&gt; (C# Programming Guide)
 ## Syntax  

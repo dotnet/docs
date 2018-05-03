@@ -2,15 +2,9 @@
 title: "Default value expressions (C# Programming Guide)"
 description: "Default value expressions produce the default value for any reference type or value type"
 ms.date: 04/25/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], default keyword"
   - "default keyword [C#], generic programming"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # default value expressions (C# programming guide)
 

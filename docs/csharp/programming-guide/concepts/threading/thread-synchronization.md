@@ -1,17 +1,7 @@
 ---
 title: "Thread Synchronization (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: e42b1be6-c93c-479f-a148-be0759f1a4e1
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Thread Synchronization (C#)
 The following sections describe features and classes that can be used to synchronize access to resources in multithreaded applications.  

@@ -1,18 +1,11 @@
 ---
 title: "Boxing Nullable Types (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "boxing [C#], nullable types"
   - "unboxing [C#], nullable types"
   - "nullable types [C#], boxing and unboxing"
 ms.assetid: bdb5b626-abc0-405d-8f64-0f0a0bf883a4
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Boxing Nullable Types (C# Programming Guide)
 Objects based on nullable types are only boxed if the object is non-null. If <xref:System.Nullable%601.HasValue%2A> is `false`, the object reference is assigned to `null` instead of boxing. For example:  

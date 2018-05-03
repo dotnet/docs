@@ -1,19 +1,7 @@
 ---
 title: "How to: Find All Nodes in a Namespace (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find All Nodes in a Namespace (C#)
 You can filter on the namespace of each element or attribute to find all nodes in that particular namespace.  

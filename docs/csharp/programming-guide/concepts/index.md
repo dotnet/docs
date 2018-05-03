@@ -1,14 +1,7 @@
 ---
 title: "Programming Concepts (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Programming Concepts (C#)
 This section explains programming concepts in the C# language.  

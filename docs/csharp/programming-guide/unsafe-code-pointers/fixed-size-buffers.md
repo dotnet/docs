@@ -1,16 +1,10 @@
 ---
 title: "Fixed Size Buffers (C# Programming Guide)"
 ms.date: 04/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "fixed size buffers [C#]"
   - "unsafe buffers [C#]"
   - "unsafe code [C#], fixed size buffers"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Fixed Size Buffers (C# Programming Guide)
 

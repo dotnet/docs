@@ -1,10 +1,6 @@
 ---
 title: "Statements, Expressions, and Operators (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "expressions [C#]"
   - "operators [C#]"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "C# language, expressions"
   - "statements [C#]"
 ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Statements, Expressions, and Operators (C# Programming Guide)
 The C# code that comprises an application consists of statements made up of keywords, expressions and operators. This section contains information regarding these fundamental elements of a C# program.  

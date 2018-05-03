@@ -1,14 +1,7 @@
 ---
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 

@@ -1,19 +1,12 @@
 ---
 title: "&lt;typeparam&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "typeparam"
 helpviewer_keywords: 
   - "<typeparam> C# XML tag"
   - "typeparam C# XML tag"
 ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;typeparam&gt; (C# Programming Guide)
 ## Syntax  

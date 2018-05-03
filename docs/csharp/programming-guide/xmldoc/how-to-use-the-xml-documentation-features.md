@@ -1,17 +1,10 @@
 ---
 title: "How to: Use the XML Documentation Features (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML documentation [C#]"
   - "C# language, XML documentation features"
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use the XML Documentation Features (C# Programming Guide)
 The following sample provides a basic overview of a type that has been documented.  

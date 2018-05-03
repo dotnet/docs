@@ -1,25 +1,11 @@
 ---
 title: "How to: Bind to XML Data Using an XMLDataProvider and XPath Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XmlDataProvider [WPF], binding to XML data"
   - "data binding [WPF], binding to XML data using XmlDataProvider queries"
   - "binding [WPF], to XML data using XmlDataProvider queries"
 ms.assetid: 7dcd018f-16aa-4870-8e47-c1b4ea31e574
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to XML Data Using an XMLDataProvider and XPath Queries
 This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] data using an <xref:System.Windows.Data.XmlDataProvider>.  

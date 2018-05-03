@@ -1,24 +1,10 @@
 ---
 title: "Timing Behaviors Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "timing behaviors [WPF]"
   - "behaviors [WPF], timing"
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Timing Behaviors Overview
 This topic describes the timing behaviors of animations and other <xref:System.Windows.Media.Animation.Timeline> objects.  

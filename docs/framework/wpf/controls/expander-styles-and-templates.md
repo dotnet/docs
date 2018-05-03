@@ -1,14 +1,6 @@
 ---
 title: "Expander Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "styles [WPF], Expander"
   - "ControlTemplate [WPF], Expander"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "states [WPF], Expander"
   - "parts [WPF], Expander"
 ms.assetid: da2e5a1c-5230-4c21-98a5-59c7895facd7
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Expander Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Expander> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

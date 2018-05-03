@@ -1,14 +1,6 @@
 ---
 title: "Window Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "parts [WPF], Window"
   - "templates [WPF], Window"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Window [WPF], styles and templates"
   - "states [WPF], Window"
 ms.assetid: 2dfdf025-347b-4342-bf28-95206c273f35
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Window Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Window> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Determine If a Page is Browser Hosted"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "hosted pages in browser [WPF]"
   - "pages [WPF], hosted in browser"
 ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Determine If a Page is Browser Hosted
 This example demonstrates how to determine if a <xref:System.Windows.Controls.Page> is hosted in a browser.  

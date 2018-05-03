@@ -1,14 +1,6 @@
 ---
 title: "How to: Implement Validation with the DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "DataGrid [WPF], validation"
   - "validation [WPF], DataGrid"
 ms.assetid: ec6078a8-1e42-4648-b414-f4348e81bda1
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Implement Validation with the DataGrid Control
 The <xref:System.Windows.Controls.DataGrid> control enables you to perform validation at both the cell and row level. With cell-level validation, you validate individual properties of a bound data object when a user updates a value. With row-level validation, you validate entire data objects when a user commits changes to a row. You can also provide customized visual feedback for validation errors, or use the default visual feedback that the <xref:System.Windows.Controls.DataGrid> control provides.  

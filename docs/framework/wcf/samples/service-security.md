@@ -1,21 +1,9 @@
 ---
 title: "Service Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bb8eea87-4c87-437a-b70f-697dd5e1c21e
-caps.latest.revision: 2
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Security
 This section contains samples that demonstrate Windows Communication Foundation (WCF) service security.  

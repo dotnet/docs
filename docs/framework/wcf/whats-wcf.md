@@ -1,25 +1,11 @@
 ---
 title: "What Is Windows Communication Foundation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], technology overview"
   - "technology overview [WCF]"
   - "WCF [WCF], technology overview"
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
-caps.latest.revision: 51
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # What Is Windows Communication Foundation
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] is a framework for building service-oriented applications. Using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], you can send data as asynchronous messages from one service endpoint to another. A service endpoint can be part of a continuously available service hosted by IIS, or it can be a service hosted in an application. An endpoint can be a client of a service that requests data from a service endpoint. The messages can be as simple as a single character or word sent as XML, or as complex as a stream of binary data. A few sample scenarios include:  

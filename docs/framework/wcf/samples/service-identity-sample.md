@@ -1,21 +1,7 @@
 ---
 title: "Service Identity Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 79fa8c1c-85bb-4b67-bc67-bfaf721303f8
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Identity Sample
 This service identity sample demonstrates how to set the identity for a service. At design time, a client can retrieve the identity using the service's metadata and then at runtime the client can authenticate the service's identity. The concept of service identity is to allow a client to authenticate a service before calling any of its operations, thereby protecting the client from unauthenticated calls. On a secure connection the service also authenticates a client's credentials before allowing it access, but this is not the focus of this sample. See the samples in [Client](../../../../docs/framework/wcf/samples/client.md) that show server authentication.  

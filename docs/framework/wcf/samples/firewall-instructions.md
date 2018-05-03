@@ -1,21 +1,7 @@
 ---
 title: "Firewall Instructions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a7dc429f-65ac-4faf-974a-77d5fb977fe1
-caps.latest.revision: 32
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Firewall Instructions
 You must enable several ports or programs in the firewall so that the Windows Communication Foundation (WCF) samples can function. Many of the samples communicate by using ports in the range 8000-8003, and port 9000. The firewall is turned on by default and prevents access to these ports. To enable the firewall for the samples, complete one of the following procedures, depending on your requirements and security environment:  

@@ -1,24 +1,10 @@
 ---
 title: "Guide to the Documentation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF [WCF], documentation"
   - "Windows Communication Foundation [WCF], documentation"
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
-caps.latest.revision: 36
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Guide to the Documentation
 Provided here is guidance about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  

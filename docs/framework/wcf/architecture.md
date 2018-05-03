@@ -1,25 +1,11 @@
 ---
 title: "Windows Communication Foundation Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], architecture"
   - "WCF [WCF], architecture"
   - "architecture [WCF]"
 ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Architecture
 The following graphic illustrates the major layers of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture.  

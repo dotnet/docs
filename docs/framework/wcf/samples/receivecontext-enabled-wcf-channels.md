@@ -1,21 +1,7 @@
 ---
 title: "ReceiveContext-Enabled WCF Channels"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d990d119-7321-4b8c-852b-10256f59f9b0
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ReceiveContext-Enabled WCF Channels
 This sample demonstrates the usefulness of <xref:System.ServiceModel.Channels.ReceiveContext>-enabled WCF channels. The sample implements a service to find the product of two numbers using a NetMSMQ channel.  

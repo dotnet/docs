@@ -1,25 +1,13 @@
 ---
 title: "Obsolete Types in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework 4.5, obsolete types"
   - "types, obsolete in .NET Framework 4.5"
   - "obsolete types [.NET Framework]"
 ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
-caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Obsolete Types in the .NET Framework
 <a name="introduction"></a> The tables in this article list the types that are obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md).  

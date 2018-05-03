@@ -1,23 +1,9 @@
 ---
 title: "Windows Communication Foundation Bindings Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "bindings [WCF], overview"
 ms.assetid: cfb5842f-e0f9-4c56-a015-f2b33f258232
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Bindings Overview
 Bindings are objects that are used to specify the communication details that are required to connect to the endpoint of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service. Each endpoint in a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service requires a binding to be well-specified. This topic outlines the types of communication details that the bindings define, the elements of a binding, what bindings are included in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], and how a binding can be specified for an endpoint.  

@@ -1,21 +1,7 @@
 ---
 title: "ASP.NET Caching Integration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f581923a-8a72-42fc-bd6a-46de2aaeecc1
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ASP.NET Caching Integration
 This sample demonstrates how to utilize the ASP.NET output cache with the WCF WEB HTTP programming model. Please see the [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample for a self-hosted version of this scenario that discusses the service implementation in depth. This topic focuses on the ASP.NET output cache integration feature.  

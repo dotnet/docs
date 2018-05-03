@@ -1,21 +1,7 @@
 ---
 title: "AspNetRouteIntegration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0638ce0e-d053-47df-a447-688e447a03fb
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AspNetRouteIntegration
 This sample demonstrates how to host a Windows Communication Foundation (WCF) REST service using ASP.NET routes. The [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample shows a self-hosted version of this scenario and discusses the service implementation in depth. This topic focuses on the ASP.NET integration feature. For more information about ASP.NET Routing, see <xref:System.Web.Routing>.  

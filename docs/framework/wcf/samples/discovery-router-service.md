@@ -1,21 +1,7 @@
 ---
 title: "Discovery Router Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3d30af47-b24f-40e5-833a-24d77125c9e6
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Discovery Router Service
 This sample demonstrates how to forward discovery messages to another endpoint.  

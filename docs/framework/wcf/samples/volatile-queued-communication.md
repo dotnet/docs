@@ -1,21 +1,7 @@
 ---
 title: "Volatile Queued Communication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0d012f64-51c7-41d0-8e18-c756f658ee3d
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Volatile Queued Communication
 This sample demonstrates how to perform volatile queued communication over the Message Queuing (MSMQ) transport. This sample uses <xref:System.ServiceModel.NetMsmqBinding>. The service in this case is a self-hosted console application to enable you to observe the service receiving queued messages.  

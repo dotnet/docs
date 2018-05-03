@@ -1,23 +1,9 @@
 ---
 title: "Specifying and Handling Faults in Contracts and Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "handling faults [WCF]"
 ms.assetid: a9696563-d404-4905-942d-1e0834c26dea
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying and Handling Faults in Contracts and Services
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications handle error situations by mapping managed exception objects to SOAP fault objects and SOAP fault objects to managed exception objects. The topics in this section discuss how to design contracts to expose error conditions as custom SOAP faults, how to return such faults as part of service implementation, and how clients catch such faults.  

@@ -1,14 +1,6 @@
 ---
 title: "Reliable Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF [WCF], reliable messaging"
   - "Windows Communication Foundation [WCF], reliable messaging"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], reliable sessions"
   - "service contracts [WCF], reliable services"
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Reliable Services
 Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  

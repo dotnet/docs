@@ -1,21 +1,7 @@
 ---
 title: "Custom Binding Reliable Session"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c5fcd409-246f-4f3e-b3f1-629506ca4c04
-caps.latest.revision: 23
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Binding Reliable Session
 A custom binding is defined by an ordered list of discrete binding elements. This sample demonstrates how to configure a custom binding with various transport and message encoding elements, especially enabling reliable sessions.  

@@ -26,7 +26,7 @@
 |-----------|-----------------|-----------------|  
 |<xref:System.Windows.DataFormats.Bitmap>|"Bitmap"|Specifies a [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] bitmap data format.|  
 |<xref:System.Windows.DataFormats.CommaSeparatedValue>|"CSV"|Specifies a comma-separated value (CSV) data format.|  
-|<xref:System.Windows.DataFormats.Dib>|"DeviceIndependentBitmap"|Specifies the [!INCLUDE[TLA#tla_dib](~/includes/tlasharptla-dib-md.md)] data format.|  
+|<xref:System.Windows.DataFormats.Dib>|"DeviceIndependentBitmap"|Specifies the device-independent bitmap (DIB) data format.|  
 |<xref:System.Windows.DataFormats.Dif>|"DataInterchangeFormat"|Specifies the Windows Data Interchange Format (DIF) data format.|  
 |<xref:System.Windows.DataFormats.EnhancedMetafile>|"EnhancedMetafile"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] enhanced metafile format.|  
 |<xref:System.Windows.DataFormats.FileDrop>|"FileDrop"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] file drop format.|  
@@ -127,7 +127,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the [!INCLUDE[TLA#tla_dib](~/includes/tlasharptla-dib-md.md)] data format.</summary>
+        <summary>Specifies the DIB data format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

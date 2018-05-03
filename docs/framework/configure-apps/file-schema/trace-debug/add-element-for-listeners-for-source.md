@@ -1,14 +1,6 @@
 ---
 title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add"
 helpviewer_keywords: 
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "add element for <listeners> for <source>"
   - "<add> element for <listeners> for <source>"
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;
 Adds a listener to the `Listeners` collection for a trace source.  

@@ -1,21 +1,9 @@
 ---
 title: "AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 89e41a81-0f41-45ad-8f20-a120e4ff24fb
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure
 Defines the Authenticode time stamper information.  

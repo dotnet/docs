@@ -4,13 +4,7 @@ ms.custom: "updateeachrelease"
 description: Learn how to install .NET Framework on Windows 8
 author: rlander
 ms.author: mairaw
-keywords: .NET Framework, Install
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: .net-framework
-ms.devlang: dotnet
-ms.workload: 
-  - dotnet
 ---
 
 # Install the .NET Framework on Windows 8 and Windows Server 2012
@@ -19,7 +13,7 @@ The .NET Framework is required to run many applications on Windows. You can use 
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is supported on Windows Server 2012 but is not supported on Windows 8. It is included with the [Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]](https://www.microsoft.com/software-download/windows10).
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is supported on Windows Server 2012 but is not supported on Windows 8. It is included with the [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10).
 
 ## .NET Framework 4.7.2
 

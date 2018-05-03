@@ -1,25 +1,14 @@
 ---
 title: "UI Automation TextPattern Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, TextPattern class"
   - "TextPattern class"
   - "classes, TextPattern"
 ms.assetid: 41787927-df1f-4f4a-aba3-641662854fc4
-caps.latest.revision: 38
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation TextPattern Overview
 > [!NOTE]

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Determining service operation duration
-If analytic tracing is enabled in a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] application, the duration of execution for a service operation can easily be determined by examining the event log.  This topic demonstrates how to determine the amount of time a service operation takes to complete.  
+If analytic tracing is enabled in a Windows Communication Foundation (WCF) application, the duration of execution for a service operation can easily be determined by examining the event log.  This topic demonstrates how to determine the amount of time a service operation takes to complete.  
   
 ### Determining service operation execution duration  
   

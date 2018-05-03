@@ -1,23 +1,9 @@
 ---
 title: "&lt;wsFederationHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "wsFederationBinding element"
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;wsFederationHttpBinding&gt;
 Defines a binding that supports WS-Federation.  

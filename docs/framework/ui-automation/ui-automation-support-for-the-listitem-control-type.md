@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the ListItem Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, List"
   - "List Item control type"
   - "UI Automation, List Item control type"
 ms.assetid: 34f533bf-fc14-4e78-8fee-fb7107345fab
-caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the ListItem Control Type
 > [!NOTE]

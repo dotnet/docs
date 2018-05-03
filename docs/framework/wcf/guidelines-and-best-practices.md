@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # Guidelines and Best Practices
-This section contains topics that provide guidelines for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  
+This section contains topics that provide guidelines for creating Windows Communication Foundation (WCF) applications.  
   
 ## In This Section  
  [Best Practices: Data Contract Versioning](../../../docs/framework/wcf/best-practices-data-contract-versioning.md)  

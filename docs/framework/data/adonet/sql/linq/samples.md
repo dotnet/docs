@@ -1,21 +1,7 @@
 ---
 title: "Samples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3fcc0c4a-b952-4cfe-9e09-0c0cf874ba2c
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Samples
 This topic provides links to the Visual Basic and C# solutions that contain [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] sample code.  

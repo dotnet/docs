@@ -1,14 +1,6 @@
 ---
 title: "Enable Navigation in a UI Automation Fragment Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "UI Automation, enabling navigation in provider"
   - "navigation, enabling in UI Automation provider"
 ms.assetid: 3cb6092a-58c9-4ca0-84a5-0e54d5d00a0d
-caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Enable Navigation in a UI Automation Fragment Provider
 > [!NOTE]

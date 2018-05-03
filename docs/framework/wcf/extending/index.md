@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Extending WCF
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to modify and extend run time components to precisely control and extend service-based applications. The topics in this section go in depth about the extensibility architecture. For more information about basic programming, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
+Windows Communication Foundation (WCF) allows you to modify and extend run time components to precisely control and extend service-based applications. The topics in this section go in depth about the extensibility architecture. For more information about basic programming, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
   
 ## In This Section  
  [Extending ServiceHost and the Service Model Layer](../../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md)  

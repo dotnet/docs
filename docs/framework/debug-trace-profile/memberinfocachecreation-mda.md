@@ -1,14 +1,6 @@
 ---
 title: "memberInfoCacheCreation MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "member info cache creation"
   - "MemberInfoCacheCreation MDA"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), cache"
   - "MemberInfo cache"
 ms.assetid: 5abdad23-1335-4744-8acb-934002c0b6fe
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # memberInfoCacheCreation MDA
 The `memberInfoCacheCreation` managed debugging assistant (MDA) is activated when a <xref:System.Reflection.MemberInfo> cache is created. This is a strong indication of a program that is making use of resource-expensive reflection features.  

@@ -1,21 +1,12 @@
 ---
 title: "How to: Ping a Host"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Ping"
 ms.assetid: bbf20f5b-eca1-4661-af04-cb8837f9af05
-caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Ping a Host
 This sample shows how to ping a remote host.  

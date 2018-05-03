@@ -1,21 +1,7 @@
 ---
 title: "Numeric and Comparison Operators"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 25b4a26a-06f2-4f80-87a9-76705ed46197
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Numeric and Comparison Operators
 Arithmetic and comparison operators work as expected in the common language runtime (CLR) except as follows:  

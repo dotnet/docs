@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugProcess6::DecodeEvent Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess6::DecodeEvent Method
 Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.  

@@ -1,26 +1,14 @@
 ---
 title: "Security and Remoting Considerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "code security, remoting"
   - "remoting, security"
   - "security [.NET Framework], remoting"
   - "secure coding, remoting"
 ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security and Remoting Considerations
 Remoting allows you to set up transparent calling between application domains, processes, or computers. However, the code access security stack walk cannot cross process or machine boundaries (it does apply between application domains of the same process).  

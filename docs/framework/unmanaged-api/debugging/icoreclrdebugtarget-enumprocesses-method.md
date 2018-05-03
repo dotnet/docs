@@ -1,14 +1,6 @@
 ---
 title: "ICoreClrDebugTarget::EnumProcesses Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICoreClrDebugTarget.EnumProcesses"
 api_location: 
@@ -25,12 +17,8 @@ helpviewer_keywords:
 ms.assetid: e00fd477-4f49-43d3-bd0e-3094824b1136
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICoreClrDebugTarget::EnumProcesses Method
 Enumerates the processes that are running on a remote computer.  

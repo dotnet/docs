@@ -1,24 +1,10 @@
 ---
 title: "Creating a DataSet"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 57629d8f-393e-4677-8b83-29ffde27f5fc
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating a DataSet
 You create an instance of a <xref:System.Data.DataSet> by calling the <xref:System.Data.DataSet> constructor. Optionally specify a name argument. If you do not specify a name for the <xref:System.Data.DataSet>, the name is set to "NewDataSet".  

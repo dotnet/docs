@@ -9,7 +9,7 @@ ms.assetid: 0ff4c857-8f09-4b85-9dc0-89084706e4c9
 This topic describes how you can configure message logging for different scenarios.  
   
 ## Enabling Message Logging  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] does not log messages by default. To activate message logging, you must add a trace listener to the `System.ServiceModel.MessageLogging` trace source and set attributes for the `<messagelogging>` element in the configuration file.  
+ Windows Communication Foundation (WCF) does not log messages by default. To activate message logging, you must add a trace listener to the `System.ServiceModel.MessageLogging` trace source and set attributes for the `<messagelogging>` element in the configuration file.  
   
  The following example shows how to enable logging and specify additional options.  
   

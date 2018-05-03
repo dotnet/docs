@@ -83,7 +83,7 @@ The output is as follows:
 Command line arguments: 
 file1.fsx
 test
-60
+90
 ```
 
 ## Related Topics

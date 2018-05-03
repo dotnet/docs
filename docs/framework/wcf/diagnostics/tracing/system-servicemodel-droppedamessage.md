@@ -7,7 +7,7 @@ ms.assetid: a299401f-2983-45ea-b4f3-963bece3602e
 System.ServiceModel.DroppedAMessage  
   
 ## Description  
- A response message was received, but there are no outstanding requests waiting for this message. The message is being dropped by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] runtime.  
+ A response message was received, but there are no outstanding requests waiting for this message. The message is being dropped by Windows Communication Foundation (WCF) runtime.  
   
  This trace can be used for debugging lost messages.  
   

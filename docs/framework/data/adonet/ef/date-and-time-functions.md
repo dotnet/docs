@@ -1,21 +1,7 @@
 ---
 title: "Date and Time Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 971762d0-663b-4b64-8c61-352a8e6d3949
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Date and Time Functions
 The .NET Framework Data Provider for SQL Server (SqlClient) provides date and time functions that perform operations on a `System.DateTime` input value and return a `string`, numeric, or `System.DateTime` value result. These functions are in the SqlServer namespace, which is available when you use SqlClient. A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.The following table shows the SqlClient date and time functions.  

@@ -7,7 +7,7 @@ ms.assetid: bb9e8045-6aeb-4b7f-a825-8283c44252a1
 Counter Name: Calls Faulted  
   
 ## Description  
- Number of calls to this operation that returned faults. In [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] applications, service methods communicate processing error information using SOAP fault messages. SOAP faults are message types that are included in the metadata for a service operation and therefore create a fault contract that clients can use to make their execution more robust or interactive. Since SOAP faults are expressed to clients in XML form, they are highly interoperable.  
+ Number of calls to this operation that returned faults. In Windows Communication Foundation (WCF) applications, service methods communicate processing error information using SOAP fault messages. SOAP faults are message types that are included in the metadata for a service operation and therefore create a fault contract that clients can use to make their execution more robust or interactive. Since SOAP faults are expressed to clients in XML form, they are highly interoperable.  
   
 ## See Also  
  [Specifying and Handling Faults in Contracts and Services](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)

@@ -1,24 +1,10 @@
 ---
 title: "Handling DataTable Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 62f404a5-13ea-4b93-a29f-55b74a16c9d3
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Handling DataTable Events
 The <xref:System.Data.DataTable> object provides a series of events that can be processed by an application. The following table describes `DataTable` events.  

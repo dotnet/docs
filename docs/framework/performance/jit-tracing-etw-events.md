@@ -1,24 +1,12 @@
 ---
 title: "JIT Tracing ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "JIT tracing events [.NET Framework]"
   - "ETW, JIT tracing events (CLR)"
 ms.assetid: 926adde2-c123-452e-bf4f-4b977bf06ffb
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # JIT Tracing ETW Events
 <a name="top"></a> These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.  

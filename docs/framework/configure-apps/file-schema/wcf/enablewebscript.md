@@ -1,21 +1,7 @@
 ---
 title: "&lt;enableWebScript&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;enableWebScript&gt;
 This element enables the endpoint behavior that makes it possible to consume the service from ASP.NET AJAX web pages.  

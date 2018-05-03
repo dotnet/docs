@@ -1,14 +1,6 @@
 ---
 title: "&lt;declaredTypes&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dataContractSerializer element"
   - "declaredTypes element"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "KnownTypes"
   - "<declaredTypes> element"
 ms.assetid: f35184e4-9d9e-4d37-8fb4-d5b58220eb3e
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;declaredTypes&gt;
 Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.  

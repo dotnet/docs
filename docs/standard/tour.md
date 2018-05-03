@@ -1,20 +1,12 @@
 ---
 title: Tour of .NET
 description: A guided tour through some of the prominent features of .NET.
-keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
 ms.date: 05/22/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Tour of .NET
 
 .NET is a general purpose development platform. It has several key features, such as support for multiple programming languages, asynchronous and concurrent programming models, and native interoperability, which enable a wide range of scenarios across multiple platforms.

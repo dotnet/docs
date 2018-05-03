@@ -1,14 +1,6 @@
 ---
 title: "Client Application Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "role-based security [.NET Framework], client application services"
   - "client application services"
@@ -25,12 +17,6 @@ helpviewer_keywords:
   - "roles [.NET Framework], client application services"
   - "client application services, about client application services"
 ms.assetid: 1487d8df-089e-4f21-abfb-a791a652b58e
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Client Application Services
 Client application services make it easy for you to create Windows-based applications that use the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile application services included in the Microsoft ASP.NET 2.0 AJAX Extensions. These services enable multiple Web and Windows-based applications to share user information and user-management functionality from a single server. For example, you can use these services to perform the following tasks:  

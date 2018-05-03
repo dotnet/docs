@@ -1,13 +1,7 @@
 ---
 title: "Backtracking in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,13 +16,8 @@ helpviewer_keywords:
   - "strings [.NET Framework], regular expressions"
   - "parsing text with regular expressions, backtracking"
 ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Backtracking in Regular Expressions
 <a name="top"></a> Backtracking occurs when a regular expression pattern contains optional [quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) or [alternation constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.  

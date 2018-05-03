@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
 ---
 # Configuring Your Application
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the .NET configuration system and allows you to configure services at both the machine and application scope.  
+Windows Communication Foundation (WCF) uses the .NET configuration system and allows you to configure services at both the machine and application scope.  
   
  Configuration settings defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] are located in the `<system.serviceModel>` section group. For more information about how to configure a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, see the following topics:  
   

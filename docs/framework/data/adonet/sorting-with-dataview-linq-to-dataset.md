@@ -1,24 +1,10 @@
 ---
 title: "Sorting with DataView (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 885b3b7b-51c1-42b3-bb29-b925f4f69a6f
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Sorting with DataView (LINQ to DataSet)
 The ability to sort data based on specific criteria and then present the data to a client through a UI control is an important aspect of data binding. <xref:System.Data.DataView> provides several ways to sort data and return data rows ordered by specific ordering criteria. In addition to its string-based sorting capabilities, <xref:System.Data.DataView> also enables you to use [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] expressions for the sorting criteria. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] expressions allow for much more complex and powerful sorting operations than string-based sorting. This topic describes both approaches to sorting using <xref:System.Data.DataView>.  

@@ -1,26 +1,12 @@
 ---
 title: "How to: Define Entity Relationships (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, changing data"
 ms.assetid: cc255524-1534-4fae-b83c-250933d5a72b
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Define Entity Relationships (WCF Data Services)
 When you add a new entity in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], any relationships between the new entity and related entities are not automatically defined. You can create and change relationships between entity instances and have the client library reflect those changes in the data service. For more information, see [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md).  

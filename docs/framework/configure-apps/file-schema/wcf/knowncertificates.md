@@ -1,21 +1,7 @@
 ---
 title: "&lt;knownCertificates&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 678e21b4-6493-47c3-8359-fcf0d37e2138
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;knownCertificates&gt;
 Represents a collection of X.509 certificates that are provided to authenticate security credentials issued from a Security Token Service (STS).  

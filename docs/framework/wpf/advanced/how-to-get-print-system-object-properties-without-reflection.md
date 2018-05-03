@@ -1,26 +1,12 @@
 ---
 title: "How to: Get Print System Object Properties Without Reflection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "PrintSystemObject [WPF], getting properties"
 ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Get Print System Object Properties Without Reflection
 Using reflection to itemize the properties (and the types of those properties) on an object can slow application performance. The <xref:System.Printing.IndexedProperties> namespace provides a means to getting this information with using reflection.  

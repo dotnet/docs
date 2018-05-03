@@ -1,14 +1,6 @@
 ---
 title: "DynamicResource Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DynamicResource"
   - "DynamicResourceExtension"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "XAML [WPF], DynamicResource markup extension"
   - "DynamicResource markup extensions [WPF]"
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DynamicResource Markup Extension
 Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] property attribute by deferring that value to be a reference to a defined resource. Lookup behavior for that resource is analogous to run-time lookup.  

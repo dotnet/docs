@@ -1,23 +1,9 @@
 ---
 title: "TypeConverters and XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [WPF], TypeConverter class"
 ms.assetid: f6313e4d-e89d-497d-ac87-b43511a1ae4b
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # TypeConverters and XAML
 This topic introduces the purpose of type conversion from string as a general XAML language feature. In the .NET Framework, the <xref:System.ComponentModel.TypeConverter> class serves a particular purpose as part of the implementation for a managed custom class that can be used as a property value in XAML attribute usage. If you write a custom class, and you want instances of your class to be usable as XAML settable attribute values, you might need to apply a <xref:System.ComponentModel.TypeConverterAttribute> to your class, write a custom <xref:System.ComponentModel.TypeConverter> class, or both.  

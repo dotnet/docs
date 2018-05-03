@@ -1,26 +1,12 @@
 ---
 title: "User Input Validation in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, validating user input"
   - "validation [Windows Forms], Windows Forms user input"
   - "user input [Windows Forms], validating in Windows Forms"
   - "validating user input [Windows Forms], Windows Forms"
 ms.assetid: 4ec07681-1dee-4bf9-be5e-718f635a33a1
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # User Input Validation in Windows Forms
 When users enter data into your application, you may want to verify that the data is valid before your application uses it. You may require that certain text fields not be zero-length, that a field be formatted as a telephone number or other type of well-formed data, or that a string not contain any unsafe characters that could be used to compromise the security of a database. Windows Forms provides several ways for you to validate input in your application.  

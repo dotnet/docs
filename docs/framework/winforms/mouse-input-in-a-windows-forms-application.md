@@ -1,23 +1,9 @@
 ---
 title: "Mouse Input in a Windows Forms Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, mouse input"
 ms.assetid: 743c2f3c-219e-4a52-b6b8-2657096a2da6
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Mouse Input in a Windows Forms Application
 Windows Forms includes a variety of mouse events and additional support for customized mouse cursors, mouse capture, and drag-and-drop behavior.  

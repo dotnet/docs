@@ -1,24 +1,10 @@
 ---
 title: "Printing How-to Topics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "printing [WPF]"
   - "print system management [WPF]"
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Printing How-to Topics
 The topics in this section demonstrate how to use the printing and print system management features included with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] as well as the new [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] print path.  

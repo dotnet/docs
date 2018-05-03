@@ -1,14 +1,6 @@
 ---
 title: "Data Sources Supported by Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "collections [Windows Forms], binding to"
   - "OLE DB providers [Windows Forms], Windows Forms"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "DataSet class [Windows Forms], binding and Windows Forms"
   - "data [Windows Forms], data providers"
 ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Data Sources Supported by Windows Forms
 Traditionally, data binding has been used within applications to take advantage of data stored in databases. With Windows Forms data binding, you can access data from databases as well as data in other structures, such as arrays and collections, so long as certain minimum requirements have been met.  

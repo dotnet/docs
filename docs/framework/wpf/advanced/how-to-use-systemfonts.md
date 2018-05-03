@@ -1,14 +1,6 @@
 ---
 title: "How to: Use SystemFonts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "fonts [WPF], system fonts"
   - "classes [WPF], SystemFonts"
 ms.assetid: 3f46a4ec-2225-408a-8123-8838a8f7057a
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use SystemFonts
 This example shows how to use the static resources of the <xref:System.Windows.SystemFonts> class in order to style or customize a button.  

@@ -2,10 +2,6 @@
 title: GetQualifierSet function (Unmanaged API Reference)
 description: The GetQualifierSet function retrieves the qualifier set for a class or instance.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetQualifierSet"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetQualifierSet function
 Retrieves the qualifier set for a class instance or a class definition.

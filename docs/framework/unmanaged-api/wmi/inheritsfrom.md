@@ -2,10 +2,6 @@
 title: InheritsFrom function (Unmanaged API Reference)
 description: The InheritsFrom function determines whether a class or instance derives from a particular parent class.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "InheritsFrom"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # InheritsFrom function
 Determines whether the current class or instance derives from a specified parent class.

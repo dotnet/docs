@@ -2,10 +2,6 @@
 title: GetPropertyOrigin function (Unmnaged API Reference)
 description: The GetPropertyOrigin function determines the class in which a property is declared.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetPropertyOrigin"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetPropertyOrigin function
 Determines the class in which a property is declared.

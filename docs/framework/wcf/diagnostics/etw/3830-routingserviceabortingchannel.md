@@ -1,21 +1,7 @@
 ---
 title: "3830 - RoutingServiceAbortingChannel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fba86ec8-4360-43e5-be54-cce43270af21
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3830 - RoutingServiceAbortingChannel
 ## Properties  

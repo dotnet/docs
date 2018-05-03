@@ -2,10 +2,6 @@
 title: PutClassWmi function (Unmanaged API Reference)
 description: The PutClassWmi function creates a new class or updates an existing one.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "PutClassWmi"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PutClassWmi function
 Creates a new class or updates an existing one.  

@@ -2,10 +2,6 @@
 title: BeginEnumeration function (Unmanaged API Reference)
 description: The BeginEnumeration function resets an enumerator to the beginning of the enumeration
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "BeginEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # BeginEnumeration function
 Resets an enumerator back to the beginning of the enumeration.  

@@ -1,19 +1,7 @@
 ---
 title: "Modeling Cancellation Behavior in Workflows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d48f6cf3-cdde-4dd3-8265-a665acf32a03
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Modeling Cancellation Behavior in Workflows
 Activities can be canceled inside a workflow, for example by a <xref:System.Activities.Statements.Parallel> activity canceling incomplete branches when its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> evaluates to `true`, or from outside the workflow, if the host calls <xref:System.Activities.WorkflowApplication.Cancel%2A>. To provide cancellation handling, workflow authors can use the <xref:System.Activities.Statements.CancellationScope> activity, the <xref:System.Activities.Statements.CompensableActivity> activity, or create custom activities that provide cancellation logic. This topic provides an overview of cancellation in workflows.  

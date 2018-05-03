@@ -1,22 +1,10 @@
 ---
 title: "Guide to the Windows Workflow Documentation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WF [WF], guide to"
   - "Windows Workflow Foundation [WF], guide to"
 ms.assetid: a75025be-f225-430f-90cf-98f7022db436
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Guide to the Windows Workflow Documentation
 This topic contains information about how to use the Windows Workflow Foundation documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  

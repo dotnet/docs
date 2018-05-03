@@ -1,19 +1,7 @@
 ---
 title: "Cancellation Handler on Compensable Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: afd98bee-eccf-47e9-99c9-27cea84ce5ce
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Cancellation Handler on Compensable Activity
 This sample demonstrates the use of a cancellation handler on a <xref:System.Activities.Statements.CompensableActivity>.  

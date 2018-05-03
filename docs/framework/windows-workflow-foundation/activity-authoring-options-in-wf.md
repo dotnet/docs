@@ -1,19 +1,7 @@
 ---
 title: "Activity Authoring Options in WF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b9061f5f-12c3-47f0-adbe-1330e2714c94
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Activity Authoring Options in WF
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several options for creating custom activities. The correct method to use for authoring a given activity depends on what run-time features are required.  

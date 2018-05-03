@@ -1,19 +1,7 @@
 ---
 title: "Simple Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6a94c834-2e32-4bed-9f47-ae5845eef6ff
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Simple Policy
 This sample shows how to use a <xref:System.Workflow.Activities.PolicyActivity> activity in a workflow.  

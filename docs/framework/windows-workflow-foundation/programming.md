@@ -1,23 +1,11 @@
 ---
 title: "Windows Workflow Foundation Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], programming"
   - "programming [WF]"
   - "WF [WF], programming"
 ms.assetid: f62354e2-6a2b-4e8c-a4bc-533fb96267a4
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Workflow Foundation Programming
 This section contains a set of primer topics that you should understand to become a proficient Windows Workflow Foundation (WF) programmer.  

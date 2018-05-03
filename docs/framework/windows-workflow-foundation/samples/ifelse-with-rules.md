@@ -1,19 +1,7 @@
 ---
 title: "IfElse With Rules"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c4ad9bb2-9037-413a-8b14-59ed7b927a9e
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IfElse With Rules
 This sample shows the use of a rule condition with an <xref:System.Workflow.Activities.IfElseActivity> activity.  

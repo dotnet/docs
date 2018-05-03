@@ -1,19 +1,7 @@
 ---
 title: "Tracking Using a Text File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 56a82682-73c2-4b91-a206-4d8bb12c561b
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracking Using a Text File
 This sample demonstrates how to extend tracking in Windows Workflow Foundation (WF) by creating a custom tracking participant. Tracking participants are .NET Framework classes that receive tracking records from the runtime as they are emitted. You can create a tracking participant to transport the tracking events to whichever destination is required for your scenario. For example, ETW (Event Tracing for Windows) Tracking Participant is provided as part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]. The tracking participant in this sample writes the records in XML format to a text file.  

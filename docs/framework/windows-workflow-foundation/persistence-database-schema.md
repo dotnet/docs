@@ -1,19 +1,7 @@
 ---
 title: "Persistence Database Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 34f69f4c-df81-4da7-b281-a525a9397a5c
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Persistence Database Schema
 This topic describes the public views supported by the SQL Workflow Instance Store.  

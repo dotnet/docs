@@ -1,19 +1,7 @@
 ---
 title: "Built-in Configuration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 34e85c9b-088d-4347-816c-0f77cb73ef2f
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Built-in Configuration
 This sample demonstrates the use and configuration of the SQL workflow instance store. The SQL workflow instance store is a SQL-based implementation of an instance store. It allows an instance to save and load its state to and from a SQL Server or SQL Server Express database.  

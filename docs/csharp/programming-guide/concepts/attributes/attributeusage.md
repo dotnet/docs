@@ -4,43 +4,47 @@ ms.date: 04/25/2018
 ---
 # AttributeUsage (C#)
 
-Determines how a custom attribute class can be used. `AttributeUsage` is an attribute that can be applied to custom attribute definitions to control how the new attribute can be applied. The default settings look like this when applied explicitly:
+Determines how a custom attribute class can be used. <xref:System.AttributeUsageAttribute> is an attribute you apply to custom attribute definitions. It controls how the new attribute can be applied. The default settings look like the following example when applied explicitly:
 
-[!code-csharp[Define a new attribute](../../../../../samples/snippets/csharp/properties/NewAttribute.cs#1)]
+[!code-csharp[Define a new attribute](../../../../../samples/snippets/csharp/attributes/NewAttribute.cs#1)]
 
-In this example, the `NewAttribute` class can be applied to any attribute-able code entity, but can be applied only once to each entity. It is inherited by derived classes when applied to a base class.
+In this example, the `NewAttribute` class can be applied to any attribute-able code entity. But it can be applied only once to each entity. The attribute is inherited by derived classes when applied to a base class.
 
-The `AllowMultiple` and `Inherited` arguments are optional, so this code has the same effect:
+The <xref:System.AttributeUsageAttribute.AllowMultiple> and <xref:System.AttributeUsageAttribute.Inherited> arguments are optional, so the following code has the same effect:
 
-[!code-csharp[Omit optional attributes](../../../../../samples/snippets/csharp/properties/NewAttribute.cs#2)]
+[!code-csharp[Omit optional attributes](../../../../../samples/snippets/csharp/attributes/NewAttribute.cs#2)]
 
-The first `AttributeUsage` argument must be one or more elements of the <xref:System.AttributeTargets> enumeration. Multiple target types can be linked together with the OR operator, like this:
+The first <xref:System.AttributeUsageAttribute> argument must be one or more elements of the <xref:System.AttributeTargets> enumeration. Multiple target types can be linked together with the OR operator, like the following example shows:
 
-[!code-csharp[Create an attribute for fields or properties](../../../../../samples/snippets/csharp/properties/NewPropertyOrFieldAttribute.cs#1)]
+[!code-csharp[Create an attribute for fields or properties](../../../../../samples/snippets/csharp/attributes/NewPropertyOrFieldAttribute.cs#1)]
 
-If the `AllowMultiple` argument is set to `true`, then the resulting attribute can be applied more than once to a single entity, like this:
+Beginning in C# 7.3, attributes can be applied to either the property or the backing field for an auto-implemented property. The attribute applies to the property, unless you specify the `field` specifier on the attribute. Both are shown in the following example:
 
-[!code-csharp[Create and use an attribute that can be applied multiple times](../../../../../samples/snippets/csharp/properties/MultiUseAttribute.cs#1)]
+[!code-csharp[Create an attribute for fields or properties](../../../../../samples/snippets/csharp/attributes/NewPropertyOrFieldAttribute.cs#2)]
 
-In this case `MultiUseAttribute` can be applied repeatedly because `AllowMultiple` is set to `true`. Both formats shown for applying multiple attributes are valid.
+If the <xref:System.AttributeUsageAttribute.AllowMultiple> argument is `true`, then the resulting attribute can be applied more than once to a single entity, as shown in the following example:
 
-If `Inherited` is set to `false`, then the attribute is not inherited by classes that are derived from a class that is attributed. For example:
+[!code-csharp[Create and use an attribute that can be applied multiple times](../../../../../samples/snippets/csharp/attributes/MultiUseAttribute.cs#1)]
 
-[!code-csharp[Create and use an attribute that can be applied multiple times](../../../../../samples/snippets/csharp/properties/NonInheritedAttribute.cs#1)]
+In this case, `MultiUseAttribute` can be applied repeatedly because `AllowMultiple` is set to `true`. Both formats shown for applying multiple attributes are valid.
 
-In this case `NonInheritedAttribute` is not applied to `DClass` via inheritance.
+If <xref:System.AttributeUsageAttribute.Inherited> is `false`, then the attribute isn't inherited by classes derived from an attributed class. For example:
+
+[!code-csharp[Create and use an attribute that can be applied multiple times](../../../../../samples/snippets/csharp/attributes/NonInheritedAttribute.cs#1)]
+
+In this case `NonInheritedAttribute` isn't applied to `DClass` via inheritance.
 
 ## Remarks
 
-The `AttributeUsage` attribute is a single-use attribute--it cannot be applied more than once to the same class. `AttributeUsage` is an alias for <xref:System.AttributeUsageAttribute>.
+The `AttributeUsage` attribute is a single-use attribute--it can't be applied more than once to the same class. `AttributeUsage` is an alias for <xref:System.AttributeUsageAttribute>.
 
 For more information, see [Accessing Attributes by Using Reflection (C#)](accessing-attributes-by-using-reflection.md).
 
 ## Example
 
-The following example demonstrates the effect of the `Inherited` and `AllowMultiple` arguments to the `AttributeUsage` attribute, and how the custom attributes applied to a class can be enumerated.
+The following example demonstrates the effect of the <xref:System.AttributeUsageAttribute.Inherited> and <xref:System.AttributeUsageAttribute.AllowMultiple> arguments to the <xref:System.AttributeUsageAttribute> attribute, and how the custom attributes applied to a class can be enumerated.
 
-[!code-csharp[applying and querying attributes](../../../../../samples/snippets/csharp/properties/Program.cs#1)]
+[!code-csharp[Applying and querying attributes](../../../../../samples/snippets/csharp/attributes/Program.cs#1)]
 
 ## Sample Output
 

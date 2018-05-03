@@ -1,26 +1,12 @@
 ---
 title: "Sharing Message Loops Between Win32 and WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Win32 code [WPF], sharing message loops"
   - "message loops [WPF]"
   - "sharing message loops [WPF]"
   - "interoperability [WPF], Win32"
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Sharing Message Loops Between Win32 and WPF
 This topic describes how to implement a message loop for interoperation with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], either by using existing message loop exposure in <xref:System.Windows.Threading.Dispatcher> or by creating a separate message loop on the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] side of your interoperation code.  

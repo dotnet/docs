@@ -1,14 +1,6 @@
 ---
 title: "How to: Handle Keyboard Input at the Form Level"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "Windows Forms, handling keyboard input"
   - "keyboards [Windows Forms], form-level input"
 ms.assetid: d7f8b390-dc91-42d2-ae0f-2ffa388127ad
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Handle Keyboard Input at the Form Level
 Windows Forms provides the ability to handle keyboard messages at the form level, before the messages reach a control. This topic shows how to accomplish this task.  

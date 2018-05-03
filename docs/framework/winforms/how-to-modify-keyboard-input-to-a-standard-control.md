@@ -1,14 +1,6 @@
 ---
 title: "How to: Modify Keyboard Input to a Standard Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "Windows Forms, modifying keyboard input"
   - "keyboards [Windows Forms], keyboard input"
 ms.assetid: 626d3712-d866-4988-bcda-a2d5b36ec0ba
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Modify Keyboard Input to a Standard Control
 Windows Forms provides the ability to consume and modify keyboard input. Consuming a key refers to handling a key within a method or event handler so that other methods and events further down the message queue do not receive the key value. Modifying a key refers to modifying the value of a key so that methods and event handlers further down the message queue receive a different key value. This topic shows how to accomplish these tasks.  

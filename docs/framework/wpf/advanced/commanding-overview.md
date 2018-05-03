@@ -1,14 +1,6 @@
 ---
 title: "Commanding Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "commanding [WPF]"
   - "CommandManager [WPF]"
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
-caps.latest.revision: 35
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Commanding Overview
 <a name="introduction"></a> Commanding is an input mechanism in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] which provides input handling at a more semantic level than device input. Examples of commands are the **Copy**, **Cut**, and **Paste** operations found on many applications.  

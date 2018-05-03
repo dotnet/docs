@@ -1,22 +1,12 @@
 ---
 title: "Globalization for WPF"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [WPF], international user interface"
   - "XAML [WPF], globalization"
   - "international user interface [WPF], XAML"
   - "globalization [WPF]"
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
-caps.latest.revision: 35
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Globalization for WPF
 This topic introduces issues that you should be aware of when writing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications for the global market. The globalization programming elements are defined in [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] in `System.Globalization`.  

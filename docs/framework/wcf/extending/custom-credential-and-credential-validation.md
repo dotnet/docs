@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # Custom Credential and Credential Validation
-Security in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is based on the exchange of credentials between services and clients. Most security scenarios can be satisfied using common credential types, such as Windows (Kerberos), username and passwords, and certificates. However, if a new type of credential is required, the topics in this section explain how to handle and validate new types.  
+Security in Windows Communication Foundation (WCF) is based on the exchange of credentials between services and clients. Most security scenarios can be satisfied using common credential types, such as Windows (Kerberos), username and passwords, and certificates. However, if a new type of credential is required, the topics in this section explain how to handle and validate new types.  
   
 ## In This Section  
  [How to: Create a Service that Employs a Custom Certificate Validator](../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  

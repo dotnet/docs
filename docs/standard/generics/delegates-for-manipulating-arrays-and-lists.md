@@ -1,13 +1,7 @@
 ---
 title: "Generic Delegates for Manipulating Arrays and Lists"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [.NET Framework], generic delegates"
   - "chaining delegates"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "lists [.NET Framework], generic delegates"
   - "generics [.NET Framework], delegates"
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generic Delegates for Manipulating Arrays and Lists
 This topic provides an overview of generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.  

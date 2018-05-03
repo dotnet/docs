@@ -1,25 +1,13 @@
 ---
 title: "Hosting Structures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "hosting structures [.NET Framework]"
   - "unmanaged structures [.NET Framework], hosting"
   - "structures [.NET Framework hosting]"
 ms.assetid: 492e010f-7493-4134-9505-f7008ccdaae6
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hosting Structures
 This section describes the unmanaged structures that the hosting API uses.  

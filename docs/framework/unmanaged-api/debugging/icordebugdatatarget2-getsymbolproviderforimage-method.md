@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugDataTarget2::GetSymbolProviderForImage Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: b7c0a2f0-e904-43b3-98e1-d669e8a589e8
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugDataTarget2::GetSymbolProviderForImage Method
 Returns the symbol-provider for a module from the base address of that module.  

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugStaticFieldSymbol::GetAddress Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 5a6c9a5a-ec72-4c40-a9c3-cee7baa63687
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStaticFieldSymbol::GetAddress Method
 Gets the address of a static field.  

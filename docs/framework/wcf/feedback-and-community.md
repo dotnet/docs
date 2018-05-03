@@ -21,6 +21,6 @@ ms.workload:
   - "dotnet"
 ---
 # Feedback and Community
-We appreciate your comments and concerns about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] or [!INCLUDE[infocard](../../../includes/infocard-md.md)] documentation. On the bottom of every page in the SDK is the sentence "Send comments about this topic to Microsoft." Click the "comments" link to send your views or suggestions about the specific topic.  
+We appreciate your comments and concerns about the Windows Communication Foundation (WCF) or [!INCLUDE[infocard](../../../includes/infocard-md.md)] documentation. On the bottom of every page in the SDK is the sentence "Send comments about this topic to Microsoft." Click the "comments" link to send your views or suggestions about the specific topic.  
   
  If you are looking for more information, or want to share techniques with others who are interested in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], try the [MSDN Windows Communication Foundation forum](http://go.microsoft.com/fwlink/?LinkId=186463).

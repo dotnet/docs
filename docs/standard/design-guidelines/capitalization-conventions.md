@@ -1,13 +1,7 @@
 ---
 title: "Capitalization Conventions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "camel-case names [.NET Framework]"
   - "class library design guidelines [.NET Framework], capitalization"
@@ -15,13 +9,8 @@ helpviewer_keywords:
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Capitalization Conventions
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.  

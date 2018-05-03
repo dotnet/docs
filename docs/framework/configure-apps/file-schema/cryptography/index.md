@@ -1,14 +1,6 @@
 ---
 title: "Cryptography Settings Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuration schema [.NET Framework], cryptography"
   - "elements [.NET Framework], cryptography"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "configuration sections [.NET Framework]"
   - "configuration settings [.NET Framework], cryptography"
 ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Cryptography Settings Schema
 The cryptography settings schema contains elements that specify how to map friendly algorithm names to classes that implement cryptography algorithms.  

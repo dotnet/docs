@@ -1,21 +1,7 @@
 ---
 title: "Downloading the JSON Web Token Handler Package"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d12b3f5b-f1f1-4a9d-a159-0c13e5976c90
-caps.latest.revision: 3
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Downloading the JSON Web Token Handler Package
 This topic discusses how to download and use the JSON Web Token Handler in your project.  

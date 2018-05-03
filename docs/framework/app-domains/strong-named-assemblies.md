@@ -1,24 +1,12 @@
 ---
 title: "Strong-Named Assemblies"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "strong-named assemblies, about strong-named assemblies"
   - "assemblies [.NET Framework], strong-named"
 ms.assetid: d4a80263-f3e0-4d81-9b61-f0cbeae3797b
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Strong-Named Assemblies
 Strong-naming an assembly creates a unique identity for the assembly, and can prevent assembly conflicts.  

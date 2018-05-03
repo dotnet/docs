@@ -1,21 +1,9 @@
 ---
 title: "&lt;serviceSecurityAudit&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-caps.latest.revision: 17
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceSecurityAudit&gt;
 Specifies settings that enable auditing of security events during service operations.  

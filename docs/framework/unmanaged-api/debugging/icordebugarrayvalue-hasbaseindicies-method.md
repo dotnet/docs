@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugArrayValue::HasBaseIndicies Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugArrayValue.HasBaseIndicies"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: aa26df07-e0a6-4608-bdef-d4afafec89aa
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugArrayValue::HasBaseIndicies Method
 Gets a value that indicates whether any dimensions of this array have a base index of non-zero.  

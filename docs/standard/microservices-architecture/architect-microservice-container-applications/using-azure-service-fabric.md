@@ -1,16 +1,9 @@
 ---
 title: Using Azure Service Fabric
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Service Fabric
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using Azure Service Fabric
 

@@ -1,14 +1,6 @@
 ---
 title: "openGenericCERCall MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), CER calls"
   - "open generic CER calls"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), CER calls"
   - "generics [.NET Framework], open generic CER calls"
 ms.assetid: da3e4ff3-2e67-4668-9720-fa776c97407e
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # openGenericCERCall MDA
 The `openGenericCERCall` managed debugging assistant is activated to warn that a constrained execution region (CER) graph with generic type variables at the root method is being processed at JIT-compilation or native image generation time and at least one of the generic type variables is an object reference type.  

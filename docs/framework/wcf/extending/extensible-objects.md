@@ -52,7 +52,7 @@ where T : IExtensibleObject<T>
  The <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of the <xref:System.ServiceModel.IExtension%601> objects that allow for retrieving the <xref:System.ServiceModel.IExtension%601> by its type. <xref:System.ServiceModel.IExtensionCollection%601.Find%2A?displayProperty=nameWithType> returns the most recently added object that is an <xref:System.ServiceModel.IExtension%601> of that type.  
   
 ### Extensible Objects in Windows Communication Foundation  
- There are four extensible objects in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]:  
+ There are four extensible objects in Windows Communication Foundation (WCF):  
   
 -   <xref:System.ServiceModel.ServiceHostBase> – This is the base class for the service’s host.  Extensions of this class can be used to extend the behavior of the <xref:System.ServiceModel.ServiceHostBase> itself or to store the state for each service.  
   

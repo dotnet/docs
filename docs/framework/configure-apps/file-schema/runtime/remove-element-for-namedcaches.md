@@ -1,24 +1,13 @@
 ---
 title: "&lt;remove&gt; Element for &lt;namedCaches&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "remove element for namedCaches"
   - "<remove> element for namedCaches"
 ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;remove&gt; Element for &lt;namedCaches&gt;
 Removes a named cache entry from the `namedCaches` collection for a memory cache.  

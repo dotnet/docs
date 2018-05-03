@@ -1,26 +1,12 @@
 ---
 title: "Whitespace Processing in XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "East Asian characters [XAML Services]"
   - "XAML [XAML Services], whitespace processing"
   - "whitespace processing in XAML [XAML Services]"
   - "characters [XAML Services], East Asian"
 ms.assetid: cc9cc377-7544-4fd0-b65b-117b90bb0b23
-caps.latest.revision: 20
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Whitespace Processing in XAML
 The language rules for XAML state that significant whitespace must be processed by a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor implementation. This topic documents these XAML language rules. It also documents additional whitespace handling that is defined by the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] implementation of the XAML processor and the XAML writer for serialization.  

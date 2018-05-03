@@ -1,14 +1,6 @@
 ---
 title: "DocumentViewer Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "templates [WPF], DocumentViewer"
   - "DocumentViewer [WPF], styles and templates"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "parts [WPF], DocumentViewer"
   - "styles [WPF], DocumentViewer"
 ms.assetid: 6bd4ff8f-ea6a-4084-ac58-e7a67446ce1c
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DocumentViewer Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.DocumentViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

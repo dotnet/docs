@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate a Rectangle Geometry by Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "RectangleGeometry objects [WPF], animating with key frames"
   - "animation [WPF], RectangleGeometry objects with key frames"
 ms.assetid: a8b45ceb-0e32-4ba1-928f-df6d30db17c6
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a Rectangle Geometry by Using Key Frames
 This example shows how to animate the <xref:System.Windows.Media.RectangleGeometry.Rect%2A> property of a <xref:System.Windows.Media.RectangleGeometry> by using key frames.  

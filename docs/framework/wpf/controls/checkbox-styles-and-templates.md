@@ -1,14 +1,6 @@
 ---
 title: "CheckBox Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "states [WPF], CheckBox"
   - "templates [WPF], CheckBox"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "CheckBox [WPF], styles and templates"
   - "styles [WPF], CheckBox"
 ms.assetid: bfdaec96-d101-4d3d-864d-c27e6b621d03
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # CheckBox Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.CheckBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

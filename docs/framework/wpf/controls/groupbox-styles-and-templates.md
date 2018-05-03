@@ -1,14 +1,6 @@
 ---
 title: "GroupBox Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ControlTemplate [WPF], GroupBox"
   - "parts [WPF], GroupBox"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "styles [WPF], GroupBox"
   - "templates [WPF], GroupBox"
 ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # GroupBox Styles and Templates
 <a name="introduction"></a> This topic describes the styles and templates for the <xref:System.Windows.Controls.GroupBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

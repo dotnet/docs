@@ -1,14 +1,6 @@
 ---
 title: "How to: Build a Standard UI Dialog Box by Using Grid"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "dialog boxes [WPF], creating"
   - "Grid control [WPF], creating [WPF], dialog box"
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Build a Standard UI Dialog Box by Using Grid
 This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] dialog box by using the <xref:System.Windows.Controls.Grid> element.  

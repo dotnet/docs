@@ -1,14 +1,6 @@
 ---
 title: "RadioButton Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "styles [WPF], RadioButton"
   - "RadioButton [WPF], styles and templates"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "templates [WPF], RadioButton"
   - "parts [WPF], RadioButton"
 ms.assetid: 9acf93f7-dd2f-4010-8ce0-1edd81c52ae2
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # RadioButton Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.RadioButton> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

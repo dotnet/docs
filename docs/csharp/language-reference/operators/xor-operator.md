@@ -1,19 +1,12 @@
 ---
 title: "^ Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "^_CSharpKeyword"
 helpviewer_keywords: 
   - "^ operator [C#]"
   - "bitwise exclusive OR operator [C#]"
 ms.assetid: b09bc815-570f-4db6-a637-5b4ed99d014a
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ^ Operator (C# Reference)
 Binary `^` operators are predefined for the integral types and `bool`. For integral types, `^` computes the bitwise exclusive-OR of its operands. For `bool` operands, `^` computes the logical exclusive-or of its operands; that is, the result is `true` if and only if exactly one of its operands is `true`.  

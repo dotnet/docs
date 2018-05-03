@@ -1,19 +1,12 @@
 ---
 title: "-&gt; Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "->_CSharpKeyword"
 helpviewer_keywords: 
   - "member access operator (->) [C#]"
   - "-> operator [C#]"
 ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -&gt; Operator (C# Reference)
 The `->` operator combines pointer dereferencing and member access.  

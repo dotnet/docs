@@ -1,12 +1,7 @@
 ---
 title: "protected internal (C# Reference)"
 ms.date: 11/15/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 author: "sputier"
-ms.author: "wiwagn"
 ---
 # protected internal (C# Reference)
 The `protected internal` keyword combination is a member access modifier. A protected internal member is accessible from the current assembly or from types that are derived from the containing class. For a comparison of `protected internal` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md). 

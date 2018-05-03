@@ -1,19 +1,12 @@
 ---
 title: "unchecked (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "unchecked_CSharpKeyword"
   - "unchecked"
 helpviewer_keywords: 
   - "unchecked keyword [C#]"
 ms.assetid: 0c021f7c-923f-4b3d-a58f-55336f5ac27e
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # unchecked (C# Reference)
 The `unchecked` keyword is used to suppress overflow-checking for integral-type arithmetic operations and conversions.  

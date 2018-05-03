@@ -1,15 +1,9 @@
 ---
 title: "out parameter modifier (C# Reference)"
 ms.date: 03/06/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "parameters [C#], out"
   - "out parameters [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # out parameter modifier (C# Reference)
 The `out` keyword causes arguments to be passed by reference. It is like the [ref](ref.md) keyword, except that `ref` requires that the variable be initialized before it is passed. It is also like the [in](in-parameter-modifier.md) keyword, except that `in` does not allow the called method to modify the argument value. To use an `out` parameter, both the method definition and the calling method must explicitly use the `out` keyword. For example:  

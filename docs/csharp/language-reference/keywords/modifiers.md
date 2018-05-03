@@ -1,17 +1,10 @@
 ---
 title: "Modifiers (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "keywords [C#], modifiers"
   - "modifiers [C#]"
 ms.assetid: c96691dd-b357-49ec-b5ae-03ca214fadfb
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Modifiers (C# Reference)
 Modifiers are used to modify declarations of types and type members. This section introduces the C# modifiers.  

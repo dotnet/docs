@@ -1,17 +1,11 @@
 ---
 title: "fixed Statement (C# Reference)"
 ms.date: 04/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "fixed_CSharpKeyword"
   - "fixed"
 helpviewer_keywords: 
   - "fixed keyword [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # fixed Statement (C# Reference)
 

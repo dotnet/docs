@@ -1,22 +1,13 @@
 ---
 title: "this (C# Reference)"
 description: this keyword (C# Reference)
-keywords: this (C#), this keyword (C#), this keyword (C# reference), this keyword (C# language reference)
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "this"
   - "this_CSharpKeyword"
 helpviewer_keywords: 
   - "this keyword [C#]"
 ms.assetid: d4f827fe-4710-410b-89b8-867dad44b8a3
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # this (C# Reference)
 The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.  

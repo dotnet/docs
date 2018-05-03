@@ -1,10 +1,6 @@
 ---
 title: "Null-conditional Operators (C# and Visual Basic)"
 ms.date: 04/03/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "?[] operator [C#]"
   - "?[] operator [Visual Basic]"
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ?. and ?[] null-conditional Operators (C# and Visual Basic)
 Used to test for null before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  

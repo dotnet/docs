@@ -1,19 +1,12 @@
 ---
 title: "using (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "using_CSharpKeyword"
   - "using"
 helpviewer_keywords: 
   - "using keyword [C#]"
 ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # using (C# Reference)
 The `using` keyword has two major uses:  

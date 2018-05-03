@@ -1,10 +1,6 @@
 ---
 title: "|| Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "||_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "conditional-OR operator (||) [C#]"
   - "|| operator [C#]"
 ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
-caps.latest.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # || Operator (C# Reference)
 The conditional-OR operator (`||`) performs a logical-OR of its `bool` operands. If the first operand evaluates to `true`, the second operand isn't evaluated. If the first operand evaluates to `false`, the second operator determines whether the OR expression as a whole evaluates to `true` or `false`.  

@@ -1,16 +1,9 @@
 ---
 title: "Selection Statements (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "statements [C#], selection"
 ms.assetid: cf21cfa2-34fb-48b0-9cbc-8bb4537a9a05
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Selection Statements (C# Reference)
 A selection statement causes the program control to be transferred to a specific flow based upon whether a certain condition is `true` or not.  

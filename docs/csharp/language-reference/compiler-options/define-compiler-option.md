@@ -1,10 +1,6 @@
 ---
 title: "-define (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/define"
 helpviewer_keywords: 
@@ -15,9 +11,6 @@ helpviewer_keywords:
   - "/d compiler option [C#]"
   - "d compiler option [C#]"
 ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -define (C# Compiler Options)
 The **-define** option defines `name` as a symbol in all source code files your program.  

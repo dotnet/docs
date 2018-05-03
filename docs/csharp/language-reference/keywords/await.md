@@ -1,19 +1,12 @@
 ---
 title: "await (C# Reference)"
 ms.date: 05/22/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
   - "await keyword [C#]"
   - "await [C#]"
 ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
-caps.latest.revision: 36
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # await (C# Reference)
 The `await` operator is applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the awaited task completes. The task represents ongoing work.  

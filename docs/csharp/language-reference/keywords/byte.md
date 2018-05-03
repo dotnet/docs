@@ -1,19 +1,12 @@
 ---
 title: "byte (C# Reference)"
 ms.date: 03/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "byte"
   - "byte_CSharpKeyword"
 helpviewer_keywords: 
   - "byte keyword [C#]"
 ms.assetid: 111f1db9-ca32-4f0e-b497-4783517eda47
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # byte (C# Reference)
 

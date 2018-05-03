@@ -1,19 +1,12 @@
 ---
 title: "%= Operator (C# Reference)"
 ms.date: 04/04/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "%=_CSharpKeyword"
 helpviewer_keywords: 
   - "remainder assignment operator (%=) [C#]"
   - "%= assignment operator (remainder assignment) [C#]"
 ms.assetid: 47e5f068-1d97-4010-bd3b-e21b5d3a77f5
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # %= Operator (C# Reference)
 The remainder assignment operator.  

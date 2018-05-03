@@ -26,7 +26,7 @@ WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS set
   
  The tool used to configure HTTP settings depends on the operating system the computer is running.  
   
- When running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] automatically installs this tool. When running [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605).  
+ When running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] automatically installs this tool. When running [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605).  
   
  When running [!INCLUDE[wv](../../../../includes/wv-md.md)]or Windows 7, you configure these settings with the Netsh.exe tool.  
   

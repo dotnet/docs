@@ -1,23 +1,9 @@
 ---
 title: "&lt;wsFederationHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "wsFederationBinding element"
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;wsFederationHttpBinding&gt;
 Defines a binding that supports WS-Federation.  
@@ -145,7 +131,7 @@ wsFederationBinding element
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
+ Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides Windows Communication Foundation (WCF) support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
   
  Bindings consist of a stack of binding elements. The stack of binding elements in  
   

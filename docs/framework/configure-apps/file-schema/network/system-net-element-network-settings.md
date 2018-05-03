@@ -1,14 +1,6 @@
 ---
 title: "&lt;system.Net&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.Net"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.Net"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "system.Net element"
   - "<system.Net> element"
 ms.assetid: 52de4d6c-b24d-44aa-ba7d-6b5061f1357e
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;system.Net&gt; Element (Network Settings)
 Contains settings that specify how the .NET Framework connects to the network.  

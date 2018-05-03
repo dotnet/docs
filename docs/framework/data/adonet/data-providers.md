@@ -1,24 +1,10 @@
 ---
 title: ".NET Framework Data Providers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-caps.latest.revision: 13
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # .NET Framework Data Providers
 A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider is used for connecting to a database, executing commands, and retrieving results. Those results are either processed directly, placed in a <xref:System.Data.DataSet> in order to be exposed to the user as needed, combined with data from multiple sources, or remoted between tiers. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers are lightweight, creating a minimal layer between the data source and code, increasing performance without sacrificing functionality.  
@@ -27,12 +13,12 @@ A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider 
   
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider|Description|  
 |-------------------------------------------------------------------------------|-----------------|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]|Provides data access for Microsoft [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. Uses the <xref:System.Data.SqlClient> namespace.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server|Provides data access for Microsoft SQL Server. Uses the <xref:System.Data.SqlClient> namespace.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB|For data sources exposed by using OLE DB. Uses the <xref:System.Data.OleDb> namespace.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC|For data sources exposed by using ODBC. Uses the <xref:System.Data.Odbc> namespace.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle|For Oracle data sources. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle supports Oracle client software version 8.1.7 and later, and uses the <xref:System.Data.OracleClient> namespace.|  
 |EntityClient Provider|Provides data access for Entity Data Model (EDM) applications. Uses the <xref:System.Data.EntityClient> namespace.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] Compact 4.0.|Provides data access for Microsoft [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] Compact 4.0. Uses the [System.Data.SqlServerCe](http://msdn.microsoft.com/library/system.data.sqlserverce.aspx) namespace.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server Compact 4.0.|Provides data access for Microsoft SQL Server Compact 4.0. Uses the [System.Data.SqlServerCe](http://msdn.microsoft.com/library/system.data.sqlserverce.aspx) namespace.|  
   
 ## Core Objects of .NET Framework Data Providers  
  The following table outlines the four core objects that make up a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider.  
@@ -56,8 +42,8 @@ A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider 
 |`Error`|Exposes the information from a warning or error returned by a data source.|  
 |`ClientPermission`|Provided for [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider code access security attributes. The base class for all `ClientPermission` objects is the <xref:System.Data.Common.DBDataPermission> class.|  
   
-## .NET Framework Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] (SqlClient)  
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] (SqlClient) uses its own protocol to communicate with [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. It is lightweight and performs well because it is optimized to access a [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] directly without adding an OLE DB or Open Database Connectivity (ODBC) layer. The following illustration contrasts the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB communicates to an OLE DB data source through both the OLE DB Service component, which provides connection pooling and transaction services, and the OLE DB provider for the data source.  
+## .NET Framework Data Provider for SQL Server (SqlClient)  
+ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (SqlClient) uses its own protocol to communicate with SQL Server. It is lightweight and performs well because it is optimized to access a SQL Server directly without adding an OLE DB or Open Database Connectivity (ODBC) layer. The following illustration contrasts the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB communicates to an OLE DB data source through both the OLE DB Service component, which provides connection pooling and transaction services, and the OLE DB provider for the data source.  
   
 > [!NOTE]
 >  The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC has a similar architecture to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB; for example, it calls into an ODBC Service Component.  
@@ -65,9 +51,9 @@ A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider 
  ![Data providers](../../../../docs/framework/data/adonet/media/netdataproviders-bpuedev11.gif "NETDataProviders_bpuedev11")  
 Comparison of the .NET Framework Data Provider for SQL Server and the .NET Framework Data Provider for OLE DB  
   
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] classes are located in the <xref:System.Data.SqlClient> namespace.  
+ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server classes are located in the <xref:System.Data.SqlClient> namespace.  
   
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] supports both local and distributed transactions. For distributed transactions, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)], by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services or <xref:System.Transactions>. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
+ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server supports both local and distributed transactions. For distributed transactions, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services or <xref:System.Transactions>. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
   
  The following code example shows how to include the `System.Data.SqlClient` namespace in your applications.  
   
@@ -86,7 +72,7 @@ using System.Data.SqlClient;
   
 |Driver|Provider|  
 |------------|--------------|  
-|SQLOLEDB|Microsoft OLE DB provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]|  
+|SQLOLEDB|Microsoft OLE DB provider for SQL Server|  
 |MSDAORA|Microsoft OLE DB provider for Oracle|  
 |Microsoft.Jet.OLEDB.4.0|OLE DB provider for Microsoft Jet|  
   
@@ -114,7 +100,7 @@ using System.Data.OleDb;
   
 |Driver|  
 |------------|  
-|[!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]|  
+|SQL Server|  
 |Microsoft ODBC for Oracle|  
 |Microsoft Access Driver (*.mdb)|  
   
@@ -157,8 +143,8 @@ using System.Data.OracleClient;
   
 |Provider|Notes|  
 |--------------|-----------|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]|Recommended for middle-tier applications that use Microsoft [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)].<br /><br /> Recommended for single-tier applications that use Microsoft Database Engine (MSDE) or [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)].<br /><br /> Recommended over use of the OLE DB provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] (SQLOLEDB) with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB|For [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)], the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] is recommended instead of this provider.<br /><br /> Recommended for single-tier applications that use Microsoft Access databases. Use of an Access database for a middle-tier application is not recommended.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server|Recommended for middle-tier applications that use Microsoft SQL Server.<br /><br /> Recommended for single-tier applications that use Microsoft Database Engine (MSDE) or SQL Server.<br /><br /> Recommended over use of the OLE DB provider for SQL Server (SQLOLEDB) with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB|For SQL Server, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server is recommended instead of this provider.<br /><br /> Recommended for single-tier applications that use Microsoft Access databases. Use of an Access database for a middle-tier application is not recommended.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ``Data Provider for ODBC|Recommended for middle and single-tier applications that use ODBC data sources.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ``Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|  
   

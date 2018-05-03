@@ -1,14 +1,6 @@
 ---
 title: "&lt;sources&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#sources"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "trace sources"
   - "<sources> element"
 ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;sources&gt; Element
 Specifies trace sources that initiate tracing messages.  

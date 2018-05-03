@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security
-You can use certificates in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] with message-layer (SOAP) security in addition to transport-layer security (TLS) over HTTP (HTTPS) or TCP. This topic describes differences in the way such certificates are validated.  
+You can use certificates in Windows Communication Foundation (WCF) with message-layer (SOAP) security in addition to transport-layer security (TLS) over HTTP (HTTPS) or TCP. This topic describes differences in the way such certificates are validated.  
   
 ## Validation of HTTPS Client Certificates  
  When using HTTPS to communicate between a client and a service, the certificate that the client uses to authenticate to the service must support chain trust. That is, it must chain to a trusted root certificate authority. If not, the HTTP layer raises a <xref:System.Net.WebException> with the message "The remote server returned an error: (403) Forbidden." [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] surfaces this exception as a <xref:System.ServiceModel.Security.MessageSecurityException>.  

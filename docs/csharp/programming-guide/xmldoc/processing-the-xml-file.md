@@ -72,7 +72,7 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 -   For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters.  For example,  
   
-     `<member name="T:SampleClass`2">` is the tag for a type that is defined as `public class SampleClass\<T, U>`.  
+     ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.  
   
      For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with back ticks (for example \`0,`1).  Each number representing a zero-based array notation for the type's generic parameters.  
   

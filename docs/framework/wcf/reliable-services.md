@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # Reliable Services
-Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
+Queues and reliable sessions are the Windows Communication Foundation (WCF) features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
   
  *Reliable messaging* is how a reliable messaging source (called the *source*) transfers messages reliably to a reliable messaging destination (called the *destination*).  
   
@@ -43,14 +43,14 @@ Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo
 ## Reliable Sessions  
  Reliable sessions provide end-to-end reliable transfer of messages between a source and a destination using the WS-Reliable Messaging protocol, regardless of the number or type of intermediaries that separate the messaging (source and destination) endpoints. This includes any transport intermediaries that do not use SOAP (for example, HTTP proxies) or intermediaries that use SOAP (for example, SOAP-based routers or bridges) that are required for messages to flow between the endpoints. Reliable sessions use an in-memory transfer window to mask SOAP message-level failures and re-establish connections in the case of transport failures.  
   
- Reliable sessions provide low-latency reliable message transfers. They provide for SOAP messages over any proxies or intermediaries, equivalent to what TCP provides for packets over IP bridges. [!INCLUDE[crabout](../../../includes/crabout-md.md)] reliable sessions, see [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
+ Reliable sessions provide low-latency reliable message transfers. They provide for SOAP messages over any proxies or intermediaries, equivalent to what TCP provides for packets over IP bridges. For more information about reliable sessions, see [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
   
 ### Queues  
  Queues in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provide both reliable transfers of messages and separation between sources and destinations at the cost of high latency. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] queued communication is built on top of Message Queuing (MSMQ).  
   
  MSMQ ships as an optional component with Windows. The MSMQ service runs as a Windows Service. It captures messages for transmission in a transmission queue on behalf of the source and delivers it to a target queue. The target queue accepts messages on behalf of the destination for later delivery whenever the destination requests messages. The MSMQ managers implement a reliable message-transfer protocol so that messages are not lost in transmission. The protocol can be native or a SOAP-based protocol called SOAP Reliable Messaging Protocol (SRMP).  
   
- The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when the source's rate of message production and the destination's rate of the message consumption do not match. [!INCLUDE[crabout](../../../includes/crabout-md.md)] queues, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
+ The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when the source's rate of message production and the destination's rate of the message consumption do not match. For more information about queues, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
 ## See Also  
  [Reliable Sessions Overview](../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)  

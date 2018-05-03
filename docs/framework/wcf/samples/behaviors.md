@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Behaviors
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service behaviors.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) service behaviors.  
   
 ## In This Section  
  [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)  

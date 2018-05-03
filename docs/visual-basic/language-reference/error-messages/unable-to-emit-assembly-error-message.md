@@ -56,7 +56,7 @@ The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink
   
      Use double quotation marks (") if a path or file contains spaces.  
   
-6.  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], add a .NET Assembly reference to the file you just created.  
+6.  In Visual Studio, add a .NET Assembly reference to the file you just created.  
   
 ## See Also  
  

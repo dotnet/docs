@@ -32,4 +32,4 @@ This section contains samples that demonstrate using the workflow rules engine f
  Demonstrates a travel booking application.  
   
  [Order Processing with Policy](../../../../docs/framework/windows-workflow-foundation/samples/order-processing-with-policy.md)  
- Demonstrates some of the key features introduced in the [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] of the [!INCLUDE[wf](../../../../includes/wf-md.md)].
+ Demonstrates some of the key features introduced in the [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] of the Windows Workflow Foundation (WF).

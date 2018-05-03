@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using Bindings to Configure Services and Clients
-Bindings are objects that specify the communication details required to connect to an endpoint. More specifically, bindings contain configuration information that is used to create the client or service runtime by defining the specifics of transports, wire-formats (message encoding), and protocols to use for the respective endpoint or client channel. To create a functioning [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service, each endpoint in the service requires a binding. This topic explains what bindings are, how they are defined, and how a particular binding is specified for an endpoint.  
+Bindings are objects that specify the communication details required to connect to an endpoint. More specifically, bindings contain configuration information that is used to create the client or service runtime by defining the specifics of transports, wire-formats (message encoding), and protocols to use for the respective endpoint or client channel. To create a functioning Windows Communication Foundation (WCF) service, each endpoint in the service requires a binding. This topic explains what bindings are, how they are defined, and how a particular binding is specified for an endpoint.  
   
 ## What a Binding Defines  
  The information in a binding can be very basic or very complex. The most basic binding specifies only the transport protocol (such as HTTP) that must be used to connect to the endpoint. More generally, the information a binding contains about how to connect to an endpoint falls into one of the categories in the following table.  
@@ -48,7 +48,7 @@ Bindings are objects that specify the communication details required to connect 
  For a complete list of system-provided bindings, with descriptions, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
   
 ## Custom Bindings  
- If the system-provided binding collection does not have the correct combination of features that a service application requires, you can create a <xref:System.ServiceModel.Channels.CustomBinding> binding. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the elements of a <xref:System.ServiceModel.Channels.CustomBinding> binding, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) and [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
+ If the system-provided binding collection does not have the correct combination of features that a service application requires, you can create a <xref:System.ServiceModel.Channels.CustomBinding> binding. For more information about the elements of a <xref:System.ServiceModel.Channels.CustomBinding> binding, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) and [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
   
 ## Using Bindings  
  Using bindings entails two basic steps:  

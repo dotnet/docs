@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using Sessions
-In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session* correlates a group of messages into a conversation. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] sessions are different than the session object available in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications and how to use them.  
+In Windows Communication Foundation (WCF) applications, a *session* correlates a group of messages into a conversation. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] sessions are different than the session object available in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications and how to use them.  
   
 ## Sessions in Windows Communication Foundation Applications  
  When a service contract specifies that it requires a session, that contract is specifying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not establish a session. If the session ends and a message is sent through the same channel an exception is thrown.  
@@ -70,13 +70,13 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session
   
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides the following types of session-based application behavior:  
   
--   The <xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType> supports security-based sessions, in which both ends of communication have agreed upon a specific secure conversation. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Securing Services](../../../docs/framework/wcf/securing-services.md). For example, the <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType> binding, which contains support for both security sessions and reliable sessions, by default uses only a secure session that encrypts and digitally signs messages.  
+-   The <xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType> supports security-based sessions, in which both ends of communication have agreed upon a specific secure conversation. For more information, see [Securing Services](../../../docs/framework/wcf/securing-services.md). For example, the <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType> binding, which contains support for both security sessions and reliable sessions, by default uses only a secure session that encrypts and digitally signs messages.  
   
 -   The <xref:System.ServiceModel.NetTcpBinding?displayProperty=nameWithType> binding supports TCP/IP-based sessions to ensure that all messages are correlated by the connection at the socket level.  
   
--   The <xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType> element, which implements the WS-ReliableMessaging specification, provides support for reliable sessions in which messages can be configured to be delivered in order and exactly once, ensuring messages are received even when messages travel across multiple nodes during the conversation. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
+-   The <xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType> element, which implements the WS-ReliableMessaging specification, provides support for reliable sessions in which messages can be configured to be delivered in order and exactly once, ensuring messages are received even when messages travel across multiple nodes during the conversation. For more information, see [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
   
--   The <xref:System.ServiceModel.NetMsmqBinding?displayProperty=nameWithType> binding provides MSMQ datagram sessions. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
+-   The <xref:System.ServiceModel.NetMsmqBinding?displayProperty=nameWithType> binding provides MSMQ datagram sessions. For more information, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
  Setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property does not specify the type of session the contract requires, only that it requires one.  
   
@@ -139,10 +139,10 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session
   
  For examples, see [How to: Create a Service That Requires Sessions](../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md) as well as the [Default Service Behavior](../../../docs/framework/wcf/samples/default-service-behavior.md) and [Instancing](../../../docs/framework/wcf/samples/instancing.md) samples.  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] clients and sessions, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+ For more information about clients and sessions, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
   
 ## Sessions Interact with InstanceContext Settings  
- There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Sessions, Instancing, and Concurrency](../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+ There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. For more information, see [Sessions, Instancing, and Concurrency](../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
 ### Sharing InstanceContext Objects  
  You can also control which session-based channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself. For a complete example, see [InstanceContextSharing](http://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230).  

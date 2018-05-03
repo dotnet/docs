@@ -1,26 +1,14 @@
 ---
 title: "&lt;enforceFIPSPolicy&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "enforceFIPSPolicy element"
   - "FIPS"
   - "<enforceFIPSPolicy> element"
   - "Federal Information Processing Standards (FIPS)"
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;enforceFIPSPolicy&gt; Element
 Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).  

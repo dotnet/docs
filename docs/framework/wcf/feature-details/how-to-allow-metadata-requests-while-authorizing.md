@@ -25,7 +25,7 @@ ms.workload:
 # How To: Allow Metadata Requests While Authorizing
 During custom authorization, it may be necessary to allow a request for metadata to be processed. The following topic walks through the steps to validate such a request.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
+ For more information about Windows Communication Foundation (WCF) authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
   
 ### To allow metadata requests during authorization  
   
@@ -35,7 +35,7 @@ During custom authorization, it may be necessary to allow a request for metadata
   
 3.  In the override, check the contract name, namespace, and the action as shown in the following example. If the conditions are valid, then return `true.`  
   
-4.  Use the extensibility point to employ the class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
+4.  Use the extensibility point to employ the class. For more information, see [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
   
 ## Example  
  The following example shows an override of the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method.  

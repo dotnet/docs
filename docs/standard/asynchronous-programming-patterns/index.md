@@ -1,26 +1,14 @@
 ---
 title: "Asynchronous Programming Patterns"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "asynchronous design patterns, .NET Framework"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: 4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Asynchronous Programming Patterns
 
 The .NET Framework provides three patterns for performing asynchronous operations:  

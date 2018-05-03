@@ -1,25 +1,13 @@
 ---
 title: "How to: Generate Primary Interop Assemblies Using Tlbimp.exe"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "primary interop assemblies, generating"
   - "Tlbimp.exe"
   - "Type Library Importer"
 ms.assetid: 5419011c-6e57-40f6-8c65-386db8f7a651
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Generate Primary Interop Assemblies Using Tlbimp.exe
 There are two ways to generate a primary interop assembly:  

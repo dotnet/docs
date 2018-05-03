@@ -18,10 +18,10 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Visual Studio Templates
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] templates are predefined project and item templates you can use in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] to quickly build [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services and surrounding applications.  
+Windows Communication Foundation (WCF) Visual Studio templates are predefined project and item templates you can use in Visual Studio to quickly build [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services and surrounding applications.  
   
 ## Using the WCF Templates  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] templates provide a basic class structure for service development. Specifically, these templates provide the basic definitions for service contract, data contract, service implementation, and configuration. You can use these templates to create a simple service with minimal code interaction, as well as a building block for more advanced services.  
+ [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Visual Studio templates provide a basic class structure for service development. Specifically, these templates provide the basic definitions for service contract, data contract, service implementation, and configuration. You can use these templates to create a simple service with minimal code interaction, as well as a building block for more advanced services.  
   
 ### WCF Service Library Project Template  
  The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Library project template is available in the new project dialog box under **Visual C#\WCF** and **Visual Basic\WCF**.  
@@ -35,7 +35,7 @@ ms.workload:
 -   Application configuration file (App.config). The configuration file provides the basic elements of a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service model with a secure HTTP binding. It also includes an endpoint for the service and enables metadata exchange.  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] is configured to recognize the App.config file as the configuration file for the project when it is run using the [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md), which is the default configuration. If you host the service library in an executable, you have to move the configuration code to the configuration file of the executable, as configuration files for DLLs are not valid.  
+>  Visual Studio is configured to recognize the App.config file as the configuration file for the project when it is run using the [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md), which is the default configuration. If you host the service library in an executable, you have to move the configuration code to the configuration file of the executable, as configuration files for DLLs are not valid.  
   
 ### WCF Service Application Template  
  The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Application template is available in the New Project dialog box under **Visual C#\WCF** and **Visual Basic\WCF**.  
@@ -56,7 +56,7 @@ ms.workload:
  The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Web Site template is available in the New Project dialog box under **Visual C#\Web Site\WCF Service** and **Visual Basic\Web Site\WCF Service**. This creates the same files as the WCF Service Application template but organizes it as if it were a ASP.NET web site. App_Code and App_Data folders are created.  
   
 ### WCF Service Item Template  
- The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Item template is a custom template that provides a quick way to add [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services to your existing [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] projects.  
+ The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Item template is a custom template that provides a quick way to add [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services to your existing Visual Studio projects.  
   
  To use this template, go to the **Solution Explorer** pane, right-click your project name, point to **Add**, and then click **New Item** to launch the **Add New Item** dialog box.  
   
@@ -67,15 +67,15 @@ ms.workload:
  A service host file (service1.svc) is also created if the existing project is a Web project.  
   
 ### WCF WF Service Project and Item Template.  
- These templates create [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services that host a Workflow Service, which is a workflow that can be accessed like a web service. Separate templates exist for XAML or imperative programming models. Using the templates, you can create sequential or state machine workflow. For more information on these types of workflow, see [Windows Workflow Foundation Tutorials](http://msdn.microsoft.com/library/e9705654-bd96-4b56-8d98-f1f118112d97). [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating workflow projects, see [Creating Legacy Workflow Projects](/visualstudio/workflow-designer/creating-legacy-workflow-projects).  
+ These templates create [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services that host a Workflow Service, which is a workflow that can be accessed like a web service. Separate templates exist for XAML or imperative programming models. Using the templates, you can create sequential or state machine workflow. For more information on these types of workflow, see [Windows Workflow Foundation Tutorials](http://msdn.microsoft.com/library/e9705654-bd96-4b56-8d98-f1f118112d97). For more information about creating workflow projects, see [Creating Legacy Workflow Projects](/visualstudio/workflow-designer/creating-legacy-workflow-projects).  
   
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] designer is more responsive when XOML type workflows are used instead of code based ones. XOML workflow is the default workflow type to be created.  
+ Visual Studio designer is more responsive when XOML type workflows are used instead of code based ones. XOML workflow is the default workflow type to be created.  
   
 ### WCF Syndication Service Library Template  
  This template enables you to expose your feed in the RSS or ATOM format as a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. For more information, see [WCF Syndication](../../../docs/framework/wcf/feature-details/wcf-syndication.md).  
   
 #### Changing the Address of the Feed  
- The syndication template uses Internet Explorer during execution. When you right-click your project in **Solutions Explorer** in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], select **Properties**, then select the **Debug** tab and you can see the default address of the template. Internet Explorer attempts to open the feed at this address.  
+ The syndication template uses Internet Explorer during execution. When you right-click your project in **Solutions Explorer** in Visual Studio, select **Properties**, then select the **Debug** tab and you can see the default address of the template. Internet Explorer attempts to open the feed at this address.  
   
  If you change the address of your feed, you must also change the address in the **Debug** tab. If you do not do this, Internet Explorer attempts to open the feed at the default address and fail.  
   

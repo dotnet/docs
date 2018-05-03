@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Supported Deployment Scenarios
-The subset of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features supported for use in partially trusted applications is designed to meet the requirements of some, but not all, scenarios for using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. On the server, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] meets the requirements of Internet-scale shared hosting providers who run third-party applications in the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] Medium Trust permission set for security reasons. On the client, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] partial trust support is designed to meet the requirements of deployment technologies such as [ClickOnce Deployment](http://go.microsoft.com/fwlink/?LinkId=83712) or [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)]'s XAML Browser Application technology, which allow seamless and secure deployment of desktop applications from untrusted sites.  
+The subset of Windows Communication Foundation (WCF) features supported for use in partially trusted applications is designed to meet the requirements of some, but not all, scenarios for using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. On the server, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] meets the requirements of Internet-scale shared hosting providers who run third-party applications in the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] Medium Trust permission set for security reasons. On the client, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] partial trust support is designed to meet the requirements of deployment technologies such as [ClickOnce Deployment](http://go.microsoft.com/fwlink/?LinkId=83712) or [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)]'s XAML Browser Application technology, which allow seamless and secure deployment of desktop applications from untrusted sites.  
   
 ## Minimum Permission Requirements  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports a subset of features in applications running under either of the following standard named permission sets:  
@@ -40,7 +40,7 @@ The subset of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features s
   
  Workflow Services require Full Trust permissions and cannot be used in partially trusted applications.  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Use Medium Trust in ASP.NET 2.0](http://go.microsoft.com/fwlink/?LinkId=84603).  
+ For more information, see [How to: Use Medium Trust in ASP.NET 2.0](http://go.microsoft.com/fwlink/?LinkId=84603).  
   
 ## Partial Trust on the Client  
  Certain security precautions must be taken when downloading and running code from untrusted Internet sites. Both [ClickOnce Deployment](http://go.microsoft.com/fwlink/?LinkId=83712) and [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)]'s XAML Browser Application (XBAP) technology make use of partial trust to grant limited permissions (Internet Zone) to untrusted code.  

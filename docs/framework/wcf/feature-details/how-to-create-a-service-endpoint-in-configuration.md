@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a Service Endpoint in Configuration
-Endpoints provide clients with access to the functionality a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service offers. You can define one or more endpoints for a service by using a combination of relative and absolute endpoint addresses, or if you do not define any service endpoints, the runtime provides some by default for you. This topic shows how to add endpoints using a configuration file that contain both relative and absolute addresses.  
+Endpoints provide clients with access to the functionality a Windows Communication Foundation (WCF) service offers. You can define one or more endpoints for a service by using a combination of relative and absolute endpoint addresses, or if you do not define any service endpoints, the runtime provides some by default for you. This topic shows how to add endpoints using a configuration file that contain both relative and absolute addresses.  
   
 ## Example  
  The following service configuration specifies a base address and five endpoints.  
@@ -127,7 +127,7 @@ Endpoints provide clients with access to the functionality a [!INCLUDE[indigo1](
 ```  
   
 ## Example  
- To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+ To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 ```xml  
 <configuration>  

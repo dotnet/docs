@@ -1,21 +1,10 @@
 ---
 title: "&lt;httpListener&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;httpListener&gt; Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  

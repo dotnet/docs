@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How the WCF Syndication Object Model Maps to Atom and RSS
-When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndication service, you create feeds and items using the following classes:  
+When developing a Windows Communication Foundation (WCF) syndication service, you create feeds and items using the following classes:  
   
 -   <xref:System.ServiceModel.Syndication.SyndicationFeed>  
   

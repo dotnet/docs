@@ -49,7 +49,7 @@ This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] m
   
  Given the disconnected nature of queues, the client and the service may not be online at the same time. As such, the client and service have to exchange certificates out-of-band. In particular, the client, by virtue of holding the service's certificate (which can be chained to a certification authority) in its trusted store, must trust that it is communicating with the correct service. For authenticating the client, the service uses the X.509 certificate attached with the message to matches it with the certificate in its store to verify the authenticity of the client. Again, the certificate must be chained to a certification authority.  
   
- On a computer running Windows, certificates are held in several kinds of stores. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the different stores, see [Certificate stores](http://go.microsoft.com/fwlink/?LinkId=87787).  
+ On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](http://go.microsoft.com/fwlink/?LinkId=87787).  
   
 ### Windows  
  Windows message credential type uses the Kerberos protocol.  
@@ -60,7 +60,7 @@ This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] m
   
  Note that when using this credential type, the service must be running under the SERVICE account.  
   
- The Kerberos protocol is used by default when choosing message credential. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](http://go.microsoft.com/fwlink/?LinkId=87790).  
+ The Kerberos protocol is used by default when choosing message credential. For more information, see [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](http://go.microsoft.com/fwlink/?LinkId=87790).  
   
 ### Username Password  
  Using this property, the client can authenticate to the server using a username password in the security header of the message.  

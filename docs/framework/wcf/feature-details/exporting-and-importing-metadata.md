@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Exporting and Importing Metadata
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], exporting metadata is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Importing service metadata is the process of generating <xref:System.ServiceModel.Description.ServiceEndpoint> instances or parts from service metadata.  
+In Windows Communication Foundation (WCF), exporting metadata is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Importing service metadata is the process of generating <xref:System.ServiceModel.Description.ServiceEndpoint> instances or parts from service metadata.  
   
 ## Exporting Metadata  
  To export metadata from <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> instances, use an implementation of the <xref:System.ServiceModel.Description.MetadataExporter> abstract class. The <xref:System.ServiceModel.Description.WsdlExporter> type is the implementation of the <xref:System.ServiceModel.Description.MetadataExporter> abstract class included with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

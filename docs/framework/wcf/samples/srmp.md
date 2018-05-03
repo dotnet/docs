@@ -22,7 +22,7 @@ This sample demonstrates how to perform transacted queued communication by using
   
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.  
   
- MSMQ enables the use of HTTP (including the use of HTTPS) to send messages to a queue. In this example, we demonstrate using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queued communication and how to send messages over HTTP. MSMQ uses a protocol called SRMP, which is a SOAP-based protocol for communication over HTTP.  
+ MSMQ enables the use of HTTP (including the use of HTTPS) to send messages to a queue. In this example, we demonstrate using Windows Communication Foundation (WCF) queued communication and how to send messages over HTTP. MSMQ uses a protocol called SRMP, which is a SOAP-based protocol for communication over HTTP.  
   
 ### To set up, build, and run the sample  
   
@@ -100,7 +100,7 @@ OrderDetails
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\SRMP`  
   

@@ -14,11 +14,11 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # Class not registered on local machine
-This error is usually encountered as a result of a corrupted file. You may need to reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+This error is usually encountered as a result of a corrupted file. You may need to reinstall Visual Studio.  
   
 ## To correct this error  
   
--   Reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+-   Reinstall Visual Studio.  
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  

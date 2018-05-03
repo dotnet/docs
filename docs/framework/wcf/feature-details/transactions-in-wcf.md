@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transactions in WCF
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transactions feature allows several components to concurrently participate in a data operation. The topics in this section examine the feature in detail.  
+The Windows Communication Foundation (WCF) transactions feature allows several components to concurrently participate in a data operation. The topics in this section examine the feature in detail.  
   
 ## In This Section  
  [Windows Communication Foundation Transactions Overview](../../../../docs/framework/wcf/feature-details/transactions-overview.md)  

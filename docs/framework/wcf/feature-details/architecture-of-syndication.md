@@ -32,13 +32,13 @@ The Syndication API is designed to provide a format-neutral programming model th
   
  These classes map closely to the constructs defined in the Atom 1.0 specification, although some of the names are different.  
   
- In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], syndication feeds are modeled as another type of service operation, one where the return type is one of the derived classes of <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>. The retrieval of a feed is modeled as a request-response message exchange. A client sends a request to the service and the service responds. The request message is set over an infrastructure protocol (for example, raw HTTP) and the response message contains a payload that consists of a commonly understood syndication format (RSS 2.0 or Atom 1.0). Services that implement these message exchanges are referred to as syndication services.  
+ In Windows Communication Foundation (WCF), syndication feeds are modeled as another type of service operation, one where the return type is one of the derived classes of <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>. The retrieval of a feed is modeled as a request-response message exchange. A client sends a request to the service and the service responds. The request message is set over an infrastructure protocol (for example, raw HTTP) and the response message contains a payload that consists of a commonly understood syndication format (RSS 2.0 or Atom 1.0). Services that implement these message exchanges are referred to as syndication services.  
   
  The contract for a syndication service consists of a set of operations that returns an instance of the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> class. The following example demonstrates an interface declaration for a syndication service.  
   
  [!code-csharp[S_UE_SyndicationBoth#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_syndicationboth/cs/service.cs#0)]  
   
- Syndication support is built on top of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model that defines the <xref:System.ServiceModel.WebHttpBinding> binding, which is used in conjunction with <xref:System.ServiceModel.Description.WebHttpBehavior> to make feeds available as services. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model, see [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md).  
+ Syndication support is built on top of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model that defines the <xref:System.ServiceModel.WebHttpBinding> binding, which is used in conjunction with <xref:System.ServiceModel.Description.WebHttpBehavior> to make feeds available as services. For more information about the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model, see [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md).  
   
 > [!NOTE]
 >  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation ignores the fractional seconds.  
@@ -83,7 +83,7 @@ The Syndication API is designed to provide a format-neutral programming model th
   
 ## Extensibility  
   
--   A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
+-   A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. For more information, see [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
   
 ## See Also  
  [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  

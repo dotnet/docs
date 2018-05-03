@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Interoperability
-This section contains samples that demonstrate interaction between [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and other service technologies.  
+This section contains samples that demonstrate interaction between Windows Communication Foundation (WCF) and other service technologies.  
   
 ## In This Section  
  [Using the WCF Moniker with COM Clients](../../../../docs/framework/wcf/samples/using-the-wcf-moniker-with-com-clients.md)  

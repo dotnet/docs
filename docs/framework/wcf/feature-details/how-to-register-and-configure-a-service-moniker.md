@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Register and Configure a Service Moniker
-Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service moniker within a COM application with a typed contract, you must register the required attributed types with COM, and configure the COM application and the moniker with the required binding configuration.  
+Before using the Windows Communication Foundation (WCF) service moniker within a COM application with a typed contract, you must register the required attributed types with COM, and configure the COM application and the moniker with the required binding configuration.  
   
 ### To register the required attributed types with COM  
   
@@ -33,7 +33,7 @@ Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service
     [assembly: ComVisible(true)]  
     ```  
   
-3.  Compile the managed [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client as a strong-named assembly. This requires signing with a cryptographic key pair. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Signing an Assembly with a Strong Name](http://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
+3.  Compile the managed [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client as a strong-named assembly. This requires signing with a cryptographic key pair. For more information, see [Signing an Assembly with a Strong Name](http://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
   
 4.  Use the Assembly Registration (Regasm.exe) tool with the `/tlb` option to register the types in the assembly with COM.  
   

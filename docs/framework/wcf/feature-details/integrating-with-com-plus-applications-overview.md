@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Integrating with COM+ Applications Overview
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich environment for creating distributed applications. If you are already using component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. A common scenario is when you want to expose existing COM+ or Enterprise Services business logic through Web Services.  
+Windows Communication Foundation (WCF) provides a rich environment for creating distributed applications. If you are already using component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. A common scenario is when you want to expose existing COM+ or Enterprise Services business logic through Web Services.  
   
  When an interface on a COM+ component is exposed as a Web service, the specification and contract of these services are determined by an automatic mapping that is performed at application initialization time. The following list shows the conceptual model for this mapping:  
   
@@ -48,9 +48,9 @@ ms.workload:
   
 2.  Select an appropriate hosting mode.  
   
-3.  Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
+3.  Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
   
-4.  Configure any additional service settings in the application configuration file. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
+4.  Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
   
 ## Supported Interfaces  
  There are some restrictions on the type of interfaces that can be exposed as a Web service. The following types of interfaces are not supported:  

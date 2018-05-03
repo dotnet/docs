@@ -1,12 +1,6 @@
 ---
 title: "Creating Internet Requests"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WebRequest class, sending and receiving data"
   - "Networking"
@@ -16,12 +10,9 @@ helpviewer_keywords:
   - "Internet, requesting data"
   - "data requests, creating requests"
 ms.assetid: faab683e-3f1e-4eee-b5e9-59f7245033d5
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating Internet Requests
 Applications create <xref:System.Net.WebRequest> instances through the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. This is a static method that creates a class derived from **WebRequest** based on the URI scheme passed to it.  

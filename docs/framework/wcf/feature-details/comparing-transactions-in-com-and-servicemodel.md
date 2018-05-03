@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Comparing Transactions in COM+ and ServiceModel
-This topic discusses how to simulate the behavior of a transactional COM+ service using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] attributes the <xref:System.ServiceModel> namespace provides.  
+This topic discusses how to simulate the behavior of a transactional COM+ service using the Windows Communication Foundation (WCF) attributes the <xref:System.ServiceModel> namespace provides.  
   
 ## Emulating COM+ Using ServiceModel Attributes  
  The following table compares the <xref:System.EnterpriseServices.TransactionOption> enumeration used to create an `EnterpriseServices` transaction and how they correlate to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] attributes the <xref:System.ServiceModel> namespace provides.  

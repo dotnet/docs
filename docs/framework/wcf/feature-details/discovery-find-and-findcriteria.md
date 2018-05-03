@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Discovery Find and FindCriteria
-A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] discovery messages, see the [WS-Discovery specification](http://go.microsoft.com/fwlink/?LinkID=122347).  
+A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. For more information about discovery messages, see the [WS-Discovery specification](http://go.microsoft.com/fwlink/?LinkID=122347).  
   
 ## DiscoveryClient  
  The <xref:System.ServiceModel.Discovery.DiscoveryClient> class provides the mechanism to perform find operations and makes performing discovery client operations easy. It contains a <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method, which performs a (blocking) synchronous find, and a <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> method, which initiates a non-blocking asynchronous find. Both methods take a <xref:System.ServiceModel.Discovery.FindCriteria> parameter, and provide results to the user through a <xref:System.ServiceModel.Discovery.FindResponse> object.  

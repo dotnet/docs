@@ -6,8 +6,10 @@ manager: wpickett
 ms.author: johalex
 ms.date: 01/19/2017
 ms.topic: tutorial
-ms.prod: .net-core
+ms.prod: dotnet-core
 ms.custom: mvc
+ms.workload: 
+  - dotnetcore
 ---
 # Using Microsoft XML Serializer Generator on .NET Core
 

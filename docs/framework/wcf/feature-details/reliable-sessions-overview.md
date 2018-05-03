@@ -20,7 +20,7 @@ ms.workload:
 
 # Reliable Sessions Overview
 
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] SOAP reliable messaging provides end-to-end message transfer reliability between SOAP endpoints. It does this on networks that are unreliable by overcoming transport failures and SOAP message-level failures. In particular, it provides session-based, single, and (optionally) ordered delivery for messages sent across SOAP or transport intermediaries. Session-based delivery provides for grouping messages in a session with optional ordering of the messages.
+Windows Communication Foundation (WCF) SOAP reliable messaging provides end-to-end message transfer reliability between SOAP endpoints. It does this on networks that are unreliable by overcoming transport failures and SOAP message-level failures. In particular, it provides session-based, single, and (optionally) ordered delivery for messages sent across SOAP or transport intermediaries. Session-based delivery provides for grouping messages in a session with optional ordering of the messages.
 
 This topic describes reliable sessions, how and when to use them, and how to secure them.
 

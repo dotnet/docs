@@ -1,26 +1,12 @@
 ---
 title: "How to: Add, Modify, and Delete Entities (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, changing data"
 ms.assetid: a00f8933-b232-4445-95ba-adc634f055d8
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Add, Modify, and Delete Entities (WCF Data Services)
 With the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client libraries, you can create, update, and delete entity data in a data service by performing equivalent actions on objects in the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md).  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Remove an Assembly from the Global Assembly Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "Gacutil.exe"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "Global Assembly Cache tool"
   - "GAC (global assembly cache), removing assemblies"
 ms.assetid: acdcc588-b458-436d-876c-726de68244c1
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Remove an Assembly from the Global Assembly Cache
 There are two ways to remove an assembly from the global assembly cache (GAC):  

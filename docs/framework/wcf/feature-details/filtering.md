@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Filtering
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] filtering system can use declarative filters to match messages and make operational decisions. You can use filters to determine what to do with a message by examining part of the message. A queuing process, for example, can use an XPath 1.0 query to check the priority element of a known header to determine whether to move a message to the front of the queue.  
+The Windows Communication Foundation (WCF) filtering system can use declarative filters to match messages and make operational decisions. You can use filters to determine what to do with a message by examining part of the message. A queuing process, for example, can use an XPath 1.0 query to check the priority element of a known header to determine whether to move a message to the front of the queue.  
   
  The filtering system is composed of a set of classes that can efficiently determine which of a set of filters are `true` for a particular [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message.  
   

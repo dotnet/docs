@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Streaming Message Transfer
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports support two modes for transferring messages:  
+Windows Communication Foundation (WCF) transports support two modes for transferring messages:  
   
 -   Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
   
@@ -49,7 +49,7 @@ ms.workload:
   
  Some [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] features, such as reliable messaging, transactions, and SOAP message-level security, rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport-level security only or use transport-level security plus authentication-only message security.  
   
- SOAP headers are always buffered, even when the transfer mode is set to streamed. The headers for a message must not exceed the size of the `MaxBufferSize` transport quota. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this setting, see [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
+ SOAP headers are always buffered, even when the transfer mode is set to streamed. The headers for a message must not exceed the size of the `MaxBufferSize` transport quota. For more information about this setting, see [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   
 ## Differences Between Buffered and Streamed Transfers  
  Changing the transfer mode from buffered to streamed also changes the native channel shape of the TCP and named pipe transports. For buffered transfers, the native channel shape is <xref:System.ServiceModel.Channels.IDuplexSessionChannel>. For streamed transfers, the native channels are <xref:System.ServiceModel.Channels.IRequestChannel> and <xref:System.ServiceModel.Channels.IReplyChannel>. Changing the transfer mode in an existing application that uses these transports directly (that is, not through a service contract) requires changing the expected channel shape for channel factories and listeners.  

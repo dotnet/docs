@@ -1,25 +1,14 @@
 ---
 title: "Arrays"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], arrays"
   - "arrays [.NET Framework], usage guidelines"
   - "empty arrays"
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Arrays
 **✓ DO** prefer using collections over arrays in public APIs. The [Collections](../../../docs/standard/design-guidelines/guidelines-for-collections.md) section provides details about how to choose between collections and arrays.  

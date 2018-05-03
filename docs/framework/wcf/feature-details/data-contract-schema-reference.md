@@ -23,7 +23,7 @@ ms.workload:
 This topic describes the subset of the XML Schema (XSD) used by <xref:System.Runtime.Serialization.DataContractSerializer> to describe common language runtime (CLR) types for XML serialization.  
   
 ## DataContractSerializer Mappings  
- The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
+ The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a Windows Communication Foundation (WCF) service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). For more information, see [Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
   
  The `DataContractSerializer` also maps XSD to CLR types when Svcutil.exe is used to access Web Services Description Language (WSDL) or XSD documents and generate data contracts for services or clients.  
   
@@ -240,7 +240,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
 -   Simple type restrictions of `xs:string` that do not have any restriction facets other than `xs:enumeration` are mapped to enumeration data contracts.  
   
--   All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] primitive type mapping, see Type/primitive mapping.  
+-   All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. For more information about primitive type mapping, see Type/primitive mapping.  
   
 ### \<xs:restriction>: attributes  
   
@@ -544,7 +544,7 @@ public class Employee : Person
 </xs:complexType>  
 ```  
   
- The optional attribute `ser:FactoryType` declared in the Data Contract Serialization schema references a factory class that can deserialize the type. The factory class must be part of the known types collection of the `DataContractSerializer` instance being used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ The optional attribute `ser:FactoryType` declared in the Data Contract Serialization schema references a factory class that can deserialize the type. The factory class must be part of the known types collection of the `DataContractSerializer` instance being used. For more information about known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
 ## DataContract Serialization Schema  
  A number of schemas exported by the `DataContractSerializer` use types, elements, and attributes from a special Data Contract Serialization namespace:  

@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Declare Faults in Service Contracts
-In managed code, exceptions are thrown when error conditions occur. In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, however, service contracts specify what error information is returned to clients by declaring SOAP faults in the service contract. For an overview of the relationship between exceptions and faults, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+In managed code, exceptions are thrown when error conditions occur. In Windows Communication Foundation (WCF) applications, however, service contracts specify what error information is returned to clients by declaring SOAP faults in the service contract. For an overview of the relationship between exceptions and faults, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
 ### Create a service contract that specifies a SOAP fault  
   

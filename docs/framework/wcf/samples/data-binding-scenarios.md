@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Binding Scenarios
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data binding scenarios.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) data binding scenarios.  
   
 ## In This Section  
  [Data Binding in a Windows Forms Client](../../../../docs/framework/wcf/samples/data-binding-in-a-windows-forms-client.md)  
@@ -28,4 +28,4 @@ This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../in
  Demonstrates how to bind data returned by a typical [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in a Web Forms application.  
   
  [Data Binding in a Windows Presentation Foundation Client](../../../../docs/framework/wcf/samples/data-binding-in-a-wpf-client.md)  
- Demonstrates the use of data binding in a [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] client.
+ Demonstrates the use of data binding in a Windows Presentation Foundation (WPF) client.

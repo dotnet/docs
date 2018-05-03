@@ -1,21 +1,7 @@
 ---
 title: "Identifiers (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d58a5edd-7b5c-48e1-b5d7-a326ff426aa4
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Identifiers (Entity SQL)
 Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to represent query expression aliases, variable references, properties of objects, functions, and so on. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides two kinds of identifiers: simple identifiers and quoted identifiers.  

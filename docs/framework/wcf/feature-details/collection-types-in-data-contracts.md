@@ -35,9 +35,9 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  Additional requirements on collection types, such as having a method called `Add` and a default constructor, are discussed in detail in the following sections. This ensures that collection types can be both serialized and deserialized. This means that some collections are not directly supported, such as the Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> (because it has no default constructor). However, for information about circumventing these restrictions, see the section "Using Collection Interface Types and Read-Only Collections" later in this topic.  
   
- The types contained in collections must be data contract types, or be otherwise serializable. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ The types contained in collections must be data contract types, or be otherwise serializable. For more information, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] what is and what is not considered a valid collection, as well as about how collections are serialized, see the information about serializing collections in the "Advanced Collection Rules" section of this topic.  
+ For more information about what is and what is not considered a valid collection, as well as about how collections are serialized, see the information about serializing collections in the "Advanced Collection Rules" section of this topic.  
   
 ## Interchangeable Collections  
  All list collections of the same type are considered to have the same data contract (unless they are customized using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute, as discussed later in this topic). Thus, for example, the following data contracts are equivalent.  
@@ -86,7 +86,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
 ## Customizing Collection Types  
  You can customize collection types by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute, which has several uses.  
   
- Note that customizing collection types compromises collection interchangeability, so it is generally recommended to avoid applying this attribute whenever possible. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this issue, see the "Advanced Collection Rules" section later in this topic.  
+ Note that customizing collection types compromises collection interchangeability, so it is generally recommended to avoid applying this attribute whenever possible. For more information about this issue, see the "Advanced Collection Rules" section later in this topic.  
   
 ### Collection Data Contract Naming  
  The rules for naming collection types are similar to those for naming regular data contract types, as described in [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md), although some important differences exist:  
@@ -147,7 +147,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
 </cust_list>  
 ```  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Advanced Collection Rules" section later in this topic.  
+ For more information, see the "Advanced Collection Rules" section later in this topic.  
   
 ### Customizing the Repeating Element Name in List Collections  
  List collections contain repeating entries. Normally, each repeating entry is represented as an element named according to the data contract name of the type contained in the collection.  
@@ -198,7 +198,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
 </CountriesOrRegionsWithCapitals>  
 ```  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] dictionary collections, see the "Advanced Collection Rules" section later in this topic.  
+ For more information about dictionary collections, see the "Advanced Collection Rules" section later in this topic.  
   
 ## Collections and Known Types  
  You do not need to add collection types to known types when used polymorphically in place of other collections or collection interfaces. For example, if you declare a data member of type <xref:System.Collections.IEnumerable> and use it to send an instance of <xref:System.Collections.ArrayList>, you do not need to add <xref:System.Collections.ArrayList> to known types.  
@@ -313,7 +313,7 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
   
 -   Combining collection types (having collections of collections) is allowed. Jagged arrays are treated as collections of collections. Multidimensional arrays are not supported.  
   
--   Arrays of byte and arrays of <xref:System.Xml.XmlNode> are special array types that are treated as primitives, not collections. Serializing an array of byte results in a single XML element that contains a chunk of Base64-encoded data, instead of a separate element for each byte. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how an array of <xref:System.Xml.XmlNode> is treated, see [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md). Of course, these special types can themselves participate in collections: an array of array of byte results in multiple XML elements, with each containing a chunk of Base64-encoded data.  
+-   Arrays of byte and arrays of <xref:System.Xml.XmlNode> are special array types that are treated as primitives, not collections. Serializing an array of byte results in a single XML element that contains a chunk of Base64-encoded data, instead of a separate element for each byte. For more information about how an array of <xref:System.Xml.XmlNode> is treated, see [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md). Of course, these special types can themselves participate in collections: an array of array of byte results in multiple XML elements, with each containing a chunk of Base64-encoded data.  
   
 -   If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a collection type, the type is treated as a regular data contract type, not as a collection.  
   
@@ -356,7 +356,7 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
   
 -   The default name for list collection data contracts, unless overridden using Name, is the string "ArrayOf" combined with the data contract name of the type contained in the collection. For example, the data contract name for a Generic List of Integers is "ArrayOfint". Keep in mind that the data contract name of `Object` is "anyType", so the data contract name of non-generic lists like <xref:System.Collections.ArrayList> is "ArrayOfanyType".  
   
- The default name for dictionary collection data contracts, unless overridden using `Name`, is the string "ArrayOfKeyValueOf" combined with the data contract name of the key type followed by the data contract name of the value type. For example, the data contract name for a Generic Dictionary of String and Integer is "ArrayOfKeyValueOfstringint". Additionally, if either the key or the value types are not primitive types, a namespace hash of the data contract namespaces of the key and value types is appended to the name. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] namespace hashes, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).  
+ The default name for dictionary collection data contracts, unless overridden using `Name`, is the string "ArrayOfKeyValueOf" combined with the data contract name of the key type followed by the data contract name of the value type. For example, the data contract name for a Generic Dictionary of String and Integer is "ArrayOfKeyValueOfstringint". Additionally, if either the key or the value types are not primitive types, a namespace hash of the data contract namespaces of the key and value types is appended to the name. For more information about namespace hashes, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).  
   
  Each dictionary collection data contract has a companion data contract that represents one entry in the dictionary. Its name is the same as for the dictionary data contract, except for the "ArrayOf" prefix, and its namespace is the same as for the dictionary data contract. For example, for the "ArrayOfKeyValueOfstringint" dictionary data contract, the "KeyValueofstringint" data contract represents one entry in the dictionary. You can customize the name of this data contract by using the `ItemName` property, as described in the next section.  
   

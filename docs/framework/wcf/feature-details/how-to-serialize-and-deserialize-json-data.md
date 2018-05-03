@@ -22,7 +22,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
  This topic demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. This example uses a data contract to demonstrate serialization and deserialization of a user-defined `Person` type.  
   
- Normally, JSON serialization and deserialization is handled automatically by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly - this is the scenario that this topic demonstrates.  
+ Normally, JSON serialization and deserialization is handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly - this is the scenario that this topic demonstrates.  
   
 > [!NOTE]
 >  If an error occurs during serialization of an outgoing reply on the server or the reply operation throws an exception for some other reason, it may not get returned to the client as a fault.  
@@ -31,7 +31,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ### To define the data contract for a Person  
   
-1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
+1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
   
     ```csharp  
     [DataContract]  

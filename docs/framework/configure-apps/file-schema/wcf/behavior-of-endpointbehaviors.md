@@ -1,21 +1,7 @@
 ---
 title: "&lt;behavior&gt; of &lt;endpointBehaviors&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b90ca3bc-3c22-4174-b903-e3a39898bd27
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;behavior&gt; of &lt;endpointBehaviors&gt;
 The `behavior` element contains a collection of settings for the behavior of an endpoint. Each behavior is indexed by its `name`. Endpoints can link to each behavior through this name. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
@@ -51,7 +37,7 @@ The `behavior` element contains a collection of settings for the behavior of an 
 |Element|Description|  
 |-------------|-----------------|  
 |[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
-|[\<callbackDebug>](../../../../../docs/framework/configure-apps/file-schema/wcf/callbackdebug.md)|Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] callback object.|  
+|[\<callbackDebug>](../../../../../docs/framework/configure-apps/file-schema/wcf/callbackdebug.md)|Specifies service debugging for a Windows Communication Foundation (WCF) callback object.|  
 |[\<callbackTimeouts>](../../../../../docs/framework/configure-apps/file-schema/wcf/callbacktimeouts.md)|Specifies the timeout for the client callback.|  
 |[\<clientVia>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientvia.md)|Specifies the route a message should take.|  
 |[\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md)|Contains configuration data for the DataContractSerializer.|  

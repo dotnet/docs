@@ -56,7 +56,8 @@ A *parameter* allows the calling code to pass a value to the procedure when it c
   
     -   It results in faster execution of your code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Your compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
-## See Also  
+## See also
+
  [Procedures](./index.md)  
  [Sub Procedures](./sub-procedures.md)  
  [Function Procedures](./function-procedures.md)  
@@ -65,4 +66,4 @@ A *parameter* allows the calling code to pass a value to the procedure when it c
  [Recursive Procedures](./recursive-procedures.md)  
  [Procedure Overloading](./procedure-overloading.md)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+ [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)  

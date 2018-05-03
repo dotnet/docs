@@ -1,21 +1,10 @@
 ---
 title: "Rules for Inferring Schema Node Types and Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d74ce896-717d-4871-8fd9-b070e2f53cb0
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Rules for Inferring Schema Node Types and Structure
 This topic describes how the schema inference process translates the node types in an XML document to an XML Schema definition language (XSD) structure.  

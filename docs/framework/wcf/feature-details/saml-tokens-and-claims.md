@@ -26,7 +26,7 @@ ms.workload:
   - "dotnet"
 ---
 # SAML Tokens and Claims
-Security Assertions Markup Language (SAML) *tokens* are XML representations of claims. By default, SAML tokens [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses in federated security scenarios are *issued tokens*.  
+Security Assertions Markup Language (SAML) *tokens* are XML representations of claims. By default, SAML tokens Windows Communication Foundation (WCF) uses in federated security scenarios are *issued tokens*.  
   
  SAML tokens carry statements that are sets of claims made by one entity about another entity. For example, in federated security scenarios, the statements are made by a security token service about a user in the system. The security token service signs the SAML token to indicate the veracity of the statements contained in the token. In addition, the SAML token is associated with cryptographic key material that the user of the SAML token proves knowledge of. This proof satisfies the relying party that the SAML token was, in fact, issued to that user. For example, in a typical scenario:  
   
@@ -45,7 +45,7 @@ Security Assertions Markup Language (SAML) *tokens* are XML representations of c
  [!code-vb[c_CreateSTS#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#8)]  
   
 > [!NOTE]
->  When SAML tokens are serialized in messages, either when they are issued by a security token service or when they are presented by clients to services as part of authentication, the maximum message size quota must be sufficiently large to accommodate the SAML token and the other message parts. In normal cases, the default message size quotas are sufficient. However, in cases where a SAML token is large because it contains hundreds of claims, you may need to increase the quotas to accommodate the serialized token. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+>  When SAML tokens are serialized in messages, either when they are issued by a security token service or when they are presented by clients to services as part of authentication, the maximum message size quota must be sufficiently large to accommodate the SAML token and the other message parts. In normal cases, the default message size quotas are sufficient. However, in cases where a SAML token is large because it contains hundreds of claims, you may need to increase the quotas to accommodate the serialized token. For more information, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
 ## From SamlAttributes to Claims  
  When SAML tokens are received in messages, the various statements in the SAML token are turned into <xref:System.IdentityModel.Policy.IAuthorizationPolicy> objects that are placed into the <xref:System.IdentityModel.Policy.AuthorizationContext>. The claims from each SAML statement are returned by the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property of the <xref:System.IdentityModel.Policy.AuthorizationContext> and can be examined to determine whether to authenticate and authorize the user.  

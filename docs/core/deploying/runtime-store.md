@@ -1,14 +1,12 @@
 ---
 title: Runtime package store
 description: This topic explains the runtime package store and target manifests used by .NET Core.
-keywords: .NET, .NET Core, dotnet store, runtime package store
 author: bleroy
 ms.author: mairaw
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.devlang: dotnet
-ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 ms.workload: 
   - dotnetcore
 ---

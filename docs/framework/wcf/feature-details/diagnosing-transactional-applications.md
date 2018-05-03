@@ -18,10 +18,10 @@ ms.workload:
   - "dotnet"
 ---
 # Diagnosing Transactional Applications
-This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] management and diagnostics feature to troubleshoot a transactional application.  
+This topic describes how to use the Windows Communication Foundation (WCF) management and diagnostics feature to troubleshoot a transactional application.  
   
 ## Performance Counters  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a standard set of performance counters for you to measure your transactional application's performance. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a standard set of performance counters for you to measure your transactional application's performance. For more information, see [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  
   
  Performance counters are scoped to three different levels: service, endpoint, and operation, as described in the following tables.  
   
@@ -53,7 +53,7 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
 |Transactions Flowed Per Second|The number of transactions that flowed to operations at this endpoint within each second. This counter is incremented any time a transaction is present in the message that is sent to the endpoint.|  
   
 ## Windows Management Instrumentation  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] exposes inspection data of a service at run time through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] exposes inspection data of a service at run time through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider. For more information about accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
   
  A number of read-only WMI properties indicate the applied transaction settings for a service. The following tables list all of these settings.  
   
@@ -97,7 +97,7 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
   
 -   Standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing  
   
-     This type of tracing is the same as tracing any [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
+     This type of tracing is the same as tracing any [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
   
 -   WS-AtomicTransaction tracing  
   

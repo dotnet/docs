@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a Custom Binding Using the SecurityBindingElement
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes several system-provided bindings that can be configured but do not provide full flexibility when configuring all the security options that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports. This topic demonstrates how to create a custom binding directly from individual binding elements and highlights some of the security settings that can be specified when creating such a binding. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  
+Windows Communication Foundation (WCF) includes several system-provided bindings that can be configured but do not provide full flexibility when configuring all the security options that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports. This topic demonstrates how to create a custom binding directly from individual binding elements and highlights some of the security settings that can be specified when creating such a binding. For more information about creating custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  
   
 > [!WARNING]
 >  <xref:System.ServiceModel.Channels.SecurityBindingElement> does not support the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> channel shape, which is the default channel shape use by the TCP transport when <xref:System.ServiceModel.TransferMode> is set to <xref:System.ServiceModel.TransferMode.Buffered>. You must set <xref:System.ServiceModel.TransferMode> to <xref:System.ServiceModel.TransferMode.Streamed> in order to use <xref:System.ServiceModel.Channels.SecurityBindingElement> in this scenario.  
@@ -83,9 +83,9 @@ ms.workload:
 |||SSL or Windows StreamSecurityBindingElement|SSL or Windows StreamSecurityBindingElement|SSL or Windows StreamSecurityBindingElement|  
 |||TcpTransportBindingElement|TcpTransportBindingElement|TcpTransportBindingElement|  
   
- Note that there are many configurable settings on the SecurityBindingElements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md).  
+ Note that there are many configurable settings on the SecurityBindingElements. For more information, see [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md).  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md).  
+ For more information, see [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md).  
   
 ## Procedures  
   

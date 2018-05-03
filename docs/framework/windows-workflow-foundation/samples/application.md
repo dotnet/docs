@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Application
-This section contains samples related to workflow applications in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples related to workflow applications in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Document Approval Process](../../../../docs/framework/windows-workflow-foundation/samples/document-approval-process.md)  

@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Inspect and Modify Messages on the Service
-You can inspect or modify the incoming or outgoing messages across a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client by implementing a <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType> and inserting it into the service runtime. For more information, see [Extending Dispatchers](../../../../docs/framework/wcf/extending/extending-dispatchers.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>.  
+You can inspect or modify the incoming or outgoing messages across a Windows Communication Foundation (WCF) client by implementing a <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType> and inserting it into the service runtime. For more information, see [Extending Dispatchers](../../../../docs/framework/wcf/extending/extending-dispatchers.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>.  
   
 ### To inspect or modify messages  
   

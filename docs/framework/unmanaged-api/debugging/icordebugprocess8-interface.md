@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugProcess8 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess8 Interface
 [Supported in the [!INCLUDE[net_v46](../../../../includes/net-v46-md.md)] and later versions]  

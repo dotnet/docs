@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Contracts
-This section contains samples that demonstrate service contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate service contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Duplex](../../../../docs/framework/wcf/samples/duplex.md)  

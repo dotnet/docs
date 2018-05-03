@@ -1,24 +1,10 @@
 ---
 title: "Transports"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5c064c51-5863-4fe7-a772-e298841b62ff
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transports
-The transport layer is at the lowest level of the channel stack. The main transports used in [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] are HTTP, HTTPS, TCP, and Named Pipes. This section lists all the configuration elements that allow you to configure different types of transports.  
+The transport layer is at the lowest level of the channel stack. The main transports used in Windows Communication Foundation (WCF) are HTTP, HTTPS, TCP, and Named Pipes. This section lists all the configuration elements that allow you to configure different types of transports.  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.TransportElement>  

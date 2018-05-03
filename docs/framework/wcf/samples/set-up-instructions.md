@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Set-Up Instructions
-This set of topics describes how to set up services that are required to run a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service.  
+This set of topics describes how to set up services that are required to run a Windows Communication Foundation (WCF) service.  
   
 ## In This Section  
  [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  

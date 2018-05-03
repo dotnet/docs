@@ -23,7 +23,7 @@ ms.workload:
 # WPF Walkthroughs
 Walkthroughs give step-by-step instructions for common scenarios. This makes them a good place to start learning about the product or a particular feature area.  
   
- This topic contains links to [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] walkthroughs.  
+ This topic contains links to Windows Presentation Foundation (WPF) walkthroughs.  
   
 ## WPF Designer Walkthroughs  
   
@@ -49,7 +49,7 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
 |Title|Description|  
 |-----------|-----------------|  
 |[Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)|Demonstrates how to host a Windows Forms <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control in a WPF application.|  
-|[Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)|Demonstrates how to host a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] data-entry composite control in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.|  
+|[Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)|Demonstrates how to host a Windows Forms data-entry composite control in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.|  
 |[Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)|Demonstrates how to host a WPF data-entry composite control in a Windows Forms application.|  
 |[Walkthrough: Arranging Windows Forms Controls in WPF](../../../../docs/framework/wpf/advanced/walkthrough-arranging-windows-forms-controls-in-wpf.md)|Demonstrates how to use WPF layout features to arrange Windows Forms controls in a hybrid application.|  
 |[Walkthrough: Binding to Data in Hybrid Applications](../../../../docs/framework/wpf/advanced/walkthrough-binding-to-data-in-hybrid-applications.md)|Demonstrates how to use data binding in hybrid applications that include both Windows Forms and WPF controls.|  

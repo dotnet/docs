@@ -1,26 +1,14 @@
 ---
 title: "Bindings and Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "bindings [WCF], security"
   - "WCF security"
   - "Windows Communication Foundation, security"
   - "bindings [WCF]"
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
-caps.latest.revision: 42
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Bindings and Security
 The system-provided bindings included with Windows Communication Foundation (WCF) offer a quick way to program WCF applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  

@@ -1,24 +1,10 @@
 ---
 title: "Working with NATs and Firewalls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "firewalls [WCF]"
   - "NATs [WCF]"
 ms.assetid: 74db0632-1bf0-428b-89c8-bd53b64332e7
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Working with NATs and Firewalls
 The client and server of a network connection frequently do not have a direct and open path for communication. Packets are filtered, routed, analyzed, and transformed both on the endpoint machines and by intermediate machines on the network. Network address translations (NATs) and firewalls are common examples of intermediate applications that can participate in network communication.  

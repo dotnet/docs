@@ -1,21 +1,7 @@
 ---
 title: "Comparing Transactions in COM+ and ServiceModel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e493bcdd-b91a-4486-853f-83dbcd1931b7
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Comparing Transactions in COM+ and ServiceModel
 This topic discusses how to simulate the behavior of a transactional COM+ service using the Windows Communication Foundation (WCF) attributes the <xref:System.ServiceModel> namespace provides.  

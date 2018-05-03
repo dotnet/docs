@@ -1,21 +1,7 @@
 ---
 title: "Discovery Announcements and Announcement Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 426c6437-f8d2-4968-b23a-18afd671aa4b
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Discovery Announcements and Announcement Client
 The WCF discovery feature enables components to announce their availability. If configured to do so, a service sends Hello and Bye announcements. Clients or other components can listen for such announcement messages and act on them. This provides an alternative method for clients to be aware of services. Announcement functionality has several uses, for example, if the services enter and leave a network frequently, announcements may be a better alternative than searching for services. With this approach, the network traffic is reduced and the client can learn about the presence or departure of the service as soon as announcements are received.  

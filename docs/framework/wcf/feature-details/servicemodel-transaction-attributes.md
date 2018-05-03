@@ -1,23 +1,9 @@
 ---
 title: "ServiceModel Transaction Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transactions [WCF], ServiceModel attributes"
 ms.assetid: 1e0d2436-6ae5-439b-9765-a448d6f60000
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceModel Transaction Attributes
 Windows Communication Foundation (WCF) provides properties on three standard <xref:System.ServiceModel> attributes that enable you to configure the behavior of transactions for a WCF service:  

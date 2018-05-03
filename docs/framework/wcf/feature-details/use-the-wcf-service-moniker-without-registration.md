@@ -1,23 +1,9 @@
 ---
 title: "How to: Use the Windows Communication Foundation Service Moniker without Registration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM [WCF], service monikers without registration"
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Use the Windows Communication Foundation Service Moniker without Registration
 To connect to and communicate with a Windows Communication Foundation (WCF) service, a WCF client application must have the details of the service address, the binding configuration, and the service contract.  

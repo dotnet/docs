@@ -1,21 +1,7 @@
 ---
 title: "Interoperability with Web Services Enhancements 3.0"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e8e589d2-12c6-4794-8a11-1ee90b47dfaa
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Interoperability with Web Services Enhancements 3.0
 Windows Communication Foundation (WCF) clients and services are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) clients and services when WCF clients and services are configured to use the August 2004 version of the WS-Addressing specification.  

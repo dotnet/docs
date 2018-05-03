@@ -1,21 +1,7 @@
 ---
 title: "Choosing a Filter"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 67ab5af9-b9d9-4300-b3b1-41abb5a1fd10
-caps.latest.revision: 8
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Choosing a Filter
 When configuring the Routing Service, it is important to select correct message filters and configure them to allow you to make exact matches against the messages you receive. If the filters you select are overly broad in their matches or are incorrectly configured, messages are routed incorrectly. If the filters are too restrictive, you may not have any valid routes available for some of your messages.  

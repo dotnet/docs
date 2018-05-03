@@ -1,21 +1,7 @@
 ---
 title: "How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e528c64f-c027-4f2e-ada6-d8f3994cf8d6
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation
 The following procedure describes how to migrate an ASP.NET Web Service to Windows Communication Foundation (WCF).  

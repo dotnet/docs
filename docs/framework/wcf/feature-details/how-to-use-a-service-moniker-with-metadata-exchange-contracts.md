@@ -1,21 +1,7 @@
 ---
 title: "How to: Use a Service Moniker with Metadata Exchange Contracts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c41a07e5-cb9d-45d6-9ea4-34511e227faf
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Use a Service Moniker with Metadata Exchange Contracts
 After developing some new WCF services, you may decide that you want to be able to call these services from a script or a Visual Basic 6.0 application. One method would be to generate a WCF client assembly, register the assembly with COM, install the assembly in the GAC, and then reference the COM types from your Visual Basic code. When you distribute the application, you will have to distribute the WCF Client assembly as well. The user will then have to register the WCF client assembly with COM and place it in the GAC. WCF COM Interop also allows you to make the same service calls without relying on a WCF client assembly. The WCF moniker allows you to call any WCF service from any COM-compatible language (Visual Basic, VBScript, Visual Basic for Applications (VBA), and so on) by specifying a metadata exchange (Mex) endpoint URI that the service moniker uses to extract type information about the service. This topic describes how to call the Getting Started WCF sample using a WCF moniker that specifies a Mex endpoint.  

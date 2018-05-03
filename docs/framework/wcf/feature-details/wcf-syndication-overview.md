@@ -1,21 +1,7 @@
 ---
 title: "WCF Syndication Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: af6d4c39-e5e8-4099-aee6-5261feff9107
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Syndication Overview
 Windows Communication Foundation (WCF) provides support for exposing syndication feeds from a WCF service. Syndication is a mechanism of application integration in which a server exposes some application data in an interoperable format known as a feed. A feed is a collection of application data that consists of some feed-level metadata (title, author, URL, and other metadata) and a series of feed items. Within the feed, the feed items are usually time-ordered in reverse chronological order. A feed item consists of a standard set of item-level metadata (title, URL, creation date, category, and other item-level metadata) and an arbitrary amount of application specific data. The two most common types of syndication feeds are Really Simple Syndication (RSS) 2.0 and Atom 1.0, both of which are supported by WCF.  

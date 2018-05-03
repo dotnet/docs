@@ -1,21 +1,7 @@
 ---
 title: "Client Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 02624403-0d77-41cb-9a86-ab55e98c7966
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Client Architecture
 Applications use Windows Communication Foundation (WCF) client objects to invoke service operations. This topic discusses WCF client objects, WCF client channels, and their relationships to the underlying channel architecture. For a basic overview of WCF client objects, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md). For more information about the channel layer, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  

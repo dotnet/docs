@@ -1,26 +1,12 @@
 ---
 title: "Using the XmlSerializer Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "XmlSerializer [WCF], using"
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the XmlSerializer Class
 Windows Communication Foundation (WCF) can use two different serialization technologies to turn the data in your application into XML that is transmitted between clients and services, a process called serialization.  

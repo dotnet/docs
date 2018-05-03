@@ -1,21 +1,9 @@
 ---
 title: "Mixing Trust Protocols in Federated Scenarios"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d7b5fee9-2246-4b09-b8d7-9e63cb817279
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Mixing Trust Protocols in Federated Scenarios
 There may be scenarios in which federated clients communicate with a service and a Security Token Service (STS) that do not have the same trust version. The service WSDL can contain a `RequestSecurityTokenTemplate` assertion with WS-Trust elements that are of different versions than the STS. In such cases, a Windows Communication Foundation (WCF) client converts the WS-Trust elements received from the `RequestSecurityTokenTemplate` to match the STS trust version. WCF handles mismatched trust versions only for standard bindings. All standard algorithm parameters that are recognized by WCF are part of the standard binding. This topic describes the WCF behavior with various trust settings between the service and the STS.  

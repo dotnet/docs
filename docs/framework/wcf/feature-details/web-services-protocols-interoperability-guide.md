@@ -1,21 +1,7 @@
 ---
 title: "Web Services Protocols Interoperability Guide"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Web Services Protocols Interoperability Guide
 Windows Communication Foundation (WCF) implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols WCF implements. Other topics within this section provide implementation details for each protocol supported.  

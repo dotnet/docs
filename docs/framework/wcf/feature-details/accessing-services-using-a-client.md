@@ -1,24 +1,10 @@
 ---
 title: "Accessing Services Using a Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c8329832-bf66-4064-9034-bf39f153fc2d
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Accessing Services Using a Client
 Client applications must create, configure, and use WCF client or channel objects to communicate with services. The [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md) topic provides an overview of the objects and steps involved in creating basic client and channel objects and using them.  

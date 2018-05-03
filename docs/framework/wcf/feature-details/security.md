@@ -1,25 +1,13 @@
 ---
 title: "Windows Communication Foundation Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation, programming"
   - "security [WCF]"
   - "Windows Communication Foundation, security"
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-caps.latest.revision: 21
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Security
 The topics in this section describe Windows Communication Foundation (WCF) security features and how to use them to help secure messages.  

@@ -1,21 +1,7 @@
 ---
 title: "Clients"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cce50025-0318-4a5e-9ce8-c67feab83b06
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Clients
 The topics in this section cover the client architecture, how to access a Windows Communication Foundation (WCF) service, how to configure a WCF client, and some security consideration for WCF clients.  

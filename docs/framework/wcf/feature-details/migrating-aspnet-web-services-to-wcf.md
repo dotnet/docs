@@ -1,21 +1,7 @@
 ---
 title: "Migrating ASP.NET Web Services to WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1adbb931-f0b1-47f3-9caf-169e4edc9907
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Migrating ASP.NET Web Services to WCF
 ASP.NET provides .NET Framework class libraries and tools for building Web services, as well as facilities for hosting services within Internet Information Services (IIS). Windows Communication Foundation (WCF) provides .NET Framework class libraries, tools and hosting facilities for enabling software entities to communicate using any protocols, including those used by Web services.  Migrating ASP.NET Web Services to WCF allows your applications to take advantage of new features and improvements that are unique to WCF.  

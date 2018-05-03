@@ -1,23 +1,9 @@
 ---
 title: "Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "queues [WCF], differences in operating systems"
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP
 This topic summarizes the differences in the Windows Communication Foundation (WCF) queues feature between [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  

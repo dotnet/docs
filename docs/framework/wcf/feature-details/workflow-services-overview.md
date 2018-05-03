@@ -1,21 +1,7 @@
 ---
 title: "Workflow Services Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e536dda3-e286-441e-99a7-49ddc004b646
-caps.latest.revision: 30
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Workflow Services Overview
 Workflow services are WCF-based services that are implemented using workflows. Workflow services are workflows that use the messaging activities to send and receive Windows Communication Foundation (WCF) messages. .NET Framework 4.5 introduces a number of messaging activities that allow you send and receive messages from within a workflow. For more information about messaging activities and how they can be used to implement different message exchange patterns, see [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md).  

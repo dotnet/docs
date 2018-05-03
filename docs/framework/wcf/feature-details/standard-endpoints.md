@@ -1,21 +1,7 @@
 ---
 title: "Standard Endpoints"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3fcb4225-addc-44f2-935d-30e4943a8812
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Standard Endpoints
 Endpoints are defined by specifying an address, a binding, and a contract. Other parameters that may be set on an endpoint include behavior configuration, headers, and listen URIs.  For certain types of endpoints these values do not change. For example, metadata exchange endpoints always use the <xref:System.ServiceModel.Description.IMetadataExchange> contract. Other endpoints, such as <xref:System.ServiceModel.Description.WebHttpEndpoint> always require a specified endpoint behavior. The usability of an endpoint can be improved by having endpoints with default values for commonly used endpoint properties. Standard endpoints enable a developer to define an endpoint that has default values or where one or more endpoint’s properties does not change.  These endpoints allow you to use such an endpoint without having to specify information of a static nature. Standard endpoints can be used for infrastructure and application endpoints.  

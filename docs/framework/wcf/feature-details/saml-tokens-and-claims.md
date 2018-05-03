@@ -1,14 +1,6 @@
 ---
 title: "SAML Tokens and Claims"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "issued tokens"
   - "SAML token"
 ms.assetid: 930b6e34-9eab-4e95-826c-4e06659bb977
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SAML Tokens and Claims
 Security Assertions Markup Language (SAML) *tokens* are XML representations of claims. By default, SAML tokens Windows Communication Foundation (WCF) uses in federated security scenarios are *issued tokens*.  

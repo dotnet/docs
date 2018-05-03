@@ -1,21 +1,7 @@
 ---
 title: "Selecting a Credential Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
-caps.latest.revision: 25
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Selecting a Credential Type
 *Credentials* are the data Windows Communication Foundation (WCF) uses to establish either a claimed identity or capabilities. For example, a passport is a credential a government issues to prove citizenship in a country or region. In WCF, credentials can take many forms, such as user name tokens and X.509 certificates. This topic discusses credentials, how they are used in WCF, and how to select the right credential for your application.  

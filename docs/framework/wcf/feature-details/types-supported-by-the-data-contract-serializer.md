@@ -1,23 +1,9 @@
 ---
 title: "Types Supported by the Data Contract Serializer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "serialization [WCF], supported types"
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Types Supported by the Data Contract Serializer
 Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serialization.DataContractSerializer> as its default serialization engine to convert data into XML and to convert XML back into data. The <xref:System.Runtime.Serialization.DataContractSerializer> is designed to serialize *data contract* types. However, it supports many other types, which can be thought of as having an implicit data contract. The following is a complete list of types that can be serialized:  

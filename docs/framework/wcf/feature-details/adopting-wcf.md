@@ -1,21 +1,7 @@
 ---
 title: "Adopting Windows Communication Foundation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 49ba71e2-9468-4082-84c5-cf8daf95e34a
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Adopting Windows Communication Foundation
 You can choose to use Windows Communication Foundation (WCF) for new development, while continuing to maintain existing applications developed using ASP.NET. Because WCF is intended to be the most suitable choice for facilitating communication with applications built with the .NET Framework in any scenario, it can serve as a standard tool for solving a wide variety of software communications problems in a way that ASP.NET cannot.  

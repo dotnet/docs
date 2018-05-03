@@ -1,21 +1,7 @@
 ---
 title: "WCF Services and ASP.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Services and ASP.NET
 This topic discusses hosting Windows Communication Foundation (WCF) services side-by-side with ASP.NET and hosting them in ASP.NET compatibility mode.  

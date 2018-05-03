@@ -1,14 +1,6 @@
 ---
 title: "How to: Configure a Local Issuer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "WCF, federation"
   - "federation"
 ms.assetid: 15263371-514e-4ea6-90fb-14b4939154cd
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure a Local Issuer
 This topic describes how to configure a client to use a local issuer for issued tokens.  

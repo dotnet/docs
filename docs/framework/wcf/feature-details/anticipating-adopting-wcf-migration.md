@@ -1,21 +1,7 @@
 ---
 title: "Anticipating Adopting the Windows Communication Foundation: Easing Future Migration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Anticipating Adopting the Windows Communication Foundation: Easing Future Migration
 To ensure an easier future migration of new ASP.NET applications to WCF, follow the preceding recommendations as well as the following recommendations.  

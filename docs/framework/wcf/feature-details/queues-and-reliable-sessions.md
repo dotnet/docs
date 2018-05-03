@@ -1,21 +1,7 @@
 ---
 title: "Queues and Reliable Sessions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7e794d03-141c-45ed-b6b1-6c0e104c1464
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Queues and Reliable Sessions
 Queues and reliable sessions are the Windows Communication Foundation (WCF) features that implement reliable messaging. The topics contained in this section discuss the WCF reliable messaging features.  

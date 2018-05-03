@@ -1,21 +1,7 @@
 ---
 title: "Poison Message Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
-caps.latest.revision: 29
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Poison Message Handling
 A *poison message* is a message that has exceeded the maximum number of delivery attempts to the application. This situation can arise when a queue-based application cannot process a message because of errors. To meet reliability demands, a queued application receives messages under a transaction. Aborting the transaction in which a queued message was received leaves the message in the queue so that the message is retried under a new transaction. If the problem that caused the transaction to abort is not corrected, the receiving application can get stuck in a loop receiving and aborting the same message until the maximum number of delivery attempts has been exceeded and a poison message results.  

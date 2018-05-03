@@ -1,14 +1,6 @@
 ---
 title: "Integrating with COM+ Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, reusing code"
   - "Windows Communication Foundation, reusing code"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "COM+ [WCF]"
   - "WCF, COM+ integration"
 ms.assetid: 98bf7dc4-d49a-4129-a59b-db7a7ec8c241
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Integrating with COM+ Applications
 Windows Communication Foundation (WCF) provides a rich environment for creating distributed applications. If you have a substantial investment in component-based application logic hosted in COM+, you can use WCF to extend your existing logic rather than having to rewrite it. The topics within this section describe how to use COM+ with WCF.  

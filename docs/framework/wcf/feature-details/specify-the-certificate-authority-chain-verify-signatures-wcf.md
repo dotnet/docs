@@ -1,24 +1,10 @@
 ---
 title: "How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF], specifying the certificate authority certificate chain"
   - "certificates [WCF], verifying signatures"
 ms.assetid: 7c719355-aa41-4567-80d0-5115a8cf73fd
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)
 When Windows Communication Foundation (WCF) receives a SOAP message signed using an X.509 certificate, by default it verifies that the X.509 certificate was issued by a trusted certification authority. This is done by looking in a certificate store and determining if the certificate for that certification authority has been designated as trusted. In order for WCF to make this determination, the certification authority certificate chain must be installed in the correct certificate store.  

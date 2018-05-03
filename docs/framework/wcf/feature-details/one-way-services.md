@@ -1,25 +1,11 @@
 ---
 title: "One-Way Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], one-way service contracts"
   - "WCF [WCF], one-way service contracts"
   - "service contracts [WCF], defining one-way"
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # One-Way Services
 The default behavior of a service operation is the request-reply pattern. In a request-reply pattern, the client waits for the reply message, even if the service operation is represented in code as a `void` method. With a one-way operation, only one message is transmitted. The receiver does not send a reply message, nor does the sender expect one.  

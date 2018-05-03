@@ -1,23 +1,9 @@
 ---
 title: "Choosing a Transport"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "choosing transports [WCF]"
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
-caps.latest.revision: 25
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Choosing a Transport
 This topic discusses criteria for choosing among the three main transports that are included in Windows Communication Foundation (WCF): HTTP, TCP, and named pipes. WCF also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  

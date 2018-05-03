@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback7 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorProfilerCallback7"
 api_location: 
@@ -17,12 +9,8 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback7 Interface
 [Supported in the .NET Framework 4.6.1 and later versions]  

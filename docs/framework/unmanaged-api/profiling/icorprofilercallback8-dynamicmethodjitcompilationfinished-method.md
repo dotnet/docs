@@ -1,11 +1,6 @@
 ---
 title: "ICorProfilerCallback8::DynamicMethodJITCompilationFinished Method"
-ms.custom: ""
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 api_name: 
   - "ICorProfilerCallback8.DynamicMethodJITCompilationFinished"
 api_location: 
@@ -15,9 +10,6 @@ api_type:
   - "COM"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback8::DynamicMethodJITCompilationFinished Method
 [Supported in the .NET Framework 4.7 and later versions]  

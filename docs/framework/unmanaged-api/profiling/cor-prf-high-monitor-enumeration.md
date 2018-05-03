@@ -1,20 +1,9 @@
 ---
 title: "COR_PRF_HIGH_MONITOR Enumeration"
-ms.custom: ""
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 3ba543d8-15e5-4322-b6e7-1ebfc92ed7dd
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_PRF_HIGH_MONITOR Enumeration
 [Supported in the .NET Framework 4.5.2 and later versions]  

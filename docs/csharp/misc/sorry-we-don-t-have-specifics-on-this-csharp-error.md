@@ -1,10 +1,6 @@
 ---
 title: "Sorry, we don&#39;t have specifics on this C# error"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "CS1583"
   - "CS0821"
@@ -886,9 +882,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "errors [C#], additional information"
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Sorry, we don&#39;t have specifics on this C# error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:  

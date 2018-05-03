@@ -1,20 +1,12 @@
 ---
 title: .NET Class Libraries
 description: Learn how .NET class libraries enable you to group useful functionality into modules that can be used by multiple applications.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Class Libraries
 
 Class libraries are the [shared library](https://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) concept for .NET. They enable you to componentize useful functionality into modules that can be used by multiple applications. They can also be used as a means of loading functionality that is not needed or not known at application startup. Class libraries are described using the [.NET Assembly file format](assembly-format.md).

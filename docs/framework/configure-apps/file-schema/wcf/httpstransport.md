@@ -1,21 +1,7 @@
 ---
 title: "&lt;httpsTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;httpsTransport&gt;
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  

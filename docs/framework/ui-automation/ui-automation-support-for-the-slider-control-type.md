@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Slider Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Slider"
   - "UI Automation, Slider control type"
   - "Slider control type"
 ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
-caps.latest.revision: 18
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Slider Control Type
 > [!NOTE]

@@ -1,14 +1,9 @@
 ---
 title: Inner-loop development workflow for Docker apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Inner-loop development workflow for Docker apps
 

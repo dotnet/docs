@@ -27,7 +27,7 @@ Endpoint performance counters capture data that reveals how an endpoint is accep
  The data is similar to that collected for individual operations, but is only aggregated across the endpoint.  
   
 > [!CAUTION]
->  There is a limit on the length of a performance counter instance's name. When a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] counter instance name exceeds the maximum length, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] replaces a portion of the instance name with a hash value.  
+>  There is a limit on the length of a performance counter instance's name. When a Windows Communication Foundation (WCF) counter instance name exceeds the maximum length, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] replaces a portion of the instance name with a hash value.  
   
 ## See Also  
  [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)

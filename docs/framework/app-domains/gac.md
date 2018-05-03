@@ -1,14 +1,6 @@
 ---
 title: "Global Assembly Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "GAC (global assembly cache)"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "global assembly cache, about"
   - "access control lists [.NET Framework]"
 ms.assetid: cf5eacd0-d3ec-4879-b6da-5fd5e4372202
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Global Assembly Cache
 Each computer where the Common Language Runtime is installed has a machine-wide code cache called the Global Assembly Cache. The Global Assembly Cache stores assemblies specifically designated to be shared by several applications on the computer.  

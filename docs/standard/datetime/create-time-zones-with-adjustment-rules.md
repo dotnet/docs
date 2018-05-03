@@ -1,13 +1,7 @@
 ---
 title: "How to: Create time zones with adjustment rules"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,15 +10,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], and adjustment rules"
   - "adjustment rule [.NET Framework]"
 ms.assetid: c52ef192-13a9-435f-8015-3b12eae8c47c
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Create time zones with adjustment rules
 
 The precise time zone information that is required by an application may not be present on a particular system for several reasons:

@@ -1,14 +1,6 @@
 ---
 title: "Expose the Content of a Table Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "UI Automation, exposing content of tables"
   - "exposing content of tables using UI Automation"
 ms.assetid: ac3c5eaa-49c7-4653-b83e-532e2a2604a2
-caps.latest.revision: 12
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Expose the Content of a Table Using UI Automation
 > [!NOTE]

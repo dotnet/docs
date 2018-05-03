@@ -1,14 +1,6 @@
 ---
 title: "STARTUP_FLAGS Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "STARTUP_FLAGS"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
 topic_type: 
   - "apiref"
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # STARTUP_FLAGS Enumeration
 Contains values that indicate the startup behavior of the common language runtime (CLR). By default, garbage collection is non-concurrent, and only the base class library is loaded into the domain-neutral area.  

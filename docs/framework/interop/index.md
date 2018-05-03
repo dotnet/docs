@@ -1,10 +1,6 @@
 ---
 title: "Interoperating with unmanaged code"
 ms.date: "01/17/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "unmanaged code, interoperation"
   - "managed code, interoperation with unmanaged code"
@@ -16,9 +12,6 @@ helpviewer_keywords:
 ms.assetid: ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Interoperating with unmanaged code
 

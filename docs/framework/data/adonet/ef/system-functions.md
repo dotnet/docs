@@ -1,21 +1,7 @@
 ---
 title: "System Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b7c71b58-09e6-44ce-a3e5-a0fdb892fb86
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # System Functions
 The .NET Framework Data Provider for SQL Server (SqlClient) provides the following system functions:  

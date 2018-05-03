@@ -1,25 +1,13 @@
 ---
 title: "&lt;system.runtime.caching&gt; Element (Cache Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<system.runtime.caching> element"
   - "caching [.NET Framework], configuration"
   - "system.runtime.caching element"
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;system.runtime.caching&gt; Element (Cache Settings)
 Provides configuration for the default in-memory <xref:System.Runtime.Caching.ObjectCache> implementation through the `memoryCache` entry in the configuration file.  

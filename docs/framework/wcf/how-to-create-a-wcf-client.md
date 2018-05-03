@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Create a Windows Communication Foundation Client
-This is the fourth of six tasks required to create a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
+This is the fourth of six tasks required to create a Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
   
  This topic describes how to retrieve metadata from a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service and use it to create a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] proxy that can access the service. This task is completed by using the Add Service Reference functionality provided by Visual Studio . This tool obtains the metadata from the service’s MEX endpoint and generates a managed source code file for a client proxy in the language you have chosen (C# by default). In addition to creating the client proxy, the tool also creates or updates the client configuration file which enables the client application to connect to the service at one of its endpoints.  
   

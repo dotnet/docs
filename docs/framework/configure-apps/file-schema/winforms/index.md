@@ -1,18 +1,9 @@
 ---
 title: "Windows Forms Configuration Section"
-ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6eb142d5-fc98-40e2-9d90-84733f2a27ba
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Forms Configuration Section
 Windows Forms configuration settings allow a Windows Forms app to store and retrieve information about customized application settings such as multi-monitor support, high DPI support, and other predefined configuration settings.

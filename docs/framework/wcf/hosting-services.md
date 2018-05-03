@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Hosting Services
-To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services are designed to run in any Windows process that supports managed code.  
+To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. Windows Communication Foundation (WCF) services are designed to run in any Windows process that supports managed code.  
   
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides a unified programming model for building service-oriented applications. This programming model remains consistent and is independent of the run-time environment in which the service is deployed. In practice, this means that the code for your services looks much the same whatever the hosting option.  
   

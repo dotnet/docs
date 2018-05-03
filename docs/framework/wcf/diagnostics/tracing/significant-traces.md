@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Significant Traces
-This topic lists some of the major traces emitted by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)].  
+This topic lists some of the major traces emitted by Windows Communication Foundation (WCF).  
   
 ## Significant Traces  
   

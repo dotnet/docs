@@ -1,10 +1,6 @@
 ---
 title: "Developing Windows-based client applications with the .NET Framework"
 ms.date: "01/09/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "client application services"
   - "applications [Windows Forms]"
@@ -17,11 +13,6 @@ helpviewer_keywords:
   - "Visual C#, creating applications"
   - "client/server applications, Windows applications"
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Developing client applications with the .NET Framework
 

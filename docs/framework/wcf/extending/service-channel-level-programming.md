@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 8d8dcd85-0a05-4c44-8861-4a0b3b90cca9
 ---
 # Service Channel-Level Programming
-This topic describes how to write a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service application without using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> and its associated object model.  
+This topic describes how to write a Windows Communication Foundation (WCF) service application without using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> and its associated object model.  
   
 ## Receiving Messages  
  To be ready to receive and process messages, the following steps are required:  

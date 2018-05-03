@@ -1,10 +1,6 @@
 ---
 title: ".NET Framework 4.7, 4.6, and 4.5"
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 ms.custom: "updateeachrelease"
 f1_keywords: 
   - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # .NET Framework Guide

@@ -1,26 +1,15 @@
 ---
 title: "Names of Assemblies and DLLs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [.NET Framework], DLLs"
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
   - "DLLs, names"
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Names of Assemblies and DLLs
 An assembly is the unit of deployment and identity for managed code programs. Although assemblies can span one or more files, typically an assembly maps one-to-one with a DLL. Therefore, this section describes only DLL naming conventions, which then can be mapped to assembly naming conventions.  

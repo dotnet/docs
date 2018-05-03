@@ -4,13 +4,8 @@ description: Learn about target frameworks for .NET Core apps and libraries.
 author: richlander
 ms.author: mairaw
 ms.date: 04/16/2018
-ms.topic: article
 ms.custom: "updateeachrelease"
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Target frameworks
 

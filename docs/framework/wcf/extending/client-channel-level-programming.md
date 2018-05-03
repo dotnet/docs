@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 3b787719-4e77-4e77-96a6-5b15a11b995a
 ---
 # Client Channel-Level Programming
-This topic describes how to write a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client application without using the <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> class and its associated object model.  
+This topic describes how to write a Windows Communication Foundation (WCF) client application without using the <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> class and its associated object model.  
   
 ## Sending Messages  
  To be ready to send messages and receive and process replies, the following steps are required:  

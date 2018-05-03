@@ -1,21 +1,7 @@
 ---
 title: "&lt;privacyNoticeAt&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;privacyNoticeAt&gt;
 Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.  

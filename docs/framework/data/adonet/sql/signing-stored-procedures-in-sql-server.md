@@ -1,21 +1,7 @@
 ---
 title: "Signing Stored Procedures in SQL Server"
-ms.custom: ""
 ms.date: "01/05/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eeed752c-0084-48e5-9dca-381353007a0d
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Signing Stored Procedures in SQL Server
  A digital signature is a data digest encrypted with the private key of the signer. The private key ensures that the digital signature is unique to its bearer or owner. You can sign stored procedures, functions (except for inline table-valued functions), triggers, and assemblies.  

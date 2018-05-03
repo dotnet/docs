@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 97aec970-d73c-469c-9b93-8b86be701c44
 ---
 # Extending Encoders and Serializers
-The topics in this section describe how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] serialization system.  
+The topics in this section describe how to extend the Windows Communication Foundation (WCF) serialization system.  
   
 ## In This Section  
  [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)  

@@ -1,24 +1,14 @@
 ---
 title: "Mitigation: Pointer-based Touch and Stylus Support"
-ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "retargeting changes"
   - ".NET Framework 4.7 retargeting changes"
   - "WPF retargeting changes"
   - "WPF pointer-based touch and stylus stack"
 ms.assetid: f99126b5-c396-48f9-8233-8f36b4c9e717
-caps.latest.revision: 2
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mitigation: Pointer-based Touch and Stylus Support
 

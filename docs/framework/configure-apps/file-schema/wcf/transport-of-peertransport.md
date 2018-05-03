@@ -1,21 +1,7 @@
 ---
 title: "&lt;transport&gt; of &lt;peerTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;peerTransport&gt;
 Specifies the transport type for secured messages sent by peers configured with this binding.  

@@ -1,14 +1,6 @@
 ---
 title: "&lt;gcServer&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcServer"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#gcServer"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "gcServer element"
   - "<gcServer> element"
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;gcServer&gt; Element
 Specifies whether the common language runtime runs server garbage collection.  

@@ -1,13 +1,7 @@
 ---
 title: "Fundamentals of Garbage Collection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, generations"
   - "garbage collection, background garbage collection"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "garbage collection, workstation garbage collection"
   - "garbage collection, managed heap"
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
-caps.latest.revision: 51
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Fundamentals of Garbage Collection
 <a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:  

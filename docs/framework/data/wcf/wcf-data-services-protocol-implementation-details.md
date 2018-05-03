@@ -1,21 +1,7 @@
 ---
 title: "WCF Data Services Protocol Implementation Details"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 712d689b-fada-4cbb-bcdb-d65a3ef83b4c
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Data Services Protocol Implementation Details
 ## OData Protocol Implementation Details  

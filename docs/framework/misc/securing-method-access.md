@@ -1,14 +1,6 @@
 ---
 title: "Securing Method Access"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "security [.NET Framework], method access"
   - "method access security"
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Method Access
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

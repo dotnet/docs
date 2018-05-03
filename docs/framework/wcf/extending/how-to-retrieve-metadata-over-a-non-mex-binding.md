@@ -8,7 +8,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
   
 ### To retrieve metadata over a non-MEX binding  
   
-1.  Determine the binding used by the MEX endpoint. For [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
+1.  Determine the binding used by the MEX endpoint. For Windows Communication Foundation (WCF) services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
   
     ```xml  
     <services>  

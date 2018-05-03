@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: f8b97862-e8bb-470d-8b96-07733c21fe26
 ---
 # How to: Customize a System-Provided Binding
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes several system-provided bindings that allow you to configure some of the properties of the underlying binding elements, but not all of the properties. This topic demonstrates how to set properties on the binding elements to create a custom binding.  
+Windows Communication Foundation (WCF) includes several system-provided bindings that allow you to configure some of the properties of the underlying binding elements, but not all of the properties. This topic demonstrates how to set properties on the binding elements to create a custom binding.  
   
  For more information about how to directly create and configure binding elements without using the system-provided bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   

@@ -601,7 +601,7 @@
       <Docs>
         <param name="result">When this method returns, <c>result</c> contains an object from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> or the default value of <c>T</c> if the operation failed.</param>
         <summary>Attempts to return an object from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> without removing it.</summary>
-        <returns>true if and object was returned successfully; otherwise, false.</returns>
+        <returns>true if an object was returned successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

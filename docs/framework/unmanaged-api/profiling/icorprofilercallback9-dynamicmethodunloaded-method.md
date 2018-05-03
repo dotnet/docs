@@ -1,11 +1,6 @@
 ---
 title: "ICorProfilerCallback9::DynamicMethodUnloaded Method"
-ms.custom: ""
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 api_name: 
   - "ICorProfilerCallback9.DynamicMethodUnloaded"
 api_location: 
@@ -15,9 +10,6 @@ api_type:
   - "COM"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback9::DynamicMethodUnloaded Method
 [Supported in the .NET Framework 4.7.2 and later versions]  

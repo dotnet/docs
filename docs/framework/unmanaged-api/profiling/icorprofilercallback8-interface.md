@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback8 Interface"
-ms.custom: ""
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorProfilerCallback8"
 api_location: 
@@ -18,9 +10,6 @@ api_type:
   - "COM"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback8 Interface
 [Supported in the .NET Framework 4.7 and later versions]  

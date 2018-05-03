@@ -17,7 +17,7 @@ ML.NET is a free, open-source, and cross-platform machine learning framework tha
 For more information about ML.NET, visit our [What is ML.NET]() page.
 
 ## Get started
-To get started with ML.NET check out the [Iris Petal Prediction quickstart]() or the more in-depth [tutorials](tutorials/index.md) below.
+To get started with ML.NET, check out the [Iris Petal Prediction quickstart]() or the more in-depth [tutorials](tutorials/index.md).
 
 ## How the ML.NET guide is organized
 

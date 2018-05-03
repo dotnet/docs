@@ -1,14 +1,6 @@
 ---
 title: "Administration and Diagnostics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation, diagnostics"
   - "Windows Communication Foundation, administration"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "administration [WCF]"
   - "WCF, administration"
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Administration and Diagnostics
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich set of functionalities that can help you monitor the different stages of an application’s life. For example, you can use configuration to set up services and clients at deployment. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes a large set of performance counters to help you gauge your application's performance. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also exposes inspection data of a service at runtime through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider. When the application experiences a failure or starts acting improperly, you can use the Event Log to see if anything significant has occurred. You can also use Message Logging and Tracing to see what events are happening end-to-end in your application. These features assist both developers and IT professionals to troubleshoot an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application when it is not behaving correctly.  

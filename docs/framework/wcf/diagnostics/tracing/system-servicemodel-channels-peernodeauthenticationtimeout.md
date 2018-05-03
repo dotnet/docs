@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerNodeAuthenticationTimeout"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f294ee94-be83-426c-b40d-6e8a4e5e987c
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNodeAuthenticationTimeout
 The security handshake did not succeed within the specified time limit.  

@@ -1,21 +1,7 @@
 ---
 title: "Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 70471705-f55f-4da1-919f-4b580f172665
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Activity
 This topic describes activity traces in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] tracing model. Activities are processing units that help the user narrow down the scope of a failure. Errors that occur in the same activity are directly related. For example, an operation fails because message decryption has failed. The traces for both the operation and message decryption failure appear in the same activity, showing direct correlation between the decryption error and the request error.  

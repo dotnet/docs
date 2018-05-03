@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d75d39da-7502-4a6a-91b9-eaa05b8e24d5
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed
 Cannot move or delete message.  

@@ -1,21 +1,7 @@
 ---
 title: "System.IdentityModel.AuthorizationPolicyEvaluated"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 99a3b127-0513-48f0-9af4-83b1b40716b1
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.IdentityModel.AuthorizationPolicyEvaluated
 System.IdentityModel.AuthorizationPolicyEvaluated  

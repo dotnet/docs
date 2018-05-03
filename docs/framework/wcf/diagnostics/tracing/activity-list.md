@@ -1,21 +1,7 @@
 ---
 title: "Activity List"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5540e185-ce8e-4db3-83b0-2b9f5bf71829
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Activity List
 This topic lists all the activities defined by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)].  

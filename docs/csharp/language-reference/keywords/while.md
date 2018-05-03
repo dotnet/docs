@@ -1,19 +1,12 @@
 ---
 title: "while (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "while_CSharpKeyword"
   - "while"
 helpviewer_keywords: 
   - "while keyword [C#]"
 ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # while (C# Reference)
 The `while` statement executes a statement or a block of statements until a specified expression evaluates to `false`.  

@@ -1,10 +1,6 @@
 ---
 title: "-deterministic (C# Compiler Options)"
 ms.date: 04/12/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/deterministic"
 helpviewer_keywords: 

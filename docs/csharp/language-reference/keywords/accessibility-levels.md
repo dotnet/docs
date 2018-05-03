@@ -1,16 +1,10 @@
 ---
 title: "Accessibility Levels (C# Reference)"
 ms.date: 12/06/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility levels"
   - "accessibility levels"
 ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Accessibility Levels (C# Reference)
 

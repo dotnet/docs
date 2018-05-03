@@ -1,18 +1,11 @@
 ---
 title: "C# Compiler Options Listed by Category"
 ms.date: 04/12/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual C# compiler, options listed by category"
   - "compiler options [C#], listed by category"
   - "Visual C#, compiler options listed by category"
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Compiler Options Listed by Category
 The following compiler options are sorted by category. For an alphabetical list, see [C# Compiler Options Listed Alphabetically](listed-alphabetically.md).  

@@ -1,10 +1,6 @@
 ---
 title: "-link (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/l compiler option [C#]"
   - "/link compiler option [C#]"
@@ -15,9 +11,6 @@ helpviewer_keywords:
   - "-link compiler option [C#]"
   - "link compiler option [C#]"
 ms.assetid: 00da70c6-9ea1-43c2-86f2-aa7f26c03475
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -link (C# Compiler Options)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  

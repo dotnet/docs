@@ -1,19 +1,12 @@
 ---
 title: "bool (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "bool_CSharpKeyword"
   - "bool"
 helpviewer_keywords: 
   - "bool keyword [C#]"
 ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
-caps.latest.revision: 30
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # bool (C# Reference)
 The `bool` keyword is an alias of <xref:System.Boolean?displayProperty=nameWithType>. It is used to declare variables to store the Boolean values, [true](../../../csharp/language-reference/keywords/true.md) and [false](../../../csharp/language-reference/keywords/false.md).  

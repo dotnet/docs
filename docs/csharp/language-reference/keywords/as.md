@@ -1,10 +1,6 @@
 ---
 title: "as (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "as_CSharpKeyword"
   - "as"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "type conversion [C#], as keyword"
   - "as keyword [C#]"
 ms.assetid: a9be126b-cbf4-4990-a70d-d0e1983cad0e
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # as (C# Reference)
 You can use the `as` operator to perform certain types of conversions between compatible reference types or [nullable types](../../../csharp/programming-guide/nullable-types/index.md). The following code shows an example.  

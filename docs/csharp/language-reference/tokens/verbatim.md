@@ -1,10 +1,6 @@
 ---
 title: "@ (C# Reference)"
 ms.date: 02/09/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "@_CSharpKeyword"
   - "@"

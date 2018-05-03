@@ -1,10 +1,6 @@
 ---
 title: "-langversion (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/langversion"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-langversion compiler option [C#]"
   - "langversion compiler option [C#]"
 ms.assetid: 3fb00b05-a0ff-4782-b313-13a4c0f62d94
-caps.latest.revision: 33
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -langversion (C# Compiler Options)
 Causes the compiler to accept only syntax that is included in the chosen C# language specification.  

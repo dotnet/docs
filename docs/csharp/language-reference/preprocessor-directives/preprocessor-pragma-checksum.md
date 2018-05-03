@@ -1,18 +1,11 @@
 ---
 title: "#pragma checksum (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#pragma checksum"
 helpviewer_keywords: 
   - "#pragma checksum [C#]"
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #pragma checksum (C# Reference)
 Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] pages.  

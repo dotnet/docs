@@ -1,10 +1,6 @@
 ---
 title: "throw (C# Reference)"
 ms.date: 03/02/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "throw"
   - "throw_CSharpKeyword"
@@ -13,7 +9,6 @@ helpviewer_keywords:
   - "throw expression [C#]"
   - "throw keyword [C#]"
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 ---

@@ -1,10 +1,6 @@
 ---
 title: "foreach, in (C# Reference)"
 ms.date: 10/11/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "foreach statement [C#]"
   - "in keyword [C#]"
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
-caps.latest.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # foreach, in (C# Reference)
 The `foreach` statement repeats a group of embedded statements for each element in an array or an object collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is used to iterate through the collection to get the information that you want, but can not be used to add or remove items from the source collection to avoid unpredictable side effects. If you need to add or remove items from the source collection, use a [for](for.md) loop.

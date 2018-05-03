@@ -1,11 +1,7 @@
 ---
 title: "Default values table (C# Reference)"
-descripton: Learn what are the default values of value types returned by the default constructors.
+description: Learn what are the default values of value types returned by the default constructors.
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "constructors [C#], return values"
   - "keywords [C#], new"
@@ -15,8 +11,6 @@ helpviewer_keywords:
   - "variables [C#], value types"
   - "constructors [C#], default constructor"
   - "types [C#], default constructor return values"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Default values table (C# Reference)
 

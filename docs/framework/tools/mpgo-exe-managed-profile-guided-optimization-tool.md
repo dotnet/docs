@@ -1,14 +1,6 @@
 ---
 title: "Mpgo.exe (Managed Profile Guided Optimization Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Mpgo.exe"
   - "training scenarios, generating profiles with"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "Ngen.exe"
   - "Ngen.exe, profilers and native images"
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
-caps.latest.revision: 31
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mpgo.exe (Managed Profile Guided Optimization Tool)
 The Managed Profile Guided Optimization Tool (Mpgo.exe) is a command-line tool that uses common end-user scenarios to optimize the native image assemblies that are created by the [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md). This tool enables you to run training scenarios that generate profile data. The [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) uses this data to optimize its generated native image application assemblies. A training scenario is a trial run of an expected use of your application. Mpgo.exe is available in Visual Studio Ultimate 2012 and later versions. Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], you can also use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  

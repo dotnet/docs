@@ -1,14 +1,6 @@
 ---
 title: "notMarshalable MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), interface pointer not marshalable"
   - "interface pointer not marshalable MDA"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), marshaling"
   - "notMarshalable MDA"
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # notMarshalable MDA
 The `notMarshalable` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters a COM interface pointer without a valid registered proxy/stub or an incorrect `IMarshal` interface implementation while attempting to marshal the interface across contexts.  

@@ -1,14 +1,6 @@
 ---
 title: "Aximp.exe (Windows Forms ActiveX Control Importer)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ActiveX controls, hosting in Windows Forms"
   - "ActiveX Control Importer"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "Aximp.exe"
   - "Windows Forms ActiveX Control Importer"
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Aximp.exe (Windows Forms ActiveX Control Importer)
 The ActiveX Control Importer converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.  

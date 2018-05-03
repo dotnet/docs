@@ -1,15 +1,10 @@
 ---
 title: .NET Architecture Guidance
 description: Learn about recoommended practices for architecting, designing and building .NET software.
-keywords: Docker, Microservices, ASP.NET, Container, Architecture
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.prod: .net
 ms.technology: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Architecture Guidance
 

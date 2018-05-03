@@ -1,21 +1,9 @@
 ---
 title: "&lt;claimTypeRequired&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c469d71f-6c77-4a24-97aa-53efa126ceef
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;claimTypeRequired&gt;
 Specifies the set of required claims for incoming security tokens.  

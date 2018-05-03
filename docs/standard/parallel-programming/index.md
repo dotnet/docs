@@ -1,17 +1,12 @@
 ---
 title: "Parallel Programming in .NET"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "parallel programming"
+ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Parallel Programming in .NET
 

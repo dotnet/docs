@@ -1,21 +1,7 @@
 ---
 title: "Canonical Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bbcc9928-36ea-4dff-9e31-96549ffed958
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Canonical Functions
 This section discusses canonical functions that are supported by all data providers, and can be used by all querying technologies. Canonical functions cannot be extended by a provider.  

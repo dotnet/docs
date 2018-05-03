@@ -1,24 +1,10 @@
 ---
 title: "Snapshot Isolation in SQL Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Snapshot Isolation in SQL Server
 Snapshot isolation enhances concurrency for OLTP applications.  

@@ -1,14 +1,6 @@
 ---
 title: "Names of Classes, Structs, and Interfaces"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "type names, guidelines"
   - "classes [.NET Framework], names"
@@ -20,13 +12,8 @@ helpviewer_keywords:
   - "interfaces [.NET Framework], names"
   - "generic type parameters"
 ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Names of Classes, Structs, and Interfaces
 The naming guidelines that follow apply to general type naming.  

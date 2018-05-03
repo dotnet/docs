@@ -1,21 +1,7 @@
 ---
 title: "&lt;localIssuer&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;localIssuer&gt;
 Specifies the address and binding of the local issuer to be used to obtain a security token.  

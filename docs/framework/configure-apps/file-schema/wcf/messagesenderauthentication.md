@@ -1,21 +1,7 @@
 ---
 title: "&lt;messageSenderAuthentication&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;messageSenderAuthentication&gt;
 Specifies authentication settings for peer certificate used by a message sender.  

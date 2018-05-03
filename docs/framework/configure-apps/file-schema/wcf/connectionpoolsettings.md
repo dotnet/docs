@@ -1,21 +1,7 @@
 ---
 title: "&lt;connectionPoolSettings&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;connectionPoolSettings&gt;
 Specifies additional connection pool settings for a Named Pipe binding.  

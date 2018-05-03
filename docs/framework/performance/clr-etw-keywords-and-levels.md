@@ -1,26 +1,14 @@
 ---
 title: "CLR ETW Keywords and Levels"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "CLR ETW keywords"
   - "CLR ETW levels"
   - "ETW, CLR keywords"
   - "ETW, CLR levels"
 ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR ETW Keywords and Levels
 <a name="top"></a> Event tracing for Windows (ETW) events can be filtered by category and level. Event [CLR ETW Keywords](#keywords) enable the filtering of events by category; they are used in combinations for the runtime and rundown providers. The [event levels](#levels) are identified by flags.  

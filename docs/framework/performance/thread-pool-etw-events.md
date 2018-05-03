@@ -1,24 +1,12 @@
 ---
 title: "Thread Pool ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "thread pool events [.NET Framework]"
   - "ETW, thread pool events (CLR)"
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Thread Pool ETW Events
 <a name="top"></a> These events collect information about worker and I/O threads.  

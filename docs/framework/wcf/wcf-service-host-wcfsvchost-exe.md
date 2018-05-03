@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Service Host (WcfSvcHost.exe)
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Host (WcfSvcHost.exe) allows you to launch the Visual Studio debugger (F5) to automatically host and test a service you have implemented. You can then test the service using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client (WcfTestClient.exe), or your own client, to find and fix any potential errors.  
+Windows Communication Foundation (WCF) Service Host (WcfSvcHost.exe) allows you to launch the Visual Studio debugger (F5) to automatically host and test a service you have implemented. You can then test the service using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client (WcfTestClient.exe), or your own client, to find and fix any potential errors.  
   
 ## WCF Service Host  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host enumerates the services in a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service project, loads the project’s configuration, and instantiates a host for each service that it finds. The tool is integrated into Visual Studio through the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service template and is invoked when you start to debug your project.  

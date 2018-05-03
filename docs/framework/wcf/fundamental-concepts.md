@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Fundamental Windows Communication Foundation Concepts
-This document provides a high-level view of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture. It is intended to explain key concepts and how they fit together. For a tutorial on creating the simplest version of a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service and client, see [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md). To learn [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] programming, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).  
+This document provides a high-level view of the Windows Communication Foundation (WCF) architecture. It is intended to explain key concepts and how they fit together. For a tutorial on creating the simplest version of a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service and client, see [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md). To learn [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] programming, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).  
   
 ## WCF Fundamentals  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is a runtime and a set of APIs for creating systems that send messages between services and clients. The same infrastructure and APIs are used to create applications that communicate with other applications on the same computer system or on a system that resides in another company and is accessed over the Internet.  

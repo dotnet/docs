@@ -1,21 +1,7 @@
 ---
 title: "&lt;windows&gt; of &lt;clientCredentials&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;windows&gt; of &lt;clientCredentials&gt; Element
 Specifies the settings for a Windows credential to be used to represent the client.  

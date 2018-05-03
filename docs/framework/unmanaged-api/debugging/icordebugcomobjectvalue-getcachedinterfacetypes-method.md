@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugComObjectValue::GetCachedInterfaceTypes Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugComObjectValue::GetCachedInterfaceTypes"
 api_location: 
@@ -21,12 +13,8 @@ helpviewer_keywords:
 ms.assetid: d492284f-d3c5-4614-adb8-d718d5042500
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugComObjectValue::GetCachedInterfaceTypes Method
 Provides an enumerator for the interface types that the current object has been cast to or used as.  

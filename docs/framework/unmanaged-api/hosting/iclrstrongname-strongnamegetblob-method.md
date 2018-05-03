@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::StrongNameGetBlob Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.StrongNameGetBlob"
   - "ICLRStrongName.StrongNameGetBlob"
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: a24218f8-7196-44be-b7a2-ee9cdd7a85c4
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::StrongNameGetBlob Method
 Fills the specified buffer with the binary representation of the executable file at the specified address.  

@@ -2,10 +2,6 @@
 title: "Install the .NET Framework for developers"
 ms.custom: "updateeachrelease"
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "get-started-article"
 helpviewer_keywords: 
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Install the .NET Framework for developers
@@ -39,7 +32,7 @@ Use the following table for quick links, or read further for details. To view th
   
 |.NET Framework version|Developer installation|Redistributable installation|Platform support|  
 |----------------------------|----------------------------|----------------------------------|----------------------|  
-|**4.7.2**|[.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=863261)|[Download Center 4.7.2 web installer](http://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[Download Center 4.7.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=863265)|Included in: <br/>Windows 10 [!INCLUDE [RS4](~/includes/rs4.md)]<br /><br /> You can install on:<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
+|**4.7.2**|[.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=863261)|[Download Center 4.7.2 web installer](http://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[Download Center 4.7.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=863265)|Included in: <br/>Windows 10 April 2018 Update<br /><br /> You can install on:<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.7.1**|[NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=852105)|[Download page for 4.7.1 web installer](http://go.microsoft.com/fwlink/?LinkId=852095)<br /><br /> [Download page for 4.7.1 offline installer](http://go.microsoft.com/fwlink/?LinkId=852107)|Included in: <br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br /><br /> You can install on:<br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.7**|[NET Framework 4.7 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](http://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](http://go.microsoft.com/fwlink/?LinkId=825303)|Included in: <br/>Windows 10 Creators Update<br /><br /> You can install on:<br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.6.2**|[NET Framework 4.6.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=780617)|[Download page for 4.6.2 web installer](http://go.microsoft.com/fwlink/?LinkId=780597)<br /><br /> [Download page for 4.6.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=780601)|Included in: <br /> Windows 10 Anniversary Update<br /><br /> You can install on:<br /> Windows 10 November Update <br/> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|

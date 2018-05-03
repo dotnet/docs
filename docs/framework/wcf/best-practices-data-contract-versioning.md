@@ -26,7 +26,7 @@ ms.workload:
 This topic lists the best practices for creating data contracts that can evolve easily over time. For more information about data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
 ## Note on Schema Validation  
- In discussing data contract versioning, it is important to note that the data contract schema exported by [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] does not have any versioning support, other than the fact that elements are marked as optional by default.  
+ In discussing data contract versioning, it is important to note that the data contract schema exported by Windows Communication Foundation (WCF) does not have any versioning support, other than the fact that elements are marked as optional by default.  
   
  This means that even the most common versioning scenario, such as adding a new data member, cannot be implemented in a way that is seamless with regard to a given schema. The newer versions of a data contract (with a new data member, for example) do not validate using the old schema.  
   

@@ -394,14 +394,14 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] of the <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
-        <value>The [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)] of the annotation.</value>
+        <value>The GUID of the annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 > [!NOTE]
->  <xref:System.Windows.Annotations.Annotation.Id%2A> returns <xref:System.Guid.Empty> if the annotation was instantiated by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation with a valid [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)].  
+>  <xref:System.Windows.Annotations.Annotation.Id%2A> returns <xref:System.Guid.Empty> if the annotation was instantiated by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation with a valid GUID.  
   
  ]]></format>
         </remarks>

@@ -37,7 +37,7 @@
       </Parameters>
       <Docs>
         <param name="idObject">The [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the object that received focus.</param>
-        <param name="idChild">The child [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object that received focus.</param>
+        <param name="idChild">The child ID of the object that received focus.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.AutomationFocusChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -92,7 +92,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA#tla_aa](~/includes/tlasharptla-aa-md.md)] object that generated the event.</summary>
-        <value>The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element that is receiving focus. For possible values, see [Object Identifiers](http://msdn.microsoft.com/library/default.asp?url=/library/msaa/msaaccrf_5q05.asp) in the Microsoft Active Accessibility documentation.</value>
+        <value>The ID of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element that is receiving focus. For possible values, see [Object Identifiers](http://msdn.microsoft.com/library/default.asp?url=/library/msaa/msaaccrf_5q05.asp) in the Microsoft Active Accessibility documentation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

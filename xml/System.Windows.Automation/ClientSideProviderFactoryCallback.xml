@@ -21,8 +21,8 @@
   </ReturnValue>
   <Docs>
     <param name="hwnd">The window for which the provider is created.</param>
-    <param name="idChild">The child [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object.</param>
-    <param name="idObject">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object.</param>
+    <param name="idChild">The child ID of the object.</param>
+    <param name="idObject">The ID of the object.</param>
     <summary>Represents the method that creates a client-side UI Automation provider for a window.</summary>
     <returns>To be added.</returns>
     <remarks>

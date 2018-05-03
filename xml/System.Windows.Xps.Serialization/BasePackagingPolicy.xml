@@ -64,7 +64,7 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object.</param>
+        <param name="resourceId">The ID of the object.</param>
         <summary>When overridden in a derived class, acquires a resource stream for an <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" /> object.</summary>
         <returns>The <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" />.</returns>
         <remarks>To be added.</remarks>
@@ -118,8 +118,8 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The resource [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> resource stream to acquire.</param>
-        <summary>When overridden in a derived class, acquires an <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for an <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with a specified resource [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)].</summary>
+        <param name="resourceId">The resource ID of the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> resource stream to acquire.</param>
+        <summary>When overridden in a derived class, acquires an <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for an <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with a specified resource ID.</summary>
         <returns>The [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with the specified <paramref name="resourceID" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont(System.String)" />
@@ -143,7 +143,7 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object.</param>
+        <param name="resourceId">The ID of the object.</param>
         <summary>When overridden in a derived class, acquires a resource stream for an <see cref="T:System.Windows.Xps.Packaging.XpsImage" /> object.</summary>
         <returns>The <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the <see cref="T:System.Windows.Xps.Packaging.XpsImage" />.</returns>
         <remarks>To be added.</remarks>
@@ -167,7 +167,7 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object.</param>
+        <param name="resourceId">The ID of the object.</param>
         <summary>When overridden in a derived class, acquires a resource stream for an <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" /> object.</summary>
         <returns>The <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</returns>
         <remarks>To be added.</remarks>
@@ -529,7 +529,7 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the resource that is released.</param>
+        <param name="resourceId">The ID of the resource that is released.</param>
         <summary>When overridden in a derived class, releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -275,7 +275,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a unique identifier for this <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" />.</summary>
-        <value>A (<see cref="T:System.Nullable" />) <see cref="T:System.Guid" /> that represents the [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the signature definition. The default value is <see langword="null" />.</value>
+        <value>A (<see cref="T:System.Nullable" />) <see cref="T:System.Guid" /> that represents the ID of the signature definition. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

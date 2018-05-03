@@ -712,7 +712,7 @@
         <param name="embedCertificate">
           <see langword="true" /> to store the certificate in the package; otherwise, <see langword="false" />.</param>
         <param name="restrictions">Flags that indicate what dependent parts are excluded from the signing.</param>
-        <param name="id">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] to assign to the signature.</param>
+        <param name="id">The ID to assign to the signature.</param>
         <summary>Signs a collection of package parts by using a specified X.509 certificate.</summary>
         <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
         <remarks>
@@ -759,7 +759,7 @@
         <param name="embedCertificate">
           <see langword="true" /> to store the certificate in the package; otherwise, <see langword="false" />.</param>
         <param name="restrictions">Flags that indicate what dependent parts to exclude from the signing.</param>
-        <param name="id">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] to assign to the signature.</param>
+        <param name="id">The ID to assign to the signature.</param>
         <param name="testIsSignable">
           <see langword="true" /> to verify that <see cref="P:System.Windows.Xps.Packaging.XpsDocument.IsSignable" /> is <see langword="true" /> before signing; otherwise, <see langword="false" />.</param>
         <summary>Signs a collection of package parts with a specified X.509 certificate.</summary>

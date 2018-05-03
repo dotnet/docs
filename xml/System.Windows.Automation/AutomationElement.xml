@@ -3138,7 +3138,7 @@
 ## Remarks  
  This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
   
- The runtime [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] property specifies an [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] for an <xref:System.Windows.Automation.AutomationElement> that is unique on the desktop.  
+ The runtime ID property specifies an ID for an <xref:System.Windows.Automation.AutomationElement> that is unique on the desktop.  
   
  The return value of the property is an array of type <xref:System.Int32>. There is no default value.  
   

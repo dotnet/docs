@@ -108,7 +108,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a string containing the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] for the element.</summary>
-        <value>An [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] for an element that is unique among siblings within its container.</value>
+        <value>An ID for an element that is unique among siblings within its container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -736,7 +736,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the process [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of this element.</summary>
-        <value>The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the process that hosts the element. The default value for the property is 0.</value>
+        <value>The ID of the process that hosts the element. The default value for the property is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

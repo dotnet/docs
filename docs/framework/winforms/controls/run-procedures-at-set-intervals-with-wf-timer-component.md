@@ -38,7 +38,7 @@ You might sometimes want to create a procedure that runs at specific time interv
   
 ### To run a procedure at set intervals with the Timer component  
   
-1.  Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](http://msdn.microsoft.com/library/becyw7bz\(v=vs.110\)).  
+1.  Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. Visual Studio also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](http://msdn.microsoft.com/library/becyw7bz\(v=vs.110\)).  
   
 2.  Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
   

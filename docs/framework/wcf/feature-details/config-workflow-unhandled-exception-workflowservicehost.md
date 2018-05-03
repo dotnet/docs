@@ -35,7 +35,7 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
     ```  
   
     > [!NOTE]
-    >  The preceding configuration sample is using simplified configuration. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md).  
+    >  The preceding configuration sample is using simplified configuration. For more information, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md).  
   
      This behavior can be configured in code as shown in the following example.  
   
@@ -57,7 +57,7 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
      **terminate**  
      Completes the instance in memory and removes it from the instance store.  
   
-     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>, see [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md).  
+     For more information about <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>, see [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md).  
   
 ## See Also  
  [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  

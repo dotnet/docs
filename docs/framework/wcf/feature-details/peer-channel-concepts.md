@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Peer Channel Concepts
-This section briefly explains the concepts that make up the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Peer Channel.  
+This section briefly explains the concepts that make up the Windows Communication Foundation (WCF) Peer Channel.  
   
 ## In This Section  
  [Peer Meshes](../../../../docs/framework/wcf/feature-details/peer-meshes.md):  Describes the characteristics of meshes created using Peer Channel.  

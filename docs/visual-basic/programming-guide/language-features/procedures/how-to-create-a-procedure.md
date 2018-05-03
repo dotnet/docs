@@ -57,7 +57,8 @@ You enclose a procedure between a starting declaration statement (`Sub` or `Func
   
  [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
   
-## See Also  
+## See also
+
  [Procedures](./index.md)  
  [Sub Procedures](./sub-procedures.md)  
  [Function Procedures](./function-procedures.md)  
@@ -67,4 +68,4 @@ You enclose a procedure between a starting declaration statement (`Sub` or `Func
  [Recursive Procedures](./recursive-procedures.md)  
  [Procedure Overloading](./procedure-overloading.md)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+ [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)  

@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Custom Token
-This sample demonstrates how to add a custom token implementation into a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application. The example uses a `CreditCardToken` to securely pass information about client credit cards to the service. The token is passed in the WS-Security message header and is signed and encrypted using the symmetric security binding element along with message body and other message headers. This is useful in cases where the built-in tokens are not sufficient. This sample demonstrates how to provide a custom security token to a service instead of using one of the built-in tokens. The service implements a contract that defines a request-reply communication pattern.  
+This sample demonstrates how to add a custom token implementation into a Windows Communication Foundation (WCF) application. The example uses a `CreditCardToken` to securely pass information about client credit cards to the service. The token is passed in the WS-Security message header and is signed and encrypted using the symmetric security binding element along with message body and other message headers. This is useful in cases where the built-in tokens are not sufficient. This sample demonstrates how to provide a custom security token to a service instead of using one of the built-in tokens. The service implements a contract that defines a request-reply communication pattern.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  

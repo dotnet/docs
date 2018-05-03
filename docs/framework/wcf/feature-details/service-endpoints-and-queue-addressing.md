@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Endpoints and Queue Addressing
-This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queued application deployment.  
+This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic Windows Communication Foundation (WCF) queued application deployment.  
   
  ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
@@ -29,7 +29,7 @@ This topic discusses how clients address services that read from queues and how 
   
  Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] MSMQ path and format names, see [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
+ For more information about MSMQ path and format names, see [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
   
 ## NetMsmqBinding and Service Addressing  
  When addressing a message to a service, the scheme in the URI is chosen based on the transport used for communication. Each transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] has a unique scheme. The scheme must reflect the nature of transport used for communication. For example, net.tcp, net.pipe, HTTP, and so on.  

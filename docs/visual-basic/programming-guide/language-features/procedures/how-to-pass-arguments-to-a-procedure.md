@@ -41,7 +41,7 @@ When you call a procedure, you follow the procedure name with an argument list i
   
 5.  If you omit an argument for an `Optional` parameter and there is another parameter after it in the parameter list, you can mark the place of the omitted argument by an extra comma in the argument list.  
   
-     The following example calls the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> function.  
+     The following example calls the Visual Basic <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> function.  
   
      [!code-vb[VbVbcnProcedures#34](./codesnippet/VisualBasic/how-to-pass-arguments-to-a-procedure_1.vb)]  
   
@@ -49,7 +49,8 @@ When you call a procedure, you follow the procedure name with an argument list i
   
      The second comma in the argument list marks the place of the omitted second argument, and the last string is passed to the optional third parameter of `MsgBox`, which is the text to be displayed in the title bar.  
   
-## See Also  
+## See also
+
  [Sub Procedures](./sub-procedures.md)  
  [Function Procedures](./function-procedures.md)  
  [Property Procedures](./property-procedures.md)  
@@ -59,4 +60,4 @@ When you call a procedure, you follow the procedure name with an argument list i
  [Recursive Procedures](./recursive-procedures.md)  
  [Procedure Overloading](./procedure-overloading.md)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+ [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)  

@@ -16,7 +16,7 @@ ms.workload:
   - "dotnet"
 ---
 # Persistence
-This section contains samples that demonstrate persisting workflows to a durable medium in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate persisting workflows to a durable medium in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Persisting a Workflow Application](../../../../docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md)  

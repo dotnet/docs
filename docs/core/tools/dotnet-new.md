@@ -4,8 +4,8 @@ description: The dotnet new command creates new .NET Core projects based on the 
 author: mairaw
 ms.author: mairaw
 ms.date: 03/26/2018
-ms.topic: article
-ms.prod: .net-core
+ms.topic: conceptual
+ms.prod: dotnet-core
 ms.technology: dotnet-cli
 ms.workload: 
   - dotnetcore

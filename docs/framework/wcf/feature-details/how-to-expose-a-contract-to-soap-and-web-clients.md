@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # How to: Expose a Contract to SOAP and Web Clients
-By default, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] makes endpoints available only to SOAP clients. In [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md), an endpoint is made available to non-SOAP clients. There may be times when you want to make the same contract available both ways, as a Web endpoint and as a SOAP endpoint. This topic shows an example of how to do this.  
+By default, Windows Communication Foundation (WCF) makes endpoints available only to SOAP clients. In [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md), an endpoint is made available to non-SOAP clients. There may be times when you want to make the same contract available both ways, as a Web endpoint and as a SOAP endpoint. This topic shows an example of how to do this.  
   
 ### To define the service contract  
   

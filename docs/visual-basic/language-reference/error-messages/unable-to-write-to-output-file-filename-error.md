@@ -36,11 +36,11 @@ There was a problem creating the file.
   
 1.  Compile the program again to see if the error recurs.  
   
-2.  If the error continues, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+2.  If the error continues, save your work and restart Visual Studio.  
   
 3.  If the error continues, restart the computer.  
   
-4.  If the error recurs, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+4.  If the error recurs, reinstall Visual Basic.  
   
 5.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   

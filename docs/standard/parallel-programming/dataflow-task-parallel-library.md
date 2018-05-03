@@ -1,9 +1,7 @@
 ---
 title: "Dataflow (Task Parallel Library)"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,13 +11,9 @@ helpviewer_keywords:
 ms.assetid: 643575d0-d26d-4c35-8de7-a9c403e97dd6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Dataflow (Task Parallel Library)
-<a name="top"></a> The Task Parallel Library (TPL) provides dataflow components to help increase the robustness of concurrency-enabled applications. These dataflow components are collectively referred to as the *TPL Dataflow Library*. This dataflow model promotes actor-based programming by providing in-process message passing for coarse-grained dataflow and pipelining tasks. The dataflow components build on the types and scheduling infrastructure of the TPL and integrate with the C#, [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], and F# language support for asynchronous programming. These dataflow components are useful when you have multiple operations that must communicate with one another asynchronously or when you want to process data as it becomes available. For example, consider an application that processes image data from a web camera. By using the dataflow model, the application can process image frames as they become available. If the application enhances image frames, for example, by performing light correction or red-eye reduction, you can create a *pipeline* of dataflow components. Each stage of the pipeline might use more coarse-grained parallelism functionality, such as the functionality that is provided by the TPL, to transform the image.  
+<a name="top"></a> The Task Parallel Library (TPL) provides dataflow components to help increase the robustness of concurrency-enabled applications. These dataflow components are collectively referred to as the *TPL Dataflow Library*. This dataflow model promotes actor-based programming by providing in-process message passing for coarse-grained dataflow and pipelining tasks. The dataflow components build on the types and scheduling infrastructure of the TPL and integrate with the C#, Visual Basic, and F# language support for asynchronous programming. These dataflow components are useful when you have multiple operations that must communicate with one another asynchronously or when you want to process data as it becomes available. For example, consider an application that processes image data from a web camera. By using the dataflow model, the application can process image frames as they become available. If the application enhances image frames, for example, by performing light correction or red-eye reduction, you can create a *pipeline* of dataflow components. Each stage of the pipeline might use more coarse-grained parallelism functionality, such as the functionality that is provided by the TPL, to transform the image.  
   
  This document provides an overview of the TPL Dataflow Library. It describes the programming model, the predefined dataflow block types, and how to configure dataflow blocks to meet the specific requirements of your applications.  
 
@@ -111,7 +105,7 @@ ms.workload:
  For a complete example that demonstrates how to use <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> to broadcast a message to multiple target blocks, see [How to: Specify a Task Scheduler in a Dataflow Block](../../../docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md).  
   
 #### WriteOnceBlock(T)  
- The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class resembles the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only. You can think of <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> as being similar to the C# [readonly](~/docs/csharp/language-reference/keywords/readonly.md) ([ReadOnly](~/docs/visual-basic/language-reference/modifiers/readonly.md) in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) keyword, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object becomes immutable after it receives a value instead of at construction. Like the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, when a target receives a message from a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object, that message is not removed from that object. Therefore, multiple targets receive a copy of the message. The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class is useful when you want to propagate only the first of multiple messages.  
+ The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class resembles the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only. You can think of <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> as being similar to the C# [readonly](~/docs/csharp/language-reference/keywords/readonly.md) ([ReadOnly](~/docs/visual-basic/language-reference/modifiers/readonly.md) in Visual Basic) keyword, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object becomes immutable after it receives a value instead of at construction. Like the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, when a target receives a message from a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object, that message is not removed from that object. Therefore, multiple targets receive a copy of the message. The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class is useful when you want to propagate only the first of multiple messages.  
   
  The following basic example posts multiple <xref:System.String> values to a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object and then reads the value back from that object. Because a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only, after a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object receives a message, it discards subsequent messages.  
   

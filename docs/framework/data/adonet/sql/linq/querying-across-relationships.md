@@ -1,24 +1,10 @@
 ---
 title: "Querying Across Relationships"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 297878d0-685b-4c01-b2e0-9d731b7322bc
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Querying Across Relationships
 References to other objects or collections of other objects in your class definitions directly correspond to foreign-key relationships in the database. You can use these relationships when you query by using dot notation to access the relationship properties and navigate from one object to another. These access operations translate to more complex joins or correlated subqueries in the equivalent SQL.  

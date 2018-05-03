@@ -1,25 +1,14 @@
 ---
 title: "Cross-Platform Development with the Portable Class Library"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Portable Class Library [.NET Framework]"
   - "targeting multiple platforms"
   - "multiple platforms, targeting"
 ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
-caps.latest.revision: 95
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Cross-Platform Development with the Portable Class Library
 The .NET Framework Portable Class Library project type in Visual Studio helps you build cross-platform apps and libraries for Microsoft platforms quickly and easily.  
@@ -33,7 +22,7 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
  Visual Studio provides templates to help you develop with the Portable Class Library. Depending on which version of Visual Studio you're using, available templates and menus may vary from those described in this article.  
   
 > [!WARNING]
->  [Visual Studio 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=393658) includes updates to the Portable Class Library templates. If you have an earlier version of Visual Studio and Visual Studio 2013 installed on the same computer, and you then install Update 2, the changes to the **Target Framework** choices will be applied to both versions of Visual Studio.  
+>  Visual Studio 2013 Update 2 includes updates to the Portable Class Library templates. If you have an earlier version of Visual Studio and Visual Studio 2013 installed on the same computer, and you then install Update 2, the changes to the **Target Framework** choices will be applied to both versions of Visual Studio.  
   
  In this topic:  
   
@@ -54,10 +43,10 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
 |-----------------------|---------------------------------------------------|  
 |Visual Studio 2010, Professional, Premium, or Ultimate|Yes, when you install the [Portable Library Tools](https://marketplace.visualstudio.com/items?itemName=BCLTeam.PortableLibraryTools2).|  
 |Visual Studio Express 2010 versions|No.|  
-|Visual Studio 2012 Professional, Premium, or Ultimate|Yes. For phone support, install the [Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=265772).|  
+|Visual Studio 2012 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.0 support, install the [Windows Phone SDK 8.0](https://www.microsoft.com/download/details.aspx?id=35471).|  
 |Visual Studio Express 2012 versions|No.|  
-|Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install [Visual Studio 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=393658).|  
-|Visual Studio Express 2013 for Windows|Yes, when you install the [latest version of Visual Studio Express](http://go.microsoft.com/fwlink/p/?LinkId=394629), which includes Update 2, or add [Visual Studio 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=393658).|  
+|Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install the [latest version of Visual Studio 2013](https://www.visualstudio.com/vs/older-downloads/).|  
+|Visual Studio Community 2013 for Windows|Yes, when you install the [latest version of Visual Studio Community 2013](https://www.visualstudio.com/vs/older-downloads/), which includes Update 2.|  
   
 <a name="create_pcl"></a>   
 ## Creating a Portable Class Library project  
@@ -150,7 +139,7 @@ Change Targets dialog box in Visual Studio 2012
  ➌ Requires [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) package  
   
 > [!WARNING]
->  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](http://go.microsoft.com/fwlink/p/?LinkId=394744).  
+>  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](/previous-versions/windows/apps/dn642084(v=vs.105)).  
   
 <a name="members"></a>   
 ## Supported types and members  
@@ -192,7 +181,7 @@ Version Information example
  When you create a Windows store or Windows Phone app that references a Portable Class Library assembly, everything you need to deploy the app is included in the app package, and no further steps are required.  
   
 ### Deploying a .NET Framework app  
- When you deploy a .NET Framework app that references a Portable Class Library assembly, you must specify a dependency on the correct version of the .NET Framework. By specifying this dependency, you ensure that the required version is installed with your app. If you target the .NET Framework 4 or later, the computer must have the .NET Framework 4 with an [update](http://go.microsoft.com/fwlink/?LinkId=210824), Update 4.0.3 for the .NET Framework 4, or the .NET Framework 4.5 installed.  
+ When you deploy a .NET Framework app that references a Portable Class Library assembly, you must specify a dependency on the correct version of the .NET Framework. By specifying this dependency, you ensure that the required version is installed with your app. If you target the .NET Framework 4 or later, the computer must have the .NET Framework 4 with an [update](https://www.microsoft.com/download/details.aspx?id=3556), Update 4.0.3 for the .NET Framework 4, or the .NET Framework 4.5 installed.  
   
 -   To create a dependency with ClickOnce deployment: In **Solution Explorer**, choose the project node for the project you want to publish. (This is the project that references the Portable Class Library project.) On the menu bar, choose **Project**, **Properties**, and then choose the **Publish** tab. On the **Publish** page, choose **Prerequisites**. Select the required .NET Framework version (or .NET Framework 4 update) as a prerequisite.  
   
@@ -212,9 +201,9 @@ Version Information example
     <param name="background" value="white" />  
     <param name="minRuntimeVersion" value="4.0.60129.0" />  
     <param name="autoUpgrade" value="true" />  
-    <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0"   
+    <a href="https://www.microsoft.com/getsilverlight/get-started/install/"   
              style="text-decoration:none">  
-      <img src=http://go.microsoft.com/fwlink/?LinkId=161376  
+      <img src=http://download.microsoft.com/download/5/1/6/5165823D-1D79-4871-8AC2-42DDDB94A5C2/PNGs/SLMedallion_ENU.png  
              alt="Get Microsoft Silverlight" style="border-style:none"/>  
     </a>  
   </object>  

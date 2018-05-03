@@ -26,7 +26,7 @@ ms.workload:
 # Synchronous and Asynchronous Operations
 This topic discusses implementing and calling asynchronous service operations.  
   
- Many applications call methods asynchronously because it enables the application to continue doing useful work while the method call runs. [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services and clients can participate in asynchronous operation calls at two distinct levels of the application, which provide [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications even more flexibility to maximize throughput balanced against interactivity.  
+ Many applications call methods asynchronously because it enables the application to continue doing useful work while the method call runs. Windows Communication Foundation (WCF) services and clients can participate in asynchronous operation calls at two distinct levels of the application, which provide [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications even more flexibility to maximize throughput balanced against interactivity.  
   
 ## Types of Asynchronous Operations  
  All service contracts in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], no matter the parameters types and return values, use [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] attributes to specify a particular message exchange pattern between client and service. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] automatically routes inbound and outbound messages to the appropriate service operation or running client code.  
@@ -46,11 +46,11 @@ This topic discusses implementing and calling asynchronous service operations.
   
 -   Use an asynchronous approach in a client or calling application in the following cases:  
   
--   If you are invoking operations from a middle-tier application. ([!INCLUDE[crabout](../../../includes/crabout-md.md)] such scenarios, see [Middle-Tier Client Applications](../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md).)  
+-   If you are invoking operations from a middle-tier application. (For more information about such scenarios, see [Middle-Tier Client Applications](../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md).)  
   
 -   If you are invoking operations within an ASP.NET page, use asynchronous pages.  
   
--   If you are invoking operations from any application that is single threaded, such as Windows Forms or [!INCLUDE[avalon1](../../../includes/avalon1-md.md)]. When using the event-based asynchronous calling model, the result event is raised on the UI thread, adding responsiveness to the application without requiring you to handle multiple threads yourself.  
+-   If you are invoking operations from any application that is single threaded, such as Windows Forms or Windows Presentation Foundation (WPF). When using the event-based asynchronous calling model, the result event is raised on the UI thread, adding responsiveness to the application without requiring you to handle multiple threads yourself.  
   
 -   In general, if you have a choice between a synchronous and asynchronous call, choose the asynchronous call.  
   

@@ -1,24 +1,10 @@
 ---
 title: "Data Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: cbec8b02-a1e8-4ae8-a83b-bb5190413ac5
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Binding
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports binding to common controls, such as grid controls. Specifically, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] defines the basic patterns for binding to a data grid and handling master-detail binding, both with regard to display and updating.  
@@ -27,7 +13,7 @@ ms.workload:
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] queries to SQL for execution on a database. The results are strongly typed `IEnumerable`. Because these objects are ordinary common language runtime (CLR) objects, ordinary object data binding can be used to display the results. On the other hand, change operations (inserts, updates, and deletes) require additional steps.  
   
 ## Operation  
- Implicitly binding to Windows Forms controls is accomplished by implementing <xref:System.ComponentModel.IListSource>. Data sources generic <xref:System.Data.Linq.Table%601> (`Table<T>` in C# or `Table(Of T)` in [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) and generic `DataQuery` have been updated to implement <xref:System.ComponentModel.IListSource>. User interface (UI) data-binding engines (Windows Forms and Windows Presentation Foundation) both test whether their data source implements <xref:System.ComponentModel.IListSource>. Therefore, writing a direct affectation of a query to a data source of a control implicitly calls [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] collection generation, as in the following example:  
+ Implicitly binding to Windows Forms controls is accomplished by implementing <xref:System.ComponentModel.IListSource>. Data sources generic <xref:System.Data.Linq.Table%601> (`Table<T>` in C# or `Table(Of T)` in Visual Basic) and generic `DataQuery` have been updated to implement <xref:System.ComponentModel.IListSource>. User interface (UI) data-binding engines (Windows Forms and Windows Presentation Foundation) both test whether their data source implements <xref:System.ComponentModel.IListSource>. Therefore, writing a direct affectation of a query to a data source of a control implicitly calls [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] collection generation, as in the following example:  
   
  [!code-csharp[DLinqDataBinding#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqDataBinding/cs/Program.cs#1)]
  [!code-vb[DLinqDataBinding#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqDataBinding/vb/Module1.vb#1)]  

@@ -31,7 +31,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
  The custom dead-letter queue provides isolation between clients that share the same MSMQ service to send messages.  
   
- On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a system-wide dead-letter queue for all queued client applications. On [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a dead-letter queue for each queued client application.  
+ On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], Windows Communication Foundation (WCF) provides a system-wide dead-letter queue for all queued client applications. On [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a dead-letter queue for each queued client application.  
   
 ## Specifying Use of the Dead-Letter Queue  
  A dead-letter queue is in the queue manager of the sending application. It stores messages that have expired or that have failed transfer or delivery.  
@@ -51,7 +51,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
 -   To read messages from a custom dead-letter queue, the URI must be of the form:net.msmq://localhost/private/\<*custom-dlq-name*> where *custom-dlq-name* is the name of the custom dead-letter queue.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to address queues, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
+ For more information about how to address queues, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] stack on the receiver matches addresses that the service is listening on with the address on the message. If the addresses match, the message is dispatched; if not, the message is not dispatched. This can cause problems when reading from the dead-letter queue, because messages in the dead-letter queue are typically addressed to the service and not the dead-letter queue service. Therefore, the service reading from the dead-letter queue must install an address filter `ServiceBehavior` that instructs the stack to match all messages in the queue independently of the addressee. Specifically, you must add a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter to the service reading messages from the dead-letter queue.  
   

@@ -1,29 +1,18 @@
 ---
 title: "Thread-Safe Collections"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, overview"
 ms.assetid: 2e7ca21f-786c-4367-96be-0cf3f3dcc6bd
-caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Thread-Safe Collections
 The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduces the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, which includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently. If you are only reading from a shared collection, then you can use the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. We recommend that you do not use 1.0 collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.  
   
 ## Thread Synchronization in the .NET Framework 1.0 and 2.0 Collections  
- The collections introduced in the .NET Framework 1.0 are found in the <xref:System.Collections?displayProperty=nameWithType> namespace. These collections, which include the commonly used <xref:System.Collections.ArrayList> and <xref:System.Collections.Hashtable>, provide some thread-safety through the `Synchronized` property, which returns a thread-safe wrapper around the collection. The wrapper works by locking the entire collection on every add or remove operation. Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock. This is not scalable and can cause significant performance degradation for large collections. Also, the design is not completely protected from race conditions. For more information, see [Synchronization in Generic Collections](http://go.microsoft.com/fwlink/?LinkID=161130) on the MSDN Web site.  
+ The collections introduced in the .NET Framework 1.0 are found in the <xref:System.Collections?displayProperty=nameWithType> namespace. These collections, which include the commonly used <xref:System.Collections.ArrayList> and <xref:System.Collections.Hashtable>, provide some thread-safety through the `Synchronized` property, which returns a thread-safe wrapper around the collection. The wrapper works by locking the entire collection on every add or remove operation. Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock. This is not scalable and can cause significant performance degradation for large collections. Also, the design is not completely protected from race conditions. For more information, see [Synchronization in Generic Collections](https://blogs.msdn.microsoft.com/bclteam/2005/03/15/synchronization-in-generic-collections-brian-grunkemeyer/).  
   
  The collection classes introduced in the .NET Framework 2.0 are found in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. These include <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and so on. These classes provide improved type safety and performance compared to the .NET Framework 1.0 classes. However, the .NET Framework 2.0 collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.  
   

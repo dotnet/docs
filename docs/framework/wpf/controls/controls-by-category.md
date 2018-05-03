@@ -20,7 +20,7 @@ ms.workload:
   - dotnet
 ---
 # Controls by Category
-[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] controls can be logically grouped into several categories. These categories can be used to select the appropriate control for your scenario by helping you see which controls have similar usage patterns or functionality.  
+Windows Presentation Foundation (WPF) controls can be logically grouped into several categories. These categories can be used to select the appropriate control for your scenario by helping you see which controls have similar usage patterns or functionality.  
   
 ## Layout  
  Layout controls are used to manage the size, dimensions, position, and arrangement of child elements.  

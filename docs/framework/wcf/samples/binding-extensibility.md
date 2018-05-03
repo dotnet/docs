@@ -19,7 +19,7 @@ ms.workload:
 ---
 # Binding Extensibility
 
-This section contains samples that demonstrate custom binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate custom binding in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  <xref:System.ServiceModel.NetHttpBinding>  

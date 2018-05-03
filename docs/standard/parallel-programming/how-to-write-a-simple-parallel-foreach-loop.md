@@ -1,13 +1,7 @@
 ---
 title: "How to: Write a Simple Parallel.ForEach Loop"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +9,8 @@ helpviewer_keywords:
   - "foreach, parallel version"
   - "parallel programming, foreach"
 ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Write a Simple Parallel.ForEach Loop
 This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop to enable data parallelism over any <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> data source.  
@@ -46,7 +35,7 @@ This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A
   
 ## Compiling the Code  
   
--   Copy and paste this code into a [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 2010 Console Application project.  
+-   Copy and paste this code into a Visual Studio 2010 Console Application project.  
   
 -   Add a reference to System.Drawing.dll  
   

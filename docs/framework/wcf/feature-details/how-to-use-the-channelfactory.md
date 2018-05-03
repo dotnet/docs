@@ -25,7 +25,7 @@ The generic <xref:System.ServiceModel.ChannelFactory%601> class is used in advan
   
 ### To create and use the ChannelFactory class  
   
-1.  Build and run an [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md), [Configuring Services](../../../../docs/framework/wcf/configuring-services.md), and [Hosting Services](../../../../docs/framework/wcf/hosting-services.md).  
+1.  Build and run an Windows Communication Foundation (WCF) service. For more information, see [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md), [Configuring Services](../../../../docs/framework/wcf/configuring-services.md), and [Hosting Services](../../../../docs/framework/wcf/hosting-services.md).  
   
 2.  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the contract (interface) for the client.  
   

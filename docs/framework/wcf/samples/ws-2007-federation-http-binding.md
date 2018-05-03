@@ -105,17 +105,15 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
  STS makes a single endpoint available using the standard <xref:System.ServiceModel.WS2007HttpBinding>. The service responds to requests from clients for tokens. If the client is authenticated using a Windows account, the service issues a token that contains the client's user name as a claim. As part of creating the token, STS signs the token using the private key associated with the CN=STS certificate. In addition, it creates a symmetric key and encrypts it using the public key associated with the CN=localhost certificate. In returning the token to the client, STS also returns the symmetric key. The client presents the issued token to the `ICalculator` service and proves that it knows the symmetric key by signing the message with that key.  
   
  When you run the sample, the request for the security token is shown in the STS console window. The operation's requests and responses are displayed in the client and service console windows. Press ENTER in any of the console windows to shut down the application.  
-  
- `Add(100,15.99) = 115.99`  
-  
- `Subtract(145,76.54) = 68.46`  
-  
- `Multiply(9,81.25) = 731.25`  
-  
- `Divide(22,7) = 3.14285714285714`  
-  
- `Press <ENTER> to terminate client.`  
-  
+
+```
+Add(100,15.99) = 115.99
+Subtract(145,76.54) = 68.46
+Multiply(9,81.25) = 731.25
+Divide(22,7) = 3.14285714285714
+Press <ENTER> to terminate client.
+```
+
  The Setup.bat file included with this sample allows you to configure the server and STS with the relevant certificates to run a self-hosted application. The batch file creates two certificates in the LocalMachine/TrustedPeople certificate store. The first certificate has a subject name of CN=STS and is used by STS to sign the security tokens that it issues to the client. The second certificate has a subject name of CN=localhost and is used by STS to encrypt a key in a way that the service can decrypt.  
   
 ### To set up, build, and run the sample  
@@ -135,7 +133,7 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\WS2007FederationHttp`  
   

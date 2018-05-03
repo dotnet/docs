@@ -20,7 +20,7 @@ ms.workload:
   - "dotnet"
 ---
 # Claims and Tokens
-This topic describes the various claim types that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] creates from the default tokens that it supports.  
+This topic describes the various claim types that Windows Communication Foundation (WCF) creates from the default tokens that it supports.  
   
  You can examine the claims of a client credential by using the <xref:System.IdentityModel.Claims.ClaimSet> and <xref:System.IdentityModel.Claims.Claim> classes. The `ClaimSet` contains a collection of `Claim` objects. Each `Claim` has the following important members:  
   

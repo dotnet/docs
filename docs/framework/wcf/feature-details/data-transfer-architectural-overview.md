@@ -23,7 +23,7 @@ ms.workload:
   - "dotnet"
 ---
 # Data Transfer Architectural Overview
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can be thought of as a messaging infrastructure. It can receive messages, process them, and dispatch them to user code for further action, or it can construct messages from data given by user code and deliver them to a destination. This topic, which is intended for advanced developers, describes the architecture for handling messages and the contained data. For a simpler, task-oriented view of how to send and receive data, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
+Windows Communication Foundation (WCF) can be thought of as a messaging infrastructure. It can receive messages, process them, and dispatch them to user code for further action, or it can construct messages from data given by user code and deliver them to a destination. This topic, which is intended for advanced developers, describes the architecture for handling messages and the contained data. For a simpler, task-oriented view of how to send and receive data, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
   
 > [!NOTE]
 >  This topic discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation details that are not visible by examining the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] object model. Two words of caution are in order with regard to documented implementation details. First, the descriptions are simplified; actual implementation may be more complex due to optimizations or other reasons. Second, you should never rely on specific implementation details, even documented ones, because these may change without notice from version to version or even in a servicing release.  
@@ -99,7 +99,7 @@ ms.workload:
   
  Putting information into a message header and extracting information from it is similar to using the message body. The process is somewhat simplified because streaming is not supported. It is possible to access the contents of the same header more than once, and headers can be accessed in arbitrary order, forcing headers to always be buffered. There is no general-purpose mechanism available to get an XML reader over a header, but there is a `MessageHeader` subclass internal to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] that represents a readable header with such a capability. This type of `MessageHeader` is created by the channel stack when a message with custom application headers comes in. This enables the service framework to use a deserialization engine, such as the <xref:System.Runtime.Serialization.DataContractSerializer>, to interpret these headers.  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md).  
+ For more information, see [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md).  
   
 ## Message Properties  
  A message may contain properties. A *property* is any [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] object that is associated with a string name. Properties are accessed through the `Properties` property on `Message`.  
@@ -108,7 +108,7 @@ ms.workload:
   
  For example, the HTTP transport channel included as part of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is capable of producing various HTTP status codes, such as "404 (Not Found)" and "500 (Internal Server Error)," when it sends replies to clients. Before sending a reply message, it checks to see whether the `Properties` of the `Message` contain a property called "httpResponse" that contains an object of type <xref:System.ServiceModel.Channels.HttpResponseMessageProperty>. If such a property is found, it will look at the <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode%2A> property and use that status code. If it is not found, the default "200 (OK)" code is used.  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md).  
+ For more information, see [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md).  
   
 ### The Message as a Whole  
  So far, we have discussed methods for accessing the various parts of the message in isolation. However, the <xref:System.ServiceModel.Channels.Message> class also provides methods to work with the entire message as a whole. For example, the `WriteMessage` method writes out the entire message to an XML writer.  
@@ -235,7 +235,7 @@ ms.workload:
  [!code-csharp[C_DataArchitecture#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_dataarchitecture/cs/source.cs#9)]
  [!code-vb[C_DataArchitecture#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_dataarchitecture/vb/source.vb#9)]  
   
- Items marked to be serialized (with the <xref:System.ServiceModel.MessageBodyMemberAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, or other related attributes) must be serializable to participate in a message contract. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Serialization" section later in this topic.  
+ Items marked to be serialized (with the <xref:System.ServiceModel.MessageBodyMemberAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, or other related attributes) must be serializable to participate in a message contract. For more information, see the "Serialization" section later in this topic.  
   
 ### 4. Parameters  
  Often, a developer who wants to describe an operation that acts on multiple pieces of data does not need the degree of control that message contracts provide. For example, when creating new services, one does not usually want to make the bare-versus-wrapped decision and decide on the wrapper element name. Making these decisions often requires deep knowledge of Web services and SOAP.  
@@ -250,7 +250,7 @@ ms.workload:
  Describing the information to be sent or received as a simple list of operation contract parameters is the recommended approach, unless special reasons exist to move to the more-complex message contract or `Message`-based programming models.  
   
 ### 5. Stream  
- Using `Stream` or one of its subclasses in an operation contract or as a sole message body part in a message contract can be considered a separate programming model from the ones described above. Using `Stream` in this way is the only way to guarantee that your contract will be usable in a streamed fashion, short of writing your own streaming-compatible `Message` subclass. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md).  
+ Using `Stream` or one of its subclasses in an operation contract or as a sole message body part in a message contract can be considered a separate programming model from the ones described above. Using `Stream` in this way is the only way to guarantee that your contract will be usable in a streamed fashion, short of writing your own streaming-compatible `Message` subclass. For more information, see [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md).  
   
  When `Stream` or one of its subclasses is used in this way, the serializer is not invoked. For outgoing messages, a special streaming `Message` subclass is created and the stream is written out as described in the section on the <xref:System.Xml.IStreamProvider> interface. For incoming messages, the service framework creates a `Stream` subclass over the incoming message and provides it to the operation.  
   

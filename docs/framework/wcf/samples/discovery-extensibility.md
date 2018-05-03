@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Discovery Extensibility
-The sample in this section show how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] discovery feature.  
+The sample in this section show how to extend the Windows Communication Foundation (WCF) discovery feature.  
   
 ## In This Section  
  [CustomDiscoveryMetadata](../../../../docs/framework/wcf/samples/customdiscoverymetadata.md)  

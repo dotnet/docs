@@ -36,7 +36,7 @@ This topic lists the most common problems encountered when working through the G
   
 <a name="BKMK_q1"></a>   
 ## I am unable to find the project files on my hard drive.  
- [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] saves project files in c:\users\\<user name\Documents\\<Visual Studio version\>\Projects in [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[win7_client_secondref](../../../includes/win7-client-secondref-md.md)], and c:\Documents and Settings\\<user name\>\My Documents\\<Visual Studio version\>\Projects in earlier versions of Windows.  
+ Visual Studio saves project files in c:\users\\<user name\Documents\\<Visual Studio version\>\Projects in [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[win7_client_secondref](../../../includes/win7-client-secondref-md.md)], and c:\Documents and Settings\\<user name\>\My Documents\\<Visual Studio version\>\Projects in earlier versions of Windows.  
   
 <a name="BKMK_q2"></a>   
 ## Attempting to run the service application: HTTP could not register URL http://+:8000/ServiceModelSamples/Service/. Your process does not have access rights to this namespace.  

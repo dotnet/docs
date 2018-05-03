@@ -22,17 +22,17 @@ Windows Workflow tracking is a [!INCLUDE[netfx_current_long](../../../includes/n
   
  These tracking components are equivalent to the tracking service in [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)]. In [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)], the performance has been improved and the programming model simplified for the WF tracking feature. The tracking runtime instruments a workflow instance to emit events related to the workflow life cycle, workflow activities and custom events.  
   
- Windows Server App Fabric also provides the ability to monitor the execution of a WCF and workflow services. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273) and [Monitoring Applications with Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkId=201287)  
+ Windows Server App Fabric also provides the ability to monitor the execution of a WCF and workflow services. For more information, see [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273) and [Monitoring Applications with Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkId=201287)  
   
- To troubleshoot the workflow runtime, you can turn on diagnostic workflow tracing. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md).  
+ To troubleshoot the workflow runtime, you can turn on diagnostic workflow tracing. For more information, see [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md).  
   
  To understand the programming model, the primary components of the tracking infrastructure are discussed in this topic:  
   
--   <xref:System.Activities.Tracking.TrackingRecord> objects emitted from the workflow runtime. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Tracking Records](../../../docs/framework/windows-workflow-foundation/tracking-records.md).  
+-   <xref:System.Activities.Tracking.TrackingRecord> objects emitted from the workflow runtime. For more information, see [Tracking Records](../../../docs/framework/windows-workflow-foundation/tracking-records.md).  
   
--   <xref:System.Activities.Tracking.TrackingParticipant> objects subscribe to <xref:System.Activities.Tracking.TrackingRecord> objects. The tracking participants contain the logic to process the payload from the <xref:System.Activities.Tracking.TrackingRecord> objects (for example, they could choose to write to a file). [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Tracking Participants](../../../docs/framework/windows-workflow-foundation/tracking-participants.md).  
+-   <xref:System.Activities.Tracking.TrackingParticipant> objects subscribe to <xref:System.Activities.Tracking.TrackingRecord> objects. The tracking participants contain the logic to process the payload from the <xref:System.Activities.Tracking.TrackingRecord> objects (for example, they could choose to write to a file). For more information, see [Tracking Participants](../../../docs/framework/windows-workflow-foundation/tracking-participants.md).  
   
--   <xref:System.Activities.Tracking.TrackingProfile> objects filter tracking records emitted from a workflow instance. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Tracking Profiles](../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
+-   <xref:System.Activities.Tracking.TrackingProfile> objects filter tracking records emitted from a workflow instance. For more information, see [Tracking Profiles](../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
   
 ## Workflow Tracking Infrastructure  
  The workflow tracking infrastructure follows a publish-and-subscribe paradigm. The workflow instance is the publisher of tracking records, while subscribers of the tracking records are registered as extensions to the workflow. These extensions that subscribe to <xref:System.Activities.Tracking.TrackingRecord> objects are called tracking participants. Tracking participants are extensibility points that access <xref:System.Activities.Tracking.TrackingRecord> objects and process them in whatever manner they are written to do so. The tracking infrastructure allows the application of a filter on the outgoing tracking records to allow a participant to subscribe to a subset of the records. This filtering mechanism is accomplished through a tracking profile file.  

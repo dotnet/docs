@@ -1,24 +1,12 @@
 ---
 title: "Contention ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "contention events [.NET Framework]"
   - "ETW, contention events (CLR)"
 ms.assetid: 6933e753-2f2a-425b-ae84-42138c957d76
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Contention ETW Events
 Contention events are raised whenever there is contention for <xref:System.Threading.Monitor?displayProperty=nameWithType> locks or native locks used by the runtime. Contention occurs when a thread is waiting for a lock while another thread possesses the lock.  

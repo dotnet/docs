@@ -27,7 +27,7 @@ The topics in this section catalog a number of possible client and service secur
  An example of a public, unsecured client and service.  
   
  [Intranet Unsecured Client and Service](../../../../docs/framework/wcf/feature-details/intranet-unsecured-client-and-service.md)  
- A basic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service developed to provide information on a secure private network to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application.  
+ A basic Windows Communication Foundation (WCF) service developed to provide information on a secure private network to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application.  
   
  [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)  
  The application allows clients to log on using custom authentication.  

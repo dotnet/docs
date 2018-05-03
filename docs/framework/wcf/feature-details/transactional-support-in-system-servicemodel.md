@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Transactional Support in System.ServiceModel
-The topics in this section describe the transactional functionalities [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides.  
+The topics in this section describe the transactional functionalities Windows Communication Foundation (WCF) provides.  
   
 ## In This Section  
  [ServiceModel Transaction Attributes](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md)  

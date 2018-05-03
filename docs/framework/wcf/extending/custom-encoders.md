@@ -20,7 +20,7 @@ ms.workload:
 # Custom Encoders
 This topic discusses how to create custom encoders.  
   
- In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you use a *binding* to specify how to transfer data across a network between endpoints. A binding is made up of a sequence of *binding elements*. A binding includes optional protocol binding elements such as security, a required *Message Encoder* binding element, and a required transport binding element. A message encoder is represented by a message encoding binding element. Three message encoders are included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]: Binary, Message Transmission Optimization Mechanism (MTOM), and Text.  
+ In Windows Communication Foundation (WCF), you use a *binding* to specify how to transfer data across a network between endpoints. A binding is made up of a sequence of *binding elements*. A binding includes optional protocol binding elements such as security, a required *Message Encoder* binding element, and a required transport binding element. A message encoder is represented by a message encoding binding element. Three message encoders are included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]: Binary, Message Transmission Optimization Mechanism (MTOM), and Text.  
   
  A message encoding binding element serializes an outgoing <xref:System.ServiceModel.Channels.Message> and passes it to the transport, or receives the serialized form of a message from the transport and passes it to the protocol layer if present, or to the application, if not present.  
   
@@ -31,7 +31,7 @@ This topic discusses how to create custom encoders.
 ## System-Provided Encoders  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides several system-provided bindings that are designed to cover the most common application scenarios. Each of these bindings combine a transport, message encoder, and other options (security, for example). This topic describes how to extend the `Text`, `Binary`, and `MTOM` message encoders that are included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], or create your own custom encoder. The text message encoder supports both a plain XML encoding as well as SOAP encodings. The plain XML encoding mode of the text message encoder is called the POX ("Plain Old XML") encoder to distinguish it from the text-based SOAP encoding.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
+ For more information about the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
 ## How to Work with System-Provided Encoders  
  An encoding is added to a binding using a class derived from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  

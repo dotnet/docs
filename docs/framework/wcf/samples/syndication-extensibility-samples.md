@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Syndication Extensibility Samples
-This section contains samples that demonstrate custom syndication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate custom syndication in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)  

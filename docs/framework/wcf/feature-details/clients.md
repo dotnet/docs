@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Clients
-The topics in this section cover the client architecture, how to access a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service, how to configure a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, and some security consideration for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients.  
+The topics in this section cover the client architecture, how to access a Windows Communication Foundation (WCF) service, how to configure a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, and some security consideration for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients.  
   
 ## In This Section  
  [WCF Client Architecture](../../../../docs/framework/wcf/feature-details/client-architecture.md)  

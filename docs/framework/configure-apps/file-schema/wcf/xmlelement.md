@@ -1,21 +1,7 @@
 ---
 title: "&lt;xmlElement&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;xmlElement&gt;
 Specifies an XML element that is sent in the message body to the Security Token Service when requesting a token.  

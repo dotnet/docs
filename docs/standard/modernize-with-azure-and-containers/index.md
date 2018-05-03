@@ -4,10 +4,6 @@ description: Learn to lift and shift existing applications to the Azure cloud an
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.prod: .net
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers (v1.0)
 

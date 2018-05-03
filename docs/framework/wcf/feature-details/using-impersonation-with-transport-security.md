@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Using Impersonation with Transport Security
-*Impersonation* is the ability of a server application to take on the identity of the client. It is common for services to use impersonation when validating access to resources. The server application runs using a service account, but when the server accepts a client connection, it impersonates the client so that access checks are performed using the client's credentials. Transport security is a mechanism both for passing credentials and securing communication using those credentials. This topic describes using transport security in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] with the impersonation feature. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] impersonation using message security, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+*Impersonation* is the ability of a server application to take on the identity of the client. It is common for services to use impersonation when validating access to resources. The server application runs using a service account, but when the server accepts a client connection, it impersonates the client so that access checks are performed using the client's credentials. Transport security is a mechanism both for passing credentials and securing communication using those credentials. This topic describes using transport security in Windows Communication Foundation (WCF) with the impersonation feature. For more information about impersonation using message security, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
 ## Five Impersonation Levels  
  Transport security makes use of five levels of impersonation, as described in the following table.  
@@ -45,7 +45,7 @@ ms.workload:
   
 -   Named pipes cannot be used with the `Impersonate` or `Delegate` impersonation level. The named pipe cannot enforce the on-machine guarantee at these impersonation levels.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] named pipes, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
+ For more information about named pipes, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
 ### HTTP Transport  
  The bindings that use the HTTP transport (<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding>) support several authentication schemes, as explained in [Understanding HTTP Authentication](../../../../docs/framework/wcf/feature-details/understanding-http-authentication.md). The impersonation level supported depends on the authentication scheme. The following items are used with the HTTP transport:  
@@ -60,7 +60,7 @@ ms.workload:
   
 -   The Kerberos authentication scheme, which can only be selected through negotiation, can be used with any supported impersonation level.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the HTTP transport, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
+ For more information about the HTTP transport, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
 ## See Also  
  [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  

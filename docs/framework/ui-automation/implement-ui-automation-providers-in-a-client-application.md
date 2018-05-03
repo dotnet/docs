@@ -1,14 +1,6 @@
 ---
 title: "Implement UI Automation Providers in a Client Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "client-side UI Automation provider, implementation within applications"
   - "UI Automation, implementing client-side provider within application"
 ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
-caps.latest.revision: 6
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implement UI Automation Providers in a Client Application
 > [!NOTE]

@@ -1,25 +1,13 @@
 ---
 title: "CorFlags.exe (CorFlags Conversion Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "CorFlags conversion tool"
   - "CorFlags.exe"
   - "portable executable files, CorFlags section"
 ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorFlags.exe (CorFlags Conversion Tool)
 The CorFlags Conversion tool allows you to configure the CorFlags section of the header of a portable executable image.  

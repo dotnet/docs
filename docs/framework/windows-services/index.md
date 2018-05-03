@@ -26,7 +26,7 @@ ms.workload:
   - "dotnet"
 ---
 # Developing Windows Service Applications
-Using Microsoft [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the Microsoft [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] SDK, you can easily create services by creating an application that is installed as a service. This type of application is called a Windows service. With framework features, you can create services, install them, and start, stop, and otherwise control their behavior.  
+Using Microsoft Visual Studio or the Microsoft [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] SDK, you can easily create services by creating an application that is installed as a service. This type of application is called a Windows service. With framework features, you can create services, install them, and start, stop, and otherwise control their behavior.  
   
 > [!WARNING]
 >  The Windows service template for C++ was not included in Visual Studio 2010. To create a Windows service, you can either create a service in managed code in Visual C# or Visual Basic, which could interoperate with existing C++ code if required, or you can create a Windows service in native C++ by using the [ATL Project Wizard](/cpp/atl/reference/atl-project-wizard).  
@@ -36,7 +36,7 @@ Using Microsoft [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the Micros
  Provides an overview of Windows service applications, the lifetime of a service, and how service applications differ from other common project types.  
   
  [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)  
- Provides an example of creating a service in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] and Visual C#.  
+ Provides an example of creating a service in Visual Basic and Visual C#.  
   
  [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)  
  Explains the language elements used in service programming.  

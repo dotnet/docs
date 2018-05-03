@@ -1,8 +1,6 @@
 ---
 title: "Binary serialization"
 ms.date: "01/02/2018"
-ms.prod: ".net"
-ms.topic: "article"
 helpviewer_keywords: 
   - "binary serialization"
   - "serialization, about serialization"
@@ -11,12 +9,8 @@ helpviewer_keywords:
   - "binary serialization, .net core serialization"
   - "serialization, cross-framework"
 ms.assetid: 2b1ea3be-1152-4032-b2b3-07794054c405
-caps.latest.revision: 5
 author: "ViktorHofer"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Binary serialization
 
@@ -109,8 +103,8 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.Data.ConstraintException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DBConcurrencyException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DataException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
-- <xref:System.Data.DataSet?displayProperty=nameWithType>   
-- <xref:System.Data.DataTable?displayProperty=nameWithType>   
+- <xref:System.Data.DataSet?displayProperty=nameWithType>
+- <xref:System.Data.DataTable?displayProperty=nameWithType> (unless you set RemotingFormat to SerializationFormat.Binary in which case it can only be exchanged with .NET Core 2.1 and later versions.)   
 - <xref:System.Data.DeletedRowInaccessibleException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DuplicateNameException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.EvaluateException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)

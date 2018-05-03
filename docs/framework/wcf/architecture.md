@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Communication Foundation Architecture
-The following graphic illustrates the major layers of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture.  
+The following graphic illustrates the major layers of the Windows Communication Foundation (WCF) architecture.  
   
 ## WCF Architecture  
  ![The WCF Architecture](../../../docs/framework/wcf/media/wcf-architecture.gif "WCF_Architecture")  

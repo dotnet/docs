@@ -3,14 +3,9 @@ title: Target frameworks
 description: Learn about target frameworks for .NET Core apps and libraries.
 author: richlander
 ms.author: mairaw
-ms.date: 09/22/2017
-ms.topic: article
+ms.date: 04/16/2018
 ms.custom: "updateeachrelease"
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Target frameworks
 
@@ -26,13 +21,13 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 ## Latest target framework versions
 
-The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
+The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
 
-| Target Framework      | Latest Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
-| :-------------------: | :------------: | :----------------------------: | :-------------------------------------: |
-| .NET Standard         | 2.0            | netstandard2.0                 | N/A                                     |
-| .NET Core Application | 2.0            | netcoreapp2.0                  | 2.0                                     |
-| .NET Framework        | 4.7.1          | net471                         | 2.0                                     |
+| Target Framework      | Latest <br/> Stable Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
+| :-------------------: | :-------------------------: | :----------------------------: | :-------------------------------------: |
+| .NET Standard         | 2.0                         | netstandard2.0                 | N/A                                     |
+| .NET Core Application | 2.0                         | netcoreapp2.0                  | 2.0                                     |
+| .NET Framework        | 4.7.2                       | net472                         | 2.0                                     |
 
 ## Supported target framework versions
 
@@ -41,8 +36,8 @@ A target framework is typically referenced by a TFM. The following table shows t
 | Target Framework           | TFM |
 | -------------------------- | --- |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0 |
-| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0 |
-| .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471 |
+| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1 |
+| .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
 | .NET Micro Framework       | netmf |
 | Silverlight                | sl4<br>sl5 |
@@ -130,10 +125,10 @@ The following target frameworks are deprecated. Packages targeting these target 
 
 ## See also
 
-[Packages, Metapackages and Frameworks](~/docs/core/packages.md)  
-[Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)  
-[.NET Standard](~/docs/standard/net-standard.md)  
-[.NET Core Versioning](~/docs/core/versions/index.md)  
+[Packages, Metapackages and Frameworks](../core/packages.md)  
+[Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)  
+[.NET Standard](net-standard.md)  
+[.NET Core Versioning](../core/versions/index.md)  
 [dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
 [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
 [Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)

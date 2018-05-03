@@ -1,13 +1,7 @@
 ---
 title: "How to: Read Text from a File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "data streams, reading text from files"
   - "I/O [.NET Framework], reading text from files"
 ms.assetid: ed180baa-dfc6-4c69-a725-46e87edafb27
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Read Text from a File
 The following examples show how to read text synchronously and asynchronously from a text file using .NET for desktop apps. In both examples, when you create the instance of the <xref:System.IO.StreamReader> class, you provide the relative or absolute path to the file. The following examples assume that the file named TestFile.txt is in the same folder as the application.  
@@ -56,4 +45,4 @@ The following examples show how to read text synchronously and asynchronously fr
  [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
  [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
  [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

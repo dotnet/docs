@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Message Security with a Certificate Client
-The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service secured using message security mode. Both the client and the service are authenticated with certificates. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).  
+The following scenario shows a Windows Communication Foundation (WCF) client and service secured using message security mode. Both the client and the service are authenticated with certificates. For more information, see [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).  
   
  For a sample application, see [Message Security Certificate](../../../../docs/framework/wcf/samples/message-security-certificate.md).  
   
@@ -109,7 +109,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
  [!code-vb[C_SecurityScenarios#17](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#17)]  
   
 ### Configuration  
- The following configuration specifies the client certificate using an endpoint behavior. For more information about certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). The code also uses an <`identity`> element to specify a Domain Name System (DNS) of the expected server identity. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] identity, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ The following configuration specifies the client certificate using an endpoint behavior. For more information about certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). The code also uses an <`identity`> element to specify a Domain Name System (DNS) of the expected server identity. For more information about identity, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

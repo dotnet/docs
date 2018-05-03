@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Deploying an Internet Information Services-Hosted WCF Service
-Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted in Internet Information Services (IIS) consists of the following tasks:  
+Developing and deploying a Windows Communication Foundation (WCF) service that is hosted in Internet Information Services (IIS) consists of the following tasks:  
   
 -   Ensure that IIS, ASP.NET, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] activation component are correctly installed and registered.  
   
@@ -33,7 +33,7 @@ Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
  For a detailed walkthrough of creating an IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
   
 ## Ensure That IIS, ASP.NET and WCF Are Correctly Installed and Registered  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], IIS, and ASP.NET must be installed for IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to function correctly. The procedures for installing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (as part of the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]), ASP.NET and IIS vary depending on the operating system version being used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] installing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], see [Microsoft .NET Framework 4 Web Installer](http://go.microsoft.com/fwlink/?LinkId=201185). Instructions for installing IIS can be found at [Installing IIS](http://go.microsoft.com/fwlink/?LinkId=201188).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], IIS, and ASP.NET must be installed for IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to function correctly. The procedures for installing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (as part of the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]), ASP.NET and IIS vary depending on the operating system version being used. For more information about installing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], see [Microsoft .NET Framework 4 Web Installer](http://go.microsoft.com/fwlink/?LinkId=201185). Instructions for installing IIS can be found at [Installing IIS](http://go.microsoft.com/fwlink/?LinkId=201188).  
   
  The installation process for the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] automatically registers [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] with IIS if IIS is already present on the machine. If IIS is installed after the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], an additional step is required to register [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] with IIS and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]. You can do this as follows, depending on your operating system:  
   
@@ -43,12 +43,12 @@ Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
   
 -   Windows 7:  
   
- Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
+ Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. For more information, see [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
   
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application  
- IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services must reside inside of an IIS application. You can create a new IIS application to host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services exclusively. Alternatively, you can deploy an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
+ IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services must reside inside of an IIS application. You can create a new IIS application to host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services exclusively. Alternatively, you can deploy an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
   
- Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this property, see the [PeriodicRestartTime](http://go.microsoft.com/fwlink/?LinkId=109968).  
+ Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](http://go.microsoft.com/fwlink/?LinkId=109968).  
   
 ## Create an .svc File for the WCF Service  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-specific processing directive ([@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.  
@@ -65,7 +65,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
  Additional hosting configuration, such as creating a list of base addresses for the service can also be done. You can also use a custom <xref:System.ServiceModel.Activation.ServiceHostFactory> to extend the directive for use with custom hosting solutions. The IIS applications that host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services are not responsible for managing the creation and lifetime of <xref:System.ServiceModel.ServiceHost> instances. The managed [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting infrastructure creates the necessary <xref:System.ServiceModel.ServiceHost> instance dynamically when the first request is received for the .svc file. The instance is not released until either it is closed explicitly by code or when the application is recycled.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the syntax for .svc files, see [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md).  
+ For more information about the syntax for .svc files, see [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md).  
   
 ## Deploy the Service Implementation to the IIS Application  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)]. Just as with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], you can deploy the implementation code for IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services in several ways at various locations, as follows:  
@@ -76,7 +76,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
 -   As un-compiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the @ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] compilation model, see [ASP.NET Compilation Overview](http://go.microsoft.com/fwlink/?LinkId=94773).  
+ For more information about the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] compilation model, see [ASP.NET Compilation Overview](http://go.microsoft.com/fwlink/?LinkId=94773).  
   
 ## Configure the WCF Service  
  IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services store their configuration in the applications Web.config file. IIS-hosted services use the same configuration elements and syntax as [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted outside of IIS. However, the following constraints are unique to the IIS hosting environment:  

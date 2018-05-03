@@ -24,10 +24,10 @@ Information disclosure enables an attacker to gain valuable information about a 
  If you are using message-level security over an HTTP transport layer, be aware that message-level security does not protect HTTP headers. The only way to protect HTTP headers is to use HTTPS transport instead of HTTP. HTTPS transport causes the entire message, including the HTTP headers, to be encrypted using the Secure Sockets Layer (SSL) protocol.  
   
 ## Policy Information  
- Keeping policy secure is important, especially in federation scenarios where sensitive issued-token requirements or token-issuer information is exposed in policy. In these cases, the recommendation is to secure the federated service's policy endpoint to prevent attackers from obtaining information about the service, such as the type of claims to put in the issued token, or redirecting clients to malicious token issuers. For example, an attacker could discover user name/password pairs by reconfiguring the federated trust chain to terminate in an issuer that executed a man-in-the-middle attack. It is also recommended that federated clients who obtain their bindings through policy retrieval verify that they trust the issuers in the obtained federated trust chain. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] federation scenarios, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
+ Keeping policy secure is important, especially in federation scenarios where sensitive issued-token requirements or token-issuer information is exposed in policy. In these cases, the recommendation is to secure the federated service's policy endpoint to prevent attackers from obtaining information about the service, such as the type of claims to put in the issued token, or redirecting clients to malicious token issuers. For example, an attacker could discover user name/password pairs by reconfiguring the federated trust chain to terminate in an issuer that executed a man-in-the-middle attack. It is also recommended that federated clients who obtain their bindings through policy retrieval verify that they trust the issuers in the obtained federated trust chain. For more information about federation scenarios, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
   
 ## Memory Dumps Can Reveal Claim Information  
- When an application fails, log files, such as those produced by Dr. Watson, can contain the claim information. This information should not be exported to other entities, such as support teams; otherwise, the claim information that contains private data is also exported. You can mitigate this by not sending the log files to unknown entities. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=89160).  
+ When an application fails, log files, such as those produced by Dr. Watson, can contain the claim information. This information should not be exported to other entities, such as support teams; otherwise, the claim information that contains private data is also exported. You can mitigate this by not sending the log files to unknown entities. For more information, see [Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=89160).  
   
 ## Endpoint Addresses  
  An endpoint address contains the information needed to communicate with an endpoint. SOAP security must include the address in full in the security negotiation messages that are exchanged in order to negotiate a symmetric key between a client and a server. Because security negotiation is a bootstrap process, the address headers cannot be encrypted during this process. Therefore, the address should not contain any confidential data; otherwise, it leads to information disclosure attacks.  
@@ -54,7 +54,7 @@ Information disclosure enables an attacker to gain valuable information about a 
 ### Specifying Client Credentials or Invalid Identity Forces NTLM Usage  
  When creating a client, specifying client credentials without a domain name, or specifying an invalid server identity, causes NTLM to be used instead of the Kerberos protocol (if the `AlllowNtlm` property is set to `true`). Because  NTLM does not do server authentication, information can potentially be disclosed.  
   
- For example, it is possible to specify Windows client credentials without a domain name, as shown in the following [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] code.  
+ For example, it is possible to specify Windows client credentials without a domain name, as shown in the following Visual C# code.  
   
 ```  
 MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCredential("username", "password");  
@@ -62,7 +62,7 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
   
  The code does not specify a domain name, and therefore NTLM will be used.  
   
- If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how endpoint identity is specified, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. For more information about how endpoint identity is specified, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 ## See Also  
  [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  

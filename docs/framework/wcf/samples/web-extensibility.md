@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Web Extensibility
-This section contains samples that demonstrate custom Web functionality in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate custom Web functionality in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Form Post](../../../../docs/framework/wcf/samples/form-post.md)  

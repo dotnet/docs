@@ -22,14 +22,14 @@ ms.workload:
   - "dotnet"
 ---
 # WCF Web HTTP Programming Model
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model allows developers to expose [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
+The Windows Communication Foundation (WCF) Web HTTP Programming Model allows developers to expose [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
   
 ## In This Section  
  [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
- Provides an overview of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model.  
+ Provides an overview of the Windows Communication Foundation (WCF) Web HTTP Programming Model.  
   
  [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)  
- Discusses the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model and how it works.  
+ Discusses the Windows Communication Foundation (WCF) Web HTTP Programming Model and how it works.  
   
  [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)  
  Describes how to write a basic service that exposes a non-SOAP endpoint.  

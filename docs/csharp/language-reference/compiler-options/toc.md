@@ -13,6 +13,7 @@
 ### [-debug](debug-compiler-option.md)
 ### [-define](define-compiler-option.md)
 ### [-delaysign](delaysign-compiler-option.md)
+### [-deterministic](deterministic-compiler-option.md)
 ### [-doc](doc-compiler-option.md)
 ### [-errorreport](errorreport-compiler-option.md)
 ### [-filealign](filealign-compiler-option.md)

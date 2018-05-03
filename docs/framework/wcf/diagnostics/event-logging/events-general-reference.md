@@ -18,4 +18,4 @@ ms.workload:
   - "dotnet"
 ---
 # Events General Reference
-This section lists all the events that are emitted by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)].
+This section lists all the events that are emitted by Windows Communication Foundation (WCF).

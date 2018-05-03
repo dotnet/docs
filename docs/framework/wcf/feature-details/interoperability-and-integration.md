@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Interoperability and Integration
-This section covers interoperability and integration with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section covers interoperability and integration with Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Web Services Protocols Interoperability Guide](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)  

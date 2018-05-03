@@ -28,17 +28,17 @@ ms.workload:
 # How to: Create a Custom Token
 This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](../../../../docs/framework/wcf/samples/custom-token.md) sample.  
   
- A *security token* is essentially an XML element that is used by the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security framework to represent claims about a sender inside the SOAP message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
+ A *security token* is essentially an XML element that is used by the Windows Communication Foundation (WCF) security framework to represent claims about a sender inside the SOAP message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
   
  Sometimes an authentication mode or credential is not supported by the provided types. In that case, it is necessary to create a custom security token to provide an XML representation of the custom credential inside the SOAP message.  
   
  The following procedures show how to create a custom security token and how to integrate it with the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure. This topic creates a credit card token that is used to pass information about the client's credit card to the server.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom credentials and security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
+ For more information about custom credentials and security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
  See the <xref:System.IdentityModel.Tokens> namespace for more classes that represent security tokens.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
+ For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
   
 ## Procedures  
  A client application must be provided with a way to specify credit card information for the security infrastructure. This information is made available to the application by a custom client credentials class. The first step is to create a class to represent the credit card information for custom client credentials.  
@@ -112,14 +112,14 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
 #### To integrate the custom security token with a security token provider  
   
-1.  The security token provider creates, modifies (if necessary), and returns an instance of the token. To create a custom provider for the custom security token, create a class that inherits from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class. The following example overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method to return an instance of the `CreditCardToken`. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom security token providers, see [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md).  
+1.  The security token provider creates, modifies (if necessary), and returns an instance of the token. To create a custom provider for the custom security token, create a class that inherits from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class. The following example overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method to return an instance of the `CreditCardToken`. For more information about custom security token providers, see [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md).  
   
      [!code-csharp[c_CustomToken#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#6)]
      [!code-vb[c_CustomToken#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#6)]  
   
 #### To integrate the custom security token with a security token authenticator  
   
-1.  The security token authenticator validates the content of the security token when it is extracted from the message. To create a custom authenticator for the custom security token, create a class that inherits from the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> class. The following example overrides the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom security token authenticators, see [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md).  
+1.  The security token authenticator validates the content of the security token when it is extracted from the message. To create a custom authenticator for the custom security token, create a class that inherits from the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> class. The following example overrides the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method. For more information about custom security token authenticators, see [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md).  
   
      [!code-csharp[c_CustomToken#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#7)]
      [!code-vb[c_CustomToken#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#7)]  
@@ -129,7 +129,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
 #### To integrate the custom security token with a security token manager  
   
-1.  The security token manager creates the appropriate token provider, security authenticator, and token serializer instances. To create a custom token manager, create a class that inherits from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class. The primary methods of the class use a <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> to create the appropriate provider and client or service credentials. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom security token managers, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
+1.  The security token manager creates the appropriate token provider, security authenticator, and token serializer instances. To create a custom token manager, create a class that inherits from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class. The primary methods of the class use a <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> to create the appropriate provider and client or service credentials. For more information about custom security token managers, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
      [!code-csharp[c_CustomToken#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#8)]
      [!code-vb[c_CustomToken#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#8)]  
@@ -139,7 +139,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
 #### To integrate the custom security token with custom client and service credentials  
   
-1.  The custom client and service credentials must be added to provide an API for the application to allow specifying custom token information that is used by the custom security token infrastructure created previously to provide and authenticate the custom security token content. The following samples show how this can be done. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom client and service credentials, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
+1.  The custom client and service credentials must be added to provide an API for the application to allow specifying custom token information that is used by the custom security token infrastructure created previously to provide and authenticate the custom security token content. The following samples show how this can be done. For more information about custom client and service credentials, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
      [!code-csharp[c_CustomToken#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#10)]
      [!code-vb[c_CustomToken#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#10)]  

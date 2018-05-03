@@ -24,7 +24,7 @@ ms.workload:
   - "dotnet"
 ---
 # Basic WCF Programming
-This section presents the fundamentals for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  
+This section presents the fundamentals for creating Windows Communication Foundation (WCF) applications.  
   
 ## In This Section  
  [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)  

@@ -23,7 +23,7 @@ This sample demonstrates the use and configuration of the SQL workflow instance 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to (download page) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to (download page) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Persistence\BuiltInConfiguration`  
   
@@ -32,7 +32,7 @@ This sample demonstrates the use and configuration of the SQL workflow instance 
   
  The counting workflow is self-hosted by a workflow service host. The program's `Main` method creates an instance of the workflow service host that hosts the counting workflow. It defines the endpoints under which the counting workflow can be reached. After that, it defines a SQL workflow instance store behavior, which is used to configure the SQL workflow instance store. Next, the program creates a client that calls the start method of the counting workflow.  
   
- Once the program is started, the counter automatically starts counting. Note that it might take a few seconds to load the instance and configure the SQL workflow instance store. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the workflow instance store, see [SQL Workflow Instance Store](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md).  
+ Once the program is started, the counter automatically starts counting. Note that it might take a few seconds to load the instance and configure the SQL workflow instance store. For more information about the workflow instance store, see [SQL Workflow Instance Store](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md).  
   
  The sample consists of two parts:  
   
@@ -108,7 +108,7 @@ This sample demonstrates the use and configuration of the SQL workflow instance 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Persistence\BuiltInConfiguration`  
   

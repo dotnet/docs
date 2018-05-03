@@ -1,11 +1,7 @@
 ---
 title: "Install the .NET Framework for developers"
 ms.custom: "updateeachrelease"
-ms.date: "03/23/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "get-started-article"
+ms.date: "04/10/2018"
 helpviewer_keywords: 
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Install the .NET Framework for developers
@@ -39,8 +32,9 @@ Use the following table for quick links, or read further for details. To view th
   
 |.NET Framework version|Developer installation|Redistributable installation|Platform support|  
 |----------------------------|----------------------------|----------------------------------|----------------------|  
-|**4.7.1**|[NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=852105)|[Download page for 4.7.1 web installer](http://go.microsoft.com/fwlink/?LinkId=852095)<br /><br /> [Download page for 4.7.1 offline installer](http://go.microsoft.com/fwlink/?LinkId=852107)|Included in: <br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br /><br /> You can install on:<br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
-|**4.7**|[NET Framework 4.7 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](http://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](http://go.microsoft.com/fwlink/?LinkId=825303)|Included in: <br/>Windows 10 Creators Update<br /><br /> You can install on:<br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
+|**4.7.2**|[.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=863261)|[Download Center 4.7.2 web installer](http://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[Download Center 4.7.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=863265)|Included in: <br/>Windows 10 April 2018 Update<br /><br /> You can install on:<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
+|**4.7.1**|[NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=852105)|[Download page for 4.7.1 web installer](http://go.microsoft.com/fwlink/?LinkId=852095)<br /><br /> [Download page for 4.7.1 offline installer](http://go.microsoft.com/fwlink/?LinkId=852107)|Included in: <br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br /><br /> You can install on:<br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
+|**4.7**|[NET Framework 4.7 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](http://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](http://go.microsoft.com/fwlink/?LinkId=825303)|Included in: <br/>Windows 10 Creators Update<br /><br /> You can install on:<br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.6.2**|[NET Framework 4.6.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=780617)|[Download page for 4.6.2 web installer](http://go.microsoft.com/fwlink/?LinkId=780597)<br /><br /> [Download page for 4.6.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=780601)|Included in: <br /> Windows 10 Anniversary Update<br /><br /> You can install on:<br /> Windows 10 November Update <br/> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
 |**4.6.1**|[NET Framework 4.6.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=690706)|[Download page for 4.6.1 web installer](http://go.microsoft.com/fwlink/?LinkId=671729)<br /><br /> [Download page for 4.6.1 offline installer](http://go.microsoft.com/fwlink/?LinkId=671744)|You can install on:<br /> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
 |**4.6**|Included in [!INCLUDE[vs_dev14](../../../includes/vs-dev14-md.md)]. For more information, see [Welcome to Visual Studio 2015](http://msdn.microsoft.com/library/dd831853\(v=vs.140\).aspx).<br /><br /> [Microsoft .NET Framework 4.6 targeting pack](http://go.microsoft.com/fwlink/?LinkId=528261)|[Download page for 4.6 web installer](http://go.microsoft.com/fwlink/?LinkId=528259)<br /><br /> [Download page for 4.6 offline installer](http://go.microsoft.com/fwlink/?LinkId=528233)|Included in: <br /> Windows 10 <br />[!INCLUDE[vs_dev14](../../../includes/vs-dev14-md.md)]<br /><br /> You can also install on:<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
@@ -69,7 +63,9 @@ Install a developer targeting pack to develop against the most recent version of
 
 A *targeting pack* lets your app target a specific version of the .NET Framework when developing in Visual Studio and some other development environments. A *developer pack* includes a specific version of the .NET Framework and its accompanying SDK along with its corresponding targeting pack.
 
-The developer pack for the .NET Framework 4.5.1 or 4.5.2, the targeting pack for the .NET Framework 4.6, and  the developer pack for the .NET Framework 4.6.1, 4.6.2, 4.7, or 4.7.1 provides a particular .NET Framework's version of the reference assemblies, language packs, and IntelliSense files for use in an integrated development environment such as Visual Studio.  If you are using Visual Studio, the developer pack or targeting pack also adds the installed version of the .NET Framework to the target choices when you create a new project.  Choose one of the following:  
+The developer pack for the .NET Framework 4.5.1 or 4.5.2, the targeting pack for the .NET Framework 4.6, and  the developer pack for the .NET Framework 4.6.1, 4.6.2, 4.7, 4.7.1, or 4.7.2 provides a particular .NET Framework's version of the reference assemblies, language packs, and IntelliSense files for use in an integrated development environment such as Visual Studio.  If you are using Visual Studio, the developer pack or targeting pack also adds the installed version of the .NET Framework to the target choices when you create a new project.  Choose one of the following:  
+
+- [Microsoft .NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=863261)
 
 - [Microsoft .NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=852105)
 
@@ -109,6 +105,8 @@ Both web and offline installers are designed for x86-based and x64-based compute
   
 1.  Open the download page for the .NET Framework version you want to install:  
 
+    - .NET Framework 4.7.2 ([web installer](http://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=863265))
+
     - .NET Framework 4.7.1 ([web installer](http://go.microsoft.com/fwlink/?LinkId=852095) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=852107))
 
     - .NET Framework 4.7 ([web installer](http://go.microsoft.com/fwlink/?LinkId=825299) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=825303))
@@ -144,11 +142,11 @@ Both web and offline installers are designed for x86-based and x64-based compute
   
  **Installation notes:**  
   
-- The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] and 4.5.2, as well as the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.6.1, 4.6.2, 4.7, and 4.7.1 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].  
+- The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] and 4.5.2, as well as the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.6.1, 4.6.2, 4.7, 4.7.1, and 4.7.2 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].  
   
-- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], its point releases, the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases, and the .NET Framework 4.7 and its point release replace the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install these versions on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the assemblies are replaced.
+- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], its point releases, the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases, and the .NET Framework 4.7 and its point releases replace the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install these versions on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the assemblies are replaced.
   
-- Uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], its point releases, the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases, or the .NET Framework 4.7 and its point release also removes pre-existing [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](http://go.microsoft.com/fwlink/p/?LinkId=230665).)  
+- Uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], its point releases, the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases, or the .NET Framework 4.7 and its point releases also removes pre-existing [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](http://go.microsoft.com/fwlink/p/?LinkId=230665).)  
   
 - You must have administrative credentials to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], its point releases, the .NET Framework 4.6 and its point releases, and the .NET Framework 4.7 and its point release.
   
@@ -163,6 +161,8 @@ Both web and offline installers are designed for x86-based and x64-based compute
 > The language packs don't contain the .NET Framework components that are required to run an app, so you must run the web or offline installer before you install a language pack. If you have already installed a language pack, uninstall it, install the .NET Framework, and then reinstall the language pack.  
   
 1.  Open the language pack download page for the .NET Framework version you've installed:  
+
+    - [.NET Framework 4.7.2 language packs](http://go.microsoft.com/fwlink/?LinkID=863258) 
   
     - [.NET Framework 4.7.1 language packs](http://go.microsoft.com/fwlink/?LinkID=852090) 
 

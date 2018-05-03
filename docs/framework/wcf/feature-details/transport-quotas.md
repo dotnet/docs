@@ -22,7 +22,7 @@ ms.workload:
 # Transport Quotas
 Transport quotas are a policy mechanism for deciding when a connection is consuming excessive resources. A quota is a hard limit that prevents the use of additional resources once the quota value is exceeded. Transport quotas prevent either malicious or unintentional denial of service attacks.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports have default quota values that are based on a conservative allocation of resources. These default values are suitable for development environments and small installation scenarios. Service administrators should review transport quotas and tune individual quota values if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
+ Windows Communication Foundation (WCF) transports have default quota values that are based on a conservative allocation of resources. These default values are suitable for development environments and small installation scenarios. Service administrators should review transport quotas and tune individual quota values if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
   
 ## Types of Transport Quotas  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transports have three types of quotas:  

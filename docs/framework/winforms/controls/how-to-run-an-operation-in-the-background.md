@@ -33,7 +33,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
  The following code example shows how to run a time-consuming operation in the background. The form has **Start** and **Cancel** buttons. Click the **Start** button to run an asynchronous operation. Click the **Cancel** button to stop a running asynchronous operation. The outcome of each operation is displayed in a <xref:System.Windows.Forms.MessageBox>.  
   
- There is extensive support for this task in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
+ There is extensive support for this task in Visual Studio.  
   
  Also see [Walkthrough: Running an Operation in the Background](http://msdn.microsoft.com/library/ms233672\(v=vs.110\)).  
   
@@ -46,7 +46,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 -   References to the System, System.Drawing and System.Windows.Forms assemblies.  
   
- For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
+ For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
  <xref:System.ComponentModel.BackgroundWorker>  

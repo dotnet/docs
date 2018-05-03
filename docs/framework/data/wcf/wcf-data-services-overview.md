@@ -1,24 +1,10 @@
 ---
 title: "WCF Data Services Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services"
   - "WCF Data Services, about"
 ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Data Services Overview
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables creation and consumption of data services for the Web or an intranet by using the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] enables you to expose your data as resources that are addressable by URIs. This enables you to access and change data by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE. This topic provides an overview of both the patterns and practices defined by [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] and also the facilities provided by [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to take advantage of [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] in .NET Framework-based applications.  

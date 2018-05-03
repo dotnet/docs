@@ -23,7 +23,7 @@ ms.workload:
   - dotnet
 ---
 # Control Library
-The [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] control library contains information on the controls provided by [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)], listed alphabetically.  
+The Windows Presentation Foundation (WPF) control library contains information on the controls provided by Windows Presentation Foundation (WPF), listed alphabetically.  
   
 ## In This Section  
  [Border](../../../../docs/framework/wpf/controls/border.md)  

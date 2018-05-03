@@ -1,24 +1,12 @@
 ---
 title: "&lt;appDomainResourceMonitoring&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "appDomainResourceMonitoring element"
   - "<appDomainResourceMonitoring> element"
 ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;appDomainResourceMonitoring&gt; Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  

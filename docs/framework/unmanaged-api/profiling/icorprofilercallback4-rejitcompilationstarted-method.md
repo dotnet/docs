@@ -36,7 +36,8 @@ Notifies the profiler that the just-in-time (JIT) compiler has started to recomp
 ## Syntax  
   
 ```  
-HRESULT ReJITCompilationStarted(    [in] FunctionID functionId,  
+HRESULT ReJITCompilationStarted(   
+    [in] FunctionID functionId,  
     [in] ReJITID    rejitId,  
     [in] BOOL       fIsSafeToBlock);  
 ```  

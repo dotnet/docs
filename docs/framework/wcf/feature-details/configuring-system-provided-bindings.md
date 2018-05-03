@@ -1,25 +1,11 @@
 ---
 title: "Configuring System-Provided Bindings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], system-provided bindings"
   - "WCF [WCF], system-provided bindings"
   - "bindings [WCF], system-provided"
 ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring System-Provided Bindings
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. Bindings consist of elements that define how the Windows Communication Foundation (WCF) channels are layered up to provide the required communication features. A binding contains three types of elements:  

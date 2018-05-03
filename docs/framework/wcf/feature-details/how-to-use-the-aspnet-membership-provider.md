@@ -1,25 +1,11 @@
 ---
 title: "How to: Use the ASP.NET Membership Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF and ASP.NET"
   - "WCF, authorization"
   - "WCF, security"
 ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Use the ASP.NET Membership Provider
 The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider is a feature that enables [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] developers to create Web sites that allow users to create unique user name and password combinations. With this facility, any user can establish an account with the site, and sign in for exclusive access to the site and its services. This is in contrast to Windows security, which requires users to have accounts in a Windows domain. Instead, any user that supplies his or her credentials (the user name/password combination) can use the site and its services.  

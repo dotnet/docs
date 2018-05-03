@@ -1,21 +1,7 @@
 ---
 title: "Content Based Correlation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f46a2b68-8d24-4122-bbee-9573fc3f9fb4
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Content Based Correlation
 When workflow services communicate with clients and other services, often there is some data in the exchanged messages that uniquely relates a message to a particular instance. Content-based correlation uses this data in the message, such as a customer number or order ID, to route messages to the proper workflow instance. This topic explains how to use content-based correlation in workflows.  

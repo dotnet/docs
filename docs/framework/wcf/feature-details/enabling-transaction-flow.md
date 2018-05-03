@@ -1,23 +1,9 @@
 ---
 title: "Enabling Transaction Flow"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transactions [WCF], enabling flow"
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Enabling Transaction Flow
 Windows Communication Foundation (WCF) provides highly flexible options for controlling transaction flow. A service's transaction flow settings can be expressed using a combination of attributes and configuration.  

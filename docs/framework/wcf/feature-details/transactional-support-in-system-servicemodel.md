@@ -1,21 +1,7 @@
 ---
 title: "Transactional Support in System.ServiceModel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e7e54ed3-d1e5-4aa7-a653-1300c6b304eb
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transactional Support in System.ServiceModel
 The topics in this section describe the transactional functionalities Windows Communication Foundation (WCF) provides.  

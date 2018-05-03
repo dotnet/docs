@@ -1,21 +1,9 @@
 ---
 title: "Transport Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 86c94153-e48d-4539-b6cf-cd8060582e7f
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Security
 Transport security in Windows Communication Foundation (WCF) depends on the binding selected. The transport that the binding implements determines the actual security mechanism. The topics in this section explain the mechanisms that are implemented and their options.  

@@ -1,24 +1,10 @@
 ---
 title: "How the WCF Syndication Object Model Maps to Atom and RSS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How the WCF Syndication Object Model Maps to Atom and RSS
 When developing a Windows Communication Foundation (WCF) syndication service, you create feeds and items using the following classes:  

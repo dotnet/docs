@@ -1,24 +1,10 @@
 ---
 title: "Authorization in WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "authorization [WCF]"
   - "security [WCF], authorization"
 ms.assetid: 8ea0b552-af65-45b0-a157-c6c111b8ce5e
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Authorization in WCF
 Authorization is the process of controlling access and rights to resources, such as services or files. The topics in this section show you how to perform this basic task in Windows Communication Foundation (WCF) in a variety of ways.  

@@ -1,21 +1,7 @@
 ---
 title: "Support for JSON and Other Data Transfer Formats"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a527f1be-4e37-4beb-9a95-291480d19627
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Support for JSON and Other Data Transfer Formats
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX (Asynchronous JavaScript and XML)-enabled Web services.  

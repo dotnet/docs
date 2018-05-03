@@ -1,21 +1,7 @@
 ---
 title: "ServiceModel Attributes and ServiceDescription Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4ab86b17-eab9-4846-a881-0099f9a7cc64
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceModel Attributes and ServiceDescription Reference
 The *description tree* is the hierarchy of types (starting with the <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=nameWithType> class) that together describe every aspect of a service. Windows Communication Foundation (WCF) uses a description tree to build a valid service runtime, to publish Web Services Description Language (WSDL), XML Schema definition language (XSD), and policy assertions (metadata) about the service that clients can use to connect to and use the service, and to generate various code and configuration file representations of the description tree values.  

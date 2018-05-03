@@ -1,21 +1,7 @@
 ---
 title: "How to: Replace the WCF URL Reservation with a Restricted Reservation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2754d223-79fc-4e2b-a6ce-989889f2abfa
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Replace the WCF URL Reservation with a Restricted Reservation
 A URL reservation allows you to restrict who can receive messages from a URL or a set of URLs. A reservation consists of a URL template, an access control list (ACL), and a set of flags. The URL template defines which URLs the reservation affects. For more information about how URL templates are processed, see [Routing Incoming Requests](http://go.microsoft.com/fwlink/?LinkId=136764). The ACL controls what user or group of users is permitted to receive messages from the specified URLs. The flags indicate whether the reservation is to give a user or group permission to listen on the URL directly or to delegate the permission to listen to some other process.  

@@ -1,21 +1,7 @@
 ---
 title: "Architecture of Syndication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
-caps.latest.revision: 25
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Architecture of Syndication
 The Syndication API is designed to provide a format-neutral programming model that allows syndicated content to be written on to the wire in a variety of formats. The abstract data model consists of the following classes:  

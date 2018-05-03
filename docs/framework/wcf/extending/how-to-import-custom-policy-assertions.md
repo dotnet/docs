@@ -1,24 +1,10 @@
 ---
 title: "How to: Import Custom Policy Assertions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Import Custom Policy Assertions
 Policy assertions describe the capabilities and requirements of a service endpoint.  Client applications can use policy assertions in service metadata to configure the client binding or to customize the service contract for a service endpoint.  

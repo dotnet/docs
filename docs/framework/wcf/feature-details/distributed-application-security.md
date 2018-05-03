@@ -1,24 +1,12 @@
 ---
 title: "Distributed Application Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "distributed application security [WCF]"
   - "security [WCF], transfer"
 ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
-caps.latest.revision: 32
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Distributed Application Security
 Windows Communication Foundation (WCF) security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  

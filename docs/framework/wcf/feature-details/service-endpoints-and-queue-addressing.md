@@ -1,21 +1,7 @@
 ---
 title: "Service Endpoints and Queue Addressing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Endpoints and Queue Addressing
 This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic Windows Communication Foundation (WCF) queued application deployment.  

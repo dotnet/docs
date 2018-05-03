@@ -1,23 +1,9 @@
 ---
 title: "Transport Quotas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transport quotas [WCF]"
 ms.assetid: 3e71dd3d-f981-4d9c-9c06-ff8abb61b717
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Quotas
 Transport quotas are a policy mechanism for deciding when a connection is consuming excessive resources. A quota is a hard limit that prevents the use of additional resources once the quota value is exceeded. Transport quotas prevent either malicious or unintentional denial of service attacks.  

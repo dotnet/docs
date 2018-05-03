@@ -1,23 +1,9 @@
 ---
 title: "How to: Configure COM+ Service Settings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM+ [WCF], configuring service settings"
 ms.assetid: f42a55a8-3af8-4394-9fdd-bf12a93780eb
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure COM+ Service Settings
 When an application interface is added or removed by using the COM+ Service Configuration tool, the Web service configuration is updated within the application's configuration file. In the COM+ hosted mode, the Application.config file is placed in the Application Root Directory (%PROGRAMFILES%\ComPlus Applications\\{appid} is the default). In either of the Web-hosted modes, the Web.config file is placed in the specified vroot directory.  

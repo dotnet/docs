@@ -1,23 +1,9 @@
 ---
 title: "Batching Messages in a Transaction"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "batching messages [WCF]"
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Batching Messages in a Transaction
 Queued applications use transactions to ensure correctness and reliable delivery of messages. Transactions, however, are expensive operations and can dramatically reduce message throughput. One way to improve message throughput is to have an application read and process multiple messages within a single transaction. The trade-off is between performance and recovery: as the number of messages in a batch increases, so does the amount of recovery work that required if transactions are rolled back. It is important to note the difference between batching messages in a transaction and sessions. A *session* is a grouping of related messages that are processed by a single application and committed as a single unit. Sessions are generally used when a group of related messages must be processed together. An example of this is an online shopping Web site. *Batches* are used to process multiple, unrelated messages in a way that increases message throughput. For more information about sessions, see [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md). Messages in a batch are also processed by a single application and committed as a single unit, but there may be no relationship between the messages in the batch. Batching messages in a transaction is an optimization that does not change how the application runs.  

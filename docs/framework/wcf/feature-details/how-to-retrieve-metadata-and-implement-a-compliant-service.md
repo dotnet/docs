@@ -1,21 +1,7 @@
 ---
 title: "How to: Retrieve Metadata and Implement a Compliant Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f6f3a2b9-c8aa-4b0b-832c-ec2927bf1163
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Retrieve Metadata and Implement a Compliant Service
 Often, the same person does not design and implement services. In environments where interoperating applications are important, contracts can be designed or described in Web Services Description Language (WSDL) and a developer must implement a service that complies with the provided contract. You may also want to migrate an existing service to Windows Communication Foundation (WCF) but preserve the wire format. In addition, duplex contracts require callers to implement a callback contract as well.  

@@ -1,21 +1,7 @@
 ---
 title: "How to: Disable Encryption of Digital Signatures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fd174313-ad81-4dca-898a-016ccaff8187
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Disable Encryption of Digital Signatures
 By default, a message is signed and the signature is digitally encrypted. This is controlled by creating a custom binding with an instance of the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> or the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> and setting the `MessageProtectionOrder` property of either class to a <xref:System.ServiceModel.Security.MessageProtectionOrder> enumeration value. The default is <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>. This process consumes up to 30 percent more time than simply signing and encrypting based on the overall message size (the smaller the message, the greater the performance impact). Disabling encryption of the signature, however, might allow an attacker to guess the content of the message. This is possible because the signature element contains the hash code of the plain text of every signed part in the message. For example, although the message body is encrypted by default, the unencrypted signature contains the hash code of the message body before the encryption. If the set of possible values for the signed and encrypted part is small, an attacker might be able to deduce the contents by looking at the hash value. Encrypting the signature mitigates this attack vector.  

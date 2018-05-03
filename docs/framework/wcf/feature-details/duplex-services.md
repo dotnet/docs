@@ -1,24 +1,10 @@
 ---
 title: "Duplex Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 396b875a-d203-4ebe-a3a1-6a330d962e95
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Duplex Services
 A duplex service contract is a message exchange pattern in which both endpoints can send messages to the other independently. A duplex service, therefore, can send messages back to the client endpoint, providing event-like behavior. Duplex communication occurs when a client connects to a service and provides the service with a channel on which the service can send messages back to the client. Note that the event-like behavior of duplex services only works within a session.  

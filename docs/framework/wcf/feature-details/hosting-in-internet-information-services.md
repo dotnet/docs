@@ -1,23 +1,9 @@
 ---
 title: "Hosting in Internet Information Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "hosting services [WCF], IIS"
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hosting in Internet Information Services
 One option for hosting Windows Communication Foundation (WCF) services is inside of an Internet Information Services (IIS) application. This hosting model is similar to the model used by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and ASP.NET Web services (ASMX) Web Services.  

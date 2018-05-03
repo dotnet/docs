@@ -1,21 +1,7 @@
 ---
 title: "Metadata Formats"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: baad1e68-28fc-4a6a-8a43-75e47e7fa871
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Metadata Formats
 Windows Communication Foundation (WCF) supports the metadata formats in the following table.  

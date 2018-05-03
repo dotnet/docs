@@ -1,25 +1,11 @@
 ---
 title: "Routing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "routing [WCF]"
   - "WCF [WCF], routing"
   - "Windows communication Foundation [WCF], routing"
 ms.assetid: bd56516c-420d-4c4e-97f9-f72d28d149a9
-caps.latest.revision: 7
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Routing
 The topics in this section cover the Routing Service. The Routing Service is a generic configurable SOAP intermediary that lets you configure content-based routing, set up protocol bridging, handle communication errors, and dynamically update routing logic at run time.  

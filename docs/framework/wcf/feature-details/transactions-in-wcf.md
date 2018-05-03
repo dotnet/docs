@@ -1,24 +1,10 @@
 ---
 title: "Transactions in WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, using transactions"
   - "Windows Communication Foundation, using transactions"
 ms.assetid: 1e8d04dd-b7cf-41e7-8560-54b4381beb0f
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transactions in WCF
 The Windows Communication Foundation (WCF) transactions feature allows several components to concurrently participate in a data operation. The topics in this section examine the feature in detail.  

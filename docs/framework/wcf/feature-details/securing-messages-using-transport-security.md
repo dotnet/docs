@@ -1,21 +1,9 @@
 ---
 title: "Securing Messages Using Transport Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
-caps.latest.revision: 21
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Messages Using Transport Security
 This section discusses Message Queuing (MSMQ) transport security that you can use to secure messages sent to a queue.  

@@ -1,13 +1,7 @@
 ---
 title: Introduction to classes tutorial - C# local quickstarts
 description: Create your first C# program and explore object oriented concepts
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/11/2017
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # Introduction to classes

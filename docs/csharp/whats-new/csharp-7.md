@@ -1,14 +1,7 @@
 ---
 title: What's New in C# 7.0 - C# Guide
-description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
-keywords: C#, .NET, .NET Core, Latest Features, What's New
-author: BillWagner
-ms.author: wiwagn
+description: Get an overview of the new features coming in the upcoming version 7 of the C# language.
 ms.date: 12/21/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 

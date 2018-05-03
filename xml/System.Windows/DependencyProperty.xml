@@ -385,7 +385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is an integer, not a [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)]. Generally, using this index value is not required, and there is no index access to tables of all dependency properties. Dependency properties should instead be referenced by their identifier fields.  
+ This value is an integer, not a globally unique identifier (GUID). Generally, using this index value is not required, and there is no index access to tables of all dependency properties. Dependency properties should instead be referenced by their identifier fields.  
   
  <xref:System.Windows.DependencyProperty.GlobalIndex%2A> is used internally for faster access to data structures that use the <xref:System.Windows.DependencyProperty.GlobalIndex%2A> as a zero-based array index. A similar usage might have applications for designers or tools.  
   

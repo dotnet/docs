@@ -116,7 +116,7 @@
       </Parameters>
       <Docs>
         <param name="fontData">The typeface data to obfuscate.</param>
-        <param name="guid">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] to use to obfuscate the <c>fontdata</c>.</param>
+        <param name="guid">The globally unique identifier (GUID) to use to obfuscate the <c>fontdata</c>.</param>
         <summary>Obfuscates the font typeface data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -39,7 +39,7 @@
   
 -   A <xref:System.Windows.Annotations.Annotation.LastModificationTime%2A> that specifies when the annotation was last updated.  
   
--   A unique annotation <xref:System.Windows.Annotations.Annotation.Id%2A> (a [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)]).  
+-   A unique annotation <xref:System.Windows.Annotations.Annotation.Id%2A> (a globally unique identifier (GUID)).  
   
  ]]></format>
     </remarks>
@@ -119,7 +119,7 @@
       </Parameters>
       <Docs>
         <param name="annotationType">The type name of the annotation.</param>
-        <param name="id">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] for the annotation.</param>
+        <param name="id">The GUID for the annotation.</param>
         <param name="creationTime">The date and time the annotation was first created.</param>
         <param name="lastModificationTime">The date and time the annotation was last modified.</param>
         <summary>This constructor supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.</summary>
@@ -393,7 +393,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] of the <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
+        <summary>Gets the GUID of the <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
         <value>The GUID of the annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

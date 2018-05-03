@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a new <xref:System.Windows.Annotations.Annotation> is added to the store its [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] <xref:System.Windows.Annotations.Annotation.Id%2A> property is set to a new value.  When <xref:System.Windows.Annotations.Storage.AnnotationStore.AddAnnotation%2A> is called, its <xref:System.Windows.Annotations.Annotation.Id%2A> property is checked to see if the <xref:System.Windows.Annotations.Annotation> already has been added to the store.  If the <xref:System.Windows.Annotations.Annotation> already has been added and exists in the store (as determined by its <xref:System.Windows.Annotations.Annotation.Id%2A> property) an <xref:System.ArgumentException> error is thrown.  
+ When a new <xref:System.Windows.Annotations.Annotation> is added to the store its globally unique identifier (GUID) <xref:System.Windows.Annotations.Annotation.Id%2A> property is set to a new value.  When <xref:System.Windows.Annotations.Storage.AnnotationStore.AddAnnotation%2A> is called, its <xref:System.Windows.Annotations.Annotation.Id%2A> property is checked to see if the <xref:System.Windows.Annotations.Annotation> already has been added to the store.  If the <xref:System.Windows.Annotations.Annotation> already has been added and exists in the store (as determined by its <xref:System.Windows.Annotations.Annotation.Id%2A> property) an <xref:System.ArgumentException> error is thrown.  
   
  ]]></format>
         </remarks>
@@ -222,7 +222,7 @@
         <Parameter Name="annotationId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="annotationId">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] <see cref="P:System.Windows.Annotations.Annotation.Id" /> property of the annotation to be deleted.</param>
+        <param name="annotationId">The GUID <see cref="P:System.Windows.Annotations.Annotation.Id" /> property of the annotation to be deleted.</param>
         <summary>Deletes the annotation with the specified <see cref="P:System.Windows.Annotations.Annotation.Id" /> from the store.</summary>
         <returns>The annotation that was deleted; otherwise, <see langword="null" /> if an annotation with the specified <paramref name="annotationId" /> was not found in the store.</returns>
         <remarks>
@@ -418,7 +418,7 @@
         <Parameter Name="annotationId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="annotationId">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] <see cref="P:System.Windows.Annotations.Annotation.Id" /> property of the annotation to be returned.</param>
+        <param name="annotationId">The GUID <see cref="P:System.Windows.Annotations.Annotation.Id" /> property of the annotation to be returned.</param>
         <summary>Returns the annotation with the specified <see cref="P:System.Windows.Annotations.Annotation.Id" /> from the store.</summary>
         <returns>The annotation with the given <paramref name="annotationId" />; or <see langword="null" />, if an annotation with the specified <paramref name="annotationId" /> was not found in the store.</returns>
         <remarks>To be added.</remarks>

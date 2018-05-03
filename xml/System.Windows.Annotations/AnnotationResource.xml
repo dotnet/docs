@@ -83,7 +83,7 @@
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="id">The GUID that identifies this resource.</param>
+        <param name="id">The globally unique identifier (GUID) that identifies this resource.</param>
         <summary>This constructor supports the Windows Presentation Foundation infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -120,7 +120,7 @@
 ## Remarks  
  The `name` parameter is provided for convenience only and no validation is performed on the string.  
   
- The <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor automatically creates a unique [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that is accessible through the <xref:System.Windows.Annotations.AnnotationResource.Id%2A> property.  
+ The <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor automatically creates a GUID that is accessible through the <xref:System.Windows.Annotations.AnnotationResource.Id%2A> property.  
   
  ]]></format>
         </remarks>
@@ -222,7 +222,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the GUID of this resource.</summary>
-        <value>The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that identifies this resource.</value>
+        <value>The GUID that identifies this resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

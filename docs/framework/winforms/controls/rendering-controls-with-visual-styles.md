@@ -1,14 +1,6 @@
 ---
 title: "Rendering Controls with Visual Styles"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "professional appearance [Windows Forms], rendering Windows Forms controls"
   - "themes [Windows Forms], XP visual styles in Window Forms"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "user controls [Windows Forms], painting"
   - "visual styles [Windows Forms], rendering Windows Forms controls"
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Rendering Controls with Visual Styles
 The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides support for rendering controls and other Windows user interface (UI) elements using visual styles in operating systems that support them. This topic discusses the several levels of support in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] for rendering controls and other UI elements with the current visual style of the operating system.  

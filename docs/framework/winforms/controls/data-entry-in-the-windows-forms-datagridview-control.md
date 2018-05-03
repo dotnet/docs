@@ -1,25 +1,11 @@
 ---
 title: "Data Entry in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], data entry"
   - "data entry [Windows Forms], dataGridView control"
   - "data grids [Windows Forms], data entry"
 ms.assetid: 4a6d4676-d4e7-4b0e-9c22-50ce65ffe0d6
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Data Entry in the Windows Forms DataGridView Control
 The `DataGridView` control provides several features that let you change how users add or modify data in the control. For example, you can make data entry more efficient by providing default values for new rows and by alerting users when errors occur.  

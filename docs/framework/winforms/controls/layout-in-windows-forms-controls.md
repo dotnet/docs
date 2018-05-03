@@ -1,26 +1,12 @@
 ---
 title: "Layout in Windows Forms Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "layout [Windows Forms]"
   - "sizing [Windows Forms], automatic [Windows Forms]"
   - "Margin property [Windows Forms]"
   - "Padding property [Windws Forms]"
 ms.assetid: 99400e3a-720e-4f56-b68f-89df911a251c
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Layout in Windows Forms Controls
 Precise placement of controls on your form is a high priority for many applications. The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace gives you many layout tools to accomplish this.  

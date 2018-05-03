@@ -1,25 +1,11 @@
 ---
 title: "Panel Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], grouping"
   - "grouping controls"
   - "Panel control [Windows Forms]"
 ms.assetid: 37c69803-5084-4347-b035-54cfbabdc310
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Panel Control (Windows Forms)
 Windows Forms `Panel` controls are used to provide an identifiable grouping for other controls. Typically, you use panels to subdivide a form by function. The `Panel` control is similar to the <xref:System.Windows.Forms.GroupBox> control; however, only the `Panel` control can have scroll bars, and only the <xref:System.Windows.Forms.GroupBox> control displays a caption.  

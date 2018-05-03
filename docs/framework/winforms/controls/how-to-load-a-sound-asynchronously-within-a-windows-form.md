@@ -1,14 +1,6 @@
 ---
 title: "How to: Load a Sound Asynchronously within a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "sounds [Windows Forms], loading on separate threads"
   - "threading [Windows Forms], sounds"
 ms.assetid: 3b6a9296-1d5e-4d52-a4ba-94366d6fe302
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Load a Sound Asynchronously within a Windows Form
 The following code example asynchronously loads a sound from an URL and then plays it on a new thread.  

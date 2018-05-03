@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Shaped Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,12 +18,6 @@ helpviewer_keywords:
   - "Windows Forms, circular"
   - "forms [Windows Forms], custom shapes"
 ms.assetid: 6e6041e0-8e67-4487-b1e9-e410dbd1ef6c
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Shaped Windows Form
 This example gives a form an elliptical shape that resizes with the form.  

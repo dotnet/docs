@@ -1,14 +1,6 @@
 ---
 title: "FlowLayoutPanel Control Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "FlowLayoutPanel"
 helpviewer_keywords: 
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Windows Forms, dynamic layout"
   - "FlowLayoutPanel control [Windows Forms], about FlowLayoutPanel control"
 ms.assetid: 3883e024-f5a0-456d-9c27-b4dfa1cc9045
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # FlowLayoutPanel Control Overview
 The <xref:System.Windows.Forms.FlowLayoutPanel> control arranges its contents in a horizontal or vertical flow direction. You can wrap the control's contents from one row to the next, or from one column to the next. Alternately, you can clip instead of wrap its contents.  

@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Creating New WPF Content on Windows Forms at Design Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "interoperability [Windows Forms], WPF and Windows Forms"
   - "WPF content [Windows Forms], hosting in Windows Forms"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ElementHost control"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Creating New WPF Content on Windows Forms at Design Time
 This topic shows you how to create a Windows Presentation Foundation (WPF) control for use in your Windows Forms-based applications.  

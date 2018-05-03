@@ -1,25 +1,11 @@
 ---
 title: "How to: Add a Control to a Tab Page Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TabPage control"
   - "tab controls [Windows Forms], tab order"
   - "tab pages [Windows Forms], adding controls"
 ms.assetid: 7ee734e1-e31e-4ed0-bbc0-a7e8a1f20fef
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add a Control to a Tab Page Using the Designer
 The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to display other controls in an organized fashion. You can use these instructions to display a picture on the main part of a tab page. For information about adding an icon to the label part of a tab page, see [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md).  

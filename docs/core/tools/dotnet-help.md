@@ -4,11 +4,6 @@ description: The dotnet help command shows more detailed documentation online fo
 author: mairaw
 ms.author: mairaw
 ms.date: 08/17/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet help reference
 

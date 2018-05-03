@@ -4,11 +4,6 @@ description: Find resources to learn how to build .NET Core applications on Wind
 author: johalex
 ms.author: johalex
 ms.date: 09/14/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Get started with .NET Core
 

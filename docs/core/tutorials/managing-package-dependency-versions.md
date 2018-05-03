@@ -4,11 +4,6 @@ description: Learn about package dependency version management for your .NET Cor
 author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # How to Manage Package Dependency Versions for .NET Core 1.0
 

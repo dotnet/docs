@@ -4,11 +4,6 @@ description: Learn how to package, name, and version .NET Core for distribution.
 author: bleroy
 ms.author: mairaw
 ms.date: 06/28/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 
 # .NET Core distribution packaging

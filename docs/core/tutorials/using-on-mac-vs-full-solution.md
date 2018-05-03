@@ -4,11 +4,6 @@ description: This topic walks you through building a .NET Core solution that inc
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Building a complete .NET Core solution on macOS using Visual Studio for Mac
 

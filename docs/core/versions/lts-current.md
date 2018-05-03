@@ -4,11 +4,6 @@ description: Learn about the different release train supports (LTS and Current) 
 author: kendrahavens
 ms.author: mairaw
 ms.date: 01/30/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core Support
 

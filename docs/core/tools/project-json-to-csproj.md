@@ -4,12 +4,6 @@ description: See a mapping between project.json and csproj elements.
 author: natemcmaster
 ms.author: mairaw
 ms.date: 03/13/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # A mapping between project.json and csproj properties
 

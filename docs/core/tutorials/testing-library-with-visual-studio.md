@@ -4,15 +4,9 @@ description: Learn how to test a class library written in C# using Visual Studio
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: devlang-csharp
-ms.devlang: csharp
 dev_langs: 
   - "csharp"
   - "vb"
-ms.workload: 
-  - dotnetcore
 ---
 # Testing a class library with .NET Core in Visual Studio 2017
 

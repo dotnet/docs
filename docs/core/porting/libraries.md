@@ -4,11 +4,6 @@ description: Learn how to port library projects from the .NET Framework to .NET 
 author: cartermp
 ms.author: mairaw
 ms.date: 07/14/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Porting to .NET Core - Libraries
 

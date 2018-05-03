@@ -4,13 +4,8 @@ description: Learn how to build a simple .NET Core console application with Visu
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: devlang-vb
 dev_langs: 
   - "vb"
-ms.workload: 
-  - dotnetcore
 ---
 # Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017
 

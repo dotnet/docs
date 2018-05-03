@@ -5,11 +5,7 @@ author: mlacouture
 manager: wpickett
 ms.author: johalex
 ms.date: 04/19/2018
-ms.topic: conceptual
-ms.prod: dotnet-core
 ms.custom: mvc
-ms.workload: 
-  - dotnetcore
 ---
 # Microsoft WCF Web Service Reference Provider Tool
 

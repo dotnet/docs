@@ -1,26 +1,15 @@
 ---
 title: "How to: Return a Value from a Task"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, how to return a value"
 ms.assetid: c4bc0f44-eba2-4e96-9e03-1cc787461e61
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Return a Value from a Task
 This example shows how to use the <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> type to return a value from the <xref:System.Threading.Tasks.Task%601.Result%2A> property. It requires that the C:\Users\Public\Pictures\Sample Pictures\ directory exists, and that it contains files.  

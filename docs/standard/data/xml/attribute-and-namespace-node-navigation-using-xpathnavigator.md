@@ -1,21 +1,10 @@
 ---
 title: "Attribute and Namespace Node Navigation Using XPathNavigator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Attribute and Namespace Node Navigation Using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation methods, the first set, found in the [Node Set Navigation Using XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) topic, are used to navigate *node sets* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object. The second set, described in this topic, are used to navigate *attribute and namespace nodes* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object.  

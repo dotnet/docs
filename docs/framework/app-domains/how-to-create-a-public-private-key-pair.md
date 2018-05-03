@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Public-Private Key Pair"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,8 @@ helpviewer_keywords:
   - ".snk files"
   - "strong-named assemblies, key pairs"
 ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Public-Private Key Pair
 To sign an assembly with a strong name, you must have a public/private key pair. This public and private cryptographic key pair is used during compilation to create a strong-named assembly. You can create a key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md). Key pair files usually have an .snk extension.  

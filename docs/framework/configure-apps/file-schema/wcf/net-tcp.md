@@ -1,21 +1,7 @@
 ---
 title: "&lt;net.tcp&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;net.tcp&gt;
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.  

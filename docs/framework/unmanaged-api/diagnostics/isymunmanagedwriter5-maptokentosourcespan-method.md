@@ -1,21 +1,9 @@
 ---
 title: "ISymUnmanagedWriter5::MapTokenToSourceSpan Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: d0fbbf61-71c6-4fb1-8c9f-d619ca5d7d68
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter5::MapTokenToSourceSpan Method
 Maps the given metadata token to the given source line span in the specified source file.  

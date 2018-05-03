@@ -50,7 +50,7 @@ You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one
   
     -   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>  
   
- At the bottom is a required transport element. You can use your own transport or one of the following transport binding elements [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides:  
+ At the bottom is a required transport element. You can use your own transport or one of the following transport binding elements Windows Communication Foundation (WCF) provides:  
   
 -   <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
   

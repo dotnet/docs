@@ -1,12 +1,6 @@
 ---
 title: "Using an Asynchronous Server Socket"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +17,9 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "Internet, sockets"
 ms.assetid: 813489a9-3efd-41b6-a33f-371d55397676
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Using an Asynchronous Server Socket
 Asynchronous server sockets use the .NET Framework asynchronous programming model to process network service requests. The <xref:System.Net.Sockets.Socket> class follows the standard .NET Framework asynchronous naming pattern; for example, the synchronous <xref:System.Net.Sockets.Socket.Accept%2A> method corresponds to the asynchronous <xref:System.Net.Sockets.Socket.BeginAccept%2A> and <xref:System.Net.Sockets.Socket.EndAccept%2A> methods.  

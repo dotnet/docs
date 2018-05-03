@@ -1,14 +1,6 @@
 ---
 title: "ITypeNameFactory Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ITypeNameFactory"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: fa4247c4-f4f1-4855-9241-e04d737f5f73
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ITypeNameFactory Interface
 Provides methods for deconstructing a type name.  

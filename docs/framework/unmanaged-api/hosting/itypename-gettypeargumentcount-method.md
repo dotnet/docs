@@ -1,14 +1,6 @@
 ---
 title: "ITypeName::GetTypeArgumentCount Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ITypeName.GetTypeArgumentCount"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ecb5480c-761a-4b02-83e0-b79abc67fd08
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ITypeName::GetTypeArgumentCount Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

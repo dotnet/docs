@@ -1,21 +1,9 @@
 ---
 title: "&lt;Type&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Type&gt; Element (.NET Native)
 Applies runtime policy to a particular type, such as a class or structure.  

@@ -1,24 +1,10 @@
 ---
 title: ".NET Framework Data Providers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-caps.latest.revision: 13
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # .NET Framework Data Providers
 A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider is used for connecting to a database, executing commands, and retrieving results. Those results are either processed directly, placed in a <xref:System.Data.DataSet> in order to be exposed to the user as needed, combined with data from multiple sources, or remoted between tiers. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers are lightweight, creating a minimal layer between the data source and code, increasing performance without sacrificing functionality.  

@@ -18,10 +18,10 @@ ms.workload:
   - "dotnet"
 ---
 # Renaming a WCF Service
-This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service.  
+This topic describes how you can rename a Windows Communication Foundation (WCF) service.  
   
 ## Renaming a WCF Service  
- Perform the following steps to rename a service in a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] template,  
+ Perform the following steps to rename a service in a Windows Communication Foundation (WCF) template,  
   
 -   Change the name of the class that implements the service.  
   

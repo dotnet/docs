@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugValueBreakpoint::GetValue Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugValueBreakpoint.GetValue"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 52a73654-bc47-48b6-b2b1-a4456b10140c
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugValueBreakpoint::GetValue Method
 Gets an interface pointer to an "ICorDebugValue" object that represents the value of the object on which the breakpoint is set.  

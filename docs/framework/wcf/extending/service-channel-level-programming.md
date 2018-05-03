@@ -21,7 +21,7 @@ ms.workload:
   - "dotnet"
 ---
 # Service Channel-Level Programming
-This topic describes how to write a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service application without using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> and its associated object model.  
+This topic describes how to write a Windows Communication Foundation (WCF) service application without using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> and its associated object model.  
   
 ## Receiving Messages  
  To be ready to receive and process messages, the following steps are required:  

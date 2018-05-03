@@ -1,26 +1,15 @@
 ---
 title: "TextPattern and Embedded Objects Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, TextPattern class"
   - "embedded objects, accessing"
   - "accessing embedded objects"
   - "embedded objects, UI Automation"
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
-caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # TextPattern and Embedded Objects Overview
 > [!NOTE]

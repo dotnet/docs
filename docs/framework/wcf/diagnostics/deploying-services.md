@@ -18,7 +18,7 @@ ms.workload:
   - "dotnet"
 ---
 # Deploying Services
-This topic describes how you can deploy a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application to a run-time environment.  
+This topic describes how you can deploy a Windows Communication Foundation (WCF) application to a run-time environment.  
   
 ## Choosing the Hosting Environment for Your Application  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services are designed to run in any Windows process that supports managed code. To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. Hosting options range from running inside the simplest console application to server environments like a Windows service, Internet Information Services (IIS), or within a worker process managed by the Windows Activation Service (WAS). To review the different hosting options for your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, see [Hosting Services](../../../../docs/framework/wcf/hosting-services.md).  

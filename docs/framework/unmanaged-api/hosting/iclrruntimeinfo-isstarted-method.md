@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeInfo::IsStarted Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeInfo.IsStarted"
 api_location: 
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "IsStarted method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::IsStarted method [.NET Framework hosting]"
 ms.assetid: ef6f2662-323b-4534-aa82-6d1afb7b9309
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeInfo::IsStarted Method
 Indicates whether the runtime has been started (that is, whether the [ICLRRuntimeHost::Start method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) has been called and has succeeded).  

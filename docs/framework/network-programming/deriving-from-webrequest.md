@@ -1,12 +1,6 @@
 ---
 title: "Deriving from WebRequest"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WebRequest class, pluggable protocols"
   - "protocol-specific request handler"
@@ -16,12 +10,9 @@ helpviewer_keywords:
   - "receiving data, pluggable protocols"
   - "protocols, pluggable"
 ms.assetid: 9810c177-973e-43d7-823c-14960bd625ea
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Deriving from WebRequest
 The <xref:System.Net.WebRequest> class is an abstract base class that provides the basic methods and properties for creating a protocol-specific request handler that fits the .NET Framework pluggable protocol model. Applications that use the **WebRequest** class can request data using any supported protocol without needing to specify the protocol used.  

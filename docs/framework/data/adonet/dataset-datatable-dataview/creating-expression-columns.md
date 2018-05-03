@@ -1,24 +1,10 @@
 ---
 title: "Creating Expression Columns"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0af3bd64-92a2-4b47-ae62-f5df35f131a6
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating Expression Columns
 You can define an expression for a column, enabling it to contain a value calculated from other column values in the same row or from the column values of multiple rows in the table. To define the expression to be evaluated, use the <xref:System.Data.DataColumn.Expression%2A> property of the target column, and use the <xref:System.Data.DataColumn.ColumnName%2A> property to refer to other columns in the expression. The <xref:System.Data.DataColumn.DataType%2A> for the expression column must be appropriate for the value that the expression returns.  

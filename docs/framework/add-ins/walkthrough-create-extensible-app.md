@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Creating an Extensible Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "add-in-side adapter [.NET Framework]"
   - "contracts for add-in pipelines [.NET Framework]"
 ms.assetid: 694a33c5-a040-450d-aed5-ac49fc88ce61
-caps.latest.revision: 32
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Walkthrough: Creating an Extensible Application
 This walkthrough describes how to create a pipeline for an add-in that performs simple calculator functions. It does not demonstrate a real-world scenario; rather, it demonstrates the basic functionality of a pipeline and how an add-in can provide services for a host.  

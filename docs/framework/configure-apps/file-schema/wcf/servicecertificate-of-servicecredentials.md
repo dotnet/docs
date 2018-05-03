@@ -1,21 +1,7 @@
 ---
 title: "&lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  

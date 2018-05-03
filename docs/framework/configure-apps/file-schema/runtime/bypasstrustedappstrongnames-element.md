@@ -1,26 +1,14 @@
 ---
 title: "&lt;bypassTrustedAppStrongNames&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "strong-name bypass feature"
   - "bypassTrustedAppStrongNames element"
   - "strong-named assemblies, loading into trusted application domains"
   - "<bypassTrustedAppStrongNames> element"
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;bypassTrustedAppStrongNames&gt; Element
 Specifies whether to bypass the validation of strong names on full-trust assemblies that are loaded into a full-trust <xref:System.AppDomain>.  

@@ -1,14 +1,6 @@
 ---
 title: "bindingFailure MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "binding failure"
   - "binding, failures"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), binding failures"
   - "BindingFailure MDA"
 ms.assetid: 26ada5af-175c-4576-931a-9f07fa1723e9
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # bindingFailure MDA
 The `bindingFailure` managed debugging assistant (MDA) is activated when an assembly fails to load.  

@@ -1,14 +1,6 @@
 ---
 title: "ECustomDumpItemKind Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ECustomDumpItemKind"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 7105a6c8-6e4e-48de-ac3d-74ac75e5de2e
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ECustomDumpItemKind Enumeration
 Reserved for future extension of the [CustomDumpItem](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md) structure.  

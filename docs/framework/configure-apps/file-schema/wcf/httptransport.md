@@ -1,21 +1,7 @@
 ---
 title: "&lt;httpTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8b30c065-b32a-4fa3-8eb4-5537a9c6b897
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;httpTransport&gt;
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  

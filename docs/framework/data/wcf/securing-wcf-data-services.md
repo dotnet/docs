@@ -1,14 +1,6 @@
 ---
 title: "Securing WCF Data Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "securing application [WCF Data Services]"
   - "WCF Data Services, security"
 ms.assetid: 99fc2baa-a040-4549-bc4d-f683d60298af
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing WCF Data Services
 This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access services that support the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]. You should also follow recommendations for creating secure [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] applications.  

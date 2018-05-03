@@ -1,25 +1,13 @@
 ---
 title: "ETW Events in the Common Language Runtime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "CLR ETW events"
   - "ETW, common language runtime"
   - "ETW, CLR events"
 ms.assetid: 5bb9b6a2-7b57-4aea-8809-32b28bc73e88
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ETW Events in the Common Language Runtime
 The common language runtime (CLR) provides useful event tracing for Windows (ETW) diagnostic information through a large variety of debugging and profiling events. CLR ETW events leverage the Windows ETW tracing system to augment the existing profiling and debugging support provided by the common language runtime.  

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugStaticFieldSymbol Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: c0b93609-631e-4b15-878a-189ede922631
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStaticFieldSymbol Interface
 Represents the debug symbol information for a static field.  

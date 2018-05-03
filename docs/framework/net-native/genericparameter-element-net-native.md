@@ -1,21 +1,9 @@
 ---
 title: "&lt;GenericParameter&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;GenericParameter&gt; Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  

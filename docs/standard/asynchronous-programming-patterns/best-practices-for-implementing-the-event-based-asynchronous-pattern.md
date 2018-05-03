@@ -1,13 +1,7 @@
 ---
 title: "Best Practices for Implementing the Event-based Asynchronous Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
@@ -18,13 +12,6 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 4acd2094-4f46-4eff-9190-92d0d9ff47db
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Best Practices for Implementing the Event-based Asynchronous Pattern
 The Event-based Asynchronous Pattern provides you with an effective way to expose asynchronous behavior in classes, with familiar event and delegate semantics. To implement Event-based Asynchronous Pattern, you need to follow some specific behavioral requirements. The following sections describe requirements and guidelines you should consider when you implement a class that follows the Event-based Asynchronous Pattern.  

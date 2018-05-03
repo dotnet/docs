@@ -1,14 +1,6 @@
 ---
 title: "COR_GC_THREAD_STATS_TYPES Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "COR_GC_THREAD_STATS_TYPES"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: aa227704-0ab1-4b08-aee2-1f439762162e
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_GC_THREAD_STATS_TYPES Enumeration
 Indicates the garbage collection statistics for a thread.  

@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Text Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Text control type"
   - "UI Automation, Text control type"
   - "control types, Text"
 ms.assetid: ab0d0ada-8a71-4547-9c03-aadf675938f2
-caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Text Control Type
 > [!NOTE]

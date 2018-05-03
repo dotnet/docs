@@ -1,14 +1,6 @@
 ---
 title: "&lt;system.serviceModel&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.ServiceModel"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.ServiceModel"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "<system.serviceModel> element"
   - "system.serviceModel element"
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;system.serviceModel&gt;
 This configuration section contains all the Windows Communication Foundation (WCF) ServiceModel configuration elements.  

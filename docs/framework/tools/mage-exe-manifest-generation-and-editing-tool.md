@@ -1,24 +1,10 @@
 ---
 title: "Mage.exe (Manifest Generation and Editing Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Manifest Generation and Editing tool"
   - "Mage.exe"
 ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
-caps.latest.revision: 68
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Mage.exe (Manifest Generation and Editing Tool)
 The Manifest Generation and Editing Tool (Mage.exe) is a command-line tool that supports the creation and editing of application and deployment manifests. As a command-line tool, Mage.exe can be run from both batch scripts and other Windows-based applications, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications.  

@@ -1,21 +1,7 @@
 ---
 title: "Client Interoperability"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e890e40a-b76a-48c4-9e5b-a4b385fac847
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Client Interoperability
 This section contains samples that demonstrate interoperability between Windows Communication Foundation (WCF) and other technologies.  

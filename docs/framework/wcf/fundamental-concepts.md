@@ -1,26 +1,12 @@
 ---
 title: "Fundamental Windows Communication Foundation Concepts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF [WCF], concepts"
   - "concepts [WCF]"
   - "fundamentals [WCF]"
   - "Windows Communication Foundation [WCF], concepts"
 ms.assetid: 3e7e0afd-7913-499d-bafb-eac7caacbc7a
-caps.latest.revision: 39
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Fundamental Windows Communication Foundation Concepts
 This document provides a high-level view of the Windows Communication Foundation (WCF) architecture. It is intended to explain key concepts and how they fit together. For a tutorial on creating the simplest version of a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service and client, see [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md). To learn [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] programming, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).  

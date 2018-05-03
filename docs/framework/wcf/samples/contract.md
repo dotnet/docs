@@ -1,21 +1,7 @@
 ---
 title: "Contract2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 305eeb65-a52f-459e-9aa8-0ef071eade16
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Contract
 This section contains samples that demonstrate contracts in Windows Communication Foundation (WCF).  

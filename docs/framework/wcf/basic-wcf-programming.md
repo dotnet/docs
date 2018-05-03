@@ -1,14 +1,6 @@
 ---
 title: "Basic WCF Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "basic programming [WCF]"
   - "WCF [WCF], basic programming"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], basic programming"
   - "Windows Communication Foundation [WCF], programming"
 ms.assetid: 3ae3d498-f43c-4ecc-8cc0-6cbe36b62593
-caps.latest.revision: 31
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Basic WCF Programming
 This section presents the fundamentals for creating Windows Communication Foundation (WCF) applications.  

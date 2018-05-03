@@ -1,23 +1,9 @@
 ---
 title: "Windows Communication Foundation Bindings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "bindings [WCF]"
 ms.assetid: 845df323-be53-4848-92ef-ba67a406484d
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Bindings
 Bindings specify how a Windows Communication Foundation (WCF) service endpoint communicates with other endpoints. At its most basic, a binding must specify the transport (for example, HTTP or TCP) to use. You can also set other characteristics, such as security and transaction support, through bindings.  

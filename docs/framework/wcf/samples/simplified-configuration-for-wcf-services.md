@@ -1,21 +1,7 @@
 ---
 title: "Simplified Configuration for WCF Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Simplified Configuration for WCF Services
 This sample demonstrates how to implement and configure a typical service and client using Windows Communication Foundation (WCF). This sample is the basis for all other basic technology samples.  

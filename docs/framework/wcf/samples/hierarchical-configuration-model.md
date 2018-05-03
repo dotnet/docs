@@ -1,21 +1,7 @@
 ---
 title: "Hierarchical Configuration Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 28dcc698-226c-4b77-9e51-8bf45a36216c
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hierarchical Configuration Model
 This sample demonstrates how to implement a hierarchy of configuration files for services. It also shows how bindings, service behaviors, and endpoint behaviors are inherited from higher levels in the hierarchy.  

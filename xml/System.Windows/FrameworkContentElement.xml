@@ -2462,11 +2462,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is analogous to Tag properties in other [!INCLUDE[TLA#tla_ms](~/includes/tlasharptla-ms-md.md)] programming models, such as [!INCLUDE[TLA#tla_vba](~/includes/tlasharptla-vba-md.md)] or [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)]. It is intended to provide a pre-existing place to store some basic custom information about any element without forcing application developers to subclass.  
+ This property is analogous to Tag properties in other Microsoft programming models, such as Visual Basic for Applications or Windows Forms. It is intended to provide a pre-existing place to store some basic custom information about any element without forcing application developers to subclass.  
   
 <a name="xamlValues_Tag"></a>   
 ## XAML Values  
- Because this property takes an object, you would need to use the property element usage in order to set the <xref:System.Windows.FrameworkContentElement.Tag%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] to anything other than an object with a known and built-in type converter, such as a string. Objects used in this way are typically not within the standard [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] namespaces and therefore may require namespace mapping to the external namespace in order to be introduced as [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] elements.  
+ Because this property takes an object, you need to use the property element usage in order to set the <xref:System.Windows.FrameworkContentElement.Tag%2A> property in XAML to anything other than an object with a known and built-in type converter, such as a string. Objects used in this way are typically not within the standard WPF namespaces and therefore may require namespace mapping to the external namespace in order to be introduced as XAML elements.  
   
 <a name="dependencyPropertyInfo_Tag"></a>   
 ## Dependency Property Information  

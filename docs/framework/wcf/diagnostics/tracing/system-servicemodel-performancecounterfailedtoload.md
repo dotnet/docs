@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.PerformanceCounterFailedToLoad"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 776ceeae-b0b7-4710-b9ce-592be610025b
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.PerformanceCounterFailedToLoad
 System.ServiceModel.PerformanceCounterFailedToLoad  

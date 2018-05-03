@@ -1,21 +1,7 @@
 ---
 title: "PrivacyNoticeBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0cf110b1-e25b-4d67-986b-10cb04dc4826
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PrivacyNoticeBindingElement
 PrivacyNoticeBindingElement  

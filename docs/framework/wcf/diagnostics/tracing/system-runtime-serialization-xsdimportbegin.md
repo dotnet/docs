@@ -1,21 +1,7 @@
 ---
 title: "System.Runtime.Serialization.XsdImportBegin"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c4b0c97d-2aab-42c3-a921-724a11e40fce
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.Runtime.Serialization.XsdImportBegin
 System.Runtime.Serialization.XsdImportBegin  

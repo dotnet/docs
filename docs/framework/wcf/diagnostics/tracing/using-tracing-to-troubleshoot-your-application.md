@@ -1,21 +1,7 @@
 ---
 title: "Using Tracing to Troubleshoot Your Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7676b9bb-cbd1-41fd-9a93-cc615af6e2d0
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Tracing to Troubleshoot Your Application
 This section contains various topics that describe how you can use tracing to troubleshoot your application.  

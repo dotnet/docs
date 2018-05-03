@@ -1,21 +1,9 @@
 ---
 title: "AsymmetricSecurityBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7bd3b6be-8f77-4927-93ae-6fa371893cca
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # AsymmetricSecurityBindingElement
 AsymmetricSecurityBindingElement  

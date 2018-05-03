@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PrematureDatagramEof"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ec07be8b-b537-4090-be7e-086679dba78d
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PrematureDatagramEof
 System.ServiceModel.Channels.PrematureDatagramEof  

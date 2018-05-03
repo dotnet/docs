@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerServiceOpened"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b06345f4-cde9-484d-b7fb-d67dc356aed6
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerServiceOpened
 The Peer Service module has been opened and started listening at the specified address.  

@@ -1,9 +1,14 @@
 ---
 title: When to deploy Windows Containers to Service Fabric
-description: .NET Microservices Architecture for Containerized .NET Applications | When to deploy Windows Containers to Service Fabric
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Service Fabric
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/30/2018
+ms.prod: .net
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # When to deploy Windows Containers to Service Fabric
 
@@ -17,7 +22,7 @@ Many organizations are lifting and shifting existing monolithic applications to 
 
 Pursuing cost reductions is understandable, and it's likely that all organizations are chasing that goal. Consistent deployment is harder to evaluate, but it's equally as important. A consistent deployment contract says that developers are free to choose to use the technology that suits them, and the operations team gets a single way to deploy and manage applications. This agreement alleviates the pain of having operations deal with the complexity of many different technologies, or forcing developers to work only with certain technologies. Essentially, each application is containerized in a self-contained deployment image.
 
-Some organizations will continue modernizing by adding microservices (Cloud-Optimized and cloud-native applications). Many organizations will stop here (Cloud DevOps-Ready). As shown in Figure 4-8, these organizations won't move to microservices architectures because they might not need to. In any case, they already get the benefits that using containers plus Service Fabric provides-a complete management experience that includes deployment, upgrades, versioning, rollbacks, and health monitoring.
+Some organizations will continue modernizing by adding microservices (Cloud-Native applications) but many other organizations will stop here (Cloud-Optimized applications). As shown in Figure 4-8, these organizations won't move to microservices architectures because they might not need to. In any case, they already get the benefits that using containers plus Service Fabric provides-a complete management experience that includes deployment, upgrades, versioning, rollbacks, and health monitoring.
 
 > ![Lift and shift an application to Service Fabric](./media/image8.png)
 >

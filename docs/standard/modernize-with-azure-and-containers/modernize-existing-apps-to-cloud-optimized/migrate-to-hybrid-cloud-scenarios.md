@@ -1,9 +1,14 @@
 ---
 title: Migrate to hybrid cloud scenarios
-description: .NET Microservices Architecture for Containerized .NET Applications | Migrate to hybrid cloud scenarios
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | Migrate to hybrid cloud scenarios
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/2/2017
+ms.date: 04/30/2018
+ms.prod: .net
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Migrate to hybrid cloud scenarios
 

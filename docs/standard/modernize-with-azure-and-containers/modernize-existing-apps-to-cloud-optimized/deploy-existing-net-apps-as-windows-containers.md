@@ -1,15 +1,20 @@
 ---
 title: Deploy existing .NET apps as Windows containers
-description: .NET Microservices Architecture for Containerized .NET Applications | Deploy existing .NET apps as Windows containers
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | Deploy existing .NET apps as Windows containers
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/29/2018
+ms.prod: .net
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Deploy existing .NET apps as Windows containers
 
-Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications, cloud-native applications, and Cloud DevOps-Ready applications.
+Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
-The focus in this guide and in the following sections is on using Windows Containers for *Cloud DevOps-Ready* applications, when you lift and shift existing .NET applications.
+However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don’t need to re-architect your application.
 
 ## What are containers? (Linux or Windows)
 
@@ -129,6 +134,37 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
     [https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf](https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf)
 
+
+## The container ecosystem in Azure
+
+In previous sections it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
+However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides a very open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs you should choose one or another Azure product.
+
+![](./media/image7.5.png)
+
+> **Figure 4-7.5.** The container ecosystem in Azure
+
+From the container ecosystem in Azure, the products supporting containers that are considered infrastructure are the following:
+-   **Azure Container Instances (ACI)**
+-   **Azure Virtual Machines** (With container's support)
+-   **Azure Virtual Machine Scale Sets** (With container's support)
+
+From those three, ACI provides a great benefit which is the fact that you don't need to maintain the underlaying OS, no need for you to upgrade/path, etc. but still ACI is positioned in the infrastructure level, as better explained in the upcoming sections of this document.
+
+The products in Azure supporting containers that are at the same time positioned more in the PaaS (Platform as a Service) level are:
+
+-   **Azure App Service**
+-   **Azure Kubernetes Service (AKS and ACS)**
+-   **Azure Service Fabric** 
+-   **Azure Batch** 
+
+Then, Azure Container Registry is a high scalable container registry hosted in Azure that you can use from all the previous products when registering and deploying your custom container images.
+
+In addition, from your containers, you can consume other managed services in Azure like Azure SQL Database, Azure Redis cache, Azure Cosmos DB, etc. plus there are third party solutions/platforms available in Azure Marketplace like Cloud Foundry and OpenShift where you can also use containers within Azure. 
+
+In the next sections you can explore Microsoft's recommendations on when to use each of those Azure products and solutions specifically when targeting Windows Containers.
+
+
 >[!div class="step-by-step"]
-[Previous](how-to-deploy-existing-net-apps-to-azure-app-service.md)
+[Previous](what-about-cloud-native-applications.md)
 [Next](when-not-to-deploy-to-windows-containers.md)

@@ -213,7 +213,7 @@ The following shows sample output from analyzing the LOH:
 0:003> !eeheap -gc
 Number of GC Heaps: 1
 generation 0 starts at 0x013e35ec
-generation 1 starts at 0x013e1b6c
+sdgeneration 1 starts at 0x013e1b6c
 generation 2 starts at 0x013e1000
 ephemeral segment allocation context: none
 segment   begin allocated     size
@@ -235,7 +235,6 @@ MT   Count   TotalSize Class Name
 7912273c       63     6663696 System.Byte[]
 7912254c       4     8008736 System.Object[]
 Total 133 objects
-<<<<<<< HEAD
 ```
 
 The LOH heap size is (16,754,224 + 16,699,288 + 16,284,504) = 49,738,016 bytes. Between addresses 023e1000 and 033db630, 8,008,736 bytes are occupied by an array of <xref:System.Object?displayProperty=fullName> objects, 6,663,696 bytes are occupied by an array of <xref:System.Byte?displayProperty=nameWithType>  objects, and 2,081,792 bytes are occupied by free space.
@@ -313,66 +312,13 @@ CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarious w
 VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out of memory exceptions.
 
 We strongly recommend that you carefully test your application when you use this feature to ensure your application has fairly stable memory usage.
-=======
-This says that the LOH heap size is (16,754,224 + 16,699,288 + 16,284,504 =) 49,738,016 bytes. And between address 023e1000 and 033db630, 8,008,736 bytes are occupied by System.Object[] objects; 6,663,696 are occupied by System.Byte[] objects and 2,081,792 bytes are occupied by free space.
-Sometimes you'll see the total size of the LOH being less than 85,000 bytes, why is this? Because the runtime itself actually uses LOH to allocate some objects that are smaller than a large object.
-Since LOH are not compacted, sometimes people suspect that LOH is the source of fragmentation. When we talk about “fragmentation” we need to first clarify what fragmentation means. There’s fragmentation of the managed heap which is indicated by the amount of free space between managed objects (ie, what you see when you do !dumpheap –type Free in SoS); there’s also fragmentation of the virtual memory address space which is the memory marked as MEM_FREE type which you can get by various debugger commands in windbg. Below is an example that shows the fragmentation in the VM space:
-
-0:000> !address
-00000000 : 00000000 - 00010000
-Type     00000000
-Protect 00000001 PAGE_NOACCESS
-State   00010000 MEM_FREE
-Usage   RegionUsageFree
-00010000 : 00010000 - 00002000
-Type     00020000 MEM_PRIVATE
-Protect 00000004 PAGE_READWRITE
-State   00001000 MEM_COMMIT
-Usage   RegionUsageEnvironmentBlock
-00012000 : 00012000 - 0000e000
-Type     00000000
-Protect 00000001 PAGE_NOACCESS
-State   00010000 MEM_FREE
-Usage   RegionUsageFree
-… [omitted]
--------------------- Usage SUMMARY --------------------------
-TotSize (     KB)   Pct(Tots) Pct(Busy)   Usage
-701000 (   7172) : 00.34%   20.69%   : RegionUsageIsVAD
-7de15000 ( 2062420) : 98.35%   00.00%   : RegionUsageFree
-1452000 (   20808) : 00.99%   60.02%   : RegionUsageImage
-300000 (   3072) : 00.15%   08.86%   : RegionUsageStack
-3000 (     12) : 00.00%   00.03%   : RegionUsageTeb
-381000 (   3588) : 00.17%   10.35%   : RegionUsageHeap
-0 (       0) : 00.00%   00.00%   : RegionUsagePageHeap
-1000 (       4) : 00.00%   00.01%   : RegionUsagePeb
-1000 (       4) : 00.00%   00.01%   : RegionUsageProcessParametrs
-2000 (       8) : 00.00%   00.02%   : RegionUsageEnvironmentBlock
-Tot: 7fff0000 (2097088 KB) Busy: 021db000 (34668 KB)
- 
--------------------- Type SUMMARY --------------------------
-TotSize (     KB)   Pct(Tots) Usage
-7de15000 ( 2062420) : 98.35%   : <free>
-1452000 (   20808) : 00.99%   : MEM_IMAGE
-69f000 (   6780) : 00.32%   : MEM_MAPPED
-6ea000 (   7080) : 00.34%   : MEM_PRIVATE
- 
--------------------- State SUMMARY --------------------------
-TotSize (     KB)   Pct(Tots) Usage
-1a58000 (   26976) : 01.29%   : MEM_COMMIT
-7de15000 ( 2062420) : 98.35%   : MEM_FREE
-783000 (   7692) : 00.37%   : MEM_RESERVE
- 
-Largest free region: Base 01432000 - Size 707ee000 (1843128 KB)
-As we mentioned above fragmentation on the managed heap is used for allocation requests it’s more common to see VM fragmentation caused by temporary large objects which require GC to frequently acquire new managed heap segments from the OS and release empty ones back to the OS.
-To verify if LOH is causing VM fragmentation you can set a breakpoint on VirtualAlloc and VirtualFree and see who call them. For example, if I want to see who tried to allocate virtual memory chunks from the OS that are larger than 8MB, I can set a breakpoint like this:
 bp kernel32!virtualalloc "j (dwo(@esp+8)>800000) 'kb';'g'"
-This says to break into the debugger and show me the callstack if VirtualAlloc is called with the allocation size greater than 8MB (0x800000) and don’t break into the bugger otherwise.
-In CLR 2.0 we added a feature called VM Hoarding that may be applicable if you are in a situation where segments (including on the large and small object heap) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called STARTUP_HOARD_GC_VM via hosting API. When you specify this, instead of releasing empty segments back to the OS we decommit the memory on these segments and put them on a standby list. Note that we don’t do this for the segments that are too large. We will use these segments later to satisfy new segment requests. So next time we need a new segment we will use one from this standby list if we can find one that’s big enough. This feature is also useful for applications that want to hold onto the segments that they already acquired, like some server apps that don’t want to get OOM because they avoid fragmentation of the VM space as much as they can, and since they are usually the dominating apps on the machine they can do this. I strongly recommend you to carefully test your application when you use this feature and make sure your application has a fairly stable memory usage.
-Conclusion
-Large objects are expensive in 2 ways:
-•	The allocation cost is high because we need to clear the memory for a newly allocated large object because CLR guarantees that memory for all newly allocated objects is cleared.
-•	LOH is collected with the rest of the heap so carefully analyze how that impacts performance for your scenario.
-Reuse large objects if possible to avoid frequent generation 2 GCs and fragmentation on the managed heap and the VM space.
-Currently LOH is not compact but that is an implementation detail that should not be relied on. So to make sure something is not moved by the GC, always pin it.
+```
 
->>>>>>> b3cf7baaf9... LOH work in progress
+This command breaks into the debugger and shows the callstack only if [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) is called with an allocation size greater than 8MB (0x800000).
+
+CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarious where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that’s big enough.
+
+VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out of memory exceptions.
+
+We strongly recommend that you carefully test your application when you use this feature to ensure your application has fairly stable memory usage.

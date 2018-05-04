@@ -19,4 +19,4 @@ Important note: The evolved and “more PaaS” version of ACS (Azure Container 
 
 >[!div class="step-by-step"]
 [Previous](when-to-deploy-windows-containers-to-service-fabric.md)
-[Next](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
+[Next](choosing-azure-compute-options-for-container-based-applications.md)

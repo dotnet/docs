@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting Arrays (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting arrays"
   - "arrays [Visual Basic], initialization errors"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "arrays [Visual Basic], declaration errors"
   - "arrays [Visual Basic], troubleshooting"
 ms.assetid: f4e971c7-c0a4-4ed7-a77a-8d71039f266f
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Arrays (Visual Basic)
 This page lists some common problems that can occur when working with arrays.  

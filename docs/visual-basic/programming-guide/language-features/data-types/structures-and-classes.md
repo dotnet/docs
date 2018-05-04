@@ -1,13 +1,6 @@
 ---
 title: "Structures and Classes (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], vs. structures"
   - "structures [Visual Basic]"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "structures [Visual Basic], structure variables"
   - "structure variables [Visual Basic]"
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Structures and Classes (Visual Basic)
 Visual Basic unifies the syntax for structures and classes, with the result that both entities support most of the same features. However, there are also important differences between structures and classes.  

@@ -1,14 +1,6 @@
 ---
 title: "Variable Declaration in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
   - "member variables [Visual Basic], declarations"
@@ -25,9 +17,6 @@ helpviewer_keywords:
   - "local variables [Visual Basic], declarations"
   - "scope [Visual Basic], variables"
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-caps.latest.revision: 31
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Variable Declaration in Visual Basic
 You declare a variable to specify its name and characteristics. The declaration statement for variables is the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md). Its location and contents determine the variable's characteristics.  

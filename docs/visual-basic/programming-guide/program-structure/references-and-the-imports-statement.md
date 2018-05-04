@@ -1,13 +1,6 @@
 ---
 title: "References and the Imports Statement (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [Visual Basic], namespaces"
   - "references [Visual Basic], assembly"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "Imports statement [Visual Basic], referencing assemblies"
   - "assemblies [Visual Basic], references"
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # References and the Imports Statement (Visual Basic)
 You can make external objects available to your project by choosing the **Add Reference** command on the **Project** menu. References in Visual Basic can point to assemblies, which are like type libraries but contain more information.  

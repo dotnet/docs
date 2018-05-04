@@ -1,21 +1,10 @@
 ---
 title: "How to: Create a New Variable (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Dim statement [Visual Basic]"
   - "variables [Visual Basic], creating"
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a New Variable (Visual Basic)
 You create a variable with a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md).  

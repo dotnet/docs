@@ -1,13 +1,6 @@
 ---
 title: "Program Structure and Code Conventions (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "coding conventions"
   - "Visual Basic code, coding conventions"
@@ -20,9 +13,6 @@ helpviewer_keywords:
   - "Visual Basic code"
   - "programming [Visual Basic], Visual Basic coding conventions"
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Program Structure and Code Conventions (Visual Basic)
 This section introduces the typical Visual Basic program structure, provides a simple Visual Basic program, "Hello, World", and discusses Visual Basic code conventions. Code conventions are suggestions that focus not on a program's logic but on its physical structure and appearance. Following them makes your code easier to read, understand, and maintain. Code conventions can include, among others:  

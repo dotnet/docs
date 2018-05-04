@@ -1,13 +1,6 @@
 ---
 title: "How to: Calculate Numeric Values (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "operator precedence"
   - "operators [Visual Basic]"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "Visual Basic code, expressions"
   - "numeric expressions"
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Calculate Numeric Values (Visual Basic)
 You can calculate numeric values through the use of numeric expressions. A *numeric expression* is an expression that contains literals, constants, and variables representing numeric values, and operators that act on those values.  

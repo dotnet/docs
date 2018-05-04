@@ -1,13 +1,6 @@
 ---
 title: "Early and Late Binding (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "early binding [Visual Basic]"
   - "objects [Visual Basic], late-bound"
@@ -20,9 +13,6 @@ helpviewer_keywords:
   - "late binding [Visual Basic]"
   - "late binding [Visual Basic], Visual Basic compiler"
 ms.assetid: d6ff7f1e-b94f-4205-ab8d-5cfa91758724
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Early and Late Binding (Visual Basic)
 The Visual Basic compiler performs a process called `binding` when an object is assigned to an object variable. An object is *early bound* when it is assigned to a variable declared to be of a specific object type. Early bound objects allow the compiler to allocate memory and perform other optimizations before an application executes. For example, the following code fragment declares a variable to be of type <xref:System.IO.FileStream>:  

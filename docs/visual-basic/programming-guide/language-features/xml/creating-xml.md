@@ -1,22 +1,11 @@
 ---
 title: "Creating XML in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [Visual Basic], creating"
   - "LINQ to XML [Visual Basic], creating XML"
   - "XML literals [Visual Basic], creating"
 ms.assetid: 8ae29ec5-e5fb-4137-9df5-60a288df7045
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Creating XML in Visual Basic
 Visual Basic enables you to use *XML literals* directly in your code. The XML literal syntax represents [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects, and it is similar to the XML 1.0 syntax. This makes it easier to create XML elements, documents, and fragments programmatically because your code has the same structure as the final XML.  

@@ -1,10 +1,6 @@
 ---
 title: "Overloaded properties and methods (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "properties [Visual Basic], overloading"
   - "methods [Visual Basic], overloading"
@@ -16,8 +12,6 @@ helpviewer_keywords:
   - "method overloading"
   - "Overloads keyword [Visual Basic], overloaded members"
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Overloaded properties and methods (Visual Basic)
 

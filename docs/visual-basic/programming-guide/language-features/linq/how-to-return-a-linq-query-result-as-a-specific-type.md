@@ -1,13 +1,6 @@
 ---
 title: "How to: Return a LINQ Query Result as a Specific Type (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], specific type returned"
   - "projection [LINQ in Visual Basic]"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
   - "query samples [Visual Basic]"
 ms.assetid: 621bb10a-e5d7-44fb-a025-317964b19d92
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Return a LINQ Query Result as a Specific Type (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries. By default, LINQ queries return a list of objects as an anonymous type. You can also specify that a query return a list of a specific type by using the `Select` clause.  

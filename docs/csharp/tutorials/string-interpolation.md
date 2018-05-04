@@ -78,13 +78,19 @@ As the colon (":") has special meaning in an item with an interpolated expressio
 
 [!code-csharp-interactive[conditional operator example](TODO#5)]
 
-## How to specify culture information of an interpolated string
+## How to create a culture-specific string with string interpolation
 
-Start with FormattableString. Then, mention IFormattable as well.
+By default, an interpolated string resolves to the result string with the use of the current culture. Use implicit conversion of an interpolated string to a <xref:System.FormattableString?displayProperty=nameWithType> instance and its <xref:System.FormattableString.ToString(System.IFormatProvider)> method with a required culture to create a culture-specific content, as the following code shows:
 
-## How to use invariant culture for an interpolated string
+[!code-csharp-interactive[specify different cultures](TODO#6)]
 
-FormattableString.Invariant(...);
+You can use one <xref:System.FormattableString> instance to generate multiple result strings.
+
+## How to build the result string for invariant culture
+
+Along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, you can use the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to resolve an interpolated string into a result string for the <xref:System.Globalization.CultureInfo.InvariantCulture>. The following code shows how to do that:
+
+[!code-csharp-interactive[specify different cultures](TODO#7)]
 
 ## See also
 

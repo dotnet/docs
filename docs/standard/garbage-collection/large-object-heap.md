@@ -57,8 +57,8 @@ During a generation 1 or generation 2 GC, the garbage collector releases segment
 
 Since the LOH is only collected during generation 2 GCs, the LOH segment can only be freed during such a GC. Figure 3 illustrates a scenario where the garbage collector releases one segment (segment 2) back to the OS and decommits more space on the remaining segments. If it needs to use the decommitted space at the end of the segment to satisfy large object allocation requests, it commits the memory again. (For an explanation of commit/decommit, see the documentation for [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx).
  
-![Figure 2: LOH after a gen 2 GC](media/loh/loh-figure-2.jpg)  
-Figure 32: The LOH after a generation 2 GC
+![Figure 3: LOH after a gen 2 GC](media/loh/loh-figure-3.jpg)  
+Figure 3: The LOH after a generation 2 GC
 
 ## When is a large object collected?
 
@@ -122,49 +122,97 @@ Out of the three factors, the first two are usually more significant than the th
 
 ## Collecting performance data for the LOH
 
-T
+Before you collect performance data for a specific area, you should already have done the following:
 
-here are a few ways to collect performance data that’s relevant for the LOH. But before I explain them, let's talk about why you would want to collect performance data for LOH.
-Before you start collecting performance data for a specific area hopefully you have already done the following:
-1) found evidence that you should be looking at this area or
-2) exhausted other areas that you know of and didn't find any problems that could explain the performance problem you saw.
-I would recommend reading this blog entry for more explanation. It talks about the fundamentals about memory and CPU.
-1) .NET CLR Memory Performance counters
-These performance counters are usually a good first step in investigating performance issues. The ones that are relevant for LOH are:
-# Gen 2 Collections:
-Displays the number of times the generation 2 GCs have occurred since the process started. The counter is incremented at the end of a generation 2 garbage collection (also called a full garbage collection). This counter displays the last observed value.
-Large Object Heap size
-Displays the current size, in bytes, including the free space, of the Large Object Heap. This counter is updated at the end of a garbage collection, not at each allocation.
-A common way to look at performance counters is via Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about.
- 
-You can save the performance counter data to a log file in perfmon.
-Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of ordinary they will use other means to get more detailed to help with the investigation.
-Note that the runtime team strongly advises you to move to ETW events instead of using performance counters as ETW provides much richer information.
-2) Using ETW
-GC provides a rich set of ETW events to help you understand what the heap is doing and why. There are a set of blog articles to get you started on collecting and understanding GC events:
-GC ETW Events - 1 
-GC ETW Events - 2 
-GC ETW Events - 3 
-GC ETW Events - 4
-Specifically to identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. If we look at a simple test that only allocates temporary large objects and collected ETW events with this perfview commandline:
+1. Found evidence that you should be looking at this area.
+
+1. Exhausted other areas that you know of without finding anything that could explain the performance problem you saw.
+
+See the blog [Understand the problem before you try to find a solution](https://blogs.msdn.microsoft.com/maoni/2006/09/01/understand-the-problem-before-you-try-to-find-a-solution/) for more information on the fundamentals of memory and the CPU.
+
+You can use the following tools to collect data on LOH performance:
+
+- [.NET CLR memory performance counters](#net-clr-memory-performance-counters)
+
+- [ETW events](#etw-events)
+
+- [A debugger](#a-debugger)
+
+### .NET CLR Memory Performance counters.
+
+These performance counters are usually a good first step in investigating performance issues. You configure Performance Monitor by adding the counters that you want, as Figure 4 shows. The ones that are relevant for the LOH are:
+
+- **\# Gen 2 Collections**
+
+   Displays the number of times generation 2 GCs have occurred since the process started. The counter is incremented at the end of a generation 2 collection (also called a full garbage collection). This counter displays the last observed value.
+
+- **Large Object Heap size**
+
+   Displays the current size, in bytes, including free space, of the LOH. This counter is updated at the end of a garbage collection, not at each allocation.
+
+A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as Figure 4 shows.
+
+![Figure 4: Adding performance counters.](media/loh/perfcounter.png)    
+Figure 4: The LOH after a generation 2 GC
+
+Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of the ordinary, they use other means to get more detailed data to help with the investigation.
+
+> [!NOTE]
+> We recommend that you to use ETW events instead of performance counters, because ETW provides much richer information.
+
+### ETW
+
+The garbage collector provides a rich set of ETW events to help you understand what the heap is doing and why. The following blog posts show how to collect and understand GC events with ETW:
+
+- [GC ETW Events - 1 ](http://blogs.msdn.com/b/maoni/archive/2014/12/22/gc-etw-events.aspx)
+
+- [GC ETW Events - 2](http://blogs.msdn.com/b/maoni/archive/2014/12/25/gc-etw-events-2.aspx)
+
+- [GC ETW Events - 3](http://blogs.msdn.com/b/maoni/archive/2014/12/25/gc-etw-events-3.aspx) 
+
+- [GC ETW Events - 4](http://blogs.msdn.com/b/maoni/archive/2014/12/30/gc-etw-events-4.aspx)
+
+To identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. For a simple test that only allocates temporary large objects, you can collect information on ETW events with the following [PerfView](https://www.microsoft.com/download/details.aspx?id=28567) command line:
+
+```console
 perfview /GCCollectOnly /AcceptEULA /nogui collect
-we see something like this:
- 
+```
 
-As you can see all GCs are generation 2 GCs and they are all triggered by AllocLarge which means allocating a large object triggered this GC. And we know these allocations are temporary because the LOH Survival Rate % column says 1%. You can collect additional ETW events that tell you who allocated these large objects, this commandline:
+The result is something like this:
+ 
+![Figure 5: Examining ETW events using PerfView](media/loh/perfview.png)  
+Figure 5: ETW events shown using PerfView
+
+As you can see, all GCs are generation 2 GCs, and they are all triggered by AllocLarge, which means that allocating a large object triggered this GC. We know that these allocations are temporary because the **LOH Survival Rate %** column says 1%.
+
+You can collect additional ETW events that tell you who allocated these large objects. The following command line:
+
+```console
 perfview /GCOnly /AcceptEULA /nogui collect
-will collect an AllocationTick event which is fired every ~100k worth of allocations so for LOH allocation that means you get an event each time a large object is allocated. You can then look at one of the GC Heap Alloc views which show you the callstacks that allocated large objects:
- 
-As you can see, this is a very simple test that just allocates large objects from its Main method.
-3) Using a debugger
-The debugging commands mentioned in this section are applicable to the Windows Debuggers.
-If all you have is a memory dump and you need to look at what objects are actually on the LOH you can use the SoS debugger extension provided by .NET An example output of analyzing the LOH is below:
+```
 
+collects an AllocationTick event which is fired approximately every 100k worth of allocations. In other words, an event is fired each time a large object is allocated. You can then look at one of the GC Heap Alloc views which show you the callstacks that allocated large objects:
+ 
+![Figure 6: A GC Heap Alloc view](media/loh/perfview2.png)  
+Figure 6: A GC Heap Alloc view
+ 
+As you can see, this is a very simple test that just allocates large objects from its `Main` method.
+
+### A debugger
+
+If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](http://msdn2.microsoft.com/ms404370.aspx) provided by .NET. 
+
+> [!NOTE]
+> The debugging commands mentioned in this section are applicable to the [Windows Debuggers](http://www.microsoft.com/whdc/devtools/debugging/default.mspx).
+
+The following shows sample output from analyzing the LOH:
+
+```
 0:003> .loadby sos mscorwks
 0:003> !eeheap -gc
 Number of GC Heaps: 1
 generation 0 starts at 0x013e35ec
-generation 1 starts at 0x013e1b6c
+sdgeneration 1 starts at 0x013e1b6c
 generation 2 starts at 0x013e1000
 ephemeral segment allocation context: none
 segment   begin allocated     size
@@ -186,64 +234,80 @@ MT   Count   TotalSize Class Name
 7912273c       63     6663696 System.Byte[]
 7912254c       4     8008736 System.Object[]
 Total 133 objects
-This says that the LOH heap size is (16,754,224 + 16,699,288 + 16,284,504 =) 49,738,016 bytes. And between address 023e1000 and 033db630, 8,008,736 bytes are occupied by System.Object[] objects; 6,663,696 are occupied by System.Byte[] objects and 2,081,792 bytes are occupied by free space.
-Sometimes you'll see the total size of the LOH being less than 85,000 bytes, why is this? Because the runtime itself actually uses LOH to allocate some objects that are smaller than a large object.
-Since LOH are not compacted, sometimes people suspect that LOH is the source of fragmentation. When we talk about “fragmentation” we need to first clarify what fragmentation means. There’s fragmentation of the managed heap which is indicated by the amount of free space between managed objects (ie, what you see when you do !dumpheap –type Free in SoS); there’s also fragmentation of the virtual memory address space which is the memory marked as MEM_FREE type which you can get by various debugger commands in windbg. Below is an example that shows the fragmentation in the VM space:
+```
 
-0:000> !address
-00000000 : 00000000 - 00010000
-Type     00000000
-Protect 00000001 PAGE_NOACCESS
-State   00010000 MEM_FREE
-Usage   RegionUsageFree
-00010000 : 00010000 - 00002000
-Type     00020000 MEM_PRIVATE
-Protect 00000004 PAGE_READWRITE
-State   00001000 MEM_COMMIT
-Usage   RegionUsageEnvironmentBlock
-00012000 : 00012000 - 0000e000
-Type     00000000
-Protect 00000001 PAGE_NOACCESS
-State   00010000 MEM_FREE
-Usage   RegionUsageFree
-… [omitted]
--------------------- Usage SUMMARY --------------------------
-TotSize (     KB)   Pct(Tots) Pct(Busy)   Usage
-701000 (   7172) : 00.34%   20.69%   : RegionUsageIsVAD
-7de15000 ( 2062420) : 98.35%   00.00%   : RegionUsageFree
-1452000 (   20808) : 00.99%   60.02%   : RegionUsageImage
-300000 (   3072) : 00.15%   08.86%   : RegionUsageStack
-3000 (     12) : 00.00%   00.03%   : RegionUsageTeb
-381000 (   3588) : 00.17%   10.35%   : RegionUsageHeap
-0 (       0) : 00.00%   00.00%   : RegionUsagePageHeap
-1000 (       4) : 00.00%   00.01%   : RegionUsagePeb
-1000 (       4) : 00.00%   00.01%   : RegionUsageProcessParametrs
-2000 (       8) : 00.00%   00.02%   : RegionUsageEnvironmentBlock
-Tot: 7fff0000 (2097088 KB) Busy: 021db000 (34668 KB)
- 
--------------------- Type SUMMARY --------------------------
-TotSize (     KB)   Pct(Tots) Usage
-7de15000 ( 2062420) : 98.35%   : <free>
-1452000 (   20808) : 00.99%   : MEM_IMAGE
-69f000 (   6780) : 00.32%   : MEM_MAPPED
-6ea000 (   7080) : 00.34%   : MEM_PRIVATE
- 
--------------------- State SUMMARY --------------------------
-TotSize (     KB)   Pct(Tots) Usage
-1a58000 (   26976) : 01.29%   : MEM_COMMIT
-7de15000 ( 2062420) : 98.35%   : MEM_FREE
-783000 (   7692) : 00.37%   : MEM_RESERVE
- 
-Largest free region: Base 01432000 - Size 707ee000 (1843128 KB)
-As we mentioned above fragmentation on the managed heap is used for allocation requests it’s more common to see VM fragmentation caused by temporary large objects which require GC to frequently acquire new managed heap segments from the OS and release empty ones back to the OS.
-To verify if LOH is causing VM fragmentation you can set a breakpoint on VirtualAlloc and VirtualFree and see who call them. For example, if I want to see who tried to allocate virtual memory chunks from the OS that are larger than 8MB, I can set a breakpoint like this:
+The LOH heap size is (16,754,224 + 16,699,288 + 16,284,504) = 49,738,016 bytes. Between addresses 023e1000 and 033db630, 8,008,736 bytes are occupied by an array of <xref:System.Object?displayProperty=fullName> objects, 6,663,696 bytes are occupied by an array of <xref:System.Byte?displayProperty=nameWithType>  objects, and 2,081,792 bytes are occupied by free space.
+
+Sometimes, the debugger shows that the total size of the LOH is less than 85,000 bytes. This happens because the runtime itself uses the LOH to allocate some objects that are smaller than a large object.
+
+Because the LOH is not compacted, sometimes the LOH is thoought to be the source of fragmentation. Fragmentation means:
+
+- Fragmentation of the managed heap, which is indicated by the amount of free space between managed objects. In SoS, the `!dumpheap –type Free` command displays the amount of free space between managed objects.
+
+- Fragmentation of the virtual memory address space, which is the memory marked as `MEM_FREE`. You can get it by using various debugger commands in windbg. 
+
+   The following example shows fragmentation in the VM space:
+
+   ```
+   0:000> !address
+   00000000 : 00000000 - 00010000
+   Type     00000000
+   Protect 00000001 PAGE_NOACCESS
+   State   00010000 MEM_FREE
+   Usage   RegionUsageFree
+   00010000 : 00010000 - 00002000
+   Type     00020000 MEM_PRIVATE
+   Protect 00000004 PAGE_READWRITE
+   State   00001000 MEM_COMMIT
+   Usage   RegionUsageEnvironmentBlock
+   00012000 : 00012000 - 0000e000
+   Type     00000000
+   Protect 00000001 PAGE_NOACCESS
+   State   00010000 MEM_FREE
+   Usage   RegionUsageFree
+   … [omitted]
+   -------------------- Usage SUMMARY --------------------------
+   TotSize (     KB)   Pct(Tots) Pct(Busy)   Usage
+   701000 (   7172) : 00.34%   20.69%   : RegionUsageIsVAD
+   7de15000 ( 2062420) : 98.35%   00.00%   : RegionUsageFree
+   1452000 (   20808) : 00.99%   60.02%   : RegionUsageImage
+   300000 (   3072) : 00.15%   08.86%   : RegionUsageStack
+   3000 (     12) : 00.00%   00.03%   : RegionUsageTeb
+   381000 (   3588) : 00.17%   10.35%   : RegionUsageHeap
+   0 (       0) : 00.00%   00.00%   : RegionUsagePageHeap
+   1000 (       4) : 00.00%   00.01%   : RegionUsagePeb
+   1000 (       4) : 00.00%   00.01%   : RegionUsageProcessParametrs
+   2000 (       8) : 00.00%   00.02%   : RegionUsageEnvironmentBlock
+   Tot: 7fff0000 (2097088 KB) Busy: 021db000 (34668 KB)
+
+   -------------------- Type SUMMARY --------------------------
+   TotSize (     KB)   Pct(Tots) Usage
+   7de15000 ( 2062420) : 98.35%   : <free>
+   1452000 (   20808) : 00.99%   : MEM_IMAGE
+   69f000 (   6780) : 00.32%   : MEM_MAPPED
+   6ea000 (   7080) : 00.34%   : MEM_PRIVATE
+
+   -------------------- State SUMMARY --------------------------
+   TotSize (     KB)   Pct(Tots) Usage
+   1a58000 (   26976) : 01.29%   : MEM_COMMIT
+   7de15000 ( 2062420) : 98.35%   : MEM_FREE
+   783000 (   7692) : 00.37%   : MEM_RESERVE
+
+   Largest free region: Base 01432000 - Size 707ee000 (1843128 KB)
+   ```
+
+It’s more common to see VM fragmentation caused by temporary large objects that require the garbage collector to frequently acquire new managed heap segments from the OS and to release empty ones back to the OS.
+
+To verify whether the LOH is causing VM fragmentation, you can set a breakpoint on [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) and [VirtualFree](https://msdn.microsoft.com/library/windows/desktop/aa366892(v=vs.85).aspx) to see who call them. For example, to see who tried to allocate virtual memory chunks larger than 8MBB from the OS, you can set a breakpoint like this:
+
+```console
 bp kernel32!virtualalloc "j (dwo(@esp+8)>800000) 'kb';'g'"
-This says to break into the debugger and show me the callstack if VirtualAlloc is called with the allocation size greater than 8MB (0x800000) and don’t break into the bugger otherwise.
-In CLR 2.0 we added a feature called VM Hoarding that may be applicable if you are in a situation where segments (including on the large and small object heap) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called STARTUP_HOARD_GC_VM via hosting API. When you specify this, instead of releasing empty segments back to the OS we decommit the memory on these segments and put them on a standby list. Note that we don’t do this for the segments that are too large. We will use these segments later to satisfy new segment requests. So next time we need a new segment we will use one from this standby list if we can find one that’s big enough. This feature is also useful for applications that want to hold onto the segments that they already acquired, like some server apps that don’t want to get OOM because they avoid fragmentation of the VM space as much as they can, and since they are usually the dominating apps on the machine they can do this. I strongly recommend you to carefully test your application when you use this feature and make sure your application has a fairly stable memory usage.
-Conclusion
-Large objects are expensive in 2 ways:
-•	The allocation cost is high because we need to clear the memory for a newly allocated large object because CLR guarantees that memory for all newly allocated objects is cleared.
-•	LOH is collected with the rest of the heap so carefully analyze how that impacts performance for your scenario.
-Reuse large objects if possible to avoid frequent generation 2 GCs and fragmentation on the managed heap and the VM space.
-Currently LOH is not compact but that is an implementation detail that should not be relied on. So to make sure something is not moved by the GC, always pin it.
+```
 
+This command breaks into the debugger and shows the callstack only if [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) is called with an allocation size greater than 8MB (0x800000).
+
+CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarious where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that’s big enough.
+
+VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out of memory exceptions.
+
+We strongly recommend that you carefully test your application when you use this feature to ensure your application has fairly stable memory usage.

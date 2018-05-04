@@ -22,7 +22,7 @@
    
   
 ## Examples  
- The following code example shows how to create a <xref:System.Windows.TextMarkerStyle>.  
+ The following example shows how to create a <xref:System.Windows.TextMarkerStyle>:  
   
  [!code-csharp[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextMarkerStyleSnippets/csharp/window1.xaml.cs#textmarkerstylesnippet1)]
  [!code-vb[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextMarkerStyleSnippets/visualbasic/window1.xaml.vb#textmarkerstylesnippet1)]
@@ -48,7 +48,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>A solid square box is displayed.</summary>
+        <summary>A solid square box.</summary>
       </Docs>
     </Member>
     <Member MemberName="Circle">
@@ -67,7 +67,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A hollow disc circle is displayed.</summary>
+        <summary>A hollow disc circle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -86,7 +86,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>A decimal is displayed, starting with the number one, for example, 1, 2, and 3. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+        <summary>A decimal starting with the number one. For example, 1, 2, and 3. The decimal value is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disc">
@@ -105,7 +105,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>A solid disc circle is displayed.</summary>
+        <summary>A solid disc circle.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerLatin">
@@ -124,7 +124,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>A lowercase [!INCLUDE[TLA#tla_ascii](~/includes/tlasharptla-ascii-md.md)] character is displayed, starting with the letter a, for example, a, b, and c. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+        <summary>A lowercase ASCII character starting with the letter a. For example, a, b, and c. The character value is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerRoman">
@@ -143,7 +143,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>A lowercase Roman numeral is displayed, starting with the numeral i, for example, i, ii, iii, and iv. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+        <summary>A lowercase Roman numeral starting with the numeral i. For example, i, ii, iii, and iv. The numeral is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -162,7 +162,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No marker is displayed.</summary>
+        <summary>No marker.</summary>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -181,7 +181,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>A hollow square shape is displayed.</summary>
+        <summary>A hollow square shape.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperLatin">
@@ -200,7 +200,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>An uppercase ASCII character is displayed, starting with the letter A, for example, A, B, and C. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+        <summary>An uppercase ASCII character starting with the letter A. For example, A, B, and C. The character value is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperRoman">
@@ -219,7 +219,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>An uppercase Roman numeral is displayed, starting with the numeral I, for example, I, II, III, and IV. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+        <summary>An uppercase Roman numeral starting with the numeral I. For example, I, II, III, and IV. The numeric value is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
   </Members>

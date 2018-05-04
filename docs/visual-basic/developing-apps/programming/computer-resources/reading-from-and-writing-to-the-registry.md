@@ -1,21 +1,11 @@
 ---
 title: "Reading from and Writing to the Registry (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.Registry object, tasks"
   - "registry [Visual Basic], writing to"
   - "registry [Visual Basic], reading"
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Reading from and Writing to the Registry (Visual Basic)
 This topic describes task and conceptual topics that are associated with the registry.  

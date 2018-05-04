@@ -4,11 +4,6 @@ description: The dotnet clean command cleans the current directory.
 author: mairaw
 ms.author: mairaw
 ms.date: 08/13/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet-clean
 

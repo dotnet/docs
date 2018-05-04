@@ -1,21 +1,7 @@
 ---
 title: "WCF Discovery Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 84fad0e4-23b1-45b5-a2d4-c9cdf90bbb22
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Discovery Overview
 The Discovery APIs provide a unified programming model for the dynamic publication and discovery of Web services using the WS-Discovery protocol. These APIs allow services to publish themselves and clients to find published services. Once a service is made discoverable, the service has the ability to send announcement messages as well as listen for and respond to discovery requests. Discoverable services can send Hello messages to announce their arrival on a network and Bye messages to announce their departure from a network. To find a service, clients send a `Probe` request that contains specific criteria such as service contract type, keywords, and scope on the network. Services receive the `Probe` request and determine whether they match the criteria. If a service matches, it responds by sending a `ProbeMatch` message back to the client with the information necessary to contact the service. Clients can also send `Resolve` requests that allow them to find services that may have changed their endpoint address. Matching services respond to `Resolve` requests by sending a `ResolveMatch` message back to the client.  
@@ -154,7 +140,7 @@ class Client
 ```  
   
 ## Discovery and Message Level Security  
- When using message level security it is necessary to specify an <xref:System.ServiceModel.EndpointIdentity> on the service discovery endpoint and a matching <xref:System.ServiceModel.EndpointIdentity> on the client discovery endpoint. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] message level security, see [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).  
+ When using message level security it is necessary to specify an <xref:System.ServiceModel.EndpointIdentity> on the service discovery endpoint and a matching <xref:System.ServiceModel.EndpointIdentity> on the client discovery endpoint. For more information about message level security, see [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).  
   
 ## Discovery and Web Hosted Services  
  In order for WCF services to be discoverable they must be running. WCF services hosted under IIS or WAS do not run until IIS/WAS receives a message bound for the service, so they cannot be discoverable by default.  There are two options for making Web-Hosted services discoverable:  
@@ -163,9 +149,9 @@ class Client
   
 2.  Use a discovery proxy to communicate on behalf of the service  
   
- Windows Server AppFabric has an Auto-Start feature that will allow a service to be started before receiving any messages. With this Auto-Start set, an IIS/WAS hosted service can be configured to be discoverable. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the Auto-Start feature see, [Windows Server AppFabric Auto-Start Feature](http://go.microsoft.com/fwlink/?LinkId=205545). Along with turning on the Auto-Start feature, you must configure the service for discovery. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[Configuring Discovery in a Configuration File](../../../../docs/framework/wcf/feature-details/configuring-discovery-in-a-configuration-file.md).  
+ Windows Server AppFabric has an Auto-Start feature that will allow a service to be started before receiving any messages. With this Auto-Start set, an IIS/WAS hosted service can be configured to be discoverable. For more information about the Auto-Start feature see, [Windows Server AppFabric Auto-Start Feature](http://go.microsoft.com/fwlink/?LinkId=205545). Along with turning on the Auto-Start feature, you must configure the service for discovery. For more information, see [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[Configuring Discovery in a Configuration File](../../../../docs/framework/wcf/feature-details/configuring-discovery-in-a-configuration-file.md).  
   
- A discovery proxy can be used to communicate on behalf of the WCF service when the service is not running. The proxy can listen for probe or resolve messages and respond to the client. The client can then send messages directly to the service. When the client sends a message to the service it will be instantiated to respond to the message. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] implementing a discovery proxy see, [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md).  
+ A discovery proxy can be used to communicate on behalf of the WCF service when the service is not running. The proxy can listen for probe or resolve messages and respond to the client. The client can then send messages directly to the service. When the client sends a message to the service it will be instantiated to respond to the message. For more information about implementing a discovery proxy see, [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md).  
   
 > [!NOTE]
 >  For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.

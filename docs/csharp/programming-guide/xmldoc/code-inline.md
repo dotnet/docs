@@ -1,10 +1,6 @@
 ---
 title: "&lt;c&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "c"
   - "<c>"
@@ -14,9 +10,6 @@ helpviewer_keywords:
   - "c C# XML tag"
   - "<c> C# XML tag"
 ms.assetid: aad5b16e-a29e-445e-bd0d-eea0b138d7b2
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;c&gt; (C# Programming Guide)
 ## Syntax  

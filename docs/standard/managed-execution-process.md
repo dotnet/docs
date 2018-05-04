@@ -1,13 +1,7 @@
 ---
 title: "Managed Execution Process"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "source code language"
   - "code, managed execution process"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "managed execution process"
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  

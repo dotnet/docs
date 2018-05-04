@@ -1,24 +1,10 @@
 ---
 title: "Virtual Directory Setup Instructions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
-caps.latest.revision: 36
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Virtual Directory Setup Instructions
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.  
+The Windows Communication Foundation (WCF) samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.  
   
 > [!NOTE]
 >  %SystemDrive% is usually C: or D:, depending on the drive location where Internet Information Services (IIS) is installed.  

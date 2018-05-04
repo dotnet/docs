@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback4::ReJITCompilationFinished Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback4.ReJITCompilationFinished"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3b5cff02-2005-44eb-a2bc-50214c4b0e1d
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback4::ReJITCompilationFinished Method
 Notifies the profiler that the just-in-time (JIT) compiler has finished recompiling a function.  

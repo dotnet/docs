@@ -1,21 +1,7 @@
 ---
 title: "association set"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a65247b6-ce59-44ea-974c-14ae20a7995f
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # association set
 An *association set* is a logical container for [association](../../../../docs/framework/data/adonet/association-type.md) instances of the same type. An association set is not a data modeling construct; that is, it does not describe the structure of data or relationships. Instead, an association set provides a construct for a hosting or storage environment (such as the common language runtime or a SQL Server database) to group association instances so that they can be mapped to a data store.  

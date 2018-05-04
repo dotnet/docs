@@ -1,24 +1,10 @@
 ---
 title: "Deploying a WCF Library Project"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9f9222fe-d358-443c-9a49-12c5498e35e7
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Deploying a WCF Library Project
-This topic describes how you can deploy a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Library Project.  
+This topic describes how you can deploy a Windows Communication Foundation (WCF) Service Library Project.  
   
 ## Deploying a WCF Service Library  
  A [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service library is a dynamic-link library (DLL). As such, it cannot be executed on its own. It needs to be deployed into a hosting environment. For more information about this process, see [Hosting and Consuming WCF Services](http://go.microsoft.com/fwlink/?LinkId=99932).  

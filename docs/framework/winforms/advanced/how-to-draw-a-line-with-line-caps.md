@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw a Line with Line Caps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "pens [Windows Forms], drawing lines"
   - "drawing lines [Windows Forms], line caps"
 ms.assetid: eb68c3e1-c400-4886-8a04-76978a429cb6
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw a Line with Line Caps
 You can draw the start or end of a line in one of several shapes called line caps. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] supports several line caps, such as round, square, diamond, and arrowhead.  

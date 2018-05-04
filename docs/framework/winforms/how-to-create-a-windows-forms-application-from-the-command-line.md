@@ -1,10 +1,6 @@
 ---
 title: "How to: Create a Windows Forms application from the command line"
 ms.date: "03/14/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-winforms"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,8 +11,6 @@ helpviewer_keywords:
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 author: rpetrusha
 ms.author: ronpet
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Windows Forms application from the command line
 The following procedures describe the basic steps that you must complete to create and run a Windows Forms application from the command line. There is extensive support for these procedures in Visual Studio.  Also see [Walkthrough: Creating a Simple Windows Form](http://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\)).  

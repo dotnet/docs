@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataConverter::GetTypeLibFromMetaData Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataConverter.GetTypeLibFromMetaData"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 90eab7b3-1fae-4af4-8bce-f7bc0e188a99
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataConverter::GetTypeLibFromMetaData Method
 Gets a pointer to an `ITypeLib` instance that represents the type library that has the specified library and module names.  

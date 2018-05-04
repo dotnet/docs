@@ -1,26 +1,15 @@
 ---
 title: "How to: Unwrap a Nested Task"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, how to unwrap nested tasks"
 ms.assetid: a0769dd2-0f6d-48ca-8418-a9d39de7f450
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Unwrap a Nested Task
 You can return a task from a method, and then wait on or continue from that task, as shown in the following example:  

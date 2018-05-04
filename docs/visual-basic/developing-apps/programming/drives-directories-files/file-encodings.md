@@ -1,22 +1,12 @@
 ---
 title: "File Encodings (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "character encodings"
   - "files [Visual Basic], encoding"
   - "Unicode, file encoding"
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # File Encodings (Visual Basic)
 File encodings, also known as character encodings, specify how to represent characters when text processing. One encoding may be preferable over another in terms of which language characters it can or cannot handle, although Unicode is usually preferred.  

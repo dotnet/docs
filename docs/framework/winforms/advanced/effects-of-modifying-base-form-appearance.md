@@ -1,14 +1,6 @@
 ---
 title: "Effects of Modifying a Base Form&#39;s Appearance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "parent forms [Windows Forms]"
   - "inherited forms [Windows Forms], modifications to base form"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "base forms"
   - "inheritance [Windows Forms], forms"
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Effects of Modifying a Base Form&#39;s Appearance
 During application development, you may often need to change the appearance of the base form from which other forms in the project (or in other projects) are inheriting.  

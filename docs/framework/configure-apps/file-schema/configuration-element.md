@@ -1,14 +1,6 @@
 ---
 title: "&lt;configuration&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration"
 helpviewer_keywords: 
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "configuration element"
   - "container tags, <configuration> element"
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<configuration> element

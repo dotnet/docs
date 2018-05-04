@@ -1,14 +1,7 @@
 ---
 title: C# Enums - A tour of the C# language
 description: Learn about enums, discrete named constants in C#
-keywords: .NET, csharp 
-author: BillWagner
-ms.author: wiwagn
 ms.date: 08/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 7faba1cc-6ea9-4a19-adb9-0335e4b132e5
 ---
 	

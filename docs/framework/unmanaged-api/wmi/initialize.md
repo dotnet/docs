@@ -2,10 +2,6 @@
 title: Initialize function (Unmanaged API Reference)
 description: The Initialize function performs WMI initialization.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "Initialize"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Initialize function
 Performs WMI initialization.  

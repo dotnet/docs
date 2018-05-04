@@ -1,27 +1,13 @@
 ---
 title: "Data Transfer and Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data serialization [WCF]"
   - "data transfer [WCF]"
 ms.assetid: 0f03c635-f3e7-4c5c-9463-3cb0135e221e
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Transfer and Serialization
-In a connected system, services and clients depend on the exchange of data to accomplish any task. As a developer of a service or client, you must also understand how [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] handles data and data serialization in order to create applications that are efficient and easy to maintain.  
+In a connected system, services and clients depend on the exchange of data to accomplish any task. As a developer of a service or client, you must also understand how Windows Communication Foundation (WCF) handles data and data serialization in order to create applications that are efficient and easy to maintain.  
   
 ## In This Section  
  [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
@@ -52,7 +38,7 @@ In a connected system, services and clients depend on the exchange of data to ac
  Describes items to be aware of when programming data transfer and serialization.  
   
  [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)  
- Describes a view of the overall design of data transfer in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes a view of the overall design of data transfer in WCF.  
   
 ## Reference  
  <xref:System.ServiceModel>  

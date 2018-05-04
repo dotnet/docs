@@ -1,26 +1,15 @@
 ---
 title: "How to: Cancel a Task and Its Children"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, how to cancel"
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Cancel a Task and Its Children
 These examples show how to perform the following tasks:  

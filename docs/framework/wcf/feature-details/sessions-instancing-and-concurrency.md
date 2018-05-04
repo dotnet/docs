@@ -1,21 +1,7 @@
 ---
 title: "Sessions, Instancing, and Concurrency"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Sessions, Instancing, and Concurrency
 A *session* is a correlation of all messages sent between two endpoints. *Instancing* refers to controlling the lifetime of user-defined service objects and their related <xref:System.ServiceModel.InstanceContext> objects. *Concurrency* is the term given to the control of the number of threads executing in an <xref:System.ServiceModel.InstanceContext> at the same time.  
@@ -25,7 +11,7 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
 ## Sessions  
  When a service contract sets the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType>, that contract is saying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not. If the session ends and a message is sent over the same session-based channel an exception is thrown.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions have the following main conceptual features:  
+ WCF sessions have the following main conceptual features:  
   
 -   They are explicitly initiated and terminated by the calling application.  
   
@@ -33,9 +19,9 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
 -   Sessions correlate a group of messages into a conversation. The meaning of that correlation is an abstraction. For instance, one session-based channel may correlate messages based on a shared network connection while another session-based channel may correlate messages based on a shared tag in the message body. The features that can be derived from the session depend on the nature of the correlation.  
   
--   There is no general data store associated with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] session.  
+-   There is no general data store associated with a WCF session.  
   
- If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions:  
+ If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
   
 -   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are always server-initiated.  
   
@@ -73,7 +59,7 @@ public class CalculatorService : ICalculatorInstance
   
  Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default parameterless public constructor).  
   
- Note that when an object is provided to this constructor, some features related to the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> has no effect when a singleton object instance is provided. Similarly, any other instance-release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
+ Note that when an object is provided to this constructor, some features related to the Windows Communication Foundation (WCF) instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> has no effect when a singleton object instance is provided. Similarly, any other instance-release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
   
 ### Sharing InstanceContext Objects  
  You can also control which sessionful channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself.  
@@ -87,10 +73,10 @@ public class CalculatorService : ICalculatorInstance
   
 -   <xref:System.ServiceModel.ConcurrencyMode.Multiple>: Each service instance can have multiple threads processing messages concurrently. The service implementation must be thread-safe to use this concurrency mode.  
   
--   <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client object.  
+-   <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a WCF client object.  
   
 > [!NOTE]
->  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
+>  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. For more information, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
   
  The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode.PerCall> instancing, concurrency is not relevant, because each message is processed by a new <xref:System.ServiceModel.InstanceContext> and, therefore, never more than one thread is active in the <xref:System.ServiceModel.InstanceContext>.  
   

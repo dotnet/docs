@@ -1,19 +1,11 @@
 ---
 title: Building .NET Core Docker Images
 description: Understanding Docker images and .NET Core
-keywords: .NET, .NET Core, Docker
 author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.devlang: dotnet
-ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 ms.custom: mvc
-manager: wpickett
-ms.workload: 
-  - dotnetcore
 ---
 # Building Docker Images for .NET Core Applications
 

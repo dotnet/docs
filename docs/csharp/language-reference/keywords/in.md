@@ -1,17 +1,11 @@
 ---
 title: "in (C# Reference)"
 ms.date: 02/06/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "in"
   - "in_CSharpKeyword"
 helpviewer_keywords: 
   - "in keyword [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # in (C# Reference)

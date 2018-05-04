@@ -1,19 +1,12 @@
 ---
 title: "readonly (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "readonly_CSharpKeyword"
   - "readonly"
 helpviewer_keywords: 
   - "readonly keyword [C#]"
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # readonly (C# Reference)
 The `readonly` keyword is a modifier that you can use on fields. When a field declaration includes a `readonly` modifier, assignments to the fields introduced by the declaration can only occur as part of the declaration or in a constructor in the same class.  

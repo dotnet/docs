@@ -1,18 +1,10 @@
 ---
 title: "Information and Interaction Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "information functions [Visual Basic]"
   - "interaction functions [Visual Basic]"
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Information and Interaction Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

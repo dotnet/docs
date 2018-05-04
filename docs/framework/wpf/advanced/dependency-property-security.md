@@ -1,14 +1,6 @@
 ---
 title: "Dependency Property Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "wrappers [WPF], access"
   - "wrappers [WPF], security"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "dependency properties [WPF], access"
   - "security [WPF], dependency properties"
 ms.assetid: d10150ec-90c5-4571-8d35-84bafa2429a4
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Dependency Property Security
 Dependency properties should generally be considered to be public properties. The nature of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system prevents the ability to make security guarantees about a dependency property value.  

@@ -1,19 +1,12 @@
 ---
 title: "How to: Convert a String to a Number (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "conversions [C#]"
   - "conversions [C#], string to int"
   - "converting strings to int [C#]"
   - "strings [C#], converting to int"
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
-caps.latest.revision: 34
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Convert a String to a Number (C# Programming Guide)
 You can convert a [string](../../../csharp/language-reference/keywords/string.md) to a number by using methods in the <xref:System.Convert> class or by using the `TryParse` method found on the various numeric types (int, long, float, etc.).  

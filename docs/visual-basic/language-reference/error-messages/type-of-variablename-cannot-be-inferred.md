@@ -1,21 +1,12 @@
 ---
 title: "Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30982"
   - "vbc30982"
 helpviewer_keywords: 
   - "BC30982"
 ms.assetid: 741e85d9-a747-42ad-a1e1-a3f1928aaff5
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type
 You have written a `For...Next` loop in which the compiler cannot infer a data type for the loop control variable because the following conditions are true:  

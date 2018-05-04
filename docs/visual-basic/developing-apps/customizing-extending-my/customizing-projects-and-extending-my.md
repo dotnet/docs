@@ -1,18 +1,11 @@
 ---
 title: "Customizing Projects and Extending My with Visual Basic"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My namespace [Visual Basic], customizing"
   - "My namespace"
   - "My namespace [Visual Basic], extending"
 ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Customizing Projects and Extending My with Visual Basic
 You can customize project templates to provide additional `My` objects. This makes it easy for other developers to find and use your objects.  

@@ -1,21 +1,7 @@
 ---
 title: "How to: Create a Transactional Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Transactional Service
 This sample demonstrates various aspects of creating a transactional service and the use of a client-initiated transaction to coordinate service operations.  
@@ -73,7 +59,7 @@ This sample demonstrates various aspects of creating a transactional service and
     }  
     ```  
   
-3.  Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ServiceModel Transaction Configuration](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
+3.  Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. For more information, see [ServiceModel Transaction Configuration](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
   
     ```xml  
     <service name="CalculatorService">  
@@ -99,7 +85,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Supporting multiple transaction protocols  
   
-1.  For optimal performance, you should use the OleTransactions protocol for scenarios involving a client and service written using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. However, the WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required. You can configure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to accept both protocols by providing multiple endpoints with appropriate protocol-specific bindings, as shown in the following sample configuration.  
+1.  For optimal performance, you should use the OleTransactions protocol for scenarios involving a client and service written using Windows Communication Foundation (WCF). However, the WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required. You can configure WCF services to accept both protocols by providing multiple endpoints with appropriate protocol-specific bindings, as shown in the following sample configuration.  
   
     ```xml  
     <service name="CalculatorService">  
@@ -134,7 +120,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Controlling the completion of a transaction  
   
-1.  By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] operations automatically complete transactions if no unhandled exceptions are thrown. You can modify this behavior by using the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property and the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method. When an operation is required to occur within the same transaction as another operation (for example, a debit and credit operation), you can disable the autocomplete behavior by setting the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property to `false` as shown in the following `Debit` operation example. The transaction the `Debit` operation uses is not completed until a method with the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property set to `true` is called, as shown in the operation `Credit1`, or when the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method is called to explicitly mark the transaction as complete, as shown in the operation `Credit2`. Note that the two credit operations are shown for illustration purposes, and that a single credit operation would be more typical.  
+1.  By default, WCF operations automatically complete transactions if no unhandled exceptions are thrown. You can modify this behavior by using the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property and the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method. When an operation is required to occur within the same transaction as another operation (for example, a debit and credit operation), you can disable the autocomplete behavior by setting the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property to `false` as shown in the following `Debit` operation example. The transaction the `Debit` operation uses is not completed until a method with the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property set to `true` is called, as shown in the operation `Credit1`, or when the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method is called to explicitly mark the transaction as complete, as shown in the operation `Credit2`. Note that the two credit operations are shown for illustration purposes, and that a single credit operation would be more typical.  
   
     ```  
     [ServiceBehavior]  
@@ -190,7 +176,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Controlling the lifetime of a transactional service instance  
   
-1.  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to specify whether the underlying service instance is released when a transaction completes. Since this defaults to `true`, unless configured otherwise, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] exhibits an efficient and predictable "just-in-time" activation behavior. Calls to a service on a subsequent transaction are assured a new service instance with no remnants of the previous transaction's state. While this is often useful, sometimes you may want to maintain state within the service instance beyond the transaction completion. Examples of this would be when required state or handles to resources are expensive to retrieve or reconstitute. You can do this by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to `false`. With that setting, the instance and any associated state will be available on subsequent calls. When using this, give careful consideration to when and how state and transactions will be cleared and completed. The following sample demonstrates how to do this by maintaining the instance with the `runningTotal` variable.  
+1.  WCF uses the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to specify whether the underlying service instance is released when a transaction completes. Since this defaults to `true`, unless configured otherwise, WCF exhibits an efficient and predictable "just-in-time" activation behavior. Calls to a service on a subsequent transaction are assured a new service instance with no remnants of the previous transaction's state. While this is often useful, sometimes you may want to maintain state within the service instance beyond the transaction completion. Examples of this would be when required state or handles to resources are expensive to retrieve or reconstitute. You can do this by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to `false`. With that setting, the instance and any associated state will be available on subsequent calls. When using this, give careful consideration to when and how state and transactions will be cleared and completed. The following sample demonstrates how to do this by maintaining the instance with the `runningTotal` variable.  
   
     ```  
     [ServiceBehavior(TransactionIsolationLevel = [ServiceBehavior(  

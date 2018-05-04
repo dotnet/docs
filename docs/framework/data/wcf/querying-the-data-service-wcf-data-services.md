@@ -1,14 +1,6 @@
 ---
 title: "Querying the Data Service (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "WCF Data Services, querying"
   - "WCF Data Services, accessing data"
 ms.assetid: 823e9444-27aa-4f1f-be8e-0486d67f54c0
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Querying the Data Service (WCF Data Services)
 The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to execute queries against a data service by using familiar [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] programming patterns, including using language integrated query (LINQ). The client library translates a query, which is defined on the client as an instance of the <xref:System.Data.Services.Client.DataServiceQuery%601> class, into an HTTP GET request message. The library receives the response message and translates it into instances of client data service classes. These classes are tracked by the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs.  

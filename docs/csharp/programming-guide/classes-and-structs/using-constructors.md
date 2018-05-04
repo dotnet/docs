@@ -1,16 +1,9 @@
 ---
 title: "Using Constructors (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Constructors (C# Programming Guide)
 When a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is created, its constructor is called. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.  

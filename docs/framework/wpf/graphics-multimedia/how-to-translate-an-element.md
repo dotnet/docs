@@ -1,23 +1,9 @@
 ---
 title: "How to: Translate an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "graphics [WPF], translations"
 ms.assetid: 461c8273-15df-42f6-8672-89ba22887cc0
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Translate an Element
 This example shows how to translate (move) an element by using a <xref:System.Windows.Media.TranslateTransform>.  

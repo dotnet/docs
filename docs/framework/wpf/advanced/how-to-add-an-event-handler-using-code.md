@@ -1,14 +1,6 @@
 ---
 title: "How to: Add an Event Handler Using Code"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "event handlers [WPF], adding"
   - "XAML [WPF], adding event handlers"
 ms.assetid: 269c61e0-6bd9-4291-9bed-1c5ee66da486
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add an Event Handler Using Code
 This example shows how to add an event handler to an element by using code.  

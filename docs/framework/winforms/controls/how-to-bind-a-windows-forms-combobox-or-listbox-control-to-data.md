@@ -1,14 +1,6 @@
 ---
 title: "How to: Bind a Windows Forms ComboBox or ListBox Control to Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "Windows Forms controls, data binding"
   - "data-bound controls [Windows Forms], Windows Forms"
 ms.assetid: dfd7f081-8bea-4a41-86a3-86a1934828ef
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind a Windows Forms ComboBox or ListBox Control to Data
 You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ListBox> to data to perform tasks such as browsing data in a database, entering new data, or editing existing data.  

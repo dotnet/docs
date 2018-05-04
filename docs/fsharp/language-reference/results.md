@@ -1,17 +1,8 @@
 ---
 title: Results (F#)
 description: Learn how to use the F# 'Result' type to help you write error-tolerant code.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: a15b5cf1-9055-4481-918c-4c8a051b5829
 ---
-
 # Results
 
 Starting with F# 4.1, there is a `Result<'T,'TFailure>` type which you can use for writing error-tolerant code which can be composed.

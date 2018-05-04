@@ -1,20 +1,12 @@
 ---
 title: Async in depth
 description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
-keywords: .NET, .NET Core, .NET Standard
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Async in depth
 
 Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` keywords in C# and Visual Basic. (Language-specific resources are found in the [See also](#see-also) section.) This article explains how to use .NET async and provides insight into the async framework used under the covers.

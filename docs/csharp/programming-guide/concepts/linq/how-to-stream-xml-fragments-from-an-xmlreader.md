@@ -1,17 +1,7 @@
 ---
 title: "How to: Stream XML Fragments from an XmlReader (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 4a8f0e45-768a-42e2-bc5f-68bdf0e0a726
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Stream XML Fragments from an XmlReader (C#)
 When you have to process large XML files, it might not be feasible to load the whole XML tree into memory. This topic shows how to stream fragments using an <xref:System.Xml.XmlReader>.  

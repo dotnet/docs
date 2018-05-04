@@ -1,27 +1,15 @@
 ---
 title: "Intranet Unsecured Client and Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
-caps.latest.revision: 20
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Intranet Unsecured Client and Service
-The following illustration depicts a simple [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service developed to provide information on a secure private network to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. Security is not required because the data is of low importance, the network is expected to be inherently secure, or security is provided by a layer below the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure.  
+The following illustration depicts a simple Windows Communication Foundation (WCF) service developed to provide information on a secure private network to a WCF application. Security is not required because the data is of low importance, the network is expected to be inherently secure, or security is provided by a layer below the WCF infrastructure.  
   
  ![Intranet unsecured client and service scenario](../../../../docs/framework/wcf/feature-details/media/unsecuredwebservice.gif "UnsecuredWebService")  
   
@@ -30,7 +18,7 @@ The following illustration depicts a simple [!INCLUDE[indigo1](../../../../inclu
 |Security Mode|None|  
 |Transport|TCP|  
 |Binding|<xref:System.ServiceModel.NetTcpBinding>|  
-|Interoperability|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] only|  
+|Interoperability|WCF only|  
 |Authentication|None|  
 |Integrity|None|  
 |Confidentiality|None|  
@@ -89,7 +77,7 @@ The following illustration depicts a simple [!INCLUDE[indigo1](../../../../inclu
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### Code  
- The following code shows a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client that accesses an unsecured endpoint using the TCP protocol.  
+ The following code shows a basic WCF client that accesses an unsecured endpoint using the TCP protocol.  
   
  [!code-csharp[C_UnsecuredClient#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_unsecuredclient/cs/source.cs#2)]
  [!code-vb[C_UnsecuredClient#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_unsecuredclient/vb/source.vb#2)]  

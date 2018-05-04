@@ -1,21 +1,7 @@
 ---
 title: "Tampering"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3bad93be-60bb-4f89-96ab-a1c3dc7c0fad
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tampering
 *Tampering* is the act of altering a message, or the delivery of a message, and using the altered message for a purpose other than what it was intended for.  

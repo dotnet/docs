@@ -1,13 +1,7 @@
 ---
-title: The relationship between language features and library types | Microsoft Docs 
+title: The relationship between language features and library types | Microsoft Docs
 description: Language features often rely on library types for implementation. Understand that relationship.
-keywords: C# language design, standard library
-author: billwagner
-ms.author: wiwagn
 ms.date: 07/20/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 
 # Relationships between language features and library types

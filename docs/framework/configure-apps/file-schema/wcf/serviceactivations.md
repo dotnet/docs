@@ -1,24 +1,10 @@
 ---
 title: "&lt;serviceActivations&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 97e665b6-1c51-410b-928a-9bb42c954ddb
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceActivations&gt;
-A configuration element that allows you to add settings that define virtual service activation settings that map to your [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service types. This makes it possible to activate services hosted in WAS/IIS without an .svc file.  
+A configuration element that allows you to add settings that define virtual service activation settings that map to your Windows Communication Foundation (WCF) service types. This makes it possible to activate services hosted in WAS/IIS without an .svc file.  
   
  \<system.ServiceModel>  
 \<serviceHostingEnvironment>  

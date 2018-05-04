@@ -1,19 +1,7 @@
 ---
 title: "Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e243e694-c987-43aa-8b22-1e33dace582c
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)
 You can add content (elements, attributes, comments, processing instructions, text, and CDATA) to an existing XML tree.  

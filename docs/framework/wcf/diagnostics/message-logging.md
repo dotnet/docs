@@ -1,24 +1,10 @@
 ---
 title: "Message Logging"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6bce0682-75ef-4d65-a659-b328fba4a8b5
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Logging
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides the capability to log incoming and outgoing messages for offline consumption. Message logging enables you to see what the message and message body looks like. This type of logging is particularly helpful in letting you know what arguments were passed in and how the receiving endpoint saw the arguments expressed as XML. In addition, logging the message as it was received allows you to diagnose malformed messages as well as to see how the message arrived. You can also examine the security tokens used, parts encrypted and signed, and parts left intact.  
+Windows Communication Foundation (WCF) provides the capability to log incoming and outgoing messages for offline consumption. Message logging enables you to see what the message and message body looks like. This type of logging is particularly helpful in letting you know what arguments were passed in and how the receiving endpoint saw the arguments expressed as XML. In addition, logging the message as it was received allows you to diagnose malformed messages as well as to see how the message arrived. You can also examine the security tokens used, parts encrypted and signed, and parts left intact.  
   
 ## In This Section  
  [Message Flow Overview](../../../../docs/framework/wcf/diagnostics/message-flow-overview.md)  

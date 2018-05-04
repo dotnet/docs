@@ -1,26 +1,12 @@
 ---
 title: "How to: Set the Background of a Windows Forms Panel Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "background colors [Windows Forms], Windows Forms Panel controls"
   - "background images [Windows Forms], Windows Forms Panel controls"
   - "Panel control [Windows Forms], background"
   - "colors [Windows Forms], Windows Forms Panel controls"
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Background of a Windows Forms Panel Using the Designer
 A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a background color and a background image. The <xref:System.Windows.Forms.Control.BackColor%2A> property sets the background color for controls that are contained in the panel, such as labels and radio buttons. If the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property is not set, the <xref:System.Windows.Forms.Control.BackColor%2A> selection will fill all of the panel. If the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property is set, the image will be displayed behind the controls that are contained in the panel.  

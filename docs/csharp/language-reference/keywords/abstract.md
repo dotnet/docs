@@ -1,19 +1,12 @@
 ---
 title: "abstract (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "abstract"
   - "abstract_CSharpKeyword"
 helpviewer_keywords: 
   - "abstract keyword [C#]"
 ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # abstract (C# Reference)
 The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. The abstract modifier can be used with classes, methods, properties, indexers, and events. Use the `abstract` modifier in a class declaration to indicate that a class is intended only to be a base class of other classes. Members marked as abstract, or included in an abstract class, must be implemented by classes that derive from the abstract class.  

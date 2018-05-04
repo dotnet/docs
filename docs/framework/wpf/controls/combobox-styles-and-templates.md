@@ -1,14 +1,6 @@
 ---
 title: "ComboBox Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ComboBox [WPF], styles and templates"
   - "states [WPF], ComboBox"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "templates [WPF], ComboBox"
   - "parts [WPF], ComboBox"
 ms.assetid: b0662fa1-16d7-4320-b26b-c1804e565a44
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ComboBox Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ComboBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

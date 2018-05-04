@@ -1,14 +1,6 @@
 ---
 title: "PasswordBox Syles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "styles [WPF], PasswordBox"
   - "templates [WPF], PasswordBox"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "PasswordBox [WPF], styles and templates"
   - "parts [WPF], PasswordBox"
 ms.assetid: deb52107-959f-4a60-b303-d21a0a933060
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # PasswordBox Syles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.PasswordBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

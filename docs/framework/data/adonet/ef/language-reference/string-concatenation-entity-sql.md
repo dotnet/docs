@@ -1,21 +1,7 @@
 ---
 title: "+ (String Concatenation) (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 580130fa-6c7c-4f76-a47d-d22c27ccadf6
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # + (String Concatenation) (Entity SQL)
 Concatenates two strings.  

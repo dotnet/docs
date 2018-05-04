@@ -1,21 +1,7 @@
 ---
 title: "&lt;mtomMessageEncoding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7865d171-cd1e-430a-8421-39cc13541d1b
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;mtomMessageEncoding&gt;
 Specifies the encoding and message versioning used for SOAP Message Transmission Optimization Mechanism (MTOM) based messages.  

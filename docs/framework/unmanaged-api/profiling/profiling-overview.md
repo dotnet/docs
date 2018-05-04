@@ -1,14 +1,6 @@
 ---
 title: "Profiling Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "managed code, profiling API support"
   - "unmanaged code, combining with managed code in profiling"
@@ -35,12 +27,8 @@ helpviewer_keywords:
   - "security, profiling API considerations"
   - "stack depth [.NET Framework profiling]"
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
-caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Profiling Overview
 <a name="top"></a> A profiler is a tool that monitors the execution of another application. A common language runtime (CLR) profiler is a dynamic link library (DLL) that consists of functions that receive messages from, and send messages to, the CLR by using the profiling API. The profiler DLL is loaded by the CLR at run time.  

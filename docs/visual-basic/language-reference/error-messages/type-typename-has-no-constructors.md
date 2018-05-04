@@ -1,21 +1,12 @@
 ---
 title: "Type &#39;&lt;typename&gt;&#39; has no constructors"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30251"
   - "vbc30251"
 helpviewer_keywords: 
   - "BC30251"
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type &#39;&lt;typename&gt;&#39; has no constructors
 A type does not support a call to `Sub New()`. One possible cause is a corrupted compiler or binary file.  

@@ -1,17 +1,11 @@
 ---
 title: "#if preprocessor directive (C# Reference)"
 ms.date: "02/13/2017"
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#if"
 helpviewer_keywords: 
   - "#if directive [C#]"
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #if (C# Reference)
 

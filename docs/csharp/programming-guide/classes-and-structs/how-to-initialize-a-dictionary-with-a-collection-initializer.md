@@ -1,16 +1,9 @@
 ---
 title: "How to: Initialize a Dictionary with a Collection Initializer (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Initialize a Dictionary with a Collection Initializer (C# Programming Guide)
 A <xref:System.Collections.Generic.Dictionary`2> contains a collection of key/value pairs. Its <xref:System.Collections.Generic.Dictionary`2.Add*> method takes two parameters, one for the key and one for the value. To initialize a <xref:System.Collections.Generic.Dictionary`2>, or any collection whose `Add` method takes multiple parameters, enclose each set of parameters in braces as shown in the following example.  

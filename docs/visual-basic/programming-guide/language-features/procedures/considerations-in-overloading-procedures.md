@@ -1,13 +1,6 @@
 ---
 title: "Considerations in Overloading Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "signatures [Visual Basic], ParamArray arguments"
   - "ParamArray keyword [Visual Basic], parameter arrays"
@@ -32,9 +25,6 @@ helpviewer_keywords:
   - "restrictions [Visual Basic], overloading procedures"
   - "procedures [Visual Basic], parameter lists"
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Considerations in Overloading Procedures (Visual Basic)
 When you overload a procedure, you must use a different *signature* for each overloaded version. This usually means each version must specify a different parameter list. For more information, see "Different Signature" in [Procedure Overloading](./procedure-overloading.md).  

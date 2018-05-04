@@ -1,20 +1,10 @@
 ---
 title: "&lt;see&gt; (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "see XML tag"
   - "<see> XML tag"
 ms.assetid: 7e18f60b-ef4a-4678-a797-5eb918635ca9
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;see&gt; (Visual Basic)
 Specifies a link to another member.  

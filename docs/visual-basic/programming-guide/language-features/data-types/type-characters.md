@@ -1,13 +1,6 @@
 ---
 title: "Type Characters (Visual Basic)"
-ms.custom: ""
 ms.date: 01/31/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "&H prefix for hexadecimal values"
   - "hexadecimal literals [Visual Basic]"
@@ -45,7 +38,6 @@ helpviewer_keywords:
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
 author: rpetrusha
 ms.author: ronpet
-ms.manager: wpickett
 ---
 # Type characters (Visual Basic)
 

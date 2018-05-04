@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Using Client Application Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,19 +8,13 @@ helpviewer_keywords:
   - "application services host [client application services]"
   - "client application services, walkthroughs"
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
-caps.latest.revision: 47
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Using Client Application Services
 This topic describes how to create a Windows application that uses client application services to authenticate users and retrieve user roles and settings.  
   
  In this walkthrough, you perform the following tasks:  
   
--   Create a Windows Forms application and use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] project designer to enable and configure client application services.  
+-   Create a Windows Forms application and use the Visual Studio project designer to enable and configure client application services.  
   
 -   Create a simple ASP.NET Web Service application to host the application services and test your client configuration.  
   
@@ -52,7 +38,7 @@ This topic describes how to create a Windows application that uses client applic
   
 #### To create a client application and enable client application services  
   
-1.  In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], select the **File &#124; New &#124; Project** menu option.  
+1.  In Visual Studio, select the **File &#124; New &#124; Project** menu option.  
   
 2.  In the **New Project** dialog box, in the **Project types** pane, expand the **Visual Basic** or **Visual C#** node and select the **Windows** project type.  
   
@@ -60,7 +46,7 @@ This topic describes how to create a Windows application that uses client applic
   
 4.  Change the project **Name** to `ClientAppServicesDemo`, and then click **OK**.  
   
-     A new Windows Forms project is opened in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+     A new Windows Forms project is opened in Visual Studio.  
   
 5.  On the **Project** menu, select **ClientAppServicesDemo Properties**.  
   
@@ -245,7 +231,7 @@ This topic describes how to create a Windows application that uses client applic
   
 1.  In **Solution Explorer**, in the ClientAppServicesDemo project, add a reference to the System.Web assembly.  
   
-2.  Select the Form1 file and then select **View &#124; Code** from the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] main menu.  
+2.  Select the Form1 file and then select **View &#124; Code** from the Visual Studio main menu.  
   
 3.  In the code editor, add the following statements to the top of the Form1 file.  
   
@@ -326,7 +312,7 @@ This topic describes how to create a Windows application that uses client applic
   
 5.  In the **Properties** window, specify a **(Name)** value of `rememberMeCheckBox` and a **Text** value of `&Remember me`.  
   
-6.  Select **View &#124; Code** from the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] main menu.  
+6.  Select **View &#124; Code** from the Visual Studio main menu.  
   
 7.  In the code editor, add the following code to the top of the file.  
   
@@ -366,7 +352,7 @@ This topic describes how to create a Windows application that uses client applic
   
 #### To change the user interface based on user role  
   
-1.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] main menu.  
+1.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the Visual Studio main menu.  
   
 2.  In the designer, add a <xref:System.Windows.Forms.Button> control to the form from the **ToolBox**.  
   
@@ -402,7 +388,7 @@ This topic describes how to create a Windows application that uses client applic
  You can now run the application and log in as employee to see that the button does not appear, and then log in as manager to see the button.  
   
 ## Accessing Web Settings  
- In the following procedure, you add a text box to the form and bind it to a Web setting. Like the previous code that uses authentication and roles, your settings code does not access the settings provider directly. Instead, it uses the strongly-typed `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic) generated for your project by [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+ In the following procedure, you add a text box to the form and bind it to a Web setting. Like the previous code that uses authentication and roles, your settings code does not access the settings provider directly. Instead, it uses the strongly-typed `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic) generated for your project by Visual Studio.  
   
 #### To use Web settings in your user interface  
   
@@ -420,7 +406,7 @@ This topic describes how to create a Windows application that uses client applic
   
      The `WebSettingsTestText` setting appears in the designer with the default value of `DefaultText`. Additionally, a `Settings` class that contains a `WebSettingsTestText` property is generated for your project.  
   
-5.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] main menu.  
+5.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the Visual Studio main menu.  
   
 6.  In the designer, add a <xref:System.Windows.Forms.TextBox> control to the form.  
   
@@ -505,7 +491,7 @@ This topic describes how to create a Windows application that uses client applic
   
 #### To enable offline mode in your application  
   
-1.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] main menu.  
+1.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the Visual Studio main menu.  
   
 2.  In the designer, add a <xref:System.Windows.Forms.CheckBox> control to the form.  
   

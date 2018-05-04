@@ -4,11 +4,6 @@ description: The 'dotnet add package' command provides a convenient option to ad
 author: mairaw
 ms.author: mairaw
 ms.date: 08/11/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet add package
 

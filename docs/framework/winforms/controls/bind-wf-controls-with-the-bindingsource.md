@@ -1,25 +1,11 @@
 ---
 title: "How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], binding"
   - "BindingSource component [Windows Forms], binding controls"
   - "data binding [Windows Forms], BindingSource component"
 ms.assetid: 391ae170-de5c-40f8-8233-91cb2ee4683a
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer
 After you have added controls to your form and determined the user interface for your application, you can bind the controls to a data source, so that, at run time, users can alter and save data related to the application.  

@@ -1,21 +1,7 @@
 ---
 title: "Transacted Batching"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ecd328ed-332e-479c-a894-489609bcddd2
-caps.latest.revision: 23
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transacted Batching
 This sample demonstrates how to batch transacted reads by using Message Queuing (MSMQ). Transacted Batching is a performance optimization feature for transacted reads in queued communication.  
@@ -139,8 +125,8 @@ This sample demonstrates how to batch transacted reads by using Message Queuing 
  The service behavior defines an operation behavior with `TransactionScopeRequired` set to `true`. This ensures that the same transaction scope that is used to retrieve the message from the queue is used by any resource managers accessed by the method. In this example, we use a basic database to store the purchase order information contained in the message. The transaction scope also guarantees that if the method throws an exception, the message is returned to the queue. Without setting this operation behavior, a queued channel creates a transaction to read the message from the queue and commits it automatically before it is dispatched so that if the operation fails, the message is lost. The most common scenario is for service operations to enlist in the transaction that is used to read the message from the queue as demonstrated in the following code.  
   
  Note that `ReleaseServiceInstanceOnTransactionComplete` is set to `false`. This is an important requirement for batching. The property `ReleaseServiceInstanceOnTransactionComplete` on `ServiceBehaviorAttribute` indicates what to do with the service instance once the transaction is completed. By default, the service instance is released upon completing the transaction. The core aspect to batching is the use of a single transaction for reading and dispatching many messages in the queue. Therefore releasing the service instance ends up completing the transaction prematurely negating the very use of batching. If this property is set to `true` and transacted batching behavior is added to the endpoint, the batching validation behavior throws an exception.  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 // Added code to write output to the console window.  
 [ServiceBehavior(ReleaseServiceInstanceOnTransactionComplete=false,   
@@ -157,11 +143,11 @@ public class OrderProcessorService : IOrderProcessor
     }  
     …  
 }  
-```  
-  
+```
+
  The `Orders` class encapsulates the processing of the order. In the sample, it updates the database with purchase order information.  
-  
-```  
+
+```csharp
 // Order Processing Logic  
 public class Orders  
 {  
@@ -231,8 +217,8 @@ public class Orders
                                      {1} ", rowsAffected, po.PONumber);  
     }  
 }  
-```  
-  
+```
+
  The batching behavior and its configuration are specified in the service application configuration.  
   
 ```xml  
@@ -289,8 +275,8 @@ public class Orders
 >  The choice of the batch size is dependent on your application. If the batch size is too small, you may not get the desired performance. On the other hand if the batch size is too big, it may deteriorate performance. For example, your transaction could live longer and hold locks on your database or your transaction could become dead locked, which could cause the batch to get rolled back and to redo the work.  
   
  The client creates a transaction scope. Communication with the queue takes place within the scope of the transaction, causing it to be treated as an atomic unit where all messages are sent to the queue or none of the messages are sent to the queue. The transaction is committed by calling <xref:System.Transactions.TransactionScope.Complete%2A> on the transaction scope.  
-  
-```  
+
+```csharp
 //Client implementation code.  
 class Client  
 {  
@@ -337,8 +323,8 @@ class Client
         Console.ReadLine();  
     }  
 }  
-```  
-  
+```
+
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages. You can see a rolling output as messages are read in a batch and processed.  
   
 ```  
@@ -378,7 +364,7 @@ Processing Purchase Order: ea94486b-7c86-4309-a42d-2f06c00656cd
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Batching`  
   

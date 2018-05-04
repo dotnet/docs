@@ -1,14 +1,9 @@
 ---
 title: Discards - C# Guide
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
-keywords: .NET,.NET Core
 author: rpetrusha
 ms.author: ronpet
 ms.date: 07/21/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 # Discards - C# Guide
 

@@ -1,14 +1,6 @@
 ---
 title: "PrintPreviewDialog Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "01/08/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "PrintPreviewDialog"
 helpviewer_keywords: 
@@ -16,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: efd4ee8d-6edd-47ec-88e4-4a4759bd2384
 author: rpetrusha
 ms.author: ronpet
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # PrintPreviewDialog control overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.PrintPreviewDialog> control is a pre-configured dialog box used to display how a [PrintDocument](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md) will appear when printed. Use it within your Windows-based application as a simple solution instead of configuring your own dialog box. The control contains buttons for printing, zooming in, displaying one or multiple pages, and closing the dialog box.  

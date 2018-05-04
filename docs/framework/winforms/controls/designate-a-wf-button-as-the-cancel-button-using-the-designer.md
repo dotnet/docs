@@ -1,24 +1,10 @@
 ---
 title: "How to: Designate a Windows Forms Button as the Cancel Button Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "buttons [Windows Forms], cancel buttons"
   - "Button control [Windows Forms], designating as cancel button"
 ms.assetid: 30e77d9c-d565-4ab5-a84a-62c043af8822
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Designate a Windows Forms Button as the Cancel Button Using the Designer
 On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> control to be the cancel button. A cancel button is clicked whenever the user presses the ESC key, regardless of which other control on the form has the focus. Such a button is usually programmed to enable the user to quickly exit an operation without committing to any action.  

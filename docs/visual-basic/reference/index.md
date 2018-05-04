@@ -1,17 +1,10 @@
 ---
 title: "Reference (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "language reference"
   - "Visual Basic code, language reference"
 ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Reference (Visual Basic)
 This section provides links to reference information about various aspects of Visual Basic programming.  
@@ -38,10 +31,10 @@ This section provides links to reference information about various aspects of Vi
   
 ## Related Sections  
  [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
- Contains topics for dialog boxes and windows used in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+ Contains topics for dialog boxes and windows used in Visual Studio.  
   
  [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
- Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+ Provides links to topics on various XML tools available in Visual Studio.  
   
  [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
- Provides links to topics covering automation and extensibility in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], for both shared and language-specific components.
+ Provides links to topics covering automation and extensibility in Visual Studio, for both shared and language-specific components.

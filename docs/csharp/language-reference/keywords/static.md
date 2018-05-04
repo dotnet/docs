@@ -1,19 +1,12 @@
 ---
 title: "static (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "static"
   - "static_CSharpKeyword"
 helpviewer_keywords: 
   - "static keyword [C#]"
 ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # static (C# Reference)
 Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used with classes, fields, methods, properties, operators, events, and constructors, but it cannot be used with indexers, finalizers, or types other than classes. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  

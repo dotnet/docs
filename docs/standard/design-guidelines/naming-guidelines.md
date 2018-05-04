@@ -1,13 +1,7 @@
 ---
 title: "Naming Guidelines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [.NET Framework], about naming guidelines"
   - "naming guidelines [.NET Framework]"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "names [.NET Framework]"
   - "format naming guidelines [.NET Framework]"
 ms.assetid: fc076d66-9b5f-42d3-aa65-61d970c794a3
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Naming Guidelines
 Following a consistent set of naming conventions in the development of a framework can be a major contribution to the framework’s usability. It allows the framework to be used by many developers on widely separated projects. Beyond consistency of form, names of framework elements must be easily understood and must convey the function of each element.  

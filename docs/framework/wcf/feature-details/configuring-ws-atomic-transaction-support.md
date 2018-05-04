@@ -1,23 +1,9 @@
 ---
 title: "Configuring WS-Atomic Transaction Support"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WS-AT protocol [WCF], configuring WS-Atomic Transaction"
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
-caps.latest.revision: 31
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring WS-Atomic Transaction Support
 This topic describes how you can configure WS-AtomicTransaction (WS-AT) support by using the WS-AT Configuration Utility.  
@@ -29,11 +15,11 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
   
  The command-line window can be accessed in the Windows SDK installation location "%WINDIR%\Microsoft.NET\Framework\v3.0\Windows Communication Foundation".  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the command-line tool, see [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md).  
+ For more information about the command-line tool, see [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md).  
   
  If you are running [!INCLUDE[wxp](../../../../includes/wxp-md.md)] or [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], you can access the MMC snap-in by navigating to **Control Panel/Administrative Tools/Component Services**, right-clicking **My Computer**, and selecting **Properties**. This is the same location where you can configure the Microsoft Distributed Transaction Coordinator (MSDTC). Options available for configuration are grouped under the **WS-AT** tab. If you are running Windows Vista or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], the MMC snap-in can be found by clicking the **Start** button, and entering `dcomcnfg.exe` in the **Search** box. When the MMC is opened, navigate to the **My Computer\Distributed Transaction Coordinator\Local DTC** node, right click and select **Properties**. Options available for configuration are grouped under the **WS-AT** tab.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the snap-in, see the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md).  
+ For more information about the snap-in, see the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md).  
   
  To enable the tool's user interface, you must first register the WsatUI.dll file, located at the following path  
   
@@ -83,7 +69,7 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
 ### Configuring MSDTC to Use Certificates  
  Since the WS-AT protocol service acts as both a client and a server, it must both listen for incoming connections and initiate outgoing connections. Therefore, you need to configure MSDTC so that it knows which certificate to use when communicating with external parties, and which certificates to authorize when accepting incoming communication.  
   
- You can configure this by using the MMC WS-AT snap-in. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this tool, see the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md) topic. The following steps describe how to establish trust between two computers running MSDTC.  
+ You can configure this by using the MMC WS-AT snap-in. For more information about this tool, see the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md) topic. The following steps describe how to establish trust between two computers running MSDTC.  
   
 1.  Configure machine A's settings. For "Endpoint Certificate", select certA. For "Authorized Certificates", select the certB.  
   

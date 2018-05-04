@@ -1,17 +1,8 @@
 ---
 title: Code Formatting Guidelines (F#)
 description: Learn code indentation formatting guidelines for the F# programming language for readability, aesthetics, standardization, and compilation.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 3f79717c-f84e-448d-9ce4-90e40a644ba1 
 ---
-
 # Code Formatting Guidelines
 
 This topic summarizes code indentation guidelines for F#. Because the F# language is sensitive to line breaks and indentation, it is not just a readability issue, aesthetic issue, or coding standardization issue to format your code correctly. You must format your code correctly for it to compile correctly.

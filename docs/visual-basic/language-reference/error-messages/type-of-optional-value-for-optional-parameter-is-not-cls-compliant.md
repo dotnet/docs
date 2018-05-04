@@ -1,21 +1,12 @@
 ---
 title: "Type of optional value for optional parameter &lt;parametername&gt; is not CLS-compliant"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "BC40042"
   - "vbc40042"
 helpviewer_keywords: 
   - "BC40042"
 ms.assetid: 1d6eae29-4ad3-4434-bde4-a53b6051adf5
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type of optional value for optional parameter &lt;parametername&gt; is not CLS-compliant
 A procedure is marked as `<CLSCompliant(True)>` but declares an [Optional](../../../visual-basic/language-reference/modifiers/optional.md) parameter with default value of a noncompliant type.  

@@ -1,10 +1,6 @@
 ---
 title: "-moduleassemblyname (C# Compiler Option)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/moduleassemblyname"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "/moduleassemblyname compiler option [C#]"
   - ".moduleassemblyname compiler option [C#]"
 ms.assetid: d464d9b9-f18d-423b-95e9-66c7878fd53a
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -moduleassemblyname (C# Compiler Option)
 Specifies an assembly whose non-public types a .netmodule can access.  

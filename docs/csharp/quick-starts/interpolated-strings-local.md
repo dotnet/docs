@@ -4,10 +4,6 @@ description: This quickstart shows you how to use C# string interpolation featur
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/14/2018
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # String interpolation

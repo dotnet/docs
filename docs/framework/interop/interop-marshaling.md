@@ -1,21 +1,13 @@
 ---
 title: "Interop Marshaling"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "marshaling, COM interop"
   - "interop marshaling"
   - "interop marshaling, about interop marshaling"
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Interop Marshaling
 <a name="top"></a> Interop marshaling governs how data is passed in method arguments and return values between managed and unmanaged memory during calls. Interop marshaling is a run-time activity performed by the common language runtime's marshaling service.  

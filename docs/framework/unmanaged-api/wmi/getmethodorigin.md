@@ -2,10 +2,6 @@
 title: GetMethodOrigin function (Unmanaged API Reference)
 description: The GetMethodOrigin function determines the class in which a method is declared.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetMethodOrigin"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetMethodOrigin function
 Determines the class in which a method is declared.

@@ -1,26 +1,12 @@
 ---
 title: "How to: Add a Splash Screen to a WPF Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF [WPF], splash screen"
   - "startup window [WPF]"
   - "SplashScreen class [WPF]"
   - "splash screen [WPF]"
 ms.assetid: d70a25c4-5fb9-4c27-b01d-b1b8ef39b3fd
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add a Splash Screen to a WPF Application
 This topic shows how to add a startup window, or *splash screen*, to a Windows Presentation Foundation (WPF) application.  

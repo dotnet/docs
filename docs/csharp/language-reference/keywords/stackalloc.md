@@ -1,17 +1,11 @@
 ---
 title: "stackalloc (C# Reference)"
 ms.date: 04/12/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "stackalloc_CSharpKeyword"
   - "stackalloc"
 helpviewer_keywords: 
   - "stackalloc keyword [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # stackalloc (C# Reference)
 The `stackalloc` keyword is used in an unsafe code context to allocate a block of memory on the stack.

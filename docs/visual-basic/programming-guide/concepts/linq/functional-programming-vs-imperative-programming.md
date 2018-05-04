@@ -1,19 +1,7 @@
 ---
 title: "Functional Programming vs. Imperative Programming (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6a1f3b57-00e6-447d-9906-74c7c4d5d85c
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Functional Programming vs. Imperative Programming (Visual Basic)
 This topic compares and contrasts functional programming with more traditional imperative (procedural) programming.  

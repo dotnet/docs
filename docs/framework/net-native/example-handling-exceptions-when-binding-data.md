@@ -1,21 +1,9 @@
 ---
 title: "Example: Handling Exceptions When Binding Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Example: Handling Exceptions When Binding Data
 > [!NOTE]

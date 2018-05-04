@@ -1,10 +1,6 @@
 ---
 title: "-highentropyva (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/highentropyva"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-highentropyva compiler option [C#]"
   - "highentropyva compiler option [C#]"
 ms.assetid: eaf409b3-384e-49dd-9417-62453658f421
-caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -highentropyva (C# Compiler Options)
 The **-highentropyva** compiler option tells the Windows kernel whether a particular executable supports high entropy Address Space Layout Randomization (ASLR).  

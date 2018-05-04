@@ -1,24 +1,10 @@
 ---
 title: "WCF Service Publishing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c806b253-cd47-4b96-b831-e73cbf08808f
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Service Publishing
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Publishing assists you in progressing from the early development environment provided by [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host and [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client to actually deploying the application to a production environment for testing purposes. Before you commit to a final deployment plan, you can use [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Publishing to verify that your [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service performs correctly and is ready to be published. You can also choose to deploy your [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service libraries to various target locations for testing.  
+Windows Communication Foundation (WCF) Service Publishing assists you in progressing from the early development environment provided by [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Host and [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Test Client to actually deploying the application to a production environment for testing purposes. Before you commit to a final deployment plan, you can use Windows Communication Foundation (WCF) Service Publishing to verify that your [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service performs correctly and is ready to be published. You can also choose to deploy your [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service libraries to various target locations for testing.  
   
 ## Supported Services and Target Locations  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Publishing supports publishing [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services created from the set of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service library templates, and their corresponding item templates, which include the following:  

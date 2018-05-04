@@ -1,13 +1,6 @@
 ---
 title: "How to: Create Signed Friend Assemblies (Visual Basic)"
-ms.custom: ""
 ms.date: 03/14/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f2afd83d-b044-484b-a56d-56d0a8a40647
 author: rpetrusha
 ms.author: ronpet

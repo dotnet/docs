@@ -1,17 +1,7 @@
 ---
 title: "LINQ and File Directories (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: b66c55e4-0f72-44e5-b086-519f9962335c
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ and File Directories (C#)
 Many file system operations are essentially queries and are therefore well-suited to the LINQ approach.  

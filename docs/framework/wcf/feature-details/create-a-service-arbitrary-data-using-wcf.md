@@ -1,24 +1,10 @@
 ---
 title: "How to: Create a Service That Accepts Arbitrary Data using the WCF REST Programming Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Service That Accepts Arbitrary Data using the WCF REST Programming Model
-Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported by[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. This topic discusses using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST Programming Model to create a service that receives arbitrary data.  
+Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported byWCF. This topic discusses using the WCF REST Programming Model to create a service that receives arbitrary data.  
   
 ### To implement the service contract  
   

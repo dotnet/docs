@@ -1,14 +1,6 @@
 ---
 title: "Custom Dependency Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,12 +14,6 @@ helpviewer_keywords:
   - "wrappers [WPF], implementing"
   - "dependency properties [WPF], custom"
 ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Custom Dependency Properties
 This topic describes the reasons that [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application developers and component authors might want to create custom dependency property, and describes the implementation steps as well as some implementation options that can improve performance, usability, or versatility of the property.  

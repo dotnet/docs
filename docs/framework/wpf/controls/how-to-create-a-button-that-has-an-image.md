@@ -1,26 +1,12 @@
 ---
 title: "How to: Create a Button That Has an Image"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "Button controls [WPF], creating"
 ms.assetid: 607a193c-4098-4dd8-8dc0-51256cec2020
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Button That Has an Image
 This example shows how to include an image on a <xref:System.Windows.Controls.Button>.  

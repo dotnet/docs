@@ -1,27 +1,13 @@
 ---
 title: "Large Data and Streaming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
-caps.latest.revision: 27
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Large Data and Streaming
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
+Windows Communication Foundation (WCF) is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
   
 ## Basic Considerations  
- To provide background information about the following information for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], this section highlights some general concerns and considerations for encodings, binary data, and streaming that generally apply to connected systems infrastructures.  
+ To provide background information about the following information for WCF, this section highlights some general concerns and considerations for encodings, binary data, and streaming that generally apply to connected systems infrastructures.  
   
 ### Encoding Data: Text vs. Binary  
  Commonly expressed developer concerns include the perception that XML has significant overhead when compared to binary formats due to the repetitive nature of start tags and end tags, that the encoding of numerical values is considered to be significantly larger because they are expressed in text values, and that binary data cannot be expressed efficiently because it must be specially encoded for embedding into a text format.  
@@ -36,7 +22,7 @@ ms.workload:
   
  As a result, deciding between text or binary is not quite as easy as assuming that binary messages are always smaller than XML-text messages.  
   
- A clear advantage of XML-text messages is that they are standards-based and offer the broadest choice of interoperability options and platform support. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Encodings" section later in this topic.  
+ A clear advantage of XML-text messages is that they are standards-based and offer the broadest choice of interoperability options and platform support. For more information, see the "Encodings" section later in this topic.  
   
 ### Binary Content  
  One area where binary encodings are superior to text-based encodings in terms of the resulting message size are large binary data items such as pictures, videos, sound clips, or any other form of opaque, binary data that must be exchanged between services and their consumers. To fit these types of data into XML text, the common approach is to encode them using the Base64 encoding.  
@@ -47,10 +33,10 @@ ms.workload:
   
  An MTOM SOAP message is modified from its un-encoded version so that special element tags that refer to the respective MIME parts take the place of the original elements in the message that contained binary data. As a result, the SOAP message refers to binary content by pointing to the MIME parts sent with it, but otherwise just carries XML text data. Because this model is closely aligned with the well-established SMTP model, there is broad tooling support to encode and decode MTOM messages on many platforms, which makes it an extremely interoperable choice.  
   
- Still, as with Base64, MTOM also comes with some necessary overhead for the MIME format, so that advantages of using MTOM are only seen when the size of a binary data element exceeds about 1 KB. Due to the overhead, MTOM-encoded messages might be larger than messages that use Base64 encoding for binary data, if the binary payload remains under that threshold. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Encodings" section later in this topic.  
+ Still, as with Base64, MTOM also comes with some necessary overhead for the MIME format, so that advantages of using MTOM are only seen when the size of a binary data element exceeds about 1 KB. Due to the overhead, MTOM-encoded messages might be larger than messages that use Base64 encoding for binary data, if the binary payload remains under that threshold. For more information, see the "Encodings" section later in this topic.  
   
 ### Large Data Content  
- Wire-footprint aside, the previously mentioned 500-MB payload also poses a great local challenge at for the service and the client. By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] processes messages in *buffered mode*. This means that the entire content of a message is present in memory before it is sent or after it is received. While that is a good strategy for most scenarios, and necessary for messaging features such as digital signatures and reliable delivery, large messages could exhaust a system's resources.  
+ Wire-footprint aside, the previously mentioned 500-MB payload also poses a great local challenge at for the service and the client. By default, WCF processes messages in *buffered mode*. This means that the entire content of a message is present in memory before it is sent or after it is received. While that is a good strategy for most scenarios, and necessary for messaging features such as digital signatures and reliable delivery, large messages could exhaust a system's resources.  
   
  The strategy to deal with large payloads is streaming. While messages, especially those expressed in XML, are commonly thought of as being relatively compact data packages, a message might be multiple gigabytes in size and resemble a continuous data stream more than a data package. When data is transferred in streaming mode instead of buffered mode, the sender makes the contents of the message body available to the recipient in the form of a stream and the message infrastructure continuously forwards the data from sender to receiver as it becomes available.  
   
@@ -62,14 +48,14 @@ ms.workload:
   
 -   Are not available in their entirety when the transfer is initiated.  
   
- For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Streaming Data" section later in this topic.  
+ For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. For more information, see the "Streaming Data" section later in this topic.  
   
  When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](http://go.microsoft.com/fwlink/?LinkId=253165)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). The `maxAllowedContentLength` property defaults to 28.6 M and the `maxReceivedMessageSize` property defaults to 64KB.  
   
 ## Encodings  
  An *encoding* defines a set of rules about how to present messages on the wire. An *encoder* implements such an encoding and is responsible, on the sender side, for turning a <xref:System.ServiceModel.Channels.Message> in-memory message into a byte stream or byte buffer that can be sent across the network. On the receiver side, the encoder turns a sequence of bytes into an in-memory message.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes three encoders and allows you to write and plug in your own encoders, if necessary.  
+ WCF includes three encoders and allows you to write and plug in your own encoders, if necessary.  
   
  Each of the standard bindings includes a preconfigured encoder, whereby the bindings with the Net* prefix use the binary encoder (by including the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> class) while the <xref:System.ServiceModel.BasicHttpBinding> and <xref:System.ServiceModel.WSHttpBinding> classes use the text message encoder (by means of the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> class) by default.  
   
@@ -77,7 +63,7 @@ ms.workload:
 |-----------------------------|-----------------|  
 |<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|The text message encoder is the default encoder for all HTTP-based bindings and the appropriate choice for all custom bindings where interoperability is the highest concern. This encoder reads and writes standard SOAP 1.1/SOAP 1.2 text messages with no special handling for binary data. If the <xref:System.ServiceModel.Channels.MessageVersion> of a message is set to `None`, the SOAP envelope wrapper is omitted from the output and only the message body content is serialized.|  
 |<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>|The MTOM message encoder is a text encoder that implements special handling for binary data and is not used by default in any of the standard bindings because it is strictly a case-by-case optimization utility. If the message contains binary data that exceeds a threshold where MTOM encoding yields a benefit, the data is externalized into a MIME part following the message envelope. See Enabling MTOM later in this section.|  
-|<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|The binary message encoder is the default encoder for the Net* bindings and the appropriate choice whenever both communicating parties are based on [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. The binary message encoder uses the .NET Binary XML Format, a Microsoft-specific binary representation for XML Information Sets (Infosets) that generally yields a smaller footprint than the equivalent XML 1.0 representation and encodes binary data as a byte stream.|  
+|<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|The binary message encoder is the default encoder for the Net* bindings and the appropriate choice whenever both communicating parties are based on WCF. The binary message encoder uses the .NET Binary XML Format, a Microsoft-specific binary representation for XML Information Sets (Infosets) that generally yields a smaller footprint than the equivalent XML 1.0 representation and encodes binary data as a byte stream.|  
   
  Text message encoding is typically the best choice for any communication path that requires interoperability, while binary message encoding is the best choice for any other communication path. Binary message encoding typically yields smaller message sizes compared to text for a single message and progressively even smaller message sizes over the duration of a communication session. Unlike text encoding, binary encoding does not have to use special handling for binary data, such as using Base64, but represents bytes as bytes.  
   
@@ -102,10 +88,10 @@ ms.workload:
   
  Because the MTOM encoder always emits an MTOM-encoded MIME/multi-part message regardless of whether binary data ends up being externalized, you should generally only enable MTOM for endpoints that exchange messages with more than 1 KB of binary data. Also, the service contracts designed for use with MTOM-enabled endpoints should, when possible, be constrained to specifying such data transfer operations. Related control functionality should reside on a separate contract. This "MTOM-only" rule applies only to messages sent through an MTOM-enabled endpoint; the MTOM-encoder can decode and parse incoming non-MTOM messages as well.  
   
- Using the MTOM encoder conforms with all other [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] features. Note that it may not be possible to observe this rule in all cases, such as when session support is required.  
+ Using the MTOM encoder conforms with all other WCF features. Note that it may not be possible to observe this rule in all cases, such as when session support is required.  
   
 ### Programming Model  
- Regardless of which of the three built-in encoders you use in your application, the programming experience is identical with regards to transferring binary data. The difference is in how [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] handles the data based on their data types.  
+ Regardless of which of the three built-in encoders you use in your application, the programming experience is identical with regards to transferring binary data. The difference is in how WCF handles the data based on their data types.  
   
 ```  
 [DataContract]  
@@ -130,12 +116,12 @@ class MyData
 >  You should not be using <xref:System.IO.Stream?displayProperty=nameWithType> derived types inside of data contracts. Stream data should be communicated using the streaming model, explained in the following "Streaming Data" section.  
   
 ## Streaming Data  
- When you have a large amount of data to transfer, the streaming transfer mode in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety.  
+ When you have a large amount of data to transfer, the streaming transfer mode in WCF is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety.  
   
  As mentioned earlier, enable streaming only for large messages (with text or binary content) if the data cannot be segmented, if the message must be delivered in a timely fashion, or if the data is not yet fully available when the transfer is initiated.  
   
 ### Restrictions  
- You cannot use a significant number of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] features when streaming is enabled:  
+ You cannot use a significant number of WCF features when streaming is enabled:  
   
 -   Digital signatures for the message body cannot be performed because they require computing a hash over the entire message contents. With streaming, the content is not fully available when the message headers are constructed and sent and, therefore, a digital signature cannot be computed.  
   
@@ -190,7 +176,7 @@ class MyData
   
  When you instantiate your binding in code, you must set the respective `TransferMode` property of the binding (or the transport binding element if you are composing a custom binding) to one of the previously mentioned values.  
   
- You can turn on streaming for requests and replies or for both directions independently at either side of the communicating parties without affecting functionality. However, you should always assume that the transferred data size is so significant that enabling streaming is justified on both endpoints of a communication link. For cross-platform communication where one of the endpoints is not implemented with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the ability to use streaming depends on the platform's streaming capabilities. Another rare exception might be a memory-consumption driven scenario where a client or service must minimize its working set and can only afford small buffer sizes.  
+ You can turn on streaming for requests and replies or for both directions independently at either side of the communicating parties without affecting functionality. However, you should always assume that the transferred data size is so significant that enabling streaming is justified on both endpoints of a communication link. For cross-platform communication where one of the endpoints is not implemented with WCF, the ability to use streaming depends on the platform's streaming capabilities. Another rare exception might be a memory-consumption driven scenario where a client or service must minimize its working set and can only afford small buffer sizes.  
   
 ### Enabling Asynchronous Streaming  
  To enable asynchronous streaming, add the  <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> endpoint behavior to the service host and set its <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> property to `true`. We have also added the capability of true asynchronous streaming on the send side. This improves scalability of the service in scenarios where it is streaming messages to multiple clients some of which are slow in reading possibly due to network congestion or are not reading at all. In these scenarios we now do not block individual threads on the service per client. This ensures that the service is able to process many more clients thereby improving the scalability of the service.  
@@ -228,23 +214,23 @@ public class UploadStreamMessage
 }   
 ```  
   
- Streamed transfers end and the message is closed when the stream reaches the end of file (EOF). When sending a message (returning a value or invoking an operation), you can pass a <xref:System.IO.FileStream> and the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure subsequently pulls all the data from that stream until the stream has been completely read and reached EOF. To transfer streamed data for the source that no such pre-built <xref:System.IO.Stream> derived class exists, construct such a class, overlay that class over your stream source, and use that as the argument or return value.  
+ Streamed transfers end and the message is closed when the stream reaches the end of file (EOF). When sending a message (returning a value or invoking an operation), you can pass a <xref:System.IO.FileStream> and the WCF infrastructure subsequently pulls all the data from that stream until the stream has been completely read and reached EOF. To transfer streamed data for the source that no such pre-built <xref:System.IO.Stream> derived class exists, construct such a class, overlay that class over your stream source, and use that as the argument or return value.  
   
- When receiving a message, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] constructs a stream over the Base64-encoded message body content (or the respective MIME part if using MTOM) and the stream reaches EOF when the content has been read.  
+ When receiving a message, WCF constructs a stream over the Base64-encoded message body content (or the respective MIME part if using MTOM) and the stream reaches EOF when the content has been read.  
   
  Transport-level streaming also works with any other message contract type (parameter lists, data contract arguments, and explicit message contract), but because the serialization and deserialization of such typed messages requires buffering by the serializer, using such contract variants is not advisable.  
   
 ### Special Security Considerations for Large Data  
  All bindings allow you to constrain the size of incoming messages to prevent denial-of-service attacks. The <xref:System.ServiceModel.BasicHttpBinding>, for example, exposes a [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) property that bounds the size of the incoming message, and so also bounds the maximum amount of memory that is accessed when processing the message. This unit is set in bytes with a default value of 65,536 bytes.  
   
- A security threat that is specific to the large data streaming scenario provokes a denial of service by causing data to be buffered when the receiver expects it to be streamed. For example, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] always buffers the SOAP headers of a message, and so an attacker may construct a large malicious message that consists entirely of headers to force the data to be buffered. When streaming is enabled, the `MaxReceivedMessageSize` may be set to an extremely large value, because the receiver never expects the entire message to be buffered in memory at once. If [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is forced to buffer the message, a memory overflow occurs.  
+ A security threat that is specific to the large data streaming scenario provokes a denial of service by causing data to be buffered when the receiver expects it to be streamed. For example, WCF always buffers the SOAP headers of a message, and so an attacker may construct a large malicious message that consists entirely of headers to force the data to be buffered. When streaming is enabled, the `MaxReceivedMessageSize` may be set to an extremely large value, because the receiver never expects the entire message to be buffered in memory at once. If WCF is forced to buffer the message, a memory overflow occurs.  
   
- Therefore, restricting the maximum incoming message size is not enough in this case. The `MaxBufferSize` property is required to constrain the memory that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] buffers. It is important to set this to a safe value (or keep it at the default value) when streaming. For example, suppose your service must receive files up to 4 GB in size and store them on the local disk. Suppose also that your memory is constrained in such a way that you can only buffer 64 KB of data at a time. Then you would set the `MaxReceivedMessageSize` to 4 GB and `MaxBufferSize` to 64 KB. Also, in your service implementation, you must ensure that you read only from the incoming stream in 64-KB chunks and do not read the next chunk before the previous one has been written to disk and discarded from memory.  
+ Therefore, restricting the maximum incoming message size is not enough in this case. The `MaxBufferSize` property is required to constrain the memory that WCF buffers. It is important to set this to a safe value (or keep it at the default value) when streaming. For example, suppose your service must receive files up to 4 GB in size and store them on the local disk. Suppose also that your memory is constrained in such a way that you can only buffer 64 KB of data at a time. Then you would set the `MaxReceivedMessageSize` to 4 GB and `MaxBufferSize` to 64 KB. Also, in your service implementation, you must ensure that you read only from the incoming stream in 64-KB chunks and do not read the next chunk before the previous one has been written to disk and discarded from memory.  
   
- It is also important to understand that this quota only limits the buffering done by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and cannot protect you against any buffering that you do in your own service or client implementation. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] additional security considerations, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ It is also important to understand that this quota only limits the buffering done by WCF and cannot protect you against any buffering that you do in your own service or client implementation. For more information about additional security considerations, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
 > [!NOTE]
->  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
+>  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
 ## See Also  
  [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)

@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecurityNewServerSessionKeyIssued"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2fccc492-61ea-45a8-8f1b-be65dedc5e46
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecurityNewServerSessionKeyIssued
 System.ServiceModel.Security.SecurityNewServerSessionKeyIssued  

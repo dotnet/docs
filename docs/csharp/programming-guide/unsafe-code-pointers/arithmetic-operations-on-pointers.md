@@ -1,16 +1,9 @@
 ---
 title: "Arithmetic Operations on Pointers (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "pointers [C#], arithmetic operations"
 ms.assetid: d4f0b623-827e-45ce-8649-cfcebc8692aa
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Arithmetic Operations on Pointers (C# Programming Guide)
 This topic discusses using the arithmetic operators `+` and **-** to manipulate pointers.  

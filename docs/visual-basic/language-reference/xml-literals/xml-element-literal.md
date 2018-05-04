@@ -1,12 +1,6 @@
 ---
 title: "XML Element Literal (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralElement"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "element literal [Visual Basic]"
   - "XML literals [Visual Basic], element"
 ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
-caps.latest.revision: 32
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Element Literal (Visual Basic)
 

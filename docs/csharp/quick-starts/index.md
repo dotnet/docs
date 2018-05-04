@@ -1,14 +1,7 @@
 ---
 title: C# interactive tutorials - C# quickstarts
 description: Learn C# in your browser, and get started with your own development environment
-keywords: C#, Get Started, Lessons, Interactive
-author: billwagner
-ms.author: wiwagn
 ms.date: 01/30/2018
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # C# Quickstarts #

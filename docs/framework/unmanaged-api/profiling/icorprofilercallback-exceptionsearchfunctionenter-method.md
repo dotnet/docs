@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ExceptionSearchFunctionEnter Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ExceptionSearchFunctionEnter"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: bfd54573-b7e6-4bd1-a184-7f08a8b39fae
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionSearchFunctionEnter Method
 Notifies the profiler that the search phase of exception handling has begun searching a function to find a handler for the current exception.  

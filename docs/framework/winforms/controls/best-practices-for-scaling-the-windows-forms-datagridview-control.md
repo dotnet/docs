@@ -1,14 +1,6 @@
 ---
 title: "Best Practices for Scaling the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], row sharing"
   - "data grids [Windows Forms], best practices"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "best practices [Windows Forms], dataGridView control"
   - "DataGridView control [Windows Forms], scaling"
 ms.assetid: 8321a8a6-6340-4fd1-b475-fa090b905aaf
-caps.latest.revision: 31
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Best Practices for Scaling the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control is designed to provide maximum scalability. If you need to display large amounts of data, you should follow the guidelines described in this topic to avoid consuming large amounts of memory or degrading the responsiveness of the user interface (UI). This topic discusses the following issues:  

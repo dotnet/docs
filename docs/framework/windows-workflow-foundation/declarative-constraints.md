@@ -1,19 +1,7 @@
 ---
 title: "Declarative Constraints"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 67001ed1-7f4d-4ada-ae57-a31176901a53
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Declarative Constraints
 Declarative constraints provide a powerful method of validation for an activity and its relationships with other activities. Constraints are configured for an activity during the authoring process, but additional constraints can also be specified by the workflow host. This topic provides an overview of using declarative constraints to provide activity validation.  
@@ -142,7 +130,7 @@ public sealed class CreateState : CodeActivity
 }  
 ```  
   
- [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] the Windows Workflow Foundation [Validation](../../../docs/framework/windows-workflow-foundation/samples/validation.md) samples.  
+ For more information, see the Windows Workflow Foundation [Validation](../../../docs/framework/windows-workflow-foundation/samples/validation.md) samples.  
   
 ## Additional Constraints  
  Workflow host authors can specify additional validation constraints for activities in a workflow by creating constraints and adding them to the <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A> dictionary of a <xref:System.Activities.Validation.ValidationSettings> instance. Each item in <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A> contains the type of activity for which the constraints apply and a list of the additional constraints for that type of activity. When validation is invoked for the workflow, each activity of the specified type, including derived classes, evaluates the constraints. In this example, the `ActivityDisplayNameIsNotSetWarning` constraint from the previous section is applied to all activities in a workflow.  
@@ -183,4 +171,4 @@ else
 }  
 ```  
   
- If the <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints%2A> property of <xref:System.Activities.Validation.ValidationSettings> is `true`, then only the specified additional constraints are evaluated when validation is invoked by calling <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. This can be useful for inspecting workflows for specific validation configurations. Note however that when the workflow is invoked, the validation logic configured in the workflow is evaluated and must pass for the workflow to successfully begin. [!INCLUDE[crabout](../../../includes/crabout-md.md)] invoking validation, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).
+ If the <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints%2A> property of <xref:System.Activities.Validation.ValidationSettings> is `true`, then only the specified additional constraints are evaluated when validation is invoked by calling <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. This can be useful for inspecting workflows for specific validation configurations. Note however that when the workflow is invoked, the validation logic configured in the workflow is evaluated and must pass for the workflow to successfully begin. For more information about invoking validation, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).

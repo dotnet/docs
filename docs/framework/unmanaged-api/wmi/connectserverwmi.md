@@ -2,10 +2,6 @@
 title: ConnectServerWmi function (Unmanaged API Reference)
 description: The ConnectServerWmi function uses DCOM to create a connection to a WMI namespace.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "ConnectServerWmi"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ConnectServerWmi function
 Creates a connection through DCOM to a WMI namespace on a specified computer.  

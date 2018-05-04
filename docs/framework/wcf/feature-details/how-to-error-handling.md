@@ -1,21 +1,7 @@
 ---
 title: "How To: Error Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: de566e39-9358-44ff-8244-780f6b799966
-caps.latest.revision: 5
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Error Handling
 This topic outlines the basic steps required to create a routing configuration that uses error handling. In this example, messages are routed to a destination endpoint. If a message cannot be delivered due to a network or communications-related failure (<xref:System.ServiceModel.CommunicationException>), the message is resent to an alternate endpoint.  

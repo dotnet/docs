@@ -1,24 +1,10 @@
 ---
 title: "How to: Access WCF Services with One-Way and Request-Reply Contracts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7e10d3a5-fcf4-4a4b-a8d6-92ee2c988b3b
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Access WCF Services with One-Way and Request-Reply Contracts
-The following procedures describe how to access a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.  
+The following procedures describe how to access a Windows Communication Foundation (WCF) service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.  
   
 ### To define the service  
   

@@ -1,17 +1,8 @@
 ---
 title: The Fixed Keyword (F#)
 description: Learn how you can 'pin' a local onto the stack to prevent collection with the F# 'fixed' keyword.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 5795ce1f-11bf-4798-9f1f-6e44ffa1477e 
 ---
-
 # The Fixed Keyword
 
 F# 4.1 introduces the `fixed` keyword, which allows you to "pin" a local onto the stack to prevent it from being collected or moved during garbage-collection.  It is used for low-level programming scenarios.

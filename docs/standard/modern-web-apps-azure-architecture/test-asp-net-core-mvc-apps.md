@@ -4,12 +4,6 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | Tes
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/08/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Test ASP.NET Core MVC Apps
 

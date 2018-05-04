@@ -1,10 +1,6 @@
 ---
 title: "Inheritance (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "abstract methods [C#]"
   - "abstract classes [C#]"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "virtual methods [C#]"
   - "C# language, inheritance"
 ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
-caps.latest.revision: 38
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Inheritance (C# Programming Guide)
 

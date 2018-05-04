@@ -1,14 +1,6 @@
 ---
 title: "Troubleshooting: Debugging Windows Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "debugging Windows Service applications"
   - "debugging [Visual Studio], Windows services"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "services, debugging"
   - "Windows Service applications, troubleshooting"
 ms.assetid: cf859d4c-f04c-4cb7-81e3-bc7de8bea190
-caps.latest.revision: 8
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # Troubleshooting: Debugging Windows Services
 When you debug a Windows service application, your service and the **Windows Service Manager** interact. The **Service Manager** starts your service by calling the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, and then waits 30 seconds for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method to return. If the method does not return in this time, the manager shows an error that the service cannot be started.  

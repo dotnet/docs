@@ -1,25 +1,14 @@
 ---
 title: "Client-Side UI Automation Provider Implementation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, client-side provider implementation"
   - "client-side UI Automation provider, implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
-caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Client-Side UI Automation Provider Implementation
 > [!NOTE]
@@ -31,9 +20,9 @@ ms.workload:
   
  However, older controls such as those in [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] do not directly support [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]. These controls are served instead by providers that exist in the client process and obtain information about controls using cross-process communication; for example, by monitoring windows messages to and from the controls. Such client-side providers are sometimes called proxies.  
   
- [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] supplies providers for standard [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winforms](../../../includes/tla2sharptla-winforms-md.md)] controls. In addition, a fallback provider gives partial [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] support to any control that is not served by another server-side provider or proxy but has a [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] implementation. All these providers are automatically loaded and available to client applications.  
+ [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] supplies providers for standard [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and Windows Forms controls. In addition, a fallback provider gives partial [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] support to any control that is not served by another server-side provider or proxy but has a [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] implementation. All these providers are automatically loaded and available to client applications.  
   
- For more information on support for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winforms](../../../includes/tla2sharptla-winforms-md.md)] controls, see [UI Automation Support for Standard Controls](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md).  
+ For more information on support for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and Windows Forms controls, see [UI Automation Support for Standard Controls](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md).  
   
  Applications can also register other client-side providers.  
   

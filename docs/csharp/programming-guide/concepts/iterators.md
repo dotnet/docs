@@ -1,14 +1,7 @@
 ---
 title: "Iterators (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Iterators (C#)
 An *iterator* can be used to step through collections such as lists and arrays.  

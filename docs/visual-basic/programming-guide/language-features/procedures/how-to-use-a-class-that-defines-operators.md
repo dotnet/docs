@@ -1,13 +1,6 @@
 ---
 title: "How to: Use a Class that Defines Operators (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "operator procedures [Visual Basic], calling"
   - "procedures [Visual Basic], operator"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "return values [Visual Basic], Operator procedures"
   - "operator overloading"
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Use a Class that Defines Operators (Visual Basic)
 If you are using a class or structure that defines its own operators, you can access those operators from Visual Basic.  

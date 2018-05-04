@@ -1,28 +1,16 @@
 ---
 title: "Security Considerations in WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF]"
   - "Windows Communication Foundation, security"
   - "WCF, security"
 ms.assetid: 42055ee0-6d0c-443d-9d89-788dfc345d6d
-caps.latest.revision: 49
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Considerations in WCF
-The topics in this section list various security-related items to consider when designing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application.  
+The topics in this section list various security-related items to consider when designing a Windows Communication Foundation (WCF) application.  
   
 ## In This Section  
  [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  

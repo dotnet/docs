@@ -1,14 +1,6 @@
 ---
 title: "Label Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "templates [WPF], Label"
   - "parts [WPF], Label"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Label [WPF], styles and templates"
   - "states [WPF], Label"
 ms.assetid: c1d5359a-8e4a-4925-ab3e-e92bf6694859
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Label Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Label> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

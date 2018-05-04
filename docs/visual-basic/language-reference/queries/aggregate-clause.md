@@ -1,12 +1,6 @@
 ---
 title: "Aggregate Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QueryAggregateIn"
   - "vb.QueryAggregate"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "Aggregate statement [Visual Basic]"
   - "queries [Visual Basic], Aggregate"
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Aggregate Clause (Visual Basic)
 Applies one or more aggregate functions to a collection.  

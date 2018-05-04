@@ -1,19 +1,9 @@
 ---
 title: "Processing the XML File (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML comments [Visual Basic], parsing [Visual Basic]"
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Processing the XML File (Visual Basic)
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information on how to tag your code, see [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] metadata/reflection item.  

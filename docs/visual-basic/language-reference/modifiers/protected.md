@@ -1,11 +1,6 @@
 ---
 title: "Protected (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Protected"
 helpviewer_keywords: 
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "Protected access modifier"
   - "Protected keyword [Visual Basic]"
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Protected (Visual Basic)
 Specifies that one or more declared programming elements are accessible only from within their own class or from a derived class.  

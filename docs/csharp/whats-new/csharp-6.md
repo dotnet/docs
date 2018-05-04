@@ -1,13 +1,7 @@
 ---
 title: What's New in C# 6 - C# Guide
-description: Learn the new features in C# Version 6    
-keywords: .NET, .NET Core
-author: BillWagner
+description: Learn the new features in C# Version 6
 ms.date: 09/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 ---
 

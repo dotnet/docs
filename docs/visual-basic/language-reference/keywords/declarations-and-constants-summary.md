@@ -1,19 +1,11 @@
 ---
 title: "Declarations and Constants Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "constants [Visual Basic]"
   - "declaring constants [Visual Basic], keywords"
   - "declarations [Visual Basic], Visual Basic language elements"
 ms.assetid: 79d64f3e-941d-4d39-bc5b-79f225d5be6e
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declarations and Constants Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

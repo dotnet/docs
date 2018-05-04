@@ -1,10 +1,6 @@
 ---
 title: "-doc (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "FileProperties.BuildAction"
   - "/doc"
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "-doc compiler option [C#]"
   - "/doc compiler option [C#]"
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -doc (C# Compiler Options)
 The **-doc** option allows you to place documentation comments in an XML file.  

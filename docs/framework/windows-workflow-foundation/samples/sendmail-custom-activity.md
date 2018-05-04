@@ -1,19 +1,7 @@
 ---
 title: "SendMail Custom Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SendMail Custom Activity
 This sample demonstrates how to create a custom activity that derives from <xref:System.Activities.AsyncCodeActivity> to send mail using SMTP for use within a workflow application. The custom activity uses the capabilities of <xref:System.Net.Mail.SmtpClient> to send email asynchronously and to send mail with authentication. It also provides some end-user features like test mode, token replacement, file templates, and test drop path.  
@@ -111,7 +99,7 @@ new SendMail
 ## Set-Up Instructions  
  Access to a SMTP server is required for this sample.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting up a SMTP server, see the following links.  
+ For more information about setting up a SMTP server, see the following links.  
   
 -   [Microsoft Technet](http://go.microsoft.com/fwlink/?LinkId=166060)  
   
@@ -142,6 +130,6 @@ new SendMail
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`

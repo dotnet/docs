@@ -1,10 +1,6 @@
 ---
 title: "extern (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "extern_CSharpKeyword"
   - "extern"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "DllImport attribute"
   - "extern keyword [C#]"
 ms.assetid: 9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # extern (C# Reference)
 The `extern` modifier is used to declare a method that is implemented externally. A common use of the `extern` modifier is with the `DllImport` attribute when you are using Interop services to call into unmanaged code. In this case, the method must also be declared as `static`, as shown in the following example:  

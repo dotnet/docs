@@ -1,19 +1,7 @@
 ---
 title: "2027 - CacheRootMetadataStart"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1421a473-c99e-45bb-b1ab-6a9f8da6fcd2
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 2027 - CacheRootMetadataStart
 ## Properties  

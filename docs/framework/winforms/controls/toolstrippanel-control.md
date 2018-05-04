@@ -1,14 +1,6 @@
 ---
 title: "ToolStripPanel Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ToolStripPanel control [Windows Forms]"
   - "horizontal space"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "tool area [Windows Forms]"
   - "vertical space"
 ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ToolStripPanel Control
 `ToolStripPanel` control enables the sharing of horizontal or vertical space within the tool area when docked and arranging of <xref:System.Windows.Forms.ToolStrip> controls when you do not need the four panels and central panel of a <xref:System.Windows.Forms.ToolStripContainer>.  

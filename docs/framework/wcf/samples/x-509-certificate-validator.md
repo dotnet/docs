@@ -1,21 +1,7 @@
 ---
 title: "X.509 Certificate Validator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # X.509 Certificate Validator
 This sample demonstrates how to implement a custom X.509 Certificate Validator. This is useful in cases where none of the built-in X.509 Certificate Validation modes is appropriate for the requirements of the application. This sample shows a service that has a custom validator that accepts self-issued certificates. The client uses such a certificate to authenticate to the service.  
@@ -362,6 +348,6 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 1.  Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server and client certificates from the certificate store.  
   
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across computers. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+>  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## See Also

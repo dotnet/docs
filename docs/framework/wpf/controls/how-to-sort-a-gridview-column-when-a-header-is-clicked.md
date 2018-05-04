@@ -1,14 +1,6 @@
 ---
 title: "How to: Sort a GridView Column When a Header Is Clicked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "ListView controls [WPF], sorting GridView columns"
   - "GridView controls [WPF], ListView control"
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Sort a GridView Column When a Header Is Clicked
 This example shows how to create a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView> view mode and sorts the data content when a user clicks a column header.  

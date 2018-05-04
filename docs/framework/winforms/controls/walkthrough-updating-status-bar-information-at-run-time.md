@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Updating Status Bar Information at Run Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], refreshing panels"
   - "panels [Windows Forms], refreshing status bar"
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Updating Status Bar Information at Run Time
 > [!IMPORTANT]

@@ -1,10 +1,6 @@
 ---
 title: "-delaysign (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/delaysign"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "delaysign compiler option [C#]"
   - "/delaysign compiler option [C#]"
 ms.assetid: bcb058eb-2933-4e7f-b356-5c941db4de75
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -delaysign (C# Compiler Options)
 This option causes the compiler to reserve space in the output file so that a digital signature can be added later.  

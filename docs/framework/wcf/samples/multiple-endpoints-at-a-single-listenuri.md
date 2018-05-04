@@ -1,21 +1,7 @@
 ---
 title: "Multiple Endpoints at a Single ListenUri"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 911ffad4-4d47-4430-b7c2-79192ce6bcbd
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Multiple Endpoints at a Single ListenUri
 This sample demonstrates a service that hosts multiple endpoints at a single `ListenUri`. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
@@ -47,7 +33,7 @@ This sample demonstrates a service that hosts multiple endpoints at a single `Li
   
  All three endpoints are hosted at the same `ListenUri` and use the same `binding` - endpoints at the same `ListenUri` must have the same binding, because they are sharing a single channel stack that listens for messages at that physical address on the machine. The `address` of each endpoint is a URN; though typically addresses represent physical locations, in fact the address can be any kind of URI, because the address is used for matching and filtering purposes as is demonstrated in this sample.  
   
- Because all three endpoints share the same `ListenUri`, when a message arrives there, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] must decide which endpoint the message is destined for. Each endpoint has a message filter that is comprised of two parts: the address filter and the contract filter. The address filter matches the `To` of the SOAP message to the address of the service endpoint. For example, only messages addressed `To "Urn:OtherEcho"` are candidates for the third endpoint of this service. The contract filter matches the Actions associated with the operations of a particular contract. For example, messages with the action of `IEcho`. `Echo` matches the contract filters of both the second and third endpoints of this service, because both of those endpoints host the `IEcho` contract.  
+ Because all three endpoints share the same `ListenUri`, when a message arrives there, Windows Communication Foundation (WCF) must decide which endpoint the message is destined for. Each endpoint has a message filter that is comprised of two parts: the address filter and the contract filter. The address filter matches the `To` of the SOAP message to the address of the service endpoint. For example, only messages addressed `To "Urn:OtherEcho"` are candidates for the third endpoint of this service. The contract filter matches the Actions associated with the operations of a particular contract. For example, messages with the action of `IEcho`. `Echo` matches the contract filters of both the second and third endpoints of this service, because both of those endpoints host the `IEcho` contract.  
   
  Thus the combination of address filter and contract filter makes it possible to route each message that arrives at this service's `ListenUri` to the correct endpoint. The third endpoint is differentiated from the other two because it accepts messages sent to a different address from the other endpoints. The first and second endpoints are differentiated from each other based on their contracts (the Action of the incoming message).  
   
@@ -83,7 +69,7 @@ calcClient.ChannelFactory.Endpoint.Behaviors.Add(
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleEndpointsSingleUri`  
   

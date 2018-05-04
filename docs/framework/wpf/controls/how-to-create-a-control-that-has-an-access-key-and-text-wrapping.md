@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Control That Has an Access Key and Text Wrapping"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "access keys [WPF], control for"
   - "controls [WPF], text wrapping"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "controls [WPF], access keys"
   - "text wrapping [WPF]"
 ms.assetid: 205099d9-2551-4302-a25e-a15af9f67e04
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Control That Has an Access Key and Text Wrapping
 This example shows how to create a control that has an access key and supports text wrapping. The example uses a <xref:System.Windows.Controls.Label> control to illustrate these concepts.  

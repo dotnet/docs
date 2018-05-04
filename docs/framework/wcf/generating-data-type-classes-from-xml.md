@@ -1,21 +1,7 @@
 ---
 title: "Generating Data Type Classes from XML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Generating Data Type Classes from XML
 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] includes a new feature to generate data type classes from XML. This topic describes how to automatically generate data types for the .NET Blog RSS feed.  

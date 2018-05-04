@@ -1,13 +1,6 @@
 ---
 title: "Basics of .NET Framework File I/O and the File System (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "file access, file I/O in Visual Basic"
   - "file attributes, determining"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "streams"
   - "streams, definition"
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Basics of .NET Framework File I/O and the File System (Visual Basic)
 Classes in the <xref:System.IO> namespace are used to work with drives, files, and directories.  

@@ -1,14 +1,6 @@
 ---
 title: "Add-ins and Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "extensibility [.NET Framework], add-ins"
   - "add-ins [.NET Framework]"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - ".NET Framework, extensibility"
   - "versioning [.NET Framework], add-ins"
 ms.assetid: 8dd45b02-7218-40f9-857d-40d7b98b850b
-caps.latest.revision: 42
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Add-ins and Extensibility
 <a name="top"></a> Add-ins provide extended features or services for a host application. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides a programming model that developers can use to develop add-ins and activate them in their host application. The model achieves this by constructing a communication pipeline between the host and the add-in. The model is implemented by using the types in the <xref:System.AddIn>, <xref:System.AddIn.Hosting>, <xref:System.AddIn.Pipeline>, and <xref:System.AddIn.Contract> namespaces.  
@@ -111,7 +99,7 @@ Add-in pipeline
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)|Describes the communication pipeline of segments from the host application to the add-in. Provides code examples in walkthrough topics that describe how to construct the pipeline and how to deploy segments to the pipeline in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].|  
+|[Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)|Describes the communication pipeline of segments from the host application to the add-in. Provides code examples in walkthrough topics that describe how to construct the pipeline and how to deploy segments to the pipeline in Visual Studio.|  
 |[Application Domains and Assemblies](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)|Describes the relationship between application domains, which provide an isolation boundary for security, reliability, and versioning, and assemblies.|  
   
  [Back to top](#top)  

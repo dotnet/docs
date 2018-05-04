@@ -1,14 +1,6 @@
 ---
 title: "EBindPolicyLevels Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "EBindPolicyLevels"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EBindPolicyLevels Enumeration
 Provides flags to specify the level at which to apply or modify assembly policy.  

@@ -1,16 +1,9 @@
 ---
 title: Designing a DDD-oriented microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing a DDD-oriented microservice
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/06/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Designing a DDD-oriented microservice
 

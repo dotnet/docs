@@ -1,16 +1,9 @@
 ---
 title: "false Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "false operator keyword [C#]"
 ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # false Operator (C# Reference)
 Returns the [bool](../../../csharp/language-reference/keywords/bool.md) value `true` to indicate that an operand is `false` and returns `false` otherwise.  

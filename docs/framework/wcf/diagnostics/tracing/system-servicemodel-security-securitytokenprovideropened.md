@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecurityTokenProviderOpened"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b8222922-35d9-4361-8bc0-d360164a9266
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecurityTokenProviderOpened
 System.ServiceModel.Security.SecurityTokenProviderOpened  

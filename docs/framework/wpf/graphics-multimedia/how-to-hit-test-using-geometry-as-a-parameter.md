@@ -1,14 +1,6 @@
 ---
 title: "How to: Hit Test Using Geometry as a Parameter"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "visual objects [WPF], hit tests on"
   - "Geometry objects [WPF], hit tests on visual objects [WPF]"
 ms.assetid: 6c8bdbf2-19e0-4fbb-bf89-c1252b2ebc61
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Hit Test Using Geometry as a Parameter
 This example shows how to perform a hit test on a visual object using a <xref:System.Windows.Media.Geometry> as a hit test parameter.  

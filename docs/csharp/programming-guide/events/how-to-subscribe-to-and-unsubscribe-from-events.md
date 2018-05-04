@@ -1,18 +1,11 @@
 ---
 title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "event handlers [C#], creating"
   - "Code Editor, event handlers"
   - "events [C#], creating using the IDE"
 ms.assetid: 6319f39f-282c-4173-8a62-6c4657cf51cd
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)
 You subscribe to an event that is published by another class when you want to write custom code that is called when that event is raised. For example, you might subscribe to a button's `click` event in order to make your application do something useful when the user clicks the button.  

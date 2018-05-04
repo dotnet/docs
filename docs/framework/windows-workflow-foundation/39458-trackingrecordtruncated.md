@@ -1,19 +1,7 @@
 ---
 title: "39458 - TrackingRecordTruncated"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 39458 - TrackingRecordTruncated
 ## Properties  

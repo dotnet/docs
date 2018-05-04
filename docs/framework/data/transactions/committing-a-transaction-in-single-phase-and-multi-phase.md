@@ -1,22 +1,10 @@
 ---
 title: "Committing a Transaction in Single-Phase and Multi-Phase"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 694ea153-e4db-41ae-96ac-9ac66dcb69a9
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Committing a Transaction in Single-Phase and Multi-Phase
 Each resource used in a transaction is managed by a resource manager (RM), whose actions are coordinated by a transaction manager (TM). The [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md) topic discusses how a resource (or multiple resources) can be enlisted in a transaction. This topic discusses how transaction commitment can be coordinated among enlisted resources.  

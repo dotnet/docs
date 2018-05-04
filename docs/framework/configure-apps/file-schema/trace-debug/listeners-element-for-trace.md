@@ -1,26 +1,15 @@
 ---
 title: "&lt;listeners&gt; Element for &lt;trace&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners"
 helpviewer_keywords: 
   - "<listeners> element"
   - "listeners element"
 ms.assetid: 1394c2c3-6304-46db-87c1-8e8b16f5ad5b
-caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;listeners&gt; Element for &lt;trace&gt;
 Specifies a listener that collects, stores, and routes messages. Listeners direct the tracing output to an appropriate target.  

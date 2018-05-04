@@ -1,18 +1,7 @@
 ---
 title: "How to: Serialize Using XmlSerializer (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cace24eb-0f43-4016-8e4b-199e5ef73a1c
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Serialize Using XmlSerializer (Visual Basic)
 This topic shows an example that serializes and deserializes using <xref:System.Xml.Serialization.XmlSerializer>.  

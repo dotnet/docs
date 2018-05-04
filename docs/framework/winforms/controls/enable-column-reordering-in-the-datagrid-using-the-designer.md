@@ -1,26 +1,12 @@
 ---
 title: "How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], column order"
   - "Windows Forms, columns"
   - "columns [Windows Forms], reordering"
   - "data [Windows Forms], displaying"
 ms.assetid: d82bd69c-6799-4439-a32c-91139c5901d1
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer
 When viewing data displayed in a Windows Forms <xref:System.Windows.Forms.DataGridView> control, users sometimes want to compare the values in specific columns. This can be inconvenient if the columns are widely separated in the control, especially if users must scroll back and forth horizontally in order to see all the columns they are interested in. You can make the task of comparing column values easier by enabling your users to reorder the columns. When you enable column reordering, users can move a column to a new position by dragging the column header with the mouse.  

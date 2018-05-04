@@ -1,14 +1,6 @@
 ---
 title: "Open and Closed Curves in GDI+"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "curves [Windows Forms], drawing"
   - "curves"
 ms.assetid: 08d2cc9a-dc9d-4eed-bcbb-2c8e2ca5d3ae
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Open and Closed Curves in GDI+
 The following illustration shows two curves: one open and one closed.  

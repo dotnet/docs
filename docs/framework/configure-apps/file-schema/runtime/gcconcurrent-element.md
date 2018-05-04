@@ -1,14 +1,6 @@
 ---
 title: "&lt;gcConcurrent&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#gcConcurrent"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "gcConcurrent element"
   - "<gcConcurrent> element"
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;gcConcurrent&gt; Element
 Specifies whether the common language runtime runs garbage collection on a separate thread.  

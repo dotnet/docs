@@ -1,17 +1,8 @@
 ---
 title: Reference Cells (F#)
 description: Learn how F# reference cells are storage locations that enable you to create mutable values with reference semantics.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 09a0b221-ea21-45c4-bae8-5e4a339750c4
 ---
-
 # Reference Cells
 
 *Reference cells* are storage locations that enable you to create mutable values with reference semantics.

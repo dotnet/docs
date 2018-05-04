@@ -1,24 +1,10 @@
 ---
 title: "How to: Use the Master-Detail Pattern with Hierarchical Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data binding [WPF], Master-Detail data paradigm"
   - "Master-Detail data paradigm"
 ms.assetid: 11429b9e-058d-4084-bfb6-2cf209c8ddf7
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use the Master-Detail Pattern with Hierarchical Data
 This example shows how to implement the master-detail scenario.  

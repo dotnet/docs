@@ -1,18 +1,11 @@
 ---
 title: "Events (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes [C#], events"
   - "C# language, events"
   - "events [C#]"
 ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
-caps.latest.revision: 43
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Events (C# Programming Guide)
 Events enable a [class](../../../csharp/language-reference/keywords/class.md) or object to notify other classes or objects when something of interest occurs. The class that sends (or *raises*) the event is called the *publisher* and the classes that receive (or *handle*) the event are called *subscribers*.  

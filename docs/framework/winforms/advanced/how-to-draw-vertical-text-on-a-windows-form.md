@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw Vertical Text on a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,12 +14,6 @@ helpviewer_keywords:
   - "text [Windows Forms], drawing"
   - "text [Windows Forms], vertical text"
 ms.assetid: 717a6131-00f6-4373-b574-9894e8317799
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw Vertical Text on a Windows Form
 The following code example shows how to draw vertical text on a form by using the <xref:System.Drawing.Graphics.DrawString%2A> method of <xref:System.Drawing.Graphics>.  

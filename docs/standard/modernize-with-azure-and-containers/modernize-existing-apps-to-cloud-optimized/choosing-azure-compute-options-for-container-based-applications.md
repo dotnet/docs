@@ -12,7 +12,7 @@ ms.workload:
 ---
 # Choosing Azure compute platforms for container-based applications
 
-As you have noticed after reading the previous sections, Azure is an open cloud that offers multiple choices. That is great as you can use the best fit for your needs, however, it also surfaces questions about what product/technology you should use for your containerized applications.
+As you have noticed after reading the previous sections, Azure is an open cloud that offers multiple choices. You can use the best fit for your needs, however, it also surfaces questions about what product/technology you should use for your containerized applications.
 
 As a *by-default* recommendation, the following is the main criteria recommended in this guidance:
 
@@ -21,13 +21,13 @@ As a *by-default* recommendation, the following is the main criteria recommended
   - **Linux microservices:** Choose AKS/Kubernetes
   - **Windows microservices:** Choose Service Fabric
   - **Serverless functions & event handlers:** Choose Azure Functions
-  - **Large scale Batch:** Choose Azure Batch 
+  - **Large-scale Batch:** Choose Azure Batch 
 
 However, this recommendation should be taken with a pinch of salt, as the product’s selection will depend on your specific application’s needs and characteristics. Not all applications are the same even when initially they might look similar types. 
 
-After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have an initial guidance from where you can start evaluating and testing based on certain priority.
+After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-In the next figure you can analyze a more global while detailed decision table.
+In the next figure, you can analyze a more global while detailed decision table.
 
 ![](./media/image8.5.png)
 

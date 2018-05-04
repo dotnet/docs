@@ -9,13 +9,13 @@ ms.date: 04/29/2018
 
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
-However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don’t need to re-architect your application.
+However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don’t need to rearchitect your application.
 
 ## What are containers? (Linux or Windows)
 
 Containers are a way to wrap up an application into its own isolated package. In its container, the application is not affected by applications or processes that exist outside of the container. Everything the application depends on to run successfully as a process is inside the container. Wherever the container might move, the requirements of the application will always be met, in terms of direct dependencies, because it is bundled with everything that it needs to run (library dependencies, runtimes, and so on).
 
-The main characteristic of a container is that it makes the environment the same across different deployments because the container itself comes with all the dependencies it needs. This means that you can debug the application on your machine, and then deploy it to another machine, with the same environment guaranteed.
+The main characteristic of a container is that it makes the environment the same across different deployments because the container itself comes with all the dependencies it needs. You can debug the application on your machine, and then deploy it to another machine, with the same environment guaranteed.
 
 A container is an instance of a container image. A container image is a way to package an app or service (like a snapshot), and then deploy it in a reliable and reproducible way. You could say that Docker is not only a technology-it's also a philosophy and a process.
 
@@ -33,7 +33,7 @@ In Windows Containers, the process of packaging applications is fully automated.
 
 A large number of organizations are containerizing existing monolithic applications for the following reasons:
 
--   **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can simply say, "It runs as a container, so it will run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
+-   **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can say, "It runs as a container, so it will run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
 
 -   **Cost reductions**. Containers lead to lower costs, either by the consolidation and removal of existing hardware, or from running applications at a higher density per unit of hardware.
 
@@ -61,7 +61,7 @@ In the near future, mixed environments that have both Linux and Windows containe
 
 The benefits of using Windows Containers are fundamentally the same benefits you get from containers in general. Using Windows Containers is about greatly improving agility, portability, and control.
 
-When we talk about existing .NET applications, we mostly mean traditional applications that were created by using the .NET Framework. For example, they might be traditional ASP.NET web applications-they don't use .NET Core, which is newer and runs cross-platform on Linux, Windows, and MacOS.
+Existing .NET applications refer to those applications that were created using the .NET Framework. For example, they might be traditional ASP.NET web applications-they don't use .NET Core, which is newer and runs cross-platform on Linux, Windows, and MacOS.
 
 The main dependency in the .NET Framework is Windows. It also has secondary dependencies, like IIS, and System.Web in traditional ASP.NET.
 
@@ -92,7 +92,7 @@ When you add the image name to your Dockerfile file, you can select the operatin
 > | **microsoft/dotnet-framework:4.x-windowsservercore** | .NET Framework 4.x on Windows Server Core |
 > | **microsoft/aspnet:4.x-windowsservercore** | .NET Framework 4.x with additional ASP.NET customization, on Windows Server Core |
 
-For .NET Core (cross-platform for Linux and Windows), the tags would look like this:
+For .NET Core (cross-platform for Linux and Windows), the tags would look like the following:
 
 > | **Tag** | **System and version**
 > |---|---|
@@ -132,19 +132,19 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 ## The container ecosystem in Azure
 
-In previous sections it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
-However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides a very open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs you should choose one or another Azure product.
+In previous sections, it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
+However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs, you should choose one or another Azure product.
 
 ![](./media/image7.5.png)
 
 > **Figure 4-7.5.** The container ecosystem in Azure
 
-From the container ecosystem in Azure, the products supporting containers that are considered infrastructure are the following:
+From the container ecosystem in Azure, the following products supporting containers that are considered infrastructure:
 -   **Azure Container Instances (ACI)**
 -   **Azure Virtual Machines** (With container's support)
 -   **Azure Virtual Machine Scale Sets** (With container's support)
 
-From those three, ACI provides a great benefit which is the fact that you don't need to maintain the underlaying OS, no need for you to upgrade/path, etc. but still ACI is positioned in the infrastructure level, as better explained in the upcoming sections of this document.
+From those three, ACI provides a great benefit, which is the fact that you don't need to maintain the underlaying OS, no need for you to upgrade/path, etc. but still ACI is positioned in the infrastructure level, as better explained in the upcoming sections of this document.
 
 The products in Azure supporting containers that are at the same time positioned more in the PaaS (Platform as a Service) level are:
 
@@ -155,9 +155,9 @@ The products in Azure supporting containers that are at the same time positioned
 
 Then, Azure Container Registry is a high scalable container registry hosted in Azure that you can use from all the previous products when registering and deploying your custom container images.
 
-In addition, from your containers, you can consume other managed services in Azure like Azure SQL Database, Azure Redis cache, Azure Cosmos DB, etc. plus there are third party solutions/platforms available in Azure Marketplace like Cloud Foundry and OpenShift where you can also use containers within Azure. 
+In addition, from your containers, you can consume other managed services in Azure like Azure SQL Database, Azure Redis cache, Azure Cosmos DB, etc. plus there are third-party solutions/platforms available in Azure Marketplace like Cloud Foundry and OpenShift where you can also use containers within Azure. 
 
-In the next sections you can explore Microsoft's recommendations on when to use each of those Azure products and solutions specifically when targeting Windows Containers.
+In the next sections, you can explore Microsoft's recommendations on when to use each of those Azure products and solutions specifically when targeting Windows Containers.
 
 
 >[!div class="step-by-step"]

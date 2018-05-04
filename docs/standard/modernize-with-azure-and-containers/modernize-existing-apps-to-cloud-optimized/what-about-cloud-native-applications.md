@@ -20,7 +20,7 @@ Figure 4-3 positions Cloud-Native apps in the application modernization maturity
 
 > **Figure 4-3.** Positioning Cloud-Native applications
 
-The Cloud-Native modernization maturity level usually requires new development investments. Moving to the Cloud- Native level typically is driven by business need to modernize applications as much as possible to drastically improve scale in large applications by creating autonomous subsystems (microservices) that can be deployed and scale independently from other areas of the application while lowering costs in the long term and increase evolution agility of those autonomous app’s parts which provide significant compete advantages. 
+The Cloud-Native modernization maturity level usually requires new development investments. Moving to the Cloud- Native level typically is driven by business need to modernize applications as much as possible to drastically improve scale in large applications by creating autonomous subsystems (microservices) that can be deployed and scale independently from other areas of the application while lowering costs in the long term and increase evolution agility of those autonomous app’s parts that provide significant compete advantages. 
 
 The main pillars of [Cloud-Native](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications) applications are based on microservices architecture approaches, which can evolve with agility and scale to limits that would be difficult to achieve in a monolithic architecture deployed to either on-premises or cloud environment.
 
@@ -44,7 +44,7 @@ The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) is a primar
 
 For a sample definition and for more information about the characteristics of cloud-native applications, see the Gartner article [How to architect and design cloud-native applications](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications). For specific guidance from Microsoft about how to implement a cloud-native application, see [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
 
-The most important factor to consider if you migrate a full application to the [cloud-native](https://www.gartner.com/doc/3738117/comparing-leading-cloudnative-application-platforms) model is that you must re-architect to a microservices-based architecture. This clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This is an incremental approach that is the best option for some scenarios.
+The most important factor to consider if you migrate a full application to the [cloud-native](https://www.gartner.com/doc/3738117/comparing-leading-cloudnative-application-platforms) model is that you must rearchitect to a microservices-based architecture. This clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This is an incremental approach that is the best option for some scenarios.
 
 ## What about microservices? 
 
@@ -64,7 +64,7 @@ Because of the complexity of a microservices architecture, only specific scenari
 
 As a final note, even at the risk of being repetitive about this concept, you shouldn't look at using microservices in your applications as "all-in or nothing at all*.*" You can extend and evolve existing monolithic applications by adding new, small scenarios based on microservices. You don't need to start from scratch to start working with a microservices architecture approach. In fact, we recommend that you evolve from using an existing monolithic or N-Tier application by adding new scenarios. Eventually, you can break down the application into autonomous components or microservices. You can start evolving your monolithic applications in a microservices direction, step by step.
 
-In any case, the rest of this present guidance focuses most of all on "no microservices-based apps" because this guidance is mainly targeting the modernization of existing apps which usually have monolithic or N-Tier architectures.
+In any case, the rest of this present guidance focuses most of all on "no microservices-based apps" because this guidance is mainly targeting the modernization of existing apps that usually have monolithic or N-Tier architectures.
 
 
 >[!div class="step-by-step"]

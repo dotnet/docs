@@ -33,7 +33,7 @@
 |<xref:System.Windows.DataFormats.Html>|"HTML Format"|Specifies the [!INCLUDE[TLA#tla_html](~/includes/tlasharptla-html-md.md)] data format.|  
 |<xref:System.Windows.DataFormats.Locale>|"Locale"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] locale (culture) data format.|  
 |<xref:System.Windows.DataFormats.MetafilePicture>|"MetaFilePict"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] metafile picture data format.|  
-|<xref:System.Windows.DataFormats.OemText>|"OEMText"|Specifies the standard [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] [!INCLUDE[TLA#tla_oem](~/includes/tlasharptla-oem-md.md)] text data format.|  
+|<xref:System.Windows.DataFormats.OemText>|"OEMText"|Specifies the standard [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] OEM text data format.|  
 |<xref:System.Windows.DataFormats.Palette>|"Palette"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] palette data format.|  
 |<xref:System.Windows.DataFormats.PenData>|"PenData"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] pen data format.|  
 |<xref:System.Windows.DataFormats.Riff>|"RiffAudio"|Specifies the [!INCLUDE[TLA#tla_riff](~/includes/tlasharptla-riff-md.md)] audio data format.|  
@@ -432,7 +432,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the standard [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] [!INCLUDE[TLA#tla_oem](~/includes/tlasharptla-oem-md.md)] text data format.</summary>
+        <summary>Specifies the standard [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] OEM text data format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

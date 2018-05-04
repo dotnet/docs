@@ -74,21 +74,21 @@ Beginning with C# 7.3, you can attach attributes to the backing field of an auto
 
 The next step is to add the serialization code to the LoanApp application. In order to serialize the class and write it to a file, you use the <xref:System.IO> and <xref:System.Runtime.Serialization.Formatters.Binary> namespaces. To avoid typing the fully qualified names, you can add references to the necessary class libraries as shown in the following code:
 
-[!code-csharp[Adding namespaces for serialization](../../../../../samples/csharp/serialization/Program.cs#4)]
+[!code-csharp[Adding namespaces for serialization](../../../../../samples/csharp/serialization/Program.cs#3)]
 
 The next step is to add code to deserialize the object from the file when the object is created. Add a constant to the class for the serialized data's file name as shown in the following code:
 
-[!code-csharp[Define the name of the saved file](../../../../../samples/csharp/serialization/Program.cs#5)]
+[!code-csharp[Define the name of the saved file](../../../../../samples/csharp/serialization/Program.cs#4)]
 
 Next, add the following code after the line that creates the `TestLoan` object:
 
-[!code-csharp[Read from a file if it exists](../../../../../samples/csharp/serialization/Program.cs#6)]
+[!code-csharp[Read from a file if it exists](../../../../../samples/csharp/serialization/Program.cs#5)]
 
 You first must check that the file exists. If it exists, create a <xref:System.IO.Stream> class to read the binary file and a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to translate the file. You also need to convert from the stream type to the Loan object type.
 
 Next you must add code to serialize the class to a file. Add the following code after the existing code in the `Main` method:
 
-[!code-csharp[Save the existing Loan object](../../../../../samples/csharp/serialization/Program.cs#7)]
+[!code-csharp[Save the existing Loan object](../../../../../samples/csharp/serialization/Program.cs#6)]
 
 At this point, you can again build and run the application. The first time it runs, notice that the interest rates starts at 7.5, and then changes to 7.1. Close the application and then run it again. Now, the application prints the message that it has read the saved file, and the interest rate is 7.1 even before the code that changes it.
 

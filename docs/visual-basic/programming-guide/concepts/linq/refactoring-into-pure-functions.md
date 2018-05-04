@@ -1,19 +1,7 @@
 ---
 title: "Refactoring Into Pure Functions (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 99e7d27b-a3ff-4577-bdb2-5a8278d6d7af
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Refactoring Into Pure Functions (Visual Basic)
 An important aspect of pure functional transformations is learning how to refactor code using pure functions.  

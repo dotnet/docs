@@ -4,12 +4,6 @@ description: Learn how you can extend the Command-line Interface (CLI) tools.
 author: blackdwarf
 ms.author: mairaw
 ms.date: 04/12/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 
 # .NET Core CLI tools extensibility model

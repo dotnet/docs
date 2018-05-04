@@ -4,13 +4,8 @@ description: Learn how to build a class library written in Visual Basic using Vi
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: devlang-vb
 dev_langs: 
   - "vb"
-ms.workload: 
-  - dotnetcore
 ---
 # Building a class library with Visual Basic and .NET Core in Visual Studio 2017
 

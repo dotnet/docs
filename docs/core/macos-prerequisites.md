@@ -4,11 +4,6 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 author: guardrex
 ms.author: mairaw
 ms.date: 09/27/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Prerequisites for .NET Core on macOS
 

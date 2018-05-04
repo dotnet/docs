@@ -4,12 +4,7 @@ description: A step-by-step tutorial showing how to get started with .NET Core o
 author: cartermp
 ms.author: mairaw
 ms.date: 03/08/2017
-ms.topic: get-started-article
-ms.prod: dotnet-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
 

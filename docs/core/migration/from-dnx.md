@@ -4,11 +4,6 @@ description: Migrate from using DNX tooling to .NET Core CLI tooling.
 author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Migrating from DNX to .NET Core CLI (project.json)
 

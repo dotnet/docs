@@ -4,11 +4,6 @@ description: .NET Core project.json to csproj migration
 author: blackdwarf
 ms.author: mairaw
 ms.date: 07/19/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Migrating .NET Core projects to the .csproj format
 

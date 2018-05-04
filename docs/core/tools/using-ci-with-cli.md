@@ -4,12 +4,6 @@ description: Information on the usage of the .NET Core SDK and its tools on the 
 author: guardrex
 ms.author: mairaw
 ms.date: 05/18/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Using .NET Core SDK and tools in Continuous Integration (CI)
 

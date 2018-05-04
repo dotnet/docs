@@ -4,11 +4,6 @@ description: Learn how to build .NET Core and the .NET Core CLI from the source 
 author: bleroy
 ms.author: mairaw
 ms.date: 06/28/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 
 # Build .NET Core from source

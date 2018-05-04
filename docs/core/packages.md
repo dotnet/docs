@@ -4,11 +4,6 @@ description: Learn terminology for packages, metapackages, and frameworks.
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Packages, metapackages and frameworks
 

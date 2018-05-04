@@ -4,11 +4,6 @@ description: Reduce package dependencies when authoring project.json-based libra
 author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Reducing Package Dependencies with project.json
 

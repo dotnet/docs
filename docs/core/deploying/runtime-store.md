@@ -4,11 +4,6 @@ description: This topic explains the runtime package store and target manifests 
 author: bleroy
 ms.author: mairaw
 ms.date: 08/12/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Runtime package store
 

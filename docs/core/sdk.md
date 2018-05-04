@@ -4,12 +4,7 @@ description: Find out about the .NET Core SDK, which is a set of libraries and t
 author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core SDK Overview 
 

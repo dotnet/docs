@@ -4,12 +4,6 @@ description: Learn how to create libraries for .NET using .NET Core CLI tools.
 author: cartermp
 ms.author: mairaw
 ms.date: 05/01/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Developing Libraries with Cross Platform Tools
 

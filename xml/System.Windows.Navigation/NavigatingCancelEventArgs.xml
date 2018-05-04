@@ -295,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.WebRequest?displayProperty=nameWithType> is an abstract base class that encapsulates a Web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=nameWithType> and extends it with protocol specific state and behavior, including:  
+ <xref:System.Net.WebRequest?displayProperty=nameWithType> is an abstract base class that encapsulates a Web request, and is protocol agnostic. For each common protocol, the .NET Framework includes a class that derives from <xref:System.Net.WebRequest?displayProperty=nameWithType> and extends it with protocol specific state and behavior, including:  
   
 -   <xref:System.IO.Packaging.PackWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `pack://` scheme to request application data files (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   

@@ -185,7 +185,7 @@ expose data members of an object.
 ### Attaching attributes to auto-implemented properties
 
 Beginning with C# 7.3, field attributes can be attached to the compiler
-generate backing field in auto-implemented properties. For example, consider
+generated backing field in auto-implemented properties. For example, consider
 a revision to the `Person` class that adds a unique integer `Id` property.
 You write the`Id` property using an auto-implemented property, but your design does
 not call for persisting the `Id` property. The <xref:System.NonSerializedAttribute>

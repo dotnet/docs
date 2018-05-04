@@ -4,11 +4,26 @@ ms.date: 04/25/2018
 ---
 # AttributeUsage (C#)
 
-Determines how a custom attribute class can be used. <xref:System.AttributeUsageAttribute> is an attribute you apply to custom attribute definitions. It controls how the new attribute can be applied. The default settings look like the following example when applied explicitly:
+Determines how a custom attribute class can be used. <xref:System.AttributeUsageAttribute> is an attribute you apply to custom attribute definitions. The `AttributeUsage` attribute enables you to control:
+
+- Which program elements attribute may be applied to. Unless you restrict is usage, an attribute may be applied to any of the following program elements:
+  - assembly
+  - module
+  - field
+  - event
+  - method
+  - param
+  - property
+  - return
+  - type
+- Whether an attribute can be applied to a single program element multiple times.
+- Whether attributes are inherited by derived classes.
+
+The default settings look like the following example when applied explicitly:
 
 [!code-csharp[Define a new attribute](../../../../../samples/snippets/csharp/attributes/NewAttribute.cs#1)]
 
-In this example, the `NewAttribute` class can be applied to any attribute-able code entity. But it can be applied only once to each entity. The attribute is inherited by derived classes when applied to a base class.
+In this example, the `NewAttribute` class can be applied to any supported program element. But it can be applied only once to each entity. The attribute is inherited by derived classes when applied to a base class.
 
 The <xref:System.AttributeUsageAttribute.AllowMultiple> and <xref:System.AttributeUsageAttribute.Inherited> arguments are optional, so the following code has the same effect:
 

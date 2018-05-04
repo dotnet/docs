@@ -9,7 +9,7 @@ You can use serialization to persist an object's data between instances, which e
 In this walkthrough, you will create a basic `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.
 
 > [!IMPORTANT]
-> This example creates a new file if the file does not already exist. If an application must create a file, that application must have `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it's more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it's more secure to write data to user folders than to the root folder or the Program Files folder.
+> This example creates a new file if the file does not already exist. If an application must create a file, that application must have `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it's more secure to create the file during deployment and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it's more secure to write data to user folders than to the root folder or the Program Files folder.
 
 > [!IMPORTANT]
 > This example stores data in a binary format file. These formats should not be used for sensitive data, such as passwords or credit-card information.
@@ -72,7 +72,7 @@ Beginning with C# 7.3, you can attach attributes to the backing field of an auto
 
 [!code-csharp[Disable serialization for an auto-implemented property](../../../../../samples/csharp/serialization/Loan.cs#4)]
 
-The next step is to add the serialization code to the LoanApp application. In order to serialize the class and write it to a file, you use the <xref:System.IO> and <xref:System.Runtime.Serialization.Formatters.Binary> namespaces. To avoid typing the fully qualified names, you can add references to the necessary class libraries as shown in the following code:
+The next step is to add the serialization code to the LoanApp application. In order to serialize the class and write it to a file, you use the <xref:System.IO> and <xref:System.Runtime.Serialization.Formatters.Binary> namespaces. To avoid typing the fully qualified names, you can add references to the necessary namespaces as shown in the following code:
 
 [!code-csharp[Adding namespaces for serialization](../../../../../samples/csharp/serialization/Program.cs#3)]
 

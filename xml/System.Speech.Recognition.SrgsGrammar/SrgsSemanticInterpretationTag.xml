@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a tag that contains [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) that is run when the rule is matched.</summary>
+    <summary>Represents a tag that contains [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-327.htm) that is run when the rule is matched.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -206,7 +206,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
         <Parameter Name="script" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="script">A string that contains the [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</param>
+        <param name="script">A string that contains the [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</param>
         <summary>Creates an instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" /> class, specifying the script contents of the tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -235,7 +235,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</summary>
+        <summary>Gets or sets the [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</summary>
         <value>A string that contains the semantic interpretation script for the tag.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set **Script** to <see langword="null" />.</exception>

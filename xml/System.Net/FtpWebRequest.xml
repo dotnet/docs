@@ -55,7 +55,7 @@
   
  Multiple <xref:System.Net.FtpWebRequest>s reuse existing connections, if possible.  
   
- For more information about the FTP protocol, see RFC 959, "File Transfer Protocol," available at [http://www.rfc-editor.org/](http://www.ietf.org/rfc/rfc959.txt).  
+ For more information about the FTP protocol, see [RFC 959: File Transfer Protocol](https://www.ietf.org/rfc/rfc959.txt).  
   
    
   
@@ -1620,7 +1620,7 @@
 ## Remarks  
  Setting the <xref:System.Net.FtpWebRequest.UsePassive%2A> property to `true` sends the "`PASV"` command to the server. This command requests the server to listen on a data port and to wait for a connection rather than initiate one upon receipt of a transfer command.  
   
- For a description of the behaviors that are specified using <xref:System.Net.FtpWebRequest.UsePassive%2A>, see RFC 959, "File Transfer Protocol," Section 3.2, "Establishing Data Connections" and Section 4.1.2, "Transfer Parameter Commands," available at [http://www.rfc-editor.org/](http://www.ietf.org/rfc/rfc959.txt).  
+ For a description of the behaviors that are specified using <xref:System.Net.FtpWebRequest.UsePassive%2A>, see [RFC 959: "File Transfer Protocol", Section 3.2: "Establishing Data Connections" and Section 4.1.2: "Transfer Parameter Commands"](https://www.ietf.org/rfc/rfc959.txt).  
   
  Changing <xref:System.Net.FtpWebRequest.UsePassive%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
   

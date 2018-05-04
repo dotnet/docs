@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The data buffer sent with the ICMP echo request is returned to the sender in the echo reply so the roundtrip travel time for a packet of a known size can be computed. The data buffer, combined with the <xref:System.Net.NetworkInformation.PingOptions.DontFragment%2A> option, can be used to discover the maximum transmission unit for the network path between the source and destination computers. For additional information, see "Traceroute" in RFC 1574, Section 3.2, available at http://www.ietf.org.  
+ The data buffer sent with the ICMP echo request is returned to the sender in the echo reply so the roundtrip travel time for a packet of a known size can be computed. The data buffer, combined with the <xref:System.Net.NetworkInformation.PingOptions.DontFragment%2A> option, can be used to discover the maximum transmission unit for the network path between the source and destination computers. For additional information, see "Traceroute" in RFC 1574, Section 3.2, available at [https://www.ietf.org](https://www.ietf.org).  
   
  The default buffer used with <xref:System.Net.NetworkInformation.Ping.Send%2A> and <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> contains 32 bytes of data.  
   

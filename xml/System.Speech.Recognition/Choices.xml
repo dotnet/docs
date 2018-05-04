@@ -30,7 +30,7 @@
 > [!NOTE]
 >  To use a <xref:System.Speech.Recognition.Choices> object as an optional component in a phrase, create the <xref:System.Speech.Recognition.Choices> object and add it to a <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.GrammarBuilder%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> object with `minRepeat` and `maxRepeat` set to 0 and 1, respectively. Phrases containing optional components can be recognized whether or not the optional component is spoken.  
   
- The <xref:System.Speech.Recognition.Choices> class serves the same function as the `one-of` XML element defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://www.w3.org/TR/speech-grammar/) and is similar to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> class in the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
+ The <xref:System.Speech.Recognition.Choices> class serves the same function as the `one-of` XML element defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://www.w3.org/TR/speech-grammar/) and is similar to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> class in the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
   
  For more information about defining a speech recognition grammar, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   

@@ -43,7 +43,7 @@
   
  Network topology can determine whether <xref:System.Net.NetworkInformation.Ping> can successfully contact a remote host. The presence and configuration of proxies, network address translation (NAT) equipment, or firewalls can prevent <xref:System.Net.NetworkInformation.Ping> from succeeding. A successful <xref:System.Net.NetworkInformation.Ping> indicates only that the remote host can be reached on the network; the presence of higher level services (such as a Web server) on the remote host is not guaranteed.  
   
- This class provides functionality similar to the Ping.exe command line tool. The <xref:System.Net.NetworkInformation.Ping.Send%2A> and <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> methods send an Internet Control Message Protocol (ICMP) echo request message to a remote computer and waits for an ICMP echo reply message from that computer. For a detailed description of ICMP messages, see RFC 792, available at [http://www.ietf.org](http://www.ietf.org/).  
+ This class provides functionality similar to the Ping.exe command line tool. The <xref:System.Net.NetworkInformation.Ping.Send%2A> and <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> methods send an Internet Control Message Protocol (ICMP) echo request message to a remote computer and waits for an ICMP echo reply message from that computer. For a detailed description of ICMP messages, see RFC 792, available at [https://www.ietf.org](https://www.ietf.org/).  
   
  The following types are used with the <xref:System.Net.NetworkInformation.Ping> class and are described in detail below.  
   

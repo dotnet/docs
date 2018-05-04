@@ -944,7 +944,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Servers use realms to partition protected resources; each partition can have its own authentication scheme and/or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see RFC 2617 at [http://www.ietf.org](http://www.ietf.org).  
+ Servers use realms to partition protected resources; each partition can have its own authentication scheme and/or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see RFC 2617 at [https://www.ietf.org/](https://www.ietf.org/).  
   
  An instance of <xref:System.Net.HttpListener> has only one associated realm.  
   

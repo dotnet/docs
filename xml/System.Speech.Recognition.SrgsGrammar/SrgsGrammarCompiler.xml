@@ -97,7 +97,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML-format grammar file must conform to the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://www.w3.org/TR/speech-grammar/).  
+ The XML-format grammar file must conform to the [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://www.w3.org/TR/speech-grammar/).  
   
  When accessing files, a security check is performed when the file is created or opened. The security check is typically not done again unless the file is closed and reopened.  
   
@@ -139,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML-format grammar file referenced by the <xref:System.Xml.XmlReader> must conform to the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://www.w3.org/TR/speech-grammar/).  
+ The XML-format grammar file referenced by the <xref:System.Xml.XmlReader> must conform to the [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://www.w3.org/TR/speech-grammar/).  
   
  For more information, see [Compile SRGS Grammars](http://msdn.microsoft.com/library/dbdd9e2b-62c7-4938-be84-3dcc77ad454a).  
   

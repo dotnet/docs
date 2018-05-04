@@ -24,7 +24,7 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.DataObject> class to store information or metadata directly in an XML signature.  For example, you can store the signature generation date or the signer's identity.  The <xref:System.Security.Cryptography.Xml.DataObject> class may or may not be covered by the XML signature.  
   
- The class corresponds to the `<Object>` element in the World Wide Web Consortium (W3C) specification for XML Signatures. For more information about the W3C specification, see [http://www.w3.org/TR/xmldsig-core/](http://www.w3.org/TR/xmldsig-core/).  
+ The class corresponds to the `<Object>` element in the World Wide Web Consortium (W3C) specification for XML Signatures. For more information about the W3C specification, see [https://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
   
    
   

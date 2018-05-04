@@ -822,7 +822,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The SSML file must be an XML-format file that conforms to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://www.w3.org/TR/speech-synthesis/) specification.  
+ The SSML file must be an XML-format file that conforms to the [Speech Synthesis Markup Language (SSML) Version 1.0](https://www.w3.org/TR/speech-synthesis/) specification.  
   
  You can also append SSML markup as a string using <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>.  
   
@@ -906,7 +906,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The SSML file must be an XML-format file that conforms to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://www.w3.org/TR/speech-synthesis/) specification.  
+ The SSML file must be an XML-format file that conforms to the [Speech Synthesis Markup Language (SSML) Version 1.0](https://www.w3.org/TR/speech-synthesis/) specification.  
   
  You can also append SSML markup as a string using <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>.  
   

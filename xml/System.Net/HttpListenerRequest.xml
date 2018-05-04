@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Accept` header is a string of space-separated Multipurpose Internet Mail Extensions (MIME) type names (for example, `image/jpeg`), which indicate the MIME types that the client is prepared to accept and process in a response. The `*/*` entry indicates that the client accepts any MIME type. For a detailed description of the `Accept` header, see RFC 2616, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ The `Accept` header is a string of space-separated Multipurpose Internet Mail Extensions (MIME) type names (for example, `image/jpeg`), which indicate the MIME types that the client is prepared to accept and process in a response. The `*/*` entry indicates that the client accepts any MIME type. For a detailed description of the `Accept` header, see RFC 2616, available at [https://www.rfc-editor.org](https://www.rfc-editor.org/).  
   
  For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
   
@@ -315,7 +315,7 @@
 ## Remarks  
  If a client includes body data in a request, it declares the Multipurpose Internet Mail Extensions (MIME) type of the body data in the `Content-Type` header. For example, the default MIME type of data returned from a Web form using the `POST` method is `application/x-www-form-urlencoded`.  
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration and RFC 2616, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration and RFC 2616, available at [https://www.rfc-editor.org](https://www.rfc-editor.org/).  
   
  The <xref:System.Net.HttpListenerRequest.ContentType%2A> is null when there is no `Content-Type` header in the request.  
   
@@ -1013,7 +1013,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The capabilities of different HTTP versions are specified in the documents available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ The capabilities of different HTTP versions are specified in the documents available at [https://www.rfc-editor.org](https://www.rfc-editor.org/).  
   
    
   
@@ -1646,7 +1646,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a detailed description of the `Accept-Language` header, see RFC 2616 Section 14.4, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ For a detailed description of the `Accept-Language` header, see RFC 2616 Section 14.4, available at [https://www.rfc-editor.org](https://www.rfc-editor.org/).  
   
  For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
   

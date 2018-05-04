@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.SignedXml> class is the .NET Framework implementation of the World Wide Web Consortium (W3C) [XML Signature Syntax and Processing Specification](http://www.w3.org/TR/xmldsig-core/), also known as XMLDSIG (XML Digital Signature).  XMLDSIG is a standards-based, interoperable way to sign and verify all or part of an XML document or other data that is addressable from a Uniform Resource Identifier (URI).  
+ The <xref:System.Security.Cryptography.Xml.SignedXml> class is the .NET Framework implementation of the World Wide Web Consortium (W3C) [XML Signature Syntax and Processing Specification](https://www.w3.org/TR/xmldsig-core/), also known as XMLDSIG (XML Digital Signature).  XMLDSIG is a standards-based, interoperable way to sign and verify all or part of an XML document or other data that is addressable from a Uniform Resource Identifier (URI).  
   
  Use the <xref:System.Security.Cryptography.Xml.SignedXml> class whenever you need to share signed XML data between applications or organizations in a standard way.  Any data signed using this class can be verified by any conforming implementation of the W3C specification for XMLDSIG.  
   
@@ -2027,7 +2027,7 @@
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmldsig-more#rsa-sha256](http://www.w3.org/2001/04/xmldsig-more).  
+ For more information, see the World Wide Web Consortium (W3C) specification at [https://www.w3.org/2001/04/xmldsig-more#rsa-sha256](https://www.w3.org/2001/04/xmldsig-more#rsa-sha256).  
   
  ]]></format>
         </remarks>
@@ -2057,7 +2057,7 @@
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmldsig-more#rsa-sha384](http://www.w3.org/2001/04/xmldsig-more#rsa-sha384).  
+ For more information, see the World Wide Web Consortium (W3C) specification at [https://www.w3.org/2001/04/xmldsig-more#rsa-sha384](https://www.w3.org/2001/04/xmldsig-more#rsa-sha384).  
   
  ]]></format>
         </remarks>
@@ -2087,7 +2087,7 @@
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmldsig-more#rsa-sha512](http://www.w3.org/2001/04/xmldsig-more#rsa-sha512).  
+ For more information, see the World Wide Web Consortium (W3C) specification at [https://www.w3.org/2001/04/xmldsig-more#rsa-sha512](https://www.w3.org/2001/04/xmldsig-more#rsa-sha512).  
   
  ]]></format>
         </remarks>
@@ -2181,7 +2181,7 @@
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmldsig-more#sha384](http://www.w3.org/2001/04/xmldsig-more#sha384).  
+ For more information, see the World Wide Web Consortium (W3C) specification at [https://www.w3.org/2001/04/xmldsig-more#sha384](https://www.w3.org/2001/04/xmldsig-more#sha384).  
   
  ]]></format>
         </remarks>

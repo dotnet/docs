@@ -24,7 +24,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.EncryptedType> class represents the abstract base class from which the classes <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> derive. These two classes contain the actual encrypted data or key information in XML encryption. To comply with XML encryption standards, you should use these two derived classes.  
   
- For more information on XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+ For more information on XML encryption standards, see [XML Encryption Syntax and Processing Version 1.1](https://www.w3.org/TR/xmlenc-core/).  
   
    
   
@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.EncryptedType> class. This class represents the abstract base class from which the classes <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> derive. To comply with XML encryption standards, you should use the two derived classes. For more information on XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+ This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.EncryptedType> class. This class represents the abstract base class from which the classes <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> derive. To comply with XML encryption standards, you should use the two derived classes. For more information on XML encryption standards, see [XML Encryption Syntax and Processing Version 1.1](https://www.w3.org/TR/xmlenc-core/).  
   
    
   
@@ -445,7 +445,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `MimeType` attribute is an optional attribute that describes the media type of the encrypted data. The value of this attribute is a string with values defined by [RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies](http://www.ietf.org/rfc/rfc2045.txt). For example, if the data that is encrypted is a base64-encoded PNG, the `Encoding` attribute would be 'http://www.w3.org/2000/09/xmldsig#base64' and the `MimeType` would be 'image/png'. This attribute is optional and no validation of the `MimeType` information is required. The attribute does not indicate that the encryption application must do any additional processing. Note that this information may not be necessary if it is already bound to the identifier in the `Type` attribute.  
+ The `MimeType` attribute is an optional attribute that describes the media type of the encrypted data. The value of this attribute is a string with values defined by [RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies](https://www.ietf.org/rfc/rfc2045.txt). For example, if the data that is encrypted is a base64-encoded PNG, the `Encoding` attribute would be 'http://www.w3.org/2000/09/xmldsig#base64' and the `MimeType` would be 'image/png'. This attribute is optional and no validation of the `MimeType` information is required. The attribute does not indicate that the encryption application must do any additional processing. Note that this information may not be necessary if it is already bound to the identifier in the `Type` attribute.  
   
    
   
@@ -484,7 +484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Type` attribute is an optional attribute that identifies type information about the text form of the encrypted content. While optional, this is an important attribute and is used in mandatory processing described in [Processing Rules: Decryption](http://www.w3.org/TR/xmlenc-core/) (section 4.2) of the XML Encryption Syntax and Processing specification (http://www.w3.org/TR/xmlenc-core/). If the `<EncryptedData>` element contains data of type `'element'` or element `'content'`, and replaces that data in an XML document, it is strongly recommended that the `Type` attribute be provided. Without this information, the application attempting to decrypt the information will be unable to automatically restore the XML document to its original text form.  
+ The `Type` attribute is an optional attribute that identifies type information about the text form of the encrypted content. While optional, this is an important attribute and is used in mandatory processing described in [Processing Rules: Decryption](https://www.w3.org/TR/xmlenc-core/) (section 4.2) of the XML Encryption Syntax and Processing specification (https://www.w3.org/TR/xmlenc-core/). If the `<EncryptedData>` element contains data of type `'element'` or element `'content'`, and replaces that data in an XML document, it is strongly recommended that the `Type` attribute be provided. Without this information, the application attempting to decrypt the information will be unable to automatically restore the XML document to its original text form.  
   
    
   

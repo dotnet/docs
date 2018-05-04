@@ -76,7 +76,7 @@
   
  The <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.%23ctor%2A> constructor throws a <xref:System.FormatException> in the following circumstances:  
   
--   `id` is not a valid XML name, as defined in [Extensible Markup Language (XML) 1.0 (Fifth Edition)](http://www.w3.org/TR/REC-xml/). To paraphrase this definition, a valid XML name must begin with a letter, an underscore ('_'), or a colon (':') and can be followed by zero or more NameChar characters (also defined in the XML specification).  
+-   `id` is not a valid XML name, as defined in [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/). To paraphrase this definition, a valid XML name must begin with a letter, an underscore ('_'), or a colon (':') and can be followed by zero or more NameChar characters (also defined in the XML specification).  
   
 -   `id` is "NULL" or "VOID" or "GARBAGE".  
   
@@ -164,7 +164,7 @@ public void WorldSoccerWinners ()
   
  The <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.%23ctor%2A> constructor throws a <xref:System.FormatException> in the following circumstances:  
   
--   `id` is not a valid XML name, as defined in [Extensible Markup Language (XML) 1.0 (Fifth Edition)](http://www.w3.org/TR/REC-xml/). To paraphrase this definition, a valid XML name must begin with a letter, an underscore ('_'), or a colon (':') and can be followed by zero or more NameChar characters (also defined in the XML specification).  
+-   `id` is not a valid XML name, as defined in [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/). To paraphrase this definition, a valid XML name must begin with a letter, an underscore ('_'), or a colon (':') and can be followed by zero or more NameChar characters (also defined in the XML specification).  
   
 -   `id` is "NULL" or "VOID" or "GARBAGE".  
   
@@ -388,7 +388,7 @@ document.Root = winnerRule;
   
  A value used to set <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> must adhere to the following rules:  
   
--   The value must be a valid XML name, as defined in [Extensible Markup Language (XML) 1.0 (Fifth Edition)](http://www.w3.org/TR/REC-xml/). To paraphrase this definition, a valid XML name must begin with a letter, an underscore ('_'), or a colon (':') and can be followed by zero or more NameChar characters (also defined in the XML specification).  
+-   The value must be a valid XML name, as defined in [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/). To paraphrase this definition, a valid XML name must begin with a letter, an underscore ('_'), or a colon (':') and can be followed by zero or more NameChar characters (also defined in the XML specification).  
   
 -   The value can be "NULL" or "VOID" or "GARBAGE".  
   

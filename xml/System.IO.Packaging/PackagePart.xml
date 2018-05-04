@@ -128,7 +128,7 @@
   
  By default, the <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> property of the part is initialized to <xref:System.IO.Packaging.CompressionOption.NotCompressed>.  
   
- `contentType` must be a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
+ `contentType` must be a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
   
 |Description|Content Type|  
 |-----------------|------------------|  
@@ -184,7 +184,7 @@
 ## Remarks  
  `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](http://go.microsoft.com/fwlink/?LinkID=71255) specification.  
   
- `contentType` must be a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
+ `contentType` must be a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
   
 |Description|Content Type|  
 |-----------------|------------------|  
@@ -278,7 +278,7 @@
   
  The <xref:System.IO.Packaging.PackagePart.ContentType%2A> property is automatically set by the <xref:System.IO.Packaging.PackagePart.%23ctor%2A> constructor.  After it is set by the constructor, the <xref:System.IO.Packaging.PackagePart.ContentType%2A> cannot be changed.  
   
- The <xref:System.IO.Packaging.PackagePart.ContentType%2A> property is a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
+ The <xref:System.IO.Packaging.PackagePart.ContentType%2A> property is a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
   
 |Description|Content Type|  
 |-----------------|------------------|  
@@ -468,7 +468,7 @@
   
  In a part-relationship the source part is considered the "owner" of the relationship.  When the source part is deleted, all the relationships owned by the part are also deleted.  The process of creating or deleting the relationship does not physically alter the target part or resource in any way.  
   
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+ `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  The <xref:System.IO.Packaging.PackagePart.CreateRelationship%2A> method does not physically change either the source part, or the target part or resource in any way.  
   
@@ -553,7 +553,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+ `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  If the specified `id` does not match the <xref:System.IO.Packaging.PackageRelationship.Id%2A> for any of the relationships that are owned by this part, no relationship is deleted and no exception is thrown.  
   
@@ -644,7 +644,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+ `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  You can use the <xref:System.IO.Packaging.PackagePart.RelationshipExists%2A> method to determine if a relationship with a specified <xref:System.IO.Packaging.PackageRelationship.Id%2A> is owned by this part.  
   
@@ -1053,7 +1053,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+ `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  ]]></format>
         </remarks>

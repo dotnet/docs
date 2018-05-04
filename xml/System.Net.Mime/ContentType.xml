@@ -30,7 +30,7 @@
 ## Remarks  
  The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data contained in an email message in such a way that software that displays email can present the content in an appropriate manner. <xref:System.Net.Mime.ContentType> is used with the <xref:System.Net.Mail.Attachment> class to specify the type of content in the attachment.  
   
- The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The syntax of the `contentType` string is described in RFC 2045 Section 5.1 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The syntax of the `contentType` string is described in RFC 2045 Section 5.1 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -186,7 +186,7 @@
   
  Set this property to `null` or <xref:System.String.Empty?displayProperty=nameWithType> to remove the boundary information from the header.  
   
- The syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the boundary parameter is contained in RFC 2046 Section 5.1.1. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the boundary parameter is contained in RFC 2046 Section 5.1.1. These RFCs are available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -237,7 +237,7 @@
   
  Set this property to `null` or <xref:System.String.Empty?displayProperty=nameWithType> to remove the charset information from the header.  
   
- A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the charset parameter is contained in RFC 2046 Section 4.1.2. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+ A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the charset parameter is contained in RFC 2046 Section 4.1.2. These RFCs are available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -354,7 +354,7 @@
   
  Set this property to `null` or <xref:System.String.Empty?displayProperty=nameWithType> to remove the name information from the header.  
   
- The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types. These RFCs are available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -406,7 +406,7 @@
   
  `content-type: application/x-myType; name=data.xyz`  
   
- A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1, available at [http://www.ietf.org](http://www.ietf.org/).  
+ A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1, available at [https://www.ietf.org](https://www.ietf.org/).  
   
  When specifying content for a <xref:System.Net.Mail.Attachment> as a <xref:System.IO.Stream> or <xref:System.String>, you can use <xref:System.Net.Mime.ContentType.Name%2A> to set the name of the file that stores the content on the recipient's system.  
   
@@ -457,7 +457,7 @@
   
  When adding a parameter entry to the dictionary, the name of the parameter is the entry's key and the value of the parameter is the entry's value.  
   
- A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types and their associated parameters. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+ A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types and their associated parameters. These RFCs are available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -505,7 +505,7 @@
 ## Remarks  
  The value of the <xref:System.Net.Mime.ContentType.ToString%2A> method contains the string used to create this <xref:System.Net.Mime.ContentType>, if one was specified and no property values have been changed. If no string was specified, or one or more property values have changed since this <xref:System.Net.Mime.ContentType> was created, the value of <xref:System.Net.Mime.ContentType.ToString%2A> is a string in the format of a Content-Type header that is composed using the current property values. The string does not include the `"Content-type:"` prefix.  
   
- The syntax of the Content-Type header is described in RFC 2045 Section 5.1, available at [http://www.ietf.org](http://www.ietf.org/).  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1, available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   

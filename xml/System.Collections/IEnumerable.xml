@@ -46,7 +46,7 @@
 ## Examples  
  The following code example demonstrates the best practice for iterating a custom collection by implementing the <xref:System.Collections.IEnumerable> and <xref:System.Collections.IEnumerator> interfaces. In this example, members of these interfaces are not explicitly called, but they are implemented to support the use of `foreach` (`For Each` in Visual Basic) to iterate through the collection. This example is a complete Console app. To compile the Visual Basic app, change the **Startup object** to **Sub Main** in the project’s **Properties** page.  
   
- For a sample that shows how to implement the <xref:System.Collections.IEnumerable> interface, see [Implementing the IEnumerable Interface in a Collection Class](http://code.msdn.microsoft.com/Implementing-the-e1708a24)  
+ For a sample that shows how to implement the <xref:System.Collections.IEnumerable> interface, see [Implementing the IEnumerable Interface in a Collection Class](https://code.msdn.microsoft.com/Implementing-the-e1708a24)  
   
  [!code-csharp[System.Collections_EnumeratorInterfaces#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections_EnumeratorInterfaces/cs/ienumerator.cs#1)]
  [!code-vb[System.Collections_EnumeratorInterfaces#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections_EnumeratorInterfaces/vb/ienumerator.vb#1)]  

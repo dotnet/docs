@@ -76,7 +76,7 @@
   
  The <xref:System.IO.Packaging.PackageRelationship.Id%2A> is specified in the call to the **Package**.<xref:System.IO.Packaging.Package.CreateRelationship%2A> or **PackagePart**.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A> method that created the relationship.  After the relationship is created, the <xref:System.IO.Packaging.PackageRelationship.Id%2A> cannot be changed.  
   
- The <xref:System.IO.Packaging.PackageRelationship.Id%2A> property string is a valid XML identifier. The <xref:System.IO.Packaging.PackageRelationship.Id%2A> type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+ The <xref:System.IO.Packaging.PackageRelationship.Id%2A> property string is a valid XML identifier. The <xref:System.IO.Packaging.PackageRelationship.Id%2A> type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  ]]></format>
         </remarks>

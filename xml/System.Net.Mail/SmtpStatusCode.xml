@@ -29,7 +29,7 @@
 ## Remarks  
  The values in the <xref:System.Net.Mail.SmtpStatusCode> enumeration specify reply status values sent by a Simple Mail Transfer Protocol (SMTP) server. The <xref:System.Net.Mail.SmtpException> and <xref:System.Net.Mail.SmtpFailedRecipientsException> classes contain <xref:System.Net.Mail.SmtpException.StatusCode%2A> properties that return <xref:System.Net.Mail.SmtpStatusCode> values.  
   
- SMTP is defined in RFC 2821 available at [http://www.ietf.org](http://www.ietf.org/).  
+ SMTP is defined in RFC 2821 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -98,7 +98,7 @@
       </ReturnValue>
       <MemberValue>252</MemberValue>
       <Docs>
-        <summary>The specified user is not local, but the receiving SMTP service accepted the message and attempted to deliver it. This status code is defined in RFC 1123, which is available at [http://www.ietf.org](http://www.ietf.org/).</summary>
+        <summary>The specified user is not local, but the receiving SMTP service accepted the message and attempted to deliver it. This status code is defined in RFC 1123, which is available at [https://www.ietf.org](https://www.ietf.org/).</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientNotPermitted">
@@ -359,7 +359,7 @@
       </ReturnValue>
       <MemberValue>451</MemberValue>
       <Docs>
-        <summary>The SMTP service cannot complete the request. This error can occur if the client's IP address cannot be resolved (that is, a reverse lookup failed). You can also receive this error if the client domain has been identified as an open relay or source for unsolicited email (spam). For details, see RFC 2505, which is available at [http://www.ietf.org](http://www.ietf.org/).</summary>
+        <summary>The SMTP service cannot complete the request. This error can occur if the client's IP address cannot be resolved (that is, a reverse lookup failed). You can also receive this error if the client domain has been identified as an open relay or source for unsolicited email (spam). For details, see RFC 2505, which is available at [https://www.ietf.org](https://www.ietf.org/).</summary>
       </Docs>
     </Member>
     <Member MemberName="MailboxBusy">

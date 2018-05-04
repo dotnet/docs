@@ -101,7 +101,7 @@
   
 -   Create the expression columns and display the tables.  
   
- C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](http://code.msdn.microsoft.com/How-to-create-DataTable-7abb4914).  
+ C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](https://code.msdn.microsoft.com/How-to-create-DataTable-7abb4914).  
   
  [!code-csharp[Classic WebData DataTable Example2#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/classic webdata datatable example2/cs/source.cs#1)]
  [!code-vb[Classic WebData DataTable Example2#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/classic webdata datatable example2/vb/source.vb#1)]  
@@ -601,7 +601,7 @@
   
 -   Update the changes of the ForeignKeyConstraint in source table.  
   
- C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20automically%20update%20the%20structure%20of%20a%20cloned%20DataTable).  
+ C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20automically%20update%20the%20structure%20of%20a%20cloned%20DataTable).  
   
 ```csharp  
 using System;  
@@ -936,7 +936,7 @@ ALTER TABLE [dbo].[Course] CHECK CONSTRAINT [FK_Course_Department]
 GO  
 ```  
   
- You can now compile and run the sample. [How to modify data in DataTable and update to the data source](http://code.msdn.microsoft.com/How-to-modify-data-in-c68d35f4) has Visual Basic and C# projects of this sample.  
+ You can now compile and run the sample. [How to modify data in DataTable and update to the data source](https://code.msdn.microsoft.com/How-to-modify-data-in-c68d35f4) has Visual Basic and C# projects of this sample.  
   
 ```csharp  
 using System;  

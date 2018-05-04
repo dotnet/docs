@@ -205,7 +205,7 @@ The following code example demonstrates sending an email message by using the <x
 ## Remarks  
  Leading and trailing white space in the display name is preserved.  
   
- If `displayName` contains non-ASCII characters, the iso-8859-1 character set is used for the `displayName` encoding. Encoding non-ASCII characters is discussed in RFC 1522, which is available at [http://www.ietf.org](http://www.ietf.org).  
+ If `displayName` contains non-ASCII characters, the iso-8859-1 character set is used for the `displayName` encoding. Encoding non-ASCII characters is discussed in RFC 1522, which is available at [https://www.ietf.org/](https://www.ietf.org/).  
   
  If `address` contains a display name, and `displayName` is not `null` and is not equal to <xref:System.String.Empty?displayProperty=nameWithType>, `displayName` overrides the value specified in `address`.  
   

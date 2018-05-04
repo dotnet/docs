@@ -3570,7 +3570,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
--   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
 -   Otherwise, it uses a Quicksort algorithm.  
   
@@ -3652,7 +3652,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
--   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
 -   Otherwise, it uses a Quicksort algorithm.  
   

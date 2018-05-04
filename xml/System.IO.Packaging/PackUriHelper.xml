@@ -327,7 +327,7 @@
   
  If `partUri` is `null`, the returned pack URI points to the package.  
   
- `fragment` cannot be an empty string but can be specified as `null`.  When not specified as `null`, the `fragment` string must begin with a '#' character.  For more information of the syntax of `fragment` references, see Section 3.5 "Fragment" of [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt).  
+ `fragment` cannot be an empty string but can be specified as `null`.  When not specified as `null`, the `fragment` string must begin with a '#' character.  For more information of the syntax of `fragment` references, see Section 3.5 "Fragment" of [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).  
   
  The following table illustrates sample cases for the <xref:System.IO.Packaging.PackUriHelper.Create%2A> method.  
   

@@ -36,7 +36,7 @@
   
  For file attachments, you can use the properties of the <xref:System.Net.Mime.ContentDisposition> to set the file size, as well as the date the file was created, last read, and last modified. For all attachments, you can set a recommended file name in the event that the attachment is stored on the receiving computer.  
   
- The <xref:System.Net.Mime.ContentDisposition.ToString%2A> method returns the Content-Disposition header. The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The <xref:System.Net.Mime.ContentDisposition.ToString%2A> method returns the Content-Disposition header. The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -179,7 +179,7 @@
   
  The <xref:System.Net.Mail.MailMessage> class is used to compose an email message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message. To set <xref:System.Net.Mime.ContentDisposition.CreationDate>, get the <xref:System.Net.Mime.ContentDisposition> for the attachment from the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -226,7 +226,7 @@
 ## Remarks  
  The <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property value can be used by software that displays email to determine the correct way to present the email attachments. <xref:System.Net.Mime.DispositionTypeNames.Inline> attachments are usually displayed when the user opens the email. <xref:System.Net.Mime.DispositionTypeNames.Attachment> attachments are usually not opened until the user performs some action, such as clicking an icon that represents the attachment.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -312,7 +312,7 @@
   
  To remove file name information, you can set this property to `null` or the empty string ("").  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -391,7 +391,7 @@
 ## Remarks  
  The <xref:System.Net.Mime.ContentDisposition.Inline%2A> property sets the disposition type in the Content-Disposition header sent with the email message. The disposition type can be used by software that displays email to determine the correct way to present the email attachments. Attachments with a disposition type of <xref:System.Net.Mime.DispositionTypeNames.Inline?displayProperty=nameWithType> are usually displayed when the user opens the email. Attachments with a disposition type of <xref:System.Net.Mime.DispositionTypeNames.Attachment?displayProperty=nameWithType> are usually not opened until the user performs some additional action, such as clicking an icon that represents the attachment.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -440,7 +440,7 @@
   
  The <xref:System.Net.Mail.MailMessage> class is used to compose an email message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message. To set the <xref:System.Net.Mime.ContentDisposition.ModificationDate%2A> property, get the <xref:System.Net.Mime.ContentDisposition> for the attachment using the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -487,7 +487,7 @@
 ## Remarks  
  Typically, the parameters are determined by the property values so you do not need to access them. If you need to add or change parameter information, modify the dictionary returned by the <xref:System.Net.Mime.ContentDisposition.Parameters%2A> property.  
   
- The Content-Disposition header is described in RFC 2183, available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183, available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -536,7 +536,7 @@
   
  The <xref:System.Net.Mail.MailMessage> class is used to compose an email message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message. To set <xref:System.Net.Mime.ContentDisposition.ReadDate%2A>, get the <xref:System.Net.Mime.ContentDisposition> for the attachment by using the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -583,7 +583,7 @@
 ## Remarks  
  The <xref:System.Net.Mime.ContentDisposition.Size%2A> property is used to send time stamp information with a file being sent in an email message. The <xref:System.Net.Mail.MailMessage> class is used to compose the message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   
@@ -631,7 +631,7 @@
 ## Remarks  
  The string returned by the <xref:System.Net.Mime.ContentDisposition.ToString%2A> method is the Content-Disposition header.  
   
- The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The Content-Disposition header is described in RFC 2183 available at [https://www.ietf.org](https://www.ietf.org/).  
   
    
   

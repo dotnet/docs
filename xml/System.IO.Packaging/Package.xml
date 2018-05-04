@@ -570,7 +570,7 @@
   
  The target of a relationship cannot be another relationship.  
   
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the XML Schema Part 2: Datatypes specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+ `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the XML Schema Part 2: Datatypes specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  If `id` is specified as `null` a unique ID will be automatically generated.  An `id` specified by an empty string is not valid.  
   
@@ -1157,7 +1157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the XML Schema Part 2: Datatypes specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/#ID)).  
+ `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the XML Schema Part 2: Datatypes specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
   
  For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   

@@ -213,7 +213,7 @@ The following shows sample output from analyzing the LOH:
 0:003> !eeheap -gc
 Number of GC Heaps: 1
 generation 0 starts at 0x013e35ec
-generation 1 starts at 0x013e1b6c
+sdgeneration 1 starts at 0x013e1b6c
 generation 2 starts at 0x013e1000
 ephemeral segment allocation context: none
 segment   begin allocated     size

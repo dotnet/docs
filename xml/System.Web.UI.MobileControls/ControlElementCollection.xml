@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an XML element that contains a collection of Control sections within a MobileControls section of a configuration file. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Represents an XML element that contains a collection of Control sections within a MobileControls section of a configuration file. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.ControlElementCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.ControlElementCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +60,7 @@
       </Parameters>
       <Docs>
         <param name="controlElement">A <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object.</param>
-        <summary>Adds a <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an array of the keys for all of the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> objects contained in this collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns an array of the keys for all of the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> objects contained in this collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An array of key names.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,7 +100,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.UI.MobileControls.ControlElement" /> objects from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes all <see cref="T:System.Web.UI.MobileControls.ControlElement" /> objects from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +119,7 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration collection type of this <see cref="T:System.Web.UI.MobileControls.ControlElementCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the configuration collection type of this <see cref="T:System.Web.UI.MobileControls.ControlElementCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>One of the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +195,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets or sets a property, attribute, or child element of this configuration element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a property, attribute, or child element of this configuration element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -217,7 +217,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index value of the item in the collection.</param>
-        <summary>Gets or sets a property, attribute, or child element of this configuration element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a property, attribute, or child element of this configuration element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +241,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration element to access.</param>
-        <summary>Gets or sets a property, attribute, or child element of this configuration element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a property, attribute, or child element of this configuration element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified property, attribute, or child element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,7 +272,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Removes a <see cref="T:System.Web.UI.MobileControls.ControlElement" /> from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes a <see cref="T:System.Web.UI.MobileControls.ControlElement" /> from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -294,7 +294,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object identified by name from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object identified by name from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +316,7 @@
       </Parameters>
       <Docs>
         <param name="controlElement">A <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object.</param>
-        <summary>Removes the given <see cref="T:System.Web.UI.MobileControls.ControlElement" /> from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the given <see cref="T:System.Web.UI.MobileControls.ControlElement" /> from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,7 +339,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to remove.</param>
-        <summary>Removes the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object with the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the <see cref="T:System.Web.UI.MobileControls.ControlElement" /> object with the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

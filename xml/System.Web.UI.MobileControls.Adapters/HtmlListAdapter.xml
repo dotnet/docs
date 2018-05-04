@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a list adapter class for the HTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a list adapter class for the HTML adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.HtmlListAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.HtmlListAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +62,7 @@
         <ReturnType>System.Web.UI.MobileControls.List</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A strongly typed reference to the associated control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +86,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer to receive output.</param>
-        <summary>Called by the control's <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method to perform rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called by the control's <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method to perform rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       </Docs>
@@ -110,7 +110,7 @@
       </Parameters>
       <Docs>
         <param name="writer">Specifies the output stream to which the list will be written.</param>
-        <summary>Writes a list to the specified output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes a list to the specified output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

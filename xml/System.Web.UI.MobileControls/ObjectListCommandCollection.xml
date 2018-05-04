@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> objects. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> objects. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,7 +61,7 @@
       </Parameters>
       <Docs>
         <param name="command">The command to add to the end of the collection.</param>
-        <summary>Adds a command to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a command to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.AddAt(System.Int32,System.Web.UI.MobileControls.ObjectListCommand)" />
         <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Clear" />
@@ -91,7 +91,7 @@
       <Docs>
         <param name="index">The location in the collection at which to add <c>command</c>.</param>
         <param name="command">The <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> to add to the collection.</param>
-        <summary>Adds a command at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a command at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -123,7 +123,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -158,7 +158,7 @@
       </Parameters>
       <Docs>
         <param name="s">A string to search for in the collection.</param>
-        <summary>Returns the index of the command whose name is the specified string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of the command whose name is the specified string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The index of the command whose name is the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -190,7 +190,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is tracking view-state changes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the collection is tracking view-state changes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if tracking view-state changes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -215,7 +215,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item to get.</param>
-        <summary>Returns an <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> item in the collection for the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns an <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> item in the collection for the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> item at the specified index.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
@@ -240,7 +240,7 @@
       </Parameters>
       <Docs>
         <param name="state">The object containing the view-state information to be loaded.</param>
-        <summary>Loads the previously saved view state to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads the previously saved view state to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +263,7 @@
       </Parameters>
       <Docs>
         <param name="s">The name of the command to remove. This method removes the first command that matches this value in the collection.</param>
-        <summary>Removes the command with the specified name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the command with the specified name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
@@ -291,7 +291,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index number of the command to remove.</param>
-        <summary>Removes the command at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the command at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
       </Docs>
@@ -312,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes to a server control's view state to an <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves the changes to a server control's view state to an <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.Object" /> that contains the view-state information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,7 +332,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if view state changes are being tracked; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -365,7 +365,7 @@
       </Parameters>
       <Docs>
         <param name="state">An object representing the state to be loaded.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -393,7 +393,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>Returns an object that contains the view state changes, if any, or <see langword="null" /> if there are no changes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -422,7 +422,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -450,7 +450,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Instructs the collection to track changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Instructs the collection to track changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

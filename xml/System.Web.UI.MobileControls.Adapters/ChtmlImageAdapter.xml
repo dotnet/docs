@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an image adapter class for the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides an image adapter class for the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">For operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlImageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlImageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer.</param>
-        <summary>Writes additional attributes that are specific to an adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes additional attributes that are specific to an adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.AddAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       </Docs>
@@ -83,7 +83,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer.</param>
-        <summary>Renders any <see langword="i-mode" /> or <see langword="J-Phone" /> image references. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders any <see langword="i-mode" /> or <see langword="J-Phone" /> image references. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlImageAdapter.RenderImage(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       </Docs>

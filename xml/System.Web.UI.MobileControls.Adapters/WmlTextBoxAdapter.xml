@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a <see cref="T:System.Web.UI.MobileControls.TextBox" /> adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a <see cref="T:System.Web.UI.MobileControls.TextBox" /> adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.TextBox" />
@@ -37,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlTextBoxAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlTextBoxAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextBox" />
       </Docs>
@@ -57,7 +57,7 @@
         <ReturnType>System.Web.UI.MobileControls.TextBox</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A strongly typed reference to the associated control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextBox" />
@@ -79,7 +79,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the postback value (or empty string) of the <see cref="T:System.Web.UI.MobileControls.TextBox" /> when the parent form's action attribute is set and view state is disabled for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the postback value (or empty string) of the <see cref="T:System.Web.UI.MobileControls.TextBox" /> when the parent form's action attribute is set and view state is disabled for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The postback value (or empty string) of the selected item in the selection list.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.GetPostBackValue" />
@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object (defined by <see cref="T:System.EventArgs" />) that contains event data.</param>
-        <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnInit(System.EventArgs)" />
       </Docs>
@@ -128,7 +128,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer to receive output.</param>
-        <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       </Docs>

@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies a built-in page that can render exception and error information to mobile devices. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Specifies a built-in page that can render exception and error information to mobile devices. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ErrorFormatterPage" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ErrorFormatterPage" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +65,7 @@
         <ReturnType>System.Web.Mobile.MobileErrorInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns information about an exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns information about an exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see cref="T:System.Web.Mobile.MobileErrorInfo" /> object containing information about the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -94,7 +94,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the content of the error page, based on the error information retrieved. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes the content of the error page, based on the error information retrieved. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -123,7 +123,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads any saved view-state information to the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads any saved view-state information to the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An object containing the saved view state. Internally, this is typically a <see cref="T:System.Web.UI.StateBag" /> or <see cref="T:System.Collections.IDictionary" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +147,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -178,7 +178,7 @@
       </Parameters>
       <Docs>
         <param name="viewState">An object in which to store the view-state information.</param>
-        <summary>Saves any view or control state information for the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any view or control state information for the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

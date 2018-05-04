@@ -28,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> objects. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> objects. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +65,7 @@
       </Parameters>
       <Docs>
         <param name="field">The <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> to add to the end of the collection.</param>
-        <summary>Adds a field to the end of the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a field to the end of the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -102,7 +102,7 @@
       <Docs>
         <param name="index">The location in the collection at which to add the field.</param>
         <param name="field">The field to add at the specified location in the collection.</param>
-        <summary>Adds a field at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a field at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -136,7 +136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -171,7 +171,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
@@ -183,7 +183,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="IndexOf">
@@ -208,7 +208,7 @@
       </Parameters>
       <Docs>
         <param name="fieldIDOrName">A string to compare with the <see cref="P:System.Web.UI.MobileControls.ObjectListField.Title" /> or <see cref="P:System.Web.UI.MobileControls.ObjectListField.DataField" /> property.</param>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The index of the specified field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -247,7 +247,7 @@
       </Parameters>
       <Docs>
         <param name="field">A field to search for in the specified collection.</param>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The index of the specified field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -279,7 +279,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the collection tracking its view state changes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Indicates whether the collection tracking its view state changes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if tracking its view state changes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -307,7 +307,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item to retrieve.</param>
-        <summary>The default indexer for the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class, allows the lookup of arbitrary capability values by index. Any of the properties can be accessed by name. However, the returned value will always be a string (or <see langword="null" /> if not defined), rather than a type-safe value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The default indexer for the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class, allows the lookup of arbitrary capability values by index. Any of the properties can be accessed by name. However, the returned value will always be a string (or <see langword="null" /> if not defined), rather than a type-safe value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A string representing the value of the field at the specified index.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
@@ -332,7 +332,7 @@
       </Parameters>
       <Docs>
         <param name="savedState">The object containing the view-state information to be loaded.</param>
-        <summary>Loads the previously saved view state to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads the previously saved view state to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,7 +355,7 @@
       </Parameters>
       <Docs>
         <param name="field">The field to remove.</param>
-        <summary>Removes the specified field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the specified field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -392,7 +392,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index number of the item to remove.</param>
-        <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
@@ -414,7 +414,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes to a server control's view state to a <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves the changes to a server control's view state to a <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.Object" /> that contains the view-state information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +438,7 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> array.</param>
-        <summary>Sets the array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects as the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets the array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects as the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
@@ -459,7 +459,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -491,7 +491,7 @@
       </Parameters>
       <Docs>
         <param name="state">The object containing the view state to load.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -519,7 +519,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>Returns either an object containing the ViewState changes or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -548,7 +548,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -576,7 +576,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Instructs the collection to track changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Instructs the collection to track changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

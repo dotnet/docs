@@ -27,7 +27,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a control that can perform custom validation against another control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a control that can perform custom validation against another control. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -88,7 +88,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the properties to be validated are valid. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the properties to be validated are valid. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if control properties to be validated are valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -111,7 +111,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An aggregated Web validator.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.CreateWebValidator" />
@@ -133,7 +133,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called during the validation stage when ASP.NET processes a Mobile Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called during the validation stage when ASP.NET processes a Mobile Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -188,7 +188,7 @@
         <ReturnType>System.Web.UI.WebControls.ServerValidateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Web.UI.MobileControls.CustomValidator" /> validates the value of the <see cref="P:System.Web.UI.MobileControls.BaseValidator.ControlToValidate" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when the <see cref="T:System.Web.UI.MobileControls.CustomValidator" /> validates the value of the <see cref="P:System.Web.UI.MobileControls.BaseValidator.ControlToValidate" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

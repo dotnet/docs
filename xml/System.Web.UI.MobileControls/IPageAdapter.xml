@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the interface to a page adapter. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Defines the interface to a page adapter. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +46,7 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a list of any additional HTTP headers by which caching is varied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a list of any additional HTTP headers by which caching is varied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A list of any additional HTTP headers by which caching is varied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -73,7 +73,7 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use this property to persist data between requests through the use of the URL query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Use this property to persist data between requests through the use of the URL query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A dictionary of data that has been persisted through the use of the URL query string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer.</param>
-        <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <param name="postEventSourceID">Source identifier for the event.</param>
         <param name="postEventArgumentID">Argument identifier for the event.</param>
         <param name="baseCollection">Collection of postback data from the request object.</param>
-        <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A modified name value collection of post data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -168,7 +168,7 @@
       <Docs>
         <param name="e">System exception event.</param>
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</param>
-        <summary>Returns <see langword="true" /> if it handles the error. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns <see langword="true" /> if it handles the error. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the page adapter handles the error; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -202,7 +202,7 @@
       <Docs>
         <param name="eventSource">Source identifier for the event.</param>
         <param name="eventArgument">Name of the event.</param>
-        <summary>Returns <see langword="true" /> if it handles the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns <see langword="true" /> if it handles the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the page adapter handles the exception; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -230,7 +230,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a page weight appropriate for the target device. Used in form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a page weight appropriate for the target device. Used in form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page weight appropriate for the target device.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +250,7 @@
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the page to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page to which the page adapter is attached.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,7 +270,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether items from the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary" /> property are persisted in the query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets whether items from the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary" /> property are persisted in the query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the items from the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary" /> property are persisted in the query string; otherwise, <see langword="false" />.</value>
         <remarks>

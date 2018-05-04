@@ -43,7 +43,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a base class for all ASP.NET mobile control classes. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a base class for all ASP.NET mobile control classes. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +72,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
         <ReturnType>System.Web.UI.MobileControls.IControlAdapter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the device-specific adapter for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the device-specific adapter for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An adapter specific to the device on which the page will be displayed, which is also usually specific to the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -134,7 +134,7 @@
       <Docs>
         <param name="control">The <see cref="T:System.Web.UI.Control" /> that has been added.</param>
         <param name="index">The index of the control in the <see cref="P:System.Web.UI.Control.Controls" /> collection.</param>
-        <summary>Called after a child control is added to the <see cref="P:System.Web.UI.Control.Controls" /> collection of the <see cref="T:System.Web.UI.Control" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after a child control is added to the <see cref="P:System.Web.UI.Control.Controls" /> collection of the <see cref="T:System.Web.UI.Control" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.AddedControl(System.Web.UI.Control,System.Int32)" />
       </Docs>
@@ -158,7 +158,7 @@
       </Parameters>
       <Docs>
         <param name="linkedForms">The set of forms that contain links to the specified control.</param>
-        <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -196,7 +196,7 @@
       </Parameters>
       <Docs>
         <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
-        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="T:System.Web.UI.ControlCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="T:System.Web.UI.ControlCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
@@ -224,7 +224,7 @@
         <ReturnType>System.Web.UI.MobileControls.Alignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified alignment for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified alignment for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An enumerated value specifying the alignment for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -267,7 +267,7 @@
       </Parameters>
       <Docs>
         <param name="page">The <see cref="T:System.Web.UI.Page" /> containing the control.</param>
-        <summary>Applies the style properties defined in the page style sheet to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Applies the style properties defined in the page style sheet to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -305,7 +305,7 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified background color for the style. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified background color for the style. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified background color for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -344,7 +344,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a property that determines whether an additional trailing break is rendered after the control. This break causes subsequent content to start on the next line. The default is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a property that determines whether an additional trailing break is rendered after the control. This break causes subsequent content to start on the next line. The default is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if an additional trailing break is rendered after the control; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -398,7 +398,7 @@
       </Parameters>
       <Docs>
         <param name="doDataBind">Set to <see langword="true" /> if the instantiated templates must bind to available data (which usually happens on the first request). Set to <see langword="false" /> if the templates must not bind to data, and instead rely on view state to fill them in (which usually happens on subsequent postbacks).</param>
-        <summary>Called by device adapters to create the default templated user interface (UI) for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called by device adapters to create the default templated user interface (UI) for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,7 +418,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Constructs and returns the style object to be associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Constructs and returns the style object to be associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The style object to be associated with the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -449,7 +449,7 @@
       </Parameters>
       <Docs>
         <param name="doDataBind">Returns <see langword="true" /> if the instantiated templates bind to available data (which usually happens on the first request). Returns <see langword="false" /> if the templates do not bind to data, and instead rely on view state to fill them in (which usually happens on subsequent postbacks).</param>
-        <summary>Called by base classes to create a templated UI. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called by base classes to create a templated UI. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -486,7 +486,7 @@
         <ReturnType>System.Web.UI.StateBag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the set of custom attributes defined for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the set of custom attributes defined for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The set of custom attributes defined for the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -524,7 +524,7 @@
         <ReturnType>System.Web.UI.MobileControls.DeviceSpecific</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The DeviceSpecific/Choice construct associated with the control, or <see langword="null" /> if no such construct exists.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
@@ -550,7 +550,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether themes apply to this control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether themes apply to this control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="False" /> in all cases.</value>
         <remarks>
@@ -580,7 +580,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Use this method to ensure that the templates are instantiated to allow programmatic access to the instantiated contents of a template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Use this method to ensure that the templates are instantiated to allow programmatic access to the instantiated contents of a template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -631,7 +631,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the first page of the form on which this control appears. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the first page of the form on which this control appears. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The first page of the form on which this control appears.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -669,7 +669,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Web.UI.MobileControls.FontInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Web.UI.MobileControls.FontInfo" /> object that contains font information about the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a <see cref="T:System.Web.UI.MobileControls.FontInfo" /> object that contains font information about the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.FontInfo" /> that contains the font information about the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -715,7 +715,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified foreground color for the style. Typically, this property sets the color for the text. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified foreground color for the style. Typically, this property sets the color for the text. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified foreground color for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -758,7 +758,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Web.UI.MobileControls.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides access to the containing form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Provides access to the containing form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The form that contains this control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -793,7 +793,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="name">A <see cref="T:System.String" /> that specifies the name of the server control attribute.</param>
-        <summary>Retrieves the specified attribute property from the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Retrieves the specified attribute property from the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.String" /> representing the value of the specified attribute; if no attribute with the specified <paramref name="name" /> exists, then <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -824,7 +824,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="templateName">The name of the specified template.</param>
-        <summary>Returns the template with the specified name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the template with the specified name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The template with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -860,7 +860,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the text inside the control. The inner text might be a combination of text from child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the text inside the control. The inner text might be a combination of text from child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text inside the control.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">the inner text contains markup tags at run time, and the derived control does not allow markup tags in inner text.</exception>
@@ -883,7 +883,7 @@ public override void EnsureTemplatedUI()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns <see langword="true" /> if the control submits the form. The default is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns <see langword="true" /> if the control submits the form. The default is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the control submits the form; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -927,7 +927,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a <see cref="T:System.Web.UI.MobileControls.MobileControl" /> object has an active template set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether a <see cref="T:System.Web.UI.MobileControls.MobileControl" /> object has an active template set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the control has an active template set; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -959,7 +959,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="pageNumber">The page number.</param>
-        <summary>Returns whether or not the control is visible on the given page of the form. Used for form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns whether or not the control is visible on the given page of the form. Used for form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the control is visible on the given page of the form; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -991,7 +991,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the last page of the form on which the specified control is displayed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the last page of the form on which the specified control is displayed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The last page of the form on which the specified control is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1022,7 +1022,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="state">Current view state of the control.</param>
-        <summary>Loads private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileControl.SavePrivateViewState" />
       </Docs>
@@ -1046,7 +1046,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
-        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.MobileControl.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.MobileControl.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
@@ -1077,7 +1077,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the containing page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the containing page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The containing page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1110,7 +1110,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
@@ -1134,7 +1134,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
@@ -1158,7 +1158,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1196,7 +1196,7 @@ public override void EnsureTemplatedUI()
       <Docs>
         <param name="oldPageIndex">Contains the index number of the current page prior to pagination.</param>
         <param name="newPageIndex">Contains the index number of the current page after pagination.</param>
-        <summary>Paginates a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Paginates a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1226,7 +1226,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
@@ -1250,7 +1250,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that will render the content.</param>
-        <summary>Renders a control to the specified output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a control to the specified output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1273,7 +1273,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1292,7 +1292,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the children of the control must be paginated. Used for form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value that indicates whether the children of the control must be paginated. Used for form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the children of the control must be paginated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1317,7 +1317,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="pager">The pager.</param>
-        <summary>Paginates the control and its children. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Paginates the control and its children. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.PagedControl" />
         <altmember cref="T:System.Web.UI.MobileControls.TextView" />
@@ -1341,7 +1341,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="control">The <see cref="T:System.Web.UI.Control" /> that has been removed.</param>
-        <summary>Called after a child control is removed from the <see cref="P:System.Web.UI.Control.Controls" /> collection of the <see cref="T:System.Web.UI.Control" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after a child control is removed from the <see cref="P:System.Web.UI.Control.Controls" /> collection of the <see cref="T:System.Web.UI.Control" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.RemovedControl(System.Web.UI.Control)" />
       </Docs>
@@ -1365,7 +1365,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
-        <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
@@ -1389,7 +1389,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the rendered content.</param>
-        <summary>Outputs the content of a server control's child controls using the provided <see cref="T:System.Web.UI.HtmlTextWriter" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Outputs the content of a server control's child controls using the provided <see cref="T:System.Web.UI.HtmlTextWriter" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1419,7 +1419,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="formID">Form object</param>
-        <summary>Returns the form object referenced by the name parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the form object referenced by the name parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The form referenced by the name parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1456,7 +1456,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="relativeUrl">The URL to be resolved.</param>
-        <summary>Converts a URL into one that is usable on the requesting client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Converts a URL into one that is usable on the requesting client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The value of the specified URL.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1477,7 +1477,7 @@ public override void EnsureTemplatedUI()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any private view-state changes that have occurred since the page was loaded from persistence. If no changes were made, this method returns <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any private view-state changes that have occurred since the page was loaded from persistence. If no changes were made, this method returns <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An object containing the altered private view state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1506,7 +1506,7 @@ public override void EnsureTemplatedUI()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>Returns the server control's current view state. If there is no view state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
@@ -1533,7 +1533,7 @@ public override void EnsureTemplatedUI()
       <Docs>
         <param name="name">A <see cref="T:System.String" /> signifying the key of the attribute to be set.</param>
         <param name="value">A <see cref="T:System.String" /> to be assigned as the value of the attribute.</param>
-        <summary>Designates an attribute and its value to assign to the <see cref="T:System.Web.UI.MobileControls.MobileControl" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Designates an attribute and its value to assign to the <see cref="T:System.Web.UI.MobileControls.MobileControl" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1564,7 +1564,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the skin to apply to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the ID of the skin to apply to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An empty <see cref="T:System.String" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1603,7 +1603,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Web.UI.MobileControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the style of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The style of the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
@@ -1635,7 +1635,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a reference to the style properties for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a reference to the style properties for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A reference to the style properties for a control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1667,7 +1667,7 @@ public override void EnsureTemplatedUI()
       </Parameters>
       <Docs>
         <param name="name">The name of the attribute to get.</param>
-        <summary>For a description of this method, see <see cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this method, see <see cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The value of the specified attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1701,7 +1701,7 @@ public override void EnsureTemplatedUI()
       <Docs>
         <param name="name">The name specifying the attribute to be set.</param>
         <param name="value">The value to be set.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1729,7 +1729,7 @@ public override void EnsureTemplatedUI()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes tracking of view-state changes to the server control so they can be stored in the server control's <see cref="P:System.Web.UI.Control.ViewState" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Causes tracking of view-state changes to the server control so they can be stored in the server control's <see cref="P:System.Web.UI.Control.ViewState" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1759,7 +1759,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the approximate weight of the control, in characters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the approximate weight of the control, in characters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The approximate weight of the control, in characters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1794,7 +1794,7 @@ public override void EnsureTemplatedUI()
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An enumerated value that specifies the wrapping mode for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Converts the value of an object into a different data type. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Converts the value of an object into a different data type. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileTypeNameConverter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileTypeNameConverter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
@@ -71,7 +71,7 @@
         <param name="ctx">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
         <param name="data">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>Converts the given object to the type of this converter, using the specified context and culture information. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Converts the given object to the type of this converter, using the specified context and culture information. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -110,7 +110,7 @@
         <param name="ci">A <see cref="T:System.Globalization.CultureInfo" />. If <see langword="null" /> is passed, the current culture is assumed.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
         <param name="targetType">The <see cref="T:System.Type" /> to convert the <c>value</c> parameter to.</param>
-        <summary>Converts the given value object to the specified type, using the specified context and culture information. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Converts the given value object to the specified type, using the specified context and culture information. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

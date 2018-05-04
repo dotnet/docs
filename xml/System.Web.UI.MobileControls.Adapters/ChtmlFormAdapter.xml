@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the form adapter class (that is, the adapter for the <see cref="T:System.Web.UI.MobileControls.Form" /> control) for the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides the form adapter class (that is, the adapter for the <see cref="T:System.Web.UI.MobileControls.Form" /> control) for the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">For operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The specified text writer.</param>
-        <summary>Renders any additional content within the <see langword="&lt;head&gt;" /> and <see langword="&lt;/ head&gt;" /> tags of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders any additional content within the <see langword="&lt;head&gt;" /> and <see langword="&lt;/ head&gt;" /> tags of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if any extra head elements were written; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -89,7 +89,7 @@
         <param name="writer">Specifies the output stream.</param>
         <param name="pageToNavigate">Contains the page number of the destination page.</param>
         <param name="text">Specifies the text used for the link.</param>
-        <summary>Renders a pager tag on paginated forms. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a pager tag on paginated forms. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlFormAdapter.RenderPagerTag(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Int32,System.String)" />
       </Docs>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether to render a form tag. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns whether to render a form tag. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if a form tag should be rendered; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

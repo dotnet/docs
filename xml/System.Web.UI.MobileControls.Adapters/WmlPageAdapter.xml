@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a <see cref="T:System.Web.UI.MobileControls.MobilePage" /> adapter for the Wireless Markup Language (WML) device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a <see cref="T:System.Web.UI.MobileControls.MobilePage" /> adapter for the Wireless Markup Language (WML) device adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
@@ -64,7 +64,7 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a list of any additional HTTP headers by which caching is varied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a list of any additional HTTP headers by which caching is varied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A list of any additional HTTP headers by which caching is varied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -97,7 +97,7 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets persisted data between requests through the use of the URL query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets persisted data between requests through the use of the URL query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>Data persisted between requests through the use of the URL query string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -132,7 +132,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer.</param>
-        <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
@@ -166,7 +166,7 @@
         <param name="postEventSourceID">Source identifier for the event.</param>
         <param name="postEventArgumentID">Argument identifier for the event.</param>
         <param name="baseCollection">Collection of postback data from the request object.</param>
-        <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The modified postback data collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -202,7 +202,7 @@
       </Parameters>
       <Docs>
         <param name="context">The current request context.</param>
-        <summary>Evaluates whether the device adapter set applies to the specified request. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Evaluates whether the device adapter set applies to the specified request. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the device adapter set applies to the specified request; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -246,7 +246,7 @@
       <Docs>
         <param name="e">System exception object.</param>
         <param name="writer">The text writer</param>
-        <summary>Called if an unhandled exception occurs during the life cycle of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called if an unhandled exception occurs during the life cycle of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> in all cases.</returns>
         <remarks>
@@ -288,7 +288,7 @@
       <Docs>
         <param name="eventSource">Source identifier for the event.</param>
         <param name="eventArgument">Name of the event.</param>
-        <summary>Returns <see langword="true" /> if it handles the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns <see langword="true" /> if it handles the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="false" /> in all cases.</returns>
         <remarks>
@@ -322,7 +322,7 @@
       </Parameters>
       <Docs>
         <param name="form">Programmatic name of the form.</param>
-        <summary>Returns whether or not the specified form is to be rendered as part of the current request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns whether or not the specified form is to be rendered as part of the current request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the specified form is to be rendered as part of the current request; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -356,7 +356,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a page weight, based on the device's screen size, which is appropriate for the target device. This property is used in form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a page weight, based on the device's screen size, which is appropriate for the target device. This property is used in form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A page weight, based on the device's screen size, which is appropriate for the target device.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
@@ -380,7 +380,7 @@
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page associated with the device adapter.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Page" />
@@ -404,7 +404,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns whether items from the <see cref="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary" /> property are persisted in the query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns whether items from the <see cref="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary" /> property are persisted in the query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if items from the <see cref="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary" /> property are persisted in the query string; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -437,7 +437,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer to receive output.</param>
-        <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       </Docs>
@@ -462,7 +462,7 @@
       <Docs>
         <param name="writer">The text writer.</param>
         <param name="form">The form to render.</param>
-        <summary>Renders the given form. This method is called by the form adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the given form. This method is called by the form adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
@@ -483,7 +483,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> is rendering multiple forms as cards of the same deck. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns whether the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> is rendering multiple forms as cards of the same deck. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the page is rendering multiple forms as cards of the same deck; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a design-time type converter for a component's data field properties. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a design-time type converter for a component's data field properties. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -49,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Instantiates a new instance of the <see cref="T:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Instantiates a new instance of the <see cref="T:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -85,7 +85,7 @@
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that represents the data-bound component or the control that the property belongs to.</param>
         <param name="sourceType">The type to convert from.</param>
-        <summary>Gets a value indicating whether the specified source type can be converted to the type of the associated control property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the specified source type can be converted to the type of the associated control property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if <paramref name="sourceType" /> is a string; otherwise <see langword="false" />.</returns>
         <remarks>
@@ -125,7 +125,7 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that represents the data-bound component or the control that the property belongs to.</param>
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that can be used to provide additional culture information.</param>
         <param name="value">The object to convert from.</param>
-        <summary>Converts the specified object to a string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Converts the specified object to a string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A string containing the converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -162,7 +162,7 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that represents the data-bound component or the control that the property belongs to.</param>
-        <summary>Gets a list of fields in the selected data source if information about them is available, using the provided context. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a list of fields in the selected data source if information about them is available, using the provided context. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> object containing a list of the names of fields available in the data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -197,7 +197,7 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that represents the data-bound component or the control that the property belongs to.</param>
-        <summary>Indicates whether this converter returns a list containing all possible values that can be assigned to the associated control property, using the provided context. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Indicates whether this converter returns a list containing all possible values that can be assigned to the associated control property, using the provided context. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="false" />.</returns>
         <remarks>
@@ -234,7 +234,7 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that represents the data-bound component or the control that the property belongs to.</param>
-        <summary>Gets a value indicating whether this object returns a standard set of values that can be picked from a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether this object returns a standard set of values that can be picked from a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the context is not null and can be cast to an <see cref="T:System.ComponentModel.IComponent" />; otherwise <see langword="false" />.</returns>
         <remarks>

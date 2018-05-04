@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains wrapping and alignment information for <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Contains wrapping and alignment information for <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
   </Docs>
@@ -24,7 +24,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </MemberGroup>
@@ -45,7 +45,7 @@
       <Docs>
         <param name="alignment">The alignment of the layout.</param>
         <param name="wrapping">The wrapping of the layout.</param>
-        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
@@ -67,7 +67,7 @@
       <Docs>
         <param name="style">The style to use as a base for this layout.</param>
         <param name="currentLayout">The layout to use as a base for this layout.</param>
-        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -94,7 +94,7 @@
         <ReturnType>System.Web.UI.MobileControls.Alignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the alignment. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the alignment. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An enumerated value representing the alignment of the layout.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -126,7 +126,7 @@
       </Parameters>
       <Docs>
         <param name="layout">The layout object to compare.</param>
-        <summary>Compares a <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" /> object to the current <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Compares a <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" /> object to the current <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the values for <see cref="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap" /> and <see cref="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align" /> are the same in both layouts; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -155,7 +155,7 @@
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified wrapping mode for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a read-only base interface for the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Implements a read-only base interface for the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,7 +50,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an array of all the items in the <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns an array of all the items in the <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An array of all the items in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,7 +61,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="IndexOf">
@@ -83,7 +83,7 @@
       </Parameters>
       <Docs>
         <param name="fieldIDOrTitle">A string to compare with the <see langword="Title" /> or <see langword="DataField" /> property.</param>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The index of the specified field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -118,7 +118,7 @@
       </Parameters>
       <Docs>
         <param name="field">A field to search for in the specified collection.</param>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The index of the specified field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -149,7 +149,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item to retrieve from the collection.</param>
-        <summary>Returns an item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns an item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The item in the collection at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>

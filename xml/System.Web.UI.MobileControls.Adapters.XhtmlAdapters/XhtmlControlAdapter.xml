@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a default control adapter for rendering mobile controls in XHTML markup. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a default control adapter for rendering mobile controls in XHTML markup. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -63,7 +63,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +86,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Clears a pending break if the target device breaks on block elements. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears a pending break if the target device breaks on block elements. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -121,7 +121,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="s">The name of the tag you want to clear; the value can be <see langword="null" /> or an empty string ("").</param>
-        <summary>Clears the given text writer's current end tag if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears the given text writer's current end tag if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -153,7 +153,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Clears a pending break in the target device if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears a pending break in the target device if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -186,7 +186,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
-        <summary>Begins a section with the opening tag and attributes that implement the formats of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins a section with the opening tag and attributes that implement the formats of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,7 +226,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
-        <summary>Begins a section with the opening tag and attributes that implement the layout of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins a section with the opening tag and attributes that implement the layout of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -251,7 +251,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Begins a new element that applies the given styles if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins a new element that applies the given styles if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConditionalEnterStyle">
@@ -274,7 +274,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
-        <summary>Writes the opening tag for a <see langword="&lt;span&gt;" /> section, along with attributes that implement the layout and character formatting of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes the opening tag for a <see langword="&lt;span&gt;" /> section, along with attributes that implement the layout and character formatting of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -317,7 +317,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
         <param name="tag">The tag name for the element.</param>
-        <summary>Writes the opening tag of the specified element, along with attributes that implement the layout and character formatting of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes the opening tag of the specified element, along with attributes that implement the layout and character formatting of the specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -358,7 +358,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
-        <summary>Ends a block that has been using the character formatting from a specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends a block that has been using the character formatting from a specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -401,7 +401,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
-        <summary>Ends a block that has been using the layout formatting from a specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends a block that has been using the layout formatting from a specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -443,7 +443,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="style">A <see cref="P:System.Web.UI.MobileControls.MobileControl.Style" /> object.</param>
-        <summary>Ends a <see langword="&lt;/span&gt;" /> element that has been using the layout and character formatting from a specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends a <see langword="&lt;/span&gt;" /> element that has been using the layout and character formatting from a specified style, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -483,7 +483,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Removes the current cascading style sheet class name from the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the current cascading style sheet class name from the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -516,7 +516,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Puts a class name attribute on the next element to be rendered, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Puts a class name attribute on the next element to be rendered, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -557,7 +557,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Renders a closing <see langword="&lt;/div&gt;" /> tag if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a closing <see langword="&lt;/div&gt;" /> tag if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -595,7 +595,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Renders a closing <see langword="&lt;/span&gt;" /> element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a closing <see langword="&lt;/span&gt;" /> element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -620,7 +620,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets the value of the specified custom attribute from the associated control and renders it on the next element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the specified custom attribute from the associated control and renders it on the next element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConditionalRenderCustomAttribute">
@@ -644,7 +644,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="attributeName">The name of the attribute.</param>
-        <summary>Gets the value of the attribute with the specified name from the associated control and renders it on the next element with the specified name if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the attribute with the specified name from the associated control and renders it on the next element with the specified name if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -680,7 +680,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="attributeName">The name of the attribute.</param>
         <param name="markupAttributeName">The XHTML markup name of the attribute.</param>
-        <summary>Includes a custom attribute with the specified name and value in the next element to be rendered, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Includes a custom attribute with the specified name and value in the next element to be rendered, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -712,7 +712,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Renders an opening tag for a <see langword="&lt;div&gt;" /> element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders an opening tag for a <see langword="&lt;div&gt;" /> element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -752,7 +752,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Renders an opening tag for a <see langword="&lt;span&gt;" /> element, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders an opening tag for a <see langword="&lt;span&gt;" /> element, if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -793,7 +793,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Sets a pending break if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets a pending break if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -827,7 +827,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Sets a pending break after inline elements if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets a pending break after inline elements if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -862,7 +862,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the style sheet is located as an external physical file, is internal to the current page, is stored in the current session state, or is stored in the application cache. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Indicates whether the style sheet is located as an external physical file, is internal to the current page, is stored in the current session state, or is stored in the application cache. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation" /> value. The default is <see cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.NotSet" />, which indicates that the location has not yet been determined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -890,7 +890,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the type of XHTML markup used to render the current document. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Indicates the type of XHTML markup used to render the current document. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" /> value. The default is <see cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.NotSet" />, which indicates that the document type has not yet been determined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -919,7 +919,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exits any secondary UI mode for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Exits any secondary UI mode for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -940,7 +940,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets the value of the specified custom attribute. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the specified custom attribute. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCustomAttributeValue">
@@ -962,7 +962,7 @@
       </Parameters>
       <Docs>
         <param name="attributeName">The name of the attribute.</param>
-        <summary>Gets the value of the specified attribute from the markup of the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the specified attribute from the markup of the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A string containing the value of the specified custom attribute.  
   
  This method is primarily used by developers of custom adapters.</returns>
@@ -990,7 +990,7 @@
       <Docs>
         <param name="control">The mobile control from which to get the attribute value.</param>
         <param name="attributeName">The name of the attribute.</param>
-        <summary>Gets the value of the specified attribute from a given control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the specified attribute from a given control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A string containing the value of the specified custom attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1021,7 +1021,7 @@
       </Parameters>
       <Docs>
         <param name="state">The current view state of the adapter.</param>
-        <summary>Loads view state data specific to this adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads view state data specific to this adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1053,7 +1053,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A value returned by the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> property, indicating that the adapter is not currently in secondary UI mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>A value returned by the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> property, indicating that the adapter is not currently in secondary UI mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1081,7 +1081,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the page adapter for the page on which the associated control resides. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the page adapter for the page on which the associated control resides. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" /> representing the page adapter for the current page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1113,7 +1113,7 @@
       </Parameters>
       <Docs>
         <param name="queryString">The query string from the <see cref="P:System.Web.HttpRequest.QueryString" />.</param>
-        <summary>Gets the portion of the given query string that contains parameters for processing the request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the portion of the given query string that contains parameters for processing the request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A string containing the processed query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1143,7 +1143,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
@@ -1167,7 +1167,7 @@
       </Parameters>
       <Docs>
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</param>
-        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1204,7 +1204,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1238,7 +1238,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Renders hidden field text for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders hidden field text for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1256,7 +1256,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Renders the opening tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the opening tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </MemberGroup>
@@ -1281,7 +1281,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="target">The name of the target form, or a URL.</param>
-        <summary>Renders the opening tag of a link using the given <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> and target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the opening tag of a link using the given <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> and target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1321,7 +1321,7 @@
         <param name="accessKey">A character to use as the shortcut key.</param>
         <param name="style">A <see cref="T:System.Web.UI.MobileControls.Style" /> object.</param>
         <param name="cssClass">A cascading style sheet class name.</param>
-        <summary>Renders the opening tag of a link using the given <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> and target, as well as the given styles or the given cascading style sheet class name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the opening tag of a link using the given <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> and target, as well as the given styles or the given cascading style sheet class name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1363,7 +1363,7 @@
         <param name="style">A <see cref="T:System.Web.UI.MobileControls.Style" /> object.</param>
         <param name="cssClass">A cascading style sheet class name.</param>
         <param name="title">The text for the <see langword="title" /> attribute of the link.</param>
-        <summary>Renders the opening tag of a link using the given <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> and target, as well as either the given styles or the given cascading style sheet class name, the access key, and the title text. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the opening tag of a link using the given <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> and target, as well as either the given styles or the given cascading style sheet class name, the access key, and the title text. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1396,7 +1396,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="tagName">The tag name of the element to close.</param>
-        <summary>Renders a closing tag for a specified list element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a closing tag for a specified list element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1427,7 +1427,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
-        <summary>Renders a closing tag (<see langword="&lt;/a&gt;" />) for a link element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a closing tag (<see langword="&lt;/a&gt;" />) for a link element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1461,7 +1461,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="control">The control in which to look for postback variables.</param>
         <param name="page">The current page number.</param>
-        <summary>Renders hidden postback variables for child controls that are not visible due to pagination or secondary UI. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders hidden postback variables for child controls that are not visible due to pagination or secondary UI. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1497,7 +1497,7 @@
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="tagName">The name of the tag to use for the rendered list.</param>
-        <summary>Renders an opening tag for the specified tag name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders an opening tag for the specified tag name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1518,7 +1518,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Renders a postback event as a link on the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a postback event as a link on the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="RenderPostBackEventAsAnchor">
@@ -1544,7 +1544,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <param name="argument">A string containing the argument you want to provide to the event.</param>
         <param name="linkText">A string containing the text that is to appear in the link.</param>
-        <summary>Renders a postback event as a link with the specified argument and text. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a postback event as a link with the specified argument and text. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1583,7 +1583,7 @@
         <param name="argument">The argument you want to pass to the event.</param>
         <param name="linkText">The text to appear in the link.</param>
         <param name="accessKey">A character to use as the shortcut key.</param>
-        <summary>Renders a postback event as a link with the specified argument, text, and access key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a postback event as a link with the specified argument, text, and access key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1624,7 +1624,7 @@
         <param name="accessKey">A character to use as the shortcut key.</param>
         <param name="style">A <see cref="T:System.Web.UI.MobileControls.Style" /> object.</param>
         <param name="cssClass">The name of a class in the current cascading style sheet.</param>
-        <summary>Renders a postback event as a link with the specified argument, text, and access key, as well as the specified styles or the specified cascading style sheet class name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a postback event as a link with the specified argument, text, and access key, as well as the specified styles or the specified cascading style sheet class name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1653,7 +1653,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves view-state data specific to this adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves view-state data specific to this adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> if the value of the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> setting does not equal <see cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.NotSecondaryUI" />: otherwise <see langword="null" />.</returns>
         <remarks>
@@ -1685,7 +1685,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current secondary UI mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the current secondary UI mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A number indicating the current secondary UI mode, as determined by the form in which it is contained.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1721,7 +1721,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see langword="CssLocation" /> attribute, if it exists, from the form in which it is contained. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the <see langword="CssLocation" /> attribute, if it exists, from the form in which it is contained. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A string containing the path and filename of a cascading style sheet if the attribute exists; otherwise, <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1749,7 +1749,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see langword="XhtmlCssState" /> configuration setting in the <see langword="appSettings" /> section of the Web.config file. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the value of the <see langword="XhtmlCssState" /> configuration setting in the <see langword="appSettings" /> section of the Web.config file. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A string containing the path and filename of a cascading style sheet if the configuration setting exists; otherwise, <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides parsing support for DeviceSpecific/Choice constructs. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides parsing support for DeviceSpecific/Choice constructs. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificControlBuilder" /> the class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificControlBuilder" /> the class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +68,7 @@
       </Parameters>
       <Docs>
         <param name="text">The literal content to add to a control.</param>
-        <summary>Adds the specified literal content to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds the specified literal content to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +93,7 @@
       <Docs>
         <param name="tagName">The tag name of the child.</param>
         <param name="attributes">An <see cref="T:System.Collections.IDictionary" /> of attributes contained in the child control.</param>
-        <summary>Obtains the <see cref="T:System.Type" /> of the control type corresponding to a child tag. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Obtains the <see cref="T:System.Type" /> of the control type corresponding to a child tag. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The <see cref="T:System.Type" /> of the specified control's child.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

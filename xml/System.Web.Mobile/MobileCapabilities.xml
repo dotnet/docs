@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a single source for accessing capability information about a client device and for performing queries against device capabilities. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a single source for accessing capability information about a client device and for performing queries against device capabilities. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -81,7 +81,7 @@ public void Page_Load(Object sender, EventArgs e)
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.Mobile.MobileCapabilities" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.Mobile.MobileCapabilities" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +106,7 @@ public void Page_Load(Object sender, EventArgs e)
       <Docs>
         <param name="delegateName">The device evaluation method, property name, or item in the capabilities collection.</param>
         <param name="optionalParameter">The optional argument.</param>
-        <summary>Provides a uniform way to evaluate device capabilities. This method is used internally by ASP.NET to implement various device-selection criteria expressed in the syntax of the controls. For example, this method is used to choose among [&lt;Choice&gt; Element (.NET Framework Developer's Guide)](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements in a DeviceSpecific/Choice construct. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Provides a uniform way to evaluate device capabilities. This method is used internally by ASP.NET to implement various device-selection criteria expressed in the syntax of the controls. For example, this method is used to choose among [&lt;Choice&gt; Element (.NET Framework Developer's Guide)](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements in a DeviceSpecific/Choice construct. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the device has the specified capability; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -138,7 +138,7 @@ public void Page_Load(Object sender, EventArgs e)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the source identifier to use for compact HTML 1.0. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the source identifier to use for compact HTML 1.0. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -164,7 +164,7 @@ public void Page_Load(Object sender, EventArgs e)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the source identifier to use for HTML 3.2. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the source identifier to use for HTML 3.2. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -190,7 +190,7 @@ public void Page_Load(Object sender, EventArgs e)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the source identifier to use for WML 1.1. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the source identifier to use for WML 1.1. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -216,7 +216,7 @@ public void Page_Load(Object sender, EventArgs e)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the source identifier to use for WML 1.2. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the source identifier to use for WML 1.2. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

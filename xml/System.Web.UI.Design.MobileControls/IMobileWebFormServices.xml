@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines an interface for a page designer component to obtain services from a designer host such as Visual Studio 2005 at design time. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Defines an interface for a page designer component to obtain services from a designer host such as Visual Studio 2005 at design time. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -42,7 +42,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all items in the designer host's **Undo** cache at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears all items in the designer host's **Undo** cache at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -74,7 +74,7 @@
       <Docs>
         <param name="controlID">The ID for the container control.</param>
         <param name="key">The key for the cache item.</param>
-        <summary>Gets an item from the cache of the designer host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets an item from the cache of the designer host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An object from the cache of the designer host.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -102,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes the page in the designer host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Refreshes the page in the designer host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -136,7 +136,7 @@
         <param name="controlID">The ID of the container control.</param>
         <param name="key">The key for the cache item.</param>
         <param name="value">The item to store in the cache.</param>
-        <summary>Stores an object in the designer host's cache at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Stores an object in the designer host's cache at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
       </Parameters>
       <Docs>
         <param name="rootControl">The container control with which to begin the update.</param>
-        <summary>Recursively updates the associated control and each of its child controls in the design host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Recursively updates the associated control and each of its child controls in the design host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

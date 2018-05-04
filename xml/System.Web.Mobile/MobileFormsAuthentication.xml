@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Supports cookieless devices by appending appropriate authentication information to the appropriate URLs. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Supports cookieless devices by appending appropriate authentication information to the appropriate URLs. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +46,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Redirects an authenticated user back to the originally requested URL. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Redirects an authenticated user back to the originally requested URL. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="RedirectFromLoginPage">
@@ -70,7 +70,7 @@
       <Docs>
         <param name="userName">Name of the user for cookie authentication purposes. This does not need to map to an account name and is used by URL Authorization.</param>
         <param name="createPersistentCookie">Specifies whether or not a durable cookie (one that is session based or outlasts the session) must be issued.</param>
-        <summary>Redirects an authenticated user to the originally requested URL after logging in. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Redirects an authenticated user to the originally requested URL after logging in. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -112,7 +112,7 @@
         <param name="userName">Name of the user for cookie authentication purposes. This does not need to map to an account name and is used by URL Authorization.</param>
         <param name="createPersistentCookie">Specifies whether or not a durable cookie (one that is session based or outlasts the session) must be issued.</param>
         <param name="strCookiePath">Returns the configured cookie path used for the current application.</param>
-        <summary>Redirects an authenticated user to the originally requested URL after logging in. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Redirects an authenticated user to the originally requested URL after logging in. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -147,7 +147,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="M:System.Web.Security.FormsAuthentication.SignOut" /> method and sets the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" /> property to <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Calls the <see cref="M:System.Web.Security.FormsAuthentication.SignOut" /> method and sets the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" /> property to <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" />
         <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />

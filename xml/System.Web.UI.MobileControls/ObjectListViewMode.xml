@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the display mode of the object list. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Specifies the display mode of the object list. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -49,7 +49,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Command's view in WML. This is the default view displayed when the page containing the object list is rendered for the first time. It consists of either the label fields of the items, or (when TableFields is not empty) a table with columns corresponding to the table fields and rows corresponding to items. When there is more information in the <see langword="Details" /> view, a hyperlink for each item displaying the <see langword="Details" /> view is rendered, by default reading <see langword="More" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Command's view in WML. This is the default view displayed when the page containing the object list is rendered for the first time. It consists of either the label fields of the items, or (when TableFields is not empty) a table with columns corresponding to the table fields and rows corresponding to items. When there is more information in the <see langword="Details" /> view, a hyperlink for each item displaying the <see langword="Details" /> view is rendered, by default reading <see langword="More" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
@@ -70,7 +70,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Details view. This view is rendered separately only for WML devices. It consists of a menu with the ObjectList's commands, along with an menu item displaying the <see langword="Details" /> view. For HTML devices, this view is combined with the <see langword="Details" /> view, with the commands appearing as hyperlinks below the details. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Details view. This view is rendered separately only for WML devices. It consists of a menu with the ObjectList's commands, along with an menu item displaying the <see langword="Details" /> view. For HTML devices, this view is combined with the <see langword="Details" /> view, with the commands appearing as hyperlinks below the details. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
@@ -91,7 +91,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>List view. This view displays each field of the item, including title and value. In HTML, this view is combined with the <see langword="Commands" /> view, with the commands appearing as hyperlinks below the details. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>List view. This view displays each field of the item, including title and value. In HTML, this view is combined with the <see langword="Commands" /> view, with the commands appearing as hyperlinks below the details. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="P:System.Web.UI.MobileControls.ObjectList.ViewMode" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>

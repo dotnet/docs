@@ -36,7 +36,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a programmable control for displaying larger amounts of text, with optional markup tags on a mobile page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a programmable control for displaying larger amounts of text, with optional markup tags on a mobile page. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -81,7 +81,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.TextView" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.TextView" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +108,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the first <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object on the current text view after the text is paginated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the index of the first <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object on the current text view after the text is paginated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The index of the first <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object on the current text view when the text view is paginated. If there are no <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> objects for the current <see cref="T:System.Web.UI.MobileControls.TextView" /> object, returns -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -143,7 +143,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the character offset into the first <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> class, which is displayed when paginated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the character offset into the first <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> class, which is displayed when paginated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The character offset into the first <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> class, which is displayed when paginated. If there are no <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> objects for the current <see cref="T:System.Web.UI.MobileControls.TextView" /> object, this value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -174,7 +174,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> class.</param>
-        <summary>Returns the <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> class at the given index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> class at the given index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> at the given index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -201,7 +201,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The number of items in the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.PagedControl.InternalItemCount" />
@@ -233,7 +233,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The number of items in the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,7 +264,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the number of items displayed per page after pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the number of items displayed per page after pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The number of items displayed per page after pagination.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -304,7 +304,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the approximate weight of a single item in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the approximate weight of a single item in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The approximate weight of a single item in the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.PagedControl.ItemWeight" />
@@ -333,7 +333,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the index of the last <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object on the current <see cref="T:System.Web.UI.MobileControls.TextView" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of the last <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object on the current <see cref="T:System.Web.UI.MobileControls.TextView" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The index of the last <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> on the current <see cref="T:System.Web.UI.MobileControls.TextView" />. If there are no <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> objects on the current <see cref="T:System.Web.UI.MobileControls.TextView" />, returns 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -368,7 +368,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the character offset into the last <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object, which is displayed when paginated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the character offset into the last <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object, which is displayed when paginated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The character offset into the last <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> object, which is displayed when paginated. If there are no <see cref="T:System.Web.UI.MobileControls.TextViewElement" /> objects on the current <see cref="T:System.Web.UI.MobileControls.TextView" />, returns 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -400,7 +400,7 @@
         <ReturnType>System.Web.UI.MobileControls.LoadItemsEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a control is custom-paginated and needs more data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when a control is custom-paginated and needs more data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -441,7 +441,7 @@
       </Parameters>
       <Docs>
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that will render the content.</param>
-        <summary>Raises the <see cref="M:System.Web.UI.MobileControls.MobileControl.Render(System.Web.UI.HtmlTextWriter)" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="M:System.Web.UI.MobileControls.MobileControl.Render(System.Web.UI.HtmlTextWriter)" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
@@ -465,7 +465,7 @@
       </Parameters>
       <Docs>
         <param name="pager">The pager.</param>
-        <summary>Paginates the control and its children. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Paginates the control and its children. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.PagedControl.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       </Docs>
@@ -496,7 +496,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the text for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the text for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text for the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

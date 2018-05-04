@@ -37,7 +37,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Organizes style characteristics of an ASP.NET mobile control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Organizes style characteristics of an ASP.NET mobile control. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -73,7 +73,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Style" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Style" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +96,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object to be set as the value of <see cref="P:System.Web.UI.MobileControls.Style.DeviceSpecific" />.</param>
-        <summary>Sets the <see cref="P:System.Web.UI.MobileControls.Style.DeviceSpecific" /> property to the specified object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets the <see cref="P:System.Web.UI.MobileControls.Style.DeviceSpecific" /> property to the specified object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -134,7 +134,7 @@
         <ReturnType>System.Web.UI.MobileControls.Alignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified alignment for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified alignment for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An enumerated value representing the specified alignment for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -169,7 +169,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the key used to retrieve the <see cref="P:System.Web.UI.MobileControls.Style.Alignment" /> setting of the <see cref="T:System.Web.UI.MobileControls.Style" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Represents the key used to retrieve the <see cref="P:System.Web.UI.MobileControls.Style.Alignment" /> setting of the <see cref="T:System.Web.UI.MobileControls.Style" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@
       </Parameters>
       <Docs>
         <param name="control">The control to which the style properties are applied.</param>
-        <summary>Applies the properties of a style to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Applies the properties of a style to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -240,7 +240,7 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified background color for the style. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified background color for the style. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified background color for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -267,7 +267,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for <see cref="P:System.Web.UI.MobileControls.Style.BackColor" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for <see cref="P:System.Web.UI.MobileControls.Style.BackColor" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +286,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for setting the <see cref="P:System.Web.UI.MobileControls.FontInfo.Bold" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" />. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for setting the <see cref="P:System.Web.UI.MobileControls.FontInfo.Bold" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" />. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,7 +309,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a copy of this instance of the <see cref="T:System.Web.UI.MobileControls.Style" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a copy of this instance of the <see cref="T:System.Web.UI.MobileControls.Style" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A copy of this instance of <see cref="T:System.Web.UI.MobileControls.Style" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,7 +337,7 @@
         <ReturnType>System.Web.UI.MobileControls.MobileControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A strongly typed reference to the associated control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -372,7 +372,7 @@
         <ReturnType>System.Web.UI.MobileControls.DeviceSpecific</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. The accessor returns <see langword="null" /> if no such construct exists. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. The accessor returns <see langword="null" /> if no such construct exists. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The DeviceSpecific/Choice construct associated with the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
@@ -404,7 +404,7 @@
         <ReturnType>System.Web.UI.MobileControls.FontInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a <see cref="T:System.Web.UI.WebControls.FontInfo" /> object that contains font information about the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a <see cref="T:System.Web.UI.WebControls.FontInfo" /> object that contains font information about the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An enumerated value specifying the font information about the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -439,7 +439,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Name" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Name" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
@@ -459,7 +459,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Size" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Size" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
@@ -493,7 +493,7 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified foreground color for the style. Typically, this property sets the color for the text. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified foreground color for the style. Typically, this property sets the color for the text. The default value is <see cref="F:System.Drawing.Color.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified foreground color for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -522,7 +522,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.Style.ForeColor" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.Style.ForeColor" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,7 +545,7 @@
       </Parameters>
       <Docs>
         <param name="templateName">The name of the specified template.</param>
-        <summary>Returns the template with the specified name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the template with the specified name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The template with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -580,7 +580,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a <see cref="T:System.Web.UI.MobileControls.Style" /> object has an active template set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether a <see cref="T:System.Web.UI.MobileControls.Style" /> object has an active template set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the style has an active template set; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -609,7 +609,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.MobileControls.Style" /> object is saving changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.MobileControls.Style" /> object is saving changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the control is tracking changes to its view state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -630,7 +630,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Italic" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Italic" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
@@ -641,7 +641,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns the style through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the style through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -663,7 +663,7 @@
       </Parameters>
       <Docs>
         <param name="key">The key of the style to get or set.</param>
-        <summary>Returns the style through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the style through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The style specified by the given <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,7 +690,7 @@
         <param name="key">The key of the style to get or set.</param>
         <param name="inherit">
           <see langword="true" /> to use inheritance; otherwise, <see langword="false" />.</param>
-        <summary>Returns the style, through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the style, through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The style specified by <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -714,7 +714,7 @@
       </Parameters>
       <Docs>
         <param name="state">The object containing the view-state information.</param>
-        <summary>Loads the view state into the <see cref="P:System.Web.UI.MobileControls.Style.State" /> of the <see cref="T:System.Web.UI.MobileControls.Style" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads the view state into the <see cref="P:System.Web.UI.MobileControls.Style.State" /> of the <see cref="T:System.Web.UI.MobileControls.Style" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -751,7 +751,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the specified object. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the name of the specified object. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the specified object.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -780,7 +780,7 @@
         <param name="type">The type used for the property.</param>
         <param name="defaultValue">The default value of the property.</param>
         <param name="inherit">Indicates whether the style inherits from parent objects. The default is <see langword="true" />.</param>
-        <summary>Registers a style property and returns a unique key for lookup. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Registers a style property and returns a unique key for lookup. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A unique key for lookup.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -816,7 +816,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes to the view state to an <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves the changes to the view state to an <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The object that contains the view state.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -836,7 +836,7 @@
         <ReturnType>System.Web.UI.StateBag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current contents of the <see cref="T:System.Web.UI.StateBag" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the current contents of the <see cref="T:System.Web.UI.StateBag" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The current contents of the <see cref="T:System.Web.UI.StateBag" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -870,7 +870,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a reference to the style properties for a <see cref="T:System.Web.UI.MobileControls.Style" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a reference to the style properties for a <see cref="T:System.Web.UI.MobileControls.Style" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A reference to the style properties for a <see cref="T:System.Web.UI.MobileControls.Style" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -901,7 +901,7 @@
       </Parameters>
       <Docs>
         <param name="o">The parsed subobject to be added.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -927,7 +927,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -958,7 +958,7 @@
       </Parameters>
       <Docs>
         <param name="state">The object representing the view state to be loaded.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -985,7 +985,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1013,7 +1013,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1040,7 +1040,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Turns on the tracking of view state in the <see cref="T:System.Web.UI.MobileControls.Style" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Turns on the tracking of view state in the <see cref="T:System.Web.UI.MobileControls.Style" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1077,7 +1077,7 @@
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An enumerated value that specifies the wrapping mode for the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1110,7 +1110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key for retrieving the style from the embedded style sheet for <see cref="P:System.Web.UI.MobileControls.Style.Wrapping" />. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>The key for retrieving the style from the embedded style sheet for <see cref="P:System.Web.UI.MobileControls.Style.Wrapping" />. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

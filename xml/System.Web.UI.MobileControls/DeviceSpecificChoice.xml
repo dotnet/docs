@@ -34,7 +34,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a single choice within a DeviceSpecific/Choice construct. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a single choice within a DeviceSpecific/Choice construct. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -74,7 +74,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
       </Parameters>
       <Docs>
         <param name="obj">The object to be added.</param>
-        <summary>Adds the <see cref="T:System.Object" /> to the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object's <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds the <see cref="T:System.Object" /> to the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object's <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -123,7 +123,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the argument used for a <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" /> property. The default value is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the argument used for a <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" /> property. The default value is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The argument used for a <see cref="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -155,7 +155,7 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the overridden properties defined for a choice in a DeviceSpecific/Choice construct. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the overridden properties defined for a choice in a DeviceSpecific/Choice construct. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The overridden properties defined for a choice in a DeviceSpecific/Choice construct.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -187,7 +187,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of a device filter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the name of a device filter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of a device filter. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -235,7 +235,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       </Parameters>
       <Docs>
         <param name="key">The name of the attribute to get.</param>
-        <summary>Returns the specified attribute from the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the specified attribute from the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.String" /> that contains the value of the specified attribute.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">There is no attribute in the object identified by <paramref name="key" />.</exception>
@@ -261,7 +261,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the currently selected choice in the [&lt;DeviceSpecific&gt;](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element has templates defined within it. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the currently selected choice in the [&lt;DeviceSpecific&gt;](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element has templates defined within it. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the currently selected choice has templates defined with in it; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -288,7 +288,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <Docs>
         <param name="key">The name of the attribute to set.</param>
         <param name="value">The value that is assigned to the attribute.</param>
-        <summary>Assigns the given value to the attribute specified by the key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Assigns the given value to the attribute specified by the key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,7 +311,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       </Parameters>
       <Docs>
         <param name="name">The name of the attribute to be set.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.String" /> that contains the value of the specified attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -344,7 +344,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <Docs>
         <param name="name">The name of the attribute to be set.</param>
         <param name="value">The value assigned to the attribute.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -374,7 +374,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       </Parameters>
       <Docs>
         <param name="obj">The object to be added.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -405,7 +405,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the templates that have been defined in the [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the templates that have been defined in the [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> instance containing the <see cref="T:System.Web.UI.ITemplate" /> objects defined for the <see langword="&lt;Choice&gt;" /> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -430,7 +430,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of markup in a [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the type of markup in a [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The type of markup inside templates of a choice.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

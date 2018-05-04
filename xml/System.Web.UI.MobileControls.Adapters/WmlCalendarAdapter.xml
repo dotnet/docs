@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a calendar adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a calendar adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -62,7 +62,7 @@
         <ReturnType>System.Web.UI.MobileControls.Calendar</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A strongly typed reference to the associated control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +86,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">Name of the event.</param>
-        <summary>Returns <see langword="true" /> if the event was handled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns <see langword="true" /> if the event was handled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -112,7 +112,7 @@
       </Parameters>
       <Docs>
         <param name="state">The current view state.</param>
-        <summary>Loads the view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads the view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.LoadAdapterState(System.Object)" />
       </Docs>
@@ -136,7 +136,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object (defined by <see cref="T:System.EventArgs" />) that contains event data.</param>
-        <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after an object, such as a form or a page, is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnInit(System.EventArgs)" />
       </Docs>
@@ -160,7 +160,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object (defined by <see cref="T:System.EventArgs" />) that contains event data.</param>
-        <summary>Loads data that pertains to a control, a page, or a device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads data that pertains to a control, a page, or a device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnLoad(System.EventArgs)" />
       </Docs>
@@ -184,7 +184,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object (defined by <see cref="T:System.EventArgs" />) that contains event data.</param>
-        <summary>Called by the control's OnPreRender method, to perform adapter-specific work prior to rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called by the control's OnPreRender method, to perform adapter-specific work prior to rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" />
       </Docs>
@@ -208,7 +208,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer to receive output.</param>
-        <summary>Generates the target-specific markup for the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Generates the target-specific markup for the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       </Docs>
@@ -229,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the control saves its private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called when the control saves its private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="Null" /> in all cases.</returns>
         <remarks>To be added.</remarks>

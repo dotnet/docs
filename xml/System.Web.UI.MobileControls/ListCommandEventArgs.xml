@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.List.ItemCommand" /> event of a <see cref="T:System.Web.UI.MobileControls.List" /> control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.List.ItemCommand" /> event of a <see cref="T:System.Web.UI.MobileControls.List" /> control. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +43,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
       </Docs>
     </MemberGroup>
@@ -65,7 +65,7 @@
       <Docs>
         <param name="item">Initializes the <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" /> property.</param>
         <param name="commandSource">Initializes the <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class using the provided <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" /> and <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class using the provided <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" /> and <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -97,7 +97,7 @@
         <param name="item">Initializes the <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" /> property.</param>
         <param name="commandSource">Initializes the <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" /> property.</param>
         <param name="originalArgs">The original arguments inherited from the <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class using the given <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" />, <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" />, and the original command arguments. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class using the given <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" />, <see cref="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" />, and the original command arguments. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -126,7 +126,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the control that raised the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the control that raised the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The control that raised the event.</value>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
@@ -147,7 +147,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the name of the default command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the name of the default command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -186,7 +186,7 @@
         <ReturnType>System.Web.UI.MobileControls.MobileListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the list item that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the list item that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The list item that generated the event.</value>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />

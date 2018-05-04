@@ -34,7 +34,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the core implementation for all validation controls derived from this class. As an abstract class, it cannot be instantiated. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides the core implementation for all validation controls derived from this class. As an abstract class, it cannot be instantiated. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +68,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.BaseValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.BaseValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -101,7 +101,7 @@
       <Docs>
         <param name="name">The name of the control that has a property to be validated.</param>
         <param name="propertyName">The name of the property that is to be validated.</param>
-        <summary>Determines whether the specified control to be validated has a property that can be validated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the specified control to be validated has a property that can be validated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">either the <paramref name="name" /> or <paramref name="propertyName" /> parameters is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
@@ -123,7 +123,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the properties to be validated are valid. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the properties to be validated are valid. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if control properties to be validated are valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -157,7 +157,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ID of the control to validate. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the ID of the control to validate. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The ID of the control to validate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -186,7 +186,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Constructs and returns the <see cref="T:System.Web.UI.MobileControls.Style" /> object to be associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Constructs and returns the <see cref="T:System.Web.UI.MobileControls.Style" /> object to be associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A new <see cref="T:System.Web.UI.MobileControls.Style" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
@@ -208,7 +208,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An aggregated Web validator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -244,7 +244,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display behavior of the error message of the validation control. The default value is <see cref="F:System.Web.UI.WebControls.ValidatorDisplay.Dynamic" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the display behavior of the error message of the validation control. The default value is <see cref="F:System.Web.UI.WebControls.ValidatorDisplay.Dynamic" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The display behavior of the error message of the validation control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -282,7 +282,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that will be used for the error message. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the text that will be used for the error message. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text that will be used for the error message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -311,7 +311,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called during the validation stage when ASP.NET processes a Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called during the validation stage when ASP.NET processes a Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -351,7 +351,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the data validated by the control is valid. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a value indicating whether the data validated by the control is valid. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the data validated by the control is valid; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -400,7 +400,7 @@
       </Parameters>
       <Docs>
         <param name="e">None</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,7 +424,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a reference to the style properties for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a reference to the style properties for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>None.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -445,7 +445,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs control validation, and then sets the <see cref="P:System.Web.UI.MobileControls.BaseValidator.IsValid" /> property based on the results of the validation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Performs control validation, and then sets the <see cref="P:System.Web.UI.MobileControls.BaseValidator.IsValid" /> property based on the results of the validation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -472,7 +472,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the approximate weight of the control, in characters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the approximate weight of the control, in characters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>None.</value>
         <remarks>To be added.</remarks>
       </Docs>

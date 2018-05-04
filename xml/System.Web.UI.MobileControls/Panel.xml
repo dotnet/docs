@@ -40,7 +40,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a container for organizing controls in a mobile Web forms page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a container for organizing controls in a mobile Web forms page. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -89,7 +89,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Panel" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Panel" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.Panel" />
       </Docs>
@@ -113,7 +113,7 @@
       </Parameters>
       <Docs>
         <param name="linkedForms">The set of forms that contain links to the specified control.</param>
-        <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileControl.AddLinkedForms(System.Collections.IList)" />
       </Docs>
@@ -138,7 +138,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a property that determines whether an additional trailing break is rendered after the control. This break causes subsequent content to start on the next line. The default is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a property that determines whether an additional trailing break is rendered after the control. This break causes subsequent content to start on the next line. The default is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if an additional trailing break is rendered after the control; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -171,7 +171,7 @@
         <ReturnType>System.Web.UI.MobileControls.Panel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a panel containing device-specific content. A content template must be defined and chosen for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a panel containing device-specific content. A content template must be defined and chosen for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The panel containing device-specific panel content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -212,7 +212,7 @@
       </Parameters>
       <Docs>
         <param name="doDataBind">Set to <see langword="true" /> if the instantiated templates must bind to available data (which usually happens on the first request). Set to <see langword="false" /> if the templates must not bind to data, and instead rely on view state to fill them in (which usually happens on subsequent postbacks).</param>
-        <summary>Called by device adapters to create the default templated user interface (UI) for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called by device adapters to create the default templated user interface (UI) for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileControl.CreateDefaultTemplatedUI(System.Boolean)" />
       </Docs>
@@ -236,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnInit(System.EventArgs)" />
       </Docs>
@@ -264,7 +264,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value indicating whether or not to paginate the <see cref="T:System.Web.UI.MobileControls.Panel" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a Boolean value indicating whether or not to paginate the <see cref="T:System.Web.UI.MobileControls.Panel" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> to paginate the <see cref="T:System.Web.UI.MobileControls.Panel" />; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -310,7 +310,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the children of the control must be paginated. Used for form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the children of the control must be paginated. Used for form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the children of the control must be paginated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -336,7 +336,7 @@
       </Parameters>
       <Docs>
         <param name="pager">The pager.</param>
-        <summary>Paginates the control and its children. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Paginates the control and its children. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileControl.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       </Docs>

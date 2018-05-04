@@ -40,7 +40,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides control capability to render a command that the user can select to dial the specified phone number. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides control capability to render a command that the user can select to dial the specified phone number. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -80,7 +80,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
       </Parameters>
       <Docs>
         <param name="linkedForms">The set of forms that contain links to the specified control.</param>
-        <summary>Adds, to the list provided, the set of forms that contains links to the specified control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds, to the list provided, the set of forms that contains links to the specified control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a formatting string for the text value that is displayed on devices that are not able to originate telephone calls. The default value is <see langword="{0} {1}" />, meaning that the default text will be the <see cref="P:System.Web.UI.MobileControls.TextControl.Text" /> property with the <see cref="P:System.Web.UI.MobileControls.PhoneCall.PhoneNumber" /> property concatenated to it, with a space between them. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a formatting string for the text value that is displayed on devices that are not able to originate telephone calls. The default value is <see langword="{0} {1}" />, meaning that the default text will be the <see cref="P:System.Web.UI.MobileControls.TextControl.Text" /> property with the <see cref="P:System.Web.UI.MobileControls.PhoneCall.PhoneNumber" /> property concatenated to it, with a space between them. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A formatting string for the text value that is displayed on devices that are not able to originate telephone calls.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -168,7 +168,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL where the device will go to on non-calling devices. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the URL where the device will go to on non-calling devices. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The URL where the device will go to on non-calling devices.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -202,7 +202,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -237,7 +237,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string that represents a phone number. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a string that represents a phone number. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A string that represents a phone number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -309,7 +309,7 @@ decoration_character ::= "(" | ")" | "." | "-" | {space}
       </Parameters>
       <Docs>
         <param name="argument">A <see cref="T:System.String" /> that represents an optional event argument to be passed to the event handler.</param>
-        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,7 +336,7 @@ decoration_character ::= "(" | ")" | "." | "-" | {space}
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the label used when a softkey is displayed. The default value is the word <see langword="Call" /> (or a localized equivalent). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the label used when a softkey is displayed. The default value is the word <see langword="Call" /> (or a localized equivalent). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The label used when a softkey is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -367,7 +367,7 @@ decoration_character ::= "(" | ")" | "." | "-" | {space}
       </Parameters>
       <Docs>
         <param name="eventArgument">The optional event arguments to be passed to the event handler.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

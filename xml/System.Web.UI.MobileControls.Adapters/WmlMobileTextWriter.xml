@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a mobile text writer adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides a mobile text writer adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
@@ -43,7 +43,7 @@
         <param name="writer">The base writer object.</param>
         <param name="device">An object of the <see cref="T:System.Web.Mobile.MobileCapabilities" /> class that provides the capability information for the specific device.</param>
         <param name="page">The mobile page to write to.</param>
-        <summary>Creates a new instance of the specified class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a new instance of the specified class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -78,7 +78,7 @@
         <param name="value">The value to which the variable is initialized when the browser renders the form.</param>
         <param name="generateRandomID">
           <see langword="true" /> to encrypt the identifier for the control; otherwise, <see langword="false" />.</param>
-        <summary>Adds a variable to be initialized when the browser renders the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a variable to be initialized when the browser renders the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -104,7 +104,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns whether the writer is in analyze mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns whether the writer is in analyze mode. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the writer is in analyze mode; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -139,7 +139,7 @@
         <param name="includeVariables">
           <see langword="true" /> to include in the post fields the information for all <see cref="T:System.Web.UI.IPostBackDataHandler" /> interfaces in the form; <see langword="false" /> to include no <see cref="T:System.Web.UI.IPostBackDataHandler" /> information.</param>
         <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />.</param>
-        <summary>Analyzes a single postback. Called internally by the writer and inherited classes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Analyzes a single postback. Called internally by the writer and inherited classes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -166,7 +166,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -195,7 +195,7 @@
       </Parameters>
       <Docs>
         <param name="form">The form to begin.</param>
-        <summary>Begins the given form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins the given form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -229,7 +229,7 @@
           <see langword="true" /> to indicate that the current form submits to an external URL; otherwise, <see langword="false" />.</param>
         <param name="encode">
           <see langword="true" /> to encode the URL string; otherwise, <see langword="false" />.</param>
-        <summary>Returns the calculated URL required to post the form to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the calculated URL required to post the form to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The calculated URL required to post the form to the server.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -257,7 +257,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the query string to add to the URL to post the form to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the query string to add to the URL to post the form to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The query string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -285,7 +285,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes any currently open character formatting tags. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Closes any currently open character formatting tags. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -312,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes an open paragraph. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Closes an open paragraph. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -338,7 +338,7 @@
         <ReturnType>System.Web.UI.MobileControls.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the form currently being rendered. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the form currently being rendered. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The form currently being rendered.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,7 +358,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the default character formatting used by the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the default character formatting used by the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The default character formatting used by the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -385,7 +385,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the default layout used by the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the default layout used by the device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The default layout used by the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -413,7 +413,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends a custom markup section. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -440,7 +440,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -467,7 +467,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ensures that character formatting tags corresponding to the current format have been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ensures that character formatting tags corresponding to the current format have been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -494,7 +494,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ensures that a <see langword="&lt; p &gt;" /> tag corresponding to the current layout has been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ensures that a <see langword="&lt; p &gt;" /> tag corresponding to the current layout has been written. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -523,7 +523,7 @@
       </Parameters>
       <Docs>
         <param name="style">The specified style to use for formatting characters</param>
-        <summary>Begins a block by using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins a block by using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       </Docs>
@@ -546,7 +546,7 @@
       </Parameters>
       <Docs>
         <param name="style">The style reference.</param>
-        <summary>Begins a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
       </Docs>
@@ -569,7 +569,7 @@
       </Parameters>
       <Docs>
         <param name="style">The specified style to use for formatting characters.</param>
-        <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
       </Docs>
@@ -594,7 +594,7 @@
       <Docs>
         <param name="style">The style reference.</param>
         <param name="breakAfter">If <c>breakAfter</c> is true, a break is added after the closing style element. The first form of the method assumes <c>breakAfter</c> to be <see langword="true" />.</param>
-        <summary>Ends a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Ends a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
       </Docs>
@@ -618,7 +618,7 @@
       </Parameters>
       <Docs>
         <param name="label">The label to validate.</param>
-        <summary>Returns whether the given string is a valid softkey label for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns whether the given string is a valid softkey label for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the given string is a valid softkey label for the target device; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -652,7 +652,7 @@
       <Docs>
         <param name="clientID">The client ID of a control to map.</param>
         <param name="generateRandomID">Determines whether the client ID is encrypted.</param>
-        <summary>Maps the client ID of a control to a short name to be used in rendering on the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Maps the client ID of a control to a short name to be used in rendering on the form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A string representation of the client identifier of the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -681,7 +681,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the number of softkeys supported on the device. The default value is 0. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the number of softkeys supported on the device. The default value is 0. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The number of softkeys supported on the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -718,7 +718,7 @@
         <param name="writeBold">Whether to open bold character formatting.</param>
         <param name="writeItalic">Whether to open italic character formatting.</param>
         <param name="writeSize">Whether to open character size formatting.</param>
-        <summary>Opens character formatting tags for the given format. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Opens character formatting tags for the given format. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -752,7 +752,7 @@
         <param name="layout">An enumerated value representing the layout to use when opening a paragraph.</param>
         <param name="writeAlignment">Whether to open paragraph alignment formatting.</param>
         <param name="writeWrapping">Whether to open paragraph wrapping formatting.</param>
-        <summary>Opens a paragraph with the given layout. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Opens a paragraph with the given layout. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -778,7 +778,7 @@
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the page associated with the device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the page associated with the device adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page associated with the device adapter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -805,7 +805,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the <see langword="&lt; br &gt;" /> tag needs to be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Indicates whether the <see langword="&lt; br &gt;" /> tag needs to be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the <see langword="&lt; br &gt;" /> tag needs to be sent to the output stream; otherwise, false.</value>
         <remarks>To be added.</remarks>
@@ -827,7 +827,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Analyzes a form after it is completed during the analyze phase. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Analyzes a form after it is completed during the analyze phase. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -856,7 +856,7 @@
       </Parameters>
       <Docs>
         <param name="form">The form to begin rendering.</param>
-        <summary>Renders the beginning of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the beginning of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -894,7 +894,7 @@
         <param name="softkeyLabel">The softkey text to use for the link if the <c>mapToSoftKey</c> parameter is set to <see langword="true" />.</param>
         <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself (the default label, or something else that is adapter-specified, such as "Call" for a <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> control, rather than a softkey label explicitly specified by the application author).</param>
         <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
-        <summary>Begins rendering a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins rendering a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -930,7 +930,7 @@
         <param name="softkeyLabel">The softkey text to use for the link if the <c>mapToSoftKey</c> parameter is set to <see langword="true" />.</param>
         <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself, rather than being a softkey label explicitly specified by the application author.</param>
         <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
-        <summary>Begins the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,7 +961,7 @@
         <param name="ivalue">The initial value.</param>
         <param name="title">The <see langword="Title" /> attribute on WML devices.</param>
         <param name="multiSelect">Whether to allow multiple selections.</param>
-        <summary>Begins rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Begins rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1003,7 +1003,7 @@
         <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> type used for <c>arg.</c></param>
         <param name="text">The label associated with the action. This usually appears as a softkey label on the device.</param>
         <param name="includeVariables">Whether to include all variables on the form when posting back to the server.</param>
-        <summary>Renders a <see langword="&lt; do &gt;" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a <see langword="&lt; do &gt;" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1030,7 +1030,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Completes rendering of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Completes rendering of a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1060,7 +1060,7 @@
       </Parameters>
       <Docs>
         <param name="breakAfter">Set to <see langword="true" /> if a break is required after the link.</param>
-        <summary>Completes the rendering of a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Completes the rendering of a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
@@ -1093,7 +1093,7 @@
         <param name="postBackType">Specifies the type of postback. Must be a value from the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> enumeration.</param>
         <param name="includeVariables">Contains a Boolean value indicating whether postback variables should be calculated.</param>
         <param name="breakAfter">Contains <see langword="true" /> if a line break should follow the control. Contains <see langword="false" /> otherwise.</param>
-        <summary>Completes the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Completes the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1116,7 +1116,7 @@
       </Parameters>
       <Docs>
         <param name="breakAfter">Indicates whether a break must follow the selection list.</param>
-        <summary>Completes rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Completes rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,7 +1136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Renders any extra cards that the writer needs to send to the browser. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders any extra cards that the writer needs to send to the browser. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1172,7 +1172,7 @@
         <param name="arg">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
         <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> type used for <c>arg.</c></param>
         <param name="text">The label associated with the action. This usually appears as a softkey label on the device.</param>
-        <summary>Renders a <see langword="&lt; do &gt;" /> event for the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a <see langword="&lt; do &gt;" /> event for the current form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1208,7 +1208,7 @@
         <param name="argument">The argument for the action. The argument is included in the postback generated when the user selects the action.</param>
         <param name="postBackType">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" /> type used for <c>arg.</c></param>
         <param name="includeVariables">Whether to include all variables on the form when posting back to the server.</param>
-        <summary>Renders a <see langword="&lt; go &gt;" /> action. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a <see langword="&lt; go &gt;" /> action. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1244,7 +1244,7 @@
         <param name="localSource">Specifies an optional local image name.</param>
         <param name="alternateText">Specifies text to display if the image cannot be displayed.</param>
         <param name="breakAfter">Set to <see langword="true" /> if a break is required after the image.</param>
-        <summary>Renders an image element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders an image element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
@@ -1278,7 +1278,7 @@
       </Parameters>
       <Docs>
         <param name="text">The option text.</param>
-        <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,7 +1303,7 @@
       <Docs>
         <param name="text">The option text.</param>
         <param name="value">(Optional.) The option value.</param>
-        <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1313,7 +1313,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="RenderText">
@@ -1335,7 +1335,7 @@
       </Parameters>
       <Docs>
         <param name="text">The text string to be rendered.</param>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1360,7 +1360,7 @@
       <Docs>
         <param name="text">The text string to be rendered.</param>
         <param name="breakAfter">Specifies whether a break must follow the element.</param>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1387,7 +1387,7 @@
         <param name="text">The text string to be rendered.</param>
         <param name="breakAfter">Specifies whether a break must follow the element.</param>
         <param name="encodeText">Specifies whether the text must be encoded.</param>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1426,7 +1426,7 @@
         <param name="maxLength">Specifies the maximum length of the string.</param>
         <param name="generateRandomID">Determines whether the identifier for the control (ID) is encrypted.</param>
         <param name="breakAfter">Set to <see langword="true" /> if a break is required after the control is rendered.</param>
-        <summary>Renders a text-box element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders a text-box element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1455,7 +1455,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the character formatting. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Resets the character formatting. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1485,7 +1485,7 @@
       </Parameters>
       <Docs>
         <param name="includeVariables">Whether to include any variables in the additional card.</param>
-        <summary>Whether the writer must use an additional card for postbacks. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Whether the writer must use an additional card for postbacks. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the writer must use an additional card for postbacks; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1522,7 +1522,7 @@
         <param name="value">The value assigned to the attribute.</param>
         <param name="encode">
           <see langword="true" /> to encode the attribute and its assigned value; otherwise, <see langword="false" />.</param>
-        <summary>Writes the specified markup attribute and value to the output stream, and, if specified, writes the value encoded. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes the specified markup attribute and value to the output stream, and, if specified, writes the value encoded. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       </Docs>
@@ -1566,7 +1566,7 @@
       </Parameters>
       <Docs>
         <param name="text">The text string to encode and write to the output stream.</param>
-        <summary>Encodes the specified text for the requesting device, and then writes it to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Encodes the specified text for the requesting device, and then writes it to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedText(System.String)" />
       </Docs>
@@ -1590,7 +1590,7 @@
       </Parameters>
       <Docs>
         <param name="url">The URL string to encode and write to the output stream.</param>
-        <summary>Encodes the specified URL, and then writes it to the output stream. The URL might include parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Encodes the specified URL, and then writes it to the output stream. The URL might include parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrl(System.String)" />
       </Docs>
@@ -1601,7 +1601,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Writes a <see langword="&amp;lt; postfield &amp;gt;" /> element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes a <see langword="&amp;lt; postfield &amp;gt;" /> element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="WritePostField">
@@ -1625,7 +1625,7 @@
       <Docs>
         <param name="name">The field name.</param>
         <param name="value">The post field value.</param>
-        <summary>Writes a <see langword="&lt; postfield &gt;" /> element, using the provided parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes a <see langword="&lt; postfield &gt;" /> element, using the provided parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1659,7 +1659,7 @@
         <param name="name">The field name.</param>
         <param name="value">The post field value.</param>
         <param name="type">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />.</param>
-        <summary>Writes a &lt; <see langword="postfield" /> &gt; element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes a &lt; <see langword="postfield" /> &gt; element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1684,7 +1684,7 @@
       <Docs>
         <param name="name">The field name.</param>
         <param name="arg">The variable name to write.</param>
-        <summary>Writes a post field, treating the <paramref name="arg" /> parameter as a variable name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes a post field, treating the <paramref name="arg" /> parameter as a variable name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1716,7 +1716,7 @@
       <Docs>
         <param name="text">The text to write.</param>
         <param name="encodeText">If <see langword="true" />, encodes the text.</param>
-        <summary>Writes the given text, encoding it if desired. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes the given text, encoding it if desired. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1748,7 +1748,7 @@
       <Docs>
         <param name="attribute">The name of the attribute to encode.</param>
         <param name="value">The value of the attribute to encode.</param>
-        <summary>Writes the given attribute, encoding the value by using WML text encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Writes the given attribute, encoding the value by using WML text encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

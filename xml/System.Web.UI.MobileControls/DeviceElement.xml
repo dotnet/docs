@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Maps specific adapters to specific mobile controls for a given device. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Maps specific adapters to specific mobile controls for a given device. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -35,7 +35,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -56,7 +56,7 @@
       <Docs>
         <param name="name">The unique identifier of the device adapter set.</param>
         <param name="inheritsFrom">The device adapter set that this device adapter set inherits from.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
         <param name="predicateClass">The class to which the method specified by <c>predicateMethod</c> belongs.</param>
         <param name="predicateMethod">A method used to detect through the current <see cref="T:System.Web.HttpContext" /> whether the device adapter set is applicable.</param>
         <param name="pageAdapter">Identifies the page adapter class for the device set.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and page adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and page adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
         <param name="predicateClass">The class to which the method specified by <c>predicateMethod</c> belongs.</param>
         <param name="predicateMethod">A method used to detect through the current <see cref="T:System.Web.HttpContext" /> whether the device adapter set is applicable.</param>
         <param name="pageAdapter">Identifies the page adapter class for the device set.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier, page adapter, and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier, page adapter, and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +134,7 @@
         <ReturnType>System.Web.UI.MobileControls.ControlElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of control elements for this device element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the collection of control elements for this device element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of control elements for this device element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,7 +182,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the device adapter set that this device adapter set inherits from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the name of the device adapter set that this device adapter set inherits from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the device adapter set that this device adapter set inherits from.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,7 +210,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the string value that uniquely identifies the device adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the string value that uniquely identifies the device adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The string value that uniquely identifies the device adapter set.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +241,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the page adapter class for this device adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the type of the page adapter class for this device adapter set. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The type of the page adapter class for this device adapter set.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,7 +269,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the class containing the method used to detect whether the device adapter set is applicable. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the class containing the method used to detect whether the device adapter set is applicable. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The class to which the method specified by the <paramref name="predicateMethod" /> parameter belongs.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +297,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the method used to detect through the current <see cref="T:System.Web.HttpContext" /> instance whether the device adapter set is applicable. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the method used to detect through the current <see cref="T:System.Web.HttpContext" /> instance whether the device adapter set is applicable. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The method used to detect through the current <see cref="T:System.Web.HttpContext" /> whether the device adapter set is applicable.</value>
         <remarks>To be added.</remarks>
       </Docs>

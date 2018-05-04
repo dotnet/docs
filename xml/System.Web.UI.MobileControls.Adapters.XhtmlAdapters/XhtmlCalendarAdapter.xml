@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an XHTML adapter class for the <see cref="T:System.Web.UI.MobileControls.Calendar" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides an XHTML adapter class for the <see cref="T:System.Web.UI.MobileControls.Calendar" />. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -47,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
         <ReturnType>System.Web.UI.MobileControls.Calendar</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.Calendar" /> control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Calendar" />
@@ -91,7 +91,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">The target <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> expressed as a string.</param>
-        <summary>Sets the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> according to the user's actions on any primary or secondary page of the <see cref="T:System.Web.UI.MobileControls.Calendar" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" /> according to the user's actions on any primary or secondary page of the <see cref="T:System.Web.UI.MobileControls.Calendar" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>Always returns <see langword="true" /> because the method always handles the event.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -124,7 +124,7 @@
       </Parameters>
       <Docs>
         <param name="state">An <see cref="T:System.Object" /> containing the state of the adapter. See <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.SaveAdapterState" /> for more information.</param>
-        <summary>Loads the state of the adapter and sets the current <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads the state of the adapter and sets the current <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -155,7 +155,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object.</param>
-        <summary>Creates event handlers, determines how many months the target device can display, and if the request is not a postback, sets the current date as the calendar's visible date. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates event handlers, determines how many months the target device can display, and if the request is not a postback, sets the current date as the calendar's visible date. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +178,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnLoad(System.EventArgs)" /> method, the adapter should call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.MobileControls.MobileControl.OnLoad(System.EventArgs)" /> method. If <see cref="M:System.Web.UI.MobileControls.MobileControl.OnLoad(System.EventArgs)" /> is not called, the <see cref="E:System.Web.UI.Control.Load" /> event will not be raised.</para>
@@ -204,7 +204,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object.</param>
-        <summary>Fills the display list with eras if the user has selected a date and the user's current culture supports eras. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Fills the display list with eras if the user has selected a date and the user's current culture supports eras. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -235,7 +235,7 @@
       </Parameters>
       <Docs>
         <param name="writer">An <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object.</param>
-        <summary>Renders the calendar, a page of the calendar, or a page of selection options, depending on the user's actions. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders the calendar, a page of the calendar, or a page of selection options, depending on the user's actions. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,7 +255,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the current state of the adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves the current state of the adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An <see cref="T:System.Object" /> containing information about the current state of the adapter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

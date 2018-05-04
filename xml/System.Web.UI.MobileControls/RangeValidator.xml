@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Validates that another control's value falls within an allowable range. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Validates that another control's value falls within an allowable range. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +68,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.RangeValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.RangeValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.ValidationDataType" />
         <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
@@ -90,7 +90,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the properties to be validated are valid. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the properties to be validated are valid. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.Web.UI.MobileControls.RangeValidator.MinimumValue" /> and <see cref="P:System.Web.UI.MobileControls.RangeValidator.MaximumValue" /> properties have valid values; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -119,7 +119,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Web validator is for getting and setting of the common properties of a Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Web validator is for getting and setting of the common properties of a Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>None</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called during the validation stage when ASP.NET processes a Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called during the validation stage when ASP.NET processes a Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>None</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +168,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the control that you are validating, which must be less than or equal to the value of this property. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the value of the control that you are validating, which must be less than or equal to the value of this property. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The maximum value of the range to validate against.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -212,7 +212,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the control that you are validating, which must be greater than or equal to the value of this property. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the value of the control that you are validating, which must be greater than or equal to the value of this property. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The minimum value of the range to validate against.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -257,7 +257,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data type that specifies how to interpret the values being compared. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the data type that specifies how to interpret the values being compared. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The data type that specifies how to interpret the values being compared.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

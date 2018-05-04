@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides control capability to validate that another control's value matches a provided regular expression. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides control capability to validate that another control's value matches a provided regular expression. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +68,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +88,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An aggregated Web validator.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.CreateWebValidator" />
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called during the validation stage when ASP.NET processes a Web page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called during the validation stage when ASP.NET processes a Web page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -143,7 +143,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the regular expression assigned to be the validation criteria. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the regular expression assigned to be the validation criteria. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The regular expression assigned to be the validation criteria.  
   
  The <see cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" /> does not perform validation on an empty string. To test for an empty string, use the <see cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" /> and <see cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" /> controls together.</value>

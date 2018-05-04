@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
@@ -43,7 +43,7 @@
       <Docs>
         <param name="item">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListSelectEventArgs.ListItem" /> property.</param>
         <param name="selectMore">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListSelectEventArgs.SelectMore" /> property.</param>
-        <summary>Initializes a new <see cref="T:System.Web.UI.MobileControls.ObjectListSelectEventArgs" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new <see cref="T:System.Web.UI.MobileControls.ObjectListSelectEventArgs" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" />
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the list item that is being bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the list item that is being bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The list item that is being bound.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
@@ -86,7 +86,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the event argument starts with <c>ShowMore</c>. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the event argument starts with <c>ShowMore</c>. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the event argument starts with <c>ShowMore</c>; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -116,7 +116,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether default handling must be used. The default is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether default handling must be used. The default is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if default handling must be used; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

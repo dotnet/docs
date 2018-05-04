@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides text writer functionality for devices targeted by the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides text writer functionality for devices targeted by the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,7 +48,7 @@
       <Docs>
         <param name="writer">The base text writer object.</param>
         <param name="device">An object of the <see cref="T:System.Web.Mobile.MobileCapabilities" /> class that provides the capability information for the specific device.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" /> class for a given device, using the <paramref name="writer" /> parameter as the base writer object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" /> class for a given device, using the <paramref name="writer" /> parameter as the base writer object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Used by a form to paginate its controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Used by a form to paginate its controls. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,7 +50,7 @@
       <Docs>
         <param name="form">The form page.</param>
         <param name="pageWeight">The weight of the specified form page.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ControlPager" /> class for the specified form that uses the specified weight for a page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ControlPager" /> class for the specified form that uses the specified weight for a page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +69,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the assigned weight for a page. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the assigned weight for a page. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -105,7 +105,7 @@
         <param name="itemCount">The number of items in the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object.</param>
         <param name="itemsPerPage">The maximum number of items on a page.</param>
         <param name="itemWeight">The optimum weight of the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object.</param>
-        <summary>Creates and returns an <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object for paginating the contents of the given control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates and returns an <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object for paginating the contents of the given control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The <see cref="T:System.Web.UI.MobileControls.ItemPager" /> for paginating the contents of the given control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +129,7 @@
       </Parameters>
       <Docs>
         <param name="weight">The weight of a control.</param>
-        <summary>Returns a newly assigned page index based on the weight of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a newly assigned page index based on the weight of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A newly assigned page index based on the weight of the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -156,7 +156,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the number of form pages currently created by the pager. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the number of form pages currently created by the pager. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The number of form pages currently created by the pager.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +176,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the optimal weight of a form page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the optimal weight of a form page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The optimal weight of a form page.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +196,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the weight that remains on the current ASP.NET mobile Web Forms page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the weight that remains on the current ASP.NET mobile Web Forms page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The weight that remains on the current ASP.NET mobile Web Forms page.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,7 +216,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns whether to use the value of the <see cref="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" /> field for pagination. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns whether to use the value of the <see cref="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" /> field for pagination. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

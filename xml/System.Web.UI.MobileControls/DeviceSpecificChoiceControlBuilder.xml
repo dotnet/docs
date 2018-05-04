@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a custom persistence format for the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> class. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Implements a custom persistence format for the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> class. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
@@ -68,7 +68,7 @@
       </Parameters>
       <Docs>
         <param name="text">The literal content to add to a control.</param>
-        <summary>Adds the specified literal content to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds the specified literal content to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +91,7 @@
       </Parameters>
       <Docs>
         <param name="subBuilder">A <see cref="T:System.Web.UI.ControlBuilder" /> object.</param>
-        <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the container control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the container control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
       <Docs>
         <param name="tagName">A string that represents the name of the tag.</param>
         <param name="attributes">An <see cref="T:System.Collections.IDictionary" /> object.</param>
-        <summary>Obtains the type for the control's child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Obtains the type for the control's child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>None.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,7 +149,7 @@
         <param name="tagName">The name of the tag to be built. This enables the builder to support multiple tag types.</param>
         <param name="id">The <see cref="P:System.Web.UI.ControlBuilder.ID" /> attribute that is assigned to the control.</param>
         <param name="attributes">The <see cref="T:System.Collections.IDictionary" /> object that holds the specified tag attributes.</param>
-        <summary>Occurs when the server control is initialized, which is the first step in its life cycle. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when the server control is initialized, which is the first step in its life cycle. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

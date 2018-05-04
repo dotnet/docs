@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Reads the [deviceFilters Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/2fb323b9-675b-48de-861b-8998fa0c51ba) section of a configuration file that specifies the set of device filters for use with ASP.NET mobile controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Reads the [deviceFilters Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/2fb323b9-675b-48de-861b-8998fa0c51ba) section of a configuration file that specifies the set of device filters for use with ASP.NET mobile controls. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <block subset="none" type="overrides">
@@ -43,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" /> class. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler" /> class. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.Mobile.MobileDeviceCapabilitiesSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       </Docs>
@@ -71,7 +71,7 @@
         <param name="parent">The parent node in the configuration file, or <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) if creating the parent node.</param>
         <param name="context">An <see cref="T:System.Web.Configuration.HttpConfigurationContext" /> object.</param>
         <param name="node">The node to be created.</param>
-        <summary>Creates a dictionary of the device filter information contained in the <see cref="T:System.Xml.XmlNode" /> specified by the <paramref name="node" /> parameter. If the object referenced by the <paramref name="parent" /> property is not <see langword="null" />, then dictionary entries are appended to the parent dictionary. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a dictionary of the device filter information contained in the <see cref="T:System.Xml.XmlNode" /> specified by the <paramref name="node" /> parameter. If the object referenced by the <paramref name="parent" /> property is not <see langword="null" />, then dictionary entries are appended to the parent dictionary. This method supports the .NET Framework infrastructure. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A dictionary of the device filter information contained in the specified <paramref name="node" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Required attributes are not present or empty, or the <see langword="type" /> attribute refers to a non-existent <see cref="T:System.Type" />.</exception>
@@ -100,7 +100,7 @@
         <param name="parent">The parent node in the configuration file, or <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) if creating the parent node.</param>
         <param name="context">An <see cref="T:System.Web.Configuration.HttpConfigurationContext" /> object.</param>
         <param name="node">The node to be created.</param>
-        <summary>Creates a dictionary of the device filter information contained in the <see cref="T:System.Xml.XmlNode" /> specified by the <paramref name="node" /> parameter. If the object referenced by the <paramref name="parent" /> property is not <see langword="null" />, then dictionary entries are appended to the parent dictionary. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a dictionary of the device filter information contained in the <see cref="T:System.Xml.XmlNode" /> specified by the <paramref name="node" /> parameter. If the object referenced by the <paramref name="parent" /> property is not <see langword="null" />, then dictionary entries are appended to the parent dictionary. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A dictionary of the device filter information contained in the specified <paramref name="node" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

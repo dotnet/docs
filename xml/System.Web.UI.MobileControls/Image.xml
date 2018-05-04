@@ -37,7 +37,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays an image on a mobile Web page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Displays an image on a mobile Web page. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -106,7 +106,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alternate text to display when an image is not available for the device. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the alternate text to display when an image is not available for the device. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The alternate text to display when an image is not available for the device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -144,7 +144,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Image" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Image" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Image" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -200,7 +200,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the target URL of the image. The default value is an empty string ("").  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the target URL of the image. The default value is an empty string ("").  This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The target URL of the image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -231,7 +231,7 @@
       </Parameters>
       <Docs>
         <param name="argument">A <see cref="T:System.String" /> that represents an optional event argument to be passed to the event handler.</param>
-        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.Image" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.Image" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
@@ -259,7 +259,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed for a softkey when the Image has a <see cref="P:System.Web.UI.MobileControls.Image.NavigateUrl" /> property defined. The default value is an empty <see langword="string" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the text displayed for a softkey when the Image has a <see cref="P:System.Web.UI.MobileControls.Image.NavigateUrl" /> property defined. The default value is an empty <see langword="string" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text displayed for a softkey when the image has a <see cref="P:System.Web.UI.MobileControls.Image.NavigateUrl" /> property defined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -291,7 +291,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">Optional event argument to be passed to the event handler.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

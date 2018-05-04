@@ -52,7 +52,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables you to specify multiple fields for display, per item in an object list. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Enables you to specify multiple fields for display, per item in an object list. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -92,7 +92,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </Parameters>
       <Docs>
         <param name="obj">None.</param>
-        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="P:System.Web.UI.Control.Controls" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="P:System.Web.UI.Control.Controls" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
         <ReturnType>System.Web.UI.MobileControls.IObjectListFieldCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the collection of all fields from the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> class, whether explicit or automatically generated. The default value is the collection of automatically generated fields. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the collection of all fields from the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> class, whether explicit or automatically generated. The default value is the collection of automatically generated fields. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An <see cref="T:System.Web.UI.MobileControls.IObjectListFieldCollection" /> object containing all fields in the <see cref="T:System.Web.UI.MobileControls.ObjectList" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -191,7 +191,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether fields must be automatically generated from data. When enabled, each public property of the data becomes a field of the control. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Specifies whether fields must be automatically generated from data. When enabled, each public property of the data becomes a field of the control. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the fields are automatically generated from data; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -241,7 +241,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text used for the command to return from the <see langword="Details" /> view (accessed through a softkey or link). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the text used for the command to return from the <see langword="Details" /> view (accessed through a softkey or link). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text used for the command to return from the <see langword="Details" /> view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -285,7 +285,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListCommandCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> object. Initially, the collection is empty. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> object. Initially, the collection is empty. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of commands in the object list.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,7 +313,7 @@
         <ReturnType>System.Web.UI.MobileControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style used for the object list commands. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the style used for the object list commands. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The style used for the object list commands.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -362,7 +362,7 @@
       </Parameters>
       <Docs>
         <param name="dataSource">The specified source of the data.</param>
-        <summary>Automatically generates fields for the given data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Automatically generates fields for the given data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
       </Docs>
@@ -383,7 +383,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies server controls to create any child controls in preparation for posting back or rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies server controls to create any child controls in preparation for posting back or rendering. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,7 +406,7 @@
       </Parameters>
       <Docs>
         <param name="dataItem">The list item to bind.</param>
-        <summary>Creates a list item to contain the object and binds it to the specified object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a list item to contain the object and binds it to the specified object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An object list item created from the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -437,7 +437,7 @@
       </Parameters>
       <Docs>
         <param name="dataSource">The source from which items in the collection are created.</param>
-        <summary>Creates items in an items collection from the specified <paramref name="dataSource" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates items in an items collection from the specified <paramref name="dataSource" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -467,7 +467,7 @@
       </Parameters>
       <Docs>
         <param name="doDataBind">Returns <see langword="true" /> if the instantiated templates must bind to available data (which usually happens on the first request). Returns <see langword="false" /> if the templates must not bind to data, and instead rely on view state to have them filled in (which usually happens on subsequent postbacks).</param>
-        <summary>Constructs the details view for the current item by using the <see langword="ItemDetailsTemplate" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Constructs the details view for the current item by using the <see langword="ItemDetailsTemplate" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -497,7 +497,7 @@
       </Parameters>
       <Docs>
         <param name="doDataBind">Returns <see langword="true" /> if the instantiated templates must bind to available data (which usually happens on the first request). Returns <see langword="false" /> if the templates must not bind to data, and instead rely on view state to have them filled in (which usually happens on subsequent postbacks).</param>
-        <summary>Constructs the list view by building templates. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Constructs the list view by building templates. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -524,7 +524,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Binds a data source to the <see cref="T:System.Web.UI.MobileControls.ObjectList" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Binds a data source to the <see cref="T:System.Web.UI.MobileControls.ObjectList" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,7 +554,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data member to extract when data binding to a list data source. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the data member to extract when data binding to a list data source. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The data member to extract from the data source when data binding to an <see cref="T:System.Web.UI.MobileControls.ObjectList" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -594,7 +594,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data source of the list that is being bound. The default value is null. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the data source of the list that is being bound. The default value is null. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The data source of the list that is being bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -635,7 +635,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the default command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the name of the default command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the default command.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -677,7 +677,7 @@
         <ReturnType>System.Web.UI.MobileControls.Panel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the panel that contains a device-specific details view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the panel that contains a device-specific details view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A panel that contains a device-specific details view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -716,7 +716,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text used for the menu item that shows the details view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the text used for the menu item that shows the details view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text used for the menu item that shows the details view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -747,7 +747,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the server control contains child controls. If it does not, it creates child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the server control contains child controls. If it does not, it creates child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,7 +767,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Use this method to ensure that the templates are instantiated to allow programmatic access to the instantiated contents of a template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Use this method to ensure that the templates are instantiated to allow programmatic access to the instantiated contents of a template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -803,7 +803,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListFieldCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of explicitly defined fields in the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the collection of explicitly defined fields in the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of explicitly defined fields for the object list control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -841,7 +841,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control has an event handler registered for the appropriate <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control has an event handler registered for the appropriate <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the object list control has an event handler registered for the appropriate <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" /> event; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -863,7 +863,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>None.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -883,7 +883,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user selects a command that is associated with an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when the user selects a command that is associated with an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -929,7 +929,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListDataBindEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an item in an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> is bound to data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when an item in an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> is bound to data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -979,7 +979,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of items in an <see cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" /> list. The default value is an empty collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the collection of items in an <see cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" /> list. The default value is an empty collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of items in the object list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1006,7 +1006,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListSelectEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a user selects an item from a list view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when a user selects an item from a list view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1040,7 +1040,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value (the name or data field) that identifies the field to use as a label for each item. The default value is empty, which causes the first field in the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection to be used as a label for each item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a value (the name or data field) that identifies the field to use as a label for each item. The default value is empty, which causes the first field in the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection to be used as a label for each item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name or data field that identifies the field to use as a label for each item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1083,7 +1083,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index in the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection of the field that has been set by the <see cref="P:System.Web.UI.MobileControls.ObjectList.LabelField" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the index in the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection of the field that has been set by the <see cref="P:System.Web.UI.MobileControls.ObjectList.LabelField" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The index within the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection of the field that is used as the label. The default value is zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1122,7 +1122,7 @@
         <ReturnType>System.Web.UI.MobileControls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style used for the header label. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the style used for the header label. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The style used for the header label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1153,7 +1153,7 @@
       </Parameters>
       <Docs>
         <param name="state">None.</param>
-        <summary>Loads private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1176,7 +1176,7 @@
       </Parameters>
       <Docs>
         <param name="savedState">None.</param>
-        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.ObjectList.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.ObjectList.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1206,7 +1206,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text string used for the <see langword="More" /> link used on HTML browsers to navigate to the details view. The default is <see langword="More" /> or the localized equivalent. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the text string used for the <see langword="More" /> link used on HTML browsers to navigate to the details view. The default is <see langword="More" /> or the localized equivalent. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text string used for the <see langword="More" /> link used on HTML browsers to navigate to the details view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1248,7 +1248,7 @@
       <Docs>
         <param name="sender">None.</param>
         <param name="e">None.</param>
-        <summary>Determines whether the event for the server control is passed up the page's UI server control hierarchy. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the event for the server control is passed up the page's UI server control hierarchy. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>None.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1272,7 +1272,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1306,7 +1306,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object (defined by <see cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" />) that contains event data.</param>
-        <summary>Called when a list item generates an event as a result of user interaction. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called when a list item generates an event as a result of user interaction. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1337,7 +1337,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object (defined by <see cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />) that contains event data.</param>
-        <summary>Called when a list item is data bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called when a list item is data bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1368,7 +1368,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.Web.UI.MobileControls.ObjectListSelectEventArgs" /> object that contains event data.</param>
-        <summary>Called after the user selects an item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after the user selects an item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1399,7 +1399,7 @@
       </Parameters>
       <Docs>
         <param name="e">None.</param>
-        <summary>Called when the control is custom paginated and needs more data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called when the control is custom paginated and needs more data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1422,7 +1422,7 @@
       </Parameters>
       <Docs>
         <param name="e">None.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1445,7 +1445,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object defined by an <see cref="T:System.EventArgs" /> object that contains event data.</param>
-        <summary>Called prior to showing the set of commands for a list item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called prior to showing the set of commands for a list item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1476,7 +1476,7 @@
       </Parameters>
       <Docs>
         <param name="itemIndex">The index reference for the item.</param>
-        <summary>Prepares the set of commands for a specified item prior to showing it, by calling any event handlers that might be set on the <see cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" /> event. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Prepares the set of commands for a specified item prior to showing it, by calling any event handlers that might be set on the <see cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" /> event. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1507,7 +1507,7 @@
       </Parameters>
       <Docs>
         <param name="itemIndex">The index reference for the item.</param>
-        <summary>Called to raise an event for the default command associated with the specified item. Called internally by the ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called to raise an event for the default command associated with the specified item. Called internally by the ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1537,7 +1537,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">A <see cref="T:System.String" /> that represents an optional event argument to be passed to the event handler.</param>
-        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1557,7 +1557,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any private view-state changes that have occurred since the page was loaded from persistence. If no changes were made, this method returns <see langword="null" /> (<see langword="Nothing" /> in Visual Basic). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any private view-state changes that have occurred since the page was loaded from persistence. If no changes were made, this method returns <see langword="null" /> (<see langword="Nothing" /> in Visual Basic). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>None.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1578,7 +1578,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>None.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1609,7 +1609,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the index of the selected item. The default value is <see langword="-1" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the index of the selected item. The default value is <see langword="-1" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The index of the selected item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1649,7 +1649,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the selected item, or <see langword="null" /> if there is no selection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the selected item, or <see langword="null" /> if there is no selection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The selected item, or <see langword="null" /> if there is no selection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1682,7 +1682,7 @@
       <Docs>
         <param name="itemIndex">Specifies the item to test.</param>
         <param name="selectMore">Contains <see langword="true" /> if more than one item can be selected. Otherwise, it contains <see langword="false" />.</param>
-        <summary>Tests whether an item in an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> is selected. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Tests whether an item in an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> is selected. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if item is selected; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -1703,7 +1703,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the text used for the command to select more items in an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the text used for the command to select more items in an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The text used for the command to select more items in an object list.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1723,7 +1723,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListShowCommandsEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before the commands related to an item in an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> are shown. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs before the commands related to an item in an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> are shown. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1767,7 +1767,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">The optional event argument to be passed to the event handler.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1805,7 +1805,7 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of indices within the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection of the fields in the <see cref="P:System.Web.UI.MobileControls.ObjectList.TableFields" /> property. The default value is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets an array of indices within the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection of the fields in the <see cref="P:System.Web.UI.MobileControls.ObjectList.TableFields" /> property. The default value is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An array of integers representing the indices of the <see cref="P:System.Web.UI.MobileControls.ObjectList.AllFields" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1845,7 +1845,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which fields are visible when the list view is shown in table mode. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets which fields are visible when the list view is shown in table mode. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A semicolon-delimited list of fields to be displayed when the list view is shown in table mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1878,7 +1878,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes tracking of view-state changes to the server control so they can be stored in the server control's <see cref="T:System.Web.UI.StateBag" /> object. This object is accessible through the <see cref="P:System.Web.UI.Control.ViewState" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Causes tracking of view-state changes to the server control so they can be stored in the server control's <see cref="T:System.Web.UI.StateBag" /> object. This object is accessible through the <see cref="P:System.Web.UI.Control.ViewState" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1908,7 +1908,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListViewMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the view mode of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the view mode of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An <see cref="T:System.Web.UI.MobileControls.ObjectListViewMode" /> value representing the view mode of the object list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

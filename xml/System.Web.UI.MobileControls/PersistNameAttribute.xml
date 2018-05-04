@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This attribute supports the .NET Framework infrastructure and should not be used directly by your code. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>This attribute supports the .NET Framework infrastructure and should not be used directly by your code. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
@@ -42,7 +42,7 @@
       </Parameters>
       <Docs>
         <param name="name">Contains a string specifying the value of the name attribute.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.PersistNameAttribute" /> class and sets the <see cref="P:System.Web.UI.MobileControls.PersistNameAttribute.Name" /> property value to the provided string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.PersistNameAttribute" /> class and sets the <see cref="P:System.Web.UI.MobileControls.PersistNameAttribute.Name" /> property value to the provided string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +68,7 @@
         <ReturnType>System.Web.UI.MobileControls.PersistNameAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Creates a new <see cref="T:System.Web.UI.MobileControls.PersistNameAttribute" /> object with no name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates a new <see cref="T:System.Web.UI.MobileControls.PersistNameAttribute" /> object with no name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +91,7 @@
       </Parameters>
       <Docs>
         <param name="obj">An <see cref="T:System.Object" /> to compare with this instance or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
-        <summary>Returns a value that indicates whether this instance is equal to a specified object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -114,7 +114,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the hash code for this instance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Attribute.GetHashCode" />
@@ -136,7 +136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, indicates whether the value of this instance is the default value for the derived class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>When overridden in a derived class, indicates whether the value of this instance is the default value for the derived class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if this instance is the default attribute for the class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -158,7 +158,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is used internally by the ASP.NET page framework. Applications should not use it explicitly. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>This property is used internally by the ASP.NET page framework. Applications should not use it explicitly. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name being persisted.</value>
         <remarks>To be added.</remarks>
       </Docs>

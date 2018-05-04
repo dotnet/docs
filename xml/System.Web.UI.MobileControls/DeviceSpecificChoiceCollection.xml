@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of choices for the <see cref="T:System.Web.UI.MobileControls.DeviceSpecific" /> class. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Represents a collection of choices for the <see cref="T:System.Web.UI.MobileControls.DeviceSpecific" /> class. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -62,7 +62,7 @@
       </Parameters>
       <Docs>
         <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object to add to the end of the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object to the end of a collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object to the end of a collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -100,7 +100,7 @@
       <Docs>
         <param name="index">The location in the collection at which to add <c>choice</c>.</param>
         <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> to add to the collection.</param>
-        <summary>Adds a choice at the location in the collection specified by the <paramref name="index" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Adds a choice at the location in the collection specified by the <paramref name="index" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -137,7 +137,7 @@
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves an array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Retrieves an array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects contained by the collection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -190,7 +190,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index number of the item to retrieve from the collection.</param>
-        <summary>Returns a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object at the given <paramref name="index" /> in the collection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
@@ -215,7 +215,7 @@
       </Parameters>
       <Docs>
         <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> to remove</param>
-        <summary>Removes the specified choice. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the specified choice. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
@@ -239,7 +239,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index number of the item to remove.</param>
-        <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>

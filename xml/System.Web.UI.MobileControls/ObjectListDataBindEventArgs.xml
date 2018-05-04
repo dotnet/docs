@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemDataBind" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemDataBind" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,7 +50,7 @@
       <Docs>
         <param name="item">Initializes <see cref="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.ListItem" />.</param>
         <param name="dataItem">Initializes <see cref="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.DataItem" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -78,7 +78,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the specified data object of the list item that is being bound. This property is available only on a request where the list item is data-bound; on subsequent postbacks, it is always <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the specified data object of the list item that is being bound. This property is available only on a request where the list item is data-bound; on subsequent postbacks, it is always <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The specified data object of the list item that is being bound.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
@@ -100,7 +100,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.ListItem" /> that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the <see cref="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.ListItem" /> that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.ListItem" /> that generated the event.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />

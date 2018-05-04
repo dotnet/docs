@@ -46,7 +46,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Creates a user interface element that enables users to invoke ASP.NET event handlers and it provides a means to post user input from UI elements back to the server. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Creates a user interface element that enables users to invoke ASP.NET event handlers and it provides a means to post user input from UI elements back to the server. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -86,7 +86,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Command" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Command" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
       </Docs>
@@ -114,7 +114,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the specified control causes server-side validation to occur on all controls on the form. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets whether the specified control causes server-side validation to occur on all controls on the form. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the specified control causes server-side validation to occur on all controls on the form; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -142,7 +142,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a user activates a <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when a user activates a <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -187,7 +187,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the argument associated with the command in the <see cref="E:System.Web.UI.MobileControls.Command.ItemCommand" /> event. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the argument associated with the command in the <see cref="E:System.Web.UI.MobileControls.Command.ItemCommand" /> event. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The argument associated with the command in the <see cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -228,7 +228,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command name associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the command name associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the <see cref="T:System.Web.UI.MobileControls.Command" /> that raised the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +256,7 @@
         <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the render style for the <see cref="T:System.Web.UI.MobileControls.Command" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the render style for the <see cref="T:System.Web.UI.MobileControls.Command" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.CommandFormat" /> value indicating the render style for the <see cref="T:System.Web.UI.MobileControls.Command" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -314,7 +314,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when the control is rendered as an image button. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when the control is rendered as an image button. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Command" /> when the control is rendered as an image button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -342,7 +342,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value indicating whether the control submits the form. The default is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the control submits the form. The default is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the control submits the form; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -373,7 +373,7 @@
         <ReturnType>System.Web.UI.WebControls.CommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user selects a command that is associated with an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Occurs when the user selects a command that is associated with an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -417,7 +417,7 @@
       <Docs>
         <param name="key">A reference to the name of a parameter collection.</param>
         <param name="data">A parameter collection of postback data.</param>
-        <summary>Gets a value indicating whether the adapter associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control has handled loading the post data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the adapter associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control has handled loading the post data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the adapter associated with this control has handled loading the post data; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -452,7 +452,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object defined by an <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Called when the user activates the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called when the user activates the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -482,7 +482,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> object that contains event data.</param>
-        <summary>Called when the user activates the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called when the user activates the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -518,7 +518,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,7 +541,7 @@
       </Parameters>
       <Docs>
         <param name="argument">The argument for the event.</param>
-        <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -568,7 +568,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the ASP.NET application that the state of the <see cref="T:System.Web.UI.MobileControls.Command" /> control has changed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the ASP.NET application that the state of the <see cref="T:System.Web.UI.MobileControls.Command" /> control has changed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -602,7 +602,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns the label used when a softkey is displayed. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sets or returns the label used when a softkey is displayed. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The label used when a soft key is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -641,7 +641,7 @@
       <Docs>
         <param name="key">A reference to the name of a parameter collection.</param>
         <param name="data">A parameter collection of postback data.</param>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the adapter handles loading the post data; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -670,7 +670,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -700,7 +700,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">The argument for the event.</param>
-        <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

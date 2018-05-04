@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides style capability for the pagination UI of a page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides style capability for the pagination UI of a page. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Instantiates a new instance of the <see cref="T:System.Web.UI.MobileControls.PagerStyle" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Instantiates a new instance of the <see cref="T:System.Web.UI.MobileControls.PagerStyle" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
       </Parameters>
       <Docs>
         <param name="currentPageIndex">The index of the current page.</param>
-        <summary>Returns a formatted string for the user interface (UI) element used to navigate to the next page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a formatted string for the user interface (UI) element used to navigate to the next page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A formatted string for the user interface (UI) element used to navigate to the next page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -107,7 +107,7 @@
       <Docs>
         <param name="currentPageIndex">The current page index.</param>
         <param name="pageCount">The page count.</param>
-        <summary>Returns a formatted string for the UI element used to navigate to the next page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a formatted string for the UI element used to navigate to the next page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A formatted string for the UI element used to navigate to the next page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -141,7 +141,7 @@
       </Parameters>
       <Docs>
         <param name="currentPageIndex">The index of the current page.</param>
-        <summary>Returns a formatted string for the UI element used to navigate to the previous page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns a formatted string for the UI element used to navigate to the previous page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A formatted string for the UI element used to navigate to the previous page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -182,7 +182,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the label used for a UI element that is used to navigate to the next page. The default value is "Next". This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the label used for a UI element that is used to navigate to the next page. The default value is "Next". This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The label used for a UI element that is used to navigate to the next page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -231,7 +231,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
@@ -263,7 +263,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the label used for the current page. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the label used for the current page. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The label used for the current page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -323,7 +323,7 @@ void Page_Load(object sender, EventArgs e)
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
@@ -355,7 +355,7 @@ void Page_Load(object sender, EventArgs e)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the label used for the UI element used to navigate to the previous page. The default value is <see langword="Previous" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the label used for the UI element used to navigate to the previous page. The default value is <see langword="Previous" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The label used for the UI element used to navigate to the previous page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -407,7 +407,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />

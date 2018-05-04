@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +57,7 @@
       <Docs>
         <param name="item">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem" /> property.</param>
         <param name="commands">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -85,7 +85,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListCommandCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" /> objects. Initially, the collection is empty. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" /> objects. Initially, the collection is empty. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -114,7 +114,7 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the list item for the specified commands that will be displayed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the list item for the specified commands that will be displayed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The list item for the specified commands that will be displayed.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />

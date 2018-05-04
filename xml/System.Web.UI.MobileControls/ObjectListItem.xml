@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an individual item within an <see cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Represents an individual item within an <see cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -54,7 +54,7 @@
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see langword="Object" />.</param>
-        <summary>Determines whether the specified <see langword="Object" /> is equal to the current <see langword="Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the specified <see langword="Object" /> is equal to the current <see langword="Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the specified <see langword="Object" /> is equal to the current <see langword="Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -77,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for the current instance. This API is obsolete.  For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the hash code for the current instance. This API is obsolete.  For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The hash code for the current instance.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItem.GetHashCode" />
@@ -89,7 +89,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
@@ -113,7 +113,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the field in the object list item to get or set.</param>
-        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The value of the field with the specified <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
@@ -139,7 +139,7 @@
       </Parameters>
       <Docs>
         <param name="key">The name of the field in the object list item to get or set.</param>
-        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The value of the field with the specified <paramref name="key" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -174,7 +174,7 @@
       <Docs>
         <param name="source">The source object of the event.</param>
         <param name="e">The event arguments.</param>
-        <summary>Determines whether the event for the server control is passed up the page's UI server control hierarchy. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines whether the event for the server control is passed up the page's UI server control hierarchy. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the event is passed up the control hierarchy; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

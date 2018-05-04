@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Serves as the base class for all ASP.NET mobile Web Forms pages. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Serves as the base class for all ASP.NET mobile Web Forms pages. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +83,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a rooted URL to the current page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a rooted URL to the current page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A rooted URL to the current page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -121,7 +121,7 @@
         <ReturnType>System.Web.UI.MobileControls.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page's currently active form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the page's currently active form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The page's currently active form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -171,7 +171,7 @@
         <ReturnType>System.Web.UI.MobileControls.IPageAdapter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the device-specific adapter for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the device-specific adapter for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The device-specific adapter for the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +196,7 @@
       <Docs>
         <param name="control">The <see cref="T:System.Web.UI.MobileControls.MobileControl" /> that has been added.</param>
         <param name="index">The index of the control in the <see langword="Controls" /> collection.</param>
-        <summary>Called after a control is added to the <see cref="P:System.Web.UI.Control.Controls" /> collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after a control is added to the <see cref="P:System.Web.UI.Control.Controls" /> collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,7 +226,7 @@
       </Parameters>
       <Docs>
         <param name="o">An <see cref="T:System.Object" /> that represents the parsed element.</param>
-        <summary>Notifies the page that an element was parsed, and adds the element to the <see cref="P:System.Web.UI.Control.Controls" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the page that an element was parsed, and adds the element to the <see cref="P:System.Web.UI.Control.Controls" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -266,7 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether controls on the page can have custom attributes defined. The default value is the value of the <see langword="allowCustomAttributes" /> attribute of the &lt;<see langword="mobilecontrols" />&gt; section of the Web.config file. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether controls on the page can have custom attributes defined. The default value is the value of the <see langword="allowCustomAttributes" /> attribute of the &lt;<see langword="mobilecontrols" />&gt; section of the Web.config file. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the controls on the page can have custom attributes defined; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -320,7 +320,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the view-state information, which combines private view state and an identifier for application view state, to write to the client in encoded form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the view-state information, which combines private view state and an identifier for application view state, to write to the client in encoded form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The view-state information, which combines private view state and an identifier for application view state.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,7 +344,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.IO.TextWriter" /> used to create the <see cref="T:System.Web.UI.HtmlTextWriter" />.</param>
-        <summary>Creates an <see cref="T:System.Web.UI.HtmlTextWriter" /> object to render the page's content. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates an <see cref="T:System.Web.UI.HtmlTextWriter" /> object to render the page's content. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An <see cref="T:System.Web.UI.HtmlTextWriter" /> or a text writer derived from <see cref="T:System.Web.UI.HtmlTextWriter" />, such as  
   
  <see cref="T:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter" />, <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />, <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" />, or <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />.</returns>
@@ -391,7 +391,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the page is being instantiated in design mode or at run time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the page is being instantiated in design mode or at run time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="true" /> if the page is being instantiated in design mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -413,7 +413,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines the type of request made for the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> class and returns a <see cref="T:System.Collections.Specialized.NameValueCollection" /> of data posted back to the page by using either a POST or a GET command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Determines the type of request made for the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> class and returns a <see cref="T:System.Collections.Specialized.NameValueCollection" /> of data posted back to the page by using either a POST or a GET command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that contains the form data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -451,7 +451,7 @@
         <ReturnType>System.Web.Mobile.MobileCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Mobile.MobileCapabilities" /> object for the current requesting device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the <see cref="T:System.Web.Mobile.MobileCapabilities" /> object for the current requesting device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Web.Mobile.MobileCapabilities" /> for the current requesting device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -480,7 +480,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether postback event data should be validated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a value indicating whether postback event data should be validated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="false" />.</value>
         <remarks>
@@ -519,7 +519,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether themes apply to this page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets a value indicating whether themes apply to this page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="false" />.</value>
         <remarks>
@@ -559,7 +559,7 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of forms on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the collection of forms on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of forms that is contained in the page.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -583,7 +583,7 @@
       </Parameters>
       <Docs>
         <param name="control">The control to which the device-specific adapter is attached.</param>
-        <summary>Creates and returns a new device-specific adapter for the specified control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Creates and returns a new device-specific adapter for the specified control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A new device-specific adapter for the specified control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -614,7 +614,7 @@
       </Parameters>
       <Docs>
         <param name="id">The identifier of the form to return.</param>
-        <summary>Returns the form object specified by the ID parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the form object specified by the ID parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The specified form object. If no such form exists, <see cref="M:System.Web.UI.MobileControls.MobilePage.GetForm(System.String)" /> throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -647,7 +647,7 @@
       </Parameters>
       <Docs>
         <param name="ctl">The control for which the state is retrieved.</param>
-        <summary>Retrieves the view state for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Retrieves the view state for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The <see cref="T:System.Web.UI.StateBag" /> object associated with the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -675,7 +675,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves whether the page has any hidden variables defined. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Retrieves whether the page has any hidden variables defined. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the page has any hidden variables defined; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -696,7 +696,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the identifier to use for the hidden field in the postback argument. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Contains the identifier to use for the hidden field in the postback argument. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -722,7 +722,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the source identifier to use to render the hidden field for the postback source. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Contains the source identifier to use to render the hidden field for the postback source. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -750,7 +750,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the prefix to use to render hidden variables. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the prefix to use to render hidden variables. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,7 +780,7 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary of hidden variables on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a dictionary of hidden variables on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A dictionary of the hidden variables that is contained in the page.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -800,7 +800,7 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the character that is used to separate control identifiers when building a unique ID for a control on a page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the character that is used to separate control identifiers when building a unique ID for a control on a page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The character that is used to separate control identifiers. The default is set by the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> instance that renders the page. The <see cref="P:System.Web.UI.Page.IdSeparator" /> property is a server-side field and should not be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -819,7 +819,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes the output cache for the current page request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes the output cache for the current page request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -857,7 +857,7 @@
         <param name="varyByCustom">The <see langword="Vary" /> HTTP header.</param>
         <param name="location">One of the <see cref="T:System.Web.UI.OutputCacheLocation" /> values.</param>
         <param name="varyByParam">A semicolon-separated list of parameters, received by a GET or POST method, that content from the output cache will vary by.</param>
-        <summary>Initializes the output cache for the current page request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes the output cache for the current page request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -897,7 +897,7 @@
         <param name="varyByCustom">The <see langword="Vary" /> HTTP header.</param>
         <param name="location">One of the <see cref="T:System.Web.UI.OutputCacheLocation" /> values.</param>
         <param name="varyByParam">A semicolon-separated list of parameters, received by a GET or POST method, that content from the output cache will vary by.</param>
-        <summary>Initializes the output cache for the current page request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Initializes the output cache for the current page request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -924,7 +924,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads any saved view-state information to the <see cref="T:System.Web.UI.Page" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Loads any saved view-state information to the <see cref="T:System.Web.UI.Page" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An object containing the saved view state. Internally, this is typically a <see cref="T:System.Web.UI.StateBag" /> or <see cref="T:System.Collections.IDictionary" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -956,7 +956,7 @@
       </Parameters>
       <Docs>
         <param name="savedState">An <see cref="T:System.Object" /> that represents the page state to be restored.</param>
-        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -989,7 +989,7 @@
       </Parameters>
       <Docs>
         <param name="virtualPath">The relative URL to be converted.</param>
-        <summary>Converts the specified relative URL into an absolute URL. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Converts the specified relative URL into an absolute URL. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The absolute path corresponding to the specified virtual path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1030,7 +1030,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the file name of the master page. Master pages are not supported in ASP.NET mobile Web Forms pages. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the file name of the master page. Master pages are not supported in ASP.NET mobile Web Forms pages. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="null" />.</value>
         <remarks>
@@ -1063,7 +1063,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object defined by an <see cref="T:System.EventArgs" /> object that contains event data.</param>
-        <summary>Called after the page is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after the page is initialized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1093,7 +1093,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Handles the <see cref="E:System.Web.HttpApplication.Error" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Handles the <see cref="E:System.Web.HttpApplication.Error" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1123,7 +1123,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Handles the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Handles the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1153,7 +1153,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Handles the <see cref="E:System.Web.UI.Control.Load" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Handles the <see cref="E:System.Web.UI.Control.Load" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1183,7 +1183,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Page.PreInit" /> event at the beginning of page initialization. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.Page.PreInit" /> event at the beginning of page initialization. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1213,7 +1213,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Handles the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Handles the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1243,7 +1243,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
-        <summary>Handles the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Handles the <see cref="E:System.Web.UI.Control.Unload" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1273,7 +1273,7 @@
       </Parameters>
       <Docs>
         <param name="e">An object defined by an <see cref="T:System.EventArgs" /> object that contains event data.</param>
-        <summary>Handles an exception caused by an expired view state on postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Handles an exception caused by an expired view state on postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1308,7 +1308,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the key to use to render the private view state. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Returns the key to use to render the private view state. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1339,7 +1339,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the query string that accompanied the request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the query string that accompanied the request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The query string that accompanied the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1375,7 +1375,7 @@
       <Docs>
         <param name="sourceControl">The ASP.NET server control that caused the postback. This control must implement the <see cref="T:System.Web.UI.IPostBackEventHandler" /> interface.</param>
         <param name="eventArgument">The postback argument.</param>
-        <summary>Notifies the server control that caused the postback that it should handle an incoming postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Notifies the server control that caused the postback that it should handle an incoming postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1392,7 +1392,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="RedirectToMobilePage">
@@ -1414,7 +1414,7 @@
       </Parameters>
       <Docs>
         <param name="url">The URL of the redirect action.</param>
-        <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1439,7 +1439,7 @@
       <Docs>
         <param name="url">The URL of the redirect action.</param>
         <param name="endResponse">Specifies whether the response should be ended at that point. The default of the first form of the method is <see langword="true" />.</param>
-        <summary>Redirects to a specified mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Redirects to a specified mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.HttpResponse.Redirect(System.String,System.Boolean)" />
       </Docs>
@@ -1464,7 +1464,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a relative URL to the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a relative URL to the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A relative URL to the page.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1487,7 +1487,7 @@
       </Parameters>
       <Docs>
         <param name="control">The <see cref="T:System.Web.UI.MobileControls.MobileControl" /> that has been removed.</param>
-        <summary>Called after a control is removed from the <see cref="P:System.Web.UI.Control.Controls" /> collection of another control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Called after a control is removed from the <see cref="P:System.Web.UI.Control.Controls" /> collection of another control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1519,7 +1519,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The text writer that creates the markup.</param>
-        <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client. Also stores tracing information about the control if tracing is enabled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client. Also stores tracing information about the control if tracing is enabled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1549,7 +1549,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.IO.TextWriter" /> to receive control content.</param>
-        <summary>Renders server control content and stores tracing information about the control if tracing is enabled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Renders server control content and stores tracing information about the control if tracing is enabled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1579,7 +1579,7 @@
       </Parameters>
       <Docs>
         <param name="view">An <see cref="T:System.Object" /> in which to store the view-state information.</param>
-        <summary>Saves any state information for the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any state information for the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1608,7 +1608,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>The page's current view state.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1647,7 +1647,7 @@
         <ReturnType>System.Web.UI.MobileControls.StyleSheet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current style sheet on a <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the current style sheet on a <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The current style sheet for the page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1679,7 +1679,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the style sheet applied to this page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the name of the style sheet applied to this page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>
           <see langword="null" />.</value>
         <remarks>
@@ -1713,7 +1713,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the page theme. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the name of the page theme. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the page theme. The <see cref="P:System.Web.UI.MobileControls.MobilePage.Theme" /> property is a server-side field and cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1752,7 +1752,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the title for the page. This feature is not supported for mobile pages. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the title for the page. This feature is not supported for mobile pages. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An empty string.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the <see cref="P:System.Web.UI.MobileControls.MobilePage.Title" /> property.</exception>
@@ -1778,7 +1778,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique key that can be added to generate a unique URL for the current page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a unique key that can be added to generate a unique URL for the current page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A unique key that can be added to generate a unique URL for the current page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1806,7 +1806,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs control validation, and then sets the <see cref="P:System.Web.UI.Page.IsValid" /> property based on the results of the validation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Performs control validation, and then sets the <see cref="P:System.Web.UI.Page.IsValid" /> property based on the results of the validation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1833,7 +1833,7 @@
       </Parameters>
       <Docs>
         <param name="control">The ASP.NET mobile control that is required in the <see cref="T:System.Web.UI.MobileControls.Form" /> control.</param>
-        <summary>Confirms that a <see cref="T:System.Web.UI.MobileControls.Form" /> control is rendered for the specified ASP.NET mobile control at run time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Confirms that a <see cref="T:System.Web.UI.MobileControls.Form" /> control is rendered for the specified ASP.NET mobile control at run time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1861,7 +1861,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the source identifier to use to render the hidden field for a view state. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Contains the source identifier to use to render the hidden field for a view state. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

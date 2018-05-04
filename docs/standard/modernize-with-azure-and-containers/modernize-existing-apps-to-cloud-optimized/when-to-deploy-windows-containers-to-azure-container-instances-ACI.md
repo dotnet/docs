@@ -4,11 +4,6 @@ description: Modernize existing .NET applications with Azure Cloud and Windows c
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/29/2018
-ms.prod: .net
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # When to deploy Windows Containers to Azure Container Instances (ACI)
 

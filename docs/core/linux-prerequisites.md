@@ -4,11 +4,6 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 author: jralexander
 ms.author: johalex
 ms.date: 04/19/2018
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Prerequisites for .NET Core on Linux
 

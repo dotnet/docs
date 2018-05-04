@@ -1,21 +1,9 @@
 ---
 title: "Activity Tracing in Message Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 68862534-3b2e-4270-b097-8121b12a2c97
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Activity Tracing in Message Security
 This topic describes activity tracing for security processing, which happens in the following three phases.  

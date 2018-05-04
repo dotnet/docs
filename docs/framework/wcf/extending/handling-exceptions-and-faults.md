@@ -1,21 +1,7 @@
 ---
 title: "Handling Exceptions and Faults"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a64d01c6-f221-4f58-93e5-da4e87a5682e
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Handling Exceptions and Faults
 Exceptions are used to communicate errors locally within the service or the client implementation. Faults, on the other hand, are used to communicate errors across service boundaries, such as from the server to the client or vice versa. In addition to faults, transport channels often use transport-specific mechanisms to communicate transport-level errors. For example, HTTP transport uses status codes such as 404 to communicate a non-existing endpoint URL (there is no endpoint to send back a fault). This document consists of three sections that provide guidance to custom channel authors. The first section provides guidance on when and how to define and throw exceptions. The second section provides guidance around generating and consuming faults. The third section explains how to provide trace information to aid the user of your custom channel in troubleshooting running applications.  

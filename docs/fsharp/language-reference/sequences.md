@@ -1,12 +1,7 @@
 ---
 title: Sequences (F#)
 description: Learn how to use F# sequences, when you have a large, ordered collection of data but don't necessarily expect to use all of the elements.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Sequences
 

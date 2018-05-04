@@ -1,44 +1,30 @@
 ---
 title: "Queuing in WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e98d76ba-1acf-42cd-b137-0f8214661112
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Queuing in WCF
 This section describes how to use queued communication in Windows Communication Foundation (WCF).  
   
 ## Queues as a WCF transport binding  
- In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the contracts specify what is being exchanged. Contracts are business-dependent or application-specific message exchanges. The mechanism used to exchange messages (or the "how") is specified in the bindings. Bindings in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] encapsulate details of the message exchange. They expose configuration knobs for the user to control various aspects of the transport or the protocol that the bindings represent. Queuing in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is treated like any other transport binding, which is a big advantage for many queuing applications. Today, many queuing applications are written differently from other remote procedure call (RPC)-style distributed applications, making it harder to follow and maintain. With [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the style of writing a distributed application is much the same, making it easier to follow and maintain. Moreover, by factoring out the mechanism of exchange separately from the business logic, it is easier to configure the transport or make changes to it without affecting application specific code. The following figure illustrates the structure of a WCF service and client using MSMQ as a transport.  
+ In WCF, the contracts specify what is being exchanged. Contracts are business-dependent or application-specific message exchanges. The mechanism used to exchange messages (or the "how") is specified in the bindings. Bindings in WCF encapsulate details of the message exchange. They expose configuration knobs for the user to control various aspects of the transport or the protocol that the bindings represent. Queuing in WCF is treated like any other transport binding, which is a big advantage for many queuing applications. Today, many queuing applications are written differently from other remote procedure call (RPC)-style distributed applications, making it harder to follow and maintain. With WCF, the style of writing a distributed application is much the same, making it easier to follow and maintain. Moreover, by factoring out the mechanism of exchange separately from the business logic, it is easier to configure the transport or make changes to it without affecting application specific code. The following figure illustrates the structure of a WCF service and client using MSMQ as a transport.  
   
  ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
- As you can see from the preceding figure, the client and service must define only the application semantics, that is, the contract and implementation. The service configures a queued binding with preferred settings. The client uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to the service and to generate a configuration file that describes the bindings to use to send messages to the service. Thus, to send a queued message, the client instantiates a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and invokes an operation on it. This causes the message to be sent to the transmission queue and transferred to the target queue. All the complexities of queued communication are hidden from the application that is sending and receiving messages.  
+ As you can see from the preceding figure, the client and service must define only the application semantics, that is, the contract and implementation. The service configures a queued binding with preferred settings. The client uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a WCF client to the service and to generate a configuration file that describes the bindings to use to send messages to the service. Thus, to send a queued message, the client instantiates a WCF client and invokes an operation on it. This causes the message to be sent to the transmission queue and transferred to the target queue. All the complexities of queued communication are hidden from the application that is sending and receiving messages.  
   
- Caveats about queued binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include:  
+ Caveats about queued binding in WCF include:  
   
--   All service operations must be one-way because the default queued binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not support duplex communication using queues. A two-way communication sample ([Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)) illustrates how to use two one-way contracts to implement duplex communication using queues.  
+-   All service operations must be one-way because the default queued binding in WCF does not support duplex communication using queues. A two-way communication sample ([Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)) illustrates how to use two one-way contracts to implement duplex communication using queues.  
   
--   To generate a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client using metadata exchange requires an additional HTTP endpoint on the service so that it can be queried directly to generate the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and obtain binding information to appropriately configure queued communication.  
+-   To generate a WCF client using metadata exchange requires an additional HTTP endpoint on the service so that it can be queried directly to generate the WCF client and obtain binding information to appropriately configure queued communication.  
   
--   Based on the queued binding, extra configuration outside of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is required. For example, the <xref:System.ServiceModel.NetMsmqBinding> class that is shipped with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] requires you to configure the bindings as well as minimally configure Message Queuing (MSMQ).  
+-   Based on the queued binding, extra configuration outside of WCF is required. For example, the <xref:System.ServiceModel.NetMsmqBinding> class that is shipped with WCF requires you to configure the bindings as well as minimally configure Message Queuing (MSMQ).  
   
- The following sections describe the specific queued bindings shipped with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], which are based on MSMQ.  
+ The following sections describe the specific queued bindings shipped with WCF, which are based on MSMQ.  
   
 ### MSMQ  
- The queued transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses MSMQ for its queued communication.  
+ The queued transport in WCF uses MSMQ for its queued communication.  
   
  MSMQ ships as an optional component with Windows and runs as an NT service. It captures messages for transmission in a transmission queue and for delivery in a target queue. The MSMQ queue managers implement a reliable message-transfer protocol so that messages are not lost in transmission. The protocol can be either native or SOAP-based, such as the SOAP Reliable Message Protocol (SRMP).  
   
@@ -49,7 +35,7 @@ This section describes how to use queued communication in Windows Communication 
  For more information about MSMQ, see [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md).  
   
 ### NetMsmqBinding  
- The [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) is the queued binding [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides for two [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoints to communicate using MSMQ. The binding, therefore, exposes properties that are specific to MSMQ. However, not all MSMQ features and properties are exposed in the `NetMsmqBinding`. The compact `NetMsmqBinding` is designed with an optimal set of features that most customers should find sufficient.  
+ The [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) is the queued binding WCF provides for two WCF endpoints to communicate using MSMQ. The binding, therefore, exposes properties that are specific to MSMQ. However, not all MSMQ features and properties are exposed in the `NetMsmqBinding`. The compact `NetMsmqBinding` is designed with an optimal set of features that most customers should find sufficient.  
   
  The `NetMsmqBinding` manifests the core queuing concepts discussed thus far in the form of properties on the bindings. These properties, in turn, communicate to MSMQ how to transfer and deliver the messages. A discussion of the property categories is in the following sections. For more information, see the conceptual topics that describe specific properties more completely.  
   
@@ -70,7 +56,7 @@ This section describes how to use queued communication in Windows Communication 
   
  Many queuing systems provide for a system-wide dead-letter queue. MSMQ provides a system-wide non-transactional dead-letter queue for messages that fail delivery to non-transactional queues and a system-wide transactional dead-letter queue for messages that fail delivery to transactional queues.  
   
- If multiple clients sending messages to different target queues share the MSMQ service, all messages sent by the clients go to the same dead-letter queue. This is not always preferable. For better isolation, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and MSMQ in [!INCLUDE[wv](../../../../includes/wv-md.md)] provide a custom dead-letter queue (or application-specific dead-letter queue) that the user can specify to store messages that fail delivery. Therefore, different clients do not share the same dead-letter queue.  
+ If multiple clients sending messages to different target queues share the MSMQ service, all messages sent by the clients go to the same dead-letter queue. This is not always preferable. For better isolation, WCF and MSMQ in [!INCLUDE[wv](../../../../includes/wv-md.md)] provide a custom dead-letter queue (or application-specific dead-letter queue) that the user can specify to store messages that fail delivery. Therefore, different clients do not share the same dead-letter queue.  
   
  The binding has two properties of interest:  
   
@@ -100,7 +86,7 @@ This section describes how to use queued communication in Windows Communication 
 -   `UseActiveDirectory`: A Boolean value to indicate whether the Active Directory must be used for queue address resolution. By default, this is off. For more information, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   
 ### MsmqIntegrationBinding  
- The `MsmqIntegrationBinding` is used when you want a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint to communicate with an existing MSMQ application written in C, C++, COM, or System.Messaging APIs.  
+ The `MsmqIntegrationBinding` is used when you want a WCF endpoint to communicate with an existing MSMQ application written in C, C++, COM, or System.Messaging APIs.  
   
  The binding properties are the same as for `NetMsmqBinding`. However, the following differences apply:  
   

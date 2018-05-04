@@ -1,26 +1,12 @@
 ---
 title: "Specifying an Endpoint Address"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "endpoints [WCF], addressing"
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
-caps.latest.revision: 41
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying an Endpoint Address
 All communication with a Windows Communication Foundation (WCF) service occurs through its endpoints. Each <xref:System.ServiceModel.Description.ServiceEndpoint> contains an <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>, a <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A>, and a <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A>. The contract specifies which operations are available. The binding specifies how to communicate with the service, and the address specifies where to find the service. Every endpoint must have a unique address. The endpoint address is represented by the <xref:System.ServiceModel.EndpointAddress> class, which contains a Uniform Resource Identifier (URI) that represents the address of the service, an <xref:System.ServiceModel.EndpointAddress.Identity%2A>, which represents the security identity of the service, and a collection of optional <xref:System.ServiceModel.EndpointAddress.Headers%2A>. The optional headers provide more detailed addressing information to identify or interact with the endpoint. For example, headers can indicate how to process an incoming message, where the endpoint should send a reply message, or which instance of a service to use to process an incoming message from a particular user when multiple instances are available.  

@@ -1,18 +1,11 @@
 ---
 title: "-keyfile"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/keyfile compiler option [Visual Basic]"
   - "keyfile compiler option [Visual Basic]"
   - "-keyfile compiler option [Visual Basic]"
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -keyfile
 Specifies a file containing a key or key pair to give an assembly a strong name.  

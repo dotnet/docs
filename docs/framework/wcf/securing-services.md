@@ -1,25 +1,13 @@
 ---
 title: "Securing Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuration [WCF], securing services"
   - "WCF security"
   - "WCF, security"
 ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
-caps.latest.revision: 28
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Services
 Security of a Windows Communication Foundation (WCF) service consists of two primary requirements: transfer security and authorization. (A third requirement, auditing of security events, is described in [Auditing](../../../docs/framework/wcf/feature-details/auditing-security-events.md).) In brief, transfer security includes authentication (verifying the identity of both the service and the client), confidentiality (message encryption), and integrity (digital signing to detect tampering). Authorization is the control of access to resources, for example, allowing only privileged users to read a file. Using features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], the two primary requirements are easily implemented.  

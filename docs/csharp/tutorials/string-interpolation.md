@@ -1,14 +1,8 @@
 ---
 title: String Interpolation - C#
 description: Learn how string interpolation works in C# 6
-keywords: .NET, .NET Core, C#, string
 author: mgroves
-ms.author: wiwagn
 ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
 ---
 

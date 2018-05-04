@@ -4,12 +4,6 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/11/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet-install scripts reference
 

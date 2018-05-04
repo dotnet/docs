@@ -1,10 +1,6 @@
 ---
 title: "Types (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "value types [C#]"
   - "reference types [C#]"
@@ -15,9 +11,6 @@ helpviewer_keywords:
   - "C# language, types"
   - "strong typing [C#]"
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-caps.latest.revision: 53
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Types (C# Programming Guide)
 ## Types, Variables, and Values  

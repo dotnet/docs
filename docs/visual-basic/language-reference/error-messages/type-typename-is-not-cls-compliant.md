@@ -1,21 +1,12 @@
 ---
 title: "Type &lt;typename&gt; is not CLS-compliant"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc40041"
   - "vbc40041"
 helpviewer_keywords: 
   - "BC40041"
 ms.assetid: 634132c2-5646-44aa-98c6-f773e2e63882
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type &lt;typename&gt; is not CLS-compliant
 A variable, property, or function return is declared with a data type that is not CLS-compliant.  

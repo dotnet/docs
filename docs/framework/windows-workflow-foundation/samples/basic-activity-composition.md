@@ -1,19 +1,7 @@
 ---
 title: "Basic Activity Composition"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c283a1a7-1245-4ecd-8072-206c1b4ca379
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Basic Activity Composition
 This sample demonstrates how to compose custom activities and system-provided activities to build more custom activities.  

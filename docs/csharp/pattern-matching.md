@@ -1,13 +1,7 @@
 ---
 title: Pattern Matching - C# Guide
 description: Learn about pattern matching expressions in C#
-keywords: .NET, .NET Core, C#
 ms.date: 01/24/2017
-ms.author: wiwagn
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 

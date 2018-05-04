@@ -1,14 +1,7 @@
 ---
 title: Order the results of a join clause
 description: How to order the results of a join clause.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 12/1/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: a7458901-1201-4c25-b8d9-c04ca52e0eb9
 ---
 # Order the results of a join clause

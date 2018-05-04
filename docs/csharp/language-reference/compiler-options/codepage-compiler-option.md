@@ -1,10 +1,6 @@
 ---
 title: "-codepage (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/codepage"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "codepage compiler option [C#]"
   - "-codepage compiler option [C#]"
 ms.assetid: 75942989-b69a-4308-90a0-840c73d2c478
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -codepage (C# Compiler Options)
 This option specifies which codepage to use during compilation if the required page is not the current default codepage for the system.  

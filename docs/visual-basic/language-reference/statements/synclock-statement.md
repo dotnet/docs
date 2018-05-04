@@ -1,12 +1,6 @@
 ---
 title: "SyncLock Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.SyncLock"
   - "SyncLock"
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "SyncLock statement [Visual Basic]"
   - "locks, threads"
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # SyncLock Statement
 Acquires an exclusive lock for a statement block before executing the block.  

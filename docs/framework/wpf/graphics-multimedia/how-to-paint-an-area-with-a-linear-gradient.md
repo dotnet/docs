@@ -1,25 +1,11 @@
 ---
 title: "How to: Paint an Area with a Linear Gradient"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "linear gradients [WPF], painting with"
   - "brushes [WPF], painting with linear gradients"
   - "painting [WPF], with linear gradients"
 ms.assetid: 00e0cd04-48c0-4ec5-850e-d321beb37a34
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Paint an Area with a Linear Gradient
 This example shows how to use the <xref:System.Windows.Media.LinearGradientBrush> class to paint an area with a linear gradient. In the following example, the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle> is painted with a diagonal linear gradient that transitions from yellow to red to blue to lime green.  

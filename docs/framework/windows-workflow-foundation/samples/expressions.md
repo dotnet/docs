@@ -1,19 +1,7 @@
 ---
 title: "Expressions2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 43a85905-77b5-4893-bb38-1cb9b293d69d
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Expressions
 This sample demonstrates how to use basic expressions in a workflow. It consists of a workflow that calculates basic salary statistics for two employees of a fictitious company. Two classes, `Employee` and `SalaryStats`, are defined in Employee.cs and SalaryStats.cs. These classes are used in a workflow that shows how to perform simple arithmetic and string operations on properties of variables of complex types.  

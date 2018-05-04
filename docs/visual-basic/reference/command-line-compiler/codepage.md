@@ -1,18 +1,11 @@
 ---
 title: "-codepage (Visual Basic)"
 ms.date: 03/09/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-codepage compiler option [Visual Basic]"
   - "codepage compiler option [Visual Basic]"
   - "-codepage compiler option [Visual Basic]"
 ms.assetid: be36ec33-6800-4505-838c-4124564f5cc9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -codepage (Visual Basic)
 Specifies the code page to use for all source-code files in the compilation.  

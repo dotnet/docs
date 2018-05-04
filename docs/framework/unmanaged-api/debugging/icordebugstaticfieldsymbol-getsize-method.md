@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugStaticFieldSymbol::GetSize Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 72389860-7e37-4656-ba46-b6aeee1860f8
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStaticFieldSymbol::GetSize Method
 Gets the size in bytes of the static field.  

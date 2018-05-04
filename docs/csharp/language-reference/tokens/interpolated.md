@@ -2,10 +2,6 @@
 title: "$ - string interpolation (C# Reference)"
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
 ms.date: 03/26/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "$_CSharpKeyword"
   - "$"

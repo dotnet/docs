@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting Visual Basic, procedures"
   - "procedures [Visual Basic], troubleshooting"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "troubleshooting procedures"
   - "procedures [Visual Basic], about procedures"
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Procedures (Visual Basic)
 This page lists some common problems that can occur when working with procedures.  

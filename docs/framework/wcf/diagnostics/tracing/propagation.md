@@ -1,21 +1,7 @@
 ---
 title: "Propagation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Propagation
 This topic describes activity propagation in the Windows Communication Foundation (WCF) tracing model.  

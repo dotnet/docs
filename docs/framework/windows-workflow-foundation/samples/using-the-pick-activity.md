@@ -1,19 +1,7 @@
 ---
 title: "Using the Pick Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b89be812-a247-4025-b0e3-ffb20db027a6
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the Pick Activity
 This sample demonstrates how to use the <xref:System.Activities.Statements.Pick> activity.  

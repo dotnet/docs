@@ -1,12 +1,7 @@
 ---
 title: Async Programming in F#
 description: Learn how F# async programming is accomplished via a language-level programming model that is easy to use and natural to the language.
-author: cartermp
-ms.author: phcart
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Async Programming in F# #
 

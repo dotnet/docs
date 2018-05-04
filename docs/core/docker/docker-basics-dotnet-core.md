@@ -5,13 +5,7 @@ author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
-ms.prod: dotnet-core
-ms.technology: dotnet-docker
-ms.devlang: dotnet
 ms.custom: mvc
-manager: wpickett
-ms.workload: 
-  - dotnetcore
 ---
 
 # Learn Docker Basics with .NET Core

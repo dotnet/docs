@@ -1,17 +1,9 @@
 ---
 title: "Collection Object Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Collection object, summary"
 ms.assetid: c4586369-d817-4453-9cb0-1a272fc66737
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Collection Object Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

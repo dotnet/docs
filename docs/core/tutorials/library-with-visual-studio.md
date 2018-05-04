@@ -4,12 +4,6 @@ description: Learn how to create a .NET Standard class library written in C# usi
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: devlang-csharp
-ms.devlang: csharp
-ms.workload: 
-  - dotnetcore
 ---
 # Building a class library with C# and .NET Core in Visual Studio 2017
 

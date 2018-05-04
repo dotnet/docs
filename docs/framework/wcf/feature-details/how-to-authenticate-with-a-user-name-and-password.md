@@ -1,18 +1,9 @@
 ---
 title: "How to: Authenticate with a User Name and Password"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "authentication [WCF], user name and password"
 ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Authenticate with a User Name and Password
 

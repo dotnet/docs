@@ -1,22 +1,10 @@
 ---
 title: "Windows Workflow Foundation Glossary for .NET Framework 4.5"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], glossary"
   - "WF [WF], glossary"
 ms.assetid: ab682b2f-3779-45ca-b831-b7c03d7dbb3a
-caps.latest.revision: 259
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Workflow Foundation Glossary for .NET Framework 4.5
 The following terms are used in the Windows Workflow Foundation documentation.  

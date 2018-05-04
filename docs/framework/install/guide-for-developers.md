@@ -2,10 +2,6 @@
 title: "Install the .NET Framework for developers"
 ms.custom: "updateeachrelease"
 ms.date: "04/10/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "get-started-article"
 helpviewer_keywords: 
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Install the .NET Framework for developers

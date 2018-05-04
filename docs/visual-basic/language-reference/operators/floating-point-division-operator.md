@@ -1,12 +1,6 @@
 ---
 title: "/ Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb./"
 helpviewer_keywords: 
@@ -22,9 +16,6 @@ helpviewer_keywords:
   - "/ operator [Visual Basic]"
   - "math operators [Visual Basic]"
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # / Operator (Visual Basic)
 Divides two numbers and returns a floating-point result.  

@@ -1,10 +1,6 @@
 ---
 title: "-platform (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/platform"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-platform compiler option [C#]"
   - "/platform compiler option [C#]"
 ms.assetid: c290ff5e-47f4-4a85-9bb3-9c2525b0be04
-caps.latest.revision: 46
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -platform (C# Compiler Options)
 Specifies which version of the Common Language Runtime (CLR) can run the assembly.  

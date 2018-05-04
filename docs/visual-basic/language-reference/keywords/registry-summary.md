@@ -1,17 +1,9 @@
 ---
 title: "Registry Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "registry [Visual Basic]"
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Registry Summary (Visual Basic)
 Visual Studio language keywords and run-time library members are organized by purpose and use.  

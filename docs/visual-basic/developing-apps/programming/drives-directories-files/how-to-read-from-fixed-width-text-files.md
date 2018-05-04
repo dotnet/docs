@@ -1,13 +1,6 @@
 ---
 title: "How to: read from fixed-width text Files in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "fixed-width text file"
   - "reading text files [Visual Basic], fixed-width"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "text files [Visual Basic], tasks"
   - "text files [Visual Basic], reading"
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: read from fixed-width text files in Visual Basic
 The `TextFieldParser` object provides a way to easily and efficiently parse structured text files, such as logs.  

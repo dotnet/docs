@@ -1,26 +1,12 @@
 ---
 title: "Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "FlowLayoutPanel control [Windows Forms], walkthroughs"
   - "Windows Forms controls, arranging"
   - "controls [Windows Forms], arranging with FlowLayoutPanel"
   - "layout [Windows Forms], walkthroughs"
 ms.assetid: a1744323-0316-49c2-992e-ebfc0a976b85
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel
 Some applications require a form with a layout that arranges itself appropriately as the form is resized or as the contents change in size. When you need a dynamic layout and you do not want to handle <xref:System.Windows.Forms.Control.Layout> events explicitly in your code, consider using a layout panel.  

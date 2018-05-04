@@ -1,14 +1,7 @@
 ---
 title: Properties
-description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications. 
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
+description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications.
 ms.date: 04/03/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 6950d25a-bba1-4744-b7c7-a3cc90438c55
 ---
 

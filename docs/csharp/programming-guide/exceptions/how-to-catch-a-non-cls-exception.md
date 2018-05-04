@@ -1,16 +1,9 @@
 ---
 title: "How to: Catch a non-CLS Exception"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions [C#], non-CLS"
 ms.assetid: db4630b3-5240-471a-b3a7-c7ff6ab31e8d
-caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Catch a non-CLS Exception
 Some .NET languages, including C++/CLI, allow objects to throw exceptions that do not derive from <xref:System.Exception>. Such exceptions are called *non-CLS exceptions* or *non-Exceptions*. In Visual C# you cannot throw non-CLS exceptions, but you can catch them in two ways:  

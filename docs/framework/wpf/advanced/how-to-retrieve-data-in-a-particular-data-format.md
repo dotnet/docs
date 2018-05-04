@@ -1,14 +1,6 @@
 ---
 title: "How to: Retrieve Data in a Particular Data Format"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "DataFormats class [WPF], retrieving data"
   - "DataObject class [WPF], retrieving data"
 ms.assetid: a625acf3-1144-44cd-add7-456aefc3859f
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Retrieve Data in a Particular Data Format
 The following examples show how to retrieve data from a data object in a specified format.  

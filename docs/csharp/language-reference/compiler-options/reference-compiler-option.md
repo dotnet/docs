@@ -1,10 +1,6 @@
 ---
 title: "-reference (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/reference"
 helpviewer_keywords: 
@@ -17,9 +13,6 @@ helpviewer_keywords:
   - "public type information [C#]"
   - "-reference compiler option [C#]"
 ms.assetid: 8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -reference (C# Compiler Options)
 The **-reference** option causes the compiler to import [public](../../../csharp/language-reference/keywords/public.md) type information in the specified file into the current project, thus enabling you to reference metadata from the specified assembly files.  

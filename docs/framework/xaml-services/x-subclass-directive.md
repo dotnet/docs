@@ -1,14 +1,6 @@
 ---
 title: "x:Subclass Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "Subclass"
   - "xSubclass"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "XAML [XAML Services], x:Subclass attribute"
   - "Subclass attribute in XAML [XAML Services]"
 ms.assetid: 99f66072-8107-4362-ab99-8171dc83b469
-caps.latest.revision: 20
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Subclass Directive
 Modifies XAML markup compile behavior when `x:Class` is also provided. Instead of creating a partial class that is based on `x:Class`, the provided `x:Class` is created as an intermediate class, and then your provided derived class is expected to be based on `x:Class`.  

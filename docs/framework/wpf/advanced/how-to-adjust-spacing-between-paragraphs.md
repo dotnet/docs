@@ -1,25 +1,11 @@
 ---
 title: "How to: Adjust Spacing Between Paragraphs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "spacing between paragraphs [WPF]"
   - "paragraphs [WPF], spacing between"
   - "documents [WPF], adjusting spacing between paragraphs"
 ms.assetid: 7cd2f2ac-0e19-4587-bfb6-7f5b18c9536e
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Adjust Spacing Between Paragraphs
 This example shows how to adjust or eliminate spacing between paragraphs in flow content.  

@@ -1,12 +1,7 @@
 ---
 title: Type Providers
 description: Learn how an F# type provider is a component that provides types, properties, and methods for use in your programs.
-author: cartermp
-ms.author: phcart
 ms.date: 04/02/2018
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Type Providers
 

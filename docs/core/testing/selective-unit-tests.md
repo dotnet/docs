@@ -4,11 +4,6 @@ description: Shows you how to use a filter expression to run selective unit test
 author: smadala
 ms.author: mairaw
 ms.date: 03/22/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Running selective unit tests
 

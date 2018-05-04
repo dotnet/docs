@@ -1,26 +1,14 @@
 ---
 title: ".NET Framework Tools"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "command line, .NET Framework tools"
   - ".NET Framework, tools"
   - "tools [.NET Framework]"
   - "running .NET Framework tools"
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
-caps.latest.revision: 65
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # .NET Framework Tools
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.  

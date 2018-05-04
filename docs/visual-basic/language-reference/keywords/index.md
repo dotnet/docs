@@ -1,11 +1,6 @@
 ---
 title: "Keywords (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "reserved keywords, Visual Basic"
   - "keywords [Visual Basic]"
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "reserved words, Visual Basic keywords"
   - "Visual Basic, keywords"
 ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
-caps.latest.revision: 43
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Keywords (Visual Basic)
 The following tables list all Visual Basic language keywords.  

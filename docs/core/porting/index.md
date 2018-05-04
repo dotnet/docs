@@ -4,11 +4,6 @@ description: Understand the porting process and discover tools you may find help
 author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Porting to .NET Core from .NET Framework
 

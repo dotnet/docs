@@ -1,14 +1,6 @@
 ---
 title: "TextBox Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ControlTemplate [WPF], TextBox"
   - "parts [WPF], TextBox"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "templates [WPF], TextBox"
   - "TextBox [WPF], styles and templates"
 ms.assetid: aa99130c-43a1-450f-9b46-c40ae0db0cca
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # TextBox Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.TextBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

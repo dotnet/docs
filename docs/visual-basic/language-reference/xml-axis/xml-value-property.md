@@ -1,12 +1,6 @@
 ---
 title: "XML Value Property (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionValue"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], Value"
   - "XML Value property [Visual Basic]"
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Value Property (Visual Basic)
 Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.  

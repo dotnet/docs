@@ -1,25 +1,11 @@
 ---
 title: "How to: Use XML Namespaces in Data Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [WPF], namespaces"
   - "data binding [WPF], XML namespaces"
   - "namespaces [WPF], XML"
 ms.assetid: a47c832f-dc84-48f2-96d5-cde18fc4284b
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use XML Namespaces in Data Binding
 ## Example  

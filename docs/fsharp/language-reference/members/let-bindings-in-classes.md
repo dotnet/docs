@@ -1,12 +1,7 @@
 ---
 title: let Bindings in Classes (F#)
 description: Learn how to define private fields and private functions for F# classes by using 'let' bindings in the class definition.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # let Bindings in Classes
 

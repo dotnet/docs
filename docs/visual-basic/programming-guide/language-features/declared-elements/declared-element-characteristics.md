@@ -1,13 +1,6 @@
 ---
 title: "Declared Element Characteristics (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declared elements [Visual Basic], lifetime"
   - "access levels, declared elements"
@@ -20,9 +13,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], declared elements"
   - "declared elements [Visual Basic], visibility"
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declared Element Characteristics (Visual Basic)
 A *characteristic* of a declared element is an aspect of that element that affects how code can interact with it. Every declared element has one or more of the following characteristics associated with it:  

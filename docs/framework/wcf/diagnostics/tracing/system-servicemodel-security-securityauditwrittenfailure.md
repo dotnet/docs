@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecurityAuditWrittenFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f8740d0d-753a-490e-b1b8-dfa352ec25b5
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecurityAuditWrittenFailure
 System.ServiceModel.Security.SecurityAuditWrittenFailure  

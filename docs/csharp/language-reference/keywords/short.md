@@ -1,19 +1,12 @@
 ---
 title: "short (C# Reference)"
 ms.date: 03/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "short"
   - "short_CSharpKeyword"
 helpviewer_keywords: 
   - "short keyword [C#]"
 ms.assetid: 04c10688-e51a-4a87-bfec-83f7fb42ff11
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # short (C# Reference)
 

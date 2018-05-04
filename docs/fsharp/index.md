@@ -2,11 +2,7 @@
 title: F# Guide
 description: This guide provides an overview of various learning materials for F#, a functional programming language that runs on .NET.
 author: jackfoxy
-ms.author: phcart
 ms.date: 03/19/2018
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # F# Guide
 

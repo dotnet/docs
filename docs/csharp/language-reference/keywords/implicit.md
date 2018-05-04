@@ -1,19 +1,12 @@
 ---
 title: "implicit (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "implicit"
   - "implicit_CSharpKeyword"
 helpviewer_keywords: 
   - "implicit keyword [C#]"
 ms.assetid: 34db590e-eb3a-4f11-88d0-ffb3cd753dab
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # implicit (C# Reference)
 The `implicit` keyword is used to declare an implicit user-defined type conversion operator. Use it to enable implicit conversions between a user-defined type and another type, if the conversion is guaranteed not to cause a loss of data.  

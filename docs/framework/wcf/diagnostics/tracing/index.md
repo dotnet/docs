@@ -1,21 +1,7 @@
 ---
 title: "Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2649eae2-dbf8-421c-9cfb-cfa9e01de87f
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracing
 Windows Communication Foundation (WCF) provides application instrumentation and diagnostic data for fault monitoring and analysis. You can use tracing instead of a debugger to understand how an application is behaving, or why it faults. You can also correlate faults and processing across components to provide an end-to-end experience.  

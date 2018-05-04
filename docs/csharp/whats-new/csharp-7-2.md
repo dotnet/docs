@@ -1,13 +1,7 @@
 ---
 title: What's new in C# 7.2
 description: An overview of new features in C# 7.2.
-keywords: C# language design, 7.2, Visual Studio 2017, 
-author: billwagner
-ms.author: wiwagn
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 # What's new in C# 7.2
 

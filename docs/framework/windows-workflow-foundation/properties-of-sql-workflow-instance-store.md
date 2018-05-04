@@ -1,19 +1,7 @@
 ---
 title: "Properties of SQL Workflow Instance Store"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5bf75f3c-8f33-450d-967f-6ee862c14c67
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Properties of SQL Workflow Instance Store
 The topics in this section provide details about properties of the SQL Workflow Instance Store.  

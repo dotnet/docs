@@ -4,12 +4,6 @@ description: Explains how to manage your dependencies with the .NET Core tools.
 author: blackdwarf
 ms.author: mairaw
 ms.date: 03/06/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Managing dependencies with .NET Core SDK 1.0
 

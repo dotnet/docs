@@ -1,10 +1,6 @@
 ---
 title: "Explicit Numeric Conversions Table (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "conversions [C#], explicit numeric"
   - "numeric conversions [C#], explicit"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "types [C#], explicit numeric conversions"
   - "type conversion [C#], explicit numeric"
 ms.assetid: f3bb9e76-6b92-4df7-bc36-f866c24e1dfd
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Explicit Numeric Conversions Table (C# Reference)
 Explicit numeric conversion is used to convert any numeric type to any other numeric type, for which there is no implicit conversion, by using a cast expression. The following table shows these conversions.  

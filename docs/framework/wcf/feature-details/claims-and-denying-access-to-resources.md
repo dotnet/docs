@@ -1,23 +1,9 @@
 ---
 title: "Claims and Denying Access to Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "claims [WCF], denying access to resources"
 ms.assetid: 145ebb41-680e-4256-b14c-1efb4af1e982
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Claims and Denying Access to Resources
 Windows Communication Foundation (WCF) supports a claims-based authorization mechanism. As well as allowing access to resources based on the presence of claims, systems often deny access to resources based on the presence of claims. Such systems should examine the <xref:System.IdentityModel.Policy.AuthorizationContext> for claims that result in access being denied before looking for claims that result in access being allowed.  

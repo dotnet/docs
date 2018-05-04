@@ -2,17 +2,10 @@
 title: "Classes (C# Programming Guide)"
 description: Learn about the class types and how to create them
 ms.date: 04/05/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes [C#]"
   - "C# language, classes"
 ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
-caps.latest.revision: 40
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Classes (C# Programming Guide)
 A *class* is a construct that enables you to create your own custom types by grouping together variables of other types, methods and events. A class is like a blueprint. It defines the data and behavior of a type. If the class is not declared as static, client code can create *instances* of it. These instances are *objects* which are assigned to a variable. The instance of a class remains in memory until all references to it go out of scope. At that time, the CLR marks it as eligible for garbage collection. If the class is declared as [static](../../../csharp/language-reference/keywords/static.md), you cannot create instances, and client code can only access it through the class itself. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  

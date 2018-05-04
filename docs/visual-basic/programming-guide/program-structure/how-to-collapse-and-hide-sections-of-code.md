@@ -1,21 +1,11 @@
 ---
 title: "How to: Collapse and Hide Sections of Code (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, code collapsing"
   - "Visual Basic, code hiding"
   - "Visual Basic code, collapsing and hiding"
 ms.assetid: b770e8f5-e07d-491a-ab4b-a977980f9ba2
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Collapse and Hide Sections of Code (Visual Basic)
 The `#Region` directive enables you to collapse and hide sections of code in Visual Basic files. The `#Region` directive lets you specify a block of code that you can expand or collapse when using the Visual Studio code editor. The ability to hide code selectively makes your files more manageable and easier to read. For more information, see [Outlining](/visualstudio/ide/outlining).  

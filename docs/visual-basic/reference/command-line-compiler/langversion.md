@@ -1,18 +1,11 @@
 ---
 title: "-langversion (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/langversion compiler option [Visual Basic]"
   - "langversion compiler option [Visual Basic]"
   - "-langversion compiler option [Visual Basic]"
 ms.assetid: 59b7b0c8-2dde-4e9b-94e7-0237f7e0bafb
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -langversion (Visual Basic)
 Causes the compiler to accept only syntax that is included in the specified Visual Basic language version.  

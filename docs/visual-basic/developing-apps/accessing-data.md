@@ -1,17 +1,10 @@
 ---
 title: "Accessing data in Visual Basic applications"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Visual Basic]"
   - "Visual Basic, data access"
 ms.assetid: 3086ab38-3be5-4b22-9385-7d0e16b04f6a
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Accessing data in Visual Basic applications
 Visual Basic includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](/visualstudio/data-tools/add-new-data-sources) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  

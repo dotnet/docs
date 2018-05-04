@@ -1,12 +1,6 @@
 ---
 title: "-optioninfer"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "-optioninfer"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "/optioninfer compiler option [Visual Basic]"
   - "optioninfer compiler option [Visual Basic]"
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -optioninfer
 Enables the use of local type inference in variable declarations.  

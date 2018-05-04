@@ -1,21 +1,9 @@
 ---
 title: "Endpoint: Security Validation and Authentication Failures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5bad60aa-6084-4c7b-aefd-9b581f04382e
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Endpoint: Security Validation and Authentication Failures
 Counter name: Security Validation and Authentication Failures  

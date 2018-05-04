@@ -4,11 +4,6 @@ description: Learn how to restore dependencies and project-specific tools with t
 author: mairaw
 ms.author: mairaw
 ms.date: 11/30/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet restore
 

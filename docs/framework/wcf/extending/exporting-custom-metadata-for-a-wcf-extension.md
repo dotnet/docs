@@ -1,21 +1,7 @@
 ---
 title: "Exporting Custom Metadata for a WCF Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53c93882-f8ba-4192-965b-787b5e3f09c0
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Exporting Custom Metadata for a WCF Extension
 In Windows Communication Foundation (WCF), metadata export is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Custom metadata consists of XML elements that the system-provided metadata exporters cannot export. Typically, this includes custom WSDL elements for user-defined behaviors and binding elements and policy assertions about the capabilities and requirements of bindings and contracts.  

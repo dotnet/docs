@@ -1,18 +1,11 @@
 ---
 title: "#endif (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#endif"
 helpviewer_keywords: 
   - "#endif directive [C#]"
 ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05
-caps.latest.revision: 9
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #endif (C# Reference)
 `#endif` specifies the end of a conditional directive, which began with the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive. For example,  

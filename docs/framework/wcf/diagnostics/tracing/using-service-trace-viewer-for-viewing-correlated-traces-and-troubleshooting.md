@@ -1,21 +1,7 @@
 ---
 title: "Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting
 This topic describes the format of trace data, how to view it, and approaches that use the Service Trace Viewer to troubleshoot your application.  

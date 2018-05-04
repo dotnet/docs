@@ -1,11 +1,6 @@
 ---
 title: "Conversion functions (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "conversions [Visual Basic], conversion functions"
   - "conversion functions"
@@ -17,9 +12,6 @@ helpviewer_keywords:
   - "functions [Visual Basic], conversion"
   - "dates [Visual Basic], converting"
 ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 
 # Conversion functions (Visual Basic)

@@ -115,7 +115,8 @@
         "_csharplang/spec/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
-        "docs/framework/unmanaged-api/**/**.md": "reference"
+        "docs/framework/unmanaged-api/**/**.md": "reference",
+        "docs/fsharp/language-reference/**/**.md": "language-reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],

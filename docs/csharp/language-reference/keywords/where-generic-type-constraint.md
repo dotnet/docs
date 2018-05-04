@@ -1,17 +1,11 @@
 ---
 title: "where (generic type constraint) (C# Reference)"
 ms.date: 04/12/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
 helpviewer_keywords: 
   - "where (generic type constraint) [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # where (generic type constraint) (C# Reference)
 

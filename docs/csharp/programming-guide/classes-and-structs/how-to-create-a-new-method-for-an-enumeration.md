@@ -1,18 +1,11 @@
 ---
 title: "How to: Create a New Method for an Enumeration (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [C#]"
   - "extension methods [C#], for enums"
   - "enum extensibility [C#]"
 ms.assetid: 100106f9-1e54-462c-8ebe-3892fe23b6eb
-caps.latest.revision: 7
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create a New Method for an Enumeration (C# Programming Guide)
 You can use extension methods to add functionality specific to a particular enum type.  

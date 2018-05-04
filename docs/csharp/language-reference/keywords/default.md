@@ -1,19 +1,12 @@
 ---
 title: "default (C# Reference)"
 ms.date: 08/04/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "default"
   - "default_CSharpKeyword"
 helpviewer_keywords: 
   - "default keyword [C#]"
 ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # default (C# Reference)

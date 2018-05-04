@@ -1,21 +1,7 @@
 ---
 title: "Endpoint: Calls Failed Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bcbe9da4-c8dd-4e27-b630-11611adc7580
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Endpoint: Calls Failed Per Second
 Counter Name: Calls Failed Per Second.  

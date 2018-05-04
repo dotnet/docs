@@ -1,23 +1,11 @@
 ---
 title: "Extending Windows Workflow Foundation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WF [WF], extending"
   - "Windows Workflow Foundation [WF], extending"
   - "extending [WF]"
 ms.assetid: d6861f28-9c8c-4225-872d-9a80e2e59034
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extending Windows Workflow Foundation
 The following section describes how to extend Windows Workflow Foundation (WF) with custom activities and designers in rehosted environments outside [!INCLUDE[vs2010](../../../includes/vs2010-md.md)].  

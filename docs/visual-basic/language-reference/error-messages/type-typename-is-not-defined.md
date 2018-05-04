@@ -1,21 +1,12 @@
 ---
 title: "Type &#39;&lt;typename&gt;&#39; is not defined"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30002"
   - "bc30002"
 helpviewer_keywords: 
   - "BC30002"
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type &#39;&lt;typename&gt;&#39; is not defined
 The statement has made reference to a type that has not been defined. You can define a type in a declaration statement such as `Enum`, `Structure`, `Class`, or `Interface`.  

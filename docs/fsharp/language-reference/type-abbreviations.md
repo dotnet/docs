@@ -1,12 +1,7 @@
 ---
 title: Type Abbreviations (F#)
 description: Learn about F# type abbreviations to give a type a more meaningful name in order to make code easier to read.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Type Abbreviations
 

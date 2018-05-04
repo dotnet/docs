@@ -1,14 +1,6 @@
 ---
 title: "How to: Use SelectedValue, SelectedValuePath, and SelectedItem"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TreeView control [WPF], SelectedValue properties"
   - "Control class [WPF], SelectedItem properties"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "Control class [WPF], SelectedValuePath properties"
   - "SelectedValue [WPF], SelectedItem properties"
 ms.assetid: 2fc92ad4-f02c-4f89-bbe9-d4978a7af0db
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use SelectedValue, SelectedValuePath, and SelectedItem
 This example shows how to use the <xref:System.Windows.Controls.TreeView.SelectedValue%2A> and <xref:System.Windows.Controls.TreeView.SelectedValuePath%2A> properties to specify a value for the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> of a <xref:System.Windows.Controls.TreeView>.  

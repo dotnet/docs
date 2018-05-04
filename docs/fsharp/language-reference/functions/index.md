@@ -1,12 +1,7 @@
 ---
 title: Functions (F#)
 description: Learn about functions in F# and how F# supports common functional programming constructs.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Functions
 

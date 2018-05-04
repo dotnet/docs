@@ -1,21 +1,7 @@
 ---
 title: "Correlation Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: edcc0315-5d26-44d6-a36d-ea554c418e9f
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Correlation Overview
 Correlation is the mechanism for relating workflow service messages to each other or to the application instance state, such as a reply to an initial request, or a particular order ID to the persisted state of an order-processing workflow. This topic provides an overview of correlation. The other topics in this section provide additional information for each type of correlation.  

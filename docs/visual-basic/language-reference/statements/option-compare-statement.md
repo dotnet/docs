@@ -1,12 +1,6 @@
 ---
 title: "Option Compare Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Compare"
   - "vb.OptionCompare"
@@ -24,9 +18,6 @@ helpviewer_keywords:
   - "Option Compare statement [Visual Basic]"
   - "text [Visual Basic], comparing"
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Compare Statement
 Declares the default comparison method to use when comparing string data.  

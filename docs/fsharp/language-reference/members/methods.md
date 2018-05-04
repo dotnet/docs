@@ -1,12 +1,7 @@
 ---
 title: Methods (F#)
 description: Learn how an F# method is a function associated with a type that are used to expose and implement the functionality and behavior of objects and types.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Methods
 

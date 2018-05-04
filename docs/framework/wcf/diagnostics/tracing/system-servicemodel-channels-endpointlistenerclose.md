@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.EndpointListenerClose"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fe554dc7-8260-404a-935a-ab2131979b46
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.EndpointListenerClose
 System.ServiceModel.Channels.EndpointListenerClose  

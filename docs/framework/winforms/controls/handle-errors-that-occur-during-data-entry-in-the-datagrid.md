@@ -1,14 +1,6 @@
 ---
 title: "How to: Handle Errors That Occur During Data Entry in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "data entry [Windows Forms], error handling"
   - "error handling [Windows Forms], data entry"
 ms.assetid: 9004e72f-fdec-4264-a37d-2c99764efc13
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Handle Errors That Occur During Data Entry in the Windows Forms DataGridView Control
 The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridView> control to report data entry errors to the user.  

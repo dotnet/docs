@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo7::ReadInMemorySymbols"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorProfilerInfo7.ReadInMemorySymbols"
 api_location: 
@@ -18,12 +10,8 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo7::ReadInMemorySymbols
 [Supported in the [!INCLUDE[net_v461](../../../../includes/net-v461-md.md)] and later versions]  

@@ -1,10 +1,6 @@
 ---
 title: "Visual Basic Language Reference"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic language reference"
   - "run-time libraries, Visual Basic"
@@ -14,9 +10,6 @@ helpviewer_keywords:
   - "language reference, Visual Basic"
   - "Visual Basic, language reference"
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Language Reference
 This section provides reference information for various aspects of the Visual Basic language.  

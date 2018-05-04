@@ -1,19 +1,7 @@
 ---
 title: "How to: Find an Element with a Specific Child Element (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b0d0a463-6a85-46c3-8453-ad25b0ecf93c
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Find an Element with a Specific Child Element (Visual Basic)
 This topic shows how to find a particular element that has a child element with a specific value.  

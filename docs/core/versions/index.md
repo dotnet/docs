@@ -4,11 +4,6 @@ description: Understand how .NET Core versioning works.
 author: bleroy
 ms.author: mairaw
 ms.date: 02/13/2018
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core versioning
 

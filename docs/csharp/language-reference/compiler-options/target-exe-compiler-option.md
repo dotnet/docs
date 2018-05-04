@@ -1,10 +1,6 @@
 ---
 title: "-target:exe (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/exe"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "/target compiler options [C#], /target:exe"
   - "-target compiler options [C#], /target:exe"
 ms.assetid: bda5717d-1b91-4848-956b-fcf85c30e432
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -target:exe (C# Compiler Options)
 The **-target:exe** option causes the compiler to create an executable (EXE), console application.  

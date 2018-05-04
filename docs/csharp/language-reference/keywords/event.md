@@ -1,10 +1,6 @@
 ---
 title: "event (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "event"
   - "remove"
@@ -13,9 +9,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "event keyword [C#]"
 ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # event (C# Reference)
 The `event` keyword is used to declare an event in a publisher class.  

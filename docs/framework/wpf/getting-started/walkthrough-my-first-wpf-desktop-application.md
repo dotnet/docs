@@ -1,21 +1,15 @@
 ---
 title: Create a WPF application in Visual Studio
-ms.custom: 04/12/2018
-ms.prod: ".net-framework"
-ms.technology: dotnet-wpf
-ms.topic: conceptual
-dev_langs:
+ms.date: 04/12/2018
+dev_langs: 
   - "csharp"
   - "vb"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "getting started [WPF], WPF"
   - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
-manager: "wpickett"
-ms.workload:
-  - dotnet
 ---
 # Walkthrough: My first WPF desktop application
 

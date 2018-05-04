@@ -1,17 +1,10 @@
 ---
 title: "Query Keywords (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "query keywords [C#]"
   - "LINQ [C#], query keywords"
 ms.assetid: 6c9bec16-dbd7-4a7c-a060-fe4600b2021f
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Query Keywords (C# Reference)
 This section contains the contextual keywords used in query expressions.  

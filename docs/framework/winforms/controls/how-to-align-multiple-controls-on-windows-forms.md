@@ -1,26 +1,12 @@
 ---
 title: "How to: Align Multiple Controls on Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "forms [Windows Forms], aligning controls"
   - "Windows Forms, aligning controls"
   - "controls [Windows Forms], positioning"
   - "controls [Windows Forms], aligning"
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Align Multiple Controls on Windows Forms
 To standardize the layout of the user interface (UI) of your Windows-based application, you can position groups of controls with a single command.  

@@ -1,21 +1,7 @@
 ---
 title: "How to: Create a Custom Reliable Session Binding with HTTPS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fa772232-da1f-4c66-8c94-e36c0584b549
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # How to: Create a Custom Reliable Session Binding with HTTPS

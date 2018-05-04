@@ -1,12 +1,6 @@
 ---
 title: "+ Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.+"
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "strings [Visual Basic], concatenating"
   - "sum operator [Visual Basic]"
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # + Operator (Visual Basic)
 Adds two numbers or returns the positive value of a numeric expression. Can also be used to concatenate two string expressions.  

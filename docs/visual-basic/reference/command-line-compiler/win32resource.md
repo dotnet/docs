@@ -1,11 +1,6 @@
 ---
 title: "-win32resource"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "-win32resource"
   - "win32resource"

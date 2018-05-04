@@ -1,15 +1,9 @@
 ---
 title: "in parameter modifier (C# Reference)"
 ms.date: 03/06/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "parameters [C#], in"
   - "in parameters [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # in parameter modifier (C# Reference)

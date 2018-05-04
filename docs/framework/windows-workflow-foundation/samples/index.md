@@ -1,15 +1,7 @@
 ---
 title: "Windows Workflow (WF) Samples"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.topic: "article"
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Workflow (WF) Samples
 These samples provide instruction on various aspects of Windows Workflow Foundation (WF).  

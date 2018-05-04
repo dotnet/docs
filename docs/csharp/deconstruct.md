@@ -1,14 +1,9 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-keywords: .NET,.NET Core,C#
 author: rpetrusha
-ms-author: ronpet
+ms.author: ronpet
 ms.date: 07/18/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
 ---
 # Deconstructing tuples and other types #

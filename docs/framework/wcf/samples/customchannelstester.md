@@ -1,21 +1,7 @@
 ---
 title: "CustomChannelsTester"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ee1fa307-98b1-4647-8860-2e9217ba6082
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CustomChannelsTester
 The `CustomChannelsTester` is a tool that you can use to test your custom channel implementations against a set of predefined service contracts. You can select the set of service contracts and pass it to the tool using an XML file. The tool then generates the service and client that exercises your custom channel implementations during message exchange.  

@@ -1,12 +1,6 @@
 ---
 title: "AndAlso Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.AndAlso"
   - "AndAlso"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], conjunction"
   - "short-circuit evaluation"
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # AndAlso Operator (Visual Basic)
 Performs short-circuiting logical conjunction on two expressions.  

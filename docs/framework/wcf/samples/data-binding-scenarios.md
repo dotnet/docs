@@ -1,21 +1,7 @@
 ---
 title: "Data Binding Scenarios"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a2c10dc4-84af-4dab-baee-e9c84ca26ebf
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Binding Scenarios
 This section contains samples that demonstrate Windows Communication Foundation (WCF) data binding scenarios.  

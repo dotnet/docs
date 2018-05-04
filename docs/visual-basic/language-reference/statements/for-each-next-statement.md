@@ -1,12 +1,6 @@
 ---
 title: "For Each...Next Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ForEach"
   - "vb.ForEachNext"
@@ -28,9 +22,6 @@ helpviewer_keywords:
   - "Exit statement [Visual Basic], For Each...Next statements"
   - "iteration"
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
-caps.latest.revision: 56
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # For Each...Next Statement (Visual Basic)
 Repeats a group of statements for each element in a collection.  

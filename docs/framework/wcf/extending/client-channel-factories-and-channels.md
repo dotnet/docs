@@ -1,21 +1,7 @@
 ---
 title: "Client: Channel Factories and Channels"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef245191-fdab-4468-a0da-7c6f25d2110f
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Client: Channel Factories and Channels
 This topic discusses the creation of channel factories and channels.  

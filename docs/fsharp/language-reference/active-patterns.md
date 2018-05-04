@@ -1,12 +1,7 @@
 ---
 title: Active Patterns (F#)
 description: Learn how to use active patterns to define named partitions that subdivide input data in the F# programming language.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Active Patterns
 

@@ -1,17 +1,10 @@
 ---
 title: "Command-line build with csc.exe"
 ms.date: 04/19/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "builds [C#]"
   - "command line [C#]"
 ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Command-line build with csc.exe
 You can invoke the C# compiler by typing the name of its executable file (*csc.exe*) at a command prompt.

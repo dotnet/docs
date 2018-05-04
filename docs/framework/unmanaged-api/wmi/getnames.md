@@ -2,10 +2,6 @@
 title: GetNames function (Unmanaged API Reference)
 description: The GetNames function retrieves the names of the properties of an object.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetNames"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetNames function
 Retrieves either a subset or all of the names of the properties of an object. 

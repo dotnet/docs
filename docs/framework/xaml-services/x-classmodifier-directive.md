@@ -1,14 +1,6 @@
 ---
 title: "x:ClassModifier Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "xClassModifier"
   - "x:ClassModifier"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "x:ClassModifier attribute [XAML Services]"
   - "ClassModifier attribute in XAML [XAML Services]"
 ms.assetid: ef30ab78-d334-4668-917d-c9f66c3b6aea
-caps.latest.revision: 22
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:ClassModifier Directive
 Modifies XAML compilation behavior when `x:Class` is also provided. Specifically, instead of creating a partial `class` that has a `Public` access level (the default), the provided `x:Class` is created with a `NotPublic` access level. This behavior affects the access level for the class in the generated assemblies.  

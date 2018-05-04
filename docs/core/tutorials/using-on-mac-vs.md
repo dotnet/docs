@@ -4,11 +4,6 @@ description: This topic walks you through building a simple console application 
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.topic: get-started-article
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Getting started with .NET Core on macOS using Visual Studio for Mac
 

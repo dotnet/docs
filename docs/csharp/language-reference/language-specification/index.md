@@ -1,19 +1,13 @@
 ---
 title: "C# 6.0 draft Language Specification"
 ms.date: 07/01/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "reference"
+ms.topic: language-reference
 helpviewer_keywords: 
   - "C# language, specification"
   - "what's new [C#], language specification"
   - "Visual C#, C# language specification"
   - "language specification [C#]"
 ms.assetid: e5d5a5cc-636b-4bff-b9c8-a8edc6207c22
-caps.latest.revision: 46
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# 6.0 draft Language Specification
 The C# Language Specification is the definitive source for C# syntax and usage. This specification contains detailed information about all aspects of the language, including many points that the documentation for Visual C# doesn't cover.

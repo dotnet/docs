@@ -1,10 +1,6 @@
 ---
 title: "from clause (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "from_CSharpKeyword"
   - "from"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "from clause [C#]"
   - "from keyword [C#]"
 ms.assetid: 1aefd18c-1314-47f8-99ec-9bcefb09e699
-caps.latest.revision: 27
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # from clause (C# Reference)
 A query expression must begin with a `from` clause. Additionally, a query expression can contain sub-queries, which also begin with a `from` clause. The `from` clause specifies the following:  

@@ -1,14 +1,6 @@
 ---
 title: "x:Null Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "NullExtension"
   - "x:NullExtension"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "x:Null markup extension [XAML Services]"
   - "XAML [XAML Services], x:Null markup extension"
 ms.assetid: 2e3ccc21-4996-481d-91b5-3910d8b3bfa3
-caps.latest.revision: 20
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Null Markup Extension
 Specifies `null` as a value for a XAML member.  

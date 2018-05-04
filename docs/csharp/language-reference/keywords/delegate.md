@@ -1,10 +1,6 @@
 ---
 title: "delegate (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "delegate_CSharpKeyword"
   - "delegate"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "delegate keyword [C#]"
   - "function pointers [C#]"
 ms.assetid: 0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # delegate (C# Reference)
 The declaration of a delegate type is similar to a method signature. It has a return value and any number of parameters of any type:  

@@ -1,12 +1,7 @@
 ---
 title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
-author: cartermp
-ms.author: phcart
 ms.date: 02/13/2017
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Get started with F# in Visual Studio
 

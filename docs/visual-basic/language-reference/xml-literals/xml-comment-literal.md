@@ -1,12 +1,6 @@
 ---
 title: "XML Comment Literal (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralComment"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "XML comment literal [Visual Basic]"
   - "XML literals [Visual Basic], comment"
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Comment Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XComment> object.  

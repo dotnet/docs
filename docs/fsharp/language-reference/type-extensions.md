@@ -1,12 +1,7 @@
 ---
 title: Type Extensions (F#)
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Type Extensions
 

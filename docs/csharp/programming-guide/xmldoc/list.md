@@ -1,10 +1,6 @@
 ---
 title: "&lt;list&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "list"
   - "<list>"
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "<item> C# XML tag"
   - "<list> C# XML tag"
 ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;list&gt; (C# Programming Guide)
 ## Syntax  

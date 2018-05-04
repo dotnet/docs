@@ -1,23 +1,9 @@
 ---
 title: "Types Supported by the Data Contract Serializer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "serialization [WCF], supported types"
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Types Supported by the Data Contract Serializer
 Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serialization.DataContractSerializer> as its default serialization engine to convert data into XML and to convert XML back into data. The <xref:System.Runtime.Serialization.DataContractSerializer> is designed to serialize *data contract* types. However, it supports many other types, which can be thought of as having an implicit data contract. The following is a complete list of types that can be serialized:  
@@ -46,13 +32,13 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
   
 -   To serialize or deserialize a type that implements <xref:System.Runtime.Serialization.ISerializable> in partially-trusted code using the <xref:System.Runtime.Serialization.DataContractSerializer> requires the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> and <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> permissions.  
   
--   When running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] code in [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md) mode, the serialization and deserialization of `readonly` fields (both `public` and `private`) is not supported. This is because the generated IL is unverifiable and therefore requires elevated permissions.  
+-   When running WCF code in [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md) mode, the serialization and deserialization of `readonly` fields (both `public` and `private`) is not supported. This is because the generated IL is unverifiable and therefore requires elevated permissions.  
   
 -   Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Xml.Serialization.XmlSerializer> are supported in a partial trust environment. However, use of the <xref:System.Runtime.Serialization.DataContractSerializer> is subject to the following conditions:  
   
     -   All serializable `[DataContract]` types must be public.  
   
-    -   All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of `readonly` fields is not supported when running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] in a partially-trusted application.  
+    -   All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of `readonly` fields is not supported when running WCF in a partially-trusted application.  
   
     -   The `[Serializable]`/`ISerializable]` programming model is not supported in a partial trust environment.  
   
@@ -71,7 +57,7 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
   
 -   Both structures and classes are supported.  
   
--   The <xref:System.Runtime.Serialization.DataContractSerializer> does not support the programming model used by the <xref:System.Xml.Serialization.XmlSerializer> and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services. In particular, it does not support attributes like <xref:System.Xml.Serialization.XmlElementAttribute> and <xref:System.Xml.Serialization.XmlAttributeAttribute>. To enable support for this programming model, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] must be switched to use the <xref:System.Xml.Serialization.XmlSerializer> instead of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+-   The <xref:System.Runtime.Serialization.DataContractSerializer> does not support the programming model used by the <xref:System.Xml.Serialization.XmlSerializer> and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services. In particular, it does not support attributes like <xref:System.Xml.Serialization.XmlElementAttribute> and <xref:System.Xml.Serialization.XmlAttributeAttribute>. To enable support for this programming model, WCF must be switched to use the <xref:System.Xml.Serialization.XmlSerializer> instead of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 -   The <xref:System.DBNull> type is treated in a special way. It is a singleton type, and upon deserialization the deserializer respects the singleton constraint and points all `DBNull` references to the singleton instance. Because `DBNull` is a serializable type, it demands <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> permission.  
   

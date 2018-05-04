@@ -1,13 +1,6 @@
 ---
 title: "Declared Element Names (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declared elements [Visual Basic], case sensitivity"
   - "names [Visual Basic], Visual Basic rules"
@@ -30,9 +23,6 @@ helpviewer_keywords:
   - "names [Visual Basic], naming conventions"
   - "identifiers [Visual Basic], elements"
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declared Element Names (Visual Basic)
 Every declared element has a name, also called an *identifier*, which is what the code uses to refer to it.  

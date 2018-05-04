@@ -1,18 +1,10 @@
 ---
 title: "My.Computer.FileSystem.SpecialDirectories Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.FileSystem.SpecialDirectories object"
   - "SpecialDirectories object"
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Computer.FileSystem.SpecialDirectories Object
 Provides properties for accessing commonly referenced directories.  

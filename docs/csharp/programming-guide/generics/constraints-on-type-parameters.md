@@ -1,17 +1,11 @@
 ---
 title: "Constraints on Type Parameters (C# Programming Guide)"
 ms.date: 04/12/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], type constraints"
   - "type constraints [C#]"
   - "type parameters [C#], constraints"
   - "unbound type parameter [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Constraints on type parameters (C# Programming Guide)
 

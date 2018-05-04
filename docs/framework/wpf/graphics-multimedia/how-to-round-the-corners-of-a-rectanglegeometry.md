@@ -1,26 +1,12 @@
 ---
 title: "How to: Round the Corners of a RectangleGeometry"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "corners [WPF], rounding"
   - "RectangleGeometry class [WPF], rounding corners"
   - "graphics [WPF], rounding corners of RectangleGeometry objects [WPF]"
   - "rounding corners of RectangleGeometry objects [WPF]"
 ms.assetid: 926644bc-1357-4c0b-ac81-694bd090ae87
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Round the Corners of a RectangleGeometry
 To round the corners of a <xref:System.Windows.Media.RectangleGeometry>, set its <xref:System.Windows.Media.RectangleGeometry.RadiusX%2A> and <xref:System.Windows.Media.RectangleGeometry.RadiusY%2A> properties to a value greater than zero. The larger the values, the rounder the rectangle's corners.  

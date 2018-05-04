@@ -1,16 +1,10 @@
 ---
 title: "How to: Use Pointers to Copy an Array of Bytes  (C# Programming Guide)"
 ms.date: 04/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "byte arrays [C#]"
   - "arrays [C#], byte"
   - "pointers [C#], to copy bytes"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use Pointers to Copy an Array of Bytes  (C# Programming Guide)
 

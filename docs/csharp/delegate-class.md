@@ -1,14 +1,7 @@
 ---
 title: System.Delegate and the `delegate` keyword
 description: Learn about the classes in the .NET Framework that support delegates and how those map to the 'delegate' keyword.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 ---
 

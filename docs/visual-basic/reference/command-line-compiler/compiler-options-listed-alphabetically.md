@@ -1,12 +1,6 @@
 ---
 title: "Visual Basic Compiler Options Listed Alphabetically"
 ms.date: 04/12/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e

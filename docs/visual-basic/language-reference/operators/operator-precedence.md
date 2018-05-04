@@ -1,12 +1,6 @@
 ---
 title: "Operator Precedence in Visual Basic"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arithmetic operators [Visual Basic], precedence"
   - "operator precedence"
@@ -20,9 +14,6 @@ helpviewer_keywords:
   - "math operators [Visual Basic]"
   - "order of precedence"
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Operator Precedence in Visual Basic
 When several operations occur in an expression, each part is evaluated and resolved in a predetermined order called *operator precedence*.  

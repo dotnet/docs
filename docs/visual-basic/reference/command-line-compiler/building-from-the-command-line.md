@@ -1,12 +1,6 @@
 ---
 title: "Building from the Command Line (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "builds [Visual Basic], command-line"
   - "Visual Basic compiler, about Visual Basic compiler"
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "command-line compilers [Visual Basic], Visual Basic"
   - "command line [Visual Basic], Visual Basic"
 ms.assetid: e61947e9-a42e-4717-a699-5f70a98cdd03
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Building from the Command Line (Visual Basic)
 A Visual Basic project is made up of one or more separate source files. During the process known as compilation, these files are brought together into one package—a single executable file that can be run as an application.  

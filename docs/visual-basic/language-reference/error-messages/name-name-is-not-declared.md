@@ -1,21 +1,12 @@
 ---
 title: "Name &#39;&lt;name&gt;&#39; is not declared"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30451"
   - "vbc30451"
 helpviewer_keywords: 
   - "BC30451"
 ms.assetid: 765f099b-e21e-47c6-a906-a065444e56b3
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Name &#39;&lt;name&gt;&#39; is not declared
 A statement refers to a programming element, but the compiler cannot find an element with that exact name.  

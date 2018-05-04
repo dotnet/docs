@@ -1,11 +1,6 @@
 ---
 title: "-errorreport"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-errorreport compiler option [Visual Basic]"
   - "/errorreport compiler option [Visual Basic]"

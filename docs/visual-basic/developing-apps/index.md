@@ -1,17 +1,10 @@
 ---
 title: "Developing Applications with Visual Basic"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, developing applications"
   - "applications [Visual Basic]"
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Developing Applications with Visual Basic
 This section covers conceptual documentation for the Visual Basic language.  

@@ -1,12 +1,6 @@
 ---
 title: "Declare Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Declare"
   - "vb.Lib"
@@ -33,9 +27,6 @@ helpviewer_keywords:
   - "Visual Basic code, Sub procedures"
   - "Function procedures [Visual Basic], declaring"
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declare Statement
 Declares a reference to a procedure implemented in an external file.  

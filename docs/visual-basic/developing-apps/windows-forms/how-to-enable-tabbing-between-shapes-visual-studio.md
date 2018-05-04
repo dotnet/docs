@@ -1,11 +1,6 @@
 ---
 title: "How to: Enable Tabbing Between Shapes (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "Line control [Visual Basic], implementing tabbing"
   - "Shape control [Visual Basic], implementing tabbing"
 ms.assetid: 09731b34-3900-4fcb-a9df-ce5280328433
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Enable Tabbing Between Shapes (Visual Studio)
 Line and shape controls do not have `TabStop` or `TabIndex` properties, but you can still enable tabbing among them. In the following example, pressing both the CTRL and the TAB keys will tab between shapes; pressing only the TAB key will tab between the buttons.  

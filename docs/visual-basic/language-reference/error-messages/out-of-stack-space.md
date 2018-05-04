@@ -1,18 +1,9 @@
 ---
 title: "Out of stack space (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID28"
 ms.assetid: bfcd792b-ac29-4158-81fc-ea0c13f4ffa2
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Out of stack space (Visual Basic)
 The stack is a working area of memory that grows and shrinks dynamically with the demands of your executing program. Its limits have been exceeded.  

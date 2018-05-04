@@ -1,12 +1,6 @@
 ---
 title: "Try...Catch...Finally Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Try...Catch...Finally"
   - "vb.when"
@@ -25,9 +19,6 @@ helpviewer_keywords:
   - "Visual Basic code, handling errors while running"
   - "structured exception handling, Try...Catch...Finally statements"
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
-caps.latest.revision: 69
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Try...Catch...Finally Statement (Visual Basic)
 Provides a way to handle some or all possible errors that may occur in a given block of code, while still running code.  

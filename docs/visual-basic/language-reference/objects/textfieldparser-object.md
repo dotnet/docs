@@ -1,19 +1,11 @@
 ---
 title: "TextFieldParser Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "TextFieldParser object"
   - "TextFieldParser class, aboutTextFieldParser class"
   - "TextFieldParser class"
 ms.assetid: d44bd2b0-7dfc-410b-a48b-534c1e97460b
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # TextFieldParser Object
 Provides methods and properties for parsing structured text files.  

@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting: reading from and writing to text files (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting file I/O"
   - "writing text to files [Visual Basic], troubleshooting"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "writing to files [Visual Basic], troubleshooting"
   - "reading text files [Visual Basic], troubleshooting"
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting: reading from and writing to text files (Visual Basic)
 This topic discusses common problems encountered when working with text files and suggests an approach to each.  

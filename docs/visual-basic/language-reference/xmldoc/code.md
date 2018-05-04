@@ -1,19 +1,10 @@
 ---
 title: "&lt;code&gt; (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "code XML tag"
   - "<code> XML tag"
 ms.assetid: 925e5342-be05-45f2-bf66-7398bbd6710e
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;code&gt; (Visual Basic)
 Indicates that the text is multiple lines of code.  

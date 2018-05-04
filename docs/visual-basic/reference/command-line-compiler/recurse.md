@@ -1,11 +1,6 @@
 ---
 title: "-recurse"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/recurse compiler option [Visual Basic]"
   - "-recurse compiler option [Visual Basic]"

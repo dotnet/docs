@@ -1,11 +1,6 @@
 ---
 title: "-sdkpath"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "sdkpath"
   - "-sdkpath"

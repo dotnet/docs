@@ -1,20 +1,12 @@
 ---
 title: "Rapid Application Development with My.Resources and My.Settings (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Settings object [Visual Basic], developing applications"
   - "rapid application development (RAD), My.Resources"
   - "rapid application development (RAD), My.Settings"
   - "My.Resources object [Visual Basic], developing applications"
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Rapid Application Development with My.Resources and My.Settings (Visual Basic)
 The `My.Resources` object provides access to the application's resources and allows you to dynamically retrieve resources for your application.  

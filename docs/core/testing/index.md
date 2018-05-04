@@ -1,18 +1,10 @@
 ---
 title: Unit Testing in .NET Core
 description: Unit testing has never been easier. See how to use unit testing in .NET Core and .NET Standard projects.
-keywords: .NET, .NET Core, .NET Standard, unit testing
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
-ms.workload: 
-  - dotnetcore
 ---
-
 # Unit Testing in .NET Core and .NET Standard
 
 .NET Core has been designed with testability in mind, so that creating unit tests for your applications is easier than ever before. This article briefly introduces unit tests (and how they differ from other kinds of tests). Linked resources demonstrate how to add a test project to your solution and then run unit tests using either the command line or Visual Studio.

@@ -1,23 +1,9 @@
 ---
 title: "System-Provided Bindings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "bindings [WCF], system-provided"
 ms.assetid: 2c243746-45ce-4588-995e-c17126a579a6
-caps.latest.revision: 60
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System-Provided Bindings
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. A binding contains the following elements:  
@@ -28,7 +14,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
   
 -   The encoding determines the wire encoding to use for messages that are sent to the endpoint, for example, text/XML, binary, or Message Transmission Optimization Mechanism (MTOM).  
   
- This topic presents all of the system-provided [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] bindings. If none of these meets the exact criteria for your application, you can create a custom binding. [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating custom bindings, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
+ This topic presents all of the system-provided Windows Communication Foundation (WCF) bindings. If none of these meets the exact criteria for your application, you can create a custom binding. For more information about creating custom bindings, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
   
  A secure and interoperable binding that supports the WS-Federation protocol enables organizations that are in a federation to efficiently authenticate and authorize users.  
   

@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Data Service Using a LINQ to SQL Data Source (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "WCF Data Services, LINQ to SQL"
   - "WCF Data Services, providers"
 ms.assetid: 3b01c2fd-8c6e-4bf5-b38f-9e61bdc3c328
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Data Service Using a LINQ to SQL Data Source (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] exposes entity data as a data service. The reflection provider enables you to define a data model that is based on any class that exposes members that return an <xref:System.Linq.IQueryable%601> implementation. To be able to make updates to data in the data source, these classes must also implement the <xref:System.Data.Services.IUpdatable> interface. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md). This topic shows you how to create LINQ to SQL classes that access the Northwind sample database by using the reflection provider, as well as how to create the data service that is based on these data classes.  

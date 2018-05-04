@@ -1,17 +1,8 @@
 ---
 title: Symbol and Operator Reference (F#)
 description: Learn about the symbols and operators that are used in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/04/2018
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: ab453800-d4d0-4a11-9d55-2b358d56af27 
 ---
-
 # Symbol and Operator Reference
 
 > [!NOTE]

@@ -1,17 +1,10 @@
 ---
 title: "How to: Safely Cast from bool? to bool (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "casting [C#], nullable types"
   - "nullable types [C#], casting bool? to bool"
 ms.assetid: e06e4274-a443-422d-8ef1-9dbf9df55237
-caps.latest.revision: 9
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Safely Cast from bool? to bool (C# Programming Guide)
 The `bool?` nullable type can contain three different values: `true`, `false`, and `null`. Therefore, the `bool?` type cannot be used in conditionals such as with `if`, `for`, or `while`. For example, the following code causes a compiler error.  

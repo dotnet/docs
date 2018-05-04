@@ -1,12 +1,6 @@
 ---
 title: "Throw Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Throw"
 helpviewer_keywords: 
@@ -20,9 +14,6 @@ helpviewer_keywords:
   - "exception handling, unstructured"
   - "throw statement [Visual Basic]"
 ms.assetid: a6e07406-5c8a-4498-87a2-8339f3651d62
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Throw Statement (Visual Basic)
 Throws an exception within a procedure.  

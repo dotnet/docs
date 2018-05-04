@@ -1,10 +1,6 @@
 ---
 title: "string (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "string"
   - "string_CSharpKeyword"
@@ -14,9 +10,6 @@ helpviewer_keywords:
   - "string literals [C#]"
   - "string keyword [C#]"
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
-caps.latest.revision: 31
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # string (C# Reference)
 The `string` type represents a sequence of zero or more Unicode characters. `string` is an alias for <xref:System.String> in .NET.  

@@ -2,10 +2,6 @@
 title: GetDemultiplexedStub function (Unmanaged API Reference)
 description: The GetDemultiplexedStub function creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetDemultiplexedStub"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetDemultiplexedStub function
 Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.

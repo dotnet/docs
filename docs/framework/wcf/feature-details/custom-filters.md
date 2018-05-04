@@ -1,21 +1,7 @@
 ---
 title: "Custom Filters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 97cf247d-be0a-4057-bba9-3be5c45029d5
-caps.latest.revision: 5
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Filters
 Custom filters allow you to define matching logic that cannot be accomplished using the system-provided message filters. For example, you might create a custom filter that hashes a particular message element and then examines the value to determine whether the filter should return true or false.  

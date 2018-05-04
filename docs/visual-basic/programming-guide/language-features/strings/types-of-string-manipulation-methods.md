@@ -1,20 +1,10 @@
 ---
 title: "Types of String Manipulation Methods in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "strings [Visual Basic], manipulating [Visual Basic]"
   - "string manipulation"
 ms.assetid: 905055cd-7f50-48fb-9eed-b0995af1dc1f
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Types of String Manipulation Methods in Visual Basic
 There are several different ways to analyze and manipulate your strings. Some of the methods are a part of the Visual Basic language, and others are inherent in the `String` class.  

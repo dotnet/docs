@@ -1,24 +1,10 @@
 ---
 title: "How to: Apply Animations to Text"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "typography [WPF], animations"
   - "animation [WPF], text"
 ms.assetid: eec3d26c-0a21-420f-8012-671621c47089
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Apply Animations to Text
 Animations can alter the display and appearance of text in your application. The following examples use different types of animations to affect the display of text in a <xref:System.Windows.Controls.TextBlock> control.  

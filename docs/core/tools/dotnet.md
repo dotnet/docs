@@ -4,11 +4,6 @@ description: Learn about the dotnet command (the generic driver for the .NET Cor
 author: mairaw
 ms.author: mairaw
 ms.date: 03/20/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet command
 

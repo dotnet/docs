@@ -1,31 +1,19 @@
 ---
 title: "How to: Create a Custom Security Token Authenticator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "WCF, authentication"
 ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
-caps.latest.revision: 12
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Custom Security Token Authenticator
 This topic shows how to create a custom security token authenticator and how to integrate it with a custom security token manager. A security token authenticator validates the content of a security token provided with an incoming message. If the validation succeeds, the authenticator returns a collection of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> instances that, when evaluated, returns a set of claims.  
   
- To use a custom security token authenticator in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you must first create custom credentials and security token manager implementations. For more information about creating custom credentials and a security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md). For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
+ To use a custom security token authenticator in Windows Communication Foundation (WCF), you must first create custom credentials and security token manager implementations. For more information about creating custom credentials and a security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md). For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
   
 ## Procedures  
   

@@ -1,27 +1,15 @@
 ---
 title: "Message Security with a User Name Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-caps.latest.revision: 15
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Security with a User Name Client
-The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
+The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
   
  For a sample application, see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md).  
   
@@ -30,7 +18,7 @@ The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indi
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] only|  
+|Interoperability|Windows Communication Foundation (WCF) only|  
 |Authentication (Server)|Initial negotiation requires server authentication|  
 |Authentication (Client)|User name/password|  
 |Integrity|Yes, using shared security context|  

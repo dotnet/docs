@@ -1,18 +1,10 @@
 ---
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
-keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
-ms.workload: 
-  - dotnetcore
 ---
-
 # Additions to the csproj format for .NET Core
 
 This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  

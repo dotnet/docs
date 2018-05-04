@@ -1,23 +1,11 @@
 ---
 title: "COR_PRF_ASSEMBLY_REFERENCE_INFO Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 ms.assetid: c8c1d916-8d1a-4f82-8128-9fd3732383fc
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_PRF_ASSEMBLY_REFERENCE_INFO Structure
 [Supported in the .NET Framework 4.5.2 and later versions]  

@@ -1,17 +1,8 @@
 ---
 title: Records (F#)
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 3a3701ea-4308-4fa1-9b5c-b955c470f17a
 ---
-
 # Records
 
 Records represent simple aggregates of named values, optionally with members.  Starting with F# 4.1, they can either be structs or reference types.  They are reference types by default.

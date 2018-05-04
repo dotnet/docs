@@ -1,10 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "01/24/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
+ms.date: "04/10/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Determine which .NET Framework versions are installed
 
@@ -93,11 +86,12 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |378675|.NET Framework 4.5.1 installed with Windows 8.1 or Windows Server 2012 R2|
     |378758|.NET Framework 4.5.1 installed on Windows 8, Windows 7 SP1, or Windows Vista SP2|
     |379893|.NET Framework 4.5.2|
-    |On Windows 10 systems: 393295<br /><br /> On all other OS versions: 393297|[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|
-    |On Windows 10 November Update systems: 394254<br /><br /> On all other OS versions: 394271|[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|
-    |On Windows 10 Anniversary Update: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
-    |On Windows 10 Creators Update: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
-    |On Windows 10 Fall Creators Update: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
+    |On Windows 10 systems only: 393295<br /><br /> On all other OS versions: 393297|[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|
+    |On Windows 10 November Update systems only: 394254<br /><br /> On all other OS versions: 394271|[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|
+    |On Windows 10 Anniversary Update only: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
+    |On Windows 10 Creators Update only: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
+    |On Windows 10 Fall Creators Update only: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
+    |On Windows 10 April 2018 Update only: 461808<br/><br/> On all other OS versions: 461814| .NET Framework 4.7.2 |
     
 <a name="net_c"></a> 
 ## To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)
@@ -148,7 +142,9 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|
     |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
     |.NET Framework 4.7.1 installed on all other Windows OS versions|461310|
-
+    |.NET Framework 4.7.2 installed on Windows 10 April 2018 Update|461808|
+    |.NET Framework 4.7.2 installed on all other Windows OS versions|461814|
+    
      The following example checks the `Release` value in the registry to determine whether the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or a later version of the .NET Framework is installed.
 
      [!code-csharp[ListVersions#5](../../../samples/snippets/csharp/framework/migration-guide/versions-installed3.cs)]
@@ -181,7 +177,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
     |.NET Framework 4.7|460798|
     |.NET Framework 4.7.1|461308|
-    
+    |.NET Framework 4.7.2|461808|
+
 <a name="clr_a"></a> 
 ## To find the current runtime version by using the Clrver tool
 

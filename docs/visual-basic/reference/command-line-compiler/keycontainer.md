@@ -1,11 +1,6 @@
 ---
 title: "-keycontainer"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-keycontainer compiler option [Visual Basic]"
   - "keycontainer compiler option [Visual Basic]"

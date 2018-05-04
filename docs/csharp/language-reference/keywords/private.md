@@ -1,19 +1,12 @@
 ---
 title: "private (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "private_CSharpKeyword"
   - "private"
 helpviewer_keywords: 
   - "private keyword [C#]"
 ms.assetid: 654c0bb8-e6ac-4086-bf96-7474fa6aa1c8
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # private (C# Reference)
 The `private` keyword is a member access modifier. 

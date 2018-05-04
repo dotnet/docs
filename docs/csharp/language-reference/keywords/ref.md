@@ -1,18 +1,12 @@
 ---
 title: "ref (C# Reference)"
 ms.date: 03/06/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
 helpviewer_keywords: 
   - "parameters [C#], ref"
   - "ref keyword [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ref (C# Reference)
 

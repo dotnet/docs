@@ -1,17 +1,8 @@
 ---
 title: Structures (F#)
 description: Learn about the F# structure, a compact object type often more efficient than a class for types with a small amount of data and simple behavior.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 50819506-3210-418f-9602-0ee1c9a52177 
 ---
-
 # Structures
 
 A *structure* is a compact object type that can be more efficient than a class for types that have a small amount of data and simple behavior.

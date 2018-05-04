@@ -1,13 +1,6 @@
 ---
 title: "How to: Put a Value in a Property (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Put a Value in a Property (Visual Basic)
 You store a value in a property by putting the property name on the left side of an assignment statement.  

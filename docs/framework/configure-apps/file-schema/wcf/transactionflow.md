@@ -1,21 +1,7 @@
 ---
 title: "&lt;transactionFlow&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transactionFlow&gt;
 Specifies transaction flow support for the custom binding.  

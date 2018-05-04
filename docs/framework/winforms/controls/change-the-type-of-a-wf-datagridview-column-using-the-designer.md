@@ -1,26 +1,12 @@
 ---
 title: "How to: Change the Type of a Windows Forms DataGridView Column Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, columns"
   - "columns [Windows Forms], types"
   - "DataGridView control [Windows Forms], changing column type"
   - "data [Windows Forms], displaying"
 ms.assetid: 7f994d45-600d-4190-a187-35803214b40c
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Change the Type of a Windows Forms DataGridView Column Using the Designer
 Sometimes you will want to change the type of a column that has already been added to a Windows Forms <xref:System.Windows.Forms.DataGridView> control. For example, you may want to modify the types of some of the columns that are generated automatically when you bind the control to a data source. This is useful when the table you display has columns containing foreign keys to rows in a related table. In this case, you may want to replace the text box columns that display these foreign keys with combo box columns that display more meaningful values from the related table.  

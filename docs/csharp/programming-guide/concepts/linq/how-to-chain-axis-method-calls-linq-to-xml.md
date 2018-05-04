@@ -1,19 +1,7 @@
 ---
 title: "How to: Chain Axis Method Calls (LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Chain Axis Method Calls (LINQ to XML) (C#)
 A common pattern that you will use in your code is to call an axis method, then call one of the extension method axes.  

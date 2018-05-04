@@ -1,14 +1,6 @@
 ---
 title: "IAssemblyName Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAssemblyName"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: f7f8e605-6b67-4151-936f-f04ecd671d90
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAssemblyName Interface
 Provides methods for describing and working with an assembly's unique identity.  

@@ -2,11 +2,8 @@
 title: .NET Core additional tools
 description: An overview of the additional tools that support and extend .NET Core functionality.
 author: mlacouture
-manager: wpickett
 ms.author: johalex
 ms.date: 01/19/2018
-ms.topic: article
-ms.prod: .net-core
 ms.custom: mvc
 ---
 # .NET Core additional tools

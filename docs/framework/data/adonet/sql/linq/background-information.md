@@ -1,21 +1,7 @@
 ---
 title: "Background Information"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 724888f2-d3f1-4bea-b9a1-a0adb8a00f3b
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Background Information
 The topics in this section pertain to concepts and procedures that extend beyond the basics about using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  

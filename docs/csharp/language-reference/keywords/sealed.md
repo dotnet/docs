@@ -1,19 +1,12 @@
 ---
 title: "sealed (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "sealed"
   - "sealed_CSharpKeyword"
 helpviewer_keywords: 
   - "sealed keyword [C#]"
 ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
-caps.latest.revision: 30
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # sealed (C# Reference)
 When applied to a class, the `sealed` modifier prevents other classes from inheriting from it. In the following example, class `B` inherits from class `A`, but no class can inherit from class `B`.  

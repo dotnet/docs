@@ -1,14 +1,6 @@
 ---
 title: "TabControl Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ControlTemplate [WPF], TabControl"
   - "TabControl [WPF], styles and templates [WPF]"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "states [WPF], TabControl"
   - "templates [WPF], TabControl"
 ms.assetid: f6b19a30-f10e-4fa1-96ce-f17a54092ab6
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # TabControl Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.TabControl> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

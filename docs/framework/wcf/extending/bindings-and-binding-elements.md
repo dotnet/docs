@@ -1,23 +1,9 @@
 ---
 title: "Bindings and Binding Elements"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "binding elements [WCF]"
 ms.assetid: 765ff77b-7682-4ea3-90eb-e4d751e37379
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Bindings and Binding Elements
 Bindings are collections of special configuration elements, called *binding elements*, which are evaluated by the service runtime whenever a client or service endpoint is being constructed. The type and order of the binding elements within a binding determines the selection and stacking order of the protocol and transport channels in an endpoint's channel stack.  
@@ -27,7 +13,7 @@ Bindings are collections of special configuration elements, called *binding elem
  A binding must contain exactly one transport binding element. Each transport binding element implies a default message encoding binding element, which can be overridden by adding at most one message encoding binding element to the binding. In addition to the transport and encoder binding elements, the binding may contain any number of protocol binding elements that together implement the functionality needed to service and send a SOAP message from one endpoint to another. For details, see [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
   
 ## Extending Bindings and Binding Elements  
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes system-provided bindings that cover a wide range of scenarios. (For more, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).) There may be times, however, when you need to create and use a binding that is not included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. The following scenarios require the creation of a new binding.  
+ Windows Communication Foundation (WCF) includes system-provided bindings that cover a wide range of scenarios. (For more, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).) There may be times, however, when you need to create and use a binding that is not included in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. The following scenarios require the creation of a new binding.  
   
 -   To use a new binding element (such as a new transport, encoding, or protocol binding element), you must create a new binding that includes that binding element. For example, if you added a custom `UdpTransportBindingElement` for UDP transport, you would need to create a new binding to make use of it. For information about performing this behavior using the <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> type, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   

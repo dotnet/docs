@@ -1,24 +1,13 @@
 ---
 title: "Caching in UI Automation Clients"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation caching in clients"
   - "caching, UI Automation clients"
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
-caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]
@@ -28,7 +17,7 @@ ms.workload:
   
  In [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], caching means pre-fetching of data. The data can then be accessed without further cross-process communication. Caching is typically used by UI Automation client applications to retrieve properties and control patterns in bulk. Information is then retrieved from the cache as needed. The application updates the cache periodically, usually in response to events signifying that something in the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] has changed.  
   
- The benefits of caching are most noticeable with [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] controls and custom controls that have server-side UI Automation providers. There is less benefit when accessing client-side providers such as the default providers for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] controls.  
+ The benefits of caching are most noticeable with Windows Presentation Foundation (WPF) controls and custom controls that have server-side UI Automation providers. There is less benefit when accessing client-side providers such as the default providers for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] controls.  
   
  Caching occurs when the application activates a <xref:System.Windows.Automation.CacheRequest> and then uses any method or property that returns an <xref:System.Windows.Automation.AutomationElement>; for example, <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>, <xref:System.Windows.Automation.AutomationElement.FindAll%2A>. The methods of the <xref:System.Windows.Automation.TreeWalker> class are an exception; caching is only done if a <xref:System.Windows.Automation.CacheRequest> is specified as a parameter (for example, <xref:System.Windows.Automation.TreeWalker.GetFirstChild%28System.Windows.Automation.AutomationElement%2CSystem.Windows.Automation.CacheRequest%29?displayProperty=nameWithType>.  
   

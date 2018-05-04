@@ -2,10 +2,6 @@
 title: DeleteMethod function (Unmanaged API Reference)
 description: The DeleteMethod function deletes the specified method from a CIM class definition.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "DeleteMethod"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # DeleteMethod function
 Deletes the specified method from a CIM class definition.

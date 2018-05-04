@@ -1055,6 +1055,7 @@
 ##### [-debug](visual-basic/reference/command-line-compiler/debug.md)
 ##### [-define](visual-basic/reference/command-line-compiler/define.md)
 ##### [-delaysign](visual-basic/reference/command-line-compiler/delaysign.md)
+##### [-deterministic](visual-basic/reference/command-line-compiler/deterministic.md)
 ##### [-doc](visual-basic/reference/command-line-compiler/doc.md)
 ##### [-errorreport](visual-basic/reference/command-line-compiler/errorreport.md)
 ##### [-filealign](visual-basic/reference/command-line-compiler/filealign.md)

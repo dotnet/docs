@@ -1,27 +1,15 @@
 ---
 title: "Tracking Events into Event Tracing in Windows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f812659b-0943-45ff-9430-4defa733182b
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracking Events into Event Tracing in Windows
-This sample demonstrates how to enable [!INCLUDE[wf](../../../../includes/wf-md.md)] tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW). To emit workflow tracking records into ETW, the sample uses the ETW tracking participant (<xref:System.Activities.Tracking.EtwTrackingParticipant>).  
+This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW). To emit workflow tracking records into ETW, the sample uses the ETW tracking participant (<xref:System.Activities.Tracking.EtwTrackingParticipant>).  
   
  The workflow in the sample receives a request, assigns the reciprocal of the input data to the input variable and returns the reciprocal back to the client. When the input data is 0, a divide by zero exception occurs that is unhandled that causes the workflow to abort. With tracking enabled, the error track record is emitted to ETW, which can help troubleshoot the error later. The ETW tracking participant is configured with a tracking profile to subscribe to tracking records. The tracking profile is defined in the Web.config file and provided as a configuration parameter to the ETW tracking participant. The ETW tracking participant is configured in the Web.config file of the workflow service and is applied to the service as a service behavior. In this sample, you view the tracking events in the event log using Event Viewer.  
   
 ## Workflow Tracking Details  
- [!INCLUDE[wf2](../../../../includes/wf2-md.md)] provides a tracking infrastructure to track the execution of a workflow instance. The tracking runtime creates a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom events. The following table details the primary components of the tracking infrastructure.  
+ Windows Workflow Foundation provides a tracking infrastructure to track the execution of a workflow instance. The tracking runtime creates a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom events. The following table details the primary components of the tracking infrastructure.  
   
 |Component|Description|  
 |---------------|-----------------|  
@@ -151,7 +139,7 @@ This sample demonstrates how to enable [!INCLUDE[wf](../../../../includes/wf-md.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\EtwTracking`  
   

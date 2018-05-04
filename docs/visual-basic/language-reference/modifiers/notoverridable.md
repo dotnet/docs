@@ -1,11 +1,6 @@
 ---
 title: "NotOverridable (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.NotOverridable"
   - "NotOverridable"
@@ -21,9 +16,6 @@ helpviewer_keywords:
   - "methods [Visual Basic], sealed"
   - "properties [Visual Basic], overriding"
 ms.assetid: 66ec6984-f5f5-4857-b362-6a3907aaf9e0
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # NotOverridable (Visual Basic)
 Specifies that a property or procedure cannot be overridden in a derived class.  

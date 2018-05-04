@@ -4,11 +4,6 @@ description: Learn how to create and debug your first .NET Core application in C
 author: kendrahavens
 ms.author: mairaw
 ms.date: 09/27/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.workload: 
-  - dotnetcore
 ---
 # Get Started with C# and Visual Studio Code
 

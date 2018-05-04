@@ -1,25 +1,11 @@
 ---
 title: "How to: Create a Windows Explorer–Style Interface on a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Explorer [Windows Forms], creating with Windows Forms"
   - "SplitContainer control [Windows Forms], Explorer-style interface"
   - "forms [Windows Forms], Windows Explorer type"
 ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.  

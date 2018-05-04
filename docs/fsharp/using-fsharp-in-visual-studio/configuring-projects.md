@@ -1,15 +1,7 @@
 ---
 title: Configuring projects (F#)
 description: Learn how to use the Project Designer when you work with F# projects in Visual Studio.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 8b2ed206-34e4-4256-a6ce-0c2499561165 
 ---
 # Configuring Projects in Visual Studio
 

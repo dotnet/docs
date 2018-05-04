@@ -1,12 +1,6 @@
 ---
 title: "Property Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.PropertySet"
   - "vb.Property"
@@ -17,16 +11,13 @@ helpviewer_keywords:
   - "property procedures [Visual Basic], Property statements"
   - "Property keyword [Visual Basic]"
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
-caps.latest.revision: 41
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Property Statement
 Declares the name of a property, and the property procedures used to store and retrieve the value of the property.  
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ Default ] [ accessmodifier ]   
 [ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ] [ Iterator ]  
 Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  

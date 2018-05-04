@@ -1,12 +1,6 @@
 ---
 title: "Structure Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Structure"
   - "Structure"
@@ -18,9 +12,6 @@ helpviewer_keywords:
   - "UDT (user-defined types)"
   - "types [Visual Basic], user-defined"
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Structure Statement
 Declares the name of a structure and introduces the definition of the variables, properties, events, and procedures that the structure comprises.  

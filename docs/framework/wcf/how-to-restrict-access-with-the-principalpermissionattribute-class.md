@@ -1,14 +1,6 @@
 ---
 title: "How to: Restrict Access with the PrincipalPermissionAttribute Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "WCF, authorization"
   - "WCF, security"
 ms.assetid: 5162f5c4-8781-4cc4-9425-bb7620eaeaf4
-caps.latest.revision: 23
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Restrict Access with the PrincipalPermissionAttribute Class
 Controlling the access to resources on a Windows-domain computer is a basic security task. For example, only certain users should be able to view sensitive data, such as payroll information. This topic explains how to restrict access to a method by demanding that the user belong to a predefined group. For a working sample, see [Authorizing Access to Service Operations](../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md).  
@@ -47,7 +33,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
   
 ### To demand user membership  
   
-1.  Open the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] code file that contains the implemented service contract code. [!INCLUDE[crabout](../../../includes/crabout-md.md)] implementing a contract, see [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md).  
+1.  Open the Windows Communication Foundation (WCF) code file that contains the implemented service contract code. For more information about implementing a contract, see [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md).  
   
 2.  Apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to each method that must be restricted to a specific group. Set the <xref:System.Security.Permissions.SecurityAttribute.Action%2A> property to <xref:System.Security.Permissions.SecurityAction.Demand> and the <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A> property to the name of the group. For example:  
   

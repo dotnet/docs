@@ -1,21 +1,11 @@
 ---
 title: "Accessing computer resources (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "computer resources [Visual Basic]"
   - "My.Computer object [Visual Basic], tasks"
   - "computer resources [Visual Basic], accessing"
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 
 # Accessing computer resources (Visual Basic)

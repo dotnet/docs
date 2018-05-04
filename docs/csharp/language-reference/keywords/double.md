@@ -1,19 +1,12 @@
 ---
 title: "double (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "double"
   - "double_CSharpKeyword"
 helpviewer_keywords: 
   - "double data type [C#]"
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # double (C# Reference)
 The `double` keyword signifies a simple type that stores 64-bit floating-point values. The following table shows the precision and approximate range for the `double` type.  

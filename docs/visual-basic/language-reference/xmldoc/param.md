@@ -1,20 +1,10 @@
 ---
 title: "&lt;param&gt; (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "param XML tag"
   - "<param> XML tag"
 ms.assetid: 4e32e86f-f6f3-4301-b7fc-2f321fb54368
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;param&gt; (Visual Basic)
 Defines a parameter name and description.  

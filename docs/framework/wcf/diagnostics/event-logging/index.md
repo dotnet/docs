@@ -1,26 +1,12 @@
 ---
 title: "Event Logging in WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "event logging [WCF]"
 ms.assetid: aac0530d-f44c-45a1-bada-e30e0677b41f
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Event Logging in WCF
-[!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] traces internal events in the Windows event log.  
+Windows Communication Foundation (WCF) traces internal events in the Windows event log.  
   
 ## Viewing Event Logs  
  Event logging is enabled automatically by default, and there is no mechanism to disable it. Events logged by [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] can be viewed using the Event Viewer. To launch this tool, click **Start**, click **Control Panel**, double-click **Administrative Tools**, and then double-click **Event Viewer**.  

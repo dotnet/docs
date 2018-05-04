@@ -1,12 +1,6 @@
 ---
 title: "Or Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Or"
 helpviewer_keywords: 
@@ -21,9 +15,6 @@ helpviewer_keywords:
   - "logical disjunction"
   - "disjunction operator [Visual Basic]"
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Or Operator (Visual Basic)
 Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjunction on two numeric expressions.  

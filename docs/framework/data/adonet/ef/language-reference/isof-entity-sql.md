@@ -1,21 +1,7 @@
 ---
 title: "ISOF (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5b2b0d34-d0a7-4bcd-baf2-58aa8456d00b
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # ISOF (Entity SQL)
 Determines whether the type of an expression is of the specified type or one of its subtypes.  

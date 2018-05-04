@@ -1,16 +1,9 @@
 ---
 title: "How to: Provide a Progress Dialog Box for File Operations (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "progress dialog [C#]"
 ms.assetid: 01b71fe7-8178-4dc8-aeb1-12053be7b51c
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Provide a Progress Dialog Box for File Operations (C# Programming Guide)
 You can provide a standard dialog box that shows progress on file operations in Windows if you use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%28System.String%2CSystem.String%2CMicrosoft.VisualBasic.FileIO.UIOption%29> method in the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace.  

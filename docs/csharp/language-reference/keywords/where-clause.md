@@ -1,19 +1,12 @@
 ---
 title: "where clause (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "whereclause_CSharpKeyword"
 helpviewer_keywords: 
   - "where keyword [C#]"
   - "where clause [C#]"
 ms.assetid: 7f9bf952-7744-4f91-b676-cddb55d107c3
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # where clause (C# Reference)
 The `where` clause is used in a query expression to specify which elements from the data source will be returned in the query expression. It applies a Boolean condition (*predicate*) to each source element (referenced by the range variable) and returns those for which the specified condition is true. A single query expression may contain multiple `where` clauses and a single clause may contain multiple predicate subexpressions.  

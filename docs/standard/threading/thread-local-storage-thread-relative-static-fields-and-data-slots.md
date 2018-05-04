@@ -1,26 +1,15 @@
 ---
 title: "Thread Local Storage: Thread-Relative Static Fields and Data Slots"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], local storage"
   - "threading [.NET Framework], thread-relative static fields"
   - "local thread storage"
   - "TLS"
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Thread Local Storage: Thread-Relative Static Fields and Data Slots
 You can use managed thread local storage (TLS) to store data that is unique to a thread and application domain. The .NET Framework provides two ways to use managed TLS: thread-relative static fields and data slots.  

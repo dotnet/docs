@@ -1,28 +1,14 @@
 ---
 title: "Creating User-Defined Bindings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "user-defined bindings [WCF]"
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating User-Defined Bindings
 There are several ways to create bindings not provided by the system:  
   
--   Create a custom binding, based on the <xref:System.ServiceModel.Channels.CustomBinding> class, which is a container that you fill with binding elements. The custom binding is then added to a service endpoint. You can create the custom binding either programmatically or in an application configuration file. To use a binding element from an application configuration file, the binding element must extend <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md) and <xref:System.ServiceModel.Channels.CustomBinding>.  
+-   Create a custom binding, based on the <xref:System.ServiceModel.Channels.CustomBinding> class, which is a container that you fill with binding elements. The custom binding is then added to a service endpoint. You can create the custom binding either programmatically or in an application configuration file. To use a binding element from an application configuration file, the binding element must extend <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>. For more information about custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md) and <xref:System.ServiceModel.Channels.CustomBinding>.  
   
 -   You can create a class that derives from a standard binding. For example, you can derive a class from <xref:System.ServiceModel.WSHttpBinding> and override <xref:System.ServiceModel.Channels.CustomBinding.CreateBindingElements%2A> method to obtain the binding elements and insert a custom binding element or establish a particular value for security.  
   
@@ -33,7 +19,7 @@ There are several ways to create bindings not provided by the system:
   
  There are three main types of binding elements: Protocol Binding Elements, Encoding Binding Elements and Transport Binding Elements.  
   
- Protocol Binding Elements – These elements represent higher-level processing steps that act on messages. Channels and listeners created by these binding elements can add, remove, or modify the message content. A given binding may have an arbitrary number of protocol binding elements, each inheriting from <xref:System.ServiceModel.Channels.BindingElement>. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes several protocol binding elements, including the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> and the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>.  
+ Protocol Binding Elements – These elements represent higher-level processing steps that act on messages. Channels and listeners created by these binding elements can add, remove, or modify the message content. A given binding may have an arbitrary number of protocol binding elements, each inheriting from <xref:System.ServiceModel.Channels.BindingElement>. Windows Communication Foundation (WCF) includes several protocol binding elements, including the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> and the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>.  
   
  Encoding Binding Element – These elements represent transformations between a message and an encoding ready for transmission on the wire. Typical [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] bindings include exactly one encoding binding element. Examples of encoding binding elements include the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>, the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>, and the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>. If an encoding binding element is not specified for a binding, a default encoding is used. The default is text when the transport is HTTP and binary otherwise.  
   

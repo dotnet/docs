@@ -1,14 +1,6 @@
 ---
 title: "Service Application Programming Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,12 +14,8 @@ helpviewer_keywords:
   - "ServiceProcessInstaller class, service application code model"
   - "Windows Service applications, states"
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-caps.latest.revision: 15
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Application Programming Architecture
 Windows Service applications are based on a class that inherits from the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> class. You override methods from this class and define functionality for them to determine how your service behaves.  

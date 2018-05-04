@@ -1,14 +1,6 @@
 ---
 title: "How to: Develop a WCF Data Service Running on IIS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "WCF Data Services, deploying"
   - "WCF Data Services, hosting"
 ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Develop a WCF Data Service Running on IIS
 This topic shows how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to create a data service that is based on the Northwind sample database that is hosted by an ASP.NET Web application that is running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web application that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).  
@@ -139,7 +125,7 @@ This topic shows how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-
   
 5.  Connect the data model to the database by doing one of the following steps, and then click **Next**:  
   
-    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](http://go.microsoft.com/fwlink/?LinkId=123631). This [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] instance must have the Northwind sample database attached.  
+    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](http://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.  
   
          \- or -  
   

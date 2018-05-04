@@ -1,24 +1,10 @@
 ---
 title: "WS Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 629945b2-d771-46d7-a87b-5df3b2e460da
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WS Binding
-This section contains samples that demonstrate Windows Service binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate Windows Service binding in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [WS Transaction Flow](../../../../docs/framework/wcf/samples/ws-transaction-flow.md)  

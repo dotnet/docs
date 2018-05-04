@@ -1,26 +1,12 @@
 ---
 title: "WCF Performance Counters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "performance counters [WCF]"
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
-caps.latest.revision: 37
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Performance Counters
-[!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] includes a large set of performance counters to help you gauge your application's performance.  
+Windows Communication Foundation (WCF) includes a large set of performance counters to help you gauge your application's performance.  
   
 ## Enabling Performance Counters  
  You can enable performance counters for a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service through the app.config configuration file of the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service as follows:  

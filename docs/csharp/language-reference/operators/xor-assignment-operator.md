@@ -1,18 +1,11 @@
 ---
 title: "^= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "^=_CSharpKeyword"
 helpviewer_keywords: 
   - "^= operator [C#]"
 ms.assetid: 3658ff9a-61cd-467e-ad6b-8fbf1cfbaae4
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ^= Operator (C# Reference)
 The exclusive-OR assignment operator.  

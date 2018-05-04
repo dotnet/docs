@@ -1,24 +1,10 @@
 ---
 title: "Services2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 462a2218-f8c6-4fb7-95bc-64765459c429
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Services
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) services.  
   
 ## In This Section  
  [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)  

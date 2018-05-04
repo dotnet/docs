@@ -1,14 +1,6 @@
 ---
 title: "Ref Return Values (Visual Basic)"
-ms.custom: ""
 ms.date: 04/28/2017
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic]"
   - "ref return values [Visual Basic]"

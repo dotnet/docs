@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Enhancements to ToolStripMenuItems"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -32,12 +24,6 @@ helpviewer_keywords:
   - "images [Windows Forms], adding to menus"
   - "ToolStripMenuItems [Windows Forms], showing separator bars"
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Enhancements to ToolStripMenuItems
 You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> controls in the following ways:  

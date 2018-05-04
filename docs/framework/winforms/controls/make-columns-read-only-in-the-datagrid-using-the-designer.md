@@ -1,26 +1,12 @@
 ---
 title: "How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, columns"
   - "DataGridView control [Windows Forms], read-only columns"
   - "data [Windows Forms], displaying"
   - "columns [Windows Forms], read-only"
 ms.assetid: b4ef7a75-ab33-4ee3-b2cf-201530e454e9
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer
 By default, users can modify text and numerical data displayed in the Windows Forms <xref:System.Windows.Forms.DataGridView> control. If you want to display data that is not meant for modification, you must make the columns that contain the data read-only. For information about how to make the control entirely read-only, see [How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/prevent-row-addition-and-deletion-in-the-datagrid-using-the-designer.md).  

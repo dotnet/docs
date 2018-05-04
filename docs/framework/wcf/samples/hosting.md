@@ -1,24 +1,10 @@
 ---
 title: "Hosting1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hosting
-This section contains samples that demonstrate hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  
+This section contains samples that demonstrate hosting Windows Communication Foundation (WCF) services.  
   
 ## In This Section  
  [Windows Process Activation](../../../../docs/framework/wcf/samples/windows-process-activation.md)  

@@ -1,26 +1,15 @@
 ---
 title: "Member Design Guidelines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "member design guidelines [.NET Framework], about member design guidelines"
   - "members [.NET Framework], design guidelines"
   - "class library design guidelines [.NET Framework], members"
   - "member design guidelines [.NET Framework]"
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Member Design Guidelines
 Methods, properties, events, constructors, and fields are collectively referred to as members. Members are ultimately the means by which framework functionality is exposed to the end users of a framework.  

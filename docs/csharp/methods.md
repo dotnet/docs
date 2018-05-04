@@ -1,14 +1,9 @@
 ---
 title: Methods - C# Guide
 description: Overview of methods, method parameters, and method return values
-keywords: .NET, .NET Core, C#
 author: rpetrusha
 ms.author: ronpet
 ms.date: 10/26/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
 ---
 # Methods #

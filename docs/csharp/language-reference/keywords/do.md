@@ -1,19 +1,12 @@
 ---
 title: "do (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "do_CSharpKeyword"
   - "do"
 helpviewer_keywords: 
   - "do keyword [C#]"
 ms.assetid: 50725f79-9ba6-4898-aa78-6e331568a1bb
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # do (C# Reference)
 The `do` statement executes a statement or a block of statements repeatedly until a specified expression evaluates to `false`. The body of the loop must be enclosed in braces, `{}`, unless it consists of a single statement. In that case, the braces are optional.  

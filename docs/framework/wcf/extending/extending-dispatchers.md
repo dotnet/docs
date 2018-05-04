@@ -1,28 +1,14 @@
 ---
 title: "Extending Dispatchers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dispatcher extensions [WCF]"
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extending Dispatchers
 Dispatchers are responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Dispatcher extensions allow you to modify this processing.  You can implement message or parameter inspectors that inspect or modify the contents of messages or parameters.  You can change the way messages are routed to operations or provide some other functionality.  
   
- This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject%601> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](../../../../docs/framework/wcf/extending/extensible-objects.md).  
+ This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a Windows Communication Foundation (WCF) service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject%601> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](../../../../docs/framework/wcf/extending/extensible-objects.md).  
   
 ## Dispatchers  
  The service model layer performs the conversion between the developer’s programming model and the underlying message exchange, commonly called the channel layer. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] the channel and endpoint dispatchers (<xref:System.ServiceModel.Dispatcher.ChannelDispatcher> and <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>, respectively) are the service components responsible for accepting new channels, receiving messages, operation dispatch and invocation, and response processing. Dispatcher objects are receiver objects, but callback contract implementations in duplex services also expose their dispatcher objects for inspection, modification, or extension.  

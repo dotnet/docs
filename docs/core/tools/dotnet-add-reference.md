@@ -4,11 +4,6 @@ description: The dotnet add reference command provides a convenient option to ad
 author: mairaw
 ms.author: mairaw
 ms.date: 09/19/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet-add reference
 

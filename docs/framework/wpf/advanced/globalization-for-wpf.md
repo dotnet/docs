@@ -1,22 +1,12 @@
 ---
 title: "Globalization for WPF"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [WPF], international user interface"
   - "XAML [WPF], globalization"
   - "international user interface [WPF], XAML"
   - "globalization [WPF]"
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
-caps.latest.revision: 35
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Globalization for WPF
 This topic introduces issues that you should be aware of when writing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications for the global market. The globalization programming elements are defined in [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] in `System.Globalization`.  
@@ -175,7 +165,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
   
 <a name="using_clickonce"></a>   
 ## Using ClickOnce with Localized Applications  
- ClickOnce is a new Windows Forms deployment technology that will ship with [!INCLUDE[TLA#tla_visualstu2005](../../../../includes/tlasharptla-visualstu2005-md.md)]. It enables application installation and upgrading of Web applications. When an application that was deployed with ClickOnce is localized it can only be viewed on the localized culture. For example, if a deployed application is localized to Japanese it can only be viewed on Japanese [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] not on English [!INCLUDE[TLA2#tla_win](../../../../includes/tla2sharptla-win-md.md)]. This presents a problem because it is a common scenario for Japanese users to run an English version of [!INCLUDE[TLA2#tla_win](../../../../includes/tla2sharptla-win-md.md)].  
+ ClickOnce is a new Windows Forms deployment technology that will ship with [!INCLUDE[TLA#tla_visualstu2005](../../../../includes/tlasharptla-visualstu2005-md.md)]. It enables application installation and upgrading of Web applications. When an application that was deployed with ClickOnce is localized it can only be viewed on the localized culture. For example, if a deployed application is localized to Japanese it can only be viewed on Japanese [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] not on English Windows. This presents a problem because it is a common scenario for Japanese users to run an English version of Windows.  
   
  The solution to this problem is setting the neutral language fallback attribute. An application developer can optionally remove resources from the main assembly and specify that the resources can be found in a satellite assembly corresponding to a specific culture. To control this process use the <xref:System.Resources.NeutralResourcesLanguageAttribute>. The constructor of the <xref:System.Resources.NeutralResourcesLanguageAttribute> class has two signatures, one that takes an <xref:System.Resources.UltimateResourceFallbackLocation> parameter to specify the location where the <xref:System.Resources.ResourceManager> should extract the fallback resources: main assembly or satellite assembly. The following example shows how to use the attribute. For the ultimate fallback location, the code causes the <xref:System.Resources.ResourceManager> to look for the resources in the "de" subdirectory of the directory of the currently executing assembly.  
   

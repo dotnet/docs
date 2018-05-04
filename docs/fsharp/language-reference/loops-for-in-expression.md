@@ -1,17 +1,8 @@
 ---
 title: "Loops: for...in Expression (F#)"
 description: See how the F# for...in expression looping construct is used to iterate over the matches of a pattern in an enumerable collection.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: f54e3228-4aec-4d0a-ae37-bc3376508284 
 ---
-
 # Loops: for...in Expression
 
 This looping construct is used to iterate over the matches of a pattern in an enumerable collection such as a range expression, sequence, list, array, or other construct that supports enumeration.

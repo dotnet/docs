@@ -1,14 +1,6 @@
 ---
 title: "How to: Install an Assembly into the Global Assembly Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "Gacutil.exe"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "global assembly cache, installing assemblies"
   - "Global Assembly Cache tool"
 ms.assetid: a7e6f091-d02c-49ba-b736-7295cb0eb743
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Install an Assembly into the Global Assembly Cache
 There are two ways to install a strong-named assembly into the global assembly cache (GAC):  

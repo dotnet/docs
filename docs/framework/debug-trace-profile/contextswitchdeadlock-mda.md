@@ -1,14 +1,6 @@
 ---
 title: "contextSwitchDeadlock MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "deadlocks [.NET Framework]"
   - "pumping messages"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "message pumping"
   - "context switching deadlocks"
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
-caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # contextSwitchDeadlock MDA
 The `contextSwitchDeadlock` managed debugging assistant (MDA) is activated when a deadlock is detected during an attempted COM context transition.  
@@ -51,7 +39,7 @@ The `contextSwitchDeadlock` managed debugging assistant (MDA) is activated when 
  To determine if the MDA is being falsely activated, disable all breakpoints, restart the application, and allow it to run without stopping. If the MDA is not activated, it is likely the initial activation was false. In this case, disable the MDA to avoid interference with the debugging session.  
   
 > [!NOTE]
->  This MDA is in the default set for [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] and later versions. When the hosting process is enabled in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you cannot disable MDAs that are in the default set. The hosting process is enabled by default, so it must be explicitly disabled. For information about how to disable MDAs, see "Enabling and Disabling MDAs" in [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
+>  This MDA is in the default set for [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] and later versions. When the hosting process is enabled in Visual Studio, you cannot disable MDAs that are in the default set. The hosting process is enabled by default, so it must be explicitly disabled. For information about how to disable MDAs, see "Enabling and Disabling MDAs" in [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
 ## Resolution  
  Follow COM rules regarding STA message pumping.  

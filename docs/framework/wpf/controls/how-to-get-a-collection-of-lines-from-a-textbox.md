@@ -1,24 +1,10 @@
 ---
 title: "How to: Get a Collection of Lines from a TextBox"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "lines [WPF], getting collection of"
   - "TextBox control [WPF], getting collection of lines"
 ms.assetid: a12f529d-b926-47f6-92bf-cad5f17b532a
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Get a Collection of Lines from a TextBox
 This example shows how to get a collection of lines of text from a <xref:System.Windows.Controls.TextBox>.  

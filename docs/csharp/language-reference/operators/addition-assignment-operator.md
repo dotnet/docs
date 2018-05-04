@@ -1,19 +1,12 @@
 ---
 title: "+= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "+=_CSharpKeyword"
 helpviewer_keywords: 
   - "+= operator [C#]"
   - "addition assignment operator (+=) [C#]"
 ms.assetid: 9cdf97e6-331d-492b-85e1-3ec3171484e9
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # += Operator (C# Reference)
 The addition assignment operator.  

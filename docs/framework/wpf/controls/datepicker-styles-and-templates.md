@@ -1,14 +1,6 @@
 ---
 title: "DatePicker Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ControlTemplate [WPF], DatePicker"
   - "DatePicker [WPF], styles and templates"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "styles [WPF], DatePicker"
   - "states [WPF], DatePicker"
 ms.assetid: c430a657-692f-44bd-a549-2341f92d6115
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DatePicker Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.DatePicker> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

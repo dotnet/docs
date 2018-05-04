@@ -1,16 +1,9 @@
 ---
 title: Direct client-to-microservice communication versus the API Gateway pattern
 description: .NET Microservices Architecture for Containerized .NET Applications | Direct client-to-microservice communication versus the API Gateway pattern
-keywords: Docker, Microservices, ASP.NET, Container, API Gateway
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Direct client-to-microservice communication versus the API Gateway pattern
 

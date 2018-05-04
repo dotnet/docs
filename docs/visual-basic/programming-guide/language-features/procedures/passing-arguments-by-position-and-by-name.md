@@ -1,11 +1,6 @@
 ---
 title: "Passing Arguments by Position and by Name (Visual Basic)"
-ms.custom: ""
 ms.date: 02/01/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing by name"
   - "procedures [Visual Basic], arguments"

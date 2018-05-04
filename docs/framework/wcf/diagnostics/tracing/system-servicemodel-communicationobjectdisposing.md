@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.CommunicationObjectDisposing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b7199c74-c218-426b-b77d-a20c562d7910
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.CommunicationObjectDisposing
 System.ServiceModel.CommunicationObjectDisposing  

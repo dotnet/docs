@@ -4,10 +4,6 @@ description: Learn what dependencies you need on your Windows machine to develop
 author: JRAlexander
 ms.author: johalex
 ms.date: 04/24/2018
-ms.topic: article
-ms.prod: .net-core
-ms.workload: 
-  - dotnetcore
 ---
 # Prerequisites for .NET Core on Windows
 

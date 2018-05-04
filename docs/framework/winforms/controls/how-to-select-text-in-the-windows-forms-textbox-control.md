@@ -1,14 +1,6 @@
 ---
 title: "How to: Select Text in the Windows Forms TextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "text boxes [Windows Forms], selecting text programmatically"
   - "text [Windows Forms], selecting in text boxes programmatically"
 ms.assetid: 8c591546-6a01-45c7-8e03-f78431f903b1
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Select Text in the Windows Forms TextBox Control
 You can select text programmatically in the Windows Forms <xref:System.Windows.Forms.TextBox> control. For example, if you create a function that searches text for a particular string, you can select the text to visually alert the reader of the found string's position.  

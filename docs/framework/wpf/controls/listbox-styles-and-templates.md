@@ -1,14 +1,6 @@
 ---
 title: "ListBox Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "styles [WPF], ListBox"
   - "templates [WPF], ListBox"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "parts [WPF], ListBox"
   - "ListBox [WPF], styles and templates"
 ms.assetid: fc5764cb-c27b-495b-88d4-d969a8213ccb
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ListBox Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ListBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

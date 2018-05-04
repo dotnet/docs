@@ -1,14 +1,6 @@
 ---
 title: "Selection and Clipboard Use with the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], Clipboard use"
   - "cells [Windows Forms], selecting in grids"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "data grids [Windows Forms], selecting cells"
   - "DataGridView control [Windows Forms], selecting cells"
 ms.assetid: 82cffcad-8b30-4897-bddb-c3a79d751b83
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Selection and Clipboard Use with the Windows Forms DataGridView Control
 The `DataGridView` control provides you with a variety of options for configuring how users can select cells, rows, and columns. For example, you can enable single or multiple selection, selection of whole rows or columns when users click cells, or selection of whole rows or columns only when users click their headers, which enables cell selection as well. If you want to provide your own user interface for selection, you can disable ordinary selection and handle all selection programmatically. Additionally, you can enable users to copy the selected values to the Clipboard.  

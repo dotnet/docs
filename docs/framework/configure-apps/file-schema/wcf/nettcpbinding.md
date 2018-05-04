@@ -1,23 +1,9 @@
 ---
 title: "&lt;netTcpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "netTcpBinding Element"
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
-caps.latest.revision: 33
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;netTcpBinding&gt;
 Specifies a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a runtime communication stack with Windows Security for message security and authentication, TCP for message delivery, and binary message encoding.  
@@ -99,9 +85,9 @@ algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- This binding generates a run-time communication stack by default, which uses transport security, TCP for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] system-provided choice for communicating over an Intranet.  
+ This binding generates a run-time communication stack by default, which uses transport security, TCP for message delivery, and a binary message encoding. This binding is an appropriate Windows Communication Foundation (WCF) system-provided choice for communicating over an Intranet.  
   
- The default configuration for the `netTcpBinding` is faster than the configuration provided by the `wsHttpBinding`, but it is intended only for [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)]-to-[!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] communication. The security behavior is configurable using the optional `securityMode` attribute. The use of WS-ReliableMessaging is configurable using the optional `reliableSessionEnabled` attribute. But reliable messaging is off by default. More generally, the HTTP system-provided bindings such as `wsHttpBinding` and `basicHttpBinding` are configured to turn things on by default, whereas the `netTcpBinding` binding turns things off by default so that you have to opt-in to get support, for example, for one of the WS-* specifications. This means that the default configuration for TCP is faster at exchanging messages between endpoints than those configured for the HTTP bindings by default.  
+ The default configuration for the `netTcpBinding` is faster than the configuration provided by the `wsHttpBinding`, but it is intended only for WCF communication. The security behavior is configurable using the optional `securityMode` attribute. The use of WS-ReliableMessaging is configurable using the optional `reliableSessionEnabled` attribute. But reliable messaging is off by default. More generally, the HTTP system-provided bindings such as `wsHttpBinding` and `basicHttpBinding` are configured to turn things on by default, whereas the `netTcpBinding` binding turns things off by default so that you have to opt-in to get support, for example, for one of the WS-* specifications. This means that the default configuration for TCP is faster at exchanging messages between endpoints than those configured for the HTTP bindings by default.  
   
 ## Example  
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netTcpBinding binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration with a `bindingConfiguration` attribute. In the following example, a binding configuration is defined.  

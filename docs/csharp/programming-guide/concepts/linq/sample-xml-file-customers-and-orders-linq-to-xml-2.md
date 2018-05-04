@@ -1,17 +1,7 @@
 ---
 title: "Sample XML File: Customers and Orders (LINQ to XML)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: d6d1c9ea-be74-4e6d-bfdd-d4bcc2d301cf
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Sample XML File: Customers and Orders (LINQ to XML)
 The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file contains customers and orders.  

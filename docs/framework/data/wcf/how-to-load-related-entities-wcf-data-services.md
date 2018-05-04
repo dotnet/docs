@@ -1,14 +1,6 @@
 ---
 title: "How to: Load Related Entities (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "WCF Data Services, deferred content"
   - "WCF Data Services, loading data"
 ms.assetid: 6f143d30-d997-4e6b-bcf0-d5c394ecb108
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Load Related Entities (WCF Data Services)
 When you need to load associated entities in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can use the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> class. You can also use the <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method on the <xref:System.Data.Services.Client.DataServiceQuery%601> to require that related entities be eagerly loaded in the same query response.  

@@ -1,14 +1,6 @@
 ---
 title: "Synchronous and Asynchronous Operations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,17 +8,11 @@ helpviewer_keywords:
   - "service contracts [WCF], synchronous operations"
   - "service contracts [WCF], asynchronous operations"
 ms.assetid: db8a51cb-67e6-411b-9035-e5821ed350c9
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Synchronous and Asynchronous Operations
 This topic discusses implementing and calling asynchronous service operations.  
   
- Many applications call methods asynchronously because it enables the application to continue doing useful work while the method call runs. [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services and clients can participate in asynchronous operation calls at two distinct levels of the application, which provide [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications even more flexibility to maximize throughput balanced against interactivity.  
+ Many applications call methods asynchronously because it enables the application to continue doing useful work while the method call runs. Windows Communication Foundation (WCF) services and clients can participate in asynchronous operation calls at two distinct levels of the application, which provide [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications even more flexibility to maximize throughput balanced against interactivity.  
   
 ## Types of Asynchronous Operations  
  All service contracts in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], no matter the parameters types and return values, use [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] attributes to specify a particular message exchange pattern between client and service. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] automatically routes inbound and outbound messages to the appropriate service operation or running client code.  
@@ -46,7 +32,7 @@ This topic discusses implementing and calling asynchronous service operations.
   
 -   Use an asynchronous approach in a client or calling application in the following cases:  
   
--   If you are invoking operations from a middle-tier application. ([!INCLUDE[crabout](../../../includes/crabout-md.md)] such scenarios, see [Middle-Tier Client Applications](../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md).)  
+-   If you are invoking operations from a middle-tier application. (For more information about such scenarios, see [Middle-Tier Client Applications](../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md).)  
   
 -   If you are invoking operations within an ASP.NET page, use asynchronous pages.  
   

@@ -1,17 +1,9 @@
 ---
 title: Tuples - C# Guide
 description: Learn about unnamed and named tuple types in C#
-keywords: .NET, .NET Core, C#
-author: BillWagner
-ms-author: wiwagn
 ms.date: 11/23/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
-
 # C# Tuple types #
 
 C# Tuples are types that you define using a lightweight syntax. The advantages

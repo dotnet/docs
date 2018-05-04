@@ -1,17 +1,8 @@
 ---
 title: Statically Resolved Type Parameters (F#)
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: b3797415-3e49-4f8a-a8ee-fa614c5721aa 
 ---
-
 # Statically Resolved Type Parameters
 
 A *statically resolved type parameter* is a type parameter that is replaced with an actual type at compile time instead of at run time. They are preceded by a caret (^) symbol.

@@ -1,14 +1,6 @@
 ---
 title: "How to: Manipulate a FlowDocument through the Blocks Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "documents [WPF], manipulating FlowDocuments through Blocks property [WPF], , "
   - ", "
 ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Manipulate a FlowDocument through the Blocks Property
 These examples demonstrate some of the more common operations that can be performed on a <xref:System.Windows.Documents.FlowDocument> through the <xref:System.Windows.Documents.FlowDocument.Blocks%2A> property.  

@@ -1,21 +1,7 @@
 ---
 title: "Instancing Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7a2f8b51-472b-4b71-8602-d3dbc6e1cb07
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Instancing Extensibility
 This section contains samples that demonstrate custom instancing.  
@@ -31,4 +17,4 @@ This section contains samples that demonstrate custom instancing.
  Demonstrates how to customize the initialization of an object.  
   
  [Pooling](../../../../docs/framework/wcf/samples/pooling.md)  
- Demonstrates how to extend [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to support object pooling.
+ Demonstrates how to extend Windows Communication Foundation (WCF) to support object pooling.

@@ -1,14 +1,6 @@
 ---
 title: "3-D Graphics Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "3-D graphics [WPF]"
   - "graphics [WPF], 3-D"
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # 3-D Graphics Overview
 <a name="introduction"></a> The [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] functionality in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enables developers to draw, transform, and animate 3-D graphics in both markup and procedural code. Developers can combine [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] and [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] graphics to create rich controls, provide complex illustrations of data, or enhance the user experience of an application's interface. [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] support in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is not designed to provide a full-featured game-development platform. This topic provides an overview of [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] functionality in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics system.  

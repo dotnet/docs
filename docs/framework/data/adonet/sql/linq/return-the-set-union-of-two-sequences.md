@@ -1,24 +1,10 @@
 ---
 title: "Return the Set Union of Two Sequences"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8b8bd3cb-86d4-4a3b-9906-61f68726dd1f
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Return the Set Union of Two Sequences
 Use the <xref:System.Linq.Queryable.Union%2A> operator to return the set union of two sequences.  

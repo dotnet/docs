@@ -1,21 +1,7 @@
 ---
 title: "How to: Create a Workflow Service with Messaging Activities"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53d094e2-6901-4aa1-88b8-024b27ccf78b
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Workflow Service with Messaging Activities
 This topic describes how to create a simple workflow service using messaging activities. This topic focuses on the mechanics of creating a workflow service where the service consists solely of messaging activities. In a real-world service, the workflow contains many other activities. The service implements one operation called Echo, which takes a string and returns the string to the caller. This topic is the first in a series of two topics. The next topic [How To: Access a Service From a Workflow Application](../../../../docs/framework/wcf/feature-details/how-to-access-a-service-from-a-workflow-application.md) discusses how to create a workflow application that can call the service created in this topic.  

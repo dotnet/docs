@@ -1,24 +1,10 @@
 ---
 title: "Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cd7ddffc-a261-44aa-bd50-33c1c74f0df0
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extensibility
-This section contains samples that deal with custom extensibility and other features of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that deal with custom extensibility and other features of Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Channels Extensibility](../../../../docs/framework/wcf/samples/channels-extensibility.md)  
@@ -55,7 +41,7 @@ This section contains samples that deal with custom extensibility and other feat
  Demonstrates how extensibility points can consume custom message data formats.  
   
  [Custom Message Filter](../../../../docs/framework/wcf/samples/custom-message-filter.md)  
- demonstrates how to replace the message filters that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses to dispatch messages to endpoints.  
+ demonstrates how to replace the message filters that Windows Communication Foundation (WCF) uses to dispatch messages to endpoints.  
   
  [Custom Service Host](../../../../docs/framework/wcf/samples/custom-service-host.md)  
  Demonstrates how to use a custom derivative of the <xref:System.ServiceModel.ServiceHost> class to alter the run-time behavior of a service.  

@@ -1,24 +1,10 @@
 ---
 title: "Routing Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9a430b4c-46eb-4d15-afbc-8834f0e985ab
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Routing Services
-This section includes samples that demonstrate how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Router.  
+This section includes samples that demonstrate how to use the Windows Communication Foundation (WCF) Router.  
   
 ## In This Section  
  [Hello World with the Routing Service](../../../../docs/framework/wcf/samples/hello-world-with-the-routing-service.md)  

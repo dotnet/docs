@@ -1,24 +1,10 @@
 ---
 title: "Visual Basic and WPF Event Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic [WPF], event handlers"
   - "event handlers [WPF], Visual Basic"
 ms.assetid: ad4eb9aa-3afc-4a71-8cf6-add3fbea54a1
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Visual Basic and WPF Event Handling
 For the Microsoft Visual Basic .NET language specifically, you can use the language-specific `Handles` keyword to associate event handlers with instances, instead of attaching event handlers with attributes or using the <xref:System.Windows.UIElement.AddHandler%2A> method. However, the `Handles` technique for attaching handlers to instances does have some limitations, because the `Handles` syntax cannot support some of the specific routed event features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system.  

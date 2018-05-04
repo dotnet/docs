@@ -1,17 +1,10 @@
 ---
 title: "nameof  (C# Reference)"
 ms.date: 06/16/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "nameof_CSharpKeyword"
   - "nameof"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # nameof (C# Reference)
 

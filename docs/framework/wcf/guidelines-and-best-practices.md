@@ -1,14 +1,6 @@
 ---
 title: "Guidelines and Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, guidelines"
   - "best practices [WCF], application design"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "WCF, best practices"
   - "Windows Communication Foundation, guidelines"
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Guidelines and Best Practices
-This section contains topics that provide guidelines for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  
+This section contains topics that provide guidelines for creating Windows Communication Foundation (WCF) applications.  
   
 ## In This Section  
  [Best Practices: Data Contract Versioning](../../../docs/framework/wcf/best-practices-data-contract-versioning.md)  

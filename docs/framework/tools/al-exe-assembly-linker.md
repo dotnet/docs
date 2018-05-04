@@ -1,26 +1,14 @@
 ---
 title: "Al.exe (Assembly Linker)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Al.exe"
   - "Assembly Linker"
   - "modules, Assembly Linker"
   - "assembly manifest, Assembly Linker"
 ms.assetid: b5382965-0053-47cf-b92f-862860275a01
-caps.latest.revision: 37
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Al.exe (Assembly Linker)
 

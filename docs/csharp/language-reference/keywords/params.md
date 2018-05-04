@@ -1,10 +1,6 @@
 ---
 title: "params (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "params_CSharpKeyword"
   - "params"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "parameters [C#], params"
   - "params keyword [C#]"
 ms.assetid: 1690815e-b52b-4967-8380-5780aff08012
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # params (C# Reference)
 By using the `params` keyword, you can specify a [method parameter](../../../csharp/language-reference/keywords/method-parameters.md) that takes a variable number of arguments.  

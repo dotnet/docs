@@ -1,14 +1,6 @@
 ---
 title: "Styling and Templating"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "styles [WPF], triggers"
   - "styles [WPF], event triggers"
 ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
-caps.latest.revision: 34
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Styling and Templating
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] styling and templating refer to a suite of features (styles, templates, triggers, and storyboards) that allow developers and designers to create visually compelling effects and to create a consistent appearance for their product. Although developers and or designers can customize the appearance extensively on an application-by-application basis, a strong styling and templating model is necessary to allow maintenance and sharing of the appearance within and among applications. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides that model.  
@@ -182,11 +168,11 @@ ms.workload:
   
 <a name="styling_themes"></a>   
 ## Shared Resources and Themes  
- A typical [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] application might have multiple user interface (UI) resources that are applied throughout the application. Collectively, this set of resources can be considered the theme for the application. [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] provides support for packaging user interface (UI) resources as a theme by using a resource dictionary that is encapsulated as the <xref:System.Windows.ResourceDictionary> class.  
+ A typical Windows Presentation Foundation (WPF) application might have multiple user interface (UI) resources that are applied throughout the application. Collectively, this set of resources can be considered the theme for the application. Windows Presentation Foundation (WPF) provides support for packaging user interface (UI) resources as a theme by using a resource dictionary that is encapsulated as the <xref:System.Windows.ResourceDictionary> class.  
   
- [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] themes are defined by using the styling and templating mechanism that [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] exposes for customizing the visuals of any element.  
+ Windows Presentation Foundation (WPF) themes are defined by using the styling and templating mechanism that Windows Presentation Foundation (WPF) exposes for customizing the visuals of any element.  
   
- [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. In the case of PresentationFramework.dll, the assembly which contains [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] controls, theme resources are in a series of side-by-side assemblies.  
+ Windows Presentation Foundation (WPF) theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. In the case of PresentationFramework.dll, the assembly which contains Windows Presentation Foundation (WPF) controls, theme resources are in a series of side-by-side assemblies.  
   
  The theme becomes the last place to look when searching for the style of an element. Typically, the search will begin by walking up the element tree searching for an appropriate resource, then look in the application resource collection and finally query the system. This gives application developers a chance to redefine the style for any object at the tree or application level before reaching the theme.  
   

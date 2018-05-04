@@ -1,26 +1,12 @@
 ---
 title: "MenuStrip Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "MenuStrip"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], about MenuStrip control"
   - "menus [Windows Forms], creating"
 ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # MenuStrip Control Overview (Windows Forms)
 Menus expose functionality to your users by holding commands that are grouped by a common theme.  

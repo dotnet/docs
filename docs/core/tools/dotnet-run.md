@@ -4,11 +4,6 @@ description: The dotnet run command provides a convenient option to run your app
 author: mairaw
 ms.author: mairaw
 ms.date: 03/10/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet run
 

@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedSymbolSearchInfo::GetHRESULT Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedSymbolSearchInfo.GetHRESULT"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 6999dc3d-65d7-4bf6-bb0a-6efc0fc72588
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetHRESULT Method
 Gets the HRESULT.  

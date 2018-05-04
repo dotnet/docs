@@ -1,14 +1,6 @@
 ---
 title: "Emitting Dynamic Methods and Assemblies"
-ms.custom: ""
 ms.date: "08/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "reflection emit"
   - "dynamic assemblies"
@@ -17,9 +9,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], emitting dynamic assemblies"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Emitting Dynamic Methods and Assemblies
 This section describes a set of managed types in the <xref:System.Reflection.Emit> namespace that allow a compiler or tool to emit metadata and Microsoft intermediate language (MSIL) at run time and optionally generate a portable executable (PE) file on disk. Script engines and compilers are the primary users of this namespace. In this section, the functionality provided by the <xref:System.Reflection.Emit> namespace is referred to as reflection emit.  

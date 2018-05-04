@@ -1,23 +1,9 @@
 ---
 title: "How to: Bind a TreeView to Data That Has an Indeterminable Depth"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TreeView control [WPF], binding to data of indeterminate depth"
 ms.assetid: daddcd74-1b0f-4ffd-baeb-ec934c5e0f53
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind a TreeView to Data That Has an Indeterminable Depth
 There might be times when you want to bind a <xref:System.Windows.Controls.TreeView> to a data source whose depth is not known.  This can occur when the data is recursive in nature, such as a file system, where folders can contain folders, or a company's organizational structure, where employees have other employees as direct reports.  

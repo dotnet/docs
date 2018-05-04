@@ -1,10 +1,6 @@
 ---
 title: "-resource (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/resource"
 helpviewer_keywords: 
@@ -15,9 +11,6 @@ helpviewer_keywords:
   - "res compiler option [C#]"
   - "resource compiler option [C#]"
 ms.assetid: 5212666e-98ab-47e4-a497-b5545ab15c7f
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -resource (C# Compiler Options)
 Embeds the specified resource into the output file.  

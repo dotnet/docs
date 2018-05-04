@@ -1,14 +1,6 @@
 ---
 title: "streamWriterBufferedDataLost MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "StreamWriter class, data buffering problems"
   - "managed debugging assistants (MDAs), StreamWriter data buffering"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "data buffering problems"
   - "streamWriterBufferedDataLost MDA"
 ms.assetid: 6e5c07be-bc5b-437a-8398-8779e23126ab
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # streamWriterBufferedDataLost MDA
 The `streamWriterBufferedDataLost` managed debugging assistant (MDA) is activated when a <xref:System.IO.StreamWriter> is written to, but the <xref:System.IO.StreamWriter.Flush%2A> or <xref:System.IO.StreamWriter.Close%2A> method is not subsequently called before the instance of the <xref:System.IO.StreamWriter> is destroyed. When this MDA is enabled, the runtime determines whether any buffered data still exists within the <xref:System.IO.StreamWriter>. If buffered data does exist, the MDA is activated. Calling the <xref:System.GC.Collect%2A> and <xref:System.GC.WaitForPendingFinalizers%2A> methods can force finalizers to run. Finalizers will otherwise run at seemingly arbitrary times, and possibly not at all on process exit. Explicitly running finalizers with this MDA enabled will help to more reliably reproduce this type of problem.  

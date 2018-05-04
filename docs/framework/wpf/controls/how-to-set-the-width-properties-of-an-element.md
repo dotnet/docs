@@ -1,14 +1,6 @@
 ---
 title: "How to: Set the Width Properties of an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "width properties [WPF]"
   - "Panel control [WPF], width properties of elements"
 ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Width Properties of an Element
 ## Example  

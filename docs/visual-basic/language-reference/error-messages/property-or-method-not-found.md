@@ -1,18 +1,9 @@
 ---
 title: "Property or method not found"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID423"
 ms.assetid: 471d8c1d-9edf-4014-8427-1a01b634a72d
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Property or method not found
 The referenced object method or object property is not defined.  

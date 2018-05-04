@@ -1,21 +1,7 @@
 ---
 title: "Date and Time Canonical Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Date and Time Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes date and time canonical functions.  

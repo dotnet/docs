@@ -1,18 +1,10 @@
 ---
 title: Unit testing C# with MSTest and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
-keywords: MSTest, .NET, .NET Core
 author: ncarandini
 ms.author: wiwagn
 ms.date: 09/08/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
-ms.workload: 
-  - dotnetcore
 ---
-
 # Unit testing C# with MSTest and .NET Core
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).

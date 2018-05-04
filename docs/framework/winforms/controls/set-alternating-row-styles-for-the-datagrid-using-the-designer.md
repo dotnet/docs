@@ -1,14 +1,6 @@
 ---
 title: "How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ledger-like formats"
   - "DataGridView control [Windows Forms], row style alternation"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "rows [Windows Forms], alternating"
   - "data [Windows Forms], displaying"
 ms.assetid: 02373442-bf94-4470-9f8a-e44c4a9d5b88
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer
 Tabular data is often presented in a ledger-like format where alternating rows have different background colors. This format makes it easier for users to tell which cells are in each row, especially with wide tables that have many columns.  

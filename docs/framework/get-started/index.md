@@ -1,20 +1,13 @@
 ---
 title: "Get started with the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "10/17/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
+ms.date: "04/10/2018"
 helpviewer_keywords: 
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Get started with the .NET Framework
@@ -56,7 +49,7 @@ In general, you shouldn't uninstall versions of the .NET Framework that are inst
 
 - If an app that you use depends on a specific version of the .NET Framework, that app may break if that version is removed.
 
-- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7.1 is an in-place update to versions 4, 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. For more information, see [.NET Framework Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md).
+- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7.2 is an in-place update to versions 4 through 4.7.1. For more information, see [.NET Framework Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md).
 
 On Windows versions before Windows 8, if you do choose to remove the .NET Framework, always use **Programs and Features** from Control Panel to uninstall it. Never remove a version of the .NET Framework manually. On Windows 8 and above, the .NET Framework is an operating system component and cannot be independently uninstalled.
 
@@ -69,7 +62,7 @@ If you're a developer, choose any programming language that supports the .NET Fr
 
 To develop .NET Framework apps or components, do the following:
 
-1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.7.1, which is preinstalled on Windows 10 Fall Creators Update and is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).
+1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.7.2, which is preinstalled on Windows 10 April 2018 Update and is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).
 
 2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md), and C++/CLI from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](http://go.microsoft.com/fwlink/?LinkId=199862).)
 

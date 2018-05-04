@@ -1,18 +1,12 @@
 ---
 title: "-refonly (C# Compiler Options)"
 ms.date: 07/08/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/refonly"
 helpviewer_keywords: 
   - "/refonly compiler option [C#]"
   - "-refonly compiler option [C#]"
   - "refonly compiler option [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # -refonly (C# Compiler Options)

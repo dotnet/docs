@@ -1,13 +1,6 @@
 ---
 title: "Introduction to LINQ in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"
   - "query execution [LINQ in Visual Basic]"
@@ -19,9 +12,6 @@ helpviewer_keywords:
   - "deferred execution"
   - "iteration variables [Visual Basic]"
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Introduction to LINQ in Visual Basic
 Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and provides simple and powerful capabilities when you work with all kinds of data. Rather than sending a query to a database to be processed, or working with different query syntax for each type of data that you are searching, LINQ introduces queries as part of the Visual Basic language. It uses a unified syntax regardless of the type of data.  

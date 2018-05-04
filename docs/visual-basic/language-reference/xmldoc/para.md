@@ -1,20 +1,10 @@
 ---
 title: "&lt;para&gt; (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "<para> XML tag"
   - "para XML tag"
 ms.assetid: a3a18b6c-6416-4358-94ec-37b22675fd37
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;para&gt; (Visual Basic)
 Specifies that the content is formatted as a paragraph.  

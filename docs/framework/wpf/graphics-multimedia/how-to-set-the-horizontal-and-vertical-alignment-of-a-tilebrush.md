@@ -1,14 +1,6 @@
 ---
 title: "How to: Set the Horizontal and Vertical Alignment of a TileBrush"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "aligning [WPF], TileBrushes"
   - "horizontal alignment of Tilebrushes [WPF]"
 ms.assetid: 65ae89bd-9246-4c9e-bde4-2fb991d4060d
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Horizontal and Vertical Alignment of a TileBrush
 This example shows how to control the horizontal and vertical alignment of content in a tile. To control the horizontal and vertical alignment of a <xref:System.Windows.Media.TileBrush>, use its <xref:System.Windows.Media.TileBrush.AlignmentX%2A> and <xref:System.Windows.Media.TileBrush.AlignmentY%2A> properties.  

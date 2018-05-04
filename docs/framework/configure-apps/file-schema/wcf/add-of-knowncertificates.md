@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;knownCertificates&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;knownCertificates&gt;
 Adds an X.509 certificate to the collection of known certificates.  

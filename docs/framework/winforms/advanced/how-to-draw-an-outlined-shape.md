@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw an Outlined Shape"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -27,12 +19,6 @@ helpviewer_keywords:
   - "drawing [Windows Forms], circular shapes"
   - "shapes [Windows Forms], drawing"
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw an Outlined Shape
 This example draws outlined ellipses and rectangles on a form.  

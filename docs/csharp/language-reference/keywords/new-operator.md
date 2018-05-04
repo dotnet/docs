@@ -1,16 +1,9 @@
 ---
 title: "new Operator (C# Reference)"
 ms.date: 03/15/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "new operator keyword [C#]"
 ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # new Operator (C# Reference)
 Used to create objects and invoke constructors. For example:  

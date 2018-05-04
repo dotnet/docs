@@ -1,11 +1,6 @@
 ---
 title: "Sorry, we don&#39;t have specifics on this Visual Basic error"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "vbc30234"
   - "vbc30533"
@@ -3049,9 +3044,6 @@ f1_keywords:
   - "bc30233"
   - "bc30829"
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sorry, we don&#39;t have specifics on this Visual Basic error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
@@ -3063,7 +3055,7 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with upgrading to Visual Basic and working with interoperability features.  
   
  [Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)  
- Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] environment.  
+ Provides a forum for questions about how to work in the Visual Studio environment.  
   
  [Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)  
  Provides a forum for questions about and issues with Visual Basic that are not discussed in other forums.  

@@ -1,10 +1,6 @@
 ---
 title: "Checked and Unchecked (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "operators [C#], checked and unchecked"
   - "exceptions [C#], overflow checking"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "unchecked statement [C#]"
   - "statements [C#], checked and unchecked"
 ms.assetid: a84bc877-2c7f-4396-8735-1ce97c42f35e
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Checked and Unchecked (C# Reference)
 C# statements can execute in either checked or unchecked context. In a checked context, arithmetic overflow raises an exception. In an unchecked context, arithmetic overflow is ignored and the result is truncated.  

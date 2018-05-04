@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.CoordinatorRecovered"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a70f7b3c-e3fc-44e7-aace-32fb0086a566
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.CoordinatorRecovered
 A coordinator enlistment was recovered from the Transaction Manager log.  

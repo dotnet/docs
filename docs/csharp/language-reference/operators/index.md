@@ -1,10 +1,6 @@
 ---
 title: "C# Operators"
 ms.date: 04/04/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -22,9 +18,6 @@ helpviewer_keywords:
   - "keywords [C#], operators"
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-caps.latest.revision: 40
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Operators
 C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression. You can [overload](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.  

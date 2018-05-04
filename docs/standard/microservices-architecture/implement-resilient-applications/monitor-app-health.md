@@ -1,16 +1,9 @@
 ---
 title: Health monitoring
 description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Health monitoring
 
@@ -22,7 +15,7 @@ In the typical model, services send reports about their status, and that informa
 
 ## Implementing health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use a library named `HealthChecks` from the ASP.NET team. Early release is available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks).
+When developing an ASP.NET Core microservice or web application, you can use an out-of-band library (not official as part of ASP.NETCore) named `HealthChecks` from the ASP.NET team. It is available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks).
 
 This library is easy to use and provides features that let you validate that any specific external resource needed for your application (like a SQL Server database or remote API) is working properly. When you use this library, you can also decide what it means that the resource is healthy, as we explain later.
 

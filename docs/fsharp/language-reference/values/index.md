@@ -1,17 +1,8 @@
 ---
 title: Values (F#)
 description: Learn how values in F# are quantities that have a specific type.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 5e1e73c3-5adb-4bba-9976-d57f1ff6cd8d 
 ---
-
 # Values
 
 Values in F# are quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.

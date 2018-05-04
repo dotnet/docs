@@ -1,16 +1,9 @@
 ---
 title: "Passing Arrays as Arguments (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [C#], passing as arguments"
 ms.assetid: f3a0971e-c87c-4a1f-8262-bc0a3b712772
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Passing Arrays as Arguments (C# Programming Guide)
 Arrays can be passed as arguments to method parameters. Because arrays are reference types, the method can change the value of the elements.  

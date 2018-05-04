@@ -1,17 +1,10 @@
 ---
 title: "Static Constructors (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "static constructors [C#]"
   - "constructors [C#], static"
 ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Static Constructors (C# Programming Guide)
 A static constructor is used to initialize any [static](../../../csharp/language-reference/keywords/static.md) data, or to perform a particular action that needs to be performed once only. It is called automatically before the first instance is created or any static members are referenced.  

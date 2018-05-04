@@ -1,14 +1,8 @@
 ---
 title: Asynchronous programming
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
-keywords: .NET, .NET Core
 author: cartermp
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 ---
 

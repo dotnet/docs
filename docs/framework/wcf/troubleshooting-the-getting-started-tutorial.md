@@ -1,21 +1,7 @@
 ---
 title: "Troubleshooting the Getting Started Tutorial"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Troubleshooting the Getting Started Tutorial
 This topic lists the most common problems encountered when working through the Getting Started Tutorial and how to resolve them.  

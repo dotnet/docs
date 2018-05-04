@@ -1,21 +1,10 @@
 ---
 title: "White Space in XML Literals (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "white space [XML in Visual Basic]"
   - "XML literals [Visual Basic], white space"
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # White Space in XML Literals (Visual Basic)
 The Visual Basic compiler incorporates only the significant white space characters from an XML literal when it creates a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] object. The insignificant white space characters are not incorporated.  

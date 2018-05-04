@@ -1,24 +1,10 @@
 ---
 title: "Tool Samples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ccf90c64-31de-4a18-9208-28887735ce80
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tool Samples
-This section contains [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] tools.  
+This section contains Windows Communication Foundation (WCF) tools.  
   
 ## In This Section  
  [ConfigurationCodeGenerator](../../../../docs/framework/wcf/samples/configurationcodegenerator.md)  

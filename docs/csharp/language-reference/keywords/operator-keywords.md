@@ -1,17 +1,10 @@
 ---
 title: "Operator Keywords (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "keywords [C#], operators"
   - "operators [C#], keywords"
 ms.assetid: f745c81f-f8d8-4673-86a1-0f3a85cc63c3
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Operator Keywords (C# Reference)
 Used to perform miscellaneous actions such as creating objects, checking the run-time type of an object, obtaining the size of a type, and other actions. This section introduces the following keywords:  

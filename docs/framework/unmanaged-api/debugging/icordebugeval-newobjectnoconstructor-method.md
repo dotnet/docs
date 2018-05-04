@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEval::NewObjectNoConstructor Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEval.NewObjectNoConstructor"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 80d509ca-b5e3-4c46-9c14-800db73d9bf7
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEval::NewObjectNoConstructor Method
 Allocates a new object instance of the specified type, without attempting to call a constructor method.  

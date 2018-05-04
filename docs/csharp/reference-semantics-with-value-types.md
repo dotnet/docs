@@ -1,13 +1,7 @@
 ---
 title: Reference semantics with value types
 description: Understand the language features that minimize copying structures safely
-author: billwagner
-ms.author: wiwagn
 ms.date: 11/10/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 

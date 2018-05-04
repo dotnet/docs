@@ -1,24 +1,10 @@
 ---
 title: "Trusted Subsystem"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Trusted Subsystem
 A client accesses one or more Web services that are distributed across a network. The Web services are designed so that access to additional resources (such as databases or other Web services) is encapsulated in the business logic of the Web service. These resources must be protected against unauthorized access. The following illustration depicts a trusted subsystem process.  
@@ -40,7 +26,7 @@ A client accesses one or more Web services that are distributed across a network
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] only.|  
+|Interoperability|Windows Communication Foundation (WCF) only.|  
 |Authentication (service)|Security token service authenticates and authorizes clients.|  
 |Authentication (client)|The trusted subsystem authenticates the client and the resource authenticates the trusted subsystem service.|  
 |Integrity|Yes|  

@@ -1,17 +1,7 @@
 ---
 title: "Equality Operations (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 9d9a5bf2-f211-4865-bd19-c59ffa004615
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Equality Operations (C#)
 Two sequences whose corresponding elements are equal and which have the same number of elements are considered equal.  

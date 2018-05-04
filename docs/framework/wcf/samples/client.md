@@ -1,24 +1,10 @@
 ---
 title: "Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fabb0c70-b79b-4e58-a5d3-9705de85ee5b
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Client
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) client applications.  
   
 ## In This Section  
  [Client Interoperability](../../../../docs/framework/wcf/samples/client-interoperability.md)  

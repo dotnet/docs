@@ -1,19 +1,7 @@
 ---
 title: "Custom Tracking Records"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 24284565-c68b-40bf-b7f1-e148d151a6fc
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Tracking Records
 This topic demonstrates how to create custom tracking records and populate them with data to be emitted along with the records.  

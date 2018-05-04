@@ -46,7 +46,7 @@ ms.custom: "updateeachrelease"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netframework-4.7.1">
+                <a href="/dotnet/api/?view=netframework-4.7.2">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

@@ -1,21 +1,7 @@
 ---
 title: "&lt;transport&gt; of &lt;netHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;netHttpBinding&gt;
 Defines properties that control authentication parameters for the HTTP transport.  

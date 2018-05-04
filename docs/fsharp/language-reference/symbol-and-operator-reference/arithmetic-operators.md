@@ -1,17 +1,8 @@
 ---
 title: Arithmetic Operators (F#)
 description: Learn about the arithmetic operators that are available in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/04/2018
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 75ddcfa3-564e-4382-80a3-f9da73d0f0ea 
 ---
-
 # Arithmetic Operators
 
 This topic describes arithmetic operators that are available in the F# language.

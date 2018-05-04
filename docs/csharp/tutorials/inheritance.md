@@ -1,14 +1,9 @@
 ---
 title: Inheritance in C#
 description: Learn to use inheritance in C# libraries and applications.
-keywords: inheritance (C#), base classes, derived classes, abstract base classes
 author: rpetrusha
-manager: wpickett
 ms.author: ronpet
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
 ---
 # Inheritance in C# and .NET

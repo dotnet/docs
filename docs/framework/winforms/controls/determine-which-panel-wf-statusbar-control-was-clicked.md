@@ -1,14 +1,6 @@
 ---
 title: "How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "PanelClick event [Windows Forms], determining panel clicked"
   - "Panel control [Windows Forms], determining click"
 ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked
 > [!IMPORTANT]

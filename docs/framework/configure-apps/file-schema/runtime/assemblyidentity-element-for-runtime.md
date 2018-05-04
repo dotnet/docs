@@ -1,14 +1,6 @@
 ---
 title: "&lt;assemblyIdentity&gt; Element for &lt;runtime&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/assemblyIdentity"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#assemblyIdentity"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "container tags, <assemblyIdentity> element"
   - "assemblyIdentity element"
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
 Contains identifying information about the assembly.  

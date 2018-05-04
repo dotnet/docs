@@ -1,24 +1,10 @@
 ---
 title: "Management"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 52f4825b-91a2-4f23-94f4-cfd76a7980cf
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Management
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] management.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) management.  
   
 ## In This Section  
  [WCF Services and Event Tracing for Windows](../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)  

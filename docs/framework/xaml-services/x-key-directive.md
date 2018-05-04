@@ -1,14 +1,6 @@
 ---
 title: "x:Key Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "xKey"
   - "Key"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "Key attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:Key attribute"
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
-caps.latest.revision: 25
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Key Directive
 Uniquely identifies elements that are created and referenced in a XAML-defined dictionary. Adding an `x:Key` value to a XAML object element is the most common way to identify a resource in a resource dictionary, for example in a WPF <xref:System.Windows.ResourceDictionary>.  

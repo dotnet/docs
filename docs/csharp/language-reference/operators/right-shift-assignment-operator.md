@@ -1,19 +1,12 @@
 ---
 title: "&gt;&gt;= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - ">>=_CSharpKeyword"
 helpviewer_keywords: 
   - "right shift assignment operator (>>=) [C#]"
   - ">>= operator (right-shift assignment) [C#]"
 ms.assetid: b593778c-b9b4-440d-8b29-c1ac22cb81c0
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &gt;&gt;= Operator (C# Reference)
 The right-shift assignment operator.  

@@ -1,12 +1,6 @@
 ---
 title: "- Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Negate"
   - "vb.-"
@@ -23,9 +17,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], negation"
   - "minus operator [Visual Basic]"
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # - Operator (Visual Basic)
 Returns the difference between two numeric expressions or the negative value of a numeric expression.  

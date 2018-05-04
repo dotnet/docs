@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Channels.StreamSecurityUpgradeAccepted"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: da6c1a6a-1862-4d82-8b44-4b99463a95b8
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.StreamSecurityUpgradeAccepted
 System.ServiceModel.Channels.StreamSecurityUpgradeAccepted  

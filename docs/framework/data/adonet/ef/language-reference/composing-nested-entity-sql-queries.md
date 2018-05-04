@@ -1,21 +1,7 @@
 ---
 title: "Composing Nested Entity SQL Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 685d4cd3-2c1f-419f-bb46-c9d97a351eeb
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Composing Nested Entity SQL Queries
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is a rich functional language. The building block of [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is an expression. Unlike conventional SQL, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is not limited to a tabular result set: [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports composing complex expressions that can have literals, parameters, or nested expressions. A value in the expression can be parameterized or composed of some other expression.  

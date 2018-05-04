@@ -2,10 +2,6 @@
 title: QualifierSet_Get function (Unmanaged API Reference)
 description: The QualifierSet_Get function gets a named qualifier.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_Get"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_Get function
 Gets the specified named qualifier.  

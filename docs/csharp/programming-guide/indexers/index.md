@@ -1,19 +1,12 @@
 ---
 title: "Indexers (C# Programming Guide)"
 ms.date: 03/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.indexers"
 helpviewer_keywords: 
   - "indexers [C#]"
   - "C# language, indexers"
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
-caps.latest.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Indexers (C# Programming Guide)
 

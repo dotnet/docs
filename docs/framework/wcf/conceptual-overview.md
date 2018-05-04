@@ -11,13 +11,13 @@ This topic summarizes information about the Windows Communication Foundation (WC
   
 ## In This Section  
  [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
- A brief overview of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
+ A brief overview of WCF.  
   
  [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)  
- An outline of the major concepts of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] programming model.  
+ An outline of the major concepts of the WCF programming model.  
   
  [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)  
- A graphical representation of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] architecture.  
+ A graphical representation of the WCF architecture.  
   
 ## Reference  
  <xref:System.ServiceModel>  

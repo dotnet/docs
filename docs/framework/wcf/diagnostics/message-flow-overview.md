@@ -20,7 +20,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
 2.  If you haven’t enabled analytic tracing, expand **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Select **View**, **Show Analytic and Debug Logs**. Right-click **Analytic** and select **Enable Log**. Leave Event Viewer open so that traces can be viewed.  
   
-3.  Open the sample created in the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md) in [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]. Note that you must run [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] as an administrator so that the service can be created. If you have the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples installed, you can open the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which contains the completed project created in the tutorial.  
+3.  Open the sample created in the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md) in [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]. Note that you must run [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] as an administrator so that the service can be created. If you have the WCF samples installed, you can open the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which contains the completed project created in the tutorial.  
   
 4.  Right-click the **Service** project and select **Add**, **New Item**. Select **Application Configuration File** and click **OK**.  
   

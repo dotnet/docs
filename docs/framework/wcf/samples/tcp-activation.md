@@ -138,7 +138,7 @@ Press <ENTER> to terminate client.
   
 2.  Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-     In addition, you must install the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] non-HTTP activation components:  
+     In addition, you must install the WCF non-HTTP activation components:  
   
     1.  From the **Start** menu, choose **Control Panel**.  
   

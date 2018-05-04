@@ -32,7 +32,7 @@ This sample demonstrates how to perform transacted queued communication by using
  To run this sample, IIS must be installed on both the service and the client machines in addition to MSMQ.  
   
 ## Demonstrates  
- The sample demonstrates sending [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] queued messages using MSMQ over HTTP. This is also called SRMP messaging. When a queued message is sent, MSMQ on the sending machine transfers the messages to the receiving queue manager over TCP or HTTP transport. By choosing SRMP, the user indicates the choice of HTTP as a transport for queue transfer. SRMP Secure enables the use of HTTPS.  
+ The sample demonstrates sending WCF queued messages using MSMQ over HTTP. This is also called SRMP messaging. When a queued message is sent, MSMQ on the sending machine transfers the messages to the receiving queue manager over TCP or HTTP transport. By choosing SRMP, the user indicates the choice of HTTP as a transport for queue transfer. SRMP Secure enables the use of HTTPS.  
   
 ## Example  
  The sample code is based on the transacted sample. How you send a message to the queue and receive a message from the queue using SRMP is the same as sending and receiving messages using a Native protocol.  

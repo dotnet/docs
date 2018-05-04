@@ -10,10 +10,10 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
   
  For more information about ETW, see [Improve Debugging and Performance Tuning with ETW](http://go.microsoft.com/fwlink/?LinkId=164781).  
   
- In addition to using the Windows System, Security, and Application event logs to analyze application, [!INCLUDE[wv](../../../../../includes/wv-md.md)] and [!INCLUDE[lserver](../../../../../includes/lserver-md.md)] introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Trace Events, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Message Logs, and [!INCLUDE[wf1](../../../../../includes/wf1-md.md)] Tracking records to the Applications and Services Logs.  
+ In addition to using the Windows System, Security, and Application event logs to analyze application, [!INCLUDE[wv](../../../../../includes/wv-md.md)] and [!INCLUDE[lserver](../../../../../includes/lserver-md.md)] introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of WCF Trace Events, WCF Message Logs, and [!INCLUDE[wf1](../../../../../includes/wf1-md.md)] Tracking records to the Applications and Services Logs.  
   
 ## Concepts and Capabilities  
- The following concepts and capabilities apply to [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Analytic Tracing.  
+ The following concepts and capabilities apply to WCF Analytic Tracing.  
   
 ### Enabling WCF Diagnostics Settings  
  WCF diagnostics are enabled within the \<system.serviceModel>\<diagnostics> configuration section.  
@@ -28,7 +28,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
 ### Channels  
  ETW allows software components to direct tracing events to a particular audience by use of channels. For example, you can send events for system administrators to one channel, and events that application developers care about to another channel. Channels are named and registered with Windows so that consumers can view a channel’s events using the Event Viewer.  
   
- The analytic tracing feature for [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] in [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] writes to the Microsoft-Windows-Application-Server-Applications channel. This channel is specifically designed for users who want to monitor the health of [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services in production. It defines a small, set of events that can be used in many health monitoring and troubleshooting scenarios.  
+ The analytic tracing feature for WCF in [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] writes to the Microsoft-Windows-Application-Server-Applications channel. This channel is specifically designed for users who want to monitor the health of WCF services in production. It defines a small, set of events that can be used in many health monitoring and troubleshooting scenarios.  
   
  To enable the Event Tracing for Windows manifest so that messages are decoded properly in the event log, use the ServiceModelReg tool on the command line as follows:  
   

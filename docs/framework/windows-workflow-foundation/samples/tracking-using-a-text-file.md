@@ -12,7 +12,7 @@ This sample demonstrates how to extend tracking in Windows Workflow Foundation (
 |Class|Description|  
 |-----------|-----------------|  
 |`TextFileTrackingExtensionElement`|A <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> is used to define the configuration section used to configure the text file tracking participant. This allows users to specify the destination of the log file using standard .NET Framework configuration files.|  
-|`TextFileTrackingBehavior`|Behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allow users to inject extensions into the runtime. This behavior adds the tracking participant to the service when the service starts.|  
+|`TextFileTrackingBehavior`|Behaviors in WCF allow users to inject extensions into the runtime. This behavior adds the tracking participant to the service when the service starts.|  
 |`TextFileTrackingParticipant`|The tracking participant that receives tracking participants at runtime and stores them to a log file as XML.|  
   
 ## Behavior Extension Elements Configuration  

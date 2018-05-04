@@ -17,13 +17,13 @@ This sample demonstrates how to build the channel stack in a custom way by imple
  The dispatcher first opens the channel listener and then accepts the singleton reply channel. With the channel, it starts to send messages (requests) in an infinite loop. For each request, it creates a reply message and sends it back to the client.  
   
 ## Creating a Response Message  
- The message processing is implemented in the type `MyServiceManager`. In the `HandleRequest` method, the `Action` header of the message is first checked to see whether the request is supported. A predefined SOAP action "http://tempuri.org/HelloWorld/Hello" is defined to provide message filtering. This is similar to the service contract concept in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation of <xref:System.ServiceModel.ServiceHost>.  
+ The message processing is implemented in the type `MyServiceManager`. In the `HandleRequest` method, the `Action` header of the message is first checked to see whether the request is supported. A predefined SOAP action "http://tempuri.org/HelloWorld/Hello" is defined to provide message filtering. This is similar to the service contract concept in the WCF implementation of <xref:System.ServiceModel.ServiceHost>.  
   
  For the correct SOAP action case, the sample retrieves the requested message data and generates a corresponding response to the request similar to what is seen in the <xref:System.ServiceModel.ServiceHost> case.  
   
  You specially handled the HTTP-GET verb by returning a custom HTML message, in this, case so that you can browse the service from a browser to see that it is compiled correctly. If the SOAP action does not match, send a fault message back to indicate that the request is not supported.  
   
- The client of this sample is a normal [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client that does not assume anything from the service. So, the service is specially designed to match what you get from a normal [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]<xref:System.ServiceModel.ServiceHost> implementation. As a result, only a service contract is required on the client.  
+ The client of this sample is a normal WCF client that does not assume anything from the service. So, the service is specially designed to match what you get from a normal WCF<xref:System.ServiceModel.ServiceHost> implementation. As a result, only a service contract is required on the client.  
   
 ## Using the sample  
  Running the client application directly produces the following output.  

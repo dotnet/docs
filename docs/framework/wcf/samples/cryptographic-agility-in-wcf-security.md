@@ -9,10 +9,10 @@ manager: "mbaldwin"
 This sample shows how to specify in a standard/custom algorithm to provide a cryptographic agile implementation in a Windows Communication Foundation (WCF) client and service. The sample is composed of the following projects:  
   
  Service  
- This is a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that implements the `ICalculator` interface and secures the endpoint using the <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> with secure session and reliable session disabled. The service defines a custom `SecurityAlgorithmSuite` class to specify the cryptographic algorithms to be used for message security.  
+ This is a self-hosted WCF service that implements the `ICalculator` interface and secures the endpoint using the <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> with secure session and reliable session disabled. The service defines a custom `SecurityAlgorithmSuite` class to specify the cryptographic algorithms to be used for message security.  
   
  Client  
- This is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]client that accesses the service after successful authentication. It invokes the operations exposed by the `ICalculator` interface and implemented by the service. The client also defines the same custom `SecurityAlgorithmSuite` class to specify the cryptographic algorithms to be used for message security.  
+ This is a WCFclient that accesses the service after successful authentication. It invokes the operations exposed by the `ICalculator` interface and implemented by the service. The client also defines the same custom `SecurityAlgorithmSuite` class to specify the cryptographic algorithms to be used for message security.  
   
 ### To use this sample  
   

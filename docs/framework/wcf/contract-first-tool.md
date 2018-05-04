@@ -53,7 +53,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
  To add the above service contract to the project, right-click the project and select **Add New…**. Select Schema Definition from the WCF pane of the Templates dialog, and name the new file SampleContract.xsd. Copy and paste the above code into the code view of the new file.  
   
 ## Configuring contract-first options  
- Contract-first options can be configured in the Properties menu of a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] project. To enable contract-first development, select the **Enable XSD as Type Definition Language** check box in the WCF page of the project properties window.  
+ Contract-first options can be configured in the Properties menu of a WCF project. To enable contract-first development, select the **Enable XSD as Type Definition Language** check box in the WCF page of the project properties window.  
   
  ![WCF Project Options showing contract&#45;first](../../../docs/framework/wcf/media/contractfirstoptions.png "ContractFirstOptions")  
   

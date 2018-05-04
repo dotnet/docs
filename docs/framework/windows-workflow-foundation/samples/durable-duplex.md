@@ -36,7 +36,7 @@ This sample demonstrates how to set up and configure durable duplex message exch
 >  The binding used by this sample is not secure. When deploying your application you should configure your binding based on the security requirements of your application.  
   
 > [!NOTE]
->  The queues used in this sample are not transactional. For a sample that shows how to set up [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message exchanges using transaction queues, see the [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md) sample.  
+>  The queues used in this sample are not transactional. For a sample that shows how to set up WCF message exchanges using transaction queues, see the [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md) sample.  
   
  The message sent by Service1.xamlx to Service2.xamlx is sent using a client endpoint configured with the address of Service2.xamlx and the custom binding defined previously. The callback from Service2.xamlx to Service1.xamlx is sent using a client endpoint with no explicitly configured address because the address is taken from the callback context sent by Service1.xamlx. The following code example defines the client endpoints.  
   

@@ -39,7 +39,7 @@ Using Windows Communication Foundation (WCF), the service can specify how a clie
   
 1.  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate code and configuration from the service.  
   
-2.  Create an instance of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client using the generated code.  
+2.  Create an instance of the WCF client using the generated code.  
   
 3.  On the client class, set the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class to an appropriate value. This example sets the property to an X.509 certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.  
   

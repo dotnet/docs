@@ -9,9 +9,9 @@ The Address Headers sample demonstrates how clients can pass reference parameter
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The WS-Addressing specification defines the notion of an endpoint reference as a way to address a particular Web service endpoint. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], endpoint references are modeled using the `EndpointAddress` class - `EndpointAddress` is the type of the Address field of the `ServiceEndpoint` class.  
+ The WS-Addressing specification defines the notion of an endpoint reference as a way to address a particular Web service endpoint. In WCF, endpoint references are modeled using the `EndpointAddress` class - `EndpointAddress` is the type of the Address field of the `ServiceEndpoint` class.  
   
- Part of the endpoint reference model is that each reference can carry some reference parameters that add extra identifying information. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], these reference parameters are modeled as instances of `AddressHeader` class.  
+ Part of the endpoint reference model is that each reference can carry some reference parameters that add extra identifying information. In WCF, these reference parameters are modeled as instances of `AddressHeader` class.  
   
  In this sample, the client adds a reference parameter to the `EndpointAddress` of the client endpoint. The service looks for this reference parameter and uses its value in the logic of its "Hello" service operation.  
   

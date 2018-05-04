@@ -14,16 +14,16 @@ This section includes samples that demonstrate Asynchronous JavaScript and XML f
  Demonstrates how to use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> to serialize and deserialize data in the JavaScript Object Notation (JSON) format.  
   
  [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md)  
- Demonstrates how to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service.  
+ Demonstrates how to use WCF to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service.  
   
  [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md)  
- Demonstrates how to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to create an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Asynchronous JavaScript and XML (AJAX) service that uses HTTP POST.  
+ Demonstrates how to use WCF to create an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Asynchronous JavaScript and XML (AJAX) service that uses HTTP POST.  
   
  [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md)  
- Demonstrates how to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service.  
+ Demonstrates how to use WCF to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service.  
   
  [AJAX Service Using Complex Types](../../../../docs/framework/wcf/samples/ajax-service-using-complex-types-sample.md)  
- Demonstrates how to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to create an ASP.NET Asynchronous JavaScript and XML (AJAX) service that creates instances of complex types.  
+ Demonstrates how to use WCF to create an ASP.NET Asynchronous JavaScript and XML (AJAX) service that creates instances of complex types.  
   
  [AJAX Service with JSON and XML](../../../../docs/framework/wcf/samples/ajax-service-with-json-and-xml-sample.md)  
- Demonstrates how to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data.
+ Demonstrates how to use WCF to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data.

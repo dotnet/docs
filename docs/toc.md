@@ -72,6 +72,7 @@
 ## [macOS Prerequisites](core/macos-prerequisites.md)
 ## [Linux Prerequisites](core/linux-prerequisites.md)
 ## [What's new in .NET Core](core/whats-new/index.md)
+### [What's new in .NET Core 2.0](core/whats-new/whats-new-in-core-20.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)

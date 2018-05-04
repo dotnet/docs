@@ -382,7 +382,7 @@
 > [!CAUTION]
 >  The <xref:System.Windows.Forms.UserControl.Load> event occurs when the handle for the <xref:System.Windows.Forms.UserControl> is created. In some circumstances, this can cause the <xref:System.Windows.Forms.UserControl.Load> event to occur more than one time. For example, the <xref:System.Windows.Forms.UserControl.Load> event occurs when the <xref:System.Windows.Forms.UserControl> is loaded, and again if the handle is recreated. (One way that a handle is recreated is by calling the <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.) To account for the <xref:System.Windows.Forms.UserControl.Load> event occurring more than one time, you should put any one time initialization code in the <xref:System.Windows.Forms.UserControl.%23ctor%2A> constructor instead of a <xref:System.Windows.Forms.UserControl.Load> event handler. In addition, you should not add data bindings to the <xref:System.Windows.Forms.UserControl> in a <xref:System.Windows.Forms.UserControl.Load> event handler.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -426,7 +426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.UserControl.OnCreateControl%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -468,7 +468,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.UserControl.Load> event occurs after the control is created, but before the control becomes visible for the first time.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.UserControl.OnLoad%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

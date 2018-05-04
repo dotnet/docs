@@ -291,7 +291,7 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingContext.CollectionChanged> event is obsolete and always raises a <xref:System.NotImplementedException> when handled. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ The <xref:System.Windows.Forms.BindingContext.CollectionChanged> event is obsolete and always raises a <xref:System.NotImplementedException> when handled. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -569,7 +569,7 @@ BindingManagerBase bmOrders = this.BindingContext
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingContext.OnCollectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

@@ -164,7 +164,7 @@
   
  Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
   
- In addition, you can use this constructor to specify a delegate that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item being created. The <xref:System.EventHandler> that you pass to this constructor must be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. For more information on handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ In addition, you can use this constructor to specify a delegate that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item being created. The <xref:System.EventHandler> that you pass to this constructor must be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. For more information on handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -208,7 +208,7 @@
   
  The `items` parameter enables you to assign an array of menu items to define a submenu of this menu item. Each item in the array can also have an array of menu items assigned to it. This enables you to create complete menu structures and assign them to the constructor for the menu item.  
   
- For more information on handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information on handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -251,7 +251,7 @@
   
  Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
   
- In addition, you can use this constructor to specify a delegate that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item being created. The <xref:System.EventHandler> that you pass to this constructor must be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. For more information on handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ In addition, you can use this constructor to specify a delegate that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item being created. The <xref:System.EventHandler> that you pass to this constructor must be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. For more information on handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -308,7 +308,7 @@
   
  The `mergeType` and `mergeOrder` parameters allow you to determine how this menu item will behave when the menu item is merged with another menu. Depending on the value you specify for the `mergeType` parameter, you can either add, remove, replace, or merge the menu item and its submenu items with the menu that it is merging with. The `mergeOrder` parameter determines where the menu item being created will be positioned when the menu is merged.  
   
- In addition, you can use this constructor to create a <xref:System.Windows.Forms.MenuItem> and have it connected to an event handler in your code that will process the click of the menu item. The <xref:System.EventHandler> that you pass into this constructor should be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. By using this constructor version, you can also connect the <xref:System.Windows.Forms.MenuItem.Popup> and <xref:System.Windows.Forms.MenuItem.Select> events to determine when this menu item is selected. You can use these events for tasks such as determining whether or not to display a check mark next to submenu items or to enable or disable menu items based on the state of the application. The <xref:System.Windows.Forms.MenuItem.Select> and <xref:System.Windows.Forms.MenuItem.Click> events are raised only for <xref:System.Windows.Forms.MenuItem> objects that are not parent menu items. For more information on handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ In addition, you can use this constructor to create a <xref:System.Windows.Forms.MenuItem> and have it connected to an event handler in your code that will process the click of the menu item. The <xref:System.EventHandler> that you pass into this constructor should be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. By using this constructor version, you can also connect the <xref:System.Windows.Forms.MenuItem.Popup> and <xref:System.Windows.Forms.MenuItem.Select> events to determine when this menu item is selected. You can use these events for tasks such as determining whether or not to display a check mark next to submenu items or to enable or disable menu items based on the state of the application. The <xref:System.Windows.Forms.MenuItem.Select> and <xref:System.Windows.Forms.MenuItem.Click> events are raised only for <xref:System.Windows.Forms.MenuItem> objects that are not parent menu items. For more information on handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -488,7 +488,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MenuItem.Click> event occurs when this <xref:System.Windows.Forms.MenuItem> is clicked by the user. This event also occurs if the user selects the menu item using the keyboard and presses the Enter key. It can also occur if an access key or shortcut key is pressed that is associated with the <xref:System.Windows.Forms.MenuItem>. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ The <xref:System.Windows.Forms.MenuItem.Click> event occurs when this <xref:System.Windows.Forms.MenuItem> is clicked by the user. This event also occurs if the user selects the menu item using the keyboard and presses the Enter key. It can also occur if an access key or shortcut key is pressed that is associated with the <xref:System.Windows.Forms.MenuItem>. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
 > [!NOTE]
 >  If the <xref:System.Windows.Forms.Menu.MenuItems%2A> property for the <xref:System.Windows.Forms.MenuItem> contains any items, this event is not raised. This event is not raised for parent menu items.  
@@ -687,7 +687,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DrawItemEventArgs> argument passed to a <xref:System.Windows.Forms.MenuItem.DrawItem> event handler provides a <xref:System.Drawing.Graphics> object that enables you to perform drawing and other graphical operations on the surface of the menu item. You can use this event handler to create custom menus that meet the needs of your application. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ The <xref:System.Windows.Forms.DrawItemEventArgs> argument passed to a <xref:System.Windows.Forms.MenuItem.DrawItem> event handler provides a <xref:System.Drawing.Graphics> object that enables you to perform drawing and other graphical operations on the surface of the menu item. You can use this event handler to create custom menus that meet the needs of your application. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -897,7 +897,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In order for this event to be raised, you must have the <xref:System.Windows.Forms.MenuItem.OwnerDraw%2A> property of the menu item set to `true`. This event is raised before owner drawn menus are drawn to allow for the size of the menu item to be drawn to be specified. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ In order for this event to be raised, you must have the <xref:System.Windows.Forms.MenuItem.OwnerDraw%2A> property of the menu item set to `true`. This event is raised before owner drawn menus are drawn to allow for the size of the menu item to be drawn to be specified. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1155,7 +1155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1197,7 +1197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1254,7 +1254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1288,7 +1288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1330,7 +1330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1526,7 +1526,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event only occurs when a menu item has submenu items to display. You can use this event handler to add, remove, enable, disable, check, or uncheck menu items based on the state of your application before they are displayed. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ This event only occurs when a menu item has submenu items to display. You can use this event handler to add, remove, enable, disable, check, or uncheck menu items based on the state of your application before they are displayed. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1604,7 +1604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is typically raised when the user places the mouse pointer over the menu item. The event can also be raised when the user highlights a menu item using the keyboard by scrolling to the menu item with the arrow keys. You can use this event to display a detailed help string pertaining to this menu item in an application's status bar. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ This event is typically raised when the user places the mouse pointer over the menu item. The event can also be raised when the user highlights a menu item using the keyboard by scrolling to the menu item with the arrow keys. You can use this event to display a detailed help string pertaining to this menu item in an application's status bar. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
 > [!NOTE]
 >  If the <xref:System.Windows.Forms.Menu.MenuItems%2A> property for the <xref:System.Windows.Forms.MenuItem> contains any items, this event is not raised. This event is not raised for parent menu items.  

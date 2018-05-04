@@ -508,7 +508,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is used in conjunction with <xref:System.ConsoleCancelEventHandler?displayProperty=nameWithType> and <xref:System.ConsoleCancelEventArgs?displayProperty=nameWithType>. The <xref:System.Console.CancelKeyPress> event enables a console application to intercept the Ctrl+C signal so the event handler can decide whether to continue executing or terminate. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ This event is used in conjunction with <xref:System.ConsoleCancelEventHandler?displayProperty=nameWithType> and <xref:System.ConsoleCancelEventArgs?displayProperty=nameWithType>. The <xref:System.Console.CancelKeyPress> event enables a console application to intercept the Ctrl+C signal so the event handler can decide whether to continue executing or terminate. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  When the user presses either Ctrl+C or Ctrl+Break, the <xref:System.Console.CancelKeyPress> event is fired and the application's <xref:System.ConsoleCancelEventHandler> event handler is executed. The event handler is passed a <xref:System.ConsoleCancelEventArgs> object that has two useful properties:  
   

@@ -139,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -223,7 +223,7 @@
 ## Remarks  
  You can use this event to initialize the <xref:System.Windows.Forms.MenuItem> objects before they are displayed. For example, if you use a <xref:System.Windows.Forms.ContextMenu> for three <xref:System.Windows.Forms.TextBox> controls and you want to disable certain menu items in the <xref:System.Windows.Forms.ContextMenu> depending on which <xref:System.Windows.Forms.TextBox> is displaying the shortcut menu, you can create an event handler for this event. You could use the <xref:System.Windows.Forms.ContextMenu.SourceControl%2A> property to determine which <xref:System.Windows.Forms.TextBox> is about to display the <xref:System.Windows.Forms.ContextMenu> and disable the appropriate <xref:System.Windows.Forms.MenuItem> objects.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

@@ -224,7 +224,7 @@
   
  You can create an event handler for the <xref:System.Windows.Forms.ListView.BeforeLabelEdit> event to perform tasks before the user edits the text of an item.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -673,7 +673,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.BeforeLabelEdit> event occurs when the user starts modifying the text for an item. If the event handler cancels this event, the user cannot edit the text. You can use this event to prevent the user from editing specific items in the <xref:System.Windows.Forms.ListView> control. If the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property of the <xref:System.Windows.Forms.ListView> control is set to `false`, the <xref:System.Windows.Forms.ListView.BeforeLabelEdit> event is not raised; all user attempts to edit item labels are automatically rejected.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -792,7 +792,7 @@
 ## Remarks  
  This event only occurs when <xref:System.Windows.Forms.ListView.VirtualMode%2A> is `true`. Handling this event allows the <xref:System.Windows.Forms.ListView> to update the item information held in the cache so that it is readily available. This can improve performance on large lists, or lists whose items are expensive to calculate.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1029,7 +1029,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.ColumnClick> event occurs when the user clicks one of the column headers in a details view of the items in a <xref:System.Windows.Forms.ListView> control (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>). The <xref:System.Windows.Forms.ListView.ColumnClick> event is typically handled to sort the items in the <xref:System.Windows.Forms.ListView> using the clicked column as the column to sort by.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1067,7 +1067,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.ColumnReordered> event is a cancelable event and can be canceled by handling the event and setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. However, if the event is canceled, the <xref:System.Windows.Forms.ColumnReorderedEventArgs.NewDisplayIndex%2A> of the <xref:System.Windows.Forms.ColumnReorderedEventArgs> will not change to the <xref:System.Windows.Forms.ColumnReorderedEventArgs.OldDisplayIndex%2A> value.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1176,7 +1176,7 @@
 ## Remarks  
  This event will not occur if the column width change is canceled in the <xref:System.Windows.Forms.ListView.ColumnWidthChanging> event  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1214,7 +1214,7 @@
 ## Remarks  
  This event allows you to check the new column width with the <xref:System.Windows.Forms.ColumnWidthChangingEventArgs.NewWidth%2A?displayProperty=nameWithType> property, and cancel the event if you choose by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1370,7 +1370,7 @@
 ## Remarks  
  This event lets you customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing. It is raised only when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property is set to `true` and the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>. This event can occur for each column header in the control. For more information on owner drawing, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property reference topic.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1418,7 +1418,7 @@
 > [!NOTE]
 >  Because of a bug in the underlying Win32 control, the <xref:System.Windows.Forms.ListView.DrawItem> event occurs without accompanying <xref:System.Windows.Forms.ListView.DrawSubItem> events once per row in the details view when the mouse pointer moves over the row, causing anything painted in a <xref:System.Windows.Forms.ListView.DrawSubItem> event handler to be painted over by a custom background drawn in a <xref:System.Windows.Forms.ListView.DrawItem> event handler. See the example in the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> reference topic for a workaround that invalidates each row when the extra event occurs. An alternative workaround is to put all your custom drawing code in a <xref:System.Windows.Forms.ListView.DrawSubItem> event handler and paint the background for the entire item (including subitems) only when the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ColumnIndex%2A?displayProperty=nameWithType> value is 0.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1470,7 +1470,7 @@
 > [!NOTE]
 >  The <xref:System.Windows.Forms.ListView.DrawSubItem> event does not occur for any subitems for which no <xref:System.Windows.Forms.ColumnHeader> object has been added to the <xref:System.Windows.Forms.ListView.Columns%2A> collection. Note also that the first subitem of each <xref:System.Windows.Forms.ListViewItem> object represents the parent item itself, and is displayed in the first column.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2518,7 +2518,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.ItemActivate> event occurs when the user activates one or more items in the <xref:System.Windows.Forms.ListView> control. The user can activate an item with either a single-click or double-click, depending on the value of the <xref:System.Windows.Forms.ListView.Activation%2A> property, or with the keyboard. From within the event handler for the <xref:System.Windows.Forms.ListView.ItemActivate> event, you can reference the <xref:System.Windows.Forms.ListView.SelectedItems%2A> or <xref:System.Windows.Forms.ListView.SelectedIndices%2A> properties to access the collection of items selected in the <xref:System.Windows.Forms.ListView> to determine which items are being activated.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2564,7 +2564,7 @@
 > [!NOTE]
 >  If the window handle has not been created when the <xref:System.Windows.Forms.ListView.ItemCheck> event is raised, the event will be delayed. Once the window handle is created (when the form is shown), any delayed <xref:System.Windows.Forms.ListView.ItemCheck> events will be raised. For more information, see <xref:System.Windows.Forms.Control.HandleCreated>.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2606,7 +2606,7 @@
 ## Remarks  
  This event is similar to the <xref:System.Windows.Forms.ListView.ItemCheck> event, but is raised after the item has been checked.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2646,7 +2646,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.ItemDrag> event occurs when the user begins dragging an item. Typically the event handler for the <xref:System.Windows.Forms.ListView.ItemDrag> event performs the task of dragging by calling the <xref:System.Windows.Forms.Control.DoDragDrop%2A?displayProperty=nameWithType> method. You can use this event to perform the tasks necessary to drag items into and out of your application's <xref:System.Windows.Forms.ListView> control.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2684,7 +2684,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2791,7 +2791,7 @@
   
  The <xref:System.Windows.Forms.ListView.ItemSelectionChanged> event occurs whether the item state changes from selected to deselected or deselected to selected.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3103,7 +3103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnAfterLabelEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3149,7 +3149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnBackgroundImageChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3184,7 +3184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnBeforeLabelEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3221,7 +3221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnCacheVirtualItems%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3256,7 +3256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnColumnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3302,7 +3302,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnColumnReordered%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3337,7 +3337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnColumnWidthChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3374,7 +3374,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.ColumnWidthChanging> event will not occur if the Window's full drag feature, the "Show Window Contents While Dragging" option, is disabled.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnColumnWidthChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3409,7 +3409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnDrawColumnHeader%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3444,7 +3444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnDrawItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3481,7 +3481,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnDrawSubItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3587,7 +3587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnItemActivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3624,7 +3624,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnItemCheck%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3661,7 +3661,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnItemChecked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3696,7 +3696,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnItemDrag%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3733,7 +3733,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnItemMouseHover%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3768,7 +3768,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnItemSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3805,7 +3805,7 @@
 ## Remarks  
  If the <xref:System.Windows.Forms.ListView.OnMouseHover%2A> method is called when the mouse is hovering over a <xref:System.Windows.Forms.ListViewItem>, the method raises the <xref:System.Windows.Forms.ListView.ItemMouseHover> event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnMouseHover%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3909,7 +3909,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnRetrieveVirtualItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3949,7 +3949,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnRightToLeftLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3984,7 +3984,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnSearchForVirtualItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4019,7 +4019,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4079,7 +4079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListView.OnVirtualItemsSelectionRangeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4127,7 +4127,7 @@
 > [!NOTE]
 >  To avoid issues with graphics flickering when owner drawing, override the <xref:System.Windows.Forms.ListView> control and set the <xref:System.Windows.Forms.ListView.DoubleBuffered%2A> property to `true`.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4218,7 +4218,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -4348,7 +4348,7 @@
 ## Remarks  
  When a <xref:System.Windows.Forms.ListView> object is in virtual mode, it creates <xref:System.Windows.Forms.ListViewItem> objects dynamically instead of using the <xref:System.Windows.Forms.ListView.Items%2A> collection. This event is raised when the object must create a <xref:System.Windows.Forms.ListViewItem> object. A handler for this event should create the appropriate <xref:System.Windows.Forms.ListViewItem> or retrieve it from the cache, and pass it back by way of the <xref:System.Windows.Forms.RetrieveVirtualItemEventArgs.Item%2A> property.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4419,7 +4419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4493,7 +4493,7 @@
 ## Remarks  
  This event occurs when a <xref:System.Windows.Forms.ListView> is in virtual mode and the <xref:System.Windows.Forms.ListView.FindNearestItem%2A> or <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method is called. When handling this event, you should calculate which item from the list of items supplied by the <xref:System.Windows.Forms.ListView.Items%2A> property matches the search criteria and set the <xref:System.Windows.Forms.SearchForVirtualItemEventArgs.Index%2A?displayProperty=nameWithType> property to the index of the <xref:System.Windows.Forms.ListViewItem>. If an item is not provided, <xref:System.Windows.Forms.ListView.FindNearestItem%2A> and <xref:System.Windows.Forms.ListView.FindItemWithText%2A> will return `null`.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4531,7 +4531,7 @@
   
  To determine which items are selected in the <xref:System.Windows.Forms.ListView> control, use the <xref:System.Windows.Forms.ListView.SelectedItems%2A> property to access the <xref:System.Windows.Forms.ListView.SelectedListViewItemCollection>. You can create an event handler for this event to perform tasks whenever there is a change to the selected items in the <xref:System.Windows.Forms.ListView> control.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5331,7 +5331,7 @@
 ## Remarks  
  If the <xref:System.Windows.Forms.ListView> is not in virtual mode, the <xref:System.Windows.Forms.ListView.ItemSelectionChanged> event will occur.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

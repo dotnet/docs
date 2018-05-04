@@ -253,7 +253,7 @@
 > [!NOTE]
 >  When page caching is enabled, an <xref:System.Web.UI.WebControls.AdRotator> control is not cached. A new advertisement is selected whenever the Web page refreshes. A new advertisement is not selected, however, if you provide an event handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

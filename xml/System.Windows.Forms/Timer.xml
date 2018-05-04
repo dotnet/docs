@@ -263,7 +263,7 @@
 ## Remarks  
  This method is called for each timer tick. It calls any methods that are added through <xref:System.Windows.Forms.Timer.Tick>. If you are inheriting from <xref:System.Windows.Forms.Timer>, you can override this method.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -407,7 +407,7 @@
 ## Remarks  
  Calling the <xref:System.Diagnostics.Debug.Assert%2A> method on the <xref:System.Diagnostics.Debug> class from within the <xref:System.Windows.Forms.Timer.Tick> event may not behave as expected, as displaying the assertion dialog box may cause Windows to raise the <xref:System.Windows.Forms.Timer.Tick> event repeatedly. We recommend that you refrain from testing assertions within this event, and use the <xref:System.Diagnostics.Debug.Write%2A>, <xref:System.Diagnostics.Debug.WriteIf%2A>, <xref:System.Diagnostics.Debug.WriteLine%2A>, or <xref:System.Diagnostics.Debug.WriteLineIf%2A> methods instead.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

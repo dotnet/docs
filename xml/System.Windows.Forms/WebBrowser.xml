@@ -316,7 +316,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.WebBrowser> control maintains a history list of all the Web pages visited during a browsing session. The <xref:System.Windows.Forms.WebBrowser.GoBack%2A> method navigates the <xref:System.Windows.Forms.WebBrowser> control to the previous page in this history, if one is available. The <xref:System.Windows.Forms.WebBrowser.CanGoBack%2A> property indicates whether navigation history is available and contains a previous page. Handle the <xref:System.Windows.Forms.WebBrowser.CanGoBackChanged> event to receive a notification when the <xref:System.Windows.Forms.WebBrowser.CanGoBack%2A> property changes. Handling this event is useful, for example, to change the enabled state of a **Back** button when the <xref:System.Windows.Forms.WebBrowser> control navigates to or leaves the beginning of the navigation history.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -419,7 +419,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.WebBrowser> control maintains a history list of all the Web pages visited during a browsing session. The <xref:System.Windows.Forms.WebBrowser.GoForward%2A> method navigates the <xref:System.Windows.Forms.WebBrowser> control to the next page in this history, if one is available as a result of a previous backward navigation. The <xref:System.Windows.Forms.WebBrowser.CanGoForward%2A> property indicates whether navigation history is available and contains a page located after the current one, allowing the <xref:System.Windows.Forms.WebBrowser.GoForward%2A> method to succeed. Handle the <xref:System.Windows.Forms.WebBrowser.CanGoForwardChanged> event to receive a notification when the <xref:System.Windows.Forms.WebBrowser.CanGoForward%2A> property changes. Handling this event is useful, for example, to change the enabled state of a **Forward** button when the <xref:System.Windows.Forms.WebBrowser> control navigates to or leaves the end of the navigation history.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -719,7 +719,7 @@
   
  To receive notification before navigation begins, handle the <xref:System.Windows.Forms.WebBrowser.Navigating> event. Handling this event lets you cancel navigation if certain conditions have not been met, for example, when the user has not completely filled out a form. Handle the <xref:System.Windows.Forms.WebBrowser.Navigated> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes navigation and has begun loading the document at the new location.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -925,7 +925,7 @@
 ## Remarks  
  You can handle this event to update the title bar of your application with the current value of the <xref:System.Windows.Forms.WebBrowser.DocumentTitle%2A> property.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1051,7 +1051,7 @@
 ## Remarks  
  You can use this event with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevel%2A> property to implement an indicator in the user interface of your application similar to the lock icon in Internet Explorer. In a handler for this event, check the value of the <xref:System.Windows.Forms.WebBrowser.EncryptionLevel%2A> property to determine whether you should hide or display the indicator. To mimic the behavior of the lock icon in Internet Explorer, you can also provide a ToolTip that shows the encryption level when the mouse pointer hovers over the indicator.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1091,7 +1091,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1863,7 +1863,7 @@
   
  You can also receive notification before navigation begins by handling the <xref:System.Windows.Forms.WebBrowser.Navigating> event. Handling this event lets you cancel navigation if certain conditions have not been met, for example, the user has not completely filled out a form.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1935,7 +1935,7 @@
   
  Handle the <xref:System.Windows.Forms.WebBrowser.Navigated> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes navigation and has begun loading the document at the new location. Handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes loading the new document.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1990,7 +1990,7 @@
   
  The <xref:System.Windows.Forms.WebBrowser.NewWindow> event occurs before the new browser window is opened. You can handle this event, for example, to prevent the window from opening when certain conditions have not been met.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2090,7 +2090,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnCanGoBackChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2128,7 +2128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnCanGoForwardChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2166,7 +2166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnDocumentCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2206,7 +2206,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnDocumentTitleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2244,7 +2244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnEncryptionLevelChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2282,7 +2282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnFileDownload%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2319,7 +2319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnNavigated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2357,7 +2357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnNavigating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2395,7 +2395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnNewWindow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2432,7 +2432,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2470,7 +2470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.WebBrowser.OnStatusTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2620,7 +2620,7 @@
 ## Remarks  
  You can use a handler for this event to implement a navigation progress bar similar to the one in Internet Explorer. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.CurrentProgress%2A?displayProperty=nameWithType> property to determine the number of bytes that have been downloaded successfully. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.MaximumProgress%2A?displayProperty=nameWithType> property to determine the total number of bytes available for downloading.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3135,7 +3135,7 @@
 ## Remarks  
  Handle this event to update a status bar when the value of the <xref:System.Windows.Forms.WebBrowser.StatusText%2A> property changes.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

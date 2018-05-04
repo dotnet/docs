@@ -652,7 +652,7 @@
 ## Remarks  
  This event is used by an owner-drawn <xref:System.Windows.Forms.ListBox>. The event is only raised when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawFixed` or `DrawMode.OwnerDrawVariable`. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.ListBox>. If you have a variable-sized item (when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawVariable`), before drawing an item, the <xref:System.Windows.Forms.ListBox.MeasureItem> event is raised. You can create an event handler for the <xref:System.Windows.Forms.ListBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.ListBox.DrawItem> event.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1493,7 +1493,7 @@
   
  The maximum valid height of a <xref:System.Windows.Forms.ListBox> item is 255 pixels. Setting the <xref:System.Windows.Forms.MeasureItemEventArgs.ItemHeight%2A> property of the <xref:System.Windows.Forms.MeasureItemEventArgs> to a value greater than 255 when handling this event may yield unexpected results.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1702,7 +1702,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListBox.OnDrawItem%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1815,7 +1815,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ListBox.OnMeasureItem%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1985,7 +1985,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2386,7 +2386,7 @@
   
  If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property is set to <xref:System.Windows.Forms.SelectionMode.MultiSimple?displayProperty=nameWithType> or <xref:System.Windows.Forms.SelectionMode.MultiExtended?displayProperty=nameWithType>, any change to the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> collection, including removing an item from the selection, will raise this event.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

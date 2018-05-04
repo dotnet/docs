@@ -217,7 +217,7 @@
   
  To activate a form at run time using code, call the <xref:System.Windows.Forms.Form.Activate%2A> method. You can use this event for tasks such as updating the contents of the form based on changes made to the form's data when the form was not activated.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1100,7 +1100,7 @@
   
  If the form is an MDI parent form, the <xref:System.Windows.Forms.Form.Closing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.Closing> event is raised. In addition, the <xref:System.Windows.Forms.Form.Closed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.Closed> event of the MDI parent form is raised.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1162,7 +1162,7 @@
   
  If the form is an MDI parent form, the <xref:System.Windows.Forms.Form.Closing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.Closing> event is raised. In addition, the <xref:System.Windows.Forms.Form.Closed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.Closed> event of the MDI parent form is raised. Canceling the <xref:System.Windows.Forms.Form.Closing> event of an MDI child form does not prevent the <xref:System.Windows.Forms.Form.Closing> event of the MDI parent form from being raised. However, canceling the event will set to `true` the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> that is passed as a parameter to the parent form. To force all MDI parent and child forms to close, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false` in the MDI parent form.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1328,7 +1328,7 @@
 ## Remarks  
  You can use this event to perform tasks such as updating another window in your application with data from the deactivated form.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1717,7 +1717,7 @@
   
  If the form is a multiple-document interface (MDI) parent form, the <xref:System.Windows.Forms.Form.FormClosing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.FormClosing> event is raised. Likewise, the <xref:System.Windows.Forms.Form.FormClosed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.FormClosed> event of the MDI parent form is raised.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1771,7 +1771,7 @@
   
  If the form is a multiple-document interface (MDI) parent form, the <xref:System.Windows.Forms.Form.FormClosing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.FormClosing> event is raised. Likewise, the <xref:System.Windows.Forms.Form.FormClosed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.FormClosed> event of the MDI parent form is raised. Canceling the <xref:System.Windows.Forms.Form.FormClosing> event of an MDI child form does not prevent the <xref:System.Windows.Forms.Form.FormClosing> event of the MDI parent form from being raised. However, canceling the event will set to `true` the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.FormClosingEventArgs> class that is passed as a parameter to the parent form. To force all MDI parent and child forms to close, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false` in the MDI parent form.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1954,7 +1954,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  The <xref:System.Windows.Forms.Form.HelpButtonClicked> event occurs when the **Help** button in the form's caption bar is clicked. The **Help** button is displayed when the <xref:System.Windows.Forms.Form.HelpButton%2A> property is set to `true`. <xref:System.Windows.Forms.Form.HelpButtonClicked> can be canceled.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2034,7 +2034,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  You can use this event to make changes to your form's appearance and text based on changes made to the input language of the form.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2074,7 +2074,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  This event occurs before the change of input language is made for the form. You can cancel the language change by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.InputLanguageChangingEventArgs> passed to your event handler to `false`. If the event is canceled, the input language is not changed. You can use this event to determine whether the requested input language change is appropriate for your application.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2336,7 +2336,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  You can use this event to perform tasks such as allocating resources used by the form.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2584,7 +2584,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2673,7 +2673,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2713,7 +2713,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  You can use this event to perform tasks such as updating the contents of the MDI child form and changing the menu options available in the MDI parent form based on the status of the MDI child form that is activated.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2916,7 +2916,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  This event is raised when you click on any menu item in a menu that results in a command being performed and the menu losing focus. You can use this event to perform tasks such as updating the text of a <xref:System.Windows.Forms.StatusBar> control or enabling and disabling buttons on a <xref:System.Windows.Forms.ToolBar>.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2960,7 +2960,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  This event is raised when any menu item in the menu is clicked by the user. You can use this event to perform tasks such as enabling and disabling controls on the form that should not be accessed by the user when the menus are being accessed.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3121,7 +3121,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3218,7 +3218,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnActivated%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
@@ -3255,7 +3255,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnBackgroundImageChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3290,7 +3290,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnBackgroundImageLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3334,7 +3334,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 > [!CAUTION]
 >  The <xref:System.Windows.Forms.Form.OnClosed%2A> method is obsolete in the .NET Framework version 2.0; use the <xref:System.Windows.Forms.Form.OnFormClosed%2A> method instead.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnFormClosed%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
@@ -3392,7 +3392,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 > [!CAUTION]
 >  The <xref:System.Windows.Forms.Form.OnClosing%2A> method is obsolete in the .NET Framework version 2.0; use the <xref:System.Windows.Forms.Form.OnFormClosing%2A> method instead.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnClosing%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
@@ -3443,7 +3443,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -3481,7 +3481,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnDeactivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3586,7 +3586,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3657,7 +3657,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  The <xref:System.Windows.Forms.Form.OnFormClosing%2A> method removes the current form from the <xref:System.Windows.Forms.Application.OpenForms%2A> collection of the associated <xref:System.Windows.Forms.Application>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnFormClosed%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
@@ -3702,7 +3702,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnFormClosing%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3842,7 +3842,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnHelpButtonClicked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3885,7 +3885,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnInputLanguageChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3927,7 +3927,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnInputLanguageChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3992,7 +3992,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnLoad%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4034,7 +4034,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnMaximizedBoundsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4077,7 +4077,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnMaximumSizeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4120,7 +4120,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnMdiChildActivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4162,7 +4162,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnMenuComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4204,7 +4204,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnMenuStart%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4246,7 +4246,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnMinimumSizeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4348,7 +4348,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  The <xref:System.Windows.Forms.Form.ResizeBegin> event will only be raised if the form's <xref:System.Windows.Forms.Control.CanRaiseEvents%2A> property is set to `true`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnResizeBegin%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4394,7 +4394,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  The <xref:System.Windows.Forms.Form.ResizeEnd> event will only be raised if the form's <xref:System.Windows.Forms.Control.CanRaiseEvents%2A> property is set to `true`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnResizeEnd%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4440,7 +4440,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  If the current form or one of its parents is disposing of resources, the <xref:System.Windows.Forms.Form.OnRightToLeftLayoutChanged%2A> method will return without performing any action. If the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the form has a value of <xref:System.Windows.Forms.RightToLeft.Yes>, then the handles of the form and its child controls will be recreated through calls to the <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnRightToLeftLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4487,7 +4487,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  The <xref:System.Windows.Forms.Form.Shown> event occurs whenever the form is first shown.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnShown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4591,7 +4591,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Form.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -5003,7 +5003,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
   
  The <xref:System.Windows.Forms.Form.ResizeBegin> and <xref:System.Windows.Forms.Form.ResizeEnd> pair of events is also raised when the user moves the form, typically by clicking and dragging on the caption bar. These events are not generated by programmatic manipulation of the form, for example by changing the <xref:System.Windows.Forms.Form.Size%2A> or <xref:System.Windows.Forms.Control.Location%2A> properties.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5057,7 +5057,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
   
  The <xref:System.Windows.Forms.Form.ResizeEnd> event is also generated after the user moves a form, typically by clicking and dragging on the caption bar. This event is not generated by programmatic manipulation of the form, for example by changing the <xref:System.Windows.Forms.Form.Size%2A> or <xref:System.Windows.Forms.Control.Location%2A> properties.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5789,7 +5789,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
 ## Remarks  
  The <xref:System.Windows.Forms.Form.Shown> event is only raised the first time a form is displayed; subsequently minimizing, maximizing, restoring, hiding, showing, or invalidating and repainting will not raise this event. For more information about the order of events of a form, see [Order of Events in Windows Forms](~/docs/framework/winforms/order-of-events-in-windows-forms.md).  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

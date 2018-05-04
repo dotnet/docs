@@ -109,7 +109,6 @@ The following tokens are reserved as keywords for future expansion of the F# lan
 * `eager`
 * `event`
 * `external`
-* `fixed`
 * `functor`
 * `include`
 * `method`

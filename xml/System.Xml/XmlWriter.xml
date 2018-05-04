@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlWriter> class writes XML data to a stream, file, text reader, or string. It supports the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](http://www.w3.org/TR/2006/REC-xml-20060816/) and [Namespaces in XML 1.0 (third edition)](http://www.w3.org/TR/REC-xml-names/) recommendations.  
+ The <xref:System.Xml.XmlWriter> class writes XML data to a stream, file, text reader, or string. It supports the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](https://www.w3.org/TR/2006/REC-xml-20060816/) and [Namespaces in XML 1.0 (third edition)](https://www.w3.org/TR/REC-xml-names/) recommendations.  
   
  The members of the <xref:System.Xml.XmlWriter> class enable you to:  
   
@@ -308,7 +308,7 @@ async Task TestWriter(Stream stream)
   
 -   Add features to an existing XML writer. The <xref:System.Xml.XmlWriter.Create%2A> method can accept another <xref:System.Xml.XmlWriter> object. The underlying <xref:System.Xml.XmlWriter> object does not have to be an XML writer created by the static <xref:System.Xml.XmlWriter.Create%2A> method. For example, you can specify a user-defined XML writer to add additional features to.  
   
--   Take full advantage of features such as better conformance checking and compliance to the [XML 1.0 recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/) that are available only on <xref:System.Xml.XmlWriter> objects created by the static <xref:System.Xml.XmlWriter.Create%2A> method.  
+-   Take full advantage of features such as better conformance checking and compliance to the [XML 1.0 recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/) that are available only on <xref:System.Xml.XmlWriter> objects created by the static <xref:System.Xml.XmlWriter.Create%2A> method.  
   
  If you use a <xref:System.Xml.XmlWriter.Create%2A> overload that doesn't accept an <xref:System.Xml.XmlWriterSettings> object, the following default writer settings are used:  
   
@@ -1636,7 +1636,7 @@ async Task TestWriter(Stream stream)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For example, the byte buffer may contain the binary contents of a GIF image. This clearly would not be valid XML. The `Base64` encoding is designed to represent arbitrary byte sequences in a text form comprised of the 65 US-ASCII characters ([A-Za-z0-9+/=]) where each character encodes 6 bits of the binary data. For more information, see Requests for Comments (RFC) 1521 located on the Request for Comments Web site at http://www.rfc-editor.org/.  
+ For example, the byte buffer may contain the binary contents of a GIF image. This clearly would not be valid XML. The `Base64` encoding is designed to represent arbitrary byte sequences in a text form comprised of the 65 US-ASCII characters ([A-Za-z0-9+/=]) where each character encodes 6 bits of the binary data. For more information, see Requests for Comments (RFC) 1521 located on the [Request for Comments Web site](https://www.rfc-editor.org).  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteBase64Async%2A>.  
   

@@ -211,14 +211,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the XML writer should check to ensure that all characters in the document conform to the "2.2 Characters" section of the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/REC-xml/#charsets).</summary>
+        <summary>Gets or sets a value that indicates whether the XML writer should check to ensure that all characters in the document conform to the "2.2 Characters" section of the W3C [XML 1.0 Recommendation](https://www.w3.org/TR/REC-xml/#charsets).</summary>
         <value>
           <see langword="true" /> to do character checking; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Xml.XmlWriter> object supports character checking, it throws an exception if any characters are outside the range of legal XML characters specified by the "2.2 Characters" section of the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/REC-xml/#charsets).  
+ If the <xref:System.Xml.XmlWriter> object supports character checking, it throws an exception if any characters are outside the range of legal XML characters specified by the "2.2 Characters" section of the W3C [XML 1.0 Recommendation](https://www.w3.org/TR/REC-xml/#charsets).  
   
  Character checking does not include checking for illegal characters in XML names or checking that all XML names are valid. These checks are part of conformance checking and are always performed.  
   
@@ -356,8 +356,8 @@
   
 |Setting|Description|  
 |-------------|-----------------|  
-|<xref:System.Xml.ConformanceLevel.Document>|Ensures that the XML output conforms to the [rules for a well-formed XML 1.0 document](http://www.w3.org/TR/REC-xml/#sec-well-formed) and can be processed by any conforming processor.<br /><br /> The document conformance checks include most of the fragment-level checks and also ensure the following:<br /><br /> -   The top-level item doesn't have any nodes other than XML Declaration, DTD, element, comment, white space, or processing instruction.<br />-   The XML data has one and only one top-level element node.<br /><br /> The XML writer doesn't parse DTD information that is written. The user is responsible for ensuring that the DTD is well-formed.|  
-|<xref:System.Xml.ConformanceLevel.Fragment>|Ensures that the XML output conforms to the [rules for a well-formed XML 1.0 document fragment](http://www.w3.org/TR/REC-xml/#wf-entities).<br /><br /> This setting accepts XML data that has multiple root elements or text nodes at the top level. This level of checking ensures that any processor can consume the stream being read as an XML 1.0 external parsed entity.<br /><br /> DTD information isn't allowed in document fragments.|  
+|<xref:System.Xml.ConformanceLevel.Document>|Ensures that the XML output conforms to the [rules for a well-formed XML 1.0 document](https://www.w3.org/TR/REC-xml/#sec-well-formed) and can be processed by any conforming processor.<br /><br /> The document conformance checks include most of the fragment-level checks and also ensure the following:<br /><br /> -   The top-level item doesn't have any nodes other than XML Declaration, DTD, element, comment, white space, or processing instruction.<br />-   The XML data has one and only one top-level element node.<br /><br /> The XML writer doesn't parse DTD information that is written. The user is responsible for ensuring that the DTD is well-formed.|  
+|<xref:System.Xml.ConformanceLevel.Fragment>|Ensures that the XML output conforms to the [rules for a well-formed XML 1.0 document fragment](https://www.w3.org/TR/REC-xml/#wf-entities).<br /><br /> This setting accepts XML data that has multiple root elements or text nodes at the top level. This level of checking ensures that any processor can consume the stream being read as an XML 1.0 external parsed entity.<br /><br /> DTD information isn't allowed in document fragments.|  
 |<xref:System.Xml.ConformanceLevel.Auto>|Specifies that the XML writer should determine the level of conformance checking based on the incoming data. This setting can be useful when you don't know whether the generated XML will be a well-formed XML document or a fragment.<br /><br /> Document conformance checking is applied in the following cases:<br /><br /> -   If the <xref:System.Xml.XmlWriter.WriteStartDocument%2A> method is called.<br />-   If DTD information is written.<br /><br /> Fragment conformance checking is applied if the XML data contains one of these:<br /><br /> -   Text, CDATA, or EntityReference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when you try to write a text node and a DTD at the root level.<br /><br /> If you are wrapping another <xref:System.Xml.XmlWriter> object, the outer object doesn't do any additional conformance checking; this is left to the underlying object.|  
   
  If the XML writer detects any information that would violate the specified level of conformance, it throws an exception. In some cases, the XML writer automatically corrects the conformance error. For example, the writer closes an unclosed attribute without throwing an exception. The following table shows how various conformance violations are handled in each setting.  
@@ -745,7 +745,7 @@ using (StreamWriter output =
 > [!NOTE]
 >  The <xref:System.Xml.XmlWriter> has the following behavior when writing content within a CDATA section, comment, or processing instruction. New lines are never replaced with their character entities, even when the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property is set to <xref:System.Xml.NewLineHandling.Entitize>. This is because character entities are not recognized in CDATA sections, comments or processing instructions. If the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property is set to <xref:System.Xml.NewLineHandling.None> or <xref:System.Xml.NewLineHandling.Replace>, the behavior is the same as when writing a text node value.  
   
- The following table describes what a normalizing <xref:System.Xml.XmlReader> returns for each white space input. For more information, see sections 2.11 and 3.3.3 of the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/REC-xml/).  
+ The following table describes what a normalizing <xref:System.Xml.XmlReader> returns for each white space input. For more information, see sections 2.11 and 3.3.3 of the W3C [XML 1.0 Recommendation](https://www.w3.org/TR/REC-xml/).  
   
 > [!NOTE]
 >  A normalizing reader is any <xref:System.Xml.XmlReader> object created by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method. These objects always perform line break normalization and full normalization of attributes. The <xref:System.Xml.XmlTextReader> object can also be a normalizing reader if it's <xref:System.Xml.XmlTextReader.Normalization%2A> property is set to `true`.  

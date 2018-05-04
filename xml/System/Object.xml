@@ -553,7 +553,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
  A hash code is a numeric value that is used to insert and identify an object in a hash-based collection such as the <xref:System.Collections.Generic.Dictionary%602> class, the <xref:System.Collections.Hashtable> class, or a type derived from the <xref:System.Collections.DictionaryBase> class. The <xref:System.Object.GetHashCode%2A> method provides this hash code for algorithms that need quick checks of object equality.  
   
 > [!NOTE]
->  For information about how hash codes are used in hash tables and for some additional hash code algorithms, see the [Hash Function](http://en.wikipedia.org/wiki/Hash_function) entry in Wikipedia.  
+>  For information about how hash codes are used in hash tables and for some additional hash code algorithms, see the [Hash Function](https://en.wikipedia.org/wiki/Hash_function) entry in Wikipedia.  
   
  Two objects that are equal return hash codes that are equal. However, the reverse is not true: equal hash codes do not imply object equality, because different (unequal) objects can have identical hash codes. Furthermore, the .NET Framework does not guarantee the default implementation of the <xref:System.Object.GetHashCode%2A> method, and the value this method returns may differ between .NET Framework versions and platforms, such as 32-bit and 64-bit platforms. For these reasons, do not use the default implementation of this method as a unique object identifier for hashing purposes. Two consequences follow from this:  
   

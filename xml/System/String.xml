@@ -137,30 +137,30 @@
   
 |.NET Framework version|Version of the Unicode Standard|  
 |----------------------------|-------------------------------------|  
-|[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](http://www.unicode.org/versions/Unicode4.0.0/)|  
+|[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](https://www.unicode.org/versions/Unicode4.0.0/)|  
 |The .NET Framework 2.0|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
-|[!INCLUDE[net_v45](~/includes/net-v45-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v451](~/includes/net-v451-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v452](~/includes/net-v452-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v46](~/includes/net-v46-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v461](~/includes/net-v461-md.md)]|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
-|[!INCLUDE[net_v462](~/includes/net-v462-md.md)]|[The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/)|  
-|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/)|
+|[!INCLUDE[net_v45](~/includes/net-v45-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
+|[!INCLUDE[net_v451](~/includes/net-v451-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
+|[!INCLUDE[net_v452](~/includes/net-v452-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
+|[!INCLUDE[net_v46](~/includes/net-v46-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
+|[!INCLUDE[net_v461](~/includes/net-v461-md.md)]|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
+|[!INCLUDE[net_v462](~/includes/net-v462-md.md)]|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/)|  
+|.NET Core (all versions)|[The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/)|
   
  In addition, the .NET Framework supports string comparison and sorting based on the Unicode standard. In versions of the .NET Framework through the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the .NET Framework maintains its own table of string data. This is also true of versions of the .NET Framework starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Windows 7. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on Window 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. The following table lists the versions of the .NET Framework and the versions of the Unicode Standard on which character comparison and sorting are based.  
   
 |.NET Framework version|Version of the Unicode Standard|  
 |----------------------------|-------------------------------------|  
-|[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](http://www.unicode.org/versions/Unicode4.0.0/)|  
+|[!INCLUDE[net_v11_long](~/includes/net-v11-long-md.md)]|[The Unicode Standard, Version 4.0.0](https://www.unicode.org/versions/Unicode4.0.0/)|  
 |The .NET Framework 2.0|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 7|[The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0)|  
-|[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)|  
+|[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|  
 
-In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of the Unicode Standard](http://www.unicode.org/versions/Unicode8.0.0/).
+In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of the Unicode Standard](https://www.unicode.org/versions/Unicode8.0.0/).
 
 <a name="EmbeddedNulls"></a>   
 ## Strings and embedded null characters  
@@ -435,7 +435,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
  [!code-csharp[System.String.Class#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Class/cs/normalize1.cs#14)]
  [!code-vb[System.String.Class#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Class/vb/normalize1.vb#14)]  
   
- For more information about normalization and normalization forms, see <xref:System.Text.NormalizationForm?displayProperty=nameWithType>, as well as [Unicode Standard Annex #15: Unicode Normalization Forms](http://unicode.org/reports/tr15/) and the [Normalization FAQ](http://www.unicode.org/faq/normalization.html) on the unicode.org website.  
+ For more information about normalization and normalization forms, see <xref:System.Text.NormalizationForm?displayProperty=nameWithType>, as well as [Unicode Standard Annex #15: Unicode Normalization Forms](https://unicode.org/reports/tr15/) and the [Normalization FAQ](https://www.unicode.org/faq/normalization.html) on the unicode.org website.  
   
 <a name="ByCategory"></a>   
 ## String operations by category  

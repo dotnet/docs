@@ -44,7 +44,7 @@
  To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.  
   
 > [!NOTE]
->  For some common regular expression patterns, see [Regular Expression Examples](~/docs/standard/base-types/regular-expression-examples.md). There are also a number of online libraries of regular expression patterns, such as the one at [Regular-Expressions.info](http://www.regular-expressions.info/examples.html).  
+>  For some common regular expression patterns, see [Regular Expression Examples](~/docs/standard/base-types/regular-expression-examples.md). There are also a number of online libraries of regular expression patterns, such as the one at [Regular-Expressions.info](https://www.regular-expressions.info/examples.html).  
   
 <a name="remarks"></a> For more information about using the <xref:System.Text.RegularExpressions.Regex> class, see the following sections in this topic:  
   
@@ -58,8 +58,8 @@
   
  For more information about the regular expression language, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:  
   
- [Quick Reference in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
- [Quick Reference in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
+ [Quick Reference in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+ [Quick Reference in PDF (.pdf) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
 <a name="regex_vs_string"></a>   
 ## Regex vs. String Methods  

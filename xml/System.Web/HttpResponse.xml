@@ -1683,7 +1683,7 @@
       </Parameters>
       <Docs>
         <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
-        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
+        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](https://http2.github.io/http2-spec/#PushResources).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1717,7 +1717,7 @@
         <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
         <param name="method">Http request method that would be used by the push request.</param>
         <param name="headers">Http request header that would be used by the push request.</param>
-        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
+        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](https://http2.github.io/http2-spec/#PushResources).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

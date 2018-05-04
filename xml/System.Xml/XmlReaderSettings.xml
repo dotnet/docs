@@ -264,9 +264,9 @@
 ## Remarks  
  This property instructs the XML reader to check characters in the XML data it's reading and throw an <xref:System.Xml.XmlException> if any characters are outside the range of legal XML characters. When character checking is enabled, you are ensured the following:  
   
--   Characters are within the range of legal XML characters, as defined by the [2.2 Characters](http://www.w3.org/TR/2006/REC-xml-20060816/#charsets) section of the W3C XML 1.0 Recommendation.  
+-   Characters are within the range of legal XML characters, as defined by the [2.2 Characters](https://www.w3.org/TR/2006/REC-xml-20060816/#charsets) section of the W3C XML 1.0 Recommendation.  
   
--   All XML names are valid, as defined by the [2.3 Common Syntactic Constructs](http://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) section of the W3C XML 1.0 Recommendation.  
+-   All XML names are valid, as defined by the [2.3 Common Syntactic Constructs](https://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) section of the W3C XML 1.0 Recommendation.  
   
  When this property is set to `true`, which is the default setting, an <xref:System.Xml.XmlException> exception is thrown if the XML file contains illegal characters or invalid XML names (for example, an element name starts with a number).  
   
@@ -394,7 +394,7 @@
 ## Remarks  
  XML readers that are created by the <xref:System.Xml.XmlReader.Create%2A> method meet the following compliance requirements by default:  
   
--   New lines and attribute value are normalized according to the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/).  
+-   New lines and attribute value are normalized according to the W3C [XML 1.0 Recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/).  
   
 -   All entities are automatically expanded.  
   
@@ -410,8 +410,8 @@
   
 |Setting|Description|  
 |-------------|-----------------|  
-|<xref:System.Xml.ConformanceLevel.Document>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document. This level of checking ensures that any processor can consume the stream being read as an [well-formed XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br /><br /> The reader checks for the following:<br /><br /> -   The top-level item must not have any nodes other than XML Declaration, document type definition (DTD), element, comment, white space, or processing instruction.<br />-   The XML data must have exactly one top-level element node.|  
-|<xref:System.Xml.ConformanceLevel.Fragment>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document fragment.<br /><br /> This setting accepts XML data with multiple root elements, or text nodes at the top-level. This level of checking ensures that any processor can consume the stream being read as an [external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).|  
+|<xref:System.Xml.ConformanceLevel.Document>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document. This level of checking ensures that any processor can consume the stream being read as an [well-formed XML 1.0 document](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br /><br /> The reader checks for the following:<br /><br /> -   The top-level item must not have any nodes other than XML Declaration, document type definition (DTD), element, comment, white space, or processing instruction.<br />-   The XML data must have exactly one top-level element node.|  
+|<xref:System.Xml.ConformanceLevel.Fragment>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document fragment.<br /><br /> This setting accepts XML data with multiple root elements, or text nodes at the top-level. This level of checking ensures that any processor can consume the stream being read as an [external parsed entity](https://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).|  
 |<xref:System.Xml.ConformanceLevel.Auto>|Specifies that the reader should determine the level of conformance checking based on the incoming data.<br /><br /> Document conformance checking is applied if the XML data contains DTD information.<br /><br /> Fragment conformance checking is applied if the XML data contains one of following:<br /><br /> -   Text, CDATA, or entity reference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when there is a text node and a DTD at the root level.<br /><br /> This setting can be used in wrapping scenarios when the <xref:System.Xml.XmlReader.Create%2A> method is used to add additional features to an existing <xref:System.Xml.XmlReader>. In this case, <xref:System.Xml.ConformanceLevel.Document?displayProperty=nameWithType> does not add any new conformance checking. Conformance checking is left to the <xref:System.Xml.XmlReader> that is being wrapped.|  
   
 > [!NOTE]
@@ -480,7 +480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Document type definition (DTD) validation is implemented by using the validity constraints defined in the W3C [Extensible Markup Language (XML) 1.0 (fourth edition) recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/). DTDs use a formal grammar to describe the structure and syntax of compliant XML documents; they specify the content and values allowed for the XML document.  
+ Document type definition (DTD) validation is implemented by using the validity constraints defined in the W3C [Extensible Markup Language (XML) 1.0 (fourth edition) recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/). DTDs use a formal grammar to describe the structure and syntax of compliant XML documents; they specify the content and values allowed for the XML document.  
   
  This property can have one of the following values:  
   

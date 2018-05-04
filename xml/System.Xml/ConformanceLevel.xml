@@ -105,12 +105,12 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The XML data complies with the rules for a well-formed [XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed), as defined by the W3C.</summary>
+        <summary>The XML data complies with the rules for a well-formed [XML 1.0 document](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed), as defined by the W3C.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This level of checking ensures that the stream being read or written can be consumed by any processor as an [XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).  
+ This level of checking ensures that the stream being read or written can be consumed by any processor as an [XML 1.0 document](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).  
   
  Document-level checks enforce fragment-level checks and also ensure the following:  
   
@@ -151,12 +151,12 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The XML data is a [well-formed XML fragment](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities), as defined by the W3C.</summary>
+        <summary>The XML data is a [well-formed XML fragment](https://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities), as defined by the W3C.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This conformance level represents an XML document that might not have a root element but is otherwise well-formed. This level of checking ensures that the stream being read or written can be consumed by any processor as an [XML 1.0 external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).  
+ This conformance level represents an XML document that might not have a root element but is otherwise well-formed. This level of checking ensures that the stream being read or written can be consumed by any processor as an [XML 1.0 external parsed entity](https://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).  
   
  ]]></format>
         </remarks>

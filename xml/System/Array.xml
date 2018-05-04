@@ -6657,11 +6657,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an[insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -6744,11 +6744,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -6834,11 +6834,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -6955,11 +6955,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7051,11 +7051,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7150,11 +7150,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7268,11 +7268,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7393,11 +7393,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7508,11 +7508,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7598,11 +7598,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7689,11 +7689,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7785,11 +7785,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7887,11 +7887,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -7998,11 +7998,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -8109,11 +8109,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -8230,11 +8230,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
@@ -8358,11 +8358,11 @@ int[,,] TDArray = new int[1,1,1];
   
  This method uses the introspective sort (introsort) algorithm as follows:  
   
--   If the partition size is fewer than 16 elements, it uses an [insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
+-   If the partition size is fewer than 16 elements, it uses an [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.  
   
--   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 * Log<sup>N</sup>, where  *N* is the range of the input array, it uses a [Heapsort](https://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
--   Otherwise, it uses a [Quicksort](http://en.wikipedia.org/wiki/Quicksort) algorithm.  
+-   Otherwise, it uses a [Quicksort](https://en.wikipedia.org/wiki/Quicksort) algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   

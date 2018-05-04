@@ -34,7 +34,7 @@
  The <xref:System.Xml.XmlConvert> class is functionally equivalent to the <xref:System.Convert> class, but it supports XML standards. The type system is based on the XML Schema definition language (XSD) schema type, and the values returned are always locale-independent.  
   
 ## Encoding and decoding  
- Element and attribute names or ID values are limited to a range of XML characters according to the W3C [XML 1.0 recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/). When names contain invalid characters, you can use the <xref:System.Xml.XmlConvert.EncodeName%2A> and <xref:System.Xml.XmlConvert.DecodeName%2A> methods in this class to translate them into valid XML names.  
+ Element and attribute names or ID values are limited to a range of XML characters according to the W3C [XML 1.0 recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/). When names contain invalid characters, you can use the <xref:System.Xml.XmlConvert.EncodeName%2A> and <xref:System.Xml.XmlConvert.DecodeName%2A> methods in this class to translate them into valid XML names.  
   
  For example, if you want to use the column heading "Order Detail" in a database, the database allows the space between the two words. However, in XML, the space between "Order" and "Detail" is considered an invalid XML character. You have to convert it into an escaped hexadecimal encoding and decode it later.  
   
@@ -55,7 +55,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 |<xref:System.Xml.XmlConvert.DecodeName%2A>|Reverses the transformation for all the encoding methods.|  
   
 ## Name validation  
- The <xref:System.Xml.XmlConvert> class contains two methods that check the characters in an element or attribute name and verify that the name conforms to the rules set by the W3C [XML 1.0 recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/):  
+ The <xref:System.Xml.XmlConvert> class contains two methods that check the characters in an element or attribute name and verify that the name conforms to the rules set by the W3C [XML 1.0 recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/):  
   
 -   <xref:System.Xml.XmlConvert.VerifyName%2A> checks the characters and verifies that the name is valid. The method returns the name if it's valid, and throws an exception if it isn't.  
   
@@ -258,7 +258,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
  This method translates invalid characters, such as spaces or half-width Katakana, that need to be mapped to XML names without the support or presence of schemas. The invalid characters are translated into escaped numeric entity encodings.  
   
- The escape character is "_". Any XML name character that does not conform to the [XML 1.0 spec (fourth edition) recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/) is escaped as _xHHHH\_. The HHHH string stands for the four-digit hexadecimal UCS-2 code for the character in most significant bit first order. For example, the name Order Details is encoded as Order_x0020_Details.  
+ The escape character is "_". Any XML name character that does not conform to the [XML 1.0 spec (fourth edition) recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/) is escaped as _xHHHH\_. The HHHH string stands for the four-digit hexadecimal UCS-2 code for the character in most significant bit first order. For example, the name Order Details is encoded as Order_x0020_Details.  
   
  The underscore character does not need to be escaped unless it is followed by a character sequence that together with the underscore can be misinterpreted as an escape sequence when decoding the name. For example, Order_Details is not encoded, but Order_x0020_ is encoded as Order_x005f_x0020_. No shortforms are allowed. For example, the forms _x20\_ and __ are not generated.  
   

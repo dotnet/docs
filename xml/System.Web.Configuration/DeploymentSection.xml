@@ -91,7 +91,7 @@
  When <xref:System.Web.Configuration.DeploymentSection.Retail%2A> is `true`, ASP.NET disables trace output, disables debug capabilities, and disables detailed system-generated error messages for remote users. For applications that have a `customErrors` element in the application Web.config file, the `mode` attribute is forced to `On`. These settings override any settings that are made in application Web.config files.  
   
 > [!NOTE]
->  When you use the `retail` setting, you should continue to set the `debug` attribute to `false` in application Web.config files that are deployed to the server. The `debug` setting disables request execution timeout, and this is not overridden by the `retail` setting. For more information, see. [Most Common ASP.NET Support issues - Reporting from deep inside Microsoft Developer Support](http://www.hanselman.com/blog/MostCommonASPNETSupportIssuesReportingFromDeepInsideMicrosoftDeveloperSupport.aspx) on Scott Hanselman's blog.  
+>  When you use the `retail` setting, you should continue to set the `debug` attribute to `false` in application Web.config files that are deployed to the server. The `debug` setting disables request execution timeout, and this is not overridden by the `retail` setting. For more information, see. [Most Common ASP.NET Support issues - Reporting from deep inside Microsoft Developer Support](https://www.hanselman.com/blog/MostCommonASPNETSupportIssuesReportingFromDeepInsideMicrosoftDeveloperSupport.aspx) on Scott Hanselman's blog.  
   
    
   

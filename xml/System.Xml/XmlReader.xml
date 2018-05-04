@@ -43,7 +43,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Xml.XmlReader> provides forward-only, read-only access to XML data in a document or stream. This class conforms to the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](http://www.w3.org/TR/2006/REC-xml-20060816/) and the [Namespaces in XML 1.0 (third edition)](http://www.w3.org/TR/REC-xml-names/) recommendations.  
+ <xref:System.Xml.XmlReader> provides forward-only, read-only access to XML data in a document or stream. This class conforms to the W3C [Extensible Markup Language (XML) 1.0 (fourth edition)](https://www.w3.org/TR/2006/REC-xml-20060816/) and the [Namespaces in XML 1.0 (third edition)](https://www.w3.org/TR/REC-xml-names/) recommendations.  
   
  <xref:System.Xml.XmlReader> methods let you move through XML data and read the contents of a node. The properties of the class reflect the value of the current node, which is where the reader is positioned.The <xref:System.Xml.XmlReader.ReadState%2A> property value indicates the current state of the XML reader. For example, the property is set to <xref:System.Xml.ReadState.Initial?displayProperty=nameWithType> by the <xref:System.Xml.XmlReader.Read%2A?displayProperty=nameWithType> method and <xref:System.Xml.ReadState.Closed?displayProperty=nameWithType> by the <xref:System.Xml.XmlReader.Close%2A?displayProperty=nameWithType> method. <xref:System.Xml.XmlReader> also provides data conformance checks and validation against a DTD or schema.  
   
@@ -88,7 +88,7 @@
   
 <a name="xmlreader_validate"></a>   
 ## Validating XML data  
- To define the structure of an XML document and its element relationships, data types, and content constraints, you use a document type definition (DTD) or XML Schema definition language (XSD) schema. An XML document is considered to be well formed if it meets all the syntactical requirements defined by the [W3C XML 1.0 Recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/). It's considered valid if it's well formed and also conforms to the constraints defined by its DTD or schema. (See the [W3C XML Schema Part 1: Structures](http://www.w3.org/TR/xmlschema-1/) and the [W3C XML Schema Part 2: Datatypes](http://www.w3.org/TR/xmlschema-2/)recommendations.) Therefore, although all valid XML documents are well formed, not all well-formed XML documents are valid.  
+ To define the structure of an XML document and its element relationships, data types, and content constraints, you use a document type definition (DTD) or XML Schema definition language (XSD) schema. An XML document is considered to be well formed if it meets all the syntactical requirements defined by the [W3C XML 1.0 Recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/). It's considered valid if it's well formed and also conforms to the constraints defined by its DTD or schema. (See the [W3C XML Schema Part 1: Structures](https://www.w3.org/TR/xmlschema-1/) and the [W3C XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/)recommendations.) Therefore, although all valid XML documents are well formed, not all well-formed XML documents are valid.  
   
  You can validate the data against a DTD, an inline XSD Schema, or an XSD Schema stored in an <xref:System.Xml.Schema.XmlSchemaSet> object (a cache); these scenarios are described on the <xref:System.Xml.XmlReader.Create%2A> reference page. <xref:System.Xml.XmlReader> doesn't support XML-Data Reduced (XDR) schema validation.  
   
@@ -107,7 +107,7 @@
 ## Data conformance  
  XML readers that are created by the <xref:System.Xml.XmlReader.Create%2A> method meet the following compliance requirements by default:  
   
--   New lines and attribute value are normalized according to the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/).  
+-   New lines and attribute value are normalized according to the W3C [XML 1.0 Recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/).  
   
 -   All entities are automatically expanded.  
   
@@ -121,8 +121,8 @@
   
 |Use this <xref:System.Xml.XmlReaderSettings> property|To|Default|  
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------|  
-|<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> property|Enable or disable checks for the following:<br /><br /> -   Characters are within the range of legal XML characters, as defined by the [2.2 Characters](http://www.w3.org/TR/2006/REC-xml-20060816/#charsets) section of the W3C XML 1.0 Recommendation.<br />-   All XML names are valid, as defined by the [2.3 Common Syntactic Constructs](http://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) section of the W3C XML 1.0 Recommendation.<br /><br /> When this property is set to `true` (default), an <xref:System.Xml.XmlException> exception is thrown if the XML file contains illegal characters or invalid XML names (for example, an element name starts with a number).|Character and name checking is enabled.<br /><br /> Setting <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> to `false` turns off character checking for character entity references. If the reader is processing text data, it always checks that XML names are valid, regardless of this setting. **Note:**  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel.Fragment?displayProperty=nameWithType>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.|  
-|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property|Choose the level of conformance to enforce:<br /><br /> -   <xref:System.Xml.ConformanceLevel.Document>. Conforms to the rules for a [well-formed XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br />-   <xref:System.Xml.ConformanceLevel.Fragment>. Conforms to the rules for a well-formed document fragment that can be consumed as an [external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).<br />-   <xref:System.Xml.ConformanceLevel.Auto>. Conforms to the level decided by the reader.<br /><br /> If the data isn't in conformance, an <xref:System.Xml.XmlException> exception is thrown.|<xref:System.Xml.ConformanceLevel.Document>|  
+|<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> property|Enable or disable checks for the following:<br /><br /> -   Characters are within the range of legal XML characters, as defined by the [2.2 Characters](https://www.w3.org/TR/2006/REC-xml-20060816/#charsets) section of the W3C XML 1.0 Recommendation.<br />-   All XML names are valid, as defined by the [2.3 Common Syntactic Constructs](https://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) section of the W3C XML 1.0 Recommendation.<br /><br /> When this property is set to `true` (default), an <xref:System.Xml.XmlException> exception is thrown if the XML file contains illegal characters or invalid XML names (for example, an element name starts with a number).|Character and name checking is enabled.<br /><br /> Setting <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> to `false` turns off character checking for character entity references. If the reader is processing text data, it always checks that XML names are valid, regardless of this setting. **Note:**  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel.Fragment?displayProperty=nameWithType>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.|  
+|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property|Choose the level of conformance to enforce:<br /><br /> -   <xref:System.Xml.ConformanceLevel.Document>. Conforms to the rules for a [well-formed XML 1.0 document](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br />-   <xref:System.Xml.ConformanceLevel.Fragment>. Conforms to the rules for a well-formed document fragment that can be consumed as an [external parsed entity](https://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).<br />-   <xref:System.Xml.ConformanceLevel.Auto>. Conforms to the level decided by the reader.<br /><br /> If the data isn't in conformance, an <xref:System.Xml.XmlException> exception is thrown.|<xref:System.Xml.ConformanceLevel.Document>|  
   
 <a name="xmlreader_nodes"></a>   
 ## Navigating through nodes  
@@ -146,7 +146,7 @@
  The following table lists the methods and properties that the <xref:System.Xml.XmlReader> class provides for processing elements. After the <xref:System.Xml.XmlReader> is positioned on an element, the node properties, such as <xref:System.Xml.XmlReader.Name%2A>, reflect the element values. In addition to the members described below, any of the general methods and properties of the <xref:System.Xml.XmlReader> class can also be used to process elements. For example, you can use the <xref:System.Xml.XmlReader.ReadInnerXml%2A> method to read the contents of an element.  
   
 > [!NOTE]
->  See section 3.1 of the [W3C XML 1.0 Recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-starttags) for definitions of start tags, end tags, and empty element tags.  
+>  See section 3.1 of the [W3C XML 1.0 Recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-starttags) for definitions of start tags, end tags, and empty element tags.  
   
 |Use this <xref:System.Xml.XmlReader> member|To|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------|--------|  
@@ -226,7 +226,7 @@
   
 -   The **ReadContentAs** methods read the text content at the current reader position, and if the XML data doesn't have any schema or data type information associated with it, convert the text content to the requested return type. Text, white space, significant white space and CDATA sections are concatenated. Comments and processing instructions are skipped, and entity references are automatically resolved.  
   
- The <xref:System.Xml.XmlReader> class uses the rules defined by the [W3C XML Schema Part 2: Datatypes](http://www.w3.org/TR/xmlschema-2/)recommendation.  
+ The <xref:System.Xml.XmlReader> class uses the rules defined by the [W3C XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/)recommendation.  
   
 |Use this <xref:System.Xml.XmlReader> method|To return this CLR type|  
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|  
@@ -675,7 +675,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
   
 -   Add features to an existing XML reader. The <xref:System.Xml.XmlReader.Create%2A> method can accept another <xref:System.Xml.XmlReader> object. The underlying <xref:System.Xml.XmlReader> object can be a user-defined reader, a <xref:System.Xml.XmlTextReader> object, or another <xref:System.Xml.XmlReader> instance that you want to add additional features to.  
   
--   Take full advantage of features such as better conformance checking and compliance to the [XML 1.0 (fourth edition)](http://www.w3.org/TR/2006/REC-xml-20060816/)recommendation that are available only on <xref:System.Xml.XmlReader> objects created by the static <xref:System.Xml.XmlReader.Create%2A> method.  
+-   Take full advantage of features such as better conformance checking and compliance to the [XML 1.0 (fourth edition)](https://www.w3.org/TR/2006/REC-xml-20060816/)recommendation that are available only on <xref:System.Xml.XmlReader> objects created by the static <xref:System.Xml.XmlReader.Create%2A> method.  
   
 > [!NOTE]
 >  Although the .NET Framework includes concrete implementations of the <xref:System.Xml.XmlReader> class, such as the <xref:System.Xml.XmlTextReader>, <xref:System.Xml.XmlNodeReader>, and the <xref:System.Xml.XmlValidatingReader> classes, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A> method.  

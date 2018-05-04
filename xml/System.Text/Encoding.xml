@@ -4721,7 +4721,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  Note that <xref:System.Text.Encoding.WebName%2A> returns an IANA-registered name for the encoding. When its value is the name of a standard, the implementation of the encoding might not conform in full to that standard. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for email headers. However, most apps should use <xref:System.Text.Encoding.WebName%2A> instead.  
   
- For more information on the IANA, go to [www.iana.org](http://www.iana.org/).  
+ For more information on the IANA, go to [www.iana.org](https://www.iana.org/).  
   
  The <xref:System.Text.Encoding.WebName%2A?displayProperty=nameWithType> is the same as the <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> returned by <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType>. Some of the web names are duplicates; see the remarks for <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> for more information.  
   

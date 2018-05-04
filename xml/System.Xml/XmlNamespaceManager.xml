@@ -60,7 +60,7 @@
   
  You can supply the <xref:System.Xml.XmlNamespaceManager> object as a parameter to the <xref:System.Xml.XmlNode.SelectNodes%2A> or <xref:System.Xml.XmlNode.SelectSingleNode%2A> method of the <xref:System.Xml.XmlDocument> class to execute XPath query expressions that reference namespace-qualified element and attribute names.  
   
- The namespace manager assumes that prefixes and namespaces have already been verified and conform to the [W3C Namespaces](http://www.w3.org/TR/REC-xml-names/) specification. The namespace manager does not perform any validation.  
+ The namespace manager assumes that prefixes and namespaces have already been verified and conform to the [W3C Namespaces](https://www.w3.org/TR/REC-xml-names/) specification. The namespace manager does not perform any validation.  
   
  The namespace manager atomizes the strings when they are added by using the <xref:System.Xml.XmlNamespaceManager.AddNamespace%2A> method and when a lookup is performed by using the <xref:System.Xml.XmlNamespaceManager.LookupNamespace%2A> or <xref:System.Xml.XmlNamespaceManager.LookupPrefix%2A> method.  
   
@@ -220,7 +220,7 @@ while (reader.Read())
 ## Remarks  
  <xref:System.Xml.XmlNamespaceManager> does not check `prefix` and `uri` for conformance.  
   
- <xref:System.Xml.XmlReader> checks names, including prefixes and namespaces, to ensure they are valid XML names according to the World Wide Web Consortium (W3C) [Namespaces specification](http://www.w3.org/TR/REC-xml-names/). <xref:System.Xml.XmlNamespaceManager> is used internally by <xref:System.Xml.XmlReader>, so to avoid a duplication of efforts, <xref:System.Xml.XmlNamespaceManager> assumes all prefixes and namespaces are valid.  
+ <xref:System.Xml.XmlReader> checks names, including prefixes and namespaces, to ensure they are valid XML names according to the World Wide Web Consortium (W3C) [Namespaces specification](https://www.w3.org/TR/REC-xml-names/). <xref:System.Xml.XmlNamespaceManager> is used internally by <xref:System.Xml.XmlReader>, so to avoid a duplication of efforts, <xref:System.Xml.XmlNamespaceManager> assumes all prefixes and namespaces are valid.  
   
  If the prefix and namespace already exist within the current scope, the new prefix and namespace pair will replace the existing prefix/namespace combination. The same prefix and namespace combination can exist across different scopes.  
   
@@ -447,7 +447,7 @@ Loop
  To determine whether there is a default empty namespace defined, set `prefix` to String.Empty. A return value of `true` indicates that there is a default namespace defined in the current scope; `false` indicates that no default namespace is defined.  
   
 > [!NOTE]
->  xmlns:x= "" is illegal according to the [W3C Namespaces](http://www.w3.org/TR/REC-xml-names/) recommendation.  
+>  xmlns:x= "" is illegal according to the [W3C Namespaces](https://www.w3.org/TR/REC-xml-names/) recommendation.  
   
    
   

@@ -3086,7 +3086,7 @@ abc<tag/>
 > [!NOTE]
 >  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- Like <xref:System.Xml.XmlTextReader.ReadChars%2A>, this method can be called successively to read large streams of embedded text. It decodes Base64 content and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. See RFC 1521. (You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org)  
+ Like <xref:System.Xml.XmlTextReader.ReadChars%2A>, this method can be called successively to read large streams of embedded text. It decodes Base64 content and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. See RFC 1521. (You can obtain RFCs from the [Request for Comments Web site](https://www.rfc-editor.org).)  
   
    
   
@@ -3335,7 +3335,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 > [!NOTE]
 >  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- This method streams the content, decodes the `Base64` content, and returns the decoded binary bytes (for example, an inline `Base64`-encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
+ This method streams the content, decodes the `Base64` content, and returns the decoded binary bytes (for example, an inline `Base64`-encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](https://www.rfc-editor.org).  
   
 > [!NOTE]
 >  You should not access any of the reader properties between calls to the <xref:System.Xml.XmlTextReader.ReadContentAsBase64%2A> method until the method returns the value 0.  
@@ -3470,7 +3470,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 > [!NOTE]
 >  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- This method reads the element content, decodes it using Base64 encoding, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
+ This method reads the element content, decodes it using Base64 encoding, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](https://www.rfc-editor.org).  
   
  This method can only read simple-content elements. The element can contain text, white space, significant white space, CDATA sections, comments and processing instructions. It can also contain entity references, which are automatically expanded. The element cannot have child elements.  
   

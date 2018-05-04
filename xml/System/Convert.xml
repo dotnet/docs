@@ -1000,7 +1000,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
- If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
+ If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [https://www.rfc-editor.org/](https://www.rfc-editor.org/).  
   
    
   
@@ -1165,7 +1165,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
- If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). Because line breaks are considered whitespace characters in a base-64 encoding, they are ignored when converting a base-64 encoded string back to a byte array. The line breaks are simply convenient when displaying the encoded string to a control or a device such as a console window. For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
+ If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). Because line breaks are considered whitespace characters in a base-64 encoding, they are ignored when converting a base-64 encoded string back to a byte array. The line breaks are simply convenient when displaying the encoded string to a control or a device such as a console window. For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [https://www.rfc-editor.org/](https://www.rfc-editor.org/).  
   
    
   
@@ -1336,7 +1336,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
- If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
+ If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [https://www.rfc-editor.org/](https://www.rfc-editor.org/).  
   
    
   

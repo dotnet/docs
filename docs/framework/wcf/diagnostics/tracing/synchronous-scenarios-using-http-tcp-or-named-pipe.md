@@ -49,7 +49,7 @@ This topic describes the activities and transfers for different synchronous requ
  The only difference with the previous scenario is that a SOAP fault message is returned as a response message. If `propagateActivity`=`true`, the activity ID of the request message is added to the SOAP fault message.  
   
 ## Synchronous One-Way without Errors  
- The only difference with the first scenario is that no message is returned to the server. For HTTP-based protocols, a status (valid or error) is still returned to the client. This is because HTTP is the only protocol with a request-response semantics that is part of the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] protocol stack. Because TCP processing is hidden from [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)], no acknowledgement is sent to the client.  
+ The only difference with the first scenario is that no message is returned to the server. For HTTP-based protocols, a status (valid or error) is still returned to the client. This is because HTTP is the only protocol with a request-response semantics that is part of the WCF protocol stack. Because TCP processing is hidden from WCF, no acknowledgement is sent to the client.  
   
 ## Synchronous One-Way with Errors  
  If an error occurs while processing the message (Q or beyond), no notification is returned to the client. This is identical to the "Synchronous One-Way without Errors" scenario. You should not use a One-Way scenario if you want to receive an error message.  

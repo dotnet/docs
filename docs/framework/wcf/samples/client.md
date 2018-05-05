@@ -8,10 +8,10 @@ This section contains samples that demonstrate Windows Communication Foundation 
   
 ## In This Section  
  [Client Interoperability](../../../../docs/framework/wcf/samples/client-interoperability.md)  
- Demonstrates interoperability between [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and other technologies.  
+ Demonstrates interoperability between WCF and other technologies.  
   
  [Address Headers](../../../../docs/framework/wcf/samples/address-headers.md)  
- Demonstrates how clients can pass reference parameters to a service using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates how clients can pass reference parameters to a service using WCF.  
   
  [Channel Factory](../../../../docs/framework/wcf/samples/channel-factory.md)  
  Demonstrates how a client application can create a channel with the <xref:System.ServiceModel.ChannelFactory> class instead of a generated client.  

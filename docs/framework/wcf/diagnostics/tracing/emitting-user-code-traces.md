@@ -60,9 +60,9 @@ Trace.CorrelationManager.ActivityId = oldID;
  If you set the `propagateActivity` attribute to `true` for the `System.ServiceModel` trace source in both the client and service configuration files, the service processing for the Add request occurs in the same activity as the one defined in the client. If the service defines its own activities and transfers, the service traces do not appear in the client-propagated activity. Instead, they appear in an activity correlated by transfer traces to the activity whose ID is propagated by the client.  
   
 > [!NOTE]
->  If the `propagateActivity` attribute is set to `true` on both the client and service, the ambient activity in the operation scope of the service is set by [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)].  
+>  If the `propagateActivity` attribute is set to `true` on both the client and service, the ambient activity in the operation scope of the service is set by WCF.  
   
- You can use the following code to check whether an activity was set in scope by [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)].  
+ You can use the following code to check whether an activity was set in scope by WCF.  
   
 ```  
 // Check if an activity was set in scope by WCF, if it was   
@@ -130,7 +130,7 @@ Errors across endpoints for a given request appear in the same activity if the r
  ![Using Trace Viewer to emit user&#45;code traces](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace3.gif "e2eTrace3")  
 Graph view of error correlation  
   
- To obtain the previous traces, we set `ActivityTracing` for the user trace sources and `propagateActivity=true` for the `System.ServiceModel` trace source. We did not set `ActivityTracing` for the `System.ServiceModel` trace source to enable user code to user code activity propagation. (When ServiceModel activity tracing is on, the activity ID defined in the client is not propagated all the way to the service user code; Transfers, however, correlate the client and service user code activities to the intermediate [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] activities.)  
+ To obtain the previous traces, we set `ActivityTracing` for the user trace sources and `propagateActivity=true` for the `System.ServiceModel` trace source. We did not set `ActivityTracing` for the `System.ServiceModel` trace source to enable user code to user code activity propagation. (When ServiceModel activity tracing is on, the activity ID defined in the client is not propagated all the way to the service user code; Transfers, however, correlate the client and service user code activities to the intermediate WCF activities.)  
   
  Defining activities and propagating the activity ID enables us to perform direct error correlation across endpoints. In this way, we can locate the root cause of an error more quickly.  
   

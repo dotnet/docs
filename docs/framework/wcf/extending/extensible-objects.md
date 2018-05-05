@@ -51,7 +51,7 @@ where T : IExtensibleObject<T>
   
 -   <xref:System.ServiceModel.OperationContext> – This class represents the operation information that the runtime gathers for each operation.  This includes information such as the incoming message headers, the incoming message properties, the incoming security identity, and other information.  Extensions of this class can either extend the behavior of <xref:System.ServiceModel.OperationContext> or store the state for each operation.  
   
--   <xref:System.ServiceModel.IContextChannel> – This interface allows for the inspection of each state for the channels and proxies built by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime.  Extensions of this class can either extend the behavior of <xref:System.ServiceModel.IClientChannel> or can use it to store the state for each channel.  
+-   <xref:System.ServiceModel.IContextChannel> – This interface allows for the inspection of each state for the channels and proxies built by the WCF runtime.  Extensions of this class can either extend the behavior of <xref:System.ServiceModel.IClientChannel> or can use it to store the state for each channel.  
   
 -  
   

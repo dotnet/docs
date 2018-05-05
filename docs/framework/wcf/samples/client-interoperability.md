@@ -8,7 +8,7 @@ This section contains samples that demonstrate interoperability between Windows 
   
 ## In This Section  
  [Interoperating with ASMX Web Services](../../../../docs/framework/wcf/samples/interoperating-with-asmx-web-services.md)  
- Demonstrates how to integrate a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application with an existing ASMX Web service.  
+ Demonstrates how to integrate a WCF client application with an existing ASMX Web service.  
   
  [XMLSerializer Sample](../../../../docs/framework/wcf/samples/xmlserializer-sample.md)  
  Demonstrates how to serialize and deserialize types that are compatible with the <xref:System.Xml.Serialization.XmlSerializer>.

@@ -11,10 +11,10 @@ This set of topics describes how to set up services that are required to run a W
   
 ## In This Section  
  [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
- Outlines the steps for setting up the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples.  
+ Outlines the steps for setting up the WCF samples.  
   
  [Firewall Instructions](../../../../docs/framework/wcf/samples/firewall-instructions.md)  
- Outlines the steps required to set up the Windows Firewall to allow [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to function.  
+ Outlines the steps required to set up the Windows Firewall to allow WCF services to function.  
   
  [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md)  
  Outlines the steps required to set up IIS.  
@@ -26,10 +26,10 @@ This set of topics describes how to set up services that are required to run a W
  Outlines the steps required to create a virtual directory.  
   
  [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)  
- Outlines the steps for building the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples.  
+ Outlines the steps for building the WCF samples.  
   
  [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md)  
- Outlines the steps for running the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples on the same machine and across machines.  
+ Outlines the steps for running the WCF samples on the same machine and across machines.  
   
  [Enabling Peer to Peer Services](http://msdn.microsoft.com/library/e7a0fcf4-b0e5-4b26-a7e3-f0f37b60a1f9)  
  Outlines the steps to install the Windows Peer-to-Peer component, the built-in resolver for peer-to-peer messaging services.  

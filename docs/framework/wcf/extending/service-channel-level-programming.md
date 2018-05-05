@@ -23,7 +23,7 @@ This topic describes how to write a Windows Communication Foundation (WCF) servi
 5.  Close all channel objects.  
   
 #### Creating a Binding  
- The first step in listening for and receiving messages is creating a binding. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ships with several built-in or system-provided bindings that can be used directly by instantiating one of them. In addition, you can also create your own custom binding by instantiating a CustomBinding class which is what the code in listing 1 does.  
+ The first step in listening for and receiving messages is creating a binding. WCF ships with several built-in or system-provided bindings that can be used directly by instantiating one of them. In addition, you can also create your own custom binding by instantiating a CustomBinding class which is what the code in listing 1 does.  
   
  The code example below creates an instance of <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> and adds an <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType> to its Elements collection which is a collection of binding elements that are used to build the channel stack. In this example, because the elements collection has only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement>, the resulting channel stack has only the HTTP transport channel.  
   

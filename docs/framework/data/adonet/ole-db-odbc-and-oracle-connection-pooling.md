@@ -22,8 +22,6 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
   
  To enable or disable connection pooling, open **ODBC Data Source Administrator** in the Administrative Tools folder of Control Panel. The **Connection Pooling** tab allows you to specify connection pooling parameters for each ODBC driver installed. Note that connection pooling changes for a specific ODBC driver affect all applications that use that ODBC driver.  
   
- For more information on ODBC connection pooling, see [INFO: Frequently Asked Questions About ODBC Connection Pooling](http://support.microsoft.com/kb/169470).  
-  
 ## Connection Pooling for OracleClient  
  The .NET Framework Data Provider for Oracle provides connection pooling automatically for your ADO.NET client application. You can also supply several connection string modifiers to control connection pooling behavior (see "Controlling Connection Pooling with Connection String Keywords," later in this topic).  
   

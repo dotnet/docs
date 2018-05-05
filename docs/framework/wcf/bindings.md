@@ -10,13 +10,13 @@ Bindings specify how a Windows Communication Foundation (WCF) service endpoint c
   
 ## In This Section  
  [WCF Bindings Overview](../../../docs/framework/wcf/bindings-overview.md)  
- Overview of what [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] bindings do, what bindings the system provides, and how you can define or modify them.  
+ Overview of what WCF bindings do, what bindings the system provides, and how you can define or modify them.  
   
  [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)  
- A list of bindings included with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]. These bindings cover the majority of security and message pattern requirements.  
+ A list of bindings included with WCF. These bindings cover the majority of security and message pattern requirements.  
   
  [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- A [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] binding contains important information that clients must use to connect to service endpoints.  
+ A WCF binding contains important information that clients must use to connect to service endpoints.  
   
  [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)  
  Configuration enables administrators and installers to customize the bindings for service endpoints.  

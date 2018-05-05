@@ -340,7 +340,7 @@ void GetCallerIdentities(ServiceSecurityContext callerSecurityContext, out strin
 ```  
   
 ## Running the Sample  
- When you run the sample, the client first prompts you to provide user name and password for the user name token. Be sure to provide correct values for your system account, because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on the service maps the values supplied in the user name token into the identity provided by the system. After that, the client displays the response from the service. Press ENTER in the client window to shut down the client.  
+ When you run the sample, the client first prompts you to provide user name and password for the user name token. Be sure to provide correct values for your system account, because WCF on the service maps the values supplied in the user name token into the identity provided by the system. After that, the client displays the response from the service. Press ENTER in the client window to shut down the client.  
   
 ## Setup Batch File  
  The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run Internet Information Services (IIS) hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-hosted case.  
@@ -459,6 +459,6 @@ iisreset
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across machines. If you have run [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+>  This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## See Also

@@ -11,4 +11,4 @@ This section contains samples that demonstrate using TCP binding in Windows Comm
  Demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding> binding.  
   
  [Net.TCP Port Sharing Sample](../../../../docs/framework/wcf/samples/net-tcp-port-sharing-sample.md)  
- Demonstrates TCP port sharing in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].
+ Demonstrates TCP port sharing in WCF.

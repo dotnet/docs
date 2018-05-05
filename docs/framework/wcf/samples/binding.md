@@ -11,13 +11,13 @@ This section contains samples that demonstrate using the binding attribute of an
  Demonstrates how to create a `ByteStreamHttpBinding`, a <xref:System.ServiceModel.Channels.Binding> that demonstrates the functionality of the byte stream encoder.  
   
  [Basic Binding](../../../../docs/framework/wcf/samples/basic-binding.md)  
- Demonstrates basic binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates basic binding in WCF.  
   
  [Custom Binding](../../../../docs/framework/wcf/samples/custom-binding.md)  
- Demonstrates custom binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates custom binding in WCF.  
   
  [Net Binding](../../../../docs/framework/wcf/samples/net-binding.md)  
- Demonstrates network binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates network binding in WCF.  
   
  [WS Binding](../../../../docs/framework/wcf/samples/ws-binding.md)  
- Demonstrates Windows Service binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].
+ Demonstrates Windows Service binding in WCF.

@@ -12,7 +12,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Tracing  
- Windows Communication Foundation (WCF) uses the tracing mechanism defined in the <xref:System.Diagnostics> namespace. In this tracing model, trace data is produced by trace sources that applications implement. Each source is identified by a name. Trace consumers create trace listeners for the trace sources for which they want to retrieve information. To receive trace data, you must create a listener for the trace source. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], this can be done by adding the following code to either the service’s or client’s configuration file by setting the Service Model trace source `switchValue`:  
+ Windows Communication Foundation (WCF) uses the tracing mechanism defined in the <xref:System.Diagnostics> namespace. In this tracing model, trace data is produced by trace sources that applications implement. Each source is identified by a name. Trace consumers create trace listeners for the trace sources for which they want to retrieve information. To receive trace data, you must create a listener for the trace source. In WCF, this can be done by adding the following code to either the service’s or client’s configuration file by setting the Service Model trace source `switchValue`:  
   
 ```xml  
 <system.diagnostics>  
@@ -50,12 +50,12 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   
 -   Correlate activities through transfers and propagation.  
   
--   Lessen the performance cost of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing (for example, the disk space cost of a log file).  
+-   Lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
   
  For more information about user-defined activity trace, please see the [Extending Tracing](../../../../docs/framework/wcf/samples/extending-tracing.md) sample.  
   
 ## Message Logging  
- Message logging can be enabled both on the client and service of any [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. To enable message logging, you must add the following code to either the client or service:  
+ Message logging can be enabled both on the client and service of any WCF application. To enable message logging, you must add the following code to either the client or service:  
   
 ```xml  
 <configuration>  

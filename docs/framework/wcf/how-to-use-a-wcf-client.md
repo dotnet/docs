@@ -8,9 +8,9 @@ ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 # How to: Use a Windows Communication Foundation Client
 This is the last of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
   
- Once a Windows Communication Foundation (WCF) proxy has been created and configured, a client instance can be created and the client application can be compiled and used to communicate with the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. This topic describes procedures for instantiating and using a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client. This procedure does three things:  
+ Once a Windows Communication Foundation (WCF) proxy has been created and configured, a client instance can be created and the client application can be compiled and used to communicate with the WCF service. This topic describes procedures for instantiating and using a WCF client. This procedure does three things:  
   
-1.  Instantiates a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client.  
+1.  Instantiates a WCF client.  
   
 2.  Calls the service operations from the generated proxy.  
   

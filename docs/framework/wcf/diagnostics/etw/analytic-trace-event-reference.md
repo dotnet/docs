@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: e44540cf-44a1-4efc-b965-7fbfd2131d73
 ---
 # Analytic Trace Event Reference
-The following table defines the event levels, identifiers, and messages associated with the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Analytic Tracing.  
+The following table defines the event levels, identifiers, and messages associated with the WCF Analytic Tracing.  
   
 ## Event Reference  
   

@@ -7,11 +7,11 @@ ms.assetid: 5f39db9e-0e62-42c9-8c98-bb8b54cec98c
 This sample demonstrates how to create an activity to use LINQ to SQL query entities from tables in SQL Server databases.  
   
 > [!IMPORTANT]
->  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>  The WCF samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\Samples\WCFWFCardspace`  
 >   
->  If this directory does not exist, click the download sample link at the top of this page. Note that this link downloads and installs all of the [!INCLUDE[wf1](../../../../includes/wf1-md.md)], [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and [!INCLUDE[infocard](../../../../includes/infocard-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, click the download sample link at the top of this page. Note that this link downloads and installs all of the [!INCLUDE[wf1](../../../../includes/wf1-md.md)], WCF, and [!INCLUDE[infocard](../../../../includes/infocard-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\Samples\WCFWFCardSpace\WF\Scenario\ActivityLibrary\Linq\LinqToSql`  
   

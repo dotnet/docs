@@ -8,7 +8,7 @@ This section contains samples that demonstrate custom message encoding.
   
 ## In This Section  
  [Custom Message Encoder: Custom Text Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md)  
- Demonstrates how to implement a custom text message encoder using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates how to implement a custom text message encoder using WCF.  
   
  [Custom Message Encoder: Compression Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md)  
- Demonstrates how to implement a custom encoder using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] platform.
+ Demonstrates how to implement a custom encoder using the WCF platform.

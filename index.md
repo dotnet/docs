@@ -222,10 +222,10 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet-internal/machine-learning?branch=pr-en-us-73">ML.NET Guide</a></h3>
-                                                <p><a href="/dotnet-internal/machine-learning/tutorials?branch=pr-en-us-73">Tutorials</a></p>
-                                                <p><a href="/dotnet-internal/machine-learning/resources?branch=pr-en-us-73">Resources</a></p>
-                                                <p><a href="/dotnet-internal/machine-learning/resources/glossary?branch=pr-en-us-73">Glossary</a></p>
+                                                <h3><a href="/dotnet-internal/machine-learning">ML.NET Guide</a></h3>
+                                                <p><a href="/dotnet-internal/machine-learning/tutorials">Tutorials</a></p>
+                                                <p><a href="/dotnet-internal/machine-learning/resources">Resources</a></p>
+                                                <p><a href="/dotnet-internal/machine-learning/resources/glossary">Glossary</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -684,11 +684,11 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub/swimlane-machine-learning-brain-lightbulb.svg?branch=pr-en-us-73" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/swimlane-machine-learning-brain-lightbulb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet-internal/machine-learning?branch=pr-en-us-73">
+                                                <a href="/dotnet-internal/machine-learning">
                                                     <h3>ML.NET</h3>
                                                     <p>Build custom AI solutions and integrate them into your .NET applications.</p>
                                                 </a>
@@ -703,7 +703,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub/swimlane-cognitive-services.svg?branch=pr-en-us-73" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/swimlane-cognitive-services.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -722,7 +722,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet-internal/images/hub/swimlane-azure-machine-learning.svg?branch=pr-en-us-73" alt="" />
+                                                    <img src="/dotnet-internal/images/hub/swimlane-azure-machine-learning.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

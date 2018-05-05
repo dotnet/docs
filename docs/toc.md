@@ -1112,8 +1112,8 @@
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
-### [Classification Scenario](machine-learning/tutorials/classification.md)
-### [Regression scenario](machine-learning/tutorials/regression.md)
+### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Taxi Time Predictor (Regression)](machine-learning/tutorials/regression.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine Learning Glossary](machine-learning/resources/glossary.md)
 <!-- End ML.NET Content -->

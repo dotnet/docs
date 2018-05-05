@@ -11,15 +11,13 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
 ---
-
 # C# Tutorials
 
 The following tutorials enable you to build C# programs using [.NET Core](../../core/index.md):
 
-* [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and
-the basics of the Task based asynchronous programming model.
-* [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and Object Oriented
-features in the C# language.
+* [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and the basics of the Task based asynchronous programming model.
+
+* [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and Object Oriented features in the C# language.
 
 * [Inheritance in C# and .NET](inheritance.md): demonstrates inheritance in C#, including the use of inheritance to define base classes, abstract base classes, and derived classes.
 
@@ -27,6 +25,6 @@ features in the C# language.
 
 * [Microservices hosted in Docker](microservices.md): demonstrates building an ASP.NET Core microservice and hosting it in Docker.
 
-* [String Interpolation](string-interpolation.md): demonstrates many of the uses for the `$` string interpolation in C#.
+* [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.
 
-* [Using Attributes](attributes.md): how to create and use attributes in C#.
+* [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.

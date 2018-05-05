@@ -19,7 +19,7 @@ ms.author: "ronpet"
 ---
 # $ - string interpolation (C# Reference)
 
-The `$` special character identifies a string literal as an *interpolated string*. An interpolated string is a string literal that might contain *interpolated expressions*. When the interpolated string is resolved to the result string, items with interpolated expressions are replaced by the string representations of the expression results. This feature is available in C# 6 and later versions.
+The `$` special character identifies a string literal as an *interpolated string*. An interpolated string is a string literal that might contain *interpolated expressions*. When the interpolated string is resolved to the result string, items with interpolated expressions are replaced by the string representations of the expression results. This feature is available in C# 6 and later versions of the language.
 
 String interpolation provides a more readable and convenient syntax to create formatted strings than a [string composite formatting](../../../standard/base-types/composite-formatting.md) feature. The following example uses both features to produce the same output:
 
@@ -49,7 +49,7 @@ The following example uses optional formatting components described above:
 
 ## Special characters
 
-To include a brace ("{" or "}") in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see [Escaping Braces](../../../standard/base-types/composite-formatting.md#escaping-braces).
+To include a brace, "{" or "}", in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see [Escaping Braces](../../../standard/base-types/composite-formatting.md#escaping-braces).
 
 As the colon (":") has special meaning in an interpolated expression item, in order to use a [conditional operator](../operators/conditional-operator.md) in an interpolated expression, enclose that expression in parentheses.
 

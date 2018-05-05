@@ -22,7 +22,7 @@ SOAP faults convey error condition information from a service to a client and, i
 3.  Mark your operations so that the specific SOAP faults that they throw are exposed to clients in WSDL.  
   
 ### Defining Error Conditions That Clients Should Know About  
- SOAP faults are publicly described messages that carry fault information for a particular operation. Because they are described along with other operation messages in WSDL, clients know and, therefore, expect to handle such faults when invoking an operation. But because [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services are written in managed code, deciding which error conditions in managed code are to be converted into faults and returned to the client provides you the opportunity to separate error conditions and bugs in your service from the formal error conversation you have with a client.  
+ SOAP faults are publicly described messages that carry fault information for a particular operation. Because they are described along with other operation messages in WSDL, clients know and, therefore, expect to handle such faults when invoking an operation. But because WCF services are written in managed code, deciding which error conditions in managed code are to be converted into faults and returned to the client provides you the opportunity to separate error conditions and bugs in your service from the formal error conversation you have with a client.  
   
  For example, the following code example shows an operation that takes two integers and returns another integer. Several exceptions can be thrown here, so when designing the fault contract, you must determine which error conditions are important for your client. In this case, the service should detect the <xref:System.DivideByZeroException?displayProperty=nameWithType> exception.  
   
@@ -79,7 +79,7 @@ End Class
   
  According to the SOAP standard, a fault can have an `Action`, a `Code`, and a `Reason`. The `Action` is controlled by the <xref:System.ServiceModel.FaultContractAttribute.Action%2A> property. The <xref:System.ServiceModel.FaultException.Code%2A> property and <xref:System.ServiceModel.FaultException.Reason%2A> property are both properties of the <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> class, which is the parent class of the generic <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType>. The `Code` property includes a <xref:System.ServiceModel.FaultCode.SubCode%2A> member.  
   
- When accessing non-services that generate faults, certain limitations exist. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] supports only faults with detail types that the schema describes and that are compatible with data contracts. For example, as mentioned above, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not support faults that use XML attributes in their detail types, or faults with more than one top-level element in the detail section.  
+ When accessing non-services that generate faults, certain limitations exist. WCF supports only faults with detail types that the schema describes and that are compatible with data contracts. For example, as mentioned above, WCF does not support faults that use XML attributes in their detail types, or faults with more than one top-level element in the detail section.  
   
 ## See Also  
  <xref:System.ServiceModel.FaultContractAttribute>  

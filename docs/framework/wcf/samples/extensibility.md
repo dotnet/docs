@@ -50,10 +50,10 @@ This section contains samples that deal with custom extensibility and other feat
  Demonstrates how processes like serialization, deserialization, schema export, and schema import can be customized using a data contract surrogate class.  
   
  [Extending Control Over Error Handling and Reporting](../../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md)  
- Demonstrates how to extend control over error handling and error reporting in a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface.  
+ Demonstrates how to extend control over error handling and error reporting in a WCF service using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface.  
   
  [Message Inspectors](../../../../docs/framework/wcf/samples/message-inspectors.md)  
  Demonstrates how to implement and configure client and service message inspectors.  
   
  [WebContentTypeMapper](../../../../docs/framework/wcf/samples/webcontenttypemapper-sample.md)  
- Demonstrates how to map new content types to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message body formats.
+ Demonstrates how to map new content types to WCF message body formats.

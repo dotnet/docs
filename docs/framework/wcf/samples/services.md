@@ -8,19 +8,19 @@ This section contains samples that demonstrate Windows Communication Foundation 
   
 ## In This Section  
  [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)  
- Demonstrates hosting [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
+ Demonstrates hosting WCF services.  
   
  [Service Interoperability](../../../../docs/framework/wcf/samples/service-interoperability.md)  
- Demonstrates interaction between [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and other service technologies.  
+ Demonstrates interaction between WCF and other service technologies.  
   
  [Behaviors](../../../../docs/framework/wcf/samples/behaviors.md)  
- Demonstrates [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service behaviors.  
+ Demonstrates WCF service behaviors.  
   
  [Service Security](../../../../docs/framework/wcf/samples/service-security.md)  
- Demonstrates [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service security.  
+ Demonstrates WCF service security.  
   
  [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)  
- Demonstrates how to implement and configure a typical service and client using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates how to implement and configure a typical service and client using WCF.  
   
  [Usage of Standard Endoints](../../../../docs/framework/wcf/samples/usage-of-standard-endpoints.md)  
  Demonstrates how to use standard endpoints in service configuration files.  
@@ -50,7 +50,7 @@ This section contains samples that demonstrate Windows Communication Foundation 
  Demonstrates a service that hosts multiple endpoints at a single `ListenUri`.  
   
  [OperationContextScope](../../../../docs/framework/wcf/samples/operationcontextscope.md)  
- Demonstrates how to send extra information on a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] call using headers.  
+ Demonstrates how to send extra information on a WCF call using headers.  
   
  [Service Description](../../../../docs/framework/wcf/samples/service-description.md)  
  Demonstrates how a service can retrieve its service description information at runtime.  

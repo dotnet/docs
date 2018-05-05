@@ -9,7 +9,7 @@ System.ServiceModel.Channels.MessageReceived
 ## Description  
  Received a message over a channel.  
   
- This trace is emitted when a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] message is received if the `System.ServiceModel` trace source is enabled at information or verbose level. This trace is necessary to see the message correlation arrow in the activity graph view.  
+ This trace is emitted when a WCF message is received if the `System.ServiceModel` trace source is enabled at information or verbose level. This trace is necessary to see the message correlation arrow in the activity graph view.  
   
 ## See Also  
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  

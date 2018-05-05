@@ -11,13 +11,13 @@ The topics in this section demonstrate how to create and use a Windows Communica
   
 ## In This Section  
  [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md)  
- Provides an overview of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] clients and how they work.  
+ Provides an overview of WCF clients and how they work.  
   
  [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- Outlines the basic method of creating a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client object for use in a client application.  
+ Outlines the basic method of creating a WCF client object for use in a client application.  
   
  [Securing Clients](../../../docs/framework/wcf/securing-clients.md)  
- Describes how to configure security for [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] clients.  
+ Describes how to configure security for WCF clients.  
   
 ## Reference  
  <xref:System.ServiceModel.ClientBase%601>  

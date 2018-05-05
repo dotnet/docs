@@ -25,9 +25,9 @@ Typically, you do not have to set the identity on a service because the selectio
 > [!NOTE]
 >  To use the Windows credential type without negotiation, the service's user account must have access to the SPN that is registered with the Active Directory domain. You can do this in the following ways:  
   
--   Use the NetworkService or LocalSystem account to run your service. Because those accounts have access to the machine SPN that is established when the machine joins the Active Directory domain, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] automatically generates the proper SPN element inside the service's endpoint in the service's metadata (WSDL).  
+-   Use the NetworkService or LocalSystem account to run your service. Because those accounts have access to the machine SPN that is established when the machine joins the Active Directory domain, WCF automatically generates the proper SPN element inside the service's endpoint in the service's metadata (WSDL).  
   
--   Use an arbitrary Active Directory domain account to run your service. In this case, establish an SPN for that domain account, which you can do by using the Setspn.exe utility tool. Once you create the SPN for the service's account, configure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to publish that SPN to the service's clients through its metadata (WSDL). This is done by setting the endpoint identity for the exposed endpoint, either through an application configuration file or code.  
+-   Use an arbitrary Active Directory domain account to run your service. In this case, establish an SPN for that domain account, which you can do by using the Setspn.exe utility tool. Once you create the SPN for the service's account, configure WCF to publish that SPN to the service's clients through its metadata (WSDL). This is done by setting the endpoint identity for the exposed endpoint, either through an application configuration file or code.  
   
  For more information about SPNs, the Kerberos protocol, and Active Directory, see [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkId=88330).  
   
@@ -54,7 +54,7 @@ Typically, you do not have to set the identity on a service because the selectio
   
   
 ### Setting Identity Programmatically  
- Your service does not have to explicitly specify an identity, because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] automatically determines it. However, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
+ Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
   
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  

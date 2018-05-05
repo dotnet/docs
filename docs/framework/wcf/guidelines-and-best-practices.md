@@ -17,7 +17,7 @@ This section contains topics that provide guidelines for creating Windows Commun
  Explains how and when to create data contracts that do not break when future versions are created.  
   
  [Service Versioning](../../../docs/framework/wcf/service-versioning.md)  
- Explains how to consider versioning in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]. After deployment, services (and the endpoints they expose) might need to be changed, for example, to satisfy changing business requirements or IT requirements, or to fix issues. Each change introduces a new version of the service.  
+ Explains how to consider versioning in WCF. After deployment, services (and the endpoints they expose) might need to be changed, for example, to satisfy changing business requirements or IT requirements, or to fix issues. Each change introduces a new version of the service.  
   
  [Load Balancing](../../../docs/framework/wcf/load-balancing.md)  
  Lists guidelines for load balancing with a Web farm.  

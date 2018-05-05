@@ -29,7 +29,7 @@ This section of the documentation provides information about Windows Communicati
  Describes the fundamentals for creating Windows Communication Foundation applications.  
   
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)  
- Shows topics that let you choose which [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] feature or features you need to employ.  
+ Shows topics that let you choose which WCF feature or features you need to employ.  
   
  [Extending WCF](../../../docs/framework/wcf/extending/index.md)  
  Describes how to modify and extend WCF runtime components  
@@ -62,7 +62,7 @@ This section of the documentation provides information about Windows Communicati
  Samples that provide instruction on various aspects of Windows Communication Foundation  
   
  [Windows Communication Foundation Glossary](../../../docs/framework/wcf/glossary.md)  
- Shows a list of terms specific to [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]  
+ Shows a list of terms specific to WCF  
   
  [General Reference](../../../docs/framework/wcf/general-reference.md)  
  The section describes the elements that are used to configure Windows Communication Foundation clients and services.  

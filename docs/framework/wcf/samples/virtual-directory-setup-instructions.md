@@ -30,12 +30,12 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
 7.  Click **OK**. The Web application is now created for the WCF samples.  
   
     > [!NOTE]
-    >  This task must be performed only once, because all of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples use the same servicemodelsamples Web application.  
+    >  This task must be performed only once, because all of the WCF samples use the same servicemodelsamples Web application.  
   
     > [!NOTE]
     >  For the purpose of this documentation, the term `virtual directory` is synonymous with `Web application`.  
   
-     In addition to creating the virtual directory, you must also set its properties to enable [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to run. See below for details.  
+     In addition to creating the virtual directory, you must also set its properties to enable WCF services to run. See below for details.  
   
 #### To create a virtual directory in IIS 5.1 or 6.0  
   
@@ -47,7 +47,7 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 4.  In the wizard, type `servicemodelsamples` as the alias for the virtual directory that you are creating.  
   
-5.  Set the path to %SystemDrive%\inetpub\wwwroot\servicemodelsamples. Most of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples copy service executable files to this location when built.  
+5.  Set the path to %SystemDrive%\inetpub\wwwroot\servicemodelsamples. Most of the WCF samples copy service executable files to this location when built.  
   
 6.  Click **Next**.  
   
@@ -60,7 +60,7 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
 8.  Click **Next**, and then click **Finish** to complete the wizard.  
   
     > [!NOTE]
-    >  This task must be performed only once because all of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples use the same servicemodelsamples virtual directory.  
+    >  This task must be performed only once because all of the WCF samples use the same servicemodelsamples virtual directory.  
   
 #### To set additional virtual directory properties in IIS 7.0 or 7.5  
   

@@ -6,11 +6,11 @@ ms.assetid: af513015-85bf-417b-8729-1bdff77ff6d6
 # Discovery Binding Element Sample
 This sample demonstrates how to use the discovery client binding element to discover a service. This feature enables developers to add a discovery client channel to their existing client channel stack, making the programming model very intuitive. When the associated channel is opened, the address of the service is resolved using discovery. This sample consists of the following projects:  
   
--   **CalculatorService**: A discoverable [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+-   **CalculatorService**: A discoverable WCF service.  
   
--   **CalculatorClient**: A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application that uses the discovery client channel to search for and call the CalculatorService.  
+-   **CalculatorClient**: A WCF client application that uses the discovery client channel to search for and call the CalculatorService.  
   
--   **DynamicCalculatorClient**: A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application that uses a dynamic endpoint to search for and call the CalculatorService.  
+-   **DynamicCalculatorClient**: A WCF client application that uses a dynamic endpoint to search for and call the CalculatorService.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

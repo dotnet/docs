@@ -18,11 +18,11 @@ This sample demonstrates how to implement a custom token authenticator. A token 
   
 -   How the server can validate the client credentials using a custom token authenticator.  
   
--   How the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service code ties in with the custom token authenticator.  
+-   How the WCF service code ties in with the custom token authenticator.  
   
 -   How the server can be authenticated using the server's X.509 certificate.  
   
- This sample also shows how the caller's identity is accessible from [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] after the custom token authentication process.  
+ This sample also shows how the caller's identity is accessible from WCF after the custom token authentication process.  
   
  The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, with the security mode set to message - the default mode of the `wsHttpBinding`. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using `serviceCredentials` behavior. The `securityCredentials` behavior allows you to specify a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.  
   

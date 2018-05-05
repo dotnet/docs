@@ -30,7 +30,7 @@ Windows Communication Foundation (WCF) clients, like Windows Communication Found
   
 -   You do so only in controlled debugging scenarios.  
   
- The following code example shows a client configuration file that instructs [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to return managed exception information from a client callback object in SOAP messages.  
+ The following code example shows a client configuration file that instructs WCF to return managed exception information from a client callback object in SOAP messages.  
   
  [!code-xml[SCA.CallbackContract#4](../../../samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/client.exe.config#4)]  
  

@@ -16,7 +16,7 @@ This sample demonstrates how to activate Windows Communication Foundation (WCF) 
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\ConfigBasedActivation`  
   
 ## Sample Details  
- In this sample, the client is the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] test client and the service is hosted in IIS.  
+ In this sample, the client is the WCF test client and the service is hosted in IIS.  
   
 > [!NOTE]
 >  The setup and build instructions for this sample are located at the end of this topic.  

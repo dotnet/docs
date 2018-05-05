@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
 ---
 # Configuration Channel Factory
-This sample covers the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>. The <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows central management of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client configuration. This can also be useful in scenarios in which configuration is selected or changed after the application domain load time.  
+This sample covers the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>. The <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows central management of WCF client configuration. This can also be useful in scenarios in which configuration is selected or changed after the application domain load time.  
   
 ## Demonstrates  
  <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>  

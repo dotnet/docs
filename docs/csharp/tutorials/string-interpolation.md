@@ -18,7 +18,7 @@ As the example above shows, you include an expression into an interpolated strin
 {<interpolatedExpression>}
 ```
 
-At compile time an interpolated string is typically transformed to the <xref:System.String.Format%2A?displayProperty=nameWithType> method call. That makes all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature available to you to use with interpolated strings as well. If an interpolated string is implicitly converted to either <xref:System.FormattableString?displayProperty=nameWithType> or <xref:System.IFormattable?displayProperty=nameWithType>, at compile time it's transformed to the expression that produces a <xref:System.FormattableString> instance. That allows you to provide the <xref:Syste.IFormatProvider> implementation to be used during the resolution of an interpolated string into the result string.
+At compile time an interpolated string is typically transformed to the <xref:System.String.Format%2A?displayProperty=nameWithType> method call. That makes all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature available to you to use with interpolated strings as well. If an interpolated string is implicitly converted to either <xref:System.FormattableString?displayProperty=nameWithType> or <xref:System.IFormattable?displayProperty=nameWithType>, at compile time it's transformed to the expression that produces a <xref:System.FormattableString> instance. That allows you to provide the <xref:System.IFormatProvider> implementation to be used during the resolution of an interpolated string into the result string.
 
 ## How to specify a format string for an interpolated expression
 

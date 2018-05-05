@@ -21,9 +21,6 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Types with embedded references are not supported in this version of your compiler.", true)</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
     <Attribute>

@@ -1,21 +1,12 @@
 ---
 title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc42026"
   - "BC42026"
 helpviewer_keywords: 
   - "BC42026"
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;
 A statement in the `Set` procedure of a property definition stores a value into the name of the property.  

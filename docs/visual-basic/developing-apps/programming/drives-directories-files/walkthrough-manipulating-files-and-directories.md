@@ -1,13 +1,6 @@
 ---
 title: "Manipulating Files and Directories in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "files [Visual Basic], reading text"
   - "reading files [Visual Basic], text"
@@ -22,9 +15,6 @@ helpviewer_keywords:
   - "writing to files [Visual Basic], walkthroughs"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
-caps.latest.revision: 49
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Manipulating Files and Directories in Visual Basic
 This walkthrough provides an introduction to the fundamentals of file I/O in Visual Basic. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  

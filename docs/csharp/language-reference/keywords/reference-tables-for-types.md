@@ -1,10 +1,6 @@
 ---
 title: "Reference Tables for Types (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.referencetables"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "types [C#], reference tables"
   - "C# language, data types"
 ms.assetid: 1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a
-caps.latest.revision: 9
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Reference Tables for Types (C# Reference)
 The following reference tables summarize the C# types:  

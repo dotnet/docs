@@ -1,12 +1,7 @@
 ---
 title: The Fixed Keyword (F#)
 description: Learn how you can 'pin' a local onto the stack to prevent collection with the F# 'fixed' keyword.
-author: cartermp
-ms.author: phcart
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # The Fixed Keyword
 

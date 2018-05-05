@@ -1,13 +1,6 @@
 ---
 title: "Reading from Files in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Visual Basic], reading from files"
   - "I/O [Visual Basic], reading from files"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "files [Visual Basic], reading"
   - "reading files [Visual Basic]"
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Reading from Files in Visual Basic
 This section explains how to perform tasks that are associated with reading from files.  

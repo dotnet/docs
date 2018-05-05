@@ -1,25 +1,11 @@
 ---
 title: "Walkthrough: Styling WPF Content"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF Designer [Windows Forms], styling WPF content"
   - "interoperability [WDF]"
   - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Styling WPF Content
 This walkthrough show you how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form.  

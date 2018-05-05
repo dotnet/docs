@@ -1,21 +1,12 @@
 ---
 title: "Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc40033"
   - "vbc40033"
 helpviewer_keywords: 
   - "BC40033"
 ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface
 A property, procedure, or event in an interface is marked as `<CLSCompliant(True)>` when the interface itself is marked as `<CLSCompliant(False)>` or is not marked.  

@@ -1,21 +1,10 @@
 ---
 title: "XSLT Security Considerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XSLT Security Considerations
 The XSLT language has a rich set of features that give you a great deal of power and flexibility. It includes many features that, while useful, could also be exploited by outside sources. In order to use XSLT safely, you must understand the types of security issues that arise when using XSLT, and the basic strategies that you can employ to mitigate these risks.  

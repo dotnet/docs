@@ -1,14 +1,6 @@
 ---
 title: "How to: Raise Change Notifications Using the BindingSource ResetItem Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "data sources [Windows Forms], detecting changes"
   - "change notifications"
 ms.assetid: ab8b4096-37ff-4e30-aabc-de79a2f2e972
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Raise Change Notifications Using the BindingSource ResetItem Method
 Some data sources for your controls do not raise change notifications when items are changed, added, or deleted. With the <xref:System.Windows.Forms.BindingSource> component, you can bind to such data sources and raise a change notification from your code.  

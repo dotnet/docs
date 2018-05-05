@@ -1,14 +1,6 @@
 ---
 title: "How to: Scroll Content by Using the IScrollInfo Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "scrolling content [WPF]"
   - "IScrollInfo interface [WPF]"
 ms.assetid: d8700bef-a3f8-4c12-9de2-fc3b79f32cd3
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Scroll Content by Using the IScrollInfo Interface
 This example shows how to scroll content by using the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface.  

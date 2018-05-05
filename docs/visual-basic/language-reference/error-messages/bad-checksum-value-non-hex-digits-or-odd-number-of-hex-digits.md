@@ -1,21 +1,12 @@
 ---
 title: "Bad checksum value, non hex digits or odd number of hex digits"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc42033"
   - "vbc42033"
 helpviewer_keywords: 
   - "BC42033"
 ms.assetid: 4575554d-3615-46e4-9c6a-18e9c338e4ed
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Bad checksum value, non hex digits or odd number of hex digits
 A checksum value contains invalid hexadecimal digits or has an odd number of digits.  

@@ -1,16 +1,9 @@
 ---
 title: "How to: Identify a Nullable Type (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "nullable types [C#], identifying"
 ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387
-caps.latest.revision: 7
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Identify a Nullable Type (C# Programming Guide)
 You can use the C# [typeof](../../../csharp/language-reference/keywords/typeof.md) operator to create a <xref:System.Type> object that represents a Nullable type:  

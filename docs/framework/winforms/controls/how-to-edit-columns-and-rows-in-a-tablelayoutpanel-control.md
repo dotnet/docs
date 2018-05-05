@@ -1,14 +1,6 @@
 ---
 title: "How to: Edit Columns and Rows in a TableLayoutPanel Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "net.ComponentModel.StyleCollectionEditor"
 helpviewer_keywords: 
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "TableLayoutPanel control [Windows Forms], editing"
   - "rows [Windows Forms], editing"
 ms.assetid: c367ed43-40dc-49eb-9e0f-ba70e83dfec0
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Edit Columns and Rows in a TableLayoutPanel Control
 You can use the collection editor of the <xref:System.Windows.Forms.TableLayoutPanel> control, called the **Column and Row Styles** dialog box, to edit the rows and columns of your controls.  

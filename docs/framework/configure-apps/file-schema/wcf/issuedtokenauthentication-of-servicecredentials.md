@@ -1,21 +1,7 @@
 ---
 title: "&lt;issuedTokenAuthentication&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5c2e288f-f603-4d13-839a-0fd6d1981bec
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;issuedTokenAuthentication&gt; of &lt;serviceCredentials&gt;
 Specifies a custom token issued as a service credential.  

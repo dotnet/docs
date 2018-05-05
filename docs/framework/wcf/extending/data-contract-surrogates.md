@@ -1,23 +1,9 @@
 ---
 title: "Data Contract Surrogates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts [WCF], surrogates"
 ms.assetid: 8c31134c-46c5-4ed7-94af-bab0ac0dfce5
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Contract Surrogates
 The data contract *surrogate* is an advanced feature built upon the Data Contract model. This feature is designed to be used for type customization and substitution in situations where users want to change how a type is serialized, deserialized or projected into metadata. Some scenarios where a surrogate may be used is when a data contract has not been specified for the type, fields and properties are not marked with the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute or users wish to dynamically create schema variations.  
@@ -142,7 +128,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  The method is called at the beginning of schema export and import. The method returns the custom data types used in the schema exported or imported. The method is passed a <xref:System.Collections.ObjectModel.Collection%601> (the `customDataTypes` parameter), which is a collection of types. The method should add additional known types to this collection. The known custom data types are needed to enable serialization and deserialization of custom data using the <xref:System.Runtime.Serialization.DataContractSerializer>. For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
 ## Implementing a Surrogate  
- To use the data contract surrogate within [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you must follow a few special procedures.  
+ To use the data contract surrogate within WCF, you must follow a few special procedures.  
   
 ### To Use a Surrogate for Serialization and Deserialization  
  Use the <xref:System.Runtime.Serialization.DataContractSerializer> to perform serialization and deserialization of data with the surrogate. The <xref:System.Runtime.Serialization.DataContractSerializer> is created by the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>. The surrogate must also be specified.  
@@ -183,7 +169,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
      [!code-csharp[C_IDataContractSurrogate#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#9)]  
   
 ### To Use a surrogate for Metadata Export  
- By default, when exporting metadata from [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] for a service, both WSDL and XSD schema needs to be generated. The surrogate needs to be added to the component responsible for generating XSD schema for data contract types, <xref:System.Runtime.Serialization.XsdDataContractExporter>. To do this, either use a behavior that implements <xref:System.ServiceModel.Description.IWsdlExportExtension> to modify the <xref:System.ServiceModel.Description.WsdlExporter>, or directly modify the <xref:System.ServiceModel.Description.WsdlExporter> used to export metadata.  
+ By default, when exporting metadata from WCF for a service, both WSDL and XSD schema needs to be generated. The surrogate needs to be added to the component responsible for generating XSD schema for data contract types, <xref:System.Runtime.Serialization.XsdDataContractExporter>. To do this, either use a behavior that implements <xref:System.ServiceModel.Description.IWsdlExportExtension> to modify the <xref:System.ServiceModel.Description.WsdlExporter>, or directly modify the <xref:System.ServiceModel.Description.WsdlExporter> used to export metadata.  
   
 ##### To use a surrogate for metadata export  
   

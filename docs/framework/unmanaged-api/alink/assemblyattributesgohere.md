@@ -1,14 +1,6 @@
 ---
 title: "AssemblyAttributesGoHere"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "AssemblyAttributesGoHere"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7b26fcb6-94f4-4f09-933e-b33efe451f4f
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AssemblyAttributesGoHere
 Used by ALink as a placeholder to store information about custom attributes.  

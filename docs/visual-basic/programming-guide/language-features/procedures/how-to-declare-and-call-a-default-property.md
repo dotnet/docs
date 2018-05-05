@@ -1,13 +1,6 @@
 ---
 title: "How to: Declare and Call a Default Property in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "defaults [Visual Basic], properties"
   - "properties [Visual Basic], default"
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "default properties"
 ms.assetid: 68b4026e-09ef-4613-808e-f6287494ff63
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Declare and Call a Default Property in Visual Basic
 A *default property* is a class or structure property that your code can access without specifying it. When calling code names a class or structure but not a property, and the context allows access to a property, Visual Basic resolves the access to that class or structure's default property if one exists.  

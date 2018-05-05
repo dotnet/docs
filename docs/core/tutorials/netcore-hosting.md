@@ -4,11 +4,6 @@ description: Hosting the .NET Core runtime from native code
 author: mjrousos
 ms.author: mairaw
 ms.date: 2/3/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - "dotnetcore"
 ---
 # Hosting .NET Core
 

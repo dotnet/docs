@@ -1,14 +1,6 @@
 ---
 title: "How to: Fill Open Figures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "open figures [Windows Forms], filling"
   - "figures [Windows Forms], filling"
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Fill Open Figures
 You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> object to the <xref:System.Drawing.Graphics.FillPath%2A> method. The <xref:System.Drawing.Graphics.FillPath%2A> method fills the path according to the fill mode (alternate or winding) currently set for the path. If the path has any open figures, the path is filled as if those figures were closed. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] closes a figure by drawing a straight line from its ending point to its starting point.  

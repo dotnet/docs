@@ -1,24 +1,12 @@
 ---
 title: "HTTP Transport Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d3439262-c58e-4d30-9f2b-a160170582bb
-caps.latest.revision: 14
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # HTTP Transport Security
-When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in Windows Communication Foundation (WCF).  
   
 ## Basic SSL  
  How SSL works is best explained through a typical scenario, in this case, a bank's Web site. The site allows a customer to log on with a user name and password. After being authenticated, the user can perform transactions, such as view account balances, pay bills, and move money from one account to another.  
@@ -37,11 +25,11 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
  Every certificate has two keys, a private key and a public key, and the two are known as an *exchange key pair*. In brief, the private key is known only to the owner of the certificate while the public key is readable from the certificate. Either key can be used to encrypt or decrypt a digest, hash, or other key, but only as contrary operations. For example, if the client encrypts with the public key, only the site can decrypt the message using the private key. Similarly, if the site encrypts with the private key, the client can decrypt with the public key. This provides assurance to the client that the messages are being exchanged only with the possessor of the private key because only messages encrypted with the private key can be decrypted with the public key. The site is assured that it is exchanging messages with a client that has encrypted using the public key. This exchange is secure only for an initial handshake, however, which is why much more is done to create the actual symmetric key. Nevertheless, all communications depend on the service having a valid SSL certificate.  
   
 ## Implementing SSL with WCF  
- HTTP transport security (or SSL) is provided externally to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. You can implement SSL in one of two ways; the deciding factor is how your application is hosted:  
+ HTTP transport security (or SSL) is provided externally to WCF. You can implement SSL in one of two ways; the deciding factor is how your application is hosted:  
   
--   If you are using Internet Information Services (IIS) as your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] host, use the IIS infrastructure to set up an SSL service.  
+-   If you are using Internet Information Services (IIS) as your WCF host, use the IIS infrastructure to set up an SSL service.  
   
--   If you are creating a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, you can bind an SSL certificate to the address using the HttpCfg.exe tool.  
+-   If you are creating a self-hosted WCF application, you can bind an SSL certificate to the address using the HttpCfg.exe tool.  
   
 ### Using IIS for Transport Security  
   
@@ -56,9 +44,9 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
  To configure certificates for use with [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Certificates_IIS_SP1_Ops](http://go.microsoft.com/fwlink/?LinkId=88602).  
   
 ### Using HttpCfg for SSL  
- If you are creating a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](http://go.microsoft.com/fwlink/?LinkId=29002).  
+ If you are creating a self-hosted WCF application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](http://go.microsoft.com/fwlink/?LinkId=29002).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
+ For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See Also  
  [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)  

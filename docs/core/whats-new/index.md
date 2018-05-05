@@ -4,10 +4,6 @@ description: Learn about the new features found in .NET Core.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/13/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.workload: 
-  - dotnetcore
 ---
 # What's new in .NET Core
 

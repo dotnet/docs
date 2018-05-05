@@ -1,18 +1,11 @@
 ---
 title: "#region (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#region"
 helpviewer_keywords: 
   - "#region directive [C#]"
 ms.assetid: 672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #region (C# Reference)
 `#region` lets you specify a block of code that you can expand or collapse when using the [outlining](/visualstudio/ide/outlining) feature of the Visual Studio Code Editor. In longer code files, it is convenient to be able to collapse or hide one or more regions so that you can focus on the part of the file that you are currently working on. The following example shows how to define a region:  

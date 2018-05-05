@@ -1,12 +1,6 @@
 ---
 title: "&lt;list&gt; (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "listheader XML tag"
   - "<item> XML tag"
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "item XML tag"
   - "<term> XML tag"
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;list&gt; (Visual Basic)
 Defines a list or table.  

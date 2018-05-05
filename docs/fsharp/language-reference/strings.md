@@ -1,12 +1,7 @@
 ---
 title: Strings (F#)
 description: Learn how the F# 'string' type represents immutable text as a sequence of Unicode characters.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Strings
 

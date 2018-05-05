@@ -1,14 +1,7 @@
 ---
 title: Query a collection of objects
 description: How query collections.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 11/30/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: 87a76f8a-0b58-4791-90ea-2fe0a30416c9
 ---
 # Query a collection of objects

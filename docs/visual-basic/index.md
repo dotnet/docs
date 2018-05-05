@@ -1,10 +1,6 @@
 ---
 title: "Visual Basic"
 ms.date: 03/28/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "programming, Visual Basic"
   - "Visual Basic"

@@ -1,19 +1,7 @@
 ---
 title: "1030 - StartFaultWorkItem"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e1601fb9-0bc6-4dbe-816f-f24914063d34
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1030 - StartFaultWorkItem
 ## Properties  

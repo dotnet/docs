@@ -1,18 +1,11 @@
 ---
 title: "-bugreport"
 ms.date: 03/08/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-bugreport compiler option [Visual Basic]"
   - "bugreport compiler option [Visual Basic]"
   - "/bugreport compiler option [Visual Basic]"
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -bugreport
 Creates a file that you can use when you file a bug report.  

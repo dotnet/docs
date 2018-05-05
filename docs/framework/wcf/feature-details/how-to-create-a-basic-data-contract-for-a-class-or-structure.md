@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Basic Data Contract for a Class or Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,17 +9,11 @@ helpviewer_keywords:
   - "DataContractAttribute class"
   - "data contracts [WCF], creating for a class or structure"
 ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
-caps.latest.revision: 25
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Basic Data Contract for a Class or Structure
-This topic shows the basic steps to create a data contract using a class or structure. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts and how they are used, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
+This topic shows the basic steps to create a data contract using a class or structure. For more information about data contracts and how they are used, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
- For a tutorial that walks through the steps of creating a basic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service and client, see the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). For a working sample application that consists of a basic service and client, see [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md).  
+ For a tutorial that walks through the steps of creating a basic Windows Communication Foundation (WCF) service and client, see the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). For a working sample application that consists of a basic service and client, see [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md).  
   
 ### To create a basic data contract for a class or structure  
   

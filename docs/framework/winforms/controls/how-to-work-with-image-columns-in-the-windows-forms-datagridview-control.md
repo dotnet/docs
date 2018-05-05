@@ -1,14 +1,6 @@
 ---
 title: "How to: Work with Image Columns in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "image columns [Windows Forms], Windows Forms"
   - "DataGridView control [Windows Forms], image columns"
 ms.assetid: 8a37aa75-3c6e-4893-91d0-7a5f34bfe287
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Work with Image Columns in the Windows Forms DataGridView Control
 The following code example shows how to use the <xref:System.Windows.Forms.DataGridView> image columns in an interactive user interface (UI). The example also demonstrates image sizing and layout possibilities with the <xref:System.Windows.Forms.DataGridViewImageColumn>.  

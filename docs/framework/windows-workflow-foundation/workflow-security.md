@@ -1,24 +1,12 @@
 ---
 title: "Workflow Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "programming [WF], workflow security"
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Workflow Security
-Windows Workflow Foundation (WF) is integrated with several different technologies, such as Microsoft SQL Server and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]. Interacting with these technologies may introduce security issues into your workflow if done improperly.  
+Windows Workflow Foundation (WF) is integrated with several different technologies, such as Microsoft SQL Server and Windows Communication Foundation (WCF). Interacting with these technologies may introduce security issues into your workflow if done improperly.  
   
 ## Persistence Security Concerns  
   
@@ -44,7 +32,7 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
   
 ## Considerations for WorkflowServiceHost  
   
--   [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] endpoints used in workflows should be secured. For more information, see [WCF Security Overview](http://go.microsoft.com/fwlink/?LinkID=164975).  
+-   Windows Communication Foundation (WCF) endpoints used in workflows should be secured. For more information, see [WCF Security Overview](http://go.microsoft.com/fwlink/?LinkID=164975).  
   
 -   Host-level authorization can be implemented by using <xref:System.ServiceModel.ServiceAuthorizationManager>. See [How To: Create a Custom Authorization Manager for a Service](http://go.microsoft.com/fwlink/?LinkId=192228) for details. This is also demonstrated in the following sample: [Securing Workflow Services](../../../docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md).  
   

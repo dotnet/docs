@@ -1,14 +1,6 @@
 ---
 title: "&lt;system.codedom&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.codedom"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "system.codedom element"
   - "<system.codedom> element"
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
-caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;system.codedom&gt; Element
 Specifies compiler configuration settings for available language providers.  

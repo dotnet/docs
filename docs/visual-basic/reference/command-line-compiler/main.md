@@ -1,11 +1,6 @@
 ---
 title: "-main"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "main compiler option [Visual Basic]"
   - "/main compiler option [Visual Basic]"

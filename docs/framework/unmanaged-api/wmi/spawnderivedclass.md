@@ -2,10 +2,6 @@
 title: SpawnDerivedClass function (Unmanaged API Reference)
 description: The SpawnDerivedClass function creates a new object that derives from an object.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "SpawnDerivedClass"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SpawnDerivedClass function
 Creates a newly derived class object from a specified object.    

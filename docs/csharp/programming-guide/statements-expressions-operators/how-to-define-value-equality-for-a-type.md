@@ -1,10 +1,6 @@
 ---
 title: "How to: Define Value Equality for a Type (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "overriding Equals method [C#]"
   - "object equivalence [C#]"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "value equality [C#]"
   - "equivalence [C#]"
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Define Value Equality for a Type (C# Programming Guide)
 When you define a class or struct, you decide whether it makes sense to create a custom definition of value equality (or equivalence) for the type. Typically, you implement value equality when objects of the type are expected to be added to a collection of some sort, or when their primary purpose is to store a set of fields or properties. You can base your definition of value equality on a comparison of all the fields and properties in the type, or you can base the definition on a subset. But in either case, and in both classes and structs, your implementation should follow the five guarantees of equivalence:  

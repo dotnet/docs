@@ -1,22 +1,12 @@
 ---
 title: "Implementing IEnumerable in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "control flow [Visual Basic]"
   - "enumerable interfaces"
   - "loop structures [Visual Basic], optimizing performance"
   - "control flow [Visual Basic]"
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Implementing IEnumerable(Of T) in Visual Basic
 The <xref:System.Collections.Generic.IEnumerable%601> interface is implemented by classes that can return a sequence of values one item at a time. The advantage of returning data one item at a time is that you do not have to load the complete set of data into memory to work with it. You only have to use sufficient memory to load a single item from the data. Classes that implement the `IEnumerable(T)` interface can be used with `For Each` loops or LINQ queries.  

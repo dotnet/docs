@@ -1,16 +1,7 @@
 ---
 title: "Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5cf21919-4360-4b49-b29d-58ea3164ac72
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)
 You can modify an XML tree, removing elements, attributes, and other types of nodes.  

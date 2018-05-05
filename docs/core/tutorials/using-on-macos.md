@@ -4,11 +4,6 @@ description: This document provides the steps and workflow to create a .NET Core
 author: bleroy
 ms.author: mairaw
 ms.date: 03/23/2017
-ms.topic: get-started-article
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Getting started with .NET Core on macOS
 

@@ -1,14 +1,6 @@
 ---
 title: "How to: Enable Text Trimming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "documents [WPF], trimmng text"
   - "trimmng text [WPF]"
 ms.assetid: dd8c9191-d2be-45fd-9fb4-3c75b65578c5
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enable Text Trimming
 This example demonstrates the usage and effects of the values available in the <xref:System.Windows.TextTrimming> enumeration.  

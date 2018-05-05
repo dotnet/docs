@@ -1,18 +1,11 @@
 ---
 title: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "structs [C#], passing as method parameter"
   - "passing parameters [C#], structs vs. classes"
   - "methods [C#], passing classes vs. structs"
 ms.assetid: 9c1313a6-32a8-4ea7-a59f-450f66af628b
-caps.latest.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method (C# Programming Guide)
 The following example demonstrates how passing a [struct](../../../csharp/language-reference/keywords/struct.md) to a method differs from passing a [class](../../../csharp/language-reference/keywords/class.md) instance to a method. In the example, both of the arguments (struct and class instance) are passed by value, and both methods change the value of one field of the argument. However, the results of the two methods are not the same because what is passed when you pass a struct differs from what is passed when you pass an instance of a class.  

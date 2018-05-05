@@ -1,14 +1,6 @@
 ---
 title: "How to: Set Pen Width and Alignment"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "pens [Windows Forms], setting width"
   - "pens [Windows Forms], setting alignment"
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Pen Width and Alignment
 When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one of the arguments to the constructor. You can also change the pen width with the <xref:System.Drawing.Pen.Width%2A> property of the <xref:System.Drawing.Pen> class.  

@@ -1,14 +1,6 @@
 ---
 title: "StatusBar Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ControlTemplate [WPF], StatusBar"
   - "styles [WPF], StatusBar"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "parts [WPF], StatusBar"
   - "StatusBar [WPF], styles and templates"
 ms.assetid: 9f5e1c25-81eb-4756-a0ac-d9e1fbe33ee2
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # StatusBar Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.StatusBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

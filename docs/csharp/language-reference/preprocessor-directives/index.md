@@ -1,19 +1,12 @@
 ---
 title: "C# preprocessor directives"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.preprocessor"
 helpviewer_keywords: 
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# preprocessor directives
 This section contains information about the following C# preprocessor directives:

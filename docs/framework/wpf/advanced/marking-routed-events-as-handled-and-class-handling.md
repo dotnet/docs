@@ -1,14 +1,6 @@
 ---
 title: "Marking Routed Events as Handled, and Class Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tunneling events [WPF]"
   - "class listeners [WPF]"
@@ -25,12 +17,6 @@ helpviewer_keywords:
   - "events [WPF], suppressing"
   - "bubbling events [WPF]"
 ms.assetid: 5e745508-4861-4b48-b5f6-5fc7ce5289d2
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Marking Routed Events as Handled, and Class Handling
 Handlers for a routed event can mark the event handled within the event data. Handling the event will effectively shorten the route. Class handling is a programming concept that is supported by routed events. A class handler has the opportunity to handle a particular routed event at a class level with a handler that is invoked before any instance handler on any instance of the class.  

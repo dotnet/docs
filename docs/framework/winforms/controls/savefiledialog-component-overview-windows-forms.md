@@ -1,26 +1,12 @@
 ---
 title: "SaveFileDialog Component Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "SaveFileDialog"
 helpviewer_keywords: 
   - "Save File dialog box [Windows Forms], displaying"
   - "SaveFileDialog component [Windows Forms], about SaveFileDialog"
 ms.assetid: be7a625f-46fd-4d06-9985-b613dcbf9bd2
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # SaveFileDialog Component Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.SaveFileDialog> component is a pre-configured dialog box. It is the same as the standard **Save File** dialog box used by Windows. It inherits from the <xref:System.Windows.Forms.CommonDialog> class.  

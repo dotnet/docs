@@ -1,23 +1,11 @@
 ---
 title: "Windows Workflow Foundation Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], programming"
   - "programming [WF]"
   - "WF [WF], programming"
 ms.assetid: f62354e2-6a2b-4e8c-a4bc-533fb96267a4
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Workflow Foundation Programming
 This section contains a set of primer topics that you should understand to become a proficient Windows Workflow Foundation (WF) programmer.  
@@ -57,7 +45,7 @@ This section contains a set of primer topics that you should understand to becom
  Topics that describe workflow tracking and tracing and how these features are used for monitoring workflow applications.  
   
  [Workflow Security](../../../docs/framework/windows-workflow-foundation/workflow-security.md)  
- Discusses how to keep your workflow secure when using SQL and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  
+ Discusses how to keep your workflow secure when using SQL and Windows Communication Foundation (WCF).  
   
  [Windows Workflow Foundation 4 Performance](../../../docs/framework/windows-workflow-foundation/performance.md)  
  Discusses Windows Workflow Foundation 4 performance and compares it to the previous version of WF.

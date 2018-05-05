@@ -2,10 +2,6 @@
 title: QualifierSet_BeginEnumeration function (Unmanaged API Reference)
 description: The QualifierSet_BeginEnumeration function resets an enumerator of the qualifiers of an object.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_BeginEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_BeginEnumeration function
 Resets an enumerator of the qualifiers of an object to the beginning of the enumeration.  

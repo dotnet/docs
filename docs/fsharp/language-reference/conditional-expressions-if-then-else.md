@@ -1,12 +1,7 @@
 ---
 title: "Conditional Expressions: if... then...else (F#)"
 description: Learn how to write conditional expressions in F# to execute different branches of code.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Conditional Expressions: `if...then...else`
 

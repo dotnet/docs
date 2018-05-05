@@ -1,14 +1,6 @@
 ---
 title: "Built-in Types for Common XAML Language Primitives"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML language primitives [XAML Services]"
   - "XAML [XAML Services], built-in types"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "x:Single [XAML Services]"
   - "x:Int32 [XAML Services]"
 ms.assetid: 11de2f08-5b95-4989-b5ec-5178eb968184
-caps.latest.revision: 11
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Built-in Types for Common XAML Language Primitives
 XAML 2009 introduces XAML language-level support for several data types that are frequently used primitives in the common language runtime (CLR) and in other programming languages. XAML 2009 adds support for these primitives: `x:Object`, `x:Boolean`, `x:Char`, `x:String`, `x:Decimal`, `x:Single`, `x:Double`, `x:Int16`, `x:Int32`, `x:Int64`, `x:TimeSpan`, `x:Uri`, `x:Byte`, and `x:Array`  

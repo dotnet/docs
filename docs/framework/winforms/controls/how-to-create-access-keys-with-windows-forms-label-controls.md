@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Access Keys with Windows Forms Label Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -25,12 +17,6 @@ helpviewer_keywords:
   - "keyboard shortcuts [Windows Forms], creating for controls"
   - "access keys [Windows Forms], Windows Forms"
 ms.assetid: 5ee8f823-80be-4a4f-96a4-412671e2e306
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Access Keys with Windows Forms Label Controls
 Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define access keys for other controls. When you define an access key in a label control, the user can press the ALT key plus the character you designate to move the focus to the control that follows it in the tab order. Because labels cannot receive focus, focus automatically moves to the next control in the tab order. Use this technique to assign access keys to text boxes, combo boxes, list boxes, and data grids.  

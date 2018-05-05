@@ -1,20 +1,12 @@
 ---
 title: Async Overview
 description: Learn how async programming is a key technique that makes it straightforward to handle blocking I/O and concurrent operations on multiple cores.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Async Overview
 
 Not so long ago, apps got faster simply by buying a newer PC or server and then that trend stopped. In fact, it reversed. Mobile phones appeared with 1ghz single core ARM chips and server workloads transitioned to VMs. Users still want responsive UI and business owners want servers that scale with their business. The transition to mobile and cloud and an internet-connected population of >3B users has resulted in a new set of software patterns. 

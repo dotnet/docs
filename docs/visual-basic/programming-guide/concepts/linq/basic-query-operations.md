@@ -1,14 +1,6 @@
 ---
 title: "Basic Query Operations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data sources [LINQ in Visual Basic]"
   - "Join clause [LINQ in Visual Basic]"
@@ -23,9 +15,6 @@ helpviewer_keywords:
   - "grouping data [LINQ in Visual Basic]"
   - "Select clause [LINQ in Visual Basic]"
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Basic Query Operations (Visual Basic)
 This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:  

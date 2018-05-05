@@ -1,12 +1,6 @@
 ---
 title: "Event Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Event"
   - "vb.Custom"
@@ -24,9 +18,6 @@ helpviewer_keywords:
   - "ByRef keyword [Visual Basic], Event statements"
   - "declaring user-defined events"
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Event Statement
 Declares a user-defined event.  

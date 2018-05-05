@@ -4,12 +4,7 @@ description: Learn how to create a NuGet package with the 'dotnet pack' command.
 author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 
 # How to Create a NuGet Package with Cross Platform Tools

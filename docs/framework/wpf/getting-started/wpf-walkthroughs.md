@@ -1,29 +1,15 @@
 ---
 title: "WPF Walkthroughs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "walkthroughs [WPF]"
   - "WPF walkthroughs [WPF]"
 ms.assetid: c29bde96-0389-4aff-a9fb-cd678f66b7f7
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Walkthroughs
 Walkthroughs give step-by-step instructions for common scenarios. This makes them a good place to start learning about the product or a particular feature area.  
   
- This topic contains links to [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] walkthroughs.  
+ This topic contains links to Windows Presentation Foundation (WPF) walkthroughs.  
   
 ## WPF Designer Walkthroughs  
   

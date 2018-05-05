@@ -1,18 +1,11 @@
 ---
 title: "add (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "add_CSharpKeyword"
 helpviewer_keywords: 
   - "add event accessor [C#]"
 ms.assetid: faf30b99-10e8-45cd-ab9a-57585d4d1d8d
-caps.latest.revision: 7
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # add (C# Reference)
 The `add` contextual keyword is used to define a custom event accessor that is invoked when client code subscribes to your [event](../../../csharp/language-reference/keywords/event.md). If you supply a custom `add` accessor, you must also supply a [remove](../../../csharp/language-reference/keywords/remove.md) accessor.  

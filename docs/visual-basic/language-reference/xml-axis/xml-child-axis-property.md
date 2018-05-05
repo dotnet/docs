@@ -1,12 +1,6 @@
 ---
 title: "XML Child Axis Property (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyChildAxis"
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "XML child axis property [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Child Axis Property (Visual Basic)
 Provides access to the children of one of the following: an <xref:System.Xml.Linq.XElement> object, an <xref:System.Xml.Linq.XDocument> object, a collection of <xref:System.Xml.Linq.XElement> objects, or a collection of <xref:System.Xml.Linq.XDocument> objects.  

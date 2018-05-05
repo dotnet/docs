@@ -1,21 +1,7 @@
 ---
 title: "Service: Channel Listeners and Channels"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8ccbe0e8-7e55-441d-80de-5765f67542fa
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service: Channel Listeners and Channels
 There are three categories of channel objects: channels, channel listeners and channel factories. Channels are the interface between the application and the channel stack. Channel listeners are responsible for creating channels on the receive (or listen) side, typically in response to a new incoming message or connection. Channel factories are responsible for creating channels on the send side to initiate communication with an endpoint.  
@@ -30,7 +16,7 @@ A channel listener receiving messages and delivering to the layer above through 
   
  The process can be conceptually modeled as a queue inside each channel although the implementation may not actually use a queue. The channel listener is responsible for receiving messages from the layer below or the network and putting them in the queue. The channel is responsible for getting messages from the queue and handing them to the layer above when that layer asks for a message, for example by calling `Receive` on the channel.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides base class helpers for this process. (For a diagram of the channel helper classes discussed in this topic, see [Channel Model Overview](../../../../docs/framework/wcf/extending/channel-model-overview.md).)  
+ WCF provides base class helpers for this process. (For a diagram of the channel helper classes discussed in this topic, see [Channel Model Overview](../../../../docs/framework/wcf/extending/channel-model-overview.md).)  
   
 -   The <xref:System.ServiceModel.Channels.CommunicationObject> class implements <xref:System.ServiceModel.ICommunicationObject> and enforces the state machine described in step 2 of [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
   

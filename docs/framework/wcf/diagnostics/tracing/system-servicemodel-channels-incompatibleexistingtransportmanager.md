@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.IncompatibleExistingTransportManager"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5366ec64-e8ef-4a34-a2f6-7251d89f1be9
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.IncompatibleExistingTransportManager
 An existing incompatible transport manager was found for the specified URI.  

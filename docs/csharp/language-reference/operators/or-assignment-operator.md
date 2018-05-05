@@ -1,19 +1,12 @@
 ---
 title: "|= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "|=_CSharpKeyword"
 helpviewer_keywords: 
   - "OR assignment operator (|=) [C#]"
   - "|= operator (OR assignment) [C#]"
 ms.assetid: 8315b8cf-dd15-402f-92f0-c7db931696ca
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # |= Operator (C# Reference)
 The OR assignment operator.  

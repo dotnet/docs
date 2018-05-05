@@ -1,19 +1,7 @@
 ---
 title: "114 - WorkflowInstanceRecordWithId"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 114 - WorkflowInstanceRecordWithId
 ## Properties  

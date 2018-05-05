@@ -1,24 +1,12 @@
 ---
 title: "Hiring Process"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d5fcacbb-c884-4b37-a5d6-02b1b8eec7b4
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hiring Process
 This sample demonstrates how to implement a business process using messaging activities and two workflows hosted as workflow services. These workflows are part of the IT infrastructure of a fictional company called Contoso, Inc.  
   
- The `HiringRequest` workflow process (implemented as a <xref:System.Activities.Statements.Flowchart>) asks for authorization from several managers in the organization. To achieve this goal, the workflow uses other existing services in the organization (in our case, an inbox service and an organizational data service implemented as plain [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services).  
+ The `HiringRequest` workflow process (implemented as a <xref:System.Activities.Statements.Flowchart>) asks for authorization from several managers in the organization. To achieve this goal, the workflow uses other existing services in the organization (in our case, an inbox service and an organizational data service implemented as plain Windows Communication Foundation (WCF) services).  
   
  The `ResumeRequest` workflow (implemented as a <xref:System.Activities.Statements.Sequence>) publishes a job posting in Contoso's external careers Web site and manages the acquisition of resumes. A job posting is available in the external Web site for a fixed period of time (until a timeout expires) or until an employee from Contoso decides to remove it.  
   
@@ -59,7 +47,7 @@ This sample demonstrates how to implement a business process using messaging act
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
   
@@ -106,7 +94,7 @@ This sample demonstrates how to implement a business process using messaging act
 |ContosoHR|Contains data contracts, business objects and repository classes.|  
 |HiringRequestService|Contains the definition of the Hiring Request Process workflow.<br /><br /> This project is implemented as a console application that self-hosts the workflow (xaml file) as a service.|  
 |ResumeRequestService|A workflow service that collects resumes from candidates until a time-out expires or someone decides that the process has to be stopped.<br /><br /> This project is implemented as a declarative workflow service (xamlx).|  
-|OrgService|A service that exposes organizational information (Employees, Positions, PositionTypes, and Departments). You can think of this service as the Company Organization module of an Enterprise Resource Plan (ERP).<br /><br /> This project is implemented as a console application that exposes a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service.|  
+|OrgService|A service that exposes organizational information (Employees, Positions, PositionTypes, and Departments). You can think of this service as the Company Organization module of an Enterprise Resource Plan (ERP).<br /><br /> This project is implemented as a console application that exposes a Windows Communication Foundation (WCF) service.|  
 |InboxService|An inbox that contains actionable tasks for employees.<br /><br /> This project is implemented as a console application that exposes a WCF service.|  
 |InternalClient|A Web application for interacting with the process. Users can start, participate, and view their HiringProcess workflows. Using this application, they can also start and monitor ResumeRequest processes.<br /><br /> This site is implemented to be internal to Contoso's intranet. This project is implemented as an ASP.NET Web site.|  
 |CareersWebSite|An external Web site that exposes the open positions in Contoso. Any potential candidate can navigate to this site and submit a resume.|  

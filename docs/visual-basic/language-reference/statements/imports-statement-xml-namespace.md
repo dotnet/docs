@@ -1,12 +1,6 @@
 ---
 title: "Imports Statement (XML Namespace)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ImportsXmlns"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "Imports statement [Visual Basic]"
   - "namespaces [Visual Basic], importing"
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Imports Statement (XML Namespace)
 Imports XML namespace prefixes for use in XML literals and XML axis properties.  

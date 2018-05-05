@@ -1,19 +1,12 @@
 ---
 title: "const (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "const_CSharpKeyword"
   - "const"
 helpviewer_keywords: 
   - "const keyword [C#]"
 ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # const (C# Reference)
 You use the `const` keyword to declare a constant field or a constant local. Constant fields and locals aren't variables and may not be modified. Constants can be numbers, Boolean values, strings, or a null reference. Don’t create a constant to represent information that you expect to change at any time. For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company. These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes. See also the [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword. For example:  

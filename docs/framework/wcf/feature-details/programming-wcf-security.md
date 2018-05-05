@@ -1,37 +1,25 @@
 ---
 title: "Programming WCF Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "message security [WCF], programming overview"
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-caps.latest.revision: 25
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Programming WCF Security
-This topic describes the fundamental programming tasks used to create a secure [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application. This topic covers only authentication, confidentiality, and integrity, collectively known as *transfer security*. This topic does not cover authorization (the control of access to resources or services); for information on authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
+This topic describes the fundamental programming tasks used to create a secure Windows Communication Foundation (WCF) application. This topic covers only authentication, confidentiality, and integrity, collectively known as *transfer security*. This topic does not cover authorization (the control of access to resources or services); for information on authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
   
 > [!NOTE]
->  For a valuable introduction to security concepts, especially in regard to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see the set of patterns and practices tutorials on MSDN at [Scenarios, Patterns, and Implementation Guidance for Web Services Enhancements (WSE) 3.0](http://go.microsoft.com/fwlink/?LinkID=88250).  
+>  For a valuable introduction to security concepts, especially in regard to WCF, see the set of patterns and practices tutorials on MSDN at [Scenarios, Patterns, and Implementation Guidance for Web Services Enhancements (WSE) 3.0](http://go.microsoft.com/fwlink/?LinkID=88250).  
   
- Programming [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security is based on three steps setting the following: the security mode, a client credential type, and the credential values. You can perform these steps either through code or configuration.  
+ Programming WCF security is based on three steps setting the following: the security mode, a client credential type, and the credential values. You can perform these steps either through code or configuration.  
   
 ## Setting the Security Mode  
- The following explains the general steps for programming with the security mode in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]:  
+ The following explains the general steps for programming with the security mode in WCF:  
   
 1.  Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)).  
   
@@ -43,7 +31,7 @@ This topic describes the fundamental programming tasks used to create a secure [
   
     1.  `Transport`  
   
-         Transport security depends on the mechanism that the binding you have selected uses. For example, if you are using `WSHttpBinding` then the security mechanism is Secure Sockets Layer (SSL) (also the mechanism for the HTTPS protocol). Generally speaking, the main advantage of transport security is that it delivers good throughput no matter which transport you are using. However, it does have two limitations: The first is that the transport mechanism dictates the credential type used to authenticate a user. This is a drawback only if a service needs to interoperate with other services that demand different types of credentials. The second is that, because the security is not applied at the message level, security is implemented in a hop-by-hop manner rather than end-to-end. This latter limitation is an issue only if the message path between client and service includes intermediaries. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] which transport to use, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using transport security, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md).  
+         Transport security depends on the mechanism that the binding you have selected uses. For example, if you are using `WSHttpBinding` then the security mechanism is Secure Sockets Layer (SSL) (also the mechanism for the HTTPS protocol). Generally speaking, the main advantage of transport security is that it delivers good throughput no matter which transport you are using. However, it does have two limitations: The first is that the transport mechanism dictates the credential type used to authenticate a user. This is a drawback only if a service needs to interoperate with other services that demand different types of credentials. The second is that, because the security is not applied at the message level, security is implemented in a hop-by-hop manner rather than end-to-end. This latter limitation is an issue only if the message path between client and service includes intermediaries. For more information about which transport to use, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md). For more information about using transport security, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md).  
   
     2.  `Message`  
   

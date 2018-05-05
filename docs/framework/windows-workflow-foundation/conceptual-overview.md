@@ -1,22 +1,10 @@
 ---
 title: "Windows Workflow Conceptual Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], concepts"
   - "WF [WF], concepts"
 ms.assetid: 2a5c0ac2-813f-4a7b-83ac-9e5cb85e0640
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Workflow Conceptual Overview
 This section contains a set of topics discussing the larger concepts behind Windows Workflow Foundation (WF).  

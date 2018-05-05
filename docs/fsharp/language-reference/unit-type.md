@@ -1,12 +1,7 @@
 ---
 title: Unit Type (F#)
 description: Learn how the F# 'unit' type is often used to hold the place where a value is required by the language syntax when no value is needed or desired.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Unit Type
 

@@ -2,10 +2,6 @@
 title: Clone function (Unmanaged API Reference)
 description: The Clone function returns a new object that is a complete clone of the current one.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "Clone"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Clone function
 Returns a new object that is a complete clone of the current object.   

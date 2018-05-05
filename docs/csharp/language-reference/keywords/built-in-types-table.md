@@ -1,17 +1,10 @@
 ---
 title: "Built-In Types Table (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "types [C#], built-in"
   - "built-in C# types"
 ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Built-In Types Table (C# Reference)
 The following table shows the keywords for built-in C# types, which are aliases of predefined types in the <xref:System> namespace.  

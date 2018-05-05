@@ -4,11 +4,6 @@ description: .NET Core is a modular, high-performance implementation of .NET for
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core Guide
 

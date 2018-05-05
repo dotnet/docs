@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Assigning WPF Content on Windows Forms at Design Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], assigning at design time"
   - "ElementHost control [Windows Forms], assigning WPF content at design time"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Forms, content assignments"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Assigning WPF Content on Windows Forms at Design Time
 This walkthrough show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types which are included in your project.  

@@ -1,21 +1,10 @@
 ---
 title: "XmlDataDocument Input to XslTransform"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a0b536b6-cdb3-4a44-86c2-3b2ebc7bd4c9
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XmlDataDocument Input to XslTransform
 > [!NOTE]

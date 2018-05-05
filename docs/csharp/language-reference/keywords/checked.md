@@ -1,19 +1,12 @@
 ---
 title: "checked (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "checked"
 helpviewer_keywords: 
   - "checked keyword [C#]"
 ms.assetid: 718a1194-988d-48a3-b089-d6ee8bd1608d
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # checked (C# Reference)
 The `checked` keyword is used to explicitly enable overflow checking for integral-type arithmetic operations and conversions.  

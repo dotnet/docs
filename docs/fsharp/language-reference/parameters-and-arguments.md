@@ -1,12 +1,7 @@
 ---
 title: Parameters and Arguments (F#)
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Parameters and Arguments
 

@@ -1,14 +1,6 @@
 ---
 title: "XamlName Grammar"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DottedXamlName grammar [XAML Services]"
   - "grammar [XAML Services], DottedXamlName"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "names in XAML [XAML Services]"
   - "XamlName grammar [XAML Services]"
 ms.assetid: 11e4cada-41d2-494d-9531-0d3df4dfcbe3
-caps.latest.revision: 13
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XamlName Grammar
 XamlName Grammar is a specific grammar that is defined in the XAML language specification [MS-XAML], which is reproduced here for convenience.  

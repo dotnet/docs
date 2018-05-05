@@ -1,19 +1,7 @@
 ---
 title: "Tracking Events Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c1c1ee87-f80a-449b-acd0-50d81eef116e
-caps.latest.revision: 23
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracking Events Reference
 During execution a workflow in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] raises tracking events as it moves through various stages in its lifetime. The host can subscribe to these events and keep updated on the status of the workflow’s progress during its lifetime. The tracking events raised are discussed in this section.  

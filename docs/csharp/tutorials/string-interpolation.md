@@ -1,14 +1,8 @@
 ---
 title: String interpolation in C#
 description: Learn how to perform common string formatting tasks in C# using the string interpolation feature
-keywords: .NET, .NET Core, C#, string
 author: pkulikov
-ms.author: wiwagn
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 # String interpolation in C# #
 

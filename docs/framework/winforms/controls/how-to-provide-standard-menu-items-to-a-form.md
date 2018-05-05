@@ -1,14 +1,6 @@
 ---
 title: "How to: Provide Standard Menu Items to a Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "menu items [Windows Forms], standard"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: 75db9126-e70c-4e81-921d-b83c0a4a9f50
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Provide Standard Menu Items to a Form
 You can provide a standard menu for your forms with the <xref:System.Windows.Forms.MenuStrip> control.  

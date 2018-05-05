@@ -1,14 +1,6 @@
 ---
 title: "How to: Hit Test in a Viewport3D"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "hit tests [WPF], for 3-D visuals"
   - "Viewport3D [WPF]"
 ms.assetid: 42bfbd99-c7c6-43f1-940b-90448faa412e
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Hit Test in a Viewport3D
 This example shows how to hit test for 3D Visuals in a <xref:System.Windows.Controls.Viewport3D>.  

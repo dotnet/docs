@@ -1,13 +1,6 @@
 ---
 title: "How to: Create and Use Assemblies Using the Command Line (Visual Basic)"
-ms.custom: ""
 ms.date: 03/14/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 229ff9fb-1bd1-403b-946b-526104864c60
 author: rpetrusha
 ms.author: ronpet

@@ -1,14 +1,6 @@
 ---
 title: "Accessing XML in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "LINQ to XML [Visual Basic], accessing XML"
   - "Visual Basic code, XML"
@@ -16,9 +8,6 @@ helpviewer_keywords:
   - "XML [Visual Basic], axis properties"
   - "XML [Visual Basic], accessing"
 ms.assetid: c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Accessing XML in Visual Basic
 Visual Basic provides XML axis properties for accessing and navigating [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] structures. These properties use a special syntax to enable you to access elements and attributes by specifying the XML names.  

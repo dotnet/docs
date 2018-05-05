@@ -4,10 +4,6 @@ description: Learn about the Windows Compatibility Pack and how can you use it t
 author: terrajobst
 ms.author: mairaw
 ms.date: 11/13/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.workload: 
-  - dotnetcore
 ---
 # Using the Windows Compatibility Pack
 

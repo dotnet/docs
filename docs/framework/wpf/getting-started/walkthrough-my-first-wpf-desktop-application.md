@@ -1,21 +1,15 @@
 ---
 title: Create a WPF application in Visual Studio
-ms.custom: 04/12/2018
-ms.prod: ".net-framework"
-ms.technology: dotnet-wpf
-ms.topic: conceptual
-dev_langs:
+ms.date: 04/12/2018
+dev_langs: 
   - "csharp"
   - "vb"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "getting started [WPF], WPF"
   - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
-manager: "wpickett"
-ms.workload:
-  - dotnet
 ---
 # Walkthrough: My first WPF desktop application
 
@@ -197,7 +191,7 @@ In this section, you'll add two pages and an image to the application.
     [!code-csharp[ExpenseIt#2_5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt2/ExpenseItHome.xaml.cs#2_5)]
     [!code-vb[ExpenseIt#2_5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseItHome.xaml.vb#2_5)]
 
-    And like this for **ExpenseReport**:
+    And like this for **ExpenseReportPage**:
 
     [!code-csharp[ExpenseIt#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/ExpenseReportPage.xaml.cs#5)]
     [!code-vb[ExpenseIt#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]

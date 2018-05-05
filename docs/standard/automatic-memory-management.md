@@ -1,13 +1,7 @@
 ---
 title: "Automatic Memory Management"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, automatic memory management"
   - "memory, allocating"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "managed heap"
   - "runtime, automatic memory management"
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Automatic Memory Management
 Automatic memory management is one of the services that the Common Language Runtime provides during [Managed Execution](../../docs/standard/managed-execution-process.md). The Common Language Runtime's garbage collector manages the allocation and release of memory for an application. For developers, this means that you do not have to write code to perform memory management tasks when you develop managed applications. Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak, or attempting to access memory for an object that has already been freed. This section describes how the garbage collector allocates and releases memory.  

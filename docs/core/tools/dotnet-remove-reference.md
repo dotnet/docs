@@ -4,11 +4,6 @@ description: The dotnet remove reference command provides a convenient option to
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet remove reference
 

@@ -1,14 +1,6 @@
 ---
 title: "Slider Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "parts [WPF], Slider"
   - "states [WPF], Slider"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "templates [WPF], Slider"
   - "ControlTemplate [WPF], Slider"
 ms.assetid: d89aa97b-075a-4752-9c41-9679df65c491
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Slider Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Slider> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

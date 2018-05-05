@@ -1,21 +1,7 @@
 ---
 title: "&lt;behaviorExtensions&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;behaviorExtensions&gt;
 Behavior extensions enable the user to create user-defined behavior elements. These elements can be used alongside the standard Windows Communication Foundation (WCF) behavior elements. The `behaviorExtensions` section defines the element such that it can be used in configuration. Here is an example of a typical behavior extension.  

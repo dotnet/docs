@@ -1,19 +1,7 @@
 ---
 title: "Persistence"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 79c14759-9f87-458a-b339-beec8300e339
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Persistence
 This section contains samples that demonstrate persisting workflows to a durable medium in Windows Workflow Foundation (WF).  

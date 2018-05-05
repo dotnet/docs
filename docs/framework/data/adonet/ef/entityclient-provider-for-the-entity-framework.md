@@ -1,21 +1,7 @@
 ---
 title: "EntityClient Provider for the Entity Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # EntityClient Provider for the Entity Framework
 The EntityClient provider is a data provider used by Entity Framework applications to access data described in a conceptual model. For information about conceptual models, see [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md). EntityClient uses other .NET Framework data providers to access the data source. For example, EntityClient uses the .NET Framework Data Provider for SQL Server (SqlClient) when accessing a SQL Server database. For information about the SqlClient provider, see [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md). The EntityClient provider is implemented in the <xref:System.Data.EntityClient> namespace.  

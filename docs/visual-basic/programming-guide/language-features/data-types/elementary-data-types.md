@@ -1,20 +1,10 @@
 ---
 title: "Elementary Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "elementary data types [Visual Basic]"
   - "data types [Visual Basic], elementary"
 ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Elementary Data Types (Visual Basic)
 Visual Basic supplies a set of predefined data types, which you can use for many of your programming elements. This section describes these types and how to use them.  

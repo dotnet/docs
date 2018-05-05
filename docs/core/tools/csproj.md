@@ -4,11 +4,6 @@ description: Learn about the differences between existing and .NET Core csproj f
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Additions to the csproj format for .NET Core
 

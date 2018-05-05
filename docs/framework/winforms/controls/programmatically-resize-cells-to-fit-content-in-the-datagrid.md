@@ -1,14 +1,6 @@
 ---
 title: "How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], resizing cells"
   - "grids [Windows Forms], resizing cells to fit content"
 ms.assetid: 63d770dc-b3f5-462b-901a-3125b2753792
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control
 You can use the <xref:System.Windows.Forms.DataGridView> control methods to resize rows, columns, and headers so that they display their entire values without truncation. You can use these methods to resize <xref:System.Windows.Forms.DataGridView> elements at times of your choosing. Alternately, you can configure the control to resize these elements automatically whenever content changes. This can be inefficient, however, when you are working with large data sets or when your data changes frequently. For more information, see [Sizing Options in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  

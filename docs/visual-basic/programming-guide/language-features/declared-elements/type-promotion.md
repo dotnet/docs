@@ -1,13 +1,6 @@
 ---
 title: "Type Promotion (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declared elements [Visual Basic], scope"
   - "visibility [Visual Basic], declared elements"
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "type promotion"
   - "declared elements [Visual Basic], visibility"
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type Promotion (Visual Basic)
 When you declare a programming element in a module, Visual Basic promotes its scope to the namespace containing the module. This is known as *type promotion*.  

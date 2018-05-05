@@ -1,25 +1,11 @@
 ---
 title: "Understanding XAML Node Stream Structures and Concepts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML node streams [XAML Services]"
   - "nodes [XAML Services], XAML node stream"
   - "XAML [XAML Services], XAML node streams"
 ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
-caps.latest.revision: 14
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Understanding XAML Node Stream Structures and Concepts
 XAML readers and XAML writers as implemented in .NET Framework XAML Services are based on the design concept of a XAML node stream. The XAML node stream is a conceptualization of a set of XAML nodes. In this conceptualization, a XAML processor walks through the structure of the node relationships in the XAML one at a time. At any time, only one current record or current position exists in an open XAML node stream, and many aspects of the API report only the information available from that position. The current node in a XAML node stream can be described as being an object, a member, or a value. By treating XAML as a XAML node stream, XAML readers can communicate with XAML writers and enable a program to view, interact with, or alter the contents of a XAML node stream during either a load path or a save path operation that involves XAML. XAML reader and writer API design and the XAML node stream concept are similar to previous related reader and writer designs and concepts, such as the [!INCLUDE[TLA#tla_xmldom](../../../includes/tlasharptla-xmldom-md.md)] and the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. This topic discusses XAML node stream concepts and describes how you can write routines that interact with XAML representations at the XAML node level.  

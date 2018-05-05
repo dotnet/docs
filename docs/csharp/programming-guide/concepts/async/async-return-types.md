@@ -1,17 +1,7 @@
 ---
 title: "Async Return Types (C#)"
-ms.custom: ""
 ms.date: 05/29/2017
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Async Return Types (C#)
 Async methods can have the following return types:

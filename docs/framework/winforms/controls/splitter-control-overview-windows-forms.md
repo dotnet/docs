@@ -1,25 +1,11 @@
 ---
 title: "Splitter Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "Splitter"
 helpviewer_keywords: 
   - "Splitter control [Windows Forms], about Splitter control"
 ms.assetid: e2b6ab83-dfdd-40ec-9762-850702c82dcb
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Splitter Control Overview (Windows Forms)
 > [!IMPORTANT]

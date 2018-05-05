@@ -1,19 +1,7 @@
 ---
 title: "Services1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 521cdb66-98cb-4ad1-b706-370788a43485
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Services
 This section contains links to samples that demonstrate Windows Workflow Foundation (WF) service functionality.  

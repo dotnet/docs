@@ -1,10 +1,6 @@
 ---
 title: "-keycontainer (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/keycontainer"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "keycontainer compiler option [C#]"
   - "-keycontainer compiler option [C#]"
 ms.assetid: b3982b6d-2382-4f7e-bebd-ce98eaa30763
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -keycontainer (C# Compiler Options)
 Specifies the name of the cryptographic key container.  

@@ -1,12 +1,7 @@
 ---
 title: "Exceptions: The failwith Function (F#)"
 description: Learn how the 'failwith' function generates an F# exception.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Exceptions: The failwith Function
 

@@ -1,19 +1,12 @@
 ---
 title: "get (C# Reference)"
 ms.date: 03/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "get_CSharpKeyword"
   - "get"
 helpviewer_keywords: 
   - "get keyword [C#]"
 ms.assetid: a52de048-fbe0-41b0-82ec-8e4ac04d3a71
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # get (C# Reference)
 

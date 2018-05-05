@@ -1,18 +1,11 @@
 ---
 title: "Finalizers (C# Programming Guide)"
 ms.date: 05/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "~ [C#], in finalizers"
   - "C# language, finalizers"
   - "finalizers [C#]"
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Finalizers (C# Programming Guide)
 Finalizers are used to destruct instances of classes.  

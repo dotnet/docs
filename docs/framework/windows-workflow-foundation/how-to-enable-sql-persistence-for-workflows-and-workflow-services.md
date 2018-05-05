@@ -1,22 +1,10 @@
 ---
 title: "How to: Enable SQL Persistence for Workflows and Workflow Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
-caps.latest.revision: 36
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Enable SQL Persistence for Workflows and Workflow Services
 This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for your workflows and workflow services both programmatically and by using a configuration file.  
@@ -36,7 +24,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
 >   
 >  System.Data.SqlClient.SqlException: Could not find stored procedure 'System.Activities.DurableInstancing.CreateLockOwner'  
   
- The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. [!INCLUDE[crabout](../../../includes/crabout-md.md)] properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).  
+ The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. For more information about properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).  
   
 ## Enabling Persistence for Self-Hosted Workflows that use WorkflowApplication  
  You can enable persistence for self-hosted workflows that use <xref:System.Activities.WorkflowApplication> programmatically by using the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> object model. The following procedure contains steps to do this.  

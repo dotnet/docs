@@ -1,12 +1,7 @@
 ---
 title: XML Documentation (F#)
-description: Learn about support in F# for generating documentation from comments. 
-author: cartermp
-ms.author: phcart
+description: Learn about support in F# for generating documentation from comments.
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # XML Documentation
 

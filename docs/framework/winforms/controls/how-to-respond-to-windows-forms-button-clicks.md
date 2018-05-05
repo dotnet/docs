@@ -1,14 +1,6 @@
 ---
 title: "How to: Respond to Windows Forms Button Clicks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
   - "Click event [Windows Forms], responding to"
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Respond to Windows Forms Button Clicks
 The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control is to run some code when the button is clicked.  

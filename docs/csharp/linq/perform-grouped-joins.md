@@ -1,14 +1,7 @@
 ---
 title: Perform grouped joins
 description: How to perform grouped joins.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 12/1/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: 9667daf9-a5fd-4b43-a5c4-a9c2b744000e
 ---
 # Perform grouped joins

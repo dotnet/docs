@@ -1,13 +1,7 @@
 ---
 title: Branches and loops tutorial - C# local quickstarts
 description: In this quickstart about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/31/2017
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # Branches and loops

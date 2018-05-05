@@ -1,19 +1,12 @@
 ---
 title: "* Operator (C# Reference)"
 ms.date: 04/04/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "*_CSharpKeyword"
 helpviewer_keywords: 
   - "multiplication operator (*) [C#]"
   - "* operator [C#]"
 ms.assetid: abd9a5f0-9b24-431e-971a-09ee1c45c50e
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # * Operator (C# Reference)
 The multiplication operator (`*`) computes the product of its operands. All numeric types have predefined multiplication operators.  

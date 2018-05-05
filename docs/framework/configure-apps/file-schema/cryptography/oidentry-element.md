@@ -1,14 +1,6 @@
 ---
 title: "&lt;oidEntry&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/oidMap/oidEntry"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#oidEntry"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "<oidEntry> element"
   - "oidEntry element"
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;oidEntry&gt; Element
 Maps an ASN.1 object identifier (OID) to a friendly name.  

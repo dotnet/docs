@@ -1,19 +1,13 @@
 ---
 title: C# Guide
 description: Learn how the C# Guide can help you gain extensive knowledge on C#, whether you're a new developer or a seasoned expert.
-author: BillWagner
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 helpviewer_keywords: 
   - "documentation [C#]"
   - "Help, Visual C# documentation"
   - "C# language"
   - "Visual C#"
-ms.author: "wiwagn"
 ---
 # C# Guide
 

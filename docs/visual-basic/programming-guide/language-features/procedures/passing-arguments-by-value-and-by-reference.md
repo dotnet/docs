@@ -1,13 +1,6 @@
 ---
 title: "Passing Arguments by Value and by Reference (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "ByRef keyword [Visual Basic], passing arguments by reference"
   - "Visual Basic code, procedures"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "arguments [Visual Basic], passing by value or by reference"
   - "argument passing [Visual Basic], by value or by reference"
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Passing Arguments by Value and by Reference (Visual Basic)
 In Visual Basic, you can pass an argument to a procedure *by value* or *by reference*. This is known as the *passing mechanism*, and it determines whether the procedure can modify the programming element underlying the argument in the calling code. The procedure declaration determines the passing mechanism for each parameter by specifying the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword.  

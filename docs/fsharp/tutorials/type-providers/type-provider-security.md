@@ -1,12 +1,7 @@
 ---
 title: Type Provider Security
 description: Learn about type provider security in F#, including how to change the trust settings for a type provider.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Type Provider Security
 

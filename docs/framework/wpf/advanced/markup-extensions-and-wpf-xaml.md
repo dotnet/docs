@@ -1,14 +1,6 @@
 ---
 title: "Markup Extensions and WPF XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "brace character [WPF]"
   - "Binding markup extensions [WPF]"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "characters [WPF], curly brace"
   - "DynamicResource markup extensions [WPF]"
 ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Markup Extensions and WPF XAML
 This topic introduces the concept of markup extensions for XAML, including their syntax rules, purpose, and the class object model that underlies them. Markup extensions are a general feature of the XAML language and of the .NET implementation of XAML services. This topic specifically details markup extensions for use in WPF XAML.  

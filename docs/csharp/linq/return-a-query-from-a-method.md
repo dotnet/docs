@@ -1,16 +1,8 @@
 ---
 title: Return a query from a method
 description: How to return a query.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 11/30/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: db220f79-c35b-41f2-886c-cd068672d42d
-
 ---
 # How to: Return a Query from a Method (C# Programming Guide)
 This example shows how to return a query from a method as the return value and as an `out` parameter.  

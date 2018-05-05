@@ -1,26 +1,12 @@
 ---
 title: "Control Type Recommendations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "user controls [Windows Forms], when to use"
   - "custom controls [Windows Forms], types"
   - "controls [Windows Forms], creating"
 ms.assetid: 5235fe9d-c36a-4c08-ae76-6cb90b50085e
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Control Type Recommendations
 The .NET Framework gives you power to develop and implement new controls. In addition to the familiar user control, you will now find that you are able to write custom controls that perform their own painting, and are even able to extend the functionality of existing controls through inheritance. Deciding which type of control to create can be confusing. This section highlights the differences between the various types of controls from which you can inherit, and gives considerations regarding the type to choose for your project.  

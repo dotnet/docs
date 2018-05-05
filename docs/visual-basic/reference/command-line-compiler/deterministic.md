@@ -1,10 +1,6 @@
 ---
 title: "-deterministic"
 ms.date: 04/11/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "deterministic compiler option [Visual Basic]"
   - "-deterministic compiler option [Visual Basic]"

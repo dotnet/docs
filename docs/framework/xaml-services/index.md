@@ -1,25 +1,11 @@
 ---
 title: "XAML Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], System.Xaml concepts"
   - "XAML Services in WPF [XAML Services]"
   - "System.Xaml [XAML Services], conceptual documentation"
 ms.assetid: 0e11f386-808c-4eae-9ba6-029ad7ba2211
-caps.latest.revision: 13
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XAML Services
 This topic describes the capabilities of a technology set known as .NET Framework XAML Services. The majority of the services and APIs described are located in the assembly System.Xaml, which is an assembly introduced with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] set of .NET core assemblies. Services include readers and writers, schema classes and schema support, factories, attributing of classes, XAML language intrinsic support, and other XAML language features.  
@@ -44,7 +30,7 @@ This topic describes the capabilities of a technology set known as .NET Framewor
  If you are looking for introductory material on XAML as a language, you might try [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md). That topic discusses XAML for an audience that is new both to [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] and also to using XAML markup and XAML language features. Another useful document is the introductory material in the [XAML language specification](http://go.microsoft.com/fwlink/?LinkId=114525).  
   
 ## .NET Framework XAML Services and System.Xaml in the .NET Architecture  
- In previous versions of [!INCLUDE[TLA#tla_netframewk](../../../includes/tlasharptla-netframewk-md.md)], support for XAML language features was implemented by frameworks that built on [!INCLUDE[TLA#tla_netframewk](../../../includes/tlasharptla-netframewk-md.md)] ([!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Windows Workflow Foundation and Windows Communication Foundation (WCF)), and therefore varied in its behavior and the API used depending on which specific framework you were using. This included the XAML parser and its object graph creation mechanism, XAML language intrinsics, serialization support, and so on.  
+ In previous versions of Microsoft .NET Framework, support for XAML language features was implemented by frameworks that built on Microsoft .NET Framework ([!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Windows Workflow Foundation and Windows Communication Foundation (WCF)), and therefore varied in its behavior and the API used depending on which specific framework you were using. This included the XAML parser and its object graph creation mechanism, XAML language intrinsics, serialization support, and so on.  
   
  In [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], .NET Framework XAML Services and the System.Xaml assembly define much of what is needed for supporting XAML language features. This includes base classes for XAML readers and XAML writers. The most important feature added to .NET Framework XAML Services that was not present in any of the framework-specific XAML implementations is a type system representation for XAML. The type system representation presents XAML in an object-oriented way that centers on XAML capabilities without taking dependencies on specific capabilities of frameworks.  
   

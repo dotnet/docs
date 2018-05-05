@@ -1,17 +1,10 @@
 ---
 title: "Using Type dynamic (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "dynamic [C#], about dynamic type"
   - "dynamic type [C#]"
 ms.assetid: 3828989d-c967-4a51-b948-857ebc8fdf26
-caps.latest.revision: 30
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Type dynamic (C# Programming Guide)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] introduces a new type, `dynamic`. The type is a static type, but an object of type `dynamic` bypasses static type checking. In most cases, it functions like it has type `object`. At compile time, an element that is typed as `dynamic` is assumed to support any operation. Therefore, you do not have to be concerned about whether the object gets its value from a COM API, from a dynamic language such as IronPython, from the HTML Document Object Model (DOM), from reflection, or from somewhere else in the program. However, if the code is not valid, errors are caught at run time.  

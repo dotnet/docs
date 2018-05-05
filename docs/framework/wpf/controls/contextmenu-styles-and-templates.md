@@ -1,14 +1,6 @@
 ---
 title: "ContextMenu Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "templates [WPF], ContextMenu"
   - "parts [WPF], ContextMenu"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], ContextMenu"
   - "states [WPF], ContextMenu"
 ms.assetid: 342d1f17-c406-4f94-8f55-867c5f3ea511
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ContextMenu Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ContextMenu> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  

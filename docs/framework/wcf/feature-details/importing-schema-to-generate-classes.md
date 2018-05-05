@@ -1,14 +1,6 @@
 ---
 title: "Importing Schema to Generate Classes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "WCF, schema import and export"
   - "XsdDataContractImporter class"
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Importing Schema to Generate Classes
-To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  
+To generate classes from schemas that are usable with Windows Communication Foundation (WCF), use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  
   
 ## The Import Process  
  The schema import process starts with an <xref:System.Xml.Schema.XmlSchemaSet> and produces a <xref:System.CodeDom.CodeCompileUnit>.  
@@ -109,7 +95,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
  [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  
   
 > [!NOTE]
->  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+>  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to WCF is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  Normally, a list is imported as a collection data contract that derives from a Generic List or as a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
   

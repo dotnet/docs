@@ -1,14 +1,6 @@
 ---
 title: "Type Relationships in Query Operations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "variable relationships [LINQ in Visual Basic]"
   - "type information inferred [LINQ in Visual Basic]"
@@ -19,9 +11,6 @@ helpviewer_keywords:
   - "inferring type information [LINQ in Visual Basic]"
   - "relationships [LINQ in Visual Basic]"
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
-caps.latest.revision: 34
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type Relationships in Query Operations (Visual Basic)
 Variables used in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query operations are strongly typed and must be compatible with each other. Strong typing is used in the data source, in the query itself, and in the query execution. The following illustration identifies terms used to describe a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query. For more information about the parts of a query, see [Basic Query Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).  

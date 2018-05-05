@@ -1,14 +1,6 @@
 ---
 title: "Optimizing Performance: Taking Advantage of Hardware"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "graphics [WPF], performance"
   - "hardware rendering pipeline [WPF]"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "graphics [WPF], rendering tiers"
   - "software rendering pipeline [WPF]"
 ms.assetid: bfb89bae-7aab-4cac-a26c-a956eda8fce2
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Optimizing Performance: Taking Advantage of Hardware
 The internal architecture of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] has two rendering pipelines, hardware and software. This topic provides information about these rendering pipelines to help you make decisions about performance optimizations of your applications.  

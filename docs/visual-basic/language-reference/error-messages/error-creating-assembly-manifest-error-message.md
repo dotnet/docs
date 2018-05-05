@@ -1,21 +1,12 @@
 ---
 title: "Error creating assembly manifest: &lt;error message&gt;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30140"
   - "vbc30140"
 helpviewer_keywords: 
   - "BC30140"
 ms.assetid: 1beb5aa0-7b79-4c85-946b-5c2d0a41d1d2
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Error creating assembly manifest: &lt;error message&gt;
 The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error in the pre-emission stage of creating the assembly.  

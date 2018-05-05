@@ -1,12 +1,7 @@
 ---
 title: Units of Measure (F#)
 description: Learn how floating point and signed integer values in F# can have associated units of measure, which are typically used to indicate length, volume, and mass.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Units of Measure
 

@@ -1,17 +1,10 @@
 ---
 title: "Interface Properties (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "properties [C#], on interfaces"
   - "interfaces [C#], properties"
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Interface Properties (C# Programming Guide)
 Properties can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). The following is an example of an interface indexer accessor:  

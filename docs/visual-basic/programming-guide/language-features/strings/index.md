@@ -1,20 +1,10 @@
 ---
 title: "Strings in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, strings"
   - "strings [Visual Basic], Visual Basic"
 ms.assetid: 7e4c777c-ad69-46e2-8b9e-9be4033b1c96
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Strings in Visual Basic
 This section describes the basic concepts behind using strings in Visual Basic.  

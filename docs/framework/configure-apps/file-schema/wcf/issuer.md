@@ -1,21 +1,7 @@
 ---
 title: "&lt;issuer&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8c49c6ae-fa1a-4179-a84b-613c3216dcde
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;issuer&gt;
 Specifies the Security Token Service (STS) that issues security tokens.  

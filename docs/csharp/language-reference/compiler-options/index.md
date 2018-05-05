@@ -1,10 +1,6 @@
 ---
 title: "C# Compiler Options"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -14,9 +10,6 @@ helpviewer_keywords:
   - "Visual C# compiler"
   - "Visual C#, compiler options"
 ms.assetid: d3403556-1816-4546-a782-e8223a772e44
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Compiler Options
 The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or code modules (.netmodule).  

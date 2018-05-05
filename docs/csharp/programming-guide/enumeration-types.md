@@ -1,19 +1,12 @@
 ---
 title: "Enumeration types (C# Programming Guide)"
 ms.date: "09/10/2017"
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [C#]"
   - "enums [C#]"
   - "C# Language, enums"
   - "bit flags [C#]"
 ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Enumeration types (C# Programming Guide)
 

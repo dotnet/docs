@@ -1,33 +1,19 @@
 ---
 title: "Serialization and Deserialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 3d71814c-bda7-424b-85b7-15084ff9377a
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Serialization and Deserialization
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes a new serialization engine, the <xref:System.Runtime.Serialization.DataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractSerializer> translates between [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects and XML, in both directions. This topic explains how the serializer works.  
+Windows Communication Foundation (WCF) includes a new serialization engine, the <xref:System.Runtime.Serialization.DataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractSerializer> translates between [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects and XML, in both directions. This topic explains how the serializer works.  
   
  When serializing [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects, the serializer understands a variety of serialization programming models, including the new *data contract* model. For a full list of supported types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md). For an introduction to data contracts, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
- When deserializing XML, the serializer uses the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. It also supports the <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> classes to enable it to produce optimized XML in some cases, such as when using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] binary XML format.  
+ When deserializing XML, the serializer uses the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. It also supports the <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> classes to enable it to produce optimized XML in some cases, such as when using the WCF binary XML format.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer> is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type names as part of the serialized data. It is used when the same types are shared on the serializing and the deserializing ends. Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
+ WCF also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer> is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type names as part of the serialized data. It is used when the same types are shared on the serializing and the deserializing ends. Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
   
 > [!WARNING]
 >  The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client when sending such data to a WCF service.  
@@ -49,7 +35,7 @@ ms.workload:
  [!code-vb[c_StandaloneDataContractSerializer#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_standalonedatacontractserializer/vb/source.vb#2)]  
   
 ### Specifying Known Types  
- If polymorphism is involved in the types being serialized that is not already handled using the <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute or some other mechanism, a list of possible known types must be passed to the serializer’s constructor using the `knownTypes` parameter. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ If polymorphism is involved in the types being serialized that is not already handled using the <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute or some other mechanism, a list of possible known types must be passed to the serializer’s constructor using the `knownTypes` parameter. For more information about known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
  The following example shows a class, `LibraryPatron`, that includes a collection of a specific type, the `LibraryItem`. The second class defines the `LibraryItem` type. The third and four classes (`Book` and `Newspaper`) inherit from the `LibraryItem` class.  
   
@@ -123,7 +109,7 @@ ms.workload:
   
 -   Semantics. Sometimes it is important to preserve the fact that two references are to the same object, and not to two identical objects.  
   
- For these reasons, some `DataContractSerializer` constructor overloads have a `preserveObjectReferences` parameter (the default is `false`). When this parameter is set to `true`, a special method of encoding object references, which only [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] understands, is used. When set to `true`, the XML code example now resembles the following.  
+ For these reasons, some `DataContractSerializer` constructor overloads have a `preserveObjectReferences` parameter (the default is `false`). When this parameter is set to `true`, a special method of encoding object references, which only WCF understands, is used. When set to `true`, the XML code example now resembles the following.  
   
 ```xml  
 <PurchaseOrder ser:id="1">  
@@ -262,7 +248,7 @@ ms.workload:
   
 -   The <xref:System.Runtime.Serialization.NetDataContractSerializer.Serialize%2A> and <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize%2A> methods are aliases for the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> methods. These exist to provide a more consistent programming model with binary or SOAP serialization.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these features, see [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md).  
+ For more information about these features, see [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md).  
   
  The XML formats that the `NetDataContractSerializer` and the `DataContractSerializer` use are normally not compatible. That is, attempting to serialize with one of these serializers and deserialize with the other is not a supported scenario.  
   

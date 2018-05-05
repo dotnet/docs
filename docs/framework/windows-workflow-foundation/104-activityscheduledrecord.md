@@ -1,19 +1,7 @@
 ---
 title: "104 - ActivityScheduledRecord"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 104 - ActivityScheduledRecord
 ## Properties  

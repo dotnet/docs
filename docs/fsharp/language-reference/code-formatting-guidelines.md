@@ -1,12 +1,7 @@
 ---
 title: Code Formatting Guidelines (F#)
 description: Learn code indentation formatting guidelines for the F# programming language for readability, aesthetics, standardization, and compilation.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Code Formatting Guidelines
 

@@ -37,12 +37,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute can be applied to any application element. For a complete list of the violations that can be suppressed, see [Code Analysis for Managed Code Warnings](http://msdn.microsoft.com/library/3c2741ff-0d3a-42e6-acd5-d42310bd03c4).  
+ This attribute can be applied to any application element. For a complete list of the violations that can be suppressed, see [Code Analysis for Managed Code Warnings](/visualstudio/code-quality/code-analysis-for-managed-code-warnings).  
   
 > [!NOTE]
 >  The <xref:System.Diagnostics.ConditionalAttribute> is applied to this class, specifying the preprocessing symbol "CODE_ANALYSIS" as the conditional symbol that determines whether the attribute call is included or omitted. If the symbol is defined, the attribute call is included; otherwise, the call is omitted.  
 >   
->  When you right-click a Code Analysis warning in the Visual Studio **Error List** and then click **Suppress Message(s)**, a **SuppressMessage** attribute is added either in your code or to the project's global suppressions file. For more information about the **SuppressMessage** attribute and its use in Visual Studio, see [In Source Suppression Overview](http://msdn.microsoft.com/library/f1a2dc6a-a9eb-408c-9078-2571e57d207d).  
+>  When you right-click a Code Analysis warning in the Visual Studio **Error List** and then click **Suppress Message(s)**, a **SuppressMessage** attribute is added either in your code or to the project's global suppressions file. For more information about the **SuppressMessage** attribute and its use in Visual Studio, see [In Source Suppression Overview](/visualstudio/code-quality/in-source-suppression-overview).  
   
    
   

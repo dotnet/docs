@@ -1,5 +1,5 @@
 ---
-title: What's new in .NET Core 
+title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core.
 author: rpetrusha
 ms.author: ronpet

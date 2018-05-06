@@ -119,7 +119,6 @@ public class SynchronousSocketListener {
   
                 // An incoming connection needs to be processed.  
                 while (true) {  
-                    bytes = new byte[1024];  
                     int bytesRec = handler.Receive(bytes);  
                     data += Encoding.ASCII.GetString(bytes,0,bytesRec);  
                     if (data.IndexOf("<EOF>") > -1) {  

@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 * [Visual Studio 2017 15.6 or later](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed.
 
-* The [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml). The Taxi Trip data set trains the machine learning model and tests whether its predictions.
+* The [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml). The Taxi Trip data set trains the machine learning model and can be used to evaluate how accurate your model is.
 
 ## Understand the problem
 
@@ -57,7 +57,7 @@ The process of training the model identifies which factors in the dataset are mo
     ```
 
 ### Preparing and understanding your data
-Download the [taxitrip-train.csv]() and [taxitrip-test.csv]() data sets and save them to the Data folder previously created.
+Download the [taxitrip-train.csv and taxitrip-test.csv data sets](https://github.com/dotnet/machinelearning/tree/master/test/data) and save them to the Data folder previously created.
 
 Open the **taxitrip-train.csv** data set in the code editor and look at column headers in the first row. Take a look at each of the columns. Understand the data and decide which columns are **features** and which is the **label**.
 
@@ -90,9 +90,9 @@ using Microsoft.ML;
 You define variables to hold your datapath (the dataset that trains your model), your testdatapath (the dataset that evaluates your model), and your modelpath (where you store the trained model). Add the following code to the line right above `Main` to specify the recently downloaded files:
 
 ```csharp
-const string DataPath = @"..\..\..\Data\train.csv";
-const string TestDataPath = @"..\..\..\Data\test.csv";
-const string ModelPath = @"..\..\..\Models\Model.zip";
+const string DataPath = @".\Data\train.csv";
+const string TestDataPath = @".\Data\test.csv";
+const string ModelPath = @".\Models\Model.zip";
 ```
 
 Next, create classes for the input data and the predictions:
@@ -123,12 +123,12 @@ public class TaxiTrip
 }
 ```
 
-The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (fare_amount) and a `PredictedLabel` `ColumnName` attribute. Add the following code into the file below the `TaxiTrip` class:
+The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (fare_amount) and a `Score` `ColumnName` attribute. Add the following code into the file below the `TaxiTrip` class:
 
 ```csharp
 public class TaxiTripFarePrediction
 {
-    [ColumnName("PredictedLabel")]
+    [ColumnName("Score")]
     public float fare_amount;
 }
 ```
@@ -281,12 +281,20 @@ Add the following code to evaluate the model and produce the metrics for it:
 ```csharp
 var evaluator = new RegressionEvaluator();
 RegressionMetrics metrics = evaluator.Evaluate(model, testData);
+```
 
+RMS is one metric for evaluating regression problems. The lower it is, the better your model. Add the following code into the `Evaluate()` function to print the RMS for your model.
+
+```csharp
 // Rms should be around 2.795276
 Console.WriteLine("Rms=" + metrics.Rms);
 ```
 
-RMS is one metric for evaluating regression problems. The lower it is, the better your model.
+RSquared is another metric for evaluating regression problems. RSquared will be a value between 0 and 1. The closer you are to 1, the better your model. Add the following code into the `Evaluate()` function to print the RSquared value for your model.
+
+```csharp
+Console.WriteLine("RSquared = " + metrics.RSquared);
+```
 
 ## Use the model for predictions
 

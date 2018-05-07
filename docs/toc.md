@@ -1113,7 +1113,7 @@
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
-### [Taxi Time Predictor (Regression)](machine-learning/tutorials/regression.md)
+### [Taxi Time Predictor (Regression)](machine-learning/tutorials/taxi-fare.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine Learning Glossary](machine-learning/resources/glossary.md)
 ### [Machine Learning Basics](machine-learning/resources/basics.md)

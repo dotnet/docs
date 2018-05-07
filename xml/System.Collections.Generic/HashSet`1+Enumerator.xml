@@ -47,7 +47,7 @@
   
  If <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator object instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property, <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.   
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -93,16 +93,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> is undefined under any of the following conditions:  
+ 
+ <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> returns the default value of type `T` under any of the following conditions:  
   
--   The enumerator is positioned before the first element in the collection immediately after the enumerator is created. The <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A>.  
+- The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property.  
   
--   The last call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
-  
- <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> to the next element. If the list is modified between calling <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method and obtaining the contents of the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property, <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.  
-  
+- The last call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
+
 > [!NOTE]
->  For better performance, this property does not throw an exception if the enumerator is positioned before the first element or after the last element. The value of the property is undefined. To get an exception instead, cast the <xref:System.Collections.Generic.HashSet%601.Enumerator> to the <xref:System.Collections.IEnumerator?displayProperty=nameWithType> interface before using it.  
+>  That behaviour is different for the non-generic <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property. The non-generic <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property throws an <xref:System.InvalidOperationException> if the enumerator is positioned before the first element of the collection or after the last element.  
+ 
+ <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> return the same object until either <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
+  
+ If the collection is modified between calling <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property, <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.
   
  ]]></format>
         </remarks>
@@ -185,7 +188,7 @@
   
  If <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> also return `false`.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property, <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.  
   
  ]]></format>
         </remarks>
@@ -228,13 +231,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IEnumerator.Current%2A> property; otherwise, <xref:System.Collections.IEnumerator.Current%2A> is undefined.  
+ 
+ <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> throws an <xref:System.InvalidOperationException> under any of the following conditions:  
   
- <xref:System.Collections.IEnumerator.Current%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+- The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property.  
   
- <xref:System.Collections.IEnumerator.Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IEnumerator.Current%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+- The last call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
+
+> [!NOTE]
+>  That behaviour is different for the generic <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property. The generic <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property returns the default value of type `T` if the enumerator is positioned before the first element of the collection or after the last element.
+ 
+ <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> return the same object until either <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.IEnumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.IEnumerator.Current%2A> property, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ If the collection is modified between calling <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property, <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> returns the element that it is set to, even though the enumerator is invalidated.
   
  ]]></format>
         </remarks>
@@ -279,7 +288,7 @@
 ## Remarks  
  After calling <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A>, you must call the <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.HashSet%601.Enumerator.Current%2A> property.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.HashSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.HashSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  ]]></format>
         </remarks>

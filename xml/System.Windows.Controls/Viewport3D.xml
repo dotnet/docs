@@ -36,7 +36,7 @@
   
  <xref:System.Windows.Controls.Viewport3D> extends 2-D hit testing into the 3-D scene by extruding the 2-D hit test point into a 3-D ray. Call the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to return detailed hit result information about the hit visual, model, mesh, and point of intersection.  
   
- On [!INCLUDE[TLA#tla_whistler](~/includes/tlasharptla-whistler-md.md)], if the display color quality is not set to 32-bit or 16-bit, the <xref:System.Windows.Controls.Viewport3D> might not render as expected.  
+ On Microsoft Windows XP, if the display color quality is not set to 32-bit or 16-bit, the <xref:System.Windows.Controls.Viewport3D> might not render as expected.  
   
  ]]></format>
     </remarks>

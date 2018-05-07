@@ -693,7 +693,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Which numbering system is used is determined by the operating system of the print server and whether the print server is a computer or a print server appliance. For example, the operating system for [!INCLUDE[TLA#tla_whistler](~/includes/tlasharptla-whistler-md.md)] determines the numbering in this way: when a print server is turned on, if all its print queues are empty, the first print job submitted on the server by any user and to any queue is assigned ID number 2. Each subsequent job on the server is assigned a number that is one greater than the previous print job on that server.  
+ Which numbering system is used is determined by the operating system of the print server and whether the print server is a computer or a print server appliance. For example, the operating system for Microsoft Windows XP determines the numbering in this way: when a print server is turned on, if all its print queues are empty, the first print job submitted on the server by any user and to any queue is assigned ID number 2. Each subsequent job on the server is assigned a number that is one greater than the previous print job on that server.  
   
  The print queue for the print job has no effect on its number: if jobs are sent to QueueA, QueueB, and QueueA, in that order, then QueueA has jobs 2 and 4, and QueueB has job 3.  
   

@@ -109,6 +109,7 @@
         "docs/csharp/**/**.yml": "dotnet-csharp",
         "docs/framework/**/**.md": "dotnet-framework",
         "docs/fsharp/**/**.md": "dotnet-fsharp",
+        "docs/machine-learning/**/**.md": "dotnet-ml",
         "docs/standard/**/**.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic"
       },
@@ -134,7 +135,8 @@
         "docs/csharp/**/**.md": "billwagner",
         "docs/csharp/**/**.yml": "billwagner",
         "docs/framework/data/adonet/**/**.md": "douglaslMS",
-        "docs/fsharp/**/**.md": "cartermp"
+        "docs/fsharp/**/**.md": "cartermp",
+        "docs/machine-learning/**/**.md": "JRAlexander"
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",
@@ -143,7 +145,8 @@
         "docs/csharp/**/**.md": "wiwagn",
         "docs/csharp/**/**.yml": "wiwagn",
         "docs/framework/data/adonet/**/**.md": "douglasl",
-        "docs/fsharp/**/**.md": "phcart"        
+        "docs/fsharp/**/**.md": "phcart",
+        "docs/machine-learning/**/**.md": "johalex"
       },
       "manager": {
         "docs/framework/data/adonet/**/**.md": "craigg"

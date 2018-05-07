@@ -70,7 +70,7 @@ There are three implicit conversions from an interpolated string:
       - An <xref:System.FormattableString.Invariant%2A> method that produces a result string for the <xref:System.Globalization.CultureInfo.InvariantCulture>.
       - A <xref:System.FormattableString.ToString(System.IFormatProvider)> method that produces a result string for a specified culture.
 
-    You also can use the <xref:System.FormattableString.ToString(System.IFormatProvider)> method to provide user-defined implementation of the <xref:System.IFormatProvider> interface that supports custom formatting. For more information, see [Custom Formatting with ICustomFormatter](../../../standard/base-types/formatting-types.md#custom-formatting-with-icustomformatter).
+    You also can use the <xref:System.FormattableString.ToString(System.IFormatProvider)> method to provide a user-defined implementation of the <xref:System.IFormatProvider> interface that supports custom formatting. For more information, see [Custom Formatting with ICustomFormatter](../../../standard/base-types/formatting-types.md#custom-formatting-with-icustomformatter).
 
 1. Conversion of an interpolated string to an <xref:System.IFormattable> instance that also allows you to create multiple result strings with culture-specific content from a single <xref:System.IFormattable> instance.
 
@@ -80,13 +80,14 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 ## Additional resources
 
-If you are new to the string interpolation, check the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.
+If you are new to the string interpolation, see the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.
 
 ## See also  
  <xref:System.String.Format%2A?displayProperty=nameWithType>  
  <xref:System.FormattableString?displayProperty=nameWithType>  
  <xref:System.IFormattable?displayProperty=nameWithType>  
  [Composite formatting](../../../standard/base-types/composite-formatting.md)  
- [Strings](../../../csharp/programming-guide/strings/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Reference](../../../csharp/language-reference/index.md)  
+ [Strings](../../programming-guide/strings/index.md)  
+ [C# Programming Guide](../../programming-guide/index.md)  
+ [C# Special Characters](index.md)  
+ [C# Reference](../index.md)  

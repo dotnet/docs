@@ -8,9 +8,9 @@ ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
 
 The following tutorials enable you to build C# programs using [.NET Core](../../core/index.md):
 
-* [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and the basics of the Task based asynchronous programming model.
+* [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and the basics of the task-based asynchronous programming model.
 
-* [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and Object Oriented features in the C# language.
+* [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and object-oriented features in the C# language.
 
 * [Inheritance in C# and .NET](inheritance.md): demonstrates inheritance in C#, including the use of inheritance to define base classes, abstract base classes, and derived classes.
 

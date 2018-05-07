@@ -166,7 +166,7 @@ Initialize a new instance of <xref:Microsoft.ML.LearningPipeline> that will incl
 var pipeline = new LearningPipeline();
 ```
 
-The <xref:Microsoft.ML.TextLoader> object is the first part of the pipeline, and loads the training file data.
+The <xref:Microsoft.ML.TextLoader%601> object is the first part of the pipeline, and loads the training file data.
 
 ```csharp
 pipeline.Add(new TextLoader<SentimentData>(_dataPath, header: false, sep: "tab"));
@@ -255,7 +255,7 @@ Console.WriteLine("Sentiment Predictions");
 Console.WriteLine("---------------------");
 ```
 
-Before displaying the predicted results, combine the sentiment and prediction together to see the original comment with its predicted sentiment. The following code uses the <xref:System.Linq.Enumerable.Zip> method to make that happen, so add that code next:
+Before displaying the predicted results, combine the sentiment and prediction together to see the original comment with its predicted sentiment. The following code uses the <xref:System.Linq.Enumerable.Zip%2A> method to make that happen, so add that code next:
 
 ```csharp
 var sentimentsAndPredictions = sentiments.Zip(predictions, (sentiment, prediction) => new { sentiment, prediction });
@@ -296,7 +296,7 @@ Add a call to the new method from the `Main` method, right under the `TrainAndPr
 Evaluate(model);
 ```
 
-The <xref:Microsoft.ML.TextLoader> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add that next to the `Evaluate` method call, using the following code:
+The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add that next to the `Evaluate` method call, using the following code:
 
 ```csharp
 var testData = new TextLoader<SentimentData>(_testDataPath, header: false, sep: "tab");

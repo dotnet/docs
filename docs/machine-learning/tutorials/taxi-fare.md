@@ -105,21 +105,25 @@ Next, create classes for the input data and the predictions:
 using Microsoft.ML.Runtime.Api;
 ```
 
-Add two classes into this file. `TaxiTrip`, the input data set class, has definitions for each of the columns discovered above and a `Label` `ColumnName` attribute. Add the following code to the file:
+Add two classes into this file. `TaxiTrip`, the input data set class, has definitions for each of the columns discovered above and a `Label` attribute for the fare_amount column that you are predicting. Add the following code to the file:
 
 ```csharp
 public class TaxiTrip
 {
+    [Column(ordinal: "0")]
     public string vendor_id;
+    [Column(ordinal: "1")]
     public string rate_code;
+    [Column(ordinal: "2")]
     public float passenger_count;
+    [Column(ordinal: "3")]
     public float trip_time_in_secs;
+    [Column(ordinal: "4")]
     public float trip_distance;
+    [Column(ordinal: "5")]
     public string payment_type;
+    [Column(ordinal: "6", "Label")]
     public float fare_amount;
-
-    [ColumnName("Label")]
-    public float Label;
 }
 ```
 

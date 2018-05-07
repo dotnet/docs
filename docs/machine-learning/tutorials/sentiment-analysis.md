@@ -101,8 +101,8 @@ You need to create two global variables to hold the path to the recently downloa
 Add the following code to the line right above the `Main` method:
 
 ```csharp
-const string _dataPath = @"..\..\data\sentiment labelled sentences\imdb_labelled.txt";
-const string _testDataPath = @"..\..\data\sentiment labelled sentences\yelp_labelled.txt";
+const string _dataPath = @"..\..\..\data\imdb_labelled.txt";
+const string _testDataPath = @"..\..\..\data\yelp_labelled.txt";
 ```
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
@@ -122,8 +122,9 @@ Add the following code, which has two classes `SentimentData` and `SentimentPred
 ```csharp
 public class SentimentData
 {
+    [Column(ordinal: "0")]
     public string SentimentText;
-    [ColumnName("Label")]
+    [Column(ordinal: "1", name: "Label")]
     public float Sentiment;
 }
 
@@ -169,7 +170,7 @@ var pipeline = new LearningPipeline();
 The <xref:Microsoft.ML.TextLoader%601> object is the first part of the pipeline, and loads the training file data.
 
 ```csharp
-pipeline.Add(new TextLoader<SentimentData>(_dataPath, header: false, sep: "tab"));
+pipeline.Add(new TextLoader<SentimentData>(_dataPath, useHeader: false, separator: "tab"));
 ```
 
 ## Data preprocess and feature engineering
@@ -299,7 +300,7 @@ Evaluate(model);
 The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add that next to the `Evaluate` method call, using the following code:
 
 ```csharp
-var testData = new TextLoader<SentimentData>(_testDataPath, header: false, sep: "tab");
+var testData = new TextLoader<SentimentData>(_testDataPath, useHeader: false, separator: "tab");
 ```
 
 The <xref:Microsoft.ML.Models.BinaryClassificationEvaluator> object computes the quality metrics for the `PredictionModel` using the specified dataset. To see those metrics, add the evaluator as the next line in the `Evaluate` method, with the following code:

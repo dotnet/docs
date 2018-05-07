@@ -14,8 +14,9 @@
 
         // Wrap the event in a protected virtual method
         // to enable derived classes to raise the event.
-    protected virtual void OnRaiseSampleEvent()
-    {
-        // Raise the event by using the () operator.
-        SampleEvent?.Invoke(this, new SampleEventArgs("Hello"));
+        protected virtual void OnRaiseSampleEvent()
+        {
+            // Raise the event by using the () operator.
+            SampleEvent?.Invoke(this, new SampleEventArgs("Hello"));
+        }
     }

@@ -1,17 +1,14 @@
 ---
 title: Use ML.NET in a regression scenario.
 description: Learn how to use ML.NET in a regression scenario.
-ms.prod: dotnet-ml
-ms.devlang: dotnet
-ms.author: johalex
 author: aditidugar
 ms.date: 05/07/2018
 ms.topic: tutorial
-manager: wpickett
 ms.custom: mvc
 #Customer intent: As a < type of user >, I want < what? > so that < why? >.
 ---
-# Tutorial: Use ML.NET in a regression scenario.
+# Tutorial: Use ML.NET in a regression scenario
+
 Introductory paragraph that ends with: if you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
 In this tutorial, you learn how to:

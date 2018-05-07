@@ -1,5 +1,5 @@
 ---
-title: "Garbage Collection"
+title: "The large object heap"
 ms.custom: ""
 ms.date: "05/02/2018"
 ms.prod: ".net"

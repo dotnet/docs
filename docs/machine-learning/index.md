@@ -19,7 +19,7 @@ For more information about ML.NET, visit our [What is ML.NET]() page.
 
 To get started with ML.NET, check out the [Iris Petal Prediction quickstart]() or the more in-depth [tutorials](tutorials/index.md).
 
-If you are new to machine learning, you can also review the [Machine Learning Basics](resources/machine-learning-basics.md), where you'll find machine learning resources to assist you.
+If you are new to machine learning, you can also review the [Machine Learning Basics](resources/basics.md), where you'll find machine learning resources to assist you.
 
 ## How the ML.NET guide is organized
 

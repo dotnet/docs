@@ -1116,6 +1116,8 @@
 ### [Taxi Time Predictor (Regression)](machine-learning/tutorials/regression.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine Learning Glossary](machine-learning/resources/glossary.md)
+### [Machine Learning Basics](machine-learning/resources/basics.md)
+
 <!-- End ML.NET Content -->
 
 # [Samples and Tutorials](samples-and-tutorials/index.md)

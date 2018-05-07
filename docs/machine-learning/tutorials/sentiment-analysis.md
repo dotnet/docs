@@ -308,7 +308,7 @@ The <xref:Microsoft.ML.Models.BinaryClassificationEvaluator> object computes the
 var evaluator = new BinaryClassificationEvaluator();
 ```
 
-The `Microsoft.ML.Models.BinaryClassificationMetrics` contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, we need to get the metrics first. Add the following code:
+The <xref:Microsoft.ML.Models.BinaryClassificationMetrics> contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, we need to get the metrics first. Add the following code:
 
 ```csharp
 BinaryClassificationMetrics metrics = evaluator.Evaluate(model, testData);

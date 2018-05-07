@@ -218,7 +218,7 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/netcore.svg?branch=master" alt="" />
+                                                    <img src="/dotnet/images/hub/mldotnet.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -226,6 +226,7 @@ ms.custom: "updateeachrelease"
                                                 <p><a href="/dotnet/machine-learning/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/machine-learning/resources">Resources</a></p>
                                                 <p><a href="/dotnet/machine-learning/resources/glossary">Glossary</a></p>
+                                                <p><a href="/dotnet/api?view=ml-dotnet">ML.NET APIs</a></p>
                                             </div>
                                         </div>
                                     </div>

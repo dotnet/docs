@@ -8,7 +8,7 @@ ms.date: 05/07/2018
 
 ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications. This guide provides many resources about working with ML.NET.
 
-For more information about ML.NET, see [ntroducing ML.NET: Cross-platform, Proven and Open Source Machine Learning Framework ](https://blogs.msdn.microsoft.com/dotnet/) post on the .NET blog.
+For more information about ML.NET, see [Introducing ML.NET: Cross-platform, Proven and Open Source Machine Learning Framework ](https://blogs.msdn.microsoft.com/dotnet/) post on the .NET blog.
 
 ## Get started
 

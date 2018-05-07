@@ -135,7 +135,7 @@ public class SentimentPrediction
 }
 ```
 
-`SentimentData` is the input dataset class and has a string for the comment (`SentimentText`), a boolean (`Sentiment`) that has a value for sentiment of either positive or negative, and a `Label` `ColumnName` attribute. `SentimentPrediction` is the class used for prediction after the model has been trained. It has a single boolean (`Sentiment`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
+`SentimentData` is the input dataset class and has a string for the comment (`SentimentText`), a `float` (`Sentiment`) that has a value for sentiment of either positive or negative. Both fields have `Column` attributes attached to them. This attribute describes the order of each field in the data file, and which is the `Label` field. `SentimentPrediction` is the class used for prediction after the model has been trained. It has a single boolean (`Sentiment`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
 In the *Program.cs* file, replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 

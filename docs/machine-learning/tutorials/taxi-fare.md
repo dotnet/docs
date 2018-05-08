@@ -75,25 +75,11 @@ The **label** is the identifier of the column you are trying to predict. The ide
 
 Add the following `using` statements to the top of Program.cs:
 
-```csharp
-using System;
-using Microsoft.ML.Models;
-using Microsoft.ML.Runtime;
-using Microsoft.ML.Runtime.Api;
-using Microsoft.ML.Trainers;
-using Microsoft.ML.Transforms;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.ML;
-```
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
 You define variables to hold your datapath (the dataset that trains your model), your testdatapath (the dataset that evaluates your model), and your modelpath (where you store the trained model). Add the following code to the line right above `Main` to specify the recently downloaded files:
 
-```csharp
-const string DataPath = @".\Data\train.csv";
-const string TestDataPath = @".\Data\test.csv";
-const string ModelPath = @".\Models\Model.zip";
-```
+[!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#2 "Define variables to store the data file paths")]
 
 Next, create classes for the input data and the predictions:
 
@@ -101,41 +87,15 @@ Next, create classes for the input data and the predictions:
 1.  In the **Add New Item** dialog box, change the **Name** to `TaxiTrip.cs`, and then click **Add**.
 1. Add the following `using` statements:
 
-```csharp
-using Microsoft.ML.Runtime.Api;
-```
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalyis/TaxTrip.cs#1 "Add necessary usings")]
 
 Add two classes into this file. `TaxiTrip`, the input data set class, has definitions for each of the columns discovered above and a `Label` attribute for the fare_amount column that you are predicting. Add the following code to the file:
 
-```csharp
-public class TaxiTrip
-{
-    [Column(ordinal: "0")]
-    public string vendor_id;
-    [Column(ordinal: "1")]
-    public string rate_code;
-    [Column(ordinal: "2")]
-    public float passenger_count;
-    [Column(ordinal: "3")]
-    public float trip_time_in_secs;
-    [Column(ordinal: "4")]
-    public float trip_distance;
-    [Column(ordinal: "5")]
-    public string payment_type;
-    [Column(ordinal: "6", "Label")]
-    public float fare_amount;
-}
-```
+[!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#2 "Define the taxi trip class")]
 
 The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (fare_amount) and a `Score` `ColumnName` attribute. Add the following code into the file below the `TaxiTrip` class:
 
-```csharp
-public class TaxiTripFarePrediction
-{
-    [ColumnName("Score")]
-    public float fare_amount;
-}
-```
+[!code-csharp[DefineFarePrediction](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#3 "Define the fare predictions class")]
 
 Now go back to the **Program.cs** file. In `Main`, replace the `Console.WriteLine("Hello World!")` with the following code:
 
@@ -186,11 +146,11 @@ The last step in data preparation combines all of your **features** into one vec
 
 ```csharp
 pipeline.Add(new ColumnConcatenator("Features",
-                                                "vendor_id",
-                                                "rate_code",
-                                                "passenger_count",
-                                                "trip_distance",
-                                                "payment_type"));
+                                    "vendor_id",
+                                    "rate_code",
+                                    "passenger_count",
+                                    "trip_distance",
+                                    "payment_type"));
 ```
 
 Notice that the "trip_time_in_secs" column isn't included. You already determined that it isn't a useful prediction feature.
@@ -210,13 +170,15 @@ Add the following code into the `Train()` method following the data processing c
 pipeline.Add(new FastTreeRegressor());
 ```
 
+You added all the preceding steps to the pipeline as individual statements, but C# has a handy collection initialization syntax that makes it simpler to create and initialize the pipeline:
+
+[!code-csharp[CreatePipeline](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#3 "Create and initialize the learning pipeline")]
+
 ## Train the model
 
 The final step is to train the model. Until this point, nothing in the pipeline has been executed. The `pipeline.Train<T_Input, T_Output>()` function takes in the pre-defined `TaxiTrip` class type and outputs a `TaxiTripFarePrediction` type. Add this final piece of code into the `Train()` function:
 
-```csharp
-PredictionModel<TaxiTrip, TaxiTripFarePrediction> model = pipeline.Train<TaxiTrip, TaxiTripFarePrediction>();
-```
+[!code-csharp[TrainMOdel](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#4 "Train your model")]
 
 And that's it! You have successfully trained a machine learning model that can predict taxi fares in NYC. Now take a look to understand how accurate your model is and learn how to consume it.
 
@@ -224,36 +186,23 @@ And that's it! You have successfully trained a machine learning model that can p
 
 Before you go onto the next step, save your model to a .zip file by adding the following code at the end of your `Train()` function:
 
-```csharp
-await model.WriteAsync(ModelPath);
-```
+[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#5 "Save the model asynchronously and return the model")]
 
 Adding the `await` statement to the `model.WriteAsync()` call means that the `Train()` method must be changed to an async method that returns a `Task`. Modify the signature of `Train` as shown in the following code:
 
-```csharp
-public static Task<PredictionModel<TaxiTrip, TaxiTripFarePrediction>> Train()
-{
-
-}
-```
+[!code-csharp[AsyncTraining](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#6 "Make the Train method async and return a task.")]
 
 Changing the return type of the `Train` method means you have to add an `await` to the codde that calls `Train` in the `Method` as shown in the following code:
 
-```csharp
-PredictionModel<TaxiTrip, TaxiTripFarePrediction> model = await Train();
-```
+[!code-csharp[AwaitTraining](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#7 "Await the Train method")]
 
 Adding an `await` in your `Main` method means the `Main` method must have the `async` modifier and return a `Task`:
 
-```csharp
-public static async Task Main()
-```
+[!code-csharp[AsyncMain](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#8 "Make the Main method async and return a task.")]
 
 You'll also need to add the following using statement at the top of the file:
 
-```csharp
-using System.Threading.Tasks;
-```
+[!code-csharp[UsingTasks](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#9 "Add System.Threading.Tasks. to your usings.")]
 
 ## Evaluate the model
 
@@ -261,44 +210,27 @@ Evaluation is the process of checking how well the model works. It is important 
 
 Now go back to your `Main` function and add the following code beneath the call to the `Train()`method:
 
-```csharp
-Evaluate(model);
-```
+[!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#10 "Evaluate the model.")]
 
 The `Evaluate()` function evaluates your model. Create that function below `Train()`. Add the following code:
 
-```csharp
-public static void Evaluate(PredictionModel<TaxiTrip, TaxiTripFarePrediction> model)
-{
-
-}
-```
+[!code-csharp[EvaluateMethod](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#11 "Define the Evaluate method.")]
 
 Load the test data using the `TextLoader()` function. Add the following code into the `Evaluate()` method:
 
-```csharp
-var testData = new TextLoader<TaxiTrip>(TestDataPath, useHeader: true, separator: ",");
-```
+[!code-csharp[LoadTestData](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#12 "Load the test data.")]
 
 Add the following code to evaluate the model and produce the metrics for it:
 
-```csharp
-var evaluator = new RegressionEvaluator();
-RegressionMetrics metrics = evaluator.Evaluate(model, testData);
-```
+[!code-csharp[EvaluateAndMeasure](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#13 "Evaluate the model and its predictions.")]
 
 RMS is one metric for evaluating regression problems. The lower it is, the better your model. Add the following code into the `Evaluate()` function to print the RMS for your model.
 
-```csharp
-// Rms should be around 2.795276
-Console.WriteLine("Rms=" + metrics.Rms);
-```
+[!code-csharp[DisplayRMS](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#14 "Display the RMS metric.")]
 
 RSquared is another metric for evaluating regression problems. RSquared will be a value between 0 and 1. The closer you are to 1, the better your model. Add the following code into the `Evaluate()` function to print the RSquared value for your model.
 
-```csharp
-Console.WriteLine("RSquared = " + metrics.RSquared);
-```
+[!code-csharp[DisplayRSquared](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#15 "Display the RSquared metric.")]
 
 ## Use the model for predictions
 
@@ -313,27 +245,13 @@ static class TestTrips
 
 This tutorial uses one test trip within this class. Later you can add other scenarios to experiment with this sample. Add the following code into the `TestTrips` class:
 
-```csharp
-internal static readonly TaxiTrip Trip1 = new TaxiTrip
-{
-    vendor_id = "VTS",
-    rate_code = "1",
-    passenger_count = 1,
-    trip_distance = 10.33f,
-    payment_type = "CSH",
-    fare_amount = 0 // predict it. actual = 29.5
-};
-```
+[!code-csharp[TestData](../../../samples/machine-learning/tutorials/SentimentAnalyis/TestTrips.cs#1 "Create aq trip to predict its cost.")]
 
 This trip's actual fare is 29.5, but use 0 as a placeholder. The machine learning algorithm will predict the fare.
 
 Add the following code in your `Main` function. It tests out your model using the `TestTrip` data:
 
-```csharp
-var prediction = model.Predict(TestTrips.Trip1);
-
-Console.WriteLine("Predicted fare: {0}, actual fare: 29.5", prediction.fare_amount);
-```
+[!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalyis/Program.cs#16 "Try a prediction.")]
 
 Run the program to see the predicted taxi fare for your test case.
 

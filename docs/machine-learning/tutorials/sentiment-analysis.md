@@ -359,6 +359,6 @@ In this tutorial, you learned how to:
 > * Predict the model
 > * Evaluate the model with a different dataset
 
-Advance to the next article to learn more
+Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]
-> [Next steps button](taxi-fare.md)
+> [Taxi Fare Predictor](taxi-fare.md)

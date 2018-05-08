@@ -109,7 +109,7 @@ The fields are not validated, and you cannot define your own methods
 > which enables semantic names for the fields of a tuple using new,
 > more efficient tuple types.
 
-You can create a tuple by assigning each member to a value:
+You can create a tuple by assigning a value to each member:
 
 [!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
@@ -178,7 +178,7 @@ the `X` and `Y` coordinates:
 
 [!code-csharp[PointWithDeconstruction](../../../samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
  
-You can extract the individual fields by assigning a tuple to a `Point`:
+You can extract the individual fields by assigning a `Point` to a tuple:
 
 [!code-csharp[DeconstructPoint](../../../samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
 

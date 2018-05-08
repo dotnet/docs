@@ -13,6 +13,9 @@ Specifies that one or more declared programming elements are accessible only fro
   
 ## Remarks  
  If a programming element represents proprietary functionality, or contains confidential data, you usually want to limit access to it as strictly as possible. You achieve the maximum limitation by allowing only the module, class, or structure that defines it to access it. To limit access to an element in this way, you can declare it with `Private`.  
+
+> [!NOTE]
+> You can also use the [Private Protected](private-protected.md) access modifier, which makes a member accessible from within that class and from derived classes located in its containing assembly.
   
 ## Rules  
   
@@ -54,7 +57,8 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Private Protected](./private-protected.md)   
+ [Protected Friend](./protected-friend.md)    [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

@@ -22,9 +22,10 @@ Specifies that one or more declared programming elements are accessible only fro
  `Friend` access is often the preferred level for an application's programming elements, and `Friend` is the default access level of an interface, a module, a class, or a structure.  
   
  You can use `Friend` only at the module, interface, or namespace level. Therefore, the declaration context for a `Friend` element must be a source file, a namespace, an interface, a module, a class, or a structure; it can't be a procedure.  
-  
- You can use the `Friend` modifier in conjunction with the [Protected](../../../visual-basic/language-reference/modifiers/protected.md) modifier in the same declaration. This combination confers both `Friend` access and protected access on the declared elements, so they are accessible from anywhere in the same assembly, from their own class, and from derived classes. You can specify `Protected Friend` only on members of classes.  
-  
+
+> [!NOTE]
+> You can also use the [Protected Friend](protected-friend.md) access modifier, which makes a class accessible from within that class, from derived classes, and from the same assembly in which the class is defined.
+
  For a comparison of `Friend` and the other access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 > [!NOTE]
@@ -69,6 +70,8 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+ [Private Protected](./private-protected.md)   
+ [Protected Friend](./protected-friend.md)   
  [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  

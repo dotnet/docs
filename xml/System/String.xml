@@ -4702,7 +4702,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
  [!code-csharp-interactive[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
  [!code-vb[System.String.Format#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#32)]  
   
- A number of types support format strings, including all numeric types (both                                          [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both                                          [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both                                          [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types                                          [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and                                          [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
+ A number of types support format strings, including all numeric types (both [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
   
  ### Controlling spacing  
  You can define the width of the string that is inserted into the result string by using syntax such as `{0,12}`, which inserts a 12-character string. In this case, the string representation of the first object is right-aligned in the 12-character field.  (If the string representation of the first object is more than 12 characters in length, though, the preferred field width is ignored, and the entire string is inserted into the result string.)  
@@ -4747,10 +4747,10 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
  A format item has this syntax:  
   
 ```  
-{index[,alignment][ :formatString] }  
+{index[,alignment][:formatString]}  
 ```  
  
- Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the "Escaping Braces" section in the [Composite Formatting](~/docs/standard/base-types/composite-formatting.md) article.)  
+ Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the [Escaping Braces](~/docs/standard/base-types/composite-formatting.md#escaping-braces) section in the [Composite Formatting](~/docs/standard/base-types/composite-formatting.md) article.)  
   
  For example, a format item to format a currency value might appear like this:  
   
@@ -4793,15 +4793,17 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
 ## How arguments are formatted  
  Format items are processed sequentially from the beginning of the string. Each format item has an index that corresponds to an object in the method's argument list. The <xref:System.String.Format%2A> method retrieves the argument and derives its string representation as follows:  
   
--   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=nameWithType> into the result string. You don't have to be converned with handling an <xref:System.NullReferenceException> for null arguments. 
+-   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=nameWithType> into the result string. You don't have to be concerned with handling a <xref:System.NullReferenceException> for null arguments. 
   
--   If you call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` parameter implements the <xref:System.ICustomFormatter> interface, the argument is passed to the `provider` object's <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is able to provide formatting services, it returns the string representation of the argument; otherwise, it returns `null` and the next step executes.  
+-   If you call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` object's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation returns a non-null <xref:System.ICustomFormatter> implementation, the argument is passed to its <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is available and produces a non-null string, that string is returned as the string representation of the argument; otherwise, the next step executes.  
   
 -   If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation is called.  
   
--   The argument's parameterless `ToString` method, which is either overridden or inherited from the <xref:System.Object> class, is called.  
+-   The argument's parameterless `ToString` method, which either overrides or inherits from a base class implementation, is called.  
   
  For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example: An intercept provider and Roman numeral formatter](#Format7_Example).  
+
+ For more information, see the [Processing Order](~/docs/standard/base-types/composite-formatting.md##processing-order) section in the [Composite Formatting](~/docs/standard/base-types/composite-formatting.md) article.  
   
 <a name="SameIndex"></a>   
 ## Format items that have the same index  

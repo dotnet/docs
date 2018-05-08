@@ -198,7 +198,7 @@ To install .NET Core on supported Debian versions (64 bit):
 
 |Runtimes / SDKs          |Debian 9       |Debian 8       |
 |-------------------------|---------------|---------------|
-|.NET Core Runtime 2.0.7  |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian9/runtime-2.0.7)   |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian9/runtime-2.0.7   |
+|.NET Core Runtime 2.0.7  |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian9/runtime-2.0.7)   |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian8/runtime-2.0.7)   |
 |.NET Core Runtime 2.0.6  |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian9/runtime-2.0.6)   |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian8/runtime-2.0.6)   |
 |.NET Core Runtime 2.0.5  |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian9/runtime-2.0.5)   |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian8/runtime-2.0.5)   |
 |.NET Core SDK 2.1.105    |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian9/sdk-2.1.105)   |[Install link](https://www.microsoft.com/net/download/linux-package-manager/debian8/sdk-2.1.105)   |

@@ -31,7 +31,7 @@
 ## Remarks  
  You can use the <xref:System.Reflection.Emit.DynamicMethod> class to generate and execute a method at run time, without having to generate a dynamic assembly and a dynamic type to contain the method. The executable code created by the just-in-time (JIT) compiler is reclaimed when the <xref:System.Reflection.Emit.DynamicMethod> object is reclaimed. Dynamic methods are the most efficient way to generate and execute small amounts of code.  
   
- A dynamic method can be anonymously hosted, or it can belogically associated with a module or with a type.  
+ A dynamic method can be anonymously hosted, or it can be logically associated with a module or with a type.  
   
 -   If the dynamic method is anonymously hosted, it is located in a system-provided assembly, and therefore is isolated from other code. By default, it does not have access to any non-public data. An anonymously hosted dynamic method can have restricted ability to skip the JIT compiler's visibility checks, if it has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag. The trust level of the assembly whose non-public members are accessed by the dynamic method must be equal to, or a subset of, the trust level of the call stack that emitted the dynamic method. For more information about anonymously hosted dynamic methods, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
   

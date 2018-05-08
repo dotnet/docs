@@ -58,7 +58,6 @@ Public Class SynchronousSocketListener
   
             ' An incoming connection needs to be processed.  
             While True  
-                bytes = New Byte(1024) {}  
                 Dim bytesRec As Integer = handler.Receive(bytes)  
                 data += Encoding.ASCII.GetString(bytes, 0, bytesRec)  
                 If data.IndexOf("<EOF>") > -1 Then  

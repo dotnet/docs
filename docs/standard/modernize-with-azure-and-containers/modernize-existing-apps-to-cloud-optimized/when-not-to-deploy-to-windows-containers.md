@@ -9,7 +9,7 @@ ms.date: 04/28/2018
 
 Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to standards VMs, usually with just Windows and IIS.
 
-Cases not supported in Windows Containers, as of early-2018: 
+Cases not supported in Windows Containers, as of May 2018: 
 
 -   Microsoft Message Queuing (MSMQ) currently is only available in Windows Containers based on Windows Server v1803 release, but not in any other prior releases. 
 

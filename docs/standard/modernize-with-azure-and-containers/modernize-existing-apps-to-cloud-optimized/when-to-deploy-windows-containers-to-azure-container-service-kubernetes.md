@@ -9,7 +9,7 @@ ms.date: 04/30/2018
 
 Azure Container Service optimizes the configuration of popular open-source tools and technologies specifically for Azure. You get an open solution that offers portability both for your containers and for your application configuration. You select the size, the number of hosts, and the orchestrator tools. Azure Container Service handles the infrastructure for you.
 
-If you are already working with open-source orchestrators like Kubernetes, Docker Swarm, or DC/OS, you don't need to change your existing management practices to move container workloads to the cloud. Use the application management tools that you're already familiar with, and connect via the standard API endpoints for the orchestrator of your choice.
+If you are already working with open-source orchestrators like Kubernetes, Docker Swarm, or DC/OS, you don't need to change your existing management practices to move container workloads to the cloud. Use the application management tools that you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice.
 
 All these orchestrators are mature environments if you are using Linux Docker containers, but might only be in Preview state for Windows Containers.
 

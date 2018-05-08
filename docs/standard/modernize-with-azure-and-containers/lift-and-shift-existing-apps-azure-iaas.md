@@ -27,7 +27,7 @@ After you make the decision to move your apps to the cloud, the main reason why 
 
 However, taking the quickest path to the cloud doesn't mean that you will gain the most benefit from having your applications running in the cloud. Any organization will gain the most significant benefits from a cloud migration at the already introduced Cloud-Optimized and Cloud-Native maturity levels.
 
-It also has become evident that applications are easier to modernize and rearchitect in the future when they are already running in the cloud, even on IaaS. Application data migration has already been achieved. Also, your organization will have gained skills required for working in the cloud, and made the shift to operating in a "cloud culture."
+It also has become evident that applications are easier to modernize and rearchitect in the future when they are already running in the cloud, even on IaaS. Application data migration has already been achieved. Also, your organization will have gained skills required for working in the cloud and made the shift to operating in a "cloud culture."
 
 ## When to migrate to IaaS instead of to PaaS
 

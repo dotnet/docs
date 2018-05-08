@@ -31,7 +31,7 @@ When you deploy to plain VMs, you probably already have a method in place for de
 
 In Windows Containers, the process of packaging applications is fully automated. Windows Containers is based on the Docker platform, which offers automatic updates and rollbacks for container deployments. The main improvement you get from using the Docker engine is that you create images, which are like snapshots of your application, with all its dependencies. The images are Docker images (a Windows container image, in this case). The images run ASP.NET apps in containers, without going back to source code. The container snapshot becomes the unit of deployment.
 
-A large number of organizations are containerizing existing monolithic applications for the following reasons:
+Many organizations are containerizing existing monolithic applications for the following reasons:
 
 -   **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can say, "It runs as a container, so it will run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
 
@@ -45,7 +45,7 @@ Significant improvements in agility, portability, and control ultimately lead to
 
 ## What is Docker?
 
-[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker also is a [company](https://www.docker.com/) that promotes and evolves this technology. The company works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
+[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. The company works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
 ![](./media/image6.png)
 
@@ -144,7 +144,7 @@ From the container ecosystem in Azure, the following products supporting contain
 -   **Azure Virtual Machines** (With container's support)
 -   **Azure Virtual Machine Scale Sets** (With container's support)
 
-From those three, ACI provides a great benefit, which is the fact that you don't need to maintain the underlaying OS, no need for you to upgrade/path, etc. but still ACI is positioned in the infrastructure level, as better explained in the upcoming sections of this document.
+From those three, ACI provides a great benefit, which is the fact that you don't need to maintain the underlying OS, no need for you to upgrade/patch, etc. but ACI still is positioned in the infrastructure level, as better explained in the upcoming sections of this book.
 
 The products in Azure supporting containers that are at the same time positioned more in the PaaS (Platform as a Service) level are:
 

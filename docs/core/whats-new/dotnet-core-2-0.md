@@ -70,7 +70,7 @@ For example, to create a Visual Basic "Hello World" application, do the followin
 
    The command creates a project file with a `.vbproj` file extension, along with a Visual Basic source code file named *Program.vb*. This file contains the source code to write the string "Hello World!" to the console window.
 
-1.  Enter the command `dotnet run`. The [.NET Core CLI tools](../tools/index.md) automatically compile and execute the application, which displays the message "Hello World!" in the console window.
+1.  Enter the command `dotnet run`. The [.NET Core CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
 
 ### Support for C# 7.1
 
@@ -136,7 +136,7 @@ For more information, see [Live Unit Testing with Visual Studio 2017](/visualstu
 
 ### Better support for multiple target frameworks
 
-If you're building a project for multiple target frameworks, you can now select the target platform from the top-level menu. In the following figure, a project named SCD1 targets 64-bit Mac OS X 10.11 (`osx.10.11-x64`) and 64-bit Windows 10/Windows Server 2016 (`win10-x64`). You can select the target framework before selecting the project button, in this case to run a debug build.
+If you're building a project for multiple target frameworks, you can now select the target platform from the top-level menu. In the following figure, a project named SCD1 targets 64-bit macOS X 10.11 (`osx.10.11-x64`) and 64-bit Windows 10/Windows Server 2016 (`win10-x64`). You can select the target framework before selecting the project button, in this case to run a debug build.
 
 ![Selecting the target framework when building a project](media/multitarget.png)
 
@@ -150,10 +150,10 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 [.NET Application Architecture](https://www.microsoft.com/net/learn/architecture) gives you access to a set of e-books that provide guidance, best practices, and sample applications when using .NET to build:
 
-- Microservices and Docker containers.
-- Web applications with ASP.NET.
-- Mobile applications with Xamarin.
-- Applications that are deployed to the Cloud with Azure.
+- [Microservices and Docker containers](../../standard/microservices-architecture/index.md)
+- [Web applications with ASP.NET](../../standard/modern-web-apps-azure-architecture/index.md)
+- [Mobile applications with Xamarin](~xamarin/xamarin-forms/enterprise-application-patterns/index.md)
+- [Applications that are deployed to the Cloud with Azure](~azure/architecture/reference-architectures/index.md)
 
 ## See also
- [What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)
+[What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)

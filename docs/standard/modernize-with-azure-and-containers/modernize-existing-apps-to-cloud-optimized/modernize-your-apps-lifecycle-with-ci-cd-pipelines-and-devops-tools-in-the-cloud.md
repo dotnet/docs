@@ -1,9 +1,9 @@
 ---
 title: Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
-description: .NET Microservices Architecture for Containerized .NET Applications | Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/30/2018
 ---
 # Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 

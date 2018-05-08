@@ -1,9 +1,9 @@
 ---
 title: Modernize your apps with monitoring and telemetry
-description: .NET Microservices Architecture for Containerized .NET Applications | Modernize your apps with monitoring and telemetry
+description: Modernize existing .NET applications with Azure Cloud and Windows containers | Modernize your apps with monitoring and telemetry
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
+ms.date: 04/30/2018
 ---
 # Modernize your apps with monitoring and telemetry
 

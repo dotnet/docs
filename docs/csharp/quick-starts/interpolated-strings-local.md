@@ -164,4 +164,4 @@ You've completed the string interpolation quickstart.
 
 You can continue with the [List collection](arrays-and-collections.md) quickstart in your own development environment.
 
-Learn more about string interpolation in the [String interpolation](../language-reference/tokens/interpolated.md) topic in the C# Reference.
+For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) topic and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.

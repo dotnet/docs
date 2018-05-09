@@ -87,7 +87,7 @@ Next, create classes for the input data and the predictions:
 1.  In the **Add New Item** dialog box, change the **Name** to `TaxiTrip.cs`, and then click **Add**.
 1. Add the following `using` statements:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxTrip.cs#1 "Add necessary usings")]
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#1 "Add necessary usings")]
 
 Add two classes into this file. `TaxiTrip`, the input data set class, has definitions for each of the columns discovered above and a `Label` attribute for the fare_amount column that you are predicting. Add the following code to the file:
 

@@ -12,7 +12,7 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
-# The large object heap in the .NET Framework
+# The large object heap on Windows systems
 
 The .NET Garbage Collector (GC) divides objects up into small and large objects. When an object is large, some of its attributes become more significant than if the object is small. For instance, compacting it -- that is, copying it in memory elsewhere on the heap -- can be expensive. Because of this, the .NET Garbage Collector places large objects on the large object heap (LOH). In this topic, we'll look at the large object heap in depth. We'll discuss what qualifies an object as a large object, how these large objects are collected, and what kind of performance implications large objects impose.
 
@@ -34,7 +34,6 @@ Large objects belong to generation 2 because they are collected only during a ge
 Generations provide a logical view of the GC heap. Physically, objects live in managed heap segments. A *managed heap segment* is a chunk of memory that the GC reserves from the OS by calling the [VirtualAlloc function](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) on behalf of managed code. When the CLR is loaded, the GC allocates two initial heap segments: one for small objects (the Small Object Heap, or SOH), and one for large objects (the Large Object Heap).
 
 The allocation requests are then satisfied by putting managed objects on these managed heap segments. If the object is less than 85,000 bytes, it is put on the segment for the SOH; otherwise, it is put on an LOH segment. Segments are committed (in smaller chunks) as more and more objects are allocated onto them.
-
 For the SOH, objects that survive a GC are promoted to the next generation. Objects that survive a generation 0 collection are now considered generation 1 objects, and so on. However, objects that survive the oldest generation are still considered to be in the oldest generation. In other words, survivors from generation 2 are generation 2 objects; and survivors from the LOH are LOH objects (which are collected with gen2). 
 
 User code can only allocate in generation 0 (small objects) or the LOH (large objects). Only the GC can “allocate” objects in generation 1 (by promoting survivors from generation 0) and generation 2 (by promoting survivors from generations 1 and 2).
@@ -214,7 +213,7 @@ The following shows sample output from analyzing the LOH:
 0:003> !eeheap -gc
 Number of GC Heaps: 1
 generation 0 starts at 0x013e35ec
-sdgeneration 1 starts at 0x013e1b6c
+generation 1 starts at 0x013e1b6c
 generation 2 starts at 0x013e1000
 ephemeral segment allocation context: none
 segment   begin allocated     size

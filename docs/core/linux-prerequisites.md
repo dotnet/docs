@@ -28,7 +28,7 @@ NET Core 2.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) di
 * Oracle Linux 7
 * Fedora 27, 26
 * Debian 9, 8.7 or later versions
-* Ubuntu 18.04,17.10, 16.04, 14.04
+* Ubuntu 18.04, 17.10, 16.04, 14.04
 * Linux Mint 18, 17
 * openSUSE 42.3 or later versions
 * SUSE Enterprise Linux (SLES) 12 Service Pack 2 or later

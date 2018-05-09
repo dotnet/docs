@@ -5,9 +5,9 @@ ms.date: 05/07/2018
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
 ---
-# Walkthrough: Use the ML.NET APIs in a sentiment analysis classification scenario
+# Tutorial: Use the ML.NET APIs in a sentiment analysis classification scenario
 
-This sample walkthrough illustrates using the ML.NET API to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
+This sample tutorial illustrates using the ML.NET API to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -28,7 +28,7 @@ Sentiment analysis is either positive or negative. So, you can use classificatio
 
 ## Machine learning workflow
 
-This walkthrough follows a machine learning workflow that enables the process to move in an orderly fashion.
+This tutorial follows a machine learning workflow that enables the process to move in an orderly fashion.
 
 The workflow phases are as follows:
 
@@ -43,7 +43,7 @@ The workflow phases are as follows:
 
 You first need to understand the problem, so you can break it down to parts that can support building and training the model. Breaking the problem down you to predict and evaluate the results.
 
-The problem for this walkthrough is to understand incoming website comment sentiment to take the appropriate action.
+The problem for this tutorial is to understand incoming website comment sentiment to take the appropriate action.
 
 You can break down the problem to the sentiment text and sentiment value for the data you want to train the model with, and a predicted sentiment value that you can evaluate and then use operationally.
 

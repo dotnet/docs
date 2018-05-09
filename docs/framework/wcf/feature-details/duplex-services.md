@@ -1,6 +1,6 @@
 ---
 title: "Duplex Services"
-ms.date: "03/30/2017"
+ms.date: "05/09/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -47,14 +47,19 @@ HTTP could not register URL
 htp://+:80/Temporary_Listen_Addresses/<guid> because TCP port 80 is being used by another application.  
 ```  
   
- The following sample code shows how to specify the client endpoint address in code.  
+ The following sample code shows how to specify the client endpoint address programmatically.
   
-```  
+```csharp  
 WSDualHttpBinding binding = new WSDualHttpBinding();  
 EndpointAddress endptadr = new EndpointAddress("http://localhost:12000/DuplexTestUsingCode/Server");  
 binding.ClientBaseAddress = new Uri("http://localhost:8000/DuplexTestUsingCode/Client/");  
 ```  
-  
+```vb
+Dim binding As New WSDualHttpBinding()
+Dim endptadr As New EndpointAddress("http://localhost:12000/DuplexTestUsingCode/Server")
+binding.ClientBaseAddress = New Uri("http://localhost:8000/DuplexTestUsingCode/Client/")  
+```
+
  The following sample code shows how to specify the client endpoint address in configuration.  
   
 ```xml  

@@ -10,8 +10,8 @@ helpviewer_keywords:
   - "$ language element [C#]"
   - "string interpolation [C#]"
   - "interpolated string [C#]"
-author: "pkulikov"
-ms.author: "ronpet"
+author: pkulikov
+ms.author: ronpet
 ---
 # $ - string interpolation (C# Reference)
 
@@ -58,7 +58,7 @@ Verbatim interpolated strings use the `$` character followed by the `@` characte
 > [!NOTE]
 > The `$` token must appear before the `@` token in a verbatim interpolated string.
 
-## Implicit conversions
+## Implicit conversions and specifying `IFormatProvider` implementation
 
 There are three implicit conversions from an interpolated string:
 

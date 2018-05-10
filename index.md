@@ -646,7 +646,7 @@ ms.custom: "updateeachrelease"
                                                 <a href="http://www.monogame.net/documentation/?page=main">
                                                     <h3>MonoGame</h3>
                                                     <p>Build games with C# through tutorials and setup instructions at the MonoGame
-                                                        library documenation hub.</p>
+                                                        library documentation hub.</p>
                                                 </a>
                                             </div>
                                         </div>

@@ -41,7 +41,7 @@ There are several sections in the C# Guide. You can read them in order, or jump 
   * This section provides an overview of the language. It covers the elements that make up C# programs and the capabilities of the language. It shows small samples of all the syntax elements of C# and discussions of the major C# language topics.
 
 * [What's new in C#](whats-new/index.md)
-  * Provides overview of new features added in latest language releases and the history of the C# language.
+  * Provides overviews of new features added in the latest language releases and of the history of the C# language.
 
 <!--
 * [.NET Compiler Platform SDK](roslyn-sdk/index.md)

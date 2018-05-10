@@ -1994,7 +1994,7 @@
         <param name="key">The key whose value is compared with <c>comparisonValue</c> and possibly replaced.</param>
         <param name="newValue">The value that replaces the value of the element that has the specified <c>key</c> if the comparison results in equality.</param>
         <param name="comparisonValue">The value that is compared to the value of the element that has the specified <c>key</c>.</param>
-        <summary>Compares the existing value for the specified key with a specified value, and if they are equal, updates the key with a third value.</summary>
+        <summary>Updates the value associated with <paramref name="key" /> to <paramref name="newValue" /> if the existing value is equal to <paramref name="comparisonValue" />.</summary>
         <returns>
           <see langword="true" /> if the value with <paramref name="key" /> was equal to <paramref name="comparisonValue" /> and was replaced with <paramref name="newValue" />; otherwise, <see langword="false" />.</returns>
         <remarks>

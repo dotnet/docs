@@ -1,6 +1,6 @@
 ---
 title: String interpolation in C#
-description: Learn how to include formatted expression results into a result string in C# with string interpolation.
+description: Learn how to include formatted expression results in a result string in C# with string interpolation.
 author: pkulikov
 ms.date: 05/09/2018
 ---
@@ -18,7 +18,7 @@ To identify a string literal as an interpolated string, prepend it with the `$` 
 
 [!code-csharp-interactive[string interpolation example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#1)]
 
-As the example above shows, you include an expression in an interpolated string by enclosing it with braces:
+As the example shows, you include an expression in an interpolated string by enclosing it with braces:
 
 ```
 {<interpolatedExpression>}
@@ -60,7 +60,7 @@ The following example shows how to specify alignment and uses pipe characters ("
 
 [!code-csharp-interactive[alignment example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#3)]
 
-As the example output shows, if the length of formatted expression result exceeds specified field width, the *alignment* value is ignored.
+As the example output shows, if the length of the formatted expression result exceeds specified field width, the *alignment* value is ignored.
 
 For more information, see the [Alignment Component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
 
@@ -92,7 +92,7 @@ As the example shows, you can use one <xref:System.FormattableString> instance t
 
 ## How to create a result string using the invariant culture
 
-Along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, you can use the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to resolve an interpolated string into a result string for the <xref:System.Globalization.CultureInfo.InvariantCulture>. The following example shows how to do that:
+Along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, you can use the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to resolve an interpolated string to a result string for the <xref:System.Globalization.CultureInfo.InvariantCulture>. The following example shows how to do that:
 
 [!code-csharp-interactive[format with invariant culture](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#7)]
 

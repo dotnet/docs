@@ -269,7 +269,8 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |AzCopy|azcopy|
 |C++|cpp|
 |C#|csharp|
-|C# in browser|csharp-interactive]
+|C# in browser|csharp-interactive|
+|Console|console|
 |F#|fsharp|
 |Java|java|
 |JavaScript|javascript|

@@ -5,9 +5,9 @@ ms.date: 05/07/2018
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
 ---
-# Walkthrough: Use the ML.NET APIs in a sentiment analysis classification scenario
+# Tutorial: Use the ML.NET APIs in a sentiment analysis classification scenario
 
-This sample walkthrough illustrates using the ML.NET API to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
+This sample tutorial illustrates using the ML.NET API to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -28,7 +28,7 @@ Sentiment analysis is either positive or negative. So, you can use classificatio
 
 ## Machine learning workflow
 
-This walkthrough follows a machine learning workflow that enables the process to move in an orderly fashion.
+This tutorial follows a machine learning workflow that enables the process to move in an orderly fashion.
 
 The workflow phases are as follows:
 
@@ -43,7 +43,7 @@ The workflow phases are as follows:
 
 You first need to understand the problem, so you can break it down to parts that can support building and training the model. Breaking the problem down you to predict and evaluate the results.
 
-The problem for this walkthrough is to understand incoming website comment sentiment to take the appropriate action.
+The problem for this tutorial is to understand incoming website comment sentiment to take the appropriate action.
 
 You can break down the problem to the sentiment text and sentiment value for the data you want to train the model with, and a predicted sentiment value that you can evaluate and then use operationally.
 
@@ -81,17 +81,7 @@ Predict the **sentiment** of a new website comment, either positive or negative.
 
 Add the following `using` statements to the top of the *Program.cs* file:
 
-```csharp
-using System;
-using Microsoft.ML.Models;
-using Microsoft.ML.Runtime;
-using Microsoft.ML.Runtime.Api;
-using Microsoft.ML.Trainers;
-using Microsoft.ML.Transforms;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.ML;
-```
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#1 "Add necessary usings")]
 
 You need to create two global variables to hold the path to the recently downloaded files:
 
@@ -100,10 +90,7 @@ You need to create two global variables to hold the path to the recently downloa
 
 Add the following code to the line right above the `Main` method:
 
-```csharp
-const string _dataPath = @"..\..\..\data\imdb_labelled.txt";
-const string _testDataPath = @"..\..\..\data\yelp_labelled.txt";
-```
+[!code-csharp[Declare file variables](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#2 "Declare variables to store data files")]
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
@@ -113,35 +100,17 @@ You need to create some classes for your input data and predictions. Add a new c
 
     The *SentimentData.cs* file opens in the code editor. Add the following `using` statements to the top of *SentimentData.cs*:
 
-```csharp
-using Microsoft.ML.Runtime.Api;
-```
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalysis/SentimentData.cs#1 "Add necessary usings")]
 
 Add the following code, which has two classes `SentimentData` and `SentimentPrediction`, to the *SentimentData.cs* file:
 
-```csharp
-public class SentimentData
-{
-    [Column(ordinal: "0")]
-    public string SentimentText;
-    [Column(ordinal: "1", name: "Label")]
-    public float Sentiment;
-}
-
-public class SentimentPrediction
-{
-    [ColumnName("PredictedLabel")]
-    public bool Sentiment;
-}
-```
+[!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/SentimentAnalysis/SentimentData.cs#2 "Declare data record types")]
 
 `SentimentData` is the input dataset class and has a string for the comment (`SentimentText`), a `float` (`Sentiment`) that has a value for sentiment of either positive or negative. Both fields have `Column` attributes attached to them. This attribute describes the order of each field in the data file, and which is the `Label` field. `SentimentPrediction` is the class used for prediction after the model has been trained. It has a single boolean (`Sentiment`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
 In the *Program.cs* file, replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
-```csharp
-var model = TrainAndPredict();
-```
+[!code-csharp[TrainAndPredict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#3 "Train and predict your model")]
 
 The `TrainAndPredict` method executes the following tasks:
 
@@ -152,26 +121,17 @@ The `TrainAndPredict` method executes the following tasks:
 
 Create the `TrainAndPredict` method, just after the `Main` method, using the following code:
 
-```csharp
-public static PredictionModel<SentimentData, SentimentPrediction> TrainAndPredict()
-{
-
-}
-```
+[!code-csharp[DeclareTrainAndPredict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#4 "Declare the TrainAndPredict model")]
 
 ## Ingest the data
 
 Initialize a new instance of <xref:Microsoft.ML.LearningPipeline> that will include the data loading, data processing/featurization, and model. Add the following code as the first line of the `TrainAndPredict` method:
 
-```csharp
-var pipeline = new LearningPipeline();
-```
+[!code-csharp[LearningPipeline](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#5 "Create a learning pipeline")]
 
 The <xref:Microsoft.ML.TextLoader%601> object is the first part of the pipeline, and loads the training file data.
 
-```csharp
-pipeline.Add(new TextLoader<SentimentData>(_dataPath, useHeader: false, separator: "tab"));
-```
+[!code-csharp[TextLoader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#6 "Add a text loader to the pipeline")]
 
 ## Data preprocess and feature engineering
 
@@ -179,9 +139,7 @@ Pre-processing and cleaning data are important tasks that occur before a dataset
 
 Apply a <xref:Microsoft.ML.Transforms.TextFeaturizer> to convert the `SentimentText` column into a numeric vector called `Features` used by the machine learning algorithm. This is the preprocessing/featurization step. Using additional components available in ML.NET can enable better results with your model. Add `TextFeaturizer` to the pipeline as the next line of code:
 
-```csharp
-pipeline.Add(new TextFeaturizer("Features", "SentimentText"));
-```
+[!code-csharp[TextFeaturizer](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizer to the pipeline")]
 
 ### About the classification model
 
@@ -201,9 +159,7 @@ The <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier> object is a decision t
 
 Add the following code to the `TrainAndPredict` method:
 
-```csharp
-pipeline.Add(new FastTreeBinaryClassifier() { NumLeaves = 5, NumTrees = 5, MinDocumentsInLeafs = 2 });
-```
+[!code-csharp[BinaryClassifier](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#8 "Add a fast binary tree classifier")]
 
 ## Train the model
 
@@ -211,122 +167,65 @@ You train the model, <xref:Microsoft.ML.PredictionModel%602>, based on the datas
 
 Add the following code to the `TrainAndPredict` method:
 
-```csharp
-PredictionModel<SentimentData, SentimentPrediction> model = pipeline.Train<SentimentData, SentimentPrediction>();
-```
+[!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#9 "Train the model")]
 
 ## Predict the model
 
 Add some comments to test the trained model's predictions in the `TrainAndPredict` method:
 
-```csharp
-IEnumerable<SentimentData> sentiments = new[]
-{
-    new SentimentData
-    {
-        SentimentText = "Contoso's 11 is a wonderful experience",
-        Sentiment = 0
-    },
-    new SentimentData
-    {
-        SentimentText = "Really bad",
-        Sentiment = 0
-    },
-    new SentimentData
-    {
-        SentimentText = "Joe versus the Volcano Coffee Company is a great film.",
-        Sentiment = 0
-    }
-};
-```
+[!code-csharp[PredictionData](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#10 "CVreate test data for predictions")]
 
 Now that you have a model, you can use that to predict the positive or negative sentiment of the comment data using the <xref:Microsoft.ML.PredictionModel.Predict%2A?displayProperty=nameWithType> method. To get a prediction, use `Predict` on new data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
-```csharp
-IEnumerable<SentimentPrediction> predictions = model.Predict(sentiments);
-```
+[!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#11 "Create predictions of sentiments")]
 
 ### Model operationalization: prediction
 
 Display `SentimentText` and corresponding sentiment prediction in order to share the results and act on them accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a header for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
-```csharp
-Console.WriteLine();
-Console.WriteLine("Sentiment Predictions");
-Console.WriteLine("---------------------");
-```
+[!code-csharp[OutputHeaders](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#12 "Display prediction outputs")]
 
 Before displaying the predicted results, combine the sentiment and prediction together to see the original comment with its predicted sentiment. The following code uses the <xref:System.Linq.Enumerable.Zip%2A> method to make that happen, so add that code next:
 
-```csharp
-var sentimentsAndPredictions = sentiments.Zip(predictions, (sentiment, prediction) => new { sentiment, prediction });
-```
+[!code-csharp[BuildTuples](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#13 "Build the pairs of sentiment data and predictions")]
 
 Now that you've combined the `SentimentText` and `Sentiment` into a class, you can display the results using the <xref:System.Console.WriteLine?displayProperty=nameWithType> method:
 
-```csharp
-foreach (var item in sentimentsAndPredictions)
-{
-    Console.WriteLine($"Sentiment: {item.sentiment.SentimentText} | Prediction: {(item.prediction.Sentiment ? "Positive" : "Negative")}");
-}
-Console.WriteLine();
-```
+[!code-csharp[DisplayPredictions](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#14 "Display the predictions")]
 
 #### Return the model trained to use for evaluation
 
 Return the model at the end of the `TrainAndPredict` method. At this point, you could then save it to a zip file or continue to work with it. For this tutorial, you're going to work with it, so add the following code to the next line in `TrainAndPredict`:
 
-```csharp
-return model;
-```
+[!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#15 "Return the model")]
 
 ## Evaluate the model
 
 Now that you've created and trained the model, you need to evaluate it with a different dataset for quality assurance and validation. In the `Evaluate` method, the model created in `TrainAndPredict` is passed in to be evaluated. Create the `Evaluate` method, just after `TrainAndPredict`, as in the following code:
 
-```csharp
-public static void Evaluate(PredictionModel<SentimentData, SentimentPrediction> model)
-{
-
-}
-```
+[!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#16 "Evaluate your model")]
 
 Add a call to the new method from the `Main` method, right under the `TrainAndPredict` method call, using the following code:
 
-```csharp
-Evaluate(model);
-```
+[!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#17 "Call the Evaluate method")]
 
 The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add that next to the `Evaluate` method call, using the following code:
 
-```csharp
-var testData = new TextLoader<SentimentData>(_testDataPath, useHeader: false, separator: "tab");
-```
+[!code-csharp[LoadText](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Load the test dataset")]
 
 The <xref:Microsoft.ML.Models.BinaryClassificationEvaluator> object computes the quality metrics for the `PredictionModel` using the specified dataset. To see those metrics, add the evaluator as the next line in the `Evaluate` method, with the following code:
 
-```csharp
-var evaluator = new BinaryClassificationEvaluator();
-```
+[!code-csharp[BinaryEvaluator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#19 "Create the binary evaluator")]
 
 The <xref:Microsoft.ML.Models.BinaryClassificationMetrics> contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, we need to get the metrics first. Add the following code:
 
-```csharp
-BinaryClassificationMetrics metrics = evaluator.Evaluate(model, testData);
-```
+[!code-csharp[CreateMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#20 "Evaluate the model and create metrics")]
 
 ### Displaying the metrics for model validation
 
 Use the following code to display the metrics, share the results, and act on them accordingly:
 
-```csharp
-Console.WriteLine();
-Console.WriteLine("PredictionModel quality metrics evaluation");
-Console.WriteLine("------------------------------------------");
-Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
-Console.WriteLine($"Auc: {metrics.Auc:P2}");
-Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
-```
+[!code-csharp[DisplayMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#21 "Display selected metrics")]
 
 ## Results
 
@@ -336,7 +235,7 @@ Your results should be similar to the following. As the pipeline processes, it d
 Sentiment Predictions
 ---------------------
 Sentiment: Contoso's 11 is a wonderful experience | Prediction: Positive
-Sentiment: Really bad | Prediction: Negative
+Sentiment:The acting in this movie is really bad | Prediction: Negative
 Sentiment: Joe versus the Volcano Coffee Company is a great film. | Prediction: Positive
 
 
@@ -359,6 +258,6 @@ In this tutorial, you learned how to:
 > * Predict the model
 > * Evaluate the model with a different dataset
 
-Advance to the next article to learn more
+Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]
-> [Next steps button](taxi-fare.md)
+> [Taxi Fare Predictor](taxi-fare.md)

@@ -14,7 +14,7 @@ WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS set
   
  When running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] automatically installs this tool. When running [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605).  
   
- When running [!INCLUDE[wv](../../../../includes/wv-md.md)]or Windows 7, you configure these settings with the Netsh.exe tool.  
+ When running [!INCLUDE[wv](../../../../includes/wv-md.md)] or Windows 7, you configure these settings with the Netsh.exe tool.  
   
 ## Configuring Namespace Reservations  
  Namespace reservation assigns the rights for a portion of the HTTP URL namespace to a particular group of users. A reservation gives those users the right to create services that listen on that portion of the namespace. Reservations are URL prefixes, meaning that the reservation covers all sub-paths of the reservation path. Namespace reservations permit two ways to use wildcards. The HTTP Server API documentation describes the [order of resolution between namespace claims that involve wildcards](http://go.microsoft.com/fwlink/?LinkId=94841).  

@@ -226,7 +226,7 @@ ms.custom: "updateeachrelease"
                                                 <p><a href="/dotnet/machine-learning/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/machine-learning/resources">Resources</a></p>
                                                 <p><a href="/dotnet/machine-learning/resources/glossary">Glossary</a></p>
-                                                <p><a href="/dotnet/api?view=ml-dotnet">ML.NET APIs</a></p>
+                                                <p><a href="/dotnet/api?view=ml-dotnet">ML.NET API reference</a></p>
                                             </div>
                                         </div>
                                     </div>

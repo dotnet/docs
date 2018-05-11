@@ -15,7 +15,7 @@ ms.author: ronpet
 ---
 # $ - string interpolation (C# Reference)
 
-The `$` special character identifies a string literal as an *interpolated string*. An interpolated string is a string literal that might contain *interpolated expressions*. When the interpolated string is resolved to the result string, items with interpolated expressions are replaced by the string representations of the expression results. This feature is available in C# 6 and later versions of the language.
+The `$` special character identifies a string literal as an *interpolated string*. An interpolated string is a string literal that might contain *interpolated expressions*. When an interpolated string is resolved to a result string, items with interpolated expressions are replaced by the string representations of the expression results. This feature is available in C# 6 and later versions of the language.
 
 String interpolation provides a more readable and convenient syntax to create formatted strings than a [string composite formatting](../../../standard/base-types/composite-formatting.md) feature. The following example uses both features to produce the same output:
 
@@ -23,7 +23,7 @@ String interpolation provides a more readable and convenient syntax to create fo
 
 ## Structure of an interpolated string
 
-To identify a string literal as an interpolated string, prepend it with the `$` symbol. You cannot have any white space between the `$` and the `"` that starts the string. Doing so causes a compile-time error.
+To identify a string literal as an interpolated string, prepend it with the `$` symbol. You cannot have any white space between the `$` and the `"` that starts a string literal. Doing so causes a compile-time error.
 
 The structure of an item with an interpolated expression is as follows:
 
@@ -31,7 +31,7 @@ The structure of an item with an interpolated expression is as follows:
 {<interpolatedExpression>[,<alignment>][:<formatString>]}
 ```
 
-Elements in square brackets are optional. The following table describes each element.
+Elements in square brackets are optional. The following table describes each element:
 
 |Element|Description|
 |-------------|-----------------|
@@ -49,11 +49,11 @@ To include a brace, "{" or "}", in the text produced by an interpolated string, 
 
 As the colon (":") has special meaning in an interpolated expression item, in order to use a [conditional operator](../operators/conditional-operator.md) in an interpolated expression, enclose that expression in parentheses.
 
-The following example shows how to include a brace into the result string and how to use a conditional operator in an interpolated expression:
+The following example shows how to include a brace in a result string and how to use a conditional operator in an interpolated expression:
 
 [!code-csharp-interactive[example with ternary conditional operator](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
 
-Verbatim interpolated strings use the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../keywords/string.md) topic.
+A verbatim interpolated string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../keywords/string.md) and [verbatim identifier](verbatim.md) topics.
 
 > [!NOTE]
 > The `$` token must appear before the `@` token in a verbatim interpolated string.
@@ -80,7 +80,7 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 ## Additional resources
 
-If you are new to the string interpolation, see the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.
+If you are new to string interpolation, see the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.
 
 ## See also  
  <xref:System.String.Format%2A?displayProperty=nameWithType>  

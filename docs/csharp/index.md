@@ -40,8 +40,8 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 * [Tour of C#](tour-of-csharp/index.md)
   * This section provides an overview of the language. It covers the elements that make up C# programs and the capabilities of the language. It shows small samples of all the syntax elements of C# and discussions of the major C# language topics.
 
-* [Latest Features](whats-new/index.md)
-  * Learn about new features in the language. Learn about new tools like C# Interactive (C#'s REPL), and the .NET Compiler Platform SDK. This section shows how the language is evolving and how the new tools can make you more productive.
+* [What's new in C#](whats-new/index.md)
+  * Provides overviews of new features added in the latest language releases and of the history of the C# language.
 
 <!--
 * [.NET Compiler Platform SDK](roslyn-sdk/index.md)

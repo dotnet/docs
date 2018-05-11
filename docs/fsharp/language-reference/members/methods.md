@@ -29,7 +29,7 @@ abstract member self-identifier.method-name : type-signature
 [ attributes ]
 abstract member [inline] self-identifier.method-name : type-signature
 [ attributes ]
-default member [inline] self-identifier.method-nameparameter-list[ : return-type ] =
+default [inline] self-identifier.method-nameparameter-list[ : return-type ] =
     method-body
 
 // Override of inherited virtual method.

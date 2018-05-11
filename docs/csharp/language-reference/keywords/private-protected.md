@@ -9,7 +9,7 @@ The `private protected` keyword combination is a member access modifier. A priva
 ## Example  
  A private protected member of a base class is accessible from derived types in its containing assembly only if the static type of the variable is the derived class type. For example, consider the following code segment:  
   
- ```
+ ```csharp
  // Assembly1.cs  
  // Compile with: /target:library  
  public class BaseClass
@@ -33,7 +33,7 @@ The `private protected` keyword combination is a member access modifier. A priva
  }
 ```  
   
-```  
+```csharp  
  // Assembly2.cs  
  // Compile with: /reference:Assembly1.dll  
  class DerivedClass2 : BaseClass

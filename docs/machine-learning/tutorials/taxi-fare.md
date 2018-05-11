@@ -91,7 +91,7 @@ Next, create classes for the input data and the predictions:
 
 Add two classes into this file. `TaxiTrip`, the input data set class, has definitions for each of the columns discovered above and a `Label` attribute for the fare_amount column that you are predicting. Add the following code to the file:
 
-[!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define the taxi trip class")]
+[!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#2 "Define the taxi trip class")]
 
 The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (fare_amount) and a `Score` `ColumnName` attribute. Add the following code into the file below the `TaxiTrip` class:
 

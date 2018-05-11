@@ -14,13 +14,13 @@ The right-shift assignment operator.
 ## Remarks  
  An expression of the form  
   
-```  
+```csharp  
 x >>= y  
 ```  
   
  is evaluated as  
   
-```  
+```csharp  
 x = x >> y  
 ```  
   

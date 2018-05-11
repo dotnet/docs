@@ -24,13 +24,13 @@ Extension methods enable you to "add" methods to existing types without creating
   
  The `WordCount` extension method can be brought into scope with this `using` directive:  
   
-```  
+```xml  
 using ExtensionMethods;  
 ```  
   
  And it can be called from an application by using this syntax:  
   
-```  
+```csharp  
 string s = "Hello Extension Methods";  
 int i = s.WordCount();  
 ```  
@@ -41,7 +41,7 @@ int i = s.WordCount();
   
  In general, you will probably be calling extension methods far more often than implementing your own. Because extension methods are called by using instance method syntax, no special knowledge is required to use them from client code. To enable extension methods for a particular type, just add a `using` directive for the namespace in which the methods are defined. For example, to use the standard query operators, add this `using` directive to your code:  
   
-```  
+```csharp  
 using System.Linq;  
 ```  
   

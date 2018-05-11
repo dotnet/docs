@@ -38,7 +38,7 @@ Properties provide the convenience of public data members without the risks that
   
  If separate `set` and `get` methods were used to model properties, the equivalent code might look like this:  
   
-```  
+```csharp  
 person.SetAge(person.GetAge() + 1);   
 ```  
   

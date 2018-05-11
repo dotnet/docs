@@ -10,11 +10,13 @@ A *type abbreviation* is an alias or alternate name for a type.
 ## Syntax
 
 ```fsharp
-type type-abbreviation = type-name
+type [accessibility-modifier] type-abbreviation = type-name
 ```
 
 ## Remarks
 You can use type abbreviations to give a type a more meaningful name, in order to make code easier to read. You can also use them to create an easy to use name for a type that is otherwise cumbersome to write out. Additionally, you can use type abbreviations to make it easier to change an underlying type without changing all the code that uses the type. The following is a simple type abbreviation.
+
+Accessibility of type abbreviations defaults to `public`.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2301.fs)]
 

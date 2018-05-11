@@ -57,22 +57,22 @@ Starting with F# 4.1, you can also specify concrete type names in statically res
 let inline konst x _ = x
 
 type CFunctor() = 
-      static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
-      static member inline fmap (f: ^a -> ^b, a: ^a option) =
+    static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
+    static member inline fmap (f: ^a -> ^b, a: ^a option) =
         match a with
         | None -> None
         | Some x -> Some (f x)
 
-      // default implementation of replace
-      static member inline replace< ^a, ^b, ^c, ^d, ^e when ^a :> CFunctor and (^a or ^d): (static member fmap: (^b -> ^c) * ^d -> ^e) > (a, f) =
+    // default implementation of replace
+    static member inline replace< ^a, ^b, ^c, ^d, ^e when ^a :> CFunctor and (^a or ^d): (static member fmap: (^b -> ^c) * ^d -> ^e) > (a, f) =
         ((^a or ^d) : (static member fmap : (^b -> ^c) * ^d -> ^e) (konst a, f))
 
-      // call overridden replace if present
-      static member inline replace< ^a, ^b, ^c when ^b: (static member replace: ^a * ^b -> ^c)>(a: ^a, f: ^b) =
+    // call overridden replace if present
+    static member inline replace< ^a, ^b, ^c when ^b: (static member replace: ^a * ^b -> ^c)>(a: ^a, f: ^b) =
         (^b : (static member replace: ^a * ^b -> ^c) (a, f))
 
 let inline replace_instance< ^a, ^b, ^c, ^d when (^a or ^c): (static member replace: ^b * ^c -> ^d)> (a: ^b, f: ^c) =
-      ((^a or ^c): (static member replace: ^b * ^c -> ^d) (a, f))
+        ((^a or ^c): (static member replace: ^b * ^c -> ^d) (a, f))
 
 // Note the concrete type 'CFunctor' specified in the signature
 let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member replace: ^a *  ^b ->  ^a0) =

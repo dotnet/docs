@@ -779,7 +779,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
   
  C#  
   
-```  
+```csharp  
 if (token.IsCancellationRequested)   
     throw new OperationCanceledException(token);  
 ```  

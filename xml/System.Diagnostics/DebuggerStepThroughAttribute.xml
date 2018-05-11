@@ -48,7 +48,7 @@
   
  The following code shows how the Visual Basic compiler uses the attribute.  
   
-```  
+```vb  
 <System.Diagnostics.DebuggerStepThrough()> _  
     Private Sub InitializeComponent()  
         components = New System.ComponentModel.Container()  

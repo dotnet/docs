@@ -35,7 +35,7 @@
   
  To configure a <xref:System.Diagnostics.SourceSwitch>, edit the configuration file that corresponds to the name of your application. Within this file, you can set a switch's value or clear all the switches previously set by the application. The configuration file should be formatted as shown in the following example.  
   
-```  
+```xml  
 <switches>  
   <add name="SourceSwitch" value="Verbose"></add>  
 </switches>  
@@ -93,7 +93,7 @@
   
  To set the level of your <xref:System.Diagnostics.SourceSwitch>, edit the configuration file that corresponds to the name of your application. Within this file, you can add a switch and set its value, remove a switch, or clear all the switches previously set by the application. To add a source switch, the configuration file should be formatted as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  
@@ -148,7 +148,7 @@
   
  To set the level of your <xref:System.Diagnostics.SourceSwitch>, edit the configuration file that corresponds to the name of your application. Within this file, you can add a switch and set its value, remove a switch, or clear all the switches previously set by the application. To add a source switch, the configuration file should be formatted as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  

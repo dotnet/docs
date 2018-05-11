@@ -37,7 +37,7 @@
   
  The following example shows the use of the `traceOutputOptions` attribute to specify the trace output options for a <xref:System.Diagnostics.ConsoleTraceListener> that is enabled using a configuration file.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

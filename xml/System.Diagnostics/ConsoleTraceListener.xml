@@ -47,7 +47,7 @@
   
  The following example adds a <xref:System.Diagnostics.ConsoleTraceListener> object named `configConsoleListener` to the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

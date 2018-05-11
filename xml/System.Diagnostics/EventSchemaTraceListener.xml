@@ -28,7 +28,7 @@
   
  To configure an <xref:System.Diagnostics.EventSchemaTraceListener> object, modify the configuration file that corresponds to the name of your application. In this file, you can add, remove, or set the properties for a listener. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
     <system.diagnostics>  
         <sources>  

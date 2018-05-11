@@ -52,7 +52,7 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Reflection.AssemblyDelaySignAttribute> attribute with the <xref:System.Reflection.AssemblyKeyFileAttribute>. To compile this example, you must create a strong-name key file named TestPublicKey.snk using the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md):  
   
-```  
+```console  
 sn -k TestPublicKey.snk   
 ```  
   

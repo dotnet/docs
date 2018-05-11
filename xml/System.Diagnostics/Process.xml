@@ -454,7 +454,7 @@
   
  When you call <xref:System.Diagnostics.Process.CancelErrorRead%2A>, all in-progress read operations for <xref:System.Diagnostics.Process.StandardError%2A> are completed and then the event handler is disabled. All further redirected output to <xref:System.Diagnostics.Process.StandardError%2A> is saved in a buffer. If you re-enable the event handler with a call to <xref:System.Diagnostics.Process.BeginErrorReadLine%2A>, the saved output is sent to the event handler and asynchronous read operations resume. If you want to change the event handler before resuming asynchronous read operations, you must remove the existing event handler before adding the new event handler:  
   
-```  
+```csharp  
 // At this point the DataReceivedEventHandler(ErrorHandler1)   
 // has executed a CancelErrorRead.  
   
@@ -536,7 +536,7 @@ process.BeginErrorReadLine();
   
  When you call <xref:System.Diagnostics.Process.CancelOutputRead%2A>, all in-progress read operations for <xref:System.Diagnostics.Process.StandardOutput%2A> are completed and then the event handler is disabled. All further redirected output to <xref:System.Diagnostics.Process.StandardOutput%2A> is saved in a buffer. If you re-enable the event handler with a call to <xref:System.Diagnostics.Process.BeginOutputReadLine%2A>, the saved output is sent to the event handler and asynchronous read operations resume. If you want to change the event handler before resuming asynchronous read operations, you must remove the existing event handler before adding the new event handler:  
   
-```  
+```csharp  
 // At this point the DataReceivedEventHandler(OutputHandler1)   
 // has executed a CancelOutputRead.  
   
@@ -3944,7 +3944,7 @@ The following code example creates a process that prints a file. It sets the <xr
   
  The following C# code, for example, shows how to read from a redirected stream and wait for the child process to exit.  
   
-```  
+```csharp  
 // Start the child process.  
  Process p = new Process();  
  // Redirect the error stream of the child process.  
@@ -3964,7 +3964,7 @@ The following code example creates a process that prints a file. It sets the <xr
   
  There is a similar issue when you read all text from both the standard output and standard error streams. The following C# code, for example, performs a read operation on both streams.  
   
-```  
+```csharp  
 // Do not perform a synchronous read to the end of both   
 // redirected streams.  
 // string output = p.StandardOutput.ReadToEnd();  
@@ -4127,7 +4127,7 @@ p.WaitForExit();
   
  The following C# code, for example, shows how to read from a redirected stream and wait for the child process to exit.  
   
-```  
+```csharp  
 Process p = new Process();  
 p.StartInfo.UseShellExecute = false;  
 p.StartInfo.RedirectStandardOutput = true;  
@@ -4143,7 +4143,7 @@ p.WaitForExit();
   
  There is a similar issue when you read all text from both the standard output and standard error streams. The following C# code, for example, performs a read operation on both streams.  
   
-```  
+```csharp  
 // To avoid deadlocks, use asynchronous read operations on at least one of the streams.  
 // Do not perform a synchronous read to the end of both redirected streams.  
 p.BeginOutputReadLine();  

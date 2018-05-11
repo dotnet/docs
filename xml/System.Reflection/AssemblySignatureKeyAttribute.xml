@@ -88,7 +88,7 @@
 ## Remarks  
  Use Sn.exe to generate the parameters for this constructor.  
   
-```  
+```console  
 sn -a IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk  
 ```  
   

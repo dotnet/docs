@@ -47,7 +47,7 @@
   
  To set the <xref:System.Diagnostics.Trace.AutoFlush%2A> and <xref:System.Diagnostics.Trace.IndentSize%2A> for <xref:System.Diagnostics.Trace>, you can edit the configuration file that corresponds to the name of your application. The configuration file should be formatted like the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="3" />  
@@ -392,7 +392,7 @@
   
  To set the <xref:System.Diagnostics.Trace.AutoFlush%2A> and <xref:System.Diagnostics.Trace.IndentSize%2A> for <xref:System.Diagnostics.Trace>, you can also edit the configuration file that corresponds to the name of your application. The configuration file should be formatted like the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="3" />  
@@ -897,7 +897,7 @@ End of list of errors
   
  To set the <xref:System.Diagnostics.Trace.AutoFlush%2A> and <xref:System.Diagnostics.Trace.IndentSize%2A> for <xref:System.Diagnostics.Trace>, you can also edit the configuration file that corresponds to the name of your application. The configuration file should be formatted like the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="3" />  

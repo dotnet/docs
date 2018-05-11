@@ -43,7 +43,7 @@
   
  In the .NET Framework versions 1.0 and 1.1, trace levels in configuration files are set using the integer value corresponding to the enumeration member, rather than the enumeration member itself, as the following example demonstrates.  
   
-```  
+```xml  
 <configuration>  
     <system.diagnostics>  
        <switches>  

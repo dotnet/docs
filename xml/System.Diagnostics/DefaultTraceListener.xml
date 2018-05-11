@@ -46,7 +46,7 @@
   
  To add a trace listener, edit the configuration file that corresponds to the name of your application. Within this file, you can add a listener, set its type and set its parameters, remove a listener, or clear all the listeners previously set by the application. The configuration file should be formatted similar to the following example:  
   
-```  
+```xml  
 <configuration>  
 <system.diagnostics>  
   <trace autoflush="false" indentsize="4">  

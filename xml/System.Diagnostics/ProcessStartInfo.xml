@@ -847,7 +847,7 @@
   
  For example, the following C# code shows how to read from a redirected stream and wait for the child process to exit.  
   
-```  
+```csharp  
 // Start the child process.  
  Process p = new Process();  
  // Redirect the error stream of the child process.  
@@ -867,7 +867,7 @@
   
  There is a similar issue when you read all text from both the standard output and standard error streams. For example, the following C# code performs a read operation on both streams.  
   
-```  
+```csharp  
 // Do not perform a synchronous read to the end of both  
 // redirected streams.  
 // string output = p.StandardOutput.ReadToEnd();  
@@ -1024,7 +1024,7 @@ p.WaitForExit();
   
  For example, the following C# code shows how to read from a redirected stream and wait for the child process to exit.  
   
-```  
+```csharp  
 Process p = new Process();  
 p.StartInfo.UseShellExecute = false;  
 p.StartInfo.RedirectStandardOutput = true;  
@@ -1040,7 +1040,7 @@ p.WaitForExit();
   
  There is a similar issue when you read all text from both the standard output and standard error streams. For example, the following C# code performs a read operation on both streams.  
   
-```  
+```csharp  
 // To avoid deadlocks, use asynchronous read operations on at least one of the streams.  
 // Do not perform a synchronous read to the end of both redirected streams.  
 p.BeginOutputReadLine();  

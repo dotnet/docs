@@ -50,7 +50,7 @@
   
  The basic structure for code that uses a semaphore to protect resources is:  
   
-```  
+```vb  
   
 ' Enter semaphore by calling one of the Wait or WaitAsync methods.  
 SemaphoreSlim.Wait()  

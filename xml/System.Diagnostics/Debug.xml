@@ -45,7 +45,7 @@
   
  To set the <xref:System.Diagnostics.Debug.AutoFlush%2A> and <xref:System.Diagnostics.Debug.IndentSize%2A> for <xref:System.Diagnostics.Debug>, you can edit the configuration file corresponding to the name of your application. The configuration file should be formatted as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="true" indentsize="7" />  
@@ -153,7 +153,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
@@ -236,7 +236,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
@@ -320,7 +320,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
@@ -414,7 +414,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <assert assertuienabled="true" logfilename="c:\\myFile.log" />  
@@ -464,7 +464,7 @@
   
  To set the <xref:System.Diagnostics.Debug.AutoFlush%2A> and <xref:System.Diagnostics.Debug.IndentSize%2A> for <xref:System.Diagnostics.Debug>, you can also edit the configuration file corresponding to the name of your application. The configuration file should be formatted as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="true" indentsize="7" />  
@@ -927,7 +927,7 @@ End of list of errors
   
  To set the <xref:System.Diagnostics.Debug.AutoFlush%2A> and <xref:System.Diagnostics.Debug.IndentSize%2A> for <xref:System.Diagnostics.Debug>, you can also edit the configuration file corresponding to the name of your application. The configuration file should be formatted as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="true" indentsize="7" />  
@@ -1543,14 +1543,14 @@ End of list of errors
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -1630,14 +1630,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -1721,14 +1721,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -1812,14 +1812,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2267,14 +2267,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2355,14 +2355,14 @@ Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2446,14 +2446,14 @@ Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2538,14 +2538,14 @@ Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  First example:  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Debug.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  Second example:  
   
-```  
+```csharp  
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>

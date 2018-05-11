@@ -1310,7 +1310,7 @@
   
  For example, to set the first member of MyArray from the previous example, the syntax is as follows:  
   
-```  
+```csharp  
 t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new  
     Variant[]{0,"Updated"});  
 ```  

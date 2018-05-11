@@ -55,13 +55,13 @@
   
 2.  Compile Server1 using the following command:  
   
-    ```  
+    ```console  
     csc /out:subfolder\Server1.netmodule /t:module Server1.cs  
     ```  
   
 3.  Compile MySample using the following command:  
   
-    ```  
+    ```console  
     csc /out:MySample.exe /t:exe /addmodule:subfolder\Server1.netmodule MySample.cs  
     ```  
   

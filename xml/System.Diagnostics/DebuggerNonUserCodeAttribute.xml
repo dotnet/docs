@@ -50,7 +50,7 @@
 ## Examples  
  The following code example shows the use of this attribute in a Visual Basic project.  
   
-```  
+```vb  
 ' Form overrides Dispose to clean up the component list.  
 <System.Diagnostics.DebuggerNonUserCode()> _  
 Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)  

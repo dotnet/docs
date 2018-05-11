@@ -41,7 +41,7 @@
   
  To configure a <xref:System.Diagnostics.DelimitedListTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add a listener, set the properties for a listener, or remove a listener. The configuration file should be formatted as shown in the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  
@@ -230,7 +230,7 @@
 ## Remarks  
  This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`.  The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
   
-```  
+```csharp  
 ((DelimitedListTraceListener)Trace.Listeners["delimListener"]).Delimiter = ":"  
 ```  
   
@@ -276,7 +276,7 @@
 ## Remarks  
  This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`. The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
   
-```  
+```csharp  
 ((DelimitedListTraceListener)Trace.Listeners["delimListener"]).Delimiter = ":"  
 ```  
   
@@ -326,7 +326,7 @@
   
  The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`. The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
   
-```  
+```csharp  
 ((DelimitedListTraceListener)Trace.Listeners["delimListener"]).Delimiter = ":"  
 ```  
   
@@ -370,7 +370,7 @@
 ## Remarks  
  The default delimiter is ";" (semicolon). The following configuration file example shows the setting of the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property using the `delimiter` attribute in a configuration file:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  
@@ -430,7 +430,7 @@
 ## Remarks  
  A custom attribute is an attribute that is not inherited from the base class that can be used to set a property for the class. The custom attribute for <xref:System.Diagnostics.DelimitedListTraceListener> is used to set the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property. The following configuration file example shows the use of the `delimiter` attribute to set the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

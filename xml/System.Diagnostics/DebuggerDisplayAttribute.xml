@@ -40,7 +40,7 @@
 ## Remarks  
  The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor%2A> constructor has a single argument: a string to be displayed in the value column for instances of the type. This string can contain braces ({ and }). The text within a pair of braces is evaluated as the name of a field, property, or method. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyHashtable`.  
   
-```  
+```csharp  
 [DebuggerDisplay("Count = {count}")]  
 class MyHashtable  
 {  
@@ -98,7 +98,7 @@ class MyHashtable
 ## Remarks  
  The `value` parameter can contain braces ({ and }). The text within a pair of braces is evaluated as the name of a field, property, or method. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyTable`.  
   
-```  
+```csharp  
 [DebuggerDisplay("Count = {count}")]  
 class MyTable  
 {  

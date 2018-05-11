@@ -1184,7 +1184,7 @@
   
  Because static properties belong to the type, not individual objects, get static properties by passing `null` as the object argument. For example, use the following code to get the static `CurrentCulture` property of `CultureInfo` :  
   
-```  
+```csharp  
 PropertyInfo CurCultProp =   
     (typeof(CultureInfo)).GetProperty("CurrentCulture");   
 Console.WriteLine("CurrCult: " +  
@@ -1285,7 +1285,7 @@ Console.WriteLine("CurrCult: " +
   
  Because static properties belong to the type, not individual objects, get static properties by passing `null` as the object argument. For example, use the following code to get the static `CurrentCulture` property of `CultureInfo` :  
   
-```  
+```csharp  
 PropertyInfo CurCultProp =   
        (typeof(CultureInfo)).GetProperty("CurrentCulture");   
 Console.WriteLine("CurrCult: " +  

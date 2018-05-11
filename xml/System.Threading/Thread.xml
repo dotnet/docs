@@ -390,7 +390,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  If you specify a very small stack size, you might need to disable stack-overflow probing. When the stack is severely constrained, the probing can itself cause a stack overflow. To disable stack overflow probing, add the following to your application configuration file.  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <disableStackOverflowProbing enabled="true"/>  
@@ -461,7 +461,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  If you specify a very small stack size, you might need to disable stack-overflow probing. When the stack is severely constrained, the probing can itself cause a stack overflow. To disable stack overflow probing, add the following to your application configuration file.  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <disableStackOverflowProbing enabled="true"/>  

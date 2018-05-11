@@ -95,7 +95,7 @@ Add two classes into this file. `TaxiTrip`, the input data set class, has defini
 
 The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (fare_amount) and a `Score` `ColumnName` attribute. Add the following code into the file below the `TaxiTrip` class:
 
-[!code-csharp[DefineFarePrediction](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#3 "Define the fare predictions class")]
+[!code-csharp[DefineFarePrediction](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#3 "Define the fare predictions class")]
 
 Now go back to the **Program.cs** file. In `Main`, replace the `Console.WriteLine("Hello World!")` with the following code:
 

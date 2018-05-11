@@ -54,6 +54,8 @@ The output is as follows.
 Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name could actually be inferred by the compiler, but could not actually be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
 
 ```fsharp
+let inline konst x _ = x
+
 type CFunctor() = 
       static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
       static member inline fmap (f: ^a -> ^b, a: ^a option) =

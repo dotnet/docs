@@ -42,7 +42,7 @@
   
  `XmlTextWriter` maintains a namespace stack corresponding to all the namespaces defined in the current element stack. Using `XmlTextWriter` you can declare namespaces manually.  
   
-```  
+```csharp  
 w.WriteStartElement("root");  
 w.WriteAttributeString("xmlns", "x", null, "urn:1");  
  w.WriteStartElement("item","urn:1");  
@@ -54,7 +54,7 @@ w.WriteEndElement();
   
  The above C# code produces the following output. `XmlTextWriter` promotes the namespace declaration to the root element to avoid having it duplicated on the two child elements. The child elements pick up the prefix from the namespace declaration.  
   
-```  
+```xml  
 <root xmlns:x="urn:1">  
  <x:item/>  
  <x:item/>  
@@ -63,14 +63,14 @@ w.WriteEndElement();
   
  `XmlTextWriter` also allows you to override the current namespace declaration. In the following example, the namespace URI "123" is overridden by "abc" to produce the XML element `<x:node xmlns:x="abc"/>`.  
   
-```  
+```csharp  
 w.WriteStartElement("x","node","123");  
 w.WriteAttributeString("xmlns","x",null,"abc");  
 ```  
   
  By using the write methods that take a prefix as an argument you can also specify which prefix to use. In the following example, two different prefixes are mapped to the same namespace URI to produce the XML text `<x:root xmlns:x="urn:1"><y:item xmlns:y="urn:1"/></x:root>`.  
   
-```  
+```csharp  
 XmlTextWriter w = new XmlTextWriter(Console.Out);  
 w.WriteStartElement("x","root","urn:1");  
  w.WriteStartElement("y","item","urn:1");  
@@ -81,7 +81,7 @@ w.Close();
   
  If there are multiple namespace declarations mapping different prefixes to the same namespace URI, `XmlTextWriter` walks the stack of namespace declarations backwards and picks the closest one.  
   
-```  
+```csharp  
 XmlTextWriter w = new XmlTextWriter(Console.Out);  
 w.Formatting = Formatting.Indented;  
 w.WriteStartElement("x","root","urn:1");  
@@ -94,7 +94,7 @@ w.Close();
   
  In the above C# example, because the `WriteAttributeString` call does not specify a prefix, the writer uses the last prefix pushed onto the namespace stack, and produces the following XML:  
   
-```  
+```xml  
 <x:root xmlns:x="urn:1">  
  <y:item y:attr="123" xmlns:y="urn:1" />  
 </x:root>  
@@ -110,7 +110,7 @@ w.Close();
   
  To write strongly typed data, use the <xref:System.Xml.XmlConvert> class to convert data types to string. For example, the following C# code converts the data from `Double` to `String` and writes the element `<price>19.95</price>`.  
   
-```  
+```csharp  
 Double price = 19.95;  
 writer.WriteElementString("price", XmlConvert.ToString(price));  
 ```  
@@ -470,7 +470,7 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
   
  If the `Indented` option is set, child elements are indented using the <xref:System.Xml.XmlTextWriter.Indentation%2A> and <xref:System.Xml.XmlTextWriter.IndentChar%2A> properties. Only element content is indented. The following C# code writes out HTML elements including mixed content:  
   
-```  
+```csharp  
 XmlTextWriter w = new XmlTextWriter(Console.Out);   
  w.Formatting = Formatting.Indented;   
  w.WriteStartElement("ol");   
@@ -485,7 +485,7 @@ XmlTextWriter w = new XmlTextWriter(Console.Out);
   
  The above code produces the following output:  
   
-```  
+```xml  
 <ol>   
   <li>The big <b>E</b><i>lephant</i> walks slowly.</li>   
 </ol>  
@@ -547,7 +547,7 @@ XmlTextWriter w = new XmlTextWriter(Console.Out);
   
  Indentation is performed on following node types: `DocumentType`, `Element`, `Comment`, `ProcessingInstruction`, and `CDATASection`. All other node types are not affected. The `XmlTextWriter` does not indent the internal DTD subset. However, you could do the following to apply formatting to the internal DTD subset.  
   
-```  
+```csharp  
 String name = "Employees";  
 String pubid = null;  
 String sysid = null;  
@@ -1621,7 +1621,7 @@ tw.WriteDocType(name, pubid, sysid, subset);
   
  For example, the following Microsoft Visual C# code:  
   
-```  
+```csharp  
 writer.Formatting = Formatting.Indented;  
 writer.WriteStartElement("root");  
  writer.WriteAttributeString("xmlns","x",null,"urn:abc");  
@@ -1637,7 +1637,7 @@ writer.WriteStartElement("root");
   
  Generates the following output:  
   
-```  
+```xml  
 <root xmlns:x="urn:abc">  
  <item href="#x:test"/>  
  </root>  

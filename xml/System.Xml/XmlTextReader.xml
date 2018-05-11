@@ -282,7 +282,7 @@
 > [!NOTE]
 >  In version 1.1 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], partially trusted code cannot set the `XmlResolver` property. The workaround is to create an <xref:System.Xml.XmlUrlResolver> with the necessary credentials, pass the URI to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=nameWithType> method, and then construct the `XmlTextReader` using the resulting <xref:System.IO.Stream> object. The workaround is described in the following C# code.  
   
-```  
+```csharp  
 // Create a resolver with the necessary credentials.  
 XmlUrlResolver resolver = new XmlUrlResolver();  
 NetworkCredential nc = new NetworkCredential(SecurelyStoredUserName, SecurelyStoredPassword, SecurelyStoredDomain);  
@@ -1510,20 +1510,20 @@ XmlTextReader reader = new XmlTextReader(s);
   
  The following XML contains an attribute in a specific namespace:  
   
-```  
+```xml  
 <test xmlns:dt="urn:datatypes" dt:type="int"/>  
 ```  
   
  You can lookup the `dt:type` attribute using one argument (prefix and local name) or two arguments (local name and namespace URI):  
   
-```  
+```csharp  
 String dt = reader.GetAttribute("dt:type");  
 String dt2 = reader.GetAttribute("type","urn:datatypes");  
 ```  
   
  To lookup the `xmlns:dt` attribute, use one of the following arguments:  
   
-```  
+```csharp  
 String dt3 = reader.GetAttribute("xmlns:dt");  
 String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);  
 ```  
@@ -2090,7 +2090,7 @@ abc<tag/>
   
  In the following XML, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a")`. The returned string is `urn:456`.  
   
-```  
+```xml  
 <root xmlns:a="urn:456">  
  <item>  
  <ref href="a:b"/>  
@@ -3225,7 +3225,7 @@ abc<tag/>
   
  In the following XML, if the reader is positioned on the start tag, `ReadChars` returns `test` and positions the reader after the end tag.  
   
-```  
+```xml  
 <Item>test</Item>  
 ```  
   
@@ -3245,7 +3245,7 @@ abc<tag/>
   
  For example, using the following XML:  
   
-```  
+```xml  
 <thing>  
  some text  
 </thing>  
@@ -3255,7 +3255,7 @@ abc<tag/>
   
  The reader is positioned on the `<item>` element at the end of the while loop.  
   
-```  
+```csharp  
 if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)  
 {  
  while(0 != reader.ReadChars(buffer, 0, 1)  
@@ -3818,7 +3818,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  If the reader is positioned on a leaf node already (such as the `<x>` node or the text node `abc`), calling `Skip` is the same as calling <xref:System.Xml.XmlTextReader.Read%2A>.  
   
-```  
+```xml  
 <a name="bob" age="123">  
   <x/>abc<y/>  
 </a>  

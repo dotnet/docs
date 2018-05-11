@@ -165,7 +165,7 @@
   
  The following C# code shows how to set the <xref:System.Xml.XmlUrlResolver.Credentials%2A> property to a credential cache.  
   
-```  
+```csharp  
 NetworkCredential myCred = new NetworkCredential(UserName,SecurelyStoredPassword,Domain);   
 CredentialCache myCache = new CredentialCache();   
 myCache.Add(new Uri("http://www.contoso.com/"), "Basic", myCred);   

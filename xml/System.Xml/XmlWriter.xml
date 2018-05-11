@@ -141,7 +141,7 @@
   
      The code generates the following XML string:  
   
-    ```  
+    ```xml  
     <x:root xmlns:x="123">  
       <item xmlns:x="abc" />  
     </x:root>  
@@ -182,7 +182,7 @@
 ## Examples  
  The following example code shows how to use the asynchronous API to generate XML.  
   
-```  
+```csharp  
 async Task TestWriter(Stream stream)   
 {  
     XmlWriterSettings settings = new XmlWriterSettings();  
@@ -3352,7 +3352,7 @@ async Task TestWriter(Stream stream)
   
  The following C# code copies an entire XML input document to the console:  
   
-```  
+```csharp  
 XmlReader reader = XmlReader.Create(myfile);  
 XmlWriter writer = XmlWriter.Create(Console.Out);  
 writer.WriteNode(reader, false);  
@@ -3360,7 +3360,7 @@ writer.WriteNode(reader, false);
   
  If you have moved off the root node and are positioned elsewhere in the document the following C# example correctly writes out the nodes.  
   
-```  
+```csharp  
 XmlReader reader = XmlReader.Create(myfile);  
 reader.Read(); // Read PI  
 reader.Read(); // Read Comment  
@@ -3631,7 +3631,7 @@ while (!reader.EOF){
 ## Remarks  
  This method can be used to write the XML declaration (rather than <xref:System.Xml.XmlWriter.WriteStartDocument%2A>). This could result in the encoding attribute being incorrectly written. For example, the following C# code would result in an invalid XML document because the default encoding is UTF-8.  
   
-```  
+```csharp  
 XmlWriter writer = XmlWriter.Create("output.xml");  
 writer.WriteProcessingInstruction("xml", "version='1.0' encoding='UTF-16'");  
 writer.WriteStartElement("root");  
@@ -3762,7 +3762,7 @@ writer.Close();
 ## Examples  
  The example writes the following element:  
   
-```  
+```xml  
 <root xmlns:x="urn:abc">  
   <item href="#x:test"/>  
 </root>  
@@ -4647,7 +4647,7 @@ writer.Close();
 ## Remarks  
  After calling this method you can either write attributes, or create content using <xref:System.Xml.XmlWriter.WriteComment%2A>, <xref:System.Xml.XmlWriter.WriteString%2A>, or `WriteStartElement` for child elements. You can close the element with either <xref:System.Xml.XmlWriter.WriteEndElement%2A> or <xref:System.Xml.XmlWriter.WriteFullEndElement%2A>. For example, the following C# code:  
   
-```  
+```csharp  
 writer.WriteStartElement("item",null);  
 writer.WriteString("some text");  
 writer.WriteEndElement();  
@@ -4655,7 +4655,7 @@ writer.WriteEndElement();
   
  Generates the following output:  
   
-```  
+```xml  
 <item>some text</item>  
 ```  
   

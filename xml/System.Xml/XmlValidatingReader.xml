@@ -649,7 +649,7 @@
   
  To illustrate the difference between the entity handling modes consider the following XML:  
   
-```  
+```xml  
 <!DOCTYPE doc [<!ENTITY num "123">]>  
  <doc> &#65; &num; </doc>  
 ```  
@@ -888,20 +888,20 @@
   
  The following XML contains an attribute in a specific namespace:  
   
-```  
+```xml  
 <test xmlns:dt="urn:datatypes" dt:type="int"/>  
 ```  
   
  You can look up the `dt:type` attribute by using one argument (prefix and local name) or two arguments (local name and namespace URI):  
   
-```  
+```csharp  
 String dt = reader.GetAttribute("dt:type");  
 String dt2 = reader.GetAttribute("type","urn:datatypes");  
 ```  
   
  To look up the `xmlns:dt` attribute, use one of the following arguments:  
   
-```  
+```csharp  
 String dt3 = reader.GetAttribute("xmlns:dt");  
 String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);  
 ```  
@@ -1234,7 +1234,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  The position indicated is the first character of text in the markup.  
   
-```  
+```xml  
 <root>  
  abc<tag/>  
 </root>  
@@ -1343,7 +1343,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  In the following XML string, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a", true)`. The returned string is `urn:456`.  
   
-```  
+```xml  
 <root xmlns:a="urn:456">  
  <item>  
  <ref href="a:b"/>  
@@ -2138,7 +2138,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  If <xref:System.Xml.XmlValidatingReader.EntityHandling%2A> is set to `ExpandCharEntities`, the following C# code returns the attribute value as two text nodes and one entity reference node:  
   
-```  
+```csharp  
 reader.MoveToAttribute("name");  
   while (reader.ReadAttributeValue())  
   {  
@@ -2840,7 +2840,7 @@ reader.MoveToAttribute("name");
   
  The user needs to test for the returned type. For example,  
   
-```  
+```csharp  
 object obj = vreader.SchemaType;  
  if (obj is XmlSchemaType)  
  {  
@@ -3279,7 +3279,7 @@ object obj = vreader.SchemaType;
   
  This property represents the xml:lang scope within which the current node resides. For example, here is an XML fragment with `xml:lang` set to U.S. English in the root element:  
   
-```  
+```xml  
 <root xml:lang="en-us">   
 <name>Fred</name>   
 </root>   

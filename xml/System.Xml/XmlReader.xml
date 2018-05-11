@@ -1,4 +1,4 @@
-﻿<Type Name="XmlReader" FullName="System.Xml.XmlReader">
+<Type Name="XmlReader" FullName="System.Xml.XmlReader">
   <TypeSignature Language="C#" Value="public abstract class XmlReader : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlReader extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlReader" />
@@ -1903,20 +1903,20 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
 ## Remarks  
  The following XML contains an attribute in a specific namespace:  
   
-```  
+```xml  
 <test xmlns:dt="urn:datatypes" dt:type="int"/>  
 ```  
   
  You can lookup the `dt:type` attribute using one argument (prefix and local name) or two arguments (local name and namespace URI):  
   
-```  
+```csharp  
 String dt = reader.GetAttribute("dt:type");  
 String dt2 = reader.GetAttribute("type","urn:datatypes");  
 ```  
   
  To lookup the `xmlns:dt` attribute, use one of the following arguments:  
   
-```  
+```csharp  
 String dt3 = reader.GetAttribute("xmlns:dt");  
 String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);  
 ```  
@@ -2118,7 +2118,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Examples  
  The following example displays all attributes on the root element.  
   
-```  
+```csharp  
 using System;  
 using System.IO;  
 using System.Xml;  
@@ -2150,7 +2150,7 @@ public class Sample
   
  `book4.xml`  
   
-```  
+```xml  
 <!DOCTYPE book SYSTEM 'book.dtd'>  
 <book ISBN = '1-861001-57-5'>  
   <title>Pride And Prejudice</title>  
@@ -2766,7 +2766,7 @@ public class Sample
 ## Remarks  
  In the following XML string, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a")`. The returned string is `urn:456`.  
   
-```  
+```xml  
 <root xmlns:a="urn:456">  
   <item>  
   <ref href="a:b"/>  
@@ -2986,20 +2986,20 @@ public class Sample
   
  This code can handle the following inputs without breaking:  
   
-```  
+```xml  
 <price>123.4</price>  
 ```  
   
  and  
   
-```  
+```xml  
 <?xml version="1.0"><!DOCTYPE price SYSTEM  
   "abc"><price>123.4</price>  
 ```  
   
  and  
   
-```  
+```xml  
 <?xml version="1.0"><!DOCTYPE price SYSTEM "abc"  
   [<!ENTTIY p  
   "123.4">]><price>&p;</price>  
@@ -3007,7 +3007,7 @@ public class Sample
   
  and  
   
-```  
+```xml  
 <!-- some test comment --><?processing  
   instruction?><price>123.4</price>  
 ```  
@@ -3720,7 +3720,7 @@ public class Sample
   
  For example, if you had the following XML text:  
   
-```  
+```xml  
 <elem>123 <!-- comment --> <?pi my_text?> 456 <?pi another_pi?></elem>  
 ```  
   
@@ -3732,7 +3732,7 @@ public class Sample
   
  In the following example the XML text is not separated by spaces  
   
-```  
+```xml  
 <elem>123<!-- comment --><?pi my_text?>456789<?pi another_pi?></elem>  
 ```  
   
@@ -6707,7 +6707,7 @@ public class Sample
 ## Remarks  
  This method returns all the content of the current node including the markup. The current node (start tag) and corresponding end node (end tag) are not returned. For example, if you had the following:  
   
-```  
+```xml  
 <node>  
  this <child id="123"/>  
 </node>  
@@ -7236,7 +7236,7 @@ public class Sample
   
  Use the following XML data to run the examples in this topic:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Books>  
   <Book>  
@@ -7937,7 +7937,7 @@ reader.ReadToFollowing("item", "urn:1");
   
  If the reader is positioned on a leaf node already (such as the `<x>` node or the text node `abc`), calling `Skip` is the same as calling <xref:System.Xml.XmlReader.Read%2A>.  
   
-```  
+```xml  
 <a name="bob" age="123">  
  <x/>abc<y/>  
 </a>  
@@ -8185,7 +8185,7 @@ reader.ReadToFollowing("item", "urn:1");
 ## Remarks  
  This property represents the `xml:lang` scope within which the current node resides. For example, here is an XML fragment with `xml:lang` set to US English in the root element:  
   
-```  
+```xml  
 <root xml:lang="en-us">   
 <name>Fred</name>   
 </root>   

@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDictionaryWriter" FullName="System.Xml.XmlDictionaryWriter">
+<Type Name="XmlDictionaryWriter" FullName="System.Xml.XmlDictionaryWriter">
   <TypeSignature Language="C#" Value="public abstract class XmlDictionaryWriter : System.Xml.XmlWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlDictionaryWriter extends System.Xml.XmlWriter" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryWriter" />
@@ -124,7 +124,7 @@
 ## Remarks  
  The binary format only supports one text node as the attribute value and therefore buffers the values written to it to emit a single node, as shown in the following sample code.  
   
-```  
+```csharp  
 XmlWriter binarywriter = XmlDictionaryWriter.CreateBinaryWriter(Stream.Null);  
 binarywriter.WriteStartAttribute("StartAttribute");  
 string largeStr = new string('r', 100000);  

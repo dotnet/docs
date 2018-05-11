@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDocument" FullName="System.Xml.XmlDocument">
+<Type Name="XmlDocument" FullName="System.Xml.XmlDocument">
   <TypeSignature Language="C#" Value="public class XmlDocument : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDocument extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDocument" />
@@ -1062,7 +1062,7 @@
 ## Remarks  
  The following C# code  
   
-```  
+```csharp  
 XmlElement elem;  
 elem=doc.CreateElement("xy:item", "urn:abc");  
 ```  
@@ -1127,7 +1127,7 @@ elem=doc.CreateElement("xy:item", "urn:abc");
 ## Remarks  
  The following C# code  
   
-```  
+```csharp  
 XmlElement elem;  
 elem=doc.CreateElement("xy", "item", "urn:abc");  
 ```  
@@ -2412,7 +2412,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  `InnerXml` removes redundant namespace declarations. As a result, numerous cut and paste operations do not increase the size of your document with redundant namespace declarations. Consider the following XSL document:  
   
-```  
+```xml  
 <xsl:stylesheet version="1.0"   
       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
      <xsl:template match="stock">  
@@ -2423,7 +2423,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  The `InnerXml` property on the stylesheet node returns the following string:  
   
-```  
+```xml  
 <xsl:template match="stock"   
       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
      ...  
@@ -2434,7 +2434,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  If you move `InnerXml` from a document with no default namespace to a document with a default namespace, the behavior is a little different. Consider the following XML string:  
   
-```  
+```xml  
 <test>  
       <item>123</item>  
     </test>  
@@ -2442,20 +2442,20 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  `InnerXml` returns a plain XML string with no namespace declarations:  
   
-```  
+```xml  
 <item>123</item>  
 ```  
   
  If you then insert this string into a document that does have a default namespace, such as the following:  
   
-```  
+```xml  
 <test2 xmlns="urn:1">  
     </test>  
 ```  
   
  `InnerXml` parses the string in context, and the new nodes pick up the urn:1 namespace. The result looks like this:  
   
-```  
+```xml  
 <test2 xmlns="urn:1">  
       <item>123</item>  
     </test>  
@@ -2463,13 +2463,13 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  Now when you ask for the `InnerXml` you get back the following:  
   
-```  
+```xml  
 <item xmlns="urn:1">123</item>  
 ```  
   
  If you explicitly want the inserted item to preserve the fact that it came from a document that had no namespace then you need to manually add an xmlns= "" declaration and insert the resulting string:  
   
-```  
+```xml  
 <item xmlns="">123</item>  
 ```  
   
@@ -2797,13 +2797,13 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  If the current node and its siblings look like the following:  
   
-```  
+```xml  
 <!--comment--><element1>one</element1><element2>two</element2>  
 ```  
   
  `Load` throws an exception because a document cannot have two root level elements. If the current node and its siblings look like the following:  
   
-```  
+```xml  
 <!--comment--><?process instruction?><!--comment--></endtag>  
 ```  
   
@@ -3488,7 +3488,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  `ReadNode` can also read attributes, but in this case it does not advance the reader to the next attribute. This allows you to write the following C# code:  
   
-```  
+```csharp  
 XmlDocument doc = new XmlDocument();  
 while (reader.MoveToNextAttribute())  
 {  
@@ -3577,7 +3577,7 @@ while (reader.MoveToNextAttribute())
   
  When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
   
-```  
+```csharp  
 XmlDocument doc = new XmlDocument();  
 doc.AppendChild(doc.CreateElement("item","urn:1"));  
 doc.Save(Console.Out);  
@@ -3683,7 +3683,7 @@ doc.Save(Console.Out);
   
  When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
   
-```  
+```csharp  
 XmlDocument doc = new XmlDocument();  
 doc.AppendChild(doc.CreateElement("item","urn:1"));  
 doc.Save(Console.Out);  
@@ -3755,7 +3755,7 @@ doc.Save(Console.Out);
   
  When the document is saved, xmlns attributes are generated to persist the node identity (LocalName + NamespaceURI) correctly. For example, the following C# code  
   
-```  
+```csharp  
 XmlDocument doc = new XmlDocument();  
 doc.AppendChild(doc.CreateElement("item","urn:1"));  
 doc.Save(Console.Out);  
@@ -3763,7 +3763,7 @@ doc.Save(Console.Out);
   
  generates this xmls attribute:  
   
-```  
+```xml  
 <item  
     xmls="urn:1"/>  
 ```  

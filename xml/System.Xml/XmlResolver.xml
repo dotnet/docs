@@ -1,4 +1,4 @@
-﻿<Type Name="XmlResolver" FullName="System.Xml.XmlResolver">
+<Type Name="XmlResolver" FullName="System.Xml.XmlResolver">
   <TypeSignature Language="C#" Value="public abstract class XmlResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlResolver extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlResolver" />
@@ -150,16 +150,16 @@
   
  The following C# code sets credentials on the <xref:System.Xml.XmlResolver> object.  
   
-```  
-NetworkCredential nc = new NetWorkCredential(UserName,SecurelyStoredPassword,Domain);  
+```csharp  
+NetworkCredential nc = new NetworkCredential(UserName, SecurelyStoredPassword, Domain);  
 XmlUrlResolver resolver = new XmlUrlResolver();  
 resolver.Credentials = nc;  
 ```  
   
  You can associate different credentials with different URIs and add them to a cache. You can then use the credentials to check authentication for different URIs regardless of the original source of the XML.  
   
-```  
-NetworkCredential myCred = new NetworkCredential(UserName,SecurelyStoredPassword,Domain);   
+```csharp  
+NetworkCredential myCred = new NetworkCredential(UserName, SecurelyStoredPassword, Domain);   
 CredentialCache myCache = new CredentialCache();   
 myCache.Add(new Uri("http://www.contoso.com/"), "Basic", myCred);   
 myCache.Add(new Uri("http://app.contoso.com/"), "Basic", myCred);  

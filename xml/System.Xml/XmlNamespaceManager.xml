@@ -1,4 +1,4 @@
-﻿<Type Name="XmlNamespaceManager" FullName="System.Xml.XmlNamespaceManager">
+<Type Name="XmlNamespaceManager" FullName="System.Xml.XmlNamespaceManager">
   <TypeSignature Language="C#" Value="public class XmlNamespaceManager : System.Collections.IEnumerable, System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNamespaceManager extends System.Object implements class System.Collections.IEnumerable, class System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNamespaceManager" />
@@ -337,7 +337,7 @@ while (reader.Read())
 ## Remarks  
  The following code shows how to use the <xref:System.Collections.IEnumerator> to view all the namespace pairs stored in the <xref:System.Xml.XmlNamespaceManager> object.  
   
-```  
+```vb  
 Dim nsEnum As IEnumerator = nsmgr.GetEnumerator()  
 Do While nsEnum.MoveNext  
   If nsEnum.Current <> "" Then  

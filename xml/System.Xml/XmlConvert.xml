@@ -1,4 +1,4 @@
-﻿<Type Name="XmlConvert" FullName="System.Xml.XmlConvert">
+<Type Name="XmlConvert" FullName="System.Xml.XmlConvert">
   <TypeSignature Language="C#" Value="public class XmlConvert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlConvert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlConvert" />
@@ -40,7 +40,7 @@
   
  You can use the <xref:System.Xml.XmlConvert.EncodeName%2A> method with the <xref:System.Xml.XmlWriter> class to ensure the names being written are valid XML names. The following C# code converts the name "Order Detail" into a valid XML name and writes the element `<Order_0x0020_Detail>My order</Order_0x0020_Detail>`.  
   
-```  
+```csharp  
 writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");  
   
 ```  
@@ -964,7 +964,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  The example uses the transactions.xml file.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <transactions>  
    <transaction>  
@@ -1038,7 +1038,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  The example uses the transactions.xml file.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <transactions>  
    <transaction>  
@@ -1112,7 +1112,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  The example uses the transactions.xml file.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <transactions>  
    <transaction>  
@@ -2579,7 +2579,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
  This method can be used with the <xref:System.Xml.XmlWriter> class in the following manner.  
   
-```  
+```csharp  
 try{  
   writer.WriteStartElement(XmlConvert.VerifyName("item"),"bar");  
 }  
@@ -2688,7 +2688,7 @@ catch(Exception e)
 ## Remarks  
  This method ensures that the name token follows the proper syntax for a valid NMTOKEN. It can be used in the following manner:  
   
-```  
+```csharp  
 try {  
   writer.WriteStartElement(XmlConvert.VerifyNMTOKEN("abc"),"book");  
 }  
@@ -2792,7 +2792,7 @@ catch(Exception e) {
 ## Remarks  
  This method ensures that the name token follows the proper syntax for a valid token. It can be used in the following manner:  
   
-```  
+```csharp  
 try {  
   writer.WriteStartElement(XmlConvert.VerifyTOKEN("abc"),"book");  
 }  

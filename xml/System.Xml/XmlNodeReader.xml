@@ -1,4 +1,4 @@
-﻿<Type Name="XmlNodeReader" FullName="System.Xml.XmlNodeReader">
+<Type Name="XmlNodeReader" FullName="System.Xml.XmlNodeReader">
   <TypeSignature Language="C#" Value="public class XmlNodeReader : System.Xml.XmlReader, System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNodeReader extends System.Xml.XmlReader implements class System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeReader" />
@@ -579,20 +579,20 @@
   
  The following XML contains an attribute in a specific namespace:  
   
-```  
+```xml  
 <test xmlns:dt="urn:datatypes" dt:type="int"/>  
 ```  
   
  You can lookup the `dt:type` attribute using one argument (prefix and local name) or two arguments (local name and namespace URI):  
   
-```  
+```csharp  
 String dt = reader.GetAttribute("dt:type");  
 String dt2 = reader.GetAttribute("type","urn:datatypes");  
 ```  
   
  To lookup the `xmlns:dt` attribute, use one of the following arguments:  
   
-```  
+```csharp  
 String dt3 = reader.GetAttribute("xmlns:dt");  
 String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);  
 ```  
@@ -908,7 +908,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  In the following XML string, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a")`. The returned string is `urn:456`.  
   
-```  
+```xml  
 <root xmlns:a="urn:456">  
  <item>  
  <ref href="a:b"/>  
@@ -2104,7 +2104,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  For example, suppose you have the following XML input:  
   
-```  
+```xml  
 <a name="bob" age="123">  
    <x/>abc<y/>  
  </a>  
@@ -2383,7 +2383,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  This property represents the xml:lang scope within which the current node resides. For example, here is an XML fragment with `xml:lang` set to US English in the root element:  
   
-```  
+```xml  
 <root xml:lang="en-us">   
 <name>Fred</name>   
 </root>   

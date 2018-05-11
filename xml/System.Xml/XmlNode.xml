@@ -1,4 +1,4 @@
-﻿<Type Name="XmlNode" FullName="System.Xml.XmlNode">
+<Type Name="XmlNode" FullName="System.Xml.XmlNode">
   <TypeSignature Language="C#" Value="public abstract class XmlNode : ICloneable, System.Collections.IEnumerable, System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlNode extends System.Object implements class System.Collections.IEnumerable, class System.ICloneable, class System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNode" />
@@ -219,7 +219,7 @@ Display the modified XML...
   
  The value of this property varies depending on the node type. For example, Document nodes return the location of the <xref:System.Xml.XmlDocument> object. Nodes which are child nodes of external EntityReference nodes return the location of the entity itself. For example, consider the following XML document:  
   
-```  
+```xml  
 <!DOCTYPE item [  
 <!ENTITY xyz SYSTEM "a/b.xml">  
 ]>  
@@ -245,7 +245,7 @@ Display the modified XML...
   
  As a second example, given the following XML document:  
   
-```  
+```xml  
 <!DOCTYPE Mydata SYSTEM "http://localhost/doctype.dtd">  
 <baa>&xyz;</baa>  
 ```  
@@ -2323,7 +2323,7 @@ d.</elem>
   
  For example, suppose you have the following XML:  
   
-```  
+```xml  
 <bookstore>  
   <book>  
     <title>&apos;Emma&apos;</title>  
@@ -2333,7 +2333,7 @@ d.</elem>
   
  The following Visual Basic code selects an element that contains single quotes:  
   
-```  
+```csharp  
 nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")  
 ```  
   
@@ -2404,7 +2404,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
   
  For example, if you had the following XML:  
   
-```  
+```xml  
 <bookstore xmlns="http://www.lucernepublishing.com">  
  <book>  
    <title>Pride And Prejudice</title>  
@@ -2414,7 +2414,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
   
  The following C# code selects all book nodes:  
   
-```  
+```csharp  
 XmlNamespaceManager nsmgr = new XmlNamespaceManager(doc.NameTable);  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com");  
 XmlNodeList nodelist = doc.SelectNodes("//ab:book", nsmgr);  
@@ -2425,7 +2425,7 @@ XmlNodeList nodelist = doc.SelectNodes("//ab:book", nsmgr);
   
  For example, suppose you have the following XML:  
   
-```  
+```xml  
 <bookstore xmlns="http://www.lucernepublishing.com">  
   <book>  
     <title>&apos;Emma&apos;</title>  
@@ -2435,7 +2435,7 @@ XmlNodeList nodelist = doc.SelectNodes("//ab:book", nsmgr);
   
  The following Visual Basic code selects an element that contains single quotes:  
   
-```  
+```vb  
 Dim nsmgr As XmlNamespaceManager = New XmlNamespaceManager(doc.NameTable)  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com")  
 nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)  
@@ -2542,7 +2542,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
   
  For example, suppose you have the following XML:  
   
-```  
+```xml  
 <bookstore>  
   <book>  
     <title>&apos;Emma&apos;</title>  
@@ -2621,7 +2621,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
   
  For example, if you had the following XML:  
   
-```  
+```xml  
 <bookstore xmlns="http://www.lucernepublishing.com">  
  <book>  
    <title>Pride And Prejudice</title>  
@@ -2631,7 +2631,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
   
  The following C# code selects the first book node:  
   
-```  
+```csharp  
 XmlNamespaceManager nsmgr = new XmlNamespaceManager(doc.NameTable);  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com");  
 XmlNode book = doc.SelectSingleNode("//ab:book", nsmgr);  
@@ -2642,7 +2642,7 @@ XmlNode book = doc.SelectSingleNode("//ab:book", nsmgr);
   
  For example, suppose you have the following XML:  
   
-```  
+```xml  
 <bookstore xmlns="http://www.lucernepublishing.com">  
   <book>  
     <title>&apos;Emma&apos;</title>  
@@ -2652,7 +2652,7 @@ XmlNode book = doc.SelectSingleNode("//ab:book", nsmgr);
   
  The following Visual Basic code selects an element that contains single quotes:  
   
-```  
+```vb  
 Dim nsmgr As XmlNamespaceManager = New XmlNamespaceManager(doc.NameTable)  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com")  
 book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)  

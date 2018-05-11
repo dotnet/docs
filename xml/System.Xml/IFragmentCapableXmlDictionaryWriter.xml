@@ -1,4 +1,4 @@
-﻿<Type Name="IFragmentCapableXmlDictionaryWriter" FullName="System.Xml.IFragmentCapableXmlDictionaryWriter">
+<Type Name="IFragmentCapableXmlDictionaryWriter" FullName="System.Xml.IFragmentCapableXmlDictionaryWriter">
   <TypeSignature Language="C#" Value="public interface IFragmentCapableXmlDictionaryWriter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFragmentCapableXmlDictionaryWriter" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IFragmentCapableXmlDictionaryWriter" />
@@ -191,7 +191,7 @@
   
 ## Examples  
   
-```  
+```csharp  
 MemoryStream stream = new MemoryStream();  
 MemoryStream fragmentStream = new MemoryStream();  
 XmlDictionaryWriter writer = XmlDictionaryWriter.CreateTextWriter(stream);  

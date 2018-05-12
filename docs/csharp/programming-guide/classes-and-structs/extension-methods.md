@@ -24,7 +24,7 @@ Extension methods enable you to "add" methods to existing types without creating
   
  The `WordCount` extension method can be brought into scope with this `using` directive:  
   
-```xml  
+```csharp  
 using ExtensionMethods;  
 ```  
   

@@ -28,7 +28,7 @@ implementation of the delegate for this specific purpose.
 The prototype for the Where method is:
 
 ```csharp
-public static IEnumerable<TSource> Where<in TSource> (IEnumerable<TSource> source, Func<TSource, bool> predicate);
+public static IEnumerable<TSource> Where<TSource> (this IEnumerable<TSource> source, Func<TSource, bool> predicate);
 ```
 
 This example is repeated with all the methods that are part of LINQ. They

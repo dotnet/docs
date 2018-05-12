@@ -61,6 +61,9 @@ The rules for value signatures are as follows:
 - The pattern of parameters (also known as the *arity*) of signatures and implementations must be consistent.
 
 
+- If parameter names in a signature file differ from the corresponding implementation file, the name in the signature file will be used instead, which may cause issues when debugging or profiling. If you wish to be notified of such mismatches, enable warning 3218 in your project file or when invoking the compiler (see `--warnon` under [Compiler Options](compiler-options.md)).
+
+
 The following code example shows an example of a signature file that has namespace, module, function value, and type signatures together with the appropriate attributes. It also shows the corresponding implementation file.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/fssignatures/snippet9002.fs)]

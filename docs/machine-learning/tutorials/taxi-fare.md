@@ -1,23 +1,19 @@
 ---
-title: Use ML.NET to Predict New York Taxi Fares (Regression).
+title: Use ML.NET to predict New York Taxi Fares (Regression)
 description: Learn how to use ML.NET in a regression scenario.
-ms.prod: dotnet-ml
-ms.devlang: dotnet
-ms.author: johalex
 author: aditidugar
-ms.date: 05/07/2018
+ms.date: 05/11/2018
 ms.topic: tutorial
-manager: wpickett
 ms.custom: mvc
-#Customer intent: As a < type of user >, I want < what? > so that < why? >.
+#Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
 ---
-# Tutorial: Use ML.NET to Predict New York Taxi Fares (Regression)
+# Tutorial: Use ML.NET to predict New York Taxi Fares (Regression)
 
 This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting New York City taxi fares.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Understand the problem 
+> * Understand the problem
 > * Select the appropriate machine learning task
 > * Prepare and understand your data
 > * Create a learning pipeline
@@ -28,6 +24,7 @@ In this tutorial, you learn how to:
 > * Use the model for predictions
 
 ## Prerequisites
+
 * [Visual Studio 2017 15.6 or later](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed.
 
 * The [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml). The Taxi Trip data set trains the machine learning model and can be used to evaluate how accurate your model is.
@@ -44,19 +41,18 @@ The process of training the model identifies which factors in the dataset are mo
 
 ## Create a console application
 
-1. Launch Visual Studio 2017. Create a new C# **Console App (.NET Core)** project named "TaxiFarePrediction."
+1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "TaxiFarePrediction" and then select the **OK** button.
 
-2. Create a directory named Data in your project's *bin* directory.
+2. Create a directory named Data in your project's *bin* directory:
 
-3. Install the ML.NET NuGet Package
+    In Solution Explorer, click on the **Solutions and Folders** icon. Right-click on the *bin* folder, select **Add** > **New Folder**. Type "Data" and hit Enter. Click again on the **Solutions and Folders** icon to return to the solution view.
 
-    Click on the **Tools** menu, then select **NuGet Package Manager**, and choose **Package Manager Console**. Type "Install-Package Microsoft.ML" at the prompt.
+3. Install the **ML.NET NuGet Package**:
 
-    ```console
-    PM > Install-Package Microsoft.ML
-    ```
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **ML.NET**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
 
-### Preparing and understanding your data
+### Prepare and understand your data
+
 Download the [taxitrip-train.csv and taxitrip-test.csv data sets](https://github.com/dotnet/machinelearning/tree/master/test/data) and save them to the Data folder previously created.
 
 Open the **taxitrip-train.csv** data set in the code editor and look at column headers in the first row. Take a look at each of the columns. Understand the data and decide which columns are **features** and which is the **label**.
@@ -192,7 +188,7 @@ Adding the `await` statement to the `model.WriteAsync()` call means that the `Tr
 
 [!code-csharp[AsyncTraining](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#6 "Make the Train method async and return a task.")]
 
-Changing the return type of the `Train` method means you have to add an `await` to the codde that calls `Train` in the `Method` as shown in the following code:
+Changing the return type of the `Train` method means you have to add an `await` to the code that calls `Train` in the `Method` as shown in the following code:
 
 [!code-csharp[AwaitTraining](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#7 "Await the Train method")]
 
@@ -206,9 +202,9 @@ You'll also need to add the following using statement at the top of the file:
 
 ## Evaluate the model
 
-Evaluation is the process of checking how well the model works. It is important that your model makes good predictions on data that it didn't use when it was trained. One way to do this is by splitting the data into train and test datasets, as you did in this tutorial. Now that you have trained the model on the train data, you will see how well it performs on the test data.
+Evaluation is the process of checking how well the model works. It's important that your model makes good predictions on data that it didn't use when it was trained. One way to do this is by splitting the data into train and test datasets, as you did in this tutorial. Now that you've trained the model on the train data, you can see how well it performs on the test data.
 
-Now go back to your `Main` function and add the following code beneath the call to the `Train()`method:
+Go back to your `Main` function and add the following code beneath the call to the `Train()`method:
 
 [!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#10 "Evaluate the model.")]
 
@@ -255,7 +251,7 @@ Add the following code in your `Main` function. It tests out your model using th
 
 Run the program to see the predicted taxi fare for your test case.
 
-Congratulations! You have now successfully built a machine learning model for predicting taxi fares, evaluated its accuracy, and tested it.
+Congratulations! You've now successfully built a machine learning model for predicting taxi fares, evaluated its accuracy, and tested it. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction) repository.
 
 ## Next steps
 
@@ -273,4 +269,4 @@ In this tutorial, you learned how to:
 
 Check out our GitHub repository to continue learning and find more samples.
 > [!div class="nextstepaction"]
-> [GitHub Repository](https://github.com/dotnet/machinelearning/)
+> [dotnet/machilearning GitHub repository](https://github.com/dotnet/machinelearning/)

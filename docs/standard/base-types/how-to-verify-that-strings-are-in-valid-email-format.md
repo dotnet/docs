@@ -22,10 +22,10 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Verify that Strings Are in Valid Email Format
-The following example is more complex than previous examples and uses a regular expression to verify that a string is in valid email format.  
+The following example uses a regular expression to verify that a string is in valid email format.  
 
 > [!NOTE]
->  Use the <xref:System.Net.Mail.MailAddress?displayProperty=nameWithType> class to check if a string is in valid email address format. To do that, pass the email address string to the <xref:System.Net.Mail.MailAddress.%23ctor%28System.String%29?displayProperty=nameWithType> class constructor that throws a <xref:System.FormatException> if the string has unrecongnized format.  
+>  We recommend using the <xref:System.Net.Mail.MailAddress?displayProperty=nameWithType> class to check if a string is in valid email address format. To do that, pass the email address string to the <xref:System.Net.Mail.MailAddress.%23ctor%28System.String%29?displayProperty=nameWithType> class constructor, which throws a <xref:System.FormatException> if the string has an unrecognized format.  
   
 ## Example  
  The example defines an `IsValidEmail` method, which returns `true` if the string contains a valid email address and `false` if it does not, but takes no other action.  

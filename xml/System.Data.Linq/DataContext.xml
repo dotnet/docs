@@ -256,17 +256,12 @@
 ## Remarks  
  The name of the database is derived by using the following algorithm:  
   
--   If a database is identified in the connection string, its name is used.  
-  
--   If a <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute is present, its <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property is used as the name of the database.  
-  
--   If there is no database tag in the connection string and a strongly typed <xref:System.Data.Linq.DataContext> is used, a database that has the same name as the <xref:System.Data.Linq.DataContext> inheriting class is checked.  
-  
--   If a weakly typed <xref:System.Data.Linq.DataContext> is used, an exception is thrown.  
-  
--   If the <xref:System.Data.Linq.DataContext> has been created by using a file name, the database corresponding to that file name is created.  
-  
-   
+1. If a database is identified in the connection string, its name is used.  
+1. If a <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute is present, its <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property is used as the name of the database.  
+1. If there is no database tag in the connection string and a strongly typed <xref:System.Data.Linq.DataContext> is used, a database that has the same name as the <xref:System.Data.Linq.DataContext> inheriting class is created.  
+1. If a weakly typed <xref:System.Data.Linq.DataContext> is used, an exception is thrown.  
+1. If the <xref:System.Data.Linq.DataContext> has been created by using a file name, the database corresponding to that file name is created.  
+     
   
 ## Examples  
  The following code shows how to set up a temporary database and then remove it.  

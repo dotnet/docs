@@ -161,19 +161,19 @@ The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:Syst
 
 - <xref:System.Security.Cryptography.Pkcs.SignedCms?displayProperty=nameWithType> is available in the System.Security.Cryptography.Pkcs package. The implementation is the same as the <xref:System.Security.Cryptography.Pkcs.SignedCms> class in the .NET Framework.
 
-- New oveloads of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.GetChertHaash%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertHashString%2A?displayProperty=nameWithType> methods accept a hash algorithm identifier to enable callers to get certificate thumbprint values using algorithms other than SHA-1.
+- New overloads of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString%2A?displayProperty=nameWithType> methods accept a hash algorithm identifier to enable callers to get certificate thumbprint values using algorithms other than SHA-1.
 
 - New <xref:System.Span%601>-based cryptography APIs are available for hashing, HMAC, cryptographic random number generation, asymmetric signature generation, asymmetric signature processing, and RSA encryption.
 
 - The performance of <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> has improved by about 15% by using a <xref:System.Span%601>-based implementation.
 
-- The new <xref:System.Security.Cryptogrraphy.CryptographicOperations?displayProperty=nameWithType> class includes two new methods: 
+- The new <xref:System.Security.Cryptography.CryptographicOperations?displayProperty=nameWithType> class includes two new methods: 
 
-   - <xref:System.Security.Cryptogrraphy.CryptographicOperations.FixedTimeEquals%2A> takes a fixed amount of time to return for any two inputs of the same length, which makes it suitable for use in cryptographic vertification to avoid contributing to timing side-channel information.
+   - <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals%2A> takes a fixed amount of time to return for any two inputs of the same length, which makes it suitable for use in cryptographic verification to avoid contributing to timing side-channel information.
 
-    - <xref:System.Security.Cryptogrraphy.CryptographicOperations.ZeroMemory%2A> is a memory-clearing routine that cannot be optimized.
+    - <xref:System.Security.Cryptography.CryptographicOperations.ZeroMemory%2A> is a memory-clearing routine that cannot be optimized.
 
-- The static <xref:System.Security.Cryptography.RandomNumberGenerator.FillSpan%2A?displayProperty=fullName> method fills a <xref:System.Span%601> with random values.
+- The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=fullName> method fills a <xref:System.Span%601> with random values.
 
 - The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms?displayProperty=nameWithType> is now supported on Linux and maxOS.
 
@@ -208,5 +208,5 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 ## See also
 
 [What's new in .NET Core](index.md)
-[New features in EF Core 2.1](~ef/core/what-is-new/ef-core-2.1.md)
+[New features in EF Core 2.1](~/ef/core/what-is-new/ef-core-2.1.md)
 [ASP.NET Core 2.1.0-rc1 now available](https://blogs.msdn.microsoft.com/webdev/2018/05/07/asp-net-core-2-1-0-rc1-now-available/)

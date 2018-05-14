@@ -184,7 +184,7 @@ type Counter() =
 Use interface types to represent a set of operations. This is preferred to other options, such as tuples of functions or records of functions.
 
 ```fsharp
-type Serializer<'T> =
+type Serializer =
     abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
     abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
 ```

@@ -2,7 +2,7 @@
 title: Use ML.NET to predict New York Taxi Fares (Regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
-ms.date: 05/11/2018
+ms.date: 05/14/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
@@ -49,7 +49,7 @@ The process of training the model identifies which factors in the dataset are mo
 
 3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ### Prepare and understand your data
 

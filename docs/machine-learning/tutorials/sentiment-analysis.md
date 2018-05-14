@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis classification scenario
 description: Discover how to use ML.NET in a classification scenario to understand how to use sentiment prediction to take the appropriaste action.
-ms.date: 05/11/2018
+ms.date: 05/14/2018
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
 ---
@@ -70,7 +70,7 @@ Predict the **sentiment** of a new website comment, either positive or negative.
 
 3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 4. Download [The UCI Sentiment Labeled Sentences dataset zip file (see citations in the following note)](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip into the *data* directory you created.
 

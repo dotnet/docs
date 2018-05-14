@@ -30,7 +30,7 @@
 ## Examples  
  The following example uses the `ScriptEngineMajorVersion` property and related properties to return a string describing the current runtime information:  
   
-```  
+```vb  
 Function getRuntimeInfo() As String  
     Dim runtime As String = ScriptEngine & " Version "  
     runtime &= CStr(ScriptEngineMajorVersion) & "."  

@@ -19,7 +19,7 @@
   
 2.  After writing your manifest, use the [CTRPP](https://msdn.microsoft.com/library/windows/desktop/aa372128\(v=vs.85\).aspx) tool to compile the manifest (ctrpp provider.man). The tool generates four files: .h, .c, .rc, and *_r.h. You can ignore the .h and .c files. The .rc file contains the localized strings defined in your manifest. You use the .rc and *_r.h files to create the compiled resource file (.res) that you include in your project. The following call shows how to compile the resource file:  
   
-    ```  
+    ```console  
     rc /r /i "c:\Program Files\Microsoft SDKs\Windows\v6.0\Include" provider.rc  
     ```  
   
@@ -39,7 +39,7 @@
   
 4.  After you finish your provider, use the LodCtr tool to register the counters on the computer. For example,  
   
-    ```  
+    ```console  
     lodctr /m:provider.man  
     ```  
   
@@ -52,7 +52,7 @@
 ## Examples  
  The following shows a simple manifest:  
   
-```  
+```xml  
 <!-- <?xml version="1.0" encoding="UTF-16"?> -->  
 <instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd"   
      xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"   
@@ -154,7 +154,7 @@
   
  The following shows a simple provider implementation for the manifest:  
   
-```  
+```cs  
 using System.Diagnostics.PerformanceData;  
   
         private static Guid providerId = new Guid("{51D1685C-35ED-45be-99FE-17261A4F27F3}");  

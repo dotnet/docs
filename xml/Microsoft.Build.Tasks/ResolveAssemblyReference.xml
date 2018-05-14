@@ -480,7 +480,7 @@
   
  Format of the file is like:  etc.  
   
-```  
+```xml  
 <FileList Redist="MatchingRedistListName" >  
   <File AssemblyName="System" Version="2.0.0.0"  
     PublicKeyToken="b77a5c561934e089" Culture="neutral"  
@@ -662,7 +662,7 @@
 ## Remarks  
  This is the format of the file:  
   
-```  
+```xml  
 <FileList Redist="ClientSubset" >  
     <File AssemblyName="System" Version="2.0.0.0"   
       PublicKeyToken="b77a5c561934e089" Culture="neutral"   

@@ -278,7 +278,7 @@
 ## Remarks  
  The <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> for the following item declaration in a project file is `File.cs`.  
   
-```  
+```xml  
 <ItemGroup>  
     <Compile Include="File.cs"/>  
 </ItemGroup>  

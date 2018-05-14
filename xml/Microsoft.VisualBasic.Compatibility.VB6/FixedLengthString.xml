@@ -34,7 +34,7 @@
 ## Examples  
  The following example demonstrates how to declare and use a `FixedLengthString`.  
   
-```  
+```vb  
 Private Sub DemoFixedLengthString()  
     ' Declare a string that has a length of 7 characters and assign the  
     ' initial string. The additional 5 positions will be padded with  
@@ -94,7 +94,7 @@ End Sub
 ## Examples  
  The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
   
-```  
+```vb  
 Private Sub DemoFixedLengthString()  
     ' Declare a string that has a length of 7 characters.   
     Dim fixedString As New FixedLengthString(7)  
@@ -144,7 +144,7 @@ End Sub
 ## Examples  
  The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
   
-```  
+```vb  
 Private Sub DemoFixedLengthString()  
     ' Declare a string that has a length of 7 characters and assign the  
     ' initial string. The additional 5 positions will be padded with  
@@ -246,7 +246,7 @@ End Sub
 ## Examples  
  The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
   
-```  
+```vb  
 Private Sub DemoFixedLengthString()  
     ' Declare a string that has a length of 7 characters and assign the  
     ' initial string. The additional 5 positions will be padded with  
@@ -295,7 +295,7 @@ End Sub
 ## Examples  
  The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
   
-```  
+```vb  
 Private Sub DemoFixedLengthString()  
     ' Declare a string that has a length of 7 characters and assign the  
     ' initial string. The additional 5 positions will be padded with  

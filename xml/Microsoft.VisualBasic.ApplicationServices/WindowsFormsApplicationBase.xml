@@ -1412,7 +1412,7 @@
 ## Examples  
  This example demonstrates how to set the GDI+ text rendering engine as the application's default rendering engine by overriding the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property.  
   
-```  
+```vb  
 Protected Overloads Shared ReadOnly Property UseCompatibleTextRendering() As Boolean  
     Get  
         ' Use the GDI+ text rendering engine.  

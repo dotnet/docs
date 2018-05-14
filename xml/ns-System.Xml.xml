@@ -56,7 +56,7 @@
   
  For example, the following schema includes elements that have the same name but different types in the same content model, and substitution groups are used. This should cause an error, but <xref:System.Xml> compiles and validates the schema without errors.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">  
   
@@ -98,7 +98,7 @@
   
  For example, in the schema below the content model is ambiguous and should cause a compilation error, but <xref:System.Xml> compiles the schema without errors.  
   
-```  
+```xml  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">  
   
   <xs:element name="e1" type="xs:int"/>  
@@ -117,7 +117,7 @@
   
  If you try to validate the following XML against the schema above, the validation will fail with the following message: "The element 'e3' has invalid child element 'e2'." and an <xref:System.Xml.Schema.XmlSchemaValidationException> exception will be thrown.  
   
-```  
+```xml  
 <e3>  
   <e2>1</e2>  
   <e2>2</e2>  
@@ -126,7 +126,7 @@
   
  To work around this problem, you can swap element declarations in the XSD document. For example:  
   
-```  
+```xml  
 <xs:sequence>  
   <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
   <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
@@ -135,7 +135,7 @@
   
  becomes this:  
   
-```  
+```xml  
 <xs:sequence>  
   <xs:element name="e2" type="xs:int" minOccurs="0" maxOccurs="1"/>  
   <xs:element ref="e1" minOccurs="0" maxOccurs="1"/>  
@@ -144,7 +144,7 @@
   
  Here's another example of the same issue:  
   
-```  
+```xml  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">  
    <xs:element name="e1" type="xs:string"/>  
    <xs:element name="e2" type="xs:string" substitutionGroup="e1"/>  
@@ -161,7 +161,7 @@
   
  If you try to validate the following XML against the schema above, the validation will fail with the following exception: "Unhandled Exception: System.Xml.Schema.XmlSchemaValidationException: The 'e2' el element is invalid - The value 'abc' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:int' - The string 'abc' is not a valid Int32 value."\  
   
-```  
+```xml  
 <e3><e2>abc</e2></e3>  
 ```  
   

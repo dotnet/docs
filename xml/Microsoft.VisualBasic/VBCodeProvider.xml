@@ -109,7 +109,7 @@
 ## Examples  
  The following configuration file example demonstrates how to specify that version 3.5 of the Visual Basic code provider should be used.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

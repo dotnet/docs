@@ -24,7 +24,7 @@
   
  In [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)], [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] does not issue this error when the `EntryPoint` task parameter is not specified. Instead, the \<customHostSpecified> tag is inserted as a child of the \<entryPoint> tag, for example, as follows.  
   
-```  
+```xml  
 <entryPoint xmlns="urn:schemas-   
   microsoft-com:asm.v2">  
     <co.v1:customHostSpecified />  
@@ -197,7 +197,7 @@
 ## Remarks  
  File types can be custom. The following is an example of a [\<fileAssociation> Element (ClickOnce Application)](http://msdn.microsoft.com/library/8f951b4f-54f9-412e-a9e5-af4e379fcf08):  
   
-```  
+```xml  
 <FileAssociation Include=".nyt">  
     <ProgId>NewYorkTimes.Document</ProgId>  
     <DefaultIcon>nyt.ico</DefaultIcon>  

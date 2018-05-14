@@ -30,7 +30,7 @@
 ## Examples  
  This example uses the `Today` property to return the current system date.  
   
-```  
+```vb  
 Dim thisDate As Date  
 thisDate = Today   
 ```  
@@ -806,7 +806,7 @@ Dim NewDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
   
  To get the current system date or time in the format of your locale, or in a custom format, supply the <xref:Microsoft.VisualBasic.DateAndTime.Now%2A> property to the <xref:Microsoft.VisualBasic.Strings.Format%2A> function, specifying either a predefined or user-defined date/time format. The following example demonstrates this.  
   
-```  
+```vb  
 MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))  
 ```  
   
@@ -1412,7 +1412,7 @@ Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
   
  To get the current system date or time in the format of your locale, or in a custom format, supply the <xref:Microsoft.VisualBasic.DateAndTime.Now%2A> property to the <xref:Microsoft.VisualBasic.Strings.Format%2A> function, specifying either a predefined or user-defined date/time format. The following example demonstrates this.  
   
-```  
+```vb  
 MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))  
 ```  
   

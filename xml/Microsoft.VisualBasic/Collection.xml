@@ -44,7 +44,7 @@
   
  You can create a collection the same way you create other objects, as the following example illustrates.  
   
-```  
+```vb  
 Dim coll As New Microsoft.VisualBasic.Collection()  
 ```  
   
@@ -110,7 +110,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
 ## Examples  
  The following example creates a new Visual Basic collection and assigns it to the variable `coll`:  
   
-```  
+```vb  
 Dim coll As New Microsoft.VisualBasic.Collection()  
 ```  
   

@@ -30,7 +30,7 @@
 ## Examples  
  The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle.NormalFocus?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
   
-```  
+```vb  
 Dim procID As Integer  
 ' Run calculator.  
 procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)  
@@ -1283,7 +1283,7 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
   
  Each pair of adjacent double quotation marks (`" "`) within the string literal is interpreted as one double quotation character in the string. Therefore, the preceding example presents the following string to the `Shell` function:  
   
-```  
+```console  
 "C:\Program Files\display.exe" -a -q  
 ```  
   

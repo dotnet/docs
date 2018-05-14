@@ -97,7 +97,7 @@
   
  For this example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
-```  
+```xml  
 <configuration>  
     <system.diagnostics>  
         <sharedListeners>  

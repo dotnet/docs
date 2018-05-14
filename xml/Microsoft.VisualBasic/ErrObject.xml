@@ -25,7 +25,7 @@
 ## Examples  
  This example uses the properties of the `Err` object in constructing an error-message dialog box. Notice what happens when you use the `Clear` method first: When you then generate a Visual Basic error with the `Raise` method, Visual Basic's default values become the properties of the `Err` object.  
   
-```  
+```vb  
 Dim Msg As String  
 ' If an error occurs, construct an error message.  
 On Error Resume Next   ' Defer error handling.  

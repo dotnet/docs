@@ -30,7 +30,7 @@
 ## Examples  
  The following example uses the `VbTypeName` function to return data type names for several variables.  
   
-```  
+```vb  
 Dim sysDateName As String = "System.DateTime"  
 Dim sysShortName As String = "Int16"  
 Dim sysBadName As String = "Nonsense"  

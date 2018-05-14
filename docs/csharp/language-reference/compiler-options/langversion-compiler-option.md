@@ -76,10 +76,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
  C# 4.0 [Ecma-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf) Standard ECMA-334 4th Edition    
  C# 5.0 [CSharp Language Specification.docx](https://www.microsoft.com/download/details.aspx?id=7029) C# Language Specification Version 5.0 : Microsoft Corporation  
  C# 6.0 [README.md](https://github.com/dotnet/csharplang/blob/master/spec/README.md) C# Language Specification Version 6 - Unofficial Draft : .NET Foundation  
- C# 7.0 (not currently available)  
- C# 7.1 (not currently available)  
- C# 7.2 (not currently available)  
- C# 7.3 (not currently available)  
+ C# 7.0 and later (not currently available)  
 
 <!--- Uncomment and add to the above when they become officially released
  C# 8.0 (spec is not yet finished)  

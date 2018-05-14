@@ -17,13 +17,13 @@ You can use the `as` operator to perform certain types of conversions between co
 ## Remarks  
  The `as` operator is like a cast operation. However, if the conversion isn't possible, `as` returns `null` instead of raising an exception. Consider the following example:  
   
-```  
+```csharp  
 expression as type  
 ```  
   
  The code is equivalent to the following expression except that the `expression` variable is evaluated only one time.  
   
-```  
+```csharp  
 expression is type ? (type)expression : (type)null  
 ```  
   

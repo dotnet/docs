@@ -18,7 +18,7 @@ The `double` keyword signifies a simple type that stores 64-bit floating-point v
 ## Literals  
  By default, a real numeric literal on the right side of the assignment operator is treated as `double`. However, if you want an integer number to be treated as `double`, use the suffix d or D, for example:  
   
-```  
+```csharp  
 double x = 3D;  
 ```  
   

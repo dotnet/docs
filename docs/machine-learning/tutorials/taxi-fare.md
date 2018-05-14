@@ -47,9 +47,9 @@ The process of training the model identifies which factors in the dataset are mo
 
     In Solution Explorer, click on the **Solutions and Folders** icon. Right-click on the *bin* folder, select **Add** > **New Folder**. Type "Data" and hit Enter. Click again on the **Solutions and Folders** icon to return to the solution view.
 
-3. Install the **ML.NET NuGet Package**:
+3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **ML.NET**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
 
 ### Prepare and understand your data
 

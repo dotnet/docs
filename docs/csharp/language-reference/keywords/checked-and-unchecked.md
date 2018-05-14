@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: a84bc877-2c7f-4396-8735-1ce97c42f35e
 ---
 # Checked and Unchecked (C# Reference)
-C# statements can execute in either checked or unchecked context. In a checked context, arithmetic overflow raises an exception. In an unchecked context, arithmetic overflow is ignored and the result is truncated.  
+C# statements can execute in either checked or unchecked context. In a checked context, arithmetic overflow raises an exception. In an unchecked context, arithmetic overflow is ignored and the result is truncated by discarding any high-order bits that don't fit in the destination type.  
   
 -   [checked](checked.md) Specify checked context.  
   

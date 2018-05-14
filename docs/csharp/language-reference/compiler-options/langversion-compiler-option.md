@@ -1,6 +1,6 @@
 ---
 title: "-langversion (C# Compiler Options)"
-ms.date: 07/20/2015
+ms.date: 05/14/2018
 f1_keywords: 
   - "/langversion"
 helpviewer_keywords: 

@@ -160,22 +160,21 @@
 ## Remarks  
  This method attempts to add a delegate to synchronize the event on the target object.  
   
- Each time the event is raised by the target parameter, the method or methods encapsulated by the handler will be invoked.  
+ Each time the event is raised by the target parameter, the method or methods encapsulated by the handler are invoked.  
   
-   
+You might use the `AddEventHander` method when you load a type after the program is already compiled, when it is not possible to use the C# += syntax or the Visual Basic `WithEvents` and `Handles` keywords to hook up the event.   
   
 ## Examples  
- The following code example shows how to load an assembly, create an instance of a type from the assembly, create an event handler using a dynamic assembly, and hook up the dynamic event handler. All actions are performed using late binding.  
+ The following example creates an instance of the <xref:System.Timers.Timer?displayProperty=nameWithType> class, creates an event handler using a dynamic assembly, and hooks up the dynamic event handler. All actions are performed using late binding.  
   
- The code example loads System.dll and creates an instance of the <xref:System.Timers.Timer?displayProperty=nameWithType> class. The example uses the <xref:System.Type.GetEvent%2A?displayProperty=nameWithType> method to get the <xref:System.Timers.Timer.Elapsed> event, and the <xref:System.Reflection.EventInfo.EventHandlerType%2A> property to get the delegate type for the event.  
+ The <xref:System.Timers.Timer> instance is stored in a variable of type <xref:System.Object>, and all code that accesses the <xref:System.Timers.Timer> does so late-bound. The example uses the <xref:System.Type.GetEvent%2A?displayProperty=nameWithType> method to get the <xref:System.Timers.Timer.Elapsed> event, and the <xref:System.Reflection.EventInfo.EventHandlerType%2A> property to get the delegate type for the event.  
   
- The code example gets a <xref:System.Reflection.MethodInfo> for the `Invoke` method of the delegate type, and from the <xref:System.Reflection.MethodInfo> obtains the signature of the delegate. The code example then creates a dynamic assembly with one module containing a single type named `Handler`, and gives the type a `static` method (`Shared` method in Visual Basic) named `DynamicHandler` that will be used to handle the event.  
+ The example gets a <xref:System.Reflection.MethodInfo> for the `Invoke` method of the delegate type and obtains the signature of the delegate from the <xref:System.Reflection.MethodInfo> instance. The example then creates a dynamic assembly with one module containing a single type named `Handler` and gives the type a `static` method (`Shared` method in Visual Basic) named `DynamicHandler` that handles the event.  
   
- After the dynamic type is created, the code example gets a <xref:System.Reflection.MethodInfo> for the finished method and uses it to create a delegate instance. This instance is passed to the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method to hook up the event. The program then pauses to allow the event to be raised.  
+ After the dynamic type is created, the example gets a <xref:System.Reflection.MethodInfo> for the finished method and uses it to create a delegate instance. This instance is passed to the <xref:System.Reflection.EventInfo.AddEventHandler%2A> method to hook up the event. The program then pauses to allow the event to be raised.  
   
- [!code-cpp[AddEventHandler#1](~/samples/snippets/cpp/VS_Snippets_CLR/AddEventHandler/cpp/source.cpp#1)]
- [!code-csharp[AddEventHandler#1](~/samples/snippets/csharp/VS_Snippets_CLR/AddEventHandler/cs/source.cs#1)]
- [!code-vb[AddEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddEventHandler/vb/source.vb#1)]  
+ [!code-csharp[AddEventHandler#1](~/samples/snippets/csharp/VS_Snippets_CLR/AddEventHandler/cs/source.cs)]
+ [!code-vb[AddEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddEventHandler/vb/source.vb)]  
   
  ]]></format>
         </remarks>
@@ -184,7 +183,7 @@
         <exception cref="T:System.MethodAccessException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
+ In <see href="https://msdn.microsoft.com/library/windows/apps/br230232(v=vs.110).aspx">.NET for Windows Store apps</see> or the <see href="~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md">Portable Class Library</see>, catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
   
 </para>
           </block>  
@@ -193,7 +192,7 @@
         <exception cref="T:System.Reflection.TargetException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch <see cref="T:System.Exception" /> instead.  
+ In <see href="https://msdn.microsoft.com/library/windows/apps/br230232(v=vs.110).aspx">.NET for Windows Store apps</see> or the <see href="~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md">Portable Class Library</see>, catch <see cref="T:System.Exception" /> instead.  
   
 </para>
           </block>  
@@ -1215,7 +1214,7 @@ remove_<EventName>(<EventHandlerType> handler)
         <exception cref="T:System.Reflection.TargetException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch <see cref="T:System.Exception" /> instead.  
+ In <see href="https://msdn.microsoft.com/library/windows/apps/br230232(v=vs.110).aspx">.NET for Windows Store apps</see> or the <see href="~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md">Portable Class Library</see>, catch <see cref="T:System.Exception" /> instead.  
   
 </para>
           </block>  
@@ -1228,7 +1227,7 @@ remove_<EventName>(<EventHandlerType> handler)
         <exception cref="T:System.MethodAccessException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
+ In <see href="https://msdn.microsoft.com/library/windows/apps/br230232(v=vs.110).aspx">.NET for Windows Store apps</see> or the <see href="~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md">Portable Class Library</see>, catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
   
 </para>
           </block>  

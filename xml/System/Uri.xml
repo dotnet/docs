@@ -115,7 +115,7 @@ http://myUrl/
   
 -   Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the *machine.config* or in the *app.config* file. For example, add the following:  
   
-    ```  
+    ```xml  
     <configuration>  
       <uri>  
       <idn enabled="All" />  
@@ -1425,7 +1425,7 @@ If you used an escaped string to construct this instance (for example, "http://[
   
 2.  Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the *machine.config* or in the *app.config* file. For example, add the following:  
   
-    ```  
+    ```xml  
     <configuration>  
       <uri>  
       <idn enabled="All" />  

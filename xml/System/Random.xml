@@ -215,7 +215,7 @@
   
  To generate random floating-point numbers between two arbitrary values, like the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method does for integers, use the following formula:  
   
-```  
+```csharp  
 Random.NextDouble() * (maxValue – minValue) + minValue  
 ```  
   

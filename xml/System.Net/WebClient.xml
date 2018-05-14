@@ -1381,14 +1381,16 @@
 > [!NOTE]
 >  A passive FTP file transfer will always show a progress percentage of zero, since the server did not send the file size. To show progress, you can change the FTP connection to active by overriding the <xref:System.Net.WebClient.GetWebRequest%2A> virtual method:  
   
-```  
-internal class MyWebClient:WebClient{  
-        protected override WebRequest GetWebRequest(Uri address) {  
-            FtpWebRequest req = (FtpWebRequest)base.GetWebRequest(address);  
-            req.UsePassive = false;  
-            return req;  
-        }  
+```csharp  
+internal class MyWebClient : WebClient
+{  
+    protected override WebRequest GetWebRequest(Uri address)
+    {  
+        FtpWebRequest req = (FtpWebRequest)base.GetWebRequest(address);  
+        req.UsePassive = false;  
+        return req;  
     }  
+}  
 ```  
   
    

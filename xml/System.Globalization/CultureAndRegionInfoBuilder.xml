@@ -329,8 +329,7 @@
   
  In the LDML file, the properties of a culture are specified as child elements of the `<special>` element in the `<identity>` section. A property value is typically specified by the element's `type` attribute. For example, the following excerpt from an LDML file defines a culture's parent as the English neutral culture.  
   
-```  
-  
+```xml  
 <identity>  
    <version number="1.1">ldml version 1.1</version>  
    <generation date="2012-05-16" />  
@@ -340,7 +339,6 @@
       <!—content removed -->  
    </special>  
 </identity>  
-  
 ```  
   
  For more information about the LDML standard, see  [Unicode Technical Standard #35, "Locale Data Markup Language (LDML)"](http://go.microsoft.com/fwlink/p/?LinkId=252840) on the Unicode Consortium website.  

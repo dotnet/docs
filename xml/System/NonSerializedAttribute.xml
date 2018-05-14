@@ -47,7 +47,7 @@
   
  To apply the <xref:System.NonSerializedAttribute> class to an event, set the attribute location to field, as shown in the following C# code.  
   
-```  
+```csharp  
 [field:NonSerializedAttribute()]   
 public event ChangedEventHandler Changed;  
 ```  

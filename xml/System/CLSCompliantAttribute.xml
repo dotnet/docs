@@ -66,20 +66,20 @@
 ## Examples  
  The following example applies a <xref:System.CLSCompliantAttribute> to the entire assembly.  
   
-```  
+```csharp  
 using System;  
     [assembly: CLSCompliant(true)]  
 ```  
   
  The following declaration generates a CLS-compliance warning because the type `UInt32` is not specified in the CLS.  
   
-```  
+```csharp  
 public int SetValue(UInt32 value);  
 ```  
   
  If the declaration is marked with a <xref:System.CLSCompliantAttribute>, no compiler warning or error is generated.  
   
-```  
+```csharp  
 [CLSCompliant(false)]  
  public int SetValue(UInt32 value);  
 ```  

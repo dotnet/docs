@@ -1031,13 +1031,13 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
   
 -   You can define the [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) interface only in a "class implements" relationship, such as  
   
-    ```  
+    ```csharp  
     public class NewClass : IStringable  
     ```  
   
      in C#, or  
   
-    ```  
+    ```vb  
     Public Class NewClass : Implements IStringable  
     ```  
   
@@ -1051,7 +1051,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
   
 -   You cannot hide your [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) implementation from base classes by using a method definition such as the following:  
   
-    ```  
+    ```csharp  
   
     public class NewClass : IStringable  
     {  

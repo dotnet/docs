@@ -5676,13 +5676,13 @@
 ## Remarks  
  For example, the Visual Basic code  
   
-```  
+```vb  
 Dim TDArray(0,0,0) As Integer  
 ```  
   
  and the C# code  
   
-```  
+```csharp  
 int[,,] TDArray = new int[1,1,1];  
 ```  
   

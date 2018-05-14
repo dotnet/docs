@@ -1437,9 +1437,9 @@ greeting =Hello again!
 newGreeting=Hello!  
 ```  
   
- It is compiled to a binary .resources file named GreetingStrings.resources by using the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) with the following command.  
+ It is compiled to a binary .resources file named GreetingStrings.resources by using the [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) with the following command.  
   
-```  
+```console  
 resgen greetingstrings.txt  
 ```  
   
@@ -1450,27 +1450,27 @@ greeting=Еще раз привет!
 newGreeting=Привет!  
 ```  
   
- It is compiled to a binary .resources file named GreetingStrings.ru-RU.resources by using the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) with the following command.  
+ It is compiled to a binary .resources file named GreetingStrings.ru-RU.resources by using the [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) with the following command.  
   
-```  
+```console  
 resgen greetingstrings.ru-RU.txt  
 ```  
   
  The application code, which is shown below, resides in a file named Example1.vb or Example1.cs. It is compiled to an executable by using the following command for the Visual Basic compiler:  
   
-```  
+```console  
 vbc Example1.vb /resource:GreetingStrings.resources  
 ```  
   
  For the C# compiler, the command is similar:  
   
-```  
+```console  
 csc /resource:GreetingStrings.resources Example1.cs  
 ```  
   
- This creates an assembly that includes the example's executable code along with the resources for its fallback culture. You can also use the  [Assembly Linker](~/docs/framework/tools/al-exe-assembly-linker.md) to create the resource file for the Russian (Russia) culture with the following command:  
+ This creates an assembly that includes the example's executable code along with the resources for its fallback culture. You can also use the [Assembly Linker](~/docs/framework/tools/al-exe-assembly-linker.md) to create the resource file for the Russian (Russia) culture with the following command:  
   
-```  
+```console  
 >al /embed:greetingstrings.ru-RU.resources /c:ru-RU /template:example1.exe /out:ru-RU\Example1.resources.dll  
 ```  
   

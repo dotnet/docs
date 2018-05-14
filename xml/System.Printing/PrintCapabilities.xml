@@ -450,7 +450,7 @@
 ## Examples  
  The following code example shows how to search for a particular value in the <xref:System.Printing.PrintCapabilities.PageMediaSizeCapability%2A>.  
   
-```  
+```csharp  
 foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)  
     {  
         if (mediaSize.PageMediaSizeName == PageMediaSizeName.ISOA4)  
@@ -586,7 +586,7 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
 ## Examples  
  The following code example shows how to search for a particular value in the <xref:System.Printing.PrintCapabilities.PageResolutionCapability%2A>.  
   
-```  
+```csharp  
 foreach (PageResolution pageRes in pc.PageResolutionCapability)  
     {  
         if (pageRes.QualitativeResolution == PageQualitativeResolution.High)  

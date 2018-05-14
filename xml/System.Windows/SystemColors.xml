@@ -52,7 +52,7 @@
 <a name="xamlAttributeUsage_ActiveBorderBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ActiveBorderBrush}"/>  
 ```  
   
@@ -91,7 +91,7 @@
 <a name="xamlAttributeUsage_ActiveBorderBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>  
 ```  
   
@@ -131,7 +131,7 @@
 <a name="xamlAttributeUsage_ActiveBorderColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ActiveBorderColor}" />  
 ```  
   
@@ -170,7 +170,7 @@
 <a name="xamlAttributeUsage_ActiveBorderColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>  
 ```  
   
@@ -210,7 +210,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ActiveCaptionBrush}"/>  
 ```  
   
@@ -249,7 +249,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>  
 ```  
   
@@ -289,7 +289,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ActiveBorderColor}"/>  
 ```  
   
@@ -328,7 +328,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>  
 ```  
   
@@ -368,7 +368,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ActiveCaptionTextBrush}" ... />  
 ```  
   
@@ -407,7 +407,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>  
 ```  
   
@@ -447,7 +447,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ActiveCaptionTextColor}"/>  
 ```  
   
@@ -486,7 +486,7 @@
 <a name="xamlAttributeUsage_ActiveCaptionTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>  
 ```  
   
@@ -526,7 +526,7 @@
 <a name="xamlAttributeUsage_AppWorkspaceBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.AppWorkspaceBrush}"/>  
 ```  
   
@@ -565,7 +565,7 @@
 <a name="xamlAttributeUsage_AppWorkspaceBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>  
 ```  
   
@@ -605,7 +605,7 @@
 <a name="xamlAttributeUsage_AppWorkspaceColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.AppWorkspaceColor}"/>  
 ```  
   
@@ -644,7 +644,7 @@
 <a name="xamlAttributeUsage_AppWorkspaceColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>  
 ```  
   
@@ -684,7 +684,7 @@
 <a name="xamlAttributeUsage_ControlBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlBrush}"/>  
 ```  
   
@@ -723,7 +723,7 @@
 <a name="xamlAttributeUsage_ControlBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>  
 ```  
   
@@ -763,7 +763,7 @@
 <a name="xamlAttributeUsage_ControlColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlColor}"/>  
 ```  
   
@@ -802,7 +802,7 @@
 <a name="xamlAttributeUsage_ControlColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>  
 ```  
   
@@ -842,7 +842,7 @@
 <a name="xamlAttributeUsage_ControlDarkBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlDarkBrush}"/>  
 ```  
   
@@ -881,7 +881,7 @@
 <a name="xamlAttributeUsage_ControlDarkBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>  
 ```  
   
@@ -921,7 +921,7 @@
 <a name="xamlAttributeUsage_ControlDarkColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlDarkColor}"/>  
 ```  
   
@@ -960,7 +960,7 @@
 <a name="xamlAttributeUsage_ControlDarkColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>  
 ```  
   
@@ -1000,7 +1000,7 @@
 <a name="xamlAttributeUsage_ControlDarkDarkBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlDarkDarkBrush}"/>  
 ```  
   
@@ -1039,7 +1039,7 @@
 <a name="xamlAttributeUsage_ControlDarkDarkBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>  
 ```  
   
@@ -1079,7 +1079,7 @@
 <a name="xamlAttributeUsage_ControlDarkDarkColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlDarkDarkColor}"/>  
 ```  
   
@@ -1118,7 +1118,7 @@
 <a name="xamlAttributeUsage_ControlDarkDarkColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>  
 ```  
   
@@ -1158,7 +1158,7 @@
 <a name="xamlAttributeUsage_ControlLightBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlLightBrush}"/>  
 ```  
   
@@ -1197,7 +1197,7 @@
 <a name="xamlAttributeUsage_ControlLightBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>  
 ```  
   
@@ -1237,7 +1237,7 @@
 <a name="xamlAttributeUsage_ControlLightColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlLightColor}"/>  
 ```  
   
@@ -1276,7 +1276,7 @@
 <a name="xamlAttributeUsage_ControlLightColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>  
 ```  
   
@@ -1316,7 +1316,7 @@
 <a name="xamlAttributeUsage_ControlLightLightBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlLightLightBrush}"/>  
 ```  
   
@@ -1355,7 +1355,7 @@
 <a name="xamlAttributeUsage_ControlLightLightBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>  
 ```  
   
@@ -1395,7 +1395,7 @@
 <a name="xamlAttributeUsage_ControlLightLightColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlLightLightColor}"/>  
 ```  
   
@@ -1434,7 +1434,7 @@
 <a name="xamlAttributeUsage_ControlLightLightColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>  
 ```  
   
@@ -1474,7 +1474,7 @@
 <a name="xamlAttributeUsage_ControlTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlTextBrush}"/>  
 ```  
   
@@ -1513,7 +1513,7 @@
 <a name="xamlAttributeUsage_ControlTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>  
 ```  
   
@@ -1553,7 +1553,7 @@
 <a name="xamlAttributeUsage_ControlTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ControlTextColor}"/>  
 ```  
   
@@ -1592,7 +1592,7 @@
 <a name="xamlAttributeUsage_ControlTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ControlTextColorKey}}"/>  
 ```  
   
@@ -1632,7 +1632,7 @@
 <a name="xamlAttributeUsage_DesktopBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.DesktopBrush}"/>  
 ```  
   
@@ -1671,7 +1671,7 @@
 <a name="xamlAttributeUsage_DesktopBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}"/>  
 ```  
   
@@ -1711,7 +1711,7 @@
 <a name="xamlAttributeUsage_DesktopColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.DesktopColor}"/>  
 ```  
   
@@ -1750,7 +1750,7 @@
 <a name="xamlAttributeUsage_DesktopColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.DesktopColorKey}}"/>  
 ```  
   
@@ -1790,7 +1790,7 @@
 <a name="xamlAttributeUsage_GradientActiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.GradientActiveCaptionBrush}"/>  
 ```  
   
@@ -1829,7 +1829,7 @@
 <a name="xamlAttributeUsage_GradientActiveCaptionTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}"/>  
 ```  
   
@@ -1869,7 +1869,7 @@
 <a name="xamlAttributeUsage_GradientActiveCaptionColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.GradientActiveCaptionColor}"/>  
 ```  
   
@@ -1908,7 +1908,7 @@
 <a name="xamlAttributeUsage_GradientActiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}"/>  
 ```  
   
@@ -1948,7 +1948,7 @@
 <a name="xamlAttributeUsage_GradientInactiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.GradientInactiveCaptionBrush}"/>  
 ```  
   
@@ -1987,7 +1987,7 @@
 <a name="xamlAttributeUsage_GradientInactiveCaptionBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}"/>  
 ```  
   
@@ -2027,7 +2027,7 @@
 <a name="xamlAttributeUsage_GradientInactiveCaptionColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.GradientInactiveCaptionColor}"/>  
 ```  
   
@@ -2066,7 +2066,7 @@
 <a name="xamlAttributeUsage_GradientInactiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionColorKey}}"/>  
 ```  
   
@@ -2106,7 +2106,7 @@
 <a name="xamlAttributeUsage_GrayTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.GrayTextBrush}"/>  
 ```  
   
@@ -2145,7 +2145,7 @@
 <a name="xamlAttributeUsage_GrayTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>  
 ```  
   
@@ -2185,7 +2185,7 @@
 <a name="xamlAttributeUsage_GrayTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.GrayTextColor}"/>  
 ```  
   
@@ -2224,7 +2224,7 @@
 <a name="xamlAttributeUsage_GrayTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>  
 ```  
   
@@ -2264,7 +2264,7 @@
 <a name="xamlAttributeUsage_HighlightBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.HighlightBrush}"/>  
 ```  
   
@@ -2303,7 +2303,7 @@
 <a name="xamlAttributeUsage_HighlightBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>  
 ```  
   
@@ -2343,7 +2343,7 @@
 <a name="xamlAttributeUsage_HighlightColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.HighlightColor}"/>  
 ```  
   
@@ -2382,7 +2382,7 @@
 <a name="xamlAttributeUsage_HighlightColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>  
 ```  
   
@@ -2422,7 +2422,7 @@
 <a name="xamlAttributeUsage_HighlightTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.HighlightTextBrush}"/>  
 ```  
   
@@ -2461,7 +2461,7 @@
 <a name="xamlAttributeUsage_HighlightTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>  
 ```  
   
@@ -2501,7 +2501,7 @@
 <a name="xamlAttributeUsage_HighlightTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.HighlightTextColor}"/>  
 ```  
   
@@ -2540,7 +2540,7 @@
 <a name="xamlAttributeUsage_HighlightTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>  
 ```  
   
@@ -2580,7 +2580,7 @@
 <a name="xamlAttributeUsage_HotTrackBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.HotTrackBrush}"/>  
 ```  
   
@@ -2619,7 +2619,7 @@
 <a name="xamlAttributeUsage_HotTrackBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" />  
 ```  
   
@@ -2659,7 +2659,7 @@
 <a name="xamlAttributeUsage_HotTrackColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.HotTrackColor}"/>  
 ```  
   
@@ -2698,7 +2698,7 @@
 <a name="xamlAttributeUsage_HotTrackColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>  
 ```  
   
@@ -2738,7 +2738,7 @@
 <a name="xamlAttributeUsage_InactiveBorderBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InactiveBorderBrush}"/>  
 ```  
   
@@ -2777,7 +2777,7 @@
 <a name="xamlAttributeUsage_InactiveBorderBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>  
 ```  
   
@@ -2817,7 +2817,7 @@
 <a name="xamlAttributeUsage_InactiveBorderColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InactiveBorderColor}"/>  
 ```  
   
@@ -2856,7 +2856,7 @@
 <a name="xamlAttributeUsage_InactiveBorderColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveBorderColorKey}}"/>  
 ```  
   
@@ -2896,7 +2896,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InactiveCaptionBrush}"/>  
 ```  
   
@@ -2935,7 +2935,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" />  
 ```  
   
@@ -2975,7 +2975,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InactiveCaptionColor}"/>  
 ```  
   
@@ -3014,7 +3014,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionColorKey}}"/>  
 ```  
   
@@ -3054,7 +3054,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InactiveCaptionTextBrush}"/>  
 ```  
   
@@ -3093,7 +3093,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" />  
 ```  
   
@@ -3133,7 +3133,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InactiveCaptionTextColor}"/>  
 ```  
   
@@ -3172,7 +3172,7 @@
 <a name="xamlAttributeUsage_InactiveCaptionTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionTextColorKey}}"/>  
 ```  
   
@@ -3212,7 +3212,7 @@
 <a name="xamlAttributeUsage_InactiveSelectionHighlightBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors. InactiveSelectionHighlightBrush}"/>  
 ```  
   
@@ -3250,7 +3250,7 @@
 <a name="xamlAttributeUsage_InactiveSelectionHighlightBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}" />  
 ```  
   
@@ -3288,7 +3288,7 @@
 <a name="xamlAttributeUsage_InactiveSelectionHighlightTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors. InactiveSelectionHighlightTextBrush}"/>  
 ```  
   
@@ -3326,7 +3326,7 @@
 <a name="xamlAttributeUsage_InactiveSelectionHighlightTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}}" />  
 ```  
   
@@ -3364,7 +3364,7 @@
 <a name="xamlAttributeUsage_InfoBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InfoBrush}"/>  
 ```  
   
@@ -3403,7 +3403,7 @@
 <a name="xamlAttributeUsage_InfoBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" />  
 ```  
   
@@ -3443,7 +3443,7 @@
 <a name="xamlAttributeUsage_InfoColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InfoColor}"/>  
 ```  
   
@@ -3482,7 +3482,7 @@
 <a name="xamlAttributeUsage_InfoColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InfoColorKey}}"/>  
 ```  
   
@@ -3522,7 +3522,7 @@
 <a name="xamlAttributeUsage_InfoTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InfoTextBrush}"/>  
 ```  
   
@@ -3561,7 +3561,7 @@
 <a name="xamlAttributeUsage_InfoTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InfoTextBrushKey}}" />  
 ```  
   
@@ -3601,7 +3601,7 @@
 <a name="xamlAttributeUsage_InfoTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.InfoTextColor}"/>  
 ```  
   
@@ -3640,7 +3640,7 @@
 <a name="xamlAttributeUsage_InfoTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.InfoTextColorKey}}"/>  
 ```  
   
@@ -3680,7 +3680,7 @@
 <a name="xamlAttributeUsage_MenuBarBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuBarBrush}"/>  
 ```  
   
@@ -3719,7 +3719,7 @@
 <a name="xamlAttributeUsage_MenuBarBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />  
 ```  
   
@@ -3759,7 +3759,7 @@
 <a name="xamlAttributeUsage_MenuBarColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuBarColor}"/>  
 ```  
   
@@ -3798,7 +3798,7 @@
 <a name="xamlAttributeUsage_MenuBarColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuBarColorKey}}"/>  
 ```  
   
@@ -3838,7 +3838,7 @@
 <a name="xamlAttributeUsage_MenuBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuBrush}"/>  
 ```  
   
@@ -3877,7 +3877,7 @@
 <a name="xamlAttributeUsage_MenuBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" />  
 ```  
   
@@ -3917,7 +3917,7 @@
 <a name="xamlAttributeUsage_MenuColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuColor}"/>  
 ```  
   
@@ -3956,7 +3956,7 @@
 <a name="xamlAttributeUsage_MenuColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>  
 ```  
   
@@ -3996,7 +3996,7 @@
 <a name="xamlAttributeUsage_MenuHighlightBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuHighlightBrush}"/>  
 ```  
   
@@ -4035,7 +4035,7 @@
 <a name="xamlAttributeUsage_MenuHighlightBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" />  
 ```  
   
@@ -4075,7 +4075,7 @@
 <a name="xamlAttributeUsage_MenuHighlightColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuHighlightColor}"/>  
 ```  
   
@@ -4114,7 +4114,7 @@
 <a name="xamlAttributeUsage_MenuHighlightColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>  
 ```  
   
@@ -4154,7 +4154,7 @@
 <a name="xamlAttributeUsage_MenuTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuTextBrush}"/>  
 ```  
   
@@ -4193,7 +4193,7 @@
 <a name="xamlAttributeUsage_MenuTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuTextBrushKey}}" />  
 ```  
   
@@ -4233,7 +4233,7 @@
 <a name="xamlAttributeUsage_MenuTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.MenuTextColor}"/>  
 ```  
   
@@ -4272,7 +4272,7 @@
 <a name="xamlAttributeUsage_MenuTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>  
 ```  
   
@@ -4312,7 +4312,7 @@
 <a name="xamlAttributeUsage_ScrollBarBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ScrollBarBrush}"/>  
 ```  
   
@@ -4351,7 +4351,7 @@
 <a name="xamlAttributeUsage_ScrollBarBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" />  
 ```  
   
@@ -4391,7 +4391,7 @@
 <a name="xamlAttributeUsage_ScrollBarColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.ScrollBarColor}"/>  
 ```  
   
@@ -4430,7 +4430,7 @@
 <a name="xamlAttributeUsage_ScrollBarColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>  
 ```  
   
@@ -4470,7 +4470,7 @@
 <a name="xamlAttributeUsage_WindowBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.WindowBrush}"/>  
 ```  
   
@@ -4509,7 +4509,7 @@
 <a name="xamlAttributeUsage_WindowBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />  
 ```  
   
@@ -4549,7 +4549,7 @@
 <a name="xamlAttributeUsage_WindowColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.WindowColor}"/>  
 ```  
   
@@ -4588,7 +4588,7 @@
 <a name="xamlAttributeUsage_WindowColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>  
 ```  
   
@@ -4628,7 +4628,7 @@
 <a name="xamlAttributeUsage_WindowFrameBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.WindowFrameBrush}"/>  
 ```  
   
@@ -4667,7 +4667,7 @@
 <a name="xamlAttributeUsage_WindowFrameBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" />  
 ```  
   
@@ -4707,7 +4707,7 @@
 <a name="xamlAttributeUsage_WindowFrameColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.WindowFrameColor}"/>  
 ```  
   
@@ -4746,7 +4746,7 @@
 <a name="xamlAttributeUsage_WindowFrameColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>  
 ```  
   
@@ -4786,7 +4786,7 @@
 <a name="xamlAttributeUsage_WindowTextBrush"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.WindowTextBrush}"/>  
 ```  
   
@@ -4825,7 +4825,7 @@
 <a name="xamlAttributeUsage_WindowTextBrushKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />  
 ```  
   
@@ -4865,7 +4865,7 @@
 <a name="xamlAttributeUsage_WindowTextColor"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static SystemColors.WindowTextColor}"/>  
 ```  
   
@@ -4904,7 +4904,7 @@
 <a name="xamlAttributeUsage_WindowTextColorKey"></a>   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>  
 ```  
   

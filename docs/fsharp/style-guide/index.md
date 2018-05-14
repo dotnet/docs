@@ -1,13 +1,7 @@
 ---
 title: F# style guide
 description: Learn the five principles of good F# code.
-author: cartermp
-ms.author: phcart
-ms.date: 05/07/2018
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
+ms.date: 05/14/2018
 ---
 # F# style guide
 

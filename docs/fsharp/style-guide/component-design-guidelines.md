@@ -1,13 +1,7 @@
 ---
 title: F# component design guidelines
 description: Learn the guidelines for writing F# components intended for consumption by other callers.
-author: cartermp
-ms.author: phcart
-ms.date: 05/07/2018
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
+ms.date: 05/14/2018
 ---
 # F# component design guidelines
 
@@ -187,10 +181,10 @@ type Counter() =
 
 #### Use interfaces to group related operations
 
-We recommend you use interface types to represent a set of operations. This is preferred to other options, such as tuples of functions or records of functions.
+Use interface types to represent a set of operations. This is preferred to other options, such as tuples of functions or records of functions.
 
 ```fsharp
-type Serializer =
+type Serializer<'T> =
     abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
     abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
 ```
@@ -203,6 +197,8 @@ type Serializer<'T> = {
     Deserialize : bool -> string -> 'T
 }
 ```
+
+Interfaces are first-class concepts in .NET, which you can use to achieve what Functors would normally give you. Additionally, they can be used to encode existential types into your program, which records of functions cannot.
 
 #### Use a module to group functions which act on collections
 

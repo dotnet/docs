@@ -32,12 +32,13 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |5|The compiler accepts only syntax that is included in C# 5.0 or lower <sup id="TCS5">[CS5](#FCS5)</sup>|
 |6|The compiler accepts only syntax that is included in C# 6.0 or lower <sup id="TCS6">[CS6](#FCS6)</sup>|
 |7|The compiler accepts only syntax that is included in C# 7.0 or lower <sup id="TCS7">[CS7](#FCS7)</sup>|
-|latest|The compiler accepts all valid language syntax that it can support. <sup id="TLatest">[Latest](#FLatest)</sup>|
-<!--- Uncomment and move these above
-|latest| once they're officially released
 |7.1|The compiler accepts only syntax that is included in C# 7.1 or lower <sup id="TCS71">[CS71](#FCS71)</sup>|
-|7.2|The compiler accepts only syntax that is included in C# 7.2 or lower <sup id="TCS71">[CS72](#FCS72)</sup>|
-|8|The compiler accepts only syntax that is included in C# 8 or lower <sup id="TCS71">[CS8](#FCS8)</sup>|
+|7.2|The compiler accepts only syntax that is included in C# 7.2 or lower <sup id="TCS72">[CS72](#FCS72)</sup>|
+|7.3|The compiler accepts only syntax that is included in C# 7.3 or lower <sup id="TCS73">[CS73](#FCS73)</sup>|
+|latest|The compiler accepts all valid language syntax that it can support. <sup id="TLatest">[Latest](#FLatest)</sup>|
+
+<!--- Uncomment and move these above
+|8|The compiler accepts only syntax that is included in C# 8 or lower <sup id="TCS8">[CS8](#FCS8)</sup>|
 -->
 
   
@@ -76,10 +77,11 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
  C# 5.0 [CSharp Language Specification.docx](https://www.microsoft.com/download/details.aspx?id=7029) C# Language Specification Version 5.0 : Microsoft Corporation  
  C# 6.0 [README.md](https://github.com/dotnet/csharplang/blob/master/spec/README.md) C# Language Specification Version 6 - Unofficial Draft : .NET Foundation  
  C# 7.0 (not currently available)  
+ C# 7.1 (not currently available)  
+ C# 7.2 (not currently available)  
+ C# 7.3 (not currently available)  
 
 <!--- Uncomment and add to the above when they become officially released
- C# 7.1 (spec is not yet finished)  
- C# 7.2 (spec is not yet finished)  
  C# 8.0 (spec is not yet finished)  
 -->
 
@@ -91,9 +93,10 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 [↩](#TCS5)<a name="FCS5">CS5</a>: Microsoft Visual Studio/Build Tools 2012 or bundled .Net Framework 4.5 compiler    
 [↩](#TCS6)<a name="FCS6">CS6</a>: Microsoft Visual Studio/Build Tools 2015    
 [↩](#TCS7)<a name="FCS7">CS7</a>, <a name="FLatest">Latest</a>: Microsoft Visual Studio/Build Tools 2017   
-
-<!--- Uncomment and add to the above when they become officially released
 [↩](#TCS71)<a name="FCS71">CS71</a>: Microsoft Visual Studio/Build Tools 20??    
 [↩](#TCS72)<a name="FCS72">CS72</a>: Microsoft Visual Studio/Build Tools 20??    
+[↩](#TCS73)<a name="FCS73">CS73</a>: Microsoft Visual Studio/Build Tools 20??    
+
+<!--- Uncomment and add to the above when they become officially released
 [↩](#TCS8)<a name="FCS71">CS8</a>: Microsoft Visual Studio/Build Tools 20??    
 -->

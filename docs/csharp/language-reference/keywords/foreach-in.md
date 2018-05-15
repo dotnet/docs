@@ -28,7 +28,7 @@ The `foreach` statement repeats a group of embedded statements for each element 
 
 ## Example
 
-The following code shows three examples.
+The following code shows three examples:
 
 > [!TIP]
 > You can modify the examples to experiment with the syntax and try different

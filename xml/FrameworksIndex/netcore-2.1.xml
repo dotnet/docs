@@ -2751,9 +2751,7 @@
     <Type Name="System.Memory`1" Id="T:System.Memory`1">
       <Member Id="M:System.Memory`1.#ctor(`0[])" />
       <Member Id="M:System.Memory`1.#ctor(`0[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Memory`1.#ctor(System.Buffers.MemoryManager{`0},System.Int32,System.Int32)" />
       <Member Id="M:System.Memory`1.CopyTo(System.Memory{`0})" />
-      <Member Id="M:System.Memory`1.CreateFromPinnedArray(`0[],System.Int32,System.Int32)" />
       <Member Id="M:System.Memory`1.Equals(System.Memory{`0})" />
       <Member Id="M:System.Memory`1.Equals(System.Object)" />
       <Member Id="M:System.Memory`1.GetHashCode" />
@@ -3117,6 +3115,7 @@
       <Member Id="M:System.ReadOnlySpan`1.Equals(System.Object)" />
       <Member Id="M:System.ReadOnlySpan`1.GetEnumerator" />
       <Member Id="M:System.ReadOnlySpan`1.GetHashCode" />
+      <Member Id="M:System.ReadOnlySpan`1.GetPinnableReference" />
       <Member Id="M:System.ReadOnlySpan`1.op_Equality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})" />
       <Member Id="M:System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}" />
       <Member Id="M:System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}" />
@@ -3220,8 +3219,6 @@
       <Member Id="M:System.SequencePosition.GetHashCode" />
       <Member Id="M:System.SequencePosition.GetInteger" />
       <Member Id="M:System.SequencePosition.GetObject" />
-      <Member Id="M:System.SequencePosition.op_Equality(System.SequencePosition,System.SequencePosition)" />
-      <Member Id="M:System.SequencePosition.op_Inequality(System.SequencePosition,System.SequencePosition)" />
     </Type>
     <Type Name="System.SerializableAttribute" Id="T:System.SerializableAttribute">
       <Member Id="M:System.SerializableAttribute.#ctor" />
@@ -3293,6 +3290,7 @@
       <Member Id="M:System.Span`1.Fill(`0)" />
       <Member Id="M:System.Span`1.GetEnumerator" />
       <Member Id="M:System.Span`1.GetHashCode" />
+      <Member Id="M:System.Span`1.GetPinnableReference" />
       <Member Id="M:System.Span`1.op_Equality(System.Span{`0},System.Span{`0})" />
       <Member Id="M:System.Span`1.op_Implicit(`0[])~System.Span{`0}" />
       <Member Id="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" />
@@ -4764,13 +4762,14 @@
     </Type>
     <Type Name="System.Buffers.MemoryManager`1" Id="T:System.Buffers.MemoryManager`1">
       <Member Id="M:System.Buffers.MemoryManager`1.#ctor" />
+      <Member Id="M:System.Buffers.MemoryManager`1.CreateMemory(System.Int32)" />
+      <Member Id="M:System.Buffers.MemoryManager`1.CreateMemory(System.Int32,System.Int32)" />
       <Member Id="M:System.Buffers.MemoryManager`1.Dispose(System.Boolean)" />
       <Member Id="M:System.Buffers.MemoryManager`1.GetSpan" />
       <Member Id="M:System.Buffers.MemoryManager`1.Pin(System.Int32)" />
       <Member Id="M:System.Buffers.MemoryManager`1.System#IDisposable#Dispose" />
       <Member Id="M:System.Buffers.MemoryManager`1.TryGetArray(System.ArraySegment{`0}@)" />
       <Member Id="M:System.Buffers.MemoryManager`1.Unpin" />
-      <Member Id="P:System.Buffers.MemoryManager`1.Length" />
       <Member Id="P:System.Buffers.MemoryManager`1.Memory" />
     </Type>
     <Type Name="System.Buffers.MemoryPool`1" Id="T:System.Buffers.MemoryPool`1">
@@ -29069,6 +29068,7 @@
       <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.AsMemory``1(System.ReadOnlyMemory{``0})" />
       <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.Cast``2(System.ReadOnlySpan{``0})" />
       <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.Cast``2(System.Span{``0})" />
+      <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.CreateFromPinnedArray``1(``0[],System.Int32,System.Int32)" />
       <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.CreateReadOnlySpan``1(``0@,System.Int32)" />
       <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.CreateSpan``1(``0@,System.Int32)" />
       <Member Id="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.ReadOnlySpan{``0})" />
@@ -29178,7 +29178,6 @@
     </Type>
     <Type Name="System.Runtime.InteropServices.SequenceMarshal" Id="T:System.Runtime.InteropServices.SequenceMarshal">
       <Member Id="M:System.Runtime.InteropServices.SequenceMarshal.TryGetArray``1(System.Buffers.ReadOnlySequence{``0},System.ArraySegment{``0}@)" />
-      <Member Id="M:System.Runtime.InteropServices.SequenceMarshal.TryGetMemoryManager``1(System.Buffers.ReadOnlySequence{``0},System.Buffers.MemoryManager{``0}@,System.Int32@,System.Int32@)" />
       <Member Id="M:System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlyMemory``1(System.Buffers.ReadOnlySequence{``0},System.ReadOnlyMemory{``0}@)" />
       <Member Id="M:System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlySequenceSegment``1(System.Buffers.ReadOnlySequence{``0},System.Buffers.ReadOnlySequenceSegment{``0}@,System.Int32@,System.Buffers.ReadOnlySequenceSegment{``0}@,System.Int32@)" />
     </Type>

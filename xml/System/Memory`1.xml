@@ -47,30 +47,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Memory (System.Buffers.MemoryManager&lt;T&gt; manager, int start, int length);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.MemoryManager`1&lt;!T&gt; manager, int32 start, int32 length) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Memory`1.#ctor(System.Buffers.MemoryManager{`0},System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (manager As MemoryManager(Of T), start As Integer, length As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Memory(System::Buffers::MemoryManager&lt;T&gt; ^ manager, int start, int length);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="manager" Type="System.Buffers.MemoryManager&lt;T&gt;" />
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="manager">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Memory (T[] array, int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Memory`1.#ctor(`0[],System.Int32,System.Int32)" />
@@ -114,39 +90,6 @@
       <Docs>
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateFromPinnedArray">
-      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; CreateFromPinnedArray (T[] array, int start, int length);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!T&gt; CreateFromPinnedArray(!T[] array, int32 start, int32 length) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Memory`1.CreateFromPinnedArray(`0[],System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromPinnedArray (array As T(), start As Integer, length As Integer) As Memory(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Memory&lt;T&gt; CreateFromPinnedArray(cli::array &lt;T&gt; ^ array, int start, int length);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="array">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

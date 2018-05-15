@@ -382,6 +382,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetPinnableReference">
+      <MemberSignature Language="C#" Value="public T GetPinnableReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T GetPinnableReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Span`1.GetPinnableReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPinnableReference () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T % GetPinnableReference();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsEmpty">
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
@@ -547,12 +573,11 @@
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; arraySegment) cil managed" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (arraySegment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1" />
-      <MemberSignature Language="DocId" Value="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" FrameworkAlternate="netcore-2.1" />
+      <MemberSignature Language="DocId" Value="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" FrameworkAlternate="netcore-2.1;netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1" />
       <MemberType>Method</MemberType>

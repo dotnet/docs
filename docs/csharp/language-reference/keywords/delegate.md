@@ -13,7 +13,7 @@ ms.assetid: 0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f
 # delegate (C# Reference)
 The declaration of a delegate type is similar to a method signature. It has a return value and any number of parameters of any type:  
   
-```  
+```csharp  
 public delegate void TestDelegate(string message);  
 public delegate int TestDelegate(MyType m, long num);  
 ```  

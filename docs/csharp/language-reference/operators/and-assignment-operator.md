@@ -14,13 +14,13 @@ The AND assignment operator.
 ## Remarks  
  An expression using the `&=` assignment operator, such as  
   
-```  
+```csharp  
 x &= y  
 ```  
   
  is equivalent to  
   
-```  
+```csharp  
 x = x & y  
 ```  
   

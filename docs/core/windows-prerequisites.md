@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
 author: JRAlexander
 ms.author: johalex
-ms.date: 04/24/2018
+ms.date: 05/14/2018
 ---
 # Prerequisites for .NET Core on Windows
 
@@ -23,11 +23,11 @@ This article shows the dependencies needed to develop .NET Core applications on 
 * Windows Server 2008 R2 SP1 (Full Server or Server Core)
 * Windows Server 2012 SP1 (Full Server or Server Core)
 * Windows Server 2012 R2 (Full Server or Server Core)
-* Windows Server 2016 (Full Server, Server Core, or Nano Server)
+* Windows Server 2016 or later versions (Full Server, Server Core, or Nano Server)
 
 See [.NET Core 2.x - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems.
 
-See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems.
+See [.NET Core 1.x - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems.
 
 ## .NET Core dependencies
 
@@ -41,8 +41,13 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 * Installing .NET Core via a *.zip* file. This can include build/CI/CD servers.
 
 > [!NOTE]
-> *For Windows 8.1 and earlier versions, or Windows Server 2012 R2 and earlier versions:*
-> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows) which can be installed through Windows Update. If you don't have this update installed, you'll see an error when you launch a .NET Core application like the following: `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`
+> **For Windows 8.1 and earlier versions, or Windows Server 2012 R2 and earlier versions:**
+>
+> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows), which can be installed through Windows Update. If you don't have this update installed, you'll see an error like the following when you launch a .NET Core application: `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`
+>
+> **For Windows 7 or Windows Server 2008 R2:**
+>
+> In addition to KB2999226, make sure you also have [KB2533623](https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed. If you don't have this update installed, you'll see an error similar to the following when you launch a .NET Core application: `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`.
 
 ## Prerequisites with Visual Studio 2017
 
@@ -92,6 +97,6 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 >
 > * On the **Help** menu, choose **About Microsoft Visual Studio**.
 > * In the **About Microsoft Visual Studio** dialog, verify the version number.
->   * For .NET Core 2.1 Preview 1 apps, Visual Studio 2017 version 15.6 Preview 6 or higher.
+>   * For .NET Core 2.1 RC apps, Visual Studio 2017 version 15.7 or higher.
 >   * For .NET Core 2.0 apps, Visual Studio 2017 version 15.3 or higher.
 >   * For .NET Core 1.x apps, Visual Studio 2017 version 15.0 or higher.

@@ -30,7 +30,7 @@ The following example shows how to define [abstract](../../../csharp/language-re
   
 -   Modifiers on the property are placed on the property declaration itself. For example:  
   
-    ```  
+    ```csharp  
     public abstract double Area  
     ```  
   

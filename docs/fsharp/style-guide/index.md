@@ -1,5 +1,5 @@
 ---
-title: F# style guide
+title: F# Style Guide
 description: Learn the five principles of good F# code.
 ms.date: 05/14/2018
 ---

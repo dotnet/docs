@@ -286,10 +286,10 @@
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
 ### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 
-## [F# Style Guide](fsharp/style-guide/index.md)
-### [F# Formatting Guidelines](fsharp/style-guide/formatting.md)
-### [F# Coding Conventions](fsharp/style-guide/conventions.md)
-### [F# Component Design Guidelines](fsharp/style-guide/component-design-guidelines.md)
+## [F# style guide](fsharp/style-guide/index.md)
+### [F# formatting guidelines](fsharp/style-guide/formatting.md)
+### [F# coding conventions](fsharp/style-guide/conventions.md)
+### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
 
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)

@@ -9,7 +9,7 @@ ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 C# Tuples are types that you define using a lightweight syntax. The advantages
 include a simpler syntax, rules for conversions based on number (referred to as cardinality)
 and types of elements, and
-consistent rules for copies, equality tests, and assignments. As a tradeoff, Tuples do not
+consistent rules for copies, equality tests, and assignments. As a tradeoff, tuples do not
 support some of the object-oriented idioms associated with inheritance. You
 can get an overview in the section on [Tuples in the What's new in C# 7.0](whats-new/csharp-7.md#tuples) article.
 

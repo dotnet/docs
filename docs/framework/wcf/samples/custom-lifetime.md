@@ -1,6 +1,6 @@
 ---
 title: "Custom lifetime"
-ms.date: "05/14/2018"
+ms.date: "05/15/2018"
 ms.assetid: 52806c07-b91c-48fe-b992-88a41924f51f
 ---
 # Custom lifetime
@@ -39,7 +39,7 @@ The <xref:System.ServiceModel.IExtensibleObject%601> interface is implemented by
 
 The <xref:System.ServiceModel.IExtension%601> interface is implemented by objects that can be extensions of classes of type `T`.
 
-And finally, the <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of [IExtensions](xref:System.ServiceModel.IExtension%601) that allows for retrieving [IExtensions](xref:System.ServiceModel.IExtension%601) by their type.
+And finally, the <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of <xref:System.ServiceModel.IExtension%601> implementations that allows for retrieving an implementation of <xref:System.ServiceModel.IExtension%601> by their type.
 
 Therefore, in order to extend the <xref:System.ServiceModel.InstanceContext>, you must implement the `IExtension` interface. In this sample project, the `CustomLeaseExtension` class contains this implementation.
 

@@ -1,9 +1,9 @@
 ---
-title: F# style guide
+title: F# Style Guide
 description: Learn the five principles of good F# code.
 ms.date: 05/14/2018
 ---
-# F# style guide
+# F# Style Guide
 
 The following articles describe guidelines for formatting F# code and topical guidance for features of the language and how they should be used.
 

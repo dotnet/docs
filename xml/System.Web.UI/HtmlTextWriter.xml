@@ -290,6 +290,8 @@ alert('Hello');
  For an instance of any given markup element, the <xref:System.Web.UI.HtmlTextWriter> class maintains a list of attributes for that element. When the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method is called, any attributes added by the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method are rendered to the opening tag of the element. The list of attributes is then cleared from the <xref:System.Web.UI.HtmlTextWriter> object.  
   
  Use the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%28System.String%2CSystem.String%2CSystem.Boolean%29> method with `fEncode` set to `true`, if the attribute can possibly contain a quotation mark ("), a less than sign (<), or an ampersand (&). The method call will encode the attribute to meet the requirements of the requesting device. You can set `fEncode` to `false`, if you know that none of these characters will be generated, or if you know that the attribute is already encoded.  
+ 
+If the attribute type is `Style`, the value won’t be encoded even if `fEndode` is `true`. Ensure that the style value is CSS-compliant and doesn’t contain malicious code.
   
  The coding pattern for rendering markup elements is as follows:  
   
@@ -390,6 +392,9 @@ alert('Hello');
  For an instance of any given markup element, the <xref:System.Web.UI.HtmlTextWriter> class maintains a list of attributes for that element. When the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method is called, any attributes added by the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> are rendered to the opening tag of the element. The list of attributes is then cleared from the <xref:System.Web.UI.HtmlTextWriter> object.  
   
  Use the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%28System.Web.UI.HtmlTextWriterAttribute%2CSystem.String%2CSystem.Boolean%29> method with `fEncode` set to `true`, if the attribute can possibly contain a quotation mark ("), a less than sign (<), or an ampersand (&). The method call will encode the attribute to meet the requirements of the requesting device. You can set `fEncode` to `false`, if you know that none of these characters will be generated, or if you know that the attribute is already encoded.  
+ 
+ If the attribute type is `Style`, the value won’t be encoded even if `fEncode` is `true`. Ensure that the style value is CSS-compliant and doesn’t contain malicious code.
+
   
  The coding pattern for rendering markup elements is as follows:  
   
@@ -4880,3 +4885,4 @@ alert('Hello');
     </Member>
   </Members>
 </Type>
+

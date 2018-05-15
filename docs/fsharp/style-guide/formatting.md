@@ -516,7 +516,7 @@ type SchoolPerson =
 
 ### Use PascalCase for constructs intrinsic to .NET
 
-Namespaces, Exceptions, events, and project/`.dll` names should also use PascalCase. Not only will this make consumption from other .NET languages feel more natural to consumers, it will also be consistent with .NET naming conventions that you are likely to encounter.
+Namespaces, exceptions, events, and project/`.dll` names should also use PascalCase. Not only does this make consumption from other .NET languages feel more natural to consumers, it's also consistent with .NET naming conventions that you are likely to encounter.
 
 ### Avoid underscores in names
 

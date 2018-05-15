@@ -130,15 +130,14 @@
    
   
 ## Examples  
- The following example creates two dictionary collections of type `Box`. Both dictionaries are created with the constructor that takes an <xref:System.Collections.Generic.EqualityComparer%601> as a parameter.  
+ The following example creates a collection that contains elements of the `Box` type and then searches it for a box matching another box by calling the `FindFirst` method, twice.
   
- To determine the equality of dictionary keys, the `boxesByDim` dictionary uses an equality comparer (`BoxEqDimensions`) that uses the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method in the `Box` class. Two boxes are considered equal if their dimensions are the same.  
+ The first search does not specify any equality comparer, which means `FindFirst` uses <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> to determine equality of boxes. That in turn uses the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method in the `Box` class. Two boxes are considered equal if their dimensions are the same.
   
- The `boxesByVol` dictionary uses an equality comparer (`BoxEqVolume`) that defines equality by volume. Two boxes are considered equal if their volumes are the same.  
+ The second search specifies an equality comparer (`BoxEqVolume`) that defines equality by volume. Two boxes are considered equal if their volumes are the same.
   
- [!code-cpp[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/cpp/program.cpp#1)]
- [!code-csharp[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/cs/program.cs#1)]
- [!code-vb[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/vb/program.vb#1)]  
+ [!code-csharp[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/cs/program.cs)]
+ [!code-vb[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/vb/program.vb)]
   
  ]]></format>
         </remarks>

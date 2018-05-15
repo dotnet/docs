@@ -1,9 +1,9 @@
 ---
-title: F# code formatting guidelines
+title: F# Formatting Guidelines
 description: Learn guidelines for formatting F# code.
 ms.date: 05/14/2018
 ---
-# F# code formatting guidelines
+# F# Formatting Guidelines
 
 This article offers guidelines for how to format your code so that your F# code is:
 

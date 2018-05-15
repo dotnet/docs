@@ -1,5 +1,5 @@
 ---
-title: F# code formattin guidelines
+title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
 ms.date: 05/14/2018
 ---

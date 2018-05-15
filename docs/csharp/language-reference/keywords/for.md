@@ -8,19 +8,21 @@ helpviewer_keywords:
   - "for keyword [C#]"
 ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
 ---
-# for (C# Reference)
-By using a `for` loop, you can run a statement or a block of statements repeatedly until a specified expression evaluates to `false`. This kind of loop is useful for iterating over arrays and for other applications in which you know in advance how many times you want the loop to iterate.  
+# for (C# reference)
+
+By using a `for` loop, you can run a statement or a block of statements repeatedly until a specified expression evaluates to `false`. This kind of loop is useful for iterating over arrays and for other applications in which you know in advance how many times you want the loop to iterate.
   
-## Example  
- In the following example, the value of `i` is written to the console and incremented by 1 during each iteration of the loop.  
+## Example
+
+In the following example, the value of `i` is written to the console and incremented by 1 during each iteration of the loop:
   
- [!code-csharp[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]  
+[!code-csharp[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]
   
- The `for` statement in the previous example performs the following actions.  
+The [for statement](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement) in the previous example performs the following actions:
   
-1.  First, the initial value of variable `i` is established. This step happens only once, regardless of how many times the loop repeats. You can think of this initialization as happening outside the looping process.  
+1.  First, the initial value of variable `i` is established. This step happens only once, regardless of how many times the loop repeats. You can think of this initialization as happening outside the looping process.
   
-2.  To evaluate the condition (`i <= 5`), the value of `i` is compared to 5.  
+2.  To evaluate the condition (`i <= 5`), the value of `i` is compared to 5.
   
     -   If `i` is less than or equal to 5, the condition evaluates to `true`, and the following actions occur.  
   
@@ -32,16 +34,18 @@ By using a `for` loop, you can run a statement or a block of statements repeated
   
     -   If `i` is greater than 5, the condition evaluates to `false`, and you exit the loop.  
   
- Note that, if the initial value of `i` is greater than 5, the body of the loop doesn't run even once.  
+Note that, if the initial value of `i` is greater than 5, the body of the loop doesn't run even once.
+
+## Sections of a for statement
   
- Every `for` statement defines initializer, condition, and iterator sections. These sections usually determine how many times the loop iterates.  
+Every [for statement](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement) defines *initializer*, *condition*, and *iterator* sections. These sections usually determine how many times the loop iterates.  
   
 ```csharp  
 for (initializer; condition; iterator)  
     body  
 ```  
   
- The sections serve the following purposes.  
+The sections serve the following purposes:
   
 -   The initializer section sets the initial conditions. The statements in this section run only once, before you enter the loop. The section can contain only one of the following two options.  
   
@@ -81,29 +85,34 @@ for (initializer; condition; iterator)
   
      You can break out of a `for` loop by using the [break](../../../csharp/language-reference/keywords/break.md) keyword, or you can step to the next iteration by using the [continue](../../../csharp/language-reference/keywords/continue.md) keyword. You also can exit any loop by using a [goto](../../../csharp/language-reference/keywords/goto.md), [return](../../../csharp/language-reference/keywords/return.md), or [throw](../../../csharp/language-reference/keywords/throw.md) statement.  
   
- The first example in this topic shows the most typical kind of `for` loop, which makes the following choices for the sections.  
+The first example in this topic shows the most typical kind of `for` loop, which makes the following choices for the sections:
   
 -   The initializer declares and initializes a local loop variable, `i`, that maintains a count of the iterations of the loop.  
   
 -   The condition checks the value of the loop variable against a known final value, 5.  
   
--   The iterator section uses a postfix increment statement, `i++`, to tally each iteration of the loop.  
+-   The iterator section uses a postfix increment statement, `i++`, to tally each iteration of the loop.
+
+## More examples
   
- The following example illustrates several less common choices: assigning a value to an external loop variable in the initializer section,  invoking the `Console.WriteLine` method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section.  
+The following example illustrates several less common choices: assigning a value to an external loop variable in the initializer section, invoking the `Console.WriteLine` method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section.
   
- [!code-csharp[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
+[!code-csharp[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
   
- All of the expressions that define a `for` statement are optional. For example, the following statement creates an infinite loop.  
+All of the expressions that define a `for` statement are optional. For example, the following statement creates an infinite loop:
   
- [!code-csharp[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
+[!code-csharp[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
   
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+## C# language specification  
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
- [for Statement (C++)](/cpp/cpp/for-statement-cpp)  
- [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)
+## See also
+
+[The for statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)  
+[C# Reference](../../../csharp/language-reference/index.md)  
+[C# Programming Guide](../../../csharp/programming-guide/index.md)  
+[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+[foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
+[for Statement (C++)](/cpp/cpp/for-statement-cpp)  
+[Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

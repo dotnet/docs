@@ -75,7 +75,15 @@ The following example shows a `Private Protected` declaration:
 Private Protected internalValue As Integer
 ```
 
-You can declare a `Private Protected` only inside of a class. You cannot declare it within an interface or structure, nor can you declare it at the level of a source file or namespace, inside an interface or a structure, or in a procedure.
+You can declare a `Private Protected` element only inside of a class. You cannot declare it within an interface or structure, nor can you declare it at the level of a source file or namespace, inside an interface or a structure, or in a procedure.
+
+The `Private Protected` access modifier is supported by Visual Basic 15.5 and later. To use it, you add the following element to your Visual Basic project (*.vbproj) file. As long as Visual Basic 15.5 or later is installed on your system, it lets you take advantage of all the language features supported by the latest version of the Visual Basic compiler:
+
+```xml
+<PropertyGroup>
+   <LangVersion>latest</LangVersion>
+</PropertyGroup>
+```
 
 To use the `Private Protected` access modifier, you must add the following element to your Visual Basic project (*.vbproj) file:
 

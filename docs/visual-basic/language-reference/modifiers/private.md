@@ -16,9 +16,9 @@ Specifies that one or more declared programming elements are accessible only fro
 
 > [!NOTE]
 > You can also use the [Private Protected](private-protected.md) access modifier, which makes a member accessible from within that class and from derived classes located in its containing assembly.
-  
+
 ## Rules  
-  
+
 -   **Declaration Context.** You can use `Private` only at module level. This means the declaration context for a `Private` element must be a module, class, or structure, and cannot be a source file, namespace, interface, or procedure.  
   
 ## Behavior  

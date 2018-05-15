@@ -9,15 +9,18 @@ helpviewer_keywords:
 
 The `Private Protected` keyword combination is a member access modifier. A `Private Protected` member is accessible by all members in its containing class, as well as by types derived from the containing class, but only if they are found in its containing assembly. 
 
-You can specify `Protected Friend` only on members of classes; you cannot apply `Protected Friend` to members of a structure because structures cannot be inherited.
+You can specify `Private Protected` only on members of classes; you cannot apply `Private Protected` to members of a structure because structures cannot be inherited.
 
-The `Private Protected` access modifier is supported starting with Visual Basic 15.5. To use the `Private Protected` access modifier, you must add the following element to your Visual Basic project (*.vbproj) file:
+The `Private Protected` access modifier is supported by Visual Basic 15.5 and later. To use it, you can add the following element to your Visual Basic project (*.vbproj) file. As long as Visual Basic 15.5 or later is installed on your system, it lets you take advantage of all the language features supported by the latest version of the Visual Basic compiler:
 
 ```xml
 <PropertyGroup>
-   <LangVersion>15.5</LangVersion>
+   <LangVersion>latest</LangVersion>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> In Visual Studio, selecting F1 help on `private protected` provides help for either [private](private.md) or [protected](protected.md). The IDE picks the single token under the cursor rather than the compound word.
 
 ## Rules
 

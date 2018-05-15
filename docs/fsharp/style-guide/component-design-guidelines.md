@@ -1,9 +1,9 @@
 ---
-title: F# component design guidelines
+title: F# Component Design Guidelines
 description: Learn the guidelines for writing F# components intended for consumption by other callers.
 ms.date: 05/14/2018
 ---
-# F# component design guidelines
+# F# Component Design Guidelines
 
 This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and [another version](https://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
 

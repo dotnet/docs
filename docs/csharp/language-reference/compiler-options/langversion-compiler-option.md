@@ -90,9 +90,9 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 [↩](#TCS5)<a name="FCS5">CS5</a>: Microsoft Visual Studio/Build Tools 2012 or bundled .Net Framework 4.5 compiler    
 [↩](#TCS6)<a name="FCS6">CS6</a>: Microsoft Visual Studio/Build Tools 2015    
 [↩](#TCS7)<a name="FCS7">CS7</a>: Microsoft Visual Studio/Build Tools 2017   
-[↩](#TCS71)<a name="FCS71">CS71</a>: Microsoft Visual Studio/Build Tools 2017    
-[↩](#TCS72)<a name="FCS72">CS72</a>: Microsoft Visual Studio/Build Tools 2017    
-[↩](#TCS73)<a name="FCS73">CS73</a>, <a name="FLatest">Latest</a>: Microsoft Visual Studio/Build Tools 2017    
+[↩](#TCS71)<a name="FCS71">CS71</a>: Microsoft Visual Studio/Build Tools 2017, version 15.3    
+[↩](#TCS72)<a name="FCS72">CS72</a>: Microsoft Visual Studio/Build Tools 2017, version 15.5    
+[↩](#TCS73)<a name="FCS73">CS73</a>, <a name="FLatest">Latest</a>: Microsoft Visual Studio/Build Tools 2017, version 15.7    
 
 <!--- Uncomment and add to the above when they become officially released
 [↩](#TCS8)<a name="FCS8">CS8</a>: Microsoft Visual Studio/Build Tools 20??    

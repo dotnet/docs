@@ -269,4 +269,4 @@ In this tutorial, you learned how to:
 
 Check out our GitHub repository to continue learning and find more samples.
 > [!div class="nextstepaction"]
-> [dotnet/machilearning GitHub repository](https://github.com/dotnet/machinelearning/)
+> [dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/)

@@ -1,5 +1,5 @@
 ---
-title: F# code formattin guidelines
+title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
 ms.date: 05/14/2018
 ---
@@ -319,19 +319,10 @@ let function1 arg1 arg2 arg3 arg4 =
 
 ### Formatting pipeline operators
 
-Pipeline `|>` should go at the start of a line immediately under the expression being operated on:
+Pipeline `|>` operators should go underneath the expressions they operate on.
 
 ```fsharp
-// OK
-let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
-               |> List.ofArray
-               |> List.map (fun assm -> assm.GetTypes())
-               |> Array.concat
-               |> List.ofArray
-               |> List.map (fun t -> t.GetMethods())
-               |> Array.concat
-
-// OK, but prefer previous
+// Preferred approach
 let methods2 =
     System.AppDomain.CurrentDomain.GetAssemblies()
     |> List.ofArray

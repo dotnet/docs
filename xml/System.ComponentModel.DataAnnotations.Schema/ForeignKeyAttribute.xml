@@ -49,7 +49,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">If you add the ForeigKey attribute to a foreign key property, you should specify the name of the associated navigation property. If you add the ForeigKey attribute to a navigation property, you should specify the name of the associated foreign key(s). If a navigation property has multiple foreign keys, use comma to separate the list of foreign key names. For more information, see [Code First Data Annotations](http://msdn.microsoft.com/data/jj591583#relationships).</param>
+        <param name="name">If you add the ForeignKey attribute to a foreign key property, you should specify the name of the associated navigation property. If you add the ForeigKey attribute to a navigation property, you should specify the name of the associated foreign key(s). If a navigation property has multiple foreign keys, use comma to separate the list of foreign key names. For more information, see [Code First Data Annotations](http://msdn.microsoft.com/data/jj591583#relationships).</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -313,7 +313,7 @@ Types such as `Result<'Success, 'Error>` are appropriate for basic operations wh
 
 ## Partial application and point-free programming
 
-F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code reuse within a module or the implementation of something, but it is generally not something to expose publicly. In general, point-free programming is not a virtue in and of itself, and can add a significant cognitive barrier for people who are not immersed in the style. Point-free programming in F# is basic for a well-trained mathematician, but can be difficult for people who are not familiar with lambda calculus.
+F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code reuse within a module or the implementation of something, but it is generally not something to expose publicly. In general, point-free programming is not a virtue in and of itself, and can add a significant cognitive barrier for people who are not immersed in the style.
 
 ### Do not use partial application and currying in public APIs
 

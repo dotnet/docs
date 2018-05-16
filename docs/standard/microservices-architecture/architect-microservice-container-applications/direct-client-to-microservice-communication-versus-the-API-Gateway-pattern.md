@@ -138,7 +138,7 @@ The main reason why Ocelot was chosen to be used in [eShopOnContainers reference
 
 The previous diagrams showing custom API Gateways running in containers are precisely how you can also run Ocelot in a container and microservice based application. 
 
-In addition, there are many other products in the market offering API Gateways features, such as Apigee, Kong, MuleSoft, WSO2, etc.
+In addition, there are many other products in the market offering API Gateways features, such as Apigee, Kong, MuleSoft, WSO2, LinkerD, etc. plus other products like Linkerd and Istio for service mesh ingres controller features.
 
 After the initial architecture and patterns explanation sections, the next sections will explain how to implement API Gateways with [Ocelot](https://github.com/ThreeMammals/Ocelot).
 

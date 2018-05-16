@@ -413,12 +413,6 @@ In this example, there is minimal chance for an ambiguous call because the
 `Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
 
-Tuple equality enables more concise code for your types. The following example adds equality tests and related overrides for `Person` class:
-
-[!code-csharp[EqualityWithTupleTests](../../samples/snippets/csharp/tuples/tuples/person.cs#SnippetEqualityTests "Equality tests for a Person type")]
-
-You construct a tuple for the members that participate in value-based equality, then test the tuples for equality.
-
 Deconstruction operators do not participate in testing equality. The following example generates compiler error CS0019:
 
 ```csharp

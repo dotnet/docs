@@ -1,20 +1,20 @@
 ---
-title: Tuples - C# Guide
+title: Tuple types - C# Guide
 description: Learn about unnamed and named tuple types in C#
 ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
-# C# Tuple types #
+# C# tuple types #
 
-C# Tuples are types that you define using a lightweight syntax. The advantages
+C# tuples are types that you define using a lightweight syntax. The advantages
 include a simpler syntax, rules for conversions based on number (referred to as cardinality)
 and types of elements, and
 consistent rules for copies, equality tests, and assignments. As a tradeoff, tuples do not
 support some of the object-oriented idioms associated with inheritance. You
-can get an overview in the section on [Tuples in the What's new in C# 7.0](whats-new/csharp-7.md#tuples) article.
+can get an overview in the section on [tuples in the What's new in C# 7.0](whats-new/csharp-7.md#tuples) article.
 
 In this article, you'll learn the language rules governing tuples in C# 7.0 and later versions,
-different ways to use them, and initial guidance on working with Tuples.
+different ways to use them, and initial guidance on working with tuples.
 
 > [!NOTE]
 > The new tuples features require the <xref:System.ValueTuple> types.
@@ -32,7 +32,7 @@ different ways to use them, and initial guidance on working with Tuples.
 > API and delivered as part of the framework, the NuGet package requirement will
 > be removed.
 
-Let's start with the reasons for adding new Tuple support. Methods return
+Let's start with the reasons for adding new tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
 object more easily.
 
@@ -74,7 +74,7 @@ unnamed tuple:
 [!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
 
 The tuple in the previous example was initialized using literal constants and
-won't have element names created using *Tuple field name projections* in C# 7.1.
+won't have element names created using *tuple field name projections* in C# 7.1.
 
 However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
@@ -103,7 +103,7 @@ The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
 adds a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute> attribute on the method. This attribute contains
 a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames> list property that contains the names given to each of
-the elements in the Tuple.
+the elements in the tuple.
 
 > [!NOTE]
 > Development Tools, such as Visual Studio, also read that metadata,
@@ -125,15 +125,15 @@ and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 [!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
 
 For any field where an explicit name is not provided, an applicable implicit
-name will be projected. There is no requirement to provide semantic names,
-either explicitly or implicitly. The following initializer will have field
+name is projected. There is no requirement to provide semantic names,
+either explicitly or implicitly. The following initializer has     field
 names `Item1`, whose value is `42` and `StringContent`, whose value is "The answer to everything":
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
 
 There are two conditions where candidate field names are not projected onto the tuple field:
 
-1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString` or, `Rest`.
+1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString`. or `Rest`.
 1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
 
 These conditions avoid ambiguity. These names would cause an ambiguity
@@ -149,19 +149,19 @@ code written with C# 7.0, when tuple field name projections were not available.
 
 ## Equality and tuples
 
-Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. The `==` operator stops evaluating members as soon as one pair are not equal. The `!=` operator stops evaluating members as soon as one pair is equal. The following code examples use `==`, but the conversion rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
+Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. The `==` operator stops evaluating members as soon as one pair is not equal. The `!=` operator stops evaluating members as soon as one pair is equal. The following code examples use `==`, but the comparison rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
 
 [!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 
-There are several rules that make tuple equality tests more convenient. Tuple equality performs lifting conversions if one of the tuples is a nullable tuple, as shown in the following code:
+There are several rules that make tuple equality tests more convenient. Tuple equality performs [lifted conversions](/dotnet/csharp/language-reference/language-specification/conversions.md#lifted-conversion-operators) if one of the tuples is a nullable tuple, as shown in the following code:
 
 [!code-csharp[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
 
-Tuple equality also performs implicit conversions on each member of both tuples. These include lifted conversions, widening conversions, or other implicit conversions. The following examples also show that the conversions may create a temporary tuple for the left tuple, the right tuple, or both:
+Tuple equality also performs implicit conversions on each member of both tuples. These include lifted conversions, widening conversions, or other implicit conversions. The following examples show that an integer 2-tuple can be compared to a long 2-tuple because of the implicit conversion from integer to long:
 
 [!code-csharp[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
 
-The names of the tuple members do not participate in tests for equality. However, if one of the operands is a tuple literal with explicit names, the compiler generates a warning if those names do not match the names of the other operand.
+The names of the tuple members do not participate in tests for equality. However, if one of the operands is a tuple literal with explicit names, the compiler generates warning CS8383 if those names do not match the names of the other operand.
 In the case where both operands are tuple literals, the warning is on the right operand as shown in the following example:
 
 [!code-csharp[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
@@ -173,7 +173,7 @@ Finally, tuples may contain nested tuples. Tuple equality compares the "shape" o
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
-the same number of elements where each right-hand side element can be implicitly converted to its corresponding left-hand side element. Other
+the same number of elements, where each right-hand side element can be implicitly converted to its corresponding left-hand side element. Other
 conversions are not considered for assignments. Let's look at the kinds
 of assignments that are allowed between tuple types.
 
@@ -207,7 +207,7 @@ named = differentShape;
 
 ## Tuples as method return values
 
-One of the most common uses for Tuples is as a method return
+One of the most common uses for tuples is as a method return
 value. Let's walk through one example. Consider this method
 that computes the standard deviation for a sequence of numbers:
 
@@ -236,7 +236,7 @@ and the sum of the each value squared:
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
-This version enumerates the sequence exactly once. But, it's not reusable code. As you keep working, you'll find that many different
+This version enumerates the sequence exactly once. But it's not reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
 the sum of the sequence, and the sum
 of the squares of the sequence. Let's refactor this method and write
@@ -413,21 +413,21 @@ In this example, there is minimal chance for an ambiguous call because the
 `Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
 
-Tuple equality enables more concise code for your types. The following example adds equality tests, and related overrides for `Person` class:
+Tuple equality enables more concise code for your types. The following example adds equality tests and related overrides for `Person` class:
 
 [!code-csharp[EqualityWithTupleTests](../../samples/snippets/csharp/tuples/tuples/person.cs#SnippetEqualityTests "Equality tests for a Person type")]
 
 You construct a tuple for the members that participate in value-based equality, then test the tuples for equality.
 
-Deconstruction conversions are not applicable for testing equality. The following example does not compile:
+Deconstruction operators do not participate in testing equality. The following example generates compiler error CS0019:
 
 ```csharp
-Person p = new Person("Bill", "Wagner");
-if (("Bill", "Wagner") == p)
+Person p = new Person("Althea", "Goodwin");
+if (("Althea", "Goodwin") == p)
     Console.WriteLine(p);
 ```
 
-The deconstruct method could convert the person object `p` to a tuple containing two strings, but it is not applicable in the context of equality tests.
+The `Deconstruct` method could convert the `Person` object `p` to a tuple containing two strings, but it is not applicable in the context of equality tests.
 
 ## Conclusion 
 

@@ -23,7 +23,7 @@ Starting with C# 7.3, the `fixed` statement operates on additional types beyond 
 
 [!code-csharp[Accessing fixed memory](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#FixedSpan)]
 
-If you are created types that should participate in this pattern, see <xref:System.Span%601.DangerousGetPinnableReference?displayProperty=nameWithType> for an example of implementing the pattern.
+If you are creating types that should participate in this pattern, see <xref:System.Span%601.DangerousGetPinnableReference?displayProperty=nameWithType> for an example of implementing the pattern.
 
 Multiple pointers can be initialized in one statement if they are all the same type:
 

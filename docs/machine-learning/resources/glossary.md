@@ -3,7 +3,7 @@ title: Machine Learning Glossary
 description: A glossary of machine learning terms.
 author: jralexander
 ms.author: johalex
-ms.date: 05/07/2018
+ms.date: 05/15/2018
 ms.topic: conceptual
 ms.prod: dotnet-ml
 ms.devlang: dotnet
@@ -43,7 +43,7 @@ Feature engineering is the process of developing software that converts other da
 
 ## F-score
 
-A measure of a test's accuracy that balances [precision](#precision) and [recall](#recall).
+An evaluation metric that balances [precision](#precision) and [recall](#recall).
 
 ## Hyperparameter
 
@@ -75,7 +75,7 @@ A feature extraction scheme for text data. Any sequence of N words turns into a 
 
 ## Numerical feature vectors
 
-A feature vector consisting only of numerical values. This is similar to double[].
+A feature vector consisting only of numerical values. This is similar to `double[]`.
 
 ## Pipeline
 
@@ -83,11 +83,11 @@ All of the operations needed to fit a model to a dataset. A pipeline consists of
 
 ## Precision
 
-The proportion of true results to positive results.
+In [classification](#classification), the precision for a class is the number of items correctly predicted as belonging to that class divided by the total number of items predicted as belonging to the class.
 
 ## Recall
 
-The fraction of all correct results over all results.
+In [classification](#classification), the recall for a class is the number of items correctly predicted as belonging to that class divided by the total number of items that actually belong to the class.
 
 ## Regression
 

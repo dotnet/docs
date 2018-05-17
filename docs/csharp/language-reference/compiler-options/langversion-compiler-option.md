@@ -68,19 +68,16 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
  
 ### C# Language Specification
- [C# Language Specification Reference](../language-specification/index.md) : .NET Foundation  
- C# 1.0/1.1 [ISO/IEC 23270:2003](https://www.iso.org/standard/36768.html) Information technology -- C# Language Specification : ISO Catalogue  
- C# 2.0 [ISO/IEC 23270:2006](https://www.iso.org/standard/42926.html) Information technology -- C# Language Specification : ISO Catalogue  
- C# 2.0 [c042926_ISO_IEC_23270_2006(E).zip](http://standards.iso.org/ittf/PubliclyAvailableStandards/c042926_ISO_IEC_23270_2006(E).zip) ISO/IEC 23270:2006 in PDF format : ISO Freely Available Standards  
- C# 3.0 [CSharp Language Specification.doc](http://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc) C# Language Specification Version 3.0 : Microsoft Corporation  
- C# 4.0 [Ecma-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf) Standard ECMA-334 4th Edition    
- C# 5.0 [Ecma-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf) Standard ECMA-334 5th Edition  
- C# 6.0 [README.md](https://github.com/dotnet/csharplang/blob/master/spec/README.md) C# Language Specification Version 6 - Unofficial Draft : .NET Foundation  
- C# 7.0 and later (not currently available)  
 
-<!--- Uncomment and add to the above when they become officially released
- C# 8.0 (spec is not yet finished)  
--->
+|Version|Link|Description|
+|-------|----|-----------|
+|C# 1.0|[Download DOC](http://download.microsoft.com/download/a/9/e/a9e229b9-fee5-4c3e-8476-917dee385062/csharp%20language%20specification%20v1.0.doc)|C# Language Specification Version 1.0: Microsoft Corporation|
+|C# 1.2|[Download DOC](http://download.microsoft.com/download/5/e/5/5e58be0a-b02b-41ac-a4a3-7a22286214ff/csharp%20language%20specification%20v1.2.doc)|C# Language Specification Version 1.2: Microsoft Corporation|
+|C# 2.0|[Download PDF](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/Ecma-334%204th%20edition%20June%202006.pdf)|Standard ECMA-334 4th Edition|
+|C# 3.0|[Download DOC](http://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc)|C# Language Specification Version 3.0: Microsoft Corporation|
+|C# 5.0|[Download PDF](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf)|Standard ECMA-334 5th Edition|
+|C# 6.0|[Link](../language-specification/index.md)|C# Language Specification Version 6 - Unofficial Draft: .NET Foundation|
+|C# 7.0 and later||not currently available|
 
 ### Minimum compiler version needed to support all language features   
 [↩](#TDefault)<a name="FDefault">Default</a>, <a name="FISO1">ISO1</a>: Microsoft Visual Studio/Build Tools .Net 2002 or bundled .Net Framework 1.0 compiler     

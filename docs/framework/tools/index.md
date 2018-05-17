@@ -13,7 +13,7 @@ ms.author: "mairaw"
 # .NET Framework Tools
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.  
   
- Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. (For installation information , see the [Visual Studio Downloads](http://go.microsoft.com/fwlink/?LinkID=325532).)  
+Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) page.
   
  You can run all the tools from the command line with the exception of the Assembly Cache Viewer (Shfusion.dll). You must access Shfusion.dll from File Explorer.  
   

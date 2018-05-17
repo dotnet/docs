@@ -1896,7 +1896,7 @@
   
  The <xref:System.Web.UI.WebControls.GridView.DataBind%2A> method is called automatically if the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.GridView> control refers to a valid data source control.  
   
- Instead of manually calling the <xref:System.Web.UI.WebControls.GridView.DataBind%2A> method, you can use model binding with your <xref:System.Web.UI.WebControls.GridView.DataBind%2A> control by setting the <xref:System.Web.UI.WebControls.DataBoundControl.SelectMethod%2A> property to the name of a method that returns data for the <xref:System.Web.UI.WebControls.GridView>. The <xref:System.Web.UI.WebControls.GridView> is then automatically populated with the data that is returned from the select method. Model binding can simplify your code for working with data. For more information, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ Instead of manually calling the <xref:System.Web.UI.WebControls.GridView.DataBind%2A> method, you can use model binding with your <xref:System.Web.UI.WebControls.GridView.DataBind%2A> control by setting the <xref:System.Web.UI.WebControls.DataBoundControl.SelectMethod%2A> property to the name of a method that returns data for the <xref:System.Web.UI.WebControls.GridView>. The <xref:System.Web.UI.WebControls.GridView> is then automatically populated with the data that is returned from the select method. Model binding can simplify your code for working with data. For more information, see [Model Binding and Web Forms](/aspnet/web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data).  
   
    
   
@@ -2068,7 +2068,7 @@
 ## Remarks  
  Setting this property causes model binding to be used as the data-binding method.  
   
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](/aspnet/web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data).  
   
  ]]></format>
         </remarks>
@@ -7071,7 +7071,7 @@
 ## Remarks  
  Setting this property causes model binding to be used as the data-binding method.  
   
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](/aspnet/web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data).  
   
  ]]></format>
         </remarks>

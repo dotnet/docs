@@ -151,7 +151,7 @@ module MyApi =
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
 
     let private r = Random()
-    let dep3 = r.Next() // Problematic if multiple threads use this
+    let dep3() = r.Next() // Problematic if multiple threads use this
 
     let function1 arg = doStuffWith dep1 dep2 dep3 arg
     let function2 arg = doSutffWith dep1 dep2 dep3 arg

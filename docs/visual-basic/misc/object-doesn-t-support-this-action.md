@@ -1,5 +1,5 @@
 ---
-title: "Object doesn&#39;t support this action (Visual Basic)"
+title: "Object doesn't support this action (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID445"

@@ -10,17 +10,14 @@ helpviewer_keywords:
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 ---
 # Value Types (C# Reference)
-The value types consist of two main categories:  
+Value types are [Structs](../../../csharp/language-reference/keywords/struct.md) and [Enumerations](../../../csharp/language-reference/keywords/enum.md); Enumerations are a special type that derive from value types.   
   
--   [Structs](../../../csharp/language-reference/keywords/struct.md)  
-  
--   [Enumerations](../../../csharp/language-reference/keywords/enum.md)  
   
  Structs fall into these categories:  
   
 -   Numeric types  
   
-    -   [Integral types](../../../csharp/language-reference/keywords/integral-types-table.md)  
+    -   [Integral types](../../../csharp/language-reference/keywords/integral-types-table.md), including [Enumerations](../../../csharp/language-reference/keywords/enum.md)  
   
     -   [Floating-point types](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
   
@@ -31,11 +28,11 @@ The value types consist of two main categories:
 -   User defined structs.  
   
 ## Main Features of Value Types  
- Variables that are based on value types directly contain values. Assigning one value type variable to another copies the contained value. This differs from the assignment of reference type variables, which copies a reference to the object but not the object itself.  
+ Variables based on value types directly contain values. Assigning one value type variable to another copies the contained value. This differs from the assignment of reference type variables, which copies a reference to the object but not the object itself.  
   
  All value types are derived implicitly from the <xref:System.ValueType?displayProperty=nameWithType>.  
   
- Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.  
+ Unlike reference types, all value types are sealed; you cannot derive a new type from a value type (the enum special type does derive from value types). However, like reference types, structs can implement interfaces.  
   
  Unlike reference types, a value type cannot contain the `null` value. However, the [nullable types](../../../csharp/programming-guide/nullable-types/index.md) feature does allow for value types to be assigned to `null`.  
   

@@ -46,7 +46,7 @@
 ## Remarks  
  This class is the default implementation of the <xref:System.Collections.IComparer> interface. The <xref:System.Collections.CaseInsensitiveComparer> class is the implementation of the <xref:System.Collections.IComparer> interface that performs case-insensitive string comparisons.  
   
- Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread unless otherwise specified. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread unless otherwise specified. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -103,7 +103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -188,7 +188,7 @@
   
  Comparing `null` with any type is allowed and does not generate an exception when using <xref:System.IComparable>. When sorting, `null` is considered to be less than any other object.  
   
- String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
  ]]></format>
         </remarks>
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   

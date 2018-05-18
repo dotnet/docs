@@ -44,7 +44,7 @@
   
  The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods or interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use this class with the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation.  
   
- String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Collections.CaseInsensitiveComparer> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the sort order and casing rules; therefore, string comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ When the <xref:System.Collections.CaseInsensitiveComparer> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the sort order and casing rules; therefore, string comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -237,7 +237,7 @@
   
  Comparing `null` with any type is allowed and does not generate an exception when using <xref:System.IComparable>. When sorting, `null` is considered to be less than any other object.  
   
- String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
  ]]></format>
         </remarks>
@@ -284,7 +284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Collections.CaseInsensitiveComparer> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the sort order and casing rules; therefore, string comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ When the <xref:System.Collections.CaseInsensitiveComparer> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the sort order and casing rules; therefore, string comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
  ]]></format>
         </remarks>
@@ -324,7 +324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   

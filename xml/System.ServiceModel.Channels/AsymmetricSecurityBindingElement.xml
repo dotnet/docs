@@ -530,7 +530,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
+ This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by Windows Communication Foundation (WCF) to communicate to clients the existence of this custom binding element in the binding stack.  
   
  This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
   

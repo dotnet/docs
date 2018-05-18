@@ -44,7 +44,7 @@
   
 -   `Relay`  
   
- The `Actor` or `Role` attribute specifies the URI of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the header understands the node processing. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute.  
+ The `Actor` or `Role` attribute specifies the URI of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the header understands the node processing. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. Windows Communication Foundation (WCF) does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute.  
   
  You can, however, read and write these attributes, even though they are not sent by default. You can set the attribute values in two ways. First, you can change the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A>, <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> and <xref:System.ServiceModel.MessageHeaderAttribute.Relay%2A> properties on the <xref:System.ServiceModel.MessageHeaderAttribute>. (There is no `Role` property – set the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A> property and `Role` is passed if SOAP 1.2 is used). For example:  
   
@@ -168,7 +168,7 @@
  For more information, see the Remarks section of <xref:System.ServiceModel.MessageHeaderAttribute> for details.  
   
 > [!IMPORTANT]
->  It is important to remember that if the <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> property is `true` in a message being sent and the application on the receiving side does not understand the header a fault is generated. Conversely, if a header with the `mustUnderstand` SOAP header attribute set to `true` is received by [!INCLUDE[indigo1](~/includes/indigo1-md.md)], it must be a part of the message contract (or must be processed by one of the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] channels); otherwise, it is assumed that the header is not understood and an exception is thrown.  
+>  It is important to remember that if the <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> property is `true` in a message being sent and the application on the receiving side does not understand the header a fault is generated. Conversely, if a header with the `mustUnderstand` SOAP header attribute set to `true` is received by Windows Communication Foundation (WCF), it must be a part of the message contract (or must be processed by one of the Windows Communication Foundation (WCF) channels); otherwise, it is assumed that the header is not understood and an exception is thrown.  
   
    
   

@@ -605,7 +605,7 @@
         <ReturnType>System.Workflow.ComponentModel.WorkflowParameterBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of bindable parameters as found in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service's formal parameter list.</summary>
+        <summary>Gets the collection of bindable parameters as found in the Windows Communication Foundation (WCF) service's formal parameter list.</summary>
         <value>The <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" /> of parameters to bind to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -99,7 +99,7 @@
 ## Remarks  
  Setting this property to `true` allows authentication to downgrade to NTLM if Kerberos is not available.  
   
- Setting this property to `false` causes [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+ Setting this property to `false` causes Windows Communication Foundation (WCF) to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
   
  ]]></format>
         </remarks>

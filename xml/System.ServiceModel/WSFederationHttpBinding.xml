@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides [!INCLUDE[indigo1](~/includes/indigo1-md.md)] support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
+ Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides Windows Communication Foundation (WCF) support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
   
  Bindings consist of a stack of binding elements. The stack of binding elements in <xref:System.ServiceModel.WSFederationHttpBinding> is the same as that contained in <xref:System.ServiceModel.WSHttpBinding> when <xref:System.ServiceModel.WSHttpBinding.Security%2A> is set to the default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message>.  
   

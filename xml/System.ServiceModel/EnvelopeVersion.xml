@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.EnvelopeVersion.None%2A> message version is used this means that a SOAP envelope is not written out and the message emits the contents of the body. This enables an [!INCLUDE[indigo1](~/includes/indigo1-md.md)] channel to communicate with an endpoint that is expecting XML with no SOAP formatting. The XML payload lives in the body of a message and is the only thing emitted when it hits the encoder.  
+ If the <xref:System.ServiceModel.EnvelopeVersion.None%2A> message version is used this means that a SOAP envelope is not written out and the message emits the contents of the body. This enables an Windows Communication Foundation (WCF) channel to communicate with an endpoint that is expecting XML with no SOAP formatting. The XML payload lives in the body of a message and is the only thing emitted when it hits the encoder.  
   
  Similarly, when the arbitrary chunk of XML is received it is wrapped up in a Message for propagation up the channel stack. The required headers are inserted and the message is processed as if it had been a SOAP message.  
   

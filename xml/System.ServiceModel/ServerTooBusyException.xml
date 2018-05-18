@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints. Robust client and service [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications are expected to handle these exceptions. To prevent a handler for <xref:System.ServiceModel.CommunicationException> from catching the more specific <xref:System.ServiceModel.ServerTooBusyException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
+ This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints. Robust client and service Windows Communication Foundation (WCF) applications are expected to handle these exceptions. To prevent a handler for <xref:System.ServiceModel.CommunicationException> from catching the more specific <xref:System.ServiceModel.ServerTooBusyException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
   
  ]]></format>
     </remarks>

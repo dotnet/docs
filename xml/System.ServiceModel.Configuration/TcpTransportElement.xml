@@ -263,7 +263,7 @@
 ## Remarks  
  This setting is relevant only to services. Clients are not affected.  
   
- Using this setting requires enabling the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] TCP Port Sharing Service by changing its Startup Type to Manual or Automatic.  
+ Using this setting requires enabling the Windows Communication Foundation (WCF) TCP Port Sharing Service by changing its Startup Type to Manual or Automatic.  
   
  For more information about the TCP Listener and how to start it, see <xref:System.Net.Sockets.TcpListener>.  
   

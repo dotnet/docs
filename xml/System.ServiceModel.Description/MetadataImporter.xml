@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class to import service metadata. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in [!INCLUDE[indigo1](~/includes/indigo1-md.md)].  
+ Use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class to import service metadata. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in Windows Communication Foundation (WCF).  
   
  A <xref:System.ServiceModel.Description.MetadataImporter> implementation collects the policy expressions attached to the service metadata in a <xref:System.ServiceModel.Description.PolicyConversionContext?displayProperty=nameWithType> object. The <xref:System.ServiceModel.Description.MetadataImporter> then processes the policies as part of importing the metadata by calling the implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface in the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> property.  
   

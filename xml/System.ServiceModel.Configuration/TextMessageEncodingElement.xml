@@ -26,7 +26,7 @@
   
  The <xref:System.ServiceModel.Configuration.BinaryMessageEncodingElement> class represents the configuration element that specifies the character encoding and message versioning used for binary-based XML messages. This is most efficient but least interoperable of the encoding options.  
   
- The <xref:System.ServiceModel.Configuration.MtomMessageEncodingElement> class represents the configuration element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messages. The MTOM encoder attempts to strike a balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
+ The <xref:System.ServiceModel.Configuration.MtomMessageEncodingElement> class represents the configuration element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in Windows Communication Foundation (WCF) messages. The MTOM encoder attempts to strike a balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
   
  ]]></format>
     </remarks>

@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When creating a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] application that requires authentication and/or authorization of the callers, you can specify that events related to security be recorded for either success, failure, or both. The level of auditing is determined by this enumeration.  
+ When creating a Windows Communication Foundation (WCF) application that requires authentication and/or authorization of the callers, you can specify that events related to security be recorded for either success, failure, or both. The level of auditing is determined by this enumeration.  
   
  The location of the audit log is specified by setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> property of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class to one of the <xref:System.ServiceModel.AuditLogLocation> values.  
   

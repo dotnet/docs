@@ -223,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
+        <summary>Gets a value that indicates whether Windows Communication Foundation (WCF) omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
         <value>If <see langword="true" />, WCF omits any data that is normally written to the entity body of the response and forces an empty response to be returned.</value>
         <remarks>To be added.</remarks>
       </Docs>

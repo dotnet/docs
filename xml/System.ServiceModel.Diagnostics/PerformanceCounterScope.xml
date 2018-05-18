@@ -59,7 +59,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>A single performance counter instance _WCF_Admin is created. This instance is used to enable the collection of SQM data for used by the infrastructure. None of the counter values for this instance are updated and therefore will remain at zero. This is the default value if no configuration is present for [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
+        <summary>A single performance counter instance _WCF_Admin is created. This instance is used to enable the collection of SQM data for used by the infrastructure. None of the counter values for this instance are updated and therefore will remain at zero. This is the default value if no configuration is present for Windows Communication Foundation (WCF).</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">

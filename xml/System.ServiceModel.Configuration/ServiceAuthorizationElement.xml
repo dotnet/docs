@@ -258,7 +258,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the role provider, which provides role information for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] application.</summary>
+        <summary>Gets or sets the name of the role provider, which provides role information for a Windows Communication Foundation (WCF) application.</summary>
         <value>The name of the role provider. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

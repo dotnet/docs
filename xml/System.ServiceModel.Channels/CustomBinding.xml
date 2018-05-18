@@ -33,7 +33,7 @@
   
 -   Next is an optional <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> that provides a session and ordering mechanism as defined in the WS-ReliableMessaging specification. This notion of a session can cross SOAP and transport intermediaries.  
   
--   Next is an optional security binding element that provides security features like authorization, authentication, protection, and confidentiality. The following security binding elements are provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
+-   Next is an optional security binding element that provides security features like authorization, authentication, protection, and confidentiality. The following security binding elements are provided by Windows Communication Foundation (WCF):  
   
     -   <xref:System.ServiceModel.Channels.SecurityBindingElement>  
   
@@ -63,7 +63,7 @@
   
     -   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>  
   
--   At the bottom is a required transport element. You can use your own transport or use one of transport binding elements provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
+-   At the bottom is a required transport element. You can use your own transport or use one of transport binding elements provided by Windows Communication Foundation (WCF):  
   
     -   <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
   

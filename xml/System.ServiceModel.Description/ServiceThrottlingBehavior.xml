@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> property specifies the maximum number of messages actively processing across a <xref:System.ServiceModel.ServiceHost> object. Each channel can have one pending message that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> until [!INCLUDE[indigo1](~/includes/indigo1-md.md)] begins to process it.  
+ The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> property specifies the maximum number of messages actively processing across a <xref:System.ServiceModel.ServiceHost> object. Each channel can have one pending message that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> until Windows Communication Foundation (WCF) begins to process it.  
   
  You can also set the values of this attribute by using the [&lt;serviceThrottling&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicethrottling.md) element in an application configuration file.  
   

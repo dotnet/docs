@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] processes JSON messages using a mapping between JSON data and the XML Infoset. Normally, this mapping is hidden from view. However, in some advanced scenarios it may be necessary to manually convert between JSON and XML. In this case, the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> class can be used to create the necessary XML readers and writers. Note that not every XML Infoset element can be mapped to JSON. For more information about mapping, see [How to: Serialize and Deserialize JSON Data](~/docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  
+ Windows Communication Foundation (WCF) processes JSON messages using a mapping between JSON data and the XML Infoset. Normally, this mapping is hidden from view. However, in some advanced scenarios it may be necessary to manually convert between JSON and XML. In this case, the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> class can be used to create the necessary XML readers and writers. Note that not every XML Infoset element can be mapped to JSON. For more information about mapping, see [How to: Serialize and Deserialize JSON Data](~/docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  
   
  ]]></format>
     </remarks>

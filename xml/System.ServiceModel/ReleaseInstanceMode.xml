@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ReleaseInstanceMode> with the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to inform [!INCLUDE[indigo1](~/includes/indigo1-md.md)] that the current service object must be recycled at a particular point in the invocation process. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value.  
+ Use the <xref:System.ServiceModel.ReleaseInstanceMode> with the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to inform Windows Communication Foundation (WCF) that the current service object must be recycled at a particular point in the invocation process. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value.  
   
    
   

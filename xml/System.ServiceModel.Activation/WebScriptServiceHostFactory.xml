@@ -60,7 +60,7 @@ Factory="WebScriptServiceHostFactory"
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, this constructor is called automatically by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] as part of service activation - there is no need to call this method manually.  
+ Normally, this constructor is called automatically by Windows Communication Foundation (WCF) as part of service activation - there is no need to call this method manually.  
   
  ]]></format>
         </remarks>
@@ -93,7 +93,7 @@ Factory="WebScriptServiceHostFactory"
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, this method is called automatically by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] as part of service activation - there is no need to call this method manually.  
+ Normally, this method is called automatically by Windows Communication Foundation (WCF) as part of service activation - there is no need to call this method manually.  
   
  ]]></format>
         </remarks>

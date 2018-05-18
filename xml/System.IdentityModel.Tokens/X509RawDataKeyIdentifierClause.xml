@@ -20,7 +20,7 @@
 ## Remarks  
  Typically, the <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the X.509 certificate's raw data. The <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause.GetX509RawData%2A> method returns the raw data.  
   
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
+ Windows Communication Foundation (WCF) supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
   
 -   <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
   

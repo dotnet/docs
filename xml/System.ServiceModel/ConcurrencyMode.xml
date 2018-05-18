@@ -20,7 +20,7 @@
 ## Remarks  
  <xref:System.ServiceModel.ConcurrencyMode> is used in conjunction with the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property to specify whether a service class supports single-threaded or multi-threaded modes of operation. A single-threaded operation can be either reentrant or non-reentrant.  
   
- The following table shows when [!INCLUDE[indigo1](~/includes/indigo1-md.md)] permits an operation to be invoked while another one is in progress, depending upon the <xref:System.ServiceModel.ConcurrencyMode>.  
+ The following table shows when Windows Communication Foundation (WCF) permits an operation to be invoked while another one is in progress, depending upon the <xref:System.ServiceModel.ConcurrencyMode>.  
   
 |ConcurrencyMode Value|Can a new operation be invoked?|  
 |---------------------------|-------------------------------------|  

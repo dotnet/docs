@@ -1074,7 +1074,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a binding implements <xref:System.ServiceModel.Channels.IBindingRuntimePreferences>, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] assigns the value of the <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property to this property. So if this value is `true`, the `false` default value of <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> is overridden.  
+ If a binding implements <xref:System.ServiceModel.Channels.IBindingRuntimePreferences>, Windows Communication Foundation (WCF) assigns the value of the <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property to this property. So if this value is `true`, the `false` default value of <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> is overridden.  
   
  This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   

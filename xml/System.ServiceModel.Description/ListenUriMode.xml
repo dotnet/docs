@@ -22,7 +22,7 @@
   
  The value of these properties may also be set using the <xref:System.ServiceModel.Configuration.ServiceEndpointElement.ListenUri%2A> property and the <xref:System.ServiceModel.Configuration.ServiceEndpointElement.ListenUriMode%2A> property.  
   
- When the value of the <xref:System.ServiceModel.Description.ListenUriMode> is set to Unique the transport is responsible for creating a unique URI. Different transports used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] generate this unique URI differently  
+ When the value of the <xref:System.ServiceModel.Description.ListenUriMode> is set to Unique the transport is responsible for creating a unique URI. Different transports used by Windows Communication Foundation (WCF) generate this unique URI differently  
   
 -   For TCP in exclusive mode (<xref:System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled%2A> is `false`) this means binding to a uniquely available port number.  
   

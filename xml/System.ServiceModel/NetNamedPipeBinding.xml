@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.NetNamedPipeBinding> generates a run-time communication stack by default, which uses transport security, named pipes for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system-provided choice for on-machine communication. It also supports transactions.  
+ The <xref:System.ServiceModel.NetNamedPipeBinding> generates a run-time communication stack by default, which uses transport security, named pipes for message delivery, and a binary message encoding. This binding is an appropriate Windows Communication Foundation (WCF) system-provided choice for on-machine communication. It also supports transactions.  
   
  The default configuration for the <xref:System.ServiceModel.NetNamedPipeBinding> is similar to the configuration provided by the <xref:System.ServiceModel.NetTcpBinding>, but it is simpler because the WCF implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the <xref:System.ServiceModel.SecurityMode> setting only offers the <xref:System.ServiceModel.SecurityMode.None> and <xref:System.ServiceModel.SecurityMode.Transport> options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` parameter in <xref:System.ServiceModel.NetNamedPipeBinding.%23ctor%28System.ServiceModel.NetNamedPipeSecurityMode%29> the constructor.  
   

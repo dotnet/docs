@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class contains properties that are common to all of the transport binding configuration elements provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. It handles the translation of the message encoder settings and base transport settings into their run-time manifestations. It delegates the translation of transport-specific settings (for example, HttpProxySettings for HTTP) logic in its concrete derived class transport bindings.  
+ This class contains properties that are common to all of the transport binding configuration elements provided by Windows Communication Foundation (WCF). It handles the translation of the message encoder settings and base transport settings into their run-time manifestations. It delegates the translation of transport-specific settings (for example, HttpProxySettings for HTTP) logic in its concrete derived class transport bindings.  
   
  ]]></format>
     </remarks>

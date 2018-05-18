@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.CommunicationObject> class implements the <xref:System.ServiceModel.ICommunicationObject> interface for all communication objects in [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The method implementations handle parameter validation, raise events that notify the occurrence of state transitions, provide the means to associated additional processing with these state transitions, and ensure that such state changes are coordinated.  
+ The <xref:System.ServiceModel.Channels.CommunicationObject> class implements the <xref:System.ServiceModel.ICommunicationObject> interface for all communication objects in Windows Communication Foundation (WCF). The method implementations handle parameter validation, raise events that notify the occurrence of state transitions, provide the means to associated additional processing with these state transitions, and ensure that such state changes are coordinated.  
   
  ]]></format>
     </remarks>

@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The channel listeners on the service wait for and then accept the channels created by factories on the client. Once the channel connection is established between client and service, messages can be exchanged and distributed applications can communicate. The processing functionality provided by the listener is layered into a stacked set of channel listeners to provide modularity when selecting the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] features to deploy. Each channel listener in the service stack corresponds to a channel factory in the client stack. The channel created by the factory is really a stack of channels that are accepted and processed by the stack of listeners on the service.  
+ The channel listeners on the service wait for and then accept the channels created by factories on the client. Once the channel connection is established between client and service, messages can be exchanged and distributed applications can communicate. The processing functionality provided by the listener is layered into a stacked set of channel listeners to provide modularity when selecting the Windows Communication Foundation (WCF) features to deploy. Each channel listener in the service stack corresponds to a channel factory in the client stack. The channel created by the factory is really a stack of channels that are accepted and processed by the stack of listeners on the service.  
   
  ]]></format>
     </remarks>

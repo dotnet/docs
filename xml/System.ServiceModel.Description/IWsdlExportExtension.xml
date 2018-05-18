@@ -21,7 +21,7 @@
 > [!NOTE]
 >  <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations are never invoked if they are implemented as an <xref:System.ServiceModel.Description.IServiceBehavior>.  
   
- <xref:System.ServiceModel.Description.IWsdlExportExtension> does not export custom policy assertions even though [!INCLUDE[indigo1](~/includes/indigo1-md.md)] exports custom binding policy assertions to the appropriate element inside WSDL. If you want to export custom policy assertions, implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface.  
+ <xref:System.ServiceModel.Description.IWsdlExportExtension> does not export custom policy assertions even though Windows Communication Foundation (WCF) exports custom binding policy assertions to the appropriate element inside WSDL. If you want to export custom policy assertions, implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface.  
   
  The metadata publication process begins by calling <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoints%2A?displayProperty=nameWithType> which in turn calls <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%2A?displayProperty=nameWithType> for each endpoint.  
   

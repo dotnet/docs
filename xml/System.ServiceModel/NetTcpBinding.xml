@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.NetTcpBinding> generates a run-time communication stack by default, which uses transport security, TCP for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system-provided choice for communicating over an Intranet.  
+ The <xref:System.ServiceModel.NetTcpBinding> generates a run-time communication stack by default, which uses transport security, TCP for message delivery, and a binary message encoding. This binding is an appropriate Windows Communication Foundation (WCF) system-provided choice for communicating over an Intranet.  
   
  The default configuration for the <xref:System.ServiceModel.NetTcpBinding> is faster than the configuration provided by the <xref:System.ServiceModel.WSHttpBinding>, but it is intended only for WCF communication. The security behavior is configurable using the optional `securityMode` parameter in the constructor. The use of WS-ReliableMessaging is configurable using the optional `reliableSessionEnabled` parameter. But reliable messaging is off by default. More generally, the HTTP system-provided bindings such as <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding> are configured to turn things on by default, whereas the <xref:System.ServiceModel.NetTcpBinding> binding turns things off by default so that you have to opt-in to get support, for example, for one of the WS-* specifications. This means that the default configuration for TCP is faster at exchanging messages between endpoints than that configured for the HTTP bindings by default.  
   
@@ -541,7 +541,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using this setting requires enabling the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] TCP Port Sharing Service by changing its startup type to Manual or Automatic.  
+ Using this setting requires enabling the Windows Communication Foundation (WCF) TCP Port Sharing Service by changing its startup type to Manual or Automatic.  
   
  For more information about the TCP Listener and how to start it, see <xref:System.Net.Sockets.TcpListener>.  
   

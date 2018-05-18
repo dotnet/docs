@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.MessagePropertyAttribute> attribute to attach data to the custom message type as it passes through the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system without serializing the data into a SOAP message.  
+ Use the <xref:System.ServiceModel.MessagePropertyAttribute> attribute to attach data to the custom message type as it passes through the Windows Communication Foundation (WCF) system without serializing the data into a SOAP message.  
   
    
   

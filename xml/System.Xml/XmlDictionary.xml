@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Dictionaries establish a mapping between commonly appearing text strings, and integers, and provide an effective mechanism for compressing and decompressing XML. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses 2 kinds of dictionaries, static and dynamic.  
+ Dictionaries establish a mapping between commonly appearing text strings, and integers, and provide an effective mechanism for compressing and decompressing XML. Windows Communication Foundation (WCF) uses 2 kinds of dictionaries, static and dynamic.  
   
  With static dictionaries, both sides of the communication use a predefined dictionary.  
   

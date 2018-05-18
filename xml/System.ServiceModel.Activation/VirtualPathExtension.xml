@@ -84,7 +84,7 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       </Parameters>
       <Docs>
         <param name="owner">The <see cref="T:System.ServiceModel.ServiceHostBase" /> using the virtual path.</param>
-        <summary>This method is provided to support the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure.</summary>
+        <summary>This method is provided to support the Windows Communication Foundation (WCF) infrastructure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- WCF client objects, whether an extension of <xref:System.ServiceModel.ClientBase%601> or of <xref:System.ServiceModel.IClientChannel>, are used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client applications to convert method calls into outbound messages and convert incoming messages to objects and pass them to the results of client methods.  
+ WCF client objects, whether an extension of <xref:System.ServiceModel.ClientBase%601> or of <xref:System.ServiceModel.IClientChannel>, are used by Windows Communication Foundation (WCF) client applications to convert method calls into outbound messages and convert incoming messages to objects and pass them to the results of client methods.  
   
  The <xref:System.ServiceModel.Dispatcher.ClientRuntime> class is an extensibility point to which you can add extension objects that intercept messages and extend client behavior across all operations. Interception objects can process all messages in a particular contract, process only messages for particular operations, perform custom channel initialization, and implement other custom client application behavior. For an overview of client architecture, see [WCF Client Architecture](~/docs/framework/wcf/feature-details/client-architecture.md). For more information about client programming, see [Accessing Services Using a WCF Client](~/docs/framework/wcf/feature-details/accessing-services-using-a-client.md). For details about customizations and how to perform them, see [Extending Clients](~/docs/framework/wcf/extending/extending-clients.md).  
   

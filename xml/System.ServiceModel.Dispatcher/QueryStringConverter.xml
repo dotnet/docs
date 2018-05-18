@@ -31,7 +31,7 @@ interface Calculator
 }  
 ```  
   
- A [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service implements this interface and exposes it on an endpoint with the <xref:System.ServiceModel.Description.WebHttpBehavior> at http://localhost:8000/MyCalcService. The `Add` service operation can be called by sending an HTTP GET to http://localhost:8000/MyCalcService/Add?n1=10&n2=5. The <xref:System.ServiceModel.Dispatcher.QueryStringConverter> receives this URL and converts the two parameters (n1 and n2) specified in the URL into two `long` objects with the appropriate values.  
+ A Windows Communication Foundation (WCF) service implements this interface and exposes it on an endpoint with the <xref:System.ServiceModel.Description.WebHttpBehavior> at http://localhost:8000/MyCalcService. The `Add` service operation can be called by sending an HTTP GET to http://localhost:8000/MyCalcService/Add?n1=10&n2=5. The <xref:System.ServiceModel.Dispatcher.QueryStringConverter> receives this URL and converts the two parameters (n1 and n2) specified in the URL into two `long` objects with the appropriate values.  
   
  You can derive a class from <xref:System.ServiceModel.Dispatcher.QueryStringConverter> to control how query string parameters are mapped into a service operation's parameters.  
   

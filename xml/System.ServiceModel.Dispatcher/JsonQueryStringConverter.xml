@@ -21,7 +21,7 @@
 ## Remarks  
  Parameters can be specified in a JSON query string within a URL. This class controls how JSON query string parameters are mapped to and from a service operation's parameters when the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> is used to process HTTP requests from browser-based ASP.NET AJAX clients.  
   
- This class is used internally by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)]<xref:System.ServiceModel.Description.WebScriptEnablingBehavior> class for endpoints configured to accept HTTP GET/POST requests with parameters encoded in the URI query string. This class is used to convert between CLR objects and the individual operation request parameter values in the URI query string. Unlike its base type, this class supports values of both primitive and complex types.  
+ This class is used internally by the Windows Communication Foundation (WCF)<xref:System.ServiceModel.Description.WebScriptEnablingBehavior> class for endpoints configured to accept HTTP GET/POST requests with parameters encoded in the URI query string. This class is used to convert between CLR objects and the individual operation request parameter values in the URI query string. Unlike its base type, this class supports values of both primitive and complex types.  
   
  <xref:System.ServiceModel.Dispatcher.JsonQueryStringConverter> derives from <xref:System.ServiceModel.Dispatcher.QueryStringConverter> and supports the following types:  
   

@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Configuration.WebHttpElement> is a <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> sub-type that can be used to include the <xref:System.ServiceModel.Description.WebHttpBehavior> on an endpoint through configuration. The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables the Web programming model for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service. Note that the <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
+ The <xref:System.ServiceModel.Configuration.WebHttpElement> is a <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> sub-type that can be used to include the <xref:System.ServiceModel.Description.WebHttpBehavior> on an endpoint through configuration. The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables the Web programming model for a Windows Communication Foundation (WCF) service. Note that the <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
   
    
   

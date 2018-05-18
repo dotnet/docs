@@ -31,7 +31,7 @@
   
 2.  The transformation of objects received from the response to a service operation invocation into outbound messages.  
   
- In [!INCLUDE[indigo1](~/includes/indigo1-md.md)], the channel and endpoint dispatchers are the service components responsible for accepting new channels, receiving messages, method dispatch and invocation, and response processing. Each endpoint exposed by a <xref:System.ServiceModel.ServiceHost> object has one endpoint dispatcher and an associated channel dispatcher; in addition, each client that participates in duplex communication also has an endpoint dispatcher and channel dispatcher for each callback endpoint.  
+ In Windows Communication Foundation (WCF), the channel and endpoint dispatchers are the service components responsible for accepting new channels, receiving messages, method dispatch and invocation, and response processing. Each endpoint exposed by a <xref:System.ServiceModel.ServiceHost> object has one endpoint dispatcher and an associated channel dispatcher; in addition, each client that participates in duplex communication also has an endpoint dispatcher and channel dispatcher for each callback endpoint.  
   
  The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> enables you to intercept and extend the channel or endpoint dispatcher for all messages across a particular contract, even when a message is not recognized. When a message arrives that does not match any messages declared in the contract it is dispatched to the operation that was returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation%2A> property. To intercept or extend across all messages for a particular operation, see the <xref:System.ServiceModel.Dispatcher.DispatchOperation> class.  
   
@@ -108,7 +108,7 @@
         <ReturnType>System.ServiceModel.Dispatcher.ClientRuntime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object that represents the installation point for extensions to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] for outbound calls to a duplex callback endpoint.</summary>
+        <summary>Gets the <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object that represents the installation point for extensions to Windows Communication Foundation (WCF) for outbound calls to a duplex callback endpoint.</summary>
         <value>The <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object that is the installation point for run-time client customization in duplex contracts.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -264,7 +264,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.TransactionMessageProperty> allows third-party channel developers who use a proprietary transaction flow mechanism for their channel to introduce their transaction into [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. If this property is set to `true`, the transaction is ignored when executing the service method.  
+ The <xref:System.ServiceModel.Channels.TransactionMessageProperty> allows third-party channel developers who use a proprietary transaction flow mechanism for their channel to introduce their transaction into Windows Communication Foundation (WCF). If this property is set to `true`, the transaction is ignored when executing the service method.  
   
  ]]></format>
         </remarks>

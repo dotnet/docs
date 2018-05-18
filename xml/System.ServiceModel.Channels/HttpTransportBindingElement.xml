@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to ensure interoperability with other non-WCF Web services stacks.  
+ The <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by Windows Communication Foundation (WCF) to ensure interoperability with other non-WCF Web services stacks.  
   
  The WCF service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTP protocol.  
   
@@ -1112,7 +1112,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
+ This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by Windows Communication Foundation (WCF) to communicate to clients the existence of this custom binding element in the binding stack.  
   
  This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
   

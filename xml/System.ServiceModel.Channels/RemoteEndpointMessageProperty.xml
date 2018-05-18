@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property is added to each incoming message to a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service through both the HTTP and TCP transports.  
+ The property is added to each incoming message to a Windows Communication Foundation (WCF) service through both the HTTP and TCP transports.  
   
  The property is not present on messages received through either a named pipes or MSMQ transport.  
   

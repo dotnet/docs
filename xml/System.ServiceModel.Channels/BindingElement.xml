@@ -29,7 +29,7 @@
   
  Creating a binding and binding element for your transport is optional if you are just using the channel model. It is possible to do everything you need through the channel factory and listener as long as they are made public.  
   
- The [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service model uses a factory pattern where the binding is used to create the channel stack. If you want to use the WCF service model, then using a transport binding element is required. Placing this binding element into a binding is a good practice because it removes the requirement for users to create their own custom binding for your transport. It is best to create both a binding and binding element, and hide the channel factory and listener inside the assembly.  
+ The Windows Communication Foundation (WCF) service model uses a factory pattern where the binding is used to create the channel stack. If you want to use the WCF service model, then using a transport binding element is required. Placing this binding element into a binding is a good practice because it removes the requirement for users to create their own custom binding for your transport. It is best to create both a binding and binding element, and hide the channel factory and listener inside the assembly.  
   
  On the sending side, a binding is used to build a <xref:System.ServiceModel.Channels.IChannelFactory>, which in turn builds a channel stack and returns a reference to the top channel in the stack. The application can then use this channel to send messages.  
   

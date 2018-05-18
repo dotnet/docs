@@ -27,7 +27,7 @@
 ## Remarks  
  The endpoint may not be found or reachable because the remote endpoint is down, the remote endpoint is unreachable, or because the remote network is unreachable.  
   
- This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints and that robust client and service [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications are expected to handle. To prevent a handler for the <xref:System.ServiceModel.CommunicationException> handler from catching the more specific <xref:System.ServiceModel.EndpointNotFoundException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
+ This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints and that robust client and service Windows Communication Foundation (WCF) applications are expected to handle. To prevent a handler for the <xref:System.ServiceModel.CommunicationException> handler from catching the more specific <xref:System.ServiceModel.EndpointNotFoundException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
   
  ]]></format>
     </remarks>

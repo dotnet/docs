@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a default client certificate validator that verifies the client certificate against the trusted people store and also checks that the certificate is part of a chain that connects to a valid root. A custom validator can be implemented to obtain a different behavior. This property allows a custom validator to be specified.  
+ Windows Communication Foundation (WCF) provides a default client certificate validator that verifies the client certificate against the trusted people store and also checks that the certificate is part of a chain that connects to a valid root. A custom validator can be implemented to obtain a different behavior. This property allows a custom validator to be specified.  
   
    
   

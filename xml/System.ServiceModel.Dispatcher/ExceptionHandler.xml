@@ -98,7 +98,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the current <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> implementation for the application domain.</summary>
-        <value>Assign a custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur on asynchronous [!INCLUDE[indigo1](~/includes/indigo1-md.md)] threads.</value>
+        <value>Assign a custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur on asynchronous Windows Communication Foundation (WCF) threads.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -128,7 +128,7 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">The exception the occurred within the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime and which may terminate the application.</param>
+        <param name="exception">The exception the occurred within the Windows Communication Foundation (WCF) runtime and which may terminate the application.</param>
         <summary>When overridden in a derived class, returns <see langword="true" /> if the exception has been handled, or <see langword="false" /> if the exception should be rethrown and the application terminated.</summary>
         <returns>
           <see langword="true" /> if the exception has been handled; otherwise, <see langword="false" />.</returns>
@@ -169,7 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the current transport <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> implementation for the application domain.</summary>
-        <value>A custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur within the global [!INCLUDE[indigo1](~/includes/indigo1-md.md)] transports.</value>
+        <value>A custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur within the global Windows Communication Foundation (WCF) transports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

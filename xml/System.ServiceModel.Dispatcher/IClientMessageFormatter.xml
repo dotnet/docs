@@ -24,7 +24,7 @@
 ## Remarks  
  Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface to create a custom client formatter that serializes objects into messages and deserializes messages into objects for a particular operation.  
   
- Attach custom [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client formatters to the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to handle this conversion explicitly.  
+ Attach custom Windows Communication Foundation (WCF) client formatters to the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to handle this conversion explicitly.  
   
  ]]></format>
     </remarks>

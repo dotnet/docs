@@ -29,7 +29,7 @@
   
  A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that are application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
   
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a number of predefined message headers, as shown in the following table.  
+ Windows Communication Foundation (WCF) provides a number of predefined message headers, as shown in the following table.  
   
 |Header Name|Description|  
 |-----------------|-----------------|  

@@ -18,13 +18,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is used by developers who want to keep the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model but replace the system-provided runtime. Such applications will pull messages out of channels and handle them directly with user-defined dispatchers. To use <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> , create a class derived from it, extend <xref:System.ServiceModel.ServiceHost> and override <xref:System.ServiceModel.ServiceHostBase.InitializeRuntime%2A>, adding instances of your class derived from <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> to <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A>.  
+ This is used by developers who want to keep the Windows Communication Foundation (WCF) programming model but replace the system-provided runtime. Such applications will pull messages out of channels and handle them directly with user-defined dispatchers. To use <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> , create a class derived from it, extend <xref:System.ServiceModel.ServiceHost> and override <xref:System.ServiceModel.ServiceHostBase.InitializeRuntime%2A>, adding instances of your class derived from <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> to <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A>.  
   
  The <xref:System.ServiceModel.Channels.IChannelListener> and the <xref:System.ServiceModel.ServiceHost>, associated with the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> object are available for inspection or modification through the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Listener%2A> and <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host%2A> respectively.  
   
  <xref:System.ServiceModel.ServiceHost> calls the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Attach%28System.ServiceModel.ServiceHostBase%29> or <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Detach%28System.ServiceModel.ServiceHostBase%29> methods when adding or removing a <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> item from its <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> collection.  
   
- <xref:System.ServiceModel.ServiceHost> calls the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.CloseInput%2A> during shutdown before closing InstanceContexts. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses this call to close datagram channels and wait for all messages to get to an InstanceContext.  
+ <xref:System.ServiceModel.ServiceHost> calls the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.CloseInput%2A> during shutdown before closing InstanceContexts. Windows Communication Foundation (WCF) uses this call to close datagram channels and wait for all messages to get to an InstanceContext.  
   
  ]]></format>
     </remarks>

@@ -22,7 +22,7 @@
   
  If the Transport value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29>, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint. The value of <xref:System.ServiceModel.WebHttpSecurityMode> can only be set in the <xref:System.ServiceModel.WebHttpBinding> constructor that takes it as an explicit parameter and its value cannot be set again after the binding instance is created.  
   
- TransportCredentialOnly does not provide message integrity and confidentiality. It provides HTTP-based client authentication only. This mode should be used with caution. It should be used in environments, such at IPSec, where the transport security is being provided by other means and only client authentication is provided by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure.  
+ TransportCredentialOnly does not provide message integrity and confidentiality. It provides HTTP-based client authentication only. This mode should be used with caution. It should be used in environments, such at IPSec, where the transport security is being provided by other means and only client authentication is provided by the Windows Communication Foundation (WCF) infrastructure.  
   
  ]]></format>
     </remarks>

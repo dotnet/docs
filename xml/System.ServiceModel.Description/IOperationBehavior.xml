@@ -41,7 +41,7 @@
   
  Typically, the developer first reviews the extensibility points to determine which customization option suits the application scenario and then implements the customization at the appropriate scope. For example, <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=nameWithType> objects can insert customizations for all messages in an entire service and <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> objects can insert customizations for all messages across a specific contract, and so on. For a description of the various properties and customizations available, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   
- Once a customization has been decided upon (and the customization interface implemented if necessary) and the <xref:System.ServiceModel.Description.IOperationBehavior> is the appropriate scope of customization, the customization must be inserted into the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime by implementing <xref:System.ServiceModel.Description.IOperationBehavior> and adding the operation behavior to the runtime.  
+ Once a customization has been decided upon (and the customization interface implemented if necessary) and the <xref:System.ServiceModel.Description.IOperationBehavior> is the appropriate scope of customization, the customization must be inserted into the Windows Communication Foundation (WCF) runtime by implementing <xref:System.ServiceModel.Description.IOperationBehavior> and adding the operation behavior to the runtime.  
   
  There are two ways to add the <xref:System.ServiceModel.Description.IOperationBehavior> to the runtime:  
   

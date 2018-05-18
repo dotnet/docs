@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use an <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> to notify the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime that an <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> object has finished processing. When the <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> object notifies the runtime that the <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> has finished its work, WCF calls <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A?displayProperty=nameWithType> once again. This cycle continues until <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A?displayProperty=nameWithType> returns `true` and the context is closed and recycled.  
+ Use an <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> to notify the Windows Communication Foundation (WCF) runtime that an <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> object has finished processing. When the <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> object notifies the runtime that the <xref:System.ServiceModel.Dispatcher.InstanceContextIdleCallback> has finished its work, WCF calls <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A?displayProperty=nameWithType> once again. This cycle continues until <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A?displayProperty=nameWithType> returns `true` and the context is closed and recycled.  
   
  For more information, see <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.NotifyIdle%2A>.  
   

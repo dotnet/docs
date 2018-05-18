@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ServiceHostBase> class to create hosts that provide a custom programming model. The [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service programming model uses the <xref:System.ServiceModel.ServiceHost> class.  
+ Use the <xref:System.ServiceModel.ServiceHostBase> class to create hosts that provide a custom programming model. The Windows Communication Foundation (WCF) service programming model uses the <xref:System.ServiceModel.ServiceHost> class.  
   
  Special note for Managed C++ users deriving from this class:  
   

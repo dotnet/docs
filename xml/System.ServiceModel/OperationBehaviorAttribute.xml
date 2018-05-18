@@ -32,7 +32,7 @@
 > [!NOTE]
 >  You can also use <xref:System.ServiceModel.OperationBehaviorAttribute> to configure a callback contract operation in a duplex client application. When used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode.None> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
- The <xref:System.ServiceModel.OperationBehaviorAttribute> attribute is a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model feature that enables common features that developers otherwise must implement themselves.  
+ The <xref:System.ServiceModel.OperationBehaviorAttribute> attribute is a Windows Communication Foundation (WCF) programming model feature that enables common features that developers otherwise must implement themselves.  
   
 -   The <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A> property controls whether parameter objects passed to an operation are disposed when the operation completes.  
   
@@ -184,7 +184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to specify when [!INCLUDE[indigo1](~/includes/indigo1-md.md)] recycles a service object in the course of executing a method. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value. Setting the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property changes that default behavior.  
+ Use the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to specify when Windows Communication Foundation (WCF) recycles a service object in the course of executing a method. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value. Setting the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property changes that default behavior.  
   
  The <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> makes no threading guarantees. If you must have a new, unmodified object when your service runs, set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to <xref:System.ServiceModel.InstanceContextMode.PerCall>.  
   

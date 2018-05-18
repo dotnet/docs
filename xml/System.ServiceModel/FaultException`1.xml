@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Catch the <xref:System.ServiceModel.FaultException%601> object in a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client application to handle a SOAP fault that has been contractually specified in an operation contract.  
+ Catch the <xref:System.ServiceModel.FaultException%601> object in a Windows Communication Foundation (WCF) client application to handle a SOAP fault that has been contractually specified in an operation contract.  
   
  Typical deployed services use the <xref:System.ServiceModel.FaultContractAttribute> to formally specify all SOAP faults that a client can expect to receive in the normal course of an operation. Error information in a <xref:System.ServiceModel.FaultContractAttribute> appears as a <xref:System.ServiceModel.FaultException%601> (where the typeparameter is the serializable error object specified in the operation's <xref:System.ServiceModel.FaultContractAttribute>) when it arrives at a client application. The <xref:System.ServiceModel.FaultContractAttribute> can be used to specify SOAP faults for both two-way service methods and for asynchronous method pairs.  
   

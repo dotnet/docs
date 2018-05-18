@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom bindings provide full control over the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messaging stack. An individual binding defines the message stack by specifying the configuration elements for the stack elements in the order they appear on the stack. Each element defines and configures the one element of the stack. There must be one and only one transport element in each custom binding. Without this element, the messaging stack is incomplete.  
+ Custom bindings provide full control over the Windows Communication Foundation (WCF) messaging stack. An individual binding defines the message stack by specifying the configuration elements for the stack elements in the order they appear on the stack. Each element defines and configures the one element of the stack. There must be one and only one transport element in each custom binding. Without this element, the messaging stack is incomplete.  
   
  The order in which elements appear in the stack matters, because it is the order in which operations are applied to the message. The recommended order of stack elements is the following:  
   

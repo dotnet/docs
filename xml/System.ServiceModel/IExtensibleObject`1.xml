@@ -34,7 +34,7 @@
   
  For example, if you are implementing a `TreeNode` class and want to allow external code to add annotations and methods to some instances of `TreeNode`, you can have `TreeNode` implement `IExtensibleObject<TreeNode>`. This enables code that uses `TreeNode` to add objects that implement `IExtensibleObject<TreeNode>` to the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> collection.  
   
- There are four extensible objects in [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
+ There are four extensible objects in Windows Communication Foundation (WCF):  
   
 -   <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType>  
   

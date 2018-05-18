@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When programming [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services, it is useful to publish metadata about the service. For example, metadata can be a Web Services Description Language (WSDL) document that describes all of the methods and data types employed by a service. Returning metadata about an WCF service allows consumers of a service to easily create clients for the service. For more information about WCF metadata endpoints, see [Metadata](~/docs/framework/wcf/feature-details/metadata.md).  
+ When programming Windows Communication Foundation (WCF) services, it is useful to publish metadata about the service. For example, metadata can be a Web Services Description Language (WSDL) document that describes all of the methods and data types employed by a service. Returning metadata about an WCF service allows consumers of a service to easily create clients for the service. For more information about WCF metadata endpoints, see [Metadata](~/docs/framework/wcf/feature-details/metadata.md).  
   
  Services implemented using WCF publish metadata by exposing one or more metadata endpoints. Metadata endpoints in WCF have an address, a binding and a contract like any other endpoint.  The <xref:System.ServiceModel.Description.MetadataReference> interface specifies the service contract implemented by all metadata endpoints in WCF.  
   

@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.DeliveryRequirementsAttribute> to instruct [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to confirm that the binding provides the features required by the service or client implementation. If a <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute is detected when a service description is loaded from an application configuration file or built programmatically in code, WCF validates the configured binding and supports all the features that the attribute specifies. For example, your service may require the bindings to support queuing. Using <xref:System.ServiceModel.DeliveryRequirementsAttribute> allows WCF to confirm that the following requirements are met:  
+ Use the <xref:System.ServiceModel.DeliveryRequirementsAttribute> to instruct Windows Communication Foundation (WCF) to confirm that the binding provides the features required by the service or client implementation. If a <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute is detected when a service description is loaded from an application configuration file or built programmatically in code, WCF validates the configured binding and supports all the features that the attribute specifies. For example, your service may require the bindings to support queuing. Using <xref:System.ServiceModel.DeliveryRequirementsAttribute> allows WCF to confirm that the following requirements are met:  
   
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property specifies the queuing requirements that a binding must meet.  
   
@@ -131,7 +131,7 @@
       <Docs>
         <summary>Specifies whether the binding must support ordered messages.</summary>
         <value>
-          <see langword="true" /> instructs [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to confirm that the binding must support the ordering of messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> instructs Windows Communication Foundation (WCF) to confirm that the binding must support the ordering of messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

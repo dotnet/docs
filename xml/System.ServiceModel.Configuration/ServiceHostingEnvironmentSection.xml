@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to `true`, requests to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services flow through the ASP.NET HTTP pipeline and communication over non-HTTP protocols is prohibited.  
+ When this property is set to `true`, requests to Windows Communication Foundation (WCF) services flow through the ASP.NET HTTP pipeline and communication over non-HTTP protocols is prohibited.  
   
  ]]></format>
         </remarks>
@@ -149,7 +149,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service can be activated.</summary>
+        <summary>Gets or sets an integer that specifies the minimum amount of free memory that should be available to the system, before a Windows Communication Foundation (WCF) service can be activated.</summary>
         <value>An integer that specifies the minimum amount of free memory that should be available to the system, before a WCF service can be activated.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,9 +183,9 @@
 ## Remarks  
  IIS consists of web sites, which are containers for virtual applications containing virtual directories. The application in a site can be accessed through one or more IIS binding. An IIS binding provides two pieces of information: a binding protocol and binding information. Binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site. An example of a binding protocol can be HTTP, whereas binding information can contain an IP address, Port, host header, etc.  
   
- IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service hosted under a site allows binding to only one baseAddress per scheme.  
+ IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a Windows Communication Foundation (WCF) service hosted under a site allows binding to only one baseAddress per scheme.  
   
- To enable multiple IIS bindings per site for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service, set this property to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.  
+ To enable multiple IIS bindings per site for a Windows Communication Foundation (WCF) service, set this property to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.  
   
  ]]></format>
         </remarks>

@@ -29,7 +29,7 @@
 ## Remarks  
  Apply the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to a service implementation to specify service-wide execution behavior. (To specify execution behavior at the method level, use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute.) This attribute can be applied only to service implementations. For working examples, see the [Service Behaviors Samples](http://msdn.microsoft.com/library/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7).  
   
- <xref:System.ServiceModel.ServiceBehaviorAttribute> properties are a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model feature that enables common features that developers otherwise have to implement. For more information about these and other behaviors, see [Specifying Service Run-Time Behavior](~/docs/framework/wcf/specifying-service-run-time-behavior.md). For more information about the underlying runtime properties that some of the following properties set, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ <xref:System.ServiceModel.ServiceBehaviorAttribute> properties are a Windows Communication Foundation (WCF) programming model feature that enables common features that developers otherwise have to implement. For more information about these and other behaviors, see [Specifying Service Run-Time Behavior](~/docs/framework/wcf/specifying-service-run-time-behavior.md). For more information about the underlying runtime properties that some of the following properties set, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.AddressFilterMode%2A> property specifies the type of filter that the dispatcher system uses to locate the endpoint that handles requests.  
   
@@ -275,7 +275,7 @@ public void MyMethod()
    
   
 ## Examples  
- The following code example demonstrates the different between using <xref:System.ServiceModel.ConcurrencyMode.Single>, <xref:System.ServiceModel.ConcurrencyMode.Reentrant>, and <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] makes and what that means for your operation code.  
+ The following code example demonstrates the different between using <xref:System.ServiceModel.ConcurrencyMode.Single>, <xref:System.ServiceModel.ConcurrencyMode.Reentrant>, and <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that Windows Communication Foundation (WCF) makes and what that means for your operation code.  
   
  [!code-csharp[C_BestPractices-Concurrency#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_bestpractices-concurrency/cs/reentrantandmultiple.cs#1)]  
   
@@ -399,7 +399,7 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, it stores any extra data it doesn’t know about that comes over the wire when deserializing into that type. For example, if a type `Person` has members `FirstName` and `LastName`, and an element called `PhoneNumber` comes in, it is stored. When later serializing the type, `PhoneNumber` will be re-emitted. The problem is that the schema for `Person` exported by that service only has `FirstName` and `LastName`, so [!INCLUDE[indigo1](~/includes/indigo1-md.md)] generates a schema-invalid instance! If strict schema compliance is important, you can set <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> to `true` to turn this re-emitting behavior off.  
+ If a type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, it stores any extra data it doesn’t know about that comes over the wire when deserializing into that type. For example, if a type `Person` has members `FirstName` and `LastName`, and an element called `PhoneNumber` comes in, it is stored. When later serializing the type, `PhoneNumber` will be re-emitted. The problem is that the schema for `Person` exported by that service only has `FirstName` and `LastName`, so Windows Communication Foundation (WCF) generates a schema-invalid instance! If strict schema compliance is important, you can set <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> to `true` to turn this re-emitting behavior off.  
   
  Regardless <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, WCF always processes known data (both in and out) and does not throw exceptions when extra data comes in. You can also set this property using the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
   

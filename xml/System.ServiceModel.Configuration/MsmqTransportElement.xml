@@ -267,7 +267,7 @@
 ## Remarks  
  MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the queue name using DNS, NetBIOS, or IP. With a path name, MSMQ resolves the queue name using Active Directory.  
   
- By default, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.  
+ By default, the Windows Communication Foundation (WCF) queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.  
   
  ]]></format>
         </remarks>

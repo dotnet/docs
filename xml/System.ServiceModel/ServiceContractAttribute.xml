@@ -53,7 +53,7 @@
   
  By default, the <xref:System.ServiceModel.ServiceContractAttribute.Name%2A> and <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> properties are the name of the contract type and `http://tempuri.org`, respectively, and <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> is <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType>. It is recommended that service contracts explicitly set their names, namespaces, and protection levels using these properties. Doing so accomplishes two goals. First, it builds a contract that is not directly connected to the managed type information, enabling you to refactor your managed code and namespaces without breaking the contract as it is expressed in WSDL. Second, explicitly requiring a certain level of protection on the contract itself enables the runtime to validate whether the binding configuration supports that level of security, preventing poor configuration from exposing sensitive information. For more information about protection levels, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
- To expose a service for use by client applications, create a host application to register your service endpoint with [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. You can host WCF services using Windows Activation Services (WAS), in console applications, Windows Service applications, ASP.NET applications, Windows Forms applications, or any other kind of application domain.  
+ To expose a service for use by client applications, create a host application to register your service endpoint with Windows Communication Foundation (WCF). You can host WCF services using Windows Activation Services (WAS), in console applications, Windows Service applications, ASP.NET applications, Windows Forms applications, or any other kind of application domain.  
   
  Hosting in the WAS is very similar to creating an ASP.NET application. For details, see [How to: Host a WCF Service in IIS](~/docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
   
@@ -268,7 +268,7 @@
  [!code-csharp[SCA.Names#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/services.cs#1)]
  [!code-vb[SCA.Names#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/services.vb#1)]  
   
- The following code example shows an [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldProxy` client rather than a `SampleServiceProxy` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
+ The following code example shows an Windows Communication Foundation (WCF) client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldProxy` client rather than a `SampleServiceProxy` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
   
  [!code-csharp[SCA.Names#3](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/client.cs#3)]
  [!code-vb[SCA.Names#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/client.vb#3)]  
@@ -312,7 +312,7 @@
  [!code-csharp[SCA.Names#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/services.cs#1)]
  [!code-vb[SCA.Names#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/services.vb#1)]  
   
- The following code example shows an [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldClient` client rather than a `SampleServiceClient` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
+ The following code example shows an Windows Communication Foundation (WCF) client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldClient` client rather than a `SampleServiceClient` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
   
  [!code-csharp[SCA.Names#3](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/client.cs#3)]
  [!code-vb[SCA.Names#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/client.vb#3)]  

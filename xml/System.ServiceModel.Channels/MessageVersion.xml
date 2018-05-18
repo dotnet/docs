@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.Channels.MessageVersion> contains the versioning information both about the SOAP envelope and the addressing protocol that is used by a message. An instance of <xref:System.ServiceModel.Channels.Message> is bound upon creation to a specific <xref:System.ServiceModel.Channels.MessageVersion> by passing the version as a parameter into one of the <xref:System.ServiceModel.Channels.Message.CreateMessage%2A> overloads.  
   
- All the static "get" properties in this class, such as <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10%2A> and <xref:System.ServiceModel.Channels.MessageVersion.Soap12%2A> have enumeration-like semantics. They provide an enumeration of the possible message versions supported by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime. A message has an envelope structure and an addressing structure. <xref:System.ServiceModel.Channels.MessageVersion> is just a shortcut for supplying {<xref:System.ServiceModel.EnvelopeVersion>, <xref:System.ServiceModel.Channels.AddressingVersion>} together.  
+ All the static "get" properties in this class, such as <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10%2A> and <xref:System.ServiceModel.Channels.MessageVersion.Soap12%2A> have enumeration-like semantics. They provide an enumeration of the possible message versions supported by the Windows Communication Foundation (WCF) runtime. A message has an envelope structure and an addressing structure. <xref:System.ServiceModel.Channels.MessageVersion> is just a shortcut for supplying {<xref:System.ServiceModel.EnvelopeVersion>, <xref:System.ServiceModel.Channels.AddressingVersion>} together.  
   
  There are currently two SOAP envelope versions available: SOAP 1.1 and SOAP 1.2. These versions of SOAP are represented by <xref:System.ServiceModel.EnvelopeVersion> and are returned by the <xref:System.ServiceModel.EnvelopeVersion.Soap11%2A> and <xref:System.ServiceModel.EnvelopeVersion.Soap12%2A> properties. The version of SOAP associated with the <xref:System.ServiceModel.Channels.MessageVersion> can be recovered by using the <xref:System.ServiceModel.Channels.MessageVersion.Envelope%2A> property. For more information, see the schema for [SOAP 1.1](http://go.microsoft.com/fwlink/?LinkId=96641) and [SOAP 1.2](http://go.microsoft.com/fwlink/?LinkId=96642).  
   
@@ -206,7 +206,7 @@
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default message version used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
+        <summary>Gets the default message version used by Windows Communication Foundation (WCF).</summary>
         <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that uses WS-Addressing 1.0 and SOAP1.2.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

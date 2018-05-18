@@ -20,7 +20,7 @@
 ## Remarks  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. The types of encoding for non-SOAP messages are text, JSON and raw.  
   
- The <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> represents the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> in configuration. The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> provides the extensibility point for plugging in a composite encoder that can be used to override how incoming message content-types map to the various inner encoders (text/JSON/raw binary) provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The composite message encoder does not support SOAP or WS-Addressing.  
+ The <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> represents the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> in configuration. The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> provides the extensibility point for plugging in a composite encoder that can be used to override how incoming message content-types map to the various inner encoders (text/JSON/raw binary) provided by Windows Communication Foundation (WCF). The composite message encoder does not support SOAP or WS-Addressing.  
   
    
   

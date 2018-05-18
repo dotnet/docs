@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContextScope> class to create a scope for a specific <xref:System.ServiceModel.OperationContext> object or a scope for a new <xref:System.ServiceModel.OperationContext> object using a specified <xref:System.ServiceModel.IContextChannel> object. An <xref:System.ServiceModel.OperationContextScope> can be used in a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service or WCF client application.  
+ Use the <xref:System.ServiceModel.OperationContextScope> class to create a scope for a specific <xref:System.ServiceModel.OperationContext> object or a scope for a new <xref:System.ServiceModel.OperationContext> object using a specified <xref:System.ServiceModel.IContextChannel> object. An <xref:System.ServiceModel.OperationContextScope> can be used in a Windows Communication Foundation (WCF) service or WCF client application.  
   
  Once the <xref:System.ServiceModel.OperationContextScope> object has established the current operation context, you can use the <xref:System.ServiceModel.OperationContext> to:  
   

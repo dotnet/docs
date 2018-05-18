@@ -27,7 +27,7 @@
 ## Remarks  
  Each of the standard bindings provides parameters for controlling the transfer security requirements. These parameters typically include the security mode that specified whether message-level or transport-level security is used and the choice of client credential type. Based on the choice of options these parameters present, a channel stack is constructed with appropriate security.  
   
- The system-provided bindings supplied by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] are a set designed to meet some of the most common scenario requirements. Each of these bindings allows the specification of security requirements for some specific targeted scenarios.  
+ The system-provided bindings supplied by Windows Communication Foundation (WCF) are a set designed to meet some of the most common scenario requirements. Each of these bindings allows the specification of security requirements for some specific targeted scenarios.  
   
  <xref:System.ServiceModel.NetTcpSecurity> provides the security specifications for <xref:System.ServiceModel.NetTcpBinding>. This is a secure, reliable, optimized binding suitable for cross-machine communication. By default it generates a run-time communication stack that supports TCP for message delivery and Windows Security for message security and authentication, WS-ReliableMessaging for reliability, and binary message encoding.  
   
@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The security mode determines the type of security required by an endpoint. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security offers a variety of mechanisms with which to secure the transfer of messages that are configured with the system-provided bindings. Each of the bindings supports a subset of these security modes. The mode determines the mechanisms by which message transfer security functions (integrity, confidentiality and authentication) are required.  
+ The security mode determines the type of security required by an endpoint. Windows Communication Foundation (WCF) security offers a variety of mechanisms with which to secure the transfer of messages that are configured with the system-provided bindings. Each of the bindings supports a subset of these security modes. The mode determines the mechanisms by which message transfer security functions (integrity, confidentiality and authentication) are required.  
   
    
   

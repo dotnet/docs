@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This `interface` is implemented by <xref:System.Xml.XmlDictionary>, which is used in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to optimize the performance of serialization and deserialization of XML messages. Implement this interface to provide custom <xref:System.Xml.XmlDictionaryString> management.  
+ This `interface` is implemented by <xref:System.Xml.XmlDictionary>, which is used in Windows Communication Foundation (WCF) to optimize the performance of serialization and deserialization of XML messages. Implement this interface to provide custom <xref:System.Xml.XmlDictionaryString> management.  
   
  ]]></format>
     </remarks>

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Robust client and service [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications handle <xref:System.ServiceModel.CommunicationException> objects that may be thrown during communication. There are also two <xref:System.ServiceModel.CommunicationException>-derived exception types (<xref:System.ServiceModel.FaultException%601> and <xref:System.ServiceModel.FaultException>) that clients also often expect. Therefore, in order to prevent the generic <xref:System.ServiceModel.CommunicationException> handler from catching these more specific exception types, catch these exceptions prior to handling <xref:System.ServiceModel.CommunicationException>.  
+ Robust client and service Windows Communication Foundation (WCF) applications handle <xref:System.ServiceModel.CommunicationException> objects that may be thrown during communication. There are also two <xref:System.ServiceModel.CommunicationException>-derived exception types (<xref:System.ServiceModel.FaultException%601> and <xref:System.ServiceModel.FaultException>) that clients also often expect. Therefore, in order to prevent the generic <xref:System.ServiceModel.CommunicationException> handler from catching these more specific exception types, catch these exceptions prior to handling <xref:System.ServiceModel.CommunicationException>.  
   
 -   <xref:System.ServiceModel.FaultException%601> objects are thrown on the client when a SOAP fault that is specified in the operation contract is received in response to a two-way operation (that is, a method with an <xref:System.ServiceModel.OperationContractAttribute> attribute with <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> set to `false`).  
   

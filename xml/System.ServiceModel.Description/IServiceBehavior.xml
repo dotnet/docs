@@ -19,7 +19,7 @@
   
 -   Use the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> method to change run-time property values or insert custom extension objects such as error handlers, message or parameter interceptors, security extensions, and other custom extension objects.  
   
--   Use the <xref:System.ServiceModel.Description.IServiceBehavior.Validate%2A> method to examine the description before [!INCLUDE[indigo1](~/includes/indigo1-md.md)] constructs the executing service to confirm that it can execute properly.  
+-   Use the <xref:System.ServiceModel.Description.IServiceBehavior.Validate%2A> method to examine the description before Windows Communication Foundation (WCF) constructs the executing service to confirm that it can execute properly.  
   
 -   Use the <xref:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A> method to pass to a binding element the custom information for the service so that it can support the service correctly.  
   

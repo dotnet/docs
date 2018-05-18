@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
+ Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
   
  The <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> represents the binding element that specifies the character encoding and message versioning and other settings used for messages using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to create a balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to their base64 encoded format.  
   
@@ -342,7 +342,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Transmission Optimization Mechanism (MTOM) messages in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] can consist of multiple MIME parts. The message always includes a Multipurpose Internet Mail Extensions (MIME) part that contains the infoset portion of the message. In addition, if the message contains binary data that is optimized, it may contain additional MIME parts that contain binary data. There are no requirements imposed about what order these MIME parts must appear in the message. The message reading process sometimes must buffer MIME parts if they appear out of order. The message reading process also may have to buffer relevant MIME header information in each part. This <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement.MaxBufferSize%2A> quota is intended to cap the amount of memory that can be allocated when reading MTOM messages and so limit the excessive consumption of memory due to the buffering requirements.  
+ Message Transmission Optimization Mechanism (MTOM) messages in Windows Communication Foundation (WCF) can consist of multiple MIME parts. The message always includes a Multipurpose Internet Mail Extensions (MIME) part that contains the infoset portion of the message. In addition, if the message contains binary data that is optimized, it may contain additional MIME parts that contain binary data. There are no requirements imposed about what order these MIME parts must appear in the message. The message reading process sometimes must buffer MIME parts if they appear out of order. The message reading process also may have to buffer relevant MIME header information in each part. This <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement.MaxBufferSize%2A> quota is intended to cap the amount of memory that can be allocated when reading MTOM messages and so limit the excessive consumption of memory due to the buffering requirements.  
   
  ]]></format>
         </remarks>

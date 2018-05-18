@@ -61,7 +61,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentCalls%2A> property specifies the maximum number of messages actively processing across all the dispatcher objects in a <xref:System.ServiceModel.ServiceHost> object. Each channel can have one pending message that does not count against the value of <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentCalls%2A> until [!INCLUDE[indigo1](~/includes/indigo1-md.md)] begins to process it.  
+ The <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentCalls%2A> property specifies the maximum number of messages actively processing across all the dispatcher objects in a <xref:System.ServiceModel.ServiceHost> object. Each channel can have one pending message that does not count against the value of <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentCalls%2A> until Windows Communication Foundation (WCF) begins to process it.  
   
 > [!NOTE]
 >  A trace is written every time the value of this property is exceeded.  

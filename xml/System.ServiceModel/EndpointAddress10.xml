@@ -32,7 +32,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.EndpointAddress> is not serializable nor is it tied to a particular version of the WS-Addressing specification. This class provides a WS-Addressing V1 compliant wrapper for the <xref:System.ServiceModel.EndpointAddress> that is serializable (implements the <xref:System.Runtime.Serialization.ISerializable> interface) and bound to the WS-Addressing V1 wire format. The <xref:System.ServiceModel.EndpointAddress10.FromEndpointAddress%28System.ServiceModel.EndpointAddress%29> method does the wrapping and the <xref:System.ServiceModel.EndpointAddress10.ToEndpointAddress%2A> method does the unwrapping, allowing the recovery of the endpoint address after it is serialized on the wire.  
   
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] also supplies a class that provides a serializable type, <xref:System.ServiceModel.EndpointAddressAugust2004>, which is WS-Addressing August 2004 compliant for legacy purposes.  
+ Windows Communication Foundation (WCF) also supplies a class that provides a serializable type, <xref:System.ServiceModel.EndpointAddressAugust2004>, which is WS-Addressing August 2004 compliant for legacy purposes.  
   
    
   

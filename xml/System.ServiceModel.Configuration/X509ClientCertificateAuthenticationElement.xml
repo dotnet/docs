@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security system validates the client certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
+ Windows Communication Foundation (WCF) security system validates the client certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
   
  ]]></format>
         </remarks>

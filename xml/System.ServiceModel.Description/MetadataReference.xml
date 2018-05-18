@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When using [!INCLUDE[indigo1](~/includes/indigo1-md.md)], a metadata endpoint can be created for any service. The endpoint can be queried for metadata that allows a client to communicate with the endpoint. For example, a metadata endpoint can return a Web Services Description Language (WSDL) document that describes the methods and data types of a service.  
+ When using Windows Communication Foundation (WCF), a metadata endpoint can be created for any service. The endpoint can be queried for metadata that allows a client to communicate with the endpoint. For example, a metadata endpoint can return a Web Services Description Language (WSDL) document that describes the methods and data types of a service.  
   
  The <xref:System.ServiceModel.Description.MetadataReference> class is used with WS-MetadataExchange responses where references are directly encoded as `<mex:MetadataReference>` or `<mex:MetadataLocation>`.  
   

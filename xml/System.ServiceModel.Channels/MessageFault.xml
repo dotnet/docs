@@ -27,7 +27,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.Channels.MessageFault> class any time you need an in-memory SOAP fault that can be modified and used to create a SOAP message that contains the fault information.  
   
- Typically, the <xref:System.ServiceModel.Channels.MessageFault> class is used when implementing the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. In this case, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] passes the <xref:System.ServiceModel.Channels.MessageFault> object and you use it for your specific needs (for example, you can customize the <xref:System.ServiceModel.Channels.MessageFault> or to log fault information). However, <xref:System.ServiceModel.Channels.MessageFault> can be used anywhere custom SOAP fault message handling is required.  
+ Typically, the <xref:System.ServiceModel.Channels.MessageFault> class is used when implementing the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. In this case, Windows Communication Foundation (WCF) passes the <xref:System.ServiceModel.Channels.MessageFault> object and you use it for your specific needs (for example, you can customize the <xref:System.ServiceModel.Channels.MessageFault> or to log fault information). However, <xref:System.ServiceModel.Channels.MessageFault> can be used anywhere custom SOAP fault message handling is required.  
   
    
   

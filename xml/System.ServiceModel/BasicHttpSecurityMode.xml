@@ -135,7 +135,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>This mode does not provide message integrity and confidentiality. It provides only HTTP-based client authentication. Use this mode with caution. It should be used in environments where the transfer security is being provided by other means (such as IPSec) and only client authentication is provided by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure.</summary>
+        <summary>This mode does not provide message integrity and confidentiality. It provides only HTTP-based client authentication. Use this mode with caution. It should be used in environments where the transfer security is being provided by other means (such as IPSec) and only client authentication is provided by the Windows Communication Foundation (WCF) infrastructure.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportWithMessageCredential">

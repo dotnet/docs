@@ -57,7 +57,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that instructs [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to store a set of messages before giving the messages to the transport.</summary>
+        <summary>Gets or sets a value that instructs Windows Communication Foundation (WCF) to store a set of messages before giving the messages to the transport.</summary>
         <value>
           <see langword="true" /> if the batching of outgoing messages is allowed; otherwise, <see langword="false" />.</value>
         <remarks>

@@ -20,7 +20,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.NetMsmqBinding> binding provides support for queuing by using Message Queuing (MSMQ) as a transport and enables support for loosely-coupled applications, failure isolation, load leveling and disconnected operations. For a discussion of these features, see [Queues Overview](~/docs/framework/wcf/feature-details/queues-overview.md).  
   
- This is one of the system-provided bindings provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios where configuration values must be set as a service is initialized.  
+ This is one of the system-provided bindings provided by Windows Communication Foundation (WCF). The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios where configuration values must be set as a service is initialized.  
   
    
   
@@ -430,7 +430,7 @@
 ## Remarks  
  The Message Queuing (MSMQ) queue addresses can consist of path names or direct format names. With a direct format name, Message Queuing resolves the queue name using DNS, NetBIOS or IP. With a path name, Message Queuing resolves the queue name using Active Directory.  
   
- By default, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.NetMsmqBinding.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the queue name using Active Directory rather than DNS, NetBIOS, or IP.  
+ By default, the Windows Communication Foundation (WCF) queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.NetMsmqBinding.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the queue name using Active Directory rather than DNS, NetBIOS, or IP.  
   
    
   

@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A [!INCLUDE[indigo1](~/includes/indigo1-md.md)] contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message forming a request/reply message exchange.  
+ A Windows Communication Foundation (WCF) contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message forming a request/reply message exchange.  
   
  A <xref:System.ServiceModel.Description.ContractDescription> object is used to describe contracts and their operations. Within a <xref:System.ServiceModel.Description.ContractDescription>, each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the operation, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> also describes the messages that make up the operation using a collection of <xref:System.ServiceModel.Description.MessageDescription> objects. <xref:System.ServiceModel.Description.ContractDescription> contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute>, and its methods that correspond to endpoint operations are marked with <xref:System.ServiceModel.OperationContractAttribute>.  
   
@@ -230,7 +230,7 @@
 ## Remarks  
  When the <xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.OperationDescription.HasProtectionLevel%2A> property is set to `true`.  
   
- <xref:System.ServiceModel.Description.OperationDescription.HasProtectionLevel%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel%2A> property in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model.  
+ <xref:System.ServiceModel.Description.OperationDescription.HasProtectionLevel%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel%2A> property in the Windows Communication Foundation (WCF) programming model.  
   
  Use the <xref:System.ServiceModel.Description.OperationDescription.HasProtectionLevel%2A> property to indicate that a specific protection level is required by the messages of this operation.  
   
@@ -270,7 +270,7 @@
   
  Typically, you set <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> to `false` to force clients to call another method on the service before they can invoke this one.  
   
- <xref:System.ServiceModel.Description.OperationDescription.IsInitiating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model.  
+ <xref:System.ServiceModel.Description.OperationDescription.IsInitiating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property in the Windows Communication Foundation (WCF) programming model.  
   
  ]]></format>
         </remarks>
@@ -309,7 +309,7 @@
   
  If the <xref:System.ServiceModel.Description.OperationDescription.IsOneWay%2A> property is set to `false` (the default), even methods that return `void` result in a reply message. In this case, the infrastructure creates and sends an empty message to indicate to the caller that the method has returned.  
   
- <xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model.  
+ <xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property in the Windows Communication Foundation (WCF) programming model.  
   
  ]]></format>
         </remarks>
@@ -340,7 +340,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A> property to indicate that calling a service operation terminates the communication session.  
   
- <xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model.  
+ <xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property in the Windows Communication Foundation (WCF) programming model.  
   
  ]]></format>
         </remarks>
@@ -492,7 +492,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> property controls whether the messages of an operation must be encrypted, signed, or both. The value set here is the default value for all messages specified for this operation unless a narrower scope overrides this value.  
   
- <xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model.  
+ <xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property in the Windows Communication Foundation (WCF) programming model.  
   
  When the <xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.OperationDescription.HasProtectionLevel%2A> property is set to `true`.  
   

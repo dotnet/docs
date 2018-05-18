@@ -23,11 +23,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The information contained in the <xref:System.ServiceModel.Description.ServiceDescription> is used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to building the run-time components for the service.  
+ The information contained in the <xref:System.ServiceModel.Description.ServiceDescription> is used by the Windows Communication Foundation (WCF) system to building the run-time components for the service.  
   
  Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
   
- The <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> and <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> methods are available to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+ The <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> and <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> methods are available to reflect on behaviors using the Windows Communication Foundation (WCF) programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
   
  Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>. After calling this method, or one of the other export methods provided by <xref:System.ServiceModel.Description.WsdlExporter>, use the <xref:System.ServiceModel.Description.WsdlExporter.GeneratedWsdlDocuments%2A> property to return the collection of <xref:System.Web.Services.Description.ServiceDescription> objects.  
   
@@ -248,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+ Use this method to reflect on behaviors using the Windows Communication Foundation (WCF) programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
   
  <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service and adds any relevant service behaviors to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>.  
   
@@ -293,7 +293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+ Use this method to reflect on behaviors using the Windows Communication Foundation (WCF) programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
   
  <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, reflects on the type for any the <xref:System.ServiceModel.ServiceBehaviorAttribute> objects and adds them to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service.  
   

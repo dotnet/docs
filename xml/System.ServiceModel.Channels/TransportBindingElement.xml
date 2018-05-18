@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class factors out properties that are common to all of the transport binding elements provided by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. It handles the translation of the base transport settings into run-time manifestations. It delegates the translation of transport-specific settings (for example, HttpProxySettings for HTTP) logic in its concrete derived class transport bindings, which include the following classes:  
+ This class factors out properties that are common to all of the transport binding elements provided by the Windows Communication Foundation (WCF). It handles the translation of the base transport settings into run-time manifestations. It delegates the translation of transport-specific settings (for example, HttpProxySettings for HTTP) logic in its concrete derived class transport bindings, which include the following classes:  
   
 -   <xref:System.ServiceModel.Channels.PeerTransportBindingElement>  
   

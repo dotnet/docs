@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints and which [!INCLUDE[indigo1](~/includes/indigo1-md.md)] robust client and service applications are expected to handle. To prevent the more generic <xref:System.ServiceModel.CommunicationException> handler from catching the more specific <xref:System.ServiceModel.ActionNotSupportedException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
+ This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints and which Windows Communication Foundation (WCF) robust client and service applications are expected to handle. To prevent the more generic <xref:System.ServiceModel.CommunicationException> handler from catching the more specific <xref:System.ServiceModel.ActionNotSupportedException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
   
  ]]></format>
     </remarks>

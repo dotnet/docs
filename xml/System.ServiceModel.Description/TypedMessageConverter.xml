@@ -257,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method takes an untyped [!INCLUDE[indigo1](~/includes/indigo1-md.md)] message, that is, an instance of <xref:System.ServiceModel.Channels.Message>, and converts it into a typed message, that is, an instance of a type that is annotated by the <xref:System.ServiceModel.MessageContractAttribute>.  
+ This method takes an untyped Windows Communication Foundation (WCF) message, that is, an instance of <xref:System.ServiceModel.Channels.Message>, and converts it into a typed message, that is, an instance of a type that is annotated by the <xref:System.ServiceModel.MessageContractAttribute>.  
   
  ]]></format>
         </remarks>

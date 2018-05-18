@@ -64,7 +64,7 @@
       <Docs>
         <summary>Gets or sets a value indicating whether <see cref="M:System.ServiceModel.IClientChannel.DisplayInitializationUI" /> attempts to call the <see cref="T:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer" /> objects in the <see cref="P:System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers" /> property or throws if that collection is not empty.</summary>
         <value>
-          <see langword="true" /> if [!INCLUDE[indigo1](~/includes/indigo1-md.md)] is permitted to invoke interactive channel initializers; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if Windows Communication Foundation (WCF) is permitted to invoke interactive channel initializers; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

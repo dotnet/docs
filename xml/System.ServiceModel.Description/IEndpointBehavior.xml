@@ -41,7 +41,7 @@
   
  For a description of the various properties and customizations available, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   
- Once a customization has been decided upon (and the customization interface implemented if necessary) and the <xref:System.ServiceModel.Description.IEndpointBehavior> has been decided is the appropriate scope of customization, the customization must be inserted into the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime by implementing <xref:System.ServiceModel.Description.IEndpointBehavior> and adding the endpoint behavior to the runtime.  
+ Once a customization has been decided upon (and the customization interface implemented if necessary) and the <xref:System.ServiceModel.Description.IEndpointBehavior> has been decided is the appropriate scope of customization, the customization must be inserted into the Windows Communication Foundation (WCF) runtime by implementing <xref:System.ServiceModel.Description.IEndpointBehavior> and adding the endpoint behavior to the runtime.  
   
  There are two ways to add the behavior to the runtime:  
   

@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] transports support two modes of transferring messages in each direction:  
+ Windows Communication Foundation (WCF) transports support two modes of transferring messages in each direction:  
   
 -   Buffered transfers hold the entire message in a memory buffer until the transfer is complete.  
   

@@ -36,7 +36,7 @@
  [!code-vb[PrincipalPermissionMode#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#2)]  
   
 ## UseAspNetRoles  
- The UseAspNetRoles value is used for all credential types. This mode enables [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to use the ASP.NET role provider to make authorization decisions.  
+ The UseAspNetRoles value is used for all credential types. This mode enables Windows Communication Foundation (WCF) to use the ASP.NET role provider to make authorization decisions.  
   
  When the credential for a service is an X.509 certificate, you can set the `Name` property of the <xref:System.Security.Permissions.PrincipalPermissionAttribute> to a string that consists of the concatenated values of the Subject field and the Thumbprint field, as shown in the following example.  
   

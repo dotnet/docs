@@ -56,7 +56,7 @@
   
  The behavior of the second approach varies slightly if the custom attribute also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute?displayProperty=nameWithType>. In this case, the behavior is as follows:  
   
--   A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and [!INCLUDE[indigo1](~/includes/indigo1-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
+-   A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and Windows Communication Foundation (WCF) ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
 -   A service class.  In this case, the behavior is applied only to endpoints the contract of which is the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   

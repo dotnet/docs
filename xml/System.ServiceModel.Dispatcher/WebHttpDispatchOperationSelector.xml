@@ -206,7 +206,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is possible that an incoming URI matches an operation, but the HTTP method is not allowed by the operation. In such cases, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime returns 404 (Not Found) when `uriMatched` is `false`, and returns 405 (Method Not Allowed) when `uriMatched` is `true`.  
+ It is possible that an incoming URI matches an operation, but the HTTP method is not allowed by the operation. In such cases, the Windows Communication Foundation (WCF) runtime returns 404 (Not Found) when `uriMatched` is `false`, and returns 405 (Method Not Allowed) when `uriMatched` is `true`.  
   
  ]]></format>
         </remarks>

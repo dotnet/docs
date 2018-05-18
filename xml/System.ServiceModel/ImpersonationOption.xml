@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ImpersonationOption> enumeration to control impersonation in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications.  
+ Use the <xref:System.ServiceModel.ImpersonationOption> enumeration to control impersonation in Windows Communication Foundation (WCF) applications.  
   
  This setting interacts with a configuration property on <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement.ImpersonateCallerForAllOperations%2A> in the following table.  
   

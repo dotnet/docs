@@ -20,7 +20,7 @@
 ## Remarks  
  This class is responsible for evaluating all policies (rules that define what a user is allowed to do), comparing the policies to claims made by a client, setting the resulting <xref:System.IdentityModel.Policy.AuthorizationContext> to the <xref:System.ServiceModel.ServiceSecurityContext>, and providing the authorization decision whether to allow or deny access for a given service operation for a caller.  
   
- The <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method is called by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure each time an attempt to access a resource is made. The method returns `true` or `false` to allow or deny access, respectively.  
+ The <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method is called by the Windows Communication Foundation (WCF) infrastructure each time an attempt to access a resource is made. The method returns `true` or `false` to allow or deny access, respectively.  
   
  The <xref:System.ServiceModel.ServiceAuthorizationManager> is part of the WCF*Identity Model* infrastructure. The Identity Model enables you to create custom authorization policies and custom authorization schemes. For more information about how the Identity Model works, see [Managing Claims and Authorization with the Identity Model](~/docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
   
@@ -244,7 +244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[indigo1](~/includes/indigo1-md.md)] implementation provides a default set of authorization policies. These include the primary token that contains the credentials of the requester and all supporting tokens, transport tokens, and external policies if specified.  
+ The Windows Communication Foundation (WCF) implementation provides a default set of authorization policies. These include the primary token that contains the credentials of the requester and all supporting tokens, transport tokens, and external policies if specified.  
   
  You can override this implementation and provide a different set of policies.  
   

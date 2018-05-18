@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The filter table is a core component of the filter engine. The primary use of the filter engine in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] is to match application logic to messages by finding all the filters that match a message.  
+ The filter table is a core component of the filter engine. The primary use of the filter engine in Windows Communication Foundation (WCF) is to match application logic to messages by finding all the filters that match a message.  
   
  A filter table allows multiple filters to be matched against a single message more efficiently than they can be matched separately. A filter table associates filter data with filters. The table is a collection of key-value pairs, where the key is the <xref:System.ServiceModel.Dispatcher.MessageFilter>, and the value is the associated filter data. Filter data can be any data of the type specified in the generic parameter and can be used to specify what actions to take if a message is matched by a filter in the table.  
   

@@ -142,7 +142,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] publishes an HTML help page at the address controlled by the <see cref="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl" /> property.</summary>
+        <summary>Gets or sets a value that controls whether Windows Communication Foundation (WCF) publishes an HTML help page at the address controlled by the <see cref="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl" /> property.</summary>
         <value>
           <see langword="true" /> if WCF publishes an HTML help page; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -259,7 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] returns an HTML help file over HTTPS at the address controlled by the <see cref="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl" /> property.</summary>
+        <summary>Gets or sets a value that specifies whether Windows Communication Foundation (WCF) returns an HTML help file over HTTPS at the address controlled by the <see cref="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl" /> property.</summary>
         <value>
           <see langword="true" /> if an HTML help file is returned to clients making an HTTPS/GET request such as that of an HTML browser; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -347,7 +347,7 @@
       <Docs>
         <summary>Gets or sets a value that specifies whether to include managed exception information in the detail of SOAP faults returned to the client for debugging purposes.</summary>
         <value>
-          <see langword="true" /> if [!INCLUDE[indigo1](~/includes/indigo1-md.md)] returns managed exception information in the SOAP faults for client debugging purposes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if Windows Communication Foundation (WCF) returns managed exception information in the SOAP faults for client debugging purposes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

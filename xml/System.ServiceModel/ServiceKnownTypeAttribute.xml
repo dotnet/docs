@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.ServiceKnownTypeAttribute> is intended for use when creating [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service contracts (interfaces that define the service and its methods). The *known types* are types that may be present in an object graph when serialization or deserialization occurs. For more information about known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ The <xref:System.ServiceModel.ServiceKnownTypeAttribute> is intended for use when creating Windows Communication Foundation (WCF) service contracts (interfaces that define the service and its methods). The *known types* are types that may be present in an object graph when serialization or deserialization occurs. For more information about known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
  To use the <xref:System.ServiceModel.ServiceKnownTypeAttribute.MethodName%2A> property, create a class that contains a method (or methods) that returns an array of types (each being a known type). When applying the attribute, set the `methodName` to the name of a method that returns the list of types and set the `declaringType` to the type that contains the method. The method must return a type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. The method must also include a parameter of type <xref:System.Reflection.ICustomAttributeProvider>.  
   

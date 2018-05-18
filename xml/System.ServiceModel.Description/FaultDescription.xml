@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.FaultDescription> class represents a SOAP fault in a service contract and is used to create a runtime when a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service or client application is started.  
+ The <xref:System.ServiceModel.Description.FaultDescription> class represents a SOAP fault in a service contract and is used to create a runtime when a Windows Communication Foundation (WCF) service or client application is started.  
   
  ]]></format>
     </remarks>
@@ -243,7 +243,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A> property to specify the degree to which the binding must encrypt, sign, or both when sending the SOAP fault. If a binding supports a higher protection level than required by this property, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] may disable the unnecessary protection if it is able to do so.  
+ Use the <xref:System.ServiceModel.Description.FaultDescription.ProtectionLevel%2A> property to specify the degree to which the binding must encrypt, sign, or both when sending the SOAP fault. If a binding supports a higher protection level than required by this property, Windows Communication Foundation (WCF) may disable the unnecessary protection if it is able to do so.  
   
  ]]></format>
         </remarks>

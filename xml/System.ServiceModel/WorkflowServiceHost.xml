@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implements the host used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service model programming model.  
+ Implements the host used by the Windows Communication Foundation (WCF) service model programming model.  
   
  Use the <xref:System.ServiceModel.WorkflowServiceHost> class to configure and expose a workflow as service for use by client applications when you are not using Internet Information Services (IIS) or Windows Activation Services (WAS) to expose a service. Both IIS and WAS interact with a <xref:System.ServiceModel.WorkflowServiceHost> object on your behalf.  
   

@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a default service certificate validator that verifies the service certificate against the trusted people store. It also verifies that the certificate chains up to a valid root. You can implement a custom validator to specify a different behavior and use this property to point to the custom validator.  
+ Windows Communication Foundation (WCF) provides a default service certificate validator that verifies the service certificate against the trusted people store. It also verifies that the certificate chains up to a valid root. You can implement a custom validator to specify a different behavior and use this property to point to the custom validator.  
   
  ]]></format>
         </remarks>
@@ -198,7 +198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security system validates the service certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
+ Windows Communication Foundation (WCF) security system validates the service certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
   
  ]]></format>
         </remarks>

@@ -857,7 +857,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Workflow.Activities.ReceiveActivity.ServiceOperationInfo%2A> property can be set to an instance of type <xref:System.Workflow.Activities.TypedOperationInfo> or <xref:System.Workflow.Activities.OperationInfo>. <xref:System.Workflow.Activities.TypedOperationInfo> can be used to configure a receive activity using an existing [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service contract.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.ServiceOperationInfo%2A> property can be set to an instance of type <xref:System.Workflow.Activities.TypedOperationInfo> or <xref:System.Workflow.Activities.OperationInfo>. <xref:System.Workflow.Activities.TypedOperationInfo> can be used to configure a receive activity using an existing Windows Communication Foundation (WCF) service contract.  
   
  An instance of <xref:System.Workflow.Activities.OperationInfo> can be used to configure a receive activity for the workflow-first contract scenario.  
   

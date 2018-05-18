@@ -20,7 +20,7 @@
 ## Remarks  
  An XPath filter is a query on an XML document defined by an XPath 1.0 expression.  
   
- XPath filters can be added to the `messageLogging` section to log specific messages at the transport and service levels. If no filters are defined, all messages are logged. Filters are applied only to the headers of the message. The body is ignored. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] ignores the message body to improve performance. If you want to filter based on the content of the body, you can create a custom listener with a filter that does so.  
+ XPath filters can be added to the `messageLogging` section to log specific messages at the transport and service levels. If no filters are defined, all messages are logged. Filters are applied only to the headers of the message. The body is ignored. Windows Communication Foundation (WCF) ignores the message body to improve performance. If you want to filter based on the content of the body, you can create a custom listener with a filter that does so.  
   
  When transport message logging is enabled (<xref:System.ServiceModel.Configuration.MessageLoggingElement.LogMessagesAtTransportLevel%2A> is `true`), only messages matching the filters are logged.  
   

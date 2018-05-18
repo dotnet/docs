@@ -435,7 +435,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.UpdateProgress> control requires the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] client library. This client class is registered in the <xref:System.Web.UI.UpdateProgress.GetScriptDescriptors%2A> method and the <xref:System.Web.UI.UpdateProgress.AssociatedUpdatePanelID%2A>, <xref:System.Web.UI.UpdateProgress.DisplayAfter%2A>, and <xref:System.Web.UI.UpdateProgress.DynamicLayout%2A> property values.  
+ The <xref:System.Web.UI.UpdateProgress> control requires the Microsoft Ajax Library client library. This client class is registered in the <xref:System.Web.UI.UpdateProgress.GetScriptDescriptors%2A> method and the <xref:System.Web.UI.UpdateProgress.AssociatedUpdatePanelID%2A>, <xref:System.Web.UI.UpdateProgress.DisplayAfter%2A>, and <xref:System.Web.UI.UpdateProgress.DynamicLayout%2A> property values.  
   
  ]]></format>
         </remarks>

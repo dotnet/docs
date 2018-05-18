@@ -68,9 +68,9 @@
   
 <a name="introduction"></a>   
 ## Introduction  
- The <xref:System.Web.UI.ScriptManager> control is central to Ajax functionality in ASP.NET. The control manages all ASP.NET Ajax resources on a page. This includes downloading [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] scripts to the browser and coordinating partial-page updates that are enabled by using <xref:System.Web.UI.UpdatePanel> controls. In addition, the <xref:System.Web.UI.ScriptManager> control enables you to do the following:  
+ The <xref:System.Web.UI.ScriptManager> control is central to Ajax functionality in ASP.NET. The control manages all ASP.NET Ajax resources on a page. This includes downloading Microsoft Ajax Library scripts to the browser and coordinating partial-page updates that are enabled by using <xref:System.Web.UI.UpdatePanel> controls. In addition, the <xref:System.Web.UI.ScriptManager> control enables you to do the following:  
   
--   Register script that is compatible with partial-page updates. In order to manage dependencies between your script and the core library, any script that you register is loaded after the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] script.  
+-   Register script that is compatible with partial-page updates. In order to manage dependencies between your script and the core library, any script that you register is loaded after the Microsoft Ajax Library script.  
   
 -   Specify whether release or debug scripts are sent to the browser.  
   
@@ -106,16 +106,16 @@
 ## Script Management and Registration  
  The <xref:System.Web.UI.ScriptManager> control enables you to register script that is then rendered as part of the page. The <xref:System.Web.UI.ScriptManager> control registration methods can be broken into the following three categories:  
   
--   Registration methods that guarantee that script dependencies on the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] are maintained.  
+-   Registration methods that guarantee that script dependencies on the Microsoft Ajax Library are maintained.  
   
--   Registration methods that are not dependent on the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)], but that are compatible with <xref:System.Web.UI.UpdatePanel> controls.  
+-   Registration methods that are not dependent on the Microsoft Ajax Library, but that are compatible with <xref:System.Web.UI.UpdatePanel> controls.  
   
 -   Registration methods that support working with <xref:System.Web.UI.UpdatePanel> controls.  
   
  For more information about how to create and use Ajax script in ASP.NET, see [Creating Custom Client Script by Using the Microsoft Ajax Library](http://msdn.microsoft.com/library/285e3a65-b42e-42c5-952d-baf184057899).  
   
 ### Registering Script That Is Dependent on the Microsoft Ajax Library  
- You can use the following methods to register script files in a way that guarantees that any dependencies on the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] are maintained.  
+ You can use the following methods to register script files in a way that guarantees that any dependencies on the Microsoft Ajax Library are maintained.  
   
 |Method|Definition|  
 |------------|----------------|  
@@ -123,7 +123,7 @@
 |<xref:System.Web.UI.ScriptManager.RegisterExtenderControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IExtenderControl> interface that is used to define a  client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
   
 ### Registering Partial-Page Update Compatible Scripts  
- You can use the following methods to register script files that are not dependent on the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] but that are compatible with <xref:System.Web.UI.UpdatePanel> controls. These methods correspond to similar methods of the <xref:System.Web.UI.ClientScriptManager> control. If you are rendering script for use inside an <xref:System.Web.UI.UpdatePanel> control, make sure that you call the methods of the <xref:System.Web.UI.ScriptManager> control.  
+ You can use the following methods to register script files that are not dependent on the Microsoft Ajax Library but that are compatible with <xref:System.Web.UI.UpdatePanel> controls. These methods correspond to similar methods of the <xref:System.Web.UI.ClientScriptManager> control. If you are rendering script for use inside an <xref:System.Web.UI.UpdatePanel> control, make sure that you call the methods of the <xref:System.Web.UI.ScriptManager> control.  
   
 |Method|Definition|  
 |------------|----------------|  
@@ -147,7 +147,7 @@
 |------------|----------------|  
 |<xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A>|Registers a control as a trigger for asynchronous postbacks.|  
 |<xref:System.Web.UI.ScriptManager.RegisterDataItem%2A>|Sends custom data to controls during partial-page rendering.|  
-|<xref:System.Web.UI.ScriptManager.RegisterDispose%2A>|Registers a dispose script for a control that is inside an <xref:System.Web.UI.UpdatePanel> control. The script is executed when the <xref:System.Web.UI.UpdatePanel> control is updated or deleted. The dispose method is used for client components that are part of the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] and that have to free resources when a component is no longer used.|  
+|<xref:System.Web.UI.ScriptManager.RegisterDispose%2A>|Registers a dispose script for a control that is inside an <xref:System.Web.UI.UpdatePanel> control. The script is executed when the <xref:System.Web.UI.UpdatePanel> control is updated or deleted. The dispose method is used for client components that are part of the Microsoft Ajax Library and that have to free resources when a component is no longer used.|  
 |<xref:System.Web.UI.ScriptManager.RegisterPostBackControl%2A>|Registers a control as a trigger for a full postback. This method is used for controls inside an <xref:System.Web.UI.UpdatePanel> control that would otherwise perform asynchronous postbacks.|  
   
 <a name="web_service_references"></a>   
@@ -1943,7 +1943,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%2A> method to register a client script array that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. This method registers the array when `control` represents a control that is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register an array every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%28System.Web.UI.Page%2CSystem.String%2CSystem.String%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%2A> method to register a client script array that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. This method registers the array when `control` represents a control that is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register an array every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%28System.Web.UI.Page%2CSystem.String%2CSystem.String%29> overload of this method.  
   
  If you want to register an array that does not pertain to partial-page updates, and if you want to register the array only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -1987,7 +1987,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%2A> method to register a client script array that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. This method registers the array every time that an asynchronous postback occurs. To register an array for a control that is inside an <xref:System.Web.UI.UpdatePanel> control so that the array is registered only when the panel is updated, use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%28System.Web.UI.Control%2CSystem.String%2CSystem.String%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%2A> method to register a client script array that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. This method registers the array every time that an asynchronous postback occurs. To register an array for a control that is inside an <xref:System.Web.UI.UpdatePanel> control so that the array is registered only when the panel is updated, use the <xref:System.Web.UI.ScriptManager.RegisterArrayDeclaration%28System.Web.UI.Control%2CSystem.String%2CSystem.String%29> overload of this method.  
   
  If you want to register an array that does not pertain to partial-page updates, and if you want to register the array only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -2095,7 +2095,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterClientScriptBlock%2A> method to register a client script block that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. Client script blocks that are registered by using this method are sent to the page only when `control` represents a control that is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register a script block every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterClientScriptBlock%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterClientScriptBlock%2A> method to register a client script block that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. Client script blocks that are registered by using this method are sent to the page only when `control` represents a control that is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register a script block every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterClientScriptBlock%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload of this method.  
   
  If you want to register a script block that does not pertain to partial-page updates, and if you want to register the script block only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -2325,7 +2325,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterClientScriptResource%2A> method to register a script that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. Script resources that are registered by using this method are registered only when `control` represents a control that is inside an <xref:System.Web.UI.UpdatePanel> control that is updated. To register a script every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterStartupScript%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterClientScriptResource%2A> method to register a script that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. Script resources that are registered by using this method are registered only when `control` represents a control that is inside an <xref:System.Web.UI.UpdatePanel> control that is updated. To register a script every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterStartupScript%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload of this method.  
   
  If you want to register a script block that does not pertain to partial-page updates, and if you want to register the script block only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -2532,7 +2532,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method to register `dispose` scripts for controls that are inside an <xref:System.Web.UI.UpdatePanel> control. During asynchronous postbacks, <xref:System.Web.UI.UpdatePanel> controls can be updated, deleted, or created. When a panel is updated or deleted, any `dispose` scripts that are registered for controls that are inside the <xref:System.Web.UI.UpdatePanel> are called. In typical page development scenarios, you do not have to call the <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method.  
   
- The <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method is intended for use by control developers to register script or create controls that inherit from the <xref:System.Web.UI.IScriptControl> interface. For example, you might use a `dispose` script if you develop a client control by using composition. In your control, you implement <xref:System.Web.UI.IScriptControl> and render individual controls. You register the `dispose` method of any item that does not correspond to a defined client component such as `Sys.TextBox`. If your custom control composes elements that correspond to client components in the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)], you do not have to register a `dispose` script, because `dispose` is called automatically. Therefore, use the <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method for client components that are part of the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] and that have to free resources when a component is no longer used.  
+ The <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method is intended for use by control developers to register script or create controls that inherit from the <xref:System.Web.UI.IScriptControl> interface. For example, you might use a `dispose` script if you develop a client control by using composition. In your control, you implement <xref:System.Web.UI.IScriptControl> and render individual controls. You register the `dispose` method of any item that does not correspond to a defined client component such as `Sys.TextBox`. If your custom control composes elements that correspond to client components in the Microsoft Ajax Library, you do not have to register a `dispose` script, because `dispose` is called automatically. Therefore, use the <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method for client components that are part of the Microsoft Ajax Library and that have to free resources when a component is no longer used.  
   
  The <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method can be called multiple times for a control. Multiple scripts are aggregated. The order of disposing scripts matches the order in which the scripts were registered.  
   
@@ -2587,7 +2587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterExpandoAttribute%2A> method to register a custom (expando) property for a control that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterExpandoAttribute%2A> method to register a custom (expando) property for a control that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies.  
   
  The <xref:System.Web.UI.ScriptManager.RegisterExpandoAttribute%2A> method registers a name/value pair as a custom attribute for the specified control. The property is set dynamically from ECMAScript (JavaScript) to preserve XHTML compatibility for the rendered control's markup. Set `encode` to `true` if you have to escape any characters in the dynamic property's value.  
   
@@ -2710,7 +2710,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%2A> method to register a hidden field that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. This method registers the hidden field when the control that is registering the field is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register a hidden field every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%28System.Web.UI.Page%2CSystem.String%2CSystem.String%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%2A> method to register a hidden field that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. This method registers the hidden field when the control that is registering the field is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register a hidden field every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%28System.Web.UI.Page%2CSystem.String%2CSystem.String%29> overload of this method.  
   
  If you want to register a hidden field that does not pertain to partial-page updates, and if you want to register the hidden field only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterHiddenField%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -2756,7 +2756,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%2A> method to register a hidden field that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. This method registers the hidden field every time that an asynchronous postback occurs. To register a hidden field for a control that is inside an <xref:System.Web.UI.UpdatePanel> control so that the field is registered only when the panel is updated, use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%28System.Web.UI.Control%2CSystem.String%2CSystem.String%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%2A> method to register a hidden field that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. This method registers the hidden field every time that an asynchronous postback occurs. To register a hidden field for a control that is inside an <xref:System.Web.UI.UpdatePanel> control so that the field is registered only when the panel is updated, use the <xref:System.Web.UI.ScriptManager.RegisterHiddenField%28System.Web.UI.Control%2CSystem.String%2CSystem.String%29> overload of this method.  
   
  If you want to register a hidden field that does not pertain to partial-page updates, and if you want to register the hidden field only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterHiddenField%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -2868,7 +2868,7 @@
 ## Remarks  
  The <xref:System.Web.UI.ScriptManager.RegisterOnSubmitStatement%2A> adds script that is executed before the form is submitted, which lets you modify the submission or cancel it.  
   
- You use the <xref:System.Web.UI.ScriptManager.RegisterOnSubmitStatement%2A> method to render an `onsubmit` statement that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. JavaScript code that is registered by using this method is sent to the page only when the control that is registering the statement is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register code with every asynchronous postback, use the <xref:System.Web.UI.ScriptManager.RegisterOnSubmitStatement%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterOnSubmitStatement%2A> method to render an `onsubmit` statement that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. JavaScript code that is registered by using this method is sent to the page only when the control that is registering the statement is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register code with every asynchronous postback, use the <xref:System.Web.UI.ScriptManager.RegisterOnSubmitStatement%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%29> overload of this method.  
   
  If you want to register JavaScript code that does not pertain to partial-page updates, and if you want to register the code only one time during initial page rendering, use the <xref:System.Web.UI.Page.RegisterOnSubmitStatement%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -3145,7 +3145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Web.UI.ScriptManager.RegisterStartupScript%2A> method to register a startup script block for a page that is compatible with partial-page rendering and that has no [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] dependencies. Startup script blocks that are registered by using this method are sent to the page only when the control that is registering the block is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register a startup script block every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterStartupScript%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload of this method.  
+ You use the <xref:System.Web.UI.ScriptManager.RegisterStartupScript%2A> method to register a startup script block for a page that is compatible with partial-page rendering and that has no Microsoft Ajax Library dependencies. Startup script blocks that are registered by using this method are sent to the page only when the control that is registering the block is inside an <xref:System.Web.UI.UpdatePanel> control that is being updated. To register a startup script block every time that an asynchronous postback occurs, use the <xref:System.Web.UI.ScriptManager.RegisterStartupScript%28System.Web.UI.Page%2CSystem.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload of this method.  
   
  If you want to register a startup script that does not pertain to partial-page updates, and if you want to register the script only one time during initial page rendering, use the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> object from the <xref:System.Web.UI.Page.ClientScript%2A> property of the page.  
   
@@ -3555,7 +3555,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
   
  The <xref:System.Web.UI.ScriptManager> control registers script files during the control's <xref:System.Web.UI.Control.PreRender> event.  
   
- The <xref:System.Web.UI.ScriptManager.Scripts%2A> collection does not contain the core [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] scripts. The scripts in the core library are rendered automatically; they do not have to be registered with the <xref:System.Web.UI.ScriptManager> control. However, if you want to override a core script or any control script and substitute a different version of the script, you can add your version to the <xref:System.Web.UI.ScriptManager.Scripts%2A> collection.  
+ The <xref:System.Web.UI.ScriptManager.Scripts%2A> collection does not contain the core Microsoft Ajax Library scripts. The scripts in the core library are rendered automatically; they do not have to be registered with the <xref:System.Web.UI.ScriptManager> control. However, if you want to override a core script or any control script and substitute a different version of the script, you can add your version to the <xref:System.Web.UI.ScriptManager.Scripts%2A> collection.  
   
  ]]></format>
         </remarks>

@@ -1,5 +1,5 @@
 ---
-title: "?? Operator (C# Reference)"
+title: "?? Operator (double question mark) (C# Reference)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "??_CSharpKeyword"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "conditional-AND operator (&&) [C#]"
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 ---
-# ?? Operator (C# Reference)
+# ?? Operator (double question mark) (C# Reference)
 The `??` operator is called the null-coalescing operator.  It returns the left-hand operand if the operand is not null; otherwise it returns the right hand operand.  
   
 ## Remarks  

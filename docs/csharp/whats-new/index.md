@@ -17,9 +17,9 @@ major features added in each release.
 * [C# 7.3](csharp-7-3.md):
   - This page describes the latest features in the C# language. C# 7.3 is currently available in [Visual Studio 2017 version 15.7](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.1 SDK Preview](../../core/whats-new/index.md).
 * [C# 7.2](csharp-7-2.md):
-  - This page describes the latest features in the C# language. C# 7.2 is currently available in [Visual Studio 2017 version 15.5](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+  - This page describes the features added in the C# language. C# 7.2 is currently available in [Visual Studio 2017 version 15.5](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 * [C# 7.1](csharp-7-1.md):
-  - This page describes the features in C# 7.1. These features were added in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+  - This page describes the features added in C# 7.1. These features were added in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 * [C# 7.0](csharp-7.md):
   - This page describes the features added in C# 7.0. These features were added in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later
 * [C# 6](csharp-6.md):

@@ -5,7 +5,7 @@ ms.date: 05/16/2018
 ---
 # What's new in C# 7.3
 
-There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. In addition, new compilers were added in this release.
+There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. In addition, new compiler options were added in this release.
 
 The following new features support the theme of better performance for safe code:
 
@@ -19,15 +19,14 @@ The following enhancements were made to existing features:
 
 - You can test `==` and `!=` with tuple types.
 - You can use expression variables in more locations.
-- You may attach attributes to the backing field of auto implemented properties.
+- You may attach attributes to the backing field of auto-implemented properties.
 - Method resolution when arguments differ by `in` has been improved.
-- Overload resolution new has fewer ambiguous cases.
+- Overload resolution now has fewer ambiguous cases.
 
 The new compiler options are:
 
-- `deterministic` to ensure that subsequent compilations of the same source generate the same binary output.
-- `publicsign` to enable OSS signing of assemblies.
-- `pathmap` to provide a mapping for source directories.
+- `-publicsign` to enable OSS signing of assemblies.
+- `-pathmap` to provide a mapping for source directories.
 
 The remainder of this article provides details and links to learn more about each of the improvements.
 
@@ -82,6 +81,7 @@ Now, that same syntax can be applied to arrays that are declared with `stackallo
 ```csharp
 int* pArr = stackalloc int[3] {1, 2, 3};
 int* pArr2 = stackalloc int[] { 1, 2, 3};
+Span<int> arr = stackalloc [] {1, 2, 3};
 ```
 
 You can learn more in the article on the [`stackalloc` statement](../language-reference/keywords/stackalloc.md).
@@ -106,7 +106,7 @@ The second theme provides improvements to features in the language. These featur
 
 ### Tuples support `==` and `!=`
 
-The C# tuple types now support `==` and `!=`. You can learn more about the rules in the article on [tuples](../tuples.md).
+The C# tuple types now support `==` and `!=`. You can learn more about the rules in the article on [tuples](../tuples.md#equality-and-tuples).
 
 ### Attach attributes to the backing fields for auto-implemented properties
 
@@ -128,7 +128,10 @@ static void M(S arg);
 static void M(in S arg);
 ```
 
-Now, the by value (first in the preceding example) overload is better than the by readonly reference version. To specify that by readonly reference version, you must include the `in` modifier when calling the method.
+Now, the by value (first in the preceding example) overload is better than the by readonly reference version. To specify the by readonly reference version is called, you must include the `in` modifier when calling the method.
+
+> [!NOTE]
+> This was implemented as a bug fix. This no longer is ambiguous even with the language version set to "7.2".
 
 For more information, see the article on the [`in` parameter modifier](../language-reference/keywords/in-parameter-modifier.md).
 
@@ -168,22 +171,14 @@ You'll only notice this change because you'll find fewer compiler errors for amb
 
 New compiler options support new build and DevOps scenarios for C# programs
 
-### Deterministic compiler output
-
-The `-deterministic` option instructs the compiler to produce a byte-for-byte identical output assembly for successive compilations of the same source files.
-
-By default, every compilation unique output on each compilation. The compiler adds a timestamp, and a GUID generated from random numbers. You use this option if you want to compare the byte-for-byte output to ensure consistency across builds.
-
-For more information, see the [deterministic compiler option](../language-reference/compiler-options/deterministic-compiler-option.md) article.
-
 ### Public or OSS signing
 
 The `-publicsign` compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
 
-For more information, see the [publicsign compiler option](../language-reference/compiler-options/publicsign-compiler-option.md) article.
+For more information, see the [-publicsign compiler option](../language-reference/compiler-options/publicsign-compiler-option.md) article.
 
 ### pathmap
 
 The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The pathmap option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
 
-For more information, see the [pathmap compiler option](../language-reference/compiler-options/pathmap-compile-option.md) article.
+For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compile-option.md) article.

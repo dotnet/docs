@@ -22,7 +22,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|  
 |[-bugreport](bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with -errorreport:prompt or -errorreport:send.|  
 |[-checked](checked-compiler-option.md)|Causes the compiler to generate overflow checks.|  
-|-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
+|-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
 |[-codepage](codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|  
 |[-debug](debug-compiler-option.md)|Emits debugging information.|  
 |[-define](define-compiler-option.md)|Defines conditional compilation symbols.|  
@@ -37,13 +37,13 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-incremental|Enables incremental compilation [obsolete].|  
 |[-keycontainer](keycontainer-compiler-option.md)|Specifies a strong name key container.|  
 |[-keyfile](keyfile-compiler-option.md)|Specifies a strong name key file.|  
-|[-langversion:\<string>](langversion-compiler-option.md)|Specify language version mode: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, or Latest |  
+|[-langversion:\<string>](langversion-compiler-option.md)|Specifies the language version: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3, or Latest |  
 |[-lib](lib-compiler-option.md)|Specifies additional directories in which to search for references.|  
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|  
 |[-linkresource](linkresource-compiler-option.md)|Links the specified resource to this assembly.|  
 |[-main](main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|  
 |[-moduleassemblyname](moduleassemblyname-compiler-option.md)|Specifies an assembly whose non-public types a .netmodule can access.|  
-|-modulename:\<string>|Specify the name of the source module|  
+|-modulename:\<string>|Specifies the name of the source module|  
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to auto include CSC.RSP file.|  
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler copyright message.|  
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|  
@@ -60,7 +60,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|  
 |[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|  
 |[-resource](resource-compiler-option.md)|Embeds the specified resource.|  
-|-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|  
+|-ruleset:\<file>|Specifies a ruleset file that disables specific diagnostics.|  
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|  
 |[-target](target-compiler-option.md)|Specifies the format of the output file by using one of four options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md).|  
 |[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../../../csharp/language-reference/keywords/unsafe.md) code.|  

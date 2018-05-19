@@ -35,7 +35,7 @@ The compiler generates an ID string for each construct in your code that is tagg
   
     -   Intrinsic types (for example, ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF. and ELEMENT_TYPE_VOID) are represented as the fully qualified name of the corresponding full type. For example, System.Int32 or System.TypedReference.  
   
-    -   ELEMENT_TYPE_PTR is represented as a '*' following the modified type.  
+    -   ELEMENT_TYPE_PTR is represented as a '\*' following the modified type.  
   
     -   ELEMENT_TYPE_BYREF is represented as a '\@' following the modified type.  
   
@@ -63,11 +63,11 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 -   For conversion operators only (op_Implicit and op_Explicit), the return value of the method is encoded as a '~' followed by the return type, as encoded above.  
   
--   For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters.  For example,  
+-   For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters. For example,  
   
      ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.  
   
-     For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with back ticks (for example \`0,`1).  Each number representing a zero-based array notation for the type's generic parameters.  
+     For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with backticks (for example \`0,\`1). Each number representing a zero-based array notation for the type's generic parameters.  
   
 ## Examples  
  The following examples show how the ID strings for a class and its members would be generated:  

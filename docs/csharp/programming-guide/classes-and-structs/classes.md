@@ -78,10 +78,9 @@ When the object is created, the memory is allocated on the managed heap, and the
   
  Class definitions can be split between different source files. For more information, see [Partial Classes and Methods](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
   
-## Description  
- In the following example, a public class that contains a single field, a method, and a special method called a constructor is defined. For more information, see [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md). The class is then instantiated with the `new` keyword.  
-  
 ## Example  
+ The following example defines a public class that contains an [auto-implemented property](auto-implemented-properties.md), a method, and a special method called a constructor. For more information, see [Properties](properties.md), [Methods](methods.md), and [Constructors](constructors.md) topics. The instances of the class are then instantiated with the `new` keyword.  
+  
  [!code-csharp[Class Example](~/samples/snippets/csharp/programming-guide/classes-and-structs/class-example.cs)] 
   
 ## C# Language Specification  

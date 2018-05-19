@@ -127,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.DownloadStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }

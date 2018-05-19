@@ -147,7 +147,9 @@ There are many times when initializing a value can have side effects, such as in
 module MyApi =
     let dep1 = File.ReadAllText "/Users/{your name}/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
-    let dep3 = Random().Next() // Random is not thread-safe
+
+    let private r = Random()
+    let dep3() = r.Next() // Problematic if multiple threads use this
 
     let function1 arg = doStuffWith dep1 dep2 dep3 arg
     let function2 arg = doSutffWith dep1 dep2 dep3 arg
@@ -155,7 +157,9 @@ module MyApi =
 
 This is frequently a bad idea for a few reasons:
 
-First, it makes the API itself reliant on shared state. For example, multiple calling threads may be attempting to access the `dep3` value (and it is not thread-safe). Secondly, it pushes application configuration into the codebase itself. This is difficult to maintain for larger codebases.
+First, application configuration is pushed into the codebase with `dep1` and `dep2`. This is difficult to maintain in larger codebases.
+
+Second, statically initialized data should not include values that are not thread safe if your component will itself use multiple threads. This is clearly violated by `dep3`.
 
 Finally, module initialization compiles into a static constructor for the entire compilation unit. If any error occurs in let-bound value initialization in that module, it manifests as a `TypeInitializationException` that is then cached for the entire lifetime of the application. This can be difficult to diagnose. There is usually an inner exception that you can attempt to reason about, but if there is not, then there is no telling what the root cause is.
 

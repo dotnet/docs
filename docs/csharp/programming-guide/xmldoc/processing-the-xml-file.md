@@ -37,7 +37,7 @@ The compiler generates an ID string for each construct in your code that is tagg
   
     -   ELEMENT_TYPE_PTR is represented as a '*' following the modified type.  
   
-    -   ELEMENT_TYPE_BYREF is represented as a '@' following the modified type.  
+    -   ELEMENT_TYPE_BYREF is represented as a '\@' following the modified type.  
   
     -   ELEMENT_TYPE_PINNED is represented as a '^' following the modified type. The C# compiler never generates this.  
   

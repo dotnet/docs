@@ -63,7 +63,7 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 -   For conversion operators only (op_Implicit and op_Explicit), the return value of the method is encoded as a '~' followed by the return type, as encoded above.  
   
--   For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters. For example,  
+-   For generic types, the name of the type is followed by a backtick and then a number that indicates the number of generic type parameters. For example:
   
      ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.  
   

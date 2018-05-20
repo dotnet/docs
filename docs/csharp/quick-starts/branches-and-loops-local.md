@@ -38,7 +38,7 @@ written one of the possible branches for an `if` statement: the true branch.
 > As you explore C# (or any programming language), you'll
 > make mistakes when you write code. The compiler will
 > find and report the errors. Look closely at the error 
-> output and the code that generated the error. The compler
+> output and the code that generated the error. The compiler
 > error can usually help you find the problem.
 
 This first sample shows the power of `if` and Boolean types. A *Boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for Boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped.

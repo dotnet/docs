@@ -47,7 +47,7 @@ Starting with C# 7.0, `throw` can be used as an expression as well as a statemen
 
    [!code-csharp[csrefKeyword#4](../../../../samples/snippets/csharp/language-reference/keywords/throw/conditional.cs#1)]  
   
-- [the null-coalescing operator](../operators/null-conditional-operator.md). In the following example, a `throw` expression is used with a null-coalescing operator to throw an exception if the string assigned to a `Name` property is `null`.
+- [the null-coalescing operator](../operators/null-coalescing-operator.md). In the following example, a `throw` expression is used with a null-coalescing operator to throw an exception if the string assigned to a `Name` property is `null`.
  
    [!code-csharp[csrefKeyword#5](../../../../samples/snippets/csharp/language-reference/keywords/throw/coalescing.cs#1)]  
  

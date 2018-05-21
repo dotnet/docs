@@ -54,7 +54,7 @@ Forces command-line output in English.
 
 Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
 
-`dotnet nuget locals –l all`
+`dotnet nuget locals all -l`
 
 Displays the path for the local http-cache directory:
 

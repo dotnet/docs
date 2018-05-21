@@ -45,60 +45,82 @@ unsafe struct S
 }
 ```
 
-In earlier versions of C#, you needed to pin a variable to access one of the integers that are part of `myFixedField`. Now, the following code compiles:
+In earlier versions of C#, you needed to pin a variable to access one of the integers that are part of `myFixedField`. Now, the following code compiles in a safe context:
 
 ```csharp
-var s = new S();
-int p = s.myFixedField[5];
+class C
+{
+    static S s = new S();
+
+    public void M()
+    {
+        int p = s.myFixedField[5];
+    }
+}
 ```
 
-The variable `p` doesn't need to be pinned. Note that you still need an `unsafe` context.
+The variable `p` doesn't need to be pinned. Note that you still need an `unsafe` context. In earlier versions of C#, you need to declare a second fixed pointer:
 
-You can learn more in the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
+```csharp
+class C
+{
+    static S s = new S();
+
+    public void M()
+    {
+        fixed (int* ptr = s.myFixedField)
+        {
+            int p = ptr[5];
+        }
+    }
+}
+```
+
+Fore more information, see the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
 
 ### `ref` local variables may be reassigned
 
-Now, `ref` locals may be reassigned to refer to different storage after being initialized. The following code now compiles:
+Now, `ref` locals may be reassigned to refer to different instances after being initialized. The following code now compiles:
 
-```csharp 
+```csharp
 ref VeryLargeStruct reflocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 
-You can learn more in the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md).
+For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md).
 
 ### `stackalloc` arrays support initializers
 
-You have been able to specify the values for elements in an array when you initialize the array:
+You've been able to specify the values for elements in an array when you initialize it:
 
 ```csharp
 var arr = new int[3] {1, 2, 3};
-var arr2 = new int[] { 1, 2, 3};
+var arr2 = new int[] {1, 2, 3};
 ```
 
 Now, that same syntax can be applied to arrays that are declared with `stackalloc`:
 
 ```csharp
 int* pArr = stackalloc int[3] {1, 2, 3};
-int* pArr2 = stackalloc int[] { 1, 2, 3};
+int* pArr2 = stackalloc int[] {1, 2, 3};
 Span<int> arr = stackalloc [] {1, 2, 3};
 ```
 
-You can learn more in the article on the [`stackalloc` statement](../language-reference/keywords/stackalloc.md).
+For more information, see the [`stackalloc` statement](../language-reference/keywords/stackalloc.md) article in the language reference.
 
 ### More types support the `fixed` statement
 
 The `fixed` statement supported a limited set of types. Starting with C# 7.3, any type that contains a `DangerousGetPinnableReference()` method that returns a `ref T` or `ref readonly T` may be `fixed`. Adding this feature means that `fixed` can be used with <xref:System.Span%601?displayProperty=nameWithType> and related types.
 
-You can learn more in the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
+For more information, see the [`fixed` statement](../language-reference/keywords/fixed-statement.md) article in the language reference.
 
 ### Enhanced generic constraints
 
 You can now specify the type <xref:System.Enum?displayProperty=nameWithType> or <xref:System.Delegate?displayProperty=nameWithType> as base class constraints for a type parameter.
 
-You can also use the new `unmanaged` constraint, to specify that a type parameter must be an **unmanaged type**. An **unmanaged type** is a type that isn't a reference type, and doesn't contain any reference type at any level of nesting.
+You can also use the new `unmanaged` constraint, to specify that a type parameter must be an **unmanaged type**. An **unmanaged type** is a type that isn't a reference type and doesn't contain any reference type at any level of nesting.
 
-You can learn more in the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraints.md) and the article covering [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
+For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## Make existing features better
 
@@ -106,7 +128,7 @@ The second theme provides improvements to features in the language. These featur
 
 ### Tuples support `==` and `!=`
 
-The C# tuple types now support `==` and `!=`. You can learn more about the rules in the article on [tuples](../tuples.md#equality-and-tuples).
+The C# tuple types now support `==` and `!=`. Fore more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md#equality-and-tuples).
 
 ### Attach attributes to the backing fields for auto-implemented properties
 
@@ -117,7 +139,7 @@ This syntax is now supported:
 public int SomeProperty { get; set; }
 ```
 
-The attribute `SomeThingAboutFieldAttribute` is applied to the compiler generated backing field for `SomeProperty`. You can learn more in the articles on [attributes in C#](../programming-guide/concepts/attributes/index.md).
+The attribute `SomeThingAboutFieldAttribute` is applied to the compiler generated backing field for `SomeProperty`. For more information, see [attributes](../programming-guide/concepts/attributes/index.md) in the C# programming guide.
 
 ### `in` method overload resolution tiebreaker
 
@@ -128,7 +150,7 @@ static void M(S arg);
 static void M(in S arg);
 ```
 
-Now, the by value (first in the preceding example) overload is better than the by readonly reference version. To specify the by readonly reference version is called, you must include the `in` modifier when calling the method.
+Now, the by value (first in the preceding example) overload is better than the by readonly reference version. To call the version with the readonly reference argument, you must include the `in` modifier when calling the method.
 
 > [!NOTE]
 > This was implemented as a bug fix. This no longer is ambiguous even with the language version set to "7.2".
@@ -137,7 +159,7 @@ For more information, see the article on the [`in` parameter modifier](../langua
 
 ### Extend expression variables in initializers
 
-The syntax added in C# 7.0 to permit out variable declarations has been extended to include field initializers, property initializers, constructor initializers, and query clauses. It enables code such as the following example:
+The syntax added in C# 7.0 to aloow `out` variable declarations has been extended to include field initializers, property initializers, constructor initializers, and query clauses. It enables code such as the following example:
 
 ```csharp
 public class B
@@ -169,9 +191,9 @@ You'll only notice this change because you'll find fewer compiler errors for amb
 
 ## New compiler options
 
-New compiler options support new build and DevOps scenarios for C# programs
+New compiler options support new build and DevOps scenarios for C# programs.
 
-### Public or OSS signing
+### Public or Open Source signing
 
 The `-publicsign` compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
 
@@ -179,6 +201,6 @@ For more information, see the [-publicsign compiler option](../language-referenc
 
 ### pathmap
 
-The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The pathmap option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
+The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
 
 For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compile-option.md) article.

@@ -359,9 +359,7 @@
 ## Remarks  
  HTML pages can contain script code, usually written in JScript or VBScript, that executes when a page is loaded. <xref:System.Windows.Forms.HtmlWindow.Error> occurs whenever a script encounters a run-time error. Because script code is late-bound, which means that calls against the object are not resolved until run-time, errors can include everything from referencing a null object to calling an undefined property or method.  
   
- You can set the <xref:System.Windows.Forms.HtmlElementErrorEventArgs.Handled%2A> property of <xref:System.Windows.Forms.HtmlElementErrorEventArgs> to true in order to prevent the native error dialog box in Internet Explorer from displaying.  
-  
- For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ You can set the <xref:System.Windows.Forms.HtmlElementErrorEventArgs.Handled%2A> property of <xref:System.Windows.Forms.HtmlElementErrorEventArgs> to true in order to prevent the native error dialog box in Internet Explorer from displaying.
   
    
   
@@ -490,7 +488,7 @@
   
 -   A `FRAME` clicked by the user, but only if the user's click does not put focus on an element within the window.  
   
- You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event, or prevent it from bubbling. For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event, or prevent it from bubbling.
   
    
   
@@ -591,9 +589,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.HtmlWindow.Load> event works similarly to the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event on the <xref:System.Windows.Forms.WebBrowser> control: it signals that it is safe to access HTML elements inside of the document.  
   
- You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
-  
- For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.Load> event.
   
    
   

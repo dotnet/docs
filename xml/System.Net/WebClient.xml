@@ -4079,7 +4079,7 @@ internal class MyWebClient : WebClient
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.WebClient.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with remote servers on behalf of this <xref:System.Net.WebClient> object. The proxy is set by the system using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set the <xref:System.Net.WebClient.Proxy%2A> property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method.  
+ The <xref:System.Net.WebClient.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with remote servers on behalf of this <xref:System.Net.WebClient> object. The proxy is set by the system using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set the <xref:System.Net.WebClient.Proxy%2A> property to `null`.  
   
  For information on automatic proxy detection, see [Automatic Proxy Detection](~/docs/framework/network-programming/automatic-proxy-detection.md).  
   

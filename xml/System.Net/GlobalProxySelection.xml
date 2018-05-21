@@ -111,9 +111,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method returns a blank <xref:System.Net.IWebProxy> instance to indicate that no proxy is used to access an Internet resource.  
-  
-   
+ 
+The <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method returns a blank <xref:System.Net.IWebProxy> instance to indicate that no proxy is used to access an Internet resource.  
+
+Instead of calling the `GetEmptyWebProxy` method, you can assign `null` to members such as the <xref:System.Net.WebClient.Proxy?displayProperty=nameWithType> property, which specifies the proxy that communicates with remote servers on behalf of the <xref:System.Net.WebClient> object.   
   
 ## Examples  
  The following code example creates a <xref:System.Net.WebRequest> instance that does not use a proxy.  

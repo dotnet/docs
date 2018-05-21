@@ -73,7 +73,4 @@ But [!INCLUDE[net_native](../../../includes/net-native-md.md)] involves more tha
   
 -   [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)  
   
--   [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)  
-  
-## See Also  
- [.NET Native FAQ](http://msdn.microsoft.com/vstudio/dn642499.aspx)
+-   [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

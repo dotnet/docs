@@ -70,7 +70,7 @@
  You must explicitly call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method when you are finished using the <xref:System.Data.Odbc.OdbcDataReader> to use the associated <xref:System.Data.Odbc.OdbcConnection> for any other purpose.  
   
 > [!CAUTION]
->  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+>  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](~/docs/standard/garbage-collection/index.md).  
   
    
   

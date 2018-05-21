@@ -340,7 +340,7 @@
  An application can call <xref:System.Data.OleDb.OleDbConnection.Close%2A> more than one time. No exception is generated.  
   
 > [!CAUTION]
->  Do not call <xref:System.Data.OleDb.OleDbConnection.Close%2A> or **Dispose** on an <xref:System.Data.OleDb.OleDbConnection>, an <xref:System.Data.OleDb.OleDbDataReader>, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+>  Do not call <xref:System.Data.OleDb.OleDbConnection.Close%2A> or **Dispose** on an <xref:System.Data.OleDb.OleDbConnection>, an <xref:System.Data.OleDb.OleDbDataReader>, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](~/docs/standard/garbage-collection/index.md).  
   
  ]]></format>
         </remarks>

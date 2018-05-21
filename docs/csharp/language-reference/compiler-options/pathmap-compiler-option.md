@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # -pathmap (C# Compiler Options)
 
-The **-pathmap** compiler option mapping for source path names output by the compiler.
+The **-pathmap** compiler option specifies a mapping for source path names output by the compiler.
 
 ## Syntax
 

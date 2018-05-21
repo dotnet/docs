@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # -publicsign (C# Compiler Options)
 
-This option causes the compiler to apply a public key without actually signing it. The **-publicsign** option also sets a bit in the assembly that tells the runtime that the file is actually signed.
+This option causes the compiler to apply a public key without actually signing the assembly. The **-publicsign** option also sets a bit in the assembly that tells the runtime that the file is actually signed.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ The **-publicsign** option requires the use of the [-keyfile](keyfile-compiler-o
 
 The **-publicsign** and **-delaysign** options are mutually exclusive.
 
-Sometimes called "fake sign" or "OSS sign" public signing is including the public key in an output assembly and setting the "signed" flag, but not actually signing the assembly with a private key. This is useful for open source projects where people want to build assemblies which are compatible with the released "fully signed" assemblies, but don't have access to the private key used to sign the assemblies. Since almost no consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario that the fully signed one would be used in.
+Sometimes called "fake sign" or "OSS sign", public signing includes the public key in an output assembly and sets the "signed" flag, but doesn't actually sign the assembly with a private key. This is useful for open source projects where people want to build assemblies which are compatible with the released "fully signed" assemblies, but don't have access to the private key used to sign the assemblies. Since almost no consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario where the fully signed one would be used.
 
 ### To set this compiler option in the Visual Studio development environment
 

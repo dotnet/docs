@@ -1,0 +1,1298 @@
+{
+    "redirections": [
+        {
+            "source_path": "docs/about/index.md",
+            "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path": "docs/about/products.md",
+            "redirect_url": "/dotnet/standard/components"
+        },
+        {
+            "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete"
+        },
+        {
+            "source_path": "docs/cli-preview3/tools/dotnet-nuget-locals.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals"
+        },
+        {
+            "source_path": "docs/core/app-types.md",
+            "redirect_url": "/dotnet/core/deploying/index"
+        },
+        {
+            "source_path": "docs/core/deploying/applications.md",
+            "redirect_url": "/dotnet/core/deploying/index"
+        },
+        {
+            "source_path": "docs/core/docker/visual-studio-tools-for-docker.md",
+            "redirect_url": "/aspnet/core/publishing/visual-studio-tools-for-docker",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "docs/core/getting-started.md",
+            "redirect_url": "/dotnet/core/get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/migrating-from-dnx.md",
+            "redirect_url": "/dotnet/core/migration/from-dnx",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/deploying/index.md",
+            "redirect_url": "/dotnet/core/deploying",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/csproj.md",
+            "redirect_url": "/dotnet/core/tools/csproj",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dependencies.md",
+            "redirect_url": "/dotnet/core/tools/dependencies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet.md",
+            "redirect_url": "/dotnet/core/tools/dotnet"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-add-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-add-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-add-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-add-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-build.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-build"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-clean.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-clean",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-install-script.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-install-script"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-list-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-list-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-migrate.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-msbuild.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-msbuild",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-new.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-new"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-nuget-delete.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-nuget-locals.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-nuget-push.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-nuget-push",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-pack.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-pack"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-publish.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-publish"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-remove-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-remove-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-remove-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-remove-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-restore.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-restore"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-run.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-run"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-sln.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-sln"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/dotnet-test.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-test"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/extensibility.md",
+            "redirect_url": "/dotnet/core/tools/extensibility"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/global-json.md",
+            "redirect_url": "/dotnet/core/tools/global-json"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/index.md",
+            "redirect_url": "/dotnet/core/tools/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/layering.md",
+            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tools/telemetry.md",
+            "redirect_url": "/dotnet/core/tools/telemetry"
+        },
+        {
+            "source_path": "docs/core/preview3/tools/using-ci-with-cli.md",
+            "redirect_url": "/dotnet/core/tools/using-ci-with-cli"
+        },
+        {
+            "source_path": "docs/core/preview3/tutorials/index.md",
+            "redirect_url": "/dotnet/core/tutorials/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tutorials/using-on-windows.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        
+        {
+            "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/using-on-windows-full-solution",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md",
+            "redirect_url": "/dotnet/core/tutorials/using-with-xplat-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild-folders.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-with-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/preview3/windows-prerequisites.md",
+            "redirect_url": "/dotnet/core/windows-prerequisites"
+        },
+        {
+            "source_path": "docs/core/testing/using-mstest-on-windows.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/tools/project-json.md",
+            "redirect_url": "/dotnet/core/tools/project-json-to-csproj"
+        },
+        {
+            "source_path": "docs/core/tools/test-protocol.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-test"
+        },
+        {
+            "source_path": "docs/core/tutorials/libraries-with-vs.md",
+            "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md",
+            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
+        },
+        {
+            "source_path": "docs/core/tutorials/using-on-windows.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/csharp-6.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-6",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/csharp-7.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/features.md",
+            "redirect_url": "/dotnet/csharp/concepts"
+        },
+        {
+            "source_path": "docs/csharp/generics.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/generics/index"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/additional-resources.md",
+            "redirect_url": "/dotnet/csharp/getting-started/index"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/breaking-changes-in-visual-studio-2013.md",
+            "redirect_url": "https://msdn.microsoft.com/library/hh678682(v=vs.120)"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
+            "redirect_url": "/dotnet/getting-started/consuming-library-with-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/debugging-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
+            "redirect_url": "/dotnet/getting-started/library-with-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md",
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
+        },
+        
+        {
+            "source_path": "docs/csharp/getting-started/publishing-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
+        },
+        
+        {
+            "source_path": "docs/csharp/getting-started/whats-new.md",
+            "redirect_url": "/dotnet/csharp/whats-new/index"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "docs/csharp/interactive.md",
+            "redirect_url": "/dotnet/csharp/index"
+        },
+        {
+            "source_path": "docs/csharp/interactive-with-bash.md",
+            "redirect_url": "/dotnet/csharp/index"
+        },
+        {
+            "source_path": "docs/csharp/interactive-with-powershell.md",
+            "redirect_url": "/dotnet/csharp/index"
+        },
+        {
+            "source_path": "docs/csharp/interactive-with-visualstudio.md",
+            "redirect_url": "/dotnet/csharp/index"
+        },
+        {
+            "source_path": "docs/csharp/interfaces.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/interfaces/index"
+        },
+        {
+            "source_path": "docs/csharp/interop.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/modulus-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-operator"
+        },
+        {
+            "source_path": "docs/csharp/namespaces-and-assemblies.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/namespaces/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
+            "redirect_url": "/dotnet/csharp/async/"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/interop/interoperability.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md",
+            "redirect_url": "/dotnet/csharp/linq/create-a-nested-group"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md",
+            "redirect_url": "/dotnet/csharp/linq/dynamically-specify-predicate-filters-at-runtime"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md",
+            "redirect_url": "/dotnet/csharp/linq/group-query-results"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-group-results-by-contiguous-keys.md",
+            "redirect_url": "/dotnet/csharp/linq/group-results-by-contiguous-keys"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md",
+            "redirect_url": "/dotnet/csharp/linq/handle-exceptions-in-query-expressions"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-handle-null-values-in-query-expressions.md",
+            "redirect_url": "/dotnet/csharp/linq/handle-null-values-in-query-expressions"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md",
+            "redirect_url": "/dotnet/csharp/linq/join-by-using-composite-keys"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md",
+            "redirect_url": "/dotnet/csharp/linq/order-the-results-of-a-join-clause"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md",
+            "redirect_url": "/dotnet/csharp/linq/perform-a-subquery-on-a-grouping-operation"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/perform-custom-join-operations"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md",
+            "redirect_url": "/dotnet/csharp/linq/perform-grouped-joins"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md",
+            "redirect_url": "/dotnet/csharp/linq/perform-inner-joins"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md",
+            "redirect_url": "/dotnet/csharp/linq/perform-left-outer-joins"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md",
+            "redirect_url": "/dotnet/csharp/linq/query-a-collection-of-objects"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-return-a-query-from-a-method.md",
+            "redirect_url": "/dotnet/csharp/linq/return-a-query-from-a-method"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-store-the-results-of-a-query-in-memory.md",
+            "redirect_url": "/dotnet/csharp/linq/store-the-results-of-a-query-in-memory"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-write-linq-queries.md",
+            "redirect_url": "/dotnet/csharp/linq/write-linq-queries"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/index.md",
+            "redirect_url": "/dotnet/csharp/linq/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/query-expression-basics.md",
+            "redirect_url": "/dotnet/csharp/linq/query-expression-basics"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/main-and-command-args/index"
+        },
+        {
+            "source_path": "docs/csharp/type-system.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/types/index"
+        },
+        {
+            "source_path": "docs/csharp/whats-new.md",
+            "redirect_url": "/dotnet/csharp/whats-new/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/deployment/repair.md",
+            "redirect_url": "/dotnet/framework/install/repair"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/index.md",
+            "redirect_url": "/dotnet/framework/install/"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/7.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-7"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/8.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-8"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/10.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-10"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/vista.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-vista"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/xp.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-xp"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/installing-dotnet-35-windows-10.md",
+            "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
+            "source_path": "docs/framework/docker/aspnetmvc.md",
+            "redirect_url": "/aspnet/mvc/overview/deployment/docker-aspnetmvc",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
+            "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
+            "redirect_url": "/dotnet/framework/migration-guide//retargeting/4.6.1-4.6.2"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-dispatcher-operations-in-wpf-apps.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-default-authorizationcontext.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-eventsource-writeevent-method-calls.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtimef/4.5-4.5.1"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-grid-control.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-horizontal-scrolling-and-virtualization.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.1-4.6.2"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-long-path-support.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-memberdescriptor-equals.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-minfreememorypercentagetoactiveservice-configuration-setting.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
+            "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path": "docs/framework/wcf/extending/extending-wcf.md",
+            "redirect_url": "/dotnet/framework/wcf/extending/index",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "docs/framework/wcf/windows-communication-foundation.md",
+            "redirect_url": "/dotnet/framework/wcf/index"
+        },
+        {
+            "source_path": "docs/framework/whats-new/whats-new.md",
+            "redirect_url": "/dotnet/framework/whats-new/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md",
+            "redirect_url": "/dotnet/framework/winforms/controls/create-a-master-detail-form-using-two-datagridviews",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/winforms/controls/c5fa29e8-47f7-4691-829b-0e697a691f36.md",
+            "redirect_url": "/dotnet/framework/winforms/controls/creating-a-master-detail-form-using-two-datagridviews",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/datepicker-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/datepicker-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
+            "redirect_url": "/dotnet/framework/xaml-services/escape-sequence-markup-extension",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/async.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
+        },
+        {
+            "source_path": "docs/fsharp/getting-started-netcore.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/getting-started/getting-started-command-line"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-cross-platform-tooling.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/getting-started/getting-started-command-line"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/getting-started/index.md",
+            "redirect_url": "/dotnet/fsharp/get-started/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/scenarios/index.md",
+            "redirect_url": "/dotnet/core/tutorials/"
+        },
+        {
+            "source_path": "docs/scenarios/solution-authoring/index.md",
+            "redirect_url": "/dotnet/core/tutorials/"
+        },
+        {
+            "source_path": "docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md",
+            "redirect_url": "/dotnet/core/tutorials/target-dotnetcore-with-msbuild"
+        },
+        {
+            "source_path": "docs/standard/about.md",
+            "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path": "docs/standard/base-types/alternation.md",
+            "redirect_url": "/dotnet/standard/base-types/alternation-constructs-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/anchors.md",
+            "redirect_url": "/dotnet/standard/base-types/anchors-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/backreference.md",
+            "redirect_url": "/dotnet/standard/base-types/backreference-constructs-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/backtracking.md",
+            "redirect_url": "/dotnet/standard/base-types/backtracking-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/changing-formats.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-example-changing-date-formats"
+        },
+        {
+            "source_path": "docs/standard/base-types/classes.md",
+            "redirect_url": "/dotnet/standard/base-types/character-classes-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/compilation.md",
+            "redirect_url": "/dotnet/standard/base-types/compilation-and-reuse-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/composite-format.md",
+            "redirect_url": "/dotnet/standard/base-types/composite-formatting"
+        },
+        {
+            "source_path": "docs/standard/base-types/custom-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/custom-date-and-time-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/custom-numeric.md",
+            "redirect_url": "/dotnet/standard/base-types/custom-numeric-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/custom-timespan.md",
+            "redirect_url": "/dotnet/standard/base-types/custom-timespan-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/define-custom.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-define-and-use-custom-numeric-format-providers"
+        },
+        {
+            "source_path": "docs/standard/base-types/display-dates.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-display-dates-in-non-gregorian-calendars"
+        },
+        {
+            "source_path": "docs/standard/base-types/display-milliseconds.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-display-milliseconds-in-date-and-time-values"
+        },
+        {
+            "source_path": "docs/standard/base-types/enumeration-format.md",
+            "redirect_url": "/dotnet/standard/base-types/enumeration-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/escapes.md",
+            "redirect_url": "/dotnet/standard/base-types/character-escapes-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/extract-day.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date"
+        },
+        {
+            "source_path": "docs/standard/base-types/extract-protocol.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url"
+        },
+        {
+            "source_path": "docs/standard/base-types/grouping.md",
+            "redirect_url": "/dotnet/standard/base-types/grouping-constructs-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/miscellaneous.md",
+            "redirect_url": "/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/object-model.md",
+            "redirect_url": "/dotnet/standard/base-types/the-regular-expression-object-model"
+        },
+        {
+            "source_path": "docs/standard/base-types/options.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-options"
+        },
+        {
+            "source_path": "docs/standard/base-types/pad-number.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros"
+        },
+        {
+            "source_path": "docs/standard/base-types/quantifiers.md",
+            "redirect_url": "/dotnet/standard/base-types/quantifiers-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/quick-ref.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-language-quick-reference"
+        },
+        {
+            "source_path": "docs/standard/base-types/regex-behavior.md",
+            "redirect_url": "/dotnet/standard/base-types/details-of-regular-expression-behavior"
+        },
+        {
+            "source_path": "docs/standard/base-types/regex-examples.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-examples"
+        },
+        {
+            "source_path": "docs/standard/base-types/roundtrip.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-round-trip-date-and-time-values"
+        },
+        {
+            "source_path": "docs/standard/base-types/scanning.md",
+            "redirect_url": "/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs"
+        },
+        {
+            "source_path": "docs/standard/base-types/standard-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/standard-date-and-time-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/standard-numeric.md",
+            "redirect_url": "/dotnet/standard/base-types/standard-numeric-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/standard-timespan.md",
+            "redirect_url": "/dotnet/standard/base-types/standard-timespan-format-strings"
+        },
+        {
+            "source_path": "docs/standard/base-types/strip-characters.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-strip-invalid-characters-from-a-string"
+        },
+        {
+            "source_path": "docs/standard/base-types/substitutions.md",
+            "redirect_url": "/dotnet/standard/base-types/substitutions-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/thread-safety.md",
+            "redirect_url": "/dotnet/standard/base-types/thread-safety-in-regular-expressions"
+        },
+        {
+            "source_path": "docs/standard/base-types/verify-format.md",
+            "redirect_url": "/dotnet/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/blockingcollection-overview.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/blockingcollection-overview"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/how-to-add-and-remove-items.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-add-and-remove-items"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/how-to-add-and-take-items.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-add-and-take-items"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/how-to-add-bounding-and-blocking.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-add-bounding-and-blocking"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/how-to-create-an-object-pool.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-create-an-object-pool"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/how-to-use-arrays-of-blockingcollections.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/how-to-use-foreach-to-remove.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/how-to-use-foreach-to-remove"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/index.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/"
+        },
+        {
+            "source_path": "docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md",
+            "redirect_url": "/dotnet/standard/collections/thread-safe/when-to-use-a-thread-safe-collection"
+        },
+        {
+            "source_path": "docs/standard/concepts.md",
+            "redirect_url": "/dotnet/standard/"
+        },
+        {
+            "source_path": "docs/standard/data/index.md",
+            "redirect_url": "/dotnet/standard/data/xml/index"
+        },
+        {
+            "source_path": "docs/standard/exceptions.md",
+            "redirect_url": "/dotnet/standard/exceptions/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/exceptions/exception-handling-fundamentals.md",
+            "redirect_url": "/dotnet/standard/exceptions/"
+        },
+        {
+            "source_path": "docs/standard/exceptions/exception-hierarchy.md",
+            "redirect_url": "/dotnet/standard/exceptions/"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/fundamentals.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/fundamentals"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/gc.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/gc"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/implementing-dispose.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/index.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/induced.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/induced"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/latency.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/latency"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/unmanaged.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/unmanaged"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/using-objects.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/using-objects"
+        },
+        {
+            "source_path": "docs/standard/garbagecollection/weak-references.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/weak-references"
+        },
+        {
+            "source_path": "docs/standard/getting-started.md",
+            "redirect_url": "/dotnet/standard/get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/library.md",
+            "redirect_url": "/dotnet/standard/net-standard",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/portability-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
+            "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
+            "redirect_document_id": true
+        },  
+        {
+            "source_path": "docs/standard/serialization/marshal-by-value.md",
+            "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
+            "source_path": "docs/standard/serialization/persistent-storage.md",
+            "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
+            "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
+            "redirect_url": "/dotnet/csharp/tutorials/microservices"
+        },
+        {
+            "source_path": "docs/tutorials/getting-started-with-csharp/working-with-linq.md",
+            "redirect_url": "/dotnet/csharp/tutorials/working-with-linq"
+        },
+        {
+            "source_path": "docs/tutorials/index.md",
+            "redirect_url": "/dotnet/samples-and-tutorials/"
+        },        
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",
+            "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/covariance-contravariance/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/debugging.md",
+            "redirect_url": "/visualstudio/debugger/debugger-basics"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/help-for-event-handlers.md",
+            "redirect_url": "/visualstudio/ide/using-intellisense"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md",
+            "redirect_url": "/visualstudio/ide/compiling-and-building-in-visual-studio"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/intellisense-code-snippets.md",
+            "redirect_url": "/visualstudio/ide/code-snippets"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/refactoring-and-rename-dialog-box.md",
+            "redirect_url": "/visualstudio/vb-ide/refactoring-vb"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/settings.md",
+            "redirect_url": "/visualstudio/ide/reference/general-user-interface-elements-visual-studio"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md",
+            "redirect_url": "/visualstudio/ide/visual-studio-ide"
+        },
+        {
+            "source_path": "docs/visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md",
+            "redirect_url": "/dotnet/visual-basic/getting-started/breaking-changes-in-visual-studio"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/a-class-used-in-the-expression-is-not-loaded-during-debugging-session.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/attribute-structlayout-can-not-be-applied-to-a-generic-type.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc2029.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc2031.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc2035.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc30963.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc30964.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc30965.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc30966.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc30972.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc30973.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc35000.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc35001.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc35002.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/bc42327.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/comment-statements-cannot-be-evaluated.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/for-loop-control-variable-already-in-use-by-an-enclosing-for-loop.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/misc/next-control-variable-does-not-match-for-loop-control-variable.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/linq/namespaces-linq-to-xml.md",
+            "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/linq/namespaces-overview-linq-to-xml"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md",
+            "redirect_url": "https://msdn.microsoft.com/library/bb531402(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-intellisense.md",
+            "redirect_url": "https://msdn.microsoft.com/library/bb531325(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-to-schema-wizard.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc443041(v=vs.120).aspx"
+        },        
+        {
+            "source_path": "docs/visual-basic/reference/vb6-support.md",
+            "redirect_url": "/visualstudio/vb6/vb6-support",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
+            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studio",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio-for-mac.md",
+            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studoi-for-mac",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-vscode.md",
+            "redirect_url": "/dotnet/fsharp/get-started/getting-started-vscode",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/getting-started/library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/testing-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
+            "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/csharp.md",
+            "redirect_url": "/dotnet/csharp"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/getting-started-with-csharp.md",
+            "redirect_url": "/dotnet/csharp/getting-started"
+        },
+        {
+            "source_path": "docs/core/porting/nuget-packages.md",
+            "redirect_url": "/dotnet/core/packages"
+        },
+        {
+            "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
+            "redirect_url": "/dotnet/core/tutorials"
+        },
+        {
+            "source_path": "docs/core/versions/servicing.md",
+            "redirect_url": "/dotnet/core/versions"
+        },
+        {
+            "source_path": "docs/csharp/reflection.md",
+            "redirect_url": "/dotnet/framework/reflection-and-codedom"
+        },
+        {
+            "source_path": "docs/csharp/roslyn/index.md",
+            "redirect_url": "/dotnet/csharp/roslyn-sdk/" 
+        },        
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc165448(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc488002(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/csharp/parallel.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/index"
+        },
+        {
+            "source_path": "docs/csharp/methods-lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
+            "redirect_url": "/dotnet/csharp/how-to/parse-strings-using-split"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/parsing-datetime"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md",
+            "redirect_url": "/dotnet/csharp/how-to/search-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md",
+            "redirect_url": "/dotnet/csharp/how-to/search-strings"
+        },
+        {    
+            "source_path": "docs/csharp/programming-guide/strings/how-to-modify-string-contents.md",
+            "redirect_url": "/dotnet/csharp/how-to/modify-string-contents"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/interpolated-strings.md",
+            "redirect_url": "/dotnet/csharp/language-reference/tokens/interpolated"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-compare-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/compare-strings"
+        },
+        {
+            "source_path": "docs/csharp/classes.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/classes"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database-entities.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-web-service.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-an-odata-service.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/generating-fsharp-types-from-dbml.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/generating-fsharp-types-from-edmx.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md",
+            "redirect_url": "/dotnet/standard/generics/index"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/index.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/index"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containerslift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
+        },
+        {   
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
+            "redirect_url": "/docs/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+        int[, ,] array1 = new int[4, 2, 3];

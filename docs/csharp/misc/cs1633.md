@@ -1,0 +1,28 @@
+---
+title: "Compiler Warning (level 1) CS1633"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS1633"
+helpviewer_keywords: 
+  - "CS1633"
+ms.assetid: f31db218-f880-4fc4-ab34-8bcdc49011da
+---
+# Compiler Warning (level 1) CS1633
+Unrecognized #pragma directive  
+  
+ The pragma used was not one of the known pragmas supported by the C# compiler. To resolve this error, use only pragmas supported.  
+  
+ The following sample generates CS1633:  
+  
+```csharp  
+// CS1633.cs  
+// compile with: /W:1  
+#pragma unknown  // CS1633  
+  
+class C  
+{  
+   public static void Main()  
+   {  
+   }  
+}  
+```

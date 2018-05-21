@@ -1,0 +1,13 @@
+---
+title: "Compiler Error CS0635"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS0635"
+helpviewer_keywords: 
+  - "CS0635"
+ms.assetid: fe258471-4697-4813-a43c-a98e16a424c6
+---
+# Compiler Error CS0635
+'attribute' : System.Interop.UnmanagedType.CustomMarshaller requires named arguments ComType and Marshal  
+  
+ The **ComType** and **Marshal** arguments must be specified when the marshal format is **System.Interop.UnmanagedType.CustomMarshaller**.

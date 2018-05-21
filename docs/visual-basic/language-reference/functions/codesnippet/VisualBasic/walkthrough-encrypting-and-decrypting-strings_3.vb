@@ -1,0 +1,1 @@
+        Private TripleDes As New TripleDESCryptoServiceProvider

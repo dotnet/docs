@@ -1,0 +1,31 @@
+---
+title: "Compiler Error CS0670"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS0670"
+helpviewer_keywords: 
+  - "CS0670"
+ms.assetid: 59379171-284f-4d55-8741-af6a97879abc
+---
+# Compiler Error CS0670
+Field cannot have void type  
+  
+ A field was declared to be of type [void](../../csharp/language-reference/keywords/void.md).  
+  
+ The following sample generates CS0670:  
+  
+```csharp  
+// CS0670.cs  
+class C  
+{  
+   void f;   // CS0670  
+   // try the following line instead  
+   // public int f;  
+  
+   public static void Main()  
+   {  
+      C myc = new C();  
+      myc.f = 0;  
+   }  
+}  
+```

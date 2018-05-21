@@ -1,0 +1,23 @@
+---
+title: "Compiler Error CS0701"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS0701"
+helpviewer_keywords: 
+  - "CS0701"
+ms.assetid: eb844e31-00bd-468d-9f77-11d10a4ef120
+---
+# Compiler Error CS0701
+'identifier' is not a valid constraint. A type used as a constraint must be an interface, a non-sealed class or a type parameter.  
+  
+ This error occurs if a sealed type is used as a constraint. To resolve this error, use only non-sealed types as constraints.  
+  
+## Example  
+ The following sample generates CS0701.  
+  
+```csharp  
+// CS0701.cs  
+// compile with: /target:library  
+class C<T> where T : System.String {}   // CS0701  
+class D<T> where T : System.Attribute {}   // OK  
+```

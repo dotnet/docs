@@ -1,0 +1,1 @@
+            int invocationCount = d1.GetInvocationList().GetLength(0);

@@ -1,0 +1,1 @@
+        PropertyGrid1.SelectedObject = My.Settings

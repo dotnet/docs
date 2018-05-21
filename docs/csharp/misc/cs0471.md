@@ -1,0 +1,32 @@
+---
+title: "Compiler Error CS0471"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS0471"
+helpviewer_keywords: 
+  - "CS0471"
+ms.assetid: 3b666461-c57b-45f4-83d3-a23786e29ae9
+---
+# Compiler Error CS0471
+The method 'name' is not a generic method. If you intended an expression list, use parentheses around the < expression.  
+  
+ This error is generated when your code contains an expression list without parentheses.  
+  
+## Example  
+ The following example generates CS0471.  
+  
+```csharp  
+// CS0471.cs  
+// compile with: /t:library  
+class Test  
+{  
+    public void F(bool x, bool y) {}  
+    public void F1()  
+    {  
+        int a = 1, b = 2, c = 3;  
+        F(a<b, c>(3));    // CS0471  
+        // To resolve, try the following instead:  
+        // F((a<b), c>(3));  
+    }  
+}  
+```

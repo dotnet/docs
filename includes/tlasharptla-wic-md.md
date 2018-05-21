@@ -1,0 +1,1 @@
+Microsoft Windows Presentation Foundation Imaging Component

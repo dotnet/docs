@@ -1,0 +1,1 @@
+    Public Const conB = conA / 2

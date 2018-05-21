@@ -1,0 +1,8 @@
+# [Collections and Data Structures](index.md)
+## [Selecting a Collection Class](selecting-a-collection-class.md)
+## [Commonly Used Collection Types](commonly-used-collection-types.md)
+## [When to Use Generic Collections](when-to-use-generic-collections.md)
+## [Comparisons and Sorts Within Collections](comparisons-and-sorts-within-collections.md)
+## [Sorted Collection Types](sorted-collection-types.md)
+## [Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)
+## [Thread-Safe Collections](thread-safe/)

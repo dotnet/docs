@@ -1,0 +1,13 @@
+---
+title: "Compiler Error CS0009"
+ms.date: 07/20/2015
+f1_keywords: 
+  - "CS0009"
+helpviewer_keywords: 
+  - "CS0009"
+ms.assetid: 1b13d4b6-d5c2-4020-b0f8-d1747a15084d
+---
+# Compiler Error CS0009
+Metadata file 'file' could not be opened — 'description'  
+  
+ The file specified with the [/reference](../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option does not contain valid metadata.

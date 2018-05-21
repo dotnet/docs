@@ -1,0 +1,1 @@
+        writeToLog("Application started.")

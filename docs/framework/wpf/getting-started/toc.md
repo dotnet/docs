@@ -1,0 +1,6 @@
+# [Getting Started](index.md)
+## [Introduction to WPF in Visual Studio](introduction-to-wpf-in-vs.md)
+## [What's New in WPF Version 4.5](whats-new.md)
+## [Walkthrough: My first WPF desktop application](walkthrough-my-first-wpf-desktop-application.md)
+## [WPF Walkthroughs](wpf-walkthroughs.md)
+## [WPF Community Feedback](community-feedback.md)

@@ -1,0 +1,1 @@
+        Del<int> m2 = Notify;

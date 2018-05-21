@@ -1,0 +1,1 @@
+        Dim LBC As New ListBoxProject.Form1.ListBox

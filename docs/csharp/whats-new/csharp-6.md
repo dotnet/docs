@@ -508,12 +508,12 @@ if any, is lost.
 ## Index Initializers
 
 *Index Initializers* is one of two features that make collection
-initializers more consistent. In earlier releases of C#, you could use
-*collection initializers* only with sequence style collections:
+initializers more consistent with index usage. In earlier releases of C#, you could use
+*collection initializers* only with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602> with braces around Key-Vlue pairs:
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
 
-Now, you can also use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types:
+Now, you can use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types more consistent regular index usage and assignment:
 
 [!code-csharp[DictionaryInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
 

@@ -1,6 +1,6 @@
 ---
-title: .NET Platform Guide
-description: Learn about the .NET Platform.
+title: .NET Guide
+description: Learn about .NET.
 author: cartermp
 ms.author: ronpet
 ms.date: 05/02/2017

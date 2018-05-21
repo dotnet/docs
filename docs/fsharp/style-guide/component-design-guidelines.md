@@ -478,7 +478,7 @@ However, the logical dot-notation operations on this type are not the same as th
 
 When designing libraries for use from other .NET languages, it is important to adhere to the [.NET Library Design Guidelines](../../standard/design-guidelines/index.md). In this document, these libraries are labeled as vanilla .NET libraries, as opposed to F#-facing libraries that use F# constructs without restriction. Designing vanilla .NET libraries means providing familiar and idiomatic APIs consistent with the rest of the .NET Framework by minimizing the use of F#-specific constructs in the public API. The rules are explained in the following sections.
 
-### Namespace and Type sesign (for libraries for use from other .NET Languages)
+### Namespace and Type design (for libraries for use from other .NET Languages)
 
 #### Apply the .NET naming conventions to the public API of your components
 

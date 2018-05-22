@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method evaluates each <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> instance that is attached to the object type. It also checks whether each property that is marked with <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> is provided. It validates the property values of the object if `validateAllProperties` is `true` but does not recursively validate properties of the objects returned by the properties. />.  
+ This method evaluates each <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> instance that is attached to the object type. It also checks whether each property that is marked with <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> is provided. It validates the property values of the object if `validateAllProperties` is `true` but does not recursively validate properties of the objects returned by the properties.  
   
  ]]></format>
         </remarks>

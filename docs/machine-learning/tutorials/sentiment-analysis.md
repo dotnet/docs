@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis classification scenario
 description: Discover how to use ML.NET in a classification scenario to understand how to use sentiment prediction to take the appropriaste action.
-ms.date: 05/14/2018
+ms.date: 05/21/2018
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
 ---

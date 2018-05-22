@@ -2,7 +2,7 @@
 title: Use ML.NET to predict New York Taxi Fares (Regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
-ms.date: 05/17/2018
+ms.date: 05/21/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.

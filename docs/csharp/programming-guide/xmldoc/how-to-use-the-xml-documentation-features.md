@@ -60,11 +60,10 @@ The example generates an .xml file with the following contents:
  <member name="P:SomeClass.Name">  
  <summary>  
  Name property </summary>  
- <value>  
- A value tag is used to describe the property value</value>  
+ <value>A value tag is used to describe the property value</value>  
  </member>  
  </members>  
-\</doc>   
+</doc>   
 ```
 
 ## Compiling the Code  

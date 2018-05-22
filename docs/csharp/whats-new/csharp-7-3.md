@@ -128,7 +128,7 @@ The second theme provides improvements to features in the language. These featur
 
 ### Tuples support `==` and `!=`
 
-The C# tuple types now support `==` and `!=`. Fore more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md#equality-and-tuples).
+The C# tuple types now support `==` and `!=`. Fore more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md).
 
 ### Attach attributes to the backing fields for auto-implemented properties
 
@@ -159,7 +159,7 @@ For more information, see the article on the [`in` parameter modifier](../langua
 
 ### Extend expression variables in initializers
 
-The syntax added in C# 7.0 to aloow `out` variable declarations has been extended to include field initializers, property initializers, constructor initializers, and query clauses. It enables code such as the following example:
+The syntax added in C# 7.0 to allow `out` variable declarations has been extended to include field initializers, property initializers, constructor initializers, and query clauses. It enables code such as the following example:
 
 ```csharp
 public class B
@@ -201,6 +201,6 @@ For more information, see the [-publicsign compiler option](../language-referenc
 
 ### pathmap
 
-The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
+The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `-pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
 
 For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compile-option.md) article.

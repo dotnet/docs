@@ -57,17 +57,23 @@ To execute the program, use `dotnet run`. You should see "Hello, World" output t
 
 With <xref:System.String.Format%2A?displayProperty=nameWithType>, you specify "placeholders" in a string that are replaced by the arguments following the string. For instance:
 
+```
 [!code-csharp[String.Format example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#StringFormatExample)]  
+```
 
 That will output "My name is Matt Groves".
 
 In C# 6, instead of using `String.Format`, you define an interpolated string by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
 
+```
 [!code-csharp[Interpolation example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExample)]  
+```
 
 You don't have to use just variables. You can use any expression within the brackets. For instance:
 
+```
 [!code-csharp[Interpolation expression example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExpressionExample)]  
+```
 
 Which would output:
 
@@ -85,7 +91,9 @@ Behind the scenes, this string interpolation syntax is translated into `String.F
 
 For instance, you can add padding and numeric formatting:
 
+```
 [!code-csharp[Interpolation formatting example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationFormattingExample)]  
+```
 
 The above would output something like:
 
@@ -121,7 +129,9 @@ An interpolated string supports <xref:System.IFormattable?displayProperty=nameWi
 
 By default, an interpolated string uses the current culture. To use a different culture, cast an interpolated string as `IFormattable`. For instance:
 
+```
 [!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
+```
 
 ## Conclusion 
 

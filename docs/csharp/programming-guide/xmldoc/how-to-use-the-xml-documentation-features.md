@@ -15,7 +15,6 @@ The following sample provides a basic overview of a type that has been documente
 The example generates an .xml file with the following contents:
 
 ```xml  
- // This .xml file was generated with the previous code sample.  
 <?xml version="1.0"?>  
 <doc>  
  <assembly>  

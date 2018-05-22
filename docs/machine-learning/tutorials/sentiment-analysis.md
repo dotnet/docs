@@ -264,7 +264,6 @@ PredictionModel quality metrics evaluation
 Accuracy: 67.30%
 Auc: 73.78%
 F1Score: 65.25%
-Press any key to continue . . .
 ```
 
 Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.

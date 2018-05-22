@@ -1,13 +1,7 @@
 ---
 title: What's New in C# 6 - C# Guide
-description: Learn the new features in C# Version 6    
-keywords: .NET, .NET Core
-author: BillWagner
+description: Learn the new features in C# Version 6
 ms.date: 09/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 ---
 
@@ -527,7 +521,7 @@ This feature means that associative containers can be initialized using
 syntax similar to what's been in place for sequence containers for several
 versions.
 
-### Extension `Add` methods in collection initializers
+## Extension `Add` methods in collection initializers
 
 Another feature that makes collection initialization easier is the ability
 to use an *extension method* for the `Add` method. This feature was
@@ -553,10 +547,7 @@ Now you can, but only if you create an extension method that maps `Add` to
 
 What you are doing with this feature is to map whatever method adds
 items to a collection to a method named `Add` by creating an
-extension method: 
-
-[!code-csharp[Enrollment](../../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
-[!code-csharp[ExtensionAddSample](../../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
+extension method.
 
 ## Improved overload resolution
 

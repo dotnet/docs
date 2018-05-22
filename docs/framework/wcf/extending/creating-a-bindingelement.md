@@ -1,27 +1,13 @@
 ---
 title: "Creating a BindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating a BindingElement
-Bindings and binding elements (objects that extend <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>, respectively) are the place where the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application model is associated with channel factories and channel listeners. Without bindings, using custom channels requires programming at the channel level as described in [Service Channel-Level Programming](../../../../docs/framework/wcf/extending/service-channel-level-programming.md) and [Client Channel-Level Programming](../../../../docs/framework/wcf/extending/client-channel-level-programming.md). This topic discusses the minimum requirement to enable using your channel in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the development of a <xref:System.ServiceModel.Channels.BindingElement> for your channel, and enable use from the application as described in step 4 of [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
+Bindings and binding elements (objects that extend <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>, respectively) are the place where the Windows Communication Foundation (WCF) application model is associated with channel factories and channel listeners. Without bindings, using custom channels requires programming at the channel level as described in [Service Channel-Level Programming](../../../../docs/framework/wcf/extending/service-channel-level-programming.md) and [Client Channel-Level Programming](../../../../docs/framework/wcf/extending/client-channel-level-programming.md). This topic discusses the minimum requirement to enable using your channel in WCF, the development of a <xref:System.ServiceModel.Channels.BindingElement> for your channel, and enable use from the application as described in step 4 of [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
   
 ## Overview  
- Creating a <xref:System.ServiceModel.Channels.BindingElement> for your channel enables developers to use it in an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. <xref:System.ServiceModel.Channels.BindingElement> objects can be used from the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class to connect an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application to your channel without having to the precise type information of your channel.  
+ Creating a <xref:System.ServiceModel.Channels.BindingElement> for your channel enables developers to use it in an WCF application. <xref:System.ServiceModel.Channels.BindingElement> objects can be used from the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class to connect an WCF application to your channel without having to the precise type information of your channel.  
   
  Once a <xref:System.ServiceModel.Channels.BindingElement> has been created, you can enable more functionality depending upon your requirements by following the remaining channel development steps described in [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
   

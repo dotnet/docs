@@ -4,8 +4,6 @@ description: Learn how the .NET API Analyzer can help detect deprecated APIs and
 author: oliag
 ms.author: mairaw
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
 ---
 # .NET API analyzer

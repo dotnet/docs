@@ -1,21 +1,7 @@
 ---
 title: "Downloading Sample Databases"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Downloading Sample Databases
 A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation use the Northwind sample database and SQL Server Express Edition. You can download these products free of charge from the Microsoft download site.  
@@ -37,7 +23,7 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
      By default, the database is installed at *drive*:\SQL Server 2000 Sample Databases.  
   
 ## Downloading SQL Server Express Edition  
- SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using [!INCLUDE[vsprvs](../../../../../../includes/vsprvs-md.md)], SQL Server Express Edition is included in the Pro and greater editions.  
+ SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using Visual Studio, SQL Server Express Edition is included in the Pro and greater editions.  
   
 #### To download and install SQL Server Express Edition  
   
@@ -54,7 +40,7 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
 6.  Follow the installation instructions on the Web site.  
   
 ## Downloading Management Studio Express  
- If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] integrated development environment (IDE), or use Microsoft SQL Server Management Studio Express (SSMSE).  
+ If you want to modify a database that you have downloaded, you can access the database from **Server Explorer** in the Visual Studio integrated development environment (IDE), or use Microsoft SQL Server Management Studio Express (SSMSE).  
   
 #### To download Management Studio Express  
   

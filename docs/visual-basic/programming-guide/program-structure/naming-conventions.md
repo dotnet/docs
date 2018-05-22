@@ -1,13 +1,6 @@
 ---
 title: "Visual Basic Naming Conventions"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [Visual Basic], Visual Basic rules"
   - "naming conventions"
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "names [Visual Basic], naming conventions"
   - "naming conventions [Visual Basic], classes"
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Naming Conventions
 When you name an element in your Visual Basic application, the first character of that name must be an alphabetic character or an underscore. Note, however, that names beginning with an underscore are not compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS).  

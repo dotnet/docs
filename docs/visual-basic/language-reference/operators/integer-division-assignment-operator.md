@@ -1,12 +1,6 @@
 ---
 title: "\\= Operator"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "\\="
   - "vb.\\="
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "operator \\= [Visual Basic]"
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 6f39915d-e398-4045-afcc-da6885e57b9c
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # \\= Operator
 Divides the value of a variable or property by the value of an expression and assigns the integer result to the variable or property.  

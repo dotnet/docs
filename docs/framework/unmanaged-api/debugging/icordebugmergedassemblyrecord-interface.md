@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugMergedAssemblyRecord Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: fe280b11-9479-4e34-a07c-0d1ea8088422
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugMergedAssemblyRecord Interface
 Provides information about a merged assembly.  

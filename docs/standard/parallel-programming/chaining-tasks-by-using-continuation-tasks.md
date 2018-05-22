@@ -1,26 +1,15 @@
 ---
 title: "Chaining Tasks by Using Continuation Tasks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, continuations"
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
-caps.latest.revision: 30
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Chaining Tasks by Using Continuation Tasks
 In asynchronous programming, it is very common for one asynchronous operation, on completion, to invoke a second operation and pass data to it. Traditionally, this has been done by using callback methods. In the Task Parallel Library, the same functionality is provided by *continuation tasks*. A continuation task (also known just as a continuation) is an asynchronous task that is invoked by another task, which is known as the *antecedent*, when the antecedent finishes.  
@@ -125,7 +114,7 @@ In asynchronous programming, it is very common for one asynchronous operation, o
   
  Continuation state is useful when you convert existing code that uses the [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) to use the TPL. In the APM, you typically provide object state in the **Begin***Method* method and later access that state by using the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=nameWithType> property. By using the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method, you can preserve this state when you convert code that uses the APM to use the TPL.  
   
- Continuation state can also be useful when you work with <xref:System.Threading.Tasks.Task> objects in the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugger. For example, in the **Parallel Tasks** window, the **Task** column displays the string representation of the state object for each task. For more information about the **Parallel Tasks** window, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window).  
+ Continuation state can also be useful when you work with <xref:System.Threading.Tasks.Task> objects in the Visual Studio debugger. For example, in the **Parallel Tasks** window, the **Task** column displays the string representation of the state object for each task. For more information about the **Parallel Tasks** window, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window).  
   
  The following example shows how to use continuation state. It creates a chain of continuation tasks. Each task provides the current time, a <xref:System.DateTime> object, for the `state` parameter of the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method. Each <xref:System.DateTime> object represents the time at which the continuation task is created. Each task produces as its result a second <xref:System.DateTime> object that represents the time at which the task finishes. After all tasks finish, this example displays the creation time and the time at which each continuation task finishes.  
   

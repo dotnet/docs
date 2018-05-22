@@ -1,19 +1,7 @@
 ---
 title: "Instance Completion Action"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 90cc99d2-9fef-42fd-bcbf-a56917993721
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Instance Completion Action
 The **Instance Completion Action** property of the SQL Workflow Instance Store lets you specify whether the data and metadata of workflow instances is deleted from the persistence database after the instances are completed. The allowed values for this property are **DeleteAll** and **DeleteNothing**. The following list describes these options:  

@@ -1,35 +1,21 @@
 ---
 title: "Basic HTTP Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 27048b43-8a54-4f2a-9952-594bbfab10ad
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Basic HTTP Service
-This sample demonstrates how to implement an HTTP-based, RPC-based service - popularly referred to as "POX" (Plain Old XML) service – using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST Programming model. This sample consists of two components: a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] HTTP service (Service.cs) and a console application (Program.cs) that creates the service and makes calls to it.  
+This sample demonstrates how to implement an HTTP-based, RPC-based service - popularly referred to as "POX" (Plain Old XML) service – using the Windows Communication Foundation (WCF) REST Programming model. This sample consists of two components: a self-hosted WCF HTTP service (Service.cs) and a console application (Program.cs) that creates the service and makes calls to it.  
   
 ## Sample Details  
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service exposes 2 operations, `EchoWithGet` and `EchoWithPost`, which returns the string that was passed as input.  
+ The WCF service exposes 2 operations, `EchoWithGet` and `EchoWithPost`, which returns the string that was passed as input.  
   
  The `EchoWithGet` operation is annotated with <xref:System.ServiceModel.Web.WebGetAttribute>, which indicates that the operation processes HTTP `GET` requests. Because the <xref:System.ServiceModel.Web.WebGetAttribute> does not explicitly specify a <xref:System.UriTemplate>, the operation expects the input string to be passed in using a query string parameter with name `s`. Note that the format of the URI that the service expects can be customized using the <xref:System.ServiceModel.Web.WebGetAttribute.UriTemplate%2A> property.  
   
  The `EchoWithPost` operation is annotated with <xref:System.ServiceModel.Web.WebInvokeAttribute>, which indicates it is not a `GET` operation (it has side effects). Because the <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly specify a `Method`, the operation processes HTTP `POST` requests that have the string in the request body (in the XML format, for instance). Note that the HTTP method and the format of the URI for the request can be customized using the <xref:System.ServiceModel.Web.WebInvokeAttribute.Method%2A> and <xref:System.ServiceModel.Web.WebInvokeAttribute.UriTemplate> properties respectively.  
   
- The App.config file configures the WCF service with a default <xref:System.ServiceModel.Description.WebHttpEndpoint> that has the <xref:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled%2A> property set to `true`. As a result, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure creates an automatic HTML based help page at `http://localhost:8000/Customers/help` that provides information about how to construct HTTP requests to the service and how to consume the service’s HTTP response.  
+ The App.config file configures the WCF service with a default <xref:System.ServiceModel.Description.WebHttpEndpoint> that has the <xref:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled%2A> property set to `true`. As a result, the WCF infrastructure creates an automatic HTML based help page at `http://localhost:8000/Customers/help` that provides information about how to construct HTTP requests to the service and how to consume the service’s HTTP response.  
   
- Program.cs demonstrates how a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel factory can be used to make calls to the service and process responses. Note that this is just one way to access a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. It is also possible to access the service using other .NET Framework classes like <xref:System.Net.HttpWebRequest> and <xref:System.Net.WebClient>. Other samples in the SDK (such as the [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md) sample and [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample) show how to use these classes to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+ Program.cs demonstrates how a WCF channel factory can be used to make calls to the service and process responses. Note that this is just one way to access a WCF service. It is also possible to access the service using other .NET Framework classes like <xref:System.Net.HttpWebRequest> and <xref:System.Net.WebClient>. Other samples in the SDK (such as the [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md) sample and [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample) show how to use these classes to communicate with a WCF service.  
   
  The sample consists a self-hosted service and a client that both run within a console application. As the console application runs, the client makes requests to the service and writes the pertinent information from the responses to the console window.  
   
@@ -46,7 +32,7 @@ This sample demonstrates how to implement an HTTP-based, RPC-based service - pop
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\BasicHttpService`  
   

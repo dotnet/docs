@@ -1,11 +1,6 @@
 ---
 title: "-help, -? (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/? compiler option [Visual Basic]"
   - "-help compiler option [Visual Basic]"
@@ -32,7 +27,7 @@ Displays the compiler options.
  If you include this option in a compilation, no output file is created and no compilation takes place.  
   
 > [!NOTE]
->  The `-help` option is not available from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment; it is available only when compiling from the command line.  
+>  The `-help` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code displays help from the command line.  

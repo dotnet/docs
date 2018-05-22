@@ -1,17 +1,7 @@
 ---
 title: "How to: Compare the Contents of Two Folders (LINQ) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Compare the Contents of Two Folders (LINQ) (C#)
 This example demonstrates three ways to compare two file listings:  

@@ -1,16 +1,9 @@
 ---
 title: Build .NET Core from source
 description: Learn how to build .NET Core and the .NET Core CLI from the source code.
-keywords: .NET, .NET Core, source, build
 author: bleroy
 ms.author: mairaw
 ms.date: 06/28/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 8b49079c-6ede-429a-92d7-ecd2fda1ab0e
-ms.workload: 
-  - dotnetcore
 ---
 
 # Build .NET Core from source

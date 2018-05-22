@@ -1,13 +1,6 @@
 ---
 title: "Statements in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
   - "colons (:) [Visual Basic]"
@@ -22,12 +15,9 @@ helpviewer_keywords:
   - "variables [Visual Basic], defining"
   - "statements [Visual Basic], about statements"
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Statements in Visual Basic
-A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruction. It can contain keywords, operators, variables, constants, and expressions. Each statement belongs to one of the following categories:  
+A statement in Visual Basic is a complete instruction. It can contain keywords, operators, variables, constants, and expressions. Each statement belongs to one of the following categories:  
   
 -   **Declaration Statements**, which name a variable, constant, or procedure, and can also specify a data type.  
   
@@ -49,7 +39,7 @@ A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruc
  The third declaration is the `Dim` statement, which declares the variable `thisWidget`. The data type is a specific object, namely an object created from the `Widget` class. You can declare a variable to be of any elementary data type or of any object type that is exposed in the application you are using.  
   
 ### Initial Values  
- When the code containing a declaration statement runs, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] reserves the memory required for the declared element. If the element holds a value, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] initializes it to the default value for its data type. For more information, see "Behavior" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
+ When the code containing a declaration statement runs, Visual Basic reserves the memory required for the declared element. If the element holds a value, Visual Basic initializes it to the default value for its data type. For more information, see "Behavior" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
   
  You can assign an initial value to a variable as part of its declaration, as the following example illustrates.  
   
@@ -117,7 +107,7 @@ A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruc
 ### Type Conversions in Assignment Statements  
  The value you assign to a variable, property, or array element must be of a data type appropriate to that destination element. In general, you should try to generate a value of the same data type as that of the destination element. However, some types can be converted to other types during assignment.  
   
- For information on converting between data types, see [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md). In brief, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] automatically converts a value of a given type to any other type to which it widens. A *widening conversion* is one in that always succeeds at run time and does not lose any data. For example, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] converts an `Integer` value to `Double` when appropriate, because `Integer` widens to `Double`. For more information, see [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
+ For information on converting between data types, see [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md). In brief, Visual Basic automatically converts a value of a given type to any other type to which it widens. A *widening conversion* is one in that always succeeds at run time and does not lose any data. For example, Visual Basic converts an `Integer` value to `Double` when appropriate, because `Integer` widens to `Double`. For more information, see [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
  *Narrowing conversions* (those that are not widening) carry a risk of failure at run time, or of data loss. You can perform a narrowing conversion explicitly by using a type conversion function, or you can direct the compiler to perform all conversions implicitly by setting `Option Strict Off`. For more information, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).  
   
@@ -154,7 +144,7 @@ A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruc
 |After the `From` keyword in a collection initializer.|[!code-vb[VbVbalrLineContinuation#13](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_27.vb)]<br /><br /> For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).|  
   
 ## Adding Comments  
- Source code is not always self-explanatory, even to the programmer who wrote it. To help document their code, therefore, most programmers make liberal use of embedded comments. Comments in code can explain a procedure or a particular instruction to anyone reading or working with it later. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] ignores comments during compilation, and they do not affect the compiled code.  
+ Source code is not always self-explanatory, even to the programmer who wrote it. To help document their code, therefore, most programmers make liberal use of embedded comments. Comments in code can explain a procedure or a particular instruction to anyone reading or working with it later. Visual Basic ignores comments during compilation, and they do not affect the compiled code.  
   
  Comment lines begin with an apostrophe (`'`) or `REM` followed by a space. They can be added anywhere in code, except within a string. To append a comment to a statement, insert an apostrophe or `REM` after the statement, followed by the comment. Comments can also go on their own separate line. The following example demonstrates these possibilities.  
   

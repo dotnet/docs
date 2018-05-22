@@ -1,25 +1,13 @@
 ---
 title: "Making an Image Easier to Debug"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "images [.NET Framework], debugging"
   - "executable image for debugging"
   - "debugging [.NET Framework], executable images for"
 ms.assetid: 7d90ea7a-150f-4f97-98a7-f9c26541b9a3
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Making an Image Easier to Debug
 When compiling unmanaged code, you can configure an executable image for debugging by setting IDE switches or command-line options. For example, you can use the /**Zi** command-line option in Visual C++ to ask it to emit debug symbol files (file extension .pdb). Similarly, the /**Od** command-line option tells the compiler to disable optimization. The resulting code runs more slowly, but is easier to debug, should this be necessary.  

@@ -1,37 +1,23 @@
 ---
 title: "How to: Access Services with a Duplex Contract"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "duplex contracts [WCF]"
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Access Services with a Duplex Contract
-One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ability to create a service that uses a duplex messaging pattern. This pattern allows a service to communicate with the client through a callback. This topic shows the steps to create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client in a client class that implements the callback interface.  
+One feature of Windows Communication Foundation (WCF) is the ability to create a service that uses a duplex messaging pattern. This pattern allows a service to communicate with the client through a callback. This topic shows the steps to create a WCF client in a client class that implements the callback interface.  
   
  A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it connects only to services it trusts.  
   
- For a tutorial on creating a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service and client, see [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md).  
+ For a tutorial on creating a basic WCF service and client, see [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md).  
   
 ### To access a duplex service  
   
-1.  Create a service that contains two interfaces. The first interface is for the service, the second is for the callback. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a duplex service, see [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).  
+1.  Create a service that contains two interfaces. The first interface is for the service, the second is for the callback. For more information about creating a duplex service, see [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 2.  Run the service.  
   
@@ -75,7 +61,7 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
     Dim site As InstanceContext = New InstanceContext(new CallbackHandler())  
     ```  
   
-6.  Create an instance of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client using the constructor that requires an <xref:System.ServiceModel.InstanceContext> object. The second parameter of the constructor is the name of an endpoint found in the configuration file.  
+6.  Create an instance of the WCF client using the constructor that requires an <xref:System.ServiceModel.InstanceContext> object. The second parameter of the constructor is the name of an endpoint found in the configuration file.  
   
     ```csharp  
     CalculatorDuplexClient wcfClient =   
@@ -86,7 +72,7 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
     Dim wcfClient As New CalculatorDuplexClient(site, "default")  
     ```  
   
-7.  Call the methods of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client as required.  
+7.  Call the methods of the WCF client as required.  
   
 ## Example  
  The following code example demonstrates how to create a client class that accesses a duplex contract.  

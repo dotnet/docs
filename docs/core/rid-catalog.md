@@ -4,10 +4,6 @@ description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .
 author: mairaw
 ms.author: mairaw
 ms.date: 09/07/2017
-ms.topic: article
-ms.prod: .net-core
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core RID Catalog
 

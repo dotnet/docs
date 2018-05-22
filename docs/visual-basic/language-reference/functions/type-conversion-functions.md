@@ -1,11 +1,6 @@
 ---
 title: "Type Conversion Functions (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.CUShort"
   - "vb.csng"
@@ -86,9 +81,6 @@ helpviewer_keywords:
   - "rounding numbers [Visual Basic], banker's rounding"
   - "type conversion [Visual Basic], Visual Basic vs. .NET Framework"
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type Conversion Functions (Visual Basic)
 These functions are compiled inline, meaning the conversion code is part of the code that evaluates the expression. Sometimes there is no call to a procedure to accomplish the conversion, which improves performance. Each function coerces an expression to a specific data type.  

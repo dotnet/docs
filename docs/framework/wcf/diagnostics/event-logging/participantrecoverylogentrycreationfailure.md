@@ -1,21 +1,7 @@
 ---
 title: "ParticipantRecoveryLogEntryCreationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0bda0f08-7614-40f8-912a-06f5a99393e6
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ParticipantRecoveryLogEntryCreationFailure
 Id: 141  

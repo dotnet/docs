@@ -1,24 +1,10 @@
 ---
 title: "Custom Token"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e7fd8b38-c370-454f-ba3e-19759019f03d
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Token
-This sample demonstrates how to add a custom token implementation into a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application. The example uses a `CreditCardToken` to securely pass information about client credit cards to the service. The token is passed in the WS-Security message header and is signed and encrypted using the symmetric security binding element along with message body and other message headers. This is useful in cases where the built-in tokens are not sufficient. This sample demonstrates how to provide a custom security token to a service instead of using one of the built-in tokens. The service implements a contract that defines a request-reply communication pattern.  
+This sample demonstrates how to add a custom token implementation into a Windows Communication Foundation (WCF) application. The example uses a `CreditCardToken` to securely pass information about client credit cards to the service. The token is passed in the WS-Security message header and is signed and encrypted using the symmetric security binding element along with message body and other message headers. This is useful in cases where the built-in tokens are not sufficient. This sample demonstrates how to provide a custom security token to a service instead of using one of the built-in tokens. The service implements a contract that defines a request-reply communication pattern.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
@@ -29,7 +15,7 @@ This sample demonstrates how to add a custom token implementation into a [!INCLU
   
 -   How the service can consume and validate a custom security token.  
   
--   How the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service code can obtain the information about received security tokens including the custom security token.  
+-   How the WCF service code can obtain the information about received security tokens including the custom security token.  
   
 -   How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.  
   
@@ -123,9 +109,9 @@ channelFactory.Close();
 ```  
   
 ## Custom Security Token Implementation  
- To enable a custom security token in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], create an object representation of the custom security token. The sample has this representation in the `CreditCardToken` class. The object representation is responsible for holding all relevant security token information and to provide a list of security keys contained in the security token. In this case, the credit card security token does not contain any security key.  
+ To enable a custom security token in WCF, create an object representation of the custom security token. The sample has this representation in the `CreditCardToken` class. The object representation is responsible for holding all relevant security token information and to provide a list of security keys contained in the security token. In this case, the credit card security token does not contain any security key.  
   
- The next section describes what must be done to enable a custom token to be transmitted over the wire and consumed by a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint.  
+ The next section describes what must be done to enable a custom token to be transmitted over the wire and consumed by a WCF endpoint.  
   
 ```  
 class CreditCardToken : SecurityToken  
@@ -163,7 +149,7 @@ class CreditCardToken : SecurityToken
 ```  
   
 ## Getting the Custom Credit Card Token to and from the Message  
- Security token serializers in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] are responsible for creating an object representation of security tokens from the XML in the message and creating a XML form of the security tokens. They are also responsible for other functionality such as reading and writing key identifiers pointing to security tokens, but this example uses only security token-related functionality. To enable a custom token you must implement your own security token serializer. This sample uses the `CreditCardSecurityTokenSerializer` class for this purpose.  
+ Security token serializers in WCF are responsible for creating an object representation of security tokens from the XML in the message and creating a XML form of the security tokens. They are also responsible for other functionality such as reading and writing key identifiers pointing to security tokens, but this example uses only security token-related functionality. To enable a custom token you must implement your own security token serializer. This sample uses the `CreditCardSecurityTokenSerializer` class for this purpose.  
   
  On the service, the custom serializer reads the XML form of the custom token and creates the custom token object representation from it.  
   

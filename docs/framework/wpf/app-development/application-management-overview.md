@@ -1,26 +1,12 @@
 ---
 title: "Application Management Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "application management [WPF]"
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
-caps.latest.revision: 56
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Management Overview
 All applications tend to share a common set of functionality that applies to application implementation and management. This topic provides an overview of the functionality in the <xref:System.Windows.Application> class for creating and managing applications.  
@@ -154,7 +140,7 @@ All applications tend to share a common set of functionality that applies to app
   
 <a name="Showing_a_User_Interface"></a>   
 ### Showing a User Interface  
- Most standalone [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] applications open a <xref:System.Windows.Window> when they begin running. The <xref:System.Windows.Application.Startup> event handler is one location from which you can do this, as demonstrated by the following code.  
+ Most standalone Windows applications open a <xref:System.Windows.Window> when they begin running. The <xref:System.Windows.Application.Startup> event handler is one location from which you can do this, as demonstrated by the following code.  
   
  [!code-xaml[AppShowWindowHardSnippets#StartupEventMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AppShowWindowHardSnippets/CSharp/App.xaml#startupeventmarkup)]  
   
@@ -190,7 +176,7 @@ All applications tend to share a common set of functionality that applies to app
   
 <a name="Processing_Command_Line_Arguments"></a>   
 ### Processing Command-Line Arguments  
- In [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)], standalone applications can be launched from either a command prompt or the desktop. In both cases, command-line arguments can be passed to the application. The following example shows an application that is launched with a single command-line argument, "/StartMinimized":  
+ In Windows, standalone applications can be launched from either a command prompt or the desktop. In both cases, command-line arguments can be passed to the application. The following example shows an application that is launched with a single command-line argument, "/StartMinimized":  
   
  `wpfapplication.exe /StartMinimized`  
   
@@ -207,7 +193,7 @@ All applications tend to share a common set of functionality that applies to app
   
 <a name="Application_Activation_and_Deactivation"></a>   
 ### Application Activation and Deactivation  
- [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] allows users to switch between applications. The most common way is to use the ALT+TAB key combination. An application can only be switched to if it has a visible <xref:System.Windows.Window> that a user can select. The currently selected <xref:System.Windows.Window> is the *active window* (also known as the *foreground window*) and is the <xref:System.Windows.Window> that receives user input. The application with the active window is the *active application* (or *foreground application*). An application becomes the active application in the following circumstances:  
+ Windows allows users to switch between applications. The most common way is to use the ALT+TAB key combination. An application can only be switched to if it has a visible <xref:System.Windows.Window> that a user can select. The currently selected <xref:System.Windows.Window> is the *active window* (also known as the *foreground window*) and is the <xref:System.Windows.Window> that receives user input. The application with the active window is the *active application* (or *foreground application*). An application becomes the active application in the following circumstances:  
   
 -   It is launched and shows a <xref:System.Windows.Window>.  
   
@@ -243,7 +229,7 @@ All applications tend to share a common set of functionality that applies to app
   
 -   A user closes the main <xref:System.Windows.Window>.  
   
--   A user ends the [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] session by logging off or shutting down.  
+-   A user ends the Windows session by logging off or shutting down.  
   
 -   An application-specific condition has been met.  
   
@@ -271,7 +257,7 @@ All applications tend to share a common set of functionality that applies to app
 >  <xref:System.Windows.Application.ShutdownMode%2A> can be set from an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)], but it is ignored; an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is always shut down when it is navigated away from in a browser or when the browser that hosts the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is closed. For more information, see [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md).  
   
 #### Session Ending  
- The shutdown conditions that are described by the <xref:System.Windows.Application.ShutdownMode%2A> property are specific to an application. In some cases, though, an application may shut down as a result of an external condition. The most common external condition occurs when a user ends the [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] session by the following actions:  
+ The shutdown conditions that are described by the <xref:System.Windows.Application.ShutdownMode%2A> property are specific to an application. In some cases, though, an application may shut down as a result of an external condition. The most common external condition occurs when a user ends the Windows session by the following actions:  
   
 -   Logging off  
   
@@ -281,14 +267,14 @@ All applications tend to share a common set of functionality that applies to app
   
 -   Hibernating  
   
- To detect when a [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] session ends, you can handle the <xref:System.Windows.Application.SessionEnding> event, as illustrated in the following example.  
+ To detect when a Windows session ends, you can handle the <xref:System.Windows.Application.SessionEnding> event, as illustrated in the following example.  
   
  [!code-xaml[ApplicationSessionEndingSnippets#HandlingSessionEndingXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/CSharp/App.xaml#handlingsessionendingxaml)]  
   
  [!code-csharp[ApplicationSessionEndingSnippets#HandlingSessionEndingCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/CSharp/App.xaml.cs#handlingsessionendingcodebehind)]
  [!code-vb[ApplicationSessionEndingSnippets#HandlingSessionEndingCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/visualbasic/application.xaml.vb#handlingsessionendingcodebehind)]  
   
- In this example, the code inspects the <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A> property to determine how the [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] session is ending. It uses this value to display a confirmation message to the user. If the user does not want the session to end, the code sets <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> to `true` to prevent the [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] session from ending.  
+ In this example, the code inspects the <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A> property to determine how the Windows session is ending. It uses this value to display a confirmation message to the user. If the user does not want the session to end, the code sets <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> to `true` to prevent the Windows session from ending.  
   
 > [!NOTE]
 >  <xref:System.Windows.Application.SessionEnding> is not raised for [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)].  
@@ -315,7 +301,7 @@ All applications tend to share a common set of functionality that applies to app
 -   When the browser is closed.  
   
 #### Exit Code  
- Applications are mostly launched by the operating system in response to a user request. However, an application can be launched by another application to perform some specific task. When the launched application shuts down, the launching application may want to know the condition under which the launched application shut down. In these situations, [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] allows applications to return an application exit code on shutdown. By default, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications return an exit code value of 0.  
+ Applications are mostly launched by the operating system in response to a user request. However, an application can be launched by another application to perform some specific task. When the launched application shuts down, the launching application may want to know the condition under which the launched application shut down. In these situations, Windows allows applications to return an application exit code on shutdown. By default, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications return an exit code value of 0.  
   
 > [!NOTE]
 >  When you debug from [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], the application exit code is displayed in the     **Output** window when the application shuts down, in a message that looks like the following:  
@@ -346,7 +332,7 @@ All applications tend to share a common set of functionality that applies to app
   
 -   Attempting to keep an application running.  
   
--   Recording detailed, developer-friendly, exception information in the [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] event log.  
+-   Recording detailed, developer-friendly, exception information in the Windows event log.  
   
  Implementing this support depends on being able to detect unhandled exceptions, which is what the <xref:System.Windows.Application.DispatcherUnhandledException> event is raised for.  
   

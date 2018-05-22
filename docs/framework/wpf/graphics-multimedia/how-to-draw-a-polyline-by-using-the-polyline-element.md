@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw a Polyline by Using the Polyline Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "connected lines [WPF]"
   - "polylines [WPF], drawing"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "lines [WPF], connected (see polylines)"
   - "drawing [WPF], polylines"
 ms.assetid: 65db8935-d047-4295-87c4-b427ff3ad293
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw a Polyline by Using the Polyline Element
 This example shows how to draw a polyline, which is a series of connected lines, by using the <xref:System.Windows.Shapes.Polyline> element.  

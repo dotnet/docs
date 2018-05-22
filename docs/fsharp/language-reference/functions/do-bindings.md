@@ -1,17 +1,8 @@
 ---
 title: do Bindings (F#)
 description: Learn how an F# 'do' binding is used to execute code without defining a function or value.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 4c1057a3-3aa1-4b64-b46a-25ffe33f0be9 
 ---
-
 # do Bindings
 
 A `do` binding is used to execute code without defining a function or value. Also, do bindings can be used in classes, see [`do` Bindings in Classes](../members/do-bindings-in-classes.md).

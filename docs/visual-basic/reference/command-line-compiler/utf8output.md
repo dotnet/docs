@@ -1,20 +1,11 @@
 ---
 title: "-utf8output (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-utf8output compiler option [Visual Basic]"
   - "utf8output compiler option [Visual Basic]"
   - "/utf8output compiler option [Visual Basic]"
 ms.assetid: 8ab36b1e-027a-49ac-85b4-f48997d9e4d6
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -utf8output (Visual Basic)
 Displays compiler output using UTF-8 encoding.  

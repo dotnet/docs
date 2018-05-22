@@ -1,21 +1,7 @@
 ---
 title: "Writing Secure Dynamic SQL in SQL Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: df5512b0-c249-40d2-82f9-f9a2ce6665bc
-caps.latest.revision: 9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Writing Secure Dynamic SQL in SQL Server
 SQL Injection is the process by which a malicious user enters Transact-SQL statements instead of valid input. If the input is passed directly to the server without being validated and if the application inadvertently executes the injected code, the attack has the potential to damage or destroy data.  
@@ -65,7 +51,7 @@ SQL Injection is the process by which a malicious user enters Transact-SQL state
  When a stored procedure that has been signed with a certificate executes, the permissions granted to the certificate user are merged with those of the caller. The execution context remains the same; the certificate user does not impersonate the caller. Signing stored procedures requires several steps to implement. Each time the procedure is modified, it must be re-signed.  
   
 ### Cross Database Access  
- Cross-database ownership chaining does not work in cases where dynamically created SQL statements are executed. You can work around this in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] by creating a stored procedure that accesses data in another database and signing the procedure with a certificate that exists in both databases. This gives users access to the database resources used by the procedure without granting them database access or permissions.  
+ Cross-database ownership chaining does not work in cases where dynamically created SQL statements are executed. You can work around this in SQL Server by creating a stored procedure that accesses data in another database and signing the procedure with a certificate that exists in both databases. This gives users access to the database resources used by the procedure without granting them database access or permissions.  
   
 ## External Resources  
  For more information, see the following resources.  

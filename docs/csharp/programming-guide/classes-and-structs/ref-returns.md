@@ -4,14 +4,10 @@ description: "Learn how to define and use ref return and ref local values"
 author: "rpetrusha"
 ms.author: "ronpet"
 ms.date: "04/04/2018"
-ms.topic: "article"
-ms.prod: ".net"
-ms.technology: "devlang-csharp"
-ms.devlang: "csharp"
 ---
 # Ref returns and ref locals
 
-Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a ref local.
+Starting with C# 7.0, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a ref local.
 
 ## What is a reference return value?
 

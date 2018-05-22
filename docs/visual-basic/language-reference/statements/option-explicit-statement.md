@@ -1,12 +1,6 @@
 ---
 title: "Option Explicit Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Explicit"
   - "vb.OptionExplicit"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "explicit variable declaration"
   - "Option Explicit statement [Visual Basic]"
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Explicit Statement (Visual Basic)
 Forces explicit declaration of all variables in a file, or allows implicit declarations of variables.  

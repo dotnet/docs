@@ -1,14 +1,7 @@
 ---
 title: Common Patterns for Delegates
 description: Learn about common patterns for using delegates in your code to avoid strong coupling between your components.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 0ff8fdfd-6a11-4327-b061-0f2526f35b43
 ---
 
@@ -35,7 +28,7 @@ implementation of the delegate for this specific purpose.
 The prototype for the Where method is:
 
 ```csharp
-public static IEnumerable<TSource> Where<in TSource> (IEnumerable<TSource> source, Func<TSource, bool> predicate);
+public static IEnumerable<TSource> Where<TSource> (this IEnumerable<TSource> source, Func<TSource, bool> predicate);
 ```
 
 This example is repeated with all the methods that are part of LINQ. They

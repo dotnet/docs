@@ -1,14 +1,6 @@
 ---
 title: "illegalPrepareConstrainedRegion MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "PrepareConstrainedRegions method"
   - "managed debugging assistants (MDAs), illegal PrepareConstrainedRegions"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "IllegalPrepareConstrainedRegions MDA"
   - "MDAs (managed debugging assistants), illegal PrepareConstrainedRegions"
 ms.assetid: 2f9b5031-f910-4e01-a196-f89eab313eaf
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # illegalPrepareConstrainedRegion MDA
 The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activated when a <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=nameWithType> method call does not immediately precede the `try` statement of the exception handler. This restriction is at the MSIL level, so it is permissible to have non-code-generating source between the call and the `try`, such as comments.  

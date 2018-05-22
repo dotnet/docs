@@ -1,18 +1,11 @@
 ---
 title: "-keyfile"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/keyfile compiler option [Visual Basic]"
   - "keyfile compiler option [Visual Basic]"
   - "-keyfile compiler option [Visual Basic]"
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -keyfile
 Specifies a file containing a key or key pair to give an assembly a strong name.  
@@ -43,7 +36,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
  See [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
   
 > [!NOTE]
->  The `-keyfile` option is not available from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment; it is available only when compiling from the command line.  
+>  The `-keyfile` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles source file `Input.vb` and specifies a key file.  

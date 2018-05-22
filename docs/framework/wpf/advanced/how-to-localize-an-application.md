@@ -1,11 +1,6 @@
 ---
 title: "How to: Localize an Application"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,11 +9,6 @@ helpviewer_keywords:
   - "LocBaml tool [WPF]"
   - "applications [WPF], localizing"
 ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Localize an Application
 This tutorial explains how to create a localized application by using the LocBaml tool.  
@@ -85,7 +75,7 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="build_locbaml"></a>   
 ## Build the LocBaml Tool  
   
-1.  All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the [!INCLUDE[TLA#tla_lhcshrp](../../../../includes/tlasharptla-lhcshrp-md.md)] files from the [LocBaml Tool Sample](http://go.microsoft.com/fwlink/?LinkID=160016).  
+1.  All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the C# files from the [LocBaml Tool Sample](http://go.microsoft.com/fwlink/?LinkID=160016).  
   
 2.  From the command line, run the project file (locbaml.csproj) to build the tool:  
   

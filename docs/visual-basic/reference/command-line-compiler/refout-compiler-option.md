@@ -1,10 +1,6 @@
 ---
 title: "-refout (Visual Basic)"
 ms.date: 03/16/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "/refout"
 helpviewer_keywords: 

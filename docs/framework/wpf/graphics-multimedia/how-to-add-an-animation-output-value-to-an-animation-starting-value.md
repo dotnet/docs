@@ -1,23 +1,9 @@
 ---
 title: "How to: Add an Animation Output Value to an Animation Starting Value"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF]"
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add an Animation Output Value to an Animation Starting Value
 This example shows how to add an animation output value to an animation starting value.  

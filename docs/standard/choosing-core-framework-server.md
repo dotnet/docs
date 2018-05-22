@@ -4,11 +4,6 @@ description: A guide on which implementation of .NET you should consider when bu
 author: cartermp
 ms.author: mairaw
 ms.date: 03/15/2018
-ms.topic: article
-ms.prod: .net
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Choosing between .NET Core and .NET Framework for server apps
 
@@ -93,8 +88,6 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
 * Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in the .NET Framework.  There are no plans to bring WF/WCF+WF/WCF Data Services to .NET Core.
-
-* Windows Presentation Foundation (WPF) and Windows Forms: WPF and Windows Forms applications are only available in the .NET Framework. There are no plans to port them to .NET Core.
 
 * Language support: Visual Basic and F# are currently supported in .NET Core, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 

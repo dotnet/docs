@@ -1,21 +1,7 @@
 ---
 title: "204 - ClientParameterInspectorBeforeCallInvoked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8253555a-9002-4565-8ede-33d7a33a895f
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 204 - ClientParameterInspectorBeforeCallInvoked
 ## Properties  

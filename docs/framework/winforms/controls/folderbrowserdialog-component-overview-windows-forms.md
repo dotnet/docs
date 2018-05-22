@@ -1,14 +1,6 @@
 ---
 title: "FolderBrowserDialog Component Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "FolderBrowserDialog"
 helpviewer_keywords: 
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "directories [Windows Forms], enabling browsing in applications"
   - "folders [Windows Forms], enabling browsing in applications"
 ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # FolderBrowserDialog Component Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component is a modal dialog box that is used for browsing and selecting folders. New folders can also be created from within the <xref:System.Windows.Forms.FolderBrowserDialog> component.  

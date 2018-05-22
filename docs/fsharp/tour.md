@@ -1,17 +1,8 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-keywords: visual f#, f#, functional programming, .NET, tour
-author: cartermp
-ms.author: phcart
 ms.date: 02/28/2018
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 ---
-
 # Tour of F# #
 
 The best way to learn about F# is to read and write F# code.  This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).

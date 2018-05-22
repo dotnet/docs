@@ -1,17 +1,8 @@
 ---
 title: Bitwise Operators (F#)
 description: Learn about the bitwise operators that are available in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 8a2c87f5-b4c7-47fe-8580-82c956f605e5 
 ---
-
 # Bitwise Operators
 
 This topic describes bitwise operators that are available in the F# language.

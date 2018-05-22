@@ -1,13 +1,6 @@
 ---
 title: "How to: Read From Text Files in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "extended characters [Visual Basic], reading"
   - "reading text files [Visual Basic]"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "examples [Visual Basic], reading text files"
   - "text files [Visual Basic], reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Read From Text Files in Visual Basic
 The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText%2A> method of the `My.Computer.FileSystem` object allows you to read from a text file. The file encoding can be specified if the contents of the file use an encoding such as ASCII or UTF-8.  
@@ -58,7 +48,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText%2A> metho
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
- Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source file.  
+ Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file.  
   
  Verify all inputs before using the data in your application. The contents of the file may not be what is expected, and methods to read from the file may fail.  
   

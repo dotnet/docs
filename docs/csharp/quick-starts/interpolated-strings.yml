@@ -9,7 +9,7 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
-  nextTutorialHref: list-collection
+  nextTutorialHref: list-collection.yml
   nextTutorialTitle: Collections in C#
 items:
 - durationInMinutes: 2
@@ -43,7 +43,7 @@ items:
   content: |
     In the previous step, you used string interpolation to insert one string inside of another. The result of an interpolated expression can be of any data type, though. Let's include values of various data types in an interpolated string. 
     
-    In the following example, first, we define a custom data type `Vegetable` that has the `Name` [property](../properties.md) and the `ToString` method. The client code can use that method to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` constructor: `Vegetable(string name) => Name = name;`. Then we create an instance of the `Vegetable` type by using `new` keyword and providing a name parameter for the constructor `Vegetable`. Finally, we include that instance into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../programming-guide/enumeration-types.md) value. Run the following code in the interactive window:
+    In the following example, first, we define a [class](../programming-guide/classes-and-structs/classes.md) data type `Vegetable` that has the `Name` [property](../properties.md) and the `ToString` [method](../methods.md), which [overrides](../language-reference/keywords/override.md) the behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The [`public` access modifier](../language-reference/keywords/public.md) makes that method available to any client code to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` [constructor](../programming-guide/classes-and-structs/constructors.md): `Vegetable(string name) => Name = name;`. Then we create an instance of the `Vegetable` class by using [`new` keyword](../language-reference/keywords/new-operator.md) and providing a name parameter for the constructor `Vegetable`. Finally, we include that instance into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../programming-guide/enumeration-types.md) value. Run the following code in the interactive window:
 
     ```csharp
     public class Vegetable
@@ -68,7 +68,7 @@ items:
 
     - If the interpolated expression evaluates to `null`, an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>) is used.
 
-    - If the interpolated expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called. You can test this by updating the implementation of the `Vegetable.ToString` method. You might even not implement `ToString` method since every C# data type has some implementation of this method. To test that, comment out the definition of the `Vegetable.ToString` method in the example (to do that, put a comment symbol `//` in front of it). In the output, the string "eggplant" is replaced by the fully qualified type name (the namespace defined by the C# REPL along with the type name), which is the default behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. Default behavior of the `ToString` method for an enumeration type is to return the string representation of a value used at the definition of the enumeration.   
+    - If the interpolated expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called. You can test this by updating the implementation of the `Vegetable.ToString` method. You might not even need to implement the `ToString` method since every type has some implementation of this method. To test this, comment out the definition of the `Vegetable.ToString` method in the example (to do that, put a comment symbol, `//`, in front of it). In the output, the string "eggplant" is replaced by the fully qualified type name (the namespace defined by the C# REPL along with the type name), which is the default behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The default behavior of the `ToString` method for an enumeration value is to return the string representation of the value.    
 
     In the output from this example, the date is too precise (the price of eggplant doesn't change every second), and the price value doesn't indicate a unit of currency. In the next step, you'll learn how to fix those issues by controlling the format of string representations of the expression results.
 
@@ -133,5 +133,5 @@ items:
     
     You can continue these quickstarts in your own local development environment. Learn the basics of [local development](local-environment.md) and then pick a quickstart. You can try this same quickstart, move directly to the next quickstart, or start again with the [Numbers in C#](numbers-in-csharp-local.md) quickstart.
 
-    Learn more about string interpolation in the [String interpolation](../language-reference/tokens/interpolated.md) topic in the C# Reference.
+    For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) topic and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
 

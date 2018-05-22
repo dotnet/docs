@@ -1,17 +1,9 @@
 ---
 title: "My.Computer.Network Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.Network object"
 ms.assetid: 94ddbade-aff1-42f8-a6c8-88b78c28c0db
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Computer.Network Object
 Provides a property, event, and methods for interacting with the network to which the computer is connected.  

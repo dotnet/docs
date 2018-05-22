@@ -1,21 +1,7 @@
 ---
 title: "System.Runtime.Serialization.WriteObjectContentBegin"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b89d8e09-f41b-44f5-8589-3aef97d6c437
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.Runtime.Serialization.WriteObjectContentBegin
 System.Runtime.Serialization.WriteObjectContentBegin  

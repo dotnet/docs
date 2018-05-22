@@ -1,14 +1,6 @@
 ---
 title: "RadioButton Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "RadioButton"
 helpviewer_keywords: 
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "radio buttons [Windows Forms], determining state"
   - "radio buttons [Windows Forms], about radio buttons"
 ms.assetid: cd11f0c2-d098-4022-adf9-1455bc166a13
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # RadioButton Control Overview (Windows Forms)
 Windows Forms <xref:System.Windows.Forms.RadioButton> controls present a set of two or more mutually exclusive choices to the user. While radio buttons and check boxes may appear to function similarly, there is an important difference: when a user selects a radio button, the other radio buttons in the same group cannot be selected as well. In contrast, any number of check boxes can be selected. Defining a radio button group tells the user, "Here is a set of choices from which you can choose one and only one."  

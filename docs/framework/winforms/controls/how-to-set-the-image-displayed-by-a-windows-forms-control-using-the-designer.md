@@ -1,14 +1,6 @@
 ---
 title: "How to: Set the Image Displayed by a Windows Forms Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Button control [Windows Forms], images"
   - "Windows Forms controls, images"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
   - "setting images [Windows Forms], Windows Forms controls"
 ms.assetid: ae80d07a-e469-4251-90ca-df71f5852454
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Image Displayed by a Windows Forms Control Using the Designer
 Several Windows Forms controls can display images. The image can be an icon that clarifies the purpose of the control, such as a disk icon on a button denoting the **Save** command. Alternatively, the icon can be a background image to give the control the appearance you want.  

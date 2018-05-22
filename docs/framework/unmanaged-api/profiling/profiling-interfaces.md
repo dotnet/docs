@@ -1,25 +1,13 @@
 ---
 title: "Profiling Interfaces"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+ms.date: "04/10/2018"
 helpviewer_keywords: 
   - "unmanaged interfaces [.NET Framework], profiling"
   - "profiling interfaces [.NET Framework]"
   - "interfaces [.NET Framework profiling]"
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-caps.latest.revision: 31
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
+author: "rpetrusha"
+ms.author: "ronpet"
 ---
 # Profiling Interfaces
 This section describes the unmanaged interfaces that enable you to profile a program that is being executed by the common language runtime (CLR).  
@@ -51,7 +39,13 @@ This section describes the unmanaged interfaces that enable you to profile a pro
   
  [ICorProfilerCallback7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-interface.md)  
  Provides a callback method that the common language runtime uses to notify the profiler that the symbol stream associated with an in-memory module is updated.  
-  
+
+[ICorProfilerCallback8 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-interface.md)  
+Provides callback methods that the common language runtime uses to notify the profiler that JIT compilation of a dynamic method has started and finished.
+
+[ICorProfilerCallback9 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback9-interface.md)  
+Provides a callback method that the common language runtime uses to notify the profiler that a dynamic method is garbage collected and subsequently unloaded.
+
  [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)  
  Provides methods that allow a code profiler to communicate with the CLR to control how the JIT compiler should generate code when recompiling a specific method.  
   

@@ -1,23 +1,9 @@
 ---
 title: "Configuring Bindings for Windows Communication Foundation Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "binding configuration [WCF]"
 ms.assetid: 99a85fd8-f7eb-4a84-a93e-7721b37d415c
-caps.latest.revision: 36
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Bindings for Windows Communication Foundation Services
 When creating an application, you often want to defer decisions to the administrator after the deployment of the application. For example, there is often no way of knowing in advance what a service address, or Uniform Resource Identifier (URI), will be. Instead of hard-coding an address, it is preferable to allow an administrator to do so after creating a service. This flexibility is accomplished through configuration.  
@@ -26,7 +12,7 @@ When creating an application, you often want to defer decisions to the administr
 >  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the `/config` switch to quickly create configuration files.  
   
 ## Major Sections  
- The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] configuration scheme includes the following three major sections (`serviceModel`, `bindings`, and `services`):  
+ The Windows Communication Foundation (WCF) configuration scheme includes the following three major sections (`serviceModel`, `bindings`, and `services`):  
   
 ```xml  
 <configuration>  
@@ -42,15 +28,15 @@ When creating an application, you often want to defer decisions to the administr
 ```  
   
 ### ServiceModel Elements  
- You can use the section bounded by the `system.ServiceModel` element to configure a service type with one or more endpoints, as well as settings for a service. Each endpoint can then be configured with an address, a contract, and a binding. [!INCLUDE[crabout](../../../includes/crabout-md.md)] endpoints, see [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). If no endpoints are specified, the runtime adds default endpoints. [!INCLUDE[crabout](../../../includes/crabout-md.md)] default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+ You can use the section bounded by the `system.ServiceModel` element to configure a service type with one or more endpoints, as well as settings for a service. Each endpoint can then be configured with an address, a contract, and a binding. For more information about endpoints, see [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). If no endpoints are specified, the runtime adds default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
  A binding specifies transports (HTTP, TCP, pipes, Message Queuing) and protocols (Security, Reliability, Transaction flows) and consists of binding elements, each of which specifies an aspect of how an endpoint communicates with the world.  
   
  For example, specifying the [\<basicHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element indicates to use HTTP as the transport for an endpoint. This is used to wire up the endpoint at run time when the service using this endpoint is opened.  
   
- There are two kinds of bindings: predefined and custom. Predefined bindings contain useful combinations of elements that are used in common scenarios. For a list of predefined binding types that [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). If no predefined binding collection has the correct combination of features that a service application needs, you can construct custom bindings to meet the application's requirements. [!INCLUDE[crabout](../../../includes/crabout-md.md)] custom bindings, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+ There are two kinds of bindings: predefined and custom. Predefined bindings contain useful combinations of elements that are used in common scenarios. For a list of predefined binding types that WCF provides, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). If no predefined binding collection has the correct combination of features that a service application needs, you can construct custom bindings to meet the application's requirements. For more information about custom bindings, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
- The following four examples illustrate the most common binding configurations used for setting up a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service.  
+ The following four examples illustrate the most common binding configurations used for setting up a WCF service.  
   
 #### Specifying an Endpoint to Use a Binding Type  
  The first example illustrates how to specify an endpoint configured with an address, a contract, and a binding.  

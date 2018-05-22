@@ -1,22 +1,10 @@
 ---
 title: "WPF and WF Integration in XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a4f53b48-fc90-4315-bca0-ba009562f488
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WPF and WF Integration in XAML
-This sample demonstrates how to create an application that uses [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] and [!INCLUDE[wf](../../../../includes/wf-md.md)] features in a single XAML document. To accomplish this, the sample uses [!INCLUDE[wf](../../../../includes/wf-md.md)] and XAML extensibility.  
+This sample demonstrates how to create an application that uses Windows Presentation Foundation (WPF) and Windows Workflow Foundation (WF) features in a single XAML document. To accomplish this, the sample uses Windows Workflow Foundation (WF) and XAML extensibility.  
   
 ## Sample Details  
  The ShowWindow.xaml file deserializes into a <xref:System.Activities.Statements.Sequence> activity with two string variables that are manipulated by the sequence’s activities: `ShowWindow` and `WriteLine`. The <xref:System.Activities.Statements.WriteLine> activity outputs to the console window the expression that it assigns to the <xref:System.Activities.Statements.WriteLine.Text%2A> property. The `ShowWindow` activity displays a [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] window as part of its execution logic. The <xref:System.Activities.ActivityContext.DataContext%2A> of the window includes the variables declared in the sequence. The controls of the window declared in the `ShowWindow` activity use data binding to manipulate those variables. Finally, the window contains a button control. The `Click` event for the button is handled by a <xref:System.Activities.ActivityDelegate> named `MarkupExtension` that contains a `CloseWindow` activity. `MarkUpExtension` invokes the contained activity that provides, as context, any objects identified by an `x:Name`, as well as the <xref:System.Activities.ActivityContext.DataContext%2A> of the containing window. Thus, the `CloseWindow.InArgument<Window>` can be bound using an expression that references the window’s name.  
@@ -47,6 +35,6 @@ This sample demonstrates how to create an application that uses [!INCLUDE[avalon
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\WPFWFIntegration`

@@ -1,14 +1,8 @@
 ---
 title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
-keywords: C#, .NET, .NET Core, What's New, C# History
 author: erikdietrich
-ms.author: wiwagn
 ms.date: 09/20/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 
 # The history of C# #
@@ -44,7 +38,7 @@ And yet, C# continued to play a bit of catch-up with Java. Java had already rele
 
 ## C# version 3.0
 
-C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with C# version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
+C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
 - [Auto implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)

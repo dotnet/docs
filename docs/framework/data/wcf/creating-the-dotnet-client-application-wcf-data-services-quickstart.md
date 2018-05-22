@@ -1,24 +1,10 @@
 ---
 title: "Creating the .NET Framework Client Application (WCF Data Services Quickstart)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 41ade767-eeab-437d-9121-9797e8fb8045
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating the .NET Framework Client Application (WCF Data Services Quickstart)
 This is the final task of the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] quickstart. In this task, you will add a console application to the solution, add a reference to the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed into this new client application, and access the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed from the client application by using the generated client data service classes and client libraries.  
@@ -86,7 +72,7 @@ This is the final task of the [!INCLUDE[ssAstoria](../../../../includes/ssastori
     >  This version of the NorthwindClient application does not support adding and deleting of entities.  
   
 ## Next Steps  
- You have successfully created the client application that accesses the sample Northwind [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. You have also completed the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] quickstart. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] accessing an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).  
+ You have successfully created the client application that accesses the sample Northwind [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. You have also completed the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] quickstart. For more information about accessing an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).  
   
 ## See Also  
  [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  

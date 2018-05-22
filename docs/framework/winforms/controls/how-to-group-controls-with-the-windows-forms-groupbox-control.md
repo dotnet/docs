@@ -1,25 +1,11 @@
 ---
 title: "How to: Group Controls with the Windows Forms GroupBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], grouping"
   - "GroupBox control [Windows Forms], grouping controls"
   - "Windows Forms controls, grouping"
 ms.assetid: 0bda316d-bd2a-43aa-ac73-342453303169
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Group Controls with the Windows Forms GroupBox Control
 Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group other controls. There are three reasons to group controls:  

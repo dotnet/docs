@@ -1,18 +1,11 @@
 ---
 title: "Method Parameters (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "methods [C#], parameters"
   - "method parameters [C#]"
   - "parameters [C#]"
 ms.assetid: 680e39ff-775b-48b0-9f47-4186a5bfc4a1
-caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Method Parameters (C# Reference)
 

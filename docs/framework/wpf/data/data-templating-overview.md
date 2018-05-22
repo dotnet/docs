@@ -1,14 +1,6 @@
 ---
 title: "Data Templating Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "templates [WPF], data"
   - "data templates [WPF]"
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Data Templating Overview
 The WPF data templating model provides you with great flexibility to define the presentation of your data. WPF controls have built-in functionality to support the customization of data presentation. This topic first demonstrates how to define a <xref:System.Windows.DataTemplate> and then introduces other data templating features, such as the selection of templates based on custom logic and the support for the display of hierarchical data.  
@@ -141,7 +127,8 @@ The WPF data templating model provides you with great flexibility to define the 
   
 <a name="what_belongs_in_datatemplate"></a>   
 ### What Belongs in a DataTemplate?  
- In the previous example, we placed the trigger within the <xref:System.Windows.DataTemplate> using the <xref:System.Windows.DataTemplate>.<xref:System.Windows.DataTemplate.Triggers%2A> property. The <xref:System.Windows.Setter> of the trigger sets the value of a property of an element (the <xref:System.Windows.Controls.Border> element) that is within the <xref:System.Windows.DataTemplate>. However, if the properties that your `Setters` are concerned with are not properties of elements that are within the current <xref:System.Windows.DataTemplate>, it may be more suitable to set the properties using a <xref:System.Windows.Style> that is for the <xref:System.Windows.Controls.ListBoxItem> class (if the control you are binding is a <xref:System.Windows.Controls.ListBox>). For example, if you want your <xref:System.Windows.Trigger> to animate the <xref:System.Windows.UIElement.Opacity%2A> value of the item when a mouse points to an item, you define triggers within a <xref:System.Windows.Controls.ListBoxItem> style. For an example, see the [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
+
+In the previous example, we placed the trigger within the <xref:System.Windows.DataTemplate> using the <xref:System.Windows.DataTemplate>.<xref:System.Windows.DataTemplate.Triggers%2A> property. The <xref:System.Windows.Setter> of the trigger sets the value of a property of an element (the <xref:System.Windows.Controls.Border> element) that is within the <xref:System.Windows.DataTemplate>. However, if the properties that your `Setters` are concerned with are not properties of elements that are within the current <xref:System.Windows.DataTemplate>, it may be more suitable to set the properties using a <xref:System.Windows.Style> that is for the <xref:System.Windows.Controls.ListBoxItem> class (if the control you are binding is a <xref:System.Windows.Controls.ListBox>). For example, if you want your <xref:System.Windows.Trigger> to animate the <xref:System.Windows.UIElement.Opacity%2A> value of the item when a mouse points to an item, you define triggers within a <xref:System.Windows.Controls.ListBoxItem> style. For an example, see the [Introduction to Styling and Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
   
  In general, keep in mind that the <xref:System.Windows.DataTemplate> is being applied to each of the generated <xref:System.Windows.Controls.ListBoxItem> (for more information about how and where it is actually applied, see the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> page.). Your <xref:System.Windows.DataTemplate> is concerned with only the presentation and appearance of the data objects. In most cases, all other aspects of presentation, such as what an item looks like when it is selected or how the <xref:System.Windows.Controls.ListBox> lays out the items, do not belong in the definition of a <xref:System.Windows.DataTemplate>. For an example, see the [Styling and Templating an ItemsControl](#DataTemplating_ItemsControl) section.  
   
@@ -173,9 +160,9 @@ The WPF data templating model provides you with great flexibility to define the 
  With the template selector in place, the <xref:System.Windows.Controls.ListBox> now appears as follows:  
   
  ![Data templating sample screen shot](../../../../docs/framework/wpf/data/media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")  
-  
- This concludes our discussion of this example. For the complete sample, see [Introduction to Data Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160009).  
-  
+
+This concludes our discussion of this example. For the complete sample, see [Introduction to Data Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/DataTemplatingIntro).
+
 <a name="DataTemplating_ItemsControl"></a>   
 ## Styling and Templating an ItemsControl  
  Even though the <xref:System.Windows.Controls.ItemsControl> is not the only control type that you can use a <xref:System.Windows.DataTemplate> with, it is a very common scenario to bind an <xref:System.Windows.Controls.ItemsControl> to a collection. In the [What Belongs in a DataTemplate](#what_belongs_in_datatemplate) section we discussed that the definition of your <xref:System.Windows.DataTemplate> should only be concerned with the presentation of data. In order to know when it is not suitable to use a <xref:System.Windows.DataTemplate> it is important to understand the different style and template properties provided by the <xref:System.Windows.Controls.ItemsControl>. The following example is designed to illustrate the function of each of these properties. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to the same `Tasks` collection as in the previous example. For demonstration purposes, the styles and templates in this example are all declared inline.  

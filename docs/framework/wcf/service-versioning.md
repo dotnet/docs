@@ -1,24 +1,10 @@
 ---
 title: "Service Versioning"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 37575ead-d820-4a67-8059-da11a2ab48e2
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Versioning
-After initial deployment, and potentially several times during their lifetime, services (and the endpoints they expose) may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. Each change introduces a new version of the service. This topic explains how to consider versioning in [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  
+After initial deployment, and potentially several times during their lifetime, services (and the endpoints they expose) may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. Each change introduces a new version of the service. This topic explains how to consider versioning in Windows Communication Foundation (WCF).  
   
 ## Four Categories of Service Changes  
  The changes to services that may be required can be classified into four categories:  
@@ -43,7 +29,7 @@ After initial deployment, and potentially several times during their lifetime, s
   
  For service contracts, compatibility means new operations exposed by the service can be added but existing operations cannot be removed or changed semantically.  
   
- For data contracts, compatibility means new schema type definitions can be added but existing schema type definitions cannot be changed in breaking ways. Breaking changes might include removing data members or changing their data type incompatibly. This feature allows the service some latitude in changing the version of its contracts without breaking clients. The next two sections explain nonbreaking and breaking changes that can be made to [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] data and service contracts.  
+ For data contracts, compatibility means new schema type definitions can be added but existing schema type definitions cannot be changed in breaking ways. Breaking changes might include removing data members or changing their data type incompatibly. This feature allows the service some latitude in changing the version of its contracts without breaking clients. The next two sections explain nonbreaking and breaking changes that can be made to WCF data and service contracts.  
   
 ## Data Contract Versioning  
  This section deals with data versioning when using the <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.DataContractAttribute> classes.  
@@ -62,7 +48,7 @@ After initial deployment, and potentially several times during their lifetime, s
 ### Lax Versioning  
  In many other scenarios, the service developer can make the assumption that adding a new, optional member to the data contract will not break existing clients. This requires the service developer to investigate whether existing clients are not performing schema validation and that they ignore unknown data members. In these scenarios, it is possible to take advantage of data contract features for adding new members in a nonbreaking way. The service developer can make this assumption with confidence if the data contract features for versioning were already used for the first version of the service.  
   
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], ASP.NET Web Services, and many other Web service stacks support *lax versioning*: that is, they do not throw exceptions for new unknown data members in received data.  
+ WCF, ASP.NET Web Services, and many other Web service stacks support *lax versioning*: that is, they do not throw exceptions for new unknown data members in received data.  
   
  It is easy to mistakenly believe that adding a new member will not break existing clients. If you are unsure that all clients can handle lax versioning, the recommendation is to use the strict versioning guidelines and treat data contracts as immutable.  
   
@@ -101,7 +87,7 @@ After initial deployment, and potentially several times during their lifetime, s
 ## Message Contract Versioning  
  The guidelines for message contract versioning are very similar to versioning data contracts. If strict versioning is required, you should not change your message body but instead create a new message contract with a unique qualified name. If you know that you can use lax versioning, you can add new message body parts but not change or remove existing ones. This guidance applies both to bare and wrapped message contracts.  
   
- Message headers can always be added, even if strict versioning is in use. The MustUnderstand flag may affect versioning. In general, the versioning model for headers in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is as described in the SOAP specification.  
+ Message headers can always be added, even if strict versioning is in use. The MustUnderstand flag may affect versioning. In general, the versioning model for headers in WCF is as described in the SOAP specification.  
   
 ## Service Contract Versioning  
  Similar to data contract versioning, service contract versioning also involves adding, changing, and removing operations.  
@@ -127,13 +113,13 @@ After initial deployment, and potentially several times during their lifetime, s
  The list of faults described in a service's contract is not considered exhaustive. At any time, an operation may return faults that are not described in its contract. Therefore changing the set of faults described in the contract is not considered breaking. For example, adding a new fault to the contract using the <xref:System.ServiceModel.FaultContractAttribute> or removing an existing fault from the contract.  
   
 ### Service Contract Libraries  
- Organizations may have libraries of contracts where a contract is published to a central repository and service implementers implement contracts from that repository. In this case, when you publish a service contract to the repository you have no control over who creates services that implement it. Therefore, you cannot modify the service contract once published, rendering it effectively immutable. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] supports contract inheritance, which can be used to create a new contract that extends existing contracts. To use this feature, define a new service contract interface that inherits from the old service contract interface, then add methods to the new interface. You then change the service that implements the old contract to implement the new contract and change the "versionOld" endpoint definition to use the new contract. To "versionOld" clients, the endpoint will continue to appear as exposing the "versionOld" contract; to "versionNew" clients, the endpoint will appear to expose the "versionNew" contract.  
+ Organizations may have libraries of contracts where a contract is published to a central repository and service implementers implement contracts from that repository. In this case, when you publish a service contract to the repository you have no control over who creates services that implement it. Therefore, you cannot modify the service contract once published, rendering it effectively immutable. WCF supports contract inheritance, which can be used to create a new contract that extends existing contracts. To use this feature, define a new service contract interface that inherits from the old service contract interface, then add methods to the new interface. You then change the service that implements the old contract to implement the new contract and change the "versionOld" endpoint definition to use the new contract. To "versionOld" clients, the endpoint will continue to appear as exposing the "versionOld" contract; to "versionNew" clients, the endpoint will appear to expose the "versionNew" contract.  
   
 ## Address and Binding Versioning  
  Changes to endpoint address and binding are breaking changes unless clients are capable of dynamically discovering the new endpoint address or binding. One mechanism for implementing this capability is by using a Universal Discovery Description and Integration (UDDI) registry and the UDDI Invocation Pattern where a client attempts to communicate with an endpoint and, upon failure, queries a well-known UDDI registry for the current endpoint metadata. The client then uses the address and binding from this metadata to communicate with the endpoint. If this communication succeeds, the client caches the address and binding information for future use.  
   
 ## Routing Service and Versioning  
- If the changes made to a service are breaking changes and you need to have two or more different versions of a service running simultaneously you can use the WCF Routing Service to route messages to the appropriate service instance. The WCF Routing Service uses content-based routing, in other words, it uses information within the message to determine where to route the message. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the WCF Routing Service see [Routing Service](../../../docs/framework/wcf/feature-details/routing-service.md). For an example of how to use the WCF Routing Service for service versioning see [How To: Service Versioning](../../../docs/framework/wcf/feature-details/how-to-service-versioning.md).  
+ If the changes made to a service are breaking changes and you need to have two or more different versions of a service running simultaneously you can use the WCF Routing Service to route messages to the appropriate service instance. The WCF Routing Service uses content-based routing, in other words, it uses information within the message to determine where to route the message. For more information about the WCF Routing Service see [Routing Service](../../../docs/framework/wcf/feature-details/routing-service.md). For an example of how to use the WCF Routing Service for service versioning see [How To: Service Versioning](../../../docs/framework/wcf/feature-details/how-to-service-versioning.md).  
   
 ## Appendix  
  The general data contract versioning guidance when strict versioning is needed is to treat data contracts as immutable and create new ones when changes are required. A new class needs to be created for each new data contract, so a mechanism is needed to avoid having to take existing code that was written in terms of the old data contract class and rewrite it in terms of the new data contract class.  

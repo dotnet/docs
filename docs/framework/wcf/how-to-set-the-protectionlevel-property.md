@@ -1,14 +1,6 @@
 ---
 title: "How to: Set the ProtectionLevel Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "WCF, security"
   - "ProtectionLevel property"
 ms.assetid: 3d4e8f80-0f9e-4a26-9899-beb6584e78df
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Set the ProtectionLevel Property
-You can set the protection level by applying an appropriate attribute and setting the property. You can set protection at the service level to affect all parts of every message, or you can set protection at increasingly granular levels, from methods to message parts. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md).  
+You can set the protection level by applying an appropriate attribute and setting the property. You can set protection at the service level to affect all parts of every message, or you can set protection at increasingly granular levels, from methods to message parts. For more information about the `ProtectionLevel` property, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md).  
   
 > [!NOTE]
 >  You can set protection levels only in code, not in configuration.  
@@ -50,7 +36,7 @@ You can set the protection level by applying an appropriate attribute and settin
      [!code-vb[C_ProtectionLevel#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#2)]  
   
 ## Protecting Fault Messages  
- Exceptions that are thrown on a service can be sent to a client as SOAP faults. [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating strongly typed faults, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md) and [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md).  
+ Exceptions that are thrown on a service can be sent to a client as SOAP faults. For more information about creating strongly typed faults, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md) and [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md).  
   
 #### To protect a fault message  
   
@@ -69,7 +55,7 @@ You can set the protection level by applying an appropriate attribute and settin
      [!code-vb[C_ProtectionLevel#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#4)]  
   
 ## Protecting Message Parts  
- Use a message contract to protect parts of a message. [!INCLUDE[crabout](../../../includes/crabout-md.md)] message contracts, see [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md).  
+ Use a message contract to protect parts of a message. For more information about message contracts, see [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md).  
   
 #### To protect a message body  
   

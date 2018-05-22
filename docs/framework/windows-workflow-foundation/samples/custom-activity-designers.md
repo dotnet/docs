@@ -1,19 +1,7 @@
 ---
 title: "Custom Activity Designers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dcf14dca-ce6d-4278-96ba-062f0a679075
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Activity Designers
 This section contains activity samples that use custom designers for display in the workflow designer.  

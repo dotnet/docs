@@ -1,10 +1,6 @@
 ---
 title: "Interoperability Overview (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop"
   - "C# language, interoperability"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "interoperability, about interoperability"
   - "platform invoke"
 ms.assetid: c025b2e0-2357-4c27-8461-118f0090aeff
-caps.latest.revision: 43
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Interoperability Overview (C# Programming Guide)
 The topic describes methods to enable interoperability between C# managed code and unmanaged code.  
@@ -37,7 +30,7 @@ The topic describes methods to enable interoperability between C# managed code a
   
 2.  Add to the project a reference to the COM component or type library.  
   
-     When you add the reference, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Tlbimp.exe (Type Library Importer)](../../../../docs/framework/tools/tlbimp-exe-type-library-importer.md), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds to the project a reference to the generated assembly.  
+     When you add the reference, Visual Studio uses the [Tlbimp.exe (Type Library Importer)](../../../../docs/framework/tools/tlbimp-exe-type-library-importer.md), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. Visual Studio adds to the project a reference to the generated assembly.  
   
 3.  Create an instance of a class that is defined in the RCW. This, in turn, creates an instance of the COM object.  
   
@@ -50,11 +43,11 @@ The topic describes methods to enable interoperability between C# managed code a
   
 1.  Add interop attributes in the C# project.  
   
-     You can make an assembly COM visible by modifying [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties. For more information, see [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box).  
+     You can make an assembly COM visible by modifying Visual C# project properties. For more information, see [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box).  
   
 2.  Generate a COM type library and register it for COM usage.  
   
-     You can modify [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Regasm.exe (Assembly Registration Tool)](../../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
+     You can modify Visual C# project properties to automatically register the C# assembly for COM interop. Visual Studio uses the [Regasm.exe (Assembly Registration Tool)](../../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
   
  For more information, see [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
   

@@ -1,10 +1,6 @@
 ---
 title: "-nostdlib (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/nostdlib"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-nostdlib compiler option [C#]"
   - "/nostdlib compiler option [C#]"
 ms.assetid: ec197989-fa49-4725-a455-e06b551eb65f
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -nostdlib (C# Compiler Options)
 **-nostdlib** prevents the import of mscorlib.dll, which defines the entire System namespace.  

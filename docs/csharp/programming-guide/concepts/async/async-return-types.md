@@ -1,17 +1,7 @@
 ---
 title: "Async Return Types (C#)"
-ms.custom: ""
 ms.date: 05/29/2017
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Async Return Types (C#)
 Async methods can have the following return types:
@@ -22,7 +12,7 @@ Async methods can have the following return types:
 
 - `void`, for an event handler. 
 
-- Starting with C# 7, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
+- Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
   
 For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
   
@@ -72,7 +62,7 @@ The following eample defines an async event handler.
  
 ## Generalized async return types and ValueTask<T>
 
-Starting with C# 7, an async method can return any type that has an accessible `GetAwaiter` method.
+Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method.
  
 Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations. 
 

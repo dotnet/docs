@@ -1,25 +1,11 @@
 ---
 title: "How to: Simplify Animations by Using Child Timelines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "simplifying animations by child timelines [WPF]"
   - "animation [WPF], simplifying by child timelines"
   - "child timelines [WPF]"
 ms.assetid: 8335d770-d13d-42bd-8dfa-63f92c0327e2
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Simplify Animations by Using Child Timelines
 This example shows how to simplify animations by using child <xref:System.Windows.Media.Animation.ParallelTimeline> objects. A <xref:System.Windows.Media.Animation.Storyboard> is a type of <xref:System.Windows.Media.Animation.Timeline> that provides targeting information for the timelines it contains. Use a <xref:System.Windows.Media.Animation.Storyboard> to provide timeline targeting information, including object and property information.  

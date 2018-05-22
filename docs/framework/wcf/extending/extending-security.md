@@ -1,30 +1,18 @@
 ---
 title: "Extending Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], extending"
 ms.assetid: a015a040-9fdf-4147-9ea9-f83b570be1d4
-caps.latest.revision: 23
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Extending Security
-To accommodate new claim types and custom tokens, you can extend the security infrastructure of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. The topics in this section show you how this is done.  
+To accommodate new claim types and custom tokens, you can extend the security infrastructure of Windows Communication Foundation (WCF). The topics in this section show you how this is done.  
   
 ## In This Section  
  [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)  
- Walks through the architecture of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security system.  
+ Walks through the architecture of the WCF security system.  
   
  [Custom Credential and Credential Validation](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md)  
  Explains how the Identity Model is used when validating custom credentials.  
@@ -45,7 +33,7 @@ To accommodate new claim types and custom tokens, you can extend the security in
  Messages are typically signed and encrypted with a single certificate. This topic explains how two certificates can be used, when required.  
   
  [How to: Change the Cryptographic Provider for an X.509 Certificate's Private Key](../../../../docs/framework/wcf/extending/change-cryptographic-provider-x509-certificate-private-key.md)  
- Explains how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] framework.  
+ Explains how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the Windows Communication Foundation (WCF) framework.  
   
 ## Reference  
  <xref:System.ServiceModel.ServiceAuthorizationManager>  

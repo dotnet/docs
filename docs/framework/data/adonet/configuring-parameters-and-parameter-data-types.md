@@ -1,24 +1,10 @@
 ---
 title: "Configuring Parameters and Parameter Data Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 537d8a2c-d40b-4000-83eb-bc1fcc93f707
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Parameters and Parameter Data Types
 Command objects use parameters to pass values to SQL statements or stored procedures, providing type checking and validation. Unlike command text, parameter input is treated as a literal value, not as executable code. This helps guard against "SQL injection" attacks, in which an attacker inserts a command that compromises security on the server into an SQL statement.  
@@ -87,7 +73,7 @@ Command objects use parameters to pass values to SQL statements or stored proced
 >  Conversions from decimal to other types are narrowing conversions that round the decimal value to the nearest integer value toward zero. If the result of the conversion is not representable in the destination type, an <xref:System.OverflowException> is thrown.  
   
 > [!NOTE]
->  When you send a null parameter value to the server, you must specify <xref:System.DBNull>, not `null` (`Nothing` in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]). The null value in the system is an empty object that has no value. <xref:System.DBNull> is used to represent null values. For more information about database nulls, see [Handling Null Values](../../../../docs/framework/data/adonet/sql/handling-null-values.md).  
+>  When you send a null parameter value to the server, you must specify <xref:System.DBNull>, not `null` (`Nothing` in Visual Basic). The null value in the system is an empty object that has no value. <xref:System.DBNull> is used to represent null values. For more information about database nulls, see [Handling Null Values](../../../../docs/framework/data/adonet/sql/handling-null-values.md).  
   
 ## Deriving Parameter Information  
  Parameters can also be derived from a stored procedure using the `DbCommandBuilder` class. Both the `SqlCommandBuilder` and `OleDbCommandBuilder` classes provide a static method, `DeriveParameters`, which automatically populates the parameters collection of a command object that uses parameter information from a stored procedure. Note that `DeriveParameters` overwrites any existing parameter information for the command.  

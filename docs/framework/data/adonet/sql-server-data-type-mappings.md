@@ -1,21 +1,7 @@
 ---
 title: "SQL Server Data Type Mappings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fafdc31a-f435-4cd3-883f-1dfadd971277
-caps.latest.revision: 8
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL Server Data Type Mappings
 SQL Server and the .NET Framework are based on different type systems. For example, the .NET Framework <xref:System.Decimal> structure has a maximum scale of 28, whereas the SQL Server decimal and numeric data types have a maximum scale of 38. To maintain data integrity when reading and writing data, the  <xref:System.Data.SqlClient.SqlDataReader> exposes SQL Server–specific typed accessor methods that return objects of <xref:System.Data.SqlTypes> as well as accessor methods that return .NET Framework types. Both SQL Server types and .NET Framework types are also represented by enumerations in the <xref:System.Data.DbType> and <xref:System.Data.SqlDbType> classes, which you can use when specifying <xref:System.Data.SqlClient.SqlParameter> data types.  
@@ -60,8 +46,8 @@ SQL Server and the .NET Framework are based on different type systems. For examp
 <sup>1</sup> You cannot set the `DbType` property of a `SqlParameter` to `SqlDbType.Date`.  
 <sup>2</sup> Use a specific typed accessor if you know the underlying type of the `sql_variant`.  
   
-## [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] Books Online Reference  
- For more information about [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] data types, see [Data Types (Database Engine)](http://go.microsoft.com/fwlink/?LinkID=107468).  
+## SQL Server Books Online Reference  
+ For more information about SQL Server data types, see [Data Types (Database Engine)](http://go.microsoft.com/fwlink/?LinkID=107468).  
   
 ## See Also  
  [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  

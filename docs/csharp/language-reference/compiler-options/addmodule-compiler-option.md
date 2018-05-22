@@ -1,10 +1,6 @@
 ---
 title: "-addmodule (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/addmodule"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-addmodule compiler option [C#]"
   - "addmodule compiler option [C#]"
 ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -addmodule (C# Compiler Options)
 This option adds a module that was created with the target:module switch to the current compilation.  

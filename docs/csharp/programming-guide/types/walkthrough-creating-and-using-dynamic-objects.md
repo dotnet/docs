@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "dynamic objects"
   - "dynamic objects [C#]"
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)
 
@@ -23,7 +16,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
   
  Dynamic objects also provide convenient access to dynamic languages such as IronPython and IronRuby. You can use a dynamic object to refer to a dynamic script that is interpreted at run time.  
   
- You reference a dynamic object by using late binding. In C#, you specify the type of a late-bound object as `dynamic`. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you specify the type of a late-bound object as `Object`. For more information, see [dynamic](../../../csharp/language-reference/keywords/dynamic.md) and [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md).  
+ You reference a dynamic object by using late binding. In C#, you specify the type of a late-bound object as `dynamic`. In Visual Basic, you specify the type of a late-bound object as `Object`. For more information, see [dynamic](../../../csharp/language-reference/keywords/dynamic.md) and [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md).  
   
  You can create custom dynamic objects by using the classes in the <xref:System.Dynamic?displayProperty=nameWithType> namespace. For example, you can create an <xref:System.Dynamic.ExpandoObject> and specify the members of that object at run time. You can also create your own type that inherits the <xref:System.Dynamic.DynamicObject> class. You can then override the members of the <xref:System.Dynamic.DynamicObject> class to provide run-time dynamic functionality.  
   
@@ -43,7 +36,7 @@ You need [IronPython](http://ironpython.net/) for .NET to complete this walkthro
   
 #### To create a custom dynamic class  
   
-1.  Start [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+1.  Start Visual Studio.  
   
 2.  On the **File** menu, point to **New** and then click **Project**.  
   
@@ -122,7 +115,7 @@ You need [IronPython](http://ironpython.net/) for .NET to complete this walkthro
   
 #### To create a sample application that uses the custom dynamic object  
   
-1.  In **Solution Explorer**, double-click the Module1.vb file if you are using [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] or the Program.cs file if you are using Visual C#.  
+1.  In **Solution Explorer**, double-click the Module1.vb file if you are using Visual Basic or the Program.cs file if you are using Visual C#.  
   
 2.  Add the following code to the Main procedure to create an instance of the `ReadOnlyFile` class for the TextFile1.txt file. The code uses late binding to call dynamic members and retrieve lines of text that contain the string "Customer".  
   
@@ -138,15 +131,15 @@ The next project that you create in this walkthrough accesses a library that is 
   
 #### To create a custom dynamic class  
   
-1.  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], on the **File** menu, point to **New** and then click **Project**.  
+1.  In Visual Studio, on the **File** menu, point to **New** and then click **Project**.  
   
 2.  In the **New Project** dialog box, in the **Project Types** pane, make sure that **Windows** is selected. Select **Console Application** in the **Templates** pane. In the **Name** box, type `DynamicIronPythonSample`, and then click **OK**. The new project is created.  
   
-3.  If you are using [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], right-click the DynamicIronPythonSample project and then click **Properties**. Click the **References** tab. Click the **Add** button. If you are using Visual C#, in **Solution Explorer**, right-click the **References** folder and then click **Add Reference**.  
+3.  If you are using Visual Basic, right-click the DynamicIronPythonSample project and then click **Properties**. Click the **References** tab. Click the **Add** button. If you are using Visual C#, in **Solution Explorer**, right-click the **References** folder and then click **Add Reference**.  
   
 4.  On the **Browse** tab, browse to the folder where the IronPython libraries are installed. For example, C:\Program Files\IronPython 2.6 for .NET 4.0. Select the **IronPython.dll**, **IronPython.Modules.dll**, **Microsoft.Scripting.dll**, and **Microsoft.Dynamic.dll** libraries. Click **OK**.  
   
-5.  If you are using [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], edit the Module1.vb file. If you are using Visual C#, edit the Program.cs file.  
+5.  If you are using Visual Basic, edit the Module1.vb file. If you are using Visual C#, edit the Program.cs file.  
   
 6.  At the top of the file, add the following code to import the `Microsoft.Scripting.Hosting` and `IronPython.Hosting` namespaces from the IronPython libraries.  
   

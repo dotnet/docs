@@ -1,18 +1,10 @@
 ---
 title: "My Reference (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My feature"
   - "My reference"
 ms.assetid: 6f803bd7-21ff-4569-b1fe-b00a6678b1e3
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My Reference (Visual Basic)
 The `My` feature makes programming faster and easier by giving you intuitive access to commonly used methods, properties, and events. This table lists the objects contained in `My`, and the actions that can be performed with each.  

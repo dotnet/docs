@@ -1,10 +1,6 @@
 ---
 title: "#If...Then...#Else Directives"
 ms.date: 04/11/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.#EndIf"
   - "#End If"

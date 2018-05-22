@@ -1,19 +1,10 @@
 ---
 title: "Q-Z Statements"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: 32a9e547-c1b7-40f2-8118-7eef1d19649e
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Q-Z Statements
-The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
+The following table contains a listing of Visual Basic language statements.  
   
 |||||  
 |---|---|---|---|  

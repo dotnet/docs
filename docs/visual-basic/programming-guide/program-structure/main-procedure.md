@@ -1,13 +1,6 @@
 ---
 title: "Main Procedure in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Main"
 helpviewer_keywords: 
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "Main method [Visual Basic]"
   - "main function"
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Main Procedure in Visual Basic
 Every Visual Basic application must contain a procedure called `Main`. This procedure serves as the starting point and overall control for your application. The .NET Framework calls your `Main` procedure when it has loaded your application and is ready to pass control to it. Unless you are creating a Windows Forms application, you must write the `Main` procedure for applications that run on their own.  

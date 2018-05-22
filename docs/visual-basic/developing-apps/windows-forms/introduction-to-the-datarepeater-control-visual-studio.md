@@ -1,19 +1,11 @@
 ---
 title: "Introduction to the DataRepeater Control (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "repeating data"
   - "DataRepeater, overview"
   - "DataRepeater"
 ms.assetid: 78a52a1d-65f0-4ecb-97ff-53bc114300c5
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Introduction to the DataRepeater Control (Visual Studio)
 The Visual Basic Power Packs <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control is a scrollable container for controls that display repeated data, for example, rows in a database table. It can be used as an alternative to the <xref:System.Windows.Forms.DataGridView> control when you need more control over the layout of the data. The <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> "repeats" a group of related controls by creating multiple instances in a scrolling view. This enables users to view several records at the same time.  

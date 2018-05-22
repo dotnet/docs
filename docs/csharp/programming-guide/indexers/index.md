@@ -1,19 +1,12 @@
 ---
 title: "Indexers (C# Programming Guide)"
 ms.date: 03/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.indexers"
 helpviewer_keywords: 
   - "indexers [C#]"
   - "C# language, indexers"
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
-caps.latest.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Indexers (C# Programming Guide)
 
@@ -34,7 +27,7 @@ It is common for an indexer's get or set accessor to consist of a single stateme
 
 Note that `=>` introduces the expression body, and that the `get` keyword is not used. 
 
-Starting with C# 7, both the get and set accessor can be an implemented as expression-bodied members. In this case, both `get` and `set` keywords must be used. For example:
+Starting with C# 7.0, both the get and set accessor can be an implemented as expression-bodied members. In this case, both `get` and `set` keywords must be used. For example:
 
 [!code-csharp[indexers#3](../../../../samples/snippets/csharp/programming-guide/indexers/indexer-3.cs)]  
   

@@ -1,21 +1,13 @@
 ---
 title: ".NET Framework 4 migration issues"
 ms.date: "05/02/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework 4, migration"
   - "application compatibility"
 ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "mariaw"
 ---
-
 # .NET Framework 4 migration issues
 
 This topic describes migration issues between the .NET Framework version 3.5 Service Pack 1 and the .NET Framework version 4, including fixes, changes for standards compliance and security, and changes based on customer feedback. Most of these changes do not require any programming modifications in your applications. For those that may involve modifications, see the Recommended changes column of the table.

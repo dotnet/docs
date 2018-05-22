@@ -1,14 +1,6 @@
 ---
 title: "GridView Column Header Styles and Templates Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "column headers [WPF], customizing"
   - "ListView controls [WPF], GridView column header styles"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "headers [WPF], customizing"
   - "GridView view mode [WPF], customizing column headers"
 ms.assetid: 74835674-a39e-4ab5-9418-ad7f6ab7b956
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # GridView Column Header Styles and Templates Overview
 This overview discusses the order of precedence for properties that you use to customize a column header in the <xref:System.Windows.Controls.GridView> view mode of a <xref:System.Windows.Controls.ListView> control.  

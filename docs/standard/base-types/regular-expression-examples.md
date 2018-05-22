@@ -1,25 +1,14 @@
 ---
 title: "Regular Expression Examples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "regular expressions [.NET Framework], examples"
   - "regular expressions [.NET Framework]"
   - "strings [.NET Framework], regular expressions"
 ms.assetid: e9fd53f2-ed56-4b09-b2ea-e9bc9d65e6d6
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Regular Expression Examples
 This section contains code examples that illustrate the use of regular expressions in common applications.  
@@ -41,7 +30,7 @@ This section contains code examples that illustrate the use of regular expressio
  Provides an example that strips invalid non-alphanumeric characters from a string.  
   
  [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md)  
- Provides an example that you can use to verify that a string is in valid email format.  
+ Provides an example that verifies that a string is in valid email format.  
   
 ## Reference  
  <xref:System.Text.RegularExpressions>  

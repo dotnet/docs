@@ -1,19 +1,7 @@
 ---
 title: "Property Promotion Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 802196b7-1159-4c05-b41b-d3bfdfcc88d9
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Property Promotion Activity
 This sample provides an end-to-end solution that integrates the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> Promotion feature directly into the workflow authoring experience. A collection of configuration elements, workflow activities, and workflow extensions that simplify the use of the Promotion feature are provided. Additionally, the sample contains a simple workflow that demonstrates how to use this collection.  
@@ -105,7 +93,7 @@ go
  The order of the `promotedValue` elements correlates with the placement of the promoted properties in the `InstancePromotedProperties` view. `Count` is the first `promotedValue` element. As a result, it is mapped to the `Value1` column in the `InstancePromotedProperties` view. `LastIncrementedAt` is the second `promotedValue` element. As a result, it is mapped to the `Value2` column in the `InstancePromotedProperties` view.  
   
 #### Using the PromoteValue Activity  
- Examine the CounterService.xamlx file in the [!INCLUDE[wf2](../../../../includes/wf2-md.md)] Designer. Notice that there are two special activities in the WF definition: `PromoteValue<DateTime>` and `PromoteValue<Int32>`.  
+ Examine the CounterService.xamlx file in the Windows Workflow Foundation Designer. Notice that there are two special activities in the WF definition: `PromoteValue<DateTime>` and `PromoteValue<Int32>`.  
   
  The `PromoteValue<Int32>` activity has its `Name` member defined as `Count`. This matches with the first `promotedValue` element in the configuration, and has its `Value` defined as the `Counter` workflow variable. When the workflow persists, the `Counter` workflow variable is persisted as a promoted property into the `Value1` column of the `InstancePromotedProperties` view.  
   
@@ -192,7 +180,7 @@ public class SqlWorkflowInstanceStorePromotionBehavior :
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Persistence\PropertyPromotionActivity`  
   

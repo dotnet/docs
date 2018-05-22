@@ -1,32 +1,18 @@
 ---
 title: "SAML Token Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SAML Token Provider
-This sample demonstrates how to implement a custom client SAML token provider. A token provider in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ships with the default Credential Manager Token Provider. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
+This sample demonstrates how to implement a custom client SAML token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
   
 -   If you have a credential store that these token providers cannot operate with.  
   
--   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client framework uses the credentials.  
+-   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client framework uses the credentials.  
   
 -   If you are building a custom token.  
   
- This sample shows how to build a custom token provider that allows a SAML token obtained from outside of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client framework to be used.  
+ This sample shows how to build a custom token provider that allows a SAML token obtained from outside of the WCF client framework to be used.  
   
  To summarize, this sample demonstrates the following:  
   
@@ -34,7 +20,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
 -   How a SAML token can be passed to the custom client credentials.  
   
--   How the SAML token is provided to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client framework.  
+-   How the SAML token is provided to the WCF client framework.  
   
 -   How the server is authenticated by the client using the server's X.509 certificate.  
   
@@ -119,7 +105,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 </system.serviceModel>  
 ```  
   
- The following steps show how to develop a custom SAML token provider and integrate it with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]: security framework:  
+ The following steps show how to develop a custom SAML token provider and integrate it with WCF: security framework:  
   
 1.  Write a custom SAML token provider.  
   

@@ -1,22 +1,10 @@
 ---
 title: "How to: Create an Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c09b1e99-21b5-4d96-9c04-ec31db3f4436
-caps.latest.revision: 39
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create an Activity
 Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1-md.md)]. The execution logic of an activity can be implemented in managed code or it can be implemented by using other activities. This topic demonstrates how to create two activities. The first activity is a simple activity that uses code to implement its execution logic. The implementation of the second activity is defined by using other activities. These activities are used in following steps in the tutorial.  
@@ -40,7 +28,7 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
 5.  In the **Installed** node, select **Visual C#**, **Workflow** (or **Visual Basic**, **Workflow**). Ensure that **.NET Framework 4.5** is selected in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version drop-down list. Select **Activity Library** from the **Workflow** list. Type `NumberGuessWorkflowActivities` in the **Name** box and then click **OK**.  
   
     > [!NOTE]
-    >  Depending on which programming language is configured as the primary language in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], the **Visual C#** or **Visual Basic** node may be under the **Other Languages** node in the **Installed** node.  
+    >  Depending on which programming language is configured as the primary language in Visual Studio, the **Visual C#** or **Visual Basic** node may be under the **Other Languages** node in the **Installed** node.  
   
 6.  Right-click **Activity1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.  
   

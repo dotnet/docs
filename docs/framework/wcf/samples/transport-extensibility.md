@@ -1,24 +1,10 @@
 ---
 title: "Transport Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3c9108be-f60f-4035-9f57-1da58c325420
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Extensibility
-This section contains samples that demonstrate custom transports in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate custom transports in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [UDP Activation](../../../../docs/framework/wcf/samples/udp-activation.md)  
@@ -28,4 +14,4 @@ This section contains samples that demonstrate custom transports in [!INCLUDE[in
  Demonstrates how to extend the UDP Transport sample to support custom transaction flow and shows the use of the <xref:System.ServiceModel.Channels.TransactionMessageProperty> property.  
   
  [Transport: WSE 3.0 TCP Interoperability](../../../../docs/framework/wcf/samples/transport-wse-3-0-tcp-interoperability.md)  
- This sample demonstrates how to implement a TCP duplex session as a custom [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transport.
+ This sample demonstrates how to implement a TCP duplex session as a custom Windows Communication Foundation (WCF) transport.

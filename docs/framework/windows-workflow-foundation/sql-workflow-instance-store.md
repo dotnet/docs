@@ -1,19 +1,7 @@
 ---
 title: "SQL Workflow Instance Store"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8cd2f8a5-4bf8-46ea-8909-c7fdb314fabc
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL Workflow Instance Store
 The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] ships with the SQL Workflow Instance Store, which allows workflows to persist state information about workflow instances in a SQL Server 2005 or SQL Server 2008 database. This feature is primarily implemented in the form of the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> class, which derives from the abstract <xref:System.Runtime.DurableInstancing.InstanceStore> class of the persistence framework. The SQL Workflow Instance Store feature constitutes a SQL persistence provider, which is a concrete implementation of the persistence API that a host uses to send persistence commands to the store.  
@@ -24,7 +12,7 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
   
  The topics in this section describe properties and features of the SQL Workflow Instance Store and provide you with details on configuring the store.  
   
- Windows Server App Fabric provides its own instance store and tooling to simplify the configuration and use of the instance store. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] see [Windows Server App Fabric Instance Store](http://go.microsoft.com/fwlink/?LinkId=201201). [!INCLUDE[crabout](../../../includes/crabout-md.md)] the App Fabric SQL Server Persistence Database see [App Fabric SQL Server Persistence Database](http://go.microsoft.com/fwlink/?LinkId=201202)  
+ Windows Server App Fabric provides its own instance store and tooling to simplify the configuration and use of the instance store. For more information, see see [Windows Server App Fabric Instance Store](http://go.microsoft.com/fwlink/?LinkId=201201). For more information about the App Fabric SQL Server Persistence Database see [App Fabric SQL Server Persistence Database](http://go.microsoft.com/fwlink/?LinkId=201202)  
   
 ## In This Section  
   

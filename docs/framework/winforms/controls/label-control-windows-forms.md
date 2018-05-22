@@ -1,25 +1,11 @@
 ---
 title: "Label Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Label control [Windows Forms]"
   - "labels"
   - "LinkLabel control [Windows Forms]"
 ms.assetid: 2028bbe3-ffe2-43e8-8ae3-dec759d2ecec
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Label Control (Windows Forms)
 > [!IMPORTANT]

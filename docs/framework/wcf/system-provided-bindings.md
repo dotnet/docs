@@ -1,23 +1,9 @@
 ---
 title: "System-Provided Bindings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "bindings [WCF], system-provided"
 ms.assetid: 2c243746-45ce-4588-995e-c17126a579a6
-caps.latest.revision: 60
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System-Provided Bindings
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. A binding contains the following elements:  
@@ -28,7 +14,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
   
 -   The encoding determines the wire encoding to use for messages that are sent to the endpoint, for example, text/XML, binary, or Message Transmission Optimization Mechanism (MTOM).  
   
- This topic presents all of the system-provided [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] bindings. If none of these meets the exact criteria for your application, you can create a custom binding. [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating custom bindings, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
+ This topic presents all of the system-provided Windows Communication Foundation (WCF) bindings. If none of these meets the exact criteria for your application, you can create a custom binding. For more information about creating custom bindings, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
   
  A secure and interoperable binding that supports the WS-Federation protocol enables organizations that are in a federation to efficiently authenticate and authorize users.  
   
@@ -39,7 +25,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 >  Never use duplex contracts with bindings that do not support security or that have security disabled unless you secure the data by some other means.  
   
 ## System-Provided Bindings  
- The following bindings ship with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
+ The following bindings ship with WCF.  
   
 |Binding|Configuration Element|Description|  
 |-------------|---------------------------|-----------------|  
@@ -49,14 +35,14 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |<xref:System.ServiceModel.WSFederationHttpBinding>|[\<wsFederationHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|A secure and interoperable binding that supports the WS-Federation protocol that enables organizations that are in a federation to efficiently authenticate and authorize users.|  
 |<xref:System.ServiceModel.NetHttpBinding>|\<netHttpBinding>|A binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|  
 |<xref:System.ServiceModel.NetHttpsBinding>|\<netHttpsBinding>|A secure binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|  
-|<xref:System.ServiceModel.NetTcpBinding>|[\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)|A secure and optimized binding suitable for cross-machine communication between [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications.|  
-|<xref:System.ServiceModel.NetNamedPipeBinding>|[\<netNamedPipeBinding>](../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md)|A secure, reliable, optimized binding that is suitable for on-machine communication between [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications.|  
-|<xref:System.ServiceModel.NetMsmqBinding>|[\<netMsmqBinding>](../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|A queued binding that is suitable for cross-machine communication between [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications.|  
+|<xref:System.ServiceModel.NetTcpBinding>|[\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)|A secure and optimized binding suitable for cross-machine communication between WCF applications.|  
+|<xref:System.ServiceModel.NetNamedPipeBinding>|[\<netNamedPipeBinding>](../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md)|A secure, reliable, optimized binding that is suitable for on-machine communication between WCF applications.|  
+|<xref:System.ServiceModel.NetMsmqBinding>|[\<netMsmqBinding>](../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|A queued binding that is suitable for cross-machine communication between WCF applications.|  
 |<xref:System.ServiceModel.NetPeerTcpBinding>|[\<netPeerTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md)|A binding that enables secure, multiple machine communication.|  
-|<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|[\<msmqIntegrationBinding>](../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)|A binding that is suitable for cross-machine communication between a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] application and existing Message Queuing applications.|  
+|<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|[\<msmqIntegrationBinding>](../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)|A binding that is suitable for cross-machine communication between a WCF application and existing Message Queuing applications.|  
 |<xref:System.ServiceModel.BasicHttpContextBinding>|[\<basicHttpContextBinding>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpcontextbinding.md)|A binding that is suitable for communicating with WS-Basic Profile conformant Web services that enables HTTP cookies to be used to exchange context.|  
-|<xref:System.ServiceModel.NetTcpContextBinding>|[\<netTcpContextBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpcontextbinding.md)|A secure and optimized binding suitable for cross-machine communication between [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications that enables SOAP headers to be used to exchange context.|  
-|<xref:System.ServiceModel.WebHttpBinding>|[\<webHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)|A binding used to configure endpoints for [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Web services that are exposed through HTTP requests instead of SOAP messages.|  
+|<xref:System.ServiceModel.NetTcpContextBinding>|[\<netTcpContextBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpcontextbinding.md)|A secure and optimized binding suitable for cross-machine communication between WCF applications that enables SOAP headers to be used to exchange context.|  
+|<xref:System.ServiceModel.WebHttpBinding>|[\<webHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)|A binding used to configure endpoints for WCF Web services that are exposed through HTTP requests instead of SOAP messages.|  
 |<xref:System.ServiceModel.WSHttpContextBinding>|[\<wsHttpContextBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpcontextbinding.md)|A secure and |<xref:System.ServiceModel.UdpBinding>|\<udpBinding>|A binding to use when sending a burst of simple messages to a large number of clients simultaneously.|  
   
  The following table shows the features of each of the system-provided bindings. The bindings are found in the table columns; the features are listed in the rows and described in a second table. The following table provides a key for the binding abbreviations used. To select a binding, determine which column satisfies all of the row features you need.  

@@ -1,26 +1,12 @@
 ---
 title: "Attached Properties Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "attached properties [WPF Designer]"
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Attached Properties Overview
 An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any object. In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".  
@@ -101,7 +87,7 @@ An attached property is a concept defined by XAML. An attached property is inten
  Define your attached property as a dependency property by declaring a `public` `static` `readonly` field of type <xref:System.Windows.DependencyProperty>. You define this field by using the return value of the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The field name must match the attached property name, appended with the string `Property`, to follow the established [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] pattern of naming the identifying fields versus the properties that they represent. The attached property provider must also provide static `Get`*PropertyName* and `Set`*PropertyName* methods as accessors for the attached property; failing to do this will result in the property system being unable to use your attached property.  
   
 > [!NOTE]
->  If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] and Expression Blend.  
+>  If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as Visual Studio and Expression Blend.  
   
 #### The Get Accessor  
  The signature for the `Get`*PropertyName* accessor must be:  

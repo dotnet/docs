@@ -1,14 +1,6 @@
 ---
 title: "How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], adding tooltips"
   - "data grids [Windows Forms], adding tooltips"
 ms.assetid: 2a81f9de-d58b-4ea8-bc0b-8d93c2f4cf78
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control
 By default, ToolTips are used to display the values of <xref:System.Windows.Forms.DataGridView> cells that are too small to show their entire contents. You can override this behavior, however, to set ToolTip-text values for individual cells. This is useful to display to users additional information about a cell or to provide to users an alternate description of the cell contents. For example, if you have a row that displays status icons, you may want to provide text explanations using ToolTips.  

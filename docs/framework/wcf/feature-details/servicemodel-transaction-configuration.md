@@ -1,29 +1,15 @@
 ---
 title: "ServiceModel Transaction Configuration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transactions [WCF], ServiceModel configuration"
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceModel Transaction Configuration
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides three attributes for configuring transactions for a service: `transactionFlow`, `transactionProtocol`, and `transactionTimeout`.  
+Windows Communication Foundation (WCF) provides three attributes for configuring transactions for a service: `transactionFlow`, `transactionProtocol`, and `transactionTimeout`.  
   
 ## Configuring transactionFlow  
- Most of the predefined bindings [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides contain the `transactionFlow` and `transactionProtocol` attributes, so that you can configure the binding to accept incoming transactions for a specific endpoint using a specific transaction flow protocol. In addition, you can use the `transactionFlow` element and its `transactionProtocol` attribute to build your own custom binding. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting the configuration elements, see [\<binding>](../../../../docs/framework/misc/binding.md) and [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md).  
+ Most of the predefined bindings WCF provides contain the `transactionFlow` and `transactionProtocol` attributes, so that you can configure the binding to accept incoming transactions for a specific endpoint using a specific transaction flow protocol. In addition, you can use the `transactionFlow` element and its `transactionProtocol` attribute to build your own custom binding. For more information about setting the configuration elements, see [\<binding>](../../../../docs/framework/misc/binding.md) and [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md).  
   
  The `transactionFlow` attribute specifies whether transaction flow is enabled for service endpoints that use the binding.  
   
@@ -50,7 +36,7 @@ ms.workload:
 ```  
   
 ## Configuring transactionTimeout  
- You can configure the `transactionTimeout` attribute for your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in the `behavior` element of the configuration file. The following code demonstrates how to do this.  
+ You can configure the `transactionTimeout` attribute for your WCF service in the `behavior` element of the configuration file. The following code demonstrates how to do this.  
   
 ```xml  
 <configuration>  

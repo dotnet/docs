@@ -1,21 +1,7 @@
 ---
 title: "Default XAML Schema Context and WPF XAML Schema Context"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 04e06a15-09b3-4210-9bdf-9a64c2eccb83
-caps.latest.revision: 7
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Default XAML Schema Context and WPF XAML Schema Context
 A XAML schema context is a conceptual entity that qualifies how a XAML production that uses a particular XAML vocabulary interacts with the object writing behavior, including how type mapping resolves, how assemblies are loaded, how certain reader and writer settings are interpreted. This topic describes the features of the .NET Framework XAML Services and the associated default XAML schema context, which is based on the CLR type system. This topic also describes the XAML schema context that is used for WPF.  
@@ -65,7 +51,7 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
     -   If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
 #### XamlBuildTask  
- `XamlBuildTask` is used for [!INCLUDE[vsindigo](../../../includes/vsindigo-md.md)] and [!INCLUDE[TLA#tla_workflow](../../../includes/tlasharptla-workflow-md.md)].  
+ `XamlBuildTask` is used for Windows Communication Foundation (WCF) and Windows Workflow Foundation.  
   
  Note that assembly references through `XamlBuildTask` are always fully qualified.  
   

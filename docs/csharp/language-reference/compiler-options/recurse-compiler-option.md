@@ -1,10 +1,6 @@
 ---
 title: "-recurse (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/recurse"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "recurse compiler option [C#]"
   - "-recurse compiler option [C#]"
 ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -recurse (C# Compiler Options)
 The -recurse option enables you to compile source code files in all child directories of either the specified directory (dir) or of the project directory.  

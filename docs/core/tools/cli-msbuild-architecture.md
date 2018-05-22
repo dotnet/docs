@@ -1,16 +1,9 @@
 ---
 title: .NET Core Command-line tools architecture
 description: Learn about the .NET Core tooling layers and what has changed in recent versions.
-keywords: .NET Core, MSBuild, architecture
 author: blackdwarf
 ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 7fff0f61-ac23-42f0-9661-72a7240a4456
 ---
-
 # High-level overview of changes in the .NET Core tools
 
 This document describes the changes associated with moving from *project.json* to MSBuild and the *csproj* project system with information on the changes to the layering of the .NET Core tooling and the implementation of the CLI commands. These changes occurred with the release of .NET Core SDK 1.0 and Visual Studio 2017 on March 7, 2017 (see the [announcement](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)) but were initially implemented with the release of the .NET Core SDK Preview 3.

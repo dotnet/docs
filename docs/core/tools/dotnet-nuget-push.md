@@ -4,11 +4,6 @@ description: The dotnet nuget push command pushes a package to the server and pu
 author: karann-msft
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet nuget push
 

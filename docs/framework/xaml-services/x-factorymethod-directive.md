@@ -1,25 +1,11 @@
 ---
 title: "x:FactoryMethod Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML. x:FactoryMethod directive [XAML Services]"
   - "FactoryMethod directive in XAML [XAML Services]"
   - "x:FactoryMethod directive [XAML Services]"
 ms.assetid: 829bcbdf-5318-4afb-9a03-c310e0d2f23d
-caps.latest.revision: 8
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:FactoryMethod Directive
 Specifies a method other than a constructor that a XAML processor should use to initialize an object after resolving its backing type.  

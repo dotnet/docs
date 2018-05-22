@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting Visual Basic, procedures"
   - "procedures [Visual Basic], troubleshooting"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "troubleshooting procedures"
   - "procedures [Visual Basic], about procedures"
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Procedures (Visual Basic)
 This page lists some common problems that can occur when working with procedures.  
@@ -95,7 +85,7 @@ This page lists some common problems that can occur when working with procedures
  If you are overloading a procedure with one or more [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) parameters or a [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) parameter, you must avoid duplicating any of the *implicit overloads*. For information, see [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
   
 ## Calling a Wrong Version of an Overloaded Procedure  
- If a procedure has several overloaded versions, you should be familiar with all their parameter lists and understand how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] resolves calls among the overloads. Otherwise you could call an overload other than the intended one.  
+ If a procedure has several overloaded versions, you should be familiar with all their parameter lists and understand how Visual Basic resolves calls among the overloads. Otherwise you could call an overload other than the intended one.  
   
  When you have determined which overload you want to call, be careful to observe the following rules:  
   

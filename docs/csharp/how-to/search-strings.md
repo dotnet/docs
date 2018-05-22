@@ -1,16 +1,11 @@
 ---
 title: "How to: search strings (C# Guide)"
 ms.date: 02/21/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "searching strings [C#]"
   - "strings [C#], searching with String methods"
   - "strings [C#], searching with regular expressions"
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
-ms.author: "wiwagn"
 ---
 
 # How to: search strings

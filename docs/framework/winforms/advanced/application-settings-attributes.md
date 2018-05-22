@@ -1,25 +1,11 @@
 ---
 title: "Application Settings Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application settings [Windows Forms], attributes"
   - "attributes [Windows Forms], application settings"
   - "wrapper classes [Windows Forms], application settings"
 ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Settings Attributes
 The Application Settings architecture provides many attributes that can be applied either to the applications settings wrapper class or its individual properties. These attributes are examined at run time by the application settings infrastructure, often specifically the settings provider, in order to tailor its functioning to the stated needs of the custom wrapper.  

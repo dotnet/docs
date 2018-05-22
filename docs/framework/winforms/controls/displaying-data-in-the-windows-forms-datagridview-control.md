@@ -1,26 +1,12 @@
 ---
 title: "Displaying Data in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"
   - "data grids [Windows Forms], displaying data"
   - "displaying data [Windows Forms], data grids"
   - "DataGridView control [Windows Forms], displaying data"
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Displaying Data in the Windows Forms DataGridView Control
 The `DataGridView` control is used to display data from a variety of external data sources. Alternatively, you can add rows and columns to the control and manually populate it with data.  

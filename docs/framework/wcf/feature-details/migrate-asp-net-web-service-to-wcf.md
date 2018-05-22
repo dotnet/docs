@@ -1,24 +1,10 @@
 ---
 title: "How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e528c64f-c027-4f2e-ada6-d8f3994cf8d6
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation
-The following procedure describes how to migrate an ASP.NET Web Service to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+The following procedure describes how to migrate an ASP.NET Web Service to Windows Communication Foundation (WCF).  
   
 ## Procedure  
   
@@ -82,9 +68,9 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
   
 7.  Test the change.  
   
-8.  Add references to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] assemblies System.ServiceModel and System.Runtime.Serialization to the ASP.NET Web service project.  
+8.  Add references to WCF assemblies System.ServiceModel and System.Runtime.Serialization to the ASP.NET Web service project.  
   
-9. Run [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class from the WSDL. Add the generated class module to the solution.  
+9. Run [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a WCF client class from the WSDL. Add the generated class module to the solution.  
   
 10. The class module generated in the preceding step contains the definition of an interface.  
   
@@ -142,7 +128,7 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
     }  
     ```  
   
-13. Configure the class, which is now a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service type, to require [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ASP.NET compatibility mode if the ASP.NET Web service relied on any of the following:  
+13. Configure the class, which is now a WCF service type, to require WCF ASP.NET compatibility mode if the ASP.NET Web service relied on any of the following:  
   
     -   The <xref:System.Web.HttpContext> class.  
   
@@ -164,14 +150,14 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
   
 14. Rename the original .asmx file to .asmx.old.  
   
-15. Create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service file for the service, give it the extension, .asmx, and save it into the application root in IIS.  
+15. Create a WCF service file for the service, give it the extension, .asmx, and save it into the application root in IIS.  
   
     ```xml  
     <%@Service Class="MyOrganization.Adder" %>  
     <%@Assembly Name="MyServiceAssembly" %>   
     ```  
   
-16. Add a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration for the service to its Web.config file. Configure the service to use the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), to use the service file with the .asmx extension created in the preceding steps, and to not generate WSDL for itself, but to use the WSDL from step two. Also configure it to use ASP.NET compatibility mode if necessary.  
+16. Add a WCF configuration for the service to its Web.config file. Configure the service to use the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), to use the service file with the .asmx extension created in the preceding steps, and to not generate WSDL for itself, but to use the WSDL from step two. Also configure it to use ASP.NET compatibility mode if necessary.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  

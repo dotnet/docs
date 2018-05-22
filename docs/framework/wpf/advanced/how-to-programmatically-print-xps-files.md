@@ -1,10 +1,6 @@
 ---
 title: "How to: Programmatically Print XPS Files"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,11 +8,6 @@ helpviewer_keywords:
   - "printing XPS files programmatically [WPF]"
   - "XPS files [WPF], printing programmatically"
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Programmatically Print XPS Files
 You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] at all.  
@@ -51,7 +42,7 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  If you are using an XPSDrv printer, then you can set the final parameter to `true`. In that case, since [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] is the printer's page description language, the method will send the file to the printer without validating it or converting it to another page description language. If you are uncertain at design time whether the application will be using an XPSDrv printer, you can modify the application to have it read the <xref:System.Printing.PrintQueue.IsXpsDevice%2A> property and branch according to what it finds.  
   
- Since there will initially be few XPSDrv printers available immediately after the release of [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] and [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], you may need to disguise a non-XPSDrv printer as an XPSDrv printer. To do so, add Pipelineconfig.xml to the list of files in the following registry key of the computer running your application:  
+ Since there will initially be few XPSDrv printers available immediately after the release of [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] and Microsoft .NET Framework, you may need to disguise a non-XPSDrv printer as an XPSDrv printer. To do so, add Pipelineconfig.xml to the list of files in the following registry key of the computer running your application:  
   
  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows NT x86\Drivers\Version-3\\*\<PseudoXPSPrinter>*\DependentFiles  
   

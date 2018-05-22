@@ -1,19 +1,7 @@
 ---
 title: "Functional Programming vs. Imperative Programming (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Functional Programming vs. Imperative Programming (C#)
 This topic compares and contrasts functional programming with more traditional imperative (procedural) programming.  

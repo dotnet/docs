@@ -1,17 +1,7 @@
 ---
 title: "Serializing Object Graphs that Contain XElement Objects (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: fcbc3951-3cc4-4d0f-9259-e97549ed68f0
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Serializing Object Graphs that Contain XElement Objects (C#)
 This topic introduces the capability of serializing object graphs that contain references to objects of type <xref:System.Xml.Linq.XElement>. To facility this type of serializing, <xref:System.Xml.Linq.XElement> implements the <xref:System.Xml.Serialization.IXmlSerializable> interface.  

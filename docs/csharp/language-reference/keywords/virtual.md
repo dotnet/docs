@@ -1,24 +1,17 @@
 ---
 title: "virtual (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "virtual_CSharpKeyword"
   - "virtual"
 helpviewer_keywords: 
   - "virtual keyword [C#]"
 ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # virtual (C# Reference)
 The `virtual` keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. For example, this method can be overridden by any class that inherits it:  
   
-```  
+```csharp  
 public virtual double Area()   
 {  
     return x * y;  
@@ -47,7 +40,7 @@ public virtual double Area()
   
  Notice that the inherited classes `Circle`, `Sphere`, and `Cylinder` all use constructors that initialize the base class, as shown in the following declaration.  
   
-```  
+```csharp  
 public Cylinder(double r, double h): base(r, h) {}  
 ```  
   

@@ -2,18 +2,11 @@
 title: "How to: Concatenate Multiple Strings (C# Guide)"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
 ms.date: 02/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
 ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Concatenate Multiple Strings (C# Guide)
 

@@ -70,7 +70,7 @@ Predict the **sentiment** of a new website comment, either positive or negative.
 
 3. Install the **Microsoft ML.NET NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft ML.NET**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
 
 4. Download [The UCI Sentiment Labeled Sentences dataset zip file (see citations in the following note)](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip into the *data* directory you created.
 

@@ -11,7 +11,7 @@
 | Windows Phone              | 8.1   | 8.1    | 8.1   |       |       |            |            |            |
 | Windows Phone Silverlight  | 8.0   |        |       |       |       |            |            |            |
 
-<sup>1 The versions listed for .NET Framework apply to .NET Core SDK 2.0 and later versions of the tooling. Older versions used a different mapping for .NET Standard 1.5 and higher. </sup>
+<sup>1</sup> The versions listed for .NET Framework apply to .NET Core SDK 2.0 and later versions of the tooling. Older versions used a different mapping for .NET Standard 1.5 and higher.
 
 - The columns represent .NET Standard versions. Each header cell is a link to a document that shows which APIs got added in that version of .NET Standard.
 - The rows represent the different .NET implementations.

@@ -31,7 +31,7 @@ The following table defines the most common target frameworks, how they're refer
 
 ## Supported target framework versions
 
-A target framework is typically referenced by a TFM. The following table shows the target frameworks supported by the .NET Core SDK and the NuGet client. Equivalents are shown within brackets. For example, `win81` is an equivalent TFM to `netcore451`.
+A target framework is typically referenced by a TFM (Target Framework Moniker). The following table shows the target frameworks supported by the .NET Core SDK and the NuGet client. Equivalents are shown within brackets. For example, `win81` is an equivalent TFM to `netcore451`.
 
 | Target Framework           | TFM |
 | -------------------------- | --- |

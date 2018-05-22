@@ -32,11 +32,11 @@ This section provides reference material about C# keywords, operators, special c
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
  [C# Language Specification](../../csharp/language-reference/language-specification/index.md)  
- Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.  
+ Provides links to the latest versions of the C# language specification.  
   
 ## Related Sections  
 
- [C#](../../csharp/index.md)
+ [C# Guide](../../csharp/index.md)  
  Provides a portal to Visual C# documentation.  
   
  [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  

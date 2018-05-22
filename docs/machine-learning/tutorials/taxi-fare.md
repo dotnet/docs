@@ -2,7 +2,7 @@
 title: Use ML.NET to predict New York Taxi Fares (Regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
-ms.date: 05/14/2018
+ms.date: 05/17/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 ## Understand the problem
 
@@ -103,7 +103,7 @@ Now go back to the **Program.cs** file. In `Main`, replace the `Console.WriteLin
 PredictionModel<TaxiTrip, TaxiTripFarePrediction> model = Train();
 ```
 
-The `Train()` function trains your model. Create that function just below `Main`, using the following code:
+The `Train` method trains your model. Create that function just below `Main`, using the following code:
 
 ```csharp
 public static PredictionModel<TaxiTrip, TaxiTripFarePrediction> Train()
@@ -188,8 +188,6 @@ Before you go onto the next step, save your model to a .zip file by adding the f
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#5 "Save the model asynchronously and return the model")]
 
-<!-- This step requires that you have a Models folder already created. So we might have to add explanation around that. -->
-
 Adding the `await` statement to the `model.WriteAsync()` call means that the `Train()` method must be changed to an async method that returns a `Task`. Modify the signature of `Train` as shown in the following code:
 
 [!code-csharp[AsyncTraining](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#6 "Make the Train method async and return a task.")]
@@ -206,7 +204,7 @@ You also need to add the following using statement at the top of the file:
 
 [!code-csharp[UsingTasks](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#9 "Add System.Threading.Tasks. to your usings.")]
 
-Because the `async Main` method is a new feature in C# 7.1 and the default language version of the project is C# 7, you need to change the language version to C# 7.1 or higher.
+Because the `async Main` method is a new feature in C# 7.1 and the default language version of the project is C# 7.0, you need to change the language version to C# 7.1 or higher.
 To do that, right-click on the project node in **Solution Explorer** and select **Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown, select  **C# 7.1** (or a higher version). Select the **OK** button.
 
 ## Evaluate the model
@@ -248,7 +246,7 @@ Next, create a class to house test scenarios that you can use to make sure your 
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *TestTrips.cs*. Then, select the **Add** button.
-1. Modify the class to be static like in the following example: 
+1. Modify the class to be static like in the following example:
 
 [!code-csharp[StaticClass](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TestTrips.cs#1 "Change class to be a static class.")]
 

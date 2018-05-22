@@ -64,7 +64,7 @@ Specifies whether assemblies from remote sources should be granted full trust.
   
  The `enabled` attribute for this element is effective only when code access security (CAS) is disabled. By default, CAS policy is disabled in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)] and later versions. If you set `enabled` to `true`, remote applications are granted full trust.  
   
- If `<loadFromRemoteSources>``enabled` is not set to `true`, an exception is thrown under the following conditions:  
+ If `<loadFromRemoteSources>` `enabled` is not set to `true`, an exception is thrown under the following conditions:  
   
 -   The sandboxing behavior of the current domain is different from its behavior in the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)]. This requires CAS policy to be disabled, and the current domain not to be sandboxed.  
   

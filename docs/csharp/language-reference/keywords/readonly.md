@@ -20,7 +20,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
   
 -   When the variable is initialized in the declaration, for example:  
   
-    ```  
+    ```csharp  
     public readonly int y = 5;  
     ```  
   
@@ -29,7 +29,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
 > [!NOTE]
 >  The `readonly` keyword is different from the [const](../../../csharp/language-reference/keywords/const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be initialized either at the declaration or in a constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for runtime constants as in the following example:  
   
-```  
+```csharp  
 public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;  
 ```  
   

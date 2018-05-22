@@ -25,12 +25,12 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-doc](doc-compiler-option.md)|Specifies an XML file where processed documentation comments are to be written.|  
 |[-out](out-compiler-option.md)|Specifies the output file.|  
 |[-pdb](pdb-compiler-option.md)|Specifies the file name and location of the .pdb file.|  
-|[-platform](platform-compiler-option.md)|Specify the output platform.|  
-|[-preferreduilang](preferreduilang-compiler-option.md)|Specify a language for compiler output.|  
+|[-platform](platform-compiler-option.md)|Specifies the output platform.|  
+|[-preferreduilang](preferreduilang-compiler-option.md)|Specifies a language for compiler output.|  
 |[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|  
 |[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|  
 |[-target](target-compiler-option.md)|Specifies the format of the output file using one of five options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), or [-target:winmdobj](target-winmdobj-compiler-option.md).|  
-|-modulename:\<string>|Specify the name of the source module|  
+|-modulename:\<string>|Specifies the name of the source module|  
   
 ### .NET Framework Assemblies  
   
@@ -86,7 +86,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-codepage](codepage-compiler-option.md)|Specifies the code page to use for all source code files in the compilation.|  
 |[-help](help-compiler-option.md)|Lists compiler options to stdout.|  
 |[-highentropyva](highentropyva-compiler-option.md)|Specifies that the executable file supports address space layout randomization (ASLR).|  
-|[-langversion](langversion-compiler-option.md)|Specify language version mode: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, or Latest |  
+|[-langversion](langversion-compiler-option.md)|Specifies the language version: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3, or Latest |  
 |[-main](main-compiler-option.md)|Specifies the location of the **Main** method.|  
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to compile with csc.rsp.|  
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler banner information.|  
@@ -95,7 +95,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword.|  
 |[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|  
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|  
-|-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
+|-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
   
 ## Obsolete Options  
   

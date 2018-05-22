@@ -521,7 +521,7 @@ This feature means that associative containers can be initialized using
 syntax similar to what's been in place for sequence containers for several
 versions.
 
-### Extension `Add` methods in collection initializers
+## Extension `Add` methods in collection initializers
 
 Another feature that makes collection initialization easier is the ability
 to use an *extension method* for the `Add` method. This feature was
@@ -547,10 +547,7 @@ Now you can, but only if you create an extension method that maps `Add` to
 
 What you are doing with this feature is to map whatever method adds
 items to a collection to a method named `Add` by creating an
-extension method: 
-
-[!code-csharp[Enrollment](../../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
-[!code-csharp[ExtensionAddSample](../../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
+extension method.
 
 ## Improved overload resolution
 

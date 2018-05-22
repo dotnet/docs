@@ -1,6 +1,6 @@
 ---
 title: "Dim Statement (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Dim"
   - "Dim"
@@ -58,8 +58,10 @@ Dim [ WithEvents ] variablelist
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-    -   `Protected Friend`  
-  
+    -   [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+    
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
+
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 -   `Shared`  

@@ -32,14 +32,14 @@ The following table shows the keywords for built-in C# types, which are aliases 
   
  The C# type keywords and their aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:  
   
-```  
+```csharp  
 int x = 123;  
 System.Int32 x = 123;  
 ```  
   
  To display the actual type for any C# type, use the system method `GetType()`. For example, the following statement displays the system alias that represents the type of `myVariable`:  
   
-```  
+```csharp  
 Console.WriteLine(myVariable.GetType());  
 ```  
   

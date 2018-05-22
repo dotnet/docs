@@ -42,7 +42,7 @@ value before they can be re-assigned to a body that references the same
 lambda expression.
 
 Definite assignment rules also affect any variables that are captured
-by the local function or lamdba epression. Both local functions and
+by the local function or lamdba expression. Both local functions and
 lambda expression rules demand that any captured variables are definitely
 assigned at the point when the local function or lambda expression is
 converted to a delegate. The difference is that lambda expressions are converted

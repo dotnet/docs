@@ -8,7 +8,7 @@ ms.assetid: 987e2f22-46bf-4fea-80ee-270b9cd01045
 # Restrictions on Using Accessibility Levels (C# Reference)
 When you specify a type in a declaration, check whether the accessibility level of the type is dependent on the accessibility level of a member or of another type. For example, the direct base class must be at least as accessible as the derived class. The following declarations cause a compiler error because the base class `BaseClass` is less accessible than `MyClass`:  
   
-```  
+```csharp  
 class BaseClass {...}  
 public class MyClass: BaseClass {...} // Error  
 ```  
@@ -32,7 +32,7 @@ public class MyClass: BaseClass {...} // Error
 ## Example  
  The following example contains erroneous declarations of different types. The comment following each declaration indicates the expected compiler error.  
   
-```  
+```csharp  
 // Restrictions on Using Accessibility Levels  
 // CS0052 expected as well as CS0053, CS0056, and CS0057  
 // To make the program work, change access level of both class B  

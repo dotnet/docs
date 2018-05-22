@@ -126,7 +126,7 @@ It is possible to split the definition of a [class](../../../csharp/language-ref
   
  A partial method declaration consists of two parts: the definition, and the implementation. These may be in separate parts of a partial class, or in the same part. If there is no implementation declaration, then the compiler optimizes away both the defining declaration and all calls to the method.  
   
-```  
+```csharp  
 // Definition in file1.cs  
 partial void onNameChanged();  
   

@@ -44,8 +44,10 @@ End Enum
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-     You can specify `Protected``Friend` to allow access from code within the enumeration's class, a derived class, or the same assembly.  
-  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+    
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
+
 -   `Shadows`  
   
      Optional. Specifies that this enumeration redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can specify [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) only on the enumeration itself, not on any of its members.  

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # -pathmap (C# Compiler Options)
 
-The **-pathmap** compiler option specifies a mapping for source path names output by the compiler.
+The **-pathmap** compiler option specifies how to map physical paths to source path names output by the compiler.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ The **-pathmap** compiler option specifies a mapping for source path names outpu
  `sourcePath1`
  The source path substituted for `path1` in any output files.
 
-You can specify multiple mappings, separating each with a comma.
+To specify multiple mapped source paths, separate each with a comma.
 
 ## Remarks
 

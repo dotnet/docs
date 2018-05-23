@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # -publicsign (C# Compiler Options)
 
-This option causes the compiler to apply a public key without actually signing the assembly. The **-publicsign** option also sets a bit in the assembly that tells the runtime that the file is actually signed.
+This option causes the compiler to apply a public key but does not actually sign the assembly. The **-publicsign** option also sets a bit in the assembly that tells the runtime that the file is actually signed.
 
 ## Syntax
 

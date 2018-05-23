@@ -68,6 +68,7 @@ Ubuntu distributions require the following libraries installed:
 * libicu52 (for 14.x)
 * libicu55 (for 16.x)
 * libicu57 (for 17.x)
+* libicu60 (for 18.x)
 
 For versions earlier than .NET Core 2.1, following dependencies are also required:
 

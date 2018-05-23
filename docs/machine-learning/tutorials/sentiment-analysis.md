@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 
 ## Sentiment analysis sample overview
 
-The sample is a console app that uses the ML.NET API to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from University of California, Irvine (UCI) and are automatically downloaded and unzipped into a data directory.
+The sample is a console app that uses the ML.NET API to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from University of California, Irvine (UCI).
 
 Prediction and evaluation results are displayed accordingly so that analysis and action can be taken.
 

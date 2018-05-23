@@ -47,7 +47,7 @@ In [classification](#classification), an evaluation metric that balances [precis
 
 ## Hyperparameter
 
-A parameter of a machine learning algorithm. Examples include the number of trees to learn in a decision forest or the step size in a gradient descent algorithm. Values of *Hyperparameters* are set before training the model and govern the process of finding the [model](#model). For more information, see the [Hyperparameter](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) article on Wikipedia.
+A parameter of a machine learning algorithm. Examples include the number of trees to learn in a decision forest or the step size in a gradient descent algorithm. Values of *Hyperparameters* are set before training the model and govern the process of finding the parameters of the prediction function, for example, the comparison points in a decision tree or the weights in a linear regression model. For more information, see the [Hyperparameter](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) article on Wikipedia.
 
 ## Label
 

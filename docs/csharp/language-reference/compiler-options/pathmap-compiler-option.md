@@ -46,7 +46,7 @@ Compile `t.cs` in the directory **C:\\work\\tests** and map that directory to **
 csc -pathmap:C:\work\tests=\publish t.cs
 ```
 
-## See Also
+## See also
 
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

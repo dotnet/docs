@@ -38,10 +38,8 @@
       "build_output_subfolder": ".",
       "locale": "en-us",
       "xref_query_tags": ["/uwp/api"],
-      "monikers": [        
-      ],
       "moniker_ranges": [
-        ">= netcore-1.0"        
+        ">= netcore-1.0 || >= netframework-1.1 || >= netstandard-1.0 || >= xamarinandroid-7.1 || >= xamarinios-10.8 || >= xamarinmac-3.0"
        ],
       "filemap_share_depots": ["VS.dotnet-api-docs"],
       "open_to_public_contributors": true,

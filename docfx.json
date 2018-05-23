@@ -3,11 +3,13 @@
     "markdownEngineName": "dfm-latest",
     "content": [
       {
+        "group": "all",
         "files": [
           "api/**/*.md"
         ]
       },
       {
+        "group": "all",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -23,6 +25,7 @@
         ]
       },
       {
+        "group": "all",
         "files": [
           "**/*.md"
         ],
@@ -35,6 +38,7 @@
         ]
       },
       {
+        "group": "all",
         "files": [
           "**/*.md"
         ],
@@ -47,7 +51,7 @@
         ]
       },
       {
-        "group": "netcore",
+        "group": "all",
         "src": "docs/core",
         "dest": "core",
         "files": [
@@ -56,17 +60,20 @@
         ]
       },
       {
+        "group": "all",
         "files": [
           "index.md"
         ]
       },
       {
+        "group": "all",
         "files": "toc.yml",
         "dest": "breadcrumb"
       }
     ],
     "resource": [
       {
+        "group": "all",
         "files": [
           "images/**",
           "**/*.png",
@@ -85,7 +92,7 @@
         ]
       },
       {
-        "group": "netcore",
+        "group": "all",
         "files": [
           "images/**",
           "**/*.png",
@@ -121,6 +128,9 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html" 
     },
     "fileMetadata": {
+      "monikerRange": {
+        "docs/core/**": ">= netcore-1.0"
+      },
       "feedback_product_url": {
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
       },
@@ -215,8 +225,9 @@
       "docs.html"
     ],
     "groups": {
-      "netcore": {
-        "moniker_range": ">= netcore-1.0"
+      "all": {
+        "moniker_range": ">= netcore-1.0 || >= netframework-1.1 || >= netstandard-1.0 || >= xamarinandroid-7.1 || >= xamarinios-10.8 || >= xamarinmac-3.0",
+        "dest": "all"
       }
     },
     "xref": [

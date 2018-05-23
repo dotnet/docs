@@ -28,9 +28,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of items in the <see cref="System.Span`1" />.</typeparam>
+    <summary>Represents a contiguous region of arbitrary memory that is type- and memory-safe.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+A `Span<T>` instance is often used to hold the elements of an array or a portion of an array. Unlike an array, however, a `Span<T>` instance can point to managed memory, native memory, or memory managed on the stack.
+
+      ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,9 +57,17 @@
         <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object. </param>
+        <summary>Creates a new <see cref="T:System.Span`1" /> object over the entirety of a specified array.</summary>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+
+If `array` is `null`, this constructor returns a `null` `Span<T>`.
+
+      ]]></format>
+        </remarks>
+        <exception cref="T:System.TypeMismatchException">
+          <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,10 +94,20 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointer">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pointer">A pointer to the starting address of a specified number of bytes in memory.</param>
+        <param name="length">The number of bytes to be included in the <see cref="T:System.Span~1" />.</param>
+        <summary>Creates a new <see cref="T:System.Span`1" /> object  from a specified number of bytes starting at a specified memory address.</summary>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+
+        This constructor should be used with care, since it creates arbitrarily typed `T`s from a `void*`-typed block of memory, and `length` is not checked. However, if the constructor succeeds in creating a new <xref:System.Span%601> object, all subsequent uses are correct.        
+
+      ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="T" /> is a reference type or contains pointers and therefore cannot be stored in unmanaged memory.</exception> 
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is negative.</exception> 
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,9 +126,9 @@
         <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="start">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The source array.</param>
+        <param name="start">The index of the first element in the array to include in the <see cref="T:System.Span`1" /> object.</param>
+        <summary>Creates a new <see cref="T:System.Span`1" /> object from a specified array starting at a specifed index position and continuing to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,11 +153,20 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The source array.</param>
+        <param name="start">The index of the first element to include in the new <see cref="T:System.Span~1" />.</param>
+        <param name="length">The number of elements to include in the new <see cref="T:System.Span~1" />. </param>
+        <summary>Creates a new <see cref="T:System.Span`1" /> object that includes a specified number of elements of an array starting at a specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.<p />
+          --or--<p />
+          <paramref name="start" /> is outside the bounds of the array. <p />
+          --or--<p />
+          <paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
+        </exception> 
+        <exception cref="T:System.TypeMismatchException">
+          <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -157,8 +189,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the contents of this <see cref="T:System.Span`1" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+The `Clear` method sets the items in the <xref:System.Span%601> object to their default values. It does not remove items from the <xref:System.Span%601>.  
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -184,8 +222,16 @@
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Copies the contents of this <see cref="System.Span~1" /> into a destination <see cref="System.Span~1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+If the source and `destination` overlap, this method places the original values in a temporary location before `destination` is overwritten.
+
+         ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destination" /> is shorter than the source <see cref="System.Span`1" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DangerousCreate">
@@ -260,8 +306,8 @@
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an empty <see cref="T:System.Span`1" /> object.</summary>
+        <value>An empty <see cref="T:System.Span`1" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,10 +341,15 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">Not supported.</param>
+        <summary>Calls to this method are not supported.</summary>
+        <returns>Calls to this method are not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+Calls to the <xref:System.Span%601.Equals%2A> method are not supported. The method call either generates a compiler error at compile time or throws a <xref:System.NotSupportedException> at run time. To compare two <xref:System.Span%601> objects for equality, use the <xref:System.Span%601.op_Equality%2A> comparison operator.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -323,8 +374,8 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value to assign to each element of the span.</param>
+        <summary>Fills the elements of this span with a specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,9 +395,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator for this <see cref="T:System.Span`1" />.</summary>
+        <returns>An enumerator for this span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, you can use the C# `foreach` statement` and the Visual Basic `For Each`...`Next` construct to enumerate a <xref:System.Span%601>.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -377,9 +433,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <returns>Calls to this method always throw a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">
+          Calls to this method are not supported.</exception> 
       </Docs>
     </Member>
     <Member MemberName="GetPinnableReference">
@@ -403,9 +461,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a reference to the element of the <see cref="T:System.Span`1" /> at index zero.</summary>
+        <returns>A reference to the element of the <see cref="T:System.Span`1" /> at index zero, or <see langword="null" /> if <see cref="M:System.Span`1.IsEmpty" /> is  <see langword="true" />. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+The `GetPinnableReference` method can be used for pinning a <xref:System.Span%601> in memory. It is required to support the use of a <xref:System.Span%601> within a [fixed](~/docs/csharp/language-reference/keywords/fixed-statement.md) statement.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -427,8 +490,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.Span`1" /> is empty.</summary>
+        <value><see langword="true" /> if the current span is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,9 +518,11 @@
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the element at the specified zero-based index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less then zero or greater than or equal to <see cref="P:System.Span`1.Length" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -479,8 +544,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the length of the current span.</summary>
+        <value>The length of the current span.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,11 +572,17 @@
         <Parameter Name="right" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first span to compare.</param>
+        <param name="right">The second span to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Span`1" /> objects are equal.</summary>
+        <returns><see langword="true" /> if the two <see cref="T:System.Span`1" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+Two <xref:System.Span%601> objects are equal if they have the same length and the corresponding elements of `left` and `right` point to the same memory. Note that the test for equality does *not* attempt to determine whether the contents are equal.
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -536,9 +607,9 @@
         <Parameter Name="span" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="span">The object to convert to a <see cref="T:System.ReadOnlySpan`1" />.</param>
+        <summary>Defines an implicit conversion of a <see cref="T:System.Span`1" /> to a <see cref="T:System.ReadOnlySpan`1" />.</summary>
+        <returns>A read-only span that corresponds to the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,9 +635,9 @@
         <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="array">The array to convert to a <see cref="T:System.Span`1" />.</param>
+        <summary>Defines an implicit conversion of an array to a <see cref="T:System.Span`1" />.</summary>
+        <returns>The span that corresponds to <paramref name="array" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,10 +668,10 @@
         <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.1" />
       </Parameters>
       <Docs>
-        <param name="arraySegment">To be added.</param>
-        <param name="segment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arraySegment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
+        <param name="segment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
+        <summary>Defines an implicit conversion of an <see cref="T:System.ArraySegment" /> to a <see cref="T:System.Span`1" />.</summary>
+        <returns>A span that corresponds to the array segment.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,11 +698,17 @@
         <Parameter Name="right" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first span to compare.</param>
+        <param name="right">The second span to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Span`1" /> objects are not equal.</summary>
+        <returns><see langword="true" /> if the two <see cref="T:System.Span`1" /> objects are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+Two <xref:System.Span%601> objects are equal if they have different lengths or if the corresponding elements of `left` and `right` do not point to the same memory. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -656,10 +733,12 @@
         <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">The index at which to begin the slice.</param>
+        <summary>Forms a slice out of the current span that begins at a specified index.</summary>
+        <returns>A span that consists of all elements of the current span from <paramref name="index" /> to the end of the span.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than or equal to <see cref="T:System.Span`1.Length" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -685,11 +764,13 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">The index at which to begin this slice.</param>
+        <param name="length">The desired length for the slice.</param>
+        <summary>Forms a slice out of the current span starting at a specified index for a specified length.</summary>
+        <returns>>A span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="start" /> or <paramref name="start" /> + <paramref name="index" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -712,9 +793,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Copies the contents of this span into a new array.</summary>
+        <returns>An array containing the data in the current span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+This method performs a heap allocation and therefore should be avoided if possible. It it sometimes necessary when APIs that support <xref:System.Span%601> objects are not available but APIs that work with arrays are.
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -733,9 +820,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of this <see cref="T:System.Span`1" /> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Span`1" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+For a `Span<Char>`, the `ToString` method returns a <xref:System.String> that contains the characters pointed to by the <xref:System.Span%601>. Otherwise, it returns a <xref:System.String> with the name of the type and the number of elements that the <xref:System.Span%601> contains.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryCopyTo">
@@ -760,10 +852,18 @@
         <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="destination">The target of the copy operation.</param>
+        <summary>Attempts to copy the current <see cref="T:System.Span`1" /> to a destination <see cref="T:System.Span`1" /> and returns a value that indicates whether the copy operation succeeded.</summary>
+        <returns><see langword="true" /> if the copy operation succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+If the source and `destination` overlap, this method places the original values in a temporary location before `destination` is overwritten.
+
+If `destination` is shorter than the source <xref:System.Span%601>, this method returns `false`, and no data is written to `destination`.
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

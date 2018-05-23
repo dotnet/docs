@@ -60,29 +60,35 @@ The following are intended to be examples. The exact versions and names may vary
 
 Ubuntu distributions require the following libraries installed:
 
-* libunwind8
 * liblttng-ust0
 * libcurl3
 * libssl1.0.0
-* libuuid1
 * libkrb5-3
 * zlib1g
 * libicu52 (for 14.x)
 * libicu55 (for 16.x)
 * libicu57 (for 17.x)
 
+For versions earlier than .NET Core 2.1, following dependencies are also required:
+
+* libunwind8
+* libuuid1
+
 ### CentOS
 
 CentOS distributions require the following libraries installed:
 
-* libunwind
 * lttng-ust
 * libcurl
 * openssl-libs
-* libuuid
 * krb5-libs
 * libicu
 * zlib
+
+For versions earlier than .NET Core 2.1, following dependencies are also required:
+
+* libunwind
+* libuuid
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 

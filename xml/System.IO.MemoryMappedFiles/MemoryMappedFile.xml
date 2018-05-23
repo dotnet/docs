@@ -39,7 +39,7 @@
   
  The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> methods create a memory-mapped file that is not mapped to an existing file on disk; and are suitable for creating shared memory for interprocess communication (IPC).  
   
- A memory-mapped file is associated with a name.  
+ A memory-mapped file can be associated with an optional name that allows the memory-mapped file to be shared with other processes. 
   
  You can create multiple views of the memory-mapped file, including views of parts of the file. You can map the same part of a file to more than one address to create concurrent memory. For two views to remain concurrent, they have to be created from the same memory-mapped file. Creating two file mappings of the same file with two views does not provide concurrency.  
   
@@ -152,7 +152,7 @@
         <Parameter Name="mode" Type="System.IO.FileMode" />
       </Parameters>
       <Docs>
-        <param name="path">The path to file to map.</param>
+        <param name="path">The path to the file to map.</param>
         <param name="mode">Access mode; must be <see cref="F:System.IO.FileMode.Open" />.</param>
         <summary>Creates a memory-mapped file that has the specified access mode from a file on disk.</summary>
         <returns>A memory-mapped file that has the specified access mode.</returns>
@@ -224,7 +224,7 @@
       <Docs>
         <param name="path">The path to the file to map.</param>
         <param name="mode">Access mode; must be <see cref="F:System.IO.FileMode.Open" />.</param>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <summary>Creates a memory-mapped file that has the specified access mode and name from a file on disk.</summary>
         <returns>A memory-mapped file that has the specified name and access mode.</returns>
         <remarks>
@@ -250,7 +250,7 @@
   
  <paramref name="mode" /> is <see cref="F:System.IO.FileMode.Append" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> or <paramref name="mapName" /> is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="mode" /> is <see cref="F:System.IO.FileMode.Create" />, <see cref="F:System.IO.FileMode.CreateNew" />, or <see cref="F:System.IO.FileMode.Truncate" />.  
   
@@ -300,7 +300,7 @@
       <Docs>
         <param name="path">The path to the file to map.</param>
         <param name="mode">Access mode; can be any of the <see cref="T:System.IO.FileMode" /> enumeration values except <see cref="F:System.IO.FileMode.Append" />.</param>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile"/> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of the file on disk.</param>
         <summary>Creates a memory-mapped file that has the specified access mode, name, and capacity from a file on disk.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
@@ -329,7 +329,7 @@
   
  <paramref name="mode" /> is <see cref="F:System.IO.FileMode.Append" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> or <paramref name="mapName" /> is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is greater than the size of the logical address space.  
   
@@ -385,7 +385,7 @@
       <Docs>
         <param name="path">The path to the file to map.</param>
         <param name="mode">Access mode; can be any of the <see cref="T:System.IO.FileMode" /> enumeration values except <see cref="F:System.IO.FileMode.Append" />.</param>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of the file on disk.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file.</param>
         <summary>Creates a memory-mapped file that has the specified access mode, name, capacity, and access type from a file on disk.</summary>
@@ -419,7 +419,7 @@
   
  <paramref name="mode" /> is <see cref="F:System.IO.FileMode.Append" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> or <paramref name="mapName" /> is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is greater than the size of the logical address space.  
   
@@ -485,7 +485,7 @@
       </Parameters>
       <Docs>
         <param name="fileStream">The file stream of the existing file.</param>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of <c>filestream</c>.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file.  
   
@@ -552,7 +552,7 @@
       </Parameters>
       <Docs>
         <param name="fileStream">The <c>fileStream</c> to the file to map.</param>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of the file on disk.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file.  
   
@@ -584,7 +584,7 @@
   
  <paramref name="access" /> is set to the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Read" /> or <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value, which is not allowed.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="fileStream" /> or <paramref name="mapname" /> is <see langword="null" />.</exception>
+          <paramref name="fileStream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.  
   
@@ -648,7 +648,7 @@
         <Parameter Name="capacity" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <summary>Creates a memory-mapped file that has the specified capacity in system memory.</summary>
         <returns>A memory-mapped file that has the specified name and capacity.</returns>
@@ -716,8 +716,6 @@ Process C says: True
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="mapName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than or equal to zero.</exception>
       </Docs>
@@ -753,7 +751,7 @@ Process C says: True
         <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <summary>Creates a memory-mapped file that has the specified capacity and access type in system memory.</summary>
@@ -772,8 +770,6 @@ Process C says: True
  -or-  
   
  <paramref name="access" /> is set to write-only with the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than or equal to zero.  
   
@@ -815,7 +811,7 @@ Process C says: True
         <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <param name="options">A bitwise combination of enumeration values that specifies memory allocation options for the memory-mapped file.</param>
@@ -829,8 +825,6 @@ Process C says: True
  -or-  
   
  <paramref name="access" /> is set to write-only with the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than or equal to zero.  
   
@@ -866,7 +860,7 @@ Process C says: True
         <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile"/> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <param name="options">A bitwise combination of enumeration values that specifies memory allocation options for the memory-mapped file.</param>
@@ -890,8 +884,6 @@ Process C says: True
  -or-  
   
  <paramref name="access" /> is set to write-only with the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than or equal to zero.  
   
@@ -945,9 +937,9 @@ Process C says: True
         <Parameter Name="capacity" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">The name of the memory-mapped file.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
-        <summary>Creates or opens a memory-mapped file that has the specified capacity in system memory.</summary>
+        <summary>Creates or opens a memory-mapped file that has the specified name and capacity in system memory.</summary>
         <returns>A memory-mapped file that has the specified name and size.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -959,8 +951,6 @@ Process C says: True
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="mapName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is greater than the size of the logical address space.  
   
@@ -1000,10 +990,10 @@ Process C says: True
         <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">The name of the memory-mapped file.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
-        <summary>Creates or opens a memory-mapped file that has the specified capacity and access type in system memory.</summary>
+        <summary>Creates or opens a memory-mapped file that has the specified name, capacity and access type in system memory.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1013,14 +1003,14 @@ Process C says: True
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="mapName" /> is an empty string.  
   
  -or-  
   
  <paramref name="access" /> is set to write-only with the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is greater than the size of the logical address space.  
   
@@ -1067,7 +1057,7 @@ Process C says: True
         <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">The name of the memory-mapped file.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <param name="options">A bitwise combination of values that indicate the memory allocation options to apply to the file.</param>
@@ -1075,14 +1065,14 @@ Process C says: True
         <summary>Creates a new empty memory mapped file or opens an existing memory mapped file if one exists with the same name. If opening an existing file, the capacity, options, and memory arguments will be ignored.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="mapName" /> is an empty string.  
   
  -or-  
   
  <paramref name="access" /> is set to write-only with the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is greater than the size of the logical address space.  
   
@@ -1123,7 +1113,7 @@ Process C says: True
         <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
       </Parameters>
       <Docs>
-        <param name="mapName">A name to assign to the memory-mapped file.</param>
+        <param name="mapName">The name of the memory-mapped file.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <param name="options">A bitwise combination of enumeration values that specifies memory allocation options for the memory-mapped file.</param>
@@ -1131,7 +1121,7 @@ Process C says: True
   
  This parameter can be <see langword="null" />.</param>
         <param name="inheritability">One of the enumeration values that specifies whether a handle to the memory-mapped file can be inherited by a child process. The default is <see cref="F:System.IO.HandleInheritability.None" />.</param>
-        <summary>Creates or opens a memory-mapped file that has the specified capacity, access type, memory allocation, security permissions, and inheritability in system memory.</summary>
+        <summary>Creates or opens a memory-mapped file that has the specified name, capacity, access type, memory allocation, security permissions, and inheritability in system memory.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1141,14 +1131,14 @@ Process C says: True
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="mapName" /> is an empty string.  
   
  -or-  
   
  <paramref name="access" /> is set to write-only with the <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> enumeration value.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is greater than the size of the logical address space.  
   
@@ -1666,14 +1656,14 @@ Process C says: True
         <Parameter Name="mapName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="mapName">The name of the memory-mapped file to open.</param>
+        <param name="mapName">The name of the memory-mapped file.</param>
         <summary>Opens an existing memory-mapped file that has the specified name in system memory.</summary>
         <returns>A memory-mapped file that has the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The memory-mapped file can be either a persisted memory-mapped file (associated with a file on disk) or non persisted.  
+ The memory-mapped file can be either a persisted memory-mapped file (associated with a file on disk) or non-persisted.  
   
    
   
@@ -1691,10 +1681,10 @@ Process C says: True
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mapName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="mapName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mapName" /> is an empty string.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified for <paramref name="mapName" /> does not exist.</exception>
       </Docs>
     </Member>
@@ -1733,10 +1723,10 @@ Process C says: True
         <summary>Opens an existing memory-mapped file that has the specified name and access rights in system memory.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mapName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="mapName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mapName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="desiredAccessRights" /> is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileRights" /> enumeration value.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified for <paramref name="mapName" /> does not exist.</exception>
@@ -1779,10 +1769,10 @@ Process C says: True
         <summary>Opens an existing memory-mapped file that has the specified name, access rights, and inheritability in system memory.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mapName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="mapName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mapName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="desiredAccessRights" /> is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileRights" /> enumeration value.  
   

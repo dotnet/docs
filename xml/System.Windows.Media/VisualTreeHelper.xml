@@ -633,6 +633,10 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reference" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="reference" /> is not a <see cref="T:System.Windows.Media.Visual" /> or <see cref="System.Windows.Media.Visual3D" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTransform">

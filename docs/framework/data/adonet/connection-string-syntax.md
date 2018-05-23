@@ -108,9 +108,9 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 |No|N/A|No (default)|Ignored|No encryption occurs.|  
 |No|N/A|Yes|No (default)|Encryption occurs only if there is a verifiable server certificate, otherwise the connection attempt fails.|  
 |No|N/A|Yes|Yes|Encryption always occurs, but may use a self-signed server certificate.|  
-|Yes|No|Ignored|Ignored|Encryption occurs only if there is a verifiable server certificate, otherwise the connection attempt fails.|  
+|Yes|No|Ignored|Ignored|Encryption occurs only if there is a verifiable server certificate; otherwise, the connection attempt fails.|  
 |Yes|Yes|No (default)|Ignored|Encryption always occurs, but may use a self-signed server certificate.|  
-|Yes|Yes|Yes|No (default)|Encryption occurs only if there is a verifiable server certificate, otherwise the connection attempt fails.|  
+|Yes|Yes|Yes|No (default)|Encryption occurs only if there is a verifiable server certificate; otherwise, the connection attempt fails.|  
 |Yes|Yes|Yes|Yes|Encryption always occurs, but may use a self-signed server certificate.|  
   
  For more information, see [Using Encryption Without Validation](http://go.microsoft.com/fwlink/?LinkId=120500) in SQL Server Books Online.  

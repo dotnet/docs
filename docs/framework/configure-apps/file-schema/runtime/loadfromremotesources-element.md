@@ -9,7 +9,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # &lt;loadFromRemoteSources&gt; element
-Specifies whether assemblies from remote sources should be granted full trust.  
+Specifies whether assemblies from remote sources should be granted full trust in .NET Framework 4 and later.  
   
 > [!NOTE]
 >  If you were directed to this topic because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](http://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070).  
@@ -32,7 +32,7 @@ Specifies whether assemblies from remote sources should be granted full trust.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`enabled`|Required attribute.<br /><br /> Specifies whether an assembly that is loaded from remote sources should be granted full trust.|  
+|`enabled`|Required attribute.<br /><br /> Specifies whether an assembly that is loaded from a remote source should be granted full trust.|  
   
 ## enabled attribute  
   
@@ -68,14 +68,11 @@ The `enabled` attribute for the `<loadFromRemoteSources>` element is effective o
 
 If `enabled` is not set to `true`, an exception is thrown under the following conditions:
 
-- The sandboxing behavior of the current domain is different from its behavior in the .NET Framework 3.5. This requires CAS policy to be disabled, and the current domain not to be sandboxed. 
+- The sandboxing behavior of the current domain is different from its behavior in the .NET Framework 3.5. This requires CAS policy to be disabled, and the current domain not to be sandboxed.
 
 - The assembly being loaded is not from the `MyComputer` zone.
 
 Setting the `<loadFromRemoteSources>` element to `true` prevents this exception from being thrown. It enables you to specify that you are not relying on the common language runtime to sandbox the loaded assemblies for security, and that they can be allowed to execute in full trust.
-
-> [!NOTE]
->  You may get a <xref:System.IO.FileLoadException> in a Windows Virtual PC application when you try to load a file from linked folders on the hosting computer. This error may also occur when you try to load a file from a folder linked over [Remote Desktop Services](http://go.microsoft.com/fwlink/?LinkId=182775) (Terminal Services). To avoid the exception, set `enabled` to `true`.
 
 ## Notes
 

@@ -15,6 +15,7 @@ There are several ways to set the language version:
 - Rely on a [Visual Studio quick action](#visual-studio-quick-action)
 - Set the language version in [Visual Studio UI](#set-the-language-version-in-visual-studio)
 - Manually edit your [**.csproj** file](#edit-the-csproj-file)
+- Set the language version [for multiople projects in a subdirectory](#configure-multiple-projects)
 - Configure the [`-langversion` compiler option](#set-the-langversion-compiler-option)
 
 ## Visual Studio quick action
@@ -71,6 +72,20 @@ The value `latest` uses the latest minor version of the C# language. Valid value
 
 The special strings `default` and `latest` resolve to the latest major
 and minor language versions installed on the build machine, respectively.
+
+## Configure multiple projects
+
+You can create a **Directory.build.props** file that contains the `<LangVersion>` element to configure multiple directories. You typically do that in your solution directory. Add the following to a **Directory.build.props** file in your solution directory:
+
+```xml
+<Project>
+ <PropertyGroup>
+   <LangVersion>7.3</LangVersion>
+ </PropertyGroup>
+</Project>
+```
+
+Now, builds in every sub-directory of the directory containing that file will use C# version 7.3 syntax. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build.md).
 
 ## Set the langversion compiler option
 

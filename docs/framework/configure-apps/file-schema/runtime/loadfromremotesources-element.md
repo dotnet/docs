@@ -9,7 +9,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # &lt;loadFromRemoteSources&gt; element
-Specifies whether assemblies from remote sources should be granted full trust in .NET Framework 4 and later.  
+Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]
 >  If you were directed to this topic because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](http://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070).  
@@ -55,7 +55,18 @@ Specifies whether assemblies from remote sources should be granted full trust in
 
 In the .NET Framework 3.5 and earlier versions, if you load an assembly from a remote location, code in the assembly runs in partial trust with a grant set that depends on the zone from which it is loaded. For example, if you load an assembly from a website, it is loaded into the Internet zone and granted the Internet permission set. In other words, it executes in an Internet sandbox.
 
-Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. If you load a remote assembly and try to execute its code, an exception is thrown. To load the assembly and execute its code, you must either:
+Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
+
+```text
+System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported. 
+(Exception from HRESULT: 0x80131515)
+File name: 'file:assem.dll' ---> 
+System.NotSupportedException: An attempt was made to load an assembly from a network location which would have caused the assembly 
+to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, 
+so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. 
+```
+
+To load the assembly and execute its code, you must either:
 
 - Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
 
@@ -66,7 +77,7 @@ Starting with the .NET Framework 4, code access security (CAS) policy is disable
 
 The `enabled` attribute for the `<loadFromRemoteSources>` element is effective only when code access security (CAS) is disabled. By default, CAS policy is disabled in the .NET Framework 4 and later versions. If you set `enabled` to `true`, remote assemblies are granted full trust.
 
-If `enabled` is not set to `true`, an exception is thrown under the following conditions:
+If `enabled` is not set to `true`, a <xref:System.IO.FileLoadException> is thrown under the following conditions:
 
 - The sandboxing behavior of the current domain is different from its behavior in the .NET Framework 3.5. This requires CAS policy to be disabled, and the current domain not to be sandboxed.
 
@@ -103,4 +114,5 @@ The following example shows how to grant full trust to assemblies loaded from re
 [More Implicit Uses of CAS Policy: loadFromRemoteSources](http://go.microsoft.com/fwlink/p/?LinkId=266839)  
 [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
 [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-[Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+[Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  

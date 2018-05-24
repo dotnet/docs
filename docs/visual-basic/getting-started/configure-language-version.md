@@ -60,4 +60,4 @@ Now, builds in every sub-directory of the directory containing that file will us
 
 ## Set the langversion compiler option
 
-You can use the `-langversion` command line option. For more information, see the article on the [--langversion](../reference/compiler-line-compiler/langversion.md) compiler option.
+You can use the `-langversion` command line option. For more information, see the article on the [--langversion](../reference/command-line-compiler/langversion.md) compiler option.

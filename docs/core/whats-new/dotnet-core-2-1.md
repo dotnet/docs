@@ -9,7 +9,7 @@ ms.date: 05/07/2018
 
 [!INCLUDE[Applies to](~/includes/whats-new-applies-to.md)]
 
-The most recent release of .NET Core is .NET Core 2.1. It includes enhancements and new features in the following areas:
+.NET Core 2.1 includes enhancements and new features in the following areas:
 
 - [Tooling](#tooling)
 - [Roll forward](#roll-forward)
@@ -20,7 +20,7 @@ The most recent release of .NET Core is .NET Core 2.1. It includes enhancements 
 
 ## Tooling
 
-The tooling included with .NET Core 2.1 includes the following changes and enhancements:
+The .NET Core 2.1.300 SDK, the tooling included with .NET Core 2.1, includes the following changes and enhancements:
 
 ### Build performance improvements
 
@@ -177,7 +177,7 @@ The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:Syst
 
 - The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms?displayProperty=nameWithType> is now supported on Linux and maxOS.
 
-- Elliptic-Curve Diffie-Hellman (ECDH) is now avilalbe in the <xref:System.Security.Cryptography.ECDiffieHellman?displayProperty=nameWithType> class family. The surface area is the same as in the .NET Framework.
+- Elliptic-Curve Diffie-Hellman (ECDH) is now available in the <xref:System.Security.Cryptography.ECDiffieHellman?displayProperty=nameWithType> class family. The surface area is the same as in the .NET Framework.
 
 - The instance returned by <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> can encrypt or decrypt with OAEP using a SHA-2 digest, as well as generate or validate signatures using RSA-PSS.
 
@@ -207,6 +207,6 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 
 ## See also
 
-[What's new in .NET Core](index.md)
-[New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1.md)
-[ASP.NET Core 2.1.0-rc1 now available](https://blogs.msdn.microsoft.com/webdev/2018/05/07/asp-net-core-2-1-0-rc1-now-available/)
+[What's new in .NET Core](index.md)  
+[New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
+[ASP.NET Core 2.1.0-rc1 now available](https://blogs.msdn.microsoft.com/webdev/2018/05/07/asp-net-core-2-1-0-rc1-now-available/)  

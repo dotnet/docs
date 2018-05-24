@@ -1,4 +1,4 @@
-﻿<Type Name="Span&lt;T&gt;" FullName="System.Span&lt;T&gt;">
+<Type Name="Span&lt;T&gt;" FullName="System.Span&lt;T&gt;">
   <TypeSignature Language="C#" Value="public struct Span&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Span`1&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Span`1" />
@@ -95,7 +95,7 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       </Parameters>
       <Docs>
         <param name="pointer">A pointer to the starting address of a specified number of bytes in memory.</param>
-        <param name="length">The number of bytes to be included in the <see cref="T:System.Span~1" />.</param>
+        <param name="length">The number of bytes to be included in the <see cref="T:System.Span`1" />.</param>
         <summary>Creates a new <see cref="T:System.Span`1" /> object  from a specified number of bytes starting at a specified memory address.</summary>
         <remarks>
       <format type="text/markdown"><![CDATA[  
@@ -154,8 +154,8 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       </Parameters>
       <Docs>
         <param name="array">The source array.</param>
-        <param name="start">The index of the first element to include in the new <see cref="T:System.Span~1" />.</param>
-        <param name="length">The number of elements to include in the new <see cref="T:System.Span~1" />. </param>
+        <param name="start">The index of the first element to include in the new <see cref="T:System.Span`1" />.</param>
+        <param name="length">The number of elements to include in the new <see cref="T:System.Span`1" />. </param>
         <summary>Creates a new <see cref="T:System.Span`1" /> object that includes a specified number of elements of an array starting at a specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -222,7 +222,7 @@ The `Clear` method sets the items in the <xref:System.Span%601> object to their 
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>
-        <summary>Copies the contents of this <see cref="System.Span~1" /> into a destination <see cref="System.Span~1" />.</summary>
+        <summary>Copies the contents of this <see cref="System.Span`1" /> into a destination <see cref="System.Span`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 

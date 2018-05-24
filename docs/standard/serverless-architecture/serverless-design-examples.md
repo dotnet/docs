@@ -1,12 +1,9 @@
 ---
-title: Serverless design examples - Serverless apps architecture, patterns, and Azure implementation
+title: Serverless design examples - Serverless apps
 description: Understand the variety of scenarios supported by serverless architectures, from scheduling and event-based processing to file triggers and stream process.  
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/20/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Serverless design examples
 
@@ -16,7 +13,7 @@ There are many design patterns that exist for serverless. This section captures 
 
 Scheduling tasks is a common function. The following diagram shows a legacy database that doesn't have appropriate integrity checks. The database must be scrubbed periodically. The serverless function finds invalid data and cleans it. The trigger is a timer that runs the code on a schedule.
 
-![Serverless scheduling](./media/serverless-design-examples/serverless-scheduling.png)
+![Serverless scheduling](./media/serverless-scheduling.png)
 
 ## Command and Query Responsibility Segregation (CQRS)
 
@@ -24,7 +21,7 @@ Command and Query Responsibility Segregation (CQRS) is a pattern that provides d
 
 Using CQRS, a read might involve a special "flattened" entity that models data the way it's consumed. The read is handled differently than how it's stored. For example, although the database may store a contact as a header record with a child address record, the read could involve an entity with both header and address properties. There are myriad approaches to creating the read model. It might be materialized from views. Update operations could be encapsulated as isolated events that then trigger updates to two different models. Separate models exist for reading and writing.
 
-![CQRS example](./media/serverless-design-examples/cqrs-example.png)
+![CQRS example](./media/cqrs-example.png)
 
 Serverless can accommodate the CQRS pattern by providing the segregated endpoints. One serverless function accommodates queries or reads, and a different serverless function or set of functions handles update operations. A serverless function may also be responsible for keeping the read model up-to-date, and can be triggered by the database's [change feed](/azure/cosmos-db/change-feed). Front-end development is simplified to connecting to the necessary endpoints. Processing of events is handled on the backend. This model also scales well for large projects because different teams may work on different operations.
 
@@ -37,7 +34,7 @@ In message-based system, events are often collected in queues or publisher/subsc
 
 Extract, Transform, and Load (ETL) is a common business function. Serverless is a great solution for ETL because it allows code to be triggered as part of a pipeline. Individual code components can address various aspects. One serverless function may download the file, another applies the transformation and another loads the data. The code can be tested and deployed independently, making it easier to maintain and scale where needed.
 
-![Serverless file triggers and transformations](./media/serverless-design-examples/serverless-file-triggers.png)
+![Serverless file triggers and transformations](./media/serverless-file-triggers.png)
 
 ## Asynchronous background processing and messaging
 
@@ -49,25 +46,25 @@ A popular scenario for serverless is N-tier applications, most commonly ones whe
 
 Serverless endpoints triggered by HTTP calls can be used to handle the API requests. For example, an ad services company may call a serverless function with user profile information to request custom advertising. The serverless function returns the custom ad and the web page renders it.
 
-![Serverless web API](./media/serverless-design-examples/serverless-web-api.png)
+![Serverless web API](./media/serverless-web-api.png)
 
 ## Data pipeline
 
 Serverless functions can be used to facilitate a data pipeline. In this example, a file triggers a function to translate data in a CSV file to data rows in a table. The organized table allows a Power BI dashboard to present analytics to the end user.
 
-![Serverless data pipeline](./media/serverless-design-examples/serverless-data-pipeline.png)
+![Serverless data pipeline](./media/serverless-data-pipeline.png)
 
 ## Stream processing
 
 Devices and sensors often generate streams of data that must be processed in real time. There are a number of technologies that can capture messages and streams from [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs) and [IoT Hub](/azure/iot-hub) to [Service Bus](/service-bus). Regardless of transport, serverless is an ideal mechanism for processing the messages and streams of data as they come in. Serverless can scale quickly to meet the demand of large volumes of data. The serverless code can apply business logic to parse the data and output in a structured format for action and analytics.
 
-![Serverless stream processing](./media/serverless-design-examples/serverless-stream-processing.png)
+![Serverless stream processing](./media/serverless-stream-processing.png)
 
 ## API gateway
 
 An API gateway provides a single point of entry for clients and then intelligently routes requests to backend services. It's useful to manage large sets of services. It can also handle versioning and simplify development by easily connecting clients to disparate environments. Serverless can handle backend scaling of individual microservices while presenting a single front via an API gateway.
 
-![Serverless API gateway](./media/serverless-design-examples/serverless-api-gateway.png)
+![Serverless API gateway](./media/serverless-api-gateway.png)
 
 ## Recommended Resources
 
@@ -75,11 +72,11 @@ An API gateway provides a single point of entry for clients and then intelligent
 * [Azure IoT Hub](/azure/iot-hub)
 * [Designing microservices: identifying microservice boundaries](/azure/architecture/microservices/microservice-boundaries)
 * [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs)
-* [Implementing the Circuit Breaker pattern](/dotnet/standard/microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern)
+* [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern)
 * [IoT Hub](/azure/iot-hub)
 * [Service Bus](/service-bus)
 * [Working with the change feed support in Azure Cosmos DB](/azure/cosmos-db/change-feed)
 
 >[!div class="step-by-step"]
 [Previous] (./serverless-architecture-considerations.md)
-[Next] (../azure-serverless-platform/index.md)
+[Next] (./azure-serverless-platform.md)

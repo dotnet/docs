@@ -1,12 +1,9 @@
 ---
-title: Architecture approaches - Serverless apps architecture, patterns, and Azure implementation
-description: An introduction to architecture approaches for building cloud-based enterprise applications.
+title: Architecture approaches - Serverless apps
+description: An introduction to architecture approaches for building cloud-based enterprise applications, from N-tier architectures to serverless.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/20/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Architecture approaches
 
@@ -24,7 +21,7 @@ For more information, see: [Azure application architecture guide](/azure/archite
 
 Many business applications follow a monolith pattern. Legacy applications are often implemented as monoliths. In the monolith pattern, all application concerns are contained in a single deployment. Everything from user interface to database calls is included in the same codebase.
 
-![Monolith architecture](./media/architecture-patterns/monolith-architecture.png)
+![Monolith architecture](./media/monolith-architecture.png)
 
 There are several advantages to the monolith approach. It is often easy to pull down a single code base and start working. Ramp up time may be less, and creating test environments is as simple as providing a new copy. The monolith may be designed to include multiple components and applications.
 
@@ -50,7 +47,7 @@ N-layer application partition application logic into specific layers. The most c
 
 Other layers may include middleware, batch processing, and API. It is important to note the layers are logical. Although they are developed in isolation, they may all be deployed to the same target platform.
 
-![N-Layer architecture](./media/architecture-patterns/n-layer-architecture.png)
+![N-Layer architecture](./media/n-layer-architecture.png)
 
 There are numerous advantages to the N-Layer approach, including:
 
@@ -74,7 +71,7 @@ Serverless may be used to implement one or more layers.
 
 Microservices don't have to be mutual to other architecture approaches. For example, an N-Tier architecture may use microservices for the middle tier. It is also possible to implement microservices in a variety of ways, from virtual directories on IIS hosts to containers. The characteristics of microservices make them especially ideal for serverless implementations.
 
-![Microservices architecture](./media/architecture-patterns/microservices-architecture.png)
+![Microservices architecture](./media/microservices-architecture.png)
 
 The pros of microservices architectures include:
 
@@ -94,5 +91,5 @@ Microservices come with their own challenges, including:
 Ultimately there are solutions to address all of these challenges, including tapping into the benefits of serverless that are discussed later.
 
 >[!div class="step-by-step"]
-[Previous] (../index.md)
+[Previous] (./index.md)
 [Next] (./architecture-deployment-approaches.md)

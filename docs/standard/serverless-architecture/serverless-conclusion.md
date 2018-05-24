@@ -1,16 +1,13 @@
 ---
-title: Key takeaways - Serverless apps architecture, patterns, and Azure implementation
-description: Serverless provides many benefits. Serverless also has its own challenges. Understanding serverless architecture will help you better architect enterprise applications and use serverless benefits where it makes sense.
+title: Key takeaways - Serverless apps
+description: Serverless provides many benefits and has its own challenges. A summary of key takeaways from this guide.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 5/3/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Conclusion
 
-As a summary and key takeaways, the following are the most important conclusions from this guide.
+The following key takeaways are the most important conclusions from this guide.
 
 **Benefits of using serverless.** Serverless solutions provide the important benefit of cost savings because serverless is implemented in a pay-per-use model. Serverless makes it possible to independently scale, test, and deploy individual components of your application. Serverless is uniquely suited to implement microservices architectures and integrates fully into a DevOps pipeline.
 
@@ -27,4 +24,4 @@ As a summary and key takeaways, the following are the most important conclusions
 **Serverless as a tool, not the toolbox.** Serverless is not the exclusive solution to application architecture. It is a tool that can be leveraged as part of a hybrid application that may contain traditional tiers, monolith backends, and containers. Serverless can be used to enhance existing solutions and is not an all-or-nothing approach to application development.
 
 >[!div class="step-by-step"]
-[Previous] (../serverless-business-scenarios/index.md)
+[Previous] (./serverless-business-scenarios.md)

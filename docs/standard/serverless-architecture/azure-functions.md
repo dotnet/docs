@@ -1,18 +1,15 @@
 ---
-title: Azure Functions - Serverless apps architecture, patterns, and Azure implementation
-description: Azure functions provide serverless capabilities across multiple languages (C#, JavaScript, Java, and more) and platforms to provide event-driver instant scale code.
+title: Azure Functions - Serverless apps
+description: Azure functions provide serverless capabilities across multiple languages (C#, JavaScript, Java) and platforms to provide event-driven instant scale code.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/4/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Azure Functions
 
 Azure functions provide a serverless compute experience. A function is invoked by a *trigger* (such as access to an HTTP endpoint or a timer) and executes a block of code or business logic. Functions also support specialized *bindings* that connect to resources like storage and queues.
 
-![Azure functions logo](./media/azure-functions/azure-functions-logo.png)
+![Azure functions logo](./media/azure-functions-logo.png)
 
 There are two versions of the Azure Functions framework. The legacy version supports the full .NET Framework and the new runtime supports cross-platform .NET Core applications. Additional languages besides C# such as JavaScript, F#, and Java are supported. Functions created in the portal provide a rich scripting syntax. Functions created as standalone projects can be deployed with full platform support and capabilities.
 
@@ -24,7 +21,7 @@ There are two versions of the Azure Functions runtime: 1.x and 2.x. Version 1.x 
 
 Version 2.x is in preview. It leverages .NET Core and supports cross-platform development on Windows, macOS, and Linux machines. 2.x adds first-class support for Java but does not yet directly support any of the experimental languages. Version 2.x uses a new binding extensibility model that enables third-party extensions to the platform, independent versioning of bindings, and a more streamlined execution environment.
 
-> **There is a known issue in 1.x with [binding redirect support](https://github.com/Azure/azure-functions-host/issues/992).** The issue is specific to .NET development. Projects with dependencies on libraries that are a different version from the libraries included in the runtime are impacted. The functions team has committed to make concrete progress on the problem. The team will address binding redirects in 2.x before it goes into general availability.
+> **There is a known issue in 1.x with [binding redirect support](https://github.com/Azure/azure-functions-host/issues/992).** The issue is specific to .NET development. Projects with dependencies on libraries that are a different version from the libraries included in the runtime are impacted. The functions team has committed to make concrete progress on the problem. The team will address binding redirects in 2.x before it goes into general availability. The official team statement with suggested fixes and workarounds is available here: [Assembly resolution in Azure Functions](https://github.com/Azure/azure-functions-host/wiki/Assembly-Resolution-in-Azure-Functions).
 
 For more information, see: [Compare 1.x and 2.x](/azure/azure-functions/functions-versions).
 
@@ -177,5 +174,5 @@ An example of using proxies is shown in the video [Azure: Bring your app to the 
 For more information about Proxies, see: [Work with Azure Functions Proxies](/azure/azure-functions/functions-proxies).
 
 >[!div class="step-by-step"]
-[Previous] (./index.md)
+[Previous] (./azure-serverless-platform.md)
 [Next] (./application-insights.md)

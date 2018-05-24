@@ -1,18 +1,15 @@
 ---
-title: Azure Event Grid - Serverless apps architecture, patterns, and Azure implementation
+title: Azure Event Grid - Serverless apps
 description: Azure Event Grid is a serverless solution for reliable event delivery and routing at massive scale on a pay-per-event model.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/4/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Event Grid
 
 [Azure Event Grid](/azure-event-grid/overview) provides serverless infrastructure for event-based applications. You can publish to Event Grid from any source and consume messages from any platform. Event Grid also has built-in support for events from Azure resources to streamline integration with your applications. For example, you can subscribe to blob storage events to notify your app when a file is uploaded. Your application can then publish a custom event grid message that is consumed by other cloud or on-premises applications. Event Grid was built to reliably handle massive scale. You get the benefits of publishing and subscribing to messages without the overhead of setting up the necessary infrastructure.
 
-![Event Grid logo](./media/event-grid/event-grid-logo.png)
+![Event Grid logo](./media/event-grid-logo.png)
 
 The major features of event grid include:
 
@@ -26,19 +23,19 @@ Event Grid addresses several different scenarios. This section covers three of t
 
 ### Ops automation
 
-![Ops automation](./media/event-grid/ops-automation.png)
+![Ops automation](./media/ops-automation.png)
 
 Event Grid can help speed automation and simplify policy enforcement by notifying [Azure Automation](/azure/automation) when infrastructure is provisioned.
 
 ### Application integration
 
-![Application integration](./media/event-grid/app-integration.png)
+![Application integration](./media/app-integration.png)
 
 You can use Event Grid to connect your app to other services. Using standard HTTP protocols, even legacy apps can be easily modified to publish Event Grid messages. Web hooks are available for other services and platforms to consume Event Grid messages.
 
 ### Serverless apps
 
-![Serverless apps](./media/event-grid/serverless-apps.png)
+![Serverless apps](./media/serverless-apps.png)
 
 Event Grid can trigger Azure Functions, Logic Apps, or your own custom code. A major benefit of using Event Grid is that it uses a *push* mechanism to send messages when events occur. The push architecture consumes fewer resources and scales better than *polling* mechanisms. Polling must check for updates on a regular interval.
 
@@ -46,7 +43,7 @@ Event Grid can trigger Azure Functions, Logic Apps, or your own custom code. A m
 
 Azure provides several messaging services, including [Event Hubs](/azure/event-hubs) and [Service Bus](/azure/service-bus-messaging). Each is designed to address a specific set of use cases. The following diagram provides a high-level overview of the differences between the services.
 
-![Azure messaging comparison](./media/event-grid/azure-messaging-services.png)
+![Azure messaging comparison](./media/azure-messaging-services.png)
 
 For a more in-depth comparison, see: [Compare messaging services](/azure/event-grid/compare-messaging-services).
 
@@ -54,7 +51,7 @@ For a more in-depth comparison, see: [Compare messaging services](/azure/event-g
 
 Using Event Grid you can take advantage of the following performance guarantees:
 
-* Subsecond end-to-end latency in the 99th percentile
+* Sub second end-to-end latency in the 99th percentile
 * 99.99% availability
 * 10 million events per second per region
 * 100 million subscriptions per region
@@ -140,4 +137,4 @@ In this chapter you learned about the Azure serverless platform that is composed
 
 >[!div class="step-by-step"]
 [Previous] (./logic-apps.md)
-[Next] (../durable-azure-functions/index.md)
+[Next] (./durable-azure-functions.md)

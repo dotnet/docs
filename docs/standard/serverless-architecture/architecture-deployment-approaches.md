@@ -1,12 +1,9 @@
 ---
-title: Architecture deployment approaches - Serverless apps architecture, patterns, and Azure implementation
-description: A guide to different ways enterprise architectures are deployed to the cloud, including a comparison between IaaS, PaaS, containers, and serverless.
+title: Architecture deployment approaches - Serverless apps
+description: A guide to different ways enterprise architectures are deployed to the cloud, with comparison between IaaS, PaaS, containers, and serverless.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/20/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Architecture deployment approaches
 
@@ -20,7 +17,7 @@ The [N-Tier architecture pattern](/azure/architecture/guide/architecture-styles/
 * An API and/or data access tier, such as a REST API
 * A data tier, such as a SQL database
 
-![N-tier architecture](./media/architecture-deployment-approaches/n-tier-architecture.png)
+![N-tier architecture](./media/n-tier-architecture.png)
 
 N-tier solutions have the following characteristics:
 
@@ -49,7 +46,7 @@ The traditional approach to hosting applications requires purchasing hardware an
 * Power redundancy
 * Securing software access
 
-![IaaS approach](./media/architecture-deployment-approaches/iaas-approach.png)
+![IaaS approach](./media/iaas-approach.png)
 
 Virtualization of hardware, via "virtual machines" enables Infrastructure-as-a-Service (IaaS). Host machines are effectively partitioned to provide resources to instances with allocations for their own memory, CPU, and storage. The team provisions the necessary VMs and configures the associated networks and access to storage.
 
@@ -72,7 +69,7 @@ PaaS addresses the challenges common to IaaS. PaaS allows the developer to focus
 
 The main disadvantage of PaaS traditionally has been vendor lock-in. For example, some PaaS providers only support ASP.NET, Node.js, or other specific languages and platforms. Products like Azure App Service have evolved to address multiple platforms and support a variety of languages and frameworks for hosting web apps.
 
-![Platform-as-a-Service Architecture](./media/architecture-deployment-approaches/paas-architecture.png)
+![Platform-as-a-Service Architecture](./media/paas-architecture.png)
 
 ## Software-as-a-Service (SaaS)
 
@@ -94,13 +91,13 @@ Benefits of containers include:
 
 A container runs on a container host (that in turn may run on a bare metal machine or a virtual machine). Multiple containers or instances of the same containers may run on a single host. For true failover and resiliency, containers must be scaled across hosts.
 
-For more information about Docker containers, read: [What is Docker?](/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined)
+For more information about Docker containers, read: [What is Docker](../microservices-architecture/container-docker-introduction/docker-defined)?
 
-To manage containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
+Managing containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
 
 The following image illustrates an example Kubernetes installation. Nodes in the installation address scale out and failover. They run Docker container instances that are managed by the master server. The *kubelet* is the client that relays commands from Kubernetes to Docker.
 
-![Kubernetes](./media/architecture-deployment-approaches/kubernetes-example.png)
+![Kubernetes](./media/kubernetes-example.png)
 
 For more information about orchestration, see: [Kubernetes on Azure](/azure/aks/intro-kubernetes).
 
@@ -118,7 +115,7 @@ The abstraction means the DevOps team does not have to provision or manage serve
 
 The following illustration diagrams four serverless components. An HTTP request causes the Checkout API code to run. The Checkout API inserts code into a database, and the insert triggers several other functions to run to perform tasks like computing tasks and fulfilling the order.
 
-![Serverless implementation](./media/architecture-deployment-approaches/serverless-implementation.png)
+![Serverless implementation](./media/serverless-implementation.png)
 
 The advantages of serverless include:
 
@@ -159,9 +156,9 @@ The next chapter will focus on serverless architecture, use cases, and design pa
 * [Microservices](/azure/architecture/guide/architecture-styles/microservices)
 * [Virtual machine N-tier reference architecture](/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
 * [Virtual machines](/azure/virtual-machines/)
-* [What is Docker?](/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined)
+* [What is Docker?](../microservices-architecture/container-docker-introduction/docker-defined)
 * [Wingtip Tickets SaaS application](/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
 >[!div class="step-by-step"]
-[Previous] (../architecture-patterns.md)
-[Next] (../serverless-architecture/index.md)
+[Previous] (./architecture-approaches.md)
+[Next] (./serverless-architecture.md)

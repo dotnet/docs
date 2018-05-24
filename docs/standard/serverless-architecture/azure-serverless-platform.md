@@ -1,12 +1,9 @@
 ---
-title: The Azure serverless platform - Serverless apps architecture, patterns, and Azure implementation
-description: The Azure serverless platform provides capabilities including event-triggered instant scale code, cloud-based publishers and subscribers, workflow orchestration and more.
+title: The Azure serverless platform - Serverless apps
+description: The Azure serverless platform provides capabilities including event-triggered instant scale code, cloud-based pub/sub, workflow orchestration and more.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/21/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Azure serverless platform
 
@@ -19,5 +16,5 @@ You can also use Application Insights, a serverless platform for capturing diagn
 The chapter breaks down the fundamentals of each component.
 
 >[!div class="step-by-step"]
-[Previous] (../serverless-architecture/serverless-design-examples.md)
+[Previous] (./serverless-design-examples.md)
 [Next] (./azure-functions.md)

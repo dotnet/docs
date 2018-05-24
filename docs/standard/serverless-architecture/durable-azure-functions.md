@@ -1,14 +1,9 @@
 ---
-title: Serverless apps. Architecture, patterns, and Azure implementation.
-description: Serverless apps. Architecture, patterns, and Azure implementation. | Durable Azure functions
-keywords: Serverless, Microservices, .NET, Azure, Azure Functions
+title: Durable Azure functions - Serverless apps
+description: Durable Azure functions extend the Azure Functions runtime to enable stateful workflows in code.
 author: cecilphillip
 ms.author: cephilli
-ms.date: 12/21/2017
-ms.prod: .net
-ms.technology: dotnet
-ms.service: functions
-ms.topic: article
+ms.date: 05/24/2017
 ---
 # Durable Azure functions
 
@@ -32,7 +27,7 @@ For such cases, the Durable Functions extension provides the DurableOrchestratio
 [FunctionName("KickOff")]
 public static async Task<HttpResponseMessage> Run(
     [HttpTrigger(AuthorizationLevel.Function, "POST")]HttpRequestMessage req,
-    [OrchestrationClient ] DurableOrchestrationClient orchestrationClient)
+    [OrchestrationClient ] DurableOrchestrationClient<orchestrationClient>)
 {
     OrderRequestData data = await req.Content.ReadAsAsync<OrderRequestData>();
 
@@ -50,7 +45,7 @@ Orchestrator functions are unable to make use of bindings other than the Orchest
 
 Also, the return types of orchestration functions must be either void, Task, or a JSON serializable value.
 
-*Error handling code has been left out for brevity*
+> *Error handling code has been left out for brevity*
 
 ```csharp
 [FunctionName("PlaceOrder")]
@@ -95,10 +90,10 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 
 ## Recommended Resources
 
-* [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
-* [Bindings for Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
-* [Manage instances in Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-instance-management)
+* [Durable Functions](/azure/azure-functions/durable-functions-bindings)
+* [Bindings for Durable Functions](/azure/azure-functions/durable-functions-bindings)
+* [Manage instances in Durable Functions](/azure/azure-functions/durable-functions-instance-management)
 
 >[!div class="step-by-step"]
-[Previous] (../azure-serverless-platform/event-grid.md)
+[Previous] (./event-grid.md)
 [Next] (./orchestration-patterns.md)

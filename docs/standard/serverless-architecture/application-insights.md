@@ -1,18 +1,15 @@
 ---
-title: Application Insights - Serverless apps architecture, patterns, and Azure implementation
+title: Application Insights - Serverless apps
 description: Application Insights is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps and microservices.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/18/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Telemetry with Application Insights
 
 [Application Insights](/azure/application-insights) is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps, and microservices. You can turn on Application Insights for function apps simply by flipping a switch in the portal. Application insights provides all of these capabilities without you having to configure a server or set up your own database. All of Application Insight's capabilities are provided as a service that automatically integrates with your apps.
 
-![Application Insights logo](./media/application-insights/application-insights-logo.png)
+![Application Insights logo](./media/application-insights-logo.png)
 
 Adding Application Insights to existing apps is as easy as adding an instrumentation key to your application's settings. With Application Insights you can:
 
@@ -23,7 +20,7 @@ Adding Application Insights to existing apps is as easy as adding an instrumenta
 * View a live stream of metrics including request count and latency for your function apps
 * Use [Analytics](/azure/application-insights/app-insights-analytics) to search, query, and create custom charts over your function data
 
-![Metrics explorer](./media/application-insights/metrics-explorer.png)
+![Metrics explorer](./media/metrics-explorer.png)
 
 In addition to built-in telemetry, it is also possible to generate custom telemetry. The following code snippet creates a custom telemetry client using the instrumentation key set for the function app:
 
@@ -46,7 +43,7 @@ telemetry.TrackDependency("AzureTableStorageInsert", "Insert", startTime, timer.
 
 The resulting performance graph is shown:
 
-![Custom telemetry](./media/application-insights/custom-telemetry.png)
+![Custom telemetry](./media/custom-telemetry.png)
 
 The custom telemetry reveals the average time to insert a new row is 32.6 milliseconds.
 

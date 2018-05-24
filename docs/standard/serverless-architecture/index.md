@@ -3,10 +3,7 @@ title: Serverless apps architecture, patterns, and Azure implementation.
 description: Guide to serverless architecture. Learn when, why, and how to implement a serverless architecture (as opposed to Infrastructure-as-a-Service [IaaS] or Platform-as-a-Service [PaaS]) for your enterprise applications.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/16/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 5/24/2018
 ---
 
 > TODO: Add cover
@@ -88,7 +85,7 @@ IaaS still requires heavy overhead because operations is still responsible for v
 
 * Patching and backing up servers.
 * Installing packages.
-* Keeping the operating system up to date.
+* Keeping the operating system up-to-date.
 * Monitoring the application.
 
 The next evolution reduced the overhead by providing Platform-as-a-Service (PaaS). With PaaS, the cloud provider handles operating systems, security patches, and even the required packages to support a specific platform. Instead of building a VM then configuring the .NET Framework and standing up Internet Information Services (IIS) servers, developers simply choose a "platform target" such as "web application" or "API endpoint" and deploy code directly. The infrastructure questions are reduced to:
@@ -134,4 +131,4 @@ The guide and related samples are constantly evolving, so your feedback is welco
 [link tbd](mailto:)
 
 >[!div class="step-by-step"]
-[Next] (architecture-approaches/index.md)
+[Next] (architecture-approaches.md)

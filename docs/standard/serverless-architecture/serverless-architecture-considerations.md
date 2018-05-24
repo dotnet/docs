@@ -1,12 +1,9 @@
 ---
-title: Serverless architecture considerations - Serverless apps architecture, patterns, and Azure implementation
-description: Understand the challenges of architecting serverless applications. Understand considerations from state management and persistent storage to scale, logging, tracing and diagnostics.
+title: Serverless architecture considerations - Serverless apps
+description: Understand the challenges of architecting serverless applications, from state management and persistent storage to scale, logging, tracing and diagnostics.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 3/20/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Serverless architecture considerations
 
@@ -50,7 +47,7 @@ A popular approach to solve schema versioning is to never modify existing proper
 
 The sequence of changes ensures that legacy code continues to run "as is" while newer serverless functions can take advantage of the new field.
 
-For more information about data in serverless architectures, see: [Challenges and solutions for distributed data management](/dotnet/standard/microservices-architecture/architect-microservice-container-applications/distributed-data-management).
+For more information about data in serverless architectures, see: [Challenges and solutions for distributed data management](../microservices-architecture/architect-microservice-container-applications/distributed-data-management).
 
 ## Scaling
 
@@ -72,12 +69,12 @@ It is also important to consider the *circuit-breaker pattern*: If, for some rea
 
 To continue the circuit-breaker pattern, services need to be fault tolerant and resilient. Fault tolerance refers to the ability of your application to continue running even after unexpected exceptions or invalid states are encountered. Fault tolerance typically a function of the code itself, and how it is written to handle exceptions. Resiliency refers to how capable the app is at recovering from failures. Resiliency is often managed by the serverless platform. The platform should be able to spin up a new serverless function instance when the existing one fails. The platform should also be intelligent enough to stop spinning up new instances when every new instance fails.
 
-For more information, see: [Implementing the Circuit Breaker pattern](/dotnet/standard/microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern).
+For more information, see: [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern).
 
 ## Versioning and green/blue deployments
 
-A major benefit of serverless is the ability to upgrade a specific function without having to redeploy the entire application. For upgrades to be successful, functions must be versioned so that services calling them are routed to the correct version of code. A strategy for deploying new versions is also important. A common approach is to use "green/blue deployments." The green deployment is the current function. A new "blue" version is deployed to production and tested. When testing passes, the green and blue versions are swapped so the new version comes live. If any issues are encountered, they can be swapped back. Supporting versioning and green/blue deployments requires a combination of authoring the functions to accommodate version changes and working with the serverless platform to handle deployments. One possible approach is to use proxies, which are described in the [../azure-serverless-platform/azure-functions.md](Azure serverless platform) chapter.
+A major benefit of serverless is the ability to upgrade a specific function without having to redeploy the entire application. For upgrades to be successful, functions must be versioned so that services calling them are routed to the correct version of code. A strategy for deploying new versions is also important. A common approach is to use "green/blue deployments." The green deployment is the current function. A new "blue" version is deployed to production and tested. When testing passes, the green and blue versions are swapped so the new version comes live. If any issues are encountered, they can be swapped back. Supporting versioning and green/blue deployments requires a combination of authoring the functions to accommodate version changes and working with the serverless platform to handle deployments. One possible approach is to use proxies, which are described in the [./azure-functions.md](Azure serverless platform) chapter.
 
 >[!div class="step-by-step"]
-[Previous] (./index.md)
+[Previous] (./serverless-architecture.md)
 [Next] (./serverless-design-examples.md)

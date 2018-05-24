@@ -1,12 +1,9 @@
 ---
-title: Serverless architecture - Serverless apps architecture, patterns, and Azure implementation
-description: Exploration of various architectures and applications that are supported by serverless architectures, including web apps, mobile, and the Internet of Things.
+title: Serverless architecture - Serverless apps
+description: Exploration of various architectures and apps that are supported by serverless architectures, including web apps, mobile, and IoT.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 4/16/2018
-ms.prod: .net
-ms.technology: dotnet
-ms.topic: article
+ms.date: 05/24/2018
 ---
 # Serverless architecture
 
@@ -71,5 +68,5 @@ The sheer volume of devices and information often dictates an event-driven archi
 The pervasiveness of IoT has resulted in several serverless products that focus specifically on IoT concerns, such as [Azure IoT Hub](/azure/iot-hub). Serverless automates tasks such as device registration, policy enforcement, tracking, and even deployment of code to devices at *the edge*. The edge refers to devices like sensors and actuators that are connected to, but not an active part of, the Internet.
 
 >[!div class="step-by-step"]
-[Previous] (../architecture-approaches/index.md)
+[Previous] (./architecture-approaches.md)
 [Next] (./serverless-architecture-considerations.md)

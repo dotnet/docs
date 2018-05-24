@@ -361,7 +361,7 @@ ms.custom: "updateeachrelease"
                         </ul>
                     </li>
                     <li>
-                        <a href="#cloud">Cloud</a>
+                        <a href="https://docs.microsoft.com/dotnet/azure/">Cloud</a>
                         <ul id="cloud" class="cardsC">
                             <li>
                                 <div class="cardSize">

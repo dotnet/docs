@@ -19,6 +19,8 @@ The `Private Protected` access modifier is supported by Visual Basic 15.5 and la
 </PropertyGroup>
 ```
 
+For more information see [setting the Visual Basic language version](../../getting-started/configure-language-version.md).
+
 > [!NOTE]
 > In Visual Studio, selecting F1 help on `private protected` provides help for either [private](private.md) or [protected](protected.md). The IDE picks the single token under the cursor rather than the compound word.
 

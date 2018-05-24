@@ -14,8 +14,8 @@ ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
 
 The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is not limited to those types and can be applied to an instance of any type that satisfies the following conditions:
 
-- has the public parameterless `GetEnumerator` method
-- the type returned by the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
+- has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type,
+- the return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
 
 At any point within the `foreach` statement block, you can break out of the loop by using the [break](break.md) keyword, or step to the next iteration in the loop by using the [continue](continue.md) keyword. You also can exit a `foreach` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
 

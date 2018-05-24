@@ -19,16 +19,16 @@ The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or
  In Visual Studio, you set compiler options in the web.config file. For more information, see [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).  
   
 ## In This Section  
- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
+ [Command-line Building With csc.exe](command-line-building-with-csc-exe.md)  
  Information about building a Visual C# application from the command line.  
   
- [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
+ [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
  Provides steps for running vsvars32.bat  to enable command-line builds.  
   
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
+ [C# Compiler Options Listed by Category](listed-by-category.md)  
  A categorical listing of the compiler options.  
   
- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
+ [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)  
  An alphabetical listing of the compiler options.  
   
 ## Related Sections  

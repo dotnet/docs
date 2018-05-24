@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis classification scenario
 description: Discover how to use ML.NET in a classification scenario to understand how to use sentiment prediction to take the appropriaste action.
-ms.date: 05/07/2018
+ms.date: 05/21/2018
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
 ---
@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 
 ## Sentiment analysis sample overview
 
-The sample is a console app that uses the ML.NET API to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from University of California, Irvine (UCI) and are automatically downloaded and unzipped into a data directory.
+The sample is a console app that uses the ML.NET API to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from University of California, Irvine (UCI).
 
 Prediction and evaluation results are displayed accordingly so that analysis and action can be taken.
 
@@ -56,30 +56,37 @@ Predict the **sentiment** of a new website comment, either positive or negative.
 
 ## Prerequisites
 
-[Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
-[The UCI Sentiment Labeled Sentences dataset zip file](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip)
+* [The UCI Sentiment Labeled Sentences dataset zip file](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip)
 
 ## Create a console application
 
 1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "SentimentAnalysis" and then select the **OK** button.
 
-2. Create a directory named Data in your project's *bin* directory:
+2. Create a directory named *Data* in your project to save your data set files:
 
-    In Solution Explorer, click on the **Solutions and Folders** icon. Right-click on the *bin* folder, select **Add** > **New Folder**. Type "Data" and hit Enter. Click again on the **Solutions and Folders** icon to return to the solution view.
+    In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-3. Install the **Microsoft ML.NET NuGet Package**:
+3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. If prompted to select a package management format, select **PackageReference in project file**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-4. Download [The UCI Sentiment Labeled Sentences dataset zip file (see citations in the following note)](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip into the *data* directory you created.
+### Prepare your data
+
+1. Download [The UCI Sentiment Labeled Sentences dataset zip file (see citations in the following note)](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), unzip the file and copy the following two files into the *Data* directory you created:
+
+* *imdb_labelled.txt*
+* *yelp_labelled.txt*
 
 > [!NOTE]
 > The datasets this tutorial uses are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
-### Housekeeping
+2. In Solution Explorer, right-click each of the \*.txt files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Always**.
 
-Add the following `using` statements to the top of the *Program.cs* file:
+### Create classes and define paths
+
+Add the following additional `using` statements to the top of the *Program.cs* file:
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#1 "Add necessary usings")]
 
@@ -88,21 +95,21 @@ You need to create two global variables to hold the path to the recently downloa
 * `_datapath` has the path to the dataset used to train the model.
 * `_testdatapath` has the path to the dataset used to evaluate the model.
 
-Add the following code to the line right above the `Main` method:
+Add the following code to the line right above the `Main` method to specify the recently downloaded files:
 
 [!code-csharp[Declare file variables](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#2 "Declare variables to store data files")]
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
-1. In **Solution Explorer**, select the SentimentAnalysis project, and then on the **Project** menu, select **Add Class**.
+1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-2. In the **Add New Item** dialog box, change the **Name** field to "SentimentData.cs", and then select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
-    The *SentimentData.cs* file opens in the code editor. Add the following `using` statements to the top of *SentimentData.cs*:
+    The *SentimentData.cs* file opens in the code editor. Add the following `using` statement to the top of *SentimentData.cs*:
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalysis/SentimentData.cs#1 "Add necessary usings")]
 
-Add the following code, which has two classes `SentimentData` and `SentimentPrediction`, to the *SentimentData.cs* file:
+Remove the existing class definition and add the following code, which has two classes `SentimentData` and `SentimentPrediction`, to the *SentimentData.cs* file:
 
 [!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/SentimentAnalysis/SentimentData.cs#2 "Declare data record types")]
 
@@ -117,11 +124,16 @@ The `TrainAndPredict` method executes the following tasks:
 * Load or ingest the data.
 * Preprocess and featurize the data.
 * Train the model.
-* Predict sentiment based on test data. 
+* Predict sentiment based on test data.
 
 Create the `TrainAndPredict` method, just after the `Main` method, using the following code:
 
-[!code-csharp[DeclareTrainAndPredict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#4 "Declare the TrainAndPredict model")]
+```csharp
+public static PredictionModel<SentimentData, SentimentPrediction> TrainAndPredict()
+{
+
+}
+```
 
 ## Ingest the data
 
@@ -193,6 +205,9 @@ Now that you've combined the `SentimentText` and `Sentiment` into a class, you c
 
 [!code-csharp[DisplayPredictions](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#14 "Display the predictions")]
 
+Because inferred tuple element names are a new feature in C# 7.1 and the default language version of the project is C# 7.0, you need to change the language version to C# 7.1 or higher.
+To do that, right-click on the project node in **Solution Explorer** and select **Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown, select  **C# 7.1** (or a higher version). Select the **OK** button.
+
 #### Return the model trained to use for evaluation
 
 Return the model at the end of the `TrainAndPredict` method. At this point, you could then save it to a zip file or continue to work with it. For this tutorial, you're going to work with it, so add the following code to the next line in `TrainAndPredict`:
@@ -203,13 +218,18 @@ Return the model at the end of the `TrainAndPredict` method. At this point, you 
 
 Now that you've created and trained the model, you need to evaluate it with a different dataset for quality assurance and validation. In the `Evaluate` method, the model created in `TrainAndPredict` is passed in to be evaluated. Create the `Evaluate` method, just after `TrainAndPredict`, as in the following code:
 
-[!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#16 "Evaluate your model")]
+```csharp
+public static void Evaluate(PredictionModel<SentimentData, SentimentPrediction> model)
+{
+
+}
+```
 
 Add a call to the new method from the `Main` method, right under the `TrainAndPredict` method call, using the following code:
 
 [!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#17 "Call the Evaluate method")]
 
-The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add that next to the `Evaluate` method call, using the following code:
+The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
 
 [!code-csharp[LoadText](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Load the test dataset")]
 
@@ -217,7 +237,7 @@ The <xref:Microsoft.ML.Models.BinaryClassificationEvaluator> object computes the
 
 [!code-csharp[BinaryEvaluator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#19 "Create the binary evaluator")]
 
-The <xref:Microsoft.ML.Models.BinaryClassificationMetrics> contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, we need to get the metrics first. Add the following code:
+The <xref:Microsoft.ML.Models.BinaryClassificationMetrics> contains the overall metrics computed by binary classification evaluators. To display these to determine the quality of the model, you need to get the metrics first. Add the following code:
 
 [!code-csharp[CreateMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#20 "Evaluate the model and create metrics")]
 
@@ -231,7 +251,7 @@ Use the following code to display the metrics, share the results, and act on the
 
 Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These have been removed from the following results for clarity.
 
-```cmd
+```
 Sentiment Predictions
 ---------------------
 Sentiment: Contoso's 11 is a wonderful experience | Prediction: Positive
@@ -244,8 +264,9 @@ PredictionModel quality metrics evaluation
 Accuracy: 67.30%
 Auc: 73.78%
 F1Score: 65.25%
-Press any key to continue . . .
 ```
+
+Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
 
 ## Next steps
 

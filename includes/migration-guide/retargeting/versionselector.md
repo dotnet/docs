@@ -43,4 +43,4 @@
 > - [(4.6.2 | 4.7.2)](~/docs/framework/migration-guide/retargeting/4.6.2-4.7.2.md)
 > - [(4.7 | 4.7.1)](~/docs/framework/migration-guide/retargeting/4.7-4.7.1.md)
 > - [(4.7 | 4.7.2)](~/docs/framework/migration-guide/retargeting/4.7-4.7.2.md)
-> - [(4.7.1 | 4.7.2)](~/docs/framework/migration-guide/retargeting/4.6.1-4.7.2.md)
+> - [(4.7.1 | 4.7.2)](~/docs/framework/migration-guide/retargeting/4.7.1-4.7.2.md)

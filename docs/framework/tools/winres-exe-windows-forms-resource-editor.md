@@ -1,6 +1,6 @@
 ---
 title: "Winres.exe (Windows Forms Resource Editor)"
-ms.date: "05/21/2018"
+ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Winres.exe"
   - "Windows Forms Resource Editor"
@@ -17,10 +17,7 @@ ms.author: "mairaw"
 The Windows Forms Resource Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in Desktop Apps](../../../docs/framework/resources/index.md).  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
-
-> [!IMPORTANT]
-> You should only load and use .resx files from trusted sources. ResX files can contain executable code and should be treated as an executable file (.exe) from the viewpoint of security.
-
+  
  At the command prompt, type the following:  
   
 ## Syntax  

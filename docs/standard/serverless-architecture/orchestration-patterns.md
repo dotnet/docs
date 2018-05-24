@@ -151,4 +151,4 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 
 >[!div class="step-by-step"]
 [Previous] (./durable-azure-functions.md)
-[Next] (../serverless-business-scenarios.md)
+[Next] (./serverless-business-scenarios.md)

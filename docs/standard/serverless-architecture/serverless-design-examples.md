@@ -70,9 +70,10 @@ An API gateway provides a single point of entry for clients and then intelligent
 
 * [Azure Event Grid](/azure/event-grid/overview)
 * [Azure IoT Hub](/azure/iot-hub)
+* [Challenges and solutions for distributed data management](../microservices-architecture/architect-microservice-container-applications/distributed-data-management.md)
 * [Designing microservices: identifying microservice boundaries](/azure/architecture/microservices/microservice-boundaries)
 * [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs)
-* [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern)
+* [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern.md)
 * [IoT Hub](/azure/iot-hub)
 * [Service Bus](/service-bus)
 * [Working with the change feed support in Azure Cosmos DB](/azure/cosmos-db/change-feed)

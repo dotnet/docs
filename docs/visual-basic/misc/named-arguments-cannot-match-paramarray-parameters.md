@@ -1,16 +1,9 @@
 ---
 title: "Named arguments cannot match ParamArray parameters"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrNamedArgumentOnParamArray"
 ms.assetid: ba35fb86-329a-4ceb-864b-045c07661482
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Named arguments cannot match ParamArray parameters
 Parameter arrays must be passed by value.  

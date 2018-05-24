@@ -1,25 +1,11 @@
 ---
 title: "Sizing Options in the DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGrid control [WPF], sizing"
   - "size [WPF], DataGrid"
   - "automatically size DataGrid [WPF]"
 ms.assetid: 96a0e47e-b010-4302-98ef-2daac446d8db
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Sizing Options in the DataGrid Control
 Various options are available to control how the <xref:System.Windows.Controls.DataGrid> sizes itself. The <xref:System.Windows.Controls.DataGrid>, and individual rows and columns in the <xref:System.Windows.Controls.DataGrid>, can be set to size automatically to their contents or can be set to specific values. By default, the <xref:System.Windows.Controls.DataGrid> will grow and shrink to fit the size of its contents.  

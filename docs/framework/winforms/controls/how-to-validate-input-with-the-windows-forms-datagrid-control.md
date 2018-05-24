@@ -1,14 +1,6 @@
 ---
 title: "How to: Validate Input with the Windows Forms DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], validating input"
   - "validation [Windows Forms], user input"
 ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Validate Input with the Windows Forms DataGrid Control
 > [!NOTE]

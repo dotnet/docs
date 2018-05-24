@@ -1,21 +1,7 @@
 ---
 title: "System.IdentityModel.IdentityModelAsyncCallbackThrewException"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e4fc924f-3b9e-44f5-97e4-b3a4bb855d89
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.IdentityModel.IdentityModelAsyncCallbackThrewException
 System.IdentityModel.IdentityModelAsyncCallbackThrewException  

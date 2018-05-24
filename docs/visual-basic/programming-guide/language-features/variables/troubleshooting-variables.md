@@ -1,21 +1,10 @@
 ---
 title: "Troubleshooting Variables in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting [Visual Basic], variables"
   - "variables [Visual Basic], troubleshooting"
 ms.assetid: 928a2dc8-e565-4ae4-8ba3-80cc0cb50090
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Variables in Visual Basic
 This page lists some common problems that can occur when working with variables in Visual Basic.  

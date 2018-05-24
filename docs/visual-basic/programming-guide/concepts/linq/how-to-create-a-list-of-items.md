@@ -1,21 +1,10 @@
 ---
 title: "How to: Create a List of Items"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "list [LINQ in Visual Basic]"
   - "objects [Visual Basic], list of items"
 ms.assetid: fe941aba-6340-455c-8b1f-ffd9c3eb1ac5
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a List of Items
 The code in this topic defines a `Student` class and creates a list of instances of the class. The list is designed to support the topic [Walkthrough: Writing Queries in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md). It also can be used for any application that requires a list of objects. The code defines the items in the list of students by using object initializers.  

@@ -2,10 +2,6 @@
 title: GetObjectText function (Unmanaged API Reference)
 description: The GetObjectText function returns a textual rendering of an object in MOF syntax.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetObjectText"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetObjectText function
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.

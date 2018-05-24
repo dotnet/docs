@@ -1,24 +1,10 @@
 ---
 title: "Creating a New Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, getting started"
   - "Windows Forms, creating a new form"
 ms.assetid: c725559c-803e-4725-80fa-96aba93de29a
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Creating a New Windows Form
 This topic contains links to topics that describe how to create your first Windows Forms application. Also, the topics in this section introduce some of the basic vocabulary and guidelines that you should understand when you start to create a Windows Forms application. To learn more about Windows Forms applications, the controls you can use on them, events and handling events, and how to handle input from the user, see the related topic list.  

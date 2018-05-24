@@ -1,24 +1,10 @@
 ---
 title: "Specifying Service Run-Time Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 5c5450ea-6af1-4b75-a267-613d0ac54707
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying Service Run-Time Behavior
 Once you have designed a service contract ([Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)) and implemented your service contract ([Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)) you can configure the operation behavior of the service runtime. This topic discusses system-provided service and operation behaviors and describes where to find more information to create new behaviors. While some behaviors are applied as attributes, many are applied using an application configuration file or programmatically. For more information about configuring your service application, see [Configuring Services](../../../docs/framework/wcf/configuring-services.md).  
@@ -30,7 +16,7 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
  The <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=nameWithType> and <xref:System.ServiceModel.OperationBehaviorAttribute?displayProperty=nameWithType> attributes are the most widely useful behaviors and expose the most commonly requested operation features. Because they are attributes, you apply them to the service or operation implementation. Other behaviors, such as the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior?displayProperty=nameWithType>, are typically applied using an application configuration file, although you can use them programmatically.  
   
- This topic provides an overview of the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes, describes the various scopes at which behaviors can operate, and provides a quick description of many of the system-provided behaviors at the various scopes that may be of interest to [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] developers.  
+ This topic provides an overview of the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes, describes the various scopes at which behaviors can operate, and provides a quick description of many of the system-provided behaviors at the various scopes that may be of interest to WCF developers.  
   
 ## ServiceBehaviorAttribute and OperationBehaviorAttribute  
  The most important behaviors are the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes, which you can use to control:  
@@ -85,13 +71,13 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
 ### Service Behaviors  
  The following behaviors operate on services.  
   
--   <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service to indicate whether that service can be run in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Compatibility Mode.  
+-   <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a WCF service to indicate whether that service can be run in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Compatibility Mode.  
   
 -   <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>. Controls how the service authorizes client claims.  
   
 -   <xref:System.ServiceModel.Description.ServiceCredentials>. Configures a service credential. Use this class to specify the credential for the service, such as an X.509 certificate.  
   
--   <xref:System.ServiceModel.Description.ServiceDebugBehavior>. Enables debugging and Help information features for a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service.  
+-   <xref:System.ServiceModel.Description.ServiceDebugBehavior>. Enables debugging and Help information features for a WCF service.  
   
 -   <xref:System.ServiceModel.Description.ServiceMetadataBehavior>. Controls the publication of service metadata and associated information.  
   
@@ -104,13 +90,13 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
 -   <xref:System.ServiceModel.CallbackBehaviorAttribute>. Configures a callback service implementation in a duplex client application.  
   
--   <xref:System.ServiceModel.Description.CallbackDebugBehavior>. Enables service debugging for a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] callback object.  
+-   <xref:System.ServiceModel.Description.CallbackDebugBehavior>. Enables service debugging for a WCF callback object.  
   
 -   <xref:System.ServiceModel.Description.ClientCredentials>. Allows the user to configure client and service credentials as well as service credential authentication settings for use on the client.  
   
 -   <xref:System.ServiceModel.Description.ClientViaBehavior>. Used by clients to specify the Uniform Resource Identifier (URI) for which the transport channel should be created.  
   
--   <xref:System.ServiceModel.Description.MustUnderstandBehavior>. Instructs [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to disable the `MustUnderstand` processing.  
+-   <xref:System.ServiceModel.Description.MustUnderstandBehavior>. Instructs WCF to disable the `MustUnderstand` processing.  
   
 -   <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>. Instructs the runtime to use a synchronous receive process for channels.  
   

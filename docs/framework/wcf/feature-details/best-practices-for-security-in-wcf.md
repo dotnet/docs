@@ -1,26 +1,14 @@
 ---
 title: "Best Practices for Security in WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "best practices [WCF], security"
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
-caps.latest.revision: 19
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Best Practices for Security in WCF
 The following sections list the best practices to consider when creating secure applications using Windows Communication Foundation (WCF). For more information about security, see [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md), [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md), and [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md).  
@@ -29,10 +17,10 @@ The following sections list the best practices to consider when creating secure 
  Services can be identified with either user principal names (UPNs) or service principal names (SPNs). Services running under machine accounts such as network service have an SPN identity corresponding to the machine they're running. Services running under user accounts have a UPN identity corresponding to the user they're running as, although the `setspn` tool can be used to assign an SPN to the user account. Configuring a service so it can be identified via SPN and configuring the clients connecting to the service to use that SPN can make certain attacks more difficult. This guidance applies to bindings using Kerberos or SSPI negotiation.  Clients should still specify an SPN in the case where SSPI falls back to NTLM.  
   
 ## Verify Service Identities in WSDL  
- WS-SecurityPolicy allows services to publish information about their own identities in metadata. When retrieved via `svcutil` or other methods such as <xref:System.ServiceModel.Description.WsdlImporter>, this identity information is translated to the identity properties of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service endpoint addresses. Clients which do not verify that these service identities are correct and valid effectively bypass service authentication. A malicious service can exploit such clients to execute credential forwarding and other "man in the middle" attacks by changing the identity claimed in its WSDL.  
+ WS-SecurityPolicy allows services to publish information about their own identities in metadata. When retrieved via `svcutil` or other methods such as <xref:System.ServiceModel.Description.WsdlImporter>, this identity information is translated to the identity properties of the WCF service endpoint addresses. Clients which do not verify that these service identities are correct and valid effectively bypass service authentication. A malicious service can exploit such clients to execute credential forwarding and other "man in the middle" attacks by changing the identity claimed in its WSDL.  
   
 ## Use X509 Certificates Instead of NTLM  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] offers two mechanisms for peer-to-peer authentication: X509 certificates (used by peer channel) and Windows authentication where an SSPI negotiation downgrades from Kerberos to NTLM.  Certificate-based authentication using key sizes of 1024 bits or more is preferred to NTLM for several reasons:  
+ WCF offers two mechanisms for peer-to-peer authentication: X509 certificates (used by peer channel) and Windows authentication where an SSPI negotiation downgrades from Kerberos to NTLM.  Certificate-based authentication using key sizes of 1024 bits or more is preferred to NTLM for several reasons:  
   
 -   the availability of mutual authentication,  
   

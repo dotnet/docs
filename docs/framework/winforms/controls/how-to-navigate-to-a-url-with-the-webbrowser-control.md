@@ -1,14 +1,6 @@
 ---
 title: "How to: Navigate to a URL with the WebBrowser Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "WebBrowser control [Windows Forms], navigating to URLs"
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Navigate to a URL with the WebBrowser Control
 The following code example demonstrates how to navigate the <xref:System.Windows.Forms.WebBrowser> control to a specific URL.  

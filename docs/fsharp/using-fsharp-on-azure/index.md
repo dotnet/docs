@@ -2,11 +2,7 @@
 title: Using F# on Azure
 description: Guide to using Azure services with F#
 author: sylvanc
-ms.author: phcart
 ms.date: 09/22/2016
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Using F# on Azure
 

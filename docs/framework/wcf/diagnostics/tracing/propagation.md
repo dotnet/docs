@@ -1,21 +1,7 @@
 ---
 title: "Propagation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Propagation
 This topic describes activity propagation in the Windows Communication Foundation (WCF) tracing model.  
@@ -29,7 +15,7 @@ This topic describes activity propagation in the Windows Communication Foundatio
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity="true" >  
 ```  
   
- Activity propagation is a configurable capability that causes [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] to add a header to outbound messages, which includes the activity ID on the TLS. By including this on subsequent traces on the server side, we can correlate client and server activities.  
+ Activity propagation is a configurable capability that causes WCF to add a header to outbound messages, which includes the activity ID on the TLS. By including this on subsequent traces on the server side, we can correlate client and server activities.  
   
 ## Propagation Definition  
  Activity M’s gAId is propagated to activity N if all of the following conditions apply.  

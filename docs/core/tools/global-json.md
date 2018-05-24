@@ -4,12 +4,6 @@ description: See the schema for the global.json file, which permits setting the 
 author: blackdwarf
 ms.author: mairaw
 ms.date: 04/05/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # global.json reference
 

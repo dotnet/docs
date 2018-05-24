@@ -1,10 +1,6 @@
 ---
 title: "Character Data Types (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], character"
   - "String data type [Visual Basic], character data types"
@@ -12,8 +8,6 @@ helpviewer_keywords:
   - "Char data type [Visual Basic], character data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Character Data Types (Visual Basic)
 Visual Basic provides *character data types* to deal with printable and displayable characters. While they both deal with Unicode characters, `Char` holds a single character whereas `String` contains an indefinite number of characters.  

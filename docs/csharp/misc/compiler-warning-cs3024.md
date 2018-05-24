@@ -1,18 +1,11 @@
 ---
 title: "Compiler Warning CS3024"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "CS3024"
 helpviewer_keywords: 
   - "CS3024"
 ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95
-caps.latest.revision: 7
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Compiler Warning CS3024
 Constraint type 'type' is not CLS-compliant.  

@@ -1,10 +1,6 @@
 ---
 title: "-linkresource (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/linkresource"
 helpviewer_keywords: 
@@ -15,9 +11,6 @@ helpviewer_keywords:
   - "-linkresource compiler option [C#]"
   - "linkresource compiler option [C#]"
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -linkresource (C# Compiler Options)
 Creates a link to a .NET Framework resource in the output file. The resource file is not added to the output file. This differs from the [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) option which does embed a resource file in the output file.  

@@ -1,26 +1,12 @@
 ---
 title: "Best Practices: Data Contract Versioning"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts"
   - "service contracts"
   - "best practices [WCF], data contract versioning"
   - "Windows Communication Foundation, data contracts"
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Best Practices: Data Contract Versioning
 This topic lists the best practices for creating data contracts that can evolve easily over time. For more information about data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
@@ -30,7 +16,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  This means that even the most common versioning scenario, such as adding a new data member, cannot be implemented in a way that is seamless with regard to a given schema. The newer versions of a data contract (with a new data member, for example) do not validate using the old schema.  
   
- However, there are many scenarios in which strict schema compliance is not required. Many Web services platforms, including [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] and XML Web services created using ASP.NET, do not perform schema validation by default and therefore tolerate extra elements that are not described by the schema. When working with such platforms, many versioning scenarios are easier to implement.  
+ However, there are many scenarios in which strict schema compliance is not required. Many Web services platforms, including WCF and XML Web services created using ASP.NET, do not perform schema validation by default and therefore tolerate extra elements that are not described by the schema. When working with such platforms, many versioning scenarios are easier to implement.  
   
  Thus, there are two sets of data contract versioning guidelines: one set for scenarios where strict schema validity is important, and another set for scenarios when it is not.  
   
@@ -45,7 +31,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  For more information, see Best Practices: [Service Versioning](../../../docs/framework/wcf/service-versioning.md).  
   
- Occasionally, you must guarantee strict schema compliance for messages sent by your application, but cannot rely on the incoming messages to be strictly schema-compliant. In this case, there is a danger that an incoming message might contain extraneous data. The extraneous values are stored and returned by [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] and thus results in schema-invalid messages being sent. To avoid this problem, the round-tripping feature should be turned off. There are two ways to do this.  
+ Occasionally, you must guarantee strict schema compliance for messages sent by your application, but cannot rely on the incoming messages to be strictly schema-compliant. In this case, there is a danger that an incoming message might contain extraneous data. The extraneous values are stored and returned by WCF and thus results in schema-invalid messages being sent. To avoid this problem, the round-tripping feature should be turned off. There are two ways to do this.  
   
 -   Do not implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface on any of your types.  
   

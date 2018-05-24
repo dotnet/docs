@@ -1,12 +1,7 @@
 ---
 title: How to articles (C# Guide)
 description: A collection of quick tips and short, focused code samples
-author: billwagner
-ms.author: wiwagn
 ms.date: 12/20/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 
 # How to (C#)

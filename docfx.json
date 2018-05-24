@@ -106,8 +106,10 @@
         "_vblang/spec/*.md": "dotnet-visualbasic",
         "docs/core/**/**.md": "dotnet-core",
         "docs/csharp/**/**.md": "dotnet-csharp",
+        "docs/csharp/**/**.yml": "dotnet-csharp",
         "docs/framework/**/**.md": "dotnet-framework",
         "docs/fsharp/**/**.md": "dotnet-fsharp",
+        "docs/machine-learning/**/**.md": "dotnet-ml",
         "docs/standard/**/**.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic"
       },
@@ -115,7 +117,8 @@
         "_csharplang/spec/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
-        "docs/framework/unmanaged-api/**/**.md": "reference"
+        "docs/framework/unmanaged-api/**/**.md": "reference",
+        "docs/fsharp/language-reference/**/**.md": "language-reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],
@@ -123,22 +126,27 @@
       },
       "ms.devlang": {
         "docs/csharp/**/**.md": "csharp",
+        "docs/csharp/**/**.yml": "csharp",
         "docs/fsharp/**/**.md": "fsharp",
         "docs/visual-basic/**/**.md": "vb"
       },
       "author": {
         "docs/core/**/**.md": "mairaw",
-        "docs/csharp/**/**.md": "billwagner",        
+        "docs/csharp/**/**.md": "billwagner",
+        "docs/csharp/**/**.yml": "billwagner",
         "docs/framework/data/adonet/**/**.md": "douglaslMS",
-        "docs/fsharp/**/**.md": "cartermp"
+        "docs/fsharp/**/**.md": "cartermp",
+        "docs/machine-learning/**/**.md": "JRAlexander"
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
         "docs/core/**/**.md": "mairaw",
         "docs/csharp/**/**.md": "wiwagn",
+        "docs/csharp/**/**.yml": "wiwagn",
         "docs/framework/data/adonet/**/**.md": "douglasl",
-        "docs/fsharp/**/**.md": "phcart"        
+        "docs/fsharp/**/**.md": "phcart",
+        "docs/machine-learning/**/**.md": "johalex"
       },
       "manager": {
         "docs/framework/data/adonet/**/**.md": "craigg"

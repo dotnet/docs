@@ -1,12 +1,7 @@
 ---
 title: "Exceptions: The try...with Expression (F#)"
 description: Learn how to use the F# 'try...with' expression for exception handling.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Exceptions: The try...with Expression
 

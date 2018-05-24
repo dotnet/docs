@@ -1,18 +1,11 @@
 ---
 title: "Knowing When to Use Override and New Keywords (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "override keyword [C#]"
   - "new keyword [C#]"
   - "polymorphism [C#], using override and new [C#]"
 ms.assetid: 323db184-b136-46fc-8839-007886e7e8b0
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Knowing When to Use Override and New Keywords (C# Programming Guide)
 In C#, a method in a derived class can have the same name as a method in the base class. You can specify how the methods interact by using the [new](../../../csharp/language-reference/keywords/new.md) and [override](../../../csharp/language-reference/keywords/override.md) keywords. The `override` modifier *extends* the base class method, and the `new` modifier *hides* it. The difference is illustrated in the examples in this topic.  

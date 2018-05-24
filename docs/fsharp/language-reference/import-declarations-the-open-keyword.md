@@ -1,12 +1,7 @@
 ---
 title: "Import Declarations: The open Keyword (F#)"
 description: Learn about F# import declarations and how they specify a module or namespace whose elements you can reference without using a fully qualified name.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Import Declarations: The `open` Keyword
 

@@ -1,19 +1,7 @@
 ---
 title: "Durable Duplex"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4e76d1a1-f3d8-4a0f-8746-4a322cdff6eb
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Durable Duplex
 This sample demonstrates how to set up and configure durable duplex message exchange using the messaging activities in Windows Workflow Foundation (WF). A durable duplex message exchange is a two-way message exchange that takes place over a long period of time. The lifetime of the message exchange may be longer than the lifetime of the communication channel and the in-memory lifetime of the service instances.  
@@ -48,7 +36,7 @@ This sample demonstrates how to set up and configure durable duplex message exch
 >  The binding used by this sample is not secure. When deploying your application you should configure your binding based on the security requirements of your application.  
   
 > [!NOTE]
->  The queues used in this sample are not transactional. For a sample that shows how to set up [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message exchanges using transaction queues, see the [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md) sample.  
+>  The queues used in this sample are not transactional. For a sample that shows how to set up WCF message exchanges using transaction queues, see the [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md) sample.  
   
  The message sent by Service1.xamlx to Service2.xamlx is sent using a client endpoint configured with the address of Service2.xamlx and the custom binding defined previously. The callback from Service2.xamlx to Service1.xamlx is sent using a client endpoint with no explicitly configured address because the address is taken from the callback context sent by Service1.xamlx. The following code example defines the client endpoints.  
   

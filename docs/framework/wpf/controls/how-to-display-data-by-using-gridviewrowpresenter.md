@@ -1,24 +1,10 @@
 ---
 title: "How to: Display Data by Using GridViewRowPresenter"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "displaying data with GridViewRowPresenter [WPF]"
   - "GridViewRowPresenter [WPF]"
 ms.assetid: bdb785a5-a262-44d5-a517-ea14383e5f70
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Display Data by Using GridViewRowPresenter
 This example shows how to use the <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> objects to display data in columns.  

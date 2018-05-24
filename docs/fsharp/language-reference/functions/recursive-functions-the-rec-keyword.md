@@ -1,12 +1,7 @@
 ---
 title: "Recursive Functions: The rec Keyword (F#)"
 description: Learn how the F# 'rec' keyword is used with the 'let' keyword to define a recursive function.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Recursive Functions: The rec Keyword
 

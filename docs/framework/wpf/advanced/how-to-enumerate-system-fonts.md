@@ -1,14 +1,6 @@
 ---
 title: "How to: Enumerate System Fonts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "system fonts [WPF], enumerating"
   - "enumerating [WPF], system fonts"
 ms.assetid: 36e37791-55b9-4f01-a496-5cc10335e6a6
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enumerate System Fonts
 ## Example  

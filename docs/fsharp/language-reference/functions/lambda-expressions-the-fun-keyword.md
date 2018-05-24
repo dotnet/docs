@@ -1,12 +1,7 @@
 ---
 title: "Lambda Expressions: The fun Keyword (F#)"
 description: Learn how to use the F# 'fun' keyword to define a lambda expression, which is an anonymous function.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Lambda Expressions: The fun Keyword (F#)
 

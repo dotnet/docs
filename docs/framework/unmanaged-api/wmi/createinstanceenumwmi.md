@@ -2,10 +2,6 @@
 title: CreateInstanceEnumWmi function (Unmanaged API Reference)
 description: The  CreateInstanceEnumWmi function returns an enumerator containing instances of a specified class that meet selection criteria.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "CreateInstanceEnumWmi"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CreateInstanceEnumWmi function
 Returns an enumerator that returns the instances of a specified class that meet specified selection criteria. 

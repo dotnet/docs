@@ -1,12 +1,7 @@
 ---
 title: Reference Cells (F#)
 description: Learn how F# reference cells are storage locations that enable you to create mutable values with reference semantics.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Reference Cells
 
@@ -81,6 +76,9 @@ For more information about how to pass by reference, see [Parameters and Argumen
 >[!NOTE]
 C# programmers should know that ref works differently in F# than it does in C#. For example, the use of ref when you pass an argument does not have the same effect in F# as it does in C#.
 
+>[!NOTE]
+`mutable` variables may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
+
 ## Consuming C# `ref` returns
 
 Starting with F# 4.1, you can consume `ref` returns generated in C#.  The result of such a call is a `byref<_>` pointer.
@@ -132,3 +130,5 @@ There is currently no way to generate a `ref` return in F# which could be consum
 [Parameters and Arguments](parameters-and-arguments.md)
 
 [Symbol and Operator Reference](symbol-and-operator-reference/index.md)
+
+[Values](values/index.md)

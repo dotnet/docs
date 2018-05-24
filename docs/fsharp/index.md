@@ -2,11 +2,7 @@
 title: F# Guide
 description: This guide provides an overview of various learning materials for F#, a functional programming language that runs on .NET.
 author: jackfoxy
-ms.author: phcart
 ms.date: 03/19/2018
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # F# Guide
 
@@ -48,6 +44,8 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 [Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you want to use command-line tools.
 
 [Get started with F# and Xamarin](https://docs.microsoft.com/xamarin/cross-platform/platform/fsharp/) for mobile programming with F#.
+
+[F# for Azure Notebooks](https://notebooks.azure.com/Microsoft/libraries/samples/html/FSharp%20for%20Azure%20Notebooks.ipynb) is a tutorial for learning F# in a free, hosted Jupyter Notebook.
 
 ## References
 

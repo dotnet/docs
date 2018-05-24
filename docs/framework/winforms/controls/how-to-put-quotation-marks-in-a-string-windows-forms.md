@@ -1,14 +1,6 @@
 ---
 title: "How to: Put Quotation Marks in a String (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "TextBox control [Windows Forms], displaying quotation marks"
   - "quotation marks [Windows Forms], adding to strings in text boxes"
 ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Put Quotation Marks in a String (Windows Forms)
 Sometimes you might want to place quotation marks (" ") in a string of text. For example:  

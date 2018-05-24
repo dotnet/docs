@@ -1,12 +1,7 @@
 ---
 title: Values (F#)
 description: Learn how values in F# are quantities that have a specific type.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Values
 
@@ -20,6 +15,7 @@ The term *binding* means associating a name with a definition. The `let` keyword
 
 The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of `b` to be `unsigned int`, whereas the compiler infers the type of `a` to be `int`. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions](../functions/index.md). For more information about literal types, see [Literals](../literals.md).
 
+The compiler does not issue diagnostics about unused bindings by default. To receive these messages, enable warning 1182 in your project file or when invoking the compiler (see `--warnon` under [Compiler Options](../compiler-options.md)).
 
 ## Why Immutable?
 Immutable values are values that cannot be changed throughout the course of a program's execution. If you are used to languages such as C++, Visual Basic, or C#, you might find it surprising that F# puts primacy over immutable values rather than variables that can be assigned new values during the execution of a program. Immutable data is an important element of functional programming. In a multithreaded environment, shared mutable variables that can be changed by many different threads are difficult to manage. Also, with mutable variables, it can sometimes be hard to tell if a variable might be changed when it is passed to another function.
@@ -35,6 +31,8 @@ You can use the keyword `mutable` to specify a variable that can be changed. Mut
 You can assign an initial value to a mutable variable by using the `let` keyword in the same way as you would define a value. However, the difference is that you can subsequently assign new values to mutable variables by using the `<-` operator, as in the following example.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet602.fs)]
+
+Values marked `mutable` may be automatically promoted to `'a ref` if captured by a closure, including forms that create closures, such as `seq` builders. If you wish to be notified when this occurs, enable warning 3180 in your project file or when invoking the compiler.
     
 ## Related Topics
 

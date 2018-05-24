@@ -1,18 +1,11 @@
 ---
 title: "Floating-Point Types Table (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "floating-point numbers [C#]"
   - "ranges of floating-point types [C#]"
   - "types [C#], floating-point types"
 ms.assetid: da886cc5-e01e-4f62-b3ec-6428c8f7a102
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Floating-Point Types Table (C# Reference)
 The following table shows the precision and approximate ranges for the floating-point types.  

@@ -1,12 +1,6 @@
 ---
 title: "Mid Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.MidB"
   - "vb.Mid"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "Mid statement [Visual Basic]"
   - "strings [Visual Basic], replacing"
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Mid Statement
 Replaces a specified number of characters in a `String` variable with characters from another string.  

@@ -1,19 +1,12 @@
 ---
 title: "when (C# Reference)"
 ms.date: 03/07/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "when_CSharpKeyword"
   - "when"
 helpviewer_keywords: 
   - "when keyword [C#]"
 ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
-caps.latest.revision: 30
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
  # when (C# Reference)
 

@@ -1,13 +1,6 @@
 ---
 title: "Structures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "structures [Visual Basic]"
   - "user-defined data types [Visual Basic], structures"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "user-defined data types [Visual Basic], about user-defined data types"
   - "types [Visual Basic], user-defined"
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Structures (Visual Basic)
 A *structure* is a generalization of the user-defined type (UDT) supported by previous versions of Visual Basic. In addition to fields, structures can expose properties, methods, and events. A structure can implement one or more interfaces, and you can declare individual access levels for each field.  

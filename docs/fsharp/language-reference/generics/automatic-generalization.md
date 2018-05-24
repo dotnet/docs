@@ -1,12 +1,7 @@
 ---
 title: Automatic Generalization (F#)
 description: Learn how F# automatically generalizes the arguments and types of functions so that they work with multiple types when possible.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Automatic Generalization
 

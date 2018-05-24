@@ -1,19 +1,7 @@
 ---
 title: "Advanced Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 75a22c88-5e54-4ae8-84cb-fbb22a612f0a
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Advanced Policy
 This sample extends the Simple Policy sample. In addition to the residential discount and business discount rules from the Simple Policy example, several new rules have been added.  

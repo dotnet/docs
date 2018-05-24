@@ -1,26 +1,12 @@
 ---
 title: "xml:space Handling in XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], xml:space attribute"
   - "XAML [XAML Services], whitespace processing"
   - "xml:space attribute [XAML Services]"
   - "whitespace processing [XAML Services]"
 ms.assetid: 5e1814f0-5b30-43d5-8c88-dede335a89d7
-caps.latest.revision: 15
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # xml:space Handling in XAML
 The `xml:space` attribute is an XML-defined attribute that declares the significant whitespace processing behavior within an object element. This behavior is relevant for all content (inner text) contained within the element where `xml:space` is declared, and also scopes to child elements.  

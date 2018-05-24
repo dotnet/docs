@@ -1,12 +1,6 @@
 ---
 title: "XML CDATA Literal (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralCdata"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "XML CDATA literal [Visual Basic]"
   - "XML literals [Visual Basic], CDATA"
 ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML CDATA Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XCData> object.  

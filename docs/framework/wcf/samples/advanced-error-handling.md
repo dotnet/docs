@@ -1,24 +1,10 @@
 ---
 title: "Advanced Error Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ed54b687-78af-4eda-8507-9fd081bdea1a
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Advanced Error Handling
-This sample demonstrates the Windows Communication Foundation (WCF) routing service. The routing service is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] component that makes it easy to include a content-based router in your application. This sample shows how the routing service intelligently recovers from errors, using transactions and other more complex messaging concepts such as multicasting.  
+This sample demonstrates the Windows Communication Foundation (WCF) routing service. The routing service is a WCF component that makes it easy to include a content-based router in your application. This sample shows how the routing service intelligently recovers from errors, using transactions and other more complex messaging concepts such as multicasting.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

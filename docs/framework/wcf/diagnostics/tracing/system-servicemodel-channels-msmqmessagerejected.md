@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.MsmqMessageRejected"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9b7c10a7-2af6-44a2-8b1a-90bba0c7cf26
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.MsmqMessageRejected
 MSMQ rejected the message.  

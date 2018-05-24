@@ -1,19 +1,7 @@
 ---
 title: "Securing Workflow Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53f84ad5-1ed1-4114-8d0d-b12e8a021c6e
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Workflow Services
 The Secured Workflow Service sample shows the following procedures:  
@@ -28,7 +16,7 @@ The Secured Workflow Service sample shows the following procedures:
  Using WCF security to secure communication between client and Workflow service, Claims based authorization  
   
 ## Discussion  
- This sample demonstrates the use of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure to secure a workflow service just like you would with a normal [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. Specifically, it uses a custom claim for authorization. In this case, it uses <xref:System.ServiceModel.WSHttpBinding> and message mode security with Windows credentials.  
+ This sample demonstrates the use of WCF security infrastructure to secure a workflow service just like you would with a normal WCF service. Specifically, it uses a custom claim for authorization. In this case, it uses <xref:System.ServiceModel.WSHttpBinding> and message mode security with Windows credentials.  
   
  The custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> (`CustomNameCheckerPolicy`) checks the client's Windows username and for a specific character. If that character is present, it creates and adds the claim to the <xref:System.IdentityModel.Policy.EvaluationContext>. By doing this, the custom policy is making the statement that the client has this character in the username. This claim can be queried throughout the lifetime of the call. You can find that character in `Constants.cs`.  
   

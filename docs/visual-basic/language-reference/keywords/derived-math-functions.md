@@ -1,11 +1,6 @@
 ---
 title: "Derived Math Functions (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arithmetic operations, derived math functions"
   - "cosecant function"
@@ -26,9 +21,6 @@ helpviewer_keywords:
   - "degrees"
   - "arccosine function"
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Derived Math Functions (Visual Basic)
 The following table shows non-intrinsic math functions that can be derived from the intrinsic math functions of the <xref:System.Math?displayProperty=nameWithType> object. You can access the intrinsic math functions by adding `Imports System.Math` to your file or project.  

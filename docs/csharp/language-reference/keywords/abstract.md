@@ -1,19 +1,12 @@
 ---
 title: "abstract (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "abstract"
   - "abstract_CSharpKeyword"
 helpviewer_keywords: 
   - "abstract keyword [C#]"
 ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # abstract (C# Reference)
 The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. The abstract modifier can be used with classes, methods, properties, indexers, and events. Use the `abstract` modifier in a class declaration to indicate that a class is intended only to be a base class of other classes. Members marked as abstract, or included in an abstract class, must be implemented by classes that derive from the abstract class.  
@@ -47,7 +40,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
     public abstract void MyMethod();  
     ```  
   
-     The implementation is provided by an method [override](../../../csharp/language-reference/keywords/override.md), which is a member of a non-abstract class.  
+     The implementation is provided by a method [override](../../../csharp/language-reference/keywords/override.md), which is a member of a non-abstract class.  
   
 -   It is an error to use the [static](../../../csharp/language-reference/keywords/static.md) or [virtual](../../../csharp/language-reference/keywords/virtual.md) modifiers in an abstract method declaration.  
   

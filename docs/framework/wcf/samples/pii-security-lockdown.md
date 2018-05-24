@@ -1,21 +1,9 @@
 ---
 title: "PII Security Lockdown"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
-caps.latest.revision: 25
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # PII Security Lockdown
 This sample demonstrates how to control several security-related features of a Windows Communication Foundation (WCF) service by:  
@@ -36,11 +24,11 @@ This sample demonstrates how to control several security-related features of a W
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## Discussion  
- Each of these features can be used separately or together to control aspects of a service's security. This is not a definitive guide to securing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+ Each of these features can be used separately or together to control aspects of a service's security. This is not a definitive guide to securing a WCF service.  
   
  The .NET Framework configuration files can contain sensitive information such as connection strings to connect to databases. In shared, Web-hosted scenarios it may be desirable to encrypt this information in the configuration file for a service so that the data contained within the configuration file is resistant to casual viewing. .NET Framework 2.0 and later has the ability to encrypt portions of the configuration file using the Windows Data Protection application programming interface (DPAPI) or the RSA Cryptographic provider. The aspnet_regiis.exe using the DPAPI or RSA can encrypt select portions of a configuration file.  
   
- In Web-hosted scenarios it is possible to have services in subdirectories of other services. The default semantic for determining configuration values allows configuration files in the nested directories to override the configuration values in the parent directory. In certain situations this may be undesirable for a variety of reasons. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service configuration supports the locking of configuration values so that nested configuration generates exceptions when a nested service is run using overridden configuration values.  
+ In Web-hosted scenarios it is possible to have services in subdirectories of other services. The default semantic for determining configuration values allows configuration files in the nested directories to override the configuration values in the parent directory. In certain situations this may be undesirable for a variety of reasons. WCF service configuration supports the locking of configuration values so that nested configuration generates exceptions when a nested service is run using overridden configuration values.  
   
  This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) sample.  
   

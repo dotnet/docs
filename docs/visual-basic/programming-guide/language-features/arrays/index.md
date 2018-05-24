@@ -1,11 +1,6 @@
 ---
 title: "Arrays in Visual Basic"
-ms.custom: ""
 ms.date: 12/06/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Array"
 helpviewer_keywords: 
@@ -14,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
 author: rpetrusha
 ms.author: ronpet
-ms.manager: wpickett
 ---
 # Arrays in Visual Basic
 An array is a set of values, which are termed *elements*, that are logically related to each other. For example, an array may consist of the number of students in each grade in a grammar school; each element of the array is the number of students in a single grade. Similarly, an array may consist of a student's grades for a class; each element of the array is a single grade.    

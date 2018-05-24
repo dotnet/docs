@@ -2,11 +2,7 @@
 title: Copy and Update Record Expressions (F#)
 description: Learn how to write a 'copy and update record expression' that copies an existing record, updates specified fields, and returns the updated record.
 author: ChrSteinert
-ms.author: phcart
 ms.date: 06/04/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Copy and Update Record Expressions
 

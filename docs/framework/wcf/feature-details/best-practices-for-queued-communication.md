@@ -1,24 +1,10 @@
 ---
 title: "Best Practices for Queued Communication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "queues [WCF], best practices"
   - "best practices [WCF], queued communication"
 ms.assetid: 446a6383-cae3-4338-b193-a33c14a49948
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Best Practices for Queued Communication
 This topic provides recommended practices for queued communication in Windows Communication Foundation (WCF). The following sections discuss recommended practices from a scenario perspective.  
@@ -64,7 +50,7 @@ This topic provides recommended practices for queued communication in Windows Co
   
  When using batching, be aware that concurrency and throttling translate to concurrent batches.  
   
- To achieve higher throughput and availability, use a farm of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that read from the queue. This requires that all of these services expose the same contract on the same endpoint. The farm approach works best for applications that have high production rates of messages because it enables a number of services to all read from the same queue.  
+ To achieve higher throughput and availability, use a farm of WCF services that read from the queue. This requires that all of these services expose the same contract on the same endpoint. The farm approach works best for applications that have high production rates of messages because it enables a number of services to all read from the same queue.  
   
  When using farms, be aware that MSMQ 3.0 does not support remote transacted reads. MSMQ 4.0 does support remote transacted reads.  
   
@@ -79,11 +65,11 @@ This topic provides recommended practices for queued communication in Windows Co
  Though queues are typically one-way, in some scenarios you may want to correlate a reply received to a request sent earlier. If you require such correlation, it is recommended that you apply your own SOAP message header that contains correlation information with the message. Typically, the sender attaches this header with the message, and the receiver, upon processing the message and replying back with a new message on a reply queue, attaches the sender's message header that contains the correlation information so that the sender can identify the reply message with the request message.  
   
 ## Integrating with Non-WCF Applications  
- Use `MsmqIntegrationBinding` when integrating [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services or clients with non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services or clients. The non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application can be an MSMQ application written using System.Messaging, COM+, Visual Basic, or C++.  
+ Use `MsmqIntegrationBinding` when integrating WCF services or clients with non-WCF services or clients. The non-WCF application can be an MSMQ application written using System.Messaging, COM+, Visual Basic, or C++.  
   
  When using `MsmqIntegrationBinding`, be aware of the following:  
   
--   A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message body is not the same as a MSMQ message body. When sending a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message using a queued binding, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message body is placed inside of a MSMQ message. The MSMQ infrastructure is oblivious to this extra information; it sees only the MSMQ message.  
+-   A WCF message body is not the same as a MSMQ message body. When sending a WCF message using a queued binding, the WCF message body is placed inside of a MSMQ message. The MSMQ infrastructure is oblivious to this extra information; it sees only the MSMQ message.  
   
 -   `MsmqIntegrationBinding` supports popular serialization types. Based on the serialization type, the body type of the generic message, <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, takes different type parameters. For example, <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ByteArray> requires `MsmqMessage\<byte[]>` and <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Stream> requires `MsmqMessage<Stream>`.  
   

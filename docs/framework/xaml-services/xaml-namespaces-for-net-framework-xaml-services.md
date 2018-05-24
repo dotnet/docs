@@ -1,21 +1,7 @@
 ---
 title: "XAML Namespaces for .NET Framework XAML Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e4f15f13-c420-4c1e-aeab-9b6f50212047
-caps.latest.revision: 3
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XAML Namespaces for .NET Framework XAML Services
 A XAML namespace is a concept that expands on the definition of an XML namespace. Similar to an XML namespace, you can define a XAML namespace using an `xmlns` attribute in markup. XAML namespaces are also represented in the XAML node stream and other XAML Services APIs. This topic defines the XAML namespace concept, and describes how XAML namespaces can be defined and are used by XAML schema contexts and other aspects of .NET Framework XAML Services.  

@@ -1,21 +1,12 @@
 ---
 title: "Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc31019"
   - "bc31019"
 helpviewer_keywords: 
   - "BC31019"
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;
 There was a problem creating the file.  

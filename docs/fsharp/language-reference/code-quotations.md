@@ -1,12 +1,7 @@
 ---
 title: Code Quotations (F#)
 description: Learn about F# code quotations, a language feature that enables you to generate and work with F# code expressions programmatically.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Code Quotations
 

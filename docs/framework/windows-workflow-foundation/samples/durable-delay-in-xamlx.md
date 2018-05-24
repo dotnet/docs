@@ -1,19 +1,7 @@
 ---
 title: "Durable Delay in XAMLX"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: efc38df4-2d34-453c-8e59-2c21d1307354
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Durable Delay in XAMLX
 This sample demonstrates how to use a durable delay, which is a delay that persists the workflow to a durable device during the delay.  

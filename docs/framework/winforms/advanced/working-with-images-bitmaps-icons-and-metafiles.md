@@ -1,14 +1,6 @@
 ---
 title: "Working with Images, Bitmaps, Icons, and Metafiles"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "metafiles [Windows Forms], working with"
   - "examples [Windows Forms], bitmaps"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "images [Windows Forms], working with"
   - "examples [Windows Forms], metafiles"
 ms.assetid: a626d701-bd99-4fd8-b92f-7b8f794e042b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Working with Images, Bitmaps, Icons, and Metafiles
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides the `Bitmap` class for working with raster images and the `Metafile` class for working with vector images. The `Bitmap` and the `Metafile` classes both inherit from the `Image` class.  

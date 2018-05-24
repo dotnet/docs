@@ -1,12 +1,7 @@
 ---
 title: Results (F#)
 description: Learn how to use the F# 'Result' type to help you write error-tolerant code.
-author: cartermp
-ms.author: phcart
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Results
 

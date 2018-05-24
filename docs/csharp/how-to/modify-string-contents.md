@@ -1,14 +1,8 @@
 ---
 title: "How to: Modify string contents - C# Guide"
 ms.date: 02/26/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "strings [C#], modifying"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Modify string contents in C# #
 

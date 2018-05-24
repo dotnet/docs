@@ -1,10 +1,6 @@
 ---
 title: "Mod Operator (Visual Basic)"
 ms.date: 04/24/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Mod"
 helpviewer_keywords: 

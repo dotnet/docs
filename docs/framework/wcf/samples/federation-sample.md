@@ -1,27 +1,13 @@
 ---
 title: "Federation Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7e9da0ca-e925-4644-aa96-8bfaf649d4bb
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Federation Sample
 This sample demonstrates federated security.  
   
 ## Sample Details  
- Windows Communication Foundation (WCF) provides support for deploying federated security architectures through the `wsFederationHttpBinding`. The `wsFederationHttpBinding` provides a secure, reliable, and interoperable binding that involves the use of HTTP as the underlying transport mechanism for request/reply communication, and Text/XML as the wire format for encoding. For more information about Federation in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
+ Windows Communication Foundation (WCF) provides support for deploying federated security architectures through the `wsFederationHttpBinding`. The `wsFederationHttpBinding` provides a secure, reliable, and interoperable binding that involves the use of HTTP as the underlying transport mechanism for request/reply communication, and Text/XML as the wire format for encoding. For more information about Federation in WCF, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
   
  The scenario is made up of 4 pieces:  
   

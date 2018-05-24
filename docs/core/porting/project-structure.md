@@ -4,11 +4,6 @@ description: Help for project owners who want to compile their solution against 
 author: conniey
 ms.author: mairaw
 ms.date: 04/06/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Organizing your project to support .NET Framework and .NET Core
 

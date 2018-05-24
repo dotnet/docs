@@ -1,12 +1,7 @@
 ---
 title: Signatures (F#)
 description: Learn how to use an F# signature file to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Signatures
 
@@ -64,6 +59,9 @@ The rules for value signatures are as follows:
 
 
 - The pattern of parameters (also known as the *arity*) of signatures and implementations must be consistent.
+
+
+- If parameter names in a signature file differ from the corresponding implementation file, the name in the signature file will be used instead, which may cause issues when debugging or profiling. If you wish to be notified of such mismatches, enable warning 3218 in your project file or when invoking the compiler (see `--warnon` under [Compiler Options](compiler-options.md)).
 
 
 The following code example shows an example of a signature file that has namespace, module, function value, and type signatures together with the appropriate attributes. It also shows the corresponding implementation file.

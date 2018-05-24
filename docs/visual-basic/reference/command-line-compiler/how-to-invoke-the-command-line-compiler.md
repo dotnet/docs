@@ -1,21 +1,12 @@
 ---
 title: "How to: Invoke the Command-Line Compiler (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "command-line arguments"
   - "vbc.exe"
   - "Visual Basic compiler, starting"
   - "command line [Visual Basic], arguments"
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Invoke the Command-Line Compiler (Visual Basic)
 You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the Visual Studio Command Prompt, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.  

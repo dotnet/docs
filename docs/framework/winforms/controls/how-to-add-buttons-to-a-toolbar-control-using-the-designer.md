@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Buttons to a ToolBar Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], adding buttons"
   - "ToolBar control [Windows Forms], adding buttons"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolBar control [Windows Forms], adding drop-down menus"
 ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Buttons to a ToolBar Control Using the Designer
 > [!NOTE]

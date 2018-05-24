@@ -1,12 +1,7 @@
 ---
 title: Compiler Options (F#)
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Compiler Options
 

@@ -1,23 +1,9 @@
 ---
 title: "Configuring Message Logging"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "message logging [WCF]"
 ms.assetid: 0ff4c857-8f09-4b85-9dc0-89084706e4c9
-caps.latest.revision: 40
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Message Logging
 This topic describes how you can configure message logging for different scenarios.  
@@ -75,7 +61,7 @@ This topic describes how you can configure message logging for different scenari
   
  For outgoing messages, logging happens immediately after the message leaves user code and immediately before the message goes on the wire.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] logs messages at two different levels, service and transport. Malformed messages are also logged. The three categories are independent from each other and can be activated separately in configuration.  
+ WCF logs messages at two different levels, service and transport. Malformed messages are also logged. The three categories are independent from each other and can be activated separately in configuration.  
   
  You can control the logging level by setting the `logMessagesAtServiceLevel`, `logMalformedMessages`, and `logMessagesAtTransportLevel` attributes of the `messageLogging` element.  
   
@@ -86,7 +72,7 @@ This topic describes how you can configure message logging for different scenari
  Messages logged at this layer are ready to be encoded or decoded for or after transportation on the wire. If filters have been defined, only messages that match the filters are logged. Otherwise, all messages at the transport layer are logged. All infrastructure messages are logged at this layer, including reliable messaging messages. On streamed messages, only the headers are logged. In addition, secure messages are logged as encrypted at this level, except if a secure transport such as HTTPS is used.  
   
 ### Malformed Level  
- Malformed messages are messages that are rejected by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] stack at any stage of processing. Malformed messages are logged as-is: encrypted if they are so, with non-proper XML, and so on. `maxSizeOfMessageToLog` defined the size of the message to be logged as CDATA. By default, `maxSizeOfMessageToLog` is equal to 256K. For more information about this attribute, see the Other Options section.  
+ Malformed messages are messages that are rejected by the WCF stack at any stage of processing. Malformed messages are logged as-is: encrypted if they are so, with non-proper XML, and so on. `maxSizeOfMessageToLog` defined the size of the message to be logged as CDATA. By default, `maxSizeOfMessageToLog` is equal to 256K. For more information about this attribute, see the Other Options section.  
   
 ### Other Options  
  In addition to the logging levels, the user can specify the following options:  

@@ -1,12 +1,6 @@
 ---
 title: "Sample Compilation Command Lines (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "command line [Visual Basic], compilers"
   - "compilation [Visual Basic], command-line"

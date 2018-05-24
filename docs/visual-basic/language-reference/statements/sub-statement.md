@@ -1,12 +1,6 @@
 ---
 title: "Sub Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Sub"
 helpviewer_keywords: 
@@ -35,9 +29,6 @@ helpviewer_keywords:
   - "ByVal keyword [Visual Basic], Sub statements"
   - "Visual Basic code, Sub procedures"
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-caps.latest.revision: 52
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sub Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Sub` procedure.  
@@ -75,7 +66,9 @@ End Sub
   
     -   [Private](../modifiers/private.md)  
   
-    -   `Protected Friend`  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
   
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   

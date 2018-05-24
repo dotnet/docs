@@ -1,12 +1,7 @@
 ---
 title: do Bindings (F#)
 description: Learn how an F# 'do' binding is used to execute code without defining a function or value.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # do Bindings
 

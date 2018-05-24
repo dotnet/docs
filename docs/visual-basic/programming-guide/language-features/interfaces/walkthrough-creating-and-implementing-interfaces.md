@@ -1,18 +1,12 @@
 ---
 title: "Creating and Implementing Interfaces (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "interfaces [Visual Basic], walkthroughs"
   - "interfaces [Visual Basic], testing"
   - "interface implementation [Visual Basic], walkthrough"
   - "interfaces [Visual Basic], creating"
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Creating and Implementing Interfaces (Visual Basic)
 

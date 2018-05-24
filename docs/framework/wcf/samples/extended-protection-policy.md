@@ -1,21 +1,7 @@
 ---
 title: "Extended Protection Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e2616a10-317e-4c34-8023-0c015a80a82f
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extended Protection Policy
 Extended Protection is a security initiative for protecting against man-in-the-middle (MITM) attacks. A MITM attack is a security threat in which a MITM takes a client’s credentials and forwards it to a server.  

@@ -1,26 +1,12 @@
 ---
 title: "Service Identity and Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "authentication [WCF], specifying the identity of a service"
 ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be
-caps.latest.revision: 32
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Identity and Authentication
 A service's *endpoint identity*is a value generated from the service Web Services Description Language (WSDL). This value, propagated to any client, is used to authenticate the service. After the client initiates a communication to an endpoint and the service authenticates itself to the client, the client compares the endpoint identity value with the actual value the endpoint authentication process returned. If they match, the client is assured it has contacted the expected service endpoint. This functions as a protection against *phishing* by preventing a client from being redirected to an endpoint hosted by a malicious service.  
@@ -40,7 +26,7 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
  Identity processing on the client is analogous to client authentication on the service. A secure service does not execute code until the client's credentials have been authenticated. Likewise, the client does not send messages to the service until the service's credentials have been authenticated based on what is known in advance from the service's metadata.  
   
- The <xref:System.ServiceModel.EndpointAddress.Identity%2A> property of the <xref:System.ServiceModel.EndpointAddress> class represents the identity of the service called by the client. The service publishes the <xref:System.ServiceModel.EndpointAddress.Identity%2A> in its metadata. When the client developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) against the service endpoint, the generated configuration contains the value of the service's <xref:System.ServiceModel.EndpointAddress.Identity%2A> property. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure (if configured with security) verifies that the service possesses the identity specified.  
+ The <xref:System.ServiceModel.EndpointAddress.Identity%2A> property of the <xref:System.ServiceModel.EndpointAddress> class represents the identity of the service called by the client. The service publishes the <xref:System.ServiceModel.EndpointAddress.Identity%2A> in its metadata. When the client developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) against the service endpoint, the generated configuration contains the value of the service's <xref:System.ServiceModel.EndpointAddress.Identity%2A> property. The WCF infrastructure (if configured with security) verifies that the service possesses the identity specified.  
   
 > [!IMPORTANT]
 >  The metadata contains the expected identity of the service, so it is recommended that you expose the service metadata through secure means, for example, by creating an HTTPS endpoint for the service. For more information, see [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md).  
@@ -70,7 +56,7 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
   
 ## Setting Identity Programmatically  
- Your service does not have to explicitly specify an identity, because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] automatically determines it. However, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
+ Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
   
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
@@ -94,13 +80,13 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
  If the channel is configured to authenticate using message- or transport-level Secure Sockets Layer (SSL) with X.509 certificates for authentication, the following identity values are valid:  
   
--   DNS. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ensures that the certificate provided during the SSL handshake contains a DNS or `CommonName` (CN) attribute equal to the value specified in the DNS identity on the client. Note that these checks are done in addition to determining the validity of the server certificate. By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] validates that the server certificate is issued by a trusted root authority.  
+-   DNS. WCF ensures that the certificate provided during the SSL handshake contains a DNS or `CommonName` (CN) attribute equal to the value specified in the DNS identity on the client. Note that these checks are done in addition to determining the validity of the server certificate. By default, WCF validates that the server certificate is issued by a trusted root authority.  
   
--   Certificate. During the SSL handshake, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ensures that the remote endpoint provides the exact certificate value specified in the identity.  
+-   Certificate. During the SSL handshake, WCF ensures that the remote endpoint provides the exact certificate value specified in the identity.  
   
 -   Certificate Reference. Same as Certificate.  
   
--   RSA. During the SSL handshake, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ensures that the remote endpoint provides the exact RSA key specified in the identity.  
+-   RSA. During the SSL handshake, WCF ensures that the remote endpoint provides the exact RSA key specified in the identity.  
   
  If the service authenticates using message- or transport-level SSL with a Windows credential for authentication, and negotiates the credential, the following identity values are valid:  
   

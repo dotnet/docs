@@ -1,21 +1,7 @@
 ---
 title: "ServiceModel Attributes and ServiceDescription Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4ab86b17-eab9-4846-a881-0099f9a7cc64
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceModel Attributes and ServiceDescription Reference
 The *description tree* is the hierarchy of types (starting with the <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=nameWithType> class) that together describe every aspect of a service. Windows Communication Foundation (WCF) uses a description tree to build a valid service runtime, to publish Web Services Description Language (WSDL), XML Schema definition language (XSD), and policy assertions (metadata) about the service that clients can use to connect to and use the service, and to generate various code and configuration file representations of the description tree values.  
@@ -23,9 +9,9 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
  This topic describes how contract-related properties are obtained from the service contract, and how they are implemented and added to the description tree. In some cases, attribute values are converted into behavior properties and behavior is then inserted into the description tree. For more information about how the description tree values are converted into metadata, see [ServiceDescription and WSDL Reference](../../../../docs/framework/wcf/feature-details/servicedescription-and-wsdl-reference.md).  
   
 ## Mapping Operations to the Description Tree  
- In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications, service contracts are modeled by interfaces (or classes) that use attributes to mark the interface or class and its methods as a grouping of operations. When a <xref:System.ServiceModel.ServiceHost> class is opened, any service contracts and implementations are reflected over and merged with configuration information into a description tree.  
+ In WCF applications, service contracts are modeled by interfaces (or classes) that use attributes to mark the interface or class and its methods as a grouping of operations. When a <xref:System.ServiceModel.ServiceHost> class is opened, any service contracts and implementations are reflected over and merged with configuration information into a description tree.  
   
- There are two types of operation models: the *parameter* model and the *message contract* model. The parameter model uses managed methods that do not have a parameter or return value type that is marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=nameWithType> class. In this model, developers control the serialization of parameters and return values, but [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates the values that are used to populate the description tree for the service and its contract.  
+ There are two types of operation models: the *parameter* model and the *message contract* model. The parameter model uses managed methods that do not have a parameter or return value type that is marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=nameWithType> class. In this model, developers control the serialization of parameters and return values, but WCF generates the values that are used to populate the description tree for the service and its contract.  
   
  Bindings specified in configuration files are loaded directly into the <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A?displayProperty=nameWithType> property.  
   

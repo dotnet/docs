@@ -1,14 +1,7 @@
 ---
 title: "The specified path does not exist"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: b0855f92-03c2-446b-94c1-856c87359c54
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # The specified path does not exist
 A specified path does not exist, perhaps due to an error combining strings.  

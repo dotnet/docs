@@ -1,19 +1,12 @@
 ---
 title: "int (C# Reference)"
 ms.date: 03/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "int_CSharpKeyword"
   - "int"
 helpviewer_keywords: 
   - "int keyword [C#]"
 ms.assetid: 212447b4-5d2a-41aa-88ab-84fe710bdb52
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # int (C# Reference)
 

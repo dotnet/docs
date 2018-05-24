@@ -1,25 +1,11 @@
 ---
 title: "How to: Use FlowDocument Column-Separating Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "FlowDocument column-separating attributes"
   - "column-separating attributes"
   - "documents [WPF], FlowDocument column-separating attributes"
 ms.assetid: c7a822f8-aeca-45bd-a258-2852ff28005c
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use FlowDocument Column-Separating Attributes
 This example shows how to use the column-separating features of a <xref:System.Windows.Documents.FlowDocument>.  

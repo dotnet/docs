@@ -1,28 +1,14 @@
 ---
 title: "Introduction to Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF [WCF], extensibility"
   - "Windows Communication Foundation [WCF], extensibility"
   - "extensibility [WCF]"
 ms.assetid: ef56c251-d63c-4b3f-944f-b0c67bfb0f68
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Introduction to Extensibility
-The Windows Communication Foundation (WCF) application model is designed to solve the greater part of the communication requirements of any distributed application. But there are always scenarios that the default application model and system-provided implementations do not support. The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] extensibility model is intended to support custom scenarios by enabling you to modify system behavior at every level, even to the point of replacing the entire application model. This topic outlines the various areas of extension and points to more information about each.  
+The Windows Communication Foundation (WCF) application model is designed to solve the greater part of the communication requirements of any distributed application. But there are always scenarios that the default application model and system-provided implementations do not support. The WCF extensibility model is intended to support custom scenarios by enabling you to modify system behavior at every level, even to the point of replacing the entire application model. This topic outlines the various areas of extension and points to more information about each.  
   
 ## Areas to Extend  
  You can extend:  
@@ -34,7 +20,7 @@ The Windows Communication Foundation (WCF) application model is designed to solv
 -   The host runtime. This extends the relationship of the hosting application domain to the channel and application runtime.  
   
 ### Extending the Application Runtime  
- In [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications, there is a distinction between messages that are destined for a corresponding channel and messages that are destined for the application itself. Channel messages support some channel-related functionality, such as establishing a secure conversation or establishing a reliable session. These messages are not available to the application runtime; they are processed before the application layer is involved.  
+ In WCF applications, there is a distinction between messages that are destined for a corresponding channel and messages that are destined for the application itself. Channel messages support some channel-related functionality, such as establishing a secure conversation or establishing a reliable session. These messages are not available to the application runtime; they are processed before the application layer is involved.  
   
  Application messages contain data that is destined for a client or service operation that you or your customer has created. These messages are available to the application-level extension system in message or object form, depending upon your needs.  
   

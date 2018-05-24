@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Creating a Professionally Styled ToolStrip Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], walkthroughs"
   - "ToolStrip control [Windows Forms], creating professionally styled controls"
 ms.assetid: b52339ae-f1d3-494e-996e-eb455614098a
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Creating a Professionally Styled ToolStrip Control
 You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls a professional appearance and behavior by writing your own class derived from the <xref:System.Windows.Forms.ToolStripProfessionalRenderer> type.  

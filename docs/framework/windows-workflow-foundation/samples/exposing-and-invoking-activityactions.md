@@ -1,19 +1,7 @@
 ---
 title: "Exposing and Invoking ActivityActions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 97ce4797-426e-463d-9cc4-1261afad6df4
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Exposing and Invoking ActivityActions
 This sample demonstrates how to develop a custom activity that has an <xref:System.Activities.ActivityAction>. It also demonstrates how to use this activity by providing an implementation of the <xref:System.Activities.ActivityAction>.  

@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.ExportSecurityChannelBindingEntry"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 043bad66-0a09-47c2-ae90-d1f225f52a24
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.ExportSecurityChannelBindingEntry
 System.ServiceModel.Security.ExportSecurityChannelBindingEntry  

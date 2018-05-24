@@ -1,24 +1,10 @@
 ---
 title: "ColorConvertedBitmap Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [WPF], ColorConvertedBitmap markup extension"
   - "ColorConvertedBitmap markup extension [WPF]"
 ms.assetid: 18321c18-c898-4470-93fa-a702b47770c1
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ColorConvertedBitmap Markup Extension
 Provides a way to specify a bitmap source that does not have an embedded profile. Color contexts / profiles are specified by [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)], as is the image source [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)].  

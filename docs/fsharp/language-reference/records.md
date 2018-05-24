@@ -1,12 +1,7 @@
 ---
 title: Records (F#)
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Records
 

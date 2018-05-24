@@ -1,10 +1,6 @@
 ---
 title: "Value Types (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.valuetypes"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "types [C#], value types"
   - "C# language, value types"
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Value Types (C# Reference)
 The value types consist of two main categories:  
@@ -58,31 +51,31 @@ The value types consist of two main categories:
 ## Initializing Value Types  
  Local variables in C# must be initialized before they are used. For example, you might declare a local variable without initialization as in the following example:  
   
-```  
+```csharp  
 int myInt;  
 ```  
   
  You cannot use it before you initialize it. You can initialize it using the following statement:  
   
-```  
+```csharp  
 myInt = new int();  // Invoke default constructor for int type.  
 ```  
   
  This statement is equivalent to the following statement:  
   
-```  
+```csharp  
 myInt = 0;         // Assign an initial value, 0 in this example.  
 ```  
   
  You can, of course, have the declaration and the initialization in the same statement as in the following examples:  
   
-```  
+```csharp  
 int myInt = new int();  
 ```  
   
  –or–  
   
-```  
+```csharp  
 int myInt = 0;  
 ```  
   
@@ -90,7 +83,7 @@ int myInt = 0;
   
  With user-defined types, use [new](../../../csharp/language-reference/keywords/new.md) to invoke the default constructor. For example, the following statement invokes the default constructor of the `Point` struct:  
   
-```  
+```csharp  
 Point p = new Point(); // Invoke default constructor for the struct.  
 ```  
   

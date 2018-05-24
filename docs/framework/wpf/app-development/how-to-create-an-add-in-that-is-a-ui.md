@@ -1,14 +1,6 @@
 ---
 title: "How to: Create an Add-In That Is a UI"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "creating an add-in that is a UI [WPF]"
   - "add-ins [WPF], UI"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "implementing UI add-ins [WPF]"
   - "pipeline segments [WPF], creating add-ins"
 ms.assetid: 86375525-282b-4039-8352-8680051a10ea
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create an Add-In That Is a UI
 This example shows how to create an add-in that is a Windows Presentation Foundation (WPF) which is hosted by a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] standalone application.  

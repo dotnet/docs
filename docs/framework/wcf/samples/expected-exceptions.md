@@ -1,21 +1,7 @@
 ---
 title: "Expected Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 299a6987-ae6b-43c6-987f-12b034b583ae
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Expected Exceptions
 This sample demonstrates how to catch expected exceptions when using a typed client. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
@@ -25,9 +11,9 @@ This sample demonstrates how to catch expected exceptions when using a typed cli
   
  This sample demonstrates catching and handling the two expected exception types that correct programs must handle: `TimeoutException` and `CommunicationException`.  
   
- Exceptions that are thrown from communication methods on a Windows Communication Foundation (WCF) client are either expected or unexpected. Unexpected exceptions include catastrophic failures like `OutOfMemoryException` and programming errors like `ArgumentNullException` or `InvalidOperationException`. Typically there is no useful way to handle unexpected errors, so typically you should not catch them when calling a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client communication method.  
+ Exceptions that are thrown from communication methods on a Windows Communication Foundation (WCF) client are either expected or unexpected. Unexpected exceptions include catastrophic failures like `OutOfMemoryException` and programming errors like `ArgumentNullException` or `InvalidOperationException`. Typically there is no useful way to handle unexpected errors, so typically you should not catch them when calling a WCF client communication method.  
   
- Expected exceptions from communication methods on a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client include `TimeoutException`, `CommunicationException`, and any derived class of `CommunicationException`. These indicate a problem during communication that can be safely handled by aborting the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and reporting a communication failure. Because external factors can cause these errors in any application, correct applications must catch these exceptions and recover when they occur.  
+ Expected exceptions from communication methods on a WCF client include `TimeoutException`, `CommunicationException`, and any derived class of `CommunicationException`. These indicate a problem during communication that can be safely handled by aborting the WCF client and reporting a communication failure. Because external factors can cause these errors in any application, correct applications must catch these exceptions and recover when they occur.  
   
  There are several derived classes of `CommunicationException` that a client can throw. In some cases, applications also catch some of these to do special handling, but let the others be handled as a `CommunicationException`. This can be accomplished by catching the more specific exception type first and then catching `CommunicationException` in a later catch-clause.  
   

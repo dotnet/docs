@@ -1,21 +1,7 @@
 ---
 title: "WCF Discovery Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 84fad0e4-23b1-45b5-a2d4-c9cdf90bbb22
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Discovery Overview
 The Discovery APIs provide a unified programming model for the dynamic publication and discovery of Web services using the WS-Discovery protocol. These APIs allow services to publish themselves and clients to find published services. Once a service is made discoverable, the service has the ability to send announcement messages as well as listen for and respond to discovery requests. Discoverable services can send Hello messages to announce their arrival on a network and Bye messages to announce their departure from a network. To find a service, clients send a `Probe` request that contains specific criteria such as service contract type, keywords, and scope on the network. Services receive the `Probe` request and determine whether they match the criteria. If a service matches, it responds by sending a `ProbeMatch` message back to the client with the information necessary to contact the service. Clients can also send `Resolve` requests that allow them to find services that may have changed their endpoint address. Matching services respond to `Resolve` requests by sending a `ResolveMatch` message back to the client.  

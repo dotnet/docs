@@ -1,21 +1,7 @@
 ---
 title: "How To: Service Versioning"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
-caps.latest.revision: 6
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Service Versioning
 This topic outlines the basic steps required to create a routing configuration that routes messages to different versions of the same service. In this example, messages are routed to two different versions of a calculator service, `roundingCalc` (v1) and `regularCalc` (v2). Both implementations support the same operations; however the older service, `roundingCalc`, rounds all calculations to the nearest integer value before returning. A client application must be able to indicate whether to use the newer `regularCalc` service.  

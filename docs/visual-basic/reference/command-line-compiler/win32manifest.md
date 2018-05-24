@@ -1,11 +1,6 @@
 ---
 title: "-win32manifest (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/win32manifest compiler option [Visual Basic]"
   - "win32manifest compiler option [Visual Basic]"

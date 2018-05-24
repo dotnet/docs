@@ -1,19 +1,12 @@
 ---
 title: "dynamic (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "dynamic_CSharpKeyword"
 helpviewer_keywords: 
   - "dynamic [C#]"
   - "dynamic keyword [C#]"
 ms.assetid: 9e797102-cc83-4964-bf58-afe4f54d16bc
-caps.latest.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # dynamic (C# Reference)
 The `dynamic` type enables the operations in which it occurs to bypass compile-time type checking. Instead, these operations are resolved at run time. The `dynamic` type simplifies access to COM APIs such as the Office Automation APIs, and also to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).  

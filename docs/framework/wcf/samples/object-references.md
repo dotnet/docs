@@ -1,21 +1,7 @@
 ---
 title: "Object References"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Object References
 This sample demonstrates how to pass objects by references between server and client. The sample uses simulated *social networks*. A social network consists of a `Person` class that contains a list of friends in which each friend is an instance of the `Person` class, with its own list of friends. This creates a graph of objects. The service exposes operations on these social networks.  

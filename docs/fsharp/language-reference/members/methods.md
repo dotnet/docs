@@ -1,12 +1,7 @@
 ---
 title: Methods (F#)
 description: Learn how an F# method is a function associated with a type that are used to expose and implement the functionality and behavior of objects and types.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Methods
 
@@ -18,33 +13,33 @@ A *method* is a function that is associated with a type. In object-oriented prog
 ```fsharp
 // Instance method definition.
 [ attributes ]
-member [inline] self-identifier.method-nameparameter-list [ : return-type ]=
+member [inline] self-identifier.method-name parameter-list [ : return-type ] =
     method-body
 
 // Static method definition.
 [ attributes ]
-static member [inline] method-nameparameter-list [ : return-type ]=
+static member [inline] method-name parameter-list [ : return-type ] =
     method-body
 
 // Abstract method declaration or virtual dispatch slot.
 [ attributes ]
-abstract member self-identifier.method-name : type-signature
+abstract member method-name : type-signature
 
 // Virtual method declaration and default implementation.
 [ attributes ]
-abstract member [inline] self-identifier.method-name : type-signature
+abstract member method-name : type-signature
 [ attributes ]
-default member [inline] self-identifier.method-nameparameter-list[ : return-type ] =
+default self-identifier.method-name parameter-list [ : return-type ] =
     method-body
 
 // Override of inherited virtual method.
 [ attributes ]
-override member [inline] self-identifier.method-nameparameter-list [ : return-type ]=
+override self-identifier.method-name parameter-list [ : return-type ] =
     method-body
 
 // Optional and DefaultParameterValue attributes on input parameters
 [ attributes ]
-[ modifier ] member [inline] self-identifier.method-name ([<Optional; DefaultParameterValue([ default-value ])>] input) [ : return-type ]
+[ modifier ] member [inline] self-identifier.method-name ([<Optional; DefaultParameterValue( default-value )>] input) [ : return-type ]
 ```
 
 ## Remarks

@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.EnlistmentIdentityCheckFailed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 74aeb3e7-f9eb-4491-9e78-5f8c9cbcb434
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.EnlistmentIdentityCheckFailed
 The identity of the incoming message sender did not match the identity derived from the enlistment's endpoint reference.  

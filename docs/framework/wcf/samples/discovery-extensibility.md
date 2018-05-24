@@ -1,21 +1,7 @@
 ---
 title: "Discovery Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6c1bca31-c143-468a-8ddd-32f87998a5ff
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Discovery Extensibility
 The sample in this section show how to extend the Windows Communication Foundation (WCF) discovery feature.  

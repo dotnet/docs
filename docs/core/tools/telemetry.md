@@ -4,12 +4,6 @@ description: Discover the .NET Core tools telemetry features that collect usage 
 author: richlander
 ms.author: mairaw
 ms.date: 08/04/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core CLI Tools telemetry
 

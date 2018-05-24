@@ -1,14 +1,6 @@
 ---
 title: "Object Lifetime Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "events [WPF], ContentRendered"
   - "events [WPF], Deactivated"
@@ -32,12 +24,6 @@ helpviewer_keywords:
   - "startup events [WPF]"
   - "lifetime events of objects [WPF]"
 ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Object Lifetime Events
 This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events that signify stages in an object lifetime of creation, use, and destruction.  

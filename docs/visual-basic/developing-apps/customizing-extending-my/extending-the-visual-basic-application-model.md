@@ -1,16 +1,9 @@
 ---
 title: "Extending the Visual Basic Application Model"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic Application Model, extending"
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Extending the Visual Basic Application Model
 You can add functionality to the application model by overriding the `Overridable` members of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class. This technique allows you to customize the behavior of the application model and add calls to your own methods as the application starts up and shuts down.  

@@ -1,6 +1,6 @@
 ---
 title: "Authentication in SQL Server"
-ms.date: "03/30/2017"
+ms.date: "05/22/2018"
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
 ---
 # Authentication in SQL Server
@@ -11,7 +11,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 -   Mixed mode supports authentication both by Windows and by SQL Server. User name and password pairs are maintained within SQL Server.  
   
 > [!IMPORTANT]
->  We recommend using Windows authentication wherever possible. Windows authentication uses a series of encrypted messages to authenticate users in SQL Server. When SQL Server logins are used, SQL Server login names and passwords are passed across the network, which makes them less secure.  
+>  We recommend using Windows authentication wherever possible. Windows authentication uses a series of encrypted messages to authenticate users in SQL Server. When SQL Server logins are used, SQL Server login names and encrypted passwords are passed across the network, which makes them less secure.  
   
  With Windows authentication, users are already logged onto Windows and do not have to log on separately to SQL Server. The following `SqlConnection.ConnectionString` specifies Windows authentication without requiring the a user name or password.  
   

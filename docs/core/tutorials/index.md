@@ -4,11 +4,6 @@ description: Follow tutorials for learning .NET Core to build apps and libraries
 author: richlander
 ms.author: mairaw
 ms.date: 03/16/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core Tutorials
 

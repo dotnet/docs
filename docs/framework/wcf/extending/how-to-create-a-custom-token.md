@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Custom Token"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,21 +10,15 @@ helpviewer_keywords:
   - "WSSecurityTokenSerializer class"
   - "SecurityToken class"
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Custom Token
 This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](../../../../docs/framework/wcf/samples/custom-token.md) sample.  
   
- A *security token* is essentially an XML element that is used by the Windows Communication Foundation (WCF) security framework to represent claims about a sender inside the SOAP message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
+ A *security token* is essentially an XML element that is used by the Windows Communication Foundation (WCF) security framework to represent claims about a sender inside the SOAP message. WCF security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
   
  Sometimes an authentication mode or credential is not supported by the provided types. In that case, it is necessary to create a custom security token to provide an XML representation of the custom credential inside the SOAP message.  
   
- The following procedures show how to create a custom security token and how to integrate it with the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure. This topic creates a credit card token that is used to pass information about the client's credit card to the server.  
+ The following procedures show how to create a custom security token and how to integrate it with the WCF security infrastructure. This topic creates a credit card token that is used to pass information about the client's credit card to the server.  
   
  For more information about custom credentials and security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
@@ -52,7 +38,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
      [!code-csharp[c_CustomToken#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#4)]
      [!code-vb[c_CustomToken#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#4)]  
   
- Next, a class that represents the custom security token must be created. This class is used by the security token provider, authenticator, and serializer classes to pass information about the security token to and from the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure.  
+ Next, a class that represents the custom security token must be created. This class is used by the security token provider, authenticator, and serializer classes to pass information about the security token to and from the WCF security infrastructure.  
   
 #### To create a custom security token class  
   
@@ -60,14 +46,14 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
 2.  Override the <xref:System.IdentityModel.Tokens.SecurityToken.Id%2A> property. This property is used to get the local identifier of the security token that is used to point to the security token XML representation from other elements inside the SOAP message. In this example, a token identifier can be either passed to it as a constructor parameter or a new random one is generated every time a security token instance is created.  
   
-3.  Implement the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> property. This property returns a collection of security keys that the security token instance represents. Such keys can be used by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to sign or encrypt parts of the SOAP message. In this example, the credit card security token cannot contain any security keys; therefore, the implementation always returns an empty collection.  
+3.  Implement the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> property. This property returns a collection of security keys that the security token instance represents. Such keys can be used by WCF to sign or encrypt parts of the SOAP message. In this example, the credit card security token cannot contain any security keys; therefore, the implementation always returns an empty collection.  
   
-4.  Override the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties. These properties are used by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to determine the validity of the security token instance. In this example, the credit card security token has only an expiration date, so the `ValidFrom` property returns a <xref:System.DateTime> that represents the date and time of the instance creation.  
+4.  Override the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties. These properties are used by WCF to determine the validity of the security token instance. In this example, the credit card security token has only an expiration date, so the `ValidFrom` property returns a <xref:System.DateTime> that represents the date and time of the instance creation.  
   
      [!code-csharp[c_CustomToken#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#1)]
      [!code-vb[c_CustomToken#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#1)]  
   
- When a new security token type is created, it requires an implementation of the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> class. The implementation is used in the security binding element configuration to represent the new token type. The security token parameters class serves as a template that is used to match the actual security token instance to when a message is processed. The template provides additional properties that an application can use to specify criteria that the security token must match to be used or authenticated. The following example does not add any additional properties, so only the security token type is matched when the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure searches for a security token instance to use or to validate.  
+ When a new security token type is created, it requires an implementation of the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> class. The implementation is used in the security binding element configuration to represent the new token type. The security token parameters class serves as a template that is used to match the actual security token instance to when a message is processed. The template provides additional properties that an application can use to specify criteria that the security token must match to be used or authenticated. The following example does not add any additional properties, so only the security token type is matched when the WCF infrastructure searches for a security token instance to use or to validate.  
   
 #### To create a custom security token parameters class  
   
@@ -81,17 +67,17 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
 5.  Implement the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientWindowsIdentity%2A> read-only property. This property returns `true` if the security token type represented by this class can be mapped to a Windows account. If so, the authentication result is represented by a <xref:System.Security.Principal.WindowsIdentity> class instance. In this example, the token cannot be mapped to a Windows account.  
   
-6.  Implement the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityToken%2CSystem.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle%29> method. This method is called by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security framework when it requires a reference to the security token instance represented by this security token parameters class. Both the actual security token instance and <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle> that specifies the type of the reference that is being requested are passed to this method as arguments. In this example, only internal references are supported by the credit card security token. The <xref:System.IdentityModel.Tokens.SecurityToken> class has functionality to create internal references; therefore, the implementation does not require additional code.  
+6.  Implement the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityToken%2CSystem.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle%29> method. This method is called by WCF security framework when it requires a reference to the security token instance represented by this security token parameters class. Both the actual security token instance and <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle> that specifies the type of the reference that is being requested are passed to this method as arguments. In this example, only internal references are supported by the credit card security token. The <xref:System.IdentityModel.Tokens.SecurityToken> class has functionality to create internal references; therefore, the implementation does not require additional code.  
   
-7.  Implement the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InitializeSecurityTokenRequirement%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method. This method is called by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to convert the security token parameters class instance into an instance of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> class. The result is used by security token providers to create the appropriate security token instance.  
+7.  Implement the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InitializeSecurityTokenRequirement%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method. This method is called by WCF to convert the security token parameters class instance into an instance of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> class. The result is used by security token providers to create the appropriate security token instance.  
   
      [!code-csharp[c_CustomToken#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#2)]
      [!code-vb[c_CustomToken#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#2)]  
   
- Security tokens are transmitted inside SOAP messages, which requires a translation mechanism between the in-memory security token representation and the on-the-wire representation. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses a security token serializer to accomplish this task. Every custom token must be accompanied by a custom security token serializer that can serialize and deserialize the custom security token from the SOAP message.  
+ Security tokens are transmitted inside SOAP messages, which requires a translation mechanism between the in-memory security token representation and the on-the-wire representation. WCF uses a security token serializer to accomplish this task. Every custom token must be accompanied by a custom security token serializer that can serialize and deserialize the custom security token from the SOAP message.  
   
 > [!NOTE]
->  Derived keys are enabled by default. If you create a custom security token and use it as the primary token, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] derives a key from it. While doing so, it calls the custom security token serializer to write the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> for the custom security token while serializing the `DerivedKeyToken` to the wire. On the receiving end, when deserializing the token off the wire, the `DerivedKeyToken` serializer expects a `SecurityTokenReference` element as the top-level child under itself. If the custom security token serializer did not add a `SecurityTokenReference` element while serializing its clause type, an exception is thrown.  
+>  Derived keys are enabled by default. If you create a custom security token and use it as the primary token, WCF derives a key from it. While doing so, it calls the custom security token serializer to write the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> for the custom security token while serializing the `DerivedKeyToken` to the wire. On the receiving end, when deserializing the token off the wire, the `DerivedKeyToken` serializer expects a `SecurityTokenReference` element as the top-level child under itself. If the custom security token serializer did not add a `SecurityTokenReference` element while serializing its clause type, an exception is thrown.  
   
 #### To create a custom security token serializer  
   
@@ -147,7 +133,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
      [!code-csharp[c_customToken#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#11)]
      [!code-vb[c_customToken#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#11)]  
   
- The custom security token parameters class created previously is used to tell the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security framework that a custom security token must be used when communicating with a service. The following procedure shows how this can be done.  
+ The custom security token parameters class created previously is used to tell the WCF security framework that a custom security token must be used when communicating with a service. The following procedure shows how this can be done.  
   
 #### To integrate the custom security token with the binding  
   

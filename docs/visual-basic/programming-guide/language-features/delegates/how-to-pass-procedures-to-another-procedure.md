@@ -1,20 +1,10 @@
 ---
 title: "How to: Pass Procedures to Another Procedure in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "AddressOf operator [Visual Basic]"
   - "delegates [Visual Basic], passing procedures"
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Pass Procedures to Another Procedure in Visual Basic
 This example shows how to use delegates to pass a procedure to another procedure.  

@@ -1,12 +1,7 @@
 ---
 title: F# Development Environment Features
 description: Learn which features of Visual Studio 2012 are supported in F#.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Visual F# Development Environment Features
 

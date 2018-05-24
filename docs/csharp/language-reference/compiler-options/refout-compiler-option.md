@@ -1,18 +1,12 @@
 ---
 title: "-refout (C# Compiler Options)"
 ms.date: 08/08/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/refout"
 helpviewer_keywords: 
   - "refout compiler option [C#]"
   - "/refout compiler option [C#]"
   - "-refout compiler option [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # -refout (C# Compiler Options)

@@ -1,10 +1,6 @@
 ---
 title: "-pdb (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/pdb"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "pdb compiler option [C#]"
   - "/pdb compiler option [C#]"
 ms.assetid: e9d0f96a-5b75-45d6-9765-92538dd5f823
-caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -pdb (C# Compiler Options)
 The **-pdb** compiler option specifies the name and location of the debug symbols file.  

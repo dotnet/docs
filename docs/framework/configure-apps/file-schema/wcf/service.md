@@ -14,7 +14,7 @@ The `service` element contains the settings for a Windows Communication Foundati
   
 ```xml  
 <service behaviorConfiguration=String"  
-        name="String"  
+        name="String">  
 </service>  
 ```  
   

@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Variable Sized Text in a ComboBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 helpviewer_keywords: 
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "ComboBox control [Windows Forms], examples [C#]"
   - "ComboBox control [Windows Forms], drawing custom text"
 ms.assetid: ce39b9ea-e626-49fe-bd5a-f567f6d157df
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Variable Sized Text in a ComboBox Control
 This example demonstrates custom drawing of text in a <xref:System.Windows.Forms.ComboBox> control. When an item meets a certain criteria, it is drawn in a larger font and turned red.  

@@ -4,11 +4,6 @@ description: The dotnet msbuild command provides access to the MSBuild command l
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet msbuild
 

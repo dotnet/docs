@@ -1,14 +1,6 @@
 ---
 title: "Understanding Protection Level"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "WCF, security"
   - "ProtectionLevel property"
 ms.assetid: 0c034608-a1ac-4007-8287-b1382eaa8bf2
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Understanding Protection Level
 The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the Windows Communication Foundation (WCF) feature and how it works.  
@@ -48,7 +34,7 @@ The `ProtectionLevel` property is found on many different classes, such as the <
   
 -   The `ProtectionLevel` is a way for the developer to set the *minimum level* that a binding must comply with. When a service is deployed, the actual binding specified in configuration may or may not support the minimum level. For example, by default, the <xref:System.ServiceModel.BasicHttpBinding> class does not supply security (although it can be enabled). Therefore, using it with a contract that has any setting other than `None` will cause an exception to be thrown.  
   
--   If the service requires that the minimum `ProtectionLevel` for all messages is `Sign`, a client (perhaps created by a non-[!INCLUDE[indigo2](../../../includes/indigo2-md.md)] technology) can encrypt and sign all messages (which is more than the minimum required). In this case, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] will not throw an exception because the client has done more than the minimum. Note, however, that [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications (services or clients) will not over-secure a message part if possible but will comply with the minimum level. Also note that when using `Transport` as the security mode, the transport may over-secure the message stream because it is inherently unable to secure at a more granular level.  
+-   If the service requires that the minimum `ProtectionLevel` for all messages is `Sign`, a client (perhaps created by a non-WCF technology) can encrypt and sign all messages (which is more than the minimum required). In this case, WCF will not throw an exception because the client has done more than the minimum. Note, however, that WCF applications (services or clients) will not over-secure a message part if possible but will comply with the minimum level. Also note that when using `Transport` as the security mode, the transport may over-secure the message stream because it is inherently unable to secure at a more granular level.  
   
 -   If you set the `ProtectionLevel` explicitly to either `Sign` or `EncryptAndSign`, then you must use a binding with security enabled or an exception will be thrown.  
   

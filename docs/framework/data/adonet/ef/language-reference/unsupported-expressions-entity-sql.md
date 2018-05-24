@@ -21,7 +21,7 @@ sal > any (select salary from employees)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)], however, does not support such constructs. Equivalent expressions can be written in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] as follows:
 
 ```sql
-not exists(select 0 from employees as e where sal > e.salary)
+not exists(select 0 from employees as e where sal <= e.salary)
 exists(select 0 from employees as e where sal > e.salary)
 ```
 

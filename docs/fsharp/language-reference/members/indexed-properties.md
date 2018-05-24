@@ -1,47 +1,48 @@
 ---
 title: Indexed Properties (F#)
 description: Learn about F# indexed properties, which are properties that provide array-like access to ordered data.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Indexed Properties
 
-*Indexed properties* are properties that provide array-like access to ordered data.
+*Indexed properties* are properties that provide array-like access to ordered data. They come in three forms:
+
+* `Item`
+* `Ordinal`
+* `Cardinal`
+
+An F# member must be named one of these three names to provide array-like access. `IndexerName` is used to represent any of the three options below:
 
 
 ## Syntax
 
 ```fsharp
 // Indexed property that has both get and set defined.
-member self-identifier.PropertyName
+member self-identifier.IndexerName
     with get(index-variable) =
         get-function-body
     and set index-variablesvalue-variables =
         set-function-body
 
 // Indexed property that has get only.
-member self-identifier.PropertyName(index-variable) =
+member self-identifier.IndexerName(index-variable) =
     get-function-body
 
 // Alternative syntax for indexed property with get only
-member self-identifier.PropertyName
+member self-identifier.IndexerName
     with get(index-variables) =
         get-function-body
 
 // Indexed property that has set only.
-member self-identifier.PropertyName
+member self-identifier.IndexerName
     with set index-variablesvalue-variables = 
         set-function-body
 ```
 
 ## Remarks
-The three forms of the previous syntax show how to define indexed properties that have both a `get` and a `set` method, have a `get` method only, or have a `set` method only. You can also combine both the syntax shown for get only and the syntax shown for set only, and produce a property that has both get and set. This latter form allows you to put different accessibility modifiers and attributes on the get and set methods.
+The forms of the previous syntax show how to define indexed properties that have both a `get` and a `set` method, have a `get` method only, or have a `set` method only. You can also combine both the syntax shown for get only and the syntax shown for set only, and produce a property that has both get and set. This latter form allows you to put different accessibility modifiers and attributes on the get and set methods.
 
-When the *PropertyName* is `Item`, the compiler treats the property as a default indexed property. A *default indexed property* is a property that you can access by using array-like syntax on the object instance. For example, if `obj` is an object of the type that defines this property, the syntax `obj.[index]` is used to access the property.
+When the *IndexerName* is `Item`, the compiler treats the property as a default indexed property. A *default indexed property* is a property that you can access by using array-like syntax on the object instance. For example, if `obj` is an object of the type that defines this property, the syntax `obj.[index]` is used to access the property.
 
 The syntax for accessing a nondefault indexed property is to provide the name of the property and the index in parentheses. For example, if the property is `Ordinal`, you write `obj.Ordinal(index)` to access it.
 

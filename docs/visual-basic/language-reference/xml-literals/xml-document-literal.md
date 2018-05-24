@@ -1,12 +1,6 @@
 ---
 title: "XML Document Literal (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralDocument"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "XML documents [Visual Basic], creating"
   - "document literal [Visual Basic]"
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Document Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XDocument> object.  

@@ -1,21 +1,7 @@
 ---
 title: "Poison Message Handling in MSMQ 4.0"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ec8d59e3-9937-4391-bb8c-fdaaf2cbb73e
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Poison Message Handling in MSMQ 4.0
 This sample demonstrates how to perform poison message handling in a service. This sample is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding`. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
@@ -165,7 +151,7 @@ public class OrderProcessorService : IOrderProcessor
 ## Processing messages from the poison message queue  
  The poison message service reads messages from the final poison message queue and processes them.  
   
- Messages in the poison message queue are messages that are addressed to the service that is processing the message, which could be different from the poison message service endpoint. Therefore, when the poison message service reads messages from the queue, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is being received by the poison message service. To continue to receive the message even if the message is addressed to a different endpoint, we must add a `ServiceBehavior` to filter addresses where the match criterion is to match any service endpoint the message is addressed to. This is required to successfully process messages that you read from the poison message queue.  
+ Messages in the poison message queue are messages that are addressed to the service that is processing the message, which could be different from the poison message service endpoint. Therefore, when the poison message service reads messages from the queue, the WCF channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is being received by the poison message service. To continue to receive the message even if the message is addressed to a different endpoint, we must add a `ServiceBehavior` to filter addresses where the match criterion is to match any service endpoint the message is addressed to. This is required to successfully process messages that you read from the poison message queue.  
   
  The poison message service implementation itself is very similar to the service implementation. It implements the contract and processes the orders. The code example is as follows.  
 

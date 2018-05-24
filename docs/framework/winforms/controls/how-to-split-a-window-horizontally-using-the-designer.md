@@ -1,25 +1,11 @@
 ---
 title: "How to: Split a Window Horizontally Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SplitContainer control [Windows Forms], horizontal splitting"
   - "split windows [Windows Forms], horizontal"
   - "windows [Windows Forms], splitting horizontally"
 ms.assetid: 3872a176-891f-4c70-9779-b2ce85b0b102
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Split a Window Horizontally Using the Designer
 This example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  

@@ -1,13 +1,6 @@
 ---
 title: "Walkthrough: Calling Windows APIs (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "DLLs, calling"
   - "Windows API, walkthroughs"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "DllImport attribute, calling Windows API"
   - "Declare statement [Visual Basic], declaring DLL functions"
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Calling Windows APIs (Visual Basic)
 Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows operating system. You use them to perform tasks when it is difficult to write equivalent procedures of your own. For example, Windows provides a function named `FlashWindowEx` that lets you make the title bar for an application alternate between light and dark shades.  

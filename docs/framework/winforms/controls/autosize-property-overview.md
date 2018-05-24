@@ -1,26 +1,12 @@
 ---
 title: "AutoSize Property Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "sizing [Windows Forms], automatic"
   - "layout [Windows Forms], AutoSize"
   - "automatic sizing"
   - "AutoSizeMode property"
 ms.assetid: 62fd82a2-9565-4f65-925b-9d1e66dc4e7d
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # AutoSize Property Overview
 The <xref:System.Windows.Forms.Control.AutoSize%2A> property enables a control to change its size, if necessary, to attain the value specified by the <xref:System.Windows.Forms.Control.PreferredSize%2A> property. You adjust the sizing behavior for specific controls by setting the `AutoSizeMode` property.  

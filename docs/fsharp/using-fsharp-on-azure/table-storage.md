@@ -2,11 +2,7 @@
 title: Get started with Azure Table storage using F#
 description: Store structured data in the cloud using Azure Table storage or Azure Cosmos DB.
 author: sylvanc
-ms.author: phcart
 ms.date: 03/26/2018
-ms.topic: conceptual
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Get started with Azure Table storage and the Azure Cosmos DB Table API using F# # 
 

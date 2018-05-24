@@ -1,18 +1,9 @@
 ---
 title: "Extensible Objects"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "extensible objects [WCF]"
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extensible Objects
 The extensible object pattern is used to either extend existing runtime classes with new functionality or to add new state to an object. Extensions, attached to one of the extensible objects, enable behaviors at very different stages in processing to access shared state and functionality attached to a common extensible object that they can access.  
@@ -60,7 +51,7 @@ where T : IExtensibleObject<T>
   
 -   <xref:System.ServiceModel.OperationContext> – This class represents the operation information that the runtime gathers for each operation.  This includes information such as the incoming message headers, the incoming message properties, the incoming security identity, and other information.  Extensions of this class can either extend the behavior of <xref:System.ServiceModel.OperationContext> or store the state for each operation.  
   
--   <xref:System.ServiceModel.IContextChannel> – This interface allows for the inspection of each state for the channels and proxies built by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime.  Extensions of this class can either extend the behavior of <xref:System.ServiceModel.IClientChannel> or can use it to store the state for each channel.  
+-   <xref:System.ServiceModel.IContextChannel> – This interface allows for the inspection of each state for the channels and proxies built by the WCF runtime.  Extensions of this class can either extend the behavior of <xref:System.ServiceModel.IClientChannel> or can use it to store the state for each channel.  
   
 -  
   

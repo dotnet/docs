@@ -1,27 +1,13 @@
 ---
 title: "Hierarchical Configuration Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 28dcc698-226c-4b77-9e51-8bf45a36216c
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hierarchical Configuration Model
 This sample demonstrates how to implement a hierarchy of configuration files for services. It also shows how bindings, service behaviors, and endpoint behaviors are inherited from higher levels in the hierarchy.  
   
 ## Sample details  
- One of the features developed for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] in [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is the improvement in the hierarchical configuration model. An example of a hierarchical configuration model would be the one defined by Machine.config -> Rootweb.config -> Web.config. In [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], those bindings and behaviors that are defined in upper levels in the configuration hierarchy are added to your services with no explicit configuration. This sample shows how it is possible to simplify your service configuration by relying on configuration elements defined at the computer or the application level.  
+ One of the features developed for WCF in [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is the improvement in the hierarchical configuration model. An example of a hierarchical configuration model would be the one defined by Machine.config -> Rootweb.config -> Web.config. In [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], those bindings and behaviors that are defined in upper levels in the configuration hierarchy are added to your services with no explicit configuration. This sample shows how it is possible to simplify your service configuration by relying on configuration elements defined at the computer or the application level.  
   
  This sample consists of nine services, defined in three levels of hierarchy. `Service1` is at the root. `Service2` and `Service3` inherit the default elements from `Service1`. `Service4`, `Service5`, `Service6` and `Service7` are defined at a third level of the hierarchy, inheriting the default elements from `Service3`. Finally `Service10` and `Service11` are at a fourth level of the hierarchy.  
   

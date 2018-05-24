@@ -1,21 +1,11 @@
 ---
 title: "Documenting Your Code with XML (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [Visual Basic], documenting code"
   - "XML comments, Visual Basic"
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Documenting Your Code with XML (Visual Basic)
 In Visual Basic, you can document your code using XML  

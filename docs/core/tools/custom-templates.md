@@ -4,12 +4,6 @@ description: Learn about custom templates for any type of .NET project or files.
 author: guardrex
 ms.author: mairaw
 ms.date: 08/11/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Custom templates for dotnet new
 

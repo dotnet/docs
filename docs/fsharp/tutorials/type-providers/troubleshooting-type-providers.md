@@ -1,12 +1,7 @@
 ---
 title: Troubleshooting Type Providers
 description: Discover potential solutions for the problems that you are most likely to encounter when you use type providers in F#.
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Troubleshooting Type Providers
 

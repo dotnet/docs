@@ -4,11 +4,6 @@ description: The dotnet publish command publishes your .NET Core project into a 
 author: mairaw
 ms.author: mairaw
 ms.date: 03/10/2018
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet publish
 
@@ -89,8 +84,8 @@ Doesn't perform an implicit restore when running the command.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
-Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
-If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
+Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/publish/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained deployment.
+If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 
 `--self-contained`
 
@@ -128,8 +123,8 @@ Specifies one or several [target manifests](../deploying/runtime-store.md) to us
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
-Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
-If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
+Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/publish/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained deployment.
+If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

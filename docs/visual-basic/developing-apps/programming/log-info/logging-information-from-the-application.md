@@ -1,13 +1,6 @@
 ---
 title: "Logging Information from the Application (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Log object"
   - "My.Log object"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "My.Application.Log object"
   - "examples [Visual Basic], logging application information"
 ms.assetid: 8bf4f047-22d6-48d6-aec5-93b98ad5b8e8
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Logging Information from the Application (Visual Basic)
 This section contains topics that cover how to log information from your application using the `My.Application.Log` or `My.Log` object, and how to extend the application's logging capabilities.  

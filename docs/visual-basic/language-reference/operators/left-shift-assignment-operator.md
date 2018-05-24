@@ -1,12 +1,6 @@
 ---
 title: "&lt;&lt;= Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.<<="
 helpviewer_keywords: 
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "operator<<="
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;&lt;= Operator (Visual Basic)
 Performs an arithmetic left shift on the value of a variable or property and assigns the result back to the variable or property.  

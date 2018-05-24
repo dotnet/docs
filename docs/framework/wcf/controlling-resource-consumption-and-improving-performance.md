@@ -1,21 +1,7 @@
 ---
 title: "Controlling Resource Consumption and Improving Performance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Controlling Resource Consumption and Improving Performance
 This topic describes various properties in different areas of the Windows Communication Foundation (WCF) architecture that work to control resource consumption and affect performance metrics.  
@@ -27,7 +13,7 @@ This topic describes various properties in different areas of the Windows Commun
   
  An example of a serialization quota is the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A?displayProperty=nameWithType> property, which specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method call. An example of an application-level throttle is the <xref:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions%2A?displayProperty=nameWithType> property, which by default restricts the number of concurrent sessionful channel connections to 10. (Unlike the quotas, if this throttle value is reached, the application continues processing but accepts no new sessionful channels, which means that new clients cannot connect until one of the other sessionful channels is ended.)  
   
- These controls are designed to provide an out-of-the-box mitigation against certain types of attacks or to improve performance metrics such as memory footprint, start-up time, and so on. However, depending on the application, these controls can impede service application performance or prevent the application from working at all. For example, an application designed to stream video can easily exceed the default <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A?displayProperty=nameWithType> property. This topic provides an overview of the various controls applied to applications at all levels of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], describes various ways to obtain more information about whether a setting is hindering your application, and describes ways to correct various problems. Most throttles and some quotas are available at the application level, even when the base property is a serialization or transport constraint. For example, you can set the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A?displayProperty=nameWithType> property using the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A?displayProperty=nameWithType> property on the service class.  
+ These controls are designed to provide an out-of-the-box mitigation against certain types of attacks or to improve performance metrics such as memory footprint, start-up time, and so on. However, depending on the application, these controls can impede service application performance or prevent the application from working at all. For example, an application designed to stream video can easily exceed the default <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A?displayProperty=nameWithType> property. This topic provides an overview of the various controls applied to applications at all levels of WCF, describes various ways to obtain more information about whether a setting is hindering your application, and describes ways to correct various problems. Most throttles and some quotas are available at the application level, even when the base property is a serialization or transport constraint. For example, you can set the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A?displayProperty=nameWithType> property using the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A?displayProperty=nameWithType> property on the service class.  
   
 > [!NOTE]
 >  If you have a particular problem, you should first read the [WCF Troubleshooting Quickstart](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md) to see whether your problem (and a solution) is listed there.  
@@ -37,11 +23,11 @@ This topic describes various properties in different areas of the Windows Commun
 ## Detecting Application and Performance Issues Related to Quota Settings  
  The defaults of the preceding values have been chosen to enable basic application functionality across a wide range of application types while providing basic protection against common security issues. However, different application designs might exceed one or more throttle settings although the application otherwise is secure and would work as designed. In these cases, you must identify which throttle values are being exceeded and at what level, and decide on the appropriate course of action to increase application throughput.  
   
- Typically, when writing the application and debugging it, you set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` in the configuration file or programmatically. This instructs [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to return service exception stack traces to the client application for viewing. This feature reports most application-level exceptions in such a way as to display which quota settings might be involved, if that is the problem.  
+ Typically, when writing the application and debugging it, you set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` in the configuration file or programmatically. This instructs WCF to return service exception stack traces to the client application for viewing. This feature reports most application-level exceptions in such a way as to display which quota settings might be involved, if that is the problem.  
   
  Some exceptions happen at run time below the visibility of the application layer and are not returned using this mechanism, and they might not be handled by a custom <xref:System.ServiceModel.Dispatcher.IErrorHandler?displayProperty=nameWithType> implementation. If you are in a development environment like Microsoft Visual Studio, most of these exceptions are displayed automatically. However, some exceptions can be masked by development environment settings such as the [Just My Code](http://go.microsoft.com/fwlink/?LinkId=82174) settings in Visual Studio 2005.  
   
- Regardless of the capabilities of your development environment, you can use capabilities of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] tracing and message logging to debug all exceptions and tune the performance of your applications. For more information, see [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).  
+ Regardless of the capabilities of your development environment, you can use capabilities of WCF tracing and message logging to debug all exceptions and tune the performance of your applications. For more information, see [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).  
   
 ## Performance Issues and XmlSerializer  
  Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at run time, which can result in slow start-up performance.  

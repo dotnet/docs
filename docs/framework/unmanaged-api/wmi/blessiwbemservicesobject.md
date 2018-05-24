@@ -2,10 +2,6 @@
 title: BlessIWbemServicesObject function (Unmanaged API Reference)
 description: The BlessIWbemServicesObject function indicates whether user credentials permit access to an IWbemServices object
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "BlessIWbemServicesObject"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # BlessIWbemServicesObject function
 Indicates whether the user credentials permit access to a specified [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object.   

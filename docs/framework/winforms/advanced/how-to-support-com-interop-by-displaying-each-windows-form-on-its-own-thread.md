@@ -1,14 +1,6 @@
 ---
 title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 helpviewer_keywords: 
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], COM interop"
   - "Windows Forms, interop"
 ms.assetid: a9e04765-d2de-4389-a494-a9a6d07aa6ee
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread
 You can resolve COM interoperability problems by displaying your form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which you can create by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  

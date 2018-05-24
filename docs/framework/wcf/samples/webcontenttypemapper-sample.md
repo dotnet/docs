@@ -1,28 +1,14 @@
 ---
 title: "WebContentTypeMapper Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WebContentTypeMapper Sample
 This sample demonstrates how to map new content types to Windows Communication Foundation (WCF) message body formats.  
   
- The <xref:System.ServiceModel.Description.WebHttpEndpoint> element plugs in the Web message encoder, which allows [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to receive JSON, XML, or raw binary messages at the same endpoint. The encoder determines the body format of the message by looking at the HTTP content-type of the request. This sample introduces the <xref:System.ServiceModel.Channels.WebContentTypeMapper> class, which allows the user to control the mapping between content type and body format.  
+ The <xref:System.ServiceModel.Description.WebHttpEndpoint> element plugs in the Web message encoder, which allows WCF to receive JSON, XML, or raw binary messages at the same endpoint. The encoder determines the body format of the message by looking at the HTTP content-type of the request. This sample introduces the <xref:System.ServiceModel.Channels.WebContentTypeMapper> class, which allows the user to control the mapping between content type and body format.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a set of default mappings for content types. For example, `application/json` maps to JSON and `text/xml` maps to XML. Any content type that is not mapped to JSON or XML is mapped to raw binary format.  
+ WCF provides a set of default mappings for content types. For example, `application/json` maps to JSON and `text/xml` maps to XML. Any content type that is not mapped to JSON or XML is mapped to raw binary format.  
   
  In some scenarios (for example, push-style APIs), the service developer does not control the content type returned by the client. For example, clients might return JSON as `text/javascript` instead of `application/json`. In this case, the service developer must provide a type that derives from <xref:System.ServiceModel.Channels.WebContentTypeMapper> to handle the given content type correctly, as shown in the following sample code.  
   

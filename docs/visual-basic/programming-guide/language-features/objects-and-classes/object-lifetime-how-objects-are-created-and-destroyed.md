@@ -1,13 +1,6 @@
 ---
 title: "Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Constructor"
 helpviewer_keywords: 
@@ -29,9 +22,6 @@ helpviewer_keywords:
   - "Sub Dispose destructor"
   - "garbage collection [Visual Basic], Visual Basic"
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)
 An instance of a class, an object, is created by using the `New` keyword. Initialization tasks often must be performed on new objects before they are used. Common initialization tasks include opening files, connecting to databases, and reading values of registry keys. Visual Basic controls the initialization of new objects using procedures called *constructors* (special methods that allow control over initialization).  

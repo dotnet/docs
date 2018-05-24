@@ -2,10 +2,6 @@
 title: GetMethod function (Unmanaged API Reference)
 description: The GetMethod function retrieves information about a method.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetMethod"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetMethod function
 Retrieves information about the specified method.

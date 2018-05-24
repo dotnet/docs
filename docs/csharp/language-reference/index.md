@@ -1,10 +1,6 @@
 ---
 title: "C# Reference"
 ms.date: 02/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual C#, language reference"
   - "language reference [C#]"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "C# language, reference"
   - "reference, C# language"
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-caps.latest.revision: 43
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Reference
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
@@ -39,11 +32,11 @@ This section provides reference material about C# keywords, operators, special c
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
  [C# Language Specification](../../csharp/language-reference/language-specification/index.md)  
- Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.  
+ Provides links to the latest versions of the C# language specification.  
   
 ## Related Sections  
 
- [C#](../../csharp/index.md)
+ [C# Guide](../../csharp/index.md)  
  Provides a portal to Visual C# documentation.  
   
  [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  

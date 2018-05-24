@@ -1,10 +1,6 @@
 ---
 title: "How to: Programmatically Print XPS Files"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,11 +8,6 @@ helpviewer_keywords:
   - "printing XPS files programmatically [WPF]"
   - "XPS files [WPF], printing programmatically"
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Programmatically Print XPS Files
 You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] at all.  

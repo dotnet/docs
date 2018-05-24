@@ -1,26 +1,12 @@
 ---
 title: "How to: Designate a Windows Forms Button as the Accept Button Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "buttons [Windows Forms], default on Windows Forms"
   - "Accept button on Windows Forms"
   - "Button control [Windows Forms], designating as default"
   - "Windows Forms controls, default button on form"
 ms.assetid: a1da0590-755f-49f2-aca7-609fac6351bf
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Designate a Windows Forms Button as the Accept Button Using the Designer
 On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> control to be the accept button, also known as the default button. Whenever the user presses the ENTER key, the default button is clicked regardless of which other control on the form has the focus. The exceptions to this are when the control with focus is another button — in that case, the button with the focus will be clicked — or a multiline text box, or a custom control that traps the ENTER key.  

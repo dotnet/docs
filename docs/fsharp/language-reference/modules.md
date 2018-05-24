@@ -1,12 +1,7 @@
 ---
 title: Modules (F#)
-description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program. 
-author: cartermp
-ms.author: phcart
+description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program.
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: dotnet-fsharp
-ms.devlang: fsharp
 ---
 # Modules
 
@@ -101,23 +96,24 @@ module rec RecursiveModule =
         member val IsPeeled = false with get, set
         member val Orientation = orientation with get, set
         member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
-        
+
         member self.Peel() = BananaHelpers.peel self // Note the dependency on the BananaHelpers module.
         member self.SqueezeJuiceOut() = raise (DontSqueezeTheBananaException self) // This member depends on the exception above.
 
-    module private BananaHelpers =
-        let peel (b : Banana) =
-            let flip banana =
+    module BananaHelpers =
+        let peel (b: Banana) =
+            let flip (banana: Banana) =
                 match banana.Orientation with
                 | Up -> 
                     banana.Orientation <- Down
                     banana
                 | Down -> banana
 
-            let peelSides banana =
-                for side in banana.Sides do
-                    if side = Unpeeled then
-                        side <- Peeled
+            let peelSides (banana: Banana) =
+                banana.Sides
+                |> List.map (function
+                             | Unpeeled -> Peeled
+                             | Peeled -> Peeled)
 
             match b.Orientation with
             | Up ->   b |> flip |> peelSides

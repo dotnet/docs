@@ -1,13 +1,6 @@
 ---
 title: "How to: Filter Query Results by Using LINQ (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "filtering [Visual Basic]"
   - "filtering data [LINQ in Visual Basic]"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "query samples [Visual Basic]"
   - "filtering data [Visual Basic]"
 ms.assetid: ef103092-9bed-4134-97f4-2db696e83c12
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Filter Query Results by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  

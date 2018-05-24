@@ -1,23 +1,9 @@
 ---
 title: "GetRawInputDevices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "raw input [WPF]"
 ms.assetid: c4d37ecd-065a-4d1c-9e6c-26804ae968ca
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # GetRawInputDevices
 Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.  

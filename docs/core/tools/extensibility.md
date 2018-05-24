@@ -4,12 +4,6 @@ description: Learn how you can extend the Command-line Interface (CLI) tools.
 author: blackdwarf
 ms.author: mairaw
 ms.date: 04/12/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 
 # .NET Core CLI tools extensibility model
@@ -22,15 +16,15 @@ The CLI tools can be extended in three main ways:
 
 1. [Via NuGet packages on a per-project basis](#per-project-based-extensibility)
 
-  Per-project tools are contained within the project's context, but they allow easy installation through restoration.
+   Per-project tools are contained within the project's context, but they allow easy installation through restoration.
 
 2. [Via NuGet packages with custom targets](#custom-targets)
 
-  Custom targets allow you to easily extend the build process with custom tasks.
+   Custom targets allow you to easily extend the build process with custom tasks.
 
 3. [Via the system's PATH](#path-based-extensibility)
 
-  PATH-based tools are good for general, cross-project tools that are usable on a single machine.
+   PATH-based tools are good for general, cross-project tools that are usable on a single machine.
 
 The three extensibility mechanisms outlined above are not exclusive. You can use one, or all, or a combination of them. Which one to pick
 depends largely on the goal you are trying to achieve with your extension.

@@ -2,10 +2,6 @@
 title: GetPropertyHandle function (Unmanaged API Reference)
 description: The GetPropertyHandle function returns a unique handle that identies a property.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetPropertyHandle"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetPropertyHandle function
 Returns a unique handle that identifies a property.

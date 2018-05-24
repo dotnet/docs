@@ -1,17 +1,9 @@
 ---
 title: "My.Application Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Application object"
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Application Object
 Provides properties, methods, and events related to the current application.  

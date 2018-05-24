@@ -4,11 +4,6 @@ description: Unit testing has never been easier. See how to use unit testing in 
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
-ms.topic: conceptual
-ms.prod: dotnet-core
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
 # Unit Testing in .NET Core and .NET Standard
 

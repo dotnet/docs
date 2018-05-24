@@ -1,24 +1,10 @@
 ---
 title: "What&#39;s New in Windows Communication Foundation 4.5"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF [WCF], what's new"
   - "Windows Communication Foundation [WCF], what's new"
 ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
-caps.latest.revision: 35
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # What&#39;s New in Windows Communication Foundation 4.5
 This topic discusses features new to Windows Communication Foundation (WCF).  
@@ -82,7 +68,7 @@ This topic discusses features new to Windows Communication Foundation (WCF).
  In order to help new and existing WCF service developers to configure their services, the Visual Studio XML editor now provides tooltips for every configuration element and its properties that is part of the service configuration file.  
   
 ## Configuring WCF Services in Code  
- Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code.  Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] also allows you to configure services in code. In earlier versions of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET 4.5, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides an easier way to configure both self-hosted and web hosted services in code. For more information, see [Configuring WCF Services in Code](../../../docs/framework/wcf/configuring-wcf-services-in-code.md).  
+ Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code.  Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. WCF also allows you to configure services in code. In earlier versions of WCF (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET 4.5, WCF provides an easier way to configure both self-hosted and web hosted services in code. For more information, see [Configuring WCF Services in Code](../../../docs/framework/wcf/configuring-wcf-services-in-code.md).  
   
 ## ChannelFactory Caching  
  WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:  
@@ -116,7 +102,7 @@ This topic discusses features new to Windows Communication Foundation (WCF).
  Attribute values in configuration files for custom attributes defined in the project now support intellisense to facilitate working with configurations quickly and accurately.  
   
 ## Configuration tooltips  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] elements and attributes now have tooltips in the XML editor, to more easily and accurately identify the purpose of the element or attribute.  
+ WCF elements and attributes now have tooltips in the XML editor, to more easily and accurately identify the purpose of the element or attribute.  
   
 ## Paste Data as Classes  
  In a WCF project, data types defined in XML (such as are exposed in a service) can be pasted directly into a code page. The XML type will be pasted as a CLR type. See [Generating Data Type Classes from XML](../../../docs/framework/wcf/generating-data-type-classes-from-xml.md) for more details.  

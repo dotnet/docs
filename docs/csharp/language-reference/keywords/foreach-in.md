@@ -1,10 +1,6 @@
 ---
 title: "foreach, in (C# Reference)"
 ms.date: 10/11/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -13,12 +9,10 @@ helpviewer_keywords:
   - "foreach statement [C#]"
   - "in keyword [C#]"
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
-caps.latest.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # foreach, in (C# Reference)
-The `foreach` statement repeats a group of embedded statements for each element in an array or an object collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is used to iterate through the collection to get the information that you want, but can not be used to add or remove items from the source collection to avoid unpredictable side effects. If you need to add or remove items from the source collection, use a [for](for.md) loop.
+
+The `foreach` statement repeats a group of embedded statements for each element in an array or an object collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The [foreach statement](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement) is used to iterate through the collection to get the information that you want, but can not be used to add or remove items from the source collection to avoid unpredictable side effects. If you need to add or remove items from the source collection, use a [for](for.md) loop.
   
  The embedded statements continue to execute for each element in the array or collection. After the iteration has been completed for all the elements in the collection, control is transferred to the next statement following the `foreach` block.
   
@@ -33,7 +27,8 @@ The `foreach` statement repeats a group of embedded statements for each element 
  [How to: Access a Collection Class with foreach](../../programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md)  
 
 ## Example
- The following code shows three examples.
+
+The following code shows three examples:
 
 > [!TIP]
 > You can modify the examples to experiment with the syntax and try different
@@ -53,9 +48,12 @@ The `foreach` statement repeats a group of embedded statements for each element 
 [!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L51-L69)]
  
 ## C# Language Specification
+
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See Also  
+
+[The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)
 
 [C# Reference](../index.md)
 

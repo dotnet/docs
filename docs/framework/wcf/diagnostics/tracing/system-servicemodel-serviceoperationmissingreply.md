@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.ServiceOperationMissingReply"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 734d1cac-9f9c-472c-bcf7-bed23454c82c
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.ServiceOperationMissingReply
 System.ServiceModel.ServiceOperationMissingReply  

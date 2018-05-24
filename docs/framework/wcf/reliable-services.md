@@ -1,14 +1,6 @@
 ---
 title: "Reliable Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF [WCF], reliable messaging"
   - "Windows Communication Foundation [WCF], reliable messaging"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], reliable sessions"
   - "service contracts [WCF], reliable services"
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Reliable Services
-Queues and reliable sessions are the Windows Communication Foundation (WCF) features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
+Queues and reliable sessions are the Windows Communication Foundation (WCF) features that implement reliable messaging. This topic explains the reliable messaging features of WCF.  
   
  *Reliable messaging* is how a reliable messaging source (called the *source*) transfers messages reliably to a reliable messaging destination (called the *destination*).  
   
@@ -34,7 +20,7 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
   
 -   Separates the source and the destination from each other. This provides independent failure and recovery of the source and the destination, as well as reliable transfer and delivery of messages, even when the source or destination is unavailable.  
   
- Reliable messaging frequently comes at the cost of high latency. *Latency* is the time it takes for the message to reach the destination from the source. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], therefore, provides the following types of reliable messaging:  
+ Reliable messaging frequently comes at the cost of high latency. *Latency* is the time it takes for the message to reach the destination from the source. WCF, therefore, provides the following types of reliable messaging:  
   
 -   [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md), which offers reliable transfer without the cost of high latency.  
   
@@ -46,7 +32,7 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
  Reliable sessions provide low-latency reliable message transfers. They provide for SOAP messages over any proxies or intermediaries, equivalent to what TCP provides for packets over IP bridges. For more information about reliable sessions, see [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
   
 ### Queues  
- Queues in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provide both reliable transfers of messages and separation between sources and destinations at the cost of high latency. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] queued communication is built on top of Message Queuing (MSMQ).  
+ Queues in WCF provide both reliable transfers of messages and separation between sources and destinations at the cost of high latency. WCF queued communication is built on top of Message Queuing (MSMQ).  
   
  MSMQ ships as an optional component with Windows. The MSMQ service runs as a Windows Service. It captures messages for transmission in a transmission queue on behalf of the source and delivers it to a target queue. The target queue accepts messages on behalf of the destination for later delivery whenever the destination requests messages. The MSMQ managers implement a reliable message-transfer protocol so that messages are not lost in transmission. The protocol can be native or a SOAP-based protocol called SOAP Reliable Messaging Protocol (SRMP).  
   

@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecuritySessionKeyRenewalFaultReceived"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 857542f7-adcb-4769-bf4e-a85b87e58dc8
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySessionKeyRenewalFaultReceived
 System.ServiceModel.Security.SecuritySessionKeyRenewalFaultReceived  

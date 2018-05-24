@@ -1,18 +1,9 @@
 ---
 title: "Overflow (Visual Basic Run-Time Error)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrERRID_Overflow"
 ms.assetid: c6a23279-3086-412a-bcff-ff8ed2cb8c6f
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Overflow (Visual Basic Run-Time Error)
 An overflow results when you attempt an assignment that exceeds the limits of the assignment's target.  

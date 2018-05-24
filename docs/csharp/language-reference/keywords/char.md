@@ -1,19 +1,12 @@
 ---
 title: "char (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "char"
   - "char_CSharpKeyword"
 helpviewer_keywords: 
   - "char data type [C#]"
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
-caps.latest.revision: 27
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # char (C# Reference)
 The `char` keyword is used to declare an instance of the <xref:System.Char?displayProperty=nameWithType> structure that the .NET Framework uses to represent a Unicode character. The value of a `Char` object is a 16-bit numeric (ordinal) value.  

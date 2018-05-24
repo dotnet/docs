@@ -1,19 +1,12 @@
 ---
 title: "&amp;= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "&=_CSharpKeyword"
 helpviewer_keywords: 
   - "AND assignment operator (&=) [C#]"
   - "&= operator [C#]"
 ms.assetid: e8d58f3f-72dd-4b5a-b995-452fcce7e6bb
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &amp;= Operator (C# Reference)
 The AND assignment operator.  
@@ -21,13 +14,13 @@ The AND assignment operator.
 ## Remarks  
  An expression using the `&=` assignment operator, such as  
   
-```  
+```csharp  
 x &= y  
 ```  
   
  is equivalent to  
   
-```  
+```csharp  
 x = x & y  
 ```  
   

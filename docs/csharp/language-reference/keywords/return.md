@@ -1,10 +1,6 @@
 ---
 title: "return (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "return_CSharpKeyword"
   - "return"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "return statement [C#]"
   - "return keyword [C#]"
 ms.assetid: 6da6e152-5b58-4448-8f3f-470dd0617ecd
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # return (C# Reference)
 The `return` statement terminates execution of the method in which it appears and returns control to the calling method. It can also return an optional value. If the method is a `void` type, the `return` statement can be omitted.  

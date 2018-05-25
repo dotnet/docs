@@ -77,7 +77,7 @@ To load the assembly and execute its code, you must either:
 
 The `enabled` attribute for the `<loadFromRemoteSources>` element is effective only when code access security (CAS) is disabled. By default, CAS policy is disabled in the .NET Framework 4 and later versions. If you set `enabled` to `true`, remote assemblies are granted full trust.
 
-If `enabled` is not set to `true`, a <xref:System.IO.FileLoadException> is thrown under the following conditions:
+If `enabled` is not set to `true`, a <xref:System.IO.FileLoadException> is thrown under the either of the following conditions:
 
 - The sandboxing behavior of the current domain is different from its behavior in the .NET Framework 3.5. This requires CAS policy to be disabled, and the current domain not to be sandboxed.
 
@@ -91,7 +91,7 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 - If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom%2A> method to load a local assembly that the operating system has flagged as having been loaded from the web.
 
-- You may get a <xref:System.IO.FileLoadException> in a Windows Virtual PC application when you try to load a file from linked folders on the hosting computer. This error may also occur when you try to load a file from a folder linked over [Remote Desktop Services](http://go.microsoft.com/fwlink/?LinkId=182775) (Terminal Services). To avoid the exception, set `enabled` to `true`.
+- You may get a <xref:System.IO.FileLoadException> in an application that is running in a Windows Virtual PC application. This can happen when you try to load a file from linked folders on the hosting computer. It can also occur when you try to load a file from a folder linked over [Remote Desktop Services](http://go.microsoft.com/fwlink/?LinkId=182775) (Terminal Services). To avoid the exception, set `enabled` to `true`.
 
 ## Configuration file
 

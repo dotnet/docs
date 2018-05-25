@@ -42,9 +42,8 @@ You create classes and structs to implement your program. These techniques are c
 These articles help you work with collections of data.
 
 - [Initialize a dictionary with a collection initializer](../programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md).
-- [Access all the elements in a collection using `foreach`](../programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).
 
-## strings
+## Working with strings
 
 Strings are the fundamental data type used to display or manipulate text. These articles demonstrate common practices with strings.
 

@@ -9,6 +9,9 @@ ms.custom: mvc
 ---
 # Tutorial: Use ML.NET to predict New York Taxi Fares (Regression)
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
 This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting New York City taxi fares.
 
 In this tutorial, you learn how to:

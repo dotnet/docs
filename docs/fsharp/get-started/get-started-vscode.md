@@ -42,17 +42,9 @@ You must also install the [.NET Core SDK](https://www.microsoft.com/net/download
 
 ## Installing Visual Studio Code and the Ionide plugin
 
-You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website. After that, there are two ways to find the Ionide plugin:
+You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website.
 
-1. Use the Command Palette (Ctrl+Shift+P on Windows, ⌘+Shift+P on macOS, Ctrl+Shift+P on Linux) and type the following:
-
-    ```
-    >ext install Ionide
-    ```
-
-2. Click the Extensions icon and search for "Ionide":
-
-    ![](media/getting-started-vscode/vscode-ext.png)
+Next, click the Extensions icon and search for "Ionide":
 
 The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp). However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](https://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support. FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
 
@@ -60,40 +52,40 @@ The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp]
 
 To create a new F# project, open Visual Studio Code in a new folder (you can name it whatever you like).
 
-![](media/getting-started-vscode/vscode-open-dir.png)
+### [Windows](#tab/windows)
 
-Next, open the Command Palette (Ctrl+Shift+P on Windows, ⌘+Shift+P on macOS, Ctrl+Shift+P on Linux) and type the following:
+Next, open the Command Palette (Ctrl+Shift+P) and type the following:
 
-```
->f#: New Project
-```
+>F# new project
 
-This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project.  You should see something like this:
+### [macOS](#tab/macos)
 
-![](media/getting-started-vscode/vscode-new-proj.png)
+Next, open the Command Palette (⌘+Shift+P) and type the following:
+
+>F# new project
+
+### [Linux](#tab/linux)
+
+Next, open the Command Palette (Ctrl+Shift+P) and type the following:
+
+>F# new project
+
+---
+
+This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project. You should see something like this:
 
 > [!NOTE]
-If you don't see the above, try refreshing templates by running the following command in the Command Palette: `>F#: Refresh Project Templates`.
+If you don't see template options, try refreshing templates by running the following command in the Command Palette: `>F#: Refresh Project Templates`.
 
-Select "F#: New Project" by hitting **Enter**, which will take you to this step:
+Select "F#: New Project" by hitting **Enter**, which will take you to the next step, which allows you to select project types.
 
-![](media/getting-started-vscode/vscode-proj-type.png)
+Pick the `classlib` template and hit **Enter**.
 
-This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](https://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
+Next, pick a directory to create the project in. If you leave it blank, it will use the current directory.
 
-![](media/getting-started-vscode/vscode-new-dir.png)
+Finally, name your project in the final step. F# uses [Pascal case](http://c2.com/cgi/wiki?PascalCase) for project names. This article uses `ClassLibraryDemo` as the name. Once you've entered the name you want for your project, hit **Enter**.
 
-This lets you create the project in a different directory, if you like.  Leave it blank for now.  It will create the project in the current directory.  Once you press **Enter**, you will reach the following step:
-
-![](media/getting-started-vscode/vscode-proj-name.png)
-
-This lets you name your project.  F# uses [Pascal case](http://c2.com/cgi/wiki?PascalCase) for project names.  This article uses `ClassLibraryDemo` as the name.  Once you've entered the name you want for your project, hit **Enter**.
-
-If you followed the previous step steps, you should get the Visual Studio Code Workspace on the left-hand side to look something like this:
-
-![](media/getting-started-vscode/vscode-new-proj-explorer.png)
-
-This template generates a few things you'll find useful:
+If you followed the previous step steps, you should get the Visual Studio Code Workspace on the left-hand side to appear with the following:
 
 1. The F# project itself, underneath the `ClassLibraryDemo` folder.
 2. The correct directory structure for adding packages via [`Paket`](https://fsprojects.github.io/Paket/).
@@ -118,7 +110,7 @@ This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/
 
 Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **Alt** key and hit **Enter**.  You'll notice a window pop up below, and it should show something like this:
 
-![](media/getting-started-vscode/vscode-fsi.png)
+![Example of F# Interactive output with Ionide](media/getting-started-vscode/vscode-fsi.png)
 
 This did three things:
 
@@ -165,7 +157,7 @@ If the first character in a word starts with a vowel, add "yay" to the end of th
 
 You may have noticed the following in FSI:
 
-```
+```fsharp
 val toPigLatin : word:string -> string
 ```
 
@@ -189,7 +181,7 @@ There's one final thing to notice about this: there's no explicit instruction to
 
 ## Moving your script code into the implementation file
 
-The previous sections in this article demonstrated a common first step in writing F# code: writing an initial function and executing it interactively with FSI.  This is known as REPL-driven development, where REPL stands for "Read-Evaluate-Print Loop".  It's a great way to experiment with functionality until you have something working.
+The previous sections in this article demonstrated a common first step in writing F# code: writing an initial function and executing it interactively with FSI.  This is known as REPL-driven development, where [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) stands for "Read-Evaluate-Print Loop".  It's a great way to experiment with functionality until you have something working.
 
 The next step in REPL-driven development is to move working code into an F# implementation file.  It can then be compiled by the F# compiler into an assembly which can be executed.
 
@@ -199,11 +191,9 @@ Next, create a new [`module`](../language-reference/modules.md) called `PigLatin
 
 [!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
 
-This is one of the many ways you can organize functions in F# code, and a common approach if you also want to call your code from C# or Visual Basic projects.
-
 Next, open the `Script.fsx` file again, and delete the entire `toPigLatin` function, but make sure to keep the following two lines in the file:
 
-```
+```fsharp
 #load "ClassLibraryDemo.fs"
 open ClassLibraryDemo
 ```
@@ -219,7 +209,7 @@ val it : string = "ananabay"
 val it : string = "appleyay"
 ```
 
-Success!  You get the same results as before, but now loaded from an F# implementation file.  The major difference here is that F# source files are compiled into assemblies which can be executed anywhere, not just in FSI.
+Success! You get the same results as before, but now loaded from an F# implementation file.  The major difference here is that F# source files are compiled into assemblies which can be executed anywhere, not just in FSI.
 
 ## Summary
 

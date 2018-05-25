@@ -25,7 +25,7 @@ The following enhancements were made to existing features:
 
 The new compiler options are:
 
-- `-publicsign` to enable OSS signing of assemblies.
+- `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
 - `-pathmap` to provide a mapping for source directories.
 
 The remainder of this article provides details and links to learn more about each of the improvements.
@@ -52,14 +52,14 @@ class C
 {
     static S s = new S();
 
-    public void M()
+    unsafe public void M()
     {
         int p = s.myFixedField[5];
     }
 }
 ```
 
-The variable `p` doesn't need to be pinned. Note that you still need an `unsafe` context. In earlier versions of C#, you need to declare a second fixed pointer:
+The variable `p` accesses one element in `myFixedField`. You don't need to declare a separate `int*` variable. Note that you still need an `unsafe` context. In earlier versions of C#, you need to declare a second fixed pointer:
 
 ```csharp
 class C
@@ -83,7 +83,7 @@ Fore more information, see the article on the [`fixed` statement](../language-re
 Now, `ref` locals may be reassigned to refer to different instances after being initialized. The following code now compiles:
 
 ```csharp
-ref VeryLargeStruct reflocal = ref veryLargeStruct; // initialization
+ref VeryLargeStruct refLocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 

@@ -63,11 +63,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.SortedDictionary%602> generic class is a binary search tree with O(log `n`) retrieval, where `n` is the number of elements in the dictionary. In this respect, it is similar to the <xref:System.Collections.Generic.SortedList%602> generic class. The two classes have similar object models, and both have O(log `n`) retrieval. Where the two classes differ is in memory use and speed of insertion and removal:  
+ The <xref:System.Collections.Generic.SortedDictionary%602> generic class is a binary search tree with O(log n) retrieval, where n is the number of elements in the dictionary. In this respect, it is similar to the <xref:System.Collections.Generic.SortedList%602> generic class. The two classes have similar object models, and both have O(log n) retrieval. Where the two classes differ is in memory use and speed of insertion and removal:  
   
 -   <xref:System.Collections.Generic.SortedList%602> uses less memory than <xref:System.Collections.Generic.SortedDictionary%602>.  
   
--   <xref:System.Collections.Generic.SortedDictionary%602> has faster insertion and removal operations for unsorted data: O(log `n`) as opposed to O(`n`) for <xref:System.Collections.Generic.SortedList%602>.  
+-   <xref:System.Collections.Generic.SortedDictionary%602> has faster insertion and removal operations for unsorted data: O(log n) as opposed to O(n) for <xref:System.Collections.Generic.SortedList%602>.  
   
 -   If the list is populated all at once from sorted data, <xref:System.Collections.Generic.SortedList%602> is faster than <xref:System.Collections.Generic.SortedDictionary%602>.  
   
@@ -761,7 +761,7 @@
   
  If <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -1669,19 +1669,19 @@ finally
   
  Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
   
- Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IDictionaryEnumerator.Entry%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IDictionaryEnumerator.Entry%2A>.  
+ Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IDictionaryEnumerator.Entry%2A> property throws an <xref:System.InvalidOperationException>. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IDictionaryEnumerator.Entry%2A>.  
   
  The <xref:System.Collections.IDictionaryEnumerator.Entry%2A> property returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IDictionaryEnumerator.Entry%2A> to the next element.  
   
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IDictionaryEnumerator.Entry%2A> is undefined. To set <xref:System.Collections.IDictionaryEnumerator.Entry%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IDictionaryEnumerator.Entry%2A> throws an <xref:System.InvalidOperationException>. To set <xref:System.Collections.IDictionaryEnumerator.Entry%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.IEnumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.IDictionaryEnumerator.Entry%2A> property, <xref:System.Collections.IDictionaryEnumerator.Entry%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
  Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
- This method is an O(1) operation.  
+ This method is an O(log n) operation where n is a number of elements in a collection.
   
    
   
@@ -2090,7 +2090,7 @@ finally
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2101,19 +2101,19 @@ finally
   
  Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
   
- Initially, the enumerator is positioned before the first element in the collection. At this position, the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
   
- The <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property returns the same element until the <xref:System.Collections.IEnumerator.MoveNext%2A> method is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+ The <xref:System.Collections.IEnumerator.Current%2A> property returns the same element until the <xref:System.Collections.IEnumerator.MoveNext%2A> method is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
   
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.IEnumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.IEnumerator.Current%2A> property, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
  Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
- This method is an O(1) operation.  
+ This method is an O(log n) operation where n is a number of elements in a collection.
   
  ]]></format>
         </remarks>

@@ -399,7 +399,7 @@ Calls to the <xref:System.Span%601.Equals%2A> method are not supported. The meth
         <returns>An enumerator for this span.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, you can use the C# `foreach` statement` and the Visual Basic `For Each`...`Next` construct to enumerate a <xref:System.Span%601>.
+Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, you can use the C# `foreach` statement and the Visual Basic `For Each`...`Next` construct to enumerate a <xref:System.Span%601>.
 
        ]]></format>
         </remarks>

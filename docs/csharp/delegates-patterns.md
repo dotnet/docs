@@ -145,7 +145,7 @@ each message is generated.
 
 Here is that file based logger:
 
-[!code-csharp[FileLogger](../../samples/csharp/delegates-and-events/FilerLogger.cs#FileLogger "Log to files")]
+[!code-csharp[FileLogger](../../samples/csharp/delegates-and-events/FileLogger.cs#FileLogger "Log to files")]
 
 
 Once you've created this class, you can instantiate it and it attaches

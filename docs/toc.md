@@ -215,7 +215,6 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new/index.md)
-### [Configure language version](csharp/whats-new/configure-language-version.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [C# 7.1](csharp/whats-new/csharp-7-1.md)
@@ -425,7 +424,6 @@
 # [Visual Basic Guide](visual-basic/index.md)
 ## [Get Started](visual-basic/getting-started/index.md)
 ### [What's New for Visual Basic](visual-basic/getting-started/whats-new.md)
-### [Configure language version](visual-basic/getting-started/configure-language-version.md)
 ### [Visual Basic Breaking Changes in Visual Studio](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [Additional Resources for Visual Basic Programmers](visual-basic/getting-started/additional-resources.md)
 
@@ -552,6 +550,7 @@
 ### [Walkthrough: Implementing Inheritance with COM Objects](visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
 
 ## [Language Reference](visual-basic/language-reference/index.md)
+### [Configure language version](visual-basic/language-reference/configure-language-version.md)
 ### [Typographic and Code Conventions](visual-basic/language-reference/typographic-and-code-conventions.md)
 ### [Visual Basic Runtime Library Members](visual-basic/language-reference/runtime-library-members.md)
 ### [Keywords](visual-basic/language-reference/keywords/index.md)

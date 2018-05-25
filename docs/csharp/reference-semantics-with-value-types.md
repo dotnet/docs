@@ -15,7 +15,7 @@ semantics with value types. Use these features wisely to minimize both allocatio
 and copy operations. This article explores those new features.
 
 Much of the sample code in this article demonstrates features added in C# 7.2. In order to
-use those features, you must configure your project to use C# 7.2 or later. For more information on setting the language version see [configure the language version](whats-new/configure-language-version.md).
+use those features, you must configure your project to use C# 7.2 or later. For more information on setting the language version see [configure the language version](language-reference/configure-language-version.md).
 
 ## Passing arguments by readonly reference
 

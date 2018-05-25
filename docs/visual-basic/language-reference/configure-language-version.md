@@ -13,7 +13,7 @@ This capability decouples the decision to install new versions of the SDK and to
 There are three ways to set the language version:
 
 - Manually edit your [**.vbproj** file](#edit-the-vbproj-file)
-- Set the language version [for multiople projects in a subdirectory](#configure-multiple-projects)
+- Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects)
 - Configure the [`-langversion` compiler option](#set-the-langversion-compiler-option)
 
 ## Edit the vbproj file
@@ -56,8 +56,8 @@ You can create a **Directory.build.props** file that contains the `<LangVersion>
 </Project>
 ```
 
-Now, builds in every sub-directory of the directory containing that file will use Visual Basic version 15.5 syntax. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build.md).
+Now, builds in every subdirectory of the directory containing that file will use Visual Basic version 15.5 syntax. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build.md).
 
 ## Set the langversion compiler option
 
-You can use the `-langversion` command line option. For more information, see the article on the [--langversion](../reference/command-line-compiler/langversion.md) compiler option.
+You can use the `-langversion` command line option. For more information, see the article on the [-langversion](../reference/command-line-compiler/langversion.md) compiler option. You can see a list of the valid values by typing  `vbc -langversion:?` .

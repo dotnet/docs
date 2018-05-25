@@ -27,7 +27,7 @@ The new language features in this release are:
 Finally, the compiler has two options `/refout` and `/refonly` that
 control [reference assembly generation](#reference-assembly-generation).
 
-To use the latest features in a point release, you need to [configure the compiler language version](configure-language-version.md) and select the version.
+To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version.
 
 ## Async main
 

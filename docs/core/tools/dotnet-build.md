@@ -3,7 +3,7 @@ title: dotnet build command - .NET Core CLI
 description: The dotnet build command builds a project and all of its dependencies.
 author: mairaw
 ms.author: mairaw
-ms.date: 03/10/2018
+ms.date: 05/25/2018
 ---
 # dotnet-build
 
@@ -35,15 +35,15 @@ The `dotnet build` command builds the project and its dependencies into a set of
 
 If the project has third-party dependencies, such as libraries from NuGet, they're resolved from the NuGet cache and aren't available with the project's built output. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. This is in contrast to the behavior of the .NET Framework in which building an executable project (an application) produces output that's runnable on any machine where the .NET Framework is installed. To have a similar experience with .NET Core, you need to use the [dotnet publish](dotnet-publish.md) command. For more information, see [.NET Core Application Deployment](../deploying/index.md).
 
-Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling cannot resolve reference assemblies, which results in errors. With .NET Core 1.x SDK, you needed to explicitily run the `dotnet restore` before running `dotnet build`. Starting with .NET Core 2.0 SDK, `dotnet restore` runs implicitily when you run `dotnet build`. If you want to disable implicit restore when running the build command, you can pass the `--no-restore` option.
+Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling cannot resolve reference assemblies, which results in errors. With .NET Core 1.x SDK, you needed to explicitly run the `dotnet restore` before running `dotnet build`. Starting with .NET Core 2.0 SDK, `dotnet restore` runs implicitly when you run `dotnet build`. If you want to disable implicit restore when running the build command, you can pass the `--no-restore` option.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
-`dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](/visualstudio/msbuild/incremental-builds) for more information.
+`dotnet build` uses MSBuild to build the project, so it supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
 
-In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. Learn more about these options in the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). 
+In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
 
-Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that will produce executable code:
+Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that produces executable code:
 
 ```xml
 <PropertyGroup>
@@ -51,7 +51,7 @@ Whether the project is executable or not is determined by the `<OutputType>` pro
 </PropertyGroup>
 ```
 
-In order to produce a library, omit the `<OutputType>` property. The main difference in built output is that the IL DLL for a library doesn't contain entry points and can't be executed. 
+In order to produce a library, omit the `<OutputType>` property. The main difference in built output is that the IL DLL for a library doesn't contain entry points and can't be executed.
 
 ## Arguments
 
@@ -73,7 +73,7 @@ Compiles for a specific [framework](../../standard/frameworks.md). The framework
 
 `--force`
 
- Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the *project.assets.json* file.
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this option is the same as deleting the *project.assets.json* file.
 
 `-h|--help`
 
@@ -85,7 +85,7 @@ Ignores project-to-project (P2P) references and only builds the root project spe
 
 `--no-incremental`
 
-Marks the build as unsafe for incremental build. This turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
+Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
 
 `--no-restore`
 
@@ -127,7 +127,7 @@ Ignores project-to-project (P2P) references and only builds the root project spe
 
 `--no-incremental`
 
-Marks the build as unsafe for incremental build. This turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
+Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 

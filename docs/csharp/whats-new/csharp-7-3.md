@@ -203,4 +203,4 @@ For more information, see the [-publicsign compiler option](../language-referenc
 
 The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `-pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
 
-For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compile-option.md) article.
+For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compiler-option.md) article.

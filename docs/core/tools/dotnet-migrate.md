@@ -3,7 +3,7 @@ title: dotnet migrate command - .NET Core CLI
 description: The dotnet migrate command migrates a project and all of its dependencies.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 05/25/2018
 ---
 # dotnet migrate
 
@@ -15,24 +15,27 @@ ms.date: 08/14/2017
 
 ## Synopsis
 
-`dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file] [-s|--skip-project-references] [-r|--report-file] [--format-report-file-json] [--skip-backup] [-h|--help]`
+```
+dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [--format-report-file-json] [-r|--report-file] [-s|--skip-project-references] [--skip-backup] [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file]
+dotnet migrate [-h|--help]
+```
 
 ## Description
 
-The `dotnet migrate` command migrates a valid Preview 2 *project.json*-based project to a valid .NET Core SDK 1.0 *csproj* project. 
+The `dotnet migrate` command migrates a valid Preview 2 *project.json*-based project to a valid .NET Core SDK 1.0 *csproj* project.
 
-By default, the command migrates the root project and any project references that the root project contains. This behavior is disabled using the `--skip-project-references` option at runtime. 
+By default, the command migrates the root project and any project references that the root project contains. This behavior is disabled using the `--skip-project-references` option at runtime.
 
-Migration is performed on the following:
+Migration can be performed on the following assets:
 
 * A single project by specifying the *project.json* file to migrate.
 * All of the directories specified in the *global.json* file by passing in a path to the *global.json* file.
 * A *solution.sln* file, where it migrates the projects referenced in the solution.
-* On all sub-directories of the given directory recursively.
+* On all subdirectories of the given directory recursively.
 
 The `dotnet migrate` command keeps the migrated *project.json* file inside a `backup` directory, which it creates if the directory doesn't exist. This behavior is overridden using the `--skip-backup` option.
 
-By default, the migration operation outputs the state of the migration process to standard output (STDOUT). If you use the `--report-file <REPORT_FILE>` option, the output is saved to the file specify. 
+By default, the migration operation outputs the state of the migration process to standard output (STDOUT). If you use the `--report-file <REPORT_FILE>` option, the output is saved to the file specify.
 
 The `dotnet migrate` command only supports valid Preview 2 *project.json*-based projects. This means that you cannot use it to migrate DNX or Preview 1 *project.json*-based projects directly to MSBuild/csproj projects. You first need to manually migrate the project to a Preview 2 *project.json*-based project and then use the `dotnet migrate` command to migrate the project.
 
@@ -43,17 +46,33 @@ The `dotnet migrate` command only supports valid Preview 2 *project.json*-based 
 The path to one of the following:
 
 * a *project.json* file to migrate.
-* a *global.json* file, it will migrate the folders specified in *global.json*.
-* a *solution.sln* file, it will migrate the projects referenced in the solution.
-* a directory to migrate, it will recursively search for *project.json* files to migrate.
+* a *global.json* file: the folders specified in *global.json* are migrated.
+* a *solution.sln* file: the projects referenced in the solution are migrated.
+* a directory to migrate: recursively searches for *project.json* files to migrate inside the specified directory.
 
 Defaults to current directory if nothing is specified.
 
 ## Options
 
+`--format-report-file-json <REPORT_FILE>`
+
+Output migration report file as JSON rather than user messages.
+
 `-h|--help`
 
 Prints out a short help for the command.
+
+`-r|--report-file <REPORT_FILE>`
+
+Output migration report to a file in addition to the console.
+
+`-s|--skip-project-references [Debug|Release]`
+
+Skip migrating project references. By default, project references are migrated recursively.
+
+`--skip-backup`
+
+Skip moving *project.json*, *global.json*, and *\*.xproj* to a `backup` directory after successful migration.
 
 `-t|--template-file <TEMPLATE_FILE>`
 
@@ -66,22 +85,6 @@ The version of the sdk package that's referenced in the migrated app. The defaul
 `-x|--xproj-file <FILE>`
 
 The path to the xproj file to use. Required when there is more than one xproj in a project directory.
-
-`-s|--skip-project-references [Debug|Release]`
-
-Skip migrating project references. By default, project references are migrated recursively.
-
-`-r|--report-file <REPORT_FILE>`
-
-Output migration report to a file in addition to the console.
-
-`--format-report-file-json <REPORT_FILE>`
-
-Output migration report file as JSON rather than user messages.
-
-`--skip-backup`
-
-Skip moving *project.json*, *global.json*, and *\*.xproj* to a `backup` directory after successful migration.
 
 ## Examples
 

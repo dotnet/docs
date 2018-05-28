@@ -98,7 +98,7 @@ Remove the existing class definition and add the following code, which has two c
 
 [!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#2 "Define the taxi trip and fare predictions classes")]
 
-`TaxiTrip` is the input data set class and has definitions for each of the data set columns. The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`fare_amount`) and a `Store` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
+`TaxiTrip` is the input data set class and has definitions for each of the data set columns. The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`fare_amount`) and a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
 
 Now go back to the **Program.cs** file. In `Main`, replace the `Console.WriteLine("Hello World!")` with the following code:
 

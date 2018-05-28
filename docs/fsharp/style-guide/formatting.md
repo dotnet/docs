@@ -455,6 +455,17 @@ type MyClass() =
     member x.Result = doSomething()
 ```
 
+### Use camelCase for module-bound public functions
+
+When a module-bound function is part of a public API, it should also use camelCase:
+
+```fsharp
+module MyAPI =
+    let publicFunctionOne param1 param2 param2 = ...
+    
+    let publicFunctonTwo param1 param2 param3 = ...
+```
+
 ### Use camelCase for internal and private module-bound values and functions
 
 Use camelCase for private module-bound values, including the following:

@@ -457,7 +457,7 @@ type MyClass() =
 
 ### Use camelCase for module-bound public functions
 
-When a module-bound function is part of a public API, it should also use camelCase:
+When a module-bound function is part of a public API, it should use camelCase:
 
 ```fsharp
 module MyAPI =

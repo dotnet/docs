@@ -121,8 +121,8 @@ protected void Button1_Click(object sender, EventArgs e)
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a cache entry should be evicted after a specified duration.</summary>
-        <value>The period of time that must pass before a cache entry is evicted. The default value is <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" />, meaning that the entry does not expire.</value>
+        <summary>Gets or sets a value that indicates whether a cache entry should be evicted at a specified point in time.</summary>
+        <value>The point in time at which a cache entry is evicted. The default value is <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" />, meaning that the entry does not expire.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

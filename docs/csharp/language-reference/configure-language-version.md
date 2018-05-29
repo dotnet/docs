@@ -24,9 +24,9 @@ Visual Studio helps you determine the language version you need. If you use a la
 
 ## Set the language version in Visual Studio
 
-You can set the version in Visual Studio. Right-click on the project node in Solution Explorer and select **Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown, select the version. The following image shows the "latest" setting.
+You can set the version in Visual Studio. Right-click on the project node in Solution Explorer and select **Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown, select the version. The following image shows the "latest" setting:
 
-![Setting the language version](./media/configure-language-version/advanced-build-settings.png)
+![Screenshot of advanced build settings where you can specify the language version](./media/configure-language-version/advanced-build-settings.png)
 
 > [!NOTE]
 > If you use the Visual Studio IDE to update your csproj files, the IDE
@@ -92,4 +92,4 @@ Now, builds in every subdirectory of the directory containing that file will use
 
 ## Set the langversion compiler option
 
-You can use the `-langversion` command line option. For more information, see the article on the [-langversion](../language-reference/compiler-options/langversion-compiler-option.md) compiler option. You can see a list of the valid values by typing  `vbc -langversion:?`.
+You can use the `-langversion` command-line option. For more information, see the article on the [-langversion](../language-reference/compiler-options/langversion-compiler-option.md) compiler option. You can see a list of the valid values by typing  `csc -langversion:?`.

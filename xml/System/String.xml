@@ -10912,7 +10912,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Substring#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.String.Substring/cs/Substring1.cs#1)]
  [!code-vb[System.String.Substring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.String.Substring/vb/Substring1.vb#1)]  
   
- The <xref:System.String.IndexOf%2A> method is used to get the position of the equals character in the string.. The call to the <xref:System.String.Substring%28System.Int32%2CSystem.Int32%29> method extracts the key name., which starts from the first character in the string and extends for the number of characters returned by the call to the    <xref:System.String.IndexOf%2A> method. The call to the <xref:System.String.Substring%28System.Int32%29> method then extracts the value assigned to the key. It starts at one character position beyond the equals character and extends to the end of the string.  
+ The <xref:System.String.IndexOf%2A> method is used to get the position of the equals character in the string. The call to the <xref:System.String.Substring%28System.Int32%2CSystem.Int32%29> method extracts the key name, which starts from the first character in the string and extends for the number of characters returned by the call to the <xref:System.String.IndexOf%2A> method. The call to the <xref:System.String.Substring%28System.Int32%29> method then extracts the value assigned to the key. It starts at one character position beyond the equals character and extends to the end of the string.  
   
  ]]></format>
         </remarks>
@@ -11023,7 +11023,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Substring#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.String.Substring/cs/Substring1.cs#1)]
  [!code-vb[System.String.Substring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.String.Substring/vb/Substring1.vb#1)]  
   
- The <xref:System.String.IndexOf%2A> method is used to get the position of the equals character in the string.. The call to the <xref:System.String.Substring%28System.Int32%2CSystem.Int32%29> method extracts the key name., which starts from the first character in the string and extends for the number of characters returned by the call to the    <xref:System.String.IndexOf%2A> method. The call to the <xref:System.String.Substring%28System.Int32%29> method then extracts the value assigned to the key. It starts at one character position beyond the equals character and extends to the end of the string.  
+ The <xref:System.String.IndexOf%2A> method is used to get the position of the equals character in the string. The call to the <xref:System.String.Substring%28System.Int32%2CSystem.Int32%29> method extracts the key name, which starts from the first character in the string and extends for the number of characters returned by the call to the <xref:System.String.IndexOf%2A> method. The call to the <xref:System.String.Substring%28System.Int32%29> method then extracts the value assigned to the key. It starts at one character position beyond the equals character and extends to the end of the string.  
   
  ]]></format>
         </remarks>

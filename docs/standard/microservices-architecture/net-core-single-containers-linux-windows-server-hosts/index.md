@@ -12,11 +12,12 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
+
 # Deploying Single-Container-Based .NET Core Web Applications on Linux or Windows Nano Server Hosts
 
-*You can use Docker containers for monolithic deployment of simpler web applications. This improves continuous integration and continuous deployment pipelines and helps achieve deployment-to-production success. No more “It works in my machine, why does not work in production?”*
+_You can use Docker containers for monolithic deployment of simpler web applications. This improves continuous integration and continuous deployment pipelines and helps achieve deployment-to-production success. No more “It works in my machine, why does it not work in production?”_
 
-A microservices-based architecture has many benefits, but those benefits come at a cost of increased complexity. In some cases, the costs outweigh the benefits, and you will be better served with a monolithic deployment application running in a single container or in just a few containers. 
+A microservices-based architecture has many benefits, but those benefits come at a cost of increased complexity. In some cases, the costs outweigh the benefits, and you will be better served with a monolithic deployment application running in a single container or in just a few containers.
 
 A monolithic application might not be easily decomposable into well-separated microservices. You have learned that these should be partitioned by function: microservices should work independently of each other to provide a more resilient application. If you cannot deliver feature slices of the application, separating it only adds complexity.
 
@@ -42,9 +43,7 @@ The [eShopWeb](https://github.com/dotnet-architecture/eShopOnContainers/tree/mas
 
 The application uses a SQL Server database for the catalog storage. In container-based deployments, this monolithic application can access the same data store as the microservices-based application. The application is configured to run SQL Server in a container alongside the monolithic application. In a production environment, SQL Server would run on a high-availability machine, outside of the Docker host. For convenience in a dev or test environment, we recommend running SQL Server in its own container.
 
-The initial feature set only enables browsing the catalog. Updates would enable the full feature set of the containerized application. A more advanced monolithic web application architecture is described in the [ASP.NET Web Application architecture practices](https://aka.ms/webappebook) e-book and related [eShopOnWeb sample application](http://aka.ms/WebAppArchitecture), although in that case it is not running on Docker containers because that scenario focuses on plain web development with ASP.NET Core.
-
-However, the simplified version available in eShopOnContainers (eShopWeb) runs in a Docker container.
+The initial feature set only enables browsing the catalog. Updates would enable the full feature set of the containerized application. A more advanced monolithic web application architecture is described in the [ASP.NET Web Application architecture practices](https://aka.ms/webappebook) e-book and related [eShopOnWeb sample application](http://aka.ms/WebAppArchitecture).
 
 ## Docker support
 
@@ -76,7 +75,7 @@ services:
     image: microsoft/mssql-server-linux
 ```
 
-The depends\_on directive tells Docker that the eShopWeb image depends on the sql.data image. Lines below that are the instructions to build an image tagged sql.data using the microsoft/mssql-server-linux image.
+The depends_on directive tells Docker that the eShopWeb image depends on the sql.data image. Lines below that are the instructions to build an image tagged sql.data using the microsoft/mssql-server-linux image.
 
 The **docker-compose** project displays the other docker-compose files under the main docker-compose.yml node to provide a visual indication that these files are related. The docker-compose-override.yml file contains settings for both services, such as connection strings and other application settings.
 
@@ -84,7 +83,7 @@ The following example shows the docker-compose.vs.debug.yml file, which contains
 
 ```yml
 version: '2'
-  
+
 services:
   eshopweb:
     image: eshop/web:dev
@@ -106,7 +105,7 @@ The last file added is docker-compose.ci.build.yml. This would be used from the 
 
 ```yml
 version: '2'
-  
+
 services:
   ci-build:
     image: microsoft/aspnetcore-build:latest
@@ -128,7 +127,7 @@ If you launch the application in the debugger, Visual Studio will attach to the 
 
 This section describes a few issues that might arise when your run containers locally and suggests some fixes.
 
-### Stopping Docker containers 
+### Stopping Docker containers
 
 After you launch the containerized application, the containers continue to run, even after you have stopped debugging. You can run the docker ps command from the command line to see which containers are running. The docker stop command stops a running container, as shown in Figure 6-2.
 
@@ -142,6 +141,5 @@ You might need to stop running processes when you switch between different confi
 
 The wizard that adds Docker support communicates with the running Docker process. The wizard will not run correctly if Docker is not running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
->[!div class="step-by-step"]
-[Previous] (../docker-application-development-process/docker-app-development-workflow.md)
-[Next] (../containerize-net-framework-applications/index.md)
+> [!div class="step-by-step"][previous] (../docker-application-development-process/docker-app-development-workflow.md)
+> [Next](../containerize-net-framework-applications/index.md)

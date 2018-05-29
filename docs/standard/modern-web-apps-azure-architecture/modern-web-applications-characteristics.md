@@ -10,6 +10,7 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
+
 # Characteristics of Modern Web Applications
 
 > "… with proper design, the features come cheaply. This approach is arduous, but continues to succeed."  
@@ -23,15 +24,16 @@ ASP.NET Core is optimized for modern web applications and cloud-based hosting sc
 
 ## Reference Application: eShopOnWeb
 
-This guidance includes a reference application, *eShopOnWeb*, that demonstrates some of the principles and recommendations. The application is a simple online store which supports browsing through a catalog of shirts, coffee mugs, and other marketing items. The reference application is deliberately simple in order to make it easy to understand.
+This guidance includes a reference application, _eShopOnWeb_, that demonstrates some of the principles and recommendations. The application is a simple online store which supports browsing through a catalog of shirts, coffee mugs, and other marketing items. The reference application is deliberately simple in order to make it easy to understand.
 
 **Figure 2-1.** eShopOnWeb
 
 ![](./media/image2-1.png)
 
 > ### Reference Application
-> - **eShopOnWeb**  
-> <https://github.com/dotnet/eShopOnWeb>
+>
+> * **eShopOnWeb**  
+>   <https://github.com/dotnet/eShopOnWeb>
 
 ## Cloud-Hosted and Scalable
 
@@ -57,7 +59,7 @@ Traditional web applications have involved little client-side behavior, but inst
 
 Single Page Applications (SPAs), by contrast, involve very few dynamically generated server-side page loads (if any). Many SPAs are initialized within a static HTML file which loads the necessary JavaScript libraries to start and run the app. These apps make heavy usage of web APIs for their data needs, and can provide much richer user experiences.
 
-Many web applications involve a combination of traditional web application behavior (typically for content) and SPAs (for interactivity). ASP.NET Core supports both MVC and web APIs in the same application, using the same set of tools and underlying framework libraries.
+Many web applications involve a combination of traditional web application behavior (typically for content) and SPAs (for interactivity). ASP.NET Core supports both MVC (Views and/or Razor Pages) and web APIs in the same application, using the same set of tools and underlying framework libraries.
 
 ## Simple Development and Deployment
 
@@ -68,13 +70,13 @@ ASP.NET Core applications can be written using simple text editors and command l
 In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust and reliable platform for building web applications. ASP.NET supports MVC and Web API development models, as well as Web Forms, which is well-suited to rich page-based application development and features a rich third-party component ecosystem. Windows Azure has great longstanding support for ASP.NET 4.x applications, and many developers are familiar with this platform.
 
 > ### References – Modern Web Applications
-> - **Introduction to ASP.NET Core**  
-> <https://docs.microsoft.com/aspnet/core/>
-> - **Six Key Benefits of ASP.NET Core which make it Different and Better**  
-> <https://blog.trigent.com/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
-> - **Testing in ASP.NET Core**  
-> <https://docs.microsoft.com/aspnet/core/testing/>
+>
+> * **Introduction to ASP.NET Core**  
+>   <https://docs.microsoft.com/aspnet/core/>
+> * **Six Key Benefits of ASP.NET Core which make it Different and Better**  
+>   <https://blog.trigent.com/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
+> * **Testing in ASP.NET Core**  
+>   <https://docs.microsoft.com/aspnet/core/testing/>
 
->[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (choose-between-traditional-web-and-single-page-apps.md)
+> [!div class="step-by-step"][previous] (index.md)
+> [Next](choose-between-traditional-web-and-single-page-apps.md)

@@ -2193,8 +2193,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the serial number of the X.509v3 certificate as a hexadecimal string.</summary>
-        <returns>The serial number of the X.509 certificate as a hexadecimal string.</returns>
+        <summary>Returns the serial number of the X.509v3 certificate as a little-endian hexadecimal string .</summary>
+        <returns>The serial number of the X.509 certificate as a little-endian hexadecimal string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

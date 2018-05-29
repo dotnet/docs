@@ -7,8 +7,6 @@ ms.date: 05/07/2018
 ---
 # What's new in .NET Core 2.1
 
-[!INCLUDE[Applies to](~/includes/whats-new-applies-to.md)]
-
 .NET Core 2.1 includes enhancements and new features in the following areas:
 
 - [Tooling](#tooling)

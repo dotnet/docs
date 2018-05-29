@@ -137,7 +137,7 @@ As you may have noticed, the lines in FSI are terminated with `;;`. This is beca
 
 If you're not sure about what the code is actually doing, here's a step-by-step.
 
-As you can see, `toPigLatin` is a function which takes a word as its input and converts it to a Pig-Latin representation of that word. The rules for this are as follows:
+As you can see, `toPigLatin` is a function that takes a word as its input and converts it to a Pig-Latin representation of that word. The rules for this are as follows:
 
 If the first character in a word starts with a vowel, add "yay" to the end of the word. If it doesn't start with a vowel, move that first character to the end of the word and add "ay" to it.
 
@@ -147,15 +147,15 @@ You may have noticed the following in FSI:
 val toPigLatin : word:string -> string
 ```
 
-This states that `toPigLatin` is a function which takes in a `string` as input (called `word`), and returns another `string`. This is known as the [type signature of the function](https://fsharpforfunandprofit.com/posts/function-signatures/), a fundamental piece of F# that's key to understanding F# code. You'll also notice this if you hover over the function in Visual Studio Code.
+This states that `toPigLatin` is a function that takes in a `string` as input (called `word`), and returns another `string`. This is known as the [type signature of the function](https://fsharpforfunandprofit.com/posts/function-signatures/), a fundamental piece of F# that's key to understanding F# code. You'll also notice this if you hover over the function in Visual Studio Code.
 
 In the body of the function, you'll notice two distinct parts:
 
-1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../language-reference/pattern-matching.md):
+1. An inner function, called `isVowel`, that determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../language-reference/pattern-matching.md):
 
    [!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
-2. An [`if..then..else`](../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
+2. An [`if..then..else`](../language-reference/conditional-expressions-if-then-else.md) expression that checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
    [!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L11)]
 
@@ -169,7 +169,7 @@ There's one final thing to notice about this: there's no explicit instruction to
 
 The previous sections in this article demonstrated a common first step in writing F# code: writing an initial function and executing it interactively with FSI. This is known as REPL-driven development, where [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) stands for "Read-Evaluate-Print Loop". It's a great way to experiment with functionality until you have something working.
 
-The next step in REPL-driven development is to move working code into an F# implementation file. It can then be compiled by the F# compiler into an assembly which can be executed.
+The next step in REPL-driven development is to move working code into an F# implementation file. It can then be compiled by the F# compiler into an assembly that can be executed.
 
 To begin, open `ClassLibraryDemo.fs`.  You'll notice that some code is already in there. Go ahead and delete the class definition, but make sure to leave the [`namespace`](../language-reference/namespaces.md) declaration at the top.
 
@@ -195,7 +195,7 @@ val it : string = "ananabay"
 val it : string = "appleyay"
 ```
 
-Success! You get the same results as before, but now loaded from an F# implementation file. The major difference here is that F# source files are compiled into assemblies which can be executed anywhere, not just in FSI.
+Success! You get the same results as before, but now loaded from an F# implementation file. The major difference here is that F# source files are compiled into assemblies that can be executed anywhere, not just in FSI.
 
 ## Summary
 

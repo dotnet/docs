@@ -215,10 +215,11 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new/index.md)
-### [What's new in C# 7.2](csharp/whats-new/csharp-7-2.md)
-### [What's new in C# 7.1](csharp/whats-new/csharp-7-1.md)
-### [What's new in C# 7.0](csharp/whats-new/csharp-7.md)
-### [What's new in C# 6](csharp/whats-new/csharp-6.md)
+### [C# 7.3](csharp/whats-new/csharp-7-3.md)
+### [C# 7.2](csharp/whats-new/csharp-7-2.md)
+### [C# 7.1](csharp/whats-new/csharp-7-1.md)
+### [C# 7.0](csharp/whats-new/csharp-7.md)
+### [C# 6](csharp/whats-new/csharp-6.md)
 ### [C# Version History](csharp/whats-new/csharp-version-history.md)
 ### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
 <!-- End What's New -->

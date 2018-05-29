@@ -23,7 +23,7 @@ if (a + b > 10)
     Console.WriteLine("The answer is greater than 10.");
 ```
 
-Try this code by typing `dotnet run` in the your console window. You should see the message "The answer is greater than 10." printed to your console.
+Try this code by typing `dotnet run` in your console window. You should see the message "The answer is greater than 10." printed to your console.
 
 Modify the declaration of `b` so that the sum is less than 10: 
 

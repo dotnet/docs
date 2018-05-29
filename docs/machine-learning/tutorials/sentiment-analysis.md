@@ -1,13 +1,16 @@
 ---
 title: Use ML.NET in a sentiment analysis classification scenario
 description: Discover how to use ML.NET in a classification scenario to understand how to use sentiment prediction to take the appropriaste action.
-ms.date: 05/21/2018
+ms.date: 05/24/2018
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
 ---
-# Tutorial: Use the ML.NET APIs in a sentiment analysis classification scenario
+# Tutorial: Use ML.NET in a sentiment analysis classification scenario
 
-This sample tutorial illustrates using the ML.NET API to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This sample tutorial illustrates using ML.NET to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -15,16 +18,12 @@ In this tutorial, you learn how to:
 > * Create the learning pipeline
 > * Load a classifier
 > * Train the model
-> * Predict the model
+> * Predict the test data outcomes with the model
 > * Evaluate the model with a different dataset
 
 ## Sentiment analysis sample overview
 
-The sample is a console app that uses the ML.NET API to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from University of California, Irvine (UCI).
-
-Prediction and evaluation results are displayed accordingly so that analysis and action can be taken.
-
-Sentiment analysis is either positive or negative. So, you can use classification to train the model, for prediction, and for evaluation.
+The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from the WikiDetox project.
 
 ## Machine learning workflow
 
@@ -52,13 +51,17 @@ You then need to **determine** the sentiment, which helps you with the machine l
 With this problem, you know the following facts:
 
 Training data: website comments can be positive or negative (**sentiment**).
-Predict the **sentiment** of a new website comment, either positive or negative.
+Predict the **sentiment** of a new website comment, either positive or negative, such as in the following examples:
+
+* Please refrain from adding nonsense to Wikipedia.
+* He is the best, and the article should say that.
 
 ## Prerequisites
 
 * [Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
-* [The UCI Sentiment Labeled Sentences dataset zip file](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip)
+* The [Wikipedia detox line data tab separated file (wikiPedia-detox-250-line-data.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv).
+* The [Wikipedia detox line test tab separated file (wikipedia-detox-250-line-test.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv).
 
 ## Create a console application
 
@@ -74,15 +77,10 @@ Predict the **sentiment** of a new website comment, either positive or negative.
 
 ### Prepare your data
 
-1. Download [The UCI Sentiment Labeled Sentences dataset zip file (see citations in the following note)](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), unzip the file and copy the following two files into the *Data* directory you created:
+1. Download the [WikiPedia detox-250-line-data.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv) and the [wikipedia-detox-250-line-test.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv) data sets and save them to the *Data* folder previously created. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is. 
 
-* *imdb_labelled.txt*
-* *yelp_labelled.txt*
 
-> [!NOTE]
-> The datasets this tutorial uses are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
-
-2. In Solution Explorer, right-click each of the \*.txt files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Always**.
+2. In Solution Explorer, right-click each of the \*.tsv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Always**.
 
 ### Create classes and define paths
 
@@ -113,7 +111,7 @@ Remove the existing class definition and add the following code, which has two c
 
 [!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/SentimentAnalysis/SentimentData.cs#2 "Declare data record types")]
 
-`SentimentData` is the input dataset class and has a string for the comment (`SentimentText`), a `float` (`Sentiment`) that has a value for sentiment of either positive or negative. Both fields have `Column` attributes attached to them. This attribute describes the order of each field in the data file, and which is the `Label` field. `SentimentPrediction` is the class used for prediction after the model has been trained. It has a single boolean (`Sentiment`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
+`SentimentData` is the input dataset class and has a `float` (`Sentiment`) that has a value for sentiment of either positive or negative, and a string for the comment (`SentimentText`). Both fields have `Column` attributes attached to them. This attribute describes the order of each field in the data file, and which is the `Label` field. `SentimentPrediction` is the class used for prediction after the model has been trained. It has a single boolean (`Sentiment`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
 In the *Program.cs* file, replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
@@ -149,7 +147,7 @@ The <xref:Microsoft.ML.TextLoader%601> object is the first part of the pipeline,
 
 Pre-processing and cleaning data are important tasks that occur before a dataset is used effectively for machine learning. Raw data is often noisy and unreliable, and may be missing values. Using data without these modeling tasks can produce misleading results. ML.NET's transform pipelines allow you to compose a custom set of transforms that are applied to your data before training or testing. The transforms' primary purpose is for data featurization. A transform pipeline's advantage is that after transform pipeline definition, save the pipeline to apply it to test data.
 
-Apply a <xref:Microsoft.ML.Transforms.TextFeaturizer> to convert the `SentimentText` column into a numeric vector called `Features` used by the machine learning algorithm. This is the preprocessing/featurization step. Using additional components available in ML.NET can enable better results with your model. Add `TextFeaturizer` to the pipeline as the next line of code:
+Apply a <xref:Microsoft.ML.Transforms.TextFeaturizer> to convert the `SentimentText` column into a [numeric vector](../resources/glossary.md#numerical-feature-vector) called `Features` used by the machine learning algorithm. This is the preprocessing/featurization step. Using additional components available in ML.NET can enable better results with your model. Add `TextFeaturizer` to the pipeline as the next line of code:
 
 [!code-csharp[TextFeaturizer](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizer to the pipeline")]
 
@@ -167,7 +165,7 @@ Classification tasks are frequently one of the following types:
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
 
-The <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier> object is a decision tree learner you'll use in this pipeline. Similar to the featurization step, trying out different learners available in ML.NET and changing their parameters leads to different results. For tuning, you can set hyperparameters like <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.NumTrees>, <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.NumLeaves>, and <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.MinDocumentsInLeafs>. These hyperparameters are set before anything affects the model and are model specific. They're used to tune the decision tree for performance, so larger values can negatively impact performance.
+The <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier> object is a decision tree learner you'll use in this pipeline. Similar to the featurization step, trying out different learners available in ML.NET and changing their parameters leads to different results. For tuning, you can set [hyperparameters](../resources/glossary.md#hyperparameter) like <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.NumTrees>, <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.NumLeaves>, and <xref:Microsoft.ML.Trainers.FastTreeBinaryClassifier.MinDocumentsInLeafs>. These hyperparameters are set before anything affects the model and are model-specific. They're used to tune the decision tree for performance, so larger values can negatively impact performance.
 
 Add the following code to the `TrainAndPredict` method:
 
@@ -181,7 +179,7 @@ Add the following code to the `TrainAndPredict` method:
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#9 "Train the model")]
 
-## Predict the model
+## Predict the test data outcomes with the model
 
 Add some comments to test the trained model's predictions in the `TrainAndPredict` method:
 
@@ -210,7 +208,7 @@ To do that, right-click on the project node in **Solution Explorer** and select 
 
 #### Return the model trained to use for evaluation
 
-Return the model at the end of the `TrainAndPredict` method. At this point, you could then save it to a zip file or continue to work with it. For this tutorial, you're going to work with it, so add the following code to the next line in `TrainAndPredict`:
+Return the model at the end of the `TrainAndPredict` method. At this point, you have a model that can be integrated into any of your existing or new .NET applications, or continue to work with it. For this tutorial, you're going to work with it, so add the following code to the next line in `TrainAndPredict`:
 
 [!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#15 "Return the model")]
 
@@ -243,7 +241,7 @@ The <xref:Microsoft.ML.Models.BinaryClassificationMetrics> contains the overall 
 
 ### Displaying the metrics for model validation
 
-Use the following code to display the metrics, share the results, and act on them accordingly:
+Use the following code to display the metrics, share the results, and then act on them:
 
 [!code-csharp[DisplayMetrics](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#21 "Display selected metrics")]
 
@@ -252,18 +250,19 @@ Use the following code to display the metrics, share the results, and act on the
 Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These have been removed from the following results for clarity.
 
 ```
+
 Sentiment Predictions
 ---------------------
-Sentiment: Contoso's 11 is a wonderful experience | Prediction: Positive
-Sentiment:The acting in this movie is really bad | Prediction: Negative
-Sentiment: Joe versus the Volcano Coffee Company is a great film. | Prediction: Positive
+Sentiment: Please refrain from adding nonsense to Wikipedia. | Prediction: Negative
+Sentiment: He is the best, and the article should say that. | Prediction: Positive
 
 
 PredictionModel quality metrics evaluation
 ------------------------------------------
-Accuracy: 67.30%
-Auc: 73.78%
-F1Score: 65.25%
+Accuracy: 66.67%
+Auc: 94.44%
+F1Score: 75.00%
+
 ```
 
 Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
@@ -276,7 +275,7 @@ In this tutorial, you learned how to:
 > * Create the learning pipeline
 > * Load a classifier
 > * Train the model
-> * Predict the model
+> * Predict the test data outcomes with the model
 > * Evaluate the model with a different dataset
 
 Advance to the next tutorial to learn more

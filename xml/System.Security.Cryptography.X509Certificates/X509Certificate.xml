@@ -2150,8 +2150,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the serial number of the X.509v3 certificate as an array of bytes.</summary>
-        <returns>The serial number of the X.509 certificate as an array of bytes.</returns>
+        <summary>Returns the serial number of the X.509v3 certificate as an array of bytes in little-endian order.</summary>
+        <returns>The serial number of the X.509 certificate as an array of bytes in little-endian order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

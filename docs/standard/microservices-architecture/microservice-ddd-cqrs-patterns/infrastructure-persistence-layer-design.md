@@ -12,6 +12,7 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
+
 # Designing the infrastructure persistence layer
 
 Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](http://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom EF DBContexts.
@@ -103,7 +104,7 @@ We find repositories useful, but we acknowledge that they are not critical for y
 
 The Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
 
-The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products, you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an ISpecification and run the expected query based on that specification.
+The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products, you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an `ISpecification` and run the expected query based on that specification.
 
 There are several benefits to this approach:
 
@@ -113,10 +114,10 @@ There are several benefits to this approach:
 
 * A specification can also be used to describe the shape of the data to be returned, so that queries can return just the data they required. This eliminates the need for lazy loading in web applications (which is usually not a good idea) and helps keep repository implementations from becoming cluttered with these details.
 
-An example of a generic Specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb ).
+An example of a generic Specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb).
 
 ```csharp
-// https://github.com/dotnet-architecture/eShopOnWeb 
+// https://github.com/dotnet-architecture/eShopOnWeb
 public interface ISpecification<T>
 {
     Expression<Func<T, bool>> Criteria { get; }
@@ -133,38 +134,37 @@ In the upcoming sections, it is explained how to implement the Specification pat
 
 ### The Repository pattern
 
--   **Edward Hieatt and Rob Mee. Repository pattern.**
-    [*http://martinfowler.com/eaaCatalog/repository.html*](http://martinfowler.com/eaaCatalog/repository.html)
+* **Edward Hieatt and Rob Mee. Repository pattern.**
+  [_http://martinfowler.com/eaaCatalog/repository.html_](http://martinfowler.com/eaaCatalog/repository.html)
 
--   **The Repository pattern**
-    [*https://msdn.microsoft.com/library/ff649690.aspx*](https://msdn.microsoft.com/library/ff649690.aspx)
+* **The Repository pattern**
+  [_https://msdn.microsoft.com/library/ff649690.aspx_](https://msdn.microsoft.com/library/ff649690.aspx)
 
--   **Repository Pattern: A data persistence abstraction**
-    [*http://deviq.com/repository-pattern/*](http://deviq.com/repository-pattern/)
+* **Repository Pattern: A data persistence abstraction**
+  [_http://deviq.com/repository-pattern/_](http://deviq.com/repository-pattern/)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
-    [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+* **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
+  [_https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/_](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### Unit of Work pattern
 
--   **Martin Fowler. Unit of Work pattern.**
-    [*http://martinfowler.com/eaaCatalog/unitOfWork.html*](http://martinfowler.com/eaaCatalog/unitOfWork.html)
+* **Martin Fowler. Unit of Work pattern.**
+  [_http://martinfowler.com/eaaCatalog/unitOfWork.html_](http://martinfowler.com/eaaCatalog/unitOfWork.html)
 
 <!-- -->
 
--   **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
-    [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
+* **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
+  [_https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application_](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 ### The Specification pattern
 
--   **The Specification pattern.**
-    [*http://deviq.com/specification-pattern/*](http://deviq.com/specification-pattern/)
+* **The Specification pattern.**
+  [_http://deviq.com/specification-pattern/_](http://deviq.com/specification-pattern/)
 
--   **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
+* **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
 
--   **Specifications. Martin Fowler**
-    [*https://www.martinfowler.com/apsupp/spec.pdf/*](https://www.martinfowler.com/apsupp/spec.pdf)
+* **Specifications. Martin Fowler**
+  [_https://www.martinfowler.com/apsupp/spec.pdf/_](https://www.martinfowler.com/apsupp/spec.pdf)
 
->[!div class="step-by-step"]
-[Previous] (domain-events-design-implementation.md)
-[Next] (infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+> [!div class="step-by-step"][previous] (domain-events-design-implementation.md)
+> [Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)

@@ -89,6 +89,17 @@ On each platform, <xref:System.Net.Http.HttpClient> tries to use the best availa
 | Linux/.NET Core             | `libcurl`-based HTTP transport (HTTP 2.0 capable)                                         |
 
 Users can also configure a specific transport for <xref:System.Net.Http.HttpClient> by invoking the <xref:System.Net.Http.HttpClient.%23ctor*> constructor that takes an <xref:System.Net.Http.HttpMessageHandler>.
+
+### HttpClient and .NET Core
+
+Starting with .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> class instead of `HttpClientHandler` provides the implementation used by higher-level HTTP networking classes such as `HttpClient`. You can configure your application to use the older <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> instead by calling the <xref:System.AppContext.SetSwitch%2A> method as follows:
+
+```csharp
+AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
+```
+```vb
+AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
+``` 
   
 ## Examples  
  [!code-csharp[System.Net.Http.HttpClient#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.net.http.httpclient/cs/source.cs#1)]  

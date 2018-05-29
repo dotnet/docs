@@ -285,7 +285,7 @@
 >  -   *Switch*.*namespace*.*switchname*  
 > -   *Switch*.*library*.*switchname*  
   
- In addition to setting the value of a switch programmatically, it can also be set:  
+ For applications running on the .NET Framework, in addition to setting the value of a switch programmatically, it can also be set:  
   
 -   By adding the switch name and value to the [\<AppContextSwitchOverrides>](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of an application configuration file. For example, the following defines a switch named `Libraries.FPLibrary.UseExactFloatingPointComparison` whose value is `False`.  
   
@@ -302,8 +302,14 @@
 -   By adding a string value whose name is the name of the switch to the `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` key in the registry. Its value must be the string representation of a <xref:System.Boolean> that can be parsed by the <xref:System.Boolean.Parse%2A?displayProperty=nameWithType> method; that is, it must be "True", "true", "False", or "false".  
   
  If `switchName` already exists, its value is overwritten by the `isEnabled` argument.  That is, the most recent call to the <xref:System.AppContext.SetSwitch%2A> method overrides the value defined in the registry, in an app configuration file, or by previous calls to the <xref:System.AppContext.SetSwitch%2A> method.  
-  
-   
+ 
+ ### AppContext.SetSwitch and .NET Core
+
+.NET Core supports programmatic calls with the <xref:System.AppContext.SetSwitch%2A> method only. The following switches are supported:
+
+|Switch|Values|Description|
+|--|--|--|
+|`System.Net.Http.useSocketsHttpHandler` |`true`|`false`|Determines whether high-level networking APIs such as <xref:System.Net.Http.HttpClient> use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (`true`) or <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> (`false`).|   
   
 ## Examples  
  The following line of code sets a switch named `Switch.AmazingLib.ThrowOnException` to `true`, which enables a legacy behavior. The library can then check whether a library consumer has set the value of the switch by calling the <xref:System.AppContext.TryGetSwitch%2A> method.  

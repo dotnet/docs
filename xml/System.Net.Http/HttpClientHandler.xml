@@ -28,7 +28,16 @@
 ## Remarks  
  The <xref:System.Net.Http.HttpClientHandler> class and classes derived from it enable developers to configure a variety of options ranging from proxies to authentication.  
   
-   
+### HttpClientHandler in .NET Core
+
+Starting with .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> class instead of `HttpClientHandler` provides the implementation used by higher-level HTTP networking APIs. You can configure your application to use `HttpClientHandler` instead by calling the <xref:System.AppContext.SetSwitch%2A> method as follows:
+
+```csharp
+AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
+```
+```vb
+AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
+``` 
   
 ## Examples  
  [!code-csharp[System.Net.Http.HttpClientHandler#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.net.http.httpclienthandler/cs/source.cs#1)]  

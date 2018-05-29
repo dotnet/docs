@@ -20,7 +20,7 @@ You also can exit a `while` loop by the [goto](goto.md), [return](return.md), or
 
 ## Example
 
-The following example shows the usage of the `while` statement. Select the **Run** to run the example code. After that you can modify the code and run it again.
+The following example shows the usage of the `while` statement. Select **Run** to run the example code. After that you can modify the code and run it again.
 
 [!code-csharp-interactive[while loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#3)]
 

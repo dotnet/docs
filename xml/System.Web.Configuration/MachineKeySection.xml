@@ -428,13 +428,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of a custom algorithm that is used to validate forms authentication and view state data.</summary>
+        <summary>Gets or sets the name of the algorithm that is used to validate forms authentication and view state data.</summary>
         <value>A string that contains the name of a predefined algorithm or the name of a custom algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The predefined algorithms that are available are defined by the <xref:System.Web.Configuration.MachineKeyValidation> enumeration. If you want to use a custom algorithm, you do not have to set this property. Set the <xref:System.Web.Configuration.MachineKeySection.Validation%2A> property the to the name of the custom algorithm. When you do that, this property will automatically be set to <xref:System.Web.Configuration.MachineKeyValidation.Custom>.  
+ The predefined algorithms that are available are defined by the <xref:System.Web.Configuration.MachineKeyValidation> enumeration. If you want to use a custom algorithm, you do not have to set this property. Set the <xref:System.Web.Configuration.MachineKeySection.Validation%2A> property to the name of the custom algorithm. When you do that, this property will automatically be set to <xref:System.Web.Configuration.MachineKeyValidation.Custom>.  
   
  You can set the <xref:System.Web.Configuration.MachineKeySection.ValidationAlgorithm%2A> property declaratively in the Web.config file or programmatically in code.  
   

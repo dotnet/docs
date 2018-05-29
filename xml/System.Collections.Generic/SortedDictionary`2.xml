@@ -1663,7 +1663,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For purposes of enumeration, each item is a <xref:System.Collections.Generic.KeyValuePair%602> structure representing a value and its key.  
+ For purposes of enumeration, each item is a <xref:System.Collections.DictionaryEntry> structure.  
   
  The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
   
@@ -2095,7 +2095,6 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For purposes of enumeration, each item is a <xref:System.Collections.Generic.KeyValuePair%602> structure representing a value and its key.  
   
  The `foreach` statement of the C# language (`for each` in C++, `For Each` Visual Basic) hides the complexity of enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
   

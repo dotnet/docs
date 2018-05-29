@@ -550,6 +550,7 @@
 ### [Walkthrough: Implementing Inheritance with COM Objects](visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
 
 ## [Language Reference](visual-basic/language-reference/index.md)
+### [Configure language version](visual-basic/language-reference/configure-language-version.md)
 ### [Typographic and Code Conventions](visual-basic/language-reference/typographic-and-code-conventions.md)
 ### [Visual Basic Runtime Library Members](visual-basic/language-reference/runtime-library-members.md)
 ### [Keywords](visual-basic/language-reference/keywords/index.md)

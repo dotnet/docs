@@ -9,6 +9,9 @@ ms.custom: mvc
 ---
 # Tutorial: Use ML.NET to predict New York Taxi Fares (Regression)
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
 This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting New York City taxi fares.
 
 In this tutorial, you learn how to:
@@ -95,7 +98,7 @@ Remove the existing class definition and add the following code, which has two c
 
 [!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#2 "Define the taxi trip and fare predictions classes")]
 
-`TaxiTrip` is the input data set class and has definitions for each of the data set columns. The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`fare_amount`) and a `Store` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
+`TaxiTrip` is the input data set class and has definitions for each of the data set columns. The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`fare_amount`) and a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
 
 Now go back to the **Program.cs** file. In `Main`, replace the `Console.WriteLine("Hello World!")` with the following code:
 

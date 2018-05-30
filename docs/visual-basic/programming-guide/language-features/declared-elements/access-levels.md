@@ -93,6 +93,8 @@ To use the `Private Protected` access modifier, you must add the following eleme
 </PropertyGroup>
 ```
 
+For more information see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
+
  ## Access Modifiers  
  The keywords that specify access level are called *access modifiers*. The following table compares the access modifiers.  
   

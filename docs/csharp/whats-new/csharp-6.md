@@ -34,6 +34,8 @@ productivity for developers. Features in this release include:
     - Collection initializers can rely on accessible extension methods, in addition to member methods.
 * [Improved overload resolution](#improved-overload-resolution):
     - Some constructs that previously generated ambiguous method calls now resolve correctly.
+* [`deterministic` compiler option](#deterministic-compiler-output):
+    - The deterministic compiler option ensures that subsequent compilations of the same source generate the same binary output.
 
 The overall effect of these features is that you write more concise code
 that is also more readable. The syntax contains less ceremony for many
@@ -570,3 +572,12 @@ a lambda expression as an argument:
 
 The C# 6 compiler correctly determines that `Task.Run(Func<Task>())` is
 a better choice.
+
+### Deterministic compiler output
+
+The `-deterministic` option instructs the compiler to produce a byte-for-byte identical output assembly for successive compilations of the same source files.
+
+By default, every compilation produces unique output on each compilation. The compiler adds a timestamp, and a GUID generated from random numbers. You use this option if you want to compare the byte-for-byte output to ensure consistency across builds.
+
+For more information, see the [-deterministic compiler option](../language-reference/compiler-options/deterministic-compiler-option.md) article.
+

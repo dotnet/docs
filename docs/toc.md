@@ -1122,6 +1122,7 @@
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine Learning Glossary](machine-learning/resources/glossary.md)
 ### [Machine Learning Basics](machine-learning/resources/basics.md)
+### [Learning Algorithms](machine-learning/resources/learners.md)
 
 <!-- End ML.NET Content -->
 

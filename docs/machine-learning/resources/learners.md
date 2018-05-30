@@ -1,5 +1,8 @@
 # Learning Algorithms
-Below is a list of learning algorithms (learners) and the [machine learning tasks](tasks.md) that they can be used for. Click on the learner name for more in-depth explanations on each of these learning methods.
+The following table will help you understand the different learning algorithms (learners) included in ML.NET and the [machine learning tasks](tasks.md) that they can be used for. Click on the learner name for more in-depth explanations on each of these learning methods.
+
+> [!NOTE]
+> ML.NET is currently in Preview. Not all learning algorithms are currently supported. To submit a request for a certain learner, please open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
 
 | Learner Name | Binary classification | Multi-class classification | Regression | Ranking | Clustering | Anomaly Detection |
 | --- |:---:|:---:|:---:|:---:|:---:|:---:|

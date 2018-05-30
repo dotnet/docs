@@ -2980,7 +2980,7 @@ thisInstance And flag = flag
       </Parameters>
       <Docs>
         <typeparam name="TEnum">The enumeration type to which to convert <c>value</c>.</typeparam>
-        <param name="value">The string representation of the enumeration name or underlying value to convert.</param>
+        <param name="value">The case-sensitive string representation of the enumeration name or underlying value to convert.</param>
         <param name="result">When this method returns, <c>result</c> contains an object of type <c>TEnum</c> whose value is represented by <c>value</c> if the parse operation succeeds. If the parse operation fails, <c>result</c> contains the default value of the underlying type of <c>TEnum</c>. Note that this value need not be a member of the <c>TEnum</c> enumeration. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object. The return value indicates whether the conversion succeeded.</summary>
         <returns>

@@ -96,6 +96,7 @@
 ### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
 ### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
+### [Self-contained application deployment runtime patch version roll forward](core/deploying/runtime-patch-selection.md)
 ### [Runtime package store](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
 ### [Introduction to .NET and Docker](core/docker/intro-net-docker.md)

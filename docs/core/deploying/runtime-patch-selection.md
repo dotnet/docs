@@ -1,15 +1,15 @@
 ---
-title: Self-contained application deployment runtime patch version roll forward
+title: Self-contained deployment runtime roll forward
 description: Learn about dotnet publish changes for self-contained deployments.
 author: jralexander
 ms.author: johalex
 ms.date: 05/30/2018
 ---
-# Self-contained application deployment runtime patch version roll forward
+# Self-contained deployment runtime roll forward
 
-.NET Core [self-contained application deployments](index.md) include both the .NET Core libraries and the .NET Core runtime. Starting in .NET Core SDK 2.1.300 (.NET Core 2.1), a self-contained application deployment [now publishes the highest patch runtime on your machine](https://github.com/dotnet/designs/pull/36). By default, `[dotnet publish](../tools/dotnet-publish?tabs=netcore2x)` for a self-contained deployment selects the latest version installed as part of the SDK on the publishing machine. This enables your deployed application to run with security fixes (and other fixes) available during `publish`. The application must be re-published to obtain a new patch. Self-contained applications are created by specifying `--self-contained` on `dotnet publish` command or by specifying the RuntimeIdentifier in the project file or on the command line.
+.NET Core [self-contained application deployments](index.md) include both the .NET Core libraries and the .NET Core runtime. Starting in .NET Core SDK 2.1.300 (.NET Core 2.1), a self-contained application deployment [now publishes the highest patch runtime on your machine](https://github.com/dotnet/designs/pull/36). By default, `[dotnet publish](../tools/dotnet-publish.md)` for a self-contained deployment selects the latest version installed as part of the SDK on the publishing machine. This enables your deployed application to run with security fixes (and other fixes) available during `publish`. The application must be re-published to obtain a new patch. Self-contained applications are created by specifying `--self-contained` on `dotnet publish` command or by specifying the RuntimeIdentifier in the project file or on the command line.
 
-`[restore](../tools/dotnet-restore?tabs=netcore2x)`, `[build](../tools/dotnet-build?tabs=netcore2x)` and `[publish](../tools/dotnet-publish?tabs=netcore2x)` are `dotnet` commands that can run separately. The runtime choice is part of the `restore` operation, not `publish` or `build`. If you call `publish`, the latest patch version will be chosen. If you call `publish` with the `--no-restore` argument, then you may not get the desired patch version because a prior `restore` may not have been executed with the new self-contained application publishing policy.
+`[restore](../tools/dotnet-restore.md)`, `[build](../tools/dotnet-build?tabs=netcore2x)` and `[publish](../tools/dotnet-publish.md)` are `dotnet` commands that can run separately. The runtime choice is part of the `restore` operation, not `publish` or `build`. If you call `publish`, the latest patch version will be chosen. If you call `publish` with the `--no-restore` argument, then you may not get the desired patch version because a prior `restore` may not have been executed with the new self-contained application publishing policy.
 
 > [!NOTE]
 > `restore` and `build` can be run implicitly as part of another command, like `publish`. When run implicitly as part of another command, they are provided with additional context so that the right artifacts are produced. When you `publish` with a runtime (for example, `dotnet publish -r linux-x64`), the implicit `restore` restores packages for the linux-x64 runtime. If you call `restore` explicitly, it does not restore runtime packages by default, because it doesn't have that context.

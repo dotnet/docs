@@ -71,6 +71,10 @@ Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool l
 
 `dotnet tool update dotnetsay --tool-path c:\global-tools`
 
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool located on a specific Linux/macOS folder:
+
+`dotnet tool update dotnetsay --tool-path ~/bin`
+
 ## See also
 
 [.NET Core Global Tools](global-tools.md)

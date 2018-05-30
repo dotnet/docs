@@ -74,15 +74,19 @@ The version of the tool to install. By default, the latest stable package versio
 
 ## Examples
 
-Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool in the default location:
+Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool in the default location:
 
 `dotnet tool install -g dotnetsay`
 
-Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool on a specific Windows folder:
+Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool on a specific Windows folder:
 
 `dotnet tool install dotnetsay --tool-path c:\global-tools`
 
-Installs version 2.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool:
+Installs the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool on a specific Linux/macOS folder:
+
+`dotnet tool install dotnetsay --tool-path ~/bin`
+
+Installs version 2.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool:
 
 `dotnet tool install -g dotnetsay --version 2.0.0`
 

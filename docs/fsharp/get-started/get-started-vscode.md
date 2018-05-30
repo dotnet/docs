@@ -58,7 +58,7 @@ Next, open the command pallette (**View > Command Pallette**) and type the follo
 > F# new project
 ```
 
-This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project. You should see something like this:
+This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project.
 
 > [!NOTE]
 If you don't see template options, try refreshing templates by running the following command in the Command Palette: `>F#: Refresh Project Templates`.

@@ -106,7 +106,7 @@ This template generates a few things you'll find useful:
 Open the *ClassLibraryDemo* folder.  You should see the following files:
 
 1. `ClassLibraryDemo.fs`, an F# implementation file with a class defined.
-2. `CassLibraryDemo.fsproj`, an F# project file used to build this project.
+2. `ClassLibraryDemo.fsproj`, an F# project file used to build this project.
 3. `Script.fsx`, an F# script file which loads the source file.
 4. `paket.references`, a Paket file which specifies the project dependencies.
 

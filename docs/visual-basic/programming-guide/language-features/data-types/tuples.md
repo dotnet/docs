@@ -56,6 +56,8 @@ To enable interred tuple element names, you must define the version of the Visua
 
 The version number can be any version of the Visual Basic compiler starting with 15.3. Rather than hard-coding a specific compiler version, you can also specify "Latest" as the value of `LangVersion` to compile with the most recent version of the Visual Basic compiler installed on your system.
 
+For more information, see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
+
 In some cases, the Visual Basic compiler cannot infer the tuple element name from the candidate name, and the tuple field can only be referenced using its default name, such as `Item1`, `Item2`, etc. These include:
 
 - The candidate name is the same as the name of a tuple member, such as `Item3`, `Rest`, or `ToString`.

@@ -88,4 +88,4 @@ Installs version 2.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnets
 
 ## See also
 
-[.NET Core Global Tool](global-tools.md)
+[.NET Core Global Tools](global-tools.md)

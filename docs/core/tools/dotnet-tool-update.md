@@ -73,4 +73,4 @@ Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool l
 
 ## See also
 
-[.NET Core Global Tool](global-tools.md)
+[.NET Core Global Tools](global-tools.md)

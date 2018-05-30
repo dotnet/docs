@@ -3,7 +3,7 @@ title: dotnet add package command - .NET Core CLI
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/11/2017
+ms.date: 05/25/2018
 ---
 # dotnet add package
 
@@ -15,7 +15,7 @@ ms.date: 08/11/2017
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-v|--version] [-f|--framework] [-n|--no-restore] [-s|--source] [--package-directory]`
+`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-f|--framework] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version]`
 
 ## Description
 
@@ -25,7 +25,7 @@ The `dotnet add package` command provides a convenient option to add a package r
 
 For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following example:
 
-```
+```console
   Writing C:\Users\mairaw\AppData\Local\Temp\tmp95A8.tmp
 info : Adding PackageReference for package 'Newtonsoft.Json' into project 'C:\projects\ToDo\ToDo.csproj'.
 log  : Restoring packages for C:\projects\ToDo\ToDo.csproj...
@@ -57,10 +57,6 @@ The package reference to add.
 
 Prints out a short help for the command.
 
-`-v|--version <VERSION>`
-
-Version of the package.
-
 `-f|--framework <FRAMEWORK>`
 
 Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
@@ -69,13 +65,17 @@ Adds a package reference only when targeting a specific [framework](../../standa
 
 Adds a package reference without performing a restore preview and compatibility check.
 
+`--package-directory <PACKAGE_DIRECTORY>`
+
+Restores the package to the specified directory.
+
 `-s|--source <SOURCE>`
 
 Uses a specific NuGet package source during the restore operation.
 
-`--package-directory <PACKAGE_DIRECTORY>`
+`-v|--version <VERSION>`
 
-Restores the package to the specified directory.
+Version of the package.
 
 ## Examples
 

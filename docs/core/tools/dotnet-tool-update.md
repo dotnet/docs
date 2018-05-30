@@ -3,12 +3,7 @@ title: dotnet tool update command - .NET Core CLI
 description: The dotnet tool update command updates the specified .NET Core Global Tool on your machine.
 author: mairaw
 ms.author: mairaw
-ms.date: 04/25/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # dotnet tool update
 
@@ -23,7 +18,7 @@ ms.workload:
 ```
 dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
 dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
-dotnet tool update [-h|--help]
+dotnet tool update <-h|--help>
 ```
 
 ## Description
@@ -68,11 +63,11 @@ Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal
 
 ## Examples
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool:
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool:
 
 `dotnet tool update -g dotnetsay`
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) sample Global Tool located on a specific Windows folder:
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool located on a specific Windows folder:
 
 `dotnet tool update dotnetsay --tool-path c:\global-tools`
 

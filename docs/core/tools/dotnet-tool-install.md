@@ -3,12 +3,7 @@ title: dotnet tool install command - .NET Core CLI
 description: The dotnet tool install command installs the specified .NET Core Global Tool on your machine.
 author: mairaw
 ms.author: mairaw
-ms.date: 04/25/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # dotnet tool install
 
@@ -23,7 +18,7 @@ ms.workload:
 ```
 dotnet tool install <PACKAGE_NAME> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
 dotnet tool install <PACKAGE_NAME> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
-dotnet tool install [-h|--help]
+dotnet tool install <-h|--help>
 ```
 
 ## Description
@@ -51,7 +46,7 @@ The NuGet configuration (*nuget.config*) file to use.
 
 `-f|--framework <FRAMEWORK>`
 
-Specifies the [target framework](../../standard/frameworks.md) to install the tool for.
+Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET Core SDK tries to choose the most appropriate target framework.
 
 `-g|--global`
 

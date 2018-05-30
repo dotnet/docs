@@ -3,18 +3,13 @@ title: .NET Core Global Tools
 description: An overview of what .NET Core Global Tools are and the .NET Core CLI commands available for them. 
 author: KathleenDollard
 ms.author: mairaw
-ms.date: 04/25/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # .NET Core Global Tools overview
 
 [!INCLUDE [topic-appliesto-net-core-2-1plus.md](../../../includes/topic-appliesto-net-core-2-1plus.md)]
 
-.NET Core Global Tools are a special NuGet package that contains a console application. A Global Tool can be installed on your machine on a default location that is specified in the PATH environment variable or on a custom location.
+A .NET Core Global Tool is a special NuGet package that contains a console application. A Global Tool can be installed on your machine on a default location that is included in the PATH environment variable or on a custom location.
 
 If you want to use a .NET Core Global Tool:
 
@@ -87,28 +82,28 @@ Once the tool is installed, you can call it by using its command. Note that the 
 
 If the command is `dotnetsay`, you call it with:
 
-```bash
+```console
 dotnetsay
 ```
 
 If the tool author wanted the tool to appear in the context of the `dotnet` prompt, they may have written it in a way that you call it as `dotnet <command>`, such as:
 
-```bash
-dotnet ef
+```console
+dotnet doc
 ```
 
 You can find which tools are included in an installed Global Tool package by listing the installed packages using the [dotnet tool list](dotnet-tool-list.md) command.
 
 You can also look for usage instructions at the tool's website or by typing one of the following commands:
 
-```bash
+```console
 <command> --help
 dotnet <command> --help
 ```
 
 ### What could go wrong
 
-Global Tools are shared framework applications, which means they rely on a .NET Core runtime installed on your machine. If the expected runtime is not found, they follow normal .NET Core runtime roll-forward rules such as:
+Global Tools are [framework-dependent applications](../deploying/index.md#framework-dependent-deployments-fdd), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime is not found, they follow normal .NET Core runtime roll-forward rules such as:
 
 * An application rolls forward to the highest patch release of the specified major and minor version.
 * If there is no matching runtime with a matching major and minor version number, the next higher minor version is used.
@@ -124,9 +119,6 @@ dotnet --list-runtimes
 ```
 
 Contact the author of the Global Tool and see if they can recompile and republish their tool package to NuGet with an updated version number. Once they have updated the package on NuGet, you can update your copy.
-
-> [!WARNING]
-> If you installed Global Tools that were built with .NET Core 2.1 Preview 1 release, there's a known issue where you must manually uninstall and install the tool, instead of simply updating it. If you try to update it, you'll get errors.
 
 The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, such as:
 

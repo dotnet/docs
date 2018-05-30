@@ -3,12 +3,7 @@ title: dotnet tool list command - .NET Core CLI
 description: The dotnet tool list command lists the specified .NET Core Global Tool from your machine.
 author: mairaw
 ms.author: mairaw
-ms.date: 04/25/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # dotnet tool list
 
@@ -16,19 +11,19 @@ ms.workload:
 
 ## Name
 
-`dotnet tool list` - Lists all [.NET Core Global Tools](global-tools.md) currently installed on your machine or specified path.
+`dotnet tool list` - Lists all [.NET Core Global Tools](global-tools.md) currently installed in the default directory on your machine or in the specified path.
 
 ## Synopsis
 
 ```
 dotnet tool list <-g|--global>
 dotnet tool list <--tool-path>
-dotnet tool list [-h|--help]
+dotnet tool list <-h|--help>
 ```
 
 ## Description
 
-The `dotnet tool list` command provides a way for you to list all .NET Core Global Tools installed on your machine (current user profile) or specified path. The command lists the package name, version installed, and the global tool command. To use the list command, you either have to specify that you want to see all user-wide tools using the `--global` option or specify a custom path using the `--tool-path` option.
+The `dotnet tool list` command provides a way for you to list all .NET Core Global Tools installed user-wide on your machine (current user profile) or in the specified path. The command lists the package name, version installed, and the global tool command. To use the list command, you either have to specify that you want to see all user-wide tools using the `--global` option or specify a custom path using the `--tool-path` option.
 
 ## Options
 
@@ -46,13 +41,17 @@ Specifies a custom location where to find global tools. PATH can be absolute or 
 
 ## Examples
 
-Lists all Global Tools installed in your machine (current user profile):
+Lists all Global Tools installed user-wide on your machine (current user profile):
 
 `dotnet tool list -g`
 
-Lists the sample Global Tools from a specific Windows folder:
+Lists the Global Tools from a specific Windows folder:
 
 `dotnet tool list --tool-path c:\global-tools`
+
+Lists the Global Tools from a specific Linux/macOS folder:
+
+`dotnet tool list --tool-path ~/bin`
 
 ## See also
 

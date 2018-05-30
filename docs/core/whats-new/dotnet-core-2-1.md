@@ -3,7 +3,7 @@ title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 05/07/2018
+ms.date: 05/30/2018
 ---
 # What's new in .NET Core 2.1
 
@@ -14,7 +14,7 @@ ms.date: 05/07/2018
 - [Deployment](#deployment)
 - [Windows Compatibility Pack](#windows-compatibility-pack)
 - [JIT compiler improvements](#jit-compiler-improvements)
-- [API changes](#api-changes) 
+- [API changes](#api-changes)
 
 ## Tooling
 
@@ -52,19 +52,19 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 - `dotnet sql-cache` creates a table and indexes in a Microsoft SQL Server database to be used for distributed caching.
 
-- `dotnet ef` is a tool for managing databases, <xref:Microsoft.EntityFrameworkCore.DbContext> objects, and migrations in Entity Framework Core applications. For more information, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet)
+- `dotnet ef` is a tool for managing databases, <xref:Microsoft.EntityFrameworkCore.DbContext> objects, and migrations in Entity Framework Core applications. For more information, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet).
 
-### Global tools
+### Global Tools
 
-.NET Core 2.1 supports *global tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using [`DotnetCliToolReference`](../tools/extensibility.md).
+.NET Core 2.1 supports *Global Tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using [`DotnetCliToolReference`](../tools/extensibility.md#consuming-per-project-tools).
 
-To install a global tool, you use the `dotnet tool install -g <tool-name>` command. For example:
+To install a Global Tool, you use the [dotnet tool install](..\tools\dotnet-tool-install.md) command. For example:
 
 ```console
 dotnet tool install -g dotnetsay
 ```
 
-Once installed, the tool can be run from the command line by specifying the tool name.
+Once installed, the tool can be run from the command line by specifying the tool name. For more information, see [.NET Core Global Tools overview](../tools/global-tools.md).
 
 ### Single-source tool management with the `dotnet tool` command
 
@@ -80,7 +80,7 @@ In .NET Core 2.1, all tools operations use the `dotnet tool` command. The follow
 
 All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system. That is, if the .NET Core version that an application was built with is not present, the application runs against the latest installed minor version. In other words, if an application is built with .NET Core 2.0 and .NET Core 2.0 itself is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > This roll-forward behavior doesn't apply to preview releases. Nor does it apply to major releases. For example, a .NET Core 1.0 application wouldn't roll forward to .NET Core 2.0 or .NET Core 2.1.
 
 You can also disable minor version roll forward in any of three ways:
@@ -129,7 +129,7 @@ You can test tiered compilation with a .NET Core 2.1 app by setting the followin
 COMPlus_TieredCompilation="1"
 ```
 
-## API changes 
+## API changes
 
 ### `Span<T>` and `Memory<T>`
 
@@ -143,7 +143,7 @@ Without these types, when passing such items as a portion of an array or a secti
 
 The following example uses a <xref:System.Span%601> instance to provide a virtual view of 10 elements of an array.
 
-[!CODE-csharp[Span<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
+[!CODE-csharp[Span\<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
 
 ### Brotli compression
 
@@ -151,7 +151,7 @@ The following example uses a <xref:System.Span%601> instance to provide a virtua
 
 [!CODE-csharp[Brotli compression](~/samples/core/whats-new/whats-new-in-21/cs/brotli.cs#1)]
 
-The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream>, which makes it easy to convert code that calls these APIs to <xref:System.IO.Compression.BrotliStream>.  
+The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream>, which makes it easy to convert code that calls these APIs to <xref:System.IO.Compression.BrotliStream>.
 
 ### New cryptography APIs and cryptography improvements
 
@@ -165,11 +165,11 @@ The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:Syst
 
 - The performance of <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> has improved by about 15% by using a <xref:System.Span%601>-based implementation.
 
-- The new <xref:System.Security.Cryptography.CryptographicOperations?displayProperty=nameWithType> class includes two new methods: 
+- The new <xref:System.Security.Cryptography.CryptographicOperations?displayProperty=nameWithType> class includes two new methods:
 
-   - <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals%2A> takes a fixed amount of time to return for any two inputs of the same length, which makes it suitable for use in cryptographic verification to avoid contributing to timing side-channel information.
+  - <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals%2A> takes a fixed amount of time to return for any two inputs of the same length, which makes it suitable for use in cryptographic verification to avoid contributing to timing side-channel information.
 
-    - <xref:System.Security.Cryptography.CryptographicOperations.ZeroMemory%2A> is a memory-clearing routine that cannot be optimized.
+  - <xref:System.Security.Cryptography.CryptographicOperations.ZeroMemory%2A> is a memory-clearing routine that cannot be optimized.
 
 - The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=fullName> method fills a <xref:System.Span%601> with random values.
 

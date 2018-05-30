@@ -43,7 +43,7 @@ If the tool is hosted on NuGet, you can check the author and statistics by searc
 
 To install a Global Tool, you use the [dotnet tool install](dotnet-tool-install.md) .NET Core CLI command. The following example shows how to install a Global Tool in the default location:
 
-```bash
+```console
 dotnet tool install -g dotnetsay
 ```
 
@@ -51,7 +51,7 @@ If the tool can't be installed, error messages are displayed. Check that the fee
 
 If you're trying to install a pre-release version or a specific version of the tool, you can specify the version number using the following format:
 
-```bash
+```console
 dotnet tool install -g <package-name> --version <version-number>
 ```
 
@@ -114,7 +114,7 @@ If an application cannot find an appropriate runtime, it fails to run and report
 
 Another issue that might happen is that a Global Tool that was created during an earlier preview may not run with your currently installed .NET Core runtimes. You can see which runtimes are installed on your machine using the following command:
 
-```bash
+```console
 dotnet --list-runtimes
 ```
 
@@ -135,24 +135,24 @@ The .NET Core SDK contains other commands that support .NET Core Global Tools. U
 
 To find out which commands are available for Global Tools:
 
-```bash
+```console
 dotnet tool --help
 ```
 
 Updating a Global Tool involves uninstalling and reinstalling it with the latest stable version. To update a Global Tool, use the [dotnet tool update](dotnet-tool-update.md) command:
 
-```bash
+```console
 dotnet tool update -g <packagename>
 ```
 
 Remove a Global Tool using the [dotnet tool uninstall](dotnet-tool-uninstall.md):
 
-```bash
+```console
 dotnet tool uninstall -g <packagename>
 ```
 
 To display all of the Global Tools currently installed on the machine, along with their version and commands, use the [dotnet tool list](dotnet-tool-list.md) command:
 
-```bash
+```console
 dotnet tool list -g
 ```

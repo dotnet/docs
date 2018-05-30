@@ -3,7 +3,7 @@ title: dotnet command - .NET Core CLI
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
 author: mairaw
 ms.author: mairaw
-ms.date: 03/20/2018
+ms.date: 05/29/2018
 ---
 # dotnet command
 
@@ -15,7 +15,12 @@ ms.date: 03/20/2018
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
+```
+dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
+    [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+```
+# [.NET Core 2.0](#tab/netcore20)
 ```
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics]
     [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
@@ -31,13 +36,59 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `dotnet` is a generic driver for the Command Line Interface (CLI) toolchain. Invoked on its own, it provides brief usage instructions.
 
-Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
+Each specific feature is implemented as a command. To use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
 
 The only time `dotnet` is used as a command on its own is to run [framework-dependent apps](../deploying/index.md). Specify an application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
+
+`--additional-deps <PATH>`
+
+Path to additional *deps.json* file.
+
+`--additionalprobingpath <PATH>`
+
+Path containing probing policy and assemblies to probe.
+
+`-d|--diagnostics`
+
+Enables diagnostic output.
+
+`--fx-version <VERSION>`
+
+Version of the installed .NET Core runtime to use to run the application.
+
+`-h|--help`
+
+Prints out a short help for the command. If using with `dotnet`, it also prints a list of the available commands.
+
+`--info`
+
+Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+
+`--list-runtimes`
+
+Displays the installed .NET Core runtimes.
+
+`--list-sdks`
+
+Displays the installed .NET Core SDKs.
+
+`--roll-forward-on-no-candidate-fx`
+
+ Rolls forward on no candidate shared framework.
+
+`-v|--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
+
+`--version`
+
+Prints out the version of the .NET Core SDK in use.
+
+# [.NET Core 2.0](#tab/netcore20)
 
 `--additional-deps <PATH>`
 
@@ -111,7 +162,27 @@ Prints out the version of the .NET Core SDK in use.
 
 ### General
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
+
+| Command                                       | Function                                                            |
+| --------------------------------------------- | ------------------------------------------------------------------- |
+| [dotnet build](dotnet-build.md)               | Builds a .NET Core application.                                     |
+| [dotnet build-server](dotnet-build-server.md) | Interacts with servers started by a build.                          |
+| [dotnet clean](dotnet-clean.md)               | Clean build outputs.                                                |
+| [dotnet help](dotnet-help.md)                 | Shows more detailed documentation online for the command.           |
+| [dotnet migrate](dotnet-migrate.md)           | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
+| [dotnet msbuild](dotnet-msbuild.md)           | Provides access to the MSBuild command line.                        |
+| [dotnet new](dotnet-new.md)                   | Initializes a C# or F# project for a given template.                |
+| [dotnet pack](dotnet-pack.md)                 | Creates a NuGet package of your code.                               |
+| [dotnet publish](dotnet-publish.md)           | Publishes a .NET framework-dependent or self-contained application. |
+| [dotnet restore](dotnet-restore.md)           | Restores the dependencies for a given application.                  |
+| [dotnet run](dotnet-run.md)                   | Runs the application from source.                                   |
+| [dotnet sln](dotnet-sln.md)                   | Options to add, remove, and list projects in a solution file.       |
+| [dotnet store](dotnet-store.md)               | Stores assemblies in the runtime package store.                     |
+| [dotnet test](dotnet-test.md)                 | Runs tests using a test runner.                                     |
+| [dotnet tool](dotnet-tool.md)                 | Install or work with global tools that extend the .NET experience.  |
+
+# [.NET Core 2.0](#tab/netcore20)
 
 | Command                             | Function                                                            |
 | ----------------------------------- | ------------------------------------------------------------------- |
@@ -192,7 +263,7 @@ Run a framework-dependent app named `myapp.dll`:
 
 ## Environment variables
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 `DOTNET_PACKAGES`
 
@@ -204,11 +275,29 @@ Specifies the location of the servicing index to use by the shared host when loa
 
 `DOTNET_CLI_TELEMETRY_OPTOUT`
 
-Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted); otherwise, set to `false` to opt-in to the telemetry features (values `false`, `0`, or `no` accepted). If not set, the defaults is `false`, and the telemetry feature is active.
+Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 `DOTNET_MULTILEVEL_LOOKUP`
 
-Specifies whether .NET Core runtime, shared framework or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+
+# [.NET Core 2.0](#tab/netcore20)
+
+`DOTNET_PACKAGES`
+
+The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+
+`DOTNET_SERVICING`
+
+Specifies the location of the servicing index to use by the shared host when loading the runtime.
+
+`DOTNET_CLI_TELEMETRY_OPTOUT`
+
+Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
+
+`DOTNET_MULTILEVEL_LOOKUP`
+
+Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -222,6 +311,6 @@ Specifies the location of the servicing index to use by the shared host when loa
 
 `DOTNET_CLI_TELEMETRY_OPTOUT`
 
-Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted); otherwise, set to `false` to opt-in to the telemetry features (values `false`, `0`, or `no` accepted). If not set, the defaults is `false`, and the telemetry feature is active.
+Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 ---

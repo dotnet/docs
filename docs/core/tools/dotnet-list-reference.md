@@ -11,7 +11,7 @@ ms.date: 05/25/2018
 
 ## Name
 
-`dotnet list reference` - Lists project to project references.
+`dotnet list reference` - Lists project-to-project references.
 
 ## Synopsis
 

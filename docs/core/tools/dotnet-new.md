@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/25/2018
+ms.date: 05/29/2018
 ---
 # dotnet new
 
@@ -17,7 +17,8 @@ ms.date: 05/25/2018
 
 # [.NET Core 2.1](#tab/netcore21)
 ```
-dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] [Template options]
+dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output]
+    [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
@@ -257,19 +258,19 @@ Each project template may have additional options available. The core templates 
 
 **console, angular, react, reactredux, razorclasslib**
 
-  `--no-restore` - Doesn't perform an implicit restore during project creation.
+  `--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **classlib**
 
 `-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.0` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **mstest, xunit**
 
 `-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **globaljson**
 
@@ -279,7 +280,7 @@ Each project template may have additional options available. The core templates 
 
 `--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **webapi**
 
@@ -308,7 +309,7 @@ Each project template may have additional options available. The core templates 
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **mvc, razor**
 
@@ -347,7 +348,7 @@ Each project template may have additional options available. The core templates 
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **page**
 
@@ -363,19 +364,19 @@ Each project template may have additional options available. The core templates 
 
 **console, angular, react, reactredux**
 
-  `--no-restore` - Doesn't perform an implicit restore during project creation.
+  `--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **classlib**
 
 `-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.0` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **mstest, xunit**
 
 `-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **globaljson**
 
@@ -385,7 +386,7 @@ Each project template may have additional options available. The core templates 
 
 `--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **webapi**
 
@@ -414,7 +415,7 @@ Each project template may have additional options available. The core templates 
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **mvc, razor**
 
@@ -453,7 +454,7 @@ Each project template may have additional options available. The core templates 
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+`--no-restore` - Doesn't execute an implicit restore during project creation.
 
 **page**
 

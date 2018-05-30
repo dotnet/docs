@@ -73,7 +73,7 @@ Compiles for a specific [framework](../../standard/frameworks.md). The framework
 
 `--force`
 
-Forces all dependencies to be resolved even if the last restore was successful. Specifying this option is the same as deleting the *project.assets.json* file.
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 `-h|--help`
 
@@ -81,7 +81,7 @@ Prints out a short help for the command.
 
 `--no-dependencies`
 
-Ignores project-to-project (P2P) references and only builds the root project specified to build.
+Ignores project-to-project (P2P) references and only builds the specified root project.
 
 `--no-incremental`
 
@@ -89,7 +89,7 @@ Marks the build as unsafe for incremental build. This flag turns off incremental
 
 `--no-restore`
 
-Doesn't perform an implicit restore during build.
+Doesn't execute an implicit restore during build.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -123,7 +123,7 @@ Prints out a short help for the command.
 
 `--no-dependencies`
 
-Ignores project-to-project (P2P) references and only builds the root project specified to build.
+Ignores project-to-project (P2P) references and only builds the specified root project.
 
 `--no-incremental`
 

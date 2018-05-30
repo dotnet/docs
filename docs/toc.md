@@ -129,6 +129,7 @@
 ### [Custom templates](core/tools/custom-templates.md)
 ### [dotnet](core/tools/dotnet.md)
 ### [dotnet build](core/tools/dotnet-build.md)
+### [dotnet build-server](core/tools/dotnet-build-server.md)
 ### [dotnet clean](core/tools/dotnet-clean.md)
 ### [dotnet help](core/tools/dotnet-help.md)
 ### [dotnet install-script](core/tools/dotnet-install-script.md)

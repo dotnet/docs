@@ -3,7 +3,7 @@ title: dotnet help command - .NET Core CLI
 description: The dotnet help command shows more detailed documentation online for the specified command.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/17/2017
+ms.date: 05/25/2018
 ---
 # dotnet help reference
 

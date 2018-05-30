@@ -1,26 +1,12 @@
 ---
 title: "How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "examples [Windows Forms], TreeView control"
   - "TreeView control [Windows Forms], removing nodes"
   - "tree nodes in TreeView control"
   - "TreeView control [Windows Forms], adding nodes"
 ms.assetid: 35bf1750-045e-4ec5-97cb-b47b0dbdaa2c
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer
 Because the Windows Forms <xref:System.Windows.Forms.TreeView> control displays nodes in a hierarchical manner, when adding a node you must pay attention to what its parent node is.  

@@ -1,21 +1,7 @@
 ---
 title: "FUNCTION (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # FUNCTION (Entity SQL)
 Defines a function in the scope of an Entity SQL query command.  

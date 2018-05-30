@@ -1,20 +1,11 @@
 ---
 title: "Sorting data in the Windows Forms DataGridView control"
 ms.date: "02/13/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-winforms"
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], sorting in grids"
   - "data grids [Windows Forms], sorting data"
   - "DataGridView control [Windows Forms], sorting data"
 ms.assetid: c1d4f24c-d961-4181-809d-5a5caa6122e4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Sorting data in the Windows Forms DataGridView control
 

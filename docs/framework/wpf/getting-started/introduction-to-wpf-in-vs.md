@@ -1,14 +1,6 @@
 ---
 title: "Introduction to WPF in Visual Studio"
-ms.custom: ""
 ms.date: "01/26/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "typography [WPF]"
   - "media [WPF]"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "WPF [WPF], about Windows Presentation Foundation"
   - "3-D rendering [WPF]"
 ms.assetid: 582a314e-e23d-4144-b45b-acbbd5579252
-caps.latest.revision: 54
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Introduction to WPF in Visual Studio
 Windows Presentation Foundation (WPF) in Visual Studio provides developers with a unified programming model for building line-of-business desktop applications on Windows.  

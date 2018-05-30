@@ -1,25 +1,11 @@
 ---
 title: "How to: Inherit Forms Using the Inheritance Picker Dialog Box"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inheritance [Windows Forms], forms"
   - "Inheritance Picker dialog box"
   - "inherited forms [Windows Forms], creating"
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Inherit Forms Using the Inheritance Picker Dialog Box
 The easiest way to inherit a form or other object is to use the **Inheritance Picker** dialog box. With it, you can take advantage of code or user interfaces (UI) you have already created in other solutions.  

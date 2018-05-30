@@ -1,10 +1,6 @@
 ---
 title: "Bi-Directional Support for Windows Forms Applications"
 ms.date: "09/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-winforms"
-ms.topic: "article"
 helpviewer_keywords: 
   - "globalization [Windows Forms], bi-directional support in Windows"
   - "Windows Forms, international"
@@ -13,12 +9,9 @@ helpviewer_keywords:
   - "Windows Forms, bi-directional support"
 author: rpetrusha
 ms.author: ronpet
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Bi-Directional Support for Windows Forms Applications
-You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Windows-based applications that support bi-directional (right-to-left) languages such as Arabic and Hebrew. This includes standard forms, dialog boxes, MDI forms, and all the controls you can work with in these forms—that is, all the objects in the <xref:System.Windows.Forms.Control> namespace.  
+You can use Visual Studio to create Windows-based applications that support bi-directional (right-to-left) languages such as Arabic and Hebrew. This includes standard forms, dialog boxes, MDI forms, and all the controls you can work with in these forms—that is, all the objects in the <xref:System.Windows.Forms.Control> namespace.  
   
 ## Culture Support  
  Culture and UI culture settings determine how an application works with dates, times, currency, and other information. Support for culture and UI culture is the same for bi-directional languages as it is for any other languages.   Also see [Culture-Specific Classes for Global Windows Forms and Web Forms](http://msdn.microsoft.com/library/94ye9x8c\(v=vs.110\)) or [Culture-Specific Classes for Global Windows Forms and Web Forms](http://msdn.microsoft.com/library/94ye9x8c\(v=vs.120\))  

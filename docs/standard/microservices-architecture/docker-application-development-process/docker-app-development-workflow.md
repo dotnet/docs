@@ -1,16 +1,9 @@
 ---
 title: Development workflow for Docker apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Development workflow for Docker apps
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Development workflow for Docker apps
 

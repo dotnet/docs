@@ -1,15 +1,9 @@
 ---
 title: "Pointer types (C# Programming Guide)"
 ms.date: 04/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"
   - "pointers [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Pointer types (C# Programming Guide)
 

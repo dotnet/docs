@@ -1,21 +1,12 @@
 ---
 title: "Expression has the type &#39;&lt;typename&gt;&#39; which is a restricted type and cannot be used to access members inherited from &#39;Object&#39; or &#39;ValueType&#39;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc31393"
   - "vbc31393"
 helpviewer_keywords: 
   - "BC31393"
 ms.assetid: 2963cf3f-c527-4aa7-b67c-ee80b6d23186
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Expression has the type &#39;&lt;typename&gt;&#39; which is a restricted type and cannot be used to access members inherited from &#39;Object&#39; or &#39;ValueType&#39;
 An expression evaluates to a type that cannot be boxed by the common language runtime (CLR) but accesses a member that requires boxing.  

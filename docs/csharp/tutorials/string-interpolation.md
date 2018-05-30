@@ -1,128 +1,108 @@
 ---
-title: String Interpolation - C#
-description: Learn how string interpolation works in C# 6
-keywords: .NET, .NET Core, C#, string
-author: mgroves
-ms.author: wiwagn
-ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
-ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
+title: String interpolation in C#
+description: Learn how to include formatted expression results in a result string in C# with string interpolation.
+author: pkulikov
+ms.date: 05/09/2018
 ---
+# String interpolation in C# #
 
-# String Interpolation in C# #
+This tutorial shows you how to use [string interpolation](../language-reference/tokens/interpolated.md) to format and include expression results in a result string. The examples assume that you are familiar with basic C# concepts and .NET type formatting. If you are new to string interpolation or .NET type formatting, check out the [interactive string interpolation quickstart](../quick-starts/interpolated-strings.yml) first. For more information about formatting types in .NET, see the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) topic.
 
-String Interpolation is the way that placeholders in a string are replaced by the value of a string variable. Before C# 6, the way to do this is with <xref:System.String.Format%2A?displayProperty=nameWithType>. This works okay, but since it uses numbered placeholders, it can be harder to read and more verbose.
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
-Other programming languages have had string interpolation built into the language for a while. For instance, in PHP:
+## Introduction
 
-```php
-$name = "Jonas";
-echo "My name is $name.";
-// This will output "My name is Jonas."
-```
+The [string interpolation](../language-reference/tokens/interpolated.md) feature is built on top of the [composite formatting](../../standard/base-types/composite-formatting.md) feature and provides a more readable and convenient syntax to include formatted expression results in a result string.
 
-In C# 6, we finally have that style of string interpolation. You can use a `$` before a string to indicate that it should substitute variables/expressions for their values.
+To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can embed any valid C# expression that returns a value in an interpolated string. In the following example, as soon as an expression is evaluated, its result is converted into a string and included in a result string:
 
-## Prerequisites
-You’ll need to set up your machine to run .NET core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
-page.
-You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
-You’ll need to install your favorite code editor. The descriptions below
-use [Visual Studio Code](https://code.visualstudio.com/) which is an open
-source, cross platform editor. However, you can use whatever tools you are
-comfortable with.
+[!code-csharp-interactive[string interpolation example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#1)]
 
-## Create the Application
-
-Now that you've installed all the tools, create a new .NET Core
-application. To use the command line generator, create a directory for your project, such as `interpolated`, and execute the following command in your favorite shell:
+As the example shows, you include an expression in an interpolated string by enclosing it with braces:
 
 ```
-dotnet new console
+{<interpolatedExpression>}
 ```
 
-This command creates a barebones .NET Core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+At compile time, an interpolated string is typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. That makes all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature available to you to use with interpolated strings as well.
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+## How to specify a format string for an interpolated expression
 
-To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
-
-
-
-## Intro to String Interpolation
-
-With <xref:System.String.Format%2A?displayProperty=nameWithType>, you specify "placeholders" in a string that are replaced by the arguments following the string. For instance:
-
-[!code-csharp[String.Format example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#StringFormatExample)]  
-
-That will output "My name is Matt Groves".
-
-In C# 6, instead of using `String.Format`, you define an interpolated string by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
-
-[!code-csharp[Interpolation example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExample)]  
-
-You don't have to use just variables. You can use any expression within the brackets. For instance:
-
-[!code-csharp[Interpolation expression example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExpressionExample)]  
-
-Which would output:
+You specify a format string that is supported by the type of the expression result by following the interpolated expression with a colon (":") and the format string:
 
 ```
-This is line number 1
-This is line number 2
-This is line number 3
-This is line number 4
-This is line number 5
+{<interpolatedExpression>:<formatString>}
 ```
 
-## How string interpolation works
+The following example shows how to specify standard and custom format strings for expressions that produce date and time or numeric results:
 
-Behind the scenes, this string interpolation syntax is translated into `String.Format` by the compiler. So, you can do the [same type of stuff you've done before with `String.Format`](../../standard/base-types/formatting-types.md).
+[!code-csharp-interactive[format string example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#2)]
 
-For instance, you can add padding and numeric formatting:
+For more information, see the [Format String Component](../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic. That section provides links to the topics that describe standard and custom format strings supported by .NET base types.
 
-[!code-csharp[Interpolation formatting example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationFormattingExample)]  
+## How to control the field width and alignment of the formatted interpolated expression
 
-The above would output something like:
+You specify the minimum field width and the alignment of the formatted expression result by following the interpolated expression with a comma (",") and the constant expression:
 
 ```
-998        5,177.67
-999        6,719.30
-1000       9,910.61
-1001       529.34
-1002       1,349.86
-1003       2,660.82
-1004       6,227.77
+{<interpolatedExpression>,<alignment>}
 ```
 
-If a variable name is not found, then a compile-time error is generated.
+If the *alignment* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned.
 
-For instance:
+If you need to specify both alignment and a format string, start with the alignment component:
 
-```csharp
-var animal = "fox";
-var localizeMe = $"The {adj} brown {animal} jumped over the lazy {otheranimal}";
-var adj = "quick";
-Console.WriteLine(localizeMe);
+```
+{<interpolatedExpression>,<alignment>:<formatString>}
 ```
 
-If you compile this, you get errors:
- 
-* `Cannot use local variable 'adj' before it is declared` - the `adj` variable wasn't declared until *after* the interpolated string.
-* `The name 'otheranimal' does not exist in the current context` - a variable called `otheranimal` was never even declared
+The following example shows how to specify alignment and uses pipe characters ("|") to delimit text fields:
 
-## Localization and Internationalization
+[!code-csharp-interactive[alignment example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#3)]
 
-An interpolated string supports <xref:System.IFormattable?displayProperty=nameWithType> and <xref:System.FormattableString?displayProperty=nameWithType>, which can be useful for internationalization.
+As the example output shows, if the length of the formatted expression result exceeds specified field width, the *alignment* value is ignored.
 
-By default, an interpolated string uses the current culture. To use a different culture, cast an interpolated string as `IFormattable`. For instance:
+For more information, see the [Alignment Component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
 
-[!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
+## How to use escape sequences in an interpolated string
 
-## Conclusion 
+Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences).
 
-In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses. For more information, see the [String interpolation](../../csharp//language-reference/tokens/interpolated.md) topic.
+To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. A verbatim interpolated string starts with the `$` character followed by the `@` character.
+
+To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}". For more information, see the [Escaping Braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
+
+The following example shows how to include braces in a result string and construct a verbatim interpolated string:
+
+[!code-csharp-interactive[escape sequence example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#4)]
+
+## How to use a ternary conditional operator `?:` in an interpolated expression
+
+As the colon (":") has special meaning in an item with an interpolated expression, in order to use a [conditional operator](../language-reference/operators/conditional-operator.md) in an expression, enclose it in parentheses, as the following example shows:
+
+[!code-csharp-interactive[conditional operator example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#5)]
+
+## How to create a culture-specific result string with string interpolation
+
+By default, an interpolated string uses the current culture defined by the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property for all formatting operations. Use implicit conversion of an interpolated string to a <xref:System.FormattableString?displayProperty=nameWithType> instance and call its <xref:System.FormattableString.ToString(System.IFormatProvider)> method to create a culture-specific result string. The following example shows how to do that:
+
+[!code-csharp-interactive[specify different cultures](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#6)]
+
+As the example shows, you can use one <xref:System.FormattableString> instance to generate multiple result strings for various cultures.
+
+## How to create a result string using the invariant culture
+
+Along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, you can use the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to resolve an interpolated string to a result string for the <xref:System.Globalization.CultureInfo.InvariantCulture>. The following example shows how to do that:
+
+[!code-csharp-interactive[format with invariant culture](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#7)]
+
+## Conclusion
+
+This tutorial describes common scenarios of string interpolation usage. For more information about string interpolation, see the [String interpolation](../language-reference/tokens/interpolated.md) topic. For more information about formatting types in .NET, see the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) and [Composite formatting](../../standard/base-types/composite-formatting.md) topics.
+
+## See also
+
+<xref:System.String.Format%2A?displayProperty=nameWithType>  
+<xref:System.FormattableString?displayProperty=nameWithType>  
+<xref:System.IFormattable?displayProperty=nameWithType>  
+[Strings](../programming-guide/strings/index.md)  

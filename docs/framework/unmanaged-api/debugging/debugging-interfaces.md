@@ -1,25 +1,13 @@
 ---
 title: "Debugging Interfaces"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "unmanaged interfaces [.NET Framework], debugging"
   - "debugging interfaces [.NET Framework]"
   - "interfaces [.NET Framework debugging]"
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
-caps.latest.revision: 32
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Debugging Interfaces
 This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).  

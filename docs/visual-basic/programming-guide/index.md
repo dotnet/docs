@@ -1,18 +1,11 @@
 ---
 title: "Visual Basic Programming Guide"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, language guide"
   - "Visual Basic, programming in"
   - "Visual Basic, language reference"
 ms.assetid: 640e5796-2796-433c-af37-4d2a2334895b
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Programming Guide
 As with any modern programming language, Visual Basic supports many common programming constructs and language elements. This guide describes all the major elements of programming with Visual Basic.  

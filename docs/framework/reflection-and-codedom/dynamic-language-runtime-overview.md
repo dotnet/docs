@@ -1,22 +1,14 @@
 ---
 title: "Dynamic Language Runtime Overview | Microsoft Docs"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "dynamic language runtime"
   - "IronPython"
   - "DLR"
   - "IronRuby"
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
-caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dynamic Language Runtime Overview
 The *dynamic language runtime* (DLR) is a runtime environment that adds a set of services for dynamic languages to the common language runtime (CLR). The DLR makes it easier to develop dynamic languages to run on the .NET Framework and to add dynamic features to statically typed languages.  

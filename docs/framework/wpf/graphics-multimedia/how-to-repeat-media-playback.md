@@ -1,26 +1,12 @@
 ---
 title: "How to: Repeat Media Playback"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "media [WPF], repeating playback"
   - "repeating media playback [WPF]"
   - "multimedia [WPF], repeating media playback"
   - "playback of media [WPF], repeating"
 ms.assetid: 02ab486d-c6b6-4918-9edd-45a12aca4683
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Repeat Media Playback
 This example shows how to playback media indefinitely, that is, to set media so that it plays in an infinite loop.  

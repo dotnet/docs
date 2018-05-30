@@ -1,25 +1,11 @@
 ---
 title: "How to: Animate a 3-D Rotation Using Quaternions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "quaternions [WPF]"
   - "animation [WPF], 3-D translations [WPF], with quaternions"
   - "3-D translations [WPF], animating [WPF], with quaternions"
 ms.assetid: adca9cb1-066b-4de8-abbb-6b4007579ee7
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a 3-D Rotation Using Quaternions
 This example shows how to animate a rotation of a 3-D object using quaternions.  

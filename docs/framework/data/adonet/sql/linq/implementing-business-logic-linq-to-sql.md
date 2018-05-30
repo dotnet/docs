@@ -1,24 +1,10 @@
 ---
 title: "Implementing Business Logic (LINQ to SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing Business Logic (LINQ to SQL)
 The term "business logic" in this topic refers to any custom rules or validation tests that you apply to data before it is inserted, updated or deleted from the database. Business logic is also sometimes referred to as "business rules" or "domain logic." In n-tier applications it is typically designed as a logical layer so that it can be modified independently of the presentation layer or data access layer. The business logic can be invoked by the data access layer before or after any update, insertion, or deletion of data in the database.  
@@ -163,7 +149,7 @@ public string CustomerID
 }  
 ```  
   
- In your part of the class, you write an implementing definition of the method. In [!INCLUDE[vsprvs](../../../../../../includes/vsprvs-md.md)], after you type `partial` you will see IntelliSense for the method definitions in the other part of the class.  
+ In your part of the class, you write an implementing definition of the method. In Visual Studio, after you type `partial` you will see IntelliSense for the method definitions in the other part of the class.  
   
 ```vb  
 Partial Public Class Customer  

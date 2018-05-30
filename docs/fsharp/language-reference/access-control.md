@@ -1,17 +1,8 @@
 ---
 title: Access Control (F#)
 description: Learn how to control access to programming elements, such as types, methods, and functions, in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 955b06fe-d1cd-431d-8db6-93e83b697453 
 ---
-
 # Access Control
 
 *Access control* refers to declaring which clients can use certain program elements, such as types, methods, and functions.

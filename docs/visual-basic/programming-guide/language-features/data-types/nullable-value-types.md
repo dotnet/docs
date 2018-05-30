@@ -1,10 +1,6 @@
 ---
 title: "Nullable Value Types (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Nullable"
 helpviewer_keywords: 
@@ -14,8 +10,6 @@ helpviewer_keywords:
   - "nullable types [Visual Basic]"
   - "data types [Visual Basic], nullable"
 ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Nullable Value Types (Visual Basic)
 Sometimes you work with a value type that does not have a defined value in certain circumstances. For example, a field in a database might have to distinguish between having an assigned value that is meaningful and not having an assigned value. Value types can be extended to take either their normal values or a null value. Such an extension is called a *nullable type*.  

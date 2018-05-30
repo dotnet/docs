@@ -1,14 +1,6 @@
 ---
 title: "How to: Sort and Group Data Using a View in XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data binding [WPF], grouping data in views in XAML"
   - "XAML [WPF], sorting data in views"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "views [WPF], sorting data"
   - "views [WPF], grouping data"
 ms.assetid: 145c8c3f-dbdd-4d0d-816f-90b35eba7eda
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Sort and Group Data Using a View in XAML
 This example shows how to create a view of a data collection in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. Views allow for the functionalities of grouping, sorting, filtering, and the notion of a current item.  

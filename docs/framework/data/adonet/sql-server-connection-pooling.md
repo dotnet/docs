@@ -1,24 +1,10 @@
 ---
 title: "SQL Server Connection Pooling (ADO.NET)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
-caps.latest.revision: 11
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL Server Connection Pooling (ADO.NET)
 Connecting to a database server typically consists of several time-consuming steps. A physical channel such as a socket or a named pipe must be established, the initial handshake with the server must occur, the connection string information must be parsed, the connection must be authenticated by the server, checks must be run for enlisting in the current transaction, and so on.  
@@ -81,7 +67,7 @@ using (SqlConnection connection = new SqlConnection(
 >  Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
   
 > [!NOTE]
->  Login and logout events will not be raised on the server when a connection is fetched from or returned to the connection pool. This is because the connection is not actually closed when it is returned to the connection pool. For more information, see [Audit Login Event Class](http://msdn2.microsoft.com/library/ms190260.aspx) and [Audit Logout Event Class](http://msdn2.microsoft.com/library/ms175827.aspx) in [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] Books Online.  
+>  Login and logout events will not be raised on the server when a connection is fetched from or returned to the connection pool. This is because the connection is not actually closed when it is returned to the connection pool. For more information, see [Audit Login Event Class](http://msdn2.microsoft.com/library/ms190260.aspx) and [Audit Logout Event Class](http://msdn2.microsoft.com/library/ms175827.aspx) in SQL Server Books Online.  
   
 ## Removing Connections  
  The connection pooler removes a connection from the pool after it has been idle for approximately 4-8 minutes, or if the pooler detects that the connection with the server has been severed. Note that a severed connection can be detected only after attempting to communicate with the server. If a connection is found that is no longer connected to the server, it is marked as invalid. Invalid connections are removed from the connection pool only when they are closed or reclaimed.  
@@ -108,7 +94,7 @@ using (SqlConnection connection = new SqlConnection(
 ### Pool Fragmentation Due to Many Databases  
  Many Internet service providers host several Web sites on a single server. They may use a single database to confirm a Forms authentication login and then open a connection to a specific database for that user or group of users. The connection to the authentication database is pooled and used by everyone. However, there is a separate pool of connections to each database, which increase the number of connections to the server.  
   
- This is also a side-effect of the application design. There is a relatively simple way to avoid this side effect without compromising security when you connect to [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. Instead of connecting to a separate database for each user or group, connect to the same database on the server and then execute the [!INCLUDE[tsql](../../../../includes/tsql-md.md)] USE statement to change to the desired database. The following code fragment demonstrates creating an initial connection to the `master` database and then switching to the desired database specified in the `databaseName` string variable.  
+ This is also a side-effect of the application design. There is a relatively simple way to avoid this side effect without compromising security when you connect to SQL Server. Instead of connecting to a separate database for each user or group, connect to the same database on the server and then execute the [!INCLUDE[tsql](../../../../includes/tsql-md.md)] USE statement to change to the desired database. The following code fragment demonstrates creating an initial connection to the `master` database and then switching to the desired database specified in the `databaseName` string variable.  
   
 ```vb  
 ' Assumes that command is a valid SqlCommand object and that  
@@ -133,7 +119,7 @@ using (SqlConnection connection = new SqlConnection(
 ```  
   
 ## Application Roles and Connection Pooling  
- After a [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
+ After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### Application Role Alternatives  
  We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  

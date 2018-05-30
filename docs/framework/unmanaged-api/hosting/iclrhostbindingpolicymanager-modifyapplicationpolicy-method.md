@@ -1,14 +1,6 @@
 ---
 title: "ICLRHostBindingPolicyManager::ModifyApplicationPolicy Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRHostBindingPolicyManager.ModifyApplicationPolicy"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRHostBindingPolicyManager::ModifyApplicationPolicy Method
 Modifies the binding policy for the specified assembly, and creates a new version of the policy.  

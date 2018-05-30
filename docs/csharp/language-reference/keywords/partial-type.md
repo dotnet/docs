@@ -1,19 +1,12 @@
 ---
 title: "partial (Type) (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "partialtype"
   - "partialtype_CSharpKeyword"
 helpviewer_keywords: 
   - "partial types [C#]"
 ms.assetid: 27320743-a22e-4c7b-b0b3-53afe3607334
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # partial (Type) (C# Reference)
 Partial type definitions allow for the definition of a class, struct, or interface to be split into multiple files.  

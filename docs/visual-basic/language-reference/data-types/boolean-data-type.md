@@ -1,11 +1,6 @@
 ---
 title: "Boolean Data Type (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.FALSE"
   - "vb.TRUE"
@@ -17,9 +12,6 @@ helpviewer_keywords:
   - "True keyword [Visual Basic]"
   - "Boolean values [Visual Basic], True keyword"
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Boolean Data Type (Visual Basic)
 Holds values that can be only `True` or `False`. The keywords `True` and `False` correspond to the two states of `Boolean` variables.  

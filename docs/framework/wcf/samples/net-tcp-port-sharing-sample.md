@@ -1,21 +1,7 @@
 ---
 title: "Net.TCP Port Sharing Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Net.TCP Port Sharing Sample
 The TCP/IP protocol uses a 16-bit number, called a port, to differentiate connections to multiple network applications running on the same machine. If an application is listening on a port, then all TCP traffic for that port goes to that application. Other applications cannot listen on that port at the same time.  
@@ -25,13 +11,13 @@ The TCP/IP protocol uses a 16-bit number, called a port, to differentiate connec
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\TCP\PortSharing`  
   
  Many protocols have a standard or default port number that they use. For example, the HTTP protocol typically uses TCP port 80. Internet Information Services (IIS) has a listener to share a port between multiple HTTP applications. IIS listens on the port directly and forwards messages to the appropriate application based on information inside the message stream. This allows multiple HTTP applications to use the same port number without having to compete to reserve the port for receiving messages.  
   
- NetTcp Port Sharing is a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]feature that similarly allows multiple network applications to share a single port. The NetTcp Port Sharing Service accepts connections using the net.tcp protocol and forwards messages based on their destination address.  
+ NetTcp Port Sharing is a Windows Communication Foundation (WCF)feature that similarly allows multiple network applications to share a single port. The NetTcp Port Sharing Service accepts connections using the net.tcp protocol and forwards messages based on their destination address.  
   
  The NetTcp Port Sharing Service is not enabled by default. Before running this sample, you must manually enable the service. For more information, see [How to: Enable the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md). If the service is disabled, an exception is thrown when the server application is started.  
   
@@ -43,8 +29,8 @@ Unhandled Exception: System.ServiceModel.CommunicationException: The TransportMa
   
 ## Enabling Port Sharing  
  The following code demonstrates enabling port sharing on the server. It starts an instance of the `ICalculator` service on a fixed port with a random URI path. Even though two services can share the same port, their overall endpoint addresses still must be unique so that the NetTcp Port Sharing Service can route messages to the correct application.  
-  
-```  
+
+```csharp
 // Configure a binding with TCP port sharing enabled  
 NetTcpBinding binding = new NetTcpBinding();  
 binding.PortSharingEnabled = true;  
@@ -56,8 +42,8 @@ string address =
    String.Format("net.tcp://localhost:9000/calculator/{0}", salt);  
 host.AddServiceEndpoint(typeof(ICalculator), binding, address);  
 host.Open();  
-```  
-  
+```
+
  With port sharing enabled, you can run the service multiple times without having a conflict over the port number. If you change the code to disable port sharing, starting up two copies of the service results in the second failing with an <xref:System.ServiceModel.AddressAlreadyInUseException>.  
   
 ```  
@@ -66,8 +52,8 @@ Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is 
   
 ## Running the Sample  
  You can use the test client to check that messages are correctly routed to services sharing the port.  
-  
-```  
+
+```csharp
 class client  
 {  
    static void Main(string[] args)  
@@ -109,8 +95,8 @@ class client
       factory.Close();  
    }  
 }  
-```  
-  
+```
+
  Each instance of the service prints out its unique number and address. For instance, you may see the following text when you run service.exe.  
   
 ```  

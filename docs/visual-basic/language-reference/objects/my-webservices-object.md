@@ -1,20 +1,12 @@
 ---
 title: "My.WebServices Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "My.WebServices"
   - "My.MyProject.WebServices"
 helpviewer_keywords: 
   - "My.WebServices object"
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.WebServices Object
 Provides properties for creating and accessing a single instance of each XML Web service referenced by the current project.  

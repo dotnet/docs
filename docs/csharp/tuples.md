@@ -1,28 +1,20 @@
 ---
-title: Tuples - C# Guide
+title: Tuple types - C# Guide
 description: Learn about unnamed and named tuple types in C#
-keywords: .NET, .NET Core, C#
-author: BillWagner
-ms-author: wiwagn
-ms.date: 11/23/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
+ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
+# C# tuple types #
 
-# C# Tuple types #
-
-C# Tuples are types that you define using a lightweight syntax. The advantages
+C# tuples are types that you define using a lightweight syntax. The advantages
 include a simpler syntax, rules for conversions based on number (referred to as cardinality)
 and types of elements, and
-consistent rules for copies and assignments. As a tradeoff, Tuples do not
-support some of the object oriented idioms associated with inheritance. You
-can get an overview in the section on [Tuples in the What's new in C# 7.0](whats-new/csharp-7.md#tuples) topic.
+consistent rules for copies, equality tests, and assignments. As a tradeoff, tuples do not
+support some of the object-oriented idioms associated with inheritance. You
+can get an overview in the section on [tuples in the What's new in C# 7.0](whats-new/csharp-7.md#tuples) article.
 
-In this topic, you'll learn the language rules governing Tuples in C# 7.0 and later,
-different ways to use them, and initial guidance on working with Tuples.
+In this article, you'll learn the language rules governing tuples in C# 7.0 and later versions,
+different ways to use them, and initial guidance on working with tuples.
 
 > [!NOTE]
 > The new tuples features require the <xref:System.ValueTuple> types.
@@ -40,7 +32,7 @@ different ways to use them, and initial guidance on working with Tuples.
 > API and delivered as part of the framework, the NuGet package requirement will
 > be removed.
 
-Let's start with the reasons for adding new Tuple support. Methods return
+Let's start with the reasons for adding new tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
 object more easily.
 
@@ -51,9 +43,9 @@ information. Using these `Tuple` types does not enable communicating the
 meaning of each of the properties. The new language features enable you to declare
 and use semantically meaningful names for the elements in a tuple.
 
-Another concern is that the `Tuple` classes are
+The `Tuple` classes cause more performance concerns because they are
 reference types. Using one of the `Tuple` types means allocating objects. On hot
-paths, this can have a measurable impact on your application's performance. Therefore,
+paths, allocating many small objects can have a measurable impact on your application's performance. Therefore,
 the language support for tuples leverages the new `ValueTuple` structs.
 
 To avoid those deficiencies, you could create a `class` or a `struct`
@@ -73,7 +65,7 @@ Tuples are both simpler and more flexible data containers than `class` and
 
 ## Named and unnamed tuples
 
-The `ValueTuple` struct has fields named `Item1`, `Item2`, `Item3` and so on,
+The `ValueTuple` struct has fields named `Item1`, `Item2`, `Item3`, and so on,
 similar to the properties defined in the existing `Tuple` types.
 These names are the only names you can use for *unnamed tuples*. When you
 do not provide any alternative field names to a tuple, you've created an
@@ -82,7 +74,7 @@ unnamed tuple:
 [!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
 
 The tuple in the previous example was initialized using literal constants and
-won't have element names created using *Tuple field name projections* in C# 7.1.
+won't have element names created using *tuple field name projections* in C# 7.1.
 
 However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
@@ -95,7 +87,7 @@ is to specify the names as part of the tuple initialization:
 
 These synonyms are handled by the compiler and the language so that you
 can use named tuples effectively. IDEs and editors can read these semantic names
-using the Roslyn APIs. This enables you to reference the elements of a named
+using the Roslyn APIs. You can reference the elements of a named
 tuple by those semantic names anywhere in the same assembly. The compiler
 replaces the names you've defined with `Item*` equivalents when generating
 the compiled output. The compiled Microsoft Intermediate Language (MSIL)
@@ -111,7 +103,7 @@ The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
 adds a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute> attribute on the method. This attribute contains
 a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames> list property that contains the names given to each of
-the elements in the Tuple.
+the elements in the tuple.
 
 > [!NOTE]
 > Development Tools, such as Visual Studio, also read that metadata,
@@ -133,20 +125,20 @@ and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 [!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
 
 For any field where an explicit name is not provided, an applicable implicit
-name will be projected. Note that there is no requirement to provide semantic names,
-either explicitly or implicitly. The following initializer will have field
+name is projected. There is no requirement to provide semantic names,
+either explicitly or implicitly. The following initializer has     field
 names `Item1`, whose value is `42` and `StringContent`, whose value is "The answer to everything":
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
 
 There are two conditions where candidate field names are not projected onto the tuple field:
 
-1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString` or `Rest`.
+1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString`. or `Rest`.
 1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
 
 These conditions avoid ambiguity. These names would cause an ambiguity
 if they were used as the field names for a field in a tuple. Neither of these
-conditions cause compile time errors. Instead, the elements without projected names
+conditions cause compile-time errors. Instead, the elements without projected names
 do not have semantic names projected for them.  The following examples
 demonstrate these conditions:
 
@@ -155,11 +147,33 @@ demonstrate these conditions:
 These situations do not cause compiler errors because that would be a breaking change for
 code written with C# 7.0, when tuple field name projections were not available.
 
+## Equality and tuples
+
+Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. The `==` operator stops evaluating members as soon as one pair is not equal. The `!=` operator stops evaluating members as soon as one pair is equal. The following code examples use `==`, but the comparison rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
+
+[!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
+
+There are several rules that make tuple equality tests more convenient. Tuple equality performs [lifted conversions](/dotnet/csharp/language-reference/language-specification/conversions.md#lifted-conversion-operators) if one of the tuples is a nullable tuple, as shown in the following code:
+
+[!code-csharp[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
+
+Tuple equality also performs implicit conversions on each member of both tuples. These include lifted conversions, widening conversions, or other implicit conversions. The following examples show that an integer 2-tuple can be compared to a long 2-tuple because of the implicit conversion from integer to long:
+
+[!code-csharp[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
+
+The names of the tuple members do not participate in tests for equality. However, if one of the operands is a tuple literal with explicit names, the compiler generates warning CS8383 if those names do not match the names of the other operand.
+In the case where both operands are tuple literals, the warning is on the right operand as shown in the following example:
+
+[!code-csharp[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
+
+Finally, tuples may contain nested tuples. Tuple equality compares the "shape" of each operand through nested tuples as shown in the following example:
+
+[!code-csharp[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
+
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
-the same number of elements and implicit conversions for the types for each of those
-elements. Other
+the same number of elements, where each right-hand side element can be implicitly converted to its corresponding left-hand side element. Other
 conversions are not considered for assignments. Let's look at the kinds
 of assignments that are allowed between tuple types.
 
@@ -170,7 +184,7 @@ Consider these variables used in the following examples:
 The first two variables, `unnamed` and `anonymous` do not have semantic
 names provided for the elements. The field names are `Item1` and `Item2`.
 The last two variables, `named` and `differentName` have semantic names
-given for the elements. Note that these two tuples have different names
+given for the elements. These two tuples have different names
 for the elements.
 
 All four of these tuples have the same number of elements (referred to as 'cardinality')
@@ -193,7 +207,7 @@ named = differentShape;
 
 ## Tuples as method return values
 
-One of the most common uses for Tuples is as a method return
+One of the most common uses for tuples is as a method return
 value. Let's walk through one example. Consider this method
 that computes the standard deviation for a sequence of numbers:
 
@@ -207,8 +221,8 @@ that computes the standard deviation for a sequence of numbers:
 > text for more details on the differences between these formulas
 > for standard deviation.
 
-This follows the textbook formula for the standard deviation. It produces
-the correct answer, but it's a very inefficient implementation. This
+The preceding code follows the textbook formula for the standard deviation. It produces
+the correct answer, but it's an inefficient implementation. This
 method enumerates the sequence twice: Once to produce the average, and
 once to produce the average of the square of the difference of the average.
 (Remember that LINQ queries are evaluated lazily, so the computation of
@@ -222,14 +236,11 @@ and the sum of the each value squared:
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
-This version enumerates the sequence exactly once. But, it's not very
-reusable code. As you keep working, you'll find that many different
+This version enumerates the sequence exactly once. But it's not reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
-the sum of the sequence, and the sum 
+the sum of the sequence, and the sum
 of the squares of the sequence. Let's refactor this method and write
-a utility method that produces all three of those values.
-
-This is where tuples come in very useful. 
+a utility method that produces all three of those values. All three values can be returned as a tuple.
 
 Let's update this method so the three values computed during the enumeration
 are stored in a tuple. That creates this version:
@@ -246,7 +257,7 @@ The language enables a couple more options that you can use, if you want
 to make a few quick edits by hand. First, you can use the `var`
 declaration to initialize the tuple result from the `ComputeSumAndSumOfSquares`
 method call. You can also create three discrete variables inside the
-`ComputeSumAndSumOfSquares` method. The final version is below:
+`ComputeSumAndSumOfSquares` method. The final version is shown in the following code:
 
 [!code-csharp[CleanedTupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#09_CleanedTupleVersion "After final cleanup")]
 
@@ -277,12 +288,12 @@ private static (double, double, int) ComputeSumAndSumOfSquares(IEnumerable<doubl
 }
 ```
 
-You must address the fields of this tuple as `Item1`, `Item2`, and `Item3`.
+The fields of this tuple are named `Item1`, `Item2`, and `Item3`.
 It's recommended that you provide semantic names to the elements of tuples
 returned from methods.
 
-Another idiom where tuples can be very useful is when you are authoring
-LINQ queries where the final result is a projection that contains some, but not
+Another idiom where tuples can be useful is when you are authoring
+LINQ queries. The final projected result often contains some, but not
 all, of the properties of the objects being selected.
 
 You would traditionally project the results of the query into a sequence
@@ -301,7 +312,7 @@ class similar to the following to represent a single entry in the ToDo list:
 Your mobile applications may support a compact form of the current ToDo items
 that only displays the title. That LINQ query would make a projection that
 includes only the ID and the title. A method that returns a sequence of tuples
-expresses that design very well:
+expresses that design well:
 
 [!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
 
@@ -336,7 +347,7 @@ declarations inside the parentheses.
 (double sum, var sumOfSquares, var count) = ComputeSumAndSumOfSquares(sequence);
 ```
 
-Note that you cannot use a specific
+You cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.
 
@@ -355,10 +366,10 @@ public class Point
 > [!WARNING]
 >  You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
 
-### Deconstructing user defined types
+### Deconstructing user-defined types
 
 Any tuple type can be deconstructed as shown above. It's also easy
-to enable deconstruction on any user defined type (classes, structs, or 
+to enable deconstruction on any user-defined type (classes, structs, or 
 even interfaces).
 
 The type author can define one or more `Deconstruct` methods that
@@ -380,7 +391,7 @@ The `Deconstruct` method can be an extension method that unpackages
 the accessible data members of an object. The example below shows
 a `Student` type, derived from the `Person` type, and an extension
 method that deconstructs a `Student` into three variables, representing
-the `FirstName`, the `LastName` and the `GPA`:
+the `FirstName`, the `LastName`, and the `GPA`:
 
 [!code-csharp[ExtensionDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#13_ExtensionDeconstructMethod "Type with a deconstruct extension method")]
 
@@ -393,14 +404,24 @@ the last name are returned.
 
 [!code-csharp[Deconstruct extension method](../../samples/snippets/csharp/tuples/tuples/program.cs#13A_DeconstructExtension "Deconstruct a class type using an extension method")]
 
-You should be very careful defining multiple `Deconstruct` methods in a 
+You should be careful defining multiple `Deconstruct` methods in a 
 class or a class hierarchy. Multiple `Deconstruct` methods that have the
 same number of `out` parameters can quickly cause ambiguities. Callers may
 not be able to easily call the desired `Deconstruct` method.
 
-In this example, there is minimal chance for an ambiguous call because the 
+In this example, there is minimal chance for an ambiguous call because the
 `Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
+
+Deconstruction operators do not participate in testing equality. The following example generates compiler error CS0019:
+
+```csharp
+Person p = new Person("Althea", "Goodwin");
+if (("Althea", "Goodwin") == p)
+    Console.WriteLine(p);
+```
+
+The `Deconstruct` method could convert the `Person` object `p` to a tuple containing two strings, but it is not applicable in the context of equality tests.
 
 ## Conclusion 
 
@@ -410,6 +431,6 @@ but do not define behavior, as classes and structs do. It's
 easy and concise to use tuples for those types. You get all the benefits of
 static type checking, without needing to author types using the more
 verbose `class` or `struct` syntax. Even so, they are most useful for utility methods
-that are `private`, or `internal`. Create user defined types, either
+that are `private`, or `internal`. Create user-defined types, either
 `class` or `struct` types when your public methods return a value
 that has multiple elements.

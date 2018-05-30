@@ -1,20 +1,10 @@
 ---
 title: "How Culture Affects Strings in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "locale [Visual Basic], effect on strings"
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How Culture Affects Strings in Visual Basic
 This Help page discusses how Visual Basic uses culture information to perform string conversions and comparisons.  

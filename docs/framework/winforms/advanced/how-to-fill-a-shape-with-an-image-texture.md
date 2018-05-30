@@ -1,14 +1,6 @@
 ---
 title: "How to: Fill a Shape with an Image Texture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], using texture"
   - "shapes [Windows Forms], filling with images"
 ms.assetid: 508da5a6-2433-4d2b-9680-eaeae4e96e3b
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Fill a Shape with an Image Texture
 You can fill a closed shape with a texture by using the <xref:System.Drawing.Image> class and the <xref:System.Drawing.TextureBrush> class.  

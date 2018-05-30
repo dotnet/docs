@@ -1,22 +1,11 @@
 ---
 title: "Manipulating XML in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "LINQ to XML [Visual Basic], manipulating XML"
   - "Visual Basic code, XML"
   - "XML [Visual Basic], manipulating"
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Manipulating XML in Visual Basic
 You can use *XML literals* to load XML from an external source such as a string, file, or stream. You can then use [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to manipulate the XML and use [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] to query the XML.  

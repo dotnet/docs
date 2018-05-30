@@ -1,24 +1,10 @@
 ---
 title: "One-Time Setup Procedure for the Windows Communication Foundation Samples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
-caps.latest.revision: 83
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # One-Time Setup Procedure for the Windows Communication Foundation Samples
-Most of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples are hosted in Internet Information Services (IIS) and run from a common virtual directory. This one-time setup procedure creates a folder on the disk; it also adds a virtual directory to IIS named **ServiceModelSamples**.  
+Most of the Windows Communication Foundation (WCF) samples are hosted in Internet Information Services (IIS) and run from a common virtual directory. This one-time setup procedure creates a folder on the disk; it also adds a virtual directory to IIS named **ServiceModelSamples**.  
   
  The **ServiceModelSamples** virtual directory is used for building and running all samples that use an IIS-hosted service. This is the only virtual directory that is required to run the samples. Building a sample will replace any previously deployed service at this virtual directory; only the most recently built sample will be deployed and available in this virtual directory.  
   
@@ -27,7 +13,7 @@ Most of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples are 
   
 ### One-time setup procedure for WCF samples  
   
-1.  Ensure that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] is set up. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to set up [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).  
+1.  Ensure that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] is set up. For more information about how to set up [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).  
   
 2.  Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**  
   
@@ -85,7 +71,7 @@ Most of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples are 
     > [!NOTE]
     >  For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named Cleanupvroot.bat after you are finished with the samples.  
   
-13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure namespace reservations, see [Configuring HTTP and HTTPS](../../../../docs/framework/wcf/feature-details/configuring-http-and-https.md).  
+13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../../../../docs/framework/wcf/feature-details/configuring-http-and-https.md).  
   
 14. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md) for installation instructions.  
   

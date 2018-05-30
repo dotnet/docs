@@ -1,18 +1,11 @@
 ---
 title: "remove (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "remove_CSharpKeyword"
 helpviewer_keywords: 
   - "remove event accessor [C#]"
 ms.assetid: c8223426-c17b-4fe2-8406-01564cf1dd2b
-caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # remove (C# Reference)
 The `remove` contextual keyword is used to define a custom event accessor that is invoked when client code unsubscribes from your [event](../../../csharp/language-reference/keywords/event.md). If you supply a custom `remove` accessor, you must also supply an [add](../../../csharp/language-reference/keywords/add.md) accessor.  

@@ -2,10 +2,6 @@
 title: EndEnumeration function (Unmanaged API Reference)
 description: The EndEnumeration function terminates an enumeration.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "EndEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EndEnumeration function
 Terminates an enumeration sequence started with a call to the [BeginEnumeration function](beginenumeration.md).  

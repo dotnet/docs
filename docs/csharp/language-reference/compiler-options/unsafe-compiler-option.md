@@ -1,18 +1,12 @@
 ---
 title: "-unsafe (C# Compiler Options)"
 ms.date: 04/25/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/unsafe"
 helpviewer_keywords: 
   - "-unsafe compiler option [C#]"
   - "unsafe compiler option [C#]"
   - "/unsafe compiler option [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -unsafe (C# Compiler Options)
 The **-unsafe** compiler option allows code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword to compile.  

@@ -1,14 +1,6 @@
 ---
 title: "AutoSize Behavior in the TableLayoutPanel Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "AutoSize property [Windows Forms], tableLayoutPanel control"
   - "controls [Windows Forms], sizing"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "automatic sizing"
   - "AutoSizeMode property"
 ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # AutoSize Behavior in the TableLayoutPanel Control
 ## Distinct AutoSize Behaviors  

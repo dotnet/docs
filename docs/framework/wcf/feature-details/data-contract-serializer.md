@@ -1,28 +1,14 @@
 ---
 title: "Data Contract Serializer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts [WCF], serializer"
   - "WCF, data"
   - "DataContractSerializer"
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Contract Serializer
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure uses the <xref:System.Runtime.Serialization.DataContractSerializer> class as the default serializer. The topics in this section provide more details for using it as a stand-alone serializer.  
+The Windows Communication Foundation (WCF) infrastructure uses the <xref:System.Runtime.Serialization.DataContractSerializer> class as the default serializer. The topics in this section provide more details for using it as a stand-alone serializer.  
   
 ## In This Section  
  [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)  

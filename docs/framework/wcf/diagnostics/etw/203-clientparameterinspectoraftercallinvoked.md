@@ -1,21 +1,7 @@
 ---
 title: "203 - ClientParameterInspectorAfterCallInvoked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b9592212-07e2-43e0-8b00-affd195cf55a
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 203 - ClientParameterInspectorAfterCallInvoked
 ## Properties  

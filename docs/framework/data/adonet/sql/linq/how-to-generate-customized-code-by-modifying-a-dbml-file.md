@@ -1,21 +1,7 @@
 ---
 title: "How to: Generate Customized Code by Modifying a DBML File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 50ad597a-8598-42d3-82dd-fc7d702ebc37
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Generate Customized Code by Modifying a DBML File
 You can generate Visual Basic or C# source code from a database markup language (.dbml) metadata file. This approach provides an opportunity to customize the default .dbml file before you generate the application mapping code. This is an advanced feature.  

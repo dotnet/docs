@@ -1,32 +1,18 @@
 ---
 title: "Message Correlation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Correlation
-This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service and how messages can be correlated between sender and receiver applications in a request/response scenario. This sample uses the msmqIntegrationBinding binding. The service in this case is a self-hosted console application to allow you to observe the service that receives queued messages. k  
+This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service and how messages can be correlated between sender and receiver applications in a request/response scenario. This sample uses the msmqIntegrationBinding binding. The service in this case is a self-hosted console application to allow you to observe the service that receives queued messages. k  
   
  The service processes the message received from the sender and sends a response message back to the sender. The sender correlates the response it received to the request it sent originally. The `MessageID` and `CorrelationID` properties of the message are used to correlate the request and response messages.  
   
  The `IOrderProcessor` service contract defines a one-way service operation that is suitable for use with queuing. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract in this case. If you want to define more operation contracts in the service, the application must provide information as to which header in the MSMQ message (for example, the label, or correlationID) can be used to decide which operation contract to dispatch. This is demonstrated in the [Custom Demux](../../../../docs/framework/wcf/samples/custom-demux.md).  
   
  The MSMQ message also does not contain information as to which headers are mapped to the different parameters of the operation contract. Therefore, there can be only one parameter in the operation contract. The parameter is of type <!--zz <xref:System.ServiceModel.MSMQIntegration.MsmqMessage%601>`MsmqMessage<T>`--> , `System.ServiceModel.MSMQIntegration.MsmqMessage` which contains the underlying MSMQ message. The type "T" in the `MsmqMessage<T>` class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 [ServiceKnownType(typeof(PurchaseOrder))]  
 public interface IOrderProcessor  
@@ -34,11 +20,11 @@ public interface IOrderProcessor
     [OperationContract(IsOneWay = true, Action = "*")]  
     void SubmitPurchaseOrder(MsmqMessage<PurchaseOrder> msg);  
 }  
-```  
-  
+```
+
  The service operation processes the purchase order and displays the contents of the purchase order and its status in the service console window. The <xref:System.ServiceModel.OperationBehaviorAttribute> configures the operation to enlist in a transaction with the queue and to mark the transaction complete when the operation returns. The `PurchaseOrder` contains the order details that must be processed by the service.  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 public class OrderProcessorService : IOrderProcessor  
 {  
@@ -71,13 +57,13 @@ public class OrderProcessorService : IOrderProcessor
         client.Close();  
     }  
 }  
-```  
+```
+
+ The service uses a custom client `OrderResponseClient` to send the MSMQ message to the queue. Because the application that receives and processes the message is an MSMQ application and not a WCF application, there is no implicit service contract between the two applications. So we cannot create a proxy using the Svcutil.exe tool in this scenario.  
   
- The service uses a custom client `OrderResponseClient` to send the MSMQ message to the queue. Because the application that receives and processes the message is an MSMQ application and not a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, there is no implicit service contract between the two applications. So we cannot create a proxy using the Svcutil.exe tool in this scenario.  
-  
- The custom proxy is essentially the same for all [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications that use the `msmqIntegrationBinding` binding to send messages. Unlike other proxies, it does not include a range of service operations. It is a submit message operation only.  
-  
-```  
+ The custom proxy is essentially the same for all WCF applications that use the `msmqIntegrationBinding` binding to send messages. Unlike other proxies, it does not include a range of service operations. It is a submit message operation only.  
+
+```csharp
 [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderResponse  
 {  
@@ -105,11 +91,11 @@ public partial class OrderResponseClient : System.ServiceModel.ClientBase<IOrder
         base.Channel.SendOrderResponse(msg);  
     }  
 }  
-```  
-  
+```
+
  The service is self hosted. When using the MSMQ integration transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service contains <xref:System.Messaging> code to check for the existence of the queue and create it if necessary. The queue name is read from the configuration file.  
-  
-```  
+
+```csharp
 public static void Main()  
 {  
        // Get the MSMQ queue name from application settings in configuration.  
@@ -131,7 +117,7 @@ public static void Main()
             serviceHost.Close();  
       }  
 }  
-```  
+```
   
  The MSMQ queue to which the order requests are sent is specified in the appSettings section of the configuration file. The client and service endpoints are defined in the system.serviceModel section of the configuration file. Both specify the `msmqIntegrationbinding` binding.  
   
@@ -173,8 +159,8 @@ public static void Main()
 ```  
   
  The client application uses <xref:System.Messaging> to send a durable and transactional message to the queue. The message's body contains the purchase order.  
-  
-```  
+
+```csharp
 static void PlaceOrder()  
 {  
     //Connect to the queue  
@@ -216,12 +202,12 @@ static void PlaceOrder()
     orderMessageID = msg.Id;  
     Console.WriteLine("Placed the order, waiting for response...");  
 }  
-```  
-  
+```
+
  The MSMQ queue from which the order responses are received is specified in an appSettings section of the configuration file, as shown in the following sample configuration.  
   
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.  
+>  The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.  
   
 ```xml  
 <appSettings>  
@@ -230,8 +216,8 @@ static void PlaceOrder()
 ```  
   
  The client application saves the `messageID` of the order request message that it sends to the service and waits for a response from the service. Once a response arrives in the queue the client correlates it with the order message it sent using the `correlationID` property of the message, which contains the `messageID` of the order message that the client sent to the service originally.  
-  
-```  
+
+```csharp
 static void DisplayOrderStatus()  
 {  
     MessageQueue orderResponseQueue = new   
@@ -270,8 +256,8 @@ static void DisplayOrderStatus()
     }  
   }  
 }  
-```  
-  
+```
+
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client and sends a response back to the client. The client displays the response received from the service. Press ENTER in each console window to shut down the service and client.  
   
 > [!NOTE]
@@ -316,7 +302,7 @@ static void DisplayOrderStatus()
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`  
   

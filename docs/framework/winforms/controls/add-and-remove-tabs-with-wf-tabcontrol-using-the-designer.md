@@ -1,14 +1,6 @@
 ---
 title: "How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tabs [Windows Forms], removing from pages"
   - "TabPage control"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "tabs [Windows Forms], adding to pages"
   - "tab pages"
 ms.assetid: 480633db-413a-45d2-9c8f-0427cc13adbe
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer
 When you place a <xref:System.Windows.Forms.TabControl> control on your form, it contains two tabs by default. You can add or remove tabs using the designer.  

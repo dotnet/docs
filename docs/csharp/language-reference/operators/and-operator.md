@@ -1,10 +1,6 @@
 ---
 title: "&amp; Operator (C# Reference)"
 ms.date: 04/04/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "&_CSharpKeyword"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "& operator [C#]"
   - "AND operator (&) [C#]"
 ms.assetid: afa346d5-90ec-4b1f-a2c8-3881f018741d
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &amp; Operator (C# Reference)
 The `&` operator can function as either a unary or a binary operator.  

@@ -1,22 +1,11 @@
 ---
 title: "Writing Your First LINQ Query (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], writing"
   - "LINQ queries [Visual Basic]"
   - "LINQ [Visual Basic], writing queries"
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-caps.latest.revision: 56
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Writing Your First LINQ Query (Visual Basic)
 A *query* is an expression that retrieves data from a data source. Queries are expressed in a dedicated query language. Over time, different languages have been developed for different types of data sources, for example, SQL for relational databases and XQuery for XML. This makes it necessary for the application developer to learn a new query language for each type of data source or data format that is supported.  

@@ -1,19 +1,7 @@
 ---
 title: "WorkflowApplication ReadLine Host"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f7b362be-cb42-40d7-b9ef-cfc4aed2455b
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WorkflowApplication ReadLine Host
 This sample is a generic ReadLine host. You can load and run any workflow using the included `ReadLine` activity (or other activities like it that get data from bookmarks resumed with strings). Output from the `WriteLine` activity or anything writing to the <xref:System.Activities.Statements.WriteLine.TextWriter%2A> extension is directed to the host window. When an instance is idle, the available bookmarks for that instance appear in a combo box. Selecting a bookmark, inputting some text, and pressing the resume bookmark button continue the execution of the workflow. You can also cancel, abort, or terminate a selected workflow. Persistence is on by default – you can shut down the host and bring it back, and the instance list is populated with the instances stored in the database. Tracking is used to output <xref:System.Activities.WorkflowApplication>-level events to the host with the option to add detailed tracking at the activity level.  
@@ -62,6 +50,6 @@ This sample is a generic ReadLine host. You can load and run any workflow using 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Execution\ControllingWorkflowApplications`

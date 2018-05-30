@@ -1,24 +1,10 @@
 ---
 title: "How to: Import Custom Policy Assertions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Import Custom Policy Assertions
 Policy assertions describe the capabilities and requirements of a service endpoint.  Client applications can use policy assertions in service metadata to configure the client binding or to customize the service contract for a service endpoint.  
@@ -48,7 +34,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 3.  Perform the customization to the binding or contract that supports the capability or requirement specified by the policy assertion. Typically assertions indicate that a binding requires a particular configuration or a specific binding element. Make these modifications by accessing the <xref:System.ServiceModel.Description.PolicyConversionContext.BindingElements%2A?displayProperty=nameWithType> property. Other assertions require that you modify the contract.  You can access and modify the contract using the <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A?displayProperty=nameWithType> property.  Note that your policy importer may get called multiple times for the same binding and contract, but different policy alternatives if importing a policy alternative fails. Your code should be resilient to this behavior.  
   
-4.  Remove the custom policy assertion from the assertion collection. If you do not remove the assertion [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] assumes that the policy import was unsuccessful and does not import the associated binding. If you used the <xref:System.ServiceModel.Description.PolicyAssertionCollection.Remove%2A?displayProperty=nameWithType> method to locate the custom policy assertion and remove it from the collection in one step you do not have to perform this step.  
+4.  Remove the custom policy assertion from the assertion collection. If you do not remove the assertion Windows Communication Foundation (WCF) assumes that the policy import was unsuccessful and does not import the associated binding. If you used the <xref:System.ServiceModel.Description.PolicyAssertionCollection.Remove%2A?displayProperty=nameWithType> method to locate the custom policy assertion and remove it from the collection in one step you do not have to perform this step.  
   
 ### To insert the custom policy importer into the metadata System using a configuration file  
   

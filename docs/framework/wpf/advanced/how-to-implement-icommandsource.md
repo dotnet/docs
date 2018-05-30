@@ -1,26 +1,12 @@
 ---
 title: "How to: Implement ICommandSource"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "ICommandSource interfaces [WPF], implementing"
 ms.assetid: 7452dd39-6e11-44bf-806a-31d87f3772ac
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Implement ICommandSource
 This example shows how to create a command source by implementing <xref:System.Windows.Input.ICommandSource>.  A command source is an object that knows how to invoke a command.  The <xref:System.Windows.Input.ICommandSource> interface exposes three members: <xref:System.Windows.Input.ICommandSource.Command%2A>, <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>, and <xref:System.Windows.Input.ICommandSource.CommandTarget%2A>.  <xref:System.Windows.Input.ICommandSource.Command%2A> is the command which will be invoked. The <xref:System.Windows.Input.ICommandSource.CommandParameter%2A> is a user-defined data type which is passed from the command source to the method which handles the command. The <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is the object that the command is being executed on.  

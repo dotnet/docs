@@ -1,16 +1,9 @@
 ---
 title: "Visual Basic Breaking Changes in Visual Studio"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "breaking changes [Visual Basic]"
 ms.assetid: 708fb176-35eb-4cbc-a6e7-a04c6e3bdaff
-caps.latest.revision: 49
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Breaking Changes in Visual Studio
 For the latest documentation on Visual Studio 2017, see [Visual Studio 2017 Documentation](http://docs.microsoft.com/visualstudio/).

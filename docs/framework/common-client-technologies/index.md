@@ -1,21 +1,9 @@
 ---
 title: "Common Client Technologies in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 733fc580-337e-4b7c-9756-b70798c18bc3
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Common Client Technologies in the .NET Framework
 This section describes different technologies that you can use in your client applications.  

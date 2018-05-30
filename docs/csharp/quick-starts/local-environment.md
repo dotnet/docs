@@ -1,13 +1,7 @@
 ---
 title: Local environment tutorial - C# local quickstarts
 description: This quickstart provides the basics for running the quickstarts locally
-author: billwagner
-ms.topic: get-started-article
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # Local environment

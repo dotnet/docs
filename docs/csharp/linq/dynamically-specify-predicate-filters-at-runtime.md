@@ -1,14 +1,7 @@
 ---
 title: Dynamically specify predicate filters at runtime
 description: How to dynamically specify predicate filters at runtime.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 12/1/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: 90238470-0767-497c-916c-52d0d16845e0
 ---
 # Dynamically specify predicate filters at runtime

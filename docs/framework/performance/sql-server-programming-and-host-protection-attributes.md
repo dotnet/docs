@@ -1,14 +1,6 @@
 ---
 title: "SQL Server Programming and Host Protection Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SQL Server [.NET Framework]"
   - "permission sets, SQL Server"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "host protection attributes"
   - "HostProtectionAttribute class, reliability"
 ms.assetid: 7dfa36b4-e773-4c75-a3ff-ff1af3ce4c4f
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL Server Programming and Host Protection Attributes
 The ability to load and execute managed code in a SQL Server host requires meeting the host's requirements for both code access security and host resource protection.  The code access security requirements are specified by one of three SQL Server permission sets: SAFE, EXTERNAL-ACCESS, or UNSAFE. Code executing within the SAFE or EXTERNAL-ACCESS permission sets must avoid certain types or members that have the <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied. The <xref:System.Security.Permissions.HostProtectionAttribute> is not a security permission as much as a reliability guarantee in that it identifies specific code constructs, either types or methods, that the host may disallow.  The use of the <xref:System.Security.Permissions.HostProtectionAttribute> enforces a programming model that helps protect the stability of the host.  

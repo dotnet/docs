@@ -1,17 +1,8 @@
 ---
 title: Assertions (F#)
 description: Learn how to use the 'assert' expression as a debugging feature for testing expressions in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 2badaad7-f086-47e7-99c1-91f35117da83 
 ---
-
 # Assertions
 
 The `assert` expression is a debugging feature that you can use to test an expression. Upon failure in Debug mode, an assertion generates a system error dialog box.

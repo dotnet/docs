@@ -83,46 +83,108 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
-      "_displayLangs": [
-        "csharp"
-      ],
+      "_displayLangs": ["csharp"],
+      "dev_langs": ["csharp"],
+      "ms.devlang": "dotnet",
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
       "manager": "wpickett",
       "searchScope": [".NET"],
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
-      "ms.topic": "article"
+      "ms.topic": "conceptual",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "dotnet/docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html" 
     },
     "fileMetadata": {
+      "feedback_product_url": {
+        "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
+      },
       "ms.prod": {
-        "_csharplang/spec/*.md": ".net",
-        "_vblang/spec/*.md": ".net"
+        "_csharplang/spec/*.md": "dotnet-csharp",
+        "_vblang/spec/*.md": "dotnet-visualbasic",
+        "docs/core/**/**.md": "dotnet-core",
+        "docs/csharp/**/**.md": "dotnet-csharp",
+        "docs/csharp/**/**.yml": "dotnet-csharp",
+        "docs/framework/**/**.md": "dotnet-framework",
+        "docs/fsharp/**/**.md": "dotnet-fsharp",
+        "docs/machine-learning/**/**.md": "dotnet-ml",
+        "docs/standard/**/**.md": "dotnet",
+        "docs/visual-basic/**/**.md": "dotnet-visualbasic"
       },
       "ms.topic": {
         "_csharplang/spec/*.md": "language-reference",
-        "_vblang/spec/*.md": "language-reference"
-     },
+        "_vblang/spec/*.md": "language-reference",
+        "docs/framework/additional-apis/**/**.md": "managed-reference",
+        "docs/framework/unmanaged-api/**/**.md": "reference",
+        "docs/fsharp/language-reference/**/**.md": "language-reference"
+      },
       "dev_langs": {
-        "docs/core/**/**.md": ["csharp"],
-        "docs/csharp/**/**.md": ["csharp"],
-        "docs/framework/**/**.md": ["csharp"],
         "docs/fsharp/**/**.md": ["fsharp"],
-        "docs/standard/**/**.md": ["csharp"],
         "docs/visual-basic/**/**.md": ["vb"]
+      },
+      "ms.devlang": {
+        "docs/csharp/**/**.md": "csharp",
+        "docs/csharp/**/**.yml": "csharp",
+        "docs/fsharp/**/**.md": "fsharp",
+        "docs/visual-basic/**/**.md": "vb"
+      },
+      "author": {
+        "docs/core/**/**.md": "mairaw",
+        "docs/csharp/**/**.md": "billwagner",
+        "docs/csharp/**/**.yml": "billwagner",
+        "docs/framework/data/adonet/**/**.md": "douglaslMS",
+        "docs/fsharp/**/**.md": "cartermp",
+        "docs/machine-learning/**/**.md": "JRAlexander"
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",
-        "_vblang/spec/*.md": "wiwagn"
+        "_vblang/spec/*.md": "wiwagn",
+        "docs/core/**/**.md": "mairaw",
+        "docs/csharp/**/**.md": "wiwagn",
+        "docs/csharp/**/**.yml": "wiwagn",
+        "docs/framework/data/adonet/**/**.md": "douglasl",
+        "docs/fsharp/**/**.md": "phcart",
+        "docs/machine-learning/**/**.md": "johalex"
       },
-      "ms.technology": {
-        "_csharplang/spec/*.md": "devlang-csharp",
-        "csharp/quick-starts/**": "csharp-interactive",
-        "_vblang/spec/*.md": "devlang-visual-basic"
+      "manager": {
+        "docs/framework/data/adonet/**/**.md": "craigg"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
+      },
+      "ms.workload": {
+        "docs/core/**/**.md": ["dotnetcore"],
+        "docs/framework/**/**.md": ["dotnet"],
+        "docs/standard/**/**.md": ["dotnet", "dotnetcore"]
+      },
+      "ms.technology": {
+        "_csharplang/spec/*.md": "csharp-spec",
+        "_vblang/spec/*.md": "vb-spec",
+        "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
+        "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
+        "docs/csharp/misc/**/**.md": "csharp-diagnostics",
+        "docs/core/tools/**/**.md": "dotnet-cli",
+        "docs/core/docker/**/**.md": "dotnet-docker",
+        "docs/framework/data/adonet/**/**.md": "dotnet-data",
+        "docs/framework/data/wcf/**/**.md": "dotnet-wcf",
+        "docs/framework/docker/**/**.md": "dotnet-docker",
+        "docs/framework/install/**/**.md": "dotnet-install",
+        "docs/framework/migration-guide/**/**.md": "dotnet-appcompat",
+        "docs/framework/network-programming/**/**.md": "dotnet-networking",
+        "docs/framework/wcf/**/**.md": "dotnet-wcf",
+        "docs/framework/windows-workflow-foundation/**/**.md": "dotnet-wf",
+        "docs/framework/winforms/**/**.md": "dotnet-winforms",
+        "docs/framework/wpf/**/**.md": "dotnet-wpf",
+        "docs/framework/xaml-services/**/**.md": "dotnet-wpf",
+        "docs/standard/containerized-lifecycle-architecture/**/**.md": "dotnet-ebooks",
+        "docs/standard/microservices-architecture/**/**.md": "dotnet-ebooks",
+        "docs/standard/modern-web-apps-azure-architecture/**/**.md": "dotnet-ebooks",
+        "docs/standard/modernize-with-azure-and-containers/**/**.md": "dotnet-ebooks",
+        "docs/standard/security/**/**.md": "dotnet-security",
+        "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       }
     },
     "dest": "_site",

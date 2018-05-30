@@ -1,27 +1,13 @@
 ---
 title: "How to: Create a Custom Claim"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: d619976b-eda3-475e-ac23-c7988a2dceb0
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Custom Claim
-The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a set of built-in claim types and rights with the helper functions for creating <xref:System.IdentityModel.Claims.Claim> instances with those types and rights. These built-in claims are designed to model information found in client credential types that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports by default. In many cases, the built-in claims are sufficient; however some applications may require custom claims. A claim consists of the claim type, the resource for which the claim applies to and the right that is asserted over that resource. This topic describes how to create a custom claim.  
+The Identity Model infrastructure in Windows Communication Foundation (WCF) provides a set of built-in claim types and rights with the helper functions for creating <xref:System.IdentityModel.Claims.Claim> instances with those types and rights. These built-in claims are designed to model information found in client credential types that WCF supports by default. In many cases, the built-in claims are sufficient; however some applications may require custom claims. A claim consists of the claim type, the resource for which the claim applies to and the right that is asserted over that resource. This topic describes how to create a custom claim.  
   
 ### To create a custom claim that is based on a primitive data type  
   
@@ -29,15 +15,15 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
   
     1.  Decide on a unique value for the claim type.  
   
-         The claim type is a unique string identifier. It is the custom claim designer's responsibility to ensure that the string identifier that is used for the claim type is unique. For a list of claim types that are defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see the <xref:System.IdentityModel.Claims.ClaimTypes> class.  
+         The claim type is a unique string identifier. It is the custom claim designer's responsibility to ensure that the string identifier that is used for the claim type is unique. For a list of claim types that are defined by WCF, see the <xref:System.IdentityModel.Claims.ClaimTypes> class.  
   
     2.  Choose the primitive data type and value for the resource.  
   
-         A resource is an object. The CLR type of the resource can be a primitive, such as <xref:System.String> or <xref:System.Int32>, or any serializable type. The CLR type of the resource must be serializable, because claims are serialized at various points by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Primitive types are serializable.  
+         A resource is an object. The CLR type of the resource can be a primitive, such as <xref:System.String> or <xref:System.Int32>, or any serializable type. The CLR type of the resource must be serializable, because claims are serialized at various points by WCF. Primitive types are serializable.  
   
-    3.  Choose a right that is defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] or a unique value for a custom right.  
+    3.  Choose a right that is defined by WCF or a unique value for a custom right.  
   
-         A right is a unique string identifier. The rights that are defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] are defined in the <xref:System.IdentityModel.Claims.Rights> class.  
+         A right is a unique string identifier. The rights that are defined by WCF are defined in the <xref:System.IdentityModel.Claims.Rights> class.  
   
          It is the custom claim designer's responsibility to ensure that the string identifier that is used for the right is unique.  
   
@@ -52,11 +38,11 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
   
     1.  Decide on a unique value for the claim type.  
   
-         The claim type is a unique string identifier. It is the custom claim designer's responsibility to ensure that the string identifier that is used for the claim type is unique. For a list of claim types that are defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], see the <xref:System.IdentityModel.Claims.ClaimTypes> class.  
+         The claim type is a unique string identifier. It is the custom claim designer's responsibility to ensure that the string identifier that is used for the claim type is unique. For a list of claim types that are defined by WCF, see the <xref:System.IdentityModel.Claims.ClaimTypes> class.  
   
     2.  Choose or define a serializable non-primitive type for the resource.  
   
-         A resource is an object. The CLR type of the resource must be serializable, because claims are serialized at various points by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Primitive types are already serializable.  
+         A resource is an object. The CLR type of the resource must be serializable, because claims are serialized at various points by WCF. Primitive types are already serializable.  
   
          When a new type is defined, apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class. Also apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the all members of the new type that need to be serialized as part of the claim.  
   
@@ -65,9 +51,9 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
          [!code-csharp[c_CustomClaim#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#2)] 
          [!code-vb[c_CustomClaim#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#2)]        
   
-    3.  Choose a right that is defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] or a unique value for a custom right.  
+    3.  Choose a right that is defined by WCF or a unique value for a custom right.  
   
-         A right is a unique string identifier. The rights that are defined by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] are defined in the <xref:System.IdentityModel.Claims.Rights> class.  
+         A right is a unique string identifier. The rights that are defined by WCF are defined in the <xref:System.IdentityModel.Claims.Rights> class.  
   
          It is the custom claim designer's responsibility to ensure that the string identifier that is used for the right is unique.  
   

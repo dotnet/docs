@@ -1,17 +1,10 @@
 ---
 title: "Interfaces (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "interfaces [C#]"
   - "C# language, interfaces"
 ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
-caps.latest.revision: 45
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Interfaces (C# Programming Guide)
 An interface contains definitions for a group of related functionalities that a [class](../../../csharp/language-reference/keywords/class.md) or a [struct](../../../csharp/language-reference/keywords/struct.md) can implement.  

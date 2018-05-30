@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw a Sequence of B&#233;zier Splines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "splines [Windows Forms], drawing Bezier"
   - "Bezier splines [Windows Forms], drawing sequence of"
 ms.assetid: 37a0bedb-20c2-4cf0-91fa-a5509e826b30
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw a Sequence of B&#233;zier Splines
 You can use the <xref:System.Drawing.Graphics.DrawBeziers%2A> method of the <xref:System.Drawing.Graphics> class to draw a sequence of connected Bézier splines.  

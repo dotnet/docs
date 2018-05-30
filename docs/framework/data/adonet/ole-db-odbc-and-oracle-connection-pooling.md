@@ -1,21 +1,7 @@
 ---
 title: "OLE DB, ODBC, and Oracle Connection Pooling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # OLE DB, ODBC, and Oracle Connection Pooling
 Pooling connections can significantly enhance the performance and scalability of your application. This section discusses connection pooling for the .NET Framework data providers for OLE DB, ODBC and Oracle.  
@@ -35,8 +21,6 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
  Connection pooling for the .NET Framework Data Provider for ODBC is managed by the ODBC Driver Manager that is used for the connection, and is not affected by the .NET Framework Data Provider for ODBC.  
   
  To enable or disable connection pooling, open **ODBC Data Source Administrator** in the Administrative Tools folder of Control Panel. The **Connection Pooling** tab allows you to specify connection pooling parameters for each ODBC driver installed. Note that connection pooling changes for a specific ODBC driver affect all applications that use that ODBC driver.  
-  
- For more information on ODBC connection pooling, see [INFO: Frequently Asked Questions About ODBC Connection Pooling](http://support.microsoft.com/kb/169470).  
   
 ## Connection Pooling for OracleClient  
  The .NET Framework Data Provider for Oracle provides connection pooling automatically for your ADO.NET client application. You can also supply several connection string modifiers to control connection pooling behavior (see "Controlling Connection Pooling with Connection String Keywords," later in this topic).  

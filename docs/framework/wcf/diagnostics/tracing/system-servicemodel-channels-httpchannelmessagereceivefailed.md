@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.HttpChannelMessageReceiveFailed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9eb311da-fdcc-4dd3-9d85-05b3280dfdda
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.HttpChannelMessageReceiveFailed
 Failed to receive a message over an HTTP channel.  

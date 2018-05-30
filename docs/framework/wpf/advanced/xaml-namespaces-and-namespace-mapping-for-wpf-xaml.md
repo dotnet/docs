@@ -1,14 +1,6 @@
 ---
 title: "XAML Namespaces and Namespace Mapping for WPF XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,12 +14,6 @@ helpviewer_keywords:
   - "classes [WPF], mapping namespaces to"
   - "namespaces [WPF]"
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Namespaces and Namespace Mapping for WPF XAML
 This topic further explains the presence and purpose of the two XAML namespace mappings as often found in the root tag of a WPF XAML file. It also describes how to produce similar mappings for using elements that are defined in your own code, and/or within separate assemblies.  

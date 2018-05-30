@@ -1,14 +1,6 @@
 ---
 title: "Understanding Protection Level"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "WCF, security"
   - "ProtectionLevel property"
 ms.assetid: 0c034608-a1ac-4007-8287-b1382eaa8bf2
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Understanding Protection Level
-The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] feature and how it works.  
+The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the Windows Communication Foundation (WCF) feature and how it works.  
   
  For instructions on setting the protection level, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md).  
   
@@ -48,7 +34,7 @@ The `ProtectionLevel` property is found on many different classes, such as the <
   
 -   The `ProtectionLevel` is a way for the developer to set the *minimum level* that a binding must comply with. When a service is deployed, the actual binding specified in configuration may or may not support the minimum level. For example, by default, the <xref:System.ServiceModel.BasicHttpBinding> class does not supply security (although it can be enabled). Therefore, using it with a contract that has any setting other than `None` will cause an exception to be thrown.  
   
--   If the service requires that the minimum `ProtectionLevel` for all messages is `Sign`, a client (perhaps created by a non-[!INCLUDE[indigo2](../../../includes/indigo2-md.md)] technology) can encrypt and sign all messages (which is more than the minimum required). In this case, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] will not throw an exception because the client has done more than the minimum. Note, however, that [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications (services or clients) will not over-secure a message part if possible but will comply with the minimum level. Also note that when using `Transport` as the security mode, the transport may over-secure the message stream because it is inherently unable to secure at a more granular level.  
+-   If the service requires that the minimum `ProtectionLevel` for all messages is `Sign`, a client (perhaps created by a non-WCF technology) can encrypt and sign all messages (which is more than the minimum required). In this case, WCF will not throw an exception because the client has done more than the minimum. Note, however, that WCF applications (services or clients) will not over-secure a message part if possible but will comply with the minimum level. Also note that when using `Transport` as the security mode, the transport may over-secure the message stream because it is inherently unable to secure at a more granular level.  
   
 -   If you set the `ProtectionLevel` explicitly to either `Sign` or `EncryptAndSign`, then you must use a binding with security enabled or an exception will be thrown.  
   
@@ -81,7 +67,7 @@ The `ProtectionLevel` property is found on many different classes, such as the <
  To program the `ProtectionLevel` at any point in the hierarchy, simply set the property to an appropriate value when applying the attribute. For examples, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md).  
   
 > [!NOTE]
->  Setting the property on faults and message contracts requires understanding how those features work. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md) and [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md).  
+>  Setting the property on faults and message contracts requires understanding how those features work. For more information, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md) and [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md).  
   
 ## WS-Addressing Dependency  
  In most cases, using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a client ensures that the client and service contracts are identical. However, seemingly identical contracts can cause the client to throw an exception. This occurs whenever a binding does not support the WS-Addressing specification and multiple levels of protection are specified on the contract. For example, the <xref:System.ServiceModel.BasicHttpBinding> class does not support the specification, or if you create a custom binding that does not support WS-Addressing. The `ProtectionLevel` feature relies on the WS-Addressing specification to enable different protection levels on a single contract. If the binding does not support the WS-Addressing specification, all levels will be set to the same protection level. The effective protection level for all scopes on the contract will be set to the strongest protection level used on the contract.  

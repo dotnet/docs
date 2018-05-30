@@ -1,14 +1,6 @@
 ---
 title: "How to: Set Grid Options for All Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "snap to grid [Windows Forms], Windows Forms Designer"
   - "grids [Windows Forms], options in Windows Forms"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "Windows Forms, grid options in designer"
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Grid Options for All Windows Forms
-As you become used to working in the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] development environment, you can set preferences for all the forms and projects you work with in the Windows Forms Designer.  
+As you become used to working in the Visual Studio development environment, you can set preferences for all the forms and projects you work with in the Windows Forms Designer.  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

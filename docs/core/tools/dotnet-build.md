@@ -4,11 +4,6 @@ description: The dotnet build command builds a project and all of its dependenci
 author: mairaw
 ms.author: mairaw
 ms.date: 03/10/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet-build
 

@@ -4,11 +4,6 @@ description: The dotnet test command is used to execute unit tests in a given pr
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet test
 

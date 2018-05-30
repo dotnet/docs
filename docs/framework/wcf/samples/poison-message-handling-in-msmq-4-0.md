@@ -1,21 +1,7 @@
 ---
 title: "Poison Message Handling in MSMQ 4.0"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ec8d59e3-9937-4391-bb8c-fdaaf2cbb73e
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Poison Message Handling in MSMQ 4.0
 This sample demonstrates how to perform poison message handling in a service. This sample is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding`. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
@@ -46,19 +32,19 @@ This sample demonstrates how to perform poison message handling in a service. Th
  The sample demonstrates using the `Move` disposition for the poison message. `Move` causes the message to move to the poison sub-queue.  
   
  The service contract is `IOrderProcessor`, which defines a one-way service that is suitable for use with queues.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderProcessor  
 {  
     [OperationContract(IsOneWay = true)]  
     void SubmitPurchaseOrder(PurchaseOrder po);  
 }  
-```  
-  
+```
+
  The service operation displays a message stating it is processing the order. To demonstrate the poison message functionality, the `SubmitPurchaseOrder` service operation throws an exception to rollback the transaction on a random invocation of the service. This causes the message to be put back in the queue. Eventually the message is marked as poison. The configuration is set to move the poison message to the poison sub-queue.  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 // Added code to write output to the console window.  
 public class OrderProcessorService : IOrderProcessor  
@@ -124,8 +110,8 @@ public class OrderProcessorService : IOrderProcessor
   
     }  
 }  
-```  
-  
+```
+
  The service configuration includes the following poison message properties: `receiveRetryCount`, `maxRetryCycles`, `retryCycleDelay`, and `receiveErrorHandling` as shown in the following configuration file.  
   
 ```xml  
@@ -165,11 +151,11 @@ public class OrderProcessorService : IOrderProcessor
 ## Processing messages from the poison message queue  
  The poison message service reads messages from the final poison message queue and processes them.  
   
- Messages in the poison message queue are messages that are addressed to the service that is processing the message, which could be different from the poison message service endpoint. Therefore, when the poison message service reads messages from the queue, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is being received by the poison message service. To continue to receive the message even if the message is addressed to a different endpoint, we must add a `ServiceBehavior` to filter addresses where the match criterion is to match any service endpoint the message is addressed to. This is required to successfully process messages that you read from the poison message queue.  
+ Messages in the poison message queue are messages that are addressed to the service that is processing the message, which could be different from the poison message service endpoint. Therefore, when the poison message service reads messages from the queue, the WCF channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is being received by the poison message service. To continue to receive the message even if the message is addressed to a different endpoint, we must add a `ServiceBehavior` to filter addresses where the match criterion is to match any service endpoint the message is addressed to. This is required to successfully process messages that you read from the poison message queue.  
   
  The poison message service implementation itself is very similar to the service implementation. It implements the contract and processes the orders. The code example is as follows.  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 // Added code to write output to the console window.  
 [ServiceBehavior(AddressFilterMode=AddressFilterMode.Any)]  
@@ -212,8 +198,8 @@ public class OrderProcessorService : IOrderProcessor
             serviceHost.Close();  
         }  
     }  
-```  
-  
+```
+
  Unlike the order processing service that reads messages from the order queue, the poison message service reads messages from the poison sub-queue. The poison queue is a sub-queue of the main queue, is named "poison" and is automatically generated by MSMQ. To access it, provide the main queue name followed by a ";" and the sub-queue name, in this case -"poison", as shown in the following sample configuration.  
   
 > [!NOTE]
@@ -329,7 +315,7 @@ Processing Purchase Order: 23e0b991-fbf9-4438-a0e2-20adf93a4f89
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Poison\MSMQ4`  
   

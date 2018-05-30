@@ -1,14 +1,6 @@
 ---
 title: "Managing Claims and Authorization with the Identity Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "authorization [WCF]"
   - "WCF security"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "claims [WCF]"
   - "authorization [WCF], managing with the Identity Model"
 ms.assetid: 099defbb-5d35-434e-9336-1a49b9ec7663
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Managing Claims and Authorization with the Identity Model
-Authorization is the process of determining which entities have permission to change, view, or otherwise access a computer resource. For example, in a business, only managers may be allowed to access the files of their employees. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports two mechanisms for performing authorization processing. The first mechanism enables you to control authorization using existing common language runtime (CLR) constructs. The second is a claims-based model known as the *Identity Model*. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the Identity Model to create claims from incoming messages; Identity Model classes can be extended to support new claim types for custom authorization schemes. This topic presents an overview of the major programming concepts of the Identity Model feature, as well as a listing of the most important classes the feature uses.  
+Authorization is the process of determining which entities have permission to change, view, or otherwise access a computer resource. For example, in a business, only managers may be allowed to access the files of their employees. Windows Communication Foundation (WCF) supports two mechanisms for performing authorization processing. The first mechanism enables you to control authorization using existing common language runtime (CLR) constructs. The second is a claims-based model known as the *Identity Model*. WCF uses the Identity Model to create claims from incoming messages; Identity Model classes can be extended to support new claim types for custom authorization schemes. This topic presents an overview of the major programming concepts of the Identity Model feature, as well as a listing of the most important classes the feature uses.  
   
 ## Identity Model Scenarios  
  The following scenarios represent Identity Model use.  
@@ -133,7 +119,7 @@ Authorization is the process of determining which entities have permission to ch
  ![Managing claims and authorization](../../../../docs/framework/wcf/feature-details/media/xsi-recap.gif "xsi_recap")  
   
 ## WCF and Identity Model  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the Identity Model infrastructure as the basis for performing authorization. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> class allows you to specify *authorization* policies as part of a service. Such authorization policies are known as *external authorization policies*, and they can perform claim processing based on local policy or by interaction with a remote service. The authorization manager, represented by the <xref:System.ServiceModel.ServiceAuthorizationManager> class evaluates external authorization policies together with authorization policies that recognize the various credential types (tokens) and populates what is called an *authorization context* with the claims appropriate to an incoming message. The authorization context is represented by the <xref:System.IdentityModel.Policy.AuthorizationContext> class.  
+ WCF uses the Identity Model infrastructure as the basis for performing authorization. In WCF, the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> class allows you to specify *authorization* policies as part of a service. Such authorization policies are known as *external authorization policies*, and they can perform claim processing based on local policy or by interaction with a remote service. The authorization manager, represented by the <xref:System.ServiceModel.ServiceAuthorizationManager> class evaluates external authorization policies together with authorization policies that recognize the various credential types (tokens) and populates what is called an *authorization context* with the claims appropriate to an incoming message. The authorization context is represented by the <xref:System.IdentityModel.Policy.AuthorizationContext> class.  
   
 ## Identity Model Programming  
  The following table describes the object model used to program Identity Model extensions. These classes all exist in either the <xref:System.IdentityModel.Policy> or the <xref:System.IdentityModel.Claims> namespaces.  

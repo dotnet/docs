@@ -1,17 +1,7 @@
 ---
 title: "How to: Build LINQ to XML Examples (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Build LINQ to XML Examples (C#)
 The various snippets and examples in this documentation use classes and types from a variety of namespaces. When compiling C# code, you need to supply appropriate `using` directives.  

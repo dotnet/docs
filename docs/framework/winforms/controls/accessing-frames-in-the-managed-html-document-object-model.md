@@ -1,14 +1,6 @@
 ---
 title: "Accessing Frames in the Managed HTML Document Object Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "HTML [Windows Forms], dOM"
   - "managed HTML DOM"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "frames [Windows Forms], accessing"
   - "DOM [Windows Forms], accessing frames in managed HTML"
 ms.assetid: cdeeaa22-0be4-4bbf-9a75-4ddc79199f8d
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Accessing Frames in the Managed HTML Document Object Model
 Some HTML documents are composed out of *frames*, or windows that can hold their own distinct HTML documents. Using frames makes it easy to create HTML pages in which one or more pieces of the page remain static, such as a navigation bar, while other frames constantly change their content.  

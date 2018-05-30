@@ -1,17 +1,7 @@
 ---
 title: "Sample XML File: Consolidated Purchase Orders2"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 9d9698a5-95f2-4564-813b-ba536cdf3bfb
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Sample XML File: Consolidated Purchase Orders
 The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file is a set of purchase orders with different shapes from multiple companies. Purchase orders from each company are in separate namespaces.  

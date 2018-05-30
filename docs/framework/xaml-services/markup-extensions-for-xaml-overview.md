@@ -1,24 +1,10 @@
 ---
 title: "Markup Extensions for XAML Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "markup extensions [XAML Services], custom"
   - "XAML [XAML Services], markup extensions"
 ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436
-caps.latest.revision: 14
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Markup Extensions for XAML Overview
 Markup extensions are a XAML technique for obtaining a value that is neither a primitive nor a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET Framework XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework .  

@@ -1,14 +1,6 @@
 ---
 title: "Encoding and Windows Forms Globalization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], lack of Unicode support"
   - "DateTimePicker control [Windows Forms], lack of Unicode support"
@@ -27,12 +19,6 @@ helpviewer_keywords:
   - "localization [Windows Forms], character sets"
   - "globalization [Windows Forms], character sets"
 ms.assetid: 22e8965d-a712-42b3-8167-3ee346bd70f9
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Encoding and Windows Forms Globalization
 Windows Forms applications are entirely Unicode-enabled, meaning that each character is represented by a unique number, no matter what the platform, program, or language. For more information about Unicode, see the [Unicode consortium Web site](http://www.unicode.org).  

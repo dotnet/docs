@@ -1,31 +1,17 @@
 ---
 title: "Poison Message Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
-caps.latest.revision: 29
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Poison Message Handling
 A *poison message* is a message that has exceeded the maximum number of delivery attempts to the application. This situation can arise when a queue-based application cannot process a message because of errors. To meet reliability demands, a queued application receives messages under a transaction. Aborting the transaction in which a queued message was received leaves the message in the queue so that the message is retried under a new transaction. If the problem that caused the transaction to abort is not corrected, the receiving application can get stuck in a loop receiving and aborting the same message until the maximum number of delivery attempts has been exceeded and a poison message results.  
   
  A message can become a poison message for many reasons. The most common reasons are application specific. For example, if an application reads a message from a queue and performs some database processing, the application may fail to get a lock on the database, causing it to abort the transaction. Because the database transaction was aborted, the message remains in the queue, which causes the application to reread the message a second time and make another attempt to acquire a lock on the database. Messages can also become poison if they contain invalid information. For example, a purchase order may contain an invalid customer number. In these cases, the application may voluntarily abort the transaction and force the message to become a poison message.  
   
- On rare occasions, messages can fail to get dispatched to the application. The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] layer may find a problem with the message, such as if the message has the wrong frame, invalid message credentials attached to it, or an invalid action header. In these cases, the application never receives the message; however, the message can still become a poison message and be processed manually.  
+ On rare occasions, messages can fail to get dispatched to the application. The Windows Communication Foundation (WCF) layer may find a problem with the message, such as if the message has the wrong frame, invalid message credentials attached to it, or an invalid action header. In these cases, the application never receives the message; however, the message can still become a poison message and be processed manually.  
   
 ## Handling Poison Messages  
- In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], poison message handling provides a mechanism for a receiving application to deal with messages that cannot be dispatched to the application, or messages that are dispatched to the application but which fail to be processed because of application-specific reasons. Poison message handling is configured by the following properties in each of the available queued bindings:  
+ In WCF, poison message handling provides a mechanism for a receiving application to deal with messages that cannot be dispatched to the application, or messages that are dispatched to the application but which fail to be processed because of application-specific reasons. Poison message handling is configured by the following properties in each of the available queued bindings:  
   
 -   `ReceiveRetryCount`. An integer value that indicates the maximum number of times to retry delivery of a message from the application queue to the application. The default value is 5. This is sufficient in cases where an immediate retry fixes the problem, such as with a temporary deadlock on a database.  
   
@@ -41,7 +27,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
 -   Reject. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This instructs Message Queuing (MSMQ) to send a negative acknowledgement back to the sending queue manager that the application cannot receive the message. The message is placed in the sending queue manager's dead-letter queue.  
   
--   Move. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This moves the poison message to a poison-message queue for later processing by a poison-message handling application. The poison-message queue is a subqueue of the application queue. A poison-message handling application can be a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that reads messages out of the poison queue. The poison queue is a subqueue of the application queue and can be addressed as net.msmq://\<*machine-name*>/*applicationQueue*;poison, where *machine-name* is the name of the computer on which the queue resides and the *applicationQueue* is the name of the application-specific queue.  
+-   Move. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This moves the poison message to a poison-message queue for later processing by a poison-message handling application. The poison-message queue is a subqueue of the application queue. A poison-message handling application can be a WCF service that reads messages out of the poison queue. The poison queue is a subqueue of the application queue and can be addressed as net.msmq://\<*machine-name*>/*applicationQueue*;poison, where *machine-name* is the name of the computer on which the queue resides and the *applicationQueue* is the name of the application-specific queue.  
   
  The following are the maximum number of delivery attempts made for a message:  
   
@@ -52,25 +38,25 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 > [!NOTE]
 >  No retries are made for a message that is delivered successfully.  
   
- To keep track of the number of times a message read is attempted, [!INCLUDE[wv](../../../../includes/wv-md.md)] maintains a durable message property that counts the number of aborts and a move count property that counts the number of times the message moves between the application queue and subqueues. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel uses these to compute the receive retry count and the retry cycles count. On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], the abort count is maintained in memory by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel and is reset if the application fails. Also, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel can hold the abort counts for up to 256 messages in memory at any time. If a 257th message is read, then the oldest message's abort count is reset.  
+ To keep track of the number of times a message read is attempted, [!INCLUDE[wv](../../../../includes/wv-md.md)] maintains a durable message property that counts the number of aborts and a move count property that counts the number of times the message moves between the application queue and subqueues. The WCF channel uses these to compute the receive retry count and the retry cycles count. On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], the abort count is maintained in memory by the WCF channel and is reset if the application fails. Also, the WCF channel can hold the abort counts for up to 256 messages in memory at any time. If a 257th message is read, then the oldest message's abort count is reset.  
   
  The abort count and move count properties are available to the service operation through the operation context. The following code example shows how to access them.  
   
  [!code-csharp[S_UE_MSMQ_Poison#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/service.cs#1)]  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides two standard queued bindings:  
+ WCF provides two standard queued bindings:  
   
--   <xref:System.ServiceModel.NetMsmqBinding>. A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] binding suitable for performing queue-based communication with other [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoints.  
+-   <xref:System.ServiceModel.NetMsmqBinding>. A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] binding suitable for performing queue-based communication with other WCF endpoints.  
   
 -   <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. A binding suitable for communicating with existing Message Queuing applications.  
   
 > [!NOTE]
->  You can alter properties in these bindings based on the requirements of your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
+>  You can alter properties in these bindings based on the requirements of your WCF service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
   
 ## Best Practice: Handling MsmqPoisonMessageException  
  When the service determines that a message is poison, the queued transport throws a <xref:System.ServiceModel.MsmqPoisonMessageException> that contains the `LookupId` of the poison message.  
   
- A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Extending Control Over Error Handling and Reporting](../../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md).  
+ A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. For more information, see [Extending Control Over Error Handling and Reporting](../../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md).  
   
  The application may require some kind of automated handling of poison messages that moves the poison messages to a poison message queue so that the service can access the rest of the messages in the queue. The only scenario for using the error-handler mechanism to listen for poison-message exceptions is when the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling%2A> setting is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>. The poison-message sample for Message Queuing 3.0 demonstrates this behavior. The following outlines the steps to take to handle poison messages, including best practices:  
   
@@ -99,7 +85,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
  A session undergoes the same retry and poison-message handling procedures as a single message. The properties previously listed for poison messages apply to the entire session. This means that the entire session is retried and goes to a final poison-message queue or the sender’s dead-letter queue if the message is rejected.  
   
 ## Batching and Poison Messages  
- If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] batching, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
+ If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. For more information about batching, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
   
 ## Poison-message Handling for Messages in a Poison Queue  
  Poison-message handling does not end when a message is placed in the poison-message queue. Messages in the poison-message queue must still be read and handled. You can use a subset of the poison-message handling settings when reading messages from the final poison subqueue. The applicable settings are `ReceiveRetryCount` and `ReceiveErrorHandling`. You can set `ReceiveErrorHandling` to Drop, Reject, or Fault. `MaxRetryCycles` is ignored and an exception is thrown if `ReceiveErrorHandling` is set to Move.  
@@ -111,7 +97,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
 -   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports negative acknowledgment, while [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not. A negative acknowledgment from the receiving queue manager causes the sending queue manager to place the rejected message in the dead-letter queue. As such, `ReceiveErrorHandling.Reject` is not allowed with [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
--   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in a farm.  
+-   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
   
 ## See Also  
  [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  

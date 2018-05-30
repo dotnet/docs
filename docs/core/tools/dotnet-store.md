@@ -4,11 +4,6 @@ description: The 'dotnet store' command stores the specified assemblies in the r
 author: bleroy
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet store
 

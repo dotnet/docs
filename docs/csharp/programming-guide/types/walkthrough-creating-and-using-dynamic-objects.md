@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "dynamic objects"
   - "dynamic objects [C#]"
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)
 
@@ -43,7 +36,7 @@ You need [IronPython](http://ironpython.net/) for .NET to complete this walkthro
   
 #### To create a custom dynamic class  
   
-1.  Start [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+1.  Start Visual Studio.  
   
 2.  On the **File** menu, point to **New** and then click **Project**.  
   
@@ -138,7 +131,7 @@ The next project that you create in this walkthrough accesses a library that is 
   
 #### To create a custom dynamic class  
   
-1.  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], on the **File** menu, point to **New** and then click **Project**.  
+1.  In Visual Studio, on the **File** menu, point to **New** and then click **Project**.  
   
 2.  In the **New Project** dialog box, in the **Project Types** pane, make sure that **Windows** is selected. Select **Console Application** in the **Templates** pane. In the **Name** box, type `DynamicIronPythonSample`, and then click **OK**. The new project is created.  
   

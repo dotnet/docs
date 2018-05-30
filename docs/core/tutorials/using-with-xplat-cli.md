@@ -1,19 +1,11 @@
 ---
 title: Getting started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
-keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
 ms.date: 03/08/2017
-ms.topic: get-started-article
-ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
-ms.workload: 
-  - dotnetcore
 ---
-
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
 
 This topic will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.

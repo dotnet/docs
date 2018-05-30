@@ -1,22 +1,12 @@
 ---
 title: "How to: Call a Procedure That Returns a Value (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedure calls [Visual Basic], returning values"
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], calling"
   - "procedures [Visual Basic], returning a value"
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Call a Procedure That Returns a Value (Visual Basic)
 A `Function` procedure returns a value to the calling code. You call it by including its name and arguments either on the right side of an assignment statement or in an expression.  

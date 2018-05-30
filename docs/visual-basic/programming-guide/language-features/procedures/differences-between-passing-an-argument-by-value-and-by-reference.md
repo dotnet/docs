@@ -1,13 +1,6 @@
 ---
 title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "ByRef keyword [Visual Basic], passing arguments by reference"
   - "Visual Basic code, procedures"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "ByVal keyword [Visual Basic], passing arguments by value"
   - "arguments [Visual Basic], passing by value or by reference"
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Differences Between Passing an Argument By Value and By Reference (Visual Basic)
 When you pass one or more arguments to a procedure, each argument corresponds to an underlying programming element in the calling code. You can pass either the value of this underlying element, or a reference to it. This is known as the *passing mechanism*.  

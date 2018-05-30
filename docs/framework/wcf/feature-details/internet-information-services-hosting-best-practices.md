@@ -1,27 +1,13 @@
 ---
 title: "Internet Information Services Hosting Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Internet Information Services Hosting Best Practices
-This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  
+This topic outlines some best practices for hosting Windows Communication Foundation (WCF) services.  
   
 ## Implementing WCF Services as DLLs  
- Implementing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service as a DLL that is deployed to the \bin directory of a Web application allows you reuse the service outside of the Web application model, for example, in a test environment that may not have Internet Information Services (IIS) deployed.  
+ Implementing a WCF service as a DLL that is deployed to the \bin directory of a Web application allows you reuse the service outside of the Web application model, for example, in a test environment that may not have Internet Information Services (IIS) deployed.  
   
 ## Service Hosts in IIS-Hosted Applications  
  Do not use the imperative self-host APIs to create new service hosts that listen on network transports not natively supported by the IIS hosting environment (For example, [!INCLUDE[iis601](../../../../includes/iis601-md.md)] to host TCP services, because TCP communication is not natively supported on [!INCLUDE[iis601](../../../../includes/iis601-md.md)]). This approach is not recommended. Service hosts created imperatively are not known within the IIS hosting environment. The critical point is that processing done by imperatively created services is not accounted for by IIS when it determines whether the hosting application pool is idle. The result is that applications that have such imperatively created service hosts have an IIS hosting environment that aggressively disposes of IIS host processes.  
@@ -33,17 +19,17 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
  The IIS hosting environment is optimized for services that do not maintain local state in memory. IIS recycles the host process in response to a variety of external and internal events, causing any volatile state stored exclusively in memory to be lost. Services hosted in IIS should store their state external to the process (for example, in a database) or in an in-memory cache that can easily be re-created if an application recycle event occurs.  
   
 > [!NOTE]
->  The protocols [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses for message-layer reliability and security make use of the volatile in-memory state. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] reliable sessions and security sessions may terminate unexpectedly due to application recycles. IIS-hosted applications that make use of these protocols should either depend on something other than the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-provided session key for correlating application-layer state (for example, an application-layer construct or custom correlation header) or disable IIS process recycling for the hosted application.  
+>  The protocols WCF uses for message-layer reliability and security make use of the volatile in-memory state. WCF reliable sessions and security sessions may terminate unexpectedly due to application recycles. IIS-hosted applications that make use of these protocols should either depend on something other than the WCF-provided session key for correlating application-layer state (for example, an application-layer construct or custom correlation header) or disable IIS process recycling for the hosted application.  
   
 ## Optimizing Performance in Middle-Tier Scenarios  
- For optimal performance in a *middle-tier scenario*—a service that calls out to other services in response to incoming messages—instantiate the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service client to the remote service once and reuse it across multiple incoming requests. Instantiating [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service clients is an expensive operation relative to making a service call on a pre-existing client instance, and middle-tier scenarios produce distinct performance gains by caching remote clients across requests. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service clients are thread-safe, so it is not necessary to synchronize access to a client across multiple threads.  
+ For optimal performance in a *middle-tier scenario*—a service that calls out to other services in response to incoming messages—instantiate the WCF service client to the remote service once and reuse it across multiple incoming requests. Instantiating WCF service clients is an expensive operation relative to making a service call on a pre-existing client instance, and middle-tier scenarios produce distinct performance gains by caching remote clients across requests. WCF service clients are thread-safe, so it is not necessary to synchronize access to a client across multiple threads.  
   
  Middle-tier scenarios also produce performance gains by using the asynchronous APIs generated by the `svcutil /a` option. The `/a` option causes the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate `BeginXXX/EndXXX` methods for each service operation, which allows potentially long-running calls to remote services to be made on background threads.  
   
 ## WCF in Multi-Homed or Multi-named scenarios  
- You can deploy [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services inside of an IIS Web farm, where a set of computers share a common external name (such as http://www.contoso.com) but are individually addressed by different hostnames (for example, http://www.contoso.com might direct traffic to two different machines named http://machine1.internal.contoso.com and http://machine2.internal.contoso.com). This deployment scenario is fully supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], but requires special configuration of the IIS Web site hosting [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to display the correct (external) hostname in the service's metadata (Web Services Description Language).  
+ You can deploy WCF services inside of an IIS Web farm, where a set of computers share a common external name (such as http://www.contoso.com) but are individually addressed by different hostnames (for example, http://www.contoso.com might direct traffic to two different machines named http://machine1.internal.contoso.com and http://machine2.internal.contoso.com). This deployment scenario is fully supported by WCF, but requires special configuration of the IIS Web site hosting WCF services to display the correct (external) hostname in the service's metadata (Web Services Description Language).  
   
- To ensure that the correct hostname appears in the service metadata [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates, configure the default identity for the IIS Web site that hosts [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to use an explicit hostname. For example, computers that reside inside of the www.contoso.com farm should use an IIS site binding of *:80:www.contoso.com for HTTP and \*:443:www.contoso.com for HTTPS.  
+ To ensure that the correct hostname appears in the service metadata WCF generates, configure the default identity for the IIS Web site that hosts WCF services to use an explicit hostname. For example, computers that reside inside of the www.contoso.com farm should use an IIS site binding of *:80:www.contoso.com for HTTP and \*:443:www.contoso.com for HTTPS.  
   
  You can configure IIS Web site bindings by using the IIS Microsoft Management Console (MMC) snap-in.  
   
@@ -55,7 +41,7 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
  Then user2 cannot change the code-generation folder for /application2 (under c:\tempForUser1).  
   
 ## Enabling asynchronous processing  
- By default messages sent to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted under IIS 6.0 and earlier are processed in a synchronous manner. ASP.NET calls into [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on its own thread (the ASP.NET worker thread) and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses another thread to process the request. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] holds onto the ASP.NET worker thread until it completes its processing. This leads to synchronous processing of requests. Processing requests asynchronously enables greater scalability because it reduces the number of threads required to process a request –[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not hold on to the ASP.NET thread while processing the request. Use of asynchronous behavior is not recommended for machines running IIS 6.0 because there is no way to throttle incoming requests that open up the server to *Denial Of Service* (DOS) attacks. Starting with IIS 7.0, a concurrent request throttle has been introduced: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]"MaxConcurrentRequestsPerCpu`. With this new throttle it is safe to use the asynchronous processing.  By default in IIS 7.0, the asynchronous handler and module are registered. If this has been turned off, you can manually enable asynchronous processing of requests in your application's Web.config file. The settings you use depend on your `aspNetCompatibilityEnabled` setting. If you have `aspNetCompatibilityEnabled` set to `false`, configure the `System.ServiceModel.Activation.ServiceHttpModule` as shown in the following configuration snippet.  
+ By default messages sent to a WCF service hosted under IIS 6.0 and earlier are processed in a synchronous manner. ASP.NET calls into WCF on its own thread (the ASP.NET worker thread) and WCF uses another thread to process the request. WCF holds onto the ASP.NET worker thread until it completes its processing. This leads to synchronous processing of requests. Processing requests asynchronously enables greater scalability because it reduces the number of threads required to process a request –WCF does not hold on to the ASP.NET thread while processing the request. Use of asynchronous behavior is not recommended for machines running IIS 6.0 because there is no way to throttle incoming requests that open up the server to *Denial Of Service* (DOS) attacks. Starting with IIS 7.0, a concurrent request throttle has been introduced: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]"MaxConcurrentRequestsPerCpu`. With this new throttle it is safe to use the asynchronous processing.  By default in IIS 7.0, the asynchronous handler and module are registered. If this has been turned off, you can manually enable asynchronous processing of requests in your application's Web.config file. The settings you use depend on your `aspNetCompatibilityEnabled` setting. If you have `aspNetCompatibilityEnabled` set to `false`, configure the `System.ServiceModel.Activation.ServiceHttpModule` as shown in the following configuration snippet.  
   
 ```xml  
 <system.serviceModel>  

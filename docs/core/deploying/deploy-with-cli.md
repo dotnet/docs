@@ -1,16 +1,9 @@
 ---
 title: .NET Core app deployment with CLI tools
 description: Learn .NET Core app deployment with command-line interface (CLI) tools
-keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 82ebe16d-5e1c-46cc-91e8-71974296429c
-ms.workload: 
-  - dotnetcore
 ---
 
 # Deploying .NET Core apps with command-line interface (CLI) tools
@@ -59,13 +52,17 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
       ```console
       dotnet publish -f netcoreapp1.1 -c Release
       ```
-   This creates a Release (rather than a Debug) version of your app. The resulting files are placed in a directory named *publish* that's in a subdirectory of your project's *bin* directory.
+   This creates a Release (rather than a Debug) version of your app. The resulting files are placed in a directory named *publish*      that's in a subdirectory of your project's *bin* directory.
 
-Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to distribute it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
+   Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to distribute it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 
-You can deploy the complete set of application files in any way you like. For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Once installed, users can execute your application by using the `dotnet` command and providing the application filename, such as `dotnet fdd.dll`.
+   You can deploy the complete set of application files in any way you like. For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
 
-In addition to the application binaries, your installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access.
+1. Run your app
+
+   Once installed, users can execute your application by using the `dotnet` command and providing the application filename, such as `dotnet fdd.dll`.
+
+   In addition to the application binaries, your installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access.
 
 ## Framework-dependent deployment with third-party dependencies
 

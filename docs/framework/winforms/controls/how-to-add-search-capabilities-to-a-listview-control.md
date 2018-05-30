@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Search Capabilities to a ListView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding search capabilities"
   - "searching [Windows Forms], adding search capabilities to ListView control"
 ms.assetid: 557782d9-b705-4bab-b496-9938afddac82
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Search Capabilities to a ListView Control
 Oftentimes when working with a large list of items in a <xref:System.Windows.Forms.ListView> control, you want to offer search capabilities to the user. The <xref:System.Windows.Forms.ListView> control offers this capability in two different ways: text matching and location searching.  

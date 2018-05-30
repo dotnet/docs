@@ -1,34 +1,20 @@
 ---
 title: "Contract2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 305eeb65-a52f-459e-9aa8-0ef071eade16
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Contract
-This section contains samples that demonstrate contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section contains samples that demonstrate contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
  [Data Contracts](../../../../docs/framework/wcf/samples/data-contracts.md)  
- Demonstrates data contracts in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates data contracts in WCF.  
   
  [Message Contracts](../../../../docs/framework/wcf/samples/message-contracts.md)  
- Demonstrates message contracts in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates message contracts in WCF.  
   
  [Service Contracts](../../../../docs/framework/wcf/samples/service-contracts.md)  
- Demonstrates service contracts in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Demonstrates service contracts in WCF.  
   
  [DataContractResolver](../../../../docs/framework/wcf/samples/datacontractresolver.md)  
  Demonstrates how the serialization and deserialization processes can be customized by using the <xref:System.Runtime.Serialization.DataContractResolver> class.  

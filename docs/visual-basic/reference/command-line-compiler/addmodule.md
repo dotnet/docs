@@ -1,18 +1,11 @@
 ---
 title: "-addmodule"
 ms.date: 03/09/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/addmodule compiler option [Visual Basic]"
   - "addmodule compiler option [Visual Basic]"
   - "-addmodule compiler option [Visual Basic]"
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -addmodule
 Causes the compiler to make all type information from the specified file(s) available to the project you are currently compiling.  

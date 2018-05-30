@@ -1,10 +1,6 @@
 ---
 title: "?: Operator (C# Reference)"
 ms.date: "07/20/2015"
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ?: Operator (C# Reference)
 The conditional operator (`?:`), commonly known as the ternary conditional operator, returns one of two values depending on the value of a Boolean expression. Following is the syntax for the conditional operator.  
@@ -57,5 +50,5 @@ classify = (input > 0) ? "positive" : "negative";
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Operators](../../../csharp/language-reference/operators/index.md)  
  [if-else](../../../csharp/language-reference/keywords/if-else.md)  
- [?. and ?Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)  
- [?? Operator](../../../csharp/language-reference/operators/null-conditional-operator.md)
+ [?. and ?[] Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)  
+ [?? Operator](../../../csharp/language-reference/operators/null-coalescing-operator.md)

@@ -1,14 +1,6 @@
 ---
 title: "x:Static Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "StaticExtension"
   - "xStatic"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "Static markup extension in XAML [XAML Services]"
   - "XAML [XAML Services], x:Static markup extension"
 ms.assetid: 056aee79-7cdd-434f-8174-dfc856cad343
-caps.latest.revision: 25
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Static Markup Extension
 References any static by-value code entity that is defined in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)]–compliant way. The static property that is referenced can be used to provide the value of a property in XAML.  

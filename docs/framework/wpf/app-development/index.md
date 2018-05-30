@@ -1,28 +1,14 @@
 ---
 title: "Application Development"
-ms.custom: ""
 ms.date: "01/26/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF [WPF], about application development"
   - "application development [WPF], about"
 ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Development
 <a name="introduction"></a>
-[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] is a presentation framework that can be used to develop the following types of applications:  
+Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
 -   Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
   

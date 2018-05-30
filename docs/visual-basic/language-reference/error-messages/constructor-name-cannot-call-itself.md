@@ -1,21 +1,12 @@
 ---
 title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30298"
   - "vbc30298"
 helpviewer_keywords: 
   - "BC30298"
 ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Constructor &#39;&lt;name&gt;&#39; cannot call itself
 A `Sub New` procedure in a class or structure calls itself.  

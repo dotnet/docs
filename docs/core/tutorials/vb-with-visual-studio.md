@@ -1,17 +1,11 @@
 ---
 title: Building a Hello World application with .NET Core and Visual Basic in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application with Visual Basic using Visual Studio 2017.
-keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-vb
 dev_langs: 
   - "vb"
-ms.workload: 
-  - dotnetcore
 ---
 # Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017
 

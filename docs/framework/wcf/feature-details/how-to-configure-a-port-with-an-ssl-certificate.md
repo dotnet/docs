@@ -1,14 +1,6 @@
 ---
 title: "How to: Configure a Port with an SSL Certificate"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,19 +9,13 @@ helpviewer_keywords:
   - "WCF, security mode"
   - "WCF, security"
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure a Port with an SSL Certificate
-When creating a self-hosted [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service with the <xref:System.ServiceModel.WSHttpBinding> class that uses transport security, you must also configure a port with an X.509 certificate. If you are not creating a self-hosted service, you can host your service on Internet Information Services (IIS). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+When creating a self-hosted Windows Communication Foundation (WCF) service with the <xref:System.ServiceModel.WSHttpBinding> class that uses transport security, you must also configure a port with an X.509 certificate. If you are not creating a self-hosted service, you can host your service on Internet Information Services (IIS). For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
  To configure a port, the tool you use depends on the operating system that is running on your machine.  
   
- If you are running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. With [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] this tool is installed. With [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605). The [Windows Support Tools documentation](http://go.microsoft.com/fwlink/?LinkId=94840) explains the syntax for the Httpcfg.exe tool.  
+ If you are running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. With [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] this tool is installed. With [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605). The [Windows Support Tools documentation](http://go.microsoft.com/fwlink/?LinkId=94840) explains the syntax for the Httpcfg.exe tool.  
   
  If you are running [!INCLUDE[wv](../../../../includes/wv-md.md)], use the Netsh.exe tool that is already installed.  
   
@@ -63,9 +49,9 @@ When creating a self-hosted [!INCLUDE[indigo1](../../../../includes/indigo1-md.m
   
 ### To get a certificate's thumbprint  
   
-1.  Use the Certificates MMC snap-in to find an X.509 certificate that has an intended purpose of client authentication. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
+1.  Use the Certificates MMC snap-in to find an X.509 certificate that has an intended purpose of client authentication. For more information, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   
-2.  Access the certificate's thumbprint. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
+2.  Access the certificate's thumbprint. For more information, see [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
   
 3.  Copy the thumbprint of the certificate into a text editor, such as Notepad.  
   

@@ -1,14 +1,6 @@
 ---
 title: "CertTimestampAuthenticodeLicense Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CertTimestampAuthenticodeLicense"
 api_location: 
@@ -16,12 +8,8 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: d468325a-21c5-43ce-8567-84e342b22308
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CertTimestampAuthenticodeLicense Function
 Time-stamps an Authenticode XrML license.  

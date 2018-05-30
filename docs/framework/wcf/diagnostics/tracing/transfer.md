@@ -1,27 +1,13 @@
 ---
 title: "Transfer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dfcfa36c-d3bb-44b4-aa15-1c922c6f73e6
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transfer
-This topic describes transfer in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing model.  
+This topic describes transfer in the Windows Communication Foundation (WCF) activity tracing model.  
   
 ## Transfer Definition  
- Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)], when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md).  
+ Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In WCF, when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md).  
   
  To emit transfer traces, use the `ActivityTracing` setting on the trace source as demonstrated by the following configuration code.  
   

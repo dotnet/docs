@@ -1,12 +1,6 @@
 ---
 title: "Module Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "Module"
   - "vb.Module"
@@ -19,16 +13,13 @@ helpviewer_keywords:
   - "classes [Visual Basic], vs. modules"
   - "declarations [Visual Basic], modules"
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Module Statement
 Declares the name of a module and introduces the definition of the variables, properties, events, and procedures that the module comprises.  
   
 ## Syntax  
   
-```  
+```vb 
 [ <attributelist> ] [ accessmodifier ]  Module name  
     [ statements ]  
 End Module  

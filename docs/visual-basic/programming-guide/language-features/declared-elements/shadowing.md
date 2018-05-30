@@ -1,13 +1,6 @@
 ---
 title: "Shadowing in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "inheritance [Visual Basic], shadowing"
   - "overriding, and shadowing"
@@ -25,9 +18,6 @@ helpviewer_keywords:
   - "objects [Visual Basic], names"
   - "names [Visual Basic], shadowing"
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Shadowing in Visual Basic
 When two programming elements share the same name, one of them can hide, or *shadow*, the other one. In such a situation, the shadowed element is not available for reference; instead, when your code uses the element name, the Visual Basic compiler resolves it to the shadowing element.  

@@ -2,10 +2,6 @@
 title: "base (C# Reference)"
 description: Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "base"
   - "BaseClass.BaseClass"
@@ -13,9 +9,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "base keyword [C#]"
 ms.assetid: 8b645dbe-1a33-49b8-8716-1c401f9a5ea5
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # base (C# Reference)
 

@@ -1,24 +1,10 @@
 ---
 title: "Button Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "buttons"
   - "Button control [Windows Forms]"
 ms.assetid: d38bc40c-8040-4f19-9e88-2c665b0ab80b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Button Control (Windows Forms)
 The Windows Forms `Button` control allows the user to click it to perform an action. The `Button` control can display both text and images. When the button is clicked, it looks as if it is being pushed in and released.  

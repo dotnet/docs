@@ -1,25 +1,11 @@
 ---
 title: "Column Types in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "columns [Windows Forms], types"
   - "DataGridView control [Windows Forms], column types"
   - "data grids [Windows Forms], columns"
 ms.assetid: f0a0a9f1-8757-4bfd-891f-d7d12870dbed
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Column Types in the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control uses several column types to display its information and enable users to modify or add information.  

@@ -1,26 +1,12 @@
 ---
 title: "Walkthrough: Changing Properties of a Hosted WPF Element at Design Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], changing properties at design time"
   - "Windows Forms, changing properties of WPF content at design time"
   - "WPF content [Windows Forms], hosting in Windows Forms"
   - "interoperability [WPF]"
 ms.assetid: a1f7a90c-0bbb-4781-8c3c-8cc8bef2488d
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Changing Properties of a Hosted WPF Element at Design Time
 This walkthrough shows you how to change property values of a Windows Presentation Foundation (WPF) control hosted on a Windows Form.  

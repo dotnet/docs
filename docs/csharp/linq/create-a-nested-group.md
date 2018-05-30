@@ -1,14 +1,7 @@
 ---
 title: Create a nested group
 description: How to create a nested group.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 12/1/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: e9f00708-362e-4d13-98c5-d77549347ba0
 ---
 # Create a nested group

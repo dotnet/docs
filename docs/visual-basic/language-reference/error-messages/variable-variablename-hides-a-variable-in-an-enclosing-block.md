@@ -1,21 +1,12 @@
 ---
 title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30616"
   - "bc30616"
 helpviewer_keywords: 
   - "BC30616"
 ms.assetid: e7658ebc-da45-451b-a409-a0f8915f0beb
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block
 A variable enclosed in a block has the same name as another local variable.  

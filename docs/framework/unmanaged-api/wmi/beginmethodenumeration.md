@@ -2,10 +2,6 @@
 title: BeginMethodEnumeration function (Unmanaged API Reference)
 description: The BeginMethodEnumeration function begins an enumeration of the object's methods
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "BeginMethodEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # BeginEnumeration function
 Begins an enumeration of the methods available for the object.  

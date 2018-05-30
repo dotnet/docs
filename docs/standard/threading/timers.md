@@ -1,13 +1,7 @@
 ---
 title: "Timers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], timers"
   - "timers, about timers"
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Timers
 Timers are lightweight objects that enable you to specify a delegate to be called at a specified time. A thread in the thread pool performs the wait operation.  

@@ -1,18 +1,7 @@
 ---
 title: "How to: Control Namespace Prefixes (Visual Basic) (LINQ to XML)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2fcf28a5-31b6-409d-84ea-27c22f71fc9f
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Control Namespace Prefixes (Visual Basic) (LINQ to XML)
 This topic describes how you can control namespace prefixes.  

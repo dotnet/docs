@@ -4,11 +4,6 @@ description: The dotnet list reference command provides a convenient option to l
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # dotnet list reference
 

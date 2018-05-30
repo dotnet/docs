@@ -1,14 +1,6 @@
 ---
 title: "Ilasm.exe (IL Assembler)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MSIL generators"
   - "metadata, MSIL Assembler"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "Ilasm.exe"
   - "verifying MSIL performance"
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
-caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Ilasm.exe (IL Assembler)
 

@@ -1,13 +1,6 @@
 ---
 title: "Composite Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 04/25/2017
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
   - "composite types [Visual Basic]"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "classes [Visual Basic], composite types"
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Composite Data Types (Visual Basic)
 In addition to the elementary data types Visual Basic supplies, you can also assemble items of different types to create *composite data types* such as structures, arrays, and classes. You can build composite data types from elementary types and from other composite types. For example, you can define an array of structure elements, or a structure with array members.  

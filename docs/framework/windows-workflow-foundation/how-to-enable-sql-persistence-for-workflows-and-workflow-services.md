@@ -1,27 +1,15 @@
 ---
 title: "How to: Enable SQL Persistence for Workflows and Workflow Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
-caps.latest.revision: 36
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Enable SQL Persistence for Workflows and Workflow Services
 This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for your workflows and workflow services both programmatically and by using a configuration file.  
   
- Windows Server App Fabric simplifies the process of configuring persistence. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [App Fabric Persistence Configuration](http://go.microsoft.com/fwlink/?LinkId=201204)  
+ Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [App Fabric Persistence Configuration](http://go.microsoft.com/fwlink/?LinkId=201204)  
   
  Before using the SQL Workflow Instance Store feature, create a database that the feature uses to persist workflow instances. The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] set-up program copies SQL script files associated with the SQL Workflow Instance Store feature to the %WINDIR%\Microsoft.NET\Framework\v4.xxx\SQL\EN folder. Run these script files against a SQL Server 2005 or SQL Server 2008 database that you want the SQL Workflow Instance Store to use to persist workflow instances. Run the SqlWorkflowInstanceStoreSchema.sql file first and then run the SqlWorkflowInstanceStoreLogic.sql file.  
   
@@ -36,7 +24,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
 >   
 >  System.Data.SqlClient.SqlException: Could not find stored procedure 'System.Activities.DurableInstancing.CreateLockOwner'  
   
- The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. [!INCLUDE[crabout](../../../includes/crabout-md.md)] properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).  
+ The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. For more information about properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).  
   
 ## Enabling Persistence for Self-Hosted Workflows that use WorkflowApplication  
  You can enable persistence for self-hosted workflows that use <xref:System.Activities.WorkflowApplication> programmatically by using the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> object model. The following procedure contains steps to do this.  

@@ -1,11 +1,6 @@
 ---
 title: "-out (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/out compiler option [Visual Basic]"
   - "-out compiler option [Visual Basic]"

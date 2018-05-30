@@ -1,11 +1,6 @@
 ---
 title: "My.Computer.FileSystem Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "FileSystem module"
   - "FileClose function"
@@ -17,9 +12,6 @@ helpviewer_keywords:
   - "Seek function"
   - "FileOpen function"
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Computer.FileSystem Object
 Provides properties and methods for working with drives, files, and directories.  

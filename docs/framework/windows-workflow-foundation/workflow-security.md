@@ -1,24 +1,12 @@
 ---
 title: "Workflow Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "programming [WF], workflow security"
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Workflow Security
-[!INCLUDE[wf](../../../includes/wf-md.md)] is integrated with several different technologies, such as Microsoft SQL Server and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]. Interacting with these technologies may introduce security issues into your workflow if done improperly.  
+Windows Workflow Foundation (WF) is integrated with several different technologies, such as Microsoft SQL Server and Windows Communication Foundation (WCF). Interacting with these technologies may introduce security issues into your workflow if done improperly.  
   
 ## Persistence Security Concerns  
   
@@ -36,15 +24,15 @@ ms.workload:
   
 -   When large numbers of child activities, locations, bookmarks, host extensions, or scopes are used, or when bookmarks with very large payloads are used, memory can be exhausted, or undue amounts of database space can be allocated during persistence. This can be mitigated by using object-level and database-level security.  
   
--   When using <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, the instance store must be secured. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [SQL Server Best Practices](http://go.microsoft.com/fwlink/?LinkId=164972).  
+-   When using <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, the instance store must be secured. For more information, see [SQL Server Best Practices](http://go.microsoft.com/fwlink/?LinkId=164972).  
   
--   Sensitive data in the instance store should be encrypted. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [SQL Security Encryption](http://go.microsoft.com/fwlink/?LinkId=164976).  
+-   Sensitive data in the instance store should be encrypted. For more information, see [SQL Security Encryption](http://go.microsoft.com/fwlink/?LinkId=164976).  
   
 -   Since the database connection string is often included in a configuration file, windows-level security (ACL) should be used to ensure that the configuration file (Web.Config usually) is secure, and that login and password information are not included in the connection string. Windows authentication should be used between the database and the web server instead.  
   
 ## Considerations for WorkflowServiceHost  
   
--   [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] endpoints used in workflows should be secured. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [WCF Security Overview](http://go.microsoft.com/fwlink/?LinkID=164975).  
+-   Windows Communication Foundation (WCF) endpoints used in workflows should be secured. For more information, see [WCF Security Overview](http://go.microsoft.com/fwlink/?LinkID=164975).  
   
 -   Host-level authorization can be implemented by using <xref:System.ServiceModel.ServiceAuthorizationManager>. See [How To: Create a Custom Authorization Manager for a Service](http://go.microsoft.com/fwlink/?LinkId=192228) for details. This is also demonstrated in the following sample: [Securing Workflow Services](../../../docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md).  
   

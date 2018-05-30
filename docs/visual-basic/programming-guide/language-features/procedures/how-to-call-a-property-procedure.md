@@ -1,13 +1,6 @@
 ---
 title: "How to: Call a Property Procedure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "Visual Basic code, properties"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "properties [Visual Basic], property procedures"
   - "procedure calls [Visual Basic], property procedures"
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Call a Property Procedure (Visual Basic)
 You call a property procedure by storing a value in the property or retrieving its value. You access a property the same way you access a variable.  

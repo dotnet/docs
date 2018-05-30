@@ -1,14 +1,6 @@
 ---
 title: "How to: Format the Windows Forms DataGrid Control Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "columns [Windows Forms], DataGrid controls"
   - "colors [Windows Forms], applying to DataGrid controls"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "tables [Windows Forms], formatting in DataGrid control"
   - "formatting [Windows Forms]"
 ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Format the Windows Forms DataGrid Control Using the Designer
 > [!NOTE]

@@ -1,10 +1,6 @@
 ---
 title: "How to: Write to a Text File (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "TextWriter.WriteLine"
   - "StreamWriter.Close"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "files [C#], text files"
   - "text, writing to files [C#]"
 ms.assetid: 2e99f184-d88b-4719-a7f1-d9ec482aa809
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Write to a Text File (C# Programming Guide)
 These examples show various ways to write text to a file. The first two examples use static convenience methods on the <xref:System.IO.File?displayProperty=nameWithType> class to write each element of any `IEnumerable<string>` and a string to a text file. Example 3 shows how to add text to a file when you have to process each line individually as you write to the file. Examples 1-3 overwrite all existing content in the file, but example 4 shows you how to append text to an existing file.  

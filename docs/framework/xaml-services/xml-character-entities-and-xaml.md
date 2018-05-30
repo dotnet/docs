@@ -1,14 +1,6 @@
 ---
 title: "XML Character Entities and XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "&"
   - "&amp"
@@ -28,12 +20,6 @@ helpviewer_keywords:
   - "quotation mark (\") [XAML Services]"
   - "less-than (<) character [XAML Services]"
 ms.assetid: 6896d0ce-74f7-420a-9ab4-de9bbf390e8d
-caps.latest.revision: 23
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XML Character Entities and XAML
 XAML uses character entities defined in XML for special characters. This topic describes some specific character entities and general considerations for other XML concepts in XAML.  

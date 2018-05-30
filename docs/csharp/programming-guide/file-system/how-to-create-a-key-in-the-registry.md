@@ -1,18 +1,11 @@
 ---
 title: "How to: Create a Key In the Registry (Visual C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "registry, adding keys and values [C#]"
   - "registry keys, creating [C#]"
   - "keys, creating in registry"
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create a Key In the Registry (Visual C#)
 This example adds the value pair, "Name" and "Isabella", to the current user's registry, under the key "Names".  

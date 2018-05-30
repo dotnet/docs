@@ -1,12 +1,6 @@
 ---
 title: "Listening with Sockets"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +15,9 @@ helpviewer_keywords:
   - "listening with sockets"
   - "Internet, sockets"
 ms.assetid: 40e426cc-13db-4371-95eb-f7388bd23ebf
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Listening with Sockets
 Listener or server sockets open a port on the network and then wait for a client to connect to that port. Although other network address families and protocols exist, this example shows how to create remote service for a TCP/IP network.  

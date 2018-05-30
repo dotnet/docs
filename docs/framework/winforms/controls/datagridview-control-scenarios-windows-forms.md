@@ -1,25 +1,11 @@
 ---
 title: "DataGridView Control Scenarios (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"
   - "data grids [Windows Forms], about data grids"
   - "DataGridView control [Windows Forms], scenarios"
 ms.assetid: 09a5fd05-3447-47ec-a4ec-6082a2b7f0dd
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGridView Control Scenarios (Windows Forms)
 With the <xref:System.Windows.Forms.DataGridView> control, you can display tabular data from a variety of data sources. For simple uses, you can manually populate a <xref:System.Windows.Forms.DataGridView> and manipulate the data directly through the control. Typically, however, you will store your data in an external data source and bind the control to it through a <xref:System.Windows.Forms.BindingSource> component.  

@@ -1,10 +1,6 @@
 ---
 title: "-utf8output (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/utf8output"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "/utf8output compiler option [C#]"
   - "-utf8output compiler option [C#]"
 ms.assetid: 27ff7381-c281-45d7-b2eb-1ad644b1354e
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -utf8output (C# Compiler Options)
 The **-utf8output** option displays compiler output using UTF-8 encoding.  

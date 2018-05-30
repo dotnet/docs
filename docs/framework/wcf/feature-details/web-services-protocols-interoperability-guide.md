@@ -1,29 +1,15 @@
 ---
 title: "Web Services Protocols Interoperability Guide"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Web Services Protocols Interoperability Guide
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements. Other topics within this section provide implementation details for each protocol supported.  
+Windows Communication Foundation (WCF) implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols WCF implements. Other topics within this section provide implementation details for each protocol supported.  
   
 ## Web Services Protocols Implemented by WCF  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for Web services (WS) infrastructure protocols through channels and Web services application protocols through the contracts feature. Interoperability for application protocols is accomplished through XML Schema description language 1.0 (XSD) and Web Services Description Language (WSDL) 1.1.  
+ WCF provides support for Web services (WS) infrastructure protocols through channels and Web services application protocols through the contracts feature. Interoperability for application protocols is accomplished through XML Schema description language 1.0 (XSD) and Web Services Description Language (WSDL) 1.1.  
   
- Infrastructure protocols interoperability is provided by the WS-* specifications. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channels provide support for a number of WS-\* infrastructure protocols. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channels are configured using binding elements. The following tables contain the full list of the WS-\* infrastructure protocols implemented by various [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] binding elements.  
+ Infrastructure protocols interoperability is provided by the WS-* specifications. WCF channels provide support for a number of WS-\* infrastructure protocols. WCF channels are configured using binding elements. The following tables contain the full list of the WS-\* infrastructure protocols implemented by various WCF binding elements.  
   
  <xref:System.ServiceModel.Channels.HttpTransportBindingElement> supports the specifications in the following table.  
   
@@ -100,7 +86,7 @@ ms.workload:
   
 -   [WS-Transfer Get for metadata retrieval](http://go.microsoft.com/fwlink/?LinkId=96708)  
   
- In addition, the following Interoperability Profiles are implemented across [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]:  
+ In addition, the following Interoperability Profiles are implemented across WCF:  
   
 -   [Basic Profile 1.1](http://go.microsoft.com/fwlink/?LinkId=69313)  
   

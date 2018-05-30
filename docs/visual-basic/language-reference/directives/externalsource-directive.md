@@ -1,11 +1,6 @@
 ---
 title: "#ExternalSource Directive"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "#Externalsource"
   - "#ExternalSource"
@@ -17,9 +12,6 @@ helpviewer_keywords:
   - "ExternalSource directive (#ExternalSource)"
   - "#ExternalSource directive"
 ms.assetid: 243bc6a2-34c3-4eeb-a776-9fd2bf988149
-caps.latest.revision: 160
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # #ExternalSource Directive
 Indicates a mapping between specific lines of source code and text external to the source.  

@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecuritySpnToSidMappingFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 45c658a9-7dcb-42a9-9bd0-e2a06a2a00b6
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySpnToSidMappingFailure
 System.ServiceModel.Security.SecuritySpnToSidMappingFailure  

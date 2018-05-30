@@ -1,17 +1,8 @@
 ---
 title: Inline Functions (F#)
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 3fa31178-08f8-463d-9d41-d29220a90027 
 ---
-
 # Inline Functions
 
 *Inline functions* are functions that are integrated directly into the calling code.

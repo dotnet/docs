@@ -1,17 +1,8 @@
 ---
 title: Exception Handling (F#)
 description: Learn the basics of exception handling in F# and find links to exception handling expressions and functions.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: ad475c4a-d94e-47d9-b27b-3ff000b65f8e 
 ---
-
 # Exception Handling
 
 This section contains information about exception handling support in the F# language.

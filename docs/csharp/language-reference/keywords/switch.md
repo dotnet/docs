@@ -1,10 +1,6 @@
 ---
 title: "switch keyword (C# Reference)"
 ms.date: 03/07/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "switch_CSharpKeyword"
   - "switch"
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "case statement [C#]"
   - "default keyword [C#]"
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-caps.latest.revision: 47
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # switch (C# Reference)
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*. 

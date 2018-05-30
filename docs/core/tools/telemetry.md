@@ -1,19 +1,10 @@
 ---
 title: .NET Core CLI Tools telemetry
 description: Discover the .NET Core tools telemetry features that collect usage information for analysis, which data is collected and how to disable it.
-keywords: .NET,.NET Core,telemetry
 author: richlander
 ms.author: mairaw
 ms.date: 08/04/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
-ms.workload: 
-  - dotnetcore
 ---
-
 # .NET Core CLI Tools telemetry
 
 The [.NET Core SDK](index.md) includes a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It's important that the .NET Team understands how the tools are used so that we can improve them. For more information, see [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/).

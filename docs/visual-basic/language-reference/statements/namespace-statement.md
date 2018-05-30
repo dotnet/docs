@@ -1,12 +1,6 @@
 ---
 title: "Namespace Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Namespace"
 helpviewer_keywords: 
@@ -18,16 +12,13 @@ helpviewer_keywords:
   - "root namespaces"
   - "declarations [Visual Basic], namespaces"
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
-caps.latest.revision: 39
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Namespace Statement
 Declares the name of a namespace and causes the source code that follows the declaration to be compiled within that namespace.  
   
 ## Syntax  
   
-```  
+```vb  
 Namespace [Global.] { name | name.name }  
     [ componenttypes ]  
 End Namespace  

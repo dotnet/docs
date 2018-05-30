@@ -1,21 +1,7 @@
 ---
 title: "Privacy and Data Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 46fa5839-adf7-4c7c-bce3-71e941fa7de9
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Privacy and Data Security
 Safeguarding and managing sensitive information in an ADO.NET application is dependent upon the underlying products and technologies used to create it. ADO.NET does not directly provide services for securing or encrypting data.  

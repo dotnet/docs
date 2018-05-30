@@ -1,10 +1,6 @@
 ---
 title: "float (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "float"
   - "float_CSharpKeyword"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "float keyword [C#]"
   - "floating-point numbers [C#], float keyword"
 ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # float (C# Reference)
 The `float` keyword signifies a simple type that stores 32-bit floating-point values. The following table shows the precision and approximate range for the `float` type.  

@@ -1,11 +1,6 @@
 ---
 title: "Public (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Public"
 helpviewer_keywords: 
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "Public keyword [Visual Basic], syntax"
   - "Public access modifier"
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Public (Visual Basic)
 Specifies that one or more declared programming elements have no access restrictions.  
@@ -71,6 +63,8 @@ Specifies that one or more declared programming elements have no access restrict
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+ [Private Protected](private-protected.md)   
+ [Protected Friend](protected-friend.md)   
  [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  

@@ -1,19 +1,12 @@
 ---
 title: "% Operator (C# Reference)"
 ms.date: 04/04/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "%_CSharpKeyword"
 helpviewer_keywords: 
   - "remainder operator [C#]"
   - "% operator [C#]"
 ms.assetid: 3b74f4f9-fd9c-45e7-84fa-c8d71a0dfad7
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # % Operator (C# Reference)
 The remainder operator (`%`) computes the remainder after dividing its first operand by its second. All numeric types have predefined remainder operators. 

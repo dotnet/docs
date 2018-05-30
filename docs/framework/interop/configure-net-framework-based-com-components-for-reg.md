@@ -1,10 +1,6 @@
 ---
 title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "components [.NET Framework], manifest"
   - "application manifests [.NET Framework]"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure .NET Framework-Based COM Components for Registration-Free Activation
 Registration-free activation for .NET Framework-based components is only slightly more complicated than it is for COM components. The setup requires two manifests:  

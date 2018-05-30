@@ -1,12 +1,6 @@
 ---
 title: "Extension Indexer Property (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionIndexer"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "extension indexer [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Extension Indexer Property (Visual Basic)
 Provides access to individual elements in a collection.  

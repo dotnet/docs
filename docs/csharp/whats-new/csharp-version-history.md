@@ -1,14 +1,8 @@
 ---
 title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
-keywords: C#, .NET, .NET Core, What's New, C# History
 author: erikdietrich
-ms.author: wiwagn
 ms.date: 09/20/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 
 # The history of C# #
@@ -55,7 +49,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
-A more nuanced view examines expression tress, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
+A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
 
 Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made it look as though that list of integers had gotten a whole lot smarter.
 

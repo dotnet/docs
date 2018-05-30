@@ -1,14 +1,6 @@
 ---
 title: "Local Type Inference (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "local type inference"
   - "vb.TypeInfer"
@@ -20,9 +12,6 @@ helpviewer_keywords:
   - "inference [Visual Basic]"
   - "type inference [Visual Basic]"
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
-caps.latest.revision: 43
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Local Type Inference (Visual Basic)
 The Visual Basic compiler uses *type inference* to determine the data types of local variables declared without an `As` clause. The compiler infers the type of the variable from the type of the initialization expression. This enables you to declare variables without explicitly stating a type, as shown in the following example. As a result of the declarations, both `num1` and `num2` are strongly typed as integers.  

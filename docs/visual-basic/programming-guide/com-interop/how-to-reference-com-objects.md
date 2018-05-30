@@ -1,13 +1,6 @@
 ---
 title: "How to: Reference COM Objects from Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop [Visual Basic], referencing COM objects"
   - "referencing objects, COM objects from Visual Basic"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "COM objects, referencing"
   - "interop assemblies"
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Reference COM Objects from Visual Basic
 In Visual Basic, adding references to COM objects that have type libraries requires the creation of an interop assembly for the COM library. References to the members of the COM object are routed to the interop assembly and then forwarded to the actual COM object. Responses from the COM object are routed to the interop assembly and forwarded to your [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] application.  

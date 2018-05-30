@@ -1,27 +1,13 @@
 ---
 title: "Accessing the Service from a Web Browser (WCF Data Services Quickstart)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5a6fa180-3094-4e6e-ba2b-8c80975d18d1
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Accessing the Service from a Web Browser (WCF Data Services Quickstart)
 In this task, you will start the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] from Visual Studio and optionally disable feed reading in the Web browser. You will then retrieve the service definition document as well as access data service resources by submitting HTTP GET requests through a Web browser to the exposed resources.  
   
 > [!NOTE]
->  By default, Visual Studio auto-assigns a port number to the `localhost` URI on your computer. This task uses the port number `12345` in the URI examples. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to set a specific port number in your Visual Studio project see [Creating the Data Service](../../../../docs/framework/data/wcf/creating-the-data-service.md).  
+>  By default, Visual Studio auto-assigns a port number to the `localhost` URI on your computer. This task uses the port number `12345` in the URI examples. For more information about how to set a specific port number in your Visual Studio project see [Creating the Data Service](../../../../docs/framework/data/wcf/creating-the-data-service.md).  
   
 ### To request the default service document by using Internet Explorer  
   

@@ -1,25 +1,11 @@
 ---
 title: "How to: Create a Read-Only Text Box (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TextBox control [Windows Forms], read-only"
   - "read-only text boxes"
   - "text boxes [Windows Forms], read-only"
 ms.assetid: 60baa9ab-fa57-44ad-bb7c-61b05aa64296
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Read-Only Text Box (Windows Forms)
 You can transform an editable Windows Forms text box into a read-only control. For example, the text box may display a value that is usually edited but may not be currently, due to the state of the application.  

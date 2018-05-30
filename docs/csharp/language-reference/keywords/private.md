@@ -1,19 +1,12 @@
 ---
 title: "private (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "private_CSharpKeyword"
   - "private"
 helpviewer_keywords: 
   - "private keyword [C#]"
 ms.assetid: 654c0bb8-e6ac-4086-bf96-7474fa6aa1c8
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # private (C# Reference)
 The `private` keyword is a member access modifier. 
@@ -22,7 +15,7 @@ The `private` keyword is a member access modifier.
   
 Private access is the least permissive access level. Private members are accessible only within the body of the class or the struct in which they are declared, as in this example:  
   
-```  
+```csharp  
 class Employee  
 {  
     private int i;  

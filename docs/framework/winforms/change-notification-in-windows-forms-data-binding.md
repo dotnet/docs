@@ -1,24 +1,10 @@
 ---
 title: "Change Notification in Windows Forms Data Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, data binding"
   - "Windows Forms, adding change notification for data binding"
 ms.assetid: b5b10f90-0585-41d9-a377-409835262a92
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Change Notification in Windows Forms Data Binding
 One of the most important concepts of Windows Forms data binding is *change notification*. To ensure that your data source and bound controls always have the most recent data, you must add change notification for data binding. Specifically, you want to ensure that bound controls are notified of changes that were made to their data source, and the data source is notified of changes that were made to the bound properties of a control.  

@@ -1,14 +1,6 @@
 ---
 title: "GetCachePath Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetCachePath"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: d977ad29-6619-42e1-b0be-bc25ea950e80
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetCachePath Function
 Gets the path to the cached assembly, using the specified flags.  

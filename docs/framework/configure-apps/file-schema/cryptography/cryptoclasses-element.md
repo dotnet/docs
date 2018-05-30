@@ -1,14 +1,6 @@
 ---
 title: "&lt;cryptoClasses&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/cryptoClasses"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptoClasses"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "<cryptoClasses> element"
   - "cryptoClasses element"
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
-caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;cryptoClasses&gt; Element
 Contains a list of cryptography classes that have a mapping to a friendly name in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) element.  

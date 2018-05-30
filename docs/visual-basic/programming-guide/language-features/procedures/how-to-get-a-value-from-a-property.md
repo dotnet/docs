@@ -1,13 +1,6 @@
 ---
 title: "How to: Get a Value from a Property (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Get a Value from a Property (Visual Basic)
 You retrieve a property's value by including the property name in an expression.  

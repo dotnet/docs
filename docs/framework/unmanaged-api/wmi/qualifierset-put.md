@@ -2,10 +2,6 @@
 title: QualifierSet_Put function (Unmanaged API Reference)
 description: The QualifierSet_Put function writes the named qualifier and its value.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_Put"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_Put function
 Writes the named qualifier and value. The new qualifier overwrites the previous value of the same name. If the qualifier does not exist, it is created. 

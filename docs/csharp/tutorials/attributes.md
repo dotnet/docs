@@ -1,14 +1,8 @@
 ---
 title: Attributes - C#
 description: Learn how attributes work in C#.
-keywords: .NET, .NET Core, C#, attributes
 author: mgroves
-ms.author: wiwagn
 ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
 ---
 

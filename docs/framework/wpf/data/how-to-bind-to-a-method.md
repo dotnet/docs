@@ -1,25 +1,11 @@
 ---
 title: "How to: Bind to a Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data binding [WPF], binding to methods using ObjectDataProvider"
   - "binding [WPF], to methods"
   - "methods [WPF], binding to"
 ms.assetid: 5f55e71e-2182-42a0-88d1-700cc1427a7a
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to a Method
 The following example shows how to bind to a method using <xref:System.Windows.Data.ObjectDataProvider>.  

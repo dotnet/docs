@@ -1,12 +1,6 @@
 ---
 title: "/debug (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "debug compiler switches"
   - "/debug compiler option [Visual Basic]"

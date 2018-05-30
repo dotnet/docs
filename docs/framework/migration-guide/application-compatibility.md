@@ -33,7 +33,8 @@ When running on a newer version than what was targeted, the .NET Framework will
 use quirked behavior to mimic the older targeted version. In other words, the
 app will run on the newer version of the Framework, but act as if it's running
 on the older version. Many of the compatibility issues between versions of the .NET
-Framework are mitigated through this quirking model.
+Framework are mitigated through this quirking model. This compatibility mode is determined
+by the entry assembly for the AppDomain that the code is running in.
 
 ## Runtime changes
 

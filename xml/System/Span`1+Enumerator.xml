@@ -29,19 +29,25 @@ The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) of the
 
 Enumerators can be used to read the data in the <xref:System.Span%601>, but they cannot be used to modify it. 
 
-Initially, the enumerator is positioned before the first element in the <xref:System.Span%601>. At this position, <xref:System.Span%601.Enumerator.Current> is undefined, so you must call <xref:System.Span%601.Enumerator.MoveNext%2A> to advance the enumerator to the first item in the <xref:System.Span%601> before reading the value of <xref:System.Span%601.Enumerator.Current>.
+Initially, the enumerator is positioned before the first element in the <xref:System.Span%601>. At this position, attempting to retrieve an element from the <xref:System.Span%601.Enumerator.Current> property throws an <xref:System.IndexOutOfRangeException>. To prevent an exception, you must call <xref:System.Span%601.Enumerator.MoveNext%2A> to advance the enumerator to the first item in the <xref:System.Span%601> before reading the value of <xref:System.Span%601.Enumerator.Current>.
 
 <xref:System.Span%601.Enumerator.Current> returns the same object until <xref:System.Span%601.Enumerator.MoveNext%2A> is called. <xref:System.Span%601.Enumerator.MoveNext%2A> sets  <xref:System.Span%601.Enumerator.Current> to the next item in the <xref:System.Span%601>.
 
 If <xref:System.Span%601.Enumerator.MoveNext%2A> passes the end of the <xref:System.Span%601>, the enumerator is positioned after the last item in the <xref:System.Span%601>, and <xref:System.Span%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Span%601.Enumerator.MoveNext%2A> also return `false`. If the call to <xref:System.Span%601.Enumerator.MoveNext%2A> returns `false`, <xref:System.Span%601.Enumerator.Current> is undefined. You cannot set <xref:System.Span%601.Enumerator.Current> to the first item in the <xref:System.Span%601> again; you must create a new enumerator instance instead. 
 
-The enumerator does not have exclusive access to the <xref:System.Span%601>; therefore, enumerating through a span is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the span during the entire enumeration. To allow the span to be accessed by multiple threads for reading and writing, you must implement your own synchronization. 
+The enumerator does not have exclusive access to the <xref:System.Span%601>. In addition, the underlying data on which the span is based can also be modified. Therefore, enumerating through a span is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you must implement your own synchronization. For example, the following code has a race condition. It does not ensure that the span will be enumerated before the `ClearContents` method executes. As a result,   
 
-Unlike some other enumerator structures in .NET, <xref:System.Span%601.Enumerator>:
+[!code-csharp[System.Span<T>.Enumerator-no-synchronization](~/samples/snippets/csharp/api/system/span.enumerator/nosync/program.cs)]
 
-- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
+If you synchronize access to the array before enumerating the span, as the revised version of the `EnumerateSpan` method does in the following example. Note that the example locks the underlying array on which the span is based.  
 
-- Does not include a `Reset` method, which sets the enumerator to its initial position before the first element in the span.
+[!code-csharp[System.Span<T>.Enumerator-no-synchronization](~/samples/snippets/csharp/api/system/span.enumerator/sync/program.cs#1)]
+
+Unlike some other enumerator structures in .NET, the <xref:System.Span%601.Enumerator>:
+
+- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface. This is because <ref:System.Span%601> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type).
+
+- Does not include a `Reset` method, which can set the enumerator to its initial position before the first element in the span. (The <xref:System.Collections.IEnumerator.Reset?displayProperty=nameWithType> method must be implemented as part of the interface, but most implementors either throw an exception or provide no implementation.) 
  
       ]]></format>
     </remarks>
@@ -62,7 +68,7 @@ Unlike some other enumerator structures in .NET, <xref:System.Span%601.Enumerato
         <ReturnType>T@</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item at the current position of the enumerator.</summary>
+        <summary>Gets a reference to the item at the current position of the enumerator.</summary>
         <value>The element in the <see cref="T:System.Span`1" /> at the current position of the enumerator.</value>
         <remarks>
       <format type="text/markdown"><![CDATA[  

@@ -29,9 +29,12 @@
   </Attributes>
   <Docs>
     <typeparam name="T">The type of items in the <see cref="System.Span`1" />.</typeparam>
-    <summary>Represents a contiguous region of arbitrary memory that is type- and memory-safe.</summary>
+    <summary>Provides a type- and memory-safe representation of a contiguous region of arbitrary memory.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
+
+`Span<T>` is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type) that is allocated on the stack rather than on the managed heap. Ref struct types have a number of restrictions to ensure that they cannot be promoted to the managed heap, including that they can't be boxed and they can't be assigned to variables of type <xref:System.Object>, `dynamic`, and to any interface type.
+
 A `Span<T>` instance is often used to hold the elements of an array or a portion of an array. Unlike an array, however, a `Span<T>` instance can point to managed memory, native memory, or memory managed on the stack.
 
       ]]></format>
@@ -226,7 +229,7 @@ The `Clear` method sets the items in the <xref:System.Span%601> object to their 
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-If the source and `destination` overlap, this method places the original values in a temporary location before `destination` is overwritten.
+This method copies all of `source` to `destination` even if `source` and `destination` overlap.
 
          ]]></format>
         </remarks>
@@ -346,10 +349,18 @@ If the source and `destination` overlap, this method places the original values 
         <returns>Calls to this method are not supported.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-Calls to the <xref:System.Span%601.Equals%2A> method are not supported. The method call either generates a compiler error at compile time or throws a <xref:System.NotSupportedException> at run time. To compare two <xref:System.Span%601> objects for equality, use the <xref:System.Span%601.op_Equality%2A> comparison operator.
+Calls to the <xref:System.Span%601.Equals%2A> method are not supported. Calls to the <xref:System.Span%601.Equals%2A methods produce either of two results:
+
+- If `obj` is a <xref:System.Span%601>, the method call generates compiler error CS1503: "cannot convert from 'System.Span' to 'object'." This is because <xref:System.Span%601> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type) that cannot be boxed and therefore cannot be converted to an <xref:System.Object>.
+
+- If the type of `obj` is not a <xref:System.Span%601>, the method call throws a <xref:System.NotSupportedException>. 
+
+To compare two <xref:System.Span%601> objects for equality, use the <xref:System.Span%601.op_Equality%2A> comparison operator.
 
         ]]></format>
         </remarks>
+        <exception cref="T:System.NotSupportedException">
+          Calls to this method are not supported.</exception> 
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -465,7 +476,8 @@ Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, 
         <returns>A reference to the element of the <see cref="T:System.Span`1" /> at index zero, or <see langword="null" /> if <see cref="M:System.Span`1.IsEmpty" /> is  <see langword="true" />. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-The `GetPinnableReference` method can be used for pinning a <xref:System.Span%601> in memory. It is required to support the use of a <xref:System.Span%601> within a [fixed](~/docs/csharp/language-reference/keywords/fixed-statement.md) statement.
+
+The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type). It can be used for pinning a <xref:System.Span%601> in memory. It is required to support the use of a <xref:System.Span%601> within a [fixed](~/docs/csharp/language-reference/keywords/fixed-statement.md) statement.
 
        ]]></format>
         </remarks>
@@ -670,7 +682,7 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       <Docs>
         <param name="arraySegment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
         <param name="segment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
-        <summary>Defines an implicit conversion of an <see cref="T:System.ArraySegment" /> to a <see cref="T:System.Span`1" />.</summary>
+        <summary>Defines an implicit conversion of an <see cref="T:System.ArraySegment`1" /> to a <see cref="T:System.Span`1" />.</summary>
         <returns>A span that corresponds to the array segment.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -858,7 +870,7 @@ For a `Span<Char>`, the `ToString` method returns a <xref:System.String> that co
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-If the source and `destination` overlap, this method places the original values in a temporary location before `destination` is overwritten.
+This method copies all of `source` to `destination` even if `source` and `destination` overlap.
 
 If `destination` is shorter than the source <xref:System.Span%601>, this method returns `false`, and no data is written to `destination`.
 

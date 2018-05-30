@@ -3,7 +3,9 @@ title: dotnet command - .NET Core CLI
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/29/2018
+
+
+ms.date: 05/30/2018
 ---
 # dotnet command
 
@@ -180,7 +182,6 @@ Prints out the version of the .NET Core SDK in use.
 | [dotnet sln](dotnet-sln.md)                   | Options to add, remove, and list projects in a solution file.       |
 | [dotnet store](dotnet-store.md)               | Stores assemblies in the runtime package store.                     |
 | [dotnet test](dotnet-test.md)                 | Runs tests using a test runner.                                     |
-| [dotnet tool](dotnet-tool.md)                 | Install or work with global tools that extend the .NET experience.  |
 
 # [.NET Core 2.0](#tab/netcore20)
 
@@ -222,16 +223,16 @@ Prints out the version of the .NET Core SDK in use.
 
 Command | Function
 --- | ---
-[dotnet add reference](dotnet-add-reference.md) | Add a project reference.
-[dotnet list reference](dotnet-list-reference.md) | List project references.
-[dotnet remove reference](dotnet-remove-reference.md) | Remove a project reference.
+[dotnet add reference](dotnet-add-reference.md) | Adds a project reference.
+[dotnet list reference](dotnet-list-reference.md) | Lists project references.
+[dotnet remove reference](dotnet-remove-reference.md) | Removes a project reference.
 
 ### NuGet packages
 
 Command | Function
 --- | ---
-[dotnet add package](dotnet-add-package.md) | Add a NuGet package.
-[dotnet remove package](dotnet-remove-package.md) | Remove a NuGet package.
+[dotnet add package](dotnet-add-package.md) | Adds a NuGet package.
+[dotnet remove package](dotnet-remove-package.md) | Removes a NuGet package.
 
 ### NuGet commands
 
@@ -241,9 +242,34 @@ Command | Function
 [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 [dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
 
+### Global Tools commands
+
+[.NET Core Global Tools](global-tools.md) are available strating with .NET Core SDK 2.1.300:
+
+Command | Function
+--- | ---
+[dotnet tool install](dotnet-tool-install.md) | Installs a Global Tool on your machine.
+[dotnet tool list](dotnet-tool-list.md) | Lists all Global Tools currently installed in the default directory on your machine or in the specified path.
+[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a Global Tool from your machine.
+[dotnet tool update](dotnet-tool-update.md) | Updates a Global Tool on your machine.
+
+### Additional tools
+
+Starting with .NET Core SDK 2.1.300, a number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET Core SDK. These tools include:
+
+| Tool                                    | Function                                                     |
+| --------------------------------------- | ------------------------------------------------------------ |
+| dev-certs                               | Creates and manages development certificates.                |
+| [ef](/ef/core/miscellaneous/cli/dotnet) | Entity Framework Core command-line tools.                    |
+| sql-cache                               | SQL Server cache command-line tools.                         |
+| user-secrets                            | Manages development user secrets.                            |
+| watch                                   | Starts a file watcher that runs a command when files change. |
+
+Execute `dotnet <tool-name> --help` for more information about 
+
 ## Examples
 
-Initialize a sample .NET Core console application that can be compiled and run:
+Creates a new .NET Core console application:
 
 `dotnet new console`
 
@@ -280,6 +306,10 @@ Specifies whether data about the .NET Core tools usage is collected and sent to 
 `DOTNET_MULTILEVEL_LOOKUP`
 
 Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+
+`DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
+
+Disables minor version roll forward. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 # [.NET Core 2.0](#tab/netcore20)
 

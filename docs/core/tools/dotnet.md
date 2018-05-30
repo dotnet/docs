@@ -265,7 +265,7 @@ Starting with .NET Core SDK 2.1.300, a number of tools that were available only 
 | user-secrets                            | Manages development user secrets.                            |
 | watch                                   | Starts a file watcher that runs a command when files change. |
 
-Execute `dotnet <tool-name> --help` for more information about 
+For more information about each tool, execute `dotnet <tool-name> --help`.
 
 ## Examples
 

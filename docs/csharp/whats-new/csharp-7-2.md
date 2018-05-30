@@ -11,7 +11,7 @@ avoiding unnecessary copies or allocations.
 
 The remaining features are small, nice-to-have features.
 
-C# 7.2 uses the [language version selection](csharp-7-1.md#language-version-selection)
+C# 7.2 uses the [language version selection](../language-reference/configure-language-version.md)
 configuration element to select the compiler language version.
 
 The new language features in this release are:

@@ -7,7 +7,7 @@ ms.date: 05/29/2018
 ---
 # dotnet tool install
 
-[!INCLUDE [topic-appliesto-net-core-2-1plus.md](../../../includes/topic-appliesto-net-core-2-1plus.md)]
+[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 ## Name
 

@@ -16,8 +16,8 @@ ms.date: 05/29/2018
 ## Synopsis
 
 ```
-dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
-dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity]
+dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [--framework] [-v|--verbosity]
+dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [--framework] [-v|--verbosity]
 dotnet tool update <-h|--help>
 ```
 
@@ -33,11 +33,15 @@ Name/ID of the NuGet package that contains the .NET Core Global Tool to update. 
 
 ## Options
 
+`--add-source <SOURCE>`
+
+Adds an additional NuGet package source to use during installation.
+
 `--configfile <FILE>`
 
 The NuGet configuration (*nuget.config*) file to use.
 
-`-f|--framework <FRAMEWORK>`
+`--framework <FRAMEWORK>`
 
 Specifies the [target framework](../../standard/frameworks.md) to update the tool for.
 
@@ -48,10 +52,6 @@ Specifies that the update is for a user-wide tool. Can't be combined with the `-
 `-h|--help`
 
 Prints out a short help for the command.
-
-`--source-feed <SOURCE_FEED>`
-
-Adds an additional NuGet package source to use during the update.
 
 `--tool-path <PATH>`
 

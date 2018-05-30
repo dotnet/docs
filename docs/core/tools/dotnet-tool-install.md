@@ -16,8 +16,8 @@ ms.date: 05/29/2018
 ## Synopsis
 
 ```
-dotnet tool install <PACKAGE_NAME> <-g|--global> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
-dotnet tool install <PACKAGE_NAME> <--tool-path> [--configfile] [-f|--framework] [--source-feed] [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> <-g|--global> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> <--tool-path> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
 dotnet tool install <-h|--help>
 ```
 
@@ -40,11 +40,15 @@ Name/ID of the NuGet package that contains the .NET Core Global Tool to install.
 
 ## Options
 
+`--add-source <SOURCE>`
+
+Adds an additional NuGet package source to use during installation.
+
 `--configfile <FILE>`
 
 The NuGet configuration (*nuget.config*) file to use.
 
-`-f|--framework <FRAMEWORK>`
+`--framework <FRAMEWORK>`
 
 Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET Core SDK tries to choose the most appropriate target framework.
 
@@ -55,10 +59,6 @@ Specifies that the installation is user wide. Can't be combined with the `--tool
 `-h|--help`
 
 Prints out a short help for the command.
-
-`--source-feed <SOURCE_FEED>`
-
-Adds an additional NuGet package source to use during installation.
 
 `--tool-path <PATH>`
 

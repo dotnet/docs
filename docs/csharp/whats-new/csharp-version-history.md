@@ -94,7 +94,7 @@ With versions 3.0 and 5.0, C# had added some impressive features in an object or
 - [Null propagator](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
 - [String interpolation](../language-reference/tokens/interpolated.md)
 - [nameof operator](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
-- [Dictionary initializer](csharp-6.md#index-initializers)
+- [Index initializers](csharp-6.md#index-initializers)
 
 Each of these features is interesting in its own right. But if you look at them altogether, you see an interesting pattern. In this version, C# eliminated language boilerplate to make code more terse and readable. So for fans of clean, simple code, this language version was a huge win.
 

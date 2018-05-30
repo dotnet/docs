@@ -29,7 +29,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core Glob
 
 `PACKAGE_NAME`
 
-Name/ID of the NuGet package that contains the .NET Core Global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
+Name/ID of the NuGet package that contains the .NET Core Global Tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
@@ -55,7 +55,7 @@ Adds an additional NuGet package source to use during the update.
 
 `--tool-path <PATH>`
 
-Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
+Specifies the location where the Global Tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
 
 `-v|--verbosity <LEVEL>`
 

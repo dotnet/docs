@@ -36,7 +36,7 @@ Global Tools are installed in the following directories by default when you spec
 
 `PACKAGE_NAME`
 
-Name/ID of the NuGet package that contains the .NET Core Global tool to install.
+Name/ID of the NuGet package that contains the .NET Core Global Tool to install.
 
 ## Options
 
@@ -62,7 +62,7 @@ Adds an additional NuGet package source to use during installation.
 
 `--tool-path <PATH>`
 
-Specifies the location where to install the global tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
+Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
 
 `-v|--verbosity <LEVEL>`
 

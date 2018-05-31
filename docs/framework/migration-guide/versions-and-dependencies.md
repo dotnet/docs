@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework Versions and Dependencies"
 ms.custom: "updateeachrelease"
-ms.date: "04/10/2018"
+ms.date: "05/31/2018"
 helpviewer_keywords: 
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
@@ -39,9 +39,13 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
 |2.0|2.0|-   Generics<br />-   ASP.NET additions<br />-   [More...](http://msdn.microsoft.com/library/t357fb32\(v=vs.80\).aspx)|2005|-|✓ 2008 R2 SP1<br />✓ 2008 SP2<br />✓ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
 |1.1|1.1|-   ASP.NET and ADO.NET updates<br />-   Side-by-side execution<br />-   [More...](http://msdn.microsoft.com/library/9wtde3k4\(v=vs.80\).aspx)|2003|-|✓ 2003|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
 |1.0|1.0|First version of the .NET Framework.|Visual Studio .NET|-|-|See [instructions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)|  
-  
- In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../../../docs/framework/get-started/index.md).  
-  
+
+|Notes| |
+|-|-|
+| * | The .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows-10.md#enable-the-net-framework-35-in-control-panel).
+
+ In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../../../docs/framework/get-started/index.md).
+
 ## Targeting and Running .NET Framework apps for version 4.5 and later  
  The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is an in-place update that replaces the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] on your computer, and similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, and 4.7.1 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means that they use the same runtime version, but the assembly versions are updated and include new types and members. After you install one of these updates, your [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], .NET Framework 4.6, or .NET Framework 4.7 apps should continue to run without requiring recompilation. However, the reverse is not true. We do not recommend running apps that target a later version of the .NET Framework on an earlier version of the .NET Framework. For example, we do not recommend that you run an app the targets the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] on the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. The following guidelines apply:  
   

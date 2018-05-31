@@ -2,7 +2,7 @@
 title: Self-contained deployment runtime roll forward
 description: Learn about dotnet publish changes for self-contained deployments.
 author: jralexander
-ms.author: johalex
+ms.author: kdollard
 ms.date: 05/31/2018
 ---
 # Self-contained deployment runtime roll forward
@@ -18,7 +18,7 @@ ms.date: 05/31/2018
 > [!NOTE]
 > `restore` and `build` can be run implicitly as part of another command, like `publish`. When run implicitly as part of another command, they are provided with additional context so that the right artifacts are produced. When you `publish` with a runtime (for example, `dotnet publish -r linux-x64`), the implicit `restore` restores packages for the linux-x64 runtime. If you call `restore` explicitly, it does not restore runtime packages by default, because it doesn't have that context.
 
-## Avoid `restore` during `publish`
+## Avoid restore during publish
 
 Running `restore` as part of the `publish` operation may be undesirable for your scenario. To avoid `restore` during `publish` while creating self-contained applications, do the following:
 

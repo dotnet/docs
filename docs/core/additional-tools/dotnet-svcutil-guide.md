@@ -60,7 +60,7 @@ dotnet new console
 dotnet restore
 ```
 
-5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which by default will be _SayHello.cs_
+5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which will be saved at _ServiceReference1/Reference.cs_
 ```
 dotnet svcutil http://myhost/SayHello.svc
 ```

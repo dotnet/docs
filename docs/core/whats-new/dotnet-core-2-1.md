@@ -207,4 +207,4 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 
 [What's new in .NET Core](index.md)  
 [New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
-[ASP.NET Core 2.1.0-rc1 now available](https://blogs.msdn.microsoft.com/webdev/2018/05/07/asp-net-core-2-1-0-rc1-now-available/)  
+[What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)

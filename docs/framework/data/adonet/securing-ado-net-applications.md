@@ -34,7 +34,7 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  Describes security for Entity Framework applications.  
   
  [Security](../../../../docs/standard/security/index.md)  
- Contains links to topics describing all aspects of security in the .NET Framework.  
+ Contains links to topics describing all aspects of security in .NET.  
   
  [Security Tools](http://msdn.microsoft.com/library/2a3eb98a-2de6-4fba-b41c-01a74d354c11)  
  .NET Framework tools for securing and administering security policy.  

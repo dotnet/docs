@@ -210,11 +210,11 @@ Ethernet adapter Ethernet:
 You can produce an application that is ready to deploy to production locally using the [dotnet publish](../tools/dotnet-publish.md) command.
 
 ```console
-dotnet publish -c release -o published
+dotnet publish -c Release -o published
 ```
 
 > [!NOTE]
-> The -c release argument builds the application in release mode (the default is debug mode). For more information, see the [dotnet run reference](../tools/dotnet-run.md) on command-line parameters.
+> The -c Release argument builds the application in release mode (the default is debug mode). For more information, see the [dotnet run reference](../tools/dotnet-run.md) on command-line parameters.
 
 You can run the application on **Windows** using the following command.
 

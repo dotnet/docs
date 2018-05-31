@@ -212,60 +212,134 @@ public class LocalFileImageServiceGetImageBytesById
 
 ## Functional Testing ASP.NET Core Apps
 
-For ASP.NET Core applications, the TestServer class makes functional tests fairly easy to write. You configure a TestServer using a WebHostBuilder, just as you normally do for your application. This WebHostBuilder should be configured just like your application's real host, but you can modify any aspects of it that make testing easier. Most of the time, you'll reuse the same TestServer for many test cases, so you can encapsulate it in a reusable method (perhaps in a base class):
+For ASP.NET Core applications, the TestServer class makes functional tests fairly easy to write. You configure a TestServer using a WebHostBuilder directly (just as you normally do for your application), or with the WebApplicationFactory type (available in 2.1). You should try match your test host to your production host as closely as possible, so your tests will exercise behavior similar to what the app will do in production. The WebApplicationFactory class is helpful for configuring the TestServer's ContentRoot, which is used by ASP.NET Core to locate static resource like Views.
 
-WIP: Update for 2.1
+You can create simple functional tests by creating a test class that implements IClassFixture<WebApplicationFactory<TEntry>> where TEntry is your web application's Startup class. With this in place, your test fixture can create a client using the factory's CreateClient method:
 
 ```cs
-public abstract class BaseWebTest
+public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>
 {
     protected readonly HttpClient _client;
-    protected string _contentRoot;
 
-    public BaseWebTest()
+    public BaseWebTest(WebApplicationFactory<Startup> factory)
     {
-        _client = GetClient();
+        _client = factory.CreateClient();
     }
 
-    protected HttpClient GetClient()
-    {
-        var startupAssembly = typeof(Startup).GetTypeInfo().Assembly;
-        _contentRoot = GetProjectPath("src", startupAssembly);
-        var builder = new WebHostBuilder()
-        .UseContentRoot(_contentRoot)
-        .UseStartup&lt;Startup&gt;();
-        var server = new TestServer(builder);
-        var client = server.CreateClient();
-        return client;
-    }
+    // write tests that use _client
 }
 ```
 
-The GetProjectPath method simply returns the physical path to the web project (download sample solution). The WebHostBuilder in this case simply specifies where the content root for the web application is, and references the same Startup class the real web application uses. To work with the TestServer, you use the standard System.Net.HttpClient type to make requests to it. TestServer exposes a helpful CreateClient method that provides a pre-configured client that is ready to make requests to the application running on the TestServer. You use this client (set to the protected \_client member on the base test above) when writing functional tests for your ASP.NET Core application:
+Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in memory data store and then seeding the application with test data. To do this, you should create your own subclass of WebApplicationFactory<TEntry> and override its ConfigureWebHost method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
 
 ```cs
-public class CatalogControllerGetImage : BaseWebTest
+using Infrastructure.Data;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.eShopWeb;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using System;
+using Microsoft.EntityFrameworkCore;
+using Infrastructure.Identity;
+
+namespace FunctionalTests.WebRazorPages
 {
-    [Fact]
-    public async Task ReturnsFileContentResultGivenValidId()
+    public class CustomWebRazorPagesApplicationFactory<TStartup>
+    : WebApplicationFactory<Startup>
     {
-        var testFilePath = Path.Combine(_contentRoot, "pics//1.png");
-        var expectedFileBytes = File.ReadAllBytes(testFilePath);
-        var response = await _client.GetAsync("/catalog/pic/1");
-        response.EnsureSuccessStatusCode();
-        var streamResponse = await response.Content.ReadAsStreamAsync();
-        byte[] byteResult;
-        using (var ms = new MemoryStream())
+        protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
-            streamResponse.CopyTo(ms);
-            byteResult = ms.ToArray();
+            builder.ConfigureServices(services =>
+            {
+                // Create a new service provider.
+                var serviceProvider = new ServiceCollection()
+                    .AddEntityFrameworkInMemoryDatabase()
+                    .BuildServiceProvider();
+
+                // Add a database context (ApplicationDbContext) using an in-memory
+                // database for testing.
+                services.AddDbContext<CatalogContext>(options =>
+                {
+                    options.UseInMemoryDatabase("InMemoryDbForTesting");
+                    options.UseInternalServiceProvider(serviceProvider);
+                });
+
+                services.AddDbContext<AppIdentityDbContext>(options =>
+                {
+                    options.UseInMemoryDatabase("Identity");
+                    options.UseInternalServiceProvider(serviceProvider);
+                });
+
+                // Build the service provider.
+                var sp = services.BuildServiceProvider();
+
+                // Create a scope to obtain a reference to the database
+                // context (ApplicationDbContext).
+                using (var scope = sp.CreateScope())
+                {
+                    var scopedServices = scope.ServiceProvider;
+                    var db = scopedServices.GetRequiredService<CatalogContext>();
+                    var loggerFactory = scopedServices.GetRequiredService<ILoggerFactory>();
+
+                    var logger = scopedServices
+                        .GetRequiredService<ILogger<CustomWebRazorPagesApplicationFactory<TStartup>>>();
+
+                    // Ensure the database is created.
+                    db.Database.EnsureCreated();
+
+                    try
+                    {
+                        // Seed the database with test data.
+                        CatalogContextSeed.SeedAsync(db, loggerFactory).Wait();
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.LogError(ex, $"An error occurred seeding the " +
+                            "database with test messages. Error: {ex.Message}");
+                    }
+                }
+            });
         }
-        Assert.Equal(expectedFileBytes, byteResult);
     }
 }
 ```
 
-This functional test exercises the full ASP.NET Core MVC application stack, including all middleware, filters, binders, etc. that may be in place. It verifies that a given route ("/catalog/pic/1") returns the expected byte array for a file in a known location. It does so without setting up a real web server, and so avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server.
+Tests can make use of this custom WebApplicationFactory by using it to create a client and then making requests to the application using this client instance. The application will have data seeded that can be used as part of the test's assertions. This test verifies that the home page of the eShopOnWeb Razor Pages application loads correctly and includes a product listing that was added to the application as part of the seed data.
+
+```cs
+using Microsoft.eShopWeb.RazorPages;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Xunit;
+
+namespace FunctionalTests.WebRazorPages
+{
+    public class HomePageOnGet : IClassFixture<CustomWebRazorPagesApplicationFactory<Startup>>
+    {
+        public HomePageOnGet(CustomWebRazorPagesApplicationFactory<Startup> factory)
+        {
+            Client = factory.CreateClient();
+        }
+
+        public HttpClient Client { get; }
+
+        [Fact]
+        public async Task ReturnsHomePageWithProductListing()
+        {
+            // Arrange & Act
+            var response = await Client.GetAsync("/");
+            response.EnsureSuccessStatusCode();
+            var stringResponse = await response.Content.ReadAsStringAsync();
+
+            // Assert
+            Assert.Contains(".NET Bot Black Sweatshirt", stringResponse); // from seed data
+        }
+    }
+}
+```
+
+This functional test exercises the full ASP.NET Core MVC / Razor Pages application stack, including all middleware, filters, binders, etc. that may be in place. It verifies that a given route ("/") returns the expected success status code and HTML output. It does so without setting up a real web server, and so avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server. You should use functional tests to ensure your application's front end stack is working as expected. These tests are especially useful when you find duplication in your controllers or pages and you address the duplication by adding filters. Ideally, this refactoring will not change the behavior of the application, and a suite of functional tests will verify this is the case.
 
 > [!div class="step-by-step"][previous] (work-with-data-in-asp-net-core-apps.md)
 > [Next](development-process-for-azure.md)

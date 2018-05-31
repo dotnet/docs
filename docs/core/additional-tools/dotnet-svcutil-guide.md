@@ -51,7 +51,7 @@ dotnet new console
 3. Edit the _HelloSvcutil.csproj_ project file and add the _dotnet-svcutil_ package as a CLI tool reference, it should look like the following:
 ```
 <ItemGroup>
-  <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.0-preview-20522-1161" />
+  <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.0" />
 </ItemGroup>
 ```
 
@@ -60,7 +60,7 @@ dotnet new console
 dotnet restore
 ```
 
-5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which will be saved at _ServiceReference1/Reference.cs_
+5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which will be saved as _HelloSvcutil/ServiceReference1/Reference.cs_
 ```
 dotnet svcutil http://myhost/SayHello.svc
 ```

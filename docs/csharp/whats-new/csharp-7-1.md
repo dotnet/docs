@@ -12,7 +12,7 @@ the compiler to match a specified version of the language. That enables you to
 separate the decision to upgrade tools from the decision to upgrade language
 versions.
 
-C# 7.1 adds the [language version selection](#language-version-selection)
+C# 7.1 adds the [language version selection](../language-reference/configure-language-version.md)
 configuration element, three new language features and new compiler behavior.
 
 The new language features in this release are:

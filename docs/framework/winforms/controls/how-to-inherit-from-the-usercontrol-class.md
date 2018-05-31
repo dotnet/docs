@@ -1,26 +1,12 @@
 ---
 title: "How to: Inherit from the UserControl Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "UserControl class [Windows Forms], inheriting from"
   - "user controls [Windows Forms], creating"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Inherit from the UserControl Class
 To combine the functionality of one or more Windows Forms controls with custom code, you can create a *user control*. User controls combine rapid control development, standard Windows Forms control functionality, and the versatility of custom properties and methods. When you begin creating a user control, you are presented with a visible designer, upon which you can place standard Windows Forms controls. These controls retain all of their inherent functionality, as well as the appearance and behavior (look and feel) of standard controls. Once these controls are built into the user control, however, they are no longer available to you through code. The user control does its own painting and also handles all of the basic functionality associated with controls.  

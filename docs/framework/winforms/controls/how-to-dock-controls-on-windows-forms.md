@@ -1,25 +1,11 @@
 ---
 title: "How to: Dock Controls on Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], docking"
   - "Explorer-style applications [Windows Forms], creating"
   - "Windows Forms controls, filling client area"
 ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Dock Controls on Windows Forms
 You can dock controls to the edges of your form or have them fill the control's container (either a form or a container control). For example, Windows Explorer docks its <xref:System.Windows.Forms.TreeView> control to the left side of the window and its <xref:System.Windows.Forms.ListView> control to the right side of the window. Use the <xref:System.Windows.Forms.Control.Dock%2A> property for all visible Windows Forms controls to define the docking mode.  

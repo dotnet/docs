@@ -1,14 +1,6 @@
 ---
 title: "How to: Write Services Programmatically"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "services, creating"
   - "Windows Service applications, creating"
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
-caps.latest.revision: 21
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Write Services Programmatically
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  

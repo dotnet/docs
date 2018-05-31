@@ -1,14 +1,6 @@
 ---
 title: "CertVerifyAuthenticodeLicense Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CertVerifyAuthenticodeLicense"
 api_location: 
@@ -16,12 +8,8 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CertVerifyAuthenticodeLicense Function
 Verifies the validity of an Authenticode XrML license.  

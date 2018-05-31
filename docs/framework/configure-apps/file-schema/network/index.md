@@ -1,14 +1,6 @@
 ---
 title: "Network Settings Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "elements [.NET Framework], network configuration elements"
   - "sending data, network configuration elements"
@@ -20,12 +12,9 @@ helpviewer_keywords:
   - "connections [.NET Framework], network configuration elements"
   - "network resources, network configuration elements"
 ms.assetid: f1de5a0f-76c5-4833-819f-5222b8146340
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Network Settings Schema
 Network settings specify how the .NET Framework connects to the Internet. The following table describes the function of each child configuration element under the [\<system.Net> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md).  

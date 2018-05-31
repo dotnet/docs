@@ -1,19 +1,7 @@
 ---
 title: "Concepts and Terminology (Functional Transformation) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Concepts and Terminology (Functional Transformation) (C#)
 This topic introduces the concepts and terminology of pure functional transformations. The functional transformation approach to transforming data yields code that is often quicker to program, more expressive, and easier to debug and maintain than more traditional, imperative programming.  

@@ -1,17 +1,7 @@
 ---
 title: "Join Operations (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 5105e0da-1267-4c00-837a-f0e9602279b8
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Join Operations (C#)
 A *join* of two data sources is the association of objects in one data source with objects that share a common attribute in another data source.  

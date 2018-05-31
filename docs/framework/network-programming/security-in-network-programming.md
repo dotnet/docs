@@ -1,8 +1,6 @@
 ---
 title: "Security in network programming - .NET Framework"
 ms.date: "03/14/2018"
-ms.prod: ".net-framework"
-ms.topic: "article"
 helpviewer_keywords: 
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -17,8 +15,6 @@ ms.assetid: afb07899-2707-49ab-a57f-e0caf20d0171
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Security in network programming
 

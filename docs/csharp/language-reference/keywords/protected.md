@@ -1,19 +1,12 @@
 ---
 title: "protected (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "protected"
   - "protected_CSharpKeyword"
 helpviewer_keywords: 
   - "protected keyword [C#]"
 ms.assetid: 05ce3794-6675-4025-bddb-eaaa0ec22892
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # protected (C# Reference)
 The `protected` keyword is a member access modifier. 

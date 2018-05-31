@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.CoordinatorStateMachineFinished"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 16cb428d-d886-4789-a961-6fded4b0dbba
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.CoordinatorStateMachineFinished
 The state machine for a coordinator enlistment has entered the finished state.  

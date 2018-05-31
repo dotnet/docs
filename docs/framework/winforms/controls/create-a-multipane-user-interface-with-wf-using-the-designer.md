@@ -1,25 +1,11 @@
 ---
 title: "How to: Create a Multipane User Interface with Windows Forms Using the Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "user interface [Windows Forms], multipane"
   - "SplitContainer control [Windows Forms], using the designer"
   - "multipane user interface"
 ms.assetid: c3f9294d-a26c-4198-9242-f237f55f7573
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Multipane User Interface with Windows Forms Using the Designer
 In the following procedure, you will create a multipane user interface that is similar to the one used in Microsoft Outlook, with a **Folder** list, a **Messages** pane, and a **Preview** pane. This arrangement is achieved chiefly through docking controls with the form.  

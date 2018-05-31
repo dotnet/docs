@@ -1,19 +1,10 @@
 ---
 title: "Peer-to-Peer Collaboration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b6216d88-bccb-4a59-9f1c-9f751708e811
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Peer-to-Peer Collaboration
 Peer-to-peer networking is the utilization of the relatively powerful computers (personal computers) that exist at the edge of the Internet for more than just client-based computing tasks. The modern personal computer (PC) has a very fast processor, vast memory, and a large hard disk, none of which are being fully utilized when performing common computing tasks such as email and Web browsing. The modern PC can easily act as both a client and server (a peer) for many types of applications.  

@@ -1,16 +1,9 @@
 ---
 title: Client-side validation (validation in the presentation layers)
 description: .NET Microservices Architecture for Containerized .NET Applications | Client-side validation (validation in the presentation layers)
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Client-side validation (validation in the presentation layers)
 
@@ -50,7 +43,7 @@ The implementation of client-side validation depends on what kind of client appl
     [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
 
 -   **Validation.** Breeze documentation.
-    [*http://breeze.github.io/doc-js/validation.html*](http://breeze.github.io/doc-js/validation.html)
+    [*https://breeze.github.io/doc-js/validation.html*](https://breeze.github.io/doc-js/validation.html)
 
 In summary, these are the most important concepts in regards to validation:
 

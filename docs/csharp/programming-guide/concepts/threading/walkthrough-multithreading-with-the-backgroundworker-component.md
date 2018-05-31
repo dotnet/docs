@@ -1,17 +1,7 @@
 ---
 title: "Walkthrough: Multithreading with the BackgroundWorker Component (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: ff670fbf-a0ac-40c1-ab08-9ed53768f880
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Walkthrough: Multithreading with the BackgroundWorker Component (C#)
 This walkthrough demonstrates how to create a multithreaded Windows Forms application that searches a text file for occurrences of a word. It demonstrates:  

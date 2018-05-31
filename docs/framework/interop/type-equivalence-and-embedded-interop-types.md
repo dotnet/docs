@@ -1,10 +1,6 @@
 ---
 title: "Type equivalence and embedded interop types"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "type equivalence"
   - "embedded interop types"
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 78892eba-2a58-4165-b4b1-0250ee2f41dc
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Type equivalence and embedded interop types
 
@@ -57,5 +50,5 @@ If a type does not have the <xref:System.Runtime.InteropServices.TypeIdentifierA
 ## See also
 
 <xref:System.Type.IsEquivalentTo%2A>  
-[Using COM Types in Managed Code](http://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))  
+[Using COM Types in Managed Code](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))  
 [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)  

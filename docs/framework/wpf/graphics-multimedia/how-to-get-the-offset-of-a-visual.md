@@ -1,14 +1,6 @@
 ---
 title: "How to: Get the Offset of a Visual"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "visual objects [WPF], retrieving offset values from"
   - "retrieving offset values from visual objects [WPF]"
 ms.assetid: 889a1dd6-1b11-445a-b351-fbb04c53ee34
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Get the Offset of a Visual
 These examples show how to retrieve the offset value of a visual object that is relative to its parent, or any ancestor or descendant.  

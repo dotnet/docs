@@ -1,28 +1,14 @@
 ---
 title: "Attribute-Based Mapping"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Attribute-Based Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps a SQL Server database to a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model by either applying attributes or by using an external mapping file. This topic outlines the attribute-based approach.  
   
  In its most elementary form, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps a database to a <xref:System.Data.Linq.DataContext>, a table to a class, and columns and relationships to properties on those classes. You can also use attributes to map an inheritance hierarchy in your object model. For more information, see [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
   
- Developers using [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] typically perform attribute-based mapping by using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. You can also use the SQLMetal command-line tool, or you can hand-code the attributes yourself. For more information, see [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
+ Developers using Visual Studio typically perform attribute-based mapping by using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. You can also use the SQLMetal command-line tool, or you can hand-code the attributes yourself. For more information, see [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
   
 > [!NOTE]
 >  You can also map by using an external XML file. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
@@ -69,7 +55,7 @@ ms.workload:
  For more information, see <xref:System.Data.Linq.Mapping.ColumnAttribute>.  
   
 > [!NOTE]
->  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including [!INCLUDE[vb_current_short](../../../../../../includes/vb-current-short-md.md)]. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
+>  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including Visual Basic. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
   
 ## AssociationAttribute Attribute  
  Use this attribute to designate a property to represent an association in the database, such as a foreign key to primary key relationship. For more information about relationships, see [How to: Map Database Relationships](../../../../../../docs/framework/data/adonet/sql/linq/how-to-map-database-relationships.md).  
@@ -88,7 +74,7 @@ ms.workload:
  For more information, see <xref:System.Data.Linq.Mapping.AssociationAttribute>.  
   
 > [!NOTE]
->  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including [!INCLUDE[vb_current_short](../../../../../../includes/vb-current-short-md.md)]. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
+>  AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including Visual Basic. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
   
 ## InheritanceMappingAttribute Attribute  
  Use this attribute to map an inheritance hierarchy.  

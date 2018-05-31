@@ -1,21 +1,7 @@
 ---
 title: "Provider Manifest Specification"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bb450b47-8951-4f99-9350-26f05a4d4e46
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Provider Manifest Specification
 This section discusses how a data store provider can support the types and functions in the data store.  

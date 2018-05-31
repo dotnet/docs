@@ -1,18 +1,10 @@
 ---
 title: Building a complete .NET Core solution on Windows, using Visual Studio 2017
 description: Learn how to build a complete .NET Core solution in Visual Studio 2017 on Windows.
-keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw
 ms.date: 11/16/2016
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
-ms.workload: 
-  - dotnetcore
 ---
-
 # Building a complete .NET Core solution on Windows, using Visual Studio 2017
 
 Visual Studio 2017 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a typical .NET Core solution that includes reusable libraries, testing, and using third-party libraries. 

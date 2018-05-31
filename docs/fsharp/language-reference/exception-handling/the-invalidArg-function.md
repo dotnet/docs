@@ -1,17 +1,8 @@
 ---
 title: "Exceptions: The invalidArg Function (F#)"
 description: Learn how the F# 'invalidArg' function generates an argument exception.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: d375b704-6b27-493e-bd1d-ee217a53c4b5 
 ---
-
 # Exceptions: The invalidArg Function
 
 The `invalidArg` function generates an argument exception.

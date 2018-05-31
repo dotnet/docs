@@ -1,23 +1,15 @@
 ---
 title: .NET Class Libraries
 description: Learn how .NET class libraries enable you to group useful functionality into modules that can be used by multiple applications.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Class Libraries
 
-Class libraries are the [shared library](http://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) concept for .NET. They enable you to componentize useful functionality into modules that can be used by multiple applications. They can also be used as a means of loading functionality that is not needed or not known at application startup. Class libraries are described using the [.NET Assembly file format](assembly-format.md).
+Class libraries are the [shared library](https://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) concept for .NET. They enable you to componentize useful functionality into modules that can be used by multiple applications. They can also be used as a means of loading functionality that is not needed or not known at application startup. Class libraries are described using the [.NET Assembly file format](assembly-format.md).
 
 There are three types of class libraries that you can use:
 
@@ -39,7 +31,7 @@ Portable libraries are supported on multiple .NET implementations. They can stil
 
 You choose a platform configuration when you create a portable library. These are the set of platforms that you need to support (for example, .NET Framework 4.5+, Windows Phone 8.0+). The more platforms you opt to support, the fewer APIs and fewer platform assumptions you can make, the lowest common denominator. This characteristic can be confusing at first, since people often think "more is better", but find that more supported platforms results in fewer available APIs.
 
-Many library developers have switched from producing multiple platform-specific libraries from one source (using conditional compilation directives) to portable libraries. There are [several approaches](http://blog.stephencleary.com/2012/11/portable-class-library-enlightenment.html) for accessing platform-specific functionality within portable libraries, with [bait-and-switch](http://log.paulbetts.org/the-bait-and-switch-pcl-trick/) being the most widely accepted technique at this point.
+Many library developers have switched from producing multiple platform-specific libraries from one source (using conditional compilation directives) to portable libraries. There are [several approaches](https://blog.stephencleary.com/2012/11/portable-class-library-enlightenment.html) for accessing platform-specific functionality within portable libraries, with [bait-and-switch](https://log.paulbetts.org/the-bait-and-switch-pcl-trick/) being the most widely accepted technique at this point.
 
 ### .NET Standard Class Libraries
 

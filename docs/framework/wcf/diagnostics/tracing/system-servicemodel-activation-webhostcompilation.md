@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Activation.WebHostCompilation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 33ee56f8-30bb-445a-964d-050294c85ac6
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Activation.WebHostCompilation
 System.ServiceModel.Activation.WebHostCompilation  

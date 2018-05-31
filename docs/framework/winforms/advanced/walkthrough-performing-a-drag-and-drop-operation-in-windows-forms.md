@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Forms, drag and drop operations"
   - "drag and drop [Windows Forms], Windows Forms"
 ms.assetid: eb66f6bf-4a7d-4c2d-b276-40fefb2d3b6c
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms
 To perform drag-and-drop operations within Windows-based applications you must handle a series of events, most notably the <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragLeave>, and <xref:System.Windows.Forms.Control.DragDrop> events. By working with the information available in the event arguments of these events, you can easily facilitate drag-and-drop operations.  

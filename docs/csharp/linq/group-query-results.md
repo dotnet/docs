@@ -1,14 +1,7 @@
 ---
 title: Group query results
 description: How to group results.
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 12/1/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: 2e4ec27f-06fb-4de7-8973-0189906d4520
 ---
 # Group query results

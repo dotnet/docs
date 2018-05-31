@@ -2,15 +2,9 @@
 title: "How to: Compare strings - C# Guide"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
 ms.date: 03/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "strings [C#], comparison"
   - "comparing strings [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to compare strings in C# #
 

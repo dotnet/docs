@@ -1,17 +1,8 @@
 ---
 title: Members (F#)
 description: Learn about object members in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: e472f50a-4939-4e62-abbc-471f8f265790
 ---
-
 # Members
 
 This section describes members of F# object types.

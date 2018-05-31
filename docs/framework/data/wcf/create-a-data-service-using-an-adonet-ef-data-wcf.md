@@ -1,29 +1,15 @@
 ---
 title: "How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, providers"
   - "WCF Data Services, Entity Framework"
 ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] exposes entity data as a data service. This entity data is provided by the [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)][!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] when the data source is a relational database. This topic shows you how to create an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]-based data model in a [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] Web application that is based on an existing database and use this data model to create a new data service.  
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] exposes entity data as a data service. This entity data is provided by the [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)][!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] when the data source is a relational database. This topic shows you how to create an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]-based data model in a Visual Studio Web application that is based on an existing database and use this data model to create a new data service.  
   
- The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a command line tool that can generate an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] model outside of a [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] project. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).  
+ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a command line tool that can generate an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] model outside of a Visual Studio project. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).  
   
 ### To add an Entity Framework model that is based on an existing database to an existing Web application  
   
@@ -56,7 +42,7 @@ ms.workload:
   
 ### To create the data service by using the new data model  
   
-1.  In [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)], open the .edmx file that represents the data model.  
+1.  In Visual Studio, open the .edmx file that represents the data model.  
   
 2.  In the **Model Browser**, right-click the model, click **Properties**, and then note the name of the entity container.  
   
@@ -66,7 +52,7 @@ ms.workload:
   
 5.  Supply a name for the service, and then click **OK**.  
   
-     [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] creates the XML markup and code files for the new service. By default, the code-editor window opens.  
+     Visual Studio creates the XML markup and code files for the new service. By default, the code-editor window opens.  
   
 6.  In the code for the data service, replace the comment `/* TODO: put your data source class name here */` in the definition of the class that defines the data service with the type that inherits from the <xref:System.Data.Objects.ObjectContext> class and that is the entity container of the data model, which was noted in step 2.  
   

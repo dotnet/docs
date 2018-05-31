@@ -2,23 +2,16 @@
 title: "Introduction to the C# Language and the .NET Framework"
 description: Learn the basics of C# and .NET. Get an overview of the C# language and .NET ecosystem.
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "get-started-article"
 helpviewer_keywords: 
   - "C# language, about C# language"
   - "Visual C#, about"
 ms.assetid: 0a2dff4e-cd84-42ff-8141-e89889b24081
-caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Introduction to the C# Language and the .NET Framework
 C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
 > [!NOTE]
-> The [!INCLUDE[csprcs](~/includes/csprcs-md.md)] documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore [!INCLUDE[csprcsxpr](~/includes/csprcsxpr-md.md)], which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
+> The Visual C# documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore Visual C# Express, which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
   
 ## C# Language  
  C# syntax is highly expressive, yet it is also simple and easy to learn. The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Developers who know any of these languages are typically able to begin to work productively in C# within a very short time. C# syntax simplifies many of the complexities of C++ and provides powerful features such as nullable value types, enumerations, delegates, lambda expressions and direct memory access, which are not found in Java. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions make the strongly-typed query a first-class language construct.  

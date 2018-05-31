@@ -1,25 +1,13 @@
 ---
 title: "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 f1_keywords: 
   - "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE"
 helpviewer_keywords: 
   - "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT [.NET Framework profiling]"
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
 The CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT was introduced in the .NET Framework version 2.0. The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] returns this HRESULT in two scenarios:  

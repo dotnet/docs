@@ -1,17 +1,8 @@
 ---
 title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 02/13/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1 
 ---
-
 # Get started with F# in Visual Studio
 
 F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), if you haven't already.  This article uses the Visual Studio 2017 Community Edition, but you can use F# with the version of your choice.

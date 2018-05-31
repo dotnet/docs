@@ -1,21 +1,7 @@
 ---
 title: "Syndication Extensibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4d941175-74a2-4b15-81b3-086e8a95d25f
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Syndication Extensibility
 The Syndication API is designed to provide a format-neutral programming model that allows syndicated content to be written to the wire in a variety of formats. The abstract data model consists of the following classes:  
@@ -32,7 +18,7 @@ The Syndication API is designed to provide a format-neutral programming model th
   
  These classes map closely to the constructs defined in the Atom 1.0 specification, although some of the names are different.  
   
- A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0, add attributes and elements to syndication feeds that are not defined in the specifications. The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndication programming model provides the following ways of working with custom attributes and extensions, loosely-typed access and deriving a new class.  
+ A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0, add attributes and elements to syndication feeds that are not defined in the specifications. The Windows Communication Foundation (WCF) syndication programming model provides the following ways of working with custom attributes and extensions, loosely-typed access and deriving a new class.  
   
 ## Loosely Typed Access  
  Adding extensions by deriving a new class requires writing additional code. Another option is accessing extensions in a loosely-typed way. All of the types defined in the syndication abstract data model contain properties named `AttributeExtensions` and `ElementExtensions` (with one exception, <xref:System.ServiceModel.Syndication.SyndicationContent> has an `AttributeExtensions` property but no `ElementExtensions` property). These properties are collections of extensions not processed by the `TryParseAttribute` and `TryParseElement` methods respectively. You can access these unprocessed extensions by calling <xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions%2A?displayProperty=nameWithType> on the `ElementExtensions` property of <xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, <xref:System.ServiceModel.Syndication.SyndicationLink>, <xref:System.ServiceModel.Syndication.SyndicationPerson>, and <xref:System.ServiceModel.Syndication.SyndicationCategory>. This set of methods finds all extensions with the specified name and namespace, deserializes them individually into instances of `TExtension` and returns them as a collection of `TExtension` objects.  

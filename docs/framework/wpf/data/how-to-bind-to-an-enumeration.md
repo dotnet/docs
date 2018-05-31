@@ -1,25 +1,11 @@
 ---
 title: "How to: Bind to an Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "binding data [WPF], enumeration"
   - "data binding [WPF], enumeration"
   - "enumeration [WPF]"
 ms.assetid: b9091eba-1119-424e-868b-d1a4168b3732
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to an Enumeration
 This example shows how to bind to an enumeration by binding to the enumeration's GetValues method.  

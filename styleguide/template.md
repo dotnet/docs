@@ -245,7 +245,7 @@ You can include the code using the following syntax:
 
 We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
 
-```
+```markdown
 [!code-csharp[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]
 ```
 
@@ -269,7 +269,8 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |AzCopy|azcopy|
 |C++|cpp|
 |C#|csharp|
-|C# in browser|csharp-interactive]
+|C# in browser|csharp-interactive|
+|Console|console|
 |F#|fsharp|
 |Java|java|
 |JavaScript|javascript|

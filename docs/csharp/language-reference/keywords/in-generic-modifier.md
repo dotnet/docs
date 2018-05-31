@@ -1,15 +1,9 @@
 ---
 title: "in (Generic Modifier) (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "contravariance, in keyword [C#]"
   - "in keyword [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # in (Generic Modifier) (C# Reference)

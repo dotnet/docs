@@ -1,20 +1,9 @@
 ---
 title: "Validating Passwords Complexity (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "String data type [Visual Basic], validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Validating That Passwords Are Complex (Visual Basic)
 This method checks for some strong-password characteristics and updates a string parameter with information about which checks the password fails.  

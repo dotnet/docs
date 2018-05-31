@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Activation.WebHostProtocolMisconfigured"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cb5bdc6b-4281-452d-bc42-1181f2966e2a
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Activation.WebHostProtocolMisconfigured
 The protocol is incorrectly configured in Windows Process Activation Service (WAS).  

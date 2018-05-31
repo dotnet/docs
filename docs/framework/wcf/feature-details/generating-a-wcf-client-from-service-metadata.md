@@ -1,21 +1,7 @@
 ---
 title: "Generating a WCF Client from Service Metadata"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 27f8f545-cc44-412a-b104-617e0781b803
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Generating a WCF Client from Service Metadata
 This topic describes how to use the various switches in Svcutil.exe to generate clients from metadata documents.  
@@ -55,7 +41,7 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
   
 |Option|Description|  
 |------------|-----------------|  
-|**/language:\<language>**|Specifies the programming language to use for code generation. Provide either a language name registered in the Machine.config file or the fully-qualified name of a class that inherits from <xref:System.CodeDom.Compiler.CodeDomProvider>.<br /><br /> Values: c#, cs, csharp, vb, vbs, visualbasic, vbscript, javascript, c++, mc, cpp<br /><br /> Default: csharp<br /><br /> Short form: `/l`<br /><br /> [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [CodeDomProvider Class](http://go.microsoft.com/fwlink/?LinkId=94778).|  
+|**/language:\<language>**|Specifies the programming language to use for code generation. Provide either a language name registered in the Machine.config file or the fully-qualified name of a class that inherits from <xref:System.CodeDom.Compiler.CodeDomProvider>.<br /><br /> Values: c#, cs, csharp, vb, vbs, visualbasic, vbscript, javascript, c++, mc, cpp<br /><br /> Default: csharp<br /><br /> Short form: `/l`<br /><br /> For more information, see [CodeDomProvider Class](http://go.microsoft.com/fwlink/?LinkId=94778).|  
   
 ## Choosing a Namespace for the Client  
   

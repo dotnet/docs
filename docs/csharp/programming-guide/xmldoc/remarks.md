@@ -1,10 +1,6 @@
 ---
 title: "&lt;remarks&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "remarks"
   - "<remarks>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "remarks C# XML tag"
   - "<remarks> C# XML tag"
 ms.assetid: f8641391-31f3-4735-af7a-c502a5b6a251
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;remarks&gt; (C# Programming Guide)
 ## Syntax  

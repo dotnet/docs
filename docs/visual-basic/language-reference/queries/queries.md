@@ -1,22 +1,13 @@
 ---
 title: "Queries (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [Visual Basic]"
   - "LINQ, queries"
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Queries (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
+Visual Basic enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
   
 ## In This Section  
  [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  

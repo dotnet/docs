@@ -1,18 +1,12 @@
 ---
-
 title: Get Started - C# Guide
 description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
-keywords: C#, Get Started, Acquisition, Install
 helpviewer_keywords: 
   - "Visual C#, getting started"
   - "getting started, Visual C#"
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 # Get started with C# #
 
@@ -44,7 +38,7 @@ The following topics are available:
 
 * [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
 
-    Provides a guide to using the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] integrated development environment.
+    Provides a guide to using the Visual C# integrated development environment.
 
 * [C# Programming Guide](../../csharp/programming-guide/index.md)
 

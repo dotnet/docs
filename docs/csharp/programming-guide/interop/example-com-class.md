@@ -1,17 +1,10 @@
 ---
 title: "Example COM Class (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "examples [C#], COM classes"
   - "COM, exposing Visual C# objects to"
 ms.assetid: 6504dea9-ad1c-4993-a794-830fec5270af
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Example COM Class (C# Programming Guide)
 The following is an example of a class that you would expose as a COM object. After this code has been placed in a .cs file and added to your project, set the **Register for COM Interop** property to **True**. For more information, see [NIB: How to: Register a Component for COM Interop](http://msdn.microsoft.com/library/4de7d474-56e8-4027-994d-d47ca4725c5e).  

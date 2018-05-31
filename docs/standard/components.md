@@ -4,12 +4,7 @@ description: Describes .NET architectural components such as the .NET Standard, 
 author: cartermp
 ms.author: mairaw
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET architectural components
 
@@ -56,7 +51,7 @@ Historically, Mono implemented the larger API of the .NET Framework and emulated
 
 Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
 
-To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
+To learn more about Mono, see the [Mono documentation](https://www.mono-project.com/docs/).
 
 ### Universal Windows Platform (UWP)
 
@@ -81,7 +76,7 @@ You have access to an extensive set of tools and infrastructure components that 
 - The .NET project system (based on *.csproj*, *.vbproj*, and *.fsproj* files)
 - [MSBuild](/visualstudio/msbuild/msbuild), the build engine used to build projects
 - [NuGet](/nuget/), Microsoft's package manager for .NET
-- Open-source build orchestration tools, such as [CAKE](http://cakebuild.net/) and [FAKE](https://fake.build/)
+- Open-source build orchestration tools, such as [CAKE](https://cakebuild.net/) and [FAKE](https://fake.build/)
 
 ## See also
 [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)   

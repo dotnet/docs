@@ -1,10 +1,6 @@
 ---
 title: "foreach, in (C# Reference)"
-ms.date: 10/11/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: 05/24/2018
 f1_keywords: 
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -13,56 +9,38 @@ helpviewer_keywords:
   - "foreach statement [C#]"
   - "in keyword [C#]"
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
-caps.latest.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # foreach, in (C# Reference)
-The `foreach` statement repeats a group of embedded statements for each element in an array or an object collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is used to iterate through the collection to get the information that you want, but can not be used to add or remove items from the source collection to avoid unpredictable side effects. If you need to add or remove items from the source collection, use a [for](for.md) loop.
-  
- The embedded statements continue to execute for each element in the array or collection. After the iteration has been completed for all the elements in the collection, control is transferred to the next statement following the `foreach` block.
-  
- At any point within the `foreach` block, you can break out of the loop by using the [break](break.md) keyword, or step to the next iteration in the loop by using the [continue](continue.md) keyword.
 
- A `foreach` loop can also be exited by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
+The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is not limited to those types and can be applied to an instance of any type that satisfies the following conditions:
 
- For more information about the `foreach` keyword and code samples, see the following topics:  
+- has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type,
+- the return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
 
- [Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)  
+At any point within the `foreach` statement block, you can break out of the loop by using the [break](break.md) statement, or step to the next iteration in the loop by using the [continue](continue.md) statement. You also can exit a `foreach` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
 
- [How to: Access a Collection Class with foreach](../../programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md)  
+## Examples
 
-## Example
- The following code shows three examples.
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
-> [!TIP]
-> You can modify the examples to experiment with the syntax and try different
-> usages that are more similar to your use case. Press "Run" to run the code,
-> then edit and press "Run" again.
+The following example shows usage of the `foreach` statement with an instance of the <xref:System.Collections.Generic.List%601> type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface:
 
--   a typical `foreach` loop that displays the contents of an array of integers
+[!code-csharp-interactive[list example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#1)]
 
-[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L12-L26)]
+The next example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
--   a [for](../../../csharp/language-reference/keywords/for.md) loop that does the same thing
+[!code-csharp-interactive[span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#2)]
 
-[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L31-L46)]
+## C# language specification
 
--   a `foreach` loop that maintains a count of the number of elements in the array
-
-[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L51-L69)]
- 
-## C# Language Specification
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also  
+## See also
 
-[C# Reference](../index.md)
-
-[C# Programming Guide](../../programming-guide/index.md)
-
-[C# Keywords](index.md)
-
-[Iteration Statements](iteration-statements.md)
-
-[for](for.md)
+[The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)  
+[Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)  
+[for](for.md)  
+[Iteration Statements](iteration-statements.md)  
+[C# Keywords](index.md)  
+[C# Reference](../index.md)  
+[C# Programming Guide](../../programming-guide/index.md)  

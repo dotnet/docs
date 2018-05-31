@@ -1,13 +1,7 @@
 ---
 title: "Character Encoding in .NET"
-ms.custom: ""
 ms.date: "12/22/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "encoding, choosing"
   - "encoding, fallback strategy"
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Character Encoding in .NET
 Characters are abstract entities that can be represented in many different ways. A character encoding is a system that pairs each character in a supported character set with some value that represents that character. For example, Morse code is a character encoding that pairs each character in the Roman alphabet with a pattern of dots and dashes that are suitable for transmission over telegraph lines. A character encoding for computers pairs each character in a supported character set with a numeric value that represents that character. A character encoding has two distinct components:  
@@ -65,7 +54,7 @@ Characters are abstract entities that can be represented in many different ways.
 > [!NOTE]
 >  The Unicode Standard assigns a code point (a number) and a name to each character in every supported script. For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A". The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes. A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding. Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.  
 >   
->  .NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32. For more information, see The Unicode Standard at the [Unicode home page](http://www.unicode.org/).  
+>  .NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32. For more information, see The Unicode Standard at the [Unicode home page](https://www.unicode.org/).  
   
  You can retrieve information about all the encodings available in .NET by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method. .NET supports the character encoding systems listed in the following table.  
   
@@ -152,7 +141,7 @@ Characters are abstract entities that can be represented in many different ways.
  Best-fit strategies vary for different code pages. For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters. For other code pages, this mapping is not made. Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings. For example, a Chinese ideograph has no reasonable mapping to code page 1252. In this case, a replacement string is used. By default, this string is just a single QUESTION MARK (U+003F).  
   
 > [!NOTE]
->  Best-fit strategies are not documented in detail. However, several code pages are documented at the [Unicode Consortium's](http://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/) website. Please review the **readme.txt** file in that folder for a description of how to interpret the mapping files.
+>  Best-fit strategies are not documented in detail. However, several code pages are documented at the [Unicode Consortium's](https://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/) website. Please review the **readme.txt** file in that folder for a description of how to interpret the mapping files.
   
  The following example uses code page 1252 (the Windows code page for Western European languages) to illustrate best-fit mapping and its drawbacks. The <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method is used to retrieve an encoding object for code page 1252. By default, it uses a best-fit mapping for Unicode characters that it does not support. The example instantiates a string that contains three non-ASCII characters - CIRCLED LATIN CAPITAL LETTER S (U+24C8), SUPERSCRIPT FIVE (U+2075), and INFINITY (U+221E) - separated by spaces. As the output from the example shows, when the string is encoded, the three original non-space characters are replaced by QUESTION MARK (U+003F), DIGIT FIVE (U+0035), and DIGIT EIGHT (U+0038). DIGIT EIGHT is a particularly poor replacement for the unsupported INFINITY character, and QUESTION MARK indicates that no mapping was available for the original character.  
   

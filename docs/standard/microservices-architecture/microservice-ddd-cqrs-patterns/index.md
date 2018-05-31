@@ -1,16 +1,9 @@
 ---
 title: Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
 description: .NET Microservices Architecture for Containerized .NET Applications | Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
 
@@ -33,10 +26,10 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 ##### DDD (Domain-Driven Design)
 
 -   **Eric Evans. Domain Language**
-    [*http://domainlanguage.com/*](http://domainlanguage.com/)
+    [*https://domainlanguage.com/*](https://domainlanguage.com/)
 
 -   **Martin Fowler. Domain-Driven Design**
-    [*http://martinfowler.com/tags/domain%20driven%20design.html*](http://martinfowler.com/tags/domain%20driven%20design.html)
+    [*https://martinfowler.com/tags/domain%20driven%20design.html*](https://martinfowler.com/tags/domain%20driven%20design.html)
 
 -   **Jimmy Bogard. Strengthening your domain: a primer**
     [*https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/*](https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/)

@@ -1,19 +1,10 @@
 ---
 title: "Attribute List (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "attribute list"
   - "attributes [Visual Basic], applying"
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Attribute List (Visual Basic)
 Specifies the attributes to be applied to a declared programming element. Multiple attributes are separated by commas. Following is the syntax for one attribute.  

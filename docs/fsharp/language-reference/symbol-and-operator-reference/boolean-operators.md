@@ -1,17 +1,8 @@
 ---
 title: Boolean Operators (F#)
 description: Learn about the boolean operators that are available in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: f79370b8-4bc2-4704-b514-d392c80942bd 
 ---
-
 # Boolean Operators
 
 This topic describes the support for Boolean operators in the F# language.

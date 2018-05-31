@@ -1,22 +1,10 @@
 ---
 title: "Language-Integrated Axes in Visual Basic (LINQ to XML)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d450a556-a134-4261-b011-44e399660894
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Language-Integrated Axes in Visual Basic (LINQ to XML)
-This section describes features built directly into the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language to make it easy to access XML. Many of the examples in the LINQ to XML documentation use these integrated [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] axes.  
+This section describes features built directly into the Visual Basic language to make it easy to access XML. Many of the examples in the LINQ to XML documentation use these integrated Visual Basic axes.  
   
 ## In This Section  
   

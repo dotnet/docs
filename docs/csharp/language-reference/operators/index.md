@@ -1,10 +1,6 @@
 ---
 title: "C# Operators"
 ms.date: 04/04/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -22,9 +18,6 @@ helpviewer_keywords:
   - "keywords [C#], operators"
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-caps.latest.revision: 40
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Operators
 C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression. You can [overload](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.  
@@ -58,7 +51,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [unchecked](../../../csharp/language-reference/keywords/unchecked.md) – disables overflow checking for integer operations. This is the default compiler behavior.  
   
- [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – returns the default value of type T: `null` for reference types, zero for numeric types, and zero/`null` filled in members for struct types.  
+ [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.  
   
  [delegate](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.  
   
@@ -162,7 +155,7 @@ C# provides many operators, which are symbols that specify which operations (mat
 ## Null-coalescing Operator  
  This operator has higher precedence than the next section and lower precedence than the previous section.  
   
- [x ?? y](../../../csharp/language-reference/operators/null-conditional-operator.md) – returns `x` if it is non-`null`; otherwise, returns `y`.  
+ [x ?? y](../../../csharp/language-reference/operators/null-coalescing-operator.md) – returns `x` if it is non-`null`; otherwise, returns `y`.  
   
 ## Conditional Operator  
  This operator has higher precedence than the next section and lower precedence than the previous section.  

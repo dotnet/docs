@@ -1,14 +1,6 @@
 ---
 title: "Optimizing Performance: Application Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application resources [WPF], performance"
   - "resources [WPF], performance"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "brushes [WPF], performance"
   - "sharing brushes without copying [WPF]"
 ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Optimizing Performance: Application Resources
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to share application resources so that you can support a consistent look or behavior across similar-typed elements. This topic provides a few recommendations in this area that can help you improve the performance of your applications.  

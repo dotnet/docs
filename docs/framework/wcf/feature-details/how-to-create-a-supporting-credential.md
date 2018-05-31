@@ -1,27 +1,13 @@
 ---
 title: "How to: Create a Supporting Credential"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d0952919-8bb4-4978-926c-9cc108f89806
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Supporting Credential
-It is possible to have a custom security scheme that requires more than one credential. For example, a service may demand from the client not just a user name and password, but also a credential that proves the client is over the age of 18. The second credential is a *supporting credential*. This topic explains how to implement such credentials in an [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client.  
+It is possible to have a custom security scheme that requires more than one credential. For example, a service may demand from the client not just a user name and password, but also a credential that proves the client is over the age of 18. The second credential is a *supporting credential*. This topic explains how to implement such credentials in an Windows Communication Foundation (WCF) client.  
   
 > [!NOTE]
->  The specification for supporting credentials is part of the WS-SecurityPolicy specification. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Web Services Security Specifications](http://go.microsoft.com/fwlink/?LinkId=88537).  
+>  The specification for supporting credentials is part of the WS-SecurityPolicy specification. For more information, see [Web Services Security Specifications](http://go.microsoft.com/fwlink/?LinkId=88537).  
   
 ## Supporting Tokens  
  In brief, when you use message security, a *primary credential* is always used to secure the message (for example, an X.509 certificate or a Kerberos ticket).  
@@ -43,7 +29,7 @@ It is possible to have a custom security scheme that requires more than one cred
 |Signed and Encrypting|Signed, encrypted supporting tokens are signed supporting tokens that are also encrypted when they appear in the `wsse:SecurityHeader`.|  
   
 ## Programming Supporting Credentials  
- To create a service that uses supporting tokens you must create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md). ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).)  
+ To create a service that uses supporting tokens you must create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md). (For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).)  
   
  The first step when creating a custom binding is to create a security binding element, which can be one of three types:  
   

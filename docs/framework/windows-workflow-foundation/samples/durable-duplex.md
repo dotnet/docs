@@ -1,25 +1,13 @@
 ---
 title: "Durable Duplex"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4e76d1a1-f3d8-4a0f-8746-4a322cdff6eb
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Durable Duplex
-This sample demonstrates how to set up and configure durable duplex message exchange using the messaging activities in [!INCLUDE[wf](../../../../includes/wf-md.md)]. A durable duplex message exchange is a two-way message exchange that takes place over a long period of time. The lifetime of the message exchange may be longer than the lifetime of the communication channel and the in-memory lifetime of the service instances.  
+This sample demonstrates how to set up and configure durable duplex message exchange using the messaging activities in Windows Workflow Foundation (WF). A durable duplex message exchange is a two-way message exchange that takes place over a long period of time. The lifetime of the message exchange may be longer than the lifetime of the communication channel and the in-memory lifetime of the service instances.  
   
 ## Sample Details  
- In this sample, two [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services implemented using [!INCLUDE[wf2](../../../../includes/wf2-md.md)] are configured to have a durable duplex message exchange. The durable duplex message exchange is composed from two one-way messages sent over MSMQ and correlated using [.NET Context Exchange](http://go.microsoft.com/fwlink/?LinkID=166059). The messages are sent using the <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.Receive> messaging activities. .NET Context Exchange is use to specify the callback address on the sent messages. Both services are hosted using Windows Process Activation Services (WAS) and are configured to enable persistence of the services instances.  
+ In this sample, two Windows Communication Foundation (WCF) services implemented using Windows Workflow Foundation are configured to have a durable duplex message exchange. The durable duplex message exchange is composed from two one-way messages sent over MSMQ and correlated using [.NET Context Exchange](http://go.microsoft.com/fwlink/?LinkID=166059). The messages are sent using the <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.Receive> messaging activities. .NET Context Exchange is use to specify the callback address on the sent messages. Both services are hosted using Windows Process Activation Services (WAS) and are configured to enable persistence of the services instances.  
   
  The first service (Service1.xamlx) sends a request to the send service (Service2.xamlx) to do some work. Once the work is completed, Service2.xamlx sends a notification back to Service1.xamlx to indicate that the work has been completed. A workflow console application sets up the queues that the services are listening on and sends the initial Start message to activate Service1.xamlx. Once Service1.xamlx receives the notification from Service2.xamlx that the requested work has been completed, Service1.xamlx saves the result to an XML file. While waiting for the callback message, Service1.xamlx persists its instance state using the default <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>. Service2.xamlx persists its instance state as part of completing the work requested by Service1.xamlx.  
   
@@ -48,7 +36,7 @@ This sample demonstrates how to set up and configure durable duplex message exch
 >  The binding used by this sample is not secure. When deploying your application you should configure your binding based on the security requirements of your application.  
   
 > [!NOTE]
->  The queues used in this sample are not transactional. For a sample that shows how to set up [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message exchanges using transaction queues, see the [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md) sample.  
+>  The queues used in this sample are not transactional. For a sample that shows how to set up WCF message exchanges using transaction queues, see the [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md) sample.  
   
  The message sent by Service1.xamlx to Service2.xamlx is sent using a client endpoint configured with the address of Service2.xamlx and the custom binding defined previously. The callback from Service2.xamlx to Service1.xamlx is sent using a client endpoint with no explicitly configured address because the address is taken from the callback context sent by Service1.xamlx. The following code example defines the client endpoints.  
   
@@ -185,6 +173,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\DurableDuplex`

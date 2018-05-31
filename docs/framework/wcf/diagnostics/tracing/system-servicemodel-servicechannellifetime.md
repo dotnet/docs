@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.ServiceChannelLifetime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1da8b8d0-7c5b-40bb-b177-29bbd67245e0
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.ServiceChannelLifetime
 System.ServiceModel.ServiceChannelLifetime  

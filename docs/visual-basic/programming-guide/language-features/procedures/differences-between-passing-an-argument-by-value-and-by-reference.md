@@ -1,13 +1,6 @@
 ---
 title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "ByRef keyword [Visual Basic], passing arguments by reference"
   - "Visual Basic code, procedures"
@@ -15,21 +8,18 @@ helpviewer_keywords:
   - "ByVal keyword [Visual Basic], passing arguments by value"
   - "arguments [Visual Basic], passing by value or by reference"
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Differences Between Passing an Argument By Value and By Reference (Visual Basic)
 When you pass one or more arguments to a procedure, each argument corresponds to an underlying programming element in the calling code. You can pass either the value of this underlying element, or a reference to it. This is known as the *passing mechanism*.  
   
 ## Passing by Value  
- You pass an argument *by value* by specifying the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) keyword for the corresponding parameter in the procedure definition. When you use this passing mechanism, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] copies the value of the underlying programming element into a local variable in the procedure. The procedure code does not have any access to the underlying element in the calling code.  
+ You pass an argument *by value* by specifying the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) keyword for the corresponding parameter in the procedure definition. When you use this passing mechanism, Visual Basic copies the value of the underlying programming element into a local variable in the procedure. The procedure code does not have any access to the underlying element in the calling code.  
   
 ## Passing by Reference  
- You pass an argument *by reference* by specifying the [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword for the corresponding parameter in the procedure definition. When you use this passing mechanism, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] gives the procedure a direct reference to the underlying programming element in the calling code.  
+ You pass an argument *by reference* by specifying the [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword for the corresponding parameter in the procedure definition. When you use this passing mechanism, Visual Basic gives the procedure a direct reference to the underlying programming element in the calling code.  
   
 ## Passing Mechanism and Element Type  
- The choice of passing mechanism is not the same as the classification of the underlying element type. Passing by value or by reference refers to what [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies to the procedure code. A value type or reference type refers to how a programming element is stored in memory.  
+ The choice of passing mechanism is not the same as the classification of the underlying element type. Passing by value or by reference refers to what Visual Basic supplies to the procedure code. A value type or reference type refers to how a programming element is stored in memory.  
   
  However, the passing mechanism and element type are interrelated. The value of a reference type is a pointer to the data elsewhere in memory. This means that when you pass a reference type by value, the procedure code has a pointer to the underlying element's data, even though it cannot access the underlying element itself. For example, if the element is an array variable, the procedure code does not have access to the variable itself, but it can access the array members.  
   

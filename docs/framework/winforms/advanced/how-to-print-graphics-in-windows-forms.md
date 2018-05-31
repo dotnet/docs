@@ -1,14 +1,6 @@
 ---
 title: "How to: Print Graphics in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "graphics [Windows Forms], printing"
   - "printing [Windows Forms], graphics"
 ms.assetid: 32b891e6-52ff-4fea-a9ff-2ce5db20a4c6
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Print Graphics in Windows Forms
 Frequently, you will want to print graphics in your Windows-based application. The <xref:System.Drawing.Graphics> class provides methods for drawing objects to a device, such as a screen or printer.  
@@ -60,7 +46,7 @@ Frequently, you will want to print graphics in your Windows-based application. T
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.PrintPage += new  

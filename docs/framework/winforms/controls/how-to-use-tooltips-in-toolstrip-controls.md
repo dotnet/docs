@@ -1,25 +1,11 @@
 ---
 title: "How to: Use ToolTips in ToolStrip Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ToolStrip control [Windows Forms], adding tooltips"
   - "toolbars [Windows Forms], adding tooltips"
   - "tooltips [Windows Forms], adding"
 ms.assetid: c5d86024-a7c5-44ee-8b3f-2daf53d80d3e
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use ToolTips in ToolStrip Controls
 You can display a <xref:System.Windows.Forms.ToolTip> for the <xref:System.Windows.Forms.ToolStrip> control you want by setting the control's <xref:System.Windows.Forms.ToolStrip.ShowItemToolTips%2A> property to `true`.  

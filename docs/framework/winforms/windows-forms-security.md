@@ -1,14 +1,6 @@
 ---
 title: "Windows Forms Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "designer access security [Windows Forms]"
   - "permissions [Windows Forms], Windows Forms"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "access control [Windows Forms], Windows Forms"
   - "security policy [Windows Forms], Windows Forms"
 ms.assetid: 932d438a-5285-46d8-a958-8c93d0ad6cae
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms Security
 Windows Forms features a security model that is code-based (security levels are set for code, regardless of the user running the code). This is in addition to any security schemas that may be in place already on your computer system. These can include those in the browser (such as the zone-based security available in Internet Explorer) or the operating system (such as the credential-based security of Windows NT).  

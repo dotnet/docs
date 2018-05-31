@@ -1,14 +1,6 @@
 ---
 title: "Data Contract Versioning"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "versioning [WCF]"
   - "data contracts [WCF], versioning"
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
-caps.latest.revision: 35
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Contract Versioning
 As applications evolve, you may also have to change the data contracts the services use. This topic explains how to version data contracts. This topic describes the data contract versioning mechanisms. For a complete overview and prescriptive versioning guidance, see [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md).  
@@ -105,22 +91,22 @@ As applications evolve, you may also have to change the data contracts the servi
 ## Schema Considerations  
  For an explanation of what schema is produced for data contract types, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
- The schema [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] produces for data contract types makes no provisions for versioning. That is, the schema exported from a certain version of a type contains only those data members present in that version. Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface does not change the schema for a type.  
+ The schema WCF produces for data contract types makes no provisions for versioning. That is, the schema exported from a certain version of a type contains only those data members present in that version. Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface does not change the schema for a type.  
   
  Data members are exported to the schema as optional elements by default. That is, the `minOccurs` (XML attribute) value is set to 0. Required data members are exported with `minOccurs` set to 1.  
   
  Many of the changes considered to be nonbreaking are actually breaking if strict adherence to the schema is required. In the preceding example, a `CarV1` instance with just the `Model` element would validate against the `CarV2` schema (which has both `Model` and `Horsepower`, but both are optional). However, the reverse is not true: a `CarV2` instance would fail validation against the `CarV1` schema.  
   
- Round-tripping also entails some additional considerations. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Schema Considerations" section in [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ Round-tripping also entails some additional considerations. For more information, see the "Schema Considerations" section in [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ### Other Permitted Changes  
- Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is a nonbreaking change. However, round-tripping support does not exist for versions of the type prior to the version in which <xref:System.Runtime.Serialization.IExtensibleDataObject> was implemented. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is a nonbreaking change. However, round-tripping support does not exist for versions of the type prior to the version in which <xref:System.Runtime.Serialization.IExtensibleDataObject> was implemented. For more information, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ## Enumerations  
- Adding or removing an enumeration member is a breaking change. Changing the name of an enumeration member is breaking, unless its contract name is kept the same as in the old version by using the `EnumMemberAtttribute` attribute. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
+ Adding or removing an enumeration member is a breaking change. Changing the name of an enumeration member is breaking, unless its contract name is kept the same as in the old version by using the `EnumMemberAtttribute` attribute. For more information, see [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
   
 ## Collections  
- Most collection changes are nonbreaking because most collection types are interchangeable with each other in the data contract model. However, making a noncustomized collection customized or vice versa is a breaking change. Also, changing the collection's customization settings is a breaking change; that is, changing its data contract name and namespace, repeating element name, key element name, and value element name. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] collection customization, see [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md).  
+ Most collection changes are nonbreaking because most collection types are interchangeable with each other in the data contract model. However, making a noncustomized collection customized or vice versa is a breaking change. Also, changing the collection's customization settings is a breaking change; that is, changing its data contract name and namespace, repeating element name, key element name, and value element name. For more information about collection customization, see [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md).  
 Naturally, changing the data contract of contents of a collection (for example, changing from a list of integers to a list of strings) is a breaking change.  
   
 ## See Also  

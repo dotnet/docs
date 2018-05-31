@@ -1,26 +1,12 @@
 ---
 title: "Claims and Tokens"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "claims [WCF], and tokens"
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Claims and Tokens
-This topic describes the various claim types that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] creates from the default tokens that it supports.  
+This topic describes the various claim types that Windows Communication Foundation (WCF) creates from the default tokens that it supports.  
   
  You can examine the claims of a client credential by using the <xref:System.IdentityModel.Claims.ClaimSet> and <xref:System.IdentityModel.Claims.Claim> classes. The `ClaimSet` contains a collection of `Claim` objects. Each `Claim` has the following important members:  
   

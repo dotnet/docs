@@ -1,19 +1,12 @@
 ---
 title: "decimal (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "decimal_CSharpKeyword"
   - "decimal"
 helpviewer_keywords: 
   - "decimal keyword [C#]"
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
-caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # decimal (C# Reference)
 The `decimal` keyword indicates a 128-bit data type. Compared to other floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  

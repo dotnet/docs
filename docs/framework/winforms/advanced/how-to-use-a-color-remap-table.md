@@ -1,14 +1,6 @@
 ---
 title: "How to: Use a Color Remap Table"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "custom colors [Windows Forms], creating with color remap table"
   - "color remap tables [Windows Forms], using"
 ms.assetid: 977df1ce-8665-42d4-9fb1-ef7f0ff63419
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use a Color Remap Table
 Remapping is the process of converting the colors in an image according to a color remap table. The color remap table is an array of <xref:System.Drawing.Imaging.ColorMap> objects. Each <xref:System.Drawing.Imaging.ColorMap> object in the array has an <xref:System.Drawing.Imaging.ColorMap.OldColor%2A> property and a <xref:System.Drawing.Imaging.ColorMap.NewColor%2A> property.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ExceptionCatcherEnter Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ExceptionCatcherEnter"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 41462329-a648-46f0-ae6d-728b94c31aa9
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionCatcherEnter Method
 Notifies the profiler that control is being passed to the appropriate `catch` block.  

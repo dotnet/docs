@@ -1,8 +1,6 @@
 ---
 title: "Serialization guidelines"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -10,13 +8,6 @@ helpviewer_keywords:
   - "serialization, guidelines"
   - "binary serialization, guidelines"
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  
@@ -146,6 +137,6 @@ This document lists the guidelines to consider when designing an API to be seria
  [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
  [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
  [Binary Serialization](binary-serialization.md)  
- [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
  [XML and SOAP Serialization](xml-and-soap-serialization.md)  
  [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

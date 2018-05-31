@@ -1,24 +1,10 @@
 ---
 title: "Self-Host"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Self hosted service"
   - "Self Host Sample [Windows Communication Foundation]"
 ms.assetid: 05e68661-1ddf-4abf-a899-9bb1b8272a5b
-caps.latest.revision: 38
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Self-Host
 This sample demonstrates how to implement a self-hosted service in a console application. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service configuration file has been renamed from Web.config to App.config and modified to configure a base address, which the host uses. The service source code has been modified to implement a static `Main` function that creates and opens a service host that provides the configured base address. The service implementation has been modified to write output to the console for each operation. The client has been unmodified, except for configuring the correct endpoint address of the service.  
@@ -79,7 +65,7 @@ public static void Main()
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\SelfHost`  
   

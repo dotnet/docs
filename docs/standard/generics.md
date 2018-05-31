@@ -1,20 +1,12 @@
 ---
 title: Generic Types (Generics) Overview
 description: Learn how generics act as code templates that allow you to define type-safe data structures without committing to an actual data type.
-keywords: .NET, .NET Core
 author: kuhlenh
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: a315b111-8e48-446c-ab19-acb6405894a7
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Generic Types (Generics) Overview
 
 We use generics all the time in C#, whether implicitly or explicitly. When you use LINQ in C#, did you ever notice that you are working with IEnumerable<T>? Or if you ever saw an online sample of a "generic repository" for talking to databases using Entity Framework, did you see that most methods return IQueryable<T>? You may have wondered what the **T** is in these examples and why is it in there?

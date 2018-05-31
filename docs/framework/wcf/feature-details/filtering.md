@@ -1,33 +1,19 @@
 ---
 title: "Filtering"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4002946c-e34a-4356-8cfb-e25912a4be63
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Filtering
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] filtering system can use declarative filters to match messages and make operational decisions. You can use filters to determine what to do with a message by examining part of the message. A queuing process, for example, can use an XPath 1.0 query to check the priority element of a known header to determine whether to move a message to the front of the queue.  
+The Windows Communication Foundation (WCF) filtering system can use declarative filters to match messages and make operational decisions. You can use filters to determine what to do with a message by examining part of the message. A queuing process, for example, can use an XPath 1.0 query to check the priority element of a known header to determine whether to move a message to the front of the queue.  
   
- The filtering system is composed of a set of classes that can efficiently determine which of a set of filters are `true` for a particular [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message.  
+ The filtering system is composed of a set of classes that can efficiently determine which of a set of filters are `true` for a particular WCF message.  
   
- The filtering system is a core component of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] messaging; it is designed to be extremely fast. Each filter implementation has been optimized for a particular kind of matching against [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] messages.  
+ The filtering system is a core component of WCF messaging; it is designed to be extremely fast. Each filter implementation has been optimized for a particular kind of matching against WCF messages.  
   
  The filtering system is not thread safe. The application must handle any locking semantics. It does, however, support a multi-reader, single writer.  
   
 ## Where Filtering Fits  
- Filtering is performed after a message is received and is part of the process of dispatching the message to the proper application component. The design of the filtering system addresses the requirements of several [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] subsystems, including messaging, routing, security, event handling, and system management.  
+ Filtering is performed after a message is received and is part of the process of dispatching the message to the proper application component. The design of the filtering system addresses the requirements of several WCF subsystems, including messaging, routing, security, event handling, and system management.  
   
 ## Filters  
  The filter engine has two primary components, filters and filter tables. A filter makes Boolean decisions about a message based on user-specified logical conditions. Filters implement the <xref:System.ServiceModel.Dispatcher.MessageFilter> class.  
@@ -76,7 +62,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] filtering system can
   
  The <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601> class optimizes matching for a subset of XPath that covers most of the messaging scenarios and also supports the full XPath 1.0 grammar. It has optimized algorithms for efficient parallel matching.  
   
- This table has several specialized `Match` methods that operate over an <xref:System.Xml.XPath.XPathNavigator> and a <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator>. A <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> extends the <xref:System.Xml.XPath.XPathNavigator> class by adding a <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition%2A> property. This property allows positions within the XML document to be saved and loaded quickly without having to clone the navigator, an expensive memory allocation that the <xref:System.Xml.XPath.XPathNavigator> requires for such an operation. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] XPath engine must frequently record the position of the cursor in the course of executing queries on XML documents, so the <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> provides an important optimization for message processing.  
+ This table has several specialized `Match` methods that operate over an <xref:System.Xml.XPath.XPathNavigator> and a <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator>. A <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> extends the <xref:System.Xml.XPath.XPathNavigator> class by adding a <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition%2A> property. This property allows positions within the XML document to be saved and loaded quickly without having to clone the navigator, an expensive memory allocation that the <xref:System.Xml.XPath.XPathNavigator> requires for such an operation. The WCF XPath engine must frequently record the position of the cursor in the course of executing queries on XML documents, so the <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> provides an important optimization for message processing.  
   
 ## Customer Scenarios  
  You can use filtering any time you want to send a message to different processing modules depending on data contained in the message. Two typical scenarios are routing a message based on its action code and de-multiplexing a stream of messages based on the messages' endpoint address.  

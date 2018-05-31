@@ -1,13 +1,6 @@
 ---
 title: "Constant and Literal Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declaring constants [Visual Basic], literal data types"
   - "data types [Visual Basic], declaring"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "literals [Visual Basic], coercing data type"
   - "declarations [Visual Basic], data types"
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Constant and Literal Data Types (Visual Basic)
 A literal is a value that is expressed as itself rather than as a variable's value or the result of an expression, such as the number 3 or the string "Hello". A constant is a meaningful name that takes the place of a literal and retains this same value throughout the program, as opposed to a variable, whose value may change.  
@@ -49,7 +39,7 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
   
  [!code-vb[VbVbalrConstants#3](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_3.vb)]  
   
- The following table shows the enclosing characters and type characters available in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The following table shows the enclosing characters and type characters available in Visual Basic.  
   
 |Data type|Enclosing character|Appended type character|  
 |---|---|---|  

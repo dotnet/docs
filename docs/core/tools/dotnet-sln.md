@@ -3,12 +3,7 @@ title: dotnet sln command - .NET Core CLI
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # dotnet sln
 

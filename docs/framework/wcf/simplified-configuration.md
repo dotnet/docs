@@ -1,27 +1,13 @@
 ---
 title: "Simplified Configuration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dcbe1f84-437c-495f-9324-2bc09fd79ea9
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Simplified Configuration
-Configuring [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services can be a complex task. There are many different options and it is not always easy to determine what settings are required. While configuration files increase the flexibility of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services, they also are the source for many hard to find problems. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] addresses these problems and provides a way to reduce the size and complexity of service configuration.  
+Configuring Windows Communication Foundation (WCF) services can be a complex task. There are many different options and it is not always easy to determine what settings are required. While configuration files increase the flexibility of WCF services, they also are the source for many hard to find problems. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] addresses these problems and provides a way to reduce the size and complexity of service configuration.  
   
 ## Simplified Configuration  
- In [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service configuration files, the <`system.serviceModel`> section contains a <`service`> element for each service hosted. The <`service`> element contains a collection of <`endpoint`> elements that specify the endpoints exposed for each service and optionally a set of service behaviors. The <`endpoint`> elements specify the address, binding, and contract exposed by the endpoint, and optionally binding configuration and endpoint behaviors. The <`system.serviceModel`> section also contains a <`behaviors`> element that allows you to specify service or endpoint behaviors. The following example shows the <`system.serviceModel`> section of a configuration file.  
+ In WCF service configuration files, the <`system.serviceModel`> section contains a <`service`> element for each service hosted. The <`service`> element contains a collection of <`endpoint`> elements that specify the endpoints exposed for each service and optionally a set of service behaviors. The <`endpoint`> elements specify the address, binding, and contract exposed by the endpoint, and optionally binding configuration and endpoint behaviors. The <`system.serviceModel`> section also contains a <`behaviors`> element that allows you to specify service or endpoint behaviors. The following example shows the <`system.serviceModel`> section of a configuration file.  
   
 ```  
 <system.serviceModel>  
@@ -54,7 +40,7 @@ Configuring [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services can be
 </system.serviceModel>  
 ```  
   
- [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] makes configuring a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service easier by removing the requirement for the <`service`> element. If you do not add a <`service`>  section or add any endpoints in a <`service`> section and your service does not programmatically define any endpoints, then a set of default endpoints are automatically added to your service, one for each service base address and for each contract implemented by your service. In each of these endpoints, the endpoint address corresponds to the base address, the binding is determined by the base address scheme and the contract is the one implemented by your service. If you do not need to specify any endpoints or service behaviors or make any binding setting changes, you do not need to specify a service configuration file at all. If a service implements two contracts and the host enables both HTTP and TCP transports the service host creates four default endpoints, one for each contract using each transport. To create default endpoints the service host must know what bindings to use. These settings are specified in a <`protocolMappings`> section within the <`system.serviceModel`> section. The <`protocolMappings`> section contains a list of transport protocol schemes mapped to binding types. The service host uses the base addresses passed to it to determine which binding to use. The following example uses the <`protocolMappings`> element.  
+ [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] makes configuring a WCF service easier by removing the requirement for the <`service`> element. If you do not add a <`service`>  section or add any endpoints in a <`service`> section and your service does not programmatically define any endpoints, then a set of default endpoints are automatically added to your service, one for each service base address and for each contract implemented by your service. In each of these endpoints, the endpoint address corresponds to the base address, the binding is determined by the base address scheme and the contract is the one implemented by your service. If you do not need to specify any endpoints or service behaviors or make any binding setting changes, you do not need to specify a service configuration file at all. If a service implements two contracts and the host enables both HTTP and TCP transports the service host creates four default endpoints, one for each contract using each transport. To create default endpoints the service host must know what bindings to use. These settings are specified in a <`protocolMappings`> section within the <`system.serviceModel`> section. The <`protocolMappings`> section contains a list of transport protocol schemes mapped to binding types. The service host uses the base addresses passed to it to determine which binding to use. The following example uses the <`protocolMappings`> element.  
   
 > [!WARNING]
 >  Changing default configuration elements, such as bindings or behaviors, might affect services defined in lower levels of the configuration hierarchy, since they might be using these default bindings and behaviors. Thus, whoever changes default bindings and behaviors needs to be aware that these changes might affect other services in the hierarchy.  

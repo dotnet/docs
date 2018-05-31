@@ -1,12 +1,6 @@
 ---
 title: "Enum Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Enum"
 helpviewer_keywords: 
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "variables [Visual Basic], enumeration"
   - "constants [Visual Basic], enumerated"
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
-caps.latest.revision: 44
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Enum Statement (Visual Basic)
 Declares an enumeration and defines the values of its members.  
@@ -53,8 +44,10 @@ End Enum
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-     You can specify `Protected``Friend` to allow access from code within the enumeration's class, a derived class, or the same assembly.  
-  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+    
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
+
 -   `Shadows`  
   
      Optional. Specifies that this enumeration redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can specify [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) only on the enumeration itself, not on any of its members.  

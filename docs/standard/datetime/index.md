@@ -1,13 +1,7 @@
 ---
 title: "Dates, times, and time zones"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "time zone objects [.NET Framework]"
   - "date and time data [.NET Framework]"
@@ -15,15 +9,9 @@ helpviewer_keywords:
   - "times [.NET Framework], time zones"
   - "time [.NET Framework], time zones"
 ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Dates, times, and time zones
 
 In addition to the basic <xref:System.DateTime> structure, .NET provides the following classes that support working with time zones:

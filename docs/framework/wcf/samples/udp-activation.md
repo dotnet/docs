@@ -1,21 +1,7 @@
 ---
 title: "UDP Activation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # UDP Activation
 This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. It extends the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
@@ -29,7 +15,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
 -   A service (hosted in a worker process activated by WAS) that receives messages over the UDP custom transport.  
   
 ## UDP Protocol Activator  
- The UDP Protocol Activator is a bridge between the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. It provides data communication through the UDP protocol at the transport layer. It has two major functions:  
+ The UDP Protocol Activator is a bridge between the WCF client and the WCF service. It provides data communication through the UDP protocol at the transport layer. It has two major functions:  
   
 -   WAS Listener Adapter (LA), which collaborates with WAS to activate processes in response to incoming messages.  
   
@@ -64,7 +50,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
  The UDP protocol listener is a module inside the protocol activator that listens at a UDP endpoint on behalf of the virtual application. It is implemented in the class `UdpSocketListener`. The endpoint is represented as `IPEndpoint` for which the port number is extracted from the binding of the protocol for the site.  
   
 ### Control Service  
- In this sample, we use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to communicate between the activator and the WAS worker process. The service that resides in the activator is called the Control Service.  
+ In this sample, we use WCF to communicate between the activator and the WAS worker process. The service that resides in the activator is called the Control Service.  
   
 ## Protocol Handlers  
  After the listener adapter calls `WebhostOpenListenerChannelInstance`, the WAS process manager starts the worker process if it is not started. The application manager inside the worker process then loads the UDP Process Protocol Handler (PPH) with the request for that `ListenerChannelId`. The PPH in turns calls `IAdphManager`.`StartAppDomainProtocolListenerChannel` to start the UDP AppDomain Protocol Handler (ADPH).  
@@ -166,7 +152,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\UdpActivation`  
   

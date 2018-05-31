@@ -1,14 +1,6 @@
 ---
 title: "How to: Load Files into the Windows Forms RichTextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], opening files"
   - "RTF files [Windows Forms], displaying in RichTextBox control"
 ms.assetid: c03451be-f285-4428-a71a-c41e002cc919
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Load Files into the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a plain-text, Unicode plain-text, or Rich-Text-Format (RTF) file. To do so, call the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> method. You can also use the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> method to load data from a stream. For more information, see <xref:System.Windows.Forms.RichTextBox.LoadFile%28System.IO.Stream%2CSystem.Windows.Forms.RichTextBoxStreamType%29>.  
@@ -74,7 +60,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#, [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.btnOpenFile.Click += new System.EventHandler(this. btnOpenFile_Click);  

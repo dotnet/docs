@@ -1,21 +1,12 @@
 ---
 title: "Unable to load information for class &#39;&lt;classname&gt;&#39;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30712"
   - "bc30712"
 helpviewer_keywords: 
   - "BC30712"
 ms.assetid: c7ffbd6d-05c6-4261-b44b-1bcd521bb350
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Unable to load information for class &#39;&lt;classname&gt;&#39;
 A reference was made to a class that is not available.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::GetNotifiedExceptionClauseInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.GetNotifiedExceptionClauseInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f9594a7e-cb0c-4c48-accb-29f762aa0c21
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::GetNotifiedExceptionClauseInfo Method
 Gets the native address and frame information for the exception clause (`catch`/`finally`/`filter`) that is about to be run or has just been run.  

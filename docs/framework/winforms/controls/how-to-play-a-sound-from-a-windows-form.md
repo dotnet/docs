@@ -1,14 +1,6 @@
 ---
 title: "How to: Play a Sound from a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "My.Computer.Audio object [Windows Forms], playing sounds"
   - "examples [Windows Forms], sounds"
 ms.assetid: 3d3350b7-1ebd-4e05-a738-48ca1160a19d
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Play a Sound from a Windows Form
 This example plays a sound at a given path at run time.  

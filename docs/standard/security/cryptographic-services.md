@@ -1,13 +1,7 @@
 ---
 title: "Cryptographic Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "cryptography [.NET Framework]"
   - "pattern of derived class inheritance"
@@ -30,13 +24,8 @@ helpviewer_keywords:
   - "cryptography [.NET Framework], about"
   - "random number generation"
 ms.assetid: f96284bc-7b73-44b5-ac59-fac613ad09f8
-caps.latest.revision: 34
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Cryptographic Services
 <a name="top"></a> Public networks such as the Internet do not provide a means of secure communication between entities. Communication over such networks is susceptible to being read or even modified by unauthorized third parties. Cryptography helps protect data from being viewed, provides ways to detect whether data has been modified, and helps provide a secure means of communication over otherwise nonsecure channels. For example, data can be encrypted by using a cryptographic algorithm, transmitted in an encrypted state, and later decrypted by the intended party. If a third party intercepts the encrypted data, it will be difficult to decipher.  
@@ -201,7 +190,7 @@ ms.workload:
   
 -   Alice sends the plaintext message and the hashed message (digital signature) to Bob. Bob receives and hashes the message and compares his hash value to the hash value that he received from Alice. If the hash values are identical, the message was not altered. If the values are not identical, the message was altered after Alice wrote it.  
   
-     Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. See [NIB: Cryptography Next Generation (CNG) Secure Communication Example](http://msdn.microsoft.com/library/8048e94e-054a-417b-87c6-4f5e26710e6e) for more information.  
+     Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. See [NIB: Cryptography Next Generation (CNG) Secure Communication Example](https://msdn.microsoft.com/library/8048e94e-054a-417b-87c6-4f5e26710e6e) for more information.  
   
 -   Alice sends the plaintext message to Bob over a nonsecure public channel. She sends the hashed message to Bob over a secure private channel. Bob receives the plaintext message, hashes it, and compares the hash to the privately exchanged hash. If the hashes match, Bob knows two things:  
   

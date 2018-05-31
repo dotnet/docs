@@ -1,13 +1,7 @@
 ---
 title: "Applying Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], attributes"
   - "attributes [.NET Framework], applying"
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Applying Attributes
 Use the following process to apply an attribute to an element of your code.  
@@ -61,4 +50,4 @@ Use the following process to apply an attribute to an element of your code.
  [Attributes](../../../docs/standard/attributes/index.md)  
  [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
  [Concepts](/cpp/windows/attributed-programming-concepts)  
- [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

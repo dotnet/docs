@@ -1,24 +1,10 @@
 ---
 title: "ToolBar Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], ToolBar"
   - "ToolBar control [WPF]"
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ToolBar Overview
 <xref:System.Windows.Controls.ToolBar> controls are containers for a group of commands or controls which are typically related in their function. A <xref:System.Windows.Controls.ToolBar> usually contains buttons which invoke commands.  

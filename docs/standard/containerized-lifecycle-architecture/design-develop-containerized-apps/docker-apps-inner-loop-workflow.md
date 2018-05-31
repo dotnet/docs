@@ -1,13 +1,9 @@
 ---
 title: Inner-loop development workflow for Docker apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Inner-loop development workflow for Docker apps
 
@@ -189,7 +185,7 @@ In this particular case, this file defines two services: the web service (your c
 
 -   Link the web service to the redis service
 
-The redis service uses the [latest public redis image](https://hub.docker.com/_/redis/) pulled from the Docker Hub registry. [redis](http://redis.io/) is a very popular cache system for server-side applications.
+The redis service uses the [latest public redis image](https://hub.docker.com/_/redis/) pulled from the Docker Hub registry. [redis](https://redis.io/) is a very popular cache system for server-side applications.
 
 ### Step 5: Build and run your Docker app
 

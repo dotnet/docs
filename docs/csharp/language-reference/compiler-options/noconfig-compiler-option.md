@@ -1,10 +1,6 @@
 ---
 title: "-noconfig (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/noconfig"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "-noconfig compiler option [C#]"
   - "noconfig compiler option [C#]"
 ms.assetid: cd26967e-e494-4c8c-b5c9-af13b2f78b2e
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -noconfig (C# Compiler Options)
 The **-noconfig** option tells the compiler not to compile with the csc.rsp file, which is located in and loaded from the same directory as the csc.exe file.  

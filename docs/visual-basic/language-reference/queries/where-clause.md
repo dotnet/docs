@@ -1,12 +1,6 @@
 ---
 title: "Where Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QueryWhere"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "queries [Visual Basic], Where"
   - "Where clause [Visual Basic]"
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Where Clause (Visual Basic)
 Specifies the filtering condition for a query.  

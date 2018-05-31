@@ -1,10 +1,6 @@
 ---
 title: "-errorreport (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/errorreport"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "errorreport compiler option [C#]"
   - "/errorreport compiler option [C#]"
 ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
-caps.latest.revision: 35
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -errorreport (C# Compiler Options)
 This option provides a convenient way to report a C# internal compiler error to Microsoft.  

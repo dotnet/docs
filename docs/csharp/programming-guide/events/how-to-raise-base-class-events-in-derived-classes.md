@@ -1,16 +1,9 @@
 ---
 title: "How to: Raise Base Class Events in Derived Classes (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "events [C#], in derived classes"
 ms.assetid: 2d20556a-0aad-46fc-845e-f85d86ea617a
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Raise Base Class Events in Derived Classes (C# Programming Guide)
 The following simple example shows the standard way to declare events in a base class so that they can also be raised from derived classes. This pattern is used extensively in Windows Forms classes in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  

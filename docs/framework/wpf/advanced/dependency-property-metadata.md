@@ -1,26 +1,12 @@
 ---
 title: "Dependency Property Metadata"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "APIs [WPF], metadata"
   - "dependency properties [WPF], metadata"
   - "metadata [WPF], for dependency properties"
   - "overriding metadata [WPF]"
 ms.assetid: d01ed009-b722-41bf-b82f-fe1a8cdc50dd
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Dependency Property Metadata
 The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system includes a metadata reporting system that goes beyond what can be reported about a property through reflection or general [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] characteristics. Metadata for a dependency property can also be assigned uniquely by the class that defines a dependency property, can be changed when the dependency property is added to a different class, and can be specifically overridden by all derived classes that inherit the dependency property from the defining base class.  

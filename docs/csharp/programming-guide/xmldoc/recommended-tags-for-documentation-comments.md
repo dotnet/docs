@@ -1,17 +1,10 @@
 ---
 title: "Recommended Tags for Documentation Comments (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [C#], tags"
   - "XML documentation [C#], tags"
 ms.assetid: 6e98f7a9-38f4-4d74-b644-1ff1b23320fd
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Recommended Tags for Documentation Comments (C# Programming Guide)
 The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](https://github.com/EWSoftware/SHFB).  

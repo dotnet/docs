@@ -1,13 +1,7 @@
 ---
 title: "Regular Expression Language - Quick Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "VS.RegularExpressionBuilder"
 helpviewer_keywords: 
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "cheat sheet"
   - ".NET Framework regular expressions, language elements"
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
-caps.latest.revision: 56
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Regular Expression Language - Quick Reference
 <a name="top"></a> A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  
@@ -46,8 +35,8 @@ ms.workload:
   
  We’ve also provided this information in two formats that you can download and print for easy reference:  
   
- [Download in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
- [Download in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
+ [Download in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+ [Download in PDF (.pdf) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
 <a name="character_escapes"></a>   
 ## Character Escapes  
@@ -227,5 +216,5 @@ ms.workload:
  [Regular Expressions](regular-expressions.md)  
  [Regular Expression Classes](the-regular-expression-object-model.md)  
  [Regular Expression Examples](regular-expression-examples.md)  
- [Regular Expressions - Quick Reference (download in Word format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
- [Regular Expressions - Quick Reference (download in PDF format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
+ [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+ [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

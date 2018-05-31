@@ -1,11 +1,6 @@
 ---
 title: "Accessing Application Forms (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "forms [Visual Basic], communicating between"
   - "application forms [Visual Basic], accessing"
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "My.Forms object"
   - "forms [Visual Basic], accessing all open"
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Accessing Application Forms (Visual Basic)
 The `My.Forms` object provides an easy way to access an instance of each Windows Form declared in the application's project. You can also use properties of the `My.Application` object to access the application's splash screen and main form, and get a list of the application's open forms.  

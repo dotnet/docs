@@ -3,12 +3,7 @@ title: dotnet run command - .NET Core CLI
 description: The dotnet run command provides a convenient option to run your application from the source code.
 author: mairaw
 ms.author: mairaw
-ms.date: 03/10/2018
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # dotnet run
 
@@ -20,20 +15,23 @@ ms.workload:
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
-
+# [.NET Core 2.1](#tab/netcore21)
 ```
-dotnet run [-c|--configuration] [-f|--framework] [--force] [--launch-profile] [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore] [-p|--project] [--runtime] [[--] [application arguments]]
+dotnet run [-c|--configuration] [-f|--framework] [--force] [--launch-profile] [--no-build] [--no-dependencies]
+    [--no-launch-profile] [--no-restore] [-p|--project] [--runtime] [-v|--verbosity] [[--] [application arguments]]
 dotnet run [-h|--help]
 ```
-
+# [.NET Core 2.0](#tab/netcore20)
+```
+dotnet run [-c|--configuration] [-f|--framework] [--force] [--launch-profile] [--no-build] [--no-dependencies]
+    [--no-launch-profile] [--no-restore] [-p|--project] [--runtime] [[--] [application arguments]]
+dotnet run [-h|--help]
+```
 # [.NET Core 1.x](#tab/netcore1x)
-
 ```
 dotnet run [-c|--configuration] [-f|--framework] [-p|--project] [[--] [application arguments]]
 dotnet run [-h|--help]
 ```
-
 ---
 
 ## Description
@@ -46,23 +44,23 @@ If the project specifies multiple frameworks, executing `dotnet run` results in 
 
 The `dotnet run` command is used in the context of projects, not built assemblies. If you're trying to run a framework-dependent application DLL instead, you must use [dotnet](dotnet.md) without a command. For example, to run `myapp.dll`, use:
 
-```
+```console
 dotnet myapp.dll
 ```
 
 For more information on the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
 
-In order to run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output.
+To run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
 
 `--`
 
-Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this one are passed to the application run.
+Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
 `-c|--configuration {Debug|Release}`
 
@@ -74,7 +72,7 @@ Builds and runs the app using the specified [framework](../../standard/framework
 
 `--force`
 
-Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting *project.assets.json*.
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 `-h|--help`
 
@@ -83,11 +81,11 @@ Prints out a short help for the command.
 `--launch-profile <NAME>`
 
 The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`,
-`Staging` and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
+`Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
 `--no-build`
 
-Doesn't build the project before running.
+Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
 
 `--no-dependencies`
 
@@ -95,15 +93,70 @@ When restoring a project with project-to-project (P2P) references, restores the 
 
 `--no-launch-profile`
 
-Doesn't attempt to use *launchSettings.json* to configure the application.
+Doesn't try to use *launchSettings.json* to configure the application.
 
 `--no-restore`
 
-Doesn't perform an implicit restore when running the command.
+Doesn't execute an implicit restore when running the command.
 
 `-p|--project <PATH>`
 
-Specifies the path of the project file to run (folder name or full path). It defaults to the current directory if not specified.
+Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
+
+`--runtime <RUNTIME_IDENTIFIER>`
+
+Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+`-v|--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+# [.NET Core 2.0](#tab/netcore20)
+
+`--`
+
+Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
+
+`-c|--configuration {Debug|Release}`
+
+Defines the build configuration. The default value is `Debug`.
+
+`-f|--framework <FRAMEWORK>`
+
+Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
+
+`--force`
+
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
+
+`-h|--help`
+
+Prints out a short help for the command.
+
+`--launch-profile <NAME>`
+
+The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`,
+`Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
+
+`--no-build`
+
+Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
+
+`--no-dependencies`
+
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
+
+`--no-launch-profile`
+
+Doesn't try to use *launchSettings.json* to configure the application.
+
+`--no-restore`
+
+Doesn't execute an implicit restore when running the command.
+
+`-p|--project <PATH>`
+
+Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 `--runtime <RUNTIME_IDENTIFIER>`
 
@@ -113,7 +166,7 @@ Specifies the target runtime to restore packages for. For a list of Runtime Iden
 
 `--`
 
-Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this one are passed to the application run.
+Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
 `-c|--configuration {Debug|Release}`
 
@@ -129,7 +182,7 @@ Prints out a short help for the command.
 
 `-p|--project <PATH/PROJECT.csproj>`
 
-Specifies the path and name of the project file. (See the NOTE.) It defaults to the current directory if not specified.
+Specifies the path and name of the project file. (See the NOTE.) If not specified, it defaults to the current directory.
 
 > [!NOTE]
 > Use the path and name of the project file with the `-p|--project` option. A regression in the CLI prevents providing a folder path with .NET Core SDK 1.x. For more information about this issue, see [dotnet run -p, can not start a project (dotnet/cli #5992)](https://github.com/dotnet/cli/issues/5992).

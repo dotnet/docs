@@ -1,11 +1,6 @@
 ---
 title: "@ (Specify Response File) (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "@ (Specify Response File) compiler option [Visual Basic]"
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca

@@ -1,14 +1,6 @@
 ---
 title: "Default Marshaling for Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "objects, interop marshaling"
   - "interop marshaling, objects"
 ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Default Marshaling for Objects
 Parameters and fields typed as <xref:System.Object?displayProperty=nameWithType> can be exposed to unmanaged code as one of the following types:  
@@ -288,7 +276,7 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 |**VT_BSTR**|<xref:System.String?displayProperty=nameWithType>|  
 |**VT_INT**|<xref:System.Int32?displayProperty=nameWithType>|  
 |**VT_UINT**|<xref:System.UInt32?displayProperty=nameWithType>|  
-|**VT_ARRAY** &#124; **VT_\***|<xref:System.Array?displayProperty=nameWithType>|  
+|**VT_ARRAY** &#124; **VT_**\*|<xref:System.Array?displayProperty=nameWithType>|  
 |**VT_CY**|<xref:System.Decimal?displayProperty=nameWithType>|  
 |**VT_RECORD**|Corresponding boxed value type.|  
 |**VT_VARIANT**|Not supported.|  
@@ -299,7 +287,7 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 ## Marshaling ByRef Variants  
  Although variants themselves can be passed by value or by reference, the **VT_BYREF** flag can also be used with any variant type to indicate that the contents of the variant are being passed by reference instead of by value. The difference between marshaling variants by reference and marshaling a variant with the **VT_BYREF** flag set can be confusing. The following illustration clarifies the differences.  
   
- ![Variant passed on the stack](../../../docs/framework/interop/media/interopvariant.gif "interopvariant")  
+ ![Variant passed on the stack](./media/interopvariant.gif "interopvariant")  
 Variants passed by value and by reference  
   
  **Default behavior for marshaling objects and variants by value**  
@@ -337,7 +325,7 @@ Variants passed by value and by reference
 |**Variant**  *v* **(VT_BYREF** *&#124;* **VT_)**|**Ref Object**  *o*|Only if the type has not changed.|  
   
 ## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
- [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
- [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)
+ [Default Marshaling Behavior](default-marshaling-behavior.md)  
+ [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
+ [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  
+ [Copying and Pinning](copying-and-pinning.md)

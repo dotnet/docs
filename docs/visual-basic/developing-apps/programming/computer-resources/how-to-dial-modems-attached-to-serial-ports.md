@@ -1,24 +1,14 @@
 ---
 title: "How to: Dial Modems Attached to Serial Ports in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "modems [Visual Basic], dialing"
   - "serial ports [Visual Basic], dialing"
   - "My.Computer.Ports object"
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Dial Modems Attached to Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+This topic describes how to use `My.Computer.Ports` to dial a modem in Visual Basic.  
   
  Typically, the modem is connected to one of the serial ports on the computer. For your application to communicate with the modem, it must send commands to the appropriate serial port.  
   

@@ -1,37 +1,23 @@
 ---
 title: "Client Application Services Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "client application services, classes"
   - "client application services, about client application services"
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Client Application Services Overview
 Client application services provide simplified access to [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile services from Windows Forms and Windows Presentation Foundation (WPF) applications. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services are included in the Microsoft ASP.NET 2.0 AJAX Extensions, which is included with [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)] and the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]. These services enable multiple Web and Windows-based applications to share user information and user-management functionality from a single server.  
   
  Client application services include client service providers that plug into the Web services extensibility model to enable the following features for Windows-based applications:  
   
--   Simple client configuration. You can enable and configure the login, roles, and profile services by using the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] project designer or by specifying client service providers in your project's App.config file. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+-   Simple client configuration. You can enable and configure the login, roles, and profile services by using the Visual Studio project designer or by specifying client service providers in your project's App.config file. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
 -   Simple programmability. After you have enabled and configured client application services, you can access the service providers indirectly through existing [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] membership, roles, and application settings classes. You can also directly access the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)] classes that implement client application services. However, in most cases, direct access is unnecessary. For more information about the client application services classes, see the "Client Application Services Classes" section of this topic.  
   
 -   Offline support. Windows-based applications often have to operate in occasionally connected environments. When your application is online, the client service providers will cache values retrieved from the server for use when the application is offline.  
   
--   Integration with the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] application settings designer. When you add settings to your project in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you can specify which settings are to be accessed through the client settings service provider.  
+-   Integration with the Visual Studio application settings designer. When you add settings to your project in Visual Studio, you can specify which settings are to be accessed through the client settings service provider.  
   
  The following sections describe these features in more detail. For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
   
@@ -56,9 +42,9 @@ Client application services provide simplified access to [!INCLUDE[ajax_current_
  For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] roles service, see [Using Roles Information with Microsoft Ajax](http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d).  
   
 ## Settings  
- You can use client application services to retrieve user application settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service. The client application services Web settings feature integrates with the application settings feature provided in [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)]. To retrieve Web settings, first generate a `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) for your project by using the **Settings** tab of the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] project designer. On the **Settings** tab, you can use the **Load Web Settings** button to retrieve Web settings and add them to the generated `Settings` class. You can use Web settings configured for use by all authenticated users or by all anonymous users.  
+ You can use client application services to retrieve user application settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service. The client application services Web settings feature integrates with the application settings feature provided in [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)]. To retrieve Web settings, first generate a `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic) for your project by using the **Settings** tab of the Visual Studio project designer. On the **Settings** tab, you can use the **Load Web Settings** button to retrieve Web settings and add them to the generated `Settings` class. You can use Web settings configured for use by all authenticated users or by all anonymous users.  
   
- For more information about application settings, see [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md). For information about how to implement your own settings class instead of generating one in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], see [How to: Create Application Settings](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md). For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service, see [Using Profile Information with Microsoft Ajax](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61).  
+ For more information about application settings, see [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md). For information about how to implement your own settings class instead of generating one in Visual Studio, see [How to: Create Application Settings](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md). For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service, see [Using Profile Information with Microsoft Ajax](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61).  
   
 ## Client Application Services Classes  
  The following table describes the classes that implement the client application services feature.  

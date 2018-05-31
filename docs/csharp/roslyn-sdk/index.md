@@ -1,13 +1,7 @@
 ---
 title: The .NET Compiler Platform SDK (Roslyn APIs)
 description: Learn to use the .NET Compiler Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors.
-keywords: roslyn, analyzer, code fix
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/10/2017
-ms.topic: conceptual
-ms.prod: .net
-ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
@@ -75,14 +69,14 @@ There are three main scenarios for writing analyzers and code fixes:
 
 Many teams have coding standards that are enforced through code reviews
 with other team members. Analyzers and code fixes can make this process
-much more efficient. Code reviews happen when a developer shares his work
-with others on the team. He will have invested all the time needed to
+much more efficient. Code reviews happen when a developer shares their work
+with others on the team. The developer will have invested all the time needed to
 complete a new feature before getting any comments. Weeks may go by
-while he reinforces habits that don't match the team's practices.
+while the developer reinforces habits that don't match the team's practices.
 
-Analyzers run as a developer writes code. He gets immediate feedback that
-encourages following the guidance immediately. He builds habits to write
-compliant code as soon as he begins prototyping. When the feature is
+Analyzers run as a developer writes code. The developer gets immediate feedback that
+encourages following the guidance immediately. The developer builds habits to write
+compliant code as soon as they begin prototyping. When the feature is
 ready for humans to review, all the standard guidance has been enforced.
 
 Teams can build analyzers and code fixes that look for the most common

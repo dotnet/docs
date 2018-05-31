@@ -1,14 +1,6 @@
 ---
 title: "Security Changes in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Allow Partially Trusted Callers attribute"
   - ".NET Framework 4, security changes"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "security-critical code"
   - "code access security, changes"
 ms.assetid: 5e87881c-9c13-4b52-8ad1-e34bb46e8aaa
-caps.latest.revision: 52
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Changes in the .NET Framework
 The most important change to security in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is in strong naming. See [Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md) for a description of those changes.  

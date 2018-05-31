@@ -1,23 +1,10 @@
 ---
 title: "Web Services Generics Serialization Technology Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Web Services Generics Serialization Technology Sample
-[Download Sample](http://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/GenericsSerialization.zip.exe)  
+[Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/GenericsSerialization.zip.exe)  
   
  This sample shows how to use and control the serialization of generics in ASP.NET Web Services.  
   
@@ -68,11 +55,11 @@ ms.workload:
 2.  Type **http://localhost/[virtual directory]/Service.asmx**, where [virtual directory] represents the virtual directory you created when you built the sample.  
   
 ## Remarks  
- The sample displays a default ASP.NET page that contains links to the definition of the Web Service. You can customize the display in addition to modifying the source code for the Web service. For more information, see [Building XML Web Service Clients](http://msdn.microsoft.com/library/c606f3cb-4111-45b4-ae42-9300420fa16c).  
+ The sample displays a default ASP.NET page that contains links to the definition of the Web Service. You can customize the display in addition to modifying the source code for the Web service. For more information, see [Building XML Web Service Clients](https://msdn.microsoft.com/library/c606f3cb-4111-45b4-ae42-9300420fa16c).  
   
 ## See Also  
  <xref:System.Collections.Generic>  
  <xref:System.Web.Services>  
  <xref:System.Xml.Serialization>  
  [Serialization](../../../docs/standard/serialization/index.md)  
- [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)
+ [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)

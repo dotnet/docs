@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Image Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Image control type"
   - "control types, Image"
   - "Image control type"
 ms.assetid: 4e0eeefb-e09b-46d2-b83b-0a7e35543ab8
-caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Image Control Type
 > [!NOTE]

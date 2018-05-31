@@ -1,16 +1,9 @@
 ---
 title: Asynchronous message-based communication
 description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communication
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Asynchronous message-based communication
 
@@ -54,7 +47,7 @@ If a system uses eventual consistency driven by integration events, it is recomm
 
 As noted earlier in the [Challenges and solutions for distributed data management](#challenges-and-solutions-for-distributed-data-management) section, you can use integration events to implement business tasks that span multiple microservices. Thus you will have eventual consistency between those services. An eventually consistent transaction is made up of a collection of distributed actions. At each action, the related microservice updates a domain entity and publishes another integration event that raises the next action within the same end-to-end business task.
 
-An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-19. This publish/subscribe mechanism is not exclusive to the microservice architecture. It is similar to the way [Bounded Contexts](http://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](http://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
+An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-19. This publish/subscribe mechanism is not exclusive to the microservice architecture. It is similar to the way [Bounded Contexts](https://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](https://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
 
 ![](./media/image19.png)
 
@@ -76,7 +69,7 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 -   Using a transactional (DTC-based) queue like MSMQ. (However, this is a legacy approach.)
 
--   Using [transaction log mining](http://www.scoop.it/t/sql-server-transaction-log-mining).
+-   Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
 -   Using full [Event Sourcing](https://msdn.microsoft.com/library/dn589792.aspx) pattern.
 

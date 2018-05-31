@@ -1,21 +1,7 @@
 ---
 title: "&lt;httpTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8b30c065-b32a-4fa3-8eb4-5537a9c6b897
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;httpTransport&gt;
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
@@ -54,7 +40,7 @@ IntegratedWindowsAuthentication: Specifies Windows authentication"
 |---------------|-----------------|  
 |allowCookies|A Boolean value that specifies whether the client accepts cookies and propagates them on future requests. The default is `false`.<br /><br /> You can use this attribute when you interact with ASMX Web services that use cookies. In this way, you can be sure that the cookies returned from the server are automatically copied to all future client requests for that service.|  
 |authenticationScheme|Specifies the protocol used to authenticate client requests being processed by an HTTP listener. Valid values include the following:<br /><br /> -   Digest: Specifies digest authentication.<br />-   Negotiate: Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.<br />-   Ntlm: Specifies NTLM authentication.<br />-   Basic: Specifies basic authentication.<br />-   Anonymous: Specifies anonymous authentication.<br /><br /> The default is Anonymous. This attribute is of type <xref:System.Net.AuthenticationSchemes>. This attribute can only be set once.|  
-|bypassProxyOnLocal|A Boolean value that indicates whether to bypass the proxy server for local addresses. The default is `false`.<br /><br /> A local address is one that is on the local LAN or intranet.<br /><br /> [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] always ignores the proxy if the service address begins with http://localhost.<br /><br /> You should use the host name rather than localhost if you want clients to go through a proxy when talking to services on the same machine.|  
+|bypassProxyOnLocal|A Boolean value that indicates whether to bypass the proxy server for local addresses. The default is `false`.<br /><br /> A local address is one that is on the local LAN or intranet.<br /><br /> Windows Communication Foundation (WCF) always ignores the proxy if the service address begins with http://localhost.<br /><br /> You should use the host name rather than localhost if you want clients to go through a proxy when talking to services on the same machine.|  
 |hostnameComparisonMode|Specifies the HTTP hostname comparison mode used to parse URIs. Valid values are,<br /><br /> -   StrongWildcard: ("+") matches all possible hostnames in the context of the specified scheme, port and relative URI.<br />-   Exact: no wildcards<br />-   WeakWildcard: ("*") matches all possible hostname in the context of the specified scheme, port and relative UIR that have not been matched explicitly or through the strong wildcard mechanism.<br /><br /> The default is StrongWildcard. This attribute is of type `System.ServiceModel.HostnameComparisonMode`.|  
 |keepAliveEnabled|A Boolean value that specifies whether to make a persistent connection to the internet resource.|  
 |maxBufferSize|A positive integer that specifies the maximum size of the buffer. The default is 524288|  
@@ -75,7 +61,7 @@ IntegratedWindowsAuthentication: Specifies Windows authentication"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
- The `httpTransport` element is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] to ensure interoperability with other non-[!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Web services stacks.  
+ The `httpTransport` element is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other non-WCF Web services stacks.  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.HttpTransportElement>  

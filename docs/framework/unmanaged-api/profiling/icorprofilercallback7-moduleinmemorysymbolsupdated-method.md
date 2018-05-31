@@ -1,28 +1,16 @@
 ---
 title: "ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
-  - "ICorProfiler7.ModuleInMemorySymbolsUpdated"
+  - "ICorProfilerCallback7.ModuleInMemorySymbolsUpdated"
 api_location: 
   - "mscorwks.dll"
   - "corprof.idl"
 api_type: 
   - "COM"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method
 [Supported in the .NET Framework 4.6.1 and later versions]  
@@ -38,7 +26,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
 ```  
   
 #### Parameters  
- `moduleId`  
+ [in] `moduleId`  
  The identifier of the in-memory module whose symbol stream is updated.  
   
 ## Remarks  

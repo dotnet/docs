@@ -1,14 +1,6 @@
 ---
 title: "CorDebugGuidToTypeMapping Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: 57dbccd9-b16d-4da3-ae25-7a2cf9adf679
 topic_type: 
   - "apiref"
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugGuidToTypeMapping Structure
 Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding ICorDebugType object.  

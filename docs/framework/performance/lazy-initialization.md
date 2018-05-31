@@ -1,26 +1,14 @@
 ---
 title: "Lazy Initialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "lazy initialization in .NET, introduction"
 ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Lazy Initialization
 *Lazy initialization* of an object means that its creation is deferred until it is first used. (For this topic, the terms *lazy initialization* and *lazy instantiation* are synonymous.) Lazy initialization is primarily used to improve performance, avoid wasteful computation, and reduce program memory requirements. These are the most common scenarios:  

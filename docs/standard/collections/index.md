@@ -1,9 +1,7 @@
 ---
 title: "Collections and Data Structures"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "grouping data in collections"
   - "objects [.NET Framework], grouping in collections"
@@ -12,13 +10,8 @@ helpviewer_keywords:
   - "Collections classes"
   - "collections [.NET Framework]"
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
-caps.latest.revision: 36
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Collections and Data Structures
 Similar data can often be handled more efficiently when stored and manipulated as a collection. You can use the <xref:System.Array?displayProperty=nameWithType> class or the classes in the <xref:System.Collections>, <xref:System.Collections.Generic>, <xref:System.Collections.Concurrent>, System.Collections.Immutable namespaces to add, remove, and modify either individual elements or a range of elements in a collection.  
@@ -34,7 +27,7 @@ Similar data can often be handled more efficiently when stored and manipulated a
   
 -   **The ability to enumerate the collection**  
   
-     .NET Framework collections either implement <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> to enable the collection to be iterated through. An enumerator can be thought of as a movable pointer to any element in the collection. The [foreach, in](~/docs/csharp/language-reference/keywords/foreach-in.md) statement  and the [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) use the enumerator exposed by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method and hide the complexity of manipulating the enumerator. In addition, any collection that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> is considered a *queryable type* and can be queried with LINQ. LINQ queries provide a common pattern for accessing data. They are typically more concise and readable than standard `foreach` loops, and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9), [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md) and [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+     .NET Framework collections either implement <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> to enable the collection to be iterated through. An enumerator can be thought of as a movable pointer to any element in the collection. The [foreach, in](~/docs/csharp/language-reference/keywords/foreach-in.md) statement  and the [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) use the enumerator exposed by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method and hide the complexity of manipulating the enumerator. In addition, any collection that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> is considered a *queryable type* and can be queried with LINQ. LINQ queries provide a common pattern for accessing data. They are typically more concise and readable than standard `foreach` loops, and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9), [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md) and [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
 -   **The ability to copy the collection contents to an array**  
   

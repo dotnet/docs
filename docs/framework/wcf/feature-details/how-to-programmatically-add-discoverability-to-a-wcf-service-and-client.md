@@ -1,24 +1,10 @@
 ---
 title: "How to: Programmatically Add Discoverability to a WCF Service and Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Programmatically Add Discoverability to a WCF Service and Client
-This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service discoverable. It is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample.  
+This topic explains how to make a Windows Communication Foundation (WCF) service discoverable. It is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample.  
   
 ### To configure the existing Self-Host service sample for Discovery  
   
@@ -100,7 +86,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
     }  
     ```  
   
-     This tells [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] that the <xref:System.ServiceModel.Discovery.DiscoveryClient> class should use the standard UDP discovery endpoint to send and receive discovery messages.  
+     This tells WCF that the <xref:System.ServiceModel.Discovery.DiscoveryClient> class should use the standard UDP discovery endpoint to send and receive discovery messages.  
   
 8.  On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.  
   
@@ -228,7 +214,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
     ```  
   
 ## Example  
- The following is a listing of the code for this sample. Because this code is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the Self-Host sample, see [Setup Instructions](http://go.microsoft.com/fwlink/?LinkId=145522).  
+ The following is a listing of the code for this sample. Because this code is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. For more information about the Self-Host sample, see [Setup Instructions](http://go.microsoft.com/fwlink/?LinkId=145522).  
   
 ```csharp  
 // Service.cs  

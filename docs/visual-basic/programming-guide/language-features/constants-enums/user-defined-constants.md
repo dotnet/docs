@@ -1,13 +1,6 @@
 ---
 title: "User-Defined Constants (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "constants [Visual Basic], circular references"
   - "Const statement [Visual Basic], user-defined constants"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "constants [Visual Basic], user-defined"
   - "circular references between constants [Visual Basic]"
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # User-Defined Constants (Visual Basic)
 A constant is a meaningful name that takes the place of a number or string that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants that are defined by the controls or components you work with, or you can create your own. Constants you create yourself are described as *user-defined*.  
@@ -57,7 +47,7 @@ A constant is a meaningful name that takes the place of a number or string that 
  [!code-vb[VbEnumsTask#16](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_4.vb)]  
 [!code-vb[VbEnumsTask#17](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_5.vb)]  
   
- If a cycle occurs, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] generates a compiler error.  
+ If a cycle occurs, Visual Basic generates a compiler error.  
   
 ## See Also  
  [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  

@@ -1,19 +1,10 @@
 ---
 title: Developing Libraries with Cross Platform Tools
 description: Learn how to create libraries for .NET using .NET Core CLI tools.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
 ms.date: 05/01/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
-ms.workload: 
-  - dotnetcore
 ---
-
 # Developing Libraries with Cross Platform Tools
 
 This article covers how to write libraries for .NET using cross-platform CLI tools. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](libraries-with-vs.md).

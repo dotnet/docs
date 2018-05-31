@@ -1,17 +1,8 @@
 ---
 title: Namespaces (F#)
 description: Learn how an F# namespace allows you to organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: ea42156f-e1b9-4535-9383-b45f46f3f7ca
 ---
-
 # Namespaces
 
 A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.
@@ -92,23 +83,24 @@ type Banana(orientation : Orientation) =
     member val IsPeeled = false with get, set
     member val Orientation = orientation with get, set
     member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
-    
+
     member self.Peel() = BananaHelpers.peel self // Note the dependency on the BananaHelpers module.
     member self.SqueezeJuiceOut() = raise (DontSqueezeTheBananaException self) // This member depends on the exception above.
 
 module BananaHelpers =
-    let peel (b : Banana) =
-        let flip banana =
+    let peel (b: Banana) =
+        let flip (banana: Banana) =
             match banana.Orientation with
             | Up -> 
                 banana.Orientation <- Down
                 banana
             | Down -> banana
 
-        let peelSides banana =
-            for side in banana.Sides do
-                if side = Unpeeled then
-                    side <- Peeled
+        let peelSides (banana: Banana) =
+            banana.Sides
+            |> List.map (function
+                         | Unpeeled -> Peeled
+                         | Peeled -> Peeled)
 
         match b.Orientation with
         | Up ->   b |> flip |> peelSides

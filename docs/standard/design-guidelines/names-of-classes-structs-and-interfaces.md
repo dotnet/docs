@@ -1,14 +1,6 @@
 ---
 title: "Names of Classes, Structs, and Interfaces"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "type names, guidelines"
   - "classes [.NET Framework], names"
@@ -20,13 +12,8 @@ helpviewer_keywords:
   - "interfaces [.NET Framework], names"
   - "generic type parameters"
 ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Names of Classes, Structs, and Interfaces
 The naming guidelines that follow apply to general type naming.  
@@ -106,7 +93,7 @@ public interface ISessionChannel<TSession> where TSession : ISession{
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
- *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  

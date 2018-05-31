@@ -1,20 +1,10 @@
 ---
 title: "&lt;summary&gt; (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "<summary> XML tag"
   - "summary XML tag"
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;summary&gt; (Visual Basic)
 Specifies the summary of the member.  

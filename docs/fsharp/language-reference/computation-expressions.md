@@ -1,17 +1,8 @@
 ---
 title: Computation Expressions (F#)
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: acabbf5d-fbb8-479f-894c-7251bf16c8c3 
 ---
-
 # Computation Expressions
 
 Computation expressions in F# provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. They can be used to provide a convenient syntax for *monads*, a functional programming feature that can be used to manage data, control, and side effects in functional programs.

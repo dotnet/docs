@@ -1,19 +1,7 @@
 ---
 title: "Shape of WordprocessingML Documents (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Shape of WordprocessingML Documents (C#)
 This topic introduces the XML shape of a WordprocessingML document.  

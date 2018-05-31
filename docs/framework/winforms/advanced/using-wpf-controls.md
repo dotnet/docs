@@ -1,24 +1,10 @@
 ---
 title: "Using WPF Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms Designer [Windows Forms], interoperability with WPF"
   - "interoperability [WPF]"
 ms.assetid: 03c85dce-26ad-44cd-bc1d-8e0cb56de096
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using WPF Controls
 You can use Windows Presentation Foundation (WPF) controls in your Windows Forms-based applications. Although these are two different view technologies, they interoperate smoothly.  
@@ -61,4 +47,4 @@ You can use Windows Presentation Foundation (WPF) controls in your Windows Forms
  Describes interoperation between the Windows Presentation Foundation and Windows Forms technologies.  
   
  [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
- Describes how to design Windows Presentation Foundation controls in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].
+ Describes how to design Windows Presentation Foundation controls in Visual Studio.

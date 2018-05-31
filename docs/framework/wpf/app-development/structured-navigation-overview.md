@@ -1,26 +1,12 @@
 ---
 title: "Structured Navigation Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "structured navigation [WPF]"
 ms.assetid: 025d30ef-fec5-436d-ad7a-5d5483331c26
-caps.latest.revision: 43
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Structured Navigation Overview
 Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)], a <xref:System.Windows.Controls.Frame>, or a <xref:System.Windows.Navigation.NavigationWindow> is composed of pages that can be identified by pack [!INCLUDE[TLA#tla_uri#plural](../../../../includes/tlasharptla-urisharpplural-md.md)] and navigated to by hyperlinks. The structure of pages and the ways in which they can be navigated, as defined by hyperlinks, is known as a navigation topology. Such a topology suits a variety of application types, particularly those that navigate through documents. For such applications, the user can navigate from one page to another page without either page needing to know anything about the other.  

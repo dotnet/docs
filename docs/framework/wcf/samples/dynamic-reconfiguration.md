@@ -1,31 +1,17 @@
 ---
 title: "Dynamic Reconfiguration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b20786ae-cce6-4f91-b6cb-9cae116faf8b
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dynamic Reconfiguration
-This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] routing service. The routing service is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] component that makes it easy to include a content-based router in your application. This sample adapts the standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Calculator Sample to communicate using the routing service. This sample shows how the routing service can be dynamically reconfigured during runtime.  
+This sample demonstrates the Windows Communication Foundation (WCF) routing service. The routing service is a WCF component that makes it easy to include a content-based router in your application. This sample adapts the standard WCF Calculator Sample to communicate using the routing service. This sample shows how the routing service can be dynamically reconfigured during runtime.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\RoutingServices\DynamicReconfiguration`  
   
@@ -40,7 +26,7 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
   
 2.  To open **Solution Explorer**, select **Solution Explorer** from the **View** menu.  
   
-3.  Press **F5** or **CTRL+SHIFT+B** in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+3.  Press **F5** or **CTRL+SHIFT+B** in Visual Studio.  
   
     1.  If you would like to auto-launch the necessary projects when you press **F5**, right-click the solution and select **Properties**. Select the **Startup Project** node under **Common Properties** in the left pane. Select the **Multiple Startup Projects**  radio button and set all of the projects to have the **Start** action.  
   

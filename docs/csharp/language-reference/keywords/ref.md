@@ -1,18 +1,12 @@
 ---
 title: "ref (C# Reference)"
 ms.date: 03/06/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
 helpviewer_keywords: 
   - "parameters [C#], ref"
   - "ref keyword [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ref (C# Reference)
 
@@ -125,9 +119,10 @@ When the caller stores the value returned by the `GetBookByTitle` method as a re
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)  
- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+## See also  
+ [Reference semantics with value types](../../reference-semantics-with-value-types.md)  
+ [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)  
+ [Method Parameters](method-parameters.md)  
+ [C# Reference](../index.md)  
+ [C# Programming Guide](../../programming-guide/index.md)  
+ [C# Keywords](index.md)

@@ -1,13 +1,6 @@
 ---
 title: "Composite Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 04/25/2017
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
   - "composite types [Visual Basic]"
@@ -18,12 +11,9 @@ helpviewer_keywords:
   - "classes [Visual Basic], composite types"
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Composite Data Types (Visual Basic)
-In addition to the elementary data types [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies, you can also assemble items of different types to create *composite data types* such as structures, arrays, and classes. You can build composite data types from elementary types and from other composite types. For example, you can define an array of structure elements, or a structure with array members.  
+In addition to the elementary data types Visual Basic supplies, you can also assemble items of different types to create *composite data types* such as structures, arrays, and classes. You can build composite data types from elementary types and from other composite types. For example, you can define an array of structure elements, or a structure with array members.  
   
 ## Data Types  
  A composite type is different from the data type of any of its components. For example, an array of `Integer` elements is not of the `Integer` data type.  
@@ -31,7 +21,7 @@ In addition to the elementary data types [!INCLUDE[vbprvb](~/includes/vbprvb-md.
  An array data type is normally represented using the element type, parentheses, and commas as necessary. For example, a one-dimensional array of `String` elements is represented as `String()`, and a two-dimensional array of `Boolean` elements is represented as `Boolean(,)`.  
   
 ## Structure Types  
- There is no single data type comprising all structures. Instead, each definition of a structure represents a unique data type, even if two structures define identical elements in the same order. However, if you create two or more instances of the same structure, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] considers them to be of the same data type.  
+ There is no single data type comprising all structures. Instead, each definition of a structure represents a unique data type, even if two structures define identical elements in the same order. However, if you create two or more instances of the same structure, Visual Basic considers them to be of the same data type.  
   
 ## Tuples
 

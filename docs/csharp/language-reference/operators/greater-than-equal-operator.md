@@ -1,19 +1,12 @@
 ---
 title: "&gt;= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - ">=_CSharpKeyword"
 helpviewer_keywords: 
   - "greater than or equal to operator (>=) [C#]"
   - ">= operator [C#]"
 ms.assetid: 0db4dcaf-56a3-4884-a7ad-35f64978a58d
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &gt;= Operator (C# Reference)
 All numeric and enumeration types define a "greater than or equal" relational operator, `>=` that returns `true` if the first operand is greater than or equal to the second, `false` otherwise.  

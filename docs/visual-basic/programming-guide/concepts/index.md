@@ -1,14 +1,7 @@
 ---
 title: "Programming Concepts (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Programming Concepts (Visual Basic)
 This section explains programming concepts in the Visual Basic language.  

@@ -1,18 +1,11 @@
 ---
 title: "#pragma warning (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#pragma warning"
 helpviewer_keywords: 
   - "#pragma warning [C#]"
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #pragma warning (C# Reference)
 `#pragma warning` can enable or disable certain warnings.  

@@ -1,19 +1,7 @@
 ---
 title: "Using Activity Delegates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e33cf876-8979-440b-9b23-4a12d1139960
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Activity Delegates
 Activity delegates enable activity authors to expose callbacks with specific signatures, for which users of the activity can provide activity-based handlers. Two types of activity delegates are available: <xref:System.Activities.ActivityAction%601> is used to define activity delegates that do not have a return value, and <xref:System.Activities.ActivityFunc%601> is used to define activity delegates that do have a return value.  
@@ -33,7 +21,7 @@ The examples in this topic use object initialization syntax. Object initializati
   
  [!code-csharp[CFX_ActivityExample#7](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#7)]  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](http://go.microsoft.com/fwlink/?LinkId=161015) and [How to: Declare an Object by Using an Object Initializer](http://go.microsoft.com/fwlink/?LinkId=161016).  
+ For more information about object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](http://go.microsoft.com/fwlink/?LinkId=161015) and [How to: Declare an Object by Using an Object Initializer](http://go.microsoft.com/fwlink/?LinkId=161016).  
   
  In the following example, a <xref:System.Activities.Statements.TryCatch> activity is used in a workflow. An <xref:System.ApplicationException> is thrown by the workflow, and is handled by a <xref:System.Activities.Statements.Catch%601> activity. The handler for the <xref:System.Activities.Statements.Catch%601> activity's activity action is a <xref:System.Activities.Statements.WriteLine> activity, and the exception detail is flowed through to it using the `ex` <xref:System.Activities.DelegateInArgument%601>.  
   
@@ -58,7 +46,7 @@ The examples in this topic use object initialization syntax. Object initializati
   
  [!code-csharp[CFX_ActivityExample#4](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#4)]  
   
- To use the `TextGenerator` activity with the `WriteRandomText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler%2A>.  
+ To use the `TextGenerator` activity with the `WriteFillerText` activity, specify it as the <xref:System.Activities.ActivityDelegate.Handler%2A>.  
   
  [!code-csharp[CFX_ActivityExample#5](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]  
   

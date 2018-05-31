@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the MenuItem Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Menu Item"
   - "Menu Item control type"
   - "UI Automation, Menu Item control type"
 ms.assetid: 54bce311-3d23-40b9-ba90-1bdbdaf8fbba
-caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the MenuItem Control Type
 > [!NOTE]

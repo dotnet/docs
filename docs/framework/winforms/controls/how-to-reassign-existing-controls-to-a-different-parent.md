@@ -1,25 +1,11 @@
 ---
 title: "How to: Reassign Existing Controls to a Different Parent"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "container controls [Windows Forms], Windows Forms"
   - "layout [Windows Forms], resizing"
   - "layout [Windows Forms], child controls"
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Reassign Existing Controls to a Different Parent
 You can assign controls that exist on your form to a new container control.  

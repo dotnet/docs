@@ -1,26 +1,12 @@
 ---
 title: "Walkthrough: Creating Direct3D9 Content for Hosting in WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "cpp"
 helpviewer_keywords: 
   - "WPF [WPF], creating Direct3D9 content"
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 286e98bc-1eaa-4b5e-923d-3490a9cca5fc
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Creating Direct3D9 Content for Hosting in WPF
 This walkthrough shows how to create Direct3D9 content that is suitable for hosting in a Windows Presentation Foundation (WPF) application. For more information on hosting Direct3D9 content in WPF applications, see [WPF and Direct3D9 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md).  

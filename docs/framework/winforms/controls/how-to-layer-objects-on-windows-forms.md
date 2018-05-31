@@ -1,14 +1,6 @@
 ---
 title: "How to: Layer Objects on Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "z-order"
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Layer Objects on Windows Forms
 When you create a complex user interface, or work with a multiple document interface (MDI) form, you will often want to layer both controls and child forms to create more complex user interfaces (UI). To move and keep track of controls and windows within the context of a group, you manipulate their z-order. *Z-order* is the visual layering of controls on a form along the form's z-axis (depth). The window at the top of the z-order overlaps all other windows. All other windows overlap the window at the bottom of the z-order.  

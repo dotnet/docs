@@ -1,14 +1,6 @@
 ---
 title: "How to: Play a System Sound from a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "sounds [Windows Forms], playing"
   - "examples [Windows Forms], sounds"
 ms.assetid: afb206ff-4824-4804-a8d4-185bf5ad8e7c
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Play a System Sound from a Windows Form
 The following code example plays the `Exclamation` system sound at run time. For more information about system sounds, see <xref:System.Media.SystemSounds>.  

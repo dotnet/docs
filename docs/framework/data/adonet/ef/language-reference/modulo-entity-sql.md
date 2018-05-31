@@ -1,21 +1,7 @@
 ---
 title: "(Modulo) (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 243ddc4f-3c4e-41e1-a3ef-4ed39e36248b
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # (Modulo) (Entity SQL)
 Returns the remainder of one expression divided by another.  

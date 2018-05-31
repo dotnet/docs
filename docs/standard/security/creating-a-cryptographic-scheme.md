@@ -1,24 +1,13 @@
 ---
 title: "Creating a Cryptographic Scheme"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "encryption [.NET Framework], creating cryptographic schemes"
   - "cryptography [.NET Framework], creating cryptographic schemes"
 ms.assetid: d40c509f-5a5e-46cc-94cb-a951e9ab6843
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Creating a Cryptographic Scheme
 The cryptographic components of the .NET Framework can be combined to create different schemes to encrypt and decrypt data.  

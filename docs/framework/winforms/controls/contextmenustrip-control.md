@@ -1,25 +1,11 @@
 ---
 title: "ContextMenuStrip Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "context menus"
   - "ContextMenuStrip control [Windows Forms]"
   - "shortcut menus"
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ContextMenuStrip Control
 The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut menu that you associate with a control.  

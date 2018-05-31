@@ -1,18 +1,11 @@
 ---
 title: "#error (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#error"
 helpviewer_keywords: 
   - "#error directive [C#]"
 ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #error (C# Reference)
 `#error` lets you generate an error from a specific location in your code. For example:  

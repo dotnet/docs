@@ -1,16 +1,9 @@
 ---
 title: Subscribing to events
 description: .NET Microservices Architecture for Containerized .NET Applications | Subscribing to events
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Subscribing to events
 
@@ -107,7 +100,7 @@ As mentioned earlier in the architecture section, you can have several approache
 
 -   Using the full [Event Sourcing pattern](https://msdn.microsoft.com/library/dn589792.aspx).
 
--   Using [transaction log mining](http://www.scoop.it/t/sql-server-transaction-log-mining).
+-   Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
 -   Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/). This is a transactional table to store the integration events (extending the local transaction).
 
@@ -343,7 +336,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson)
 
 -   **Chris Richardson. Event Sourcing pattern**
-    [*http://microservices.io/patterns/data/event-sourcing.html*](http://microservices.io/patterns/data/event-sourcing.html)
+    [*https://microservices.io/patterns/data/event-sourcing.html*](https://microservices.io/patterns/data/event-sourcing.html)
 
 -   **Introducing Event Sourcing**
     [*https://msdn.microsoft.com/library/jj591559.aspx*](https://msdn.microsoft.com/library/jj591559.aspx)

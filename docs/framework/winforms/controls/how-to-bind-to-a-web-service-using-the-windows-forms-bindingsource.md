@@ -1,14 +1,6 @@
 ---
 title: "How to: Bind to a Web Service Using the Windows Forms BindingSource"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], binding to Web service"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: ee261207-4573-4cb9-a8cb-5185037e0fba
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to a Web Service Using the Windows Forms BindingSource
 If you want to bind a Windows Form control to the results obtained from calling an XML Web service, you can use a <xref:System.Windows.Forms.BindingSource> component. This procedure is similar to binding a <xref:System.Windows.Forms.BindingSource> component to a type. You must create a client-side proxy that contains the methods and types exposed by the Web service. You generate a client-side proxy from the Web service (.asmx) itself, or its Web Services Description Language (WSDL) file. Additionally, your client-side proxy must expose the fields of complex types used by the Web service as public properties. You then bind the <xref:System.Windows.Forms.BindingSource> to one of the types exposed in the Web service proxy.  
@@ -40,7 +26,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
   
 4.  Using the WSDL tool, enter `wsdl` and the URL for the .asmx or WSDL file for the Web service, followed by the namespace of your application, and optionally the language you are working in.  
   
-     The following code example uses the Web service located at http://webservices.eraserver.net/zipcoderesolver/zipcoderesolver.asmx. For example, for C# type `wsdl http://webservices.eraserver.net.zipcoderesolver/zipcoderesolver.asmx /n:BindToWebService`, or for Visual Basic type `wsdl http://webservices.eraserver.net.zipcoderesolver/zipcoderesolver.asmx /n:BindToWebService /language:VB`. Passing the path as an argument to the WSDL tool will generate a client-side proxy in the same directory and namespace as your application, in the specified language. If you are using [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)], add the file to your project.  
+     The following code example uses the Web service located at http://webservices.eraserver.net/zipcoderesolver/zipcoderesolver.asmx. For example, for C# type `wsdl http://webservices.eraserver.net.zipcoderesolver/zipcoderesolver.asmx /n:BindToWebService`, or for Visual Basic type `wsdl http://webservices.eraserver.net.zipcoderesolver/zipcoderesolver.asmx /n:BindToWebService /language:VB`. Passing the path as an argument to the WSDL tool will generate a client-side proxy in the same directory and namespace as your application, in the specified language. If you are using Visual Studio, add the file to your project.  
   
 5.  Select a type in the client-side proxy to bind to.  
   
@@ -78,7 +64,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
   
 -   References to the System, System.Drawing, System.Web.Services, System.Windows.Forms and System.Xml assemblies.  
   
- For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
+ For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
  [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  

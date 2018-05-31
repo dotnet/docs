@@ -1,12 +1,6 @@
 ---
 title: "Comparison Operators (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.<>"
   - "vb.>="
@@ -36,9 +30,6 @@ helpviewer_keywords:
   - "Is operator [Visual Basic]"
   - "comparison operators [Visual Basic], Visual Basicl"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Comparison Operators (Visual Basic)
 The following are the comparison operators defined in Visual Basic.  

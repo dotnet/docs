@@ -1,19 +1,7 @@
 ---
 title: "How to: Sort Elements on Multiple Keys (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 3b2760b6-d607-4ac7-b784-5c6524e2a0e0
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Sort Elements on Multiple Keys (C#)
 This topic shows how to sort on multiple keys.  

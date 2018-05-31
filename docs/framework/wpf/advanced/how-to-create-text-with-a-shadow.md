@@ -1,25 +1,11 @@
 ---
 title: "How to: Create Text with a Shadow"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "typography [WPF], shadow effects"
   - "shadow effects in text [WPF]"
   - "text [WPF], shadowed"
 ms.assetid: 6ab9c754-6001-4708-b479-5367f2fd1a35
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Text with a Shadow
 The examples in this section show how to create a shadow effect for displayed text.  

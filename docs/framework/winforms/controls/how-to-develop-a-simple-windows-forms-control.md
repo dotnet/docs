@@ -1,14 +1,6 @@
 ---
 title: "How to: Develop a Simple Windows Forms Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], creating simple controls using code"
   - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Develop a Simple Windows Forms Control
 This section walks you through the key steps for authoring a custom Windows Forms control. The simple control developed in this walkthrough allows the alignment of its <xref:System.Windows.Forms.Control.Text%2A> property to be changed. It does not raise or handle events.  

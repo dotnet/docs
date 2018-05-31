@@ -1,19 +1,10 @@
 ---
 title: "Changes to the System.Uri namespace in Version 2.0"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 35883fe9-2d09-4d8b-80ca-cf23a941e459
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Changes to the System.Uri namespace in Version 2.0
 Several changes were made to the <xref:System.Uri?displayProperty=nameWithType> class. These changes fixed incorrect behavior, enhanced usability, and enhanced security.  

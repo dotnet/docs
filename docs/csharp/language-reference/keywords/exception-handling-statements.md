@@ -1,16 +1,9 @@
 ---
 title: "Exception Handling Statements (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "keywords [C#], exception handling"
 ms.assetid: 6d0323a3-3164-411c-9b84-a3606bd0e13c
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Exception Handling Statements (C# Reference)
 C# provides built-in support for handling anomalous situations, known as exceptions, which may occur during the execution of your program. These exceptions are handled by code that is outside the normal flow of control.  

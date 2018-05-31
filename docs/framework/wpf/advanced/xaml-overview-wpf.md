@@ -1,14 +1,6 @@
 ---
 title: "XAML Overview (WPF)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -27,12 +19,6 @@ helpviewer_keywords:
   - "Extensible Application Markup Language (see XAML)"
   - "attribute syntax [XAML]"
 ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
-caps.latest.revision: 57
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Overview (WPF)
 This topic describes the features of the XAML language and demonstrates how you can use XAML to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic specifically describes XAML as implemented by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. XAML itself is a larger language concept than [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
@@ -41,7 +27,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
 <a name="what_is_xaml"></a>   
 ## What is XAML?  
- XAML is a declarative markup language. As applied to the [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] programming model, XAML simplifies creating a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] for a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application. You can create visible [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements in the declarative XAML markup, and then separate the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] definition from the run-time logic by using code-behind files, joined to the markup through partial class definitions. XAML directly represents the instantiation of objects in a specific set of backing types defined in assemblies. This is unlike most other markup languages, which are typically an interpreted language without such a direct tie to a backing type system. XAML enables a workflow where separate parties can work on the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] and the logic of an application, using potentially different tools.  
+ XAML is a declarative markup language. As applied to the .NET Framework programming model, XAML simplifies creating a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] for a .NET Framework application. You can create visible [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements in the declarative XAML markup, and then separate the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] definition from the run-time logic by using code-behind files, joined to the markup through partial class definitions. XAML directly represents the instantiation of objects in a specific set of backing types defined in assemblies. This is unlike most other markup languages, which are typically an interpreted language without such a direct tie to a backing type system. XAML enables a workflow where separate parties can work on the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] and the logic of an application, using potentially different tools.  
   
  When represented as text, XAML files are XML files that generally have the `.xaml` extension. The files can be encoded by any XML encoding, but encoding as UTF-8 is typical.  
   
@@ -257,7 +243,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
 <a name="events_and_xaml_codebehind"></a>   
 ## Events and XAML Code-Behind  
- Most [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications consist of both XAML markup and code-behind. Within a project, the XAML is written as a `.xaml` file, and a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] language such as [!INCLUDE[TLA#tla_visualb](../../../../includes/tlasharptla-visualb-md.md)] or [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] is used to write a code-behind file. When a XAML file is markup compiled as part of the WPF programming and application models, the location of the XAML code-behind file for a XAML file is identified by specifying a namespace and class as the `x:Class` attribute of the root element of the XAML.  
+ Most [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications consist of both XAML markup and code-behind. Within a project, the XAML is written as a `.xaml` file, and a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] language such as Microsoft Visual Basic or C# is used to write a code-behind file. When a XAML file is markup compiled as part of the WPF programming and application models, the location of the XAML code-behind file for a XAML file is identified by specifying a namespace and class as the `x:Class` attribute of the root element of the XAML.  
   
  In the examples so far, you have seen several buttons, but none of these buttons had any logical behavior associated with them yet. The primary application-level mechanism for adding a behavior for an object element is to use an existing event of the element class, and to write a specific handler for that event that is invoked when that event is raised at run time. The event name and the name of the handler to use are specified in the markup, whereas the code that implements your handler is defined in the code-behind.  
   

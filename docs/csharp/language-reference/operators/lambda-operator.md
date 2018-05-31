@@ -1,18 +1,12 @@
 ---
 title: "=&gt; Operator (C# Reference)"
 ms.date: 10/02/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 
   - "lambda operator [C#]"
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # =&gt; Operator (C# Reference)
 

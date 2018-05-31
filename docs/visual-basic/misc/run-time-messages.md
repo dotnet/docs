@@ -1,20 +1,13 @@
 ---
 title: "Visual Basic Run-Time Messages"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic], run-time"
   - "run-time errors [Visual Basic], Visual Basic"
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Run-Time Messages
-This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at run time.  
+This section contains the Visual Basic error messages that occur at run time.  
   
  [\<address> is not a valid remote file address](../../visual-basic/misc/address-is-not-a-valid-remote-file-address.md)  
   

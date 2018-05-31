@@ -1,14 +1,6 @@
 ---
 title: "How to: Save Files with the Windows Forms RichTextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - ".rtf files [Windows Forms], saving in RichTextBox control"
   - "text files [Windows Forms], saving from RichTextBox control"
 ms.assetid: 4a58ec19-84d1-4383-9110-298c06adcfca
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Save Files with the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the information it displays in one of several formats:  

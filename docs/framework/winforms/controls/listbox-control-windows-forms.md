@@ -1,14 +1,6 @@
 ---
 title: "ListBox Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListBox control [Windows Forms]"
   - "list controls [Windows Forms], Windows Forms"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "list items [Windows Forms], Windows Forms controls that display"
   - "list boxes"
 ms.assetid: b0172473-c5f2-411e-aaa4-c8f17cb5eed4
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ListBox Control (Windows Forms)
 A Windows Forms `ListBox` control displays a list of items from which the user can select one or more.  

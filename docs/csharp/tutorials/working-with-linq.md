@@ -1,14 +1,7 @@
 ---
 title: Working with LINQ
 description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 03/28/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ---
 
@@ -203,7 +196,7 @@ Run the sample, and see how the deck rearranges on each shuffle, until it return
 
 ## Optimizations
 
-The sample you've built so far executes an *in shuffle*, where the top and bottom cards stay the same on each run. Let's make one change, and run an *out shuffle*, where all 52 cards change position. For an out shuffle, you interleave the deck so that the first card in the bottom half becomes the first card in the deck. That means the last card in the top half becomes the bottom card. That's just a one line change. Update the call to shuffle to change the order of the top and bottom halves of the deck:
+The sample you've built so far executes an *out shuffle*, where the top and bottom cards stay the same on each run. Let's make one change, and run an *in shuffle*, where all 52 cards change position. For an in shuffle, you interleave the deck so that the first card in the bottom half becomes the first card in the deck. That means the last card in the top half becomes the bottom card. That's just a one line change. Update the call to shuffle to change the order of the top and bottom halves of the deck:
 
 ```csharp
 shuffle = shuffle.Skip(26).InterleaveSequenceWith(shuffle.Take(26));
@@ -267,13 +260,13 @@ public static void Main(string[] args)
 }
 ```
 
-Notice that you don't log every time you access a query. You log only when you create the original query. The program still takes a long time to run, but now you can see why. If you run out of patience running the outer shuffle with logging turned on, switch back to the inner shuffle. You'll still see the lazy evaluation effects. In one run, it executes 2592 queries, including all the value and suit generation.
+Notice that you don't log every time you access a query. You log only when you create the original query. The program still takes a long time to run, but now you can see why. If you run out of patience running the inner shuffle with logging turned on, switch back to the outer shuffle. You'll still see the lazy evaluation effects. In one run, it executes 2592 queries, including all the value and suit generation.
 
 There is an easy way to update this program to avoid all those executions. There are LINQ methods `ToArray()` and `ToList()` that cause the query to run, and store the results in an array or a list, respectively. You use these methods to cache the data results of a query rather than execute the source query again.  Append the queries that generate the card decks with a call to `ToArray()` and run the query again:
 
 [!CODE-csharp[Main](../../../samples/csharp/getting-started/console-linq/Program.cs?name=snippet1)]
 
-Run again, and the inner shuffle is down to 30 queries. Run again with the outer shuffle and you'll see similar improvements. (It now executes 162 queries).
+Run again, and the outer shuffle is down to 30 queries. Run again with the inner shuffle and you'll see similar improvements. (It now executes 162 queries).
 
 Don't misinterpret this example by thinking that all queries should run eagerly. This example is designed to highlight the use cases where lazy evaluation can cause performance difficulties. That's because each new arrangement of the deck of cards is built from the previous arrangement. Using lazy evaluation means each new deck configuration is built from the original deck, even executing the code that built the `startingDeck`. That causes a large amount of extra work. 
 
@@ -327,4 +320,4 @@ Compile and run again. The output is a little cleaner, and the code is a bit mor
 
 This sample showed you some of the methods used in LINQ, how to create your own methods that will be easily used with LINQ enabled code. It also showed you the differences between lazy and eager evaluation, and the effect that decision can have on performance.
 
-You learned a bit about one magician's technique. Magicians use the faro shuffle because they can control where every card moves in the deck. In some tricks, the magician has an audience member place a card on top of the deck, and shuffles a few times, knowing where that card goes. Other illusions require the deck set a certain way. A magician will set the deck prior to performing the trick. Then she will shuffle the deck 5 times using an inner shuffle. On stage, she can show what looks like a random deck, shuffle it 3 more times, and have the deck set exactly how she wants.
+You learned a bit about one magician's technique. Magicians use the faro shuffle because they can control where every card moves in the deck. In some tricks, the magician has an audience member place a card on top of the deck, and shuffles a few times, knowing where that card goes. Other illusions require the deck set a certain way. A magician will set the deck prior to performing the trick. Then she will shuffle the deck 5 times using an outer shuffle. On stage, she can show what looks like a random deck, shuffle it 3 more times, and have the deck set exactly how she wants.

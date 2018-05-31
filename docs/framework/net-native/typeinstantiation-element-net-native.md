@@ -1,21 +1,9 @@
 ---
 title: "&lt;TypeInstantiation&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;TypeInstantiation&gt; Element (.NET Native)
 Applies runtime reflection policy to a constructed generic type.  

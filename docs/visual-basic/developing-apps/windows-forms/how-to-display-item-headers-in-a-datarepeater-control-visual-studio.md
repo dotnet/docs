@@ -1,18 +1,10 @@
 ---
 title: "How to: Display Item Headers in a DataRepeater Control (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataRepeater, item headers"
   - "DataRepeater, selection indicators"
 ms.assetid: 37321447-0ffa-43e1-bdc9-0480e392b90f
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Display Item Headers in a DataRepeater Control (Visual Studio)
 The item header in a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control provides a visual indicator when a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItem> is selected. When the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyle%2A> property is set to <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles.Vertical> (the default), the item header is displayed to the left of each item. When the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyle%2A> property is set to <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles.Horizontal>, the item header is displayed at the top of each item.  

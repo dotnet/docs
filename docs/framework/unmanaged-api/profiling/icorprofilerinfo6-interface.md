@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo6 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorProfilerInfo6"
 api_location: 
@@ -16,12 +8,8 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: 6f2bb148-1e2b-4e45-a5a5-0ceddc40064b
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo6 Interface
 [Supported in the .NET Framework 4.6 and later versions]  

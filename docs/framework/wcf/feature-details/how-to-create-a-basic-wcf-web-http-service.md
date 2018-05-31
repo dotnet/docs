@@ -1,27 +1,13 @@
 ---
 title: "How to: Create a Basic WCF Web HTTP Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 877662d3-d372-4e08-b417-51f66a0095cd
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Basic WCF Web HTTP Service
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to create a service that exposes a Web endpoint. Web endpoints send data by XML or JSON, there is no SOAP envelope. This topic demonstrates how to expose such an endpoint.  
+Windows Communication Foundation (WCF) allows you to create a service that exposes a Web endpoint. Web endpoints send data by XML or JSON, there is no SOAP envelope. This topic demonstrates how to expose such an endpoint.  
   
 > [!NOTE]
 >  The only way to secure a Web endpoint is to expose it through HTTPS, using transport security. When using message-based security, security information is usually placed in SOAP headers and because the messages sent to non-SOAP endpoints contain no SOAP envelope, there is nowhere to place the security information and you must rely on transport security.  
@@ -56,7 +42,7 @@ ms.workload:
     > [!NOTE]
     >  If you do not add an endpoint, <xref:System.ServiceModel.Web.WebServiceHost> automatically creates a default endpoint. <xref:System.ServiceModel.Web.WebServiceHost> also adds <xref:System.ServiceModel.Description.WebHttpBehavior> and disables the HTTP Help page and the Web Services Description Language (WSDL) GET functionality so the metadata endpoint does not interfere with the default HTTP endpoint.  
     >   
-    >  Adding a non-SOAP endpoint with a URL of "" causes unexpected behavior when an attempt is made to call an operation on the endpoint. The reason for this is the listen URI of the endpoint is the same as the URI for the help page (the page that is displayed when you browse to the base address of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service).  
+    >  Adding a non-SOAP endpoint with a URL of "" causes unexpected behavior when an attempt is made to call an operation on the endpoint. The reason for this is the listen URI of the endpoint is the same as the URI for the help page (the page that is displayed when you browse to the base address of a WCF service).  
   
      You can do one of the following actions to prevent this from happening:  
   

@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Hosting an ActiveX Control in WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ActiveX controls [WPF interoperability]"
   - "hosting ActiveX controls [WPF]"
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Hosting an ActiveX Control in WPF
 To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx](../../../../includes/tlasharptla-actx-md.md)] controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application. This walkthrough demonstrates how you can host the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] as a control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page.  
@@ -39,7 +25,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] installed on the computer where [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] is installed.  
+-   [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] installed on the computer where Visual Studio is installed.  
   
 -   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
   

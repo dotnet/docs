@@ -1,12 +1,6 @@
 ---
 title: "Declare Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Declare"
   - "vb.Lib"
@@ -33,9 +27,6 @@ helpviewer_keywords:
   - "Visual Basic code, Sub procedures"
   - "Function procedures [Visual Basic], declaring"
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declare Statement
 Declares a reference to a procedure implemented in an external file.  
@@ -57,7 +48,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |Term|Definition|  
 |---|---|  
 |`attributelist`|Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).|  
-|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br />- [Private Protected](../../language-reference/modifiers/private-protected.md)<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).|  
 |`charsetmodifier`|Optional. Specifies character set and file search information. Can be one of the following:<br /><br /> -   [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) (default)<br />-   [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)<br />-   [Auto](../../../visual-basic/language-reference/modifiers/auto.md)|  
 |`Sub`|Optional, but either `Sub` or `Function` must appear. Indicates that the external procedure does not return a value.|  

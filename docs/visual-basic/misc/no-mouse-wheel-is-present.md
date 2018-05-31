@@ -1,16 +1,9 @@
 ---
 title: "No mouse wheel is present"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrMouse_NoWheelIsPresent"
 ms.assetid: e924ffba-4af1-4247-9a6f-d19a03738f62
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # No mouse wheel is present
 The `My.Computer.Mouse.WheelScrollLines` property was called, but the mouse has no scroll wheel.  

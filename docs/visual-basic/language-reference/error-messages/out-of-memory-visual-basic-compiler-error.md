@@ -1,21 +1,12 @@
 ---
 title: "Out of memory (Visual Basic Compiler Error)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc2004"
   - "bc2004"
 helpviewer_keywords: 
   - "BC2004"
 ms.assetid: 6bc0939c-e279-4875-a91c-f4076860b5b9
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Out of memory (Visual Basic Compiler Error)
 More memory was required than is available.  

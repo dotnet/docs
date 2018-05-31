@@ -1,14 +1,8 @@
 ---
 title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
-keywords: C#, .NET, .NET Core, What's New, C# History
 author: erikdietrich
-ms.author: wiwagn
 ms.date: 09/20/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 
 # The history of C# #
@@ -44,7 +38,7 @@ And yet, C# continued to play a bit of catch-up with Java. Java had already rele
 
 ## C# version 3.0
 
-C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with C# version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
+C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
 - [Auto implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
@@ -55,7 +49,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
-A more nuanced view examines expression tress, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
+A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
 
 Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made it look as though that list of integers had gotten a whole lot smarter.
 
@@ -100,7 +94,7 @@ With versions 3.0 and 5.0, C# had added some impressive features in an object or
 - [Null propagator](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
 - [String interpolation](../language-reference/tokens/interpolated.md)
 - [nameof operator](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
-- [Dictionary initializer](../programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md)
+- [Index initializers](csharp-6.md#index-initializers)
 
 Each of these features is interesting in its own right. But if you look at them altogether, you see an interesting pattern. In this version, C# eliminated language boilerplate to make code more terse and readable. So for fans of clean, simple code, this language version was a huge win.
 

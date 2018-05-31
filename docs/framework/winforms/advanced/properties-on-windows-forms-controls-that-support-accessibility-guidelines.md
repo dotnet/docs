@@ -1,24 +1,10 @@
 ---
 title: "Properties on Windows Forms Controls That Support Accessibility Guidelines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, accessibility properties of controls"
   - "accessibility [Windows Forms], Windows Forms control properties"
 ms.assetid: ad3567a6-313b-4708-9e15-f487a831f049
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Properties on Windows Forms Controls That Support Accessibility Guidelines
 Controls on the standard toolbox for Windows Forms support many of the accessibility guidelines, including exposing the keyboard focus and exposing the screen elements.  

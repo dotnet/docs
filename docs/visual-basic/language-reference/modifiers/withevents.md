@@ -1,20 +1,12 @@
 ---
 title: "WithEvents (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.WithEvents"
   - "WithEvents"
 helpviewer_keywords: 
   - "WithEvents keyword [Visual Basic]"
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # WithEvents (Visual Basic)
 Specifies that one or more declared member variables refer to an instance of a class that can raise events.  

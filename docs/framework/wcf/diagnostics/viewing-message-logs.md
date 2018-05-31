@@ -1,27 +1,13 @@
 ---
 title: "Viewing Message Logs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Viewing Message Logs
 This topic describes how you can view message logs.  
   
 ## Viewing Message Logs in the Service Trace Viewer  
- A message will be transformed as it is processed by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Therefore, a message being logged reflects only the message's content at the point it was logged, not the content on the wire.  
+ A message will be transformed as it is processed by WCF. Therefore, a message being logged reflects only the message's content at the point it was logged, not the content on the wire.  
   
  Since the output of message logging has no relationship to the transfer format of the message, message logging always outputs the decoded message. If you have configured message logging properly, any logged message should be in plain text. For example, the format (plain text) of the logged messages is not affected by the usage of a binary message encoder.  
   

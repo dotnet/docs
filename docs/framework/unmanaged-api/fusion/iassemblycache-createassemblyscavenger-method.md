@@ -1,14 +1,6 @@
 ---
 title: "IAssemblyCache::CreateAssemblyScavenger Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAssemblyCache.CreateAssemblyScavenger"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e8bb98f1-e477-45d2-8956-ba404137cd2d
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAssemblyCache::CreateAssemblyScavenger Method
 Reserved for internal use by the fusion technology.  

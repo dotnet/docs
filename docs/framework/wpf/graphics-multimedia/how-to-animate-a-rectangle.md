@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate a Rectangle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "animation [WPF], rectangles"
   - "rectangles [WPF], animating"
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a Rectangle
 This example shows how to animate changes to the size and position of a rectangle.  

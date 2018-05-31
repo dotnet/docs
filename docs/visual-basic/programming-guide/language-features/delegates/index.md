@@ -1,28 +1,18 @@
 ---
 title: "Delegates (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [Visual Basic]"
   - "Visual Basic code, delegates"
 ms.assetid: 410b60dc-5e60-4ec0-bfae-426755a2ee28
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Delegates (Visual Basic)
-Delegates are objects that refer to methods. They are sometimes described as *type-safe function pointers* because they are similar to function pointers used in other programming languages. But unlike function pointers, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] delegates are a reference type based on the class <xref:System.Delegate?displayProperty=nameWithType>. Delegates can reference both shared methods — methods that can be called without a specific instance of a class — and instance methods.  
+Delegates are objects that refer to methods. They are sometimes described as *type-safe function pointers* because they are similar to function pointers used in other programming languages. But unlike function pointers, Visual Basic delegates are a reference type based on the class <xref:System.Delegate?displayProperty=nameWithType>. Delegates can reference both shared methods — methods that can be called without a specific instance of a class — and instance methods.  
   
 ## Delegates and Events  
- Delegates are useful in situations where you need an intermediary between a calling procedure and the procedure being called. For example, you might want an object that raises events to be able to call different event handlers under different circumstances. Unfortunately, the object raising the events cannot know ahead of time which event handler is handling a specific event. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] lets you dynamically associate event handlers with events by creating a delegate for you when you use the `AddHandler` statement. At run time, the delegate forwards calls to the appropriate event handler.  
+ Delegates are useful in situations where you need an intermediary between a calling procedure and the procedure being called. For example, you might want an object that raises events to be able to call different event handlers under different circumstances. Unfortunately, the object raising the events cannot know ahead of time which event handler is handling a specific event. Visual Basic lets you dynamically associate event handlers with events by creating a delegate for you when you use the `AddHandler` statement. At run time, the delegate forwards calls to the appropriate event handler.  
   
- Although you can create your own delegates, in most cases [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] creates the delegate and takes care of the details for you. For example, an `Event` statement implicitly defines a delegate class named `<EventName>EventHandler` as a nested class of the class containing the `Event` statement, and with the same signature as the event. The `AddressOf` statement implicitly creates an instance of a delegate that refers to a specific procedure. The following two lines of code are equivalent. In the first line, you see the explicit creation of an instance of `Eventhandler`, with a reference to method `Button1_Click` sent as the argument. The second line is a more convenient way to do the same thing.  
+ Although you can create your own delegates, in most cases Visual Basic creates the delegate and takes care of the details for you. For example, an `Event` statement implicitly defines a delegate class named `<EventName>EventHandler` as a nested class of the class containing the `Event` statement, and with the same signature as the event. The `AddressOf` statement implicitly creates an instance of a delegate that refers to a specific procedure. The following two lines of code are equivalent. In the first line, you see the explicit creation of an instance of `Eventhandler`, with a reference to method `Button1_Click` sent as the argument. The second line is a more convenient way to do the same thing.  
   
  [!code-vb[VbVbalrDelegates#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegates_1.vb)]  
   

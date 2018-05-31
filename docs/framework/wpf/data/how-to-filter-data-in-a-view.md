@@ -1,14 +1,6 @@
 ---
 title: "How to: Filter Data in a View"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "filtering data in views [WPF]"
   - "data binding [WPF], filtering data in views"
 ms.assetid: c76e8606-4cc4-45a8-9110-e2ec66dc6afd
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Filter Data in a View
 This example shows how to filter data in a view.  

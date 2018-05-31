@@ -1,16 +1,9 @@
 ---
 title: Using Enumeration classes instead of enum types
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Enumeration classes instead of enum types
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using enumeration classes instead of enum types
 
@@ -110,7 +103,7 @@ public class CardType : Enumeration
 ## Additional resources
 
 -   **Enum’s are evil—update**
-    [*http://www.planetgeek.ch/2009/07/01/enums-are-evil/*](http://www.planetgeek.ch/2009/07/01/enums-are-evil/)
+    [*https://www.planetgeek.ch/2009/07/01/enums-are-evil/*](https://www.planetgeek.ch/2009/07/01/enums-are-evil/)
 
 -   **Daniel Hardman. How Enums Spread Disease — And How To Cure It**
     [*https://codecraft.co/2012/10/29/how-enums-spread-disease-and-how-to-cure-it/*](https://codecraft.co/2012/10/29/how-enums-spread-disease-and-how-to-cure-it/)
@@ -119,7 +112,7 @@ public class CardType : Enumeration
     [*https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/*](https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/)
 
 -   **Steve Smith. Enum Alternatives in C#**
-    [*http://ardalis.com/enum-alternatives-in-c*](http://ardalis.com/enum-alternatives-in-c)
+    [*https://ardalis.com/enum-alternatives-in-c*](https://ardalis.com/enum-alternatives-in-c)
 
 -   **Enumeration.cs.** Base Enumeration class in eShopOnContainers
     [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)

@@ -1,14 +1,6 @@
 ---
 title: "Application Settings Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "ApplicationsSettingsOverview"
 helpviewer_keywords: 
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "dynamic properties"
   - "user preferences [Windows Forms], tracking"
 ms.assetid: 0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Settings Overview
 This topic discusses how to create and store settings data on behalf of your application and your users.  

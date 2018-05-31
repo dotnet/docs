@@ -1,21 +1,9 @@
 ---
 title: "&lt;certificateValidation&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6c54c704-b55e-4631-88ff-4d4a5621554c
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;certificateValidation&gt;
 Controls the settings that token handlers use to validate certificates. These settings are overridden if a specific handler is configured with its own validator.  

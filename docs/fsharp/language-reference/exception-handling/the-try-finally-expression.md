@@ -1,17 +1,8 @@
 ---
 title: "Exceptions: The try...finally Expression (F#)"
 description: Learn how the F# 'try...finally' expression enables you to execute clean-up code even if a block of code throws an exception.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: af06b20c-8d87-4496-a0aa-6fdfe8b3a786 
 ---
-
 # Exceptions: The try...finally Expression
 
 The `try...finally` expression enables you to execute clean-up code even if a block of code throws an exception.

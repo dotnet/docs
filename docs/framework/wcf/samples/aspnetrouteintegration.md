@@ -1,35 +1,21 @@
 ---
 title: "AspNetRouteIntegration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0638ce0e-d053-47df-a447-688e447a03fb
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AspNetRouteIntegration
-This sample demonstrates how to host a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST service using ASP.NET routes. The [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample shows a self-hosted version of this scenario and discusses the service implementation in depth. This topic focuses on the ASP.NET integration feature. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] ASP.NET Routing, see <xref:System.Web.Routing>.  
+This sample demonstrates how to host a Windows Communication Foundation (WCF) REST service using ASP.NET routes. The [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample shows a self-hosted version of this scenario and discusses the service implementation in depth. This topic focuses on the ASP.NET integration feature. For more information about ASP.NET Routing, see <xref:System.Web.Routing>.  
   
 ## Sample Details  
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service exposes a collection of customers in a resource-oriented/REST manner. Just like a SOAP-based [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, the service can be hosted in ASP.NET using a .svc file. However, this is often not preferred for HTTP scenarios because it requires having .svc in the URL for the service. In addition, it requires deploying a .svc file along with the service library. These limitations can be avoided by hosting the service using ASP.NET routes, as is demonstrated in this sample.  
+ The WCF service exposes a collection of customers in a resource-oriented/REST manner. Just like a SOAP-based WCF service, the service can be hosted in ASP.NET using a .svc file. However, this is often not preferred for HTTP scenarios because it requires having .svc in the URL for the service. In addition, it requires deploying a .svc file along with the service library. These limitations can be avoided by hosting the service using ASP.NET routes, as is demonstrated in this sample.  
   
  The sample hosts the service in ASP.NET by adding a <xref:System.ServiceModel.Activation.ServiceRoute> in a Global.asax file. The <xref:System.ServiceModel.Activation.ServiceRoute> specifies the type of the service (‘Service’ in this case), the type of the service host factory to use for the service (<xref:System.ServiceModel.Activation.WebServiceHostFactory> in this case) and the HTTP base address for the service (‘~/Customers’ in this case).  
   
- In addition to this, the sample includes a Web.config that adds the <xref:System.Web.Routing.UrlRoutingModule> (to turn on ASP.NET routes) and includes the configuration for the service. In particular, the configuration configures the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service with a default <xref:System.ServiceModel.Description.WebHttpEndpoint> that has the <xref:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled%2A> setting to `true`. As a result, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure creates an automatic HTML based help page at `http://localhost/Customers/help` that provides information about how to construct HTTP requests to the service and how to access the service’s HTTP response – for instance, an example of how the customer details are represented in XML and JSON.  
+ In addition to this, the sample includes a Web.config that adds the <xref:System.Web.Routing.UrlRoutingModule> (to turn on ASP.NET routes) and includes the configuration for the service. In particular, the configuration configures the WCF service with a default <xref:System.ServiceModel.Description.WebHttpEndpoint> that has the <xref:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled%2A> setting to `true`. As a result, the WCF infrastructure creates an automatic HTML based help page at `http://localhost/Customers/help` that provides information about how to construct HTTP requests to the service and how to access the service’s HTTP response – for instance, an example of how the customer details are represented in XML and JSON.  
   
  Exposing the customer collection (and more generally, any resource) in this manner allows a client to interact with a service in a uniform way using URIs and HTTP `GET`, `PUT`, `DELETE` and `POST`.  
   
- Program.cs in the Client project demonstrates how such a client can be authored using <xref:System.Net.HttpWebRequest>. Note that this is just one way to access a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. It is also possible to access the service using other .NET Framework classes like the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel factory and <xref:System.Net.WebClient>. Other samples in the SDK (such as the [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md) sample and the [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md) sample) show how to use these classes to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+ Program.cs in the Client project demonstrates how such a client can be authored using <xref:System.Net.HttpWebRequest>. Note that this is just one way to access a WCF service. It is also possible to access the service using other .NET Framework classes like the WCF channel factory and <xref:System.Net.WebClient>. Other samples in the SDK (such as the [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md) sample and the [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md) sample) show how to use these classes to communicate with a WCF service.  
   
  This sample consists of 3 projects:  
   
@@ -65,7 +51,7 @@ This sample demonstrates how to host a [!INCLUDE[indigo1](../../../../includes/i
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\AspNetRouteIntegration`  
   

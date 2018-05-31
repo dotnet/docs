@@ -1,16 +1,9 @@
 ---
 title: "The ConnectionTimeout must be greater than 0"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_BadConnectionTimeout"
 ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # The ConnectionTimeout must be greater than 0
 When uploading and downloading files with the [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network), you must specify a `connectionTimeout` greater than `0`.  

@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Authoring a Composite Control with Visual C#"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [C#]"
   - "user controls [Windows Forms], creating with Visual C#"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "user controls [C#]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Authoring a Composite Control with Visual C# #
 Composite controls provide a means by which custom graphical interfaces can be created and reused. A composite control is essentially a component with a visual representation. As such, it might consist of one or more Windows Forms controls, components, or blocks of code that can extend functionality by validating user input, modifying display properties, or performing other tasks required by the author. Composite controls can be placed on Windows Forms in the same manner as other controls. In the first part of this walkthrough, you create a simple composite control called `ctlClock`. In the second part of the walkthrough, you extend the functionality of `ctlClock` through inheritance.  
@@ -36,7 +22,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 1.  On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.  
   
-2.  From the list of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] projects, select the **Windows Forms Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.  
+2.  From the list of Visual C# projects, select the **Windows Forms Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.  
   
      The project name, `ctlClockLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ctlClock`, you can specify your `ctlClock` component using `ctlClockLib.ctlClock.`  
   

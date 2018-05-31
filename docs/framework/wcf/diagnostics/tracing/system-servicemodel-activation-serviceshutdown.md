@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Activation.ServiceShutdown"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fc356855-f996-4c0d-9ff9-503103803d91
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Activation.ServiceShutdown
 System.ServiceModel.Activation.ServiceShutdown  

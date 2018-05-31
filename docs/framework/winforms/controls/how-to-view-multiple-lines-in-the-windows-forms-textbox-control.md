@@ -1,14 +1,6 @@
 ---
 title: "How to: View Multiple Lines in the Windows Forms TextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "newline"
   - "end of line"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "TextBox control [Windows Forms], viewing multiple lines"
   - "carriage return"
 ms.assetid: 43173201-0b74-4067-a472-605029ca5f35
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: View Multiple Lines in the Windows Forms TextBox Control
 By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displays a single line of text and does not display scroll bars. If the text is longer than the available space, only part of the text is visible. You can change this default behavior by setting the <xref:System.Windows.Forms.TextBox.Multiline%2A>, <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A>, and <xref:System.Windows.Forms.TextBox.ScrollBars%2A> properties to appropriate values.  

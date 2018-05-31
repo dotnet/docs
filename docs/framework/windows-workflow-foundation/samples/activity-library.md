@@ -1,26 +1,14 @@
 ---
 title: "Activity Library"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5323e9d4-71d6-47eb-bfa6-31feac62044d
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Activity Library
-This section contains samples that demonstrate advanced custom activities in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate advanced custom activities in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md)  
- Demonstrates how the Policy4 activity allows [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects to be used in [!INCLUDE[wf2](../../../../includes/wf2-md.md)]in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5.  
+ Demonstrates how the Policy4 activity allows Windows Workflow Foundation in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects to be used in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5.  
   
  [Custom Activity to Switch on a Range of Values](../../../../docs/framework/windows-workflow-foundation/samples/custom-activity-to-switch-on-a-range-of-values.md)  
  Demonstrates how to create a custom activity that extends the use of a <xref:System.Activities.Statements.Switch%601>.  
@@ -53,7 +41,7 @@ This section contains samples that demonstrate advanced custom activities in [!I
  Demonstrates how the `ThrottleParallelForEach` activity is similar to the <xref:System.Activities.Statements.ParallelForEach%601> activity with the one exception that it allows setting a concurrency factor to restrict the number of simultaneous branches to execute.  
   
  [Entity Activities](../../../../docs/framework/windows-workflow-foundation/samples/entity-activities.md)  
- Demonstrates how to use the ADO.NET Entity Framework with [!INCLUDE[wf2](../../../../includes/wf2-md.md)] to simplify data access.  
+ Demonstrates how to use the ADO.NET Entity Framework with Windows Workflow Foundation to simplify data access.  
   
  [Database Access Activities](../../../../docs/framework/windows-workflow-foundation/samples/database-access-activities.md)  
  Demonstrates how to create activities that allow accessing databases to retrieve or modify information and use [ADO.NET](http://go.microsoft.com/fwlink/?LinkId=166081) to access the database.  
@@ -62,7 +50,7 @@ This section contains samples that demonstrate advanced custom activities in [!I
  Demonstrates how to write a custom activity that removes other activities from the path of execution, effectively commenting them out.  
   
  [Externalized Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/externalized-policy-activity-in-net-framework-4-5.md)  
- Demonstrates how the ExternalizedPolicy4 activity allows executing existing [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5.  
+ Demonstrates how the ExternalizedPolicy4 activity allows executing existing Windows Workflow Foundation in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5.  
   
  [NoPersistScope Activity](../../../../docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md)  
  Demonstrates how to manipulate a non-serializable and disposable state within a workflow.  

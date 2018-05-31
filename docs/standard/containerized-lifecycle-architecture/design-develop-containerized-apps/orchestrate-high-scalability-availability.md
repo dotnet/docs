@@ -1,13 +1,9 @@
 ---
 title: Orchestrating microservices and multicontainer applications for high scalability and availability
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Orchestrating microservices and multicontainer applications for high scalability and availability
 
@@ -99,7 +95,7 @@ Following are locations where you can find additional information:
     <https://docs.mesosphere.com/1.7/overview/>
 
 -   Kubernetes (the official site):  
-    <http://kubernetes.io/>
+    <https://kubernetes.io/>
 
 ## Using Service Fabric
 
@@ -173,7 +169,7 @@ Stateless and stateful services are complementary. For instance, a stateful serv
 
 Stateful services do have drawbacks. They impose a level of complexity that allows them to scale out. Functionality that would usually be implemented by external database systems must be addressed for tasks such as data replication across stateful microservices and data partitioning. However, this is one of the areas where an orchestrator like [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-platform-architecture) with its [stateful reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can help the most—by simplifying the development and lifecycle of stateful microservices using the [Reliable Services API](https://docs.microsoft.com/azure/service-fabric/service-fabric-work-with-reliable-collections) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 
-Other microservice frameworks that allow stateful services, that support the Actor pattern, and that improve fault tolerance and latency between business logic and data are Microsoft [Orleans](https://github.com/dotnet/orleans), from Microsoft Research, and [Akka.NET](http://getakka.net/). Both frameworks are currently improving their support for Docker.
+Other microservice frameworks that allow stateful services, that support the Actor pattern, and that improve fault tolerance and latency between business logic and data are Microsoft [Orleans](https://github.com/dotnet/orleans), from Microsoft Research, and [Akka.NET](https://getakka.net/). Both frameworks are currently improving their support for Docker.
 
 Note that Docker containers are themselves stateless. If you want to implement a stateful service, you need one of the additional prescriptive and higher-level frameworks noted earlier. However, as of this writing, stateful services in Service Fabric are not supported as containers, only as plain microservices. Reliable services support in containers will be available in upcoming versions of Service Fabric.
 

@@ -1,9 +1,7 @@
 ---
 title: "Custom Date and Time Format Strings"
 ms.date: "03/30/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +14,8 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
-caps.latest.revision: 79
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Custom Date and Time Format Strings
 A date and time format string defines the text representation of a <xref:System.DateTime> or <xref:System.DateTimeOffset> value that results from a formatting operation . It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time. A custom format string consists of one or more custom date and time format specifiers. Any string that is not a [standard date and time format string](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) is interpreted as a custom date and time format string.  
@@ -30,7 +23,7 @@ A date and time format string defines the text representation of a <xref:System.
  Custom date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
   
 > [!TIP]
->  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either date and time or numeric values and displays the result string.  
+>  You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either date and time or numeric values and displays the result string.  
   
 <a name="table"></a> In formatting operations, custom date and time format strings can be used either with the `ToString` method of a date and time instance or with a method that supports composite formatting. The following example illustrates both uses.  
   
@@ -697,4 +690,4 @@ A date and time format string defines the text representation of a <xref:System.
  <xref:System.IFormatProvider?displayProperty=nameWithType>  
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+ [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

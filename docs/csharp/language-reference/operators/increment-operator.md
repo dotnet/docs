@@ -1,19 +1,12 @@
 ---
 title: "++ Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "++_CSharpKeyword"
 helpviewer_keywords: 
   - "increment operator (++) [C#]"
   - "++ operator [C#]"
 ms.assetid: e9dec353-070b-44fb-98ed-eb8fdf753feb
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ++ Operator (C# Reference)
 The increment operator (`++`) increments its operand by 1. The increment operator can appear before or after its operand: `++variable` and `variable++`.  

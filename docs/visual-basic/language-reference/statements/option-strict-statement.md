@@ -1,12 +1,6 @@
 ---
 title: "Option Strict Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Strict"
   - "vb.OptionStrict"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "late binding [Visual Basic]"
   - "implicit conversions [Visual Basic]"
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
-caps.latest.revision: 49
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Strict Statement
 Restricts implicit data type conversions to only widening conversions, disallows late binding, and disallows implicit typing that results in an `Object` type.  
@@ -64,7 +55,7 @@ Option Strict { On | Off }
 ## Implicit Narrowing Conversion Errors  
  Implicit narrowing conversion errors occur when there is an implicit data type conversion that is a narrowing conversion.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] can convert many data types to other data types. Data loss can occur when the value of one data type is converted to a data type that has less precision or a smaller capacity. A run-time error occurs if such a narrowing conversion fails. `Option Strict` ensures compile-time notification of these narrowing conversions so that you can avoid them. For more information, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) and [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
+ Visual Basic can convert many data types to other data types. Data loss can occur when the value of one data type is converted to a data type that has less precision or a smaller capacity. A run-time error occurs if such a narrowing conversion fails. `Option Strict` ensures compile-time notification of these narrowing conversions so that you can avoid them. For more information, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) and [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
  Conversions that can cause errors include implicit conversions that occur in expressions. For more information, see the following topics:  
   

@@ -1,24 +1,10 @@
 ---
 title: "&lt;webHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;webHttpBinding&gt;
-Defines a binding element that is used to configure endpoints for [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] Web services that respond to HTTP requests instead of SOAP messages.  
+Defines a binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.  
   
 \<system.ServiceModel>  
 \<bindings>  
@@ -95,9 +81,9 @@ Defines a binding element that is used to configure endpoints for [!INCLUDE[indi
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- The [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Web Programming Model allows developers to expose [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Web services through HTTP requests that use "plain old XML" (POX) style messaging instead of SOAP-based messaging. For clients to communicate with a service using HTTP requests, an endpoint of the service must be configured with the [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) that has the \<WebHttpBehavior> attached to it.  
+ The WCF Web Programming Model allows developers to expose WCF Web services through HTTP requests that use "plain old XML" (POX) style messaging instead of SOAP-based messaging. For clients to communicate with a service using HTTP requests, an endpoint of the service must be configured with the [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) that has the \<WebHttpBehavior> attached to it.  
   
- Support in [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] for syndication and ASP.AJAX integration are both built on top of the Web Programming Model. For more information on the model, see [WCF Web HTTP Programming Model](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).  
+ Support in WCF for syndication and ASP.AJAX integration are both built on top of the Web Programming Model. For more information on the model, see [WCF Web HTTP Programming Model](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).  
   
 ## See Also  
  <xref:System.ServiceModel.WebHttpBinding>  

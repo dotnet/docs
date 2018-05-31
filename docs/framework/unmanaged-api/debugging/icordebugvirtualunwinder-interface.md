@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugVirtualUnwinder Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: a09e9ccc-0b37-43e3-95c1-bc5fa7ee5f42
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVirtualUnwinder Interface
 Provides methods to help in stack unwinding.  

@@ -1,19 +1,12 @@
 ---
 title: "Integral Types Table (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "integral types, C#"
   - "Visual C#, integral types"
   - "types [C#], integral types"
   - "ranges of integral types [C#]"
 ms.assetid: 62e86126-46ff-40b0-9028-e61d7558268c
-caps.latest.revision: 9
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Integral Types Table (C# Reference)
 The following table shows the sizes and ranges of the integral types, which constitute a subset of simple types.  

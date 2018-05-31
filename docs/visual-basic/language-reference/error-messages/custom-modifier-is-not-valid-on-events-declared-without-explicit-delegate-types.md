@@ -1,21 +1,12 @@
 ---
 title: "&#39;Custom&#39; modifier is not valid on events declared without explicit delegate types"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc31122"
   - "bc31122"
 helpviewer_keywords: 
   - "BC31122"
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &#39;Custom&#39; modifier is not valid on events declared without explicit delegate types
 Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause following the event name that explicitly specifies the delegate type for the event.  

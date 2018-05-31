@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Separator Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Separator control type"
   - "Separator control type"
   - "control types, Separator"
 ms.assetid: 89f42247-c699-4afa-91e1-2baaf0d86c9d
-caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Separator Control Type
 > [!NOTE]

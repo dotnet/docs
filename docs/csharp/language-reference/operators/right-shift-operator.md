@@ -1,19 +1,12 @@
 ---
 title: "&gt;&gt; Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - ">>_CSharpKeyword"
 helpviewer_keywords: 
   - ">> operator [C#]"
   - "right shift operator (>>) [C#]"
 ms.assetid: a07f8679-d318-4ef8-b38b-65903efb8056
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &gt;&gt; Operator (C# Reference)
 The right-shift operator (`>>`) shifts its first operand right by the number of bits specified by its second operand.  

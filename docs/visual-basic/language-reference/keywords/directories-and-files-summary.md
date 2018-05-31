@@ -1,22 +1,14 @@
 ---
 title: "Directories and Files Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "files [Visual Basic]"
   - "directories [Visual Basic], Visual Basic"
   - "files [Visual Basic], summary"
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Directories and Files Summary (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
+Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature gives you greater productivity and performance in file I/O operations than using these members. For more information, see <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   

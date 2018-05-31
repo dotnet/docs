@@ -1,10 +1,6 @@
 ---
 title: "-target:module (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/target:module"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "target compiler options [C#], /target:module"
   - "/target compiler options [C#], /target:module"
 ms.assetid: 9af1e4fa-c749-44e7-ae58-90a3d05d4e72
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -target:module (C# Compiler Options)
 This option causes the compiler to not generate an assembly manifest.  

@@ -1,13 +1,6 @@
 ---
 title: "Object Initializers: Named and Anonymous Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ObjectInitializer"
 helpviewer_keywords: 
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "initializers [Visual Basic]"
   - "named types [Visual Basic]"
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Initializers: Named and Anonymous Types (Visual Basic)
 Object initializers enable you to specify properties for a complex object by using a single expression. They can be used to create instances of named types and of anonymous types.  

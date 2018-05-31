@@ -1,16 +1,9 @@
 ---
 title: .NET Core Application Deployment
 description: Deploying a .NET Core application.
-keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
-ms.workload: 
-  - dotnetcore
 ---
 
 # .NET Core application deployment

@@ -1,24 +1,10 @@
 ---
 title: "How to: Call WCF Service Operations Asynchronously"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0face17f-43ca-417b-9b33-737c0fc360df
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Call WCF Service Operations Asynchronously
 This topic covers how a client can access a service operation asynchronously. The service in this topic implements the `ICalculator` interface. The client can call the operations on this interface asynchronously by using the event-driven asynchronous calling model. (For more information about the event-based asynchronous calling model, see [Multithreaded Programming with the Event-based Asynchronous Pattern](http://go.microsoft.com/fwlink/?LinkId=248184)). For an example that shows how to implement an operation asynchronously in a service, see [How to: Implement an Asynchronous Service Operation](../../../../docs/framework/wcf/how-to-implement-an-asynchronous-service-operation.md). For more information about synchronous and asynchronous operations, see [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md).  
@@ -36,7 +22,7 @@ This topic covers how a client can access a service operation asynchronously. Th
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a /tcv:Version35  
     ```  
   
-     This generates, in addition to the synchronous and standard delegate-based asynchronous operations, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class that contains:  
+     This generates, in addition to the synchronous and standard delegate-based asynchronous operations, a WCF client class that contains:  
   
     -   Two <`operationName`>`Async` operations for use with the event-based asynchronous calling approach. For example:  
   

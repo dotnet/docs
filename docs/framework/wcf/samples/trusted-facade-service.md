@@ -1,24 +1,10 @@
 ---
 title: "Trusted Facade Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c34d1a8f-e45e-440b-a201-d143abdbac38
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Trusted Facade Service
-This scenario sample demonstrates how to flow caller's identity information from one service to another using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security infrastructure.  
+This scenario sample demonstrates how to flow caller's identity information from one service to another using Windows Communication Foundation (WCF) security infrastructure.  
   
  It is a common design pattern to expose the functionality provided by a service to the public network using a façade service. The façade service typically resides in the perimeter network (also known as DMZ, demilitarized zone, and screened subnet) and communicates with a backend service that implements the business logic and has access to internal data. The communication channel between the façade service and the backend service goes through a firewall and is usually limited for a single purpose only.  
   
@@ -30,7 +16,7 @@ This scenario sample demonstrates how to flow caller's identity information from
   
 -   Calculator backend service  
   
- The façade service is responsible for validating the request and authenticating the caller. After successful authentication and validation, it forwards the request to the backend service using the controlled communication channel from the perimeter network to the internal network. As a part of the forwarded request, the façade service includes information about the caller's identity so that the backend service can use this information in its processing. The caller's identity is transmitted using a `Username` security token inside the message `Security` header. The sample uses the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure to transmit and extract this information from the `Security` header.  
+ The façade service is responsible for validating the request and authenticating the caller. After successful authentication and validation, it forwards the request to the backend service using the controlled communication channel from the perimeter network to the internal network. As a part of the forwarded request, the façade service includes information about the caller's identity so that the backend service can use this information in its processing. The caller's identity is transmitted using a `Username` security token inside the message `Security` header. The sample uses the WCF security infrastructure to transmit and extract this information from the `Security` header.  
   
 > [!IMPORTANT]
 >  The backend service trusts the façade service to authenticate the caller. Because of this, the backend service does not authenticate the caller again; it uses the identity information provided by the façade service in the forwarded request. Because of this trust relationship, the backend service must authenticate the façade service to ensure that the forwarded message comes from a trusted source - in this case, the façade service.  
@@ -119,7 +105,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element takes care of the initial caller's username transmission and extraction. The [\<windowsStreamSecurity>](../../../../docs/framework/configure-apps/file-schema/wcf/windowsstreamsecurity.md) and [\<tcpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/tcptransport.md) take care of authenticating façade and backend services and message protection.  
   
- To forward the request, the façade service implementation must provide the initial caller's username so that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure can place this into the forwarded message. The initial caller's username is provided in the façade service implementation by setting it in the `ClientCredentials` property on the client proxy instance that façade service uses to communicate with the backend service.  
+ To forward the request, the façade service implementation must provide the initial caller's username so that WCF security infrastructure can place this into the forwarded message. The initial caller's username is provided in the façade service implementation by setting it in the `ClientCredentials` property on the client proxy instance that façade service uses to communicate with the backend service.  
   
  The following code shows how `GetCallerIdentity` method is implemented on the façade service. Other methods use the same pattern.  
   
@@ -134,9 +120,9 @@ public string GetCallerIdentity()
 }  
 ```  
   
- As shown in the previous code, the password is not set on the `ClientCredentials` property, only the username is set. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure creates a username security token without a password in this case, which is exactly what is required in this scenario.  
+ As shown in the previous code, the password is not set on the `ClientCredentials` property, only the username is set. WCF security infrastructure creates a username security token without a password in this case, which is exactly what is required in this scenario.  
   
- On the backend service, the information contained in the username security token must be authenticated. By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security attempts to map the user to a Windows account using the provided password. In this case, there is no password provided and the backend service is not required to authenticate the username because the authentication was already performed by the façade service. To implement this functionality in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], a custom `UserNamePasswordValidator` is provided that only enforces that a username is specified in the token and does not perform any additional authentication.  
+ On the backend service, the information contained in the username security token must be authenticated. By default, WCF security attempts to map the user to a Windows account using the provided password. In this case, there is no password provided and the backend service is not required to authenticate the username because the authentication was already performed by the façade service. To implement this functionality in WCF, a custom `UserNamePasswordValidator` is provided that only enforces that a username is specified in the token and does not perform any additional authentication.  
   
 ```  
 public class MyUserNamePasswordValidator : UserNamePasswordValidator  
@@ -217,7 +203,7 @@ public string GetCallerIdentity()
 }  
 ```  
   
- The façade service account information is extracted using the `ServiceSecurityContext.Current.WindowsIdentity` property. To access the information about the initial caller the backend service uses the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` property. It looks for an `Identity` claim with a type `Name`. This claim is automatically generated by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure from the information contained in the `Username` security token.  
+ The façade service account information is extracted using the `ServiceSecurityContext.Current.WindowsIdentity` property. To access the information about the initial caller the backend service uses the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` property. It looks for an `Identity` claim with a type `Name`. This claim is automatically generated by WCF security infrastructure from the information contained in the `Username` security token.  
   
 ## Running the sample  
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client. You can press ENTER in the façade and backend service console windows to shut down the services.  
@@ -295,7 +281,7 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
   

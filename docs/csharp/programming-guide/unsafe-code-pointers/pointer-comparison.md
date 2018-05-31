@@ -1,16 +1,9 @@
 ---
 title: "Pointer Comparison (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "pointers [C#], comparison"
 ms.assetid: fcafd514-7405-4deb-8490-cc58efda5495
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Pointer Comparison (C# Programming Guide)
 You can apply the following operators to compare pointers of any type:  

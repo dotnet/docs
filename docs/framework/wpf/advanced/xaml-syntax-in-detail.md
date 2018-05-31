@@ -1,14 +1,6 @@
 ---
 title: "XAML Syntax In Detail"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [WPF], namespaces"
   - "XAML [WPF], parsing of attributes"
@@ -37,12 +29,6 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
   - "XAML [WPF], property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Syntax In Detail
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  

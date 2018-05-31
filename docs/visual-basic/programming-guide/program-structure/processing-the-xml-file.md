@@ -1,19 +1,9 @@
 ---
 title: "Processing the XML File (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML comments [Visual Basic], parsing [Visual Basic]"
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Processing the XML File (Visual Basic)
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information on how to tag your code, see [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] metadata/reflection item.  
@@ -34,7 +24,7 @@ The compiler generates an ID string for each construct in your code that is tagg
 |P|property: `Property` (including default properties)|  
 |M|method: `Sub`, `Function`, `Declare`, `Operator`|  
 |E|event: `Event`|  
-|!|error string<br /><br /> The rest of the string provides information about the error. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler generates error information for links that cannot be resolved.|  
+|!|error string<br /><br /> The rest of the string provides information about the error. The Visual Basic compiler generates error information for links that cannot be resolved.|  
   
 -   The second part of the `String` is the fully qualified name of the item, starting at the root of the namespace. The name of the item, its enclosing type(s), and the namespace are separated by periods. If the name of the item itself contains periods, they are replaced by the number sign (#). It is assumed that no item has a number sign directly in its name. For example, the fully qualified name of the `String` constructor would be `System.String.#ctor`.  
   

@@ -1,24 +1,10 @@
 ---
 title: "How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model
-Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. This topic discusses using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP Programming Model to create such a service. This service has one operation that returns a stream.  
+Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported by WCF. This topic discusses using the WCF WEB HTTP Programming Model to create such a service. This service has one operation that returns a stream.  
   
 ### To implement the service contract  
   
@@ -33,7 +19,7 @@ Sometimes developers must have full control of how data is returned from a servi
         }  
     ```  
   
-     Because the method returns a <xref:System.IO.Stream>, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] assumes that the operation has complete control over the bytes that are returned from the service operation and it applies no formatting to the data that is returned.  
+     Because the method returns a <xref:System.IO.Stream>, WCF assumes that the operation has complete control over the bytes that are returned from the service operation and it applies no formatting to the data that is returned.  
   
 2.  Implement the service contract. The contract has only one operation (`GetImage`). This method generates a bitmap and then save it to a <xref:System.IO.MemoryStream> in .jpg format. The operation then returns that stream to the caller.  
   

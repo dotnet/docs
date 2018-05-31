@@ -1,14 +1,6 @@
 ---
 title: "pInvokeStackImbalance MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "signatures, platform invoke"
   - "stack depth"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "PInvokeStackImbalance MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # pInvokeStackImbalance MDA
 The `pInvokeStackImbalance` managed debugging assistant (MDA) is activated when the CLR detects that the stack depth after a platform invoke call does not match the expected stack depth, given the calling convention specified in the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute as well as the declaration of the parameters in the managed signature.  

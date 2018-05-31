@@ -1,12 +1,6 @@
 ---
 title: "XML Attribute Axis Property (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyAttributeAxis"
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], attribute"
   - "XML [Visual Basic], accessing"
 ms.assetid: 7a4777e1-0618-4de9-9510-fb9ace2bf4db
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Attribute Axis Property (Visual Basic)
 Provides access to the value of an attribute for an <xref:System.Xml.Linq.XElement> object or to the first element in a collection of <xref:System.Xml.Linq.XElement> objects.  
@@ -39,7 +30,7 @@ object.@<attribute>
  Required. Denotes the start of an attribute axis property.  
   
  <  
- Optional. Denotes the beginning of the name of the attribute when `attribute` is not a valid identifier in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Optional. Denotes the beginning of the name of the attribute when `attribute` is not a valid identifier in Visual Basic.  
   
  `attribute`  
  Required. Name of the attribute to access, of the form [`prefix`:]`name`.  
@@ -50,7 +41,7 @@ object.@<attribute>
 |`name`|Required. Local attribute name. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
   
  \>  
- Optional. Denotes the end of the name of the attribute when `attribute` is not a valid identifier in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Optional. Denotes the end of the name of the attribute when `attribute` is not a valid identifier in Visual Basic.  
   
 ## Return Value  
  A string that contains the value of `attribute`. If the attribute name does not exist, `Nothing` is returned.  
@@ -60,7 +51,7 @@ object.@<attribute>
   
  When you refer to an XML attribute using the @ identifier, the attribute value is returned as a string and you do not need to explicitly specify the <xref:System.Xml.Linq.XAttribute.Value%2A> property.  
   
- The naming rules for XML attributes differ from the naming rules for [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] identifiers. To access an XML attribute that has a name that is not a valid Visual Basic identifier, enclose the name in angle brackets (\< and >).  
+ The naming rules for XML attributes differ from the naming rules for Visual Basic identifiers. To access an XML attribute that has a name that is not a valid Visual Basic identifier, enclose the name in angle brackets (\< and >).  
   
 ## XML Namespaces  
  The name in an attribute axis property can use only XML namespace prefixes declared globally by using the `Imports` statement. It cannot use XML namespace prefixes declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md).  
@@ -92,7 +83,7 @@ object.@<attribute>
 ```  
   
 ## Example  
- The following example uses the angle bracket syntax to get the value of the XML attribute named `number-type`, which is not a valid identifier in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The following example uses the angle bracket syntax to get the value of the XML attribute named `number-type`, which is not a valid identifier in Visual Basic.  
   
  [!code-vb[VbXMLSamples#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_3.vb)]  
   

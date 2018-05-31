@@ -1,19 +1,13 @@
 ---
 title: C# Guide
 description: Learn how the C# Guide can help you gain extensive knowledge on C#, whether you're a new developer or a seasoned expert.
-author: BillWagner
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 helpviewer_keywords: 
   - "documentation [C#]"
   - "Help, Visual C# documentation"
   - "C# language"
   - "Visual C#"
-ms.author: "wiwagn"
 ---
 # C# Guide
 
@@ -46,8 +40,8 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 * [Tour of C#](tour-of-csharp/index.md)
   * This section provides an overview of the language. It covers the elements that make up C# programs and the capabilities of the language. It shows small samples of all the syntax elements of C# and discussions of the major C# language topics.
 
-* [Latest Features](whats-new/index.md)
-  * Learn about new features in the language. Learn about new tools like C# Interactive (C#'s REPL), and the .NET Compiler Platform SDK. This section shows how the language is evolving and how the new tools can make you more productive.
+* [What's new in C#](whats-new/index.md)
+  * Provides overviews of new features added in the latest language releases and of the history of the C# language.
 
 <!--
 * [.NET Compiler Platform SDK](roslyn-sdk/index.md)
@@ -64,7 +58,7 @@ There are several sections in the C# Guide. You can read them in order, or jump 
   * This section contains the reference material on the C# language. This material helps you understand the syntax and semantics of C#. It also includes reference material on types, operators, attributes, preprocessor directives, compiler switches, compiler errors, and compiler warnings.
 
 * [C# Language Specification](../csharp/language-reference/language-specification/index.md)
-  * Links to the latest version of the C# Specifications in Microsoft Word format.
+  * Links to the latest versions of the C# language specification.
 
 ## See also
 

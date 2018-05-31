@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerNodeClosing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 47a008f0-04d7-4cf3-9099-c056f78c9bfa
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNodeClosing
 The PeerNode has begun to close.  

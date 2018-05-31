@@ -1,18 +1,7 @@
 ---
 title: "Thread Pooling (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4903fb7a-eaad-435a-9add-1d1b32de3b83
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Thread Pooling (Visual Basic)
 A *thread pool* is a collection of threads that can be used to perform several tasks in the background. (See [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md) for background information.) This leaves the primary thread free to perform other tasks asynchronously.  

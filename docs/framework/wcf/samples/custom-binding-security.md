@@ -1,21 +1,9 @@
 ---
 title: "Custom Binding Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
-caps.latest.revision: 30
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Binding Security
 This sample demonstrates how to configure security by using a custom binding. It shows how to use a custom binding to enable message-level security together with a secure transport. This is useful when a secure transport is required to transmit the messages between client and service and simultaneously the messages must be secure on the message level. This configuration is not supported by system-provided bindings.  
@@ -53,16 +41,16 @@ This sample demonstrates how to configure security by using a custom binding. It
   
 ```xml  
 <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata />  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-          <serviceCredentials>  
-            <serviceCertificate findValue="localhost" storeLocation="LocalMachine" storeName="My" x509FindType="FindBySubjectName"/>  
-          </serviceCredentials>  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
+    <serviceBehaviors>  
+    <behavior name="CalculatorServiceBehavior">  
+        <serviceMetadata />  
+        <serviceDebug includeExceptionDetailInFaults="False" />  
+        <serviceCredentials>  
+        <serviceCertificate findValue="localhost" storeLocation="LocalMachine" storeName="My" x509FindType="FindBySubjectName"/>  
+        </serviceCredentials>  
+    </behavior>  
+    </serviceBehaviors>  
+</behaviors>  
 ```  
   
  Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the `security` binding element. Both client and service are authenticated using message-level security if the Kerberos authentication mechanism is available. This happens if the sample is run in the Active Directory environment. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate the service to the client. The `security` binding element is configured to use `SecureConversation``authenticationType`, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work.  
@@ -90,7 +78,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
      The certificate is stored in the CurrentUser store for the Web-hosted services.  
   
-    ```  
+    ```bat
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  

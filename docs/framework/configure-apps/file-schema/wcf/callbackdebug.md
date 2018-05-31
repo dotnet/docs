@@ -1,24 +1,10 @@
 ---
 title: "&lt;callbackDebug&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4073feda-1857-4be4-9947-227afb847ced
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;callbackDebug&gt;
-Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] callback object.  
+Specifies service debugging for a Windows Communication Foundation (WCF) callback object.  
   
  \<system.ServiceModel>  
 \<behaviors>  

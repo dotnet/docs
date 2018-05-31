@@ -1,13 +1,9 @@
 ---
 title: Docker application devops workflow with Microsoft tools
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Toolsdevops workflow with Microsoft tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 
 # Docker application DevOps workflow with Microsoft tools
@@ -28,7 +24,7 @@ The complexity of containerized application development increases steadily depen
 
 -   Run automated tests as part of your build pipeline in Visual Studio Team Services.
 
--   Visual Studio Team Services can tighten the DevOps life cycle with delivery to multiple environments, not just for production environments, but also for testing, including A/B experimentation, [canary releases](http://martinfowler.com/bliki/CanaryRelease.html), and so on.
+-   Visual Studio Team Services can tighten the DevOps life cycle with delivery to multiple environments, not just for production environments, but also for testing, including A/B experimentation, [canary releases](https://martinfowler.com/bliki/CanaryRelease.html), and so on.
 
 -   Organizations easily can provision Docker containers from private images stored in Azure Container Registry along with any dependency on Azure components (Data, PaaS, etc.) using Azure Resource Manager templates with tools with which they are already comfortable working.
 

@@ -1,17 +1,8 @@
 ---
 title: Keyword Reference (F#)
 description: Find links to information about all of the F# language keywords.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 5795ce1f-11bf-4798-9f1f-6e44ffa1477e 
 ---
-
 # Keyword Reference
 
 This topic contains links to information about all F# language keywords.
@@ -118,7 +109,6 @@ The following tokens are reserved as keywords for future expansion of the F# lan
 * `eager`
 * `event`
 * `external`
-* `fixed`
 * `functor`
 * `include`
 * `method`

@@ -1,21 +1,7 @@
 ---
 title: "Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Reference
 This section provides reference information for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] developers.  
@@ -39,7 +25,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  Provides answers to common questions regarding [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [SQL Server Compact and LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/sql-server-compact-and-linq-to-sql.md)  
- Describes how [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] differs from [!INCLUDE[ssNoVersion](../../../../../../includes/ssnoversion-md.md)] in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications.  
+ Describes how [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] differs from SQL Server in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications.  
   
  [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)  
  Describes how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates Standard Query Operators to SQL commands.  

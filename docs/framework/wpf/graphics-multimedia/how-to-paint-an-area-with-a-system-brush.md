@@ -1,25 +1,11 @@
 ---
 title: "How to: Paint an Area with a System Brush"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "system brushes [WPF], painting with"
   - "painting [WPF], with system brushes"
   - "brushes [WPF], painting with system brushes [WPF]"
 ms.assetid: 5141a763-9235-42cb-a6bb-afc75513eac7
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Paint an Area with a System Brush
 The <xref:System.Windows.SystemColors> class provides access to system brushes and colors, such as <xref:System.Windows.SystemColors.ControlBrush%2A>, <xref:System.Windows.SystemColors.ControlBrushKey%2A>, and <xref:System.Windows.SystemColors.DesktopBrush%2A>. A system brush is a <xref:System.Windows.Media.SolidColorBrush> object that paints an area with the specified system color. A system brush always produces a solid fill; it can't be used to create a gradient.  

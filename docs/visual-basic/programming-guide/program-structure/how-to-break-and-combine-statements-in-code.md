@@ -1,13 +1,6 @@
 ---
 title: "How to: Break and Combine Statements in Code (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb._"
 helpviewer_keywords: 
@@ -28,9 +21,6 @@ helpviewer_keywords:
   - "Visual Basic code, line continuation in"
   - "statements [Visual Basic], line breaks in"
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Break and Combine Statements in Code (Visual Basic)
 When writing your code, you might at times create lengthy statements that necessitate horizontal scrolling in the Code Editor. Although this doesn't affect the way your code runs, it makes it difficult for you or anyone else to read the code as it appears on the monitor. In such cases, you should consider breaking the single long statement into several lines.  
@@ -54,7 +44,7 @@ When writing your code, you might at times create lengthy statements that necess
   
      You can't continue a comment by using a line-continuation character. The compiler doesn't examine the characters in a comment for special meaning. For a multiple-line comment, repeat the comment symbol (`'`) on each line.  
   
- Although placing each statement on a separate line is the recommended method, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] also allows you to place multiple statements on the same line.  
+ Although placing each statement on a separate line is the recommended method, Visual Basic also allows you to place multiple statements on the same line.  
   
 ### To place multiple statements on the same line  
   

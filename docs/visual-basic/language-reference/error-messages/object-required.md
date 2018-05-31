@@ -1,18 +1,9 @@
 ---
 title: "Object required (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID424"
 ms.assetid: afdc660b-81a5-4c92-ac7e-9c3a3105fc16
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object required (Visual Basic)
 References to properties and methods often require an explicit object qualifier. This is such a case.  

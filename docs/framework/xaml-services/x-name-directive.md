@@ -1,14 +1,6 @@
 ---
 title: "x:Name Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "x:Name"
   - "xName"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "XAML [XAML Services], x:Name attribute"
   - "Name attribute in XAML [XAML Services]"
 ms.assetid: b7e61222-e8cf-48d2-acd0-6df3b7685d48
-caps.latest.revision: 27
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Name Directive
 Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes and their uniqueness models can be applied to the instantiated objects, when frameworks provide APIs or implement behaviors that access the XAML-created object graph at run time.  
@@ -56,7 +42,7 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
 ## WPF Usage Notes  
  Under the standard build configuration for a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application that uses XAML, partial classes, and code-behind, the specified `x:Name` becomes the name of a field that is created in the underlying code when [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is processed by a markup compilation build task, and that field holds a reference to the object. By default, the created field is internal. You can change field access by specifying the [x:FieldModifier attribute](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md). In WPF and Silverlight, the sequence is that the markup compile defines and names the field in a partial class, but the value is initially empty. Then, a generated method named `InitializeComponent` is called from within the class constructor. `InitializeComponent` consists of `FindName` calls using each of the `x:Name` values that exist in the XAML-defined part of the partial class as input strings. The return values are then assigned to the like-named field reference to fill the field values with objects that were created from XAML parsing. The execution of `InitializeComponent` make it possible to reference the run time object graph using the `x:Name` / field name directly, rather than having to call `FindName` explicitly any time you need a reference to a XAML-defined object.  
   
- For a WPF application that uses the [!INCLUDE[TLA#tla_visualb](../../../includes/tlasharptla-visualb-md.md)] targets and includes XAML files with `Page` build action, a separate reference property is created during compilation that adds the `WithEvents` keyword to all elements that have an `x:Name`, to support `Handles` syntax for event handler delegates. This property is always public. For more information, see [Visual Basic and WPF Event Handling](../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
+ For a WPF application that uses the Microsoft Visual Basic targets and includes XAML files with `Page` build action, a separate reference property is created during compilation that adds the `WithEvents` keyword to all elements that have an `x:Name`, to support `Handles` syntax for event handler delegates. This property is always public. For more information, see [Visual Basic and WPF Event Handling](../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
   
  `x:Name` is used by the WPF XAML processor to register a name into a XAML namescope at load time, even for cases where the page is not markup-compiled by build actions (for example, loose XAML of a resource dictionary). One reason for this behavior is because the `x:Name` is potentially needed for <xref:System.Windows.Data.Binding.ElementName%2A> binding. For details, see [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md).  
   

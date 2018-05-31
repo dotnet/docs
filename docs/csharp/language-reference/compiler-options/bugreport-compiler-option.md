@@ -1,10 +1,6 @@
 ---
 title: "-bugreport (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/bugreport"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-bugreport compiler option [C#]"
   - "bugreport compiler option [C#]"
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -bugreport (C# Compiler Options)
 Specifies that debug information should be placed in a file for later analysis.  

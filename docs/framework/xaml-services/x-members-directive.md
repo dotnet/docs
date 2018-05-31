@@ -1,21 +1,7 @@
 ---
 title: "x:Members Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 155b393d-3b49-4c5a-8c9e-b3d9893af4e4
-caps.latest.revision: 5
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Members Directive
 Holds a set of members that are defined in markup, which apply to the x:Class of the parent element.  

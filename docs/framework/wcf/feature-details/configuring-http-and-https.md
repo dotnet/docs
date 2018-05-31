@@ -1,23 +1,9 @@
 ---
 title: "Configuring HTTP and HTTPS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring HTTP and HTTPS
 WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS settings are configured by using Internet Information Services (IIS) or through the use of a command-line tool. When a WCF service is hosted under IIS HTTP or HTTPS settings can be configured within IIS (using the inetmgr.exe tool). If a WCF service is self-hosted, HTTP or HTTPS settings are configured by using a command-line tool.  
@@ -26,9 +12,9 @@ WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS set
   
  The tool used to configure HTTP settings depends on the operating system the computer is running.  
   
- When running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] automatically installs this tool. When running [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605).  
+ When running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] automatically installs this tool. When running [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](http://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](http://go.microsoft.com/fwlink/?LinkId=88605).  
   
- When running [!INCLUDE[wv](../../../../includes/wv-md.md)]or Windows 7, you configure these settings with the Netsh.exe tool.  
+ When running [!INCLUDE[wv](../../../../includes/wv-md.md)] or Windows 7, you configure these settings with the Netsh.exe tool.  
   
 ## Configuring Namespace Reservations  
  Namespace reservation assigns the rights for a portion of the HTTP URL namespace to a particular group of users. A reservation gives those users the right to create services that listen on that portion of the namespace. Reservations are URL prefixes, meaning that the reservation covers all sub-paths of the reservation path. Namespace reservations permit two ways to use wildcards. The HTTP Server API documentation describes the [order of resolution between namespace claims that involve wildcards](http://go.microsoft.com/fwlink/?LinkId=94841).  
@@ -74,7 +60,7 @@ netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
  For step-by-step instructions, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## Configuring the IP Listen List  
- The HTTP Server API only binds to an IP address and port once a user registers a URL. By default, the HTTP Server API binds to the port in the URL for all of the IP addresses of the machine. A conflict arises if an application that does not use the HTTP Server API has previously bound to that combination of IP address and port. The IP Listen List allows [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to coexist with applications that use a port for some of the IP addresses of the machine. If the IP Listen List contains any entries, the HTTP Server API only binds to those IP addresses that the list specifies. Modifying the IP Listen List requires administrative privileges.  
+ The HTTP Server API only binds to an IP address and port once a user registers a URL. By default, the HTTP Server API binds to the port in the URL for all of the IP addresses of the machine. A conflict arises if an application that does not use the HTTP Server API has previously bound to that combination of IP address and port. The IP Listen List allows WCF services to coexist with applications that use a port for some of the IP addresses of the machine. If the IP Listen List contains any entries, the HTTP Server API only binds to those IP addresses that the list specifies. Modifying the IP Listen List requires administrative privileges.  
   
 ### Running Windows XP or Server 2003  
  Use the httpcfg tool to modify the IP Listen List, as shown in the following example. The [Windows Support Tools documentation](http://go.microsoft.com/fwlink/?LinkId=94840) explains the syntax for the httpcfg.exe tool.  
@@ -96,7 +82,7 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
  The HTTP Server API has some advanced configuration settings that are not available through HttpCfg. These settings are maintained in the registry and apply to all applications running on the systems that use the HTTP Server APIs. For information about these settings, see [Http.sys registry settings for IIS](http://go.microsoft.com/fwlink/?LinkId=94843). Most users should not need to change these settings.  
   
 ## Issues Specific to Windows XP  
- IIS does not support port sharing on [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. If IIS is running and a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service attempts to use a namespace with the same port, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service fails to start. IIS and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] both default to using port 80. Either change the port assignment for one of the services or use the IP Listen List to assign the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service to a network adapter not used by IIS. IIS 6.0 and later have been redesigned to use the HTTP Server APIs.  
+ IIS does not support port sharing on [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. If IIS is running and a WCF service attempts to use a namespace with the same port, the WCF service fails to start. IIS and WCF both default to using port 80. Either change the port assignment for one of the services or use the IP Listen List to assign the WCF service to a network adapter not used by IIS. IIS 6.0 and later have been redesigned to use the HTTP Server APIs.  
   
 ## See Also  
  <xref:System.ServiceModel.WSDualHttpBinding>  

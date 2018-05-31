@@ -1,14 +1,6 @@
 ---
 title: "How to: Use a ResourceDictionary to Manage Localizable String Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,15 +10,9 @@ helpviewer_keywords:
   - "ResourceDictionary [WPF]"
   - "localization [WPF], packaging string resources"
 ms.assetid: 19e7d9a5-20df-4ad3-b157-fe6515902e5e
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use a ResourceDictionary to Manage Localizable String Resources
-This example shows how to use a <xref:System.Windows.ResourceDictionary> to package localizable string resources for [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] applications.  
+This example shows how to use a <xref:System.Windows.ResourceDictionary> to package localizable string resources for Windows Presentation Foundation (WPF) applications.  
   
 ### To use a ResourceDictionary to manage localizable string resources  
   

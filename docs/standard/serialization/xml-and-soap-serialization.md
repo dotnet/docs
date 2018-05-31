@@ -1,12 +1,6 @@
 ---
 title: "XML and SOAP Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SOAP, XML serialization"
   - "XML serialization, SOAP"
@@ -15,13 +9,6 @@ helpviewer_keywords:
   - "XML serialization"
   - "serialization"
 ms.assetid: 832ac524-21bc-419a-a27b-ca8bfc45840f
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML and SOAP Serialization
 XML serialization converts (serializes) the public fields and properties of an object, or the parameters and return values of methods, into an XML stream that conforms to a specific XML Schema definition language (XSD) document. XML serialization results in strongly typed classes with public properties and fields that are converted to a serial format (in this case, XML) for storage or transport.  
@@ -88,10 +75,10 @@ XML serialization converts (serializes) the public fields and properties of an o
  Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> class.  
   
 ## Related Sections  
- [Advanced Development Technologies](http://msdn.microsoft.com/library/c4a7e341-f0c6-4df4-a74f-223387ac6e4e)  
+ [Advanced Development Technologies](https://msdn.microsoft.com/library/c4a7e341-f0c6-4df4-a74f-223387ac6e4e)  
  Provides links to more information on sophisticated development tasks and techniques in the .NET Framework.  
   
- [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
+ [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
  Provides topics that describe and explain how to program XML Web services using ASP.NET.  
   
 ## See Also  

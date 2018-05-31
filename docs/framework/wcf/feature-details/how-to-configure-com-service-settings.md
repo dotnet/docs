@@ -1,29 +1,15 @@
 ---
 title: "How to: Configure COM+ Service Settings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM+ [WCF], configuring service settings"
 ms.assetid: f42a55a8-3af8-4394-9fdd-bf12a93780eb
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure COM+ Service Settings
 When an application interface is added or removed by using the COM+ Service Configuration tool, the Web service configuration is updated within the application's configuration file. In the COM+ hosted mode, the Application.config file is placed in the Application Root Directory (%PROGRAMFILES%\ComPlus Applications\\{appid} is the default). In either of the Web-hosted modes, the Web.config file is placed in the specified vroot directory.  
   
 > [!NOTE]
->  Message signing should be used to protect against tampering of messages between a client and a server. Also, message or transport layer encryption should be used to protect against information disclosure from messages between a client and a server. As with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services, you should use throttling to limit the number of concurrent calls, connections, instances, and pending operations. This helps prevent over-consumption of resources. Throttling behavior is specified through service configuration file settings.  
+>  Message signing should be used to protect against tampering of messages between a client and a server. Also, message or transport layer encryption should be used to protect against information disclosure from messages between a client and a server. As with Windows Communication Foundation (WCF) services, you should use throttling to limit the number of concurrent calls, connections, instances, and pending operations. This helps prevent over-consumption of resources. Throttling behavior is specified through service configuration file settings.  
   
 ## Example  
  Consider a component that implements the following interface:  
@@ -57,7 +43,7 @@ public interface IFinancesContract : IDisposable
   
  Client applications that use this service would need to conform to this contract, along with using a binding that is compatible with the one specified in the application configuration.  
   
- The following code example shows a default configuration file. Being a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web service, this conforms to the standard service model configuration schema and can be edited in the same way as other [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services configuration files.  
+ The following code example shows a default configuration file. Being a Windows Communication Foundation (WCF) Web service, this conforms to the standard service model configuration schema and can be edited in the same way as other WCF services configuration files.  
   
  Typical modifications would include:  
   

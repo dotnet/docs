@@ -1,14 +1,7 @@
 ---
 title: Basic Types - C# Guide
-description: Learn about the core types (numerics, strings, and object) in all C# programs 
-keywords: .NET, .NET Core, C#
-author: BillWagner
-ms.author: wiwagn
+description: Learn about the core types (numerics, strings, and object) in all C# programs
 ms.date: 10/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 95c686ba-ae4f-440e-8e94-0dbd6e04d11f
 ---
 

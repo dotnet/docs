@@ -1,21 +1,7 @@
 ---
 title: "Entity Framework Terminology"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Entity Framework Terminology
 This topic defines terms frequently referenced in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation. Links are provided to relevant topics where additional information is available.  
@@ -52,7 +38,7 @@ This topic defines terms frequently referenced in [!INCLUDE[adonet_ef](../../../
 |independent association|An association between entities that is represented and tracked by an independent object.|  
 |key|The attribute of an entity type that specifies which property or set of properties is used to identify unique instances of the entity type. Represented in the object layer by the <xref:System.Data.EntityKey> class.<br /><br /> For more information, see [Key Element (CSDL)](http://msdn.microsoft.com/library/0cdb1402-dbc7-4a04-a11e-5729cdf7431b) and [entity key](../../../../../docs/framework/data/adonet/entity-key.md).|  
 |lazy loading|When objects are returned by a query, related objects are not loaded at the same time. Instead they are loaded automatically when the navigation property is accessed.|  
-|[!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)]|A query syntax that defines a set of query operators that allow traversal, filter, and projection operations to be expressed in a direct, declarative way in [!INCLUDE[csprcs](../../../../../includes/csprcs-md.md)] and [!INCLUDE[vbprvb](../../../../../includes/vbprvb-md.md)].<br /><br /> For more information, see [LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).|  
+|[!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)]|A query syntax that defines a set of query operators that allow traversal, filter, and projection operations to be expressed in a direct, declarative way in Visual C# and Visual Basic.<br /><br /> For more information, see [LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).|  
 |mapping|A specification of the correspondences between items in a conceptual model and items in a storage model.<br /><br /> For more information, see [MSL Specification](../../../../../docs/framework/data/adonet/ef/language-reference/msl-specification.md).|  
 |.msl file|An XML file that contains the mapping between the conceptual model and the storage model, expressed in MSL.|  
 |mapping specification language (MSL)|An XML-based language that is used to map items defined in a conceptual model to items in a storage model.<br /><br /> For more information, see [MSL Specification](../../../../../docs/framework/data/adonet/ef/language-reference/msl-specification.md).|  

@@ -1,14 +1,6 @@
 ---
 title: "CLR Profilers and Windows Store Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
 applies_to: 
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "profiling managed code"
   - "profiling managed code [Windows Store Apps]"
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR Profilers and Windows Store Apps
 This topic discusses what you need to think about when writing diagnostic tools that analyze managed code running inside a Windows Store app.  It also provides guidelines to modify your existing development tools so they continue to work when you run them against Windows Store apps.  To understand this information, it’s best if you're  familiar with the Common Language Runtime Profiling API, you’ve already used this API in a diagnostic tool that runs correctly against Windows desktop applications, and you’re now interested in modifying the tool to run correctly against Windows Store apps.  

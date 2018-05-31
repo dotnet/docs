@@ -1,14 +1,6 @@
 ---
 title: "x:XData Intrinsic XAML Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "x:XData"
   - "XData"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "XData in XAML [XAML Services]"
   - "x:XData XAML directive element [XAML Services]"
 ms.assetid: 7ce209c2-621b-4977-b643-565f7e663534
-caps.latest.revision: 17
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:XData Intrinsic XAML Type
 Enables placement of XML data islands within a XAML production. XML elements within `x:XData` should not be treated by XAML processors as if they are a part of the acting default XAML namespace or any other XAML namespace. `x:XData` can contain arbitrary well-formed XML.  

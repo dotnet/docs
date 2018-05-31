@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d5587606-f2f3-46f8-9e76-cb8ad83088bd
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison
 System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison  

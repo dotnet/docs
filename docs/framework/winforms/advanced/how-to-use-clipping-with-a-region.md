@@ -1,14 +1,6 @@
 ---
 title: "How to: Use Clipping with a Region"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "regions [Windows Forms], clipping"
   - "regions [Windows Forms], restricting drawing surface"
 ms.assetid: 43d121b4-e14c-4901-b25c-2d6c25ba4e29
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Clipping with a Region
 One of the properties of the <xref:System.Drawing.Graphics> class is the clip region. All drawing done by a given <xref:System.Drawing.Graphics> object is restricted to the clip region of that <xref:System.Drawing.Graphics> object. You can set the clip region by calling the <xref:System.Drawing.Graphics.SetClip%2A> method.  

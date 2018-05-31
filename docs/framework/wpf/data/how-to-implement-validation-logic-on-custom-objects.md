@@ -1,14 +1,6 @@
 ---
 title: "How to: Implement Validation Logic on Custom Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "implementing validation logic on custom objects [WPF]"
   - "custom objects [WPF], implementing validation logic on"
 ms.assetid: 751fda9b-44f9-4d63-b4f2-1df07ac41e0f
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Implement Validation Logic on Custom Objects
 This example shows how to implement validation logic on a custom object and then bind to it.  

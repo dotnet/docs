@@ -1,26 +1,15 @@
 ---
 title: "Best Practices for Developing World-Ready Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "global applications, best practices"
   - "world-ready applications, best practices"
   - "globalization [.NET Framework], best practices"
   - "international applications [.NET Framework], best practices"
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Best Practices for Developing World-Ready Applications
 This section describes the best practices to follow when developing world-ready applications.  
@@ -97,7 +86,7 @@ This section describes the best practices to follow when developing world-ready 
   
 4.  Specify the values for the requestEncoding, responseEncoding, fileEncoding, culture, and uiCulture attributes in the following three places in an ASP.NET application:  
   
-    -   In the globalization section of a Web.config file. This file is external to the ASP.NET application. For more information, see [\<globalization> Element](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7).  
+    -   In the globalization section of a Web.config file. This file is external to the ASP.NET application. For more information, see [\<globalization> Element](https://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7).  
   
     -   In a page directive. Note that, when an application is in a page, the file has already been read. Therefore, it is too late to specify fileEncoding and requestEncoding. Only uiCulture, Culture, and responseEncoding can be specified in a page directive.  
   

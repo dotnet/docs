@@ -1,14 +1,6 @@
 ---
 title: "How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "data grids [Windows Forms], changing border styles"
   - "DataGridView control [Windows Forms], gridline styles"
 ms.assetid: 2f413c7a-4025-4171-8e3a-66ef908ea583
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control
 With the <xref:System.Windows.Forms.DataGridView> control, you can customize the appearance of the control's border and gridlines to improve the user experience. You can modify the gridline color and the control border style in addition to the border styles for the cells within the control. You can also apply different cell border styles for ordinary cells, row header cells, and column header cells.  

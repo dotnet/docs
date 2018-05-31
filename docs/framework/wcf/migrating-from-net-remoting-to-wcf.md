@@ -1,21 +1,7 @@
 ---
 title: "Migrating from .NET Remoting to WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Migrating from .NET Remoting to WCF
 This article describes how to migrate an application that uses .NET Remoting to use Windows Communication Foundation (WCF). It compares similar concepts between these products and then describes how to accomplish several common Remoting scenarios in WCF.  

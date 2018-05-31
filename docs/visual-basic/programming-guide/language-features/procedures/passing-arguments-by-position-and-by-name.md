@@ -1,11 +1,6 @@
 ---
 title: "Passing Arguments by Position and by Name (Visual Basic)"
-ms.custom: ""
 ms.date: 02/01/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing by name"
   - "procedures [Visual Basic], arguments"
@@ -86,6 +81,8 @@ To follow positional arguments with named arguments, you must add the following 
   <LangVersion>15.5</LangVersion>
 </PropertyGroup>
 ```
+
+For more information see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
 
 ## Restrictions on Supplying Arguments by Name  
 

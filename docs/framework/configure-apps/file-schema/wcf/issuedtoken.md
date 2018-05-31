@@ -1,21 +1,7 @@
 ---
 title: "&lt;issuedToken&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;issuedToken&gt;
 Specifies a custom token used to authenticate a client to a service.  

@@ -2,10 +2,6 @@
 title: CompareTo function (Unmanaged API Reference)
 description: The CompareTo function compares an object to another WMI object.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "CompareTo"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CompareTo function
 Compares an object to another Windows management object.  

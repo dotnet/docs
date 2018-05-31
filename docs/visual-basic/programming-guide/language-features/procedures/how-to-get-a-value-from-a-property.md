@@ -1,13 +1,6 @@
 ---
 title: "How to: Get a Value from a Property (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
@@ -15,14 +8,11 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Get a Value from a Property (Visual Basic)
 You retrieve a property's value by including the property name in an expression.  
   
- The property's `Get` procedure retrieves the value, but you do not explicitly call it by name. You use the property just as you would use a variable. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] makes the calls to the property's procedures.  
+ The property's `Get` procedure retrieves the value, but you do not explicitly call it by name. You use the property just as you would use a variable. Visual Basic makes the calls to the property's procedures.  
   
 ### To retrieve a value from a property  
   
@@ -32,7 +22,7 @@ You retrieve a property's value by including the property name in an expression.
   
      Use the property name following the equal (`=`) sign in an assignment statement.  
   
-     The following example reads the value of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] `Now` property, implicitly calling its `Get` procedure.  
+     The following example reads the value of the Visual Basic `Now` property, implicitly calling its `Get` procedure.  
   
      [!code-vb[VbVbalrDateProperties#4](./codesnippet/VisualBasic/how-to-get-a-value-from-a-property_1.vb)]  
   

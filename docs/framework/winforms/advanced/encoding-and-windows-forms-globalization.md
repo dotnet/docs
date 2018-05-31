@@ -1,14 +1,6 @@
 ---
 title: "Encoding and Windows Forms Globalization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], lack of Unicode support"
   - "DateTimePicker control [Windows Forms], lack of Unicode support"
@@ -27,18 +19,12 @@ helpviewer_keywords:
   - "localization [Windows Forms], character sets"
   - "globalization [Windows Forms], character sets"
 ms.assetid: 22e8965d-a712-42b3-8167-3ee346bd70f9
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Encoding and Windows Forms Globalization
 Windows Forms applications are entirely Unicode-enabled, meaning that each character is represented by a unique number, no matter what the platform, program, or language. For more information about Unicode, see the [Unicode consortium Web site](http://www.unicode.org).  
   
 ## Benefits of Unicode  
- The benefits of Unicode-enabled forms include the ability to work with scripts that are Unicode-only, such as Hindi. In addition, you can use multiple languages on a single form. In Unicode, all characters are two bytes long, so no special effort is needed to represent double-byte characters. You can also write a single set of code that will work on all platforms. This is a change from previous versions of [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], in which you had to write different code for different platforms, such as Windows NT and [!INCLUDE[win98](../../../../includes/win98-md.md)].  
+ The benefits of Unicode-enabled forms include the ability to work with scripts that are Unicode-only, such as Hindi. In addition, you can use multiple languages on a single form. In Unicode, all characters are two bytes long, so no special effort is needed to represent double-byte characters. You can also write a single set of code that will work on all platforms. This is a change from previous versions of Visual Basic, in which you had to write different code for different platforms, such as Windows NT and [!INCLUDE[win98](../../../../includes/win98-md.md)].  
   
  However, certain controls do not support Unicode in [!INCLUDE[win98](../../../../includes/win98-md.md)] and Windows Millennium Edition. These controls, all of which inherit from the common control, will process data with the Windows code pages, as [!INCLUDE[vcpransi](../../../../includes/vcpransi-md.md)]. These controls are: <xref:System.Windows.Forms.TabControl>, <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.TreeView>, <xref:System.Windows.Forms.DateTimePicker>, <xref:System.Windows.Forms.MonthCalendar>, <xref:System.Windows.Forms.TrackBar>, <xref:System.Windows.Forms.ProgressBar>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolBar>, and <xref:System.Windows.Forms.StatusBar>. As a result, you cannot display Unicode data in these controls on the listed platforms. For example, you cannot display Japanese characters on an English [!INCLUDE[win98](../../../../includes/win98-md.md)] operating system.  
   

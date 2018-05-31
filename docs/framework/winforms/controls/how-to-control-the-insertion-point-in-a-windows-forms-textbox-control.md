@@ -1,14 +1,6 @@
 ---
 title: "How to: Control the Insertion Point in a Windows Forms TextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "insertion points [Windows Forms], TextBox controls"
   - "text boxes [Windows Forms], controlling insertion point"
 ms.assetid: 5bee7d34-5121-429e-ab1f-d8ff67bc74c1
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Control the Insertion Point in a Windows Forms TextBox Control
 When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives the focus, the default insertion within the text box is to the left of any existing text. The user can move the insertion point with the keyboard or the mouse. If the text box loses and then regains the focus, the insertion point will be wherever the user last placed it.  

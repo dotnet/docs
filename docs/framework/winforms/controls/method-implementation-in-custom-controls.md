@@ -1,14 +1,6 @@
 ---
 title: "Method Implementation in Custom Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "methods [Windows Forms]"
   - "methods [Windows Forms], custom controls"
 ms.assetid: 35d14fca-4bb4-4a27-8211-1f7a98ea27de
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Method Implementation in Custom Controls
 A method is implemented in a control in the same manner a method would be implemented in any other component.  

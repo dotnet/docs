@@ -1,19 +1,12 @@
 ---
 title: "Using Namespaces (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.names"
 helpviewer_keywords: 
   - "fully qualified names [C#]"
   - "namespaces [C#], how to use"
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Namespaces (C# Programming Guide)
 Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Framework classes use namespaces to organize its many classes. Secondly, declaring your own namespaces can help control the scope of class and method names in larger programming projects.  

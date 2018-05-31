@@ -1,25 +1,11 @@
 ---
 title: "Windows Forms Control Development Basics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], derivation types"
   - "programming concepts [Windows Forms], Windows Forms controls"
   - "controls [Windows Forms], creating"
 ms.assetid: 6277bb81-90f7-4c5b-9f4b-b02bb42dd316
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms Control Development Basics
 A Windows Forms control is a class that derives directly or indirectly from <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. The following list describes common scenarios for developing Windows Forms controls:  

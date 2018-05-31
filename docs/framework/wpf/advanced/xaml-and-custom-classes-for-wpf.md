@@ -1,25 +1,11 @@
 ---
 title: "XAML and Custom Classes for WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom classes in XAML [WPF]"
   - "XAML [WPF], custom classes"
   - "classes [WPF], custom classes in XAML"
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML and Custom Classes for WPF
 XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] frameworks supports the ability to define a custom class or structure in any [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] language, and then access that class using XAML markup. You can use a mixture of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
@@ -67,7 +53,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
  Examples of properties where attribute syntax is allowed but property element syntax that contains an object element is disallowed through XAML are various properties that take the <xref:System.Windows.Input.Cursor> type. The <xref:System.Windows.Input.Cursor> class has a dedicated type converter <xref:System.Windows.Input.CursorConverter>, but does not expose a default constructor, so the <xref:System.Windows.FrameworkElement.Cursor%2A> property can only be set through attribute syntax even though the actual <xref:System.Windows.Input.Cursor> type is a reference type.  
   
 ### Per-Property Type Converters  
- Alternatively, the property itself may declare a type converter at the property level. This enables a "mini language" that instantiates objects of the type of the property inline, by processing incoming string values of the attribute as input for a <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> operation based on the appropriate type. Typically this is done to provide a convenience accessor, and not as the sole means to enable setting a property in XAML. However, it is also possible to use type converters for attributes where you want to use existing [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] types that do not supply either a default constructor or an attributed type converter. Examples from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] API are certain properties that take the <xref:System.Globalization.CultureInfo> type. In this case, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] used the existing [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] <xref:System.Globalization.CultureInfo> type to better address compatibility and migration scenarios that were used in earlier versions of frameworks, but the <xref:System.Globalization.CultureInfo> type did not support the necessary constructors or type-level type conversion to be usable as a XAML property value directly.  
+ Alternatively, the property itself may declare a type converter at the property level. This enables a "mini language" that instantiates objects of the type of the property inline, by processing incoming string values of the attribute as input for a <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> operation based on the appropriate type. Typically this is done to provide a convenience accessor, and not as the sole means to enable setting a property in XAML. However, it is also possible to use type converters for attributes where you want to use existing [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] types that do not supply either a default constructor or an attributed type converter. Examples from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] API are certain properties that take the <xref:System.Globalization.CultureInfo> type. In this case, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] used the existing Microsoft .NET Framework <xref:System.Globalization.CultureInfo> type to better address compatibility and migration scenarios that were used in earlier versions of frameworks, but the <xref:System.Globalization.CultureInfo> type did not support the necessary constructors or type-level type conversion to be usable as a XAML property value directly.  
   
  Whenever you expose a property that has a XAML usage, particularly if you are a control author, you should strongly consider backing that property with a dependency property. This is particularly true if you use the existing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] implementation of the XAML processor, because you can improve performance by using <xref:System.Windows.DependencyProperty> backing. A dependency property will expose property system features for your property that users will come to expect for a XAML accessible property. This includes features such as animation, data binding, and style support. For more information, see [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md) and [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md).  
   

@@ -1,17 +1,7 @@
 ---
 title: "How to: Parse a String (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 81e5686c-9658-42d8-a7e3-b11be0a2c98b
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Parse a String (C#)
 This topic shows how to parse a string to create an XML tree in C#.  

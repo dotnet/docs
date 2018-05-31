@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.ServiceOperationMissingReplyContext"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1373c661-e63a-4e11-a635-689451450274
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.ServiceOperationMissingReplyContext
 System.ServiceModel.ServiceOperationMissingReplyContext  

@@ -1,11 +1,6 @@
 ---
 title: "Data Type Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Boolean data type [Visual Basic], supported types in Visual Basic"
   - "storage [Visual Basic], order of storage"
@@ -42,9 +37,6 @@ helpviewer_keywords:
   - "storage order, controlling in Visual Basic"
   - "data types [Visual Basic], memory requirements"
 ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Data Type Summary (Visual Basic)
 The following table shows the Visual Basic data types, their supporting common language runtime types, their nominal storage allocation, and their value ranges.  

@@ -1,14 +1,7 @@
 ---
 title: Query expression basics
 description: Introduces concepts related to query expressions
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
-ms.author: wiwagn
 ms.date: 11/30/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
 ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
 ---
 # Query expression basics

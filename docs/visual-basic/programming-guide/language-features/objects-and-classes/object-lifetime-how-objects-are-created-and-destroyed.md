@@ -1,13 +1,6 @@
 ---
 title: "Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Constructor"
 helpviewer_keywords: 
@@ -29,9 +22,6 @@ helpviewer_keywords:
   - "Sub Dispose destructor"
   - "garbage collection [Visual Basic], Visual Basic"
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)
 An instance of a class, an object, is created by using the `New` keyword. Initialization tasks often must be performed on new objects before they are used. Common initialization tasks include opening files, connecting to databases, and reading values of registry keys. Visual Basic controls the initialization of new objects using procedures called *constructors* (special methods that allow control over initialization).  
@@ -39,7 +29,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
  After an object leaves scope, it is released by the common language runtime (CLR). Visual Basic controls the release of system resources using procedures called *destructors*. Together, constructors and destructors support the creation of robust and predictable class libraries.  
   
 ## Using Constructors and Destructors  
- Constructors and destructors control the creation and destruction of objects. The `Sub New` and `Sub Finalize` procedures in Visual Basic initialize and destroy objects; they replace the `Class_Initialize` and `Class_Terminate` methods used in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0 and earlier versions.  
+ Constructors and destructors control the creation and destruction of objects. The `Sub New` and `Sub Finalize` procedures in Visual Basic initialize and destroy objects; they replace the `Class_Initialize` and `Class_Terminate` methods used in Visual Basic 6.0 and earlier versions.  
   
 ### Sub New  
  The `Sub New` constructor can run only once when a class is created. It cannot be called explicitly anywhere other than in the first line of code of another constructor from either the same class or from a derived class. Furthermore, the code in the `Sub New` method always runs before any other code in a class. [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] and later versions implicitly create a `Sub New` constructor at run time if you do not explicitly define a `Sub New` procedure for a class.  
@@ -52,7 +42,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
   
  [!code-vb[VbVbalrOOP#116](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_2.vb)]  
   
- When you define a class derived from another class, the first line of a constructor must be a call to the constructor of the base class, unless the base class has an accessible constructor that takes no parameters. A call to the base class that contains the above constructor, for example, would be `MyBase.New(s)`. Otherwise, `MyBase.New` is optional, and the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] runtime calls it implicitly.  
+ When you define a class derived from another class, the first line of a constructor must be a call to the constructor of the base class, unless the base class has an accessible constructor that takes no parameters. A call to the base class that contains the above constructor, for example, would be `MyBase.New(s)`. Otherwise, `MyBase.New` is optional, and the Visual Basic runtime calls it implicitly.  
   
  After you write the code to call the parent object's constructor, you can add any additional initialization code to the `Sub New` procedure. `Sub New` can accept arguments when called as a parameterized constructor. These parameters are passed from the procedure calling the constructor, for example, `Dim AnObject As New ThisClass(X)`.  
   

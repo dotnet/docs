@@ -1,13 +1,7 @@
 ---
 title: "Commonly Used Collection Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "collections [.NET Framework], generic"
   - "objects [.NET Framework], grouping in collections"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "Collections classes"
   - "generic collections"
 ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
-caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Commonly Used Collection Types
 Collection types are the common variations of data collections, such as hash tables, queues, stacks, bags, dictionaries, and lists.  
@@ -35,7 +24,7 @@ Collection types are the common variations of data collections, such as hash tab
   
  Collections can vary, depending on how the elements are stored, how they are sorted, how searches are performed, and how comparisons are made. The <xref:System.Collections.Queue> class and the <xref:System.Collections.Generic.Queue%601> generic class provide first-in-first-out lists, while the <xref:System.Collections.Stack> class and the <xref:System.Collections.Generic.Stack%601> generic class provide last-in-first-out lists. The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class. The elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> are accessible only by the key of the element, but the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> are accessible either by the key or by the index of the element. The indexes in all collections are zero-based, except <xref:System.Array>, which allows arrays that are not zero-based.  
   
- The LINQ to Objects feature allows you to use LINQ queries to access in-memory objects as long as the object type implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) and [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).  
+ The LINQ to Objects feature allows you to use LINQ queries to access in-memory objects as long as the object type implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) and [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).  
   
 ## Related Topics  
   

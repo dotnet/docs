@@ -1,20 +1,12 @@
 ---
 title: "-unsafe (C# Compiler Options)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: 04/25/2018
 f1_keywords: 
   - "/unsafe"
 helpviewer_keywords: 
   - "-unsafe compiler option [C#]"
   - "unsafe compiler option [C#]"
   - "/unsafe compiler option [C#]"
-ms.assetid: fdb77ed9-da03-45bd-bb7f-250704da1bcc
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -unsafe (C# Compiler Options)
 The **-unsafe** compiler option allows code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword to compile.  
@@ -36,6 +28,16 @@ The **-unsafe** compiler option allows code that uses the [unsafe](../../../csha
   
 3.  Select the **Allow Unsafe Code** check box.  
   
+### To add this option in a csproj file
+
+Open the .csproj file for a project, and add the following elements:
+
+```xml
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+```
+
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.AllowUnsafeBlocks%2A>.  
   
 ## Example  

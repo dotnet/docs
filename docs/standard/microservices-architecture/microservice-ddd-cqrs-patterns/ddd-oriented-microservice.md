@@ -1,16 +1,9 @@
 ---
 title: Designing a DDD-oriented microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing a DDD-oriented microservice
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/06/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Designing a DDD-oriented microservice
 
@@ -52,7 +45,7 @@ You want to design the system so that each layer communicates only with certain 
 
 ### The domain model layer
 
-Eric Evans's excellent book [Domain Driven Design](http://domainlanguage.com/ddd/) says the following about the domain model layer and the application layer.
+Eric Evans's excellent book [Domain Driven Design](https://domainlanguage.com/ddd/) says the following about the domain model layer and the application layer.
 
 **Domain Model Layer**: Responsible for representing concepts of the business, information about the business situation, and business rules. State that reflects the business situation is controlled and used here, even though the technical details of storing it are delegated to the infrastructure. This layer is the heart of business software.
 
@@ -70,7 +63,7 @@ Also, this does not mean you can take a model designed for a relational database
 
 ### The application layer
 
-Moving on to the application layer, we can again cite Eric Evans's book [Domain Driven Design](http://domainlanguage.com/ddd/):
+Moving on to the application layer, we can again cite Eric Evans's book [Domain Driven Design](https://domainlanguage.com/ddd/):
 
 **Application Layer:** Defines the jobs the software is supposed to do and directs the expressive domain objects to work out problems. The tasks this layer is responsible for are meaningful to the business or necessary for interaction with the application layers of other systems. This layer is kept thin. It does not contain business rules or knowledge, but only coordinates tasks and delegates work to collaborations of domain objects in the next layer down. It does not have state reflecting the business situation, but it can have state that reflects the progress of a task for the user or the program.
 

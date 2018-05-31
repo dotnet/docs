@@ -4,11 +4,6 @@ description: An overview of the .NET Core Command-Line Interface (CLI) tools and
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
 ---
 # .NET Core command-line interface (CLI) tools
 

@@ -1,18 +1,9 @@
 ---
 title: "Property not found"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID422"
 ms.assetid: 127e0f5f-0997-4ac5-b9af-2e6a2eb513a2
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Property not found
 This object does not support the specified property.  

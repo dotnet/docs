@@ -1,21 +1,7 @@
 ---
 title: "Correlation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 60151f6c-19b7-47af-9cdc-76c2ac95f301
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Correlation
 When workflow service applications communicate with other services, it is important that messages between them are dispatched to the appropriate workflow instance. Correlation provides the mechanism for this. The topics in this section provide an overview of correlation and how to use it in different workflow service scenarios.  

@@ -1,21 +1,12 @@
 ---
 title: "Name &lt;membername&gt; is not CLS-compliant"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc40031"
   - "vbc40031"
 helpviewer_keywords: 
   - "BC40031"
 ms.assetid: e2b885dc-cbf9-49ff-bbbe-531657ea99f7
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Name &lt;membername&gt; is not CLS-compliant
 An assembly is marked as `<CLSCompliant(True)>` but exposes a member with a name that begins with an underscore (`_`).  

@@ -1,29 +1,15 @@
 ---
 title: "Working with NATs and Firewalls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "firewalls [WCF]"
   - "NATs [WCF]"
 ms.assetid: 74db0632-1bf0-428b-89c8-bd53b64332e7
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Working with NATs and Firewalls
 The client and server of a network connection frequently do not have a direct and open path for communication. Packets are filtered, routed, analyzed, and transformed both on the endpoint machines and by intermediate machines on the network. Network address translations (NATs) and firewalls are common examples of intermediate applications that can participate in network communication.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports, and message exchange patterns (MEPs) react differently to, the presence of NATs and firewalls. This topic describes how NATs and firewalls function in common network topologies. Recommendations for specific combinations of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transports and MEPs are given that help make your applications more robust to NATs and firewalls on the network.  
+ Windows Communication Foundation (WCF) transports, and message exchange patterns (MEPs) react differently to, the presence of NATs and firewalls. This topic describes how NATs and firewalls function in common network topologies. Recommendations for specific combinations of WCF transports and MEPs are given that help make your applications more robust to NATs and firewalls on the network.  
   
 ## How NATs Affect Communication  
  NAT was created to enable several machines to share a single external IP address. A port-remapping NAT maps an internal IP address and port for a connection to an external IP address with a new port number. The new port number allows the NAT to correlate return traffic with the original communication. Many home users now have an IP address that is only privately routable and rely on a NAT to provide global routing of packets.  
@@ -40,7 +26,7 @@ The client and server of a network connection frequently do not have a direct an
  A common configuration for a home user firewall is to prohibit incoming connections unless an outgoing connection was made to that machine previously. A common configuration for a business user firewall is to prohibit incoming connections on all ports except a group specifically identified. An example is a firewall that prohibits connections on all ports except for ports 80 and 443 to provide HTTP and HTTPS service. Managed firewalls exist for both home and business users that permit a trusted user or process on the machine to change the firewall configuration. Managed firewalls are more common for home users where there is no corporate policy controlling network usage.  
   
 ## Using Teredo  
- Teredo is an IPv6 transition technology that enables the direct addressability of machines behind a NAT. Teredo relies on the use of a server that can be publicly and globally routed to advertise potential connections. The Teredo server gives the application client and server a common meeting point at which they can exchange connection information. The machines then request a temporary Teredo address, and packets are tunneled through the existing network. Teredo support in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] requires enabling IPv6 and Teredo support in the operating system. [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and later operating systems support Teredo. [!INCLUDE[wv](../../../../includes/wv-md.md)] and later operating systems support IPv6 by default and only require the user to enable Teredo. [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] require the user to enable both IPv6 and Teredo. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=87571).  
+ Teredo is an IPv6 transition technology that enables the direct addressability of machines behind a NAT. Teredo relies on the use of a server that can be publicly and globally routed to advertise potential connections. The Teredo server gives the application client and server a common meeting point at which they can exchange connection information. The machines then request a temporary Teredo address, and packets are tunneled through the existing network. Teredo support in WCF requires enabling IPv6 and Teredo support in the operating system. [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and later operating systems support Teredo. [!INCLUDE[wv](../../../../includes/wv-md.md)] and later operating systems support IPv6 by default and only require the user to enable Teredo. [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] require the user to enable both IPv6 and Teredo. For more information, see the [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=87571).  
   
 ## Choosing a Transport and Message Exchange Pattern  
  Selecting a transport and MEP is a three-step process:  
@@ -59,7 +45,7 @@ The client and server of a network connection frequently do not have a direct an
   
 -   Employ a reachable service for either registering endpoints or relaying traffic. Using a globally reachable connection service, such as a Teredo server, greatly increases the chance of connecting successfully when the network topology is restrictive or unknown.  
   
- The following tables examine the one-way, request-reply, and duplex MEPs, and the standard TCP, TCP with Teredo, and standard and dual HTTP transports in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ The following tables examine the one-way, request-reply, and duplex MEPs, and the standard TCP, TCP with Teredo, and standard and dual HTTP transports in WCF.  
   
 |Addressability|Server Direct|Server Direct with NAT traversal|Server NAT|Server NAT with NAT traversal|  
 |--------------------|-------------------|--------------------------------------|----------------|-----------------------------------|  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;customBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;customBinding&gt;
 Provides full control over the messaging stack for the user.  
@@ -238,7 +224,7 @@ Provides full control over the messaging stack for the user.
   
 -   Next is an optional <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> that provides a session and ordering mechanism as defined in the WS-ReliableMessaging specification. This notion of a session can cross SOAP and transport intermediaries.  
   
--   Next is an optional security binding element that provides security features like authorization, authentication, protection, and confidentiality. The following security binding elements are provided by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]:  
+-   Next is an optional security binding element that provides security features like authorization, authentication, protection, and confidentiality. The following security binding elements are provided by Windows Communication Foundation (WCF):  
   
     -   <xref:System.ServiceModel.Channels.SecurityBindingElement>  
   
@@ -268,7 +254,7 @@ Provides full control over the messaging stack for the user.
   
     -   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>  
   
--   At the bottom is a required transport element. You can use your own transport or use one of transport binding elements provided by [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]:  
+-   At the bottom is a required transport element. You can use your own transport or use one of transport binding elements provided by Windows Communication Foundation (WCF):  
   
     -   <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
   

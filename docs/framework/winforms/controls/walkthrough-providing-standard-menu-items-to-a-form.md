@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Providing Standard Menu Items to a Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: dac37d98-589e-4d6d-9673-6437e8943122
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Providing Standard Menu Items to a Form
 You can provide a standard menu for your forms with the <xref:System.Windows.Forms.MenuStrip> control.  
@@ -48,7 +34,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] is installed.  
+-   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  

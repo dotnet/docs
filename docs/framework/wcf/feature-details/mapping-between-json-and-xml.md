@@ -1,32 +1,18 @@
 ---
 title: "Mapping Between JSON and XML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 22ee1f52-c708-4024-bbf0-572e0dae64af
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mapping Between JSON and XML
-The readers and writers produced by the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> provide an XML API over JavaScript Object Notation (JSON) content. JSON encodes data using a subset of the object literals of JavaScript. The readers and writers produced by this factory are also used when JSON content is being sent or received by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications using the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> or the <xref:System.ServiceModel.WebHttpBinding>.  
+The readers and writers produced by the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> provide an XML API over JavaScript Object Notation (JSON) content. JSON encodes data using a subset of the object literals of JavaScript. The readers and writers produced by this factory are also used when JSON content is being sent or received by Windows Communication Foundation (WCF) applications using the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> or the <xref:System.ServiceModel.WebHttpBinding>.  
   
  When initialized with JSON content, the JSON reader behaves in the same way that a textual XML reader does over an instance of XML. The JSON writer, when given a sequence of calls that on a textual XML reader produces a certain XML instance, writes out JSON content. The mapping between this instance of XML and the JSON content is described in this topic for use in advanced scenarios.  
   
- Internally, JSON is represented as an XML infoset when processed by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Normally you do not have to be concerned with this internal representation as the mapping is only a logical one: JSON is normally not physically converted to XML in memory or converted to JSON from XML. The mapping means that XML APIs are used to access JSON content.  
+ Internally, JSON is represented as an XML infoset when processed by WCF. Normally you do not have to be concerned with this internal representation as the mapping is only a logical one: JSON is normally not physically converted to XML in memory or converted to JSON from XML. The mapping means that XML APIs are used to access JSON content.  
   
- When [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses JSON, the usual scenario is that the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is automatically plugged in by the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior, or by the <xref:System.ServiceModel.Description.WebHttpBehavior> behavior when appropriate. The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> understands the mapping between JSON and the XML infoset and acts as if it is dealing with JSON directly. (It is possible to use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> with any XML reader or writer, with the understanding that the XML conforms to the following mapping.)  
+ When WCF uses JSON, the usual scenario is that the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is automatically plugged in by the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> behavior, or by the <xref:System.ServiceModel.Description.WebHttpBehavior> behavior when appropriate. The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> understands the mapping between JSON and the XML infoset and acts as if it is dealing with JSON directly. (It is possible to use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> with any XML reader or writer, with the understanding that the XML conforms to the following mapping.)  
   
- In advanced scenarios, it may become necessary to directly access the following mapping. These scenarios occur when you want to serialize and deserialize JSON in custom ways, without relying on the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, or when dealing with the <xref:System.ServiceModel.Channels.Message> type directly for messages containing JSON. The JSON-XML mapping is also used for message logging. When using the message logging feature in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], JSON messages is logged as XML according to the mapping described in the next section.  
+ In advanced scenarios, it may become necessary to directly access the following mapping. These scenarios occur when you want to serialize and deserialize JSON in custom ways, without relying on the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, or when dealing with the <xref:System.ServiceModel.Channels.Message> type directly for messages containing JSON. The JSON-XML mapping is also used for message logging. When using the message logging feature in WCF, JSON messages is logged as XML according to the mapping described in the next section.  
   
  To clarify the concept of a mapping, the following example is of a JSON document.  
   
@@ -43,7 +29,7 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
 </root>  
 ```  
   
- Furthermore, if the JSON message in the example is received by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and logged, you would see the XML fragment in the preceding log.  
+ Furthermore, if the JSON message in the example is received by WCF and logged, you would see the XML fragment in the preceding log.  
   
 ## Mapping Between JSON and the XML Infoset  
  Formally, the mapping is between JSON as described in [RFC 4627](http://go.microsoft.com/fwlink/?LinkId=98808) (except with certain restrictions relaxed and certain other restrictions added) and the XML infoset (and not textual XML) as described in [XML Information Set](http://go.microsoft.com/fwlink/?LinkId=98809) . See this topic for the definitions of *information items* and fields in [square brackets].  
@@ -206,7 +192,7 @@ ray`|0 or more EIIs|A begin-array (left square bracket) as in section 2.3 of the
  `{"myLocalName1":"myValue1","myLocalName2":2,"myLocalName3":{"myNestedName1":true,"myNestedName2":null}}`  
   
 > [!NOTE]
->  There is no XML encoding step in the preceding mapping. Therefore, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] only supports JSON documents where all characters in key names are valid characters in XML element names. For example, the JSON document {"<":"a"} is not supported because < is not a valid name for an XML element.  
+>  There is no XML encoding step in the preceding mapping. Therefore, WCF only supports JSON documents where all characters in key names are valid characters in XML element names. For example, the JSON document {"<":"a"} is not supported because < is not a valid name for an XML element.  
   
  The reverse situation (characters valid in XML but not in JSON) does not cause any problems because the preceding mapping includes JSON escaping/unescaping steps.  
   

@@ -1,13 +1,7 @@
 ---
 title: "Multithreaded Programming with the Event-based Asynchronous Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
@@ -19,13 +13,6 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 958d6617-5e70-4b36-b5db-63c16dc35e43
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Multithreaded Programming with the Event-based Asynchronous Pattern
 There are a number of ways to expose asynchronous features to client code. The Event-based Asynchronous Pattern prescribes the recommended way for classes to present asynchronous behavior.  
@@ -62,5 +49,5 @@ There are a number of ways to expose asynchronous features to client code. The E
 ## See Also  
  [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md)  
  [Events](../../../docs/standard/events/index.md)  
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [Multithreading in Components](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
  [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

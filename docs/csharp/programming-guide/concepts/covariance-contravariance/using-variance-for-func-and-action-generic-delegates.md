@@ -1,17 +1,7 @@
 ---
 title: "Using Variance for Func and Action Generic Delegates (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 1826774f-2b7a-470f-b110-17cfdd6abdae
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Variance for Func and Action Generic Delegates (C#)
 These examples demonstrate how to use covariance and contravariance in the `Func` and `Action` generic delegates to enable reuse of methods and provide more flexibility in your code.  

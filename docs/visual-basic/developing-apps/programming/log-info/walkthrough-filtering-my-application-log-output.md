@@ -1,21 +1,11 @@
 ---
 title: "Filtering My.Application.Log Output (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Log object, filtering output"
   - "My.Application.Log object, filtering output"
   - "application event logs, output filtering"
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Filtering My.Application.Log Output (Visual Basic)
 This walkthrough demonstrates how to change the default log filtering for the `My.Application.Log` object, to control what information is passed from the `Log` object to the listeners and what information is written by the listeners. You can change the logging behavior even after building the application, because the configuration information is stored in the application's configuration file.  
@@ -25,7 +15,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 #### To build the sample application  
   
-1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project.  
+1.  Open a new Visual Basic Windows Application project.  
   
 2.  Add a button named Button1 to Form1.  
   

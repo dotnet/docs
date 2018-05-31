@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;transportConfigurationType&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;transportConfigurationType&gt;
 This element is a key/value pair, which identifies the type of a particular transport.  

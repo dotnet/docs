@@ -1,18 +1,13 @@
 ---
 title: Discards - C# Guide
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
-keywords: .NET,.NET Core
 author: rpetrusha
 ms.author: ronpet
 ms.date: 07/21/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
 # Discards - C# Guide
 
-Starting with C# 7, C# supports discards, which are temporary, dummy variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they do not have a value. Because there is only a single discard variable, and that variable may not even be allocated storage, discards can reduce memory allocations. Because they make the intent of your code clear, they enhance its readability and maintainability.
+Starting with C# 7.0, C# supports discards, which are temporary, dummy variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they do not have a value. Because there is only a single discard variable, and that variable may not even be allocated storage, discards can reduce memory allocations. Because they make the intent of your code clear, they enhance its readability and maintainability.
 
 You indicate that a variable is a discard by assigning it the underscore (`_`) as its name. For example, the following method call returns a 3-tuple in which the first and second values are discards and *area* is a previously declared variable to be set to the corresponding third component returned by *GetCityInformation*:
 
@@ -20,7 +15,7 @@ You indicate that a variable is a discard by assigning it the underscore (`_`) a
 (_, _, area) = city.GetCityInformation(cityName);
 ```
 
-In C# 7, discards are supported in assignments in the following contexts:
+In C# 7.0, discards are supported in assignments in the following contexts:
 
 - Tuple and object [deconstruction](deconstruct.md).
 - Pattern matching with [is](language-reference/keywords/is.md) and [switch](language-reference/keywords/switch.md).

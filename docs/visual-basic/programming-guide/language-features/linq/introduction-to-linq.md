@@ -1,13 +1,6 @@
 ---
 title: "Introduction to LINQ in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"
   - "query execution [LINQ in Visual Basic]"
@@ -19,14 +12,11 @@ helpviewer_keywords:
   - "deferred execution"
   - "iteration variables [Visual Basic]"
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Introduction to LINQ in Visual Basic
-Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and provides simple and powerful capabilities when you work with all kinds of data. Rather than sending a query to a database to be processed, or working with different query syntax for each type of data that you are searching, LINQ introduces queries as part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language. It uses a unified syntax regardless of the type of data.  
+Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and provides simple and powerful capabilities when you work with all kinds of data. Rather than sending a query to a database to be processed, or working with different query syntax for each type of data that you are searching, LINQ introduces queries as part of the Visual Basic language. It uses a unified syntax regardless of the type of data.  
   
- LINQ enables you to query data from a SQL Server database, XML, in-memory arrays and collections, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] datasets, or any other remote or local data source that supports LINQ. You can do all this with common [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language elements. Because your queries are written in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language, your query results are returned as strongly-typed objects. These objects support IntelliSense, which enables you to write code faster and catch errors in your queries at compile time instead of at run time. LINQ queries can be used as the source of additional queries to refine results. They can also be bound to controls so that users can easily view and modify your query results.  
+ LINQ enables you to query data from a SQL Server database, XML, in-memory arrays and collections, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] datasets, or any other remote or local data source that supports LINQ. You can do all this with common Visual Basic language elements. Because your queries are written in the Visual Basic language, your query results are returned as strongly-typed objects. These objects support IntelliSense, which enables you to write code faster and catch errors in your queries at compile time instead of at run time. LINQ queries can be used as the source of additional queries to refine results. They can also be bound to controls so that users can easily view and modify your query results.  
   
  For example, the following code example shows a LINQ query that returns a list of customers from a collection and groups them based on their location.  
   
@@ -60,21 +50,21 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
  [!code-vb[VbVbalrIntroToLINQ#31](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_2.vb)]  
   
 ##  <a name="LINQProviders"></a> LINQ Providers  
- A *LINQ provider* maps your [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] LINQ queries to the data source being queried. When you write a LINQ query, the provider takes that query and translates it into commands that the data source will be able to execute. The provider also converts data from the source to the objects that make up your query result. Finally, it converts objects to data when you send updates to the data source.  
+ A *LINQ provider* maps your Visual Basic LINQ queries to the data source being queried. When you write a LINQ query, the provider takes that query and translates it into commands that the data source will be able to execute. The provider also converts data from the source to the objects that make up your query result. Finally, it converts objects to data when you send updates to the data source.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] includes the following LINQ providers.  
+ Visual Basic includes the following LINQ providers.  
   
 |Provider|Description|  
 |---|---|  
-|LINQ to Objects|The LINQ to Objects provider enables you to query in-memory collections and arrays. If an object supports either the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, the LINQ to Objects provider enables you to query it.<br /><br /> You can enable the LINQ to Objects provider by importing the <xref:System.Linq> namespace, which is imported by default for all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] projects.<br /><br /> For more information about the LINQ to Objects provider, see [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9).|  
-|LINQ to SQL|The LINQ to SQL provider enables you to query and modify data in a SQL Server database. This makes it easy to map the object model for an application to the tables and objects in a database.<br /><br /> [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] makes it easier to work with LINQ to SQL by including the Object Relational Designer (O/R Designer). This designer is used to create an object model in an application that maps to objects in a database. The O/R Designer also provides functionality to map stored procedures and functions to the <xref:System.Data.Linq.DataContext> object, which manages communication with the database and stores state for optimistic concurrency checks.<br /><br /> For more information about the LINQ to SQL provider, see [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md). For more information about the Object Relational Designer, see [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).|  
-|LINQ to XML|The LINQ to XML provider enables you to query and modify XML. You can modify in-memory XML, or you can load XML from and save XML to a file.<br /><br /> Additionally, the LINQ to XML provider enables XML literals and XML axis properties that enable you to write XML directly in your [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code. For more information, see [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md).|  
+|LINQ to Objects|The LINQ to Objects provider enables you to query in-memory collections and arrays. If an object supports either the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, the LINQ to Objects provider enables you to query it.<br /><br /> You can enable the LINQ to Objects provider by importing the <xref:System.Linq> namespace, which is imported by default for all Visual Basic projects.<br /><br /> For more information about the LINQ to Objects provider, see [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9).|  
+|LINQ to SQL|The LINQ to SQL provider enables you to query and modify data in a SQL Server database. This makes it easy to map the object model for an application to the tables and objects in a database.<br /><br /> Visual Basic makes it easier to work with LINQ to SQL by including the Object Relational Designer (O/R Designer). This designer is used to create an object model in an application that maps to objects in a database. The O/R Designer also provides functionality to map stored procedures and functions to the <xref:System.Data.Linq.DataContext> object, which manages communication with the database and stores state for optimistic concurrency checks.<br /><br /> For more information about the LINQ to SQL provider, see [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md). For more information about the Object Relational Designer, see [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).|  
+|LINQ to XML|The LINQ to XML provider enables you to query and modify XML. You can modify in-memory XML, or you can load XML from and save XML to a file.<br /><br /> Additionally, the LINQ to XML provider enables XML literals and XML axis properties that enable you to write XML directly in your Visual Basic code. For more information, see [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md).|  
 |LINQ to DataSet|The LINQ to DataSet provider enables you to query and update data in an [!INCLUDE[vstecado](~/includes/vstecado-md.md)] dataset. You can add the power of LINQ to applications that use datasets in order to simplify and extend your capabilities for querying, aggregating, and updating the data in your dataset.<br /><br /> For more information, see [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md).|  
   
 ##  <a name="StructureOfALINQQuery"></a> Structure of a LINQ Query  
  A LINQ query, often referred to as a *query expression*, consists of a combination of query clauses that identify the data sources and iteration variables for the query. A query expression can also include instructions for sorting, filtering, grouping, and joining, or calculations to apply to the source data. Query expression syntax resembles the syntax of SQL; therefore, you may find much of the syntax familiar.  
   
- A query expression starts with a `From` clause. This clause identifies the source data for a query and the variables that are used to refer to each element of the source data individually. These variables are named *range variables* or *iteration variables*. The `From` clause is required for a query, except for `Aggregate` queries, where the `From` clause is optional. After the scope and source of the query are identified in the `From` or `Aggregate` clauses, you can include any combination of query clauses to refine the query. For details about query clauses, see [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] LINQ Query Operators later in this topic. For example, the following query identifies a source collection of customer data as the `customers` variable, and an iteration variable named `cust`.  
+ A query expression starts with a `From` clause. This clause identifies the source data for a query and the variables that are used to refer to each element of the source data individually. These variables are named *range variables* or *iteration variables*. The `From` clause is required for a query, except for `Aggregate` queries, where the `From` clause is optional. After the scope and source of the query are identified in the `From` or `Aggregate` clauses, you can include any combination of query clauses to refine the query. For details about query clauses, see Visual Basic LINQ Query Operators later in this topic. For example, the following query identifies a source collection of customer data as the `customers` variable, and an iteration variable named `cust`.  
   
  [!code-vb[VbVbalrIntroToLINQ#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_3.vb)]  
   
@@ -94,10 +84,10 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
   
  [!code-vb[VbVbalrIntroToLINQ#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_7.vb)]  
   
- There are several additional LINQ query operators that you can use to create powerful query expressions. The next section of this topic discusses the various query clauses that you can include in a query expression. For details about [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query clauses, see [Queries](../../../../visual-basic/language-reference/queries/queries.md).  
+ There are several additional LINQ query operators that you can use to create powerful query expressions. The next section of this topic discusses the various query clauses that you can include in a query expression. For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/queries.md).  
   
 ##  <a name="VisualBasicLINQQueryOperators"></a> Visual Basic LINQ Query Operators  
- The classes in the <xref:System.Linq> namespace and the other namespaces that support LINQ queries include methods that you can call to create and refine queries based on the needs of your application. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] includes keywords for the most common query clauses, as described by the following table.  
+ The classes in the <xref:System.Linq> namespace and the other namespaces that support LINQ queries include methods that you can call to create and refine queries based on the needs of your application. Visual Basic includes keywords for the most common query clauses, as described by the following table.  
   
 |Term|Definition|  
 |---|---|  
@@ -116,7 +106,7 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
 |[Take Clause](../../../../visual-basic/language-reference/queries/take-clause.md)|Optional. Returns a specified number of contiguous elements from the start of a collection. For example:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#20](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_21.vb)]|  
 |[Take While Clause](../../../../visual-basic/language-reference/queries/take-while-clause.md)|Optional. Includes elements in a collection as long as a specified condition is `true` and bypasses the remaining elements. For example:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#21](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_22.vb)]|  
   
- For details about [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] query clauses, see [Queries](../../../../visual-basic/language-reference/queries/queries.md).  
+ For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/queries.md).  
   
  You can use additional LINQ query features by calling members of the enumerable and queryable types provided by LINQ. You can use these additional capabilities by calling a particular query operator on the result of a query expression. For example, the following code example uses the <xref:System.Linq.Enumerable.Union%2A> method to combine the results of two queries into one query result. It uses the <xref:System.Linq.Enumerable.ToList%2A> method to return the query result as a generic list.  
   
@@ -125,14 +115,14 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
  For details about additional LINQ capabilities, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
   
 ##  <a name="ConnectingToADatabase"></a> Connecting to a Database by Using LINQ to SQL  
- In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you identify the SQL Server database objects, such as tables, views, and stored procedures, that you want to access by using a LINQ to SQL file. A LINQ to SQL file has an extension of .dbml.  
+ In Visual Basic, you identify the SQL Server database objects, such as tables, views, and stored procedures, that you want to access by using a LINQ to SQL file. A LINQ to SQL file has an extension of .dbml.  
   
  When you have a valid connection to a SQL Server database, you can add a **LINQ to SQL Classes** item template to your project. This will display the Object Relational Designer (O/R designer). The O/R Designer enables you to drag the items that you want to access in your code from the **Server Explorer**/**Database Explorer** onto the designer surface. The LINQ to SQL file adds a <xref:System.Data.Linq.DataContext> object to your project. This object includes properties and collections for the tables and views that you want access to, and methods for the stored procedures that you want to call. After you have saved your changes to the LINQ to SQL (.dbml) file, you can access these objects in your code by referencing the <xref:System.Data.Linq.DataContext> object that is defined by the O/R Designer. The <xref:System.Data.Linq.DataContext> object for your project is named based on the name of your LINQ to SQL file. For example, a LINQ to SQL file that is named Northwind.dbml will create a <xref:System.Data.Linq.DataContext> object named `NorthwindDataContext`.  
   
  For examples with step-by-step instructions, see [How to: Query a Database](../../../../visual-basic/programming-guide/language-features/linq/how-to-query-a-database-by-using-linq.md) and [How to: Call a Stored Procedure](../../../../visual-basic/programming-guide/language-features/linq/how-to-call-a-stored-procedure-by-using-linq.md).  
   
 ##  <a name="VisualBasicFeaturesThatSupportLINQ"></a> Visual Basic Features That Support LINQ  
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] includes other notable features that make the use of LINQ simple and reduce the amount of code that you must write to perform LINQ queries. These include the following:  
+ Visual Basic includes other notable features that make the use of LINQ simple and reduce the amount of code that you must write to perform LINQ queries. These include the following:  
   
 -   **Anonymous types**, which enable you to create a new type based on a query result.  
   
@@ -154,7 +144,7 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
  For more information about query execution, see [Writing Your First LINQ Query](../../../../visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query.md).  
   
 ##  <a name="XMLInVisualBasic"></a> XML in Visual Basic  
- The XML features in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] include XML literals and XML axis properties, which enable you easily to create, access, query, and modify XML in your code. XML literals enable you to write XML directly in your code. The Visual Basic compiler treats the XML as a first-class data object.  
+ The XML features in Visual Basic include XML literals and XML axis properties, which enable you easily to create, access, query, and modify XML in your code. XML literals enable you to write XML directly in your code. The Visual Basic compiler treats the XML as a first-class data object.  
   
  The following code example shows how to create an XML element, access its sub-elements and attributes, and query the contents of the element by using LINQ.  
   
@@ -166,8 +156,8 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
   
 |Topic|Description|  
 |---|---|  
-|[XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)|Describes the XML features in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that can be queried and that enable you to include XML as first-class data objects in your [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.|  
-|[Queries](../../../../visual-basic/language-reference/queries/queries.md)|Provides reference information about the query clauses that are available in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].|  
+|[XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)|Describes the XML features in Visual Basic that can be queried and that enable you to include XML as first-class data objects in your Visual Basic code.|  
+|[Queries](../../../../visual-basic/language-reference/queries/queries.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
 |[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)|Includes general information, programming guidance, and samples for LINQ.|  
 |[LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
 |[LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)|Includes general information, programming guidance, and samples for LINQ to Objects.|  

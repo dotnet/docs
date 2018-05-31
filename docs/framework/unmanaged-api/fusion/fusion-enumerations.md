@@ -1,25 +1,13 @@
 ---
 title: "Fusion Enumerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "unmanaged enumerations [.NET Framework], fusion"
   - "fusion enumerations [.NET Framework]"
   - "enumerations [.NET Framework fusion]"
 ms.assetid: 5817b4bc-b0ba-4b2f-a11c-a03dd8cb8f84
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Fusion Enumerations
 This section describes the unmanaged enumerations that the fusion API uses.  

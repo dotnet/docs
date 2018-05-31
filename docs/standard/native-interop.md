@@ -1,20 +1,12 @@
 ---
 title: Native interoperability
 description: Learn how to interface with native components in .NET.
-keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: ronpet
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Native Interoperability
 
 In this document, we will dive a little bit deeper into all three ways of doing "native interoperability" that are available using .NET.
@@ -22,7 +14,7 @@ In this document, we will dive a little bit deeper into all three ways of doing 
 There are a few of reasons why you would want to call into native code:
 
 *   Operating Systems come with a large volume of APIs that are not present in the managed class libraries. A prime example for this would be access to hardware or operating system management functions.
-*   Communicating with other components that have or can produce C-style ABIs (native ABIs). This covers, for example, Java code that is exposed via [Java Native Interface (JNI)](http://docs.oracle.com/javase/8/docs/technotes/guides/jni/) or any other managed language that could produce a native component.
+*   Communicating with other components that have or can produce C-style ABIs (native ABIs). This covers, for example, Java code that is exposed via [Java Native Interface (JNI)](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) or any other managed language that could produce a native component.
 *   On Windows, most of the software that gets installed, such as Microsoft Office suite, registers COM components that represent their programs and allow developers to automate them or use them. This also requires native interoperability.
 
 Of course, the list above does not cover all of the potential situations and scenarios in which the developer would want/like/need to interface with native components. .NET class library, for instance, uses the native interoperability support to implement a fair number of its APIs, like console support and manipulation, file system access and others. However, it is important to note that there is an option, should one need it.
@@ -336,6 +328,6 @@ The `StatClass` class represents a structure that is returned by the `stat` syst
 
 ## More resources
 
-*   [PInvoke.net wiki](http://www.pinvoke.net) an excellent Wiki with information on common Win32 APIs and how to call them.
+*   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Win32 APIs and how to call them.
 *   [P/Invoke on MSDN](https://msdn.microsoft.com/library/zbz07712.aspx)
-*   [Mono documentation on P/Invoke](http://www.mono-project.com/docs/advanced/pinvoke/)
+*   [Mono documentation on P/Invoke](https://www.mono-project.com/docs/advanced/pinvoke/)

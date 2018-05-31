@@ -1,13 +1,9 @@
 ---
 title: State and data in Docker applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # State and data in Docker applications
 

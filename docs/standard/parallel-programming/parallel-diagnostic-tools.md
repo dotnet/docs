@@ -1,23 +1,12 @@
 ---
 title: "Parallel Diagnostic Tools"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "parallel programming, debugging and profiling tools"
 ms.assetid: 38f7302a-ddf6-4179-ba19-f49e00395b9f
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Parallel Diagnostic Tools
 Visual Studio provides extensive support for debugging and profiling multi-threaded applications.  

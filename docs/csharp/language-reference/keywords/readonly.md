@@ -1,19 +1,12 @@
 ---
 title: "readonly (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "readonly_CSharpKeyword"
   - "readonly"
 helpviewer_keywords: 
   - "readonly keyword [C#]"
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # readonly (C# Reference)
 The `readonly` keyword is a modifier that you can use on fields. When a field declaration includes a `readonly` modifier, assignments to the fields introduced by the declaration can only occur as part of the declaration or in a constructor in the same class.  
@@ -27,7 +20,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
   
 -   When the variable is initialized in the declaration, for example:  
   
-    ```  
+    ```csharp  
     public readonly int y = 5;  
     ```  
   
@@ -36,7 +29,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
 > [!NOTE]
 >  The `readonly` keyword is different from the [const](../../../csharp/language-reference/keywords/const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be initialized either at the declaration or in a constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for runtime constants as in the following example:  
   
-```  
+```csharp  
 public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;  
 ```  
   

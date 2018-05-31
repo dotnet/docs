@@ -1,19 +1,12 @@
 ---
 title: "ushort (C# Reference)"
 ms.date: 03/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "ushort"
   - "ushort_CSharpKeyword"
 helpviewer_keywords: 
   - "ushort keyword [C#]"
 ms.assetid: 1a7dbaae-b7a0-4111-872a-c88a6d3981ac
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # ushort (C# Reference)
 
@@ -25,7 +18,7 @@ The `ushort` keyword indicates an integral data type that stores values accordin
   
 ## Literals  
 
-You can declare and initialize a `ushort` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `ushort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=nameWithType> or greater than <xref:System.UInt16.MaxValue?displayProperty=nameWithType>), a compilation error occurs.
+You can declare and initialize a `ushort` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7.0) a binary literal to it. If the integer literal is outside the range of `ushort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=nameWithType> or greater than <xref:System.UInt16.MaxValue?displayProperty=nameWithType>), a compilation error occurs.
 
 In the following example, integers equal to 65,034 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `ushort` values.    
   
@@ -34,7 +27,7 @@ In the following example, integers equal to 65,034 that are represented as decim
 > [!NOTE] 
 > You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
 
-Starting with C# 7, a couple of features have been added to enhance readability. 
+Starting with C# 7.0, a couple of features have been added to enhance readability. 
  - C# 7.0 allows the usage of the underscore character, `_`, as a digit separator.
  - C# 7.2 allows `_` to be used as a digit separator for a binary or hexadecimal literal, after the prefix. A decimal literal isn't permitted to have a leading underscore.
 

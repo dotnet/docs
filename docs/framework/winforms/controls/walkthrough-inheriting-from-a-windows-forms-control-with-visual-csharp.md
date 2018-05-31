@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Inheriting from a Windows Forms Control with Visual C#"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inheritance [Windows Forms], custom controls"
   - "inheritance [Windows Forms], control"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], walkthroughs"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Inheriting from a Windows Forms Control with Visual C# #
 With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can create powerful custom controls through *inheritance*. Through inheritance you are able to create controls that retain all of the inherent functionality of standard Windows Forms controls but also incorporate custom functionality. In this walkthrough, you will create a simple inherited control called `ValueButton`. This button will inherit functionality from the standard Windows Forms <xref:System.Windows.Forms.Button> control, and will expose a custom property called `ButtonValue`.  
@@ -36,7 +22,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
   
 1.  On the **File** menu, point to **New** and then click **Project** to open the **New Project** dialog box.  
   
-2.  Select the **Windows Forms Control Library** project template from the list of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] Projects, and type `ValueButtonLib` in the **Name** box.  
+2.  Select the **Windows Forms Control Library** project template from the list of Visual C# Projects, and type `ValueButtonLib` in the **Name** box.  
   
      The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](../../../csharp/programming-guide/namespaces/index.md).  
   

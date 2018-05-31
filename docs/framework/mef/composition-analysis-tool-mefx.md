@@ -1,25 +1,13 @@
 ---
 title: "Composition Analysis Tool (Mefx)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Composition Analysis Tool [MEF]"
   - "MEF, Composition Analysis Tool"
   - "Mefx [MEF], Composition Analysis Tool"
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Composition Analysis Tool (Mefx)
 The Composition Analysis Tool (Mefx) is a command-line application that analyzes library (.dll) and application (.exe) files containing Managed Extensibility Framework (MEF) parts. The primary purpose of Mefx is to provide developers a way to diagnose composition failures in their MEF applications without the requirement to add cumbersome tracing code to the application itself. It can also be useful to help understand parts from a library provided by a third party. This topic describes how to use Mefx and provides a reference for its syntax.  

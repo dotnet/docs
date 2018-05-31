@@ -1,21 +1,7 @@
 ---
 title: "&lt;defaultPorts&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 725d4ee5-bd46-4f0e-9c20-30ba75d6eb2c
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;defaultPorts&gt;
 A collection of default ports listing the default communications endpoints that the client application listens to.  

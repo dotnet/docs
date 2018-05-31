@@ -1,12 +1,6 @@
 ---
 title: "Walkthrough: Arranging Windows Forms Controls in WPF"
-ms.custom: ""
 ms.date: "04/03/2018"
-ms.prod: ".net-framework"
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,11 +8,6 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "arranging controls [WPF]"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF
 This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in a hybrid application.  

@@ -1,16 +1,9 @@
 ---
 title: Direct client-to-microservice communication versus the API Gateway pattern
 description: .NET Microservices Architecture for Containerized .NET Applications | Direct client-to-microservice communication versus the API Gateway pattern
-keywords: Docker, Microservices, ASP.NET, Container, API Gateway
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Direct client-to-microservice communication versus the API Gateway pattern
 
@@ -52,8 +45,8 @@ The API of multiple microservices might not be well designed for the needs of di
 
 ## Using an API Gateway
 
-When you design and build large or complex microservice-based applications with multiple client apps, a good approach to consider can be an [API Gateway](http://microservices.io/patterns/apigateway.html). This is a service that provides a single entry point for certain groups of microservices. It is similar to the [Facade pattern](https://en.wikipedia.org/wiki/Facade_pattern) from object‑oriented design, but in this case, it is part of a distributed system. 
-The API Gateway pattern is also sometimes known as the “backend for frontend” [(BFF)](http://samnewman.io/patterns/architectural/bff/) because you build it while thinking about the needs of the client app.
+When you design and build large or complex microservice-based applications with multiple client apps, a good approach to consider can be an [API Gateway](https://microservices.io/patterns/apigateway.html). This is a service that provides a single entry point for certain groups of microservices. It is similar to the [Facade pattern](https://en.wikipedia.org/wiki/Facade_pattern) from object‑oriented design, but in this case, it is part of a distributed system. 
+The API Gateway pattern is also sometimes known as the “backend for frontend” [(BFF)](https://samnewman.io/patterns/architectural/bff/) because you build it while thinking about the needs of the client app.
 
 Figure 4-13 shows how a custom API Gateway can fit into a microservice-based architecture.
 It is important to highlight that in that diagram, you would be using a single custom API Gateway service facing multiple and different client apps. That fact can be an important risk because your API Gateway service will be growing and evolving based on many different requirements from the client apps. Eventually, it will be bloated because of those different needs and effectively it could be pretty similar to a monolithic application or monolithic service. That is why it is very much recommended to split the API Gateway in multiple services or multiple smaller API Gateways, one per form-factor type, for instance.
@@ -107,7 +100,7 @@ In this guide and the reference sample application (eShopOnContainers), we are l
 ## Additional resources
 
 -   **Charles Richardson. Pattern: API Gateway / Backend for Front-End**
-    [*http://microservices.io/patterns/apigateway.html*](http://microservices.io/patterns/apigateway.html)
+    [*https://microservices.io/patterns/apigateway.html*](https://microservices.io/patterns/apigateway.html)
 
 -   **Azure API Management**
     [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)

@@ -1,16 +1,9 @@
 ---
 title: Challenges and solutions for distributed data management
 description: .NET Microservices Architecture for Containerized .NET Applications | Challenges and solutions for distributed data management
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Challenges and solutions for distributed data management
 
@@ -94,7 +87,7 @@ The use of asynchronous communication is explained with additional details later
     [*https://msdn.microsoft.com/library/dn589800.aspx*](https://msdn.microsoft.com/library/dn589800.aspx)
 
 -   **Martin Fowler. CQRS (Command and Query Responsibility Segregation)**
-    [*http://martinfowler.com/bliki/CQRS.html*](http://martinfowler.com/bliki/CQRS.html)
+    [*https://martinfowler.com/bliki/CQRS.html*](https://martinfowler.com/bliki/CQRS.html)
 
 -   **Materialized View**
     [*https://docs.microsoft.com/azure/architecture/patterns/materialized-view*](https://docs.microsoft.com/azure/architecture/patterns/materialized-view)

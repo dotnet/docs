@@ -1,14 +1,6 @@
 ---
 title: "Considerations When Hosting an ActiveX Control on a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms controls, ActiveX controls"
   - "ActiveX controls [Windows Forms], hosting"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Forms, hosting ActiveX controls"
   - "ActiveX controls [Windows Forms], adding"
 ms.assetid: 2509302d-a74e-484f-9890-2acdbfa67a68
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Considerations When Hosting an ActiveX Control on a Windows Form
 Although Windows Forms have been optimized to host Windows Forms controls, you can still use ActiveX controls. Keep the following considerations in mind when planning an application that uses ActiveX controls:  

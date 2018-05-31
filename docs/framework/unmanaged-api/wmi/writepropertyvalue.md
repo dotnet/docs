@@ -2,10 +2,6 @@
 title: WritePropertyValue function (Unmanaged API Reference)
 description: The WritePropertyValue function writes bytes to a property.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "WritePropertyValue"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WritePropertyValue function
 Writes a specified number of bytes to a property identified by a property handle.

@@ -1,14 +1,6 @@
 ---
 title: "Optimizing Performance: Layout and Design"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "design considerations [WPF]"
   - "layout pass [WPF]"
 ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Optimizing Performance: Layout and Design
 The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application can impact its performance by creating unnecessary overhead in calculating layout and validating object references. The construction of objects, particularly at run time, can affect the performance characteristics of your application.  

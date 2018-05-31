@@ -1,21 +1,7 @@
 ---
 title: "Stream"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 58a3db81-20ab-4627-bf31-39d30b70b4fe
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Stream
 The Stream sample demonstrates the use of streaming transfer mode communication. The service exposes several operations that send and receive streams. This sample is self-hosted. Both the client and service are console programs.  
@@ -23,7 +9,7 @@ The Stream sample demonstrates the use of streaming transfer mode communication.
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can communicate in two transfer modes—buffered or streaming. In the default buffered transfer mode, a message must be completely delivered before a receiver can read it. In the streaming transfer mode, the receiver can begin to process the message before it is completely delivered. The streaming mode is useful when the information that is passed is lengthy and can be processed serially. Streaming mode is also useful when the message is too large to be entirely buffered.  
+ Windows Communication Foundation (WCF) can communicate in two transfer modes—buffered or streaming. In the default buffered transfer mode, a message must be completely delivered before a receiver can read it. In the streaming transfer mode, the receiver can begin to process the message before it is completely delivered. The streaming mode is useful when the information that is passed is lengthy and can be processed serially. Streaming mode is also useful when the message is too large to be entirely buffered.  
   
 ## Streaming and Service Contracts  
  Streaming is something to be considered when designing a service contract. If an operation receives or returns large amounts of data, you should consider streaming this data to avoid high memory utilization due to buffering of input or output messages. To stream data, the parameter that holds that data must be the only parameter in the message. For example, if the input message is the one to be streamed, the operation must have exactly one input parameter. Similarly, if the output message is to be streamed, the operation must have either exactly one output parameter or a return value. In either case, the parameter or return value type must be either `Stream`, `Message`, or `IXmlSerializable`. The following is the service contract used in this streaming sample.  
@@ -189,7 +175,7 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Stream`  
   

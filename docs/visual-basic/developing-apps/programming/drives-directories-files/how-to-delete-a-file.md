@@ -1,22 +1,12 @@
 ---
 title: "How to: Delete a File in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Delete method [Visual Basic]"
   - "files [Visual Basic], deleting"
   - "files [Visual Basic], manipulating"
   - "File object"
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Delete a File in Visual Basic
 The `DeleteFile` method of the `My.Computer.FileSystem` object allows you to delete a file. Among the options it offers are: whether to send the deleted file to the **Recycle Bin**, whether to ask the user to confirm that the file should be deleted, and what to do when the user cancels the operation.  

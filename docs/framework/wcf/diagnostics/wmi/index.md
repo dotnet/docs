@@ -1,29 +1,15 @@
 ---
 title: "Using Windows Management Instrumentation for Diagnostics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Windows Management Instrumentation for Diagnostics
-[!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] exposes inspection data of a service at runtime through a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider.  
+Windows Communication Foundation (WCF) exposes inspection data of a service at runtime through a WCF Windows Management Instrumentation (WMI) provider.  
   
 ## Enabling WMI  
- WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] the WMI SDK, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/aa394582.aspx). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
+ WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/aa394582.aspx). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
   
- A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
+ A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
   
  The built-in WMI provider can be activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration.  
   
@@ -38,7 +24,7 @@ ms.workload:
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Accessing WMI Data  
- WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, [!INCLUDE[vbprvb](../../../../../includes/vbprvb-md.md)] applications, C++ applications, and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)]. For more information, see [Using WMI](http://go.microsoft.com/fwlink/?LinkId=95183).  
+ WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)]. For more information, see [Using WMI](http://go.microsoft.com/fwlink/?LinkId=95183).  
   
 > [!CAUTION]
 >  If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  
@@ -47,18 +33,18 @@ ms.workload:
   
  You should be aware that if no message logging trace listeners for message logging, or no `System.ServiceModel` trace listeners for tracing are specified in the configuration file, none of your changes are taken into effect, even though the changes are accepted by WMI. For more information on properly setting up the respective listeners, see [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md) and [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md). The trace level of all other trace sources specified by configuration is effective when the application starts, and cannot be changed.  
   
- [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] exposes a `GetOperationCounterInstanceName` method for scripting. This method returns a performance counter instance name if you provide it with an operation name. However, it does not validate your input. Therefore, if you provide an incorrect operation name, an incorrect counter name is returned.  
+ WCF exposes a `GetOperationCounterInstanceName` method for scripting. This method returns a performance counter instance name if you provide it with an operation name. However, it does not validate your input. Therefore, if you provide an incorrect operation name, an incorrect counter name is returned.  
   
- The `OutgoingChannel` property of the `Service` instance does not count channels opened by a service to connect to another service, if the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] client to the destination service is not created within the `Service` method.  
+ The `OutgoingChannel` property of the `Service` instance does not count channels opened by a service to connect to another service, if the WCF client to the destination service is not created within the `Service` method.  
   
  **Caution** WMI only supports a <xref:System.TimeSpan> value up to 3 decimal points. For example, if your service sets one of its properties to <xref:System.TimeSpan.MaxValue>, its value is truncated after 3 decimal points when viewed through WMI.  
   
 ## Security  
- Because the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] WMI provider allows the discovery of services in an environment, you should exercise extreme caution for granting access to it. If you relax the default administrator-only access, you may allow less-trusted parties access to sensitive data in your environment. Specifically, if you loosen permissions on remote WMI access, flooding attacks can occur. If a process is flooded by excessive WMI requests, its performance can be degraded.  
+ Because the WCF WMI provider allows the discovery of services in an environment, you should exercise extreme caution for granting access to it. If you relax the default administrator-only access, you may allow less-trusted parties access to sensitive data in your environment. Specifically, if you loosen permissions on remote WMI access, flooding attacks can occur. If a process is flooded by excessive WMI requests, its performance can be degraded.  
   
  In addition, if you relax access permissions for the MOF file, less-trusted parties can manipulate the behavior of WMI and alter the objects that are loaded in the WMI schema. For example, fields can be removed such that critical data is concealed from the administrator or that fields that do not populate or cause exceptions are added to the file.  
   
- By default, the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] WMI provider grants "execute method", "provider write", and "enable account" permission for Administrator, and "enable account" permission for ASP.NET, Local Service and Network Service. In particular, on non-[!INCLUDE[wv](../../../../../includes/wv-md.md)] platforms, the ASP.NET account has read access to the WMI ServiceModel namespace. If you do not want to grant these privileges to a particular user group, you should either deactivate the WMI provider (it is disabled by default), or disable access for the specific user group.  
+ By default, the WCF WMI provider grants "execute method", "provider write", and "enable account" permission for Administrator, and "enable account" permission for ASP.NET, Local Service and Network Service. In particular, on non-[!INCLUDE[wv](../../../../../includes/wv-md.md)] platforms, the ASP.NET account has read access to the WMI ServiceModel namespace. If you do not want to grant these privileges to a particular user group, you should either deactivate the WMI provider (it is disabled by default), or disable access for the specific user group.  
   
  In addition, when you attempt to enable WMI through configuration, WMI may not be enabled due to insufficient user privilege. However, no event is written to the event log to record this failure.  
   
@@ -155,10 +141,10 @@ ms.workload:
 Whoami /user  
 ```  
   
- This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](http://go.microsoft.com/fwlink/?LinkId=186467) tool from the [Windows 2000 Resource Kit Tools for administrative tasks](http://go.microsoft.com/fwlink/?LinkId=178660). This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Well Known SIDs](http://go.microsoft.com/fwlink/?LinkId=186468).  
+ This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](http://go.microsoft.com/fwlink/?LinkId=186467) tool from the [Windows 2000 Resource Kit Tools for administrative tasks](http://go.microsoft.com/fwlink/?LinkId=178660). This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](http://go.microsoft.com/fwlink/?LinkId=186468).  
   
 ## Accessing Remote WMI Object Instances  
- If you need to access [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  
+ If you need to access WCF WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  
   
 ### WMI CIM Studio  
  If you have installed [WMI Administrative Tools](http://go.microsoft.com/fwlink/?LinkId=95185), you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder  

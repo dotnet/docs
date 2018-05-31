@@ -1,10 +1,6 @@
 ---
 title: "-appconfig (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/appconfig"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-appconfig compiler option [C#]"
   - "appconfig compiler option [C#]"
 ms.assetid: 1cdbcbcc-7813-4010-b5b8-e67c107c5a98
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -appconfig (C# Compiler Options)
 The **-appconfig** compiler option enables a C# application to specify the location of an assembly's application configuration (app.config) file to the common language runtime (CLR) at assembly binding time.  

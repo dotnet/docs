@@ -1,21 +1,7 @@
 ---
 title: "&lt;message&gt; of &lt;netHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;message&gt; of &lt;netHttpBinding&gt;
 Defines the settings for message-level security of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
@@ -49,7 +35,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
   
 |Value|Description|  
 |-----------|-----------------|  
-|UserName|-   Requires the client be authenticated to the server with a UserName credential. This credential needs to be specified using the <`clientCredentials`> element.<br />-   [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] does not support sending a password digest or deriving keys using passwords and using such keys for message security. Therefore, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] enforces that the transport be secured when using UserName credentials. For the `basicHttpBinding`, this requires setting up an SSL channel.|  
+|UserName|-   Requires the client be authenticated to the server with a UserName credential. This credential needs to be specified using the <`clientCredentials`> element.<br />-   WCF does not support sending a password digest or deriving keys using passwords and using such keys for message security. Therefore, WCF enforces that the transport be secured when using UserName credentials. For the `basicHttpBinding`, this requires setting up an SSL channel.|  
 |Certificate|Requires that the client be authenticated to the server using a certificate. The client credential in this case needs to be specified using <`clientCredentials`> and the <`clientCertificate`>. In addition, when using message security mode, the client needs to be provisioned with the service certificate. The service credential in this case needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior element and specifying the service certificate using the \<serviceCertificate> element of serviceCredentials.|  
   
 ### Child Elements  

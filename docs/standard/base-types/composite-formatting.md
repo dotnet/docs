@@ -1,13 +1,7 @@
 ---
 title: "Composite Formatting"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "composite formatting"
   - "objects [.NET Framework], formatting multiple objects"
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
-caps.latest.revision: 36
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Composite Formatting
 The .NET composite formatting feature takes a list of objects and a composite format string as input. A composite format string consists of fixed text intermixed with indexed placeholders, called format items, that correspond to the objects in the list. The formatting operation yields a result string that consists of the original fixed text intermixed with the string representation of the objects in the list.  
@@ -118,23 +107,23 @@ The .NET composite formatting feature takes a list of objects and a composite fo
  [!code-vb[Formatting.Composite#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Escaping1.vb#2)]  
   
 ### Processing Order  
- If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value is not `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it is cached for later use.  
+ If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value is not `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it's cached for the duration of the call of the composite formatting method.
   
- Each value in the parameter list that corresponds to a format item is converted to a string by performing the following steps. If any condition in the first three steps is true, the string representation of the value is returned in that step, and subsequent steps are not executed.  
+ Each value in the parameter list that corresponds to a format item is converted to a string as follows:  
   
-1.  If the value to be formatted is `null`, an empty string ("") is returned.  
+1.  If the value to be formatted is `null`, an empty string <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
-2.  If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. It passes the method the format item's *formatString* value, if one is present, or `null` if it is not, along with the <xref:System.IFormatProvider> implementation.  
+2.  If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. It passes the method the format item's *formatString* value, if one is present, or `null` if it's not, along with the <xref:System.IFormatProvider> implementation. If the call to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method returns `null`, execution proceeds to the next step; otherwise, the result of the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> call is returned.
   
-3.  If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it is not. The <xref:System.IFormatProvider> argument is determined as follows:  
+3.  If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it's not. The <xref:System.IFormatProvider> argument is determined as follows:  
   
-    -   For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture is used.  
+    -   For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture is used.  
   
-    -   For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
+    -   For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
   
-    -   For objects of other types, if a composite formatting is called with an <xref:System.IFormatProvider> argument, its value (including a `null`, if no <xref:System.IFormatProvider> object is supplied) is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  Otherwise, a <xref:System.Globalization.CultureInfo> object that represents the current thread culture is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
+    -   For objects of other types, if a composite formatting method is called with an <xref:System.IFormatProvider> argument, its value is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation. Otherwise, `null` is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
   
-4.  The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it is present, is ignored.  
+4.  The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it's present, is ignored.  
   
  Alignment is applied after the preceding steps have been performed.  
   

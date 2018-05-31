@@ -1,19 +1,7 @@
 ---
 title: "Tutorial: Chaining Queries Together (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 44f54444-c4c5-4c23-9d19-986b957b8eda
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Tutorial: Chaining Queries Together (C#)
 This tutorial illustrates the processing model when you chain queries together. Chaining queries together is a key part of writing functional transformations. It is important to understand exactly how chained queries work.  

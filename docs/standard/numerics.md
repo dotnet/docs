@@ -1,13 +1,7 @@
 ---
 title: "Numerics in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SIMD"
   - "System.Numerics.Vectors"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "numerics"
   - "BigInteger"
 ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Numerics in the .NET Framework
 The .NET Framework supports the standard numeric integral and floating-point primitives, as well as <xref:System.Numerics.BigInteger>, an integral type with no theoretical upper or lower bound, <xref:System.Numerics.Complex>, a type that represents complex numbers, and a set of SIMD-enabled vector types in the <xref:System.Numerics> namespace.  
@@ -80,7 +69,7 @@ The .NET Framework supports the standard numeric integral and floating-point pri
   
  The SimD-enabled vector types are implemented in IL, which allows them to be used on non-SimD-enabled hardware and JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be compiled by the new 64-bit JIT Compiler for managed code, which is included with the .NET Framework 4.6; it adds SIMD support when targeting x64 processors.  
   
- SIMD can also be downloaded as a [NuGet package](http://www.nuget.org/packages/System.Numerics.Vectors).  The NuGET package also includes a generic <xref:System.Numerics.Vector%601> structure that allows you to create a vector of any primitive numeric type. (The primitive numeric types include all numeric types in the <xref:System> namespace except for <xref:System.Decimal>.) In addition, the <xref:System.Numerics.Vector%601> structure provides a library of convenience methods that you can call when working with vectors.  
+ SIMD can also be downloaded as a [NuGet package](https://www.nuget.org/packages/System.Numerics.Vectors).  The NuGET package also includes a generic <xref:System.Numerics.Vector%601> structure that allows you to create a vector of any primitive numeric type. (The primitive numeric types include all numeric types in the <xref:System> namespace except for <xref:System.Decimal>.) In addition, the <xref:System.Numerics.Vector%601> structure provides a library of convenience methods that you can call when working with vectors.  
   
 ## See Also  
  [Application Essentials](../../docs/standard/application-essentials.md)

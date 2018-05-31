@@ -1,19 +1,7 @@
 ---
 title: "External Ruleset Toolkit"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # External Ruleset Toolkit
 Normally when rules are used within a workflow application, the rules are part of the assembly. In some scenarios, you may want to maintain the RuleSets separately from the assembly so that they can be updated without rebuilding and deploying the workflow assembly. This sample allows you to manage and edit RuleSets in a database and access those RuleSets from a workflow at runtime. This enables running workflow instances to automatically incorporate RuleSet changes.  
@@ -44,7 +32,7 @@ Normally when rules are used within a workflow application, the rules are part o
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ExternalRuleSetToolKit`  
   
@@ -63,7 +51,7 @@ Normally when rules are used within a workflow application, the rules are part o
   
  Figure 3: RuleSet Editor  
   
- This is a re-hosting of the editor dialog that is part of the Windows Workflow Foundation [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] add-in. It provides the same functionality, including Intellisense support. The rules are authored against a target type (such as a workflow) that is associated with the RuleSet in the tool; when you click **Browse** in the main tool dialog, the **Workflow/Type Selector** dialog appears, as shown in Figure 4.  
+ This is a re-hosting of the editor dialog that is part of the Windows Workflow Foundation Visual Studio add-in. It provides the same functionality, including Intellisense support. The rules are authored against a target type (such as a workflow) that is associated with the RuleSet in the tool; when you click **Browse** in the main tool dialog, the **Workflow/Type Selector** dialog appears, as shown in Figure 4.  
   
  ![Workflow &#47;Type Selection](../../../../docs/framework/windows-workflow-foundation/samples/media/71f08d57-e8f2-499e-8151-ece2cbdcabfd.gif "71f08d57-e8f2-499e-8151-ece2cbdcabfd")  
   
@@ -79,7 +67,7 @@ Normally when rules are used within a workflow application, the rules are part o
   
  Figure 5: Validation Errors  
   
- From the **Data** menu in the tool, you can import and export RuleSets. When you click **Import**, a file-chooser dialog appears, from which you can select a .rules file. This may or may not be a file initially created in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)]. The .rules file should contain a serialized `RuleDefinitions` instance that contains a collection of conditions and a collection of RuleSets. The tool does not use the conditions collection, but it does use the `RuleDefinitions` .rules format to allow interaction with the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] environment.  
+ From the **Data** menu in the tool, you can import and export RuleSets. When you click **Import**, a file-chooser dialog appears, from which you can select a .rules file. This may or may not be a file initially created in Visual Studio. The .rules file should contain a serialized `RuleDefinitions` instance that contains a collection of conditions and a collection of RuleSets. The tool does not use the conditions collection, but it does use the `RuleDefinitions` .rules format to allow interaction with the Visual Studio environment.  
   
  After selecting a .rules file, a **RuleSet Selector** dialog appears (see Figure 6). You can use the dialog to select the RuleSets from the file that you want to import (the default specifies all RuleSets). RuleSets in the .rules file do not have version numbers, because their versioning within a WF project is the same as the version of the assembly. During the importing process, the tool automatically assigns the next available major version number (which you can change after importing); you can see the assigned version numbers in the **RuleSet Selector** list.  
   
@@ -137,7 +125,7 @@ Normally when rules are used within a workflow application, the rules are part o
   
 9. An application configuration file is added to the workflow project to specify the connection string for the database to be used by the service. This should be the same connection string used by the RuleSet tool, which points to the database that contains the RuleSet table.  
   
-10. You can now run the `RuleSetToolkitUsageSample` project as you would any other workflow console application. Press F5 or Ctrl+F5 within [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] or run the RuleSetToolkitUsageSample.exe file directly.  
+10. You can now run the `RuleSetToolkitUsageSample` project as you would any other workflow console application. Press F5 or Ctrl+F5 within Visual Studio or run the RuleSetToolkitUsageSample.exe file directly.  
   
     > [!NOTE]
     >  You must close the RuleSet tool to recompile the usage sample, because the tool loads the usage sample assembly.

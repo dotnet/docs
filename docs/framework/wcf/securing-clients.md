@@ -1,32 +1,20 @@
 ---
 title: "Securing Clients"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "clients [WCF], security considerations"
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
-caps.latest.revision: 22
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Clients
-In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates the security requirements for clients. That is, the service specifies what security mode to use, and whether or not the client must provide a credential. The process of securing a client, therefore, is simple: use the metadata obtained from the service (if it is published) and build a client. The metadata specifies how to configure the client. If the service requires that the client supply a credential, then you must obtain a credential that fits the requirement. This topic discusses the process in further detail. [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating a secure service, see [Securing Services](../../../docs/framework/wcf/securing-services.md).  
+In Windows Communication Foundation (WCF), the service dictates the security requirements for clients. That is, the service specifies what security mode to use, and whether or not the client must provide a credential. The process of securing a client, therefore, is simple: use the metadata obtained from the service (if it is published) and build a client. The metadata specifies how to configure the client. If the service requires that the client supply a credential, then you must obtain a credential that fits the requirement. This topic discusses the process in further detail. For more information about creating a secure service, see [Securing Services](../../../docs/framework/wcf/securing-services.md).  
   
 ## The Service Specifies Security  
- By default, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] bindings have security features enabled. (The exception is the <xref:System.ServiceModel.BasicHttpBinding>.) Therefore, if the service was created using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], there is a greater chance that it will implement security to ensure authentication, confidentiality, and integrity. In that case, the metadata the service provides will indicate what it requires to establish a secure communication channel. If the service metadata does not include any security requirements, there is no way to impose a security scheme, such as Secure Sockets Layer (SSL) over HTTP, on a service. If, however, the service requires the client to supply a credential, then the client developer, deployer, or administrator must supply the actual credential that the client will use to authenticate itself to the service.  
+ By default, WCF bindings have security features enabled. (The exception is the <xref:System.ServiceModel.BasicHttpBinding>.) Therefore, if the service was created using WCF, there is a greater chance that it will implement security to ensure authentication, confidentiality, and integrity. In that case, the metadata the service provides will indicate what it requires to establish a secure communication channel. If the service metadata does not include any security requirements, there is no way to impose a security scheme, such as Secure Sockets Layer (SSL) over HTTP, on a service. If, however, the service requires the client to supply a credential, then the client developer, deployer, or administrator must supply the actual credential that the client will use to authenticate itself to the service.  
   
 ## Obtaining Metadata  
- When creating a client, the first step is to obtain the metadata for the service that the client will communicate with. This can be done in two ways. First, if the service publishes a metadata exchange (MEX) endpoint or makes its metadata available over HTTP or HTTPS, you can download the metadata using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), which generates both code files for a client as well as a configuration file. ([!INCLUDE[crabout](../../../includes/crabout-md.md)] using the tool, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md).) If the service does not publish a MEX endpoint and also does not make its metadata available over HTTP or HTTPS, you must contact the service creator for documentation that describes the security requirements and the metadata.  
+ When creating a client, the first step is to obtain the metadata for the service that the client will communicate with. This can be done in two ways. First, if the service publishes a metadata exchange (MEX) endpoint or makes its metadata available over HTTP or HTTPS, you can download the metadata using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), which generates both code files for a client as well as a configuration file. (For more information about using the tool, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md).) If the service does not publish a MEX endpoint and also does not make its metadata available over HTTP or HTTPS, you must contact the service creator for documentation that describes the security requirements and the metadata.  
   
 > [!IMPORTANT]
 >  It is recommended that the metadata come from a trusted source and that it not be tampered with. Metadata retrieved using the HTTP protocol is sent in clear text and can be tampered with. If the service uses the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> and <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> properties, use the URL the service creator supplied to download the data using the HTTPS protocol.  
@@ -142,7 +130,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 > [!NOTE]
 >  Some of the client credential values cannot be set using application configuration files, for example, user name and password, or Windows user and password values. Such credential values can be specified only in code.  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] setting the client credential, see [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ For more information about setting the client credential, see [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 > [!NOTE]
 >  `ClientCredentialType` is ignored when `SecurityMode` is set to `"TransportWithMessageCredential",` as shown in the following sample configuration.  

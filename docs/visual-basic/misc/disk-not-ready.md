@@ -1,16 +1,9 @@
 ---
 title: "Disk not ready"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID71"
 ms.assetid: 5e2528f5-81b3-4e5e-a294-a43cc738a42e
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Disk not ready
 For the specified drive, either there is no disk or the drive door is open.  

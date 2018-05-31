@@ -1,17 +1,7 @@
 ---
 title: "WCF Web HTTP formatting"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Web HTTP formatting
 The WCF Web HTTP programming model allows you to dynamically determine the best format for a service operation to return its response in. Two methods for determining an appropriate format are supported: automatic and explicit.  
@@ -27,7 +17,7 @@ The WCF Web HTTP programming model allows you to dynamically determine the best 
   
 4.  The default format setting in the WebHttpBehavior.  
   
- If the request message contains an Accept header the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure searches for a type that it supports. If the `Accept` header specifies priorities for its media types, they are honored. If no suitable format is found in the `Accept` header, the content-type of the request message is used. If no suitable content-type is specified, the default format setting for the operation is used. The default format is set with the `ResponseFormat` parameter of the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes. If no default format is specified on the operation, the value of the <xref:System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingResponseFormat%2A> property is used. Automatic formatting relies on the <xref:System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled%2A> property. When this property is set to `true`, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure determines the best format to use. Automatic format selection is disabled by default for backwards compatibility. Automatic format selection can be enabled programmatically or through configuration. The following example shows how to enable automatic format selection in code.  
+ If the request message contains an Accept header the Windows Communication Foundation (WCF) infrastructure searches for a type that it supports. If the `Accept` header specifies priorities for its media types, they are honored. If no suitable format is found in the `Accept` header, the content-type of the request message is used. If no suitable content-type is specified, the default format setting for the operation is used. The default format is set with the `ResponseFormat` parameter of the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes. If no default format is specified on the operation, the value of the <xref:System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingResponseFormat%2A> property is used. Automatic formatting relies on the <xref:System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled%2A> property. When this property is set to `true`, the WCF infrastructure determines the best format to use. Automatic format selection is disabled by default for backwards compatibility. Automatic format selection can be enabled programmatically or through configuration. The following example shows how to enable automatic format selection in code.  
   
 ```csharp
 // This code assumes the service name is MyService and the service contract is IMyContract     

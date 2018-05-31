@@ -1,18 +1,11 @@
 ---
 title: "#undef (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#undef"
 helpviewer_keywords: 
   - "#undef directive [C#]"
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #undef (C# Reference)
 `#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive, the expression will evaluate to `false`.  

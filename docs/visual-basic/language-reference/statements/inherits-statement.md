@@ -1,12 +1,6 @@
 ---
 title: "Inherits Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Inherits"
   - "Inherits"
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "Inherits statement [Visual Basic]"
   - "Inherits statement [Visual Basic], syntax"
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Inherits Statement
 Causes the current class or interface to inherit the attributes, variables, properties, procedures, and events from another class or set of interfaces.  

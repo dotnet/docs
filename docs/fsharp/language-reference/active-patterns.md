@@ -1,17 +1,8 @@
 ---
 title: Active Patterns (F#)
 description: Learn how to use active patterns to define named partitions that subdivide input data in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 11a724ff-f9ff-4056-b5e0-87e9ed986f4a 
 ---
-
 # Active Patterns
 
 *Active patterns* enable you to define named partitions that subdivide input data, so that you can use these names in a pattern matching expression just as you would for a discriminated union. You can use active patterns to decompose data in a customized manner for each partition.

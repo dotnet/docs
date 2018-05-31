@@ -1,16 +1,9 @@
 ---
 title: Designing the microservice application layer and Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing the microservice application layer and Web API
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/12/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Designing the microservice application layer and Web API
 
@@ -45,7 +38,7 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
     [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html)
 
 -   **Steve Smith. New is Glue**
-    [*http://ardalis.com/new-is-glue*](http://ardalis.com/new-is-glue)
+    [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
 
 
 >[!div class="step-by-step"]

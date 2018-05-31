@@ -1,21 +1,7 @@
 ---
 title: "WS-AtomicTransaction Configuration Utility (wsatConfig.exe)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WS-AtomicTransaction Configuration Utility (wsatConfig.exe)
 The WS-AtomicTransaction Configuration Utility is used to configure basic WS-AtomicTransaction support settings.  

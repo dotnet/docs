@@ -1,12 +1,6 @@
 ---
 title: "RaiseEvent Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.RaiseEventMethod"
   - "vb.RaiseEvent"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "RaiseEvent statement [Visual Basic]"
   - "event handlers, connecting events to"
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # RaiseEvent Statement
 Triggers an event declared at module level within a class, form, or document.  

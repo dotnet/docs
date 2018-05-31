@@ -1,25 +1,17 @@
 ---
 title: What is managed code?
 description: Learn how managed code is code whose execution is managed by a runtime, the Common Language Runtime (CLR).
-keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # What is "managed code"?
 
 When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
 
-To put it very simply, managed code is just that: code whose execution is managed by a runtime. In this case, the runtime in question is called the **Common Language Runtime** or CLR, regardless of the implementation ([Mono](http://www.mono-project.com/) or .NET Framework or .NET Core). CLR is in charge of taking the managed code, compiling it into machine code and then executing it. On top of that, runtime provides several important services such as automatic memory management, security boundaries, type safety etc.
+To put it very simply, managed code is just that: code whose execution is managed by a runtime. In this case, the runtime in question is called the **Common Language Runtime** or CLR, regardless of the implementation ([Mono](https://www.mono-project.com/) or .NET Framework or .NET Core). CLR is in charge of taking the managed code, compiling it into machine code and then executing it. On top of that, runtime provides several important services such as automatic memory management, security boundaries, type safety etc.
 
 Contrast this to the way you would run a C/C++ program, also called "unmanaged code". In the unmanaged world, the programmer is in charge of pretty much everything. The actual program is, essentially, a binary that the operating system (OS) loads into memory and starts. Everything else, from memory management to security considerations are a burden of the programmer.
 

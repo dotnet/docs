@@ -1,21 +1,7 @@
 ---
 title: "&lt;localIssuer&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;localIssuer&gt;
 Specifies the address and binding of the local issuer to be used to obtain a security token.  
@@ -61,7 +47,7 @@ endpointBehaviors section
 |[\<issuedToken>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md)|Specifies a custom token used to authenticate a client to a service.|  
   
 ## Remarks  
- When obtaining an issued token from a Security Token Service (STS), the client application must be configured with the address and binding to use to communicate with the STS. When the <xref:System.ServiceModel.WSFederationHttpBinding> does not supply a URL for the security token service, or when the issuer address of a federated binding is http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous or `null`, the client's [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] channel uses the values specified by `address` and `binding` to communicate with the STS to obtain the issued token. For more information on configuring a local issuer, see [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
+ When obtaining an issued token from a Security Token Service (STS), the client application must be configured with the address and binding to use to communicate with the STS. When the <xref:System.ServiceModel.WSFederationHttpBinding> does not supply a URL for the security token service, or when the issuer address of a federated binding is http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous or `null`, the client's Windows Communication Foundation (WCF) channel uses the values specified by `address` and `binding` to communicate with the STS to obtain the issued token. For more information on configuring a local issuer, see [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
 ## Example  
  The following example sets the `address`, `binding`, and `bindingConfiguration` attributes of a `localIssuer` element.  

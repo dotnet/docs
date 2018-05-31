@@ -1,25 +1,11 @@
 ---
 title: "How to: Group Items in a ListView That Implements a GridView"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls [WPF], grouping items with GridViews"
   - "grouping items in ListViews implementing GridViews [WPF]"
   - "GridView controls [WPF], grouping items"
 ms.assetid: eebef25b-ddc6-424e-a66d-ea228d1bf33d
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Group Items in a ListView That Implements a GridView
 This example shows how to display groups of items in the <xref:System.Windows.Controls.GridView> view mode of a <xref:System.Windows.Controls.ListView> control.  

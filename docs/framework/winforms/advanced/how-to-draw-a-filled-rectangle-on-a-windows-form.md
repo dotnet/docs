@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw a Filled Rectangle on a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "rectangles [Windows Forms], drawing"
   - "drawing rectangles"
 ms.assetid: d656a93c-987d-4809-aafd-493fe17450f0
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw a Filled Rectangle on a Windows Form
 This example draws a filled rectangle on a form.  

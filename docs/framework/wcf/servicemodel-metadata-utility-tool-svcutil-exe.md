@@ -1,26 +1,12 @@
 ---
 title: "ServiceModel Metadata Utility Tool (Svcutil.exe)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "clients [WCF], building"
   - "endpoints [WCF]"
   - "Svcutil.exe"
   - "clients [WCF], consuming services"
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
-caps.latest.revision: 40
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 The ServiceModel Metadata Utility tool is used to generate service model code from metadata documents and metadata documents from service model code.  
@@ -69,7 +55,7 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
 ### Code Generation  
  Svcutil.exe can generate code for service contracts, clients and data types from metadata documents. These metadata documents can be on a durable storage, or be retrieved online. Online retrieval follows either the WS-Metadata Exchange protocol or the DISCO protocol (for details see the Metadata Download section).  
   
- You can use the SvcUtil.exe tool to generate service and data contracts based on a predefined WSDL document. Use the /serviceContract switch and specify a URL or file location where the WSDL document can be downloaded or found. This will generate the service and data contracts defined in the WSDL document that can then be used to implement a complaint service . [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Retrieve Metadata and Implement a Compliant Service](../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md).  
+ You can use the SvcUtil.exe tool to generate service and data contracts based on a predefined WSDL document. Use the /serviceContract switch and specify a URL or file location where the WSDL document can be downloaded or found. This will generate the service and data contracts defined in the WSDL document that can then be used to implement a complaint service . For more information, see [How to: Retrieve Metadata and Implement a Compliant Service](../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md).  
   
  For a service with a BasicHttpContextbinding endpoint, Svcutil.exe generates a BasicHttpBinding with the `allowCookies` attribute set to `true` instead. The cookies are used for context on the server. If you would like to manage context on the client when the service uses cookies, you can manually modify the configuration to use a context binding.  
   

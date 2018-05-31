@@ -1,20 +1,10 @@
 ---
 title: "&lt;example&gt; (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "example XML tag"
   - "<example> XML tag"
 ms.assetid: 90eeda1c-3fc4-427c-879c-5046d265a97c
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;example&gt; (Visual Basic)
 Specifies an example for the member.  

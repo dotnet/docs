@@ -1,13 +1,7 @@
 ---
 title: "Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data storage using isolated storage"
   - "stores"
@@ -24,13 +18,8 @@ helpviewer_keywords:
   - "data storage using isolated storage, options"
   - "isolation"
 ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
-caps.latest.revision: 32
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Isolated Storage
 <a name="top"></a> For [!INCLUDE[desktop_appname](../../../includes/desktop-appname-md.md)] apps, isolated storage is a data storage mechanism that provides isolation and safety by defining standardized ways of associating code with saved data. Standardization provides other benefits as well. Administrators can use tools designed to manipulate isolated storage to configure file storage space, set security policies, and delete unused data. With isolated storage, your code no longer needs unique paths to specify safe locations in the file system, and data is protected from other applications that only have isolated storage access. Hard-coded information that indicates where an application's storage area is located is unnecessary.  
@@ -172,7 +161,7 @@ ms.workload:
 |[How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|  
 |[How to: Read and Write to Files in Isolated Storage](../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|  
 |[How to: Delete Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|  
-|[File and Stream I-O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|  
+|[File and Stream I/O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|  
   
 <a name="reference"></a>   
 ## Reference  

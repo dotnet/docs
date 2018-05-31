@@ -1,12 +1,6 @@
 ---
 title: "Best Practices for System.Net Classes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "sending data, best practices"
   - "requesting data from Internet, best practices"
@@ -16,12 +10,9 @@ helpviewer_keywords:
   - "best practices, data requests"
   - "receiving data, best practices"
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Best Practices for System.Net Classes
 The following recommendations will help you use the classes contained in <xref:System.Net> to their best advantage:  

@@ -1,14 +1,7 @@
 ---
 title: Microservices hosted in Docker - C#
 description: Learn to create asp.net core services that run in Docker containers
-keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
-author: BillWagner
-ms.author: wiwagn
 ms.date: 02/03/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.devlang: csharp
 ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
 ---
 
@@ -334,7 +327,7 @@ WORKDIR /app
 
 # copy csproj and restore as distinct layers
 
-COPY WeatherMicroservice.csproj .
+COPY WeatherMicroService.csproj .
 RUN dotnet restore 
 
 # copy and build everything else
@@ -355,7 +348,7 @@ publish command builds and packages your application.
 The final line of the file runs the application:
 
 ```
-ENTRYPOINT ["dotnet", "out/WeatherMicroservice.dll", "--server.urls", "http://0.0.0.0:5000"]
+ENTRYPOINT ["dotnet", "out/WeatherMicroService.dll", "--server.urls", "http://0.0.0.0:5000"]
 ```
 
 This configured port is referenced in the `--server.urls`

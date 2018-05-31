@@ -1,14 +1,6 @@
 ---
 title: "Global and Local Transformations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "transformations [Windows Forms], global"
   - "transformations [Windows Forms], local"
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Global and Local Transformations
 A global transformation is a transformation that applies to every item drawn by a given <xref:System.Drawing.Graphics> object. In contrast, a local transformation is a transformation that applies to a specific item to be drawn.  

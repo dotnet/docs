@@ -1,19 +1,10 @@
 ---
 title: Building a Hello World application with .NET Core and C# in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application with C# using Visual Studio 2017.
-keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: BillWagner
 ms.author: wiwagn
 ms.date: 09/13/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-csharp
-ms.devlang: csharp
-ms.assetid: 97aa50bf-bdf8-416d-a56c-ac77504c14ea
-ms.workload: 
-  - dotnetcore
 ---
-
 # Build a C# Hello World application with .NET Core in Visual Studio 2017
 
 This topic provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using C# in Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application doesn't have platform-specific dependencies, the application can run on any platform that .NET Core targets and on any system that has .NET Core installed.

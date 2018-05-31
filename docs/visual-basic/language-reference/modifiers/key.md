@@ -1,11 +1,6 @@
 ---
 title: "Key (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.AnonymousKey"
 helpviewer_keywords: 
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "Key [Visual Basic]"
   - "Key keyword [Visual Basic]"
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Key (Visual Basic)
 The `Key` keyword enables you to specify behavior for properties of anonymous types. Only properties you designate as key properties participate in tests of equality between anonymous type instances, or calculation of hash code values. The values of key properties cannot be changed.  

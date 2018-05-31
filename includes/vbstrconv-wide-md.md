@@ -1,1 +1,0 @@
-﻿The conversion may use Normalization Form C even if an input character is already full-width. For example, the string "は゛" (which is already full-width) is normalized to "ば". See [Unicode normalization forms](http://unicode.org/reports/tr15).

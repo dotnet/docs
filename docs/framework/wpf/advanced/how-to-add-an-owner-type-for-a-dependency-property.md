@@ -1,14 +1,6 @@
 ---
 title: "How to: Add an Owner Type for a Dependency Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "classes [WPF], adding as owners of dependency properties"
   - "dependency properties [WPF], adding classes as owners of"
 ms.assetid: edcce050-0576-4edb-a31a-3f909637b452
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add an Owner Type for a Dependency Property
 This example shows how to add a class as an owner of a dependency property registered for a different type. By doing this, the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] reader and property system are both able to recognize the class as an additional owner of the property. Adding as owner optionally allows the adding class to provide type-specific metadata.  

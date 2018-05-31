@@ -1,21 +1,7 @@
 ---
 title: "&lt;transport&gt; of &lt;msmqIntegrationBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 054579e3-7fdd-47df-99ca-952706ba5c8e
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;msmqIntegrationBinding&gt;
 Defines the security settings for the Message Queuing integration transport.  

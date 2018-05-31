@@ -1,17 +1,8 @@
 ---
 title: Enumerations (F#)
 description: Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 9272bf5a-9a9f-4314-9e34-a3248e5244f5 
 ---
-
 # Enumerations
 
 *Enumerations*, also known as *enums*, , are integral types where labels are assigned to a subset of the values. You can use them in place of literals to make code more readable and maintainable.

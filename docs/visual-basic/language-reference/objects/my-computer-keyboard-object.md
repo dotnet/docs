@@ -1,17 +1,9 @@
 ---
 title: "My.Computer.Keyboard Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.Keyboard object"
 ms.assetid: 78dec9be-4e69-4ede-b9be-2ac34bec2b26
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Computer.Keyboard Object
 Provides properties for accessing the current state of the keyboard, such as what keys are currently pressed, and provides a method to send keystrokes to the active window.  

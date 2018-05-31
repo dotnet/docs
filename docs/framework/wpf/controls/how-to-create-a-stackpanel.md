@@ -1,23 +1,9 @@
 ---
 title: "How to: Create a StackPanel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "StackPanel control [WPF], creating"
 ms.assetid: e7ce65cb-720a-4bb6-95b6-286b74488a58
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a StackPanel
 This example shows how to create a <xref:System.Windows.Controls.StackPanel>.  

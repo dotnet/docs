@@ -1,29 +1,17 @@
 ---
 title: "How to: Secure a Service with Windows Credentials"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "WCF, security"
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
-caps.latest.revision: 26
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Secure a Service with Windows Credentials
-This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service that resides in a Windows domain and is called by clients in the same domain. [!INCLUDE[crabout](../../../includes/crabout-md.md)] this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
+This topic shows how to enable transport security on a Windows Communication Foundation (WCF) service that resides in a Windows domain and is called by clients in the same domain. For more information about this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
   
  This topic assumes you have an existing contract interface and implementation already defined, and adds on to that. You can also modify an existing service and client.  
   
@@ -52,13 +40,13 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
      [!code-vb[c_SecureWindowsService#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#1)]  
   
 ### Using the Binding in a Service  
- This is the second procedure, which shows how to use the binding in a self-hosted service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] hosting services see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+ This is the second procedure, which shows how to use the binding in a self-hosted service. For more information about hosting services see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
 ##### To use a binding in a service  
   
 1.  Insert this procedure's code after the code from the preceding procedure.  
   
-2.  Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], use the `GetType` operator; when using C#, use the `typeof` keyword.  
+2.  Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using Visual Basic, use the `GetType` operator; when using C#, use the `typeof` keyword.  
   
 3.  Create a second `Type` variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
   
@@ -82,7 +70,7 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
   
 ##### To use a binding in a client with code  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
+1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
   
 2.  This procedure's code is inserted at the beginning of the `Main` method of the client program.  
   
@@ -135,7 +123,7 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
   
 ##### To use a binding in a client with configuration  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+1.  Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
 2.  Replace the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
   

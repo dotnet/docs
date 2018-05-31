@@ -1,19 +1,11 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
 author: tdykstra
 ms.author: tdykstra
 ms.date: 07/08/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Glossary
 
 The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the .NET documentation without definitions.
@@ -146,7 +138,7 @@ Historically, Mono implemented the larger API of the .NET Framework and emulated
 
 Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
 
-To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
+To learn more about Mono, see the [Mono documentation](https://www.mono-project.com/docs/).
 
 ## .NET
 

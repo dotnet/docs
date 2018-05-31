@@ -1,14 +1,6 @@
 ---
 title: "Markup Extensions and WPF XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "brace character [WPF]"
   - "Binding markup extensions [WPF]"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "characters [WPF], curly brace"
   - "DynamicResource markup extensions [WPF]"
 ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Markup Extensions and WPF XAML
 This topic introduces the concept of markup extensions for XAML, including their syntax rules, purpose, and the class object model that underlies them. Markup extensions are a general feature of the XAML language and of the .NET implementation of XAML services. This topic specifically details markup extensions for use in WPF XAML.  
@@ -59,7 +45,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 -   `x:Array` provides support for creation of general arrays in XAML syntax, for cases where the collection support provided by WPF base elements and control models is deliberately not used. For details, see [x:Array Markup Extension](../../../../docs/framework/xaml-services/x-array-markup-extension.md).  
   
 > [!NOTE]
->  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
+>  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
   
 <a name="WPF_Specific_Markup_Extensions"></a>   
 ## WPF-Specific Markup Extensions  
@@ -73,7 +59,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 -   `RelativeSource` provides source information for a <xref:System.Windows.Data.Binding> that can navigate several possible relationships in the run-time object tree. This provides specialized sourcing for bindings that are created in multi-use templates or created in code without full knowledge of the surrounding object tree. For details, see [RelativeSource MarkupExtension](../../../../docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
--   `TemplateBinding` enables a control template to use values for templated properties that come from object-model-defined properties of the class that will use the template. In other words, the property within the template definition can access a context that only exists once the template is applied. For details, see [TemplateBinding Markup Extension](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md). For more information on the practical use of `TemplateBinding`, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
+-   `TemplateBinding` enables a control template to use values for templated properties that come from object-model-defined properties of the class that will use the template. In other words, the property within the template definition can access a context that only exists once the template is applied. For details, see [TemplateBinding Markup Extension](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md). For more information on the practical use of `TemplateBinding`, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 -   `ColorConvertedBitmap` supports a relatively advanced imaging scenario. For details, see [ColorConvertedBitmap Markup Extension](../../../../docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
   

@@ -1,13 +1,6 @@
 ---
 title: "Decision Structures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "statements [Visual Basic], control flow"
   - "If statement [Visual Basic], decision structures"
@@ -16,12 +9,9 @@ helpviewer_keywords:
   - "decision structures [Visual Basic]"
   - "conditional statements [Visual Basic], decision structures"
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Decision Structures (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] lets you test conditions and perform different operations depending on the results of that test. You can test for a condition being true or false, for various values of an expression, or for various exceptions generated when you execute a series of statements.  
+Visual Basic lets you test conditions and perform different operations depending on the results of that test. You can test for a condition being true or false, for various values of an expression, or for various exceptions generated when you execute a series of statements.  
   
  The following illustration shows a decision structure that tests for a condition being true and takes different actions depending on whether it is true or false.  
   

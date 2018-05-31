@@ -1,19 +1,12 @@
 ---
 title: Building a class library with Visual Basic and .NET Core in Visual Studio 2017
 description: Learn how to build a class library written in Visual Basic using Visual Studio 2017
-keywords: .NET Core, .NET Standard class library, Visual Studio 2017, Visual Basic
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-vb
 dev_langs: 
   - "vb"
-ms.workload: 
-  - dotnetcore
 ---
-
 # Building a class library with Visual Basic and .NET Core in Visual Studio 2017
 
 A *class library* defines types and methods that are called by an application. A class library that targets the .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of the .NET Standard. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.

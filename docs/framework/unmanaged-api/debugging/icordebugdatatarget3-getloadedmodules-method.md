@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugDataTarget3::GetLoadedModules Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugDataTarget3::GetLoadedModules Method
 Gets a list of the modules that have been loaded so far.  

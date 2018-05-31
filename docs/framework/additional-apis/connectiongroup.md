@@ -1,9 +1,6 @@
 ---
 title: "ConnectionGroup Class"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -15,9 +12,6 @@ api_type:
 ms.assetid: 25c08217-fdeb-44b9-9cd6-1b4955d6e602
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # ConnectionGroup Class

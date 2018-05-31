@@ -1,14 +1,6 @@
 ---
 title: "SqlMetal.exe (Code Generation Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SQLMetal [LINQ to SQL]"
   - "code generation tool"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "LINQ to SQL, DBML files"
   - "LINQ to SQL, SQLMetal"
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-caps.latest.revision: 43
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SqlMetal.exe (Code Generation Tool)
 The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
@@ -100,7 +86,7 @@ sqlmetal [options] [<input file>]
   
 -   Generating a code output file.  
   
-     By using the appropriate command-line options, you can produce [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] or C# source code, or you can produce an XML mapping file.  
+     By using the appropriate command-line options, you can produce Visual Basic or C# source code, or you can produce an XML mapping file.  
   
  To extract the metadata from an .mdf file, you must specify the name of the .mdf file after all other options.  
   

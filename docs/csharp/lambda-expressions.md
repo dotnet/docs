@@ -1,14 +1,9 @@
 ---
 title: Lambda Expressions
-description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments. 
-keywords: .NET, .NET Core, lambda expressions, lambdas, delegates 
-ms-author: ronpet
+description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments.
+ms.author: ronpet
 author: rpetrusha
 ms.date: 11/22/2016
-ms.topic: article 
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 ---
 

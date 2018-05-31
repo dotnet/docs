@@ -1,30 +1,18 @@
 ---
 title: "WCF Security Terminology"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], terminology"
   - "security glossary [WCF]"
   - "security terms [WCF]"
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
-caps.latest.revision: 14
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] terms used in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] documentation, see [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md).  
+ For more information about terms used in Windows Communication Foundation (WCF) documentation, see [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md).  
   
  access control list (ACL)  
  A list of security protections that applies to an object. (An object can be a file, process, event, or anything else having a security descriptor.) An entry in an ACL is an access control entry (ACE). There are two types of ACLs: discretionary and system.  
@@ -184,7 +172,7 @@ Some of the terminology used when discussing security may be unfamiliar. This to
  A user account name (sometimes referred to as the *user logon name*) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an email address).  
   
 > [!NOTE]
->  In addition to standard UPN form, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] accepts UPNs in down-level form, for example, cohowinery.com\someone.  
+>  In addition to standard UPN form, WCF accepts UPNs in down-level form, for example, cohowinery.com\someone.  
   
  X.509  
  An internationally recognized standard for certificates that defines their required parts.  

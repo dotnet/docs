@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Demonstrating Visual Inheritance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], visual inheritance"
   - "Windows Forms, inheritance"
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Demonstrating Visual Inheritance
 Visual inheritance enables you to see the controls on the base form and to add new controls. In this walkthrough you will create a base form and compile it into a class library. You will import this class library into another project and create a new form that inherits from the base form. During this walkthrough, you will learn how to:  
@@ -154,7 +140,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 7.  Select the private **Say Goodbye** button, and notice that it does not have resize handles. Additionally, in the **Properties** window, the properties of this button are grayed to indicate they cannot be modified.  
   
-8.  If you are using [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]:  
+8.  If you are using Visual C#:  
   
     1.  In **Solution Explorer**, right-click **Form1** in the **InheritanceTest** project and then choose **Delete**. In the message box that appears, click **OK** to confirm the deletion.  
   
@@ -169,7 +155,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
 12. Press F5 to run the application, and observe the behavior of the inherited form.  
   
 ## Next Steps  
- Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]) statement. For more information, see [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md).  
+ Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in Visual C#) statement. For more information, see [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md).  
   
 ## See Also  
  [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  

@@ -1,23 +1,12 @@
 ---
 title: "Data Structures for Parallel Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data structures, multi-threading"
 ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Data Structures for Parallel Programming
 The .NET Framework version 4 introduces several new types that are useful in parallel programming, including a set of concurrent collection classes, lightweight synchronization primitives, and types for lazy initialization. You can use these types with any multithreaded application code, including the Task Parallel Library and PLINQ.  
@@ -71,7 +60,7 @@ The .NET Framework version 4 introduces several new types that are useful in par
  For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  
   
 ## Aggregate Exceptions  
- The <xref:System.AggregateException?displayProperty=nameWithType> type can be used to capture multiple exceptions that are thrown concurrently on separate threads, and return them to the joining thread as a single exception. The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> types and PLINQ use <xref:System.AggregateException> extensively for this purpose. For more information, see [NIB: How to: Handle Exceptions Thrown by Tasks](http://msdn.microsoft.com/library/d6c47ec8-9de9-4880-beb3-ff19ae51565d) and [How to: Handle Exceptions in a PLINQ Query](../../../docs/standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md).  
+ The <xref:System.AggregateException?displayProperty=nameWithType> type can be used to capture multiple exceptions that are thrown concurrently on separate threads, and return them to the joining thread as a single exception. The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> types and PLINQ use <xref:System.AggregateException> extensively for this purpose. For more information, see [NIB: How to: Handle Exceptions Thrown by Tasks](https://msdn.microsoft.com/library/d6c47ec8-9de9-4880-beb3-ff19ae51565d) and [How to: Handle Exceptions in a PLINQ Query](../../../docs/standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md).  
   
 ## See Also  
  <xref:System.Collections.Concurrent?displayProperty=nameWithType>  

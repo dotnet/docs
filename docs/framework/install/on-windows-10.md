@@ -3,46 +3,42 @@ title: Install the .NET Framework on Windows 10
 description: Learn how to install the .NET Framework on Windows 10 or Windows Server 2016.
 author: rlander
 ms.author: mairaw
-keywords: .NET Framework, Install
-ms.date: 12/20/2017
-ms.topic: article
+ms.date: 04/10/2018
 ms.custom: "updateeachrelease"
-ms.prod: .net-framework
-ms.workload: 
-  - dotnet
 ---
 # Install the .NET Framework on Windows 10 and Windows Server 2016
 
-The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56115&desc=dotnet47) is the latest available version.
+The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest available version.
 
 You may have arrived on this page after trying to run an application and seeing a dialog on your machine similar to the following one:
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-## .NET Framework 4.7.1
+## .NET Framework 4.7.2
 
-The .NET Framework 4.7.1 is included with:
+The .NET Framework 4.7.2 is included with:
 
-* [Windows 10 Fall Creators Update (version 1709)](https://www.microsoft.com/software-download/windows10)
-* [Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709)
+* [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10)
 
 > [!div class="button"]
-[Download .NET Framework 4.7.1](https://www.microsoft.com/net/download/thank-you/net471?utm_source=ms-docs&utm_medium=referral)
+[Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
-The [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56115&desc=dotnet47) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
+The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
 
-You can install the [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) on:
+You can install the [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) on:
 
+* Windows 10 Fall Creators Update (version 1709)
 * Windows 10 Creators Update (version 1703)
 * Windows 10 Anniversary Update (version 1607)
+* Windows Server, version 1709
 * Windows Server 2016
 
-The .NET Framework 4.7.1 is not supported on:
+The .NET Framework 4.7.2 is not supported on:
 
 * Windows 10 1507
 * Windows 10 1511
 
-If you're using Windows 10 1507 or 1511 and you want to install the .NET Framework 4.7.1, you first need to upgrade to a later Windows 10 version.
+If you're using Windows 10 1507 or 1511 and you want to install the .NET Framework 4.7.2, you first need to upgrade to a later Windows 10 version.
 
 ## .NET Framework 4.6.2
 

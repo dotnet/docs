@@ -1,31 +1,17 @@
 ---
 title: "How to: Host a WCF Service in a Managed Windows Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8e37363b-4dad-4fb6-907f-73c30fac1d9a
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Host a WCF Service in a Managed Windows Service
-This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted by a Windows Service. The scenario is enabled by the managed Windows service hosting option that is a long-running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted outside of Internet Information Services (IIS) in a secure environment that is not message activated. The lifetime of the service is controlled instead by the operating system. This hosting option is available in all versions of Windows.  
+This topic outlines the basic steps required to create a Windows Communication Foundation (WCF) service that is hosted by a Windows Service. The scenario is enabled by the managed Windows service hosting option that is a long-running WCF service hosted outside of Internet Information Services (IIS) in a secure environment that is not message activated. The lifetime of the service is controlled instead by the operating system. This hosting option is available in all versions of Windows.  
   
- Windows services can be managed with the Microsoft.ManagementConsole.SnapIn in Microsoft Management Console (MMC) and can be configured to start up automatically when the system boots up. This hosting option consists of registering the application domain (AppDomain) that hosts a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service as a managed Windows service so that the process lifetime of the service is controlled by the Service Control Manager (SCM) for Windows services.  
+ Windows services can be managed with the Microsoft.ManagementConsole.SnapIn in Microsoft Management Console (MMC) and can be configured to start up automatically when the system boots up. This hosting option consists of registering the application domain (AppDomain) that hosts a WCF service as a managed Windows service so that the process lifetime of the service is controlled by the Service Control Manager (SCM) for Windows services.  
   
- The service code includes a service implementation of the service contract, a Windows Service class, and an installer class. The service implementation class, `CalculatorService`, is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. The `CalculatorWindowsService` is a Windows service. To qualify as a Windows service, the class inherits from `ServiceBase` and implements the `OnStart` and `OnStop` methods. In `OnStart`, a <xref:System.ServiceModel.ServiceHost> is created for the `CalculatorService` type and opened. In `OnStop`, the service is stopped and disposed. The host is also responsible for providing a base address to the service host, which has been configured in application settings. The installer class, which inherits from <xref:System.Configuration.Install.Installer>, allows the program to be installed as a Windows service by the Installutil.exe tool.  
+ The service code includes a service implementation of the service contract, a Windows Service class, and an installer class. The service implementation class, `CalculatorService`, is a WCF service. The `CalculatorWindowsService` is a Windows service. To qualify as a Windows service, the class inherits from `ServiceBase` and implements the `OnStart` and `OnStop` methods. In `OnStart`, a <xref:System.ServiceModel.ServiceHost> is created for the `CalculatorService` type and opened. In `OnStop`, the service is stopped and disposed. The host is also responsible for providing a base address to the service host, which has been configured in application settings. The installer class, which inherits from <xref:System.Configuration.Install.Installer>, allows the program to be installed as a Windows service by the Installutil.exe tool.  
   
 ### Construct the service and provide the hosting code  
   
@@ -119,7 +105,7 @@ This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../.
   
      Right click the App.config file in the **Solution Explorer** and select **Properties**. Under **Copy to Output Directory** select **Copy if Newer**.  
   
-     This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. In this example, because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> set to `true`, your service also has publishing metadata enabled. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+     This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. In this example, because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> set to `true`, your service also has publishing metadata enabled. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 ### Install and run the service  
   
@@ -130,7 +116,7 @@ This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../.
     > [!NOTE]
     >  If you do not use the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] command prompt, make sure that the `%WinDir%\Microsoft.NET\Framework\v4.0.<current version>` directory is in the system path.  
   
-     Type `services.msc` at the command prompt to access the Service Control Manager (SCM). The Windows service should appear in Services as "WCFWindowsServiceSample". The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service can only respond to clients if the Windows service is running. To start the service, right-click it in the SCM and select "Start", or type **net start WCFWindowsServiceSample** at the command prompt.  
+     Type `services.msc` at the command prompt to access the Service Control Manager (SCM). The Windows service should appear in Services as "WCFWindowsServiceSample". The WCF service can only respond to clients if the Windows service is running. To start the service, right-click it in the SCM and select "Start", or type **net start WCFWindowsServiceSample** at the command prompt.  
   
 3.  If you make changes to the service, you must first stop it and uninstall it. To stop the service, right-click the service in the SCM and select "Stop", or **type net stop WCFWindowsServiceSample** at the command prompt. Note that if you stop the Windows service and then run a client, an <xref:System.ServiceModel.EndpointNotFoundException> exception occurs when a client attempts to access the service. To uninstall the Windows service type **installutil /u bin\service.exe** at the command prompt.  
   

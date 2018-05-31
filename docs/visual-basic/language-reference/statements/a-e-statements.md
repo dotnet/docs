@@ -1,19 +1,10 @@
 ---
 title: "A-E Statements"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: af97c2bf-dddb-48a8-8eb6-798cd219430b
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # A-E Statements
-The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
+The following table contains a listing of Visual Basic language statements.  
   
 |||||  
 |---|---|---|---|  

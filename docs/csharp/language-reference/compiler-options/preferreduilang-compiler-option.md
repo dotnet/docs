@@ -1,10 +1,6 @@
 ---
 title: "-preferreduilang (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/preferreduilang"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "/preferreduilang compiler option [C#]"
   - "-preferreduilang compiler option [C#]"
 ms.assetid: 68b2462f-6778-48d7-8052-62805fe8e02c
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -preferreduilang (C# Compiler Options)
 By using the `-preferreduilang` compiler option, you can specify the language in which the C# compiler displays output, such as error messages.  

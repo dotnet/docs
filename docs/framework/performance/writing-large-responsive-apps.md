@@ -1,21 +1,9 @@
 ---
 title: "Writing Large, Responsive .NET Framework Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
-caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
-ms.workload: 
-  - "wiwagn"
 ---
 # Writing Large, Responsive .NET Framework Apps
 This article provides tips for improving the performance of large .NET Framework apps, or apps that process a large amount of data such as files or databases. These tips come from rewriting the C# and Visual Basic compilers in managed code, and this article includes several real examples from the C# compiler.  
@@ -440,7 +428,7 @@ class Compilation { /*...*/
 }  
 ```  
   
- This code changes the type of `cachedResult` to `Task<SyntaxTree>` and employs an `async` helper function that holds the original code from `GetSyntaxTreeAsync()`.  `GetSyntaxTreeAsync()` now uses the [null coalescing operator](~/docs/csharp/language-reference/operators/null-conditional-operator.md) to return `cachedResult` if it isn't null.  If `cachedResult` is null, then `GetSyntaxTreeAsync()` calls `GetSyntaxTreeUncachedAsync()` and caches the result.  Notice that `GetSyntaxTreeAsync()` doesn’t await the call to `GetSyntaxTreeUncachedAsync()` as the code would normally.  Not using await means that when `GetSyntaxTreeUncachedAsync()` returns its <xref:System.Threading.Tasks.Task> object, `GetSyntaxTreeAsync()` immediately returns the <xref:System.Threading.Tasks.Task>.  Now, the cached result is a <xref:System.Threading.Tasks.Task>, so there are no allocations to return the cached result.  
+ This code changes the type of `cachedResult` to `Task<SyntaxTree>` and employs an `async` helper function that holds the original code from `GetSyntaxTreeAsync()`.  `GetSyntaxTreeAsync()` now uses the [null coalescing operator](../../csharp/language-reference/operators/null-coalescing-operator.md) to return `cachedResult` if it isn't null.  If `cachedResult` is null, then `GetSyntaxTreeAsync()` calls `GetSyntaxTreeUncachedAsync()` and caches the result.  Notice that `GetSyntaxTreeAsync()` doesn’t await the call to `GetSyntaxTreeUncachedAsync()` as the code would normally.  Not using await means that when `GetSyntaxTreeUncachedAsync()` returns its <xref:System.Threading.Tasks.Task> object, `GetSyntaxTreeAsync()` immediately returns the <xref:System.Threading.Tasks.Task>.  Now, the cached result is a <xref:System.Threading.Tasks.Task>, so there are no allocations to return the cached result.  
   
 ### Additional considerations  
  Here are a few more points about potential problems in large apps or apps that process a lot of data.  

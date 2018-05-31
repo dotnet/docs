@@ -1,13 +1,7 @@
 ---
-title: "Asynchronous File I-O"
-ms.custom: ""
+title: "Asynchronous File I/O"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,13 +17,8 @@ helpviewer_keywords:
   - "multiple I/O requests"
   - "data streams, synchronous streams"
 ms.assetid: dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Asynchronous File I/O
 Asynchronous operations enable you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](../../../includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working.  
@@ -44,7 +33,7 @@ Asynchronous operations enable you to perform resource-intensive I/O operations 
   
  `Await` (Visual Basic) or `await` (C#) operator, which is applied to the result of an async method.  
   
- To implement asynchronous I/O operations, use these keywords in conjunction with the async methods, as shown in the following examples. For more information, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
+ To implement asynchronous I/O operations, use these keywords in conjunction with the async methods, as shown in the following examples. For more information, see [Asynchronous Programming with Async and Await](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7).  
   
  The following example demonstrates how to use two <xref:System.IO.FileStream> objects to copy files asynchronously from one directory to another. Notice that the <xref:System.Web.UI.WebControls.Button.Click> event handler for the <xref:System.Windows.Controls.Button> control is marked with the `async` modifier because it calls an asynchronous method.  
   
@@ -66,4 +55,4 @@ Asynchronous operations enable you to perform resource-intensive I/O operations 
 ## See Also  
  <xref:System.IO.Stream>  
  [File and Stream I/O](../../../docs/standard/io/index.md)  
- [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7)
+ [Asynchronous Programming with Async and Await](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7)

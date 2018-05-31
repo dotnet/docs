@@ -1,29 +1,24 @@
 ---
 title: "Private (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Private"
 helpviewer_keywords: 
   - "Private keyword [Visual Basic]"
   - "Private keyword [Visual Basic], syntax"
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Private (Visual Basic)
 Specifies that one or more declared programming elements are accessible only from within their declaration context, including from within any contained types.  
   
 ## Remarks  
  If a programming element represents proprietary functionality, or contains confidential data, you usually want to limit access to it as strictly as possible. You achieve the maximum limitation by allowing only the module, class, or structure that defines it to access it. To limit access to an element in this way, you can declare it with `Private`.  
-  
+
+> [!NOTE]
+> You can also use the [Private Protected](private-protected.md) access modifier, which makes a member accessible from within that class and from derived classes located in its containing assembly.
+
 ## Rules  
-  
+
 -   **Declaration Context.** You can use `Private` only at module level. This means the declaration context for a `Private` element must be a module, class, or structure, and cannot be a source file, namespace, interface, or procedure.  
   
 ## Behavior  
@@ -62,7 +57,8 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Private Protected](./private-protected.md)   
+ [Protected Friend](./protected-friend.md)    [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

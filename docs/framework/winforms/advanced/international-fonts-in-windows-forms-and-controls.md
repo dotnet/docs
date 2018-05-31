@@ -1,14 +1,6 @@
 ---
 title: "International Fonts in Windows Forms and Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "fonts [Windows Forms], international"
   - "international applications [Windows Forms], character display"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "font fallback in Windows Forms"
   - "globalization [Windows Forms], character sets"
 ms.assetid: 2c3066df-9bac-479a-82b2-79e484b346a3
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # International Fonts in Windows Forms and Controls
 In International applications the recommended method of selecting fonts is to use font fallback wherever possible. Font fallback means that the system determines what script the character belongs to.  

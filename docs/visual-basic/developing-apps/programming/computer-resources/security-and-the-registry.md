@@ -1,20 +1,10 @@
 ---
 title: "Security and the Registry (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [Visual Basic], registry"
   - "registry [Visual Basic], security issues"
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Security and the Registry (Visual Basic)
 This page discusses the security implications of storing data in the registry.  

@@ -1,21 +1,7 @@
 ---
 title: "Troubleshooting the Getting Started Tutorial"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Troubleshooting the Getting Started Tutorial
 This topic lists the most common problems encountered when working through the Getting Started Tutorial and how to resolve them.  
@@ -36,11 +22,11 @@ This topic lists the most common problems encountered when working through the G
   
 <a name="BKMK_q1"></a>   
 ## I am unable to find the project files on my hard drive.  
- [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] saves project files in c:\users\\<user name\Documents\\<Visual Studio version\>\Projects in [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[win7_client_secondref](../../../includes/win7-client-secondref-md.md)], and c:\Documents and Settings\\<user name\>\My Documents\\<Visual Studio version\>\Projects in earlier versions of Windows.  
+ Visual Studio saves project files in c:\users\\<user name\Documents\\<Visual Studio version\>\Projects in [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[win7_client_secondref](../../../includes/win7-client-secondref-md.md)], and c:\Documents and Settings\\<user name\>\My Documents\\<Visual Studio version\>\Projects in earlier versions of Windows.  
   
 <a name="BKMK_q2"></a>   
 ## Attempting to run the service application: HTTP could not register URL http://+:8000/ServiceModelSamples/Service/. Your process does not have access rights to this namespace.  
- The process that hosts a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service must be run with Administrative privileges. If you are running the service from inside [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] you must run [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] as an Administrator. To do so click **Start**, right-click [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] and select **Run As Administrator**. If you are running the service from a command-line prompt you must start the command line prompt as an Administrator in a similar way. Click **Start**, right-click **Command Prompt** and select **Run As Administrator**.  
+ The process that hosts a WCF service must be run with Administrative privileges. If you are running the service from inside [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] you must run [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] as an Administrator. To do so click **Start**, right-click [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] and select **Run As Administrator**. If you are running the service from a command-line prompt you must start the command line prompt as an Administrator in a similar way. Click **Start**, right-click **Command Prompt** and select **Run As Administrator**.  
   
 <a name="BKMK_q3"></a>   
 ## Attempting to use the Svcutil.exe tool: 'svcutil' is not recognized as an internal or external command, operable program or batch file.  

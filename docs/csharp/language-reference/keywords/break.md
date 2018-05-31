@@ -1,19 +1,12 @@
 ---
 title: "break (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "break"
   - "break_CSharpKeyword"
 helpviewer_keywords: 
   - "break keyword [C#]"
 ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # break (C# Reference)
 The `break` statement terminates the closest enclosing loop or [switch](../../../csharp/language-reference/keywords/switch.md) statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.  

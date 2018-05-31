@@ -1,10 +1,6 @@
 ---
 title: "switch keyword (C# Reference)"
 ms.date: 03/07/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "switch_CSharpKeyword"
   - "switch"
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "case statement [C#]"
   - "default keyword [C#]"
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-caps.latest.revision: 47
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # switch (C# Reference)
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*. 
@@ -49,7 +42,7 @@ In C# 6, the match expression must be an expression that returns a value of the 
 - an integral value, such as an [int](int.md) or a [long](long.md).
 - an [enum](enum.md) value.
 
-Starting with C# 7, the match expression can be any non-null expression.
+Starting with C# 7.0, the match expression can be any non-null expression.
  
 ## The switch section
  
@@ -87,7 +80,7 @@ This requirement is usually met by explicitly exiting the switch section by usin
 
  Because C# 6 supports only the constant pattern and does not allow the repetition of constant values, case labels define mutually exclusive values, and only one pattern can match the match expression. As a result, the order in which `case` statements appear is unimportant.
 
- In C# 7, however, because other patterns are supported, case labels need not define mutually exclusive values, and multiple patterns can match the match expression. Because only the statements in the switch section that contains the first matching pattern are executed, the order in which `case` statements appear is now important. If C# detects a switch section whose case statement or statements are equivalent to or are subsets of previous statements, it generates a compiler error, CS8120, "The switch case has already been handled by a previous case." 
+ In C# 7.0, however, because other patterns are supported, case labels need not define mutually exclusive values, and multiple patterns can match the match expression. Because only the statements in the switch section that contains the first matching pattern are executed, the order in which `case` statements appear is now important. If C# detects a switch section whose case statement or statements are equivalent to or are subsets of previous statements, it generates a compiler error, CS8120, "The switch case has already been handled by a previous case." 
 
  The following example illustrates a `switch` statement that uses a variety of non-mutually exclusive patterns. If you move the `case 0:` switch section so that it is no longer the first section in the `switch` statement, C# generates a compiler error because an integer whose value is zero is a subset of all integers, which is the pattern defined by the `case int val` statement.
 
@@ -107,7 +100,7 @@ The `default` case can appear in any order in the `switch` statement. Regardless
 
 ## <a name="pattern" /> Pattern matching with the `switch` statement
   
-Each `case` statement defines a pattern that, if it matches the match expression, causes its  containing switch section to be executed. All versions of C# support the constant pattern. The remaining patterns are supported beginning with C# 7. 
+Each `case` statement defines a pattern that, if it matches the match expression, causes its  containing switch section to be executed. All versions of C# support the constant pattern. The remaining patterns are supported beginning with C# 7.0. 
   
 ### Constant pattern 
 
@@ -177,7 +170,7 @@ Without pattern matching, this code might be written as follows. The use of type
 
 ## The `case` statement and the `when` clause
 
-Starting with C# 7, because case statements need not be mutually exclusive, you can use add a `when` clause to specify an additional condition that must be satisfied for the case statement to evaluate to true. The `when` clause can be any expression that returns a Boolean value. One of the more common uses for the `when` clause is used to prevent a switch section from executing when the value of a match expression is `null`. 
+Starting with C# 7.0, because case statements need not be mutually exclusive, you can use add a `when` clause to specify an additional condition that must be satisfied for the case statement to evaluate to true. The `when` clause can be any expression that returns a Boolean value. One of the more common uses for the `when` clause is used to prevent a switch section from executing when the value of a match expression is `null`. 
 
  The following example defines a base `Shape` class, a `Rectangle` class that derives from `Shape`, and a `Square` class that derives from `Rectangle`. It uses the `when` clause to ensure that the `ShowShapeInfo` treats a `Rectangle` object that has been assigned equal lengths and widths as a `Square` even if is has not been instantiated as a `Square` object. The method does not attempt to display information either about an object that is `null` or a shape whose area is zero. 
 

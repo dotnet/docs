@@ -1,14 +1,6 @@
 ---
 title: "How to: Create MDI Child Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "MDI [Windows Forms], creating forms"
   - "child forms"
 ms.assetid: 164b69bb-2eca-4339-ada3-0679eb2c6dda
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create MDI Child Forms
 MDI child forms are an essential element of [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md), as these forms are the center of user interaction.  
@@ -44,7 +30,7 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
   
 4.  In **Solution Explorer**, right-click the project, point to **Add**, and then select **Add New Item**.  
   
-5.  In the **Add New Item** dialog box, select **Windows Form** (in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or in [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]) or **Windows Forms Application (.NET)** (in [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) from the **Templates** pane. In the **Name** box, name the form **Form2**. Click the **Open** button to add the form to the project.  
+5.  In the **Add New Item** dialog box, select **Windows Form** (in Visual Basic or in Visual C#) or **Windows Forms Application (.NET)** (in [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) from the **Templates** pane. In the **Name** box, name the form **Form2**. Click the **Open** button to add the form to the project.  
   
     > [!NOTE]
     >  The MDI child form you created in this step is a standard Windows Form. As such, it has an <xref:System.Windows.Forms.Form.Opacity%2A> property, which enables you to control the transparency of the form. However, the <xref:System.Windows.Forms.Form.Opacity%2A> property was designed for top-level windows. Do not use it with MDI child forms, as painting problems can occur.  

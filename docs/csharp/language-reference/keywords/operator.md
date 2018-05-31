@@ -1,19 +1,12 @@
 ---
 title: "operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "operator_CSharpKeyword"
   - "operator"
 helpviewer_keywords: 
   - "operator keyword [C#]"
 ms.assetid: 59218cce-e90e-42f6-a6bb-30300981b86a
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # operator (C# Reference)
 Use the `operator` keyword to overload a built-in operator or to provide a user-defined conversion in a class or struct declaration.  

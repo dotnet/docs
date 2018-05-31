@@ -1,21 +1,7 @@
 ---
 title: "CoordinatorRecoveryLogEntryCorrupt"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3cd0c3e3-84c8-4d43-a561-a8851c78e565
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CoordinatorRecoveryLogEntryCorrupt
 Id: 139  

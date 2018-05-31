@@ -1,21 +1,7 @@
 ---
 title: "Supporting Tokens"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 65a8905d-92cc-4ab0-b6ed-1f710e40784e
-caps.latest.revision: 29
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Supporting Tokens
 The Supporting Tokens sample demonstrates how to add additional tokens to a message that uses WS-Security. The example adds an X.509 binary security token in addition to a username security token. The token is passed in a WS-Security message header from the client to the service and part of the message is signed with the private key associated with the X.509 security token to prove the possession of the X.509 certificate to the receiver. This is useful in the case when there is a requirement to have multiple claims associated with a message to authenticate or authorize the sender. The service implements a contract that defines a request-reply communication pattern.  
@@ -291,7 +277,7 @@ public class EchoService : IEchoService
 ```  
   
 ## Displaying Callers' Information  
- To display the caller's information, you can use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. Those claims are supplied automatically by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] for every token received in the message.  
+ To display the caller's information, you can use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. Those claims are supplied automatically by Windows Communication Foundation (WCF) for every token received in the message.  
   
 ```  
 bool TryGetClaimValue<TClaimResource>(ClaimSet claimSet, string   
@@ -354,7 +340,7 @@ void GetCallerIdentities(ServiceSecurityContext callerSecurityContext, out strin
 ```  
   
 ## Running the Sample  
- When you run the sample, the client first prompts you to provide user name and password for the user name token. Be sure to provide correct values for your system account, because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on the service maps the values supplied in the user name token into the identity provided by the system. After that, the client displays the response from the service. Press ENTER in the client window to shut down the client.  
+ When you run the sample, the client first prompts you to provide user name and password for the user name token. Be sure to provide correct values for your system account, because WCF on the service maps the values supplied in the user name token into the identity provided by the system. After that, the client displays the response from the service. Press ENTER in the client window to shut down the client.  
   
 ## Setup Batch File  
  The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run Internet Information Services (IIS) hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-hosted case.  
@@ -473,6 +459,6 @@ iisreset
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across machines. If you have run [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+>  This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## See Also

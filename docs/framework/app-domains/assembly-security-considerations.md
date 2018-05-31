@@ -1,14 +1,6 @@
 ---
 title: "Assembly Security Considerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], security"
   - "signcodes"
@@ -23,12 +15,8 @@ helpviewer_keywords:
   - "security [.NET Framework], assemblies"
   - "integrity with assemblies"
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Assembly Security Considerations
 <a name="top"></a> When you build an assembly, you can specify a set of permissions that the assembly requires to run. Whether certain permissions are granted or not granted to an assembly is based on evidence.  

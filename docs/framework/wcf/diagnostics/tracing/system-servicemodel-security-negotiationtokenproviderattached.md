@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.NegotiationTokenProviderAttached"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f5602e5e-aaaf-42ca-9afc-d2c699447db7
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.NegotiationTokenProviderAttached
 System.ServiceModel.Security.NegotiationTokenProviderAttached  

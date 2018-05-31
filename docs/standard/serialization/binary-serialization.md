@@ -1,8 +1,6 @@
 ---
 title: "Binary serialization"
 ms.date: "01/02/2018"
-ms.prod: ".net"
-ms.topic: "article"
 helpviewer_keywords: 
   - "binary serialization"
   - "serialization, about serialization"
@@ -11,12 +9,8 @@ helpviewer_keywords:
   - "binary serialization, .net core serialization"
   - "serialization, cross-framework"
 ms.assetid: 2b1ea3be-1152-4032-b2b3-07794054c405
-caps.latest.revision: 5
 author: "ViktorHofer"
 ms.author: "mairaw"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Binary serialization
 
@@ -109,8 +103,8 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.Data.ConstraintException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DBConcurrencyException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DataException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
-- <xref:System.Data.DataSet?displayProperty=nameWithType>   
-- <xref:System.Data.DataTable?displayProperty=nameWithType>   
+- <xref:System.Data.DataSet?displayProperty=nameWithType>
+- <xref:System.Data.DataTable?displayProperty=nameWithType> (unless you set RemotingFormat to SerializationFormat.Binary in which case it can only be exchanged with .NET Core 2.1 and later versions.)   
 - <xref:System.Data.DeletedRowInaccessibleException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.DuplicateNameException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Data.EvaluateException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
@@ -370,8 +364,8 @@ As the nature of binary serialization allows the modification of private members
  [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)  
  Describes the secure coding guidelines to follow when writing code that performs serialization.  
   
- [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
  Describes the various communications methods available in the .NET Framework for remote communications.  
   
- [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
+ [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
  Provides topics that describe and explain how to program XML Web services created using ASP.NET.

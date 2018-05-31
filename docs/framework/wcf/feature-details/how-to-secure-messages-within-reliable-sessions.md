@@ -1,21 +1,9 @@
 ---
 title: "How to: Secure Messages within Reliable Sessions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: aee33e50-936f-4486-9ca8-c1520c19a62d
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 
 # How to: Secure Messages within Reliable Sessions

@@ -1,14 +1,6 @@
 ---
 title: "x:Key Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "xKey"
   - "Key"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "Key attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:Key attribute"
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
-caps.latest.revision: 25
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Key Directive
 Uniquely identifies elements that are created and referenced in a XAML-defined dictionary. Adding an `x:Key` value to a XAML object element is the most common way to identify a resource in a resource dictionary, for example in a WPF <xref:System.Windows.ResourceDictionary>.  
@@ -73,7 +59,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 -   WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged Resource Dictionaries](../../../docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
   
- In the overall WPF XAML implementation and application model, key uniqueness is not checked by the XAML markup compiler. Instead, missing or nonunique `x:Key` values cause load-time XAML parser errors. However, [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] handling of dictionaries for WPF can often note such errors in the design phase.  
+ In the overall WPF XAML implementation and application model, key uniqueness is not checked by the XAML markup compiler. Instead, missing or nonunique `x:Key` values cause load-time XAML parser errors. However, Visual Studio handling of dictionaries for WPF can often note such errors in the design phase.  
   
  Note that in the syntax shown, the <xref:System.Windows.ResourceDictionary> object is implicit in how the WPF XAML processor produces a collection to populate a <xref:System.Windows.FrameworkElement.Resources%2A> collection. A <xref:System.Windows.ResourceDictionary> is not typically provided explicitly as an element in markup, although it can be in some cases if wanted for clarity (it would be a collection object element between the <xref:System.Windows.FrameworkElement.Resources%2A> property element and the items within that populate the dictionary). For information about why a collection object is almost always an implicit element in markup, see [XAML Syntax In Detail](../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   

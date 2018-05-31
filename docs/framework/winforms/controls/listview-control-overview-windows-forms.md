@@ -1,14 +1,6 @@
 ---
 title: "ListView Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "ListView"
 helpviewer_keywords: 
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], about ListView control"
   - "list views"
 ms.assetid: c9ef56c1-3bb1-4101-9f4e-e95e720f2756
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ListView Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list of items with icons. You can use a list view to create a user interface like the right pane of Windows Explorer. The control has four view modes: LargeIcon, SmallIcon, List, and Details.  

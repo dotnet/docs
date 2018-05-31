@@ -1,19 +1,7 @@
 ---
 title: "How to: Control the Type of a Projection (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: e4db6b7e-4cc9-4c8f-af85-94acf32aa348
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Control the Type of a Projection (C#)
 Projection is the process of taking one set of data, filtering it, changing its shape, and even changing its type. Most query expressions perform projections. Most of the query expressions shown in this section evaluate to <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, but you can control the type of the projection to create collections of other types. This topic shows how to do this.  

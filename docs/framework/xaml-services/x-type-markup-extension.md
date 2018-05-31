@@ -1,14 +1,6 @@
 ---
 title: "x:Type Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "x:TypeExtension"
   - "Type"
@@ -22,12 +14,6 @@ helpviewer_keywords:
   - "TargetType attribute [XAML Services]"
   - "Type markup extension in XAML [XAML Services]"
 ms.assetid: e0e0ce6f-e873-49c7-8ad7-8b840eb353ec
-caps.latest.revision: 27
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Type Markup Extension
 Supplies the CLR <xref:System.Type> object that is the underlying type for a specified XAML type.  
@@ -52,7 +38,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 |`typeNameValue`|Required. A type name resolvable to the current default XAML namespace; or the specified mapped prefix if `prefix` is supplied.|  
   
 ## Remarks  
- The `x:Type` markup extension has a similar function to the `typeof()` operator in [!INCLUDE[TLA#tla_cshrp](../../../includes/tlasharptla-cshrp-md.md)] or the `GetType` operator in [!INCLUDE[TLA#tla_visualb](../../../includes/tlasharptla-visualb-md.md)].  
+ The `x:Type` markup extension has a similar function to the `typeof()` operator in C# or the `GetType` operator in Microsoft Visual Basic.  
   
  The `x:Type` markup extension supplies a from-string conversion behavior for properties that take the type <xref:System.Type>. The input is a XAML type. The relationship between the input XAML type and the output CLR <xref:System.Type> is that the output <xref:System.Type> is the <xref:System.Xaml.XamlType.UnderlyingType%2A> of the input <xref:System.Xaml.XamlType>, after looking up the necessary <xref:System.Xaml.XamlType> based on XAML schema context and the <xref:System.Windows.Markup.IXamlTypeResolver> service the context provides.  
   

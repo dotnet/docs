@@ -1,13 +1,7 @@
 ---
 title: "Standard Date and Time Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-caps.latest.revision: 92
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Standard Date and Time Format Strings
 A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:  
@@ -38,7 +27,7 @@ A standard date and time format string uses a single format specifier to define 
  Standard date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
   
 > [!TIP]
->  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
+>  You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
   
 <a name="table"></a> The following table describes the standard date and time format specifiers. Unless otherwise noted, a particular standard date and time format specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. See the [Notes](#Notes) section for additional information about using standard date and time format strings.  
   
@@ -421,4 +410,4 @@ A standard date and time format string uses a single format specifier to define 
  <xref:System.DateTimeOffset?displayProperty=nameWithType>  
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+ [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

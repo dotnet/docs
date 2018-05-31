@@ -1,11 +1,6 @@
 ---
 title: "UShort Data Type (Visual Basic)"
 ms.date: 01/31/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ushort"
 helpviewer_keywords: 

@@ -1,13 +1,7 @@
 ---
 title: "How to: Open and Append to a Log File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "log files, appending to"
   - "I/O [.NET Framework], log files"
 ms.assetid: 74423362-1721-49cb-aa0a-e04005f72a06
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Open and Append to a Log File
 <xref:System.IO.StreamWriter> and <xref:System.IO.StreamReader> write characters to and read characters from streams. The following code example opens the `log.txt` file for input, or creates the file if it does not already exist, and appends information to the end of the file. The contents of the file are then written to standard output for display. As an alternative to this example, the information could be stored as a single string or string array, and the <xref:System.IO.File.WriteAllText%2A> or <xref:System.IO.File.WriteAllLines%2A> method could be used to achieve the same functionality.  
@@ -47,4 +36,4 @@ ms.workload:
  [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
  [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
  [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

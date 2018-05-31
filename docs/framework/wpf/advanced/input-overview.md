@@ -1,14 +1,6 @@
 ---
 title: "Input Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -32,12 +24,6 @@ helpviewer_keywords:
   - "focus [WPF]"
   - "mouse position [WPF]"
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
-caps.latest.revision: 50
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Input Overview
 <a name="introduction"></a> The[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] subsystem provides a powerful [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] for obtaining input from a variety of devices, including the mouse, keyboard, touch, and stylus. This topic describes the services provided by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and explains the architecture of the input systems.  
@@ -81,7 +67,7 @@ ms.workload:
   
 <a name="handling_input_events"></a>   
 ## Handling Input Events  
- To receive input on an element, an event handler must be associated with that particular event.  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] this is straightforward: you reference the name of the event as an attribute of the element that will be listening for this event.  Then, you set the value of the attribute to the name of the event handler that you define, based on a delegate.  The event handler must be written in code such as [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] and can be included in a code-behind file.  
+ To receive input on an element, an event handler must be associated with that particular event.  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] this is straightforward: you reference the name of the event as an attribute of the element that will be listening for this event.  Then, you set the value of the attribute to the name of the event handler that you define, based on a delegate.  The event handler must be written in code such as C# and can be included in a code-behind file.  
   
  Keyboard events occur when the operating system reports key actions that occur while keyboard focus is on an element. Mouse and stylus events each fall into two categories: events that report changes in pointer position relative to the element, and events that report changes in the state of device buttons.  
   

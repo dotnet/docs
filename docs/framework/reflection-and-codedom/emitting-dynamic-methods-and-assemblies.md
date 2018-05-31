@@ -1,14 +1,6 @@
 ---
 title: "Emitting Dynamic Methods and Assemblies"
-ms.custom: ""
 ms.date: "08/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "reflection emit"
   - "dynamic assemblies"
@@ -17,9 +9,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], emitting dynamic assemblies"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Emitting Dynamic Methods and Assemblies
 This section describes a set of managed types in the <xref:System.Reflection.Emit> namespace that allow a compiler or tool to emit metadata and Microsoft intermediate language (MSIL) at run time and optionally generate a portable executable (PE) file on disk. Script engines and compilers are the primary users of this namespace. In this section, the functionality provided by the <xref:System.Reflection.Emit> namespace is referred to as reflection emit.  
@@ -51,7 +40,7 @@ Describes security issues related to creating dynamic assemblies using reflectio
 Shows how to execute a simple dynamic method and a dynamic method bound to an instance of a class.
 
 [How to: Define a generic type with reflection emit](how-to-define-a-generic-type-with-reflection-emit.md)   
-Shows how to create a simple generic type with two type parameters, how to apply class, interface, and special constraints to the type parameters, and how to create memers that use the type parameters of the class as parameter types and return types.
+Shows how to create a simple generic type with two type parameters, how to apply class, interface, and special constraints to the type parameters, and how to create members that use the type parameters of the class as parameter types and return types.
 
 [How to: Define a generic method with reflection emit](how-to-define-a-generic-method-with-reflection-emit.md)   
 Shows how to create, emit, and invoke a simple generic method.

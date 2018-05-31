@@ -1,24 +1,12 @@
 ---
 title: ".NET Framework Deployment Guide for Administrators"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "04/10/2018"
 helpviewer_keywords: 
   - "administrator's guide, deploying .NET Framework"
   - "deployment [.NET Framework], administrator's guide"
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
-caps.latest.revision: 40
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # .NET Framework Deployment Guide for Administrators
 This step-by-step article describes how a system administrator can deploy the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its system dependencies across a network by using Microsoft System Center Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
@@ -160,7 +148,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 8.  Complete the wizard.  
   
- The packagenow contains all the information you need to silently deploy the .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Monitor Content" section of [Operations and Maintenance for Content Management in Configuration Manager](http://technet.microsoft.com/library/gg712694.aspx#BKMK_MonitorContent) in the Configuration Manager Documentation Library.  
+ The package now contains all the information you need to silently deploy the .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Monitor Content" section of [Operations and Maintenance for Content Management in Configuration Manager](http://technet.microsoft.com/library/gg712694.aspx#BKMK_MonitorContent) in the Configuration Manager Documentation Library.  
   
 <a name="deploying_package"></a>   
 ### Deploy the package  
@@ -225,12 +213,16 @@ This step-by-step article describes how a system administrator can deploy the [!
 ## Troubleshooting  
   
 ### Log file locations  
- The following log files are generated during [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup:  
+ The following log files are generated during .NET Framework setup:  
   
- %temp%\Microsoft .NET Framework 4.5*.txt  
- %temp%\Microsoft .NET Framework 4.5*.html  
+ %temp%\Microsoft .NET Framework *version*\*.txt  
+ %temp%\Microsoft .NET Framework *version*\*.html  
   
- You can use the [log collection tool](http://www.microsoft.com/download/details.aspx?id=12493) to collect the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] log files and to create a compressed cabinet (.cab) file that reduces the size of the files.  
+ where *version* is the version of the .NET Framework that you're installing, such as 4.5 or 4.7.2.  
+ 
+ You can also specify the directory to which log files are written by using the `/log` command-line option in the .NET Framework installation command. For more information, see [.NET Framework deployment guide for developers](deployment-guide-for-developers.md#command-line-options). 
+ 
+ You can use the [log collection tool](https://www.microsoft.com/download/details.aspx?id=12493) to collect the .NET Framework log files and to create a compressed cabinet (.cab) file that reduces the size of the files.  
   
 <a name="return_codes"></a>   
 ### Return codes  

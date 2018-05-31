@@ -1,26 +1,14 @@
 ---
 title: "Using a Custom Expression Editor"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using a Custom Expression Editor
 A custom expression editor can be implemented to provide a richer or simpler expression editing experience. There are several scenarios in which you might want to use a custom expression editor:  
   
--   To provide support for IntelliSense and other rich editing features in a rehosted workflow designer. This functionality must be provided because the default [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] expression editor cannot be used in rehosted applications.  
+-   To provide support for IntelliSense and other rich editing features in a rehosted workflow designer. This functionality must be provided because the default Visual Studio expression editor cannot be used in rehosted applications.  
   
--   To simplify the expression editing experience for the business analyst users, so that they are not, for example, required to learn [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] or deal with [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] expressions.  
+-   To simplify the expression editing experience for the business analyst users, so that they are not, for example, required to learn Visual Basic or deal with Visual Basic expressions.  
   
  Three basic steps are needed to implement a custom expression editor:  
   

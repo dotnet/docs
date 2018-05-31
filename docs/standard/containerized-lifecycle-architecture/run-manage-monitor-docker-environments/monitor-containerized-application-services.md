@@ -1,13 +1,9 @@
 ---
 title: Monitor containerized application services
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Monitor containerized application services
 

@@ -1,25 +1,14 @@
 ---
 title: "Managed and Unmanaged Threading in Windows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], unmanaged"
   - "threading [.NET Framework], managed"
   - "managed threading"
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Managed and Unmanaged Threading in Windows
 Management of all threads is done through the <xref:System.Threading.Thread> class, including threads created by the common language runtime and those created outside the runtime that enter the managed environment to execute code. The runtime monitors all the threads in its process that have ever executed code within the managed execution environment. It does not track any other threads. Threads can enter the managed execution environment through COM interop (because the runtime exposes managed objects as COM objects to the unmanaged world), the COM [DllGetClassObject](https://msdn.microsoft.com/library/ms680760.aspx) function, and platform invoke.  
@@ -50,7 +39,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
 |Close to **CoInitializeEx** (OLE32.DLL)|<xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>|  
   
 ## Managed Threads and COM Apartments  
- A managed thread can be marked to indicate that it will host a [single-threaded](http://msdn.microsoft.com/library/windows/desktop/ms680112.aspx) or [multithreaded](http://msdn.microsoft.com/library/windows/desktop/ms693421.aspx) apartment. (For more information on the COM threading architecture, see [Processes, threads, and Apartments](http://msdn.microsoft.com/library/windows/desktop/ms693344.aspx).) The <xref:System.Threading.Thread.GetApartmentState%2A>, <xref:System.Threading.Thread.SetApartmentState%2A>, and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods of the <xref:System.Threading.Thread> class return and assign the apartment state of a thread. If the state has not been set, <xref:System.Threading.Thread.GetApartmentState%2A> returns <xref:System.Threading.ApartmentState.Unknown?displayProperty=nameWithType>.  
+ A managed thread can be marked to indicate that it will host a [single-threaded](https://msdn.microsoft.com/library/windows/desktop/ms680112.aspx) or [multithreaded](https://msdn.microsoft.com/library/windows/desktop/ms693421.aspx) apartment. (For more information on the COM threading architecture, see [Processes, threads, and Apartments](https://msdn.microsoft.com/library/windows/desktop/ms693344.aspx).) The <xref:System.Threading.Thread.GetApartmentState%2A>, <xref:System.Threading.Thread.SetApartmentState%2A>, and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods of the <xref:System.Threading.Thread> class return and assign the apartment state of a thread. If the state has not been set, <xref:System.Threading.Thread.GetApartmentState%2A> returns <xref:System.Threading.ApartmentState.Unknown?displayProperty=nameWithType>.  
   
  The property can be set only when the thread is in the <xref:System.Threading.ThreadState.Unstarted?displayProperty=nameWithType> state; it can be set only once for a thread.  
   

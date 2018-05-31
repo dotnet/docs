@@ -1,25 +1,11 @@
 ---
 title: "How to: Animate the Thickness of a Border by Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF], border thickness with key frames"
   - "key frames [WPF], animating border thickness with"
   - "border thickness [WPF], animating with key frames"
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate the Thickness of a Border by Using Key Frames
 This example shows how to animate the <xref:System.Windows.Controls.Control.BorderThickness%2A> property of a <xref:System.Windows.Controls.Border>.  

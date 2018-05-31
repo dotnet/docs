@@ -1,13 +1,7 @@
 ---
 title: Branches and loops tutorial - C# local quickstarts
 description: In this quickstart about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/31/2017
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # Branches and loops
@@ -29,7 +23,7 @@ if (a + b > 10)
     Console.WriteLine("The answer is greater than 10.");
 ```
 
-Try this code by typing `dotnet run` in the your console window. You should see the message "The answer is greater than 10." printed to your console.
+Try this code by typing `dotnet run` in your console window. You should see the message "The answer is greater than 10." printed to your console.
 
 Modify the declaration of `b` so that the sum is less than 10: 
 
@@ -44,7 +38,7 @@ written one of the possible branches for an `if` statement: the true branch.
 > As you explore C# (or any programming language), you'll
 > make mistakes when you write code. The compiler will
 > find and report the errors. Look closely at the error 
-> output and the code that generated the error. The compler
+> output and the code that generated the error. The compiler
 > error can usually help you find the problem.
 
 This first sample shows the power of `if` and Boolean types. A *Boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for Boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped.
@@ -287,7 +281,7 @@ Try it yourself. Then check how you did. You should get 63 for an answer. You ca
 You've completed the "branches and loops" quickstart.
 
 You can continue with
-the [Interpolated strings](interpolated-strings-local.md) quickstart in
+the [String interpolation](interpolated-strings-local.md) quickstart in
 your own development environment.
 
 You can learn more about these concepts in these topics:

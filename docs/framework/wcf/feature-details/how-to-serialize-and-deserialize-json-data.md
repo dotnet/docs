@@ -1,28 +1,14 @@
 ---
 title: "How to: Serialize and Deserialize JSON Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Serialize and Deserialize JSON Data
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX-enabled Web services.  
   
  This topic demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. This example uses a data contract to demonstrate serialization and deserialization of a user-defined `Person` type.  
   
- Normally, JSON serialization and deserialization is handled automatically by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly - this is the scenario that this topic demonstrates.  
+ Normally, JSON serialization and deserialization is handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly - this is the scenario that this topic demonstrates.  
   
 > [!NOTE]
 >  If an error occurs during serialization of an outgoing reply on the server or the reply operation throws an exception for some other reason, it may not get returned to the client as a fault.  
@@ -31,7 +17,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ### To define the data contract for a Person  
   
-1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
+1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
   
     ```csharp  
     [DataContract]  

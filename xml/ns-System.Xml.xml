@@ -42,9 +42,9 @@
   
 -   If you forget to specify the `await` keyword when you call an asynchronous method, the results are non-deterministic: You might receive the result you expected or an exception.  
   
--   When an <xref:System.Xml.XmlReader> object is reading a large text node, it might cache only a partial text value and return the text node, so retrieving the <xref:System.Xml.XmlReader.Value%2A?displayProperty=nameWithType> property might be blocked by an I/O operation. Use the <xref:System.Xml.XmlReader.GetValueAsync%2A> method to get the text value in asynchronous mode, or use the <xref:System.Xml.XmlReader.ReadValueChunkAsync%2A> method to read a large text block in chunks.  
+-   When an <xref:System.Xml.XmlReader> object is reading a large text node, it might cache only a partial text value and return the text node, so retrieving the <xref:System.Xml.XmlReader.Value%2A?displayProperty=nameWithType> property might be blocked by an I/O operation. Use the <xref:System.Xml.XmlReader.GetValueAsync%2A?displayProperty=nameWithType> method to get the text value in asynchronous mode, or use the <xref:System.Xml.XmlReader.ReadValueChunkAsync%2A?displayProperty=nameWithType> method to read a large text block in chunks.  
   
--   When you use an <xref:System.Xml.XmlWriter> object, call the <xref:System.Xml.XmlWriter.FlushAsync%2A> method before calling <xref:System.Xml.XmlWriter.Close%2A> to avoid blocking an I/O operation.  
+-   When you use an <xref:System.Xml.XmlWriter> object, call the <xref:System.Xml.XmlWriter.FlushAsync%2A?displayProperty=nameWithType> method before calling <xref:System.Xml.XmlWriter.Close%2A?displayProperty=nameWithType> to avoid blocking an I/O operation.  
   
 <a name="diff"></a>   
 ## Differences from the W3C specs  
@@ -159,7 +159,7 @@
 </xs:schema>  
 ```  
   
- If you try to validate the following XML against the schema above, the validation will fail with the following exception: "Unhandled Exception: System.Xml.Schema.XmlSchemaValidationException: The 'e2' el element is invalid - The value 'abc' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:int' - The string 'abc' is not a valid Int32 value."\  
+ If you try to validate the following XML against the schema above, the validation will fail with the following exception: "Unhandled Exception: System.Xml.Schema.XmlSchemaValidationException: The 'e2' el element is invalid - The value 'abc' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:int' - The string 'abc' is not a valid Int32 value."
   
 ```xml  
 <e3><e2>abc</e2></e3>  
@@ -167,9 +167,9 @@
   
 <a name="security"></a>   
 ## Security considerations  
- The types and members in the <xref:System.Xml> namespace rely on the . The following sections discuss security issues that are specific to XML technologies. For details, see the specific classes and members mentioned, and visit the [XML Developer Center](http://go.microsoft.com/fwlink/?linkid=42458) for technical information, downloads, newsgroups, and other resources for XML developers.  
+ The types and members in the <xref:System.Xml> namespace rely on the [.NET security system](~/docs/standard/security/index.md). The following sections discuss security issues that are specific to XML technologies.
   
- Also note that when you use the <xref:System.Xml> types and members, if the XML contains data that has potential privacy implications, you need to implement your app in a way that respects your end users' privacy.  
+ Also note that when you use the <xref:System.Xml> types and members, if the XML contains data that has potential privacy implications, you need to implement your app in a way that respects your end users' privacy.
   
  **External access**  
   
@@ -189,7 +189,7 @@
   
 -   Writing XML documents and fragments from data sources to the file system, streams, a <xref:System.IO.TextWriter>, or a <xref:System.Text.StringBuilder>.  
   
--   Loading documents into the Document Object Model (DOM) object if you are using an <xref:System.Xml.XmlReader> object and <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> set to <xref:System.Xml.DtdProcessing.Prohibit>.  
+-   Loading documents into the Document Object Model (DOM) object if you are using an <xref:System.Xml.XmlReader> object and <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> set to <xref:System.Xml.DtdProcessing.Prohibit?displayProperty=nameWithType>.  
   
 -   Navigating the DOM object.  
   
@@ -205,7 +205,7 @@
   
 -   DOM operations such as querying, editing, moving sub-trees between documents, and saving DOM objects.  
   
- If you are concerned about denial of service issues or if you are dealing with untrusted sources, do not enable DTD processing. This is disabled by default on <xref:System.Xml.XmlReader> objects that the <xref:System.Xml.XmlReader.Create%2A> method creates.  
+ If you are concerned about denial of service issues or if you are dealing with untrusted sources, do not enable DTD processing. This is disabled by default on <xref:System.Xml.XmlReader> objects that the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method creates.  
   
 > [!NOTE]
 >  The <xref:System.Xml.XmlTextReader> allows DTD processing by default. Use the <xref:System.Xml.XmlTextReader.DtdProcessing%2A?displayProperty=nameWithType> property to disable this feature.  
@@ -216,7 +216,7 @@
   
  Because XML documents can include references to other files, it is difficult to determine how much processing power is required to parse an XML document. For example, XML documents can include a DTD. If the DTD contains nested entities or complex content models, it could take an excessive amount of time to parse the document.  
   
- When using <xref:System.Xml.XmlReader>, you can limit the size of the document that can be parsed by setting the <xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A> property. You can limit the number of characters that result from expanding entities by setting the <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A> property. See the appropriate reference topics for examples of setting these properties.  
+ When using <xref:System.Xml.XmlReader>, you can limit the size of the document that can be parsed by setting the <xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=nameWithType> property. You can limit the number of characters that result from expanding entities by setting the <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A?displayProperty=nameWithType> property. See the appropriate reference topics for examples of setting these properties.  
   
  The XSD and XSLT technologies have additional capabilities that can affect processing performance. For example, it is possible to construct an XML schema that requires a substantial amount of time to process when evaluated over a relatively small document. It is also possible to embed script blocks within an XSLT style sheet. Both cases pose a potential security threat to your app.  
   
@@ -224,13 +224,13 @@
   
 -   XSLT scripting is disabled by default. XSLT scripting should be enabled only if you require script support and you are working in a fully trusted environment.  
   
--   The XSLT `document()` function is disabled by default. If you enable the `document()` function, restrict the resources that can be accessed by passing an <xref:System.Xml.XmlSecureResolver> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
+-   The XSLT `document()` function is disabled by default. If you enable the `document()` function, restrict the resources that can be accessed by passing an <xref:System.Xml.XmlSecureResolver> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType> method.  
   
--   Extension objects are enabled by default. If an <xref:System.Xml.Xsl.XsltArgumentList> object that contains extension objects is passed to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method, the extension objects are used.  
+-   Extension objects are enabled by default. If an <xref:System.Xml.Xsl.XsltArgumentList> object that contains extension objects is passed to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType> method, the extension objects are used.  
   
 -   XSLT style sheets can include references to other files and embedded script blocks. A malicious user can exploit this by supplying you with data or style sheets that, when executed, can cause your system to process until the computer runs low on resources.  
   
--   XSLT apps that run in a mixed trust environment can result in style sheet spoofing. For example, a malicious user can load an object with a harmful style sheet and hand it off to another user who subsequently calls the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method and executes the transformation.  
+-   XSLT apps that run in a mixed trust environment can result in style sheet spoofing. For example, a malicious user can load an object with a harmful style sheet and hand it off to another user who subsequently calls the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType> method and executes the transformation.  
   
  These security issues can be mitigated by not enabling scripting or the `document()` function unless the style sheet comes from a trusted source, and by not accepting <xref:System.Xml.Xsl.XslCompiledTransform> objects, XSLT style sheets, or XML source data from an untrusted source.  
   

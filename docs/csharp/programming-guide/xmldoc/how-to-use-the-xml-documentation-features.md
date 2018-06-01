@@ -34,7 +34,7 @@ The example generates an .xml file with the following contents:
         </member>
         <member name="F:TestClass._name">
             <summary>
-            Store for the name property.
+            Store for the Name property.
             </summary>
         </member>
         <member name="M:TestClass.#ctor">
@@ -65,7 +65,7 @@ The example generates an .xml file with the following contents:
             Some other method.
             </summary>
             <returns>
-            Return results are described through the returns tag.
+            Return values are described through the returns tag.
             </returns>
             <seealso cref="M:TestClass.SomeMethod(System.String)">
             Notice the use of the cref attribute to reference a specific method.

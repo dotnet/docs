@@ -1,6 +1,6 @@
 ---
 title: "Security in .NET"
-ms.date: "03/30/2017"
+ms.date: "06/04/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - ".NET, security"

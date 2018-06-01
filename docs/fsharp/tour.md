@@ -49,7 +49,7 @@ It's important to note that because `struct` tuples are value types, they cannot
 
 ## Pipelines and Composition
 
-Pipe operators such as `|>` are used extensively when processing data in F#. These operators are functions that allow you to establish "pipelines" of functions in a flexible manner. The following example walks through how you could take advantage of these operators to build a simple functional pipeline:
+Pipe operators such as `|>` are used extensively when processing data in F#. These operators are functions that allow you to establish "pipelines" of functions in a flexible manner. The following example walks through how you can take advantage of these operators to build a simple functional pipeline:
 
 [!code-fsharp[Pipelines](../../samples/snippets/fsharp/tour.fs#L227-L282)]
 

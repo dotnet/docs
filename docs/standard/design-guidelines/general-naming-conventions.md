@@ -29,9 +29,16 @@ This section describes general naming conventions that relate to word choice, gu
   
  The property name `CanScrollHorizontally` is better than `ScrollableX` (an obscure reference to the X-axis).  
   
- **X DO NOT** use underscores, hyphens, or any other nonalphanumeric characters.  
-  
- **X DO NOT** use Hungarian notation.  
+ **X DO NOT** use underscores, hyphens, or any other nonalphanumeric characters. 
+ 
+ A well recognised exception to this rule is the use of an underscore to denote a private field, eg
+ ```cs
+ private readonly SomeType _field;
+ ```
+ 
+ **X DO NOT** use Hungarian notation. 
+ 
+ Two well established conventions within C# are often falsely cited as examples of Hungarian notation: the use of `I` as a suffix for an interface and `T` for a generic type name. Do use these conventions.  
   
  **X AVOID** using identifiers that conflict with keywords of widely used programming languages.  
   

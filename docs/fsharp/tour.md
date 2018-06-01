@@ -49,11 +49,11 @@ It's important to note that because `struct` tuples are value types, they cannot
 
 ## Pipelines and Composition
 
-Pipe operators (`|>`, `<|`, `||>`, `<||`, `|||>`, `<|||`) and composition operators (`>>` and `<<`) are used extensively when processing data in F#.  These operators are functions which allow you to establish "pipelines" of functions in a flexible manner.  The following example walks through how you could take advantage of these operators to build a simple functional pipeline.
+Pipe operators such as `|>` are used extensively when processing data in F#. These operators are functions which allow you to establish "pipelines" of functions in a flexible manner.  The following example walks through how you could take advantage of these operators to build a simple functional pipeline.
 
-[!code-fsharp[Pipelines](../../samples/snippets/fsharp/tour.fs#L227-L300)]
+[!code-fsharp[Pipelines](../../samples/snippets/fsharp/tour.fs#L227-L282)]
 
-The above sample made use of many features of F#, including list processing functions, first-class functions, and [partial application](language-reference/functions/index.md#partial-application-of-arguments).  Although a deep understanding of each of those concepts can become somewhat advanced, it should be clear how easily functions can be used to process data when building pipelines.
+The above sample made use of many features of F#, including list processing functions, first-class functions, and [partial application](language-reference/functions/index.md#partial-application-of-arguments). Although a deep understanding of each of those concepts can become somewhat advanced, it should be clear how easily functions can be used to process data when building pipelines.
 
 ## Lists, Arrays, and Sequences
 

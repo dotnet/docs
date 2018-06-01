@@ -42,31 +42,32 @@ mkdir HelloSvcutil
 cd HelloSvcutil
 ```
 
-2. Create a new C# console project in that directory using the following command:
+2. Create a new C# console project in that directory using the [`dotnet new`](../tools/dotnet-new.md) ([see note](#dotnet-new-note)) commad as follows:
 ```console
-[`dotnet new`](../tools/dotnet-new.md) ([see note](#dotnet-new-note)) console
+dotnet new console
 ```
 
-3. Edit the *HelloSvcutil.csproj* project file and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
+3. Open the *HelloSvcutil.csproj* project file in your editor, edit the Project element, and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
 ```xml
 <ItemGroup>
   <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.0" />
 </ItemGroup>
 ```
 
-4. Restore the project in order to invoke the _dotnet-svcutil_ tool
+4. Restore the the _dotnet-svcutil_ package using the [`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command as follows:
 ```console
-[`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note))
+dotnet restore
 ```
 
-5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which will be saved as _HelloSvcutil/ServiceReference1/Reference.cs_
+5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file as follows:
 ```console
 dotnet svcutil http://myhost/SayHello.svc
 ```
+The generated file will be saved as _HelloSvcutil/ServiceReference1/Reference.cs_. The _dotnet_svcutil_ tool will also add to the project the appropriate WCF packages required by the proxy code as package references.
 
-6. Restore the WCF packages for the project
+6. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command as follows:
 ```console
-[`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note))
+dotnet restore
 ```
 
 7. Open the `Program.cs` file in your editor, edit the `Main()` method, and replace the auto-generated code with the following code to invoke the web service:
@@ -78,9 +79,9 @@ static void Main(string[] args)
 }
 ```
 
-8. Run the application via [`dotnet run`](../tools/dotnet-run.md).
+8. Run the application using the [`dotnet run`](../tools/dotnet-run.md) command as follows:
 ```console
-[`dotnet run`](../tools/dotnet-run.md) ([see note](#dotnet-run-note))
+dotnet run
 ```
 You should see the following output:
 "Hello dotnet-svcutil!"

@@ -9,7 +9,7 @@ ms.date: 05/31/2018
 
 The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET Core CLI tool that retrieves metadata from a web service on a network location or from a WSDL file, and generates a WCF class containing client proxy methods that access the web service operations.
 
-Similar to the [**Service Model Metadata - svcutil**](dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe) tool for .NET Framework projects, the **dotnet-svcutil** is a command line tool for generating a web service reference compatible with .NET Core and .NET Standard projects.
+Similar to the [**Service Model Metadata - svcutil**](/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe) tool for .NET Framework projects, the **dotnet-svcutil** is a command line tool for generating a web service reference compatible with .NET Core and .NET Standard projects.
 
 The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](/dotnet/core/additional-tools/wcf-web-service-reference-guide) Visual Studio connected service provider which first shipped with Visual Studio 2017 v15.5. The **dotnet-svcutil** tool as a .NET Core CLI tool, is available cross-platform on Linux, MacOS, and Windows.
 

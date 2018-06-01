@@ -47,7 +47,7 @@ cd HelloSvcutil
 dotnet new console
 ```
 
-3. Open the *HelloSvcutil.csproj* project file in your editor, edit the Project element, and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
+3. Open the `HelloSvcutil.csproj` project file in your editor, edit the `Project` element, and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
 ```xml
 <ItemGroup>
   <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.0" />

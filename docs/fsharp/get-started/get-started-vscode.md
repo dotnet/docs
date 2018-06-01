@@ -63,7 +63,7 @@ This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project.
 > [!NOTE]
 If you don't see template options, try refreshing templates by running the following command in the Command Palette: `>F#: Refresh Project Templates`.
 
-Select "F#: New Project" by hitting **Enter**. This will take you to the next step, which is for selecting a project template.
+Select "F#: New Project" by hitting **Enter**. This takes you to the next step, which is for selecting a project template.
 
 Pick the `classlib` template and hit **Enter**.
 

@@ -31,7 +31,7 @@ A [classification](#classification) case where the [label](#label) is only one o
 
 ## Classification
 
-When the data is used to predict a category, [supervised learning](#supervised-learning) is also called classification. [Binary classification](#binary-classification) refers to predicting only two categories (for example, classifying an image as a picture of either a 'cat' or a 'dog'). [Multiclass classification](#multiclass-classification) refers to predicting multiple categories (for example, when classifying an image as a picture of a specific breed of dog).
+When the data is used to predict a category, [supervised machine learning](#supervised-machine-learning) task is called classification. [Binary classification](#binary-classification) refers to predicting only two categories (for example, classifying an image as a picture of either a 'cat' or a 'dog'). [Multiclass classification](#multiclass-classification) refers to predicting multiple categories (for example, when classifying an image as a picture of a specific breed of dog).
 
 ## Coefficient of determination
 
@@ -107,7 +107,7 @@ Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Negati
 
 ## Regression
 
-A [supervised machine learning](#supervised-learning) task where the output is a real value, for example, double. Examples include predicting stock prices.
+A [supervised machine learning](#supervised-machine-learning) task where the output is a real value, for example, double. Examples include predicting stock prices.
 
 ## Relative absolute error
 

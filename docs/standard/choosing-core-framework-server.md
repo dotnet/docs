@@ -60,7 +60,7 @@ To install applications with dependencies on different versions of .NET, we reco
 
 ## When to choose .NET Framework
 
-.NET Core offers significant benefits for new applications and application patterns. However, the .NET Framework continues to be the natural choice for many existing scenarios and as such. The .NET Framework isn't replaced by .NET Core for all server applications.
+.NET Core offers significant benefits for new applications and application patterns. However, the .NET Framework continues to be the natural choice for many existing scenarios and as such the .NET Framework isn't replaced by .NET Core for all server applications.
 
 ### Current .NET Framework applications
 

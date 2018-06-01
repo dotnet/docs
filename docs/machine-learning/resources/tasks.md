@@ -5,10 +5,10 @@ ms.date: 05/30/2018
 ---
 # Machine learning tasks
 
-When building a machine learning model, you will first need to define what you are hoping to achieve with your data. After, you can pick the right machine learning task for your situation. The following list will help you understand the different machine learning tasks that you can choose from and some common use cases. 
+When building a machine learning model, you first need to define what you are hoping to achieve with your data. After, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases. 
 
 > [!NOTE]
-> ML.NET is currently in Preview. Not all machine learning tasks are currently supported. To submit a request for a certain task, please open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
+> ML.NET is currently in Preview. Not all machine learning tasks are currently supported. To submit a request for a certain task, open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
 
 > [!NOTE]
 > Currently, ML.NET does not support machine learning tasks with images. Support will be added in future releases. 
@@ -18,12 +18,12 @@ When building a machine learning model, you will first need to define what you a
 A supervised machine learning task that is used to predict which of two classes (categories) an instance of data belongs to. The input of a classification algorithm is a set of labeled examples, where each label is an integer of either 0 or 1. The output of a binary classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of binary classification scenarios include:
 
 * [Understanding sentiment of Twitter comments](../tutorials/sentiment-analysis.md) as either "positive" or "negative".
-* Diagnosing whether a medical patient has a certain disease or not.
-* Making a decision to send an email to a "spam" folder or not.
+* Diagnosing whether a patient has a certain disease or not.
+* Making a decision to mark an email as "spam" or not.
 
 ## Multi-class classification
 
-A supervised machine learning task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the label of new unlabeled instances. Examples of multi-class classification scenarios include:
+A supervised machine learning task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
 
 * Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
 * Understanding movie reviews as "positive", "neutral", or "negative".
@@ -31,7 +31,7 @@ A supervised machine learning task that is used to predict the class (category) 
 
 ## Regression
 
-A supervised machine learning task that is used to predict the value of your label from a set of related features. The label can be of any real value and is not from a finite set of values as in classification tasks. Regression algorithms model the dependency of the label on its related features to determine how your label will change as the values of your features are varied. The input of a regression algorithm is a set of examples with labels of known values. The output of a regression algorithm is a function, which you can use to predict the label value for any new set of input features. Examples of regression scenarios include:
+A supervised machine learning task that is used to predict the value of the label from a set of related features. The label can be of any real value and is not from a finite set of values as in classification tasks. Regression algorithms model the dependency of the label on its related features to determine how the label will change as the values of the features are varied. The input of a regression algorithm is a set of examples with labels of known values. The output of a regression algorithm is a function, which you can use to predict the label value for any new set of input features. Examples of regression scenarios include:
 
 * Predicting house prices based on house attributes such as number of bedrooms, location, or size.
 * Predicting future stock prices based on historical data and current market trends.

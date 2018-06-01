@@ -1,4 +1,4 @@
-﻿<Type Name="HttpUtility" FullName="System.Web.HttpUtility">
+<Type Name="HttpUtility" FullName="System.Web.HttpUtility">
   <TypeSignature Language="C#" Value="public sealed class HttpUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpUtility" />
@@ -242,7 +242,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -299,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -403,7 +403,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -460,7 +460,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and >, are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and >, are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   

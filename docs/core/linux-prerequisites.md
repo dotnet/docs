@@ -21,8 +21,6 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 .NET Core 2.x treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
 
-NET Core 2.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:
-
 **NET Core 2.1**
 
 NET Core 2.1 is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:
@@ -138,7 +136,7 @@ To install .NET Core on supported RHEL versions:
 
 **.NET Core 2.0**
 
- Install .NET Core 2.x on supported RHEL versions:
+ Install .NET Core 2.0 on supported RHEL versions:
 
 * .NET Core Runtime 2.0.8 [install link](https://www.microsoft.com/net/download/linux-package-manager/rhel/runtime-2.0.8)
 * .NET Core Runtime 2.0.7 [install link](https://www.microsoft.com/net/download/linux-package-manager/rhel/runtime-2.0.7)

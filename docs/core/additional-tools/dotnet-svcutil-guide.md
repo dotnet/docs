@@ -18,13 +18,12 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 
 ## Prerequisites
 
-* [.NET Core SDK](https://www.microsoft.com/net/download/windows) v1.0.4 or higher versions
+* [.NET Core SDK](https://www.microsoft.com/net/download) v1.0.4 or later versions
 
 ## Getting Started
 
 The following example walks you through the steps required to add a web service reference to a .NET Core console project and invoke the service.  You will create a .NET Core console application named _HelloSvcutil_ and will add a reference to a web service that implements the following contract:
-
-```
+```csharp
 [ServiceContract]
 public interface ISayHello
 {
@@ -32,45 +31,45 @@ public interface ISayHello
     string Hello(string name);
 }
 ```
-The web service address will be assumed to be the following: _http://myhost/SayHello.svc_
+For this example, the web service address will be the following: _http://myhost/SayHello.svc_
 
 From a command window perform the following steps:
 
-1. Create a folder for the new project and navigate to it
-```
+1. Create a directory named _HelloSvcutil_ for your project and make it your current directory, as in the following example:
+```console
 mkdir HelloSvcutil
 cd HelloSvcutil
 ```
 
-2. Create a .NET Core console application
-```
+2. From the command window, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project in that directory, as in the following example:
+```console
 dotnet new console
 ```
 
-3. Edit the _HelloSvcutil.csproj_ project file and add the _dotnet-svcutil_ package as a CLI tool reference, it should look like the following:
-```
+3. Edit the *HelloSvcutil.csproj* project file and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
+```xml
 <ItemGroup>
   <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.0" />
 </ItemGroup>
 ```
 
 4. Restore the project in order to invoke the _dotnet-svcutil_ tool
-```
+```console
 dotnet restore
 ```
 
 5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which will be saved as _HelloSvcutil/ServiceReference1/Reference.cs_
-```
+```console
 dotnet svcutil http://myhost/SayHello.svc
 ```
 
 6. Restore the WCF packages for the project
-```
+```console
 dotnet restore
 ```
 
-7. Add Code to invoke the web service. Edit the _Main_ method of the _program.cs_ file to look like the following:
-```
+7. Open the `Program.cs` file in your editor, edit the `Main()` method, and replace the auto-generated code with the following code to invoke the web service:
+```csharp
 static void Main(string[] args)
 {
     var client = new SayHelloClient();
@@ -78,14 +77,14 @@ static void Main(string[] args)
 }
 ```
 
-8. Finally, run the project
-```
+8. Run the application via [`dotnet run`](../tools/dotnet-run.md).
+```console
 dotnet run
 "Hello dotnet-svcutil!"
 ```
 
-For a detailed description of the tool parameters invoke the tool passing the help parameter as follows:
-```
+For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
+```console
 dotnet svcutil --help
 ```
 

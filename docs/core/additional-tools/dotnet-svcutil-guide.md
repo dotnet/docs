@@ -2,17 +2,16 @@
 title: Microsoft WCF dotnet-svcutil Tool
 description: An overview of the Microsoft WCF dotnet-svcutil Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
 author: mlacouture
-ms.author: 
-ms.date: 
-ms.custom: 
+ms.author: mlacouture
+ms.date: 05/31/2018
 ---
 # Microsoft WCF dotnet-svcutil Tool
 
-The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET Core CLI tool that retrieves metadata from a web service on a network location or from a WSDL file, and generates a WCF class containing client proxy methods that you can use to access the web service operations.
+The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET Core CLI tool that retrieves metadata from a web service on a network location or from a WSDL file, and generates a WCF class containing client proxy methods that access the web service operations.
 
-Similarly to the [**Service Model Metadata - svcutil**](dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe) tool for .NET Framework projects, the **dotnet-svcutil** is a command line tool for generating a web service reference compatible with .NET Core and .NET Standard projects.
+Similar to the [**Service Model Metadata - svcutil**](dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe) tool for .NET Framework projects, the **dotnet-svcutil** is a command line tool for generating a web service reference compatible with .NET Core and .NET Standard projects.
 
-The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](/dotnet/core/additional-tools/wcf-web-service-reference-guide) Visual Studio connected service provider which first shipped with Visual Studio 2017 v15.5. The **dotnet-svcutil** tool as a .NET Core CLI tool, however, can be run across platforms like Linux and MacOS in addition to Windows.
+The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](/dotnet/core/additional-tools/wcf-web-service-reference-guide) Visual Studio connected service provider which first shipped with Visual Studio 2017 v15.5. The **dotnet-svcutil** tool as a .NET Core CLI tool, is available cross-platform on Linux, MacOS, and Windows.
 
 > [!IMPORTANT]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security. 
@@ -65,7 +64,7 @@ dotnet restore
 dotnet svcutil http://myhost/SayHello.svc
 ```
 
-6. Now restore the WCF packages for the project
+6. Restore the WCF packages for the project
 ```
 dotnet restore
 ```
@@ -99,4 +98,4 @@ If you have any questions or feedback, [open an issue on GitHub](https://github.
 * Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues. 
 
 ### Information
-* [NuGet Package](https://nuget.org/packages/dotnet-svcutil)
+* [dotnet-svcutil NuGet Package](https://nuget.org/packages/dotnet-svcutil)

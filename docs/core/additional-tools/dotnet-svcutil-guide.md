@@ -34,7 +34,7 @@ public interface ISayHello
 ```
 For this example, the web service will be assumed to be hosted at the following address: _http://myhost/SayHello.svc_
 
-From a Windows, macOS, or Linux command window perform the following steps:
+From a `Windows`, `macOS`, or `Linux` command window perform the following steps:
 
 1. Create a directory named _HelloSvcutil_ for your project and make it your current directory, as in the following example:
 

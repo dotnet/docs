@@ -25,6 +25,177 @@ When indentation is required, you must use spaces, not tabs. At least one space 
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
 
+## Formatting blank lines
+
+* Separate top-level function and class definitions with two blank lines.
+* Method definitions inside a class are separated by a single blank line.
+* Extra blank lines may be used (sparingly) to separate groups of related functions. Blank lines may be omitted between a bunch of related one-liners (for example, a set of dummy implementations).
+* Use blank lines in functions, sparingly, to indicate logical sections.
+
+## Formatting comments
+
+Generally prefer multiple double-slash comments over ML-style block comments.
+
+```fsharp
+// Prefer this style of comments when you want
+// to express written ideas on multiple lines.
+
+(*
+    ML-style comments are fine, but not a .NET-ism.
+    They are useful when needing to modify multi-line comments, though.
+*)
+```
+
+Inline comments should capitalize the first letter.
+
+```fsharp
+let f x = x + 1 // Increment by one.
+```
+
+## Naming conventions
+
+### Use camelCase for class-bound, expression-bound and pattern-bound values and functions
+
+It is common and accepted F# style to use camelCase for all names bound as local variables or in pattern matches and function definitions.
+
+```fsharp
+// OK
+let addIAndJ i j = i + j
+
+// Bad
+let addIAndJ I J = I+J
+
+// Bad
+let AddIAndJ i j = i + j
+```
+
+Locally-bound functions in classes should also use camelCase.
+
+```fsharp
+type MyClass() =
+
+    let doSomething () =
+
+    let firstResult = ...
+
+    let secondResult = ...
+
+    member x.Result = doSomething()
+```
+
+### Use camelCase for module-bound public functions
+
+When a module-bound function is part of a public API, it should use camelCase:
+
+```fsharp
+module MyAPI =
+    let publicFunctionOne param1 param2 param2 = ...
+
+    let publicFunctionTwo param1 param2 param3 = ...
+```
+
+### Use camelCase for internal and private module-bound values and functions
+
+Use camelCase for private module-bound values, including the following:
+
+* Ad hoc functions in scripts
+
+* Values making up the internal implementation of a module or type
+
+```fsharp
+let emailMyBossTheLatestResults =
+    ...
+```
+
+### Use camelCase for parameters
+
+All parameters should use camelCase in accordance with .NET naming conventions.
+
+```fsharp
+module MyModule =
+    let myFunction paramOne paramTwo = ...
+
+type MyClass() =
+    member this.MyMethod(paramOne, paramTwo) = ...
+```
+
+### Use PascalCase for modules
+
+All modules (top-level, internal, private, nested) should use PascalCase.
+
+```fsharp
+module MyTopLevelModule
+
+module Helpers =
+    module private SuperHelpers =
+        ...
+
+    ...
+```
+
+### Use PascalCase for type declarations, members, and labels
+
+Classes, interfaces, structs, enumerations, delegates, records, and discriminated unions should all be named with PascalCase. Members within types and labels for records and discriminated unions should also use PascalCase.
+
+```fsharp
+type IMyInterface =
+    abstract Something: int
+
+type MyClass() =
+    member this.MyMethod(x, y) = x + y
+
+type MyRecord = { IntVal: int; StringVal: string }
+
+type SchoolPerson =
+    | Professor
+    | Student
+    | Advisor
+    | Administrator
+```
+
+### Use PascalCase for constructs intrinsic to .NET
+
+Namespaces, exceptions, events, and project/`.dll` names should also use PascalCase. Not only does this make consumption from other .NET languages feel more natural to consumers, it's also consistent with .NET naming conventions that you are likely to encounter.
+
+### Avoid underscores in names
+
+Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, be aware that the style is often disliked by others who have a choice about whether to use it.
+
+Some exceptions includes interoperating with native components, where underscores are very common.
+
+### Use standard F# operators
+
+The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. Developers with a background in OCaml or other functional programming language may be accustomed to different idioms. The following list summarizes the recommended F# operators.
+
+```fsharp
+x |> f // Forward pipeline
+f >> g // Forward composition
+x |> ignore // Throwing away a value
+x + y // Overloaded addition (including string concatenation)
+x - y // Overloaded subtraction
+x * y // Overloaded multiplication
+x / y // Overloaded division
+x % y // Overloaded modulus
+x && y // Lazy/short-cut "and"
+x || y // Lazy/short-cut "or"
+x <<< y // Bitwise left shift
+x >>> y // Bitwise right shift
+x ||| y // Bitwise or, also for working with “flags” enumeration
+x &&& y // Bitwise and, also for working with “flags” enumeration
+x ^^^ y // Bitwise xor, also for working with “flags” enumeration
+```
+
+### Use prefix syntax for generics (`Foo<T>`) in preference to postfix syntax (`T Foo`)
+
+F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for four specific types:
+
+1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
+2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
+3. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+4. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+
+For all other types, use the prefix form.
+
 ## Formatting discriminated union declarations
 
 Indent `|` in type definition by 4 spaces:
@@ -193,7 +364,7 @@ else e4
 
 ### Pattern matching constructs
 
-Use a `|` for each clause of a match with no indentation. If the expression is short, you can use a single line.
+Use a `|` for each clause of a match with no indentation. If the expression is short, you can consider using a single line if each subexpression is also simple.
 
 ```fsharp
 // OK
@@ -207,9 +378,6 @@ match l with
     | { him = x; her = "Posh" } :: tail -> _
     | _ :: tail -> findDavid tail
     | [] -> failwith "Couldn't find David"
-
-// OK
-match l with [] -> false | _ :: _ -> true
 ```
 
 If the expression on the right of the pattern matching arrow is too large, move it to the following line, indented one step from the `match`/`|`.
@@ -286,20 +454,23 @@ let printVolumes x =
         (convertVolumeImperialPint x)
 ```
 
-Anonymous function arguments can be either on next line or with a dangling `fun` on the argument line:
+The same guidelines apply for lambda expressions as function arguments. If the body of a lambda expression, the body can have another line, indented by one scope
 
 ```fsharp
-// OK
 let printListWithOffset a list1 =
-    List.iter (fun elem ->
-        printfn "%d" (a + elem)) list1
+    List.iter
+        (fun elem -> printfn "%d" (a + elem))
+        list1
 
-// OK, but prefer previous
+// OK if lambda body is long enough
 let printListWithOffset a list1 =
-    List.iter (
-        fun elem ->
-            printfn "%d" (a + elem)) list1
+    List.iter
+        (fun elem ->
+            printfn "%d" (a + elem))
+        list1
 ```
+
+However, if the body of a lambda expression is more than one line, consider factoring it out into a separate function rather than have a multi-line construct applied as a single argument to a function.
 
 ### Formatting infix operators
 
@@ -397,173 +568,3 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 // Not OK
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
-
-## Formatting blank lines
-
-* Separate top-level function and class definitions with two blank lines.
-* Method definitions inside a class are separated by a single blank line.
-* Extra blank lines may be used (sparingly) to separate groups of related functions. Blank lines may be omitted between a bunch of related one-liners (for example, a set of dummy implementations).
-* Use blank lines in functions, sparingly, to indicate logical sections.
-
-## Formatting comments
-
-Generally prefer multiple double-slash comments over ML-style block comments.
-
-```fsharp
-// Prefer this style of comments when you want
-// to express written ideas on multiple lines.
-
-(*
-    Generally avoid these kinds of comments.
-*)
-```
-
-Inline comments should capitalize the first letter.
-
-```fsharp
-let f x = x + 1 // Increment by one.
-```
-
-## Naming conventions
-
-### Use camelCase for class-bound, expression-bound and pattern-bound values and functions
-
-It is common and accepted F# style to use camelCase for all names bound as local variables or in pattern matches and function definitions.
-
-```fsharp
-// OK
-let addIAndJ i j = i + j
-
-// Bad
-let addIAndJ I J = I+J
-
-// Bad
-let AddIAndJ i j = i + j
-```
-
-Locally-bound functions in classes should also use camelCase.
-
-```fsharp
-type MyClass() =
-
-    let doSomething () =
-
-    let firstResult = ...
-
-    let secondResult = ...
-
-    member x.Result = doSomething()
-```
-
-### Use camelCase for module-bound public functions
-
-When a module-bound function is part of a public API, it should use camelCase:
-
-```fsharp
-module MyAPI =
-    let publicFunctionOne param1 param2 param2 = ...
-    
-    let publicFunctionTwo param1 param2 param3 = ...
-```
-
-### Use camelCase for internal and private module-bound values and functions
-
-Use camelCase for private module-bound values, including the following:
-
-* Ad hoc functions in scripts
-
-* Values making up the internal implementation of a module or type
-
-```fsharp
-let emailMyBossTheLatestResults =
-    ...
-```
-
-### Use camelCase for parameters
-
-All parameters should use camelCase in accordance with .NET naming conventions.
-
-```fsharp
-module MyModule =
-    let myFunction paramOne paramTwo = ...
-
-type MyClass() =
-    member this.MyMethod(paramOne, paramTwo) = ...
-```
-
-### Use PascalCase for modules
-
-All modules (top-level, internal, private, nested) should use PascalCase.
-
-```fsharp
-module MyTopLevelModule
-
-module Helpers =
-    module private SuperHelpers =
-        ...
-
-    ...
-```
-
-### Use PascalCase for type declarations, members, and labels
-
-Classes, interfaces, structs, enumerations, delegates, records, and discriminated unions should all be named with PascalCase. Members within types and labels for records and discriminated unions should also use PascalCase.
-
-```fsharp
-type IMyInterface =
-    abstract Something: int
-
-type MyClass() =
-    member this.MyMethod(x, y) = x + y
-
-type MyRecord = { IntVal: int; StringVal: string }
-
-type SchoolPerson =
-    | Professor
-    | Student
-    | Advisor
-    | Administrator
-```
-
-### Use PascalCase for constructs intrinsic to .NET
-
-Namespaces, exceptions, events, and project/`.dll` names should also use PascalCase. Not only does this make consumption from other .NET languages feel more natural to consumers, it's also consistent with .NET naming conventions that you are likely to encounter.
-
-### Avoid underscores in names
-
-Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, be aware that the style is often disliked by others who have a choice about whether to use it.
-
-Some exceptions includes interoperating with native components, where underscores are very common.
-
-### Use standard F# operators
-
-The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. Developers with a background in OCaml or other functional programming language may be accustomed to different idioms. The following list summarizes the recommended F# operators.
-
-```fsharp
-x |> f // Forward pipeline
-f >> g // Forward composition
-x |> ignore // Throwing away a value
-x + y // Overloaded addition (including string concatenation)
-x - y // Overloaded subtraction
-x * y // Overloaded multiplication
-x / y // Overloaded division
-x % y // Overloaded modulus
-x && y // Lazy/short-cut "and"
-x || y // Lazy/short-cut "or"
-x <<< y // Bitwise left shift
-x >>> y // Bitwise right shift
-x ||| y // Bitwise or, also for working with “flags” enumeration
-x &&& y // Bitwise and, also for working with “flags” enumeration
-x ^^^ y // Bitwise xor, also for working with “flags” enumeration
-```
-
-### Use prefix syntax for generics (`Foo<T>`) in preference to postfix syntax (`T Foo`)
-
-F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for four specific types:
-
-1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
-2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
-3. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
-4. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
-
-For all other types, use the prefix form.

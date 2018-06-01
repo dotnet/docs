@@ -46,9 +46,6 @@ Public Class AsynchronousSocketListener
     ' echo that data back to the connected client.  
     ' It then disconnects from the client and waits for another client.   
     Public Shared Sub Main()  
-        ' Data buffer for incoming data.  
-        Dim bytes() As Byte = New [Byte](1023) {}  
-  
         ' Establish the local endpoint for the socket.  
         Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
         Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
@@ -168,9 +165,6 @@ public class AsynchronousSocketListener {
     }  
   
     public static void StartListening() {  
-        // Data buffer for incoming data.  
-        byte[] bytes = new Byte[1024];  
-  
         // Establish the local endpoint for the socket.  
         // The DNS name of the computer  
         // running the listener is "host.contoso.com".  

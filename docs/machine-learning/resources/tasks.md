@@ -15,7 +15,7 @@ When building a machine learning model, you first need to define what you are ho
 
 ## Binary classification
 
-A supervised machine learning task that is used to predict which of two classes (categories) an instance of data belongs to. The input of a classification algorithm is a set of labeled examples, where each label is an integer of either 0 or 1. The output of a binary classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of binary classification scenarios include:
+A [supervised machine learning](glossary.md/#supervised-machine-learning) task that is used to predict which of two classes (categories) an instance of data belongs to. The input of a classification algorithm is a set of labeled examples, where each label is an integer of either 0 or 1. The output of a binary classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of binary classification scenarios include:
 
 * [Understanding sentiment of Twitter comments](../tutorials/sentiment-analysis.md) as either "positive" or "negative".
 * Diagnosing whether a patient has a certain disease or not.
@@ -23,7 +23,7 @@ A supervised machine learning task that is used to predict which of two classes 
 
 ## Multi-class classification
 
-A supervised machine learning task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
+A [supervised machine learning](glossary.md/#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
 
 * Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
 * Understanding movie reviews as "positive", "neutral", or "negative".
@@ -31,7 +31,7 @@ A supervised machine learning task that is used to predict the class (category) 
 
 ## Regression
 
-A supervised machine learning task that is used to predict the value of the label from a set of related features. The label can be of any real value and is not from a finite set of values as in classification tasks. Regression algorithms model the dependency of the label on its related features to determine how the label will change as the values of the features are varied. The input of a regression algorithm is a set of examples with labels of known values. The output of a regression algorithm is a function, which you can use to predict the label value for any new set of input features. Examples of regression scenarios include:
+A [supervised machine learning](glossary.md/#supervised-machine-learning) task that is used to predict the value of the label from a set of related features. The label can be of any real value and is not from a finite set of values as in classification tasks. Regression algorithms model the dependency of the label on its related features to determine how the label will change as the values of the features are varied. The input of a regression algorithm is a set of examples with labels of known values. The output of a regression algorithm is a function, which you can use to predict the label value for any new set of input features. Examples of regression scenarios include:
 
 * Predicting house prices based on house attributes such as number of bedrooms, location, or size.
 * Predicting future stock prices based on historical data and current market trends.
@@ -42,7 +42,7 @@ A supervised machine learning task that is used to predict the value of the labe
 
 ## Clustering
 
-An unsupervised machine learning task that is used to group instances of data into clusters that contain similar characteristics. Clustering can also be used to identify relationships in a dataset that you might not logically derive by browsing or simple observation. The inputs and outputs of a clustering algorithm depends on the methodology chosen. You can take a distribution, centroid, connectivity, or density-based approach. ML.NET currently supports a centroid-based approach using [K-Means](learners.md) clustering. Examples of clustering scenarios include:
+An [unsupervised machine learning](glossary.md/#unsupervised-machine-learning) task that is used to group instances of data into clusters that contain similar characteristics. Clustering can also be used to identify relationships in a dataset that you might not logically derive by browsing or simple observation. The inputs and outputs of a clustering algorithm depends on the methodology chosen. You can take a distribution, centroid, connectivity, or density-based approach. ML.NET currently supports a centroid-based approach using [K-Means](learners.md) clustering. Examples of clustering scenarios include:
 
 * Understanding segments of hotel guests based on habits and characteristics of hotel choices.
 * Identifying customer segments and demographics to help build targeted advertising campaigns.

@@ -2,7 +2,7 @@
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API Browser
-quickFilterColumn1: netframework-4.7.2,netcore-2.0,netstandard-2.0
+quickFilterColumn1: netframework-4.7.2,netcore-2.1,netstandard-2.0
 quickFilterColumn2: xamarinios-10.8,xamarinandroid-7.1,xamarinmac-3.0
 quickFilterColumn3: azure-dotnet,aspnetcore-2.0
 ms.topic: landing-page

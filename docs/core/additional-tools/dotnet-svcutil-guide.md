@@ -21,7 +21,7 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 * [.NET Core SDK](https://www.microsoft.com/net/download) v1.0.4 or later versions
 * Your favorite code editor
 
-## Getting Started
+## Getting started
 
 The following example walks you through the steps required to add a web service reference to a .NET Core console project and invoke the service. You will create a .NET Core console application named _HelloSvcutil_ and will add a reference to a web service that implements the following contract:
 ```csharp

@@ -19,6 +19,7 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 ## Prerequisites
 
 * [.NET Core SDK](https://www.microsoft.com/net/download) v1.0.4 or later versions
+* Your favorite code editor
 
 ## Getting Started
 
@@ -41,9 +42,9 @@ mkdir HelloSvcutil
 cd HelloSvcutil
 ```
 
-2. From the command window, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project in that directory, as in the following example:
+2. Create a new C# console project in that directory using the following command:
 ```console
-dotnet new console
+[`dotnet new`](../tools/dotnet-new.md) ([see note](#dotnet-new-note)) console
 ```
 
 3. Edit the *HelloSvcutil.csproj* project file and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
@@ -55,7 +56,7 @@ dotnet new console
 
 4. Restore the project in order to invoke the _dotnet-svcutil_ tool
 ```console
-dotnet restore
+[`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note))
 ```
 
 5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file which will be saved as _HelloSvcutil/ServiceReference1/Reference.cs_
@@ -65,7 +66,7 @@ dotnet svcutil http://myhost/SayHello.svc
 
 6. Restore the WCF packages for the project
 ```console
-dotnet restore
+[`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note))
 ```
 
 7. Open the `Program.cs` file in your editor, edit the `Main()` method, and replace the auto-generated code with the following code to invoke the web service:
@@ -79,9 +80,10 @@ static void Main(string[] args)
 
 8. Run the application via [`dotnet run`](../tools/dotnet-run.md).
 ```console
-dotnet run
-"Hello dotnet-svcutil!"
+[`dotnet run`](../tools/dotnet-run.md) ([see note](#dotnet-run-note))
 ```
+You should see the following output:
+"Hello dotnet-svcutil!"
 
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
 ```console

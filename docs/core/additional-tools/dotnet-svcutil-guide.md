@@ -42,7 +42,7 @@ mkdir HelloSvcutil
 cd HelloSvcutil
 ```
 
-2. Create a new C# console project in that directory using the [`dotnet new`](../tools/dotnet-new.md) ([see note](#dotnet-new-note)) commad as follows:
+2. Create a new C# console project in that directory using the [`dotnet new`](../tools/dotnet-new.md) commad as follows:
 ```console
 dotnet new console
 ```
@@ -54,7 +54,7 @@ dotnet new console
 </ItemGroup>
 ```
 
-4. Restore the the _dotnet-svcutil_ package using the [`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command as follows:
+4. Restore the the _dotnet-svcutil_ package using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 ```console
 dotnet restore
 ```
@@ -65,7 +65,7 @@ dotnet svcutil http://myhost/SayHello.svc
 ```
 The generated file will be saved as _HelloSvcutil/ServiceReference1/Reference.cs_. The _dotnet_svcutil_ tool will also add to the project the appropriate WCF packages required by the proxy code as package references.
 
-6. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command as follows:
+6. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 ```console
 dotnet restore
 ```

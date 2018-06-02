@@ -3,7 +3,7 @@ title: dotnet nuget delete command - .NET Core CLI
 description: The dotnet-nuget-delete command deletes or unlists a package from the server.
 author: karann-msft
 ms.author: mairaw
-ms.date: 05/29/2018
+ms.date: 06/01/2018
 ---
 # dotnet nuget delete
 
@@ -65,8 +65,8 @@ Prints out a short help for the command.
 
 The API key for the server.
 
-` --no-service-endpoint`
-Doesn't append "api/v2/packages" to the source URL.
+`--no-service-endpoint`
+Doesn't append "api/v2/package" to the source URL.
 
 `--non-interactive`
 

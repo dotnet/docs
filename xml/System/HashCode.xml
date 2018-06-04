@@ -13,8 +13,54 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Combines the hash code for multiple values into a single hash code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+You can use <xref:System.HashCode> to combine multiple values (for example, fields on a structure or class) into a
+single hash code. This structure operates in one of two ways:
+
+ * Static methods that accept a set of up to eight values to combine.
+ * Two instance methods that operate in a streaming fashion, accepting values one at a time.
+
+> [!WARNING]
+> It is best-practice to consider hash codes as an implementation detail, as the implementation may change across
+> assembly versions. Do not store hash codes produced by <xref:System.HashCode> in serialized structures, for example,
+> on-disk. <xref:System.HashCode> uses a statically initialized random seed to enforce this best practice, meaning that
+> the hash codes are only deterministic within the scope of an operating system process.
+
+### Static Methods
+
+The static methods combine the default hash codes of up to eight values.
+ 
+ [!code-csharp[System.HashCode.Structure#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.hashcode.structure/cs/example1.cs#1)]
+ [!code-vb[System.HashCode.Structure#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.hashcode.structure/vb/example1.vb#1)] 
+
+### Instance Methods
+
+> [!IMPORTANT]
+> <xref:System.HashCode.ToHashCode> must be called at most once per instance of <xref:System.HashCode>.
+
+The instance methods combine the hash codes of more than eight values.
+ 
+ [!code-csharp[System.HashCode.Structure#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.hashcode.structure/cs/example2.cs#1)]
+ [!code-vb[System.HashCode.Structure#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.hashcode.structure/vb/example2.vb#1)]
+
+The instance methods also combine the hash codes produced by a specific
+<xref:System.Collections.Generic.IEqualityComparer%601> implementation.
+
+ [!code-csharp[System.HashCode.Structure#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.hashcode.structure/cs/example3.cs#1)]
+ [!code-vb[System.HashCode.Structure#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.hashcode.structure/vb/example3.vb#1)]
+
+The <xref:System.HashCode> structure must be passed by-reference to other methods, as it is a value type.
+ 
+ [!code-csharp[System.HashCode.Structure#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.hashcode.structure/cs/example4.cs#1)]
+ [!code-vb[System.HashCode.Structure#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.hashcode.structure/vb/example4.vb#1)]
+
+      ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add&lt;T&gt;">
@@ -38,10 +84,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the value to add to the hash code.</typeparam>
+        <param name="value">The value to add to the hash code.</param>
+        <summary>Adds a single value to the hash code.</summary>
       </Docs>
     </Member>
     <Member MemberName="Add&lt;T&gt;">
@@ -66,11 +111,16 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the value to add to the hash code.</typeparam>
+        <param name="value">The value to add to the hash code.</param>
+        <param name="comparer">
+          The <see cref="T:System.Collections.Generic.IEqualityComparer&lt;T&gt;" /> to use to calculate the hash code.
+          This value can be a null reference (Nothing in Visual Basic), which will use the default equality comparer for
+          <typeparamref name="T" />.
+        </param>
+        <summary>
+          Adds a single value to the hash code, specifying the type that provides the hash code function.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1&gt;">
@@ -94,11 +144,15 @@
         <Parameter Name="value1" Type="T1" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value to add the the hash code.</typeparam>
+        <param name="value1">The value to add to the hash code.</param>
+        <summary>Diffuses the hash code returned by the specified value.</summary>
+        <returns>The hash code that represents the single value.</returns>
+        <remarks>
+          Some data structures assume that hash codes are diffused across a large range. This method improves the
+          quality of the hash code returned by the value and is useful when the underlying data type is simple, for
+          example, an integer value.
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2&gt;">
@@ -124,13 +178,12 @@
         <Parameter Name="value2" Type="T2" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <summary>Combines two values into a hash code.</summary>
+        <returns>The hash code that represents the two values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3&gt;">
@@ -158,15 +211,14 @@
         <Parameter Name="value3" Type="T3" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <typeparam name="T3">The type of the third value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <param name="value3">The third value to combine into the hash code.</param>
+        <summary>Combines three values into a hash code.</summary>
+        <returns>The hash code that represents the three values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4&gt;">
@@ -196,17 +248,16 @@
         <Parameter Name="value4" Type="T4" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <param name="value4">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <typeparam name="T3">The type of the third value to combine into the hash code.</typeparam>
+        <typeparam name="T4">The type of the fourth value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <param name="value3">The third value to combine into the hash code.</param>
+        <param name="value4">The fourth value to combine into the hash code.</param>
+        <summary>Combines four values into a hash code.</summary>
+        <returns>The hash code that represents the four values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5&gt;">
@@ -238,19 +289,18 @@
         <Parameter Name="value5" Type="T5" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <param name="value4">To be added.</param>
-        <param name="value5">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <typeparam name="T3">The type of the third value to combine into the hash code.</typeparam>
+        <typeparam name="T4">The type of the fourth value to combine into the hash code.</typeparam>
+        <typeparam name="T5">The type of the fifth value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <param name="value3">The third value to combine into the hash code.</param>
+        <param name="value4">The fourth value to combine into the hash code.</param>
+        <param name="value5">The fifth value to combine into the hash code.</param>
+        <summary>Combines five values into a hash code.</summary>
+        <returns>The hash code that represents the five values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -284,21 +334,20 @@
         <Parameter Name="value6" Type="T6" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <param name="value4">To be added.</param>
-        <param name="value5">To be added.</param>
-        <param name="value6">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <typeparam name="T3">The type of the third value to combine into the hash code.</typeparam>
+        <typeparam name="T4">The type of the fourth value to combine into the hash code.</typeparam>
+        <typeparam name="T5">The type of the fifth value to combine into the hash code.</typeparam>
+        <typeparam name="T6">The type of the sixth value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <param name="value3">The third value to combine into the hash code.</param>
+        <param name="value4">The fourth value to combine into the hash code.</param>
+        <param name="value5">The fifth value to combine into the hash code.</param>
+        <param name="value6">The sixth value to combine into the hash code.</param>
+        <summary>Combines six values into a hash code.</summary>
+        <returns>The hash code that represents the six values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -334,23 +383,22 @@
         <Parameter Name="value7" Type="T7" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <param name="value4">To be added.</param>
-        <param name="value5">To be added.</param>
-        <param name="value6">To be added.</param>
-        <param name="value7">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <typeparam name="T3">The type of the third value to combine into the hash code.</typeparam>
+        <typeparam name="T4">The type of the fourth value to combine into the hash code.</typeparam>
+        <typeparam name="T5">The type of the fifth value to combine into the hash code.</typeparam>
+        <typeparam name="T6">The type of the sixth value to combine into the hash code.</typeparam>
+        <typeparam name="T7">The type of the seventh value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <param name="value3">The third value to combine into the hash code.</param>
+        <param name="value4">The fourth value to combine into the hash code.</param>
+        <param name="value5">The fifth value to combine into the hash code.</param>
+        <param name="value6">The sixth value to combine into the hash code.</param>
+        <param name="value7">The seventh value to combine into the hash code.</param>
+        <summary>Combines six values into a hash code.</summary>
+        <returns>The hash code that represents the seven values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -388,25 +436,24 @@
         <Parameter Name="value8" Type="T8" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <param name="value4">To be added.</param>
-        <param name="value5">To be added.</param>
-        <param name="value6">To be added.</param>
-        <param name="value7">To be added.</param>
-        <param name="value8">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
+        <typeparam name="T2">The type of the second value to combine into the hash code.</typeparam>
+        <typeparam name="T3">The type of the third value to combine into the hash code.</typeparam>
+        <typeparam name="T4">The type of the fourth value to combine into the hash code.</typeparam>
+        <typeparam name="T5">The type of the fifth value to combine into the hash code.</typeparam>
+        <typeparam name="T6">The type of the sixth value to combine into the hash code.</typeparam>
+        <typeparam name="T7">The type of the seventh value to combine into the hash code.</typeparam>
+        <typeparam name="T8">The type of the eighth value to combine into the hash code.</typeparam>
+        <param name="value1">The first value to combine into the hash code.</param>
+        <param name="value2">The second value to combine into the hash code.</param>
+        <param name="value3">The third value to combine into the hash code.</param>
+        <param name="value4">The fourth value to combine into the hash code.</param>
+        <param name="value5">The fifth value to combine into the hash code.</param>
+        <param name="value6">The sixth value to combine into the hash code.</param>
+        <param name="value7">The seventh value to combine into the hash code.</param>
+        <param name="value8">The eighth value to combine into the hash code.</param>
+        <summary>Combines eight values into a hash code.</summary>
+        <returns>The hash code that represents the eight values.</returns>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -435,10 +482,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">Ignored.</param>
+        <summary>This method is not supported and should not be called.</summary>
+        <returns>This method will always throw a <see cref="T:System.NotSupportedException" />.</returns>
+        <exception cref="T:System.NotSupportedException">Always thrown when this method is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -465,9 +512,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>This method is not supported and should not be called.</summary>
+        <returns>This method will always throw a <see cref="T:System.NotSupportedException" />.</returns>
+        <exception cref="T:System.NotSupportedException">Always thrown when this method is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToHashCode">
@@ -486,9 +533,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          Calculates the final hash code after consecutive <see cref="M:System.HashCode.Add" /> invocations.
+        </summary>
+        <returns>The calculated hash code.</returns>
+        <remarks>
+          This method must be called at most once per instance of <see cref="T:System.HashCode" />.
+        </remarks>
       </Docs>
     </Member>
   </Members>

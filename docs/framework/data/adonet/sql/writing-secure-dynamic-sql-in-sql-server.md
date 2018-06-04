@@ -58,8 +58,7 @@ SQL Injection is the process by which a malicious user enters Transact-SQL state
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Stored Procedures](http://go.microsoft.com/fwlink/?LinkId=98233) and [SQL Injection](http://go.microsoft.com/fwlink/?LinkId=98234) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
-|[New SQL Truncation Attacks And How To Avoid Them](http://msdn.microsoft.com/msdnmag/issues/06/11/SQLSecurity/) in MSDN Magazine.|Describes how to delimit characters and strings, SQL injection, and modification by  truncation attacks.|  
+|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](/sql/relational-databases/security/sql-injection) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

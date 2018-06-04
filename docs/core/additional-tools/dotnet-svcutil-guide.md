@@ -32,7 +32,7 @@ public interface ISayHello
     string Hello(string name);
 }
 ```
-For this example, the web service will be assumed to be hosted at the following address: `_http://contoso.com/SayHello.svc_`
+For this example, the web service will be assumed to be hosted at the following address: `http://contoso.com/SayHello.svc`
 
 From a `Windows`, `macOS`, or `Linux` command window perform the following steps:
 

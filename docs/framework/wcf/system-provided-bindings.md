@@ -26,8 +26,6 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 > [!IMPORTANT]
 > Never use duplex contracts with bindings that do not support security or that have security disabled unless you secure the data by some other means.
 
-## System-provided bindings
-
 The following bindings ship with WCF:
 
 |Binding|Configuration Element|Description|

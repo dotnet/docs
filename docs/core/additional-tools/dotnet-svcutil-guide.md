@@ -34,7 +34,7 @@ public interface ISayHello
 }
 ```
 
-For this example, the web service will be assumed to be hosted at the following address: _http://myhost/SayHello.svc_
+For this example, the web service will be assumed to be hosted at the following address: `http://contoso.com/SayHello.svc`
 
 From a Windows, macOS, or Linux command window perform the following steps:
 
@@ -68,7 +68,7 @@ dotnet restore
 5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file as follows:
 
 ```console
-dotnet svcutil http://myhost/SayHello.svc
+dotnet svcutil http://contoso.com/SayHello.svc
 ```
 The generated file is saved as _HelloSvcutil/ServiceReference1/Reference.cs_. The _dotnet_svcutil_ tool also adds to the project the appropriate WCF packages required by the proxy code as package references.
 

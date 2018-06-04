@@ -1,7 +1,7 @@
 ---
 title: "System-provided bindings"
 description: "Learn about all of the system-provided Windows Communication Foundation (WCF) bindings."
-ms.date: "06/03/2018"
+ms.date: "06/04/2018"
 helpviewer_keywords: 
   - "bindings [WCF], system-provided"
 ms.assetid: 2c243746-45ce-4588-995e-c17126a579a6
@@ -30,21 +30,21 @@ The following bindings ship with WCF:
 
 |Binding|Configuration Element|Description|
 |-------------|---------------------------|-----------------|
-|<xref:System.ServiceModel.BasicHttpBinding>|[\<basicHttpBinding>](../configure-apps/file-schema/wcf/basichttpbinding.md)|A binding that is suitable for communicating with WS-Basic Profile conformant Web services, for example, ASP.NET Web services (ASMX)-based services. This binding uses HTTP as the transport and text/XML as the default message encoding.|
+|<xref:System.ServiceModel.BasicHttpBinding>|[\<basicHttpBinding>](../configure-apps/file-schema/wcf/basichttpbinding.md)|A binding that is suitable for communicating with WS-Basic Profile-conformant Web services, for example, ASP.NET Web services (ASMX)-based services. This binding uses HTTP as the transport and text/XML as the default message encoding.|
 |<xref:System.ServiceModel.WSHttpBinding>|[\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md)|A secure and interoperable binding that is suitable for non-duplex service contracts.|
 |<xref:System.ServiceModel.WSDualHttpBinding>|[\<wsDualHttpBinding>](../configure-apps/file-schema/wcf/wsdualhttpbinding.md)|A secure and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.|
-|<xref:System.ServiceModel.WSFederationHttpBinding>|[\<wsFederationHttpBinding>](../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|A secure and interoperable binding that supports the WS-Federation protocol that enables organizations that are in a federation to efficiently authenticate and authorize users.|
-|<xref:System.ServiceModel.NetHttpBinding>|\<netHttpBinding>|A binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|
+|<xref:System.ServiceModel.WSFederationHttpBinding>|[\<wsFederationHttpBinding>](../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|A secure and interoperable binding that supports the WS-Federation protocol, which enables organizations that are in a federation to efficiently authenticate and authorize users.|
+|<xref:System.ServiceModel.NetHttpBinding>|[\<netHttpBinding>](../configure-apps/file-schema/wcf/nethttpbinding.md)|A binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|
 |<xref:System.ServiceModel.NetHttpsBinding>|\<netHttpsBinding>|A secure binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|
 |<xref:System.ServiceModel.NetTcpBinding>|[\<netTcpBinding>](../configure-apps/file-schema/wcf/nettcpbinding.md)|A secure and optimized binding suitable for cross-machine communication between WCF applications.|
 |<xref:System.ServiceModel.NetNamedPipeBinding>|[\<netNamedPipeBinding>](../configure-apps/file-schema/wcf/netnamedpipebinding.md)|A secure, reliable, optimized binding that is suitable for on-machine communication between WCF applications.|
 |<xref:System.ServiceModel.NetMsmqBinding>|[\<netMsmqBinding>](../configure-apps/file-schema/wcf/netmsmqbinding.md)|A queued binding that is suitable for cross-machine communication between WCF applications.|
 |<xref:System.ServiceModel.NetPeerTcpBinding>|[\<netPeerTcpBinding>](../configure-apps/file-schema/wcf/netpeertcpbinding.md)|A binding that enables secure, multiple machine communication.|
 |<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|[\<msmqIntegrationBinding>](../configure-apps/file-schema/wcf/msmqintegrationbinding.md)|A binding that is suitable for cross-machine communication between a WCF application and existing Message Queuing applications.|
-|<xref:System.ServiceModel.BasicHttpContextBinding>|[\<basicHttpContextBinding>](../configure-apps/file-schema/wcf/basichttpcontextbinding.md)|A binding that is suitable for communicating with WS-Basic Profile conformant Web services that enables HTTP cookies to be used to exchange context.|
+|<xref:System.ServiceModel.BasicHttpContextBinding>|[\<basicHttpContextBinding>](../configure-apps/file-schema/wcf/basichttpcontextbinding.md)|A binding suitable for communicating with WS-Basic Profile conformant Web services that enables HTTP cookies to be used to exchange context.|
 |<xref:System.ServiceModel.NetTcpContextBinding>|[\<netTcpContextBinding>](../configure-apps/file-schema/wcf/nettcpcontextbinding.md)|A secure and optimized binding suitable for cross-machine communication between WCF applications that enables SOAP headers to be used to exchange context.|
 |<xref:System.ServiceModel.WebHttpBinding>|[\<webHttpBinding>](../configure-apps/file-schema/wcf/webhttpbinding.md)|A binding used to configure endpoints for WCF Web services that are exposed through HTTP requests instead of SOAP messages.|
-|<xref:System.ServiceModel.WSHttpContextBinding>|[\<wsHttpContextBinding>](../configure-apps/file-schema/wcf/wshttpcontextbinding.md)|A secure and interoperable binding that is suitable for non-duplex service contracts that enables SOAP headers to be used to exchange context.|
+|<xref:System.ServiceModel.WSHttpContextBinding>|[\<wsHttpContextBinding>](../configure-apps/file-schema/wcf/wshttpcontextbinding.md)|A secure and interoperable binding suitable for non-duplex service contracts that enables SOAP headers to be used to exchange context.|
 |<xref:System.ServiceModel.UdpBinding>|[\<udpBinding>](../configure-apps/file-schema/wcf/udpbinding.md)|A binding to use when sending a burst of simple messages to a large number of clients simultaneously.|
 
  The following table shows the features of each of the system-provided bindings. The bindings are found in the table columns; the features are listed in the rows and described in a second table. The following table provides a key for the binding abbreviations used. To select a binding, determine which column satisfies all of the row features you need.
@@ -65,10 +65,10 @@ The following bindings ship with WCF:
 |<xref:System.ServiceModel.BasicHttpContextBinding>|Basic Profile 1.1|(None), Transport, Message, Mixed|(None)|(None)|n/a|Text, (MTOM)|Yes<br />(buffered)|
 |<xref:System.ServiceModel.NetTcpContextBinding>|.NET|(Transport), Message, None, Mixed|(Transport), Reliable Session, Security Session|(None), Yes|Yes|Binary|Yes<br />(buffered)|
 |<xref:System.ServiceModel.WSHttpContextBinding>|WS|Transport, (Message), Mixed|(None), Reliable Session, Security Session|(None), Yes|n/a|Text, (MTOM)|No|
-|<xref:System.ServiceModel.UdpBinding>|.NET <br /><br /> **Note:**  Interoperability can be achieved by implementing the standard SOAP-over-UDP spec which this binding implements.|(None)|(None)|(None)|n/a|(Text)|No|
+|<xref:System.ServiceModel.UdpBinding> <br /><br /> **Note:**  Interoperability can be achieved by implementing the standard SOAP-over-UDP spec which this binding implements.|.NET|(None)|(None)|(None)|n/a|(Text)|No|
 
 > [!IMPORTANT]
-> <xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> detects whether it is used with a request-reply contract or duplex contract and change its behavior to match - it uses HTTP for request-reply and WebSockets for duplex. This behavior can be overridden using the <xref:System.ServiceModel.NetHttpBinding.WebSocketTransportUsage> binding setting: Allowed - This is the default value and behaves as described above. Never - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting will result in an exception. Always - This forces WebSockets to be used even for request-reply contracts. NetHttpBinding supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.
+> <xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> detects whether it's used with a request-reply contract or duplex contract and changes its behavior to match; it uses HTTP for request-reply and WebSockets for duplex. This behavior can be overridden using the <xref:System.ServiceModel.Channels.WebSocketTransportUsage> binding setting: WhenDuplex - This is the default value and behaves as described above. Never - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting results in an exception. Always - This forces WebSockets to be used even for request-reply contracts. NetHttpBinding supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.
 
  The following table explains the features listed in the previous table.
 

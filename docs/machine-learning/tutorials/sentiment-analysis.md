@@ -204,7 +204,7 @@ Add the following code to the `Train` method:
 
 At this point, you have a model that can be integrated into any of your existing or new .NET applications, or continue to work with it. For this tutorial, save your model to a .zip file before returning, so add the following code to the next line in `Train`:
 
-[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#10 "Save the model asynchronously and return the model")
+[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#10 "Save the model asynchronously and return the model")
 
 Return the model at the end of the `Train` method.
 

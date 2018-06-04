@@ -255,13 +255,13 @@ Command | Function
 
 Starting with .NET Core SDK 2.1.300, a number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET Core SDK. These tools include:
 
-| Tool                                         | Function                                                     |
-| -------------------------------------------- | ------------------------------------------------------------ |
-| dev-certs                                    | Creates and manages development certificates.                |
-| [ef](/ef/core/miscellaneous/cli/dotnet)      | Entity Framework Core command-line tools.                    |
-| sql-cache                                    | SQL Server cache command-line tools.                         |
-| user-secrets                                 | Manages development user secrets.                            |
-| [watch](/aspnet/core/tutorials/dotnet-watch) | Starts a file watcher that runs a command when files change. |
+| Tool                                              | Function                                                     |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| dev-certs                                         | Creates and manages development certificates.                |
+| [ef](/ef/core/miscellaneous/cli/dotnet)           | Entity Framework Core command-line tools.                    |
+| sql-cache                                         | SQL Server cache command-line tools.                         |
+| [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
+| [watch](/aspnet/core/tutorials/dotnet-watch)      | Starts a file watcher that runs a command when files change. |
 
 For more information about each tool, execute `dotnet <tool-name> --help`.
 

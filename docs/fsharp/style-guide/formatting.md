@@ -170,7 +170,7 @@ The following operators are defined in the F# standard library and should be use
 ```fsharp
 x |> f // Forward pipeline
 f >> g // Forward composition
-x |> ignore // Throwing away a value
+x |> ignore // Discard away a value
 x + y // Overloaded addition (including string concatenation)
 x - y // Overloaded subtraction
 x * y // Overloaded multiplication

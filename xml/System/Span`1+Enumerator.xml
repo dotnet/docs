@@ -29,17 +29,17 @@ The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) of the
 
 Enumerators can be used to read the data in the <xref:System.Span%601>, but they cannot be used to modify it. 
 
-Initially, the enumerator is positioned before the first element in the <xref:System.Span%601>. At this position, attempting to retrieve an element from the <xref:System.Span%601.Enumerator.Current> property throws an <xref:System.IndexOutOfRangeException>. To prevent an exception, you must call <xref:System.Span%601.Enumerator.MoveNext%2A> to advance the enumerator to the first item in the <xref:System.Span%601> before reading the value of <xref:System.Span%601.Enumerator.Current>.
+Initially, the enumerator is positioned before the first element in the <xref:System.Span%601>. At this position, <xref:System.Span%601.Enumerator.Current> is undefined. You must call <xref:System.Span%601.Enumerator.MoveNext%2A> to advance the enumerator to the first item in the <xref:System.Span%601> before reading the value of <xref:System.Span%601.Enumerator.Current>.
 
-<xref:System.Span%601.Enumerator.Current> returns the same object until <xref:System.Span%601.Enumerator.MoveNext%2A> is called. <xref:System.Span%601.Enumerator.MoveNext%2A> sets  <xref:System.Span%601.Enumerator.Current> to the next item in the <xref:System.Span%601>.
+<xref:System.Span%601.Enumerator.Current> returns the same value until <xref:System.Span%601.Enumerator.MoveNext%2A> is called. <xref:System.Span%601.Enumerator.MoveNext%2A> sets <xref:System.Span%601.Enumerator.Current> to the next item in the <xref:System.Span%601>.
 
-If <xref:System.Span%601.Enumerator.MoveNext%2A> passes the end of the <xref:System.Span%601>, the enumerator is positioned after the last item in the <xref:System.Span%601>, and <xref:System.Span%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Span%601.Enumerator.MoveNext%2A> also return `false`. If the call to <xref:System.Span%601.Enumerator.MoveNext%2A> returns `false`, <xref:System.Span%601.Enumerator.Current> is undefined. You cannot set <xref:System.Span%601.Enumerator.Current> to the first item in the <xref:System.Span%601> again; you must create a new enumerator instance instead. 
+If <xref:System.Span%601.Enumerator.MoveNext%2A> passes the end of the <xref:System.Span%601>, <xref:System.Span%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this state, subsequent calls to <xref:System.Span%601.Enumerator.MoveNext%2A> also return `false` and <xref:System.Span%601.Enumerator.Current> is undefined. You cannot set <xref:System.Span%601.Enumerator.Current> to the first item in the <xref:System.Span%601> again; you must create a new enumerator instance instead. 
 
-The enumerator does not have exclusive access to the <xref:System.Span%601>. In addition, the underlying data on which the span is based can also be modified. Therefore, enumerating through a span is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you must implement your own synchronization. For example, the following code has a race condition. It does not ensure that the span will be enumerated before the `ClearContents` method executes. As a result,   
+The enumerator does not have exclusive access to the <xref:System.Span%601>. In addition, the underlying data on which the span is based can also be modified. Therefore, enumerating through a span is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you must implement your own synchronization. For example, the following code has a race condition. It does not ensure that the span will be enumerated before the `ClearContents` method executes. As a result, the underlying array is cleared during enumeration of the span:
 
 [!code-csharp[System.Span<T>.Enumerator-no-synchronization](~/samples/snippets/csharp/api/system/span.enumerator/nosync/program.cs)]
 
-If you synchronize access to the array before enumerating the span, as the revised version of the `EnumerateSpan` method does in the following example. Note that the example locks the underlying array on which the span is based.  
+If you synchronize access to the array before enumerating the span, as the revised version of the `EnumerateSpan` method does in the following example, the `ClearContents` method doesn't modify underlying span data during enumeration. Note that the example locks the underlying array on which the span is based.  
 
 [!code-csharp[System.Span<T>.Enumerator-no-synchronization](~/samples/snippets/csharp/api/system/span.enumerator/sync/program.cs#1)]
 
@@ -73,18 +73,16 @@ Unlike some other enumerator structures in .NET, the <xref:System.Span%601.Enume
         <remarks>
       <format type="text/markdown"><![CDATA[  
 
-`Current` throws an <xref:System.IndexOutOfRangeException> under either of the following conditions: 
+`Current` is undefined under either of the following conditions: 
 
-- Immediately after the enumertor is created, the enumerator is positioned before the first element in the span. <xref:System.Span%601.Enumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the span before reading the value of `Current`.
+- Immediately after the enumerator is created, the enumerator is positioned before the first element in the span. <xref:System.Span%601.Enumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the span before reading the value of `Current`.
 
 - The last call to <xref:System.Span%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the span. 
 
-`Current` returns the same object until <xref:System.Span%601.Enumerator.MoveNext%2A> is called. <xref:System.Span%601.Enumerator.MoveNext%2A> sets `Current` to the next item in the span. 
+`Current` returns the same value until <xref:System.Span%601.Enumerator.MoveNext%2A> is called. <xref:System.Span%601.Enumerator.MoveNext%2A> sets `Current` to the next item in the span. 
 
       ]]></format>
         </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          The enumerator is positioned either before the first item or after the last item in the <see cref="System.Span`1" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -104,13 +102,13 @@ Unlike some other enumerator structures in .NET, the <xref:System.Span%601.Enume
       <Parameters />
       <Docs>
         <summary>Advances the enumerator to the next item of the <see cref="System.Span`1" />.</summary>
-        <returns>`true` if the enumerator successfully advanced to the next item; `false` if the enumerator has passed the end of the span.</returns>
+        <returns>`true` if the enumerator successfully advanced to the next item; `false` if the end of the span has been passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-After an enumerator is created,it is positioned before the first element in the span, and the first call to `MoveNext` advances the enumerator to the first item in the span. 
+After an enumerator is created, it is positioned before the first element in the span, and the first call to `MoveNext` advances the enumerator to the first item in the span. 
 
-If `MoveNext` passes the end of the span, the enumerator is positioned after the last item in the span, and `MoveNext` returns `false`. When the enumerator is at this position, subsequent calls to `MoveNext` also return `false`.
+If `MoveNext` passes the end of the span, `MoveNext` returns `false`. When the enumerator is at this state, subsequent calls to `MoveNext` also return `false`.
 
          ]]></format>
         </remarks>

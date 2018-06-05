@@ -1131,7 +1131,7 @@
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
-### [Sentiment analysis (classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine learning glossary](machine-learning/resources/glossary.md)

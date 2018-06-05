@@ -131,13 +131,13 @@ The Docker client can be installed in:
 
 ### Getting the sample application
 
-The easiest way to get the sample is by cloning the [samples repository](https://github.com/dotnet/dotnet-docker) with git, using the following instructions: 
+The easiest way to get the sample is by cloning the [.NET Core Docker repository](https://github.com/dotnet/dotnet-docker) with git, using the following instructions: 
 
 ```console
 git clone https://github.com/dotnet/dotnet-docker
 ```
 
-You can also download the repository (it is small) as a zip from the .NET Core Docker samples repository.
+You can also download the repository (it is small) as a zip from the .NET Core Docker repository.
 
 ### Run the ASP.NET app locally
 

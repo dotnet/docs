@@ -144,7 +144,7 @@ You add `async` to `Main` with a <xref:System.Threading.Tasks.Task> return type 
 
 > [!NOTE]
 >An *async main* method enables you to use `await` in your `Main` method. You can read more about the details in the
-[async main](../programming-guide/main-and-command-args/index.md) topic in the C# programming guide.
+[async main](../../../docs/csharp/programming-guide/main-and-command-args/index.md) topic in the C# programming guide.
 
 Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 

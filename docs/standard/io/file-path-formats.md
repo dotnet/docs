@@ -168,3 +168,38 @@ Skipping normalization and max path checks is the only difference between the tw
 Paths that start with `\\?\` are still normalized if you explicitly pass them to the [GetFullPathName function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx).
 
 Note that you can pass more paths of more than `MAX_PATH` characters to [GetFullPathName](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) without `\\?\`. It supports arbitrary length paths up to the maximum string size that Windows can handle.
+
+## Case and the Windows file system
+
+A peculiarity of the Windows file system that non-Windows users and developers find confusing is that path and directory names are case-insensitive. That is, directory and file names reflect the casing of the strings used when they are created. For example, the method call
+
+```csharp
+Directory.Create(TeStDiReCtOrY);
+```
+creates a directory named TeStDiReCtOrY. If you rename a directory or file to change its case, the directory or file name reflects the case of the string used when you rename it. For example, the following code renames a file named test.txt to Test.txt:
+
+```csharp
+using System;
+using System.IO;
+
+class Example
+{
+   public static void Main()
+   {
+      var fi = new FileInfo(@".\test.txt");
+      fi.MoveTo(@".\Test.txt");
+   }
+}
+``` 
+```vb
+Imports System.IO
+
+Module Example
+   Public Sub Main()
+      Dim fi As New FileInfo(".\test.txt")
+      fi.MoveTo(".\Test.txt")
+   End Sub
+End Module
+```
+
+However, directory and file name comparisons are case-insensitive. If you search for a file named "test.txt", .NET file system APIs ignore case in the comparison. Test.txt, TEST.TXT, test.TXT, and any other combination of upper- and lowercase letters will match "test.txt".

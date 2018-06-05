@@ -26,5 +26,5 @@ This topic provides links to information about how to work with the [!INCLUDE[dn
  [.NET Framework Samples](http://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
  Provides links to sample applications that demonstrate .NET Framework technologies.  
   
- [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  
+ [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7.2)  
  Provides syntax, code examples, and related information for each class in the .NET Framework namespaces.

@@ -323,11 +323,13 @@ Congratulations! You've now successfully built a machine learning model for clas
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
+> * Select the appropriate machine learning task
+> * Prepare and understand your data
 > * Create the learning pipeline
 > * Load a classifier
 > * Train the model
-> * Predict the test data outcomes with the model
 > * Evaluate the model with a different dataset
+> * Predict the test data outcomes with the model
 
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]

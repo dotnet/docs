@@ -56,7 +56,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 - `dotnet ef` is a tool for managing databases, <xref:Microsoft.EntityFrameworkCore.DbContext> objects, and migrations in Entity Framework Core applications. For more information, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet).
 
-### Global tools
+### Global Tools
 
 .NET Core 2.1 supports *Global Tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using [`DotnetCliToolReference`](../tools/extensibility.md#consuming-per-project-tools).
 

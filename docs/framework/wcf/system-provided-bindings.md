@@ -1,7 +1,7 @@
 ---
 title: "System-provided bindings"
 description: "Learn about all of the system-provided Windows Communication Foundation (WCF) bindings."
-ms.date: "06/04/2018"
+ms.date: "06/05/2018"
 helpviewer_keywords: 
   - "bindings [WCF], system-provided"
 ms.assetid: 2c243746-45ce-4588-995e-c17126a579a6
@@ -35,7 +35,7 @@ The following bindings ship with WCF:
 |<xref:System.ServiceModel.WSDualHttpBinding>|[\<wsDualHttpBinding>](../configure-apps/file-schema/wcf/wsdualhttpbinding.md)|A secure and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.|
 |<xref:System.ServiceModel.WSFederationHttpBinding>|[\<wsFederationHttpBinding>](../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|A secure and interoperable binding that supports the WS-Federation protocol, which enables organizations that are in a federation to efficiently authenticate and authorize users.|
 |<xref:System.ServiceModel.NetHttpBinding>|[\<netHttpBinding>](../configure-apps/file-schema/wcf/nethttpbinding.md)|A binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|
-|<xref:System.ServiceModel.NetHttpsBinding>|\<netHttpsBinding>|A secure binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|
+|<xref:System.ServiceModel.NetHttpsBinding>|[\<netHttpsBinding>](../configure-apps/file-schema/wcf/nethttpsbinding.md)|A secure binding designed for consuming HTTP or WebSocket services that uses binary encoding by default.|
 |<xref:System.ServiceModel.NetTcpBinding>|[\<netTcpBinding>](../configure-apps/file-schema/wcf/nettcpbinding.md)|A secure and optimized binding suitable for cross-machine communication between WCF applications.|
 |<xref:System.ServiceModel.NetNamedPipeBinding>|[\<netNamedPipeBinding>](../configure-apps/file-schema/wcf/netnamedpipebinding.md)|A secure, reliable, optimized binding that is suitable for on-machine communication between WCF applications.|
 |<xref:System.ServiceModel.NetMsmqBinding>|[\<netMsmqBinding>](../configure-apps/file-schema/wcf/netmsmqbinding.md)|A queued binding that is suitable for cross-machine communication between WCF applications.|

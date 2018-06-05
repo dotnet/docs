@@ -1131,12 +1131,12 @@
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
-### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
-### [Taxi Fare Predictor (Regression)](machine-learning/tutorials/taxi-fare.md)
+### [Sentiment analysis (classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
 ## [Resources](machine-learning/resources/index.md)
-### [Machine Learning Glossary](machine-learning/resources/glossary.md)
-### [Machine Learning Basics](machine-learning/resources/basics.md)
-### [Machine Learning Tasks](machine-learning/resources/tasks.md)
+### [Machine learning glossary](machine-learning/resources/glossary.md)
+### [Machine learning basics](machine-learning/resources/basics.md)
+### [Machine learning tasks](machine-learning/resources/tasks.md)
 
 <!-- End ML.NET Content -->
 

@@ -26,8 +26,7 @@ In fact, you can changes the definitions of `FileFoundArgs` and
 `SearchDirectoryArgs` so that they do not derive from `EventArgs`.
 The program will work exactly the same.
 
-You could also change the `SearchDirectoryArgs` to a struct, if you
-also make one more change:
+You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
 
 [!code-csharp[SearchDir](../../samples/csharp/events/Program.cs#DeclareSearchEvent "Define search directory event")]
 

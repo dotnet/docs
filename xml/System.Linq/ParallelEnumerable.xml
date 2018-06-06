@@ -3394,8 +3394,8 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TOuter,System.Collections.Generic.IEnumerable&lt;TInner&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOuter">The type of the elements of the second sequence.</typeparam>
-        <typeparam name="TInner">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TOuter">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TInner">The type of the elements of the second sequence.</typeparam>
         <typeparam name="TKey">The type of the keys returned by the key selector functions.</typeparam>
         <typeparam name="TResult">The type of the result elements.</typeparam>
         <param name="outer">The first sequence to join.</param>
@@ -3518,8 +3518,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOuter">The type of the elements of the second sequence.</typeparam>
-        <typeparam name="TInner">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TOuter">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TInner">The type of the elements of the second sequence.</typeparam>
         <typeparam name="TKey">The type of the keys returned by the key selector functions.</typeparam>
         <typeparam name="TResult">The type of the result elements.</typeparam>
         <param name="outer">The first sequence to join.</param>
@@ -3861,8 +3861,8 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TOuter,TInner,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOuter">The type of the elements of the second sequence.</typeparam>
-        <typeparam name="TInner">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TOuter">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TInner">The type of the elements of the second sequence.</typeparam>
         <typeparam name="TKey">The type of the keys returned by the key selector functions.</typeparam>
         <typeparam name="TResult">The type of the result elements.</typeparam>
         <param name="outer">The first sequence to join.</param>
@@ -3985,8 +3985,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOuter">The type of the elements of the second sequence.</typeparam>
-        <typeparam name="TInner">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TOuter">The type of the elements of the first sequence.</typeparam>
+        <typeparam name="TInner">The type of the elements of the second sequence.</typeparam>
         <typeparam name="TKey">The type of the keys returned by the key selector functions.</typeparam>
         <typeparam name="TResult">The type of the result elements.</typeparam>
         <param name="outer">The first sequence to join.</param>

@@ -3,7 +3,7 @@ title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 05/30/2018
+ms.date: 06/06/2018
 ---
 # What's new in .NET Core 2.1
 
@@ -70,7 +70,7 @@ Once installed, the tool can be run from the command line by specifying the tool
 
 ### Tool management with the `dotnet tool` command
 
-In .NET Core SDK 2.1  (v 2.1.300), all tools operations use the `dotnet tool` command. The following options are available:
+In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` command. The following options are available:
 
 - [`dotnet tool install`](../tools/dotnet-tool-install.md) to install a tool.
 
@@ -137,9 +137,9 @@ You can opt into tiered compilation in either of two ways.
   COMPlus_TieredCompilation="1"
   ```
 
-- To use tiered compilation on a per-project basis, add the '<TieredCompilation>` property to the `<PropertyGroup>` section of the MSBuild project file, as the following example shows:
+- To use tiered compilation on a per-project basis, add the `<TieredCompilation>` property to the `<PropertyGroup>` section of the MSBuild project file, as the following example shows:
 
-   ```XML
+   ```xml
    <PropertyGroup>
       <!-- other property definitions -->
 
@@ -214,6 +214,7 @@ The sockets implementation introduced in .NET Core 2.1 has a number of advantage
 ```csharp
 AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
 ```
+
 ```vb
 AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
 ```

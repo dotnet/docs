@@ -890,7 +890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.SortedSet%601.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedSet%601.Enumerator.Current%2A> property, <xref:System.Collections.Generic.SortedSet%601.Enumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedSet%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedSet%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  This method is an O(log n) operation.  
   

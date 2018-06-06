@@ -1,9 +1,9 @@
 ---
-title: Direct client-to-microservice communication versus the API Gateway pattern
-description: .NET Microservices Architecture for Containerized .NET Applications | Direct client-to-microservice communication versus the API Gateway pattern
+title: The API Gateway pattern versus the Direct client-to-microservice communication
+description: .NET Microservices Architecture for Containerized .NET Applications | The API Gateway pattern versus the Direct client-to-microservice communication
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/18/2017
+ms.date: 06/06/2018
 ---
 # The API Gateway pattern versus the Direct client-to-microservice communication
 
@@ -45,15 +45,15 @@ The API of multiple microservices might not be well designed for the needs of di
 
 ## Why consider API Gateways instead of direct client-to-microservice communication
 
-In a microservices architecture, the client apps usually need to consume functionality from more than one microservice. If that consumption is performed directly, the client will need to handle multiple microservice endpoints to call. What happens when the application evolves and new microservices are introduced or existing microservices are updated? If your application has many microservices, handling so many endpoints from the client apps can be a nightmare and since the client app would be coupled to those internal endpoints, evolving the microservices in the future can cause high impact for the client apps. 
+In a microservices architecture, the client apps usually need to consume functionality from more than one microservice. If that consumption is performed directly, the client needs to handle multiple calls to microservice endpoints. What happens when the application evolves and new microservices are introduced or existing microservices are updated? If your application has many microservices, handling so many endpoints from the client apps can be a nightmare. Since the client app would be coupled to those internal endpoints, evolving the microservices in the future can cause high impact for the client apps. 
 
 Therefore, having an intermediate level or tier of indirection (Gateway) can be very convenient for microservice-based applications. If you don't have API Gateways, the client apps must send requests directly to the microservices and that raises problems, such as the following issues.
 
-- **Coupling**: Without the API Gateway pattern the client apps are coupled to the internal microservices. The client apps need to know how the multiple areas of the application is decomposed in microservices. When evolving and refactoring the internal microservices that will impact the client apps and it will be hard to maintain as the client apps need to keep track of the multiple microservice endpoints.
+- **Coupling**: Without the API Gateway pattern, the client apps are coupled to the internal microservices. The client apps need to know how the multiple areas of the application are decomposed in microservices. When evolving and refactoring the internal microservices, those actions impact maintenance pretty badly because they cause breaking changes to the client apps due to the direct reference to the internal microservices from the client apps. Client apps need to be updated frecuently, making the solution harder to evolve.
 
-- **Too many round-trips**: A single page/screen in the client app might require several calls to multiple services. That can result in multiple network round trips between the client and the server, adding significant latency. Aggregation handled in an intermediate level could improve the performance and user experience for the client app.
+- **Too many round trips**: A single page/screen in the client app might require several calls to multiple services. That can result in multiple network round trips between the client and the server, adding significant latency. Aggregation handled in an intermediate level could improve the performance and user experience for the client app.
 
-- **Security issues**: Without a gateway, all the microservices must be exposed to the “external world”, making larger the attack surface than if you hide internal microservices not directly used by the client apps. The smaller is the attack surface, the more secure your application can be.
+- **Security issues**: Without a gateway, all the microservices must be exposed to the “external world”, making the attack surface larger than if you hide internal microservices not directly used by the client apps. The smaller the attack surface is, the more secure your application can be.
 
 - **Cross-cutting concerns**: Each publicly published microservice must handle concerns such as authorization, SSL, etc. In many situations those concerns could be handled in a single tier so the internal microservices are simplified.
 
@@ -138,7 +138,7 @@ The main reason why Ocelot was chosen to be used in [eShopOnContainers reference
 
 The previous diagrams showing custom API Gateways running in containers are precisely how you can also run Ocelot in a container and microservice based application. 
 
-In addition, there are many other products in the market offering API Gateways features, such as Apigee, Kong, MuleSoft, WSO2, LinkerD, etc. plus other products like Linkerd and Istio for service mesh ingres controller features.
+In addition, there are many other products in the market offering API Gateways features, such as Apigee, Kong, MuleSoft, WSO2 and other products like Linkerd and Istio for service mesh ingress controller features.
 
 After the initial architecture and patterns explanation sections, the next sections will explain how to implement API Gateways with [Ocelot](https://github.com/ThreeMammals/Ocelot).
 
@@ -163,7 +163,7 @@ After the initial architecture and patterns explanation sections, the next secti
     [*https://microservices.io/patterns/apigateway.html*](https://microservices.io/patterns/apigateway.html)
 
 -  **API Gateway pattern**
-    [*https://docs.microsoft.com/en-us/azure/architecture/microservices/gateway*](https://docs.microsoft.com/en-us/azure/architecture/microservices/gateway)
+    [*https://docs.microsoft.com/azure/architecture/microservices/gateway*](https://docs.microsoft.com/azure/architecture/microservices/gateway)
 
 -  **Aggregation and composition pattern**
    [*http://microservices.io/patterns/data/api-composition.html*](http://microservices.io/patterns/data/api-composition.html)

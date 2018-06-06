@@ -42,7 +42,7 @@ When developing, building, and running containerized applications, we have diffe
     * .js and .css files
 
 
-The reason to include the `dotnet publish` command output in your production image is to keep its' size to a minimum.
+The reason to include the `dotnet publish` command output in your production image is to keep its size to a minimum.
 
 Some .NET Core images share layers between different tags so downloading the latest tag is a relatively lightweight process. If you already have an older version on your machine, this architecture decreases the needed disk space.
 

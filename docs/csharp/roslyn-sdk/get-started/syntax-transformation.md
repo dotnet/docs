@@ -24,662 +24,154 @@ You choose one of two strategies for syntax transformations. Factory methods are
 
 The first syntax transformation demonstrates the factory methods. You are going to replace a `using System.Collections;` statement with a `using System.Collections.Generic;` statement. This example demonstrates how you create <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxNode?displayProperty=nameWithType> objects using the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> factory methods. For each kind of **node**, **token**, or **trivia** there is a factory method that creates an instance of that type. You create syntax trees by composing nodes hierarchically in a bottom-up fashion. Then, you'll transform the existing program be replacing existing nodes with the new tree you've created.
 
+Start Visual Studio, and create a new C# **Stand-Alone Code Analysis Tool** project. In Visual Studio, choose **File** > **New* > **Project** to display the New Project dialog. Under **Visual C#** > **Extensibility** choose a **Stand-Alone Code Analysis Tool**. This quickstart has two example projects, so name the solution **SyntaxTransformationQuickStart**, and name the project **ConstructionCS**. Click **OK**.
 
+This project uses the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> class methods to construct a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType> representing the `System.Collections.Generic` namespace.
 
-Specfically, you use the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> class methods to construct a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType> representing the `System.Collections.Generic` namespace.
+Add the following using directive to the top of the `Program.cs` file to import the factory methods of the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory> class and the metods of <xref:System.Console> so that we can use them later without qualifying them:
 
-<xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> is the base class for four types of names that appear in C#. You compose these four types of names together to create any name that can appear in the C# language:
+[!code-csharp[import the SyntaxFactory class](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#StaticUsings "import the Syntax Factory class and the System.Console class")]
+
+You create **name syntax nodes** to build the tree that represents `using System.Collections.Generic;'. <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> is the base class for four types of names that appear in C#. You compose these four types of names together to create any name that can appear in the C# language:
 
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType> which represents simple single identifier names like `System` and `Microsoft`.
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.GenericNameSyntax?displayProperty=nameWithType> which represents a generic type or method name such as `List<int>`.
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax?displayProperty=nameWithType> which represents a qualified name of the form `<left-name>.<right-identifier-or-generic-name>` such as `System.IO`.
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.AliasQualifiedNameSyntax?displayProperty=nameWithType> which represents a name using an assembly extern alias such a `LibraryV2::Foo`.
 
+You use the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactor.IdentifierName> method to create a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> node. Add the following code in your `Main` method in `Program.cs`:
 
+[!code-csharp[create the system identifier](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateIdentifierName "Create and display the system name identifier")]
 
-1) Create a new C# **Stand-Alone Code Analysis Tool** project.
-  * In Visual Studio, choose **File -> New -> Project...** to display the New Project dialog.
-  * Under **Visual C# -> Extensibility**, choose **Stand-Alone Code Analysis Tool**.
-  * Name your project "**ConstructionCS**" and click OK. 
+The preceding code creates an <xref:Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax> representing the name of the `System` namespace and assigns it to a variable. The code declares the variable `name` as a <xref:Micorosft.CodeAnalysis.CSharp.Syntax.NameSyntax>. As you build up a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax> from this node you will reuse this variable. **DO NOT** use type inference.
 
-2) Add the following using directive to the top of the file to import the factory methods of the **SyntaxFactory** class so that we can use them later without qualifying them:
+You've created the name. Now, it's time to build more nodes into the tree by building a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax> using `name` as the left of the name, and a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax> for the `Collections` namesspace as the right side of the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax>. Add the following code to `program.cs`:
+
+[!code-csharp[create the collections identifier](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateQualifiedIdentifierName "Build the System.Collections identifier")]
+
+Run the code again, and see the results. You're building a tree of nodes that represents code. You continue this pattern to build the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax> for the namespace `System.Collections.Generic`. Add the following code to `Program.cs`:
+
+[!code-csharp[create the full identifier](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateFullNamespace "Build the System.Collections.Generic identifier")]
+
+Run the program again to see that you've build the tree for the code to add.
+
+### Create a modified tree
+
+You've built a small syntax tree that contains one statement. The APIs to create new nodes are the right choice to create single statements, or other small code blocks. However, to build larger blocks of code, you should use methods that replace nodes, or insert nodes into an existing tree. Remember that syntax trees are immutable. The **Syntax API** does not provide any mechanism for modifying an existing syntax tree after construction. Instead, the **Syntax API** provides methods that produce new trees based on changes to existing ones. Concrete classes that derives from <xref:Microsoft.CodeAnalysis.SyntaxNode> defines `With*` methods that specify changes to its child properties. Additionally, the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension method can be used to replace a descendent node in a subtree. This method also updates the parent to point to the newly created child and repeats this process up the entire tree - a process known as _re-spining_ the tree.
+
+The next step is to create a tree that represents an entire (small) program and then modify it. Add the following code to the beginning of the `Program` class:
+
+[!code-csharp[create a parse tree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#DeclareSampleCode "Create a tree that represents a small program")]
+
+> [!NOTE]
+> The file uses the `System.Collections` namespace and not the `System.Collections.Generic` namespace.
+
+Next, add the following code to the bottom of the `Main` method to parse the text and create a tree:
+
+[!code-csharp[create a parse tree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateParseTree "Create a tree that represents a small program")]
+
+This example uses the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.WithName?displayProperty=NameWithType> method to replace the name in a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> node with the one constructed in the preceding code.
+
+Create a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> node using the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.WithName> method to update the `System.Collections` name with the name we created in the preceding code. Add the following code to the bottom of the `Main` method:
+
+[!code-csharp[create a new subtree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#BuildNewUsing "Create the subtree with the replaced namespace")]
+
+Run the program and look carefully at the output. The `newusing` has not be placed in the root tree. The original tree has not been changed.
+
+Add the following code using the <xref:Microsoft.CodeAnalysis.CompilationUnitSyntax.ReplaceNode%2A> extension method to create a new tree. The new tree is the result of replacing the existing import with the updated `newUsing` node. You assign this new tree to the existing `root` variable:
+
+[!code-csharp[create a new root tree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#TransformTree "Create the transformed root tree with the replaced namespace")]
+
+Run the program again. This time the tree now correctly imports the `System.Collections.Generic` namespace.
+
+### Transform trees using `SyntaxRewriters`
+
+The `With*` and <xref:Microsoft.CodeAnalysis.CompilationUnitSyntax.ReplaceNode%2A> methods provide convenient means to transform individual branches of a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class performs multiple transformations on a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class is a subclass of <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor%601?displayProperty=nameWithType>. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> applies a transformation to a specific type of <xref:Microsoft.CodeAnalysis.SyntaxNode>. You can apply transformationss to multiple types of <xref:Microsoft.CodeAnalysis.SyntaxNode> objects wherever they appear in a syntax tree. The second project in this quickstart creates a command-line refactoring that removes explicit types in local variable declarations anywhere where type inference could be used.
+
+Create a new C# **Stand-Alone Code Analysis Tool** project. In Visual Studio, right-click the `SyntaxTransformationQuickStart` solution node. Choose **Add** > **New Project** to display the **New Project dialog**. Under **Visual C#** > **Extensibility**, choose **Stand-Alone Code Analysis Tool**. Name your project `TransformationCS` and click OK.
+
+The first step is to create a class that derives from <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> to perform your transformations. Add a new class file to the project. In Visual Studio, choose **Project** > **Add Class...**. In the **Add New Item** dialog type `TypeInferenceRewriter.cs` as the filename.
+
+Add the following using directives to the `TypeInferenceRewriter.cs` file:
+
+[!code-csharp[add necessary usings](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#AddUsings "Add required usings")]
+
+Next, make the `TypeInferenceRewriter` class extend the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> class:
+
+[!code-csharp[add base class](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#BaseClass "Add base class")]
+
+Add the following code to declare a private read-only field to hold a <xref:Microsoft.CodeAnalysis.SemanticModel> and initialize it in the constructor. You will need this field later on to determine where type inference can be used:
+
+[!code-csharp[initialize members](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#Construction "Declare and initialize member variables")]
+
+Override the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement> method:
+
 ```C#
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-```
-
-3) Move your cursor to the line containing the **closing brace** of your **Main** method and set a breakpoint there.
-  * In Visual Studio, choose **Debug -> Toggle Breakpoint**.
-
-4) Run the program.
-  * In Visual Studio, choose **Debug -> Start Debugging**.
-
-5) First create a simple **IdentifierNameSyntax** representing the name of the **System** namespace and assign it to a variable. As you build up a **QualifiedNameSyntax** from this node you will reuse this variable so declare this variable to be of type **NameSyntax** to allow it to store both types of **SyntaxNode** - **DO NOT** use type inference:
-```C#
-            NameSyntax name = IdentifierName("System");
-```
-
-6) Set this statement as the next statement to be executed and execute it.
-  * Right-click this line and choose **Set Next Statement**.
-  * In Visual Studio, choose **Debug -> Step Over**, to execute this statement and initialize the new variable.
-  * You will need to repeat this process for each of the following steps as we introduce new variables and inspect them with the debugger.
-
-7) Open the **Immediate Window**.
-  * In Visual Studio, choose **Debug -> Windows -> Immediate**.
-
-8) Using the Immediate Window, type the expression **name.ToString()** and press Enter to evaluate it. You should see the string "**System**" as the result. 
-
-9) Next, construct a **QualifiedNameSyntax** using this **name** node as the **left** of the name and a new **IdentifierNameSyntax** for the **Collections** namespace as the **right** side of the **QualifiedNameSyntax**:
-```C#
-            name = QualifiedName(name, IdentifierName("Collections"));
-```
-
-10) Execute this statement to set the **name** variable to the new **QualifiedNameSyntax** node.
-
-11) Using the Immediate Window, evaluate the expression **name.ToString()**. It should evaluate to "**System.Collections**".
-
-12) Continue this pattern by building another **QualifiedNameSyntax** node for the **Generic** namespace:
-```C#
-            name = QualifiedName(name, IdentifierName("Generic"));
-```
-
-13) Execute this statement and again use the Immediate Window to observe that **name.ToString()** now evaluates to the fully qualified name "**System.Collections.Generic**". 
-
-### Modifying Nodes with With* and ReplaceNode Methods
-Because the syntax trees are immutable, the **Syntax API** provides no direct mechanism for modifying an existing syntax tree after construction. However, the **Syntax API** does provide methods for producing new trees based on specified changes to existing ones. Each concrete class that derives from **SyntaxNode** defines **With*** methods which you can use to specify changes to its child properties. Additionally, the **ReplaceNode** extension method can be used to replace a descendent node in a subtree. Without this method updating a node would also require manually updating its parent to point to the newly created child and repeating this process up the entire tree - a process known as _re-spining_ the tree. 
-
-#### Example - Transformations using the With* and ReplaceNode methods.
-This example uses the **WithName** method to replace the name in a **UsingDirectiveSyntax** node with the one constructed above.
-
-1) Continuing from the previous example above, add this code to parse a sample code file:
-```C#
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(
-@"using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
- 
-namespace HelloWorld
+public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatementSyntax node)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(""Hello, World!"");
-        }
-    }
-}");
- 
-            var root = (CompilationUnitSyntax)tree.GetRoot();
-```
 
-  * Note that the file uses the **System.Collections** namespace and not the **System.Collections.Generic** namespace. 
-
-2) Execute these statements.
-
-3) Create a new **UsingDirectiveSyntax** node using the **UsingDirectiveSyntax.WithName** method to update the "**System.Collections**" name with the name we created above:
-```C#
-            var oldUsing = root.Usings[1];
-            var newUsing = oldUsing.WithName(name);
-```
-
-4) Using the Immediate Window, evaluate the expression **root.ToString()** and observe that the original tree has not been changed to contain this new updated node.
-
-5) Add the following line using the **ReplaceNode** extension method to create a new tree, replacing the existing import with the updated **newUsing** node, and store the new tree in the existing **root** variable:
-```C#
-            root = root.ReplaceNode(oldUsing, newUsing);
-```
-
-6) Execute this statement.
-
-7) Using the Immediate Window evaluate the expression **root.ToString()** this time observing that the tree now correctly imports the **System.Collections.Generic** namespace.
-
-8) Stop the program.
-  * In Visual Studio, choose **Debug -> Stop debugging**.
-
-9) Your **Program.cs** file should now look like this:
-```C#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
- 
-namespace ConstructionCS
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            NameSyntax name = IdentifierName("System");
-            name = QualifiedName(name, IdentifierName("Collections"));
-            name = QualifiedName(name, IdentifierName("Generic"));
- 
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(
-@"using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
- 
-namespace HelloWorld
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(""Hello, World!"");
-        }
-    }
-}");
- 
-            var root = (CompilationUnitSyntax)tree.GetRoot();
- 
-            var oldUsing = root.Usings[1];
-            var newUsing = oldUsing.WithName(name);
- 
-            root = root.ReplaceNode(oldUsing, newUsing);
-        }
-    }
 }
 ```
 
-### Transforming Trees using SyntaxRewriters
-The **With*** and **ReplaceNode** methods provide convenient means to transform individual branches of a syntax tree. However, often it may be necessary to perform multiple transformations on a syntax tree in concert. The **SyntaxRewriter** class is a subclass of **SyntaxVisitor** which can be used to apply a transformation to a specific type of **SyntaxNode**. It is also possible to apply a set of transformations to multiple types of **SyntaxNode** wherever they appear in a syntax tree. The following example demonstrates this in a naive implementation of a command-line refactoring which removes explicit types in local variable declarations anywhere where type inference could be used. This example makes use of techniques discussed in this walkthrough as well as the **Getting Started: Syntactic Analysis** and **Getting Started: Semantic Analysis** walkthroughs. 
+> [!NOTE]
+> The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement> method returns a <xref:Microsoft.CodeAnalysis.SyntaxNode>, not <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax>. In many scenarios one kind of node may be replaced by another kind of node entirely - or even removed. In this example you'll return another <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> node based on the existing one.
 
-#### Example - Creating a SyntaxRewriter to transform syntax trees.
-1) Create a new C# **Stand-Alone Code Analysis Tool** project.
-  * In Visual Studio, choose **File -> New -> Project...** to display the New Project dialog.
-  * Under **Visual C# -> Extensibility**, choose **Stand-Alone Code Analysis Tool**.
-  * Name your project "**TransformationCS**" and click OK. 
+This quickstart handles local variable declarations. You could extend it to other declarations such as `foreach` loops, `for` loops, LINQ expressions, and lambda expressions. Furthermore this rewriter will only transform declarations of the simplest form:
 
-2) Insert the following **using** directive at the top of your **Program.cs** file:
-```C#
-using System.IO;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp; 
-```
-
-3) Add a new class file to the project.
-  * In Visual Studio, choose **Project -> Add Class...** 
-  * In the "Add New Item" dialog type **TypeInferenceRewriter.cs** as the filename.
-
-4) Add the following using directives.
-```C#
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-```
-
-5) Make the **TypeInferenceRewriter** class extend the **CSharpSyntaxRewriter** class:
-```C#
-    public class TypeInferenceRewriter : CSharpSyntaxRewriter
-    {
-```
-
-6) Add the following code to declare a private read-only field to hold a **SemanticModel** and initialize it from the constructor. You will need this field later on to determine where type inference can be used:
-```C#
-        private readonly SemanticModel SemanticModel;
- 
-        public TypeInferenceRewriter(SemanticModel semanticModel)
-        {
-            this.SemanticModel = semanticModel;
-        }
-```
-
-7) Override the **VisitLocalDeclarationStatement** method:
-```C#
-        public override SyntaxNode VisitLocalDeclarationStatement(
-                                       LocalDeclarationStatementSyntax node)
-        {
-
-        }
-```
-
-  * Note that the **VisitLocalDeclarationStatement** method returns a **SyntaxNode**, not **LocalDeclarationStatementSyntax**. In this example you'll return another **LocalDeclarationStatementSyntax** node based on the existing one. In other scenarios one kind of node may be replaced by another kind of node entirely - or even removed.
-
-8) For the purpose of this example you'll only handle local variable declarations, though type inference may be used in **foreach** loops, **for** loops, LINQ expressions, and lambda expressions. Furthermore this rewriter will only transform declarations of the simplest form:
 ```C#
 Type variable = expression;
 ```
 
-The following forms of variable declarations in C# are either incompatible with type inference or left as an exercise to the reader.
+If you want to explore on your own, consider extending the finished sample for these types of variable declarations:
 
 ```C#
 // Multiple variables in a single declaration.
-Type variable1 = expression1, 
-     variable2 = expression2; 
+Type variable1 = expression1,
+     variable2 = expression2;
 // No initializer.
-Type variable; 
+Type variable;
 ```
 
-9) Add the following code to the body of the **VisitLocalDeclarationStatement** method to skip rewriting these forms of declarations:
-```C#
-            if (node.Declaration.Variables.Count > 1) 
-            {
-                return node;
-            }
-            if (node.Declaration.Variables[0].Initializer == null)
-            {
-                return node;
-            }
-```
-
-  * Note that returning the **node** parameter unmodified results in no rewriting taking place for that node. 
-
-10) Add these statements to extract the type name specified in the declaration and bind it using the **SemanticModel** field to obtain a type symbol.
-```C#
-            VariableDeclaratorSyntax declarator = node.Declaration.Variables.First();
-            TypeSyntax variableTypeName = node.Declaration.Type;
-            
-            ITypeSymbol variableType = 
-                           (ITypeSymbol)SemanticModel.GetSymbolInfo(variableTypeName)
-                                                     .Symbol;
-```
-
-11) Now, add this statement to bind the initializer expression: 
-```C#
-            TypeInfo initializerInfo = 
-                         SemanticModel.GetTypeInfo(declarator
-                                                   .Initializer
-                                                   .Value);
-```
-
-12) Finally, add the following **if** statement to replace the existing type name with the **var** keyword if the type of the initializer expression matches the type specified:
-```C#
-            if (variableType == initializerInfo.Type)
-            {
-                TypeSyntax varTypeName = 
-                               IdentifierName("var")
-                                     .WithLeadingTrivia(
-                                          variableTypeName.GetLeadingTrivia())
-                                     .WithTrailingTrivia(
-                                          variableTypeName.GetTrailingTrivia());
- 
-                return node.ReplaceNode(variableTypeName, varTypeName);
-            }
-            else
-            {
-                return node;
-            }
-```
-
-  * Note that this conditional is required because if the types don't match the declaration may be casting the initializer expression to a base class or interface. Removing the explicit type in these cases would change the semantics of a program.
-  * Note also that **var** is specified as an identifier rather than a keyword because **var** is a contextual keyword.
-  * Note that the leading and trailing trivia (whitespace) is transferred from the old type name to the **var** keyword to maintain vertical whitespace and indentation.
-  * Note also that it's simpler to use **ReplaceNode** rather than **With*** to transform the **LocalDeclarationStatementSyntax** because the type name is actually the grandchild of the declaration statement. 
-
-13) Your **TypeInferenceRewriter.cs** file should now look like this:
-```C#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp; 
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
- 
-namespace TransformationCS
-{
-    public class TypeInferenceRewriter : CSharpSyntaxRewriter
-    {
-        private readonly SemanticModel SemanticModel;
- 
-        public TypeInferenceRewriter(SemanticModel semanticModel)
-        {
-            this.SemanticModel = semanticModel;
-        }
- 
-        public override SyntaxNode VisitLocalDeclarationStatement(
-                                       LocalDeclarationStatementSyntax node)
-        {
-            if (node.Declaration.Variables.Count > 1) 
-            {
-                return node;
-            }
-            if (node.Declaration.Variables[0].Initializer == null)
-            {
-                return node;
-            }
- 
-            VariableDeclaratorSyntax declarator = node.Declaration.Variables.First();
-            TypeSyntax variableTypeName = node.Declaration.Type;
-            
-            ITypeSymbol variableType = 
-                           (ITypeSymbol)SemanticModel.GetSymbolInfo(variableTypeName)
-                                                    .Symbol;
-            
-            TypeInfo initializerInfo = 
-                         SemanticModel.GetTypeInfo(declarator
-                                                   .Initializer
-                                                   .Value);
-            
-            if (variableType == initializerInfo.Type)
-            {
-                TypeSyntax varTypeName = 
-                               IdentifierName("var")
-                                     .WithLeadingTrivia(
-                                          variableTypeName.GetLeadingTrivia())
-                                     .WithTrailingTrivia(
-                                          variableTypeName.GetTrailingTrivia());
- 
-                return node.ReplaceNode(variableTypeName, varTypeName);
-            }
-            else
-            {
-                return node;
-            }
-        }
-    }
-}
-```
-
-14) Return to your **Program.cs** file.
-
-15) To test your **TypeInferenceRewriter** you'll need to create a test **Compilation** to obtain the **SemanticModels** required for the type inference analysis. You'll do this step last. In the meantime declare a placeholder variable representing your test Compilation:
-```C#
-            Compilation test = CreateTestCompilation();
-```
-
-16) After pausing a moment you should see an error squiggle appear reporting that no **CreateTestCompilation** method exists. Press **Ctrl+Period** to open the light-bulb and then press Enter to invoke the **Generate Method Stub** command. This will generate a method stub for the **CreateTestCompilation** method in **Program**. You'll come back to fill this in later:
-![C# Generate method from usage](images/walkthrough-csharp-syntax-transformation-figure1.png)
-
-17) Next, write the following code to iterate over each **SyntaxTree** in the test **Compilation.** For each one initialize a new **TypeInferenceRewriter** with the **SemanticModel** for that tree:
-```C#
-            foreach (SyntaxTree sourceTree in test.SyntaxTrees)
-            {
-                SemanticModel model = test.GetSemanticModel(sourceTree);
- 
-                TypeInferenceRewriter rewriter = new TypeInferenceRewriter(model);
-            }
-```
-
-18) Lastly, inside the **foreach** statement you just created, add the following code to perform the transformation on each source tree and conditionally write out the new transformed tree if any edits were made. Remember, your rewriter should only modify a tree if it encountered one or more local variable declarations that could be simplified using type inference:
-```C#
-                SyntaxNode newSource = rewriter.Visit(sourceTree.GetRoot());
-
-                if (newSource != sourceTree.GetRoot())
-                {
-                    File.WriteAllText(sourceTree.FilePath, newSource.ToFullString());
-                }
-```
-
-19) You're almost done! There's just once step left. Creating a test **Compilation**. Since you haven't been using type inference at all during this walkthrough it would have made a perfect test case. Unfortunately, creating a Compilation from a C# project file is beyond the scope of this walkthrough. But fortunately, if you've been following instructions very carefully there's hope. Replace the contents of the **CreateTestCompilation** method with the following code. It creates a test compilation  that coincidentally matches the project described in this walkthrough:
-```C#
-            String programPath = @"..\..\Program.cs";
-            String programText = File.ReadAllText(programPath);
-            SyntaxTree programTree =
-                           CSharpSyntaxTree.ParseText(programText)
-                                           .WithFilePath(programPath);
-
-            String rewriterPath = @"..\..\TypeInferenceRewriter.cs";
-            String rewriterText = File.ReadAllText(rewriterText);
-            SyntaxTree rewriterTree =
-                           CSharpSyntaxTree.ParseText(rewriterText)
-                                           .WithFilePath(rewriterPath);
-
-            SyntaxTree[] sourceTrees = { programTree, rewriterTree };
-
-            MetadataReference mscorlib =
-                    MetadataReference.CreateFromAssembly(typeof(object).Assembly);
-            MetadataReference codeAnalysis =
-                    MetadataReference.CreateFromAssembly(typeof(SyntaxTree).Assembly);
-            MetadataReference csharpCodeAnalysis =
-                    MetadataReference.CreateFromAssembly(typeof(CSharpSyntaxTree).Assembly);
-
-            MetadataReference[] references = { mscorlib, codeAnalysis, csharpCodeAnalysis };
-
-            return CSharpCompilation.Create("TransformationCS",
-                                            sourceTrees,
-                                            references,
-                                            new CSharpCompilationOptions(
-                                                    OutputKind.ConsoleApplication));
-```
-
-20) Your **Program.cs** file should look like this now:
-```C#
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-
-namespace TransformationCS
-{
-    internal class Program
-    {
-        private static void Main()
-        {
-            Compilation test = CreateTestCompilation();
-
-            foreach (SyntaxTree sourceTree in test.SyntaxTrees)
-            {
-                SemanticModel model = test.GetSemanticModel(sourceTree);
-
-                TypeInferenceRewriter rewriter = new TypeInferenceRewriter(model);
-
-                SyntaxNode newSource = rewriter.Visit(sourceTree.GetRoot());
-
-                if (newSource != sourceTree.GetRoot())
-                {
-                    File.WriteAllText(sourceTree.FilePath, newSource.ToFullString());
-                }
-            }
-        }
-
-        private static Compilation CreateTestCompilation()
-        {
-            String programPath = @"..\..\Program.cs";
-            String programText = File.ReadAllText(programPath);
-            SyntaxTree programTree =
-                           CSharpSyntaxTree.ParseText(programText)
-                                           .WithFilePath(programPath);
-
-            String rewriterPath = @"..\..\TypeInferenceRewriter.cs";
-            String rewriterText = File.ReadAllText(rewriterText);
-            SyntaxTree rewriterTree =
-                           CSharpSyntaxTree.ParseText(rewriterText)
-                                           .WithFilePath(rewriterPath);
-
-
-            SyntaxTree[] sourceTrees = { programTree, rewriterTree };
-
-            MetadataReference mscorlib =
-                    MetadataReference.CreateFromAssembly(typeof(object).Assembly);
-            MetadataReference codeAnalysis =
-                    MetadataReference.CreateFromAssembly(typeof(SyntaxTree).Assembly);
-            MetadataReference csharpCodeAnalysis =
-                    MetadataReference.CreateFromAssembly(typeof(CSharpSyntaxTree).Assembly);
-
-            MetadataReference[] references = { mscorlib, codeAnalysis, csharpCodeAnalysis };
-
-            return CSharpCompilation.Create("TransformationCS",
-                                            sourceTrees,
-                                            references,
-                                            new CSharpCompilationOptions(
-                                                    OutputKind.ConsoleApplication));
-        }
-    }
-}
-```
-
-21) Cross your fingers and run the project. 
-  * In Visual Studio, choose **Debug -> Start Debugging**.
-
-22) You should be prompted by Visual Studio that the files in your project have changed. Click "**Yes to All**" to reload the modified files. Examine them to observe your awesomeness :)
-  * Note how much cleaner the code looks without all those explicit and redundant type specifiers. 
-
-23) Congratulations! You've just used the **Compiler APIs** to write your own refactoring that searches all files in a C# project for certain syntactic patterns, analyzes the semantics of source code that matches those patterns, and transforms it. You're now officially a Refactoring guru!
-
-
-
-SOURCES:
-
-// PROGRAM.CS:
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Symbols;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.MSBuild;
-using Microsoft.CodeAnalysis.Text;
-
-// one
-using System.IO;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-// one
-
-
-namespace TransformationCS
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var workspace = MSBuildWorkspace.Create();
-
-            // ten
-            Compilation test = CreateTestCompilation();
-            // ten
-
-            // eleven
-            foreach (SyntaxTree sourceTree in test.SyntaxTrees)
-            {
-                SemanticModel model = test.GetSemanticModel(sourceTree);
-
-                TypeInferenceRewriter rewriter = new TypeInferenceRewriter(model);
-
-                // twelve
-                SyntaxNode newSource = rewriter.Visit(sourceTree.GetRoot());
-
-                if (newSource != sourceTree.GetRoot())
-                {
-                    File.WriteAllText(sourceTree.FilePath, newSource.ToFullString());
-                }
-                // twelve
-            }
-            // eleven
-        }
-
-        private static Compilation CreateTestCompilation()
-        {
-            // thirteen
-            String programPath = @"..\..\Program.cs";
-            String programText = File.ReadAllText(programPath);
-            SyntaxTree programTree =
-                           CSharpSyntaxTree.ParseText(programText)
-                                           .WithFilePath(programPath);
-
-            String rewriterPath = @"..\..\TypeInferenceRewriter.cs";
-            String rewriterText = File.ReadAllText(rewriterPath);
-            SyntaxTree rewriterTree =
-                           CSharpSyntaxTree.ParseText(rewriterText)
-                                           .WithFilePath(rewriterPath);
-
-            SyntaxTree[] sourceTrees = { programTree, rewriterTree };
-
-            MetadataReference mscorlib =
-                    MetadataReference.CreateFromAssembly(typeof(object).Assembly);
-            MetadataReference codeAnalysis =
-                    MetadataReference.CreateFromAssembly(typeof(SyntaxTree).Assembly);
-            MetadataReference csharpCodeAnalysis =
-                    MetadataReference.CreateFromAssembly(typeof(CSharpSyntaxTree).Assembly);
-
-            MetadataReference[] references = { mscorlib, codeAnalysis, csharpCodeAnalysis };
-
-            return CSharpCompilation.Create("TransformationCS",
-                                            sourceTrees,
-                                            references,
-                                            new CSharpCompilationOptions(
-                                                    OutputKind.ConsoleApplication));
-            // thirteen
-        }
-    }
-}
-
-// Rewriter:
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-// Two
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-// two
-
-
-namespace TransformationCS
-{
-    // three
-    public class TypeInferenceRewriter : CSharpSyntaxRewriter
-    // three
-    {
-        // four
-        private readonly SemanticModel SemanticModel;
-
-        public TypeInferenceRewriter(SemanticModel semanticModel) => SemanticModel = semanticModel;
-        // four
-
-        // five 
-        public override SyntaxNode VisitLocalDeclarationStatement(
-                                       LocalDeclarationStatementSyntax node)
-        {
-            // six
-            if (node.Declaration.Variables.Count > 1)
-            {
-                return node;
-            }
-            if (node.Declaration.Variables[0].Initializer == null)
-            {
-                return node;
-            }
-            // six
-
-            // seven
-            VariableDeclaratorSyntax declarator = node.Declaration.Variables.First();
-            TypeSyntax variableTypeName = node.Declaration.Type;
-
-            ITypeSymbol variableType = (ITypeSymbol)SemanticModel
-                .GetSymbolInfo(variableTypeName)
-                .Symbol;
-            // seven
-
-            // eight
-            TypeInfo initializerInfo = SemanticModel.GetTypeInfo(declarator.Initializer.Value);
-            // eight
-
-            // nine
-            if (variableType == initializerInfo.Type)
-            {
-                TypeSyntax varTypeName = IdentifierName("var")
-                    .WithLeadingTrivia(variableTypeName.GetLeadingTrivia())
-                    .WithTrailingTrivia(variableTypeName.GetTrailingTrivia());
-
-                return node.ReplaceNode(variableTypeName, varTypeName);
-            }
-            else
-            {
-                return node;
-            }
-            // nine
-
-        }
-        // Five
-    }
-}
+Add the following code to the body of the `VisitLocalDeclarationStatement` method to skip rewriting these forms of declarations:
+
+[!code-csharp[exclude other declarations](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#Exclusions "Exclude variables declarations not processed by this sample")]
+
+The method indicates that no rewriting takes place by returning the `node` parameter unmodified. If neither of those `if` expressions are true, the node represents a possible declaration with initialization. Add these statements to extract the type name specified in the declaration and bind it using the <xref:Microsoft.CodeAnalysis.SemanticModel> field to obtain a type symbol:
+
+[!code-csharp[extract type name](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#ExtractTypeSymbol "Extract the type name specified by the declaration")]
+
+Now, add this statement to bind the initializer expression:
+
+[!code-csharp[bind initializer](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#BindInitializer "Bind the initializer expressions")]
+
+Finally, add the following `if` statement to replace the existing type name with the `var` keyword if the type of the initializer expression matches the type specified:
+
+[!code-csharp[ReplaceNode](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#BindInitializer "Replace the initializer node")]
+
+This conditional is required because the declaration may be casting the initializer expression to a base class or interface. If that's desired, the types on the left and right hand side of the assignment don't match. Removing the explicit type in these cases would change the semantics of a program. `var` is specified as an identifier rather than a keyword because `var` is a contextual keyword. The leading and trailing trivia (whitespace) is transferred from the old type name to the `var` keyword to maintain vertical whitespace and indentation. It's simpler to use `ReplaceNode` rather than `With*` to transform the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> because the type name is actually the grandchild of the declaration statement.
+
+You've finished the `TypeInferenceRewriter`, now return to your `Program.cs` file to finish the example. You need to create a test <xref:Microsoft.CodeAnalysis.Compilation> and obtain the <xref.Microsoft.CodeAnalysis.SemanticModel> from it. You use that <xref:Microsoft.CodeAnalysis.SemanticModel> to try your `TypeInferenceRewriter`. You'll do this step last. In the meantime declare a placeholder variable representing your test Compilation:
+
+[!code-csharp[DeclareCompilation](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/Program.cs#DeclareTestCompilation "Declare the test compilation")]
+
+After pausing a moment you should see an error squiggle appear reporting that no `CreateTestCompilation` method exists. Press **Ctrl+Period** to open the light-bulb and then press Enter to invoke the **Generate Method Stub** command. This will generate a method stub for the `CreateTestCompilation` method in the `Program` class. You'll come back to fill this in later:
+
+![C# Generate method from usage](./media/syntax-transformations/generate-from-usage.png)
+
+Write the following code to iterate over each <xref:Microsoft.CodeAnalysis.SyntaxTree> in the test <xref:Microsoft.CodeAnalysis.Compilation>. For each one initialize a new `TypeInferenceRewriter` with the <xref:Microsoft.CodeAnalysis.SemanticModel> for that tree:
+
+[!code-csharp[IterateTrees](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/Program.cs#IterateTrees "Iterate all the source trees in the test compilation")]
+
+Inside the `foreach` statement you created, add the following code to perform the transformation on each source tree. This code conditionally writes out the new transformed tree if any edits were made. Your rewriter should only modify a tree if it encountered one or more local variable declarations that could be simplified using type inference:
+
+[!code-csharp[TransformTrees](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/Program.cs#TransformTrees "Transform and save any trees that are modified by the rewriter")]
+
+You should see squiggles under the `File.WriteAllText` code. Select the light bulb, and add the necessary `using System.IO;` statement.
+
+You're almost done! There's just once step left. Creating a test <xref:Microsoft.CodeAnalysis.Compilation>. Since you haven't been using type inference at all during this quickstart it would have made a perfect test case. Unfortunately, creating a Compilation from a C# project file is beyond the scope of this walkthrough. But fortunately, if you've been following instructions very carefully there's hope. Replace the contents of the `CreateTestCompilation` method with the following code. It creates a test compilation that coincidentally matches the project described in this quickstart:
+
+[!code-csharp[CreateTestCompilation](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/Program.cs#CreateTestCompilation "Create a test compilation using the code written for this quickstart.")]
+
+Cross your fingers and run the project. In Visual Studio, choose **Debug** > **Start Debugging**. You should be prompted by Visual Studio that the files in your project have changed. Click "**Yes to All**" to reload the modified files. Examine them to observe your awesomeness. Note how much cleaner the code looks without all those explicit and redundant type specifiers.
+
+Congratulations! You've just used the **Compiler APIs** to write your own refactoring that searches all files in a C# project for certain syntactic patterns, analyzes the semantics of source code that matches those patterns, and transforms it. You're now officially a Refactoring guru!

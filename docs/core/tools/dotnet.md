@@ -242,7 +242,7 @@ Command | Function
 
 ### Global Tools commands
 
-[.NET Core Global Tools](global-tools.md) are available strating with .NET Core SDK 2.1.300:
+[.NET Core Global Tools](global-tools.md) are available starting with .NET Core SDK 2.1.300:
 
 Command | Function
 --- | ---

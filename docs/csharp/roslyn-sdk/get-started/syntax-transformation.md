@@ -39,11 +39,11 @@ You create **name syntax nodes** to build the tree that represents `using System
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax?displayProperty=nameWithType>, which represents a qualified name of the form `<left-name>.<right-identifier-or-generic-name>` such as `System.IO`.
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.AliasQualifiedNameSyntax?displayProperty=nameWithType>, which represents a name using an assembly extern alias such a `LibraryV2::Foo`.
 
-You use the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactor.IdentifierName> method to create a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> node. Add the following code in your `Main` method in `Program.cs`:
+You use the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory.IdentifierName> method to create a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> node. Add the following code in your `Main` method in `Program.cs`:
 
 [!code-csharp[create the system identifier](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateIdentifierName "Create and display the system name identifier")]
 
-The preceding code creates an <xref:Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax> representing the name of the `System` namespace and assigns it to a variable. The code declares the variable `name` as a <xref:Micorosft.CodeAnalysis.CSharp.Syntax.NameSyntax>. As you build up a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax> from this node, you will reuse this variable. **DO NOT** use type inference.
+The preceding code creates an <xref:Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax> representing the name of the `System` namespace and assigns it to a variable. The code declares the variable `name` as a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax>. As you build up a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax> from this node, you will reuse this variable. **DO NOT** use type inference.
 
 You've created the name. Now, it's time to build more nodes into the tree by building a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax>. The new tree uses `name` as the left of the name, and a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax> for the `Collections` namespace as the right side of the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax>. Add the following code to `program.cs`:
 
@@ -70,9 +70,9 @@ Next, add the following code to the bottom of the `Main` method to parse the tex
 
 [!code-csharp[create a parse tree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateParseTree "Create a tree that represents a small program")]
 
-This example uses the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.WithName?displayProperty=NameWithType> method to replace the name in a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> node with the one constructed in the preceding code.
+This example uses the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.WithName(Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax)?displayProperty=NameWithType> method to replace the name in a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> node with the one constructed in the preceding code.
 
-Create a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> node using the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.WithName> method to update the `System.Collections` name with the name you created in the preceding code. Add the following code to the bottom of the `Main` method:
+Create a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> node using the <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.WithName(Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax)> method to update the `System.Collections` name with the name you created in the preceding code. Add the following code to the bottom of the `Main` method:
 
 [!code-csharp[create a new subtree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#BuildNewUsing "Create the subtree with the replaced namespace")]
 
@@ -86,7 +86,7 @@ Run the program again. This time the tree now correctly imports the `System.Coll
 
 ### Transform trees using `SyntaxRewriters`
 
-The `With*` and <xref:Microsoft.CodeAnalysis.CompilationUnitSyntax.ReplaceNode%2A> methods provide convenient means to transform individual branches of a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class performs multiple transformations on a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class is a subclass of <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor%601?displayProperty=nameWithType>. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> applies a transformation to a specific type of <xref:Microsoft.CodeAnalysis.SyntaxNode>. You can apply transformations to multiple types of <xref:Microsoft.CodeAnalysis.SyntaxNode> objects wherever they appear in a syntax tree. The second project in this quickstart creates a command-line refactoring that removes explicit types in local variable declarations anywhere where type inference could be used.
+The `With*` and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.CompilationUnitSyntax.ReplaceNode%2A> methods provide convenient means to transform individual branches of a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class performs multiple transformations on a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class is a subclass of <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor%601?displayProperty=nameWithType>. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> applies a transformation to a specific type of <xref:Microsoft.CodeAnalysis.SyntaxNode>. You can apply transformations to multiple types of <xref:Microsoft.CodeAnalysis.SyntaxNode> objects wherever they appear in a syntax tree. The second project in this quickstart creates a command-line refactoring that removes explicit types in local variable declarations anywhere where type inference could be used.
 
 Create a new C# **Stand-Alone Code Analysis Tool** project. In Visual Studio, right-click the `SyntaxTransformationQuickStart` solution node. Choose **Add** > **New Project** to display the **New Project dialog**. Under **Visual C#** > **Extensibility**, choose **Stand-Alone Code Analysis Tool**. Name your project `TransformationCS` and click OK.
 
@@ -104,7 +104,7 @@ Add the following code to declare a private read-only field to hold a <xref:Micr
 
 [!code-csharp[initialize members](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/TypeInferenceRewriter.cs#Construction "Declare and initialize member variables")]
 
-Override the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement> method:
+Override the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement(Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax)> method:
 
 ```C#
 public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatementSyntax node)
@@ -114,7 +114,7 @@ public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatem
 ```
 
 > [!NOTE]
-> The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement> method returns a <xref:Microsoft.CodeAnalysis.SyntaxNode>, not <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax>. In many scenarios one kind of node may be replaced by another kind of node entirely - or even removed. In this example you'll return another <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> node based on the existing one.
+> The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement(Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax)> method returns a <xref:Microsoft.CodeAnalysis.SyntaxNode>, not <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax>. In many scenarios one kind of node may be replaced by another kind of node entirely - or even removed. In this example you'll return another <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> node based on the existing one.
 
 This quickstart handles local variable declarations. You could extend it to other declarations such as `foreach` loops, `for` loops, LINQ expressions, and lambda expressions. Furthermore this rewriter will only transform declarations of the simplest form:
 
@@ -156,7 +156,7 @@ You've finished the `TypeInferenceRewriter`, now return to your `Program.cs` fil
 
 After pausing a moment, you should see an error squiggle appear reporting that no `CreateTestCompilation` method exists. Press **Ctrl+Period** to open the light-bulb and then press Enter to invoke the **Generate Method Stub** command. This command will generate a method stub for the `CreateTestCompilation` method in the `Program` class. You'll come back to fill in this method later:
 
-![C# Generate method from usage](./media/syntax-transformations/generate-from-usage.png)
+![C# Generate method from usage](./media/syntax-transformation/generate-from-usage.png)
 
 Write the following code to iterate over each <xref:Microsoft.CodeAnalysis.SyntaxTree> in the test <xref:Microsoft.CodeAnalysis.Compilation>. For each one initialize a new `TypeInferenceRewriter` with the <xref:Microsoft.CodeAnalysis.SemanticModel> for that tree:
 

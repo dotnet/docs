@@ -47,5 +47,5 @@ Visual Basic is engineered for productively building type-safe and object-orient
  [Get Started Developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)  
  Provides links to topics that help you learn about the basics of Visual Studio.  
   
- [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  
+ [.NET API Browser](../../api/index.md)  
  Provides entry to the library of classes, interfaces, and value types that are included in the Microsoft [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.

@@ -17,7 +17,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Understand the problem
 > * Select the appropriate machine learning task
-> * Prepare and understand your data
+> * Prepare your data
 > * Create the learning pipeline
 > * Load a classifier
 > * Train the model
@@ -27,6 +27,13 @@ In this tutorial, you learn how to:
 ## Sentiment analysis sample overview
 
 The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from the WikiDetox project.
+
+## Prerequisites
+
+* [Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+
+* The [Wikipedia detox line data tab separated file (wikiPedia-detox-250-line-data.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv).
+* The [Wikipedia detox line test tab separated file (wikipedia-detox-250-line-test.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv).
 
 ## Machine learning workflow
 
@@ -61,14 +68,14 @@ Predict the **sentiment** of a new website comment, either positive or negative,
 * Please refrain from adding nonsense to Wikipedia.
 * He is the best, and the article should say that.
 
-Classification type of task is best suited for this
+The classification machine learning task is best suited for this scenario.
 
-### About the classification model
+### About the classification task
 
-Classification is a machine learning method that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
+Classification is a machine learning task that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
 
 * Identify sentiment as positive or negative.
-* Classify email filters as spam, junk, or good.
+* Classify email as spam, junk, or good.
 * Determine whether a patient's lab sample is cancerous.
 * Categorize customers by their propensity to respond to a sales campaign.
 
@@ -76,13 +83,6 @@ Classification tasks are frequently one of the following types:
 
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
-
-## Prerequisites
-
-* [Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
-
-* The [Wikipedia detox line data tab separated file (wikiPedia-detox-250-line-data.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv).
-* The [Wikipedia detox line test tab separated file (wikipedia-detox-250-line-test.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv).
 
 ## Create a console application
 
@@ -96,7 +96,7 @@ Classification tasks are frequently one of the following types:
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-### Prepare and understand your data
+### Prepare your data
 
 1. Download the [WikiPedia detox-250-line-data.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv) and the [wikipedia-detox-250-line-test.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv) data sets and save them to the *Data* folder previously created. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is.
 
@@ -110,8 +110,8 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 You need to create three global variables to hold the path to the recently downloaded files:
 
-* `_datapath` has the path to the dataset used to train the model.
-* `_testdatapath` has the path to the dataset used to evaluate the model.
+* `_dataPath` has the path to the dataset used to train the model.
+* `_testDataPath` has the path to the dataset used to evaluate the model.
 * `_modelPath` has the path where the trained model is saved.
 
 Add the following code to the line right above the `Main` method to specify the recently downloaded files:
@@ -137,13 +137,16 @@ Remove the existing class definition and add the following code, which has two c
 In the *Program.cs* file, change the `Main` method signature by replacing `void` with `async Task`, as in the following example:
 
 ```csharp
-static async Task Main(string[] args)
+static async Task Main(string[] args) 
+{
+
+}
 ```
 
 You add `async` to `Main` with a <xref:System.Threading.Tasks.Task> return type because you're saving the model to a zip file later, and the program needs to wait until that external task completes.
 
 > [!NOTE]
->An *async main* method enables you to use `await` in your `Main` method. You can read more about the details in the
+> An *async main* method enables you to use `await` in your `Main` method. For more information, see the
 [async main](../../../docs/csharp/programming-guide/main-and-command-args/index.md) topic in the C# programming guide.
 
 Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
@@ -152,10 +155,10 @@ Replace the `Console.WriteLine("Hello World!")` line with the following code in 
 
 The `Train` method executes the following tasks:
 
-* Load or ingest the data.
-* Preprocess and featurize the data.
-* Train the model.
-* Predict sentiment based on test data.
+* Loads or ingests the data.
+* Preprocesses and featurizes the data.
+* Trains the model.
+* Predicts sentiment based on test data.
 
 Create the `Train` method, just after the `Main` method, using the following code:
 
@@ -202,7 +205,7 @@ Add the following code to the `Train` method:
 
 ### Save and Return the model trained to use for evaluation
 
-At this point, you have a model that can be integrated into any of your existing or new .NET applications, or continue to work with it. For this tutorial, save your model to a .zip file before returning, so add the following code to the next line in `Train`:
+At this point, you have a model that can be integrated into any of your existing or new .NET applications. To save your model to a .zip file before returning, add the following code to the next line in `Train`:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#10 "Save the model asynchronously and return the model")
 
@@ -223,10 +226,10 @@ public static void Evaluate(PredictionModel<SentimentData, SentimentPrediction> 
 
 The `Evaluate` method executes the following tasks:
 
-* Load the test dataset.
-* Create the binary evaluator.
-* Evaluate the model and create metrics.
-* Display the metrics.
+* Loads the test dataset.
+* Creates the binary evaluator.
+* Evaluates the model and create metrics.
+* Displays the metrics.
 
 Add a call to the new method from the `Main` method, right under the `Train` method call, using the following code:
 
@@ -263,10 +266,10 @@ public static void Predict(PredictionModel<SentimentData, SentimentPrediction> m
 
 The `Predict` method executes the following tasks:
 
-* Create test data.
-* Predict sentiment based on test data.
-* Combine test data and predictions for reporting.
-* Display the predicted results.
+* Creates test data.
+* Predicts sentiment based on test data.
+* Combines test data and predictions for reporting.
+* Displays the predicted results.
 
 Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
 
@@ -324,7 +327,7 @@ In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
 > * Select the appropriate machine learning task
-> * Prepare and understand your data
+> * Prepare your data
 > * Create the learning pipeline
 > * Load a classifier
 > * Train the model

@@ -2,7 +2,8 @@
 title: Use ML.NET to predict New York Taxi Fares (Regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
-ms.date: 05/21/2018
+ms.author: johalex
+ms.date: 06/05/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
@@ -128,7 +129,7 @@ var pipeline = new LearningPipeline();
 Next, load your data into the pipeline. Point to the `_datapath` created initially and specify the delimiter of the .csv file (,). Add the following code into the `Train()` method underneath the last step:
 
 ```csharp
-pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(separator: ","));
+pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(separator:','));
 ```
 
 You'll refer to the columns without the underscores in the code you're creating. Copy the `FareAmount` column into a new column called "Label" using the `ColumnCopier()` function. This column is the **Label**.

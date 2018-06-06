@@ -39,7 +39,7 @@ You create **name syntax nodes** to build the tree that represents `using System
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.QualifiedNameSyntax?displayProperty=nameWithType>, which represents a qualified name of the form `<left-name>.<right-identifier-or-generic-name>` such as `System.IO`.
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.AliasQualifiedNameSyntax?displayProperty=nameWithType>, which represents a name using an assembly extern alias such a `LibraryV2::Foo`.
 
-You use the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory.IdentifierName> method to create a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> node. Add the following code in your `Main` method in `Program.cs`:
+You use the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory.IdentifierName(System.String)> method to create a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> node. Add the following code in your `Main` method in `Program.cs`:
 
 [!code-csharp[create the system identifier](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateIdentifierName "Create and display the system name identifier")]
 
@@ -78,7 +78,7 @@ Create a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> no
 
 Run the program and look carefully at the output. The `newusing` hasn't been placed in the root tree. The original tree hasn't been changed.
 
-Add the following code using the <xref:Microsoft.CodeAnalysis.CompilationUnitSyntax.ReplaceNode%2A> extension method to create a new tree. The new tree is the result of replacing the existing import with the updated `newUsing` node. You assign this new tree to the existing `root` variable:
+Add the following code using the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension method to create a new tree. The new tree is the result of replacing the existing import with the updated `newUsing` node. You assign this new tree to the existing `root` variable:
 
 [!code-csharp[create a new root tree](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#TransformTree "Create the transformed root tree with the replaced namespace")]
 
@@ -86,7 +86,7 @@ Run the program again. This time the tree now correctly imports the `System.Coll
 
 ### Transform trees using `SyntaxRewriters`
 
-The `With*` and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.CompilationUnitSyntax.ReplaceNode%2A> methods provide convenient means to transform individual branches of a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class performs multiple transformations on a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class is a subclass of <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor%601?displayProperty=nameWithType>. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> applies a transformation to a specific type of <xref:Microsoft.CodeAnalysis.SyntaxNode>. You can apply transformations to multiple types of <xref:Microsoft.CodeAnalysis.SyntaxNode> objects wherever they appear in a syntax tree. The second project in this quickstart creates a command-line refactoring that removes explicit types in local variable declarations anywhere where type inference could be used.
+The `With*` and <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> methods provide convenient means to transform individual branches of a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class performs multiple transformations on a syntax tree. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> class is a subclass of <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor%601?displayProperty=nameWithType>. The <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> applies a transformation to a specific type of <xref:Microsoft.CodeAnalysis.SyntaxNode>. You can apply transformations to multiple types of <xref:Microsoft.CodeAnalysis.SyntaxNode> objects wherever they appear in a syntax tree. The second project in this quickstart creates a command-line refactoring that removes explicit types in local variable declarations anywhere where type inference could be used.
 
 Create a new C# **Stand-Alone Code Analysis Tool** project. In Visual Studio, right-click the `SyntaxTransformationQuickStart` solution node. Choose **Add** > **New Project** to display the **New Project dialog**. Under **Visual C#** > **Extensibility**, choose **Stand-Alone Code Analysis Tool**. Name your project `TransformationCS` and click OK.
 

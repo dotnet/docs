@@ -20,12 +20,12 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:Microsoft.Vsa.IVsaItem" /> objects that can be addressed either by name or by index.</summary>
+    <summary>Represents a collection of <see cref="T:Microsoft.JScript.Vsa.IVsaItem" /> objects that can be addressed either by name or by index.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
-    <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-    <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-    <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+    <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+    <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+    <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,10 +48,10 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -74,10 +74,10 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -103,10 +103,10 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -140,7 +140,7 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -167,10 +167,10 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -181,10 +181,10 @@
       <Docs>
         <summary>Gets an item from the collection.</summary>
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -214,9 +214,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -245,10 +245,10 @@
         <value>The item that is named <paramref name="itemName" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -259,10 +259,10 @@
       <Docs>
         <summary>Removes an item from the collection.</summary>
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -291,10 +291,10 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -323,10 +323,10 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
   </Members>

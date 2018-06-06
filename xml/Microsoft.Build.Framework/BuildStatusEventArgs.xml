@@ -96,7 +96,7 @@
         <param name="helpKeyword">The Help keyword associated with the event.</param>
         <param name="senderName">The source of the event.</param>
         <param name="eventTimestamp">The time the event was raised.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.TimeStamp" /> values.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Timestamp" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
         <param name="senderName">The source of the event.</param>
         <param name="eventTimestamp">The time the event was raised.</param>
         <param name="messageArgs">The event message.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.TimeStamp" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" /> values.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Timestamp" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

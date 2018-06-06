@@ -49,7 +49,7 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the metadata about the instance owner (currently has a one-to-one mapping to a service host) in a dictionary with an XName object as the key and an <see cref="T:System.Runtime.Persistence.InstanceValue" /> object as a value.</summary>
+        <summary>Gets the metadata about the instance owner (currently has a one-to-one mapping to a service host) in a dictionary with an XName object as the key and an <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> object as a value.</summary>
         <value>The metadata about the instance owner.</value>
         <remarks>To be added.</remarks>
       </Docs>

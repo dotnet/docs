@@ -2288,7 +2288,7 @@
 ## Remarks  
  Exception string: Invalid URL; ASPX file extension is missing.  
   
- Thrown by the <xref:Microsoft.Vsa.IVsaDTEngine.TargetURL%2A> property when the target URL to which the debugger is set is not valid. The property must be pointing to an ASPX file.  
+ Thrown by the <xref:Microsoft.JScript.Vsa.IVsaDTEngine.TargetURL%2A> property when the target URL to which the debugger is set is not valid. The property must be pointing to an ASPX file.  
   
  ]]></format>
         </remarks>

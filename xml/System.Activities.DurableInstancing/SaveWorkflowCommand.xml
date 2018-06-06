@@ -110,7 +110,7 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary with an instance key as the key and a dictionary of XName and <see cref="T:System.Runtime.Persistence.InstanceValue" /> pairs as the value.</summary>
+        <summary>Gets a dictionary with an instance key as the key and a dictionary of XName and <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> pairs as the value.</summary>
         <value>The dictionaries with key/value pairs.</value>
         <remarks>To be added.</remarks>
       </Docs>

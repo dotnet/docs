@@ -205,7 +205,7 @@
         <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.String,System.Activities.DynamicActivityProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Collections.ObjectModel.KeyedCollection" /> of the properties of the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <summary>Gets a <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> of the properties of the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
         <value>A key and value pair collection of activity properties.</value>
         <remarks>To be added.</remarks>
       </Docs>

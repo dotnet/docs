@@ -399,7 +399,7 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property whose value has changed.</param>
-        <summary>Raises the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> event when the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" /> hears that the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> has changed.</summary>
+        <summary>Raises the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> event when the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" /> hears that the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

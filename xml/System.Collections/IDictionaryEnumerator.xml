@@ -38,19 +38,17 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [Visual Basic, C#]  
-  
  The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
   
  Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
   
- Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position. At this position, calling the <xref:System.Collections.IEnumerator.Current%2A> property throws an exception. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position. At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
   
  <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
   
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -108,15 +106,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IDictionaryEnumerator.Entry%2A> property; otherwise, <xref:System.Collections.IDictionaryEnumerator.Entry%2A> is undefined.  
+
+ <xref:System.Collections.IDictionaryEnumerator.Entry%2A> is undefined under any of the following conditions:  
   
- <xref:System.Collections.IDictionaryEnumerator.Entry%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+-   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created. <xref:System.Collections.IEnumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IDictionaryEnumerator.Entry%2A>.  
   
- <xref:System.Collections.IDictionaryEnumerator.Entry%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IDictionaryEnumerator.Entry%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+-   The last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+-   The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Entry%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IDictionaryEnumerator.Entry%2A> to the next element.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
         <block subset="none" type="overrides">
           <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
         </block>
@@ -161,15 +163,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IDictionaryEnumerator.Key%2A> property; otherwise, <xref:System.Collections.IDictionaryEnumerator.Key%2A> is undefined.  
+ 
+ <xref:System.Collections.IDictionaryEnumerator.Key%2A> is undefined under any of the following conditions:  
   
- <xref:System.Collections.IDictionaryEnumerator.Key%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+-   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created. <xref:System.Collections.IEnumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IDictionaryEnumerator.Key%2A>.  
   
- <xref:System.Collections.IDictionaryEnumerator.Key%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IDictionaryEnumerator.Key%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+-   The last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+-   The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Key%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IDictionaryEnumerator.Key%2A> to the key of the next element in enumeration.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Value" />
@@ -211,15 +217,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IDictionaryEnumerator.Value%2A> property; otherwise, <xref:System.Collections.IDictionaryEnumerator.Value%2A> is undefined.  
+ <xref:System.Collections.IDictionaryEnumerator.Value%2A> is undefined under any of the following conditions:  
   
- <xref:System.Collections.IDictionaryEnumerator.Value%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+-   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created. <xref:System.Collections.IEnumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IDictionaryEnumerator.Value%2A>.  
   
- <xref:System.Collections.IDictionaryEnumerator.Value%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IDictionaryEnumerator.Value%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+-   The last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+-   The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Value%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IDictionaryEnumerator.Value%2A> to the value of the next element in enumeration.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Key" />

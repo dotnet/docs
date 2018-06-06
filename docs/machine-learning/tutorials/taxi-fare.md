@@ -98,7 +98,7 @@ Remove the existing class definition and add the following code, which has two c
 
 [!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#2 "Define the taxi trip and fare predictions classes")]
 
-`TaxiTrip` is the input data set class and has definitions for each of the data set columns. The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`fare_amount`) and a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
+`TaxiTrip` is the input data set class and has definitions for each of the data set columns. The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`FareAmount`) and a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
 
 Now go back to the **Program.cs** file. In `Main`, replace the `Console.WriteLine("Hello World!")` with the following code:
 
@@ -128,32 +128,32 @@ var pipeline = new LearningPipeline();
 Next, load your data into the pipeline. Point to the `_datapath` created initially and specify the delimiter of the .csv file (,). Add the following code into the `Train()` method underneath the last step:
 
 ```csharp
-pipeline.Add(new TextLoader<TaxiTrip>(_datapath, useHeader: true, separator: ","));
+pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(separator: ","));
 ```
 
-Copy the `fare_amount` column into a new column called "Label" using the `ColumnCopier()` function. This column is the **Label**.
+You'll refer to the columns without the underscores in the code you're creating. Copy the `FareAmount` column into a new column called "Label" using the `ColumnCopier()` function. This column is the **Label**.
 
 ```csharp
-pipeline.Add(new ColumnCopier(("fare_amount", "Label")));
+pipeline.Add(new ColumnCopier(("FareAmount", "Label")));
 ```
 
-Conduct some **feature engineering** to transform the data so that it can be used effectively for machine learning. The algorithm that trains the model requires **numeric** features, you transform the categorical data (`vendor_id`, `rate_code`, and `payment_type`) into numbers. The `CategoricalOneHotVectorizer()` function assigns a numeric key to the values in each of these columns. Transform your data by adding this code:
+Conduct some **feature engineering** to transform the data so that it can be used effectively for machine learning. The algorithm that trains the model requires **numeric** features, you transform the categorical data (`VendorId`, `RateCode`, and `PaymentType`) into numbers. The `CategoricalOneHotVectorizer()` function assigns a numeric key to the values in each of these columns. Transform your data by adding this code:
 
 ```csharp
-pipeline.Add(new CategoricalOneHotVectorizer("vendor_id",
-                                             "rate_code",
-                                             "payment_type"));
+pipeline.Add(new CategoricalOneHotVectorizer("VendorId",
+                                             "RateCode",
+                                             "PaymentType"));
 ```
 
 The last step in data preparation combines all of your **features** into one vector using the `ColumnConcatenator()` function. This necessary step helps the algorithm easily process your features. Add the following code:
 
 ```csharp
 pipeline.Add(new ColumnConcatenator("Features",
-                                    "vendor_id",
-                                    "rate_code",
-                                    "passenger_count",
-                                    "trip_distance",
-                                    "payment_type"));
+                                    "VendorId",
+                                    "RateCode",
+                                    "PassengerCount",
+                                    "TripDistance",
+                                    "PaymentType"));
 ```
 
 Notice that the `trip_time_in_secs` column isn't included. You already determined that it isn't a useful prediction feature.

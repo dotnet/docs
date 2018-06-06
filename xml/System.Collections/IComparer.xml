@@ -41,11 +41,11 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Collections.IComparer> interface to sort an <xref:System.Collections.ArrayList> object. In this example, the <xref:System.Collections.IComparer> interface is implemented using the <xref:System.Collections.CaseInsensitiveComparer> class to reverse the order of the contents of the <xref:System.Collections.ArrayList>.  
+
+The following example uses the <xref:System.Collections.IComparer> interface to sort a string array. In this example, the <xref:System.Collections.IComparer.Compare%2A> method is implemented using the <xref:System.Collections.CaseInsensitiveComparer> class to reverse the order of the contents of the array.  
   
- [!code-cpp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CPP/arraylist_sort2.cpp#1)]
- [!code-csharp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CS/arraylist_sort2.cs#1)]
- [!code-vb[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/VB/arraylist_sort2.vb#1)]  
+[!code-csharp[sorting-an-array](~/samples/snippets/csharp/api/system.collections/icomparer/reverse.cs)]
+[!code-vb[sorting-an-array](~/samples/snippets/visualbasic/api/system.collections/icomparer/reverse.vb)]  
   
  ]]></format>
     </remarks>
@@ -92,25 +92,9 @@
         <param name="x">The first object to compare.</param>
         <param name="y">The second object to compare.</param>
         <summary>Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
-        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />:<br/>   - If less than 0, <paramref name="x" /> is less than <paramref name="y" />.<br/>   - If 0, <paramref name="x" /> equals <paramref name="y" />.<br/>   - If greater than 0, <paramref name="x" /> is greater than <paramref name="y" />. 
   
- <list type="table"><listheader><term> Value  
-  
- </term><description> Meaning  
-  
- </description></listheader><item><term> Less than zero  
-  
- </term><description><paramref name="x" /> is less than <paramref name="y" />.  
-  
- </description></item><item><term> Zero  
-  
- </term><description><paramref name="x" /> equals <paramref name="y" />.  
-  
- </description></item><item><term> Greater than zero  
-  
- </term><description><paramref name="x" /> is greater than <paramref name="y" />.  
-  
- </description></item></list></returns>
+        </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -122,12 +106,12 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Collections.IComparer> interface to sort an <xref:System.Collections.ArrayList> object. In this example, the <xref:System.Collections.IComparer> interface is implemented using the <xref:System.Collections.CaseInsensitiveComparer> class to reverse the order of the contents of the <xref:System.Collections.ArrayList>.  
+
+The following example uses the <xref:System.Collections.IComparer> interface to sort a string array. In this example, the <xref:System.Collections.IComparer.Compare%2A> method is implemented using the <xref:System.Collections.CaseInsensitiveComparer> class to reverse the order of the contents of the array.  
   
- [!code-cpp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CPP/arraylist_sort2.cpp#1)]
- [!code-csharp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CS/arraylist_sort2.cs#1)]
- [!code-vb[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/VB/arraylist_sort2.vb#1)]  
-  
+[!code-csharp[sorting-an-array](~/samples/snippets/csharp/api/system.collections/icomparer/reverse.cs)]
+[!code-vb[sorting-an-array](~/samples/snippets/visualbasic/api/system.collections/icomparer/reverse.vb)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Neither <paramref name="x" /> nor <paramref name="y" /> implements the <see cref="T:System.IComparable" /> interface.  

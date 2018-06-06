@@ -45,7 +45,7 @@ If you synchronize access to the array before enumerating the span, as the revis
 
 Unlike some other enumerator structures in .NET, the <xref:System.Span%601.Enumerator>:
 
-- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface. This is because <ref:System.Span%601> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type).
+- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface. This is because <xref:System.Span%601.Enumerator> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type).
 
 - Does not include a `Reset` method, which can set the enumerator to its initial position before the first element in the span. (The <xref:System.Collections.IEnumerator.Reset?displayProperty=nameWithType> method must be implemented as part of the interface, but most implementors either throw an exception or provide no implementation.) 
  

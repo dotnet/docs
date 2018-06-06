@@ -32,7 +32,7 @@ Add the following using directive to the top of the `Program.cs` file to import 
 
 [!code-csharp[import the SyntaxFactory class](../../../../samples/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#StaticUsings "import the Syntax Factory class and the System.Console class")]
 
-You create **name syntax nodes** to build the tree that represents `using System.Collections.Generic;'. <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> is the base class for four types of names that appear in C#. You compose these four types of names together to create any name that can appear in the C# language:
+You create **name syntax nodes** to build the tree that represents `using System.Collections.Generic;`. <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax> is the base class for four types of names that appear in C#. You compose these four types of names together to create any name that can appear in the C# language:
 
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType>, which represents simple single identifier names like `System` and `Microsoft`.
 * <xref:Microsoft.CodeAnalysis.CSharp.Syntax.GenericNameSyntax?displayProperty=nameWithType>, which represents a generic type or method name such as `List<int>`.

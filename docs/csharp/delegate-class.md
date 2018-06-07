@@ -109,10 +109,8 @@ Suppose you wanted to sort a list of strings by their length. Your
 comparison function might be the following:
 
 ```csharp
-private static int CompareLength(string left, string right)
-{
-    return left.Length.CompareTo(right.Length);
-}
+private static int CompareLength(string left, string right) =>
+    left.Length.CompareTo(right.Length);
 ```
 
 The method is declared as a private method. That's fine. You may not

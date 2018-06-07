@@ -29,10 +29,10 @@ If all three components are present, the path is absolute. If no volume or drive
 
 |Path  |Description  |
 | -- | -- |
-| C:\\Documents\Newsletters\Summer2018.pdf | An absolute file path from the root of drive C: |
-| \\Program Files\\Custom Utilities\\StringFinder.exe | An absolute path from the root of the current drive. |
-| 2018\\January.xlsx | A relative path to a file in a subdirectory of the current directory. |
-| ..\\Publications\\TravelBrochure.pdf | A relative path to file in a directory that is a peer of the current directory. |
+| `C:\Documents\Newsletters\Summer2018.pdf` | An absolute file path from the root of drive C: |
+| `\Program Files\Custom Utilities\StringFinder.exe` | An absolute path from the root of the current drive. |
+| `2018\January.xlsx` | A relative path to a file in a subdirectory of the current directory. |
+| `..\Publications\TravelBrochure.pdf` | A relative path to file in a directory that is a peer of the current directory. |
 
 ## UNC paths
 
@@ -47,32 +47,36 @@ The following are some examples of UNC paths:
 
 |Path  |Description  |
 | -- | -- |
-| \\\\system07\\C$\\ | The root directory of the C: drive on `system07`. |
-| \\Server2\\Share\\Test\\Foo.txt | The Foo.txt file in the Test directory of the \\\\Server2\\Share volume.|
+| `\\system07\C$\` | The root directory of the C: drive on `system07`. |
+| `\\Server2\Share\Test\Foo.txt` | The Foo.txt file in the Test directory of the \\\\Server2\\Share volume.|
 
-UNC paths are always absolute. You can use relative paths only by mapping a UNC path to a drive letter.
+UNC paths must always be fully qualified. They can include relative directory segments (`.` and `..`), but these must be part of a fully qualified path. You can use relative paths only by mapping a UNC path to a drive letter.
 
 ## DOS device paths
 
-The Windows operating system has a unified object model that points to all resources, including files. These object paths are not directly accessible from the Windows APIs (such as the Console windows and Windows Explorer). They are, however, exposed to the Win32 layer through a special folder of symbolic links that legacy DOS and UNC paths are mapped to. This special folder is accessed via the DOS device path syntax, which is one of:
+The Windows operating system has a unified object model that points to all resources, including files. These object paths are not directly accessible from the Windows APIs. They are, however, exposed to the Win32 layer through a special folder of symbolic links that legacy DOS and UNC paths are mapped to and are accessible from the console window. This special folder is accessed via the DOS device path syntax, which is one of:
 
-\\.\C:\Test\Foo.txt   
-\\?\C:\Test\Foo.txt
+`\\.\C:\Test\Foo.txt`  
+`\\?\C:\Test\Foo.txt`
 
 > [!NOTE]
 > DOS device path syntax is supported on .NET implementations running on Windows starting with .NET Core 1.1 and .NET Framework 4.6.2.
 
 The DOS device path consists of the following components:
 
-- `\\.\` or `\\?\`, which identifies the path as a DOS device path.
-- A symbolic link to the "real" device object (C: in this case). 
+- The device path specifier (`\\.\` or `\\?\`), which identifies the path as a DOS device path.
+- A symbolic link to the "real" device object (C: in this case).
+
+   The first segment of the DOS device path after the device path specifier identifies the volume or drive. (For example, `\\?\C:\` and `\\.\BootPartition\`.)
 
    There is a specific link for UNCs that is called, not surprisingly, `UNC`. For example:
 
-      \\.\UNC\Server\Share\Test\Foo.txt   
-      \\?\UNC\Server\Share\Test\Foo.txt
+      `\\.\UNC\Server\Share\Test\Foo.txt`
+      `\\?\UNC\Server\Share\Test\Foo.txt`
 
-Like UNCs, DOS device paths are fully qualified by definition. Current directories never enter into their usage.
+    For device UNCs, the server/share portion is forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(String,String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
+
+Like UNCs, DOS device paths are fully qualified by definition. Relative directory segments (`.` and `,,`) are not allowed. Current directories never enter into their usage.
 
 ## Example: Ways to refer to the same file
 
@@ -109,7 +113,9 @@ The type of the path determines whether or not a current directory is applied in
 
 ### Handling legacy devices
 
-If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned.
+If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned. 
+
+A path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`.
 
 ### Applying the current directory
 
@@ -149,7 +155,10 @@ Along with the runs of separators and relative segments removed earlier, some ad
 
 - If the path doesn't end in a separator, all trailing periods and spaces (U+0020) are removed. If the last segment is simply a single or double period, it falls under the relative components rule above. 
 
-   This rule mans that you can create a directory name with a trailing space by adding a trailing separator after the space. Trailing spaces can make it difficult to access a directory.
+   This rule mans that you can create a directory name with a trailing space by adding a trailing separator after the space.  
+
+   > [!IMPORTANT]
+   > You should **never** create a directory or filename with a trailing space. Trailing spaces can make it difficult or impossible to access a directory, and applications commonly fail when attempting to handle directories or files whose names include trailing spaces.
 
 ## Skipping normalization
 

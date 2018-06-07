@@ -3048,16 +3048,16 @@ ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
 # Sorry, we don&#39;t have specifics on this Visual Basic error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
   
- [Visual Basic Language](http://go.microsoft.com/fwlink/?LinkId=145963)  
+ [Visual Basic Language](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vblanguage)  
  Provides a forum for questions about and general discussions of the Visual Basic language syntax and compiler.  
   
- [Visual Basic Interop and Upgrade](http://go.microsoft.com/fwlink/?LinkId=145966)  
+ [Visual Basic Interop and Upgrade](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vbinterop)  
  Provides a forum for questions about and issues with upgrading to Visual Basic and working with interoperability features.  
   
- [Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)  
+ [Visual Basic IDE](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vbide)  
  Provides a forum for questions about how to work in the Visual Studio environment.  
   
- [Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)  
+ [Visual Basic General](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vbgeneral)  
  Provides a forum for questions about and issues with Visual Basic that are not discussed in other forums.  
   
  [StackOverflow](http://stackoverflow.com/questions/tagged/vb.net)  

@@ -3,7 +3,7 @@ title: When to choose .NET Framework for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET Framework for Docker containers
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/18/2017
+ms.date: 06/07/2018
 ---
 # When to choose .NET Framework for Docker containers
 
@@ -17,15 +17,15 @@ In most cases for this scenario, you will not need to migrate your existing appl
 
 ## Using third-party .NET libraries or NuGet packages not available for .NET Core
 
-Third-party libraries are quickly embracing the [.NET Standard](../../net-standard.md), which enables code sharing across all .NET flavors, including .NET Core. With the .NET Standard Library 2.0 and beyond the API surface compatibility across different frameworks has become significantly larger and in .NET Core 2.0 applications can also directly reference existing .NET Framework libraries (see [compat shim](https://github.com/dotnet/standard/blob/master/docs/faq.md#how-does-net-standard-versioning-work)).
+Third-party libraries are quickly embracing the [.NET Standard](../../net-standard.md), which enables code sharing across all .NET flavors, including .NET Core. With the .NET Standard Library 2.0 and beyond the API surface compatibility across different frameworks has become significantly larger and in .NET Core 2.x applications can also directly reference existing .NET Framework libraries (see [compat shim](https://github.com/dotnet/standard/blob/master/docs/faq.md#how-does-net-standard-versioning-work)).
 
 However, even with that exceptional progression since .NET Standard 2.0 and .NET Core 2.0, there might be cases where certain NuGet packages need Windows to run and might not support .NET Core. If those packages are critical for your application, then you will need to use .NET Framework on Windows Containers.
 
 ## Using .NET technologies not available for .NET Core 
 
-Some .NET Framework technologies are not available in the current version of .NET Core (version 2.0 as of this writing). Some of them will be available in later .NET Core releases (.NET Core 2.x), but others do not apply to the new application patterns targeted by .NET Core and might never be available.
+Some .NET Framework technologies are not available in the current version of .NET Core (version 2.1 as of this writing). Some of them will be available in later .NET Core releases (.NET Core 2.x), but others do not apply to the new application patterns targeted by .NET Core and might never be available.
 
-The following list shows most of the technologies that are not available in .NET Core 2.0:
+The following list shows most of the technologies that are not available in .NET Core 2.1:
 
 -   ASP.NET Web Forms. This technology is only available on .NET Framework. Currently there are no plans to bring ASP.NET Web Forms to .NET Core.
 

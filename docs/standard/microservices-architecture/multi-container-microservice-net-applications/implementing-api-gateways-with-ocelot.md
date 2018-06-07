@@ -7,7 +7,7 @@ ms.date: 06/06/2018
 ---
 # Implementing API Gateways with Ocelot
 
-In the reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), it is using [Ocelot](https://github.com/ThreeMammals/Ocelot) because it is a simple and lightweight API Gateway that you can deploy anywhere along with your microservices/containers such as in any of the following environments used by eShopOnContainers.
+The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is using [Ocelot](https://github.com/ThreeMammals/Ocelot) because Ocelot is a simple and lightweight API Gateway that you can deploy anywhere along with your microservices/containers such as in any of the following environments used by eShopOnContainers.
 
 -	Docker host, in your local dev PC, on-premises or in the cloud
 -	Kubernetes cluster, on-premises or in managed cloud such as Azure Kubernetes Service (AKS)
@@ -22,24 +22,24 @@ The following architecture diagram shows how API Gateways are implemented with O
 
 **Figure 8-27.** eShopOnContainers architecture with API Gateways
 
-That diagram shows how the whole application is deployed into a single Docker host or development PC with “Docker for Windows” or “Docker for Mac”. However, deploying into any orchestrator would be pretty similar but any container in the diagram could be scaled-out in the orchestrator and the infrastructure assets such as databases, cache and message brokers should be offloaded from the orchestrator and deployed into high available systems for infrastructure, like Azure SQL Database, Azure Cosmos DB, Azure Redis, Azure Service Bus, or any HA clustering solution on-premises.
+That diagram shows how the whole application is deployed into a single Docker host or development PC with “Docker for Windows” or “Docker for Mac”. However, deploying into any orchestrator would be pretty similar but any container in the diagram could be scaled-out in the orchestrator and the infrastructure assets such as databases, cache, and message brokers should be offloaded from the orchestrator and deployed into high available systems for infrastructure, like Azure SQL Database, Azure Cosmos DB, Azure Redis, Azure Service Bus, or any HA clustering solution on-premises.
 
-As you can also notice in the diagram, having several API Gateways allows the multiple development teams to be autonomous (in this case Marketing vs. Shopping) when developing and deploying their microservices plus their own related API Gateways. If you had a single monolithic API Gateway that would mean a single point to be updated by multiple development teams which could couple all the microservices with a single part of the application.
+As you can also notice in the diagram, having several API Gateways allows multiple development teams to be autonomous (in this case Marketing features vs. Shopping features) when developing and deploying their microservices plus their own related API Gateways. If you had a single monolithic API Gateway that would mean a single point to be updated by several development teams, which could couple all the microservices with a single part of the application.
 
-Going much further in the design, sometimes a fine-grained API Gateway can also be limited to a single business microservice depending on the chosen architecture. Having the API Gateway’s boundaries dictated by the business or domain will help you to get a better design. For instance, fine granularity in the API Gateway tier can be especially useful for more advanced composite UI applications based on microservices, because the concept of a fine-grained API Gateway is similar to a UI composition service. We discuss this topic in the section [Creating composite UI based on microservices](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/microservice-based-composite-ui-shape-layout).
+Going much further in the design, sometimes a fine-grained API Gateway can also be limited to a single business microservice depending on the chosen architecture. Having the API Gateway’s boundaries dictated by the business or domain will help you to get a better design. For instance, fine granularity in the API Gateway tier can be especially useful for more advanced composite UI applications based on microservices, because the concept of a fine-grained API Gateway is similar to a UI composition service. You can read further information about this topic in the section [Creating composite UI based on microservices](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/microservice-based-composite-ui-shape-layout).
 
-Therefore, for many medium- and large-size applications, using a custom-built API Gateway product is usually a good approach, but not as a single monolithic aggregator or unique central custom API Gateway unless that API Gateway allows multiple independent configuration areas for the multiple development teams with autonomous microservices.
+Therefore, for many medium- and large-size applications, using a custom-built API Gateway product is usually a good approach, but not as a single monolithic aggregator or unique central custom API Gateway unless that API Gateway allows multiple independent configuration areas for the several development teams creating autonomous microservices.
 
 
-### Sample microservices/containers to re-route through the API Gateways
+### Sample microservices/containers to reroute through the API Gateways
 
-As an example, eShopOnContainers has around 6 internal microservice-types that have to be published through the API Gateways, as shown in the following image.
+As an example, 'eShopOnContainers' has around six internal microservice-types that have to be published through the API Gateways, as shown in the following image.
  
 ![](./media/image29.png)
 
 **Figure 8-28.** Microservice folders in eShopOnContainers solution in Visual Studio
 
-In the case of the Identity service, in our design we left it out of the API Gateway routing, but with Ocelot it is also possible to include it as part of the re-routing lists.
+About the Identity service, in the design it is left out of the API Gateway routing because it is the only cross-cutting concern in the system, but with Ocelot it is also possible to include it as part of the rerouting lists.
 
 All those services are currently implemented as ASP.NET Core Web API services, as you can tell because of the code. Let’s focus on one of the microservices like the Catalog microservice code.
 
@@ -47,7 +47,7 @@ All those services are currently implemented as ASP.NET Core Web API services, a
 
 **Figure 8-29.** Sample Web API microservice (Catalog microservice)
 
-You can see this is a pretty typical ASP.NET Core Web API project with several controllers and methods like in the following code.
+You can see that the Catalog microservice is a typical ASP.NET Core Web API project with several controllers and methods like in the following code.
 
 ```csharp
 [HttpGet]
@@ -71,7 +71,7 @@ public async Task<IActionResult> GetItemById(int id)
     return NotFound();
 }
 ```
-The Http request will end up running that kind of C# code accessing the microservice database, etc.
+The Http request will end up running that kind of C# code accessing the microservice database plus any additional action.
 
 In regards the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice’s container has always an internal port (usually port 80) specified in its dockerfile, as in the following dockerfile.
 
@@ -82,7 +82,7 @@ EXPOSE 80
 ```
 But that port is internal within the Docker host, so it cannot be reached by the client apps, only to the external ports (if any) provided when deploying with docker-compose.
 
-Those external ports should not be published when deploying into production environment because that’s why we’re using the API Gateway, to hide the direct communication to the microservices.
+Those external ports should not be published when deploying into production environment, and that’s why you want to use the API Gateway, to avoid the direct communication to the microservices.
 
 However, when developing, it might be useful to be able to access the microservice/container directly and run it through Swagger. That’s why in eShopOnContainers the external ports are still specified even when those won’t be used by the API Gateway or the client apps.
 

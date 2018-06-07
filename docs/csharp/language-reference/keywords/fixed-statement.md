@@ -19,11 +19,11 @@ You can initialize a pointer by using an array, a string, a fixed-size buffer, o
 
 [!code-csharp[Initializing fixed size buffers](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#2)]
 
-Starting with C# 7.3, the `fixed` statement operates on additional types beyond arrays, strings, fixed-size buffers, or unmanaged variables. Any type that implements a method named `DangerousGetPinnableReference` can be pinned. The `DangerousGetPinnableReference` must return a `ref` variable to an unmanaged type. See the topic on [pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md) for more information. The .NET types <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> introduced in .NET Core 2.0 make use of this pattern and can be pinned. This is shown in the following example:
+Starting with C# 7.3, the `fixed` statement operates on additional types beyond arrays, strings, fixed-size buffers, or unmanaged variables. Any type that implements a method named `GetPinnableReference` can be pinned. The `GetPinnableReference` must return a `ref` variable to an unmanaged type. See the topic on [pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md) for more information. The .NET types <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> introduced in .NET Core 2.0 make use of this pattern and can be pinned. This is shown in the following example:
 
 [!code-csharp[Accessing fixed memory](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#FixedSpan)]
 
-If you are creating types that should participate in this pattern, see <xref:System.Span%601.DangerousGetPinnableReference?displayProperty=nameWithType> for an example of implementing the pattern.
+If you are creating types that should participate in this pattern, see <xref:System.Span%601.GetPinnableReference?displayProperty=nameWithType> for an example of implementing the pattern.
 
 Multiple pointers can be initialized in one statement if they are all the same type:
 

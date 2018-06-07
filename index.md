@@ -28,7 +28,7 @@ ms.custom: "updateeachrelease"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.0">
+                <a href="/dotnet/api/?view=netcore-2.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

@@ -1,7 +1,7 @@
 ---
 title: "Dependency properties overview"
 description: A property that is backed by the WPF property system is known as a dependency property. This overview describes the WPF property system and the capabilities of a dependency property.
-ms.date: "06/03/2018"
+ms.date: "06/06/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 This topic assumes that you have some basic knowledge of the .NET type system and object-oriented programming. In order to follow the examples in this topic, you should also understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## Dependency properties and CLR properties
- In WPF, properties are typically exposed as standard .NET [properties]((../../../standard/base-types/common-type-system.md#Properties)). At a basic level, you could interact with these properties directly and never know that they are implemented as a dependency property. However, you should become familiar with some or all of the features of the WPF property system, so that you can take advantage of these features.
+ In WPF, properties are typically exposed as standard .NET [properties](../../../standard/base-types/common-type-system.md#Properties). At a basic level, you could interact with these properties directly and never know that they are implemented as a dependency property. However, you should become familiar with some or all of the features of the WPF property system, so that you can take advantage of these features.
 
 The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preference, just-in-time property determination mechanisms such as data binding and animations/storyboards, multiple-use templates such as resources and styles, or values known through parent-child relationships with other elements in the element tree. In addition, a dependency property can be implemented to provide self-contained validation, default values, callbacks that monitor changes to other properties, and a system that can coerce property values based on potentially runtime information. Derived classes can also change some specific characteristics of an existing property by overriding dependency property metadata, rather than overriding the actual implementation of existing properties or creating new properties.
 

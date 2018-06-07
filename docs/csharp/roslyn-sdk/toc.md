@@ -7,11 +7,11 @@
 ## Quick Starts
 ### [Syntax analysis](get-started/syntax-analysis.md)
 ### [Semantic analysis](get-started/semantic-analysis.md)
+### [Syntax Transformation](get-started/syntax-transformation.md)
+
 
 <!-- Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs -->
 <!--
-### Get started with semantic analysis
-### Get started with Syntax transformation
 ### Get started writing custom analyzers and code fixes
 
 <!--

@@ -143,7 +143,7 @@ This sample demonstrates how to implement a custom X.509 Certificate Validator. 
   
  The client implementation sets the client certificate to use.  
   
-```cs  
+```csharp
 // Create a client with Certificate endpoint configuration  
 CalculatorClient client = new CalculatorClient("Certificate");  
 try  
@@ -194,7 +194,7 @@ catch (Exception e)
   
  This sample uses a custom X509CertificateValidator to validate certificates. The sample implements CustomX509CertificateValidator, derived from <xref:System.IdentityModel.Selectors.X509CertificateValidator>. See documentation about <xref:System.IdentityModel.Selectors.X509CertificateValidator> for more information. This particular custom validator sample implements the Validate method to accept any X.509 certificate that is self-issued as shown in the following code.  
   
-```cs  
+```csharp
 public class CustomX509CertificateValidator : X509CertificateValidator  
 {  
   public override void Validate ( X509Certificate2 certificate )  
@@ -208,7 +208,7 @@ public class CustomX509CertificateValidator : X509CertificateValidator
   
  Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.  
   
-```cs  
+```csharp
 serviceHost.Credentials.ClientCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;  
 serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValidator = new CustomX509CertificateValidator();  
 ```  

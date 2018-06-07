@@ -185,7 +185,7 @@
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> or <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object representing the public key.</summary>
+        <summary>Gets an <see cref="T:System.Security.Cryptography.RSA" /> derived object or a <see cref="T:System.Security.Cryptography.DSA" /> derived object representing the public key.</summary>
         <value>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> object representing the public key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

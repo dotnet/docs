@@ -24,7 +24,7 @@ var linqExperts = from p in programmers
 Same example using the `IEnumerable<T>` API:
 
 ```csharp
-var linqExperts = programmers.Where(p => IsNewToLINQ)
+var linqExperts = programmers.Where(p => p.IsNewToLINQ)
                              .Select(p => new LINQExpert(p));
 ```
 

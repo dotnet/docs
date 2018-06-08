@@ -8,7 +8,8 @@ This repository contains the conceptual documentation for .NET. The [.NET docume
 
 Issues and tasks for all three of those repositories are tracked here.
 
-We welcome contributions to help us improve and complete the .NET docs. To contribute, see the [Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues).
+We welcome contributions to help us improve and complete the .NET docs. To contribute, see the [Contributing Guide](https://docs.microsoft.com/contribute/) and the [issues list](https://github.com/dotnet/docs/issues).
+ 
 
 We anticipate that [Xamarin](https://docs.microsoft.com/xamarin), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](http://docs.unity3d.com/Manual/index.html) will also use this documentation.
 

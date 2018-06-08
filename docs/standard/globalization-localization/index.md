@@ -1,5 +1,5 @@
 ---
-title: "Globalizing and Localizing .NET Applications"
+title: "Globalizing and localizing .NET applications"
 ms.date: "06/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -14,13 +14,13 @@ ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Globalizing and Localizing .NET Applications
+# Globalizing and localizing .NET applications
 Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb978433.aspx), including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.  
   
  [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
  This step involves designing and coding an application that is culture-neutral and language-neutral, and that supports localized user interfaces and regional data for all users. It involves making design and programming decisions that are not based on culture-specific assumptions. While a globalized application is not localized, it nevertheless is designed and written so that it can be subsequently localized into one or more languages with relative ease.  
   
- [Localizability Review](../../../docs/standard/globalization-localization/localizability-review.md)  
+ [Localizability review](../../../docs/standard/globalization-localization/localizability-review.md)  
  This step involves reviewing an application's code and design to ensure that it can be localized easily and to identify potential roadblocks for localization, and verifying that the application's executable code is separated from its resources. If the globalization stage was effective, the localizability review will confirm the design and coding choices made during globalization. The localizability stage may also identify any remaining issues so that an application's source code doesn't have to be modified during the localization stage.  
   
  [Localization](../../../docs/standard/globalization-localization/localization.md)  
@@ -36,20 +36,20 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
   
  For additional information, see the [Globalization documentation](/globalization/).  
   
-## In This Section  
+## In this section  
  [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
  Discusses the first stage of creating a world-ready application, which involves designing and coding an application that is culture-neutral and language-neutral.  
   
- [Localizability Review](../../../docs/standard/globalization-localization/localizability-review.md)  
+ [Localizability review](../../../docs/standard/globalization-localization/localizability-review.md)  
  Discusses the second stage of creating a localized application, which involves identifying potential roadblocks to localization.  
   
  [Localization](../../../docs/standard/globalization-localization/localization.md)  
  Discusses the final stage of creating a localized application, which involves customizing an application's user interface for specific regions or cultures.  
   
- [Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/culture-insensitive-string-operations.md)  
+ [Culture-insensitive string operations](../../../docs/standard/globalization-localization/culture-insensitive-string-operations.md)  
  Describes how to use .NET methods and classes that are culture-sensitive by default to obtain culture-insensitive results.  
   
- [Best Practices for Developing World-Ready Applications](../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md)  
+ [Best practices for developing world-ready applications](../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md)  
  Describes the best practices to follow for globalization, localization, and developing world-ready ASP.NET applications.  
   
 ## Reference  

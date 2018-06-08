@@ -1,6 +1,6 @@
 ---
 title: Implementing API Gateways with Ocelot
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing API Gateways with Ocelot, an Open Source lightweight API Gateway based on .NET Core
+description: .NET Microservices Architecture for Containerized .NET Applications | In this section you can learn how to implement API Gateways with Ocelot, which is an open sourced and lightweight API Gateway based on .NET Core. You will also learn how to use Ocelot in a container-based environment.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/06/2018
@@ -14,11 +14,11 @@ The reference microservice application [eShopOnContainers](https://github.com/do
 -	Service Fabric cluster, on-premises or in the cloud
 -	Service Fabric mesh, as PaaS/Serverless in Azure
 
-## Architecting and designing your API Gateways
+## Architect and design your API Gateways
 
 The following architecture diagram shows how API Gateways are implemented with Ocelot in eShopOnContainers.
 
-![](./media/image28.png)
+![eShopOnContainers architecture diagram showing client apps, microservices and the API Gateways in between](./media/image28.png)
 
 **Figure 8-27.** eShopOnContainers architecture with API Gateways
 
@@ -446,10 +446,8 @@ namespace OcelotApiGw
     {
         private readonly IConfiguration _cfg;
 
-        public Startup(IConfiguration configuration)
-        {
-            _cfg = configuration;
-        }
+        public Startup(IConfiguration configuration) => _cfg = configuration;
+
         public void ConfigureServices(IServiceCollection services)
         {
             var identityUrl = _cfg.GetValue<string>("IdentityUrl");
@@ -476,7 +474,10 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
     [Route("api/v1/[controller]")]
     [Authorize]
     public class BasketController : Controller
-    {   //...
+    {   
+      //...
+    }
+}
 ```
 
 The ValidAudiences such as “basket” are correlated with the audience defined in each microservice with `AddJwtBearer()` at the ConfigureServices() of the Startup class, such as in the code below.

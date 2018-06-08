@@ -1,20 +1,20 @@
 ---
-title: "Globalizing and Localizing .NET Framework Applications"
-ms.date: "03/30/2017"
+title: "Globalizing and Localizing .NET Applications"
+ms.date: "06/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "international applications [.NET Framework]"
-  - "globalization [.NET Framework], encoding"
+  - "international applications [.NET]"
+  - "globalization [.NET], encoding"
   - "global applications"
   - "internationalization"
   - "world-ready applications"
-  - "application development [.NET Framework], globalization"
+  - "application development [.NET], globalization"
   - "multilingual application development"
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Globalizing and Localizing .NET Framework Applications
+# Globalizing and Localizing .NET Applications
 Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb978433.aspx), including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.  
   
  [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
@@ -32,7 +32,7 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
   
 -   It results in localized applications that are more stable and have fewer bugs.  
   
- The .NET Framework provides extensive support for the development of world-ready and localized applications. In particular, many type members in the .NET Framework class library aid globalization by returning values that reflect the conventions of either the current user's culture or a specified culture. Also, the .NET Framework supports satellite assemblies, which facilitate the process of localizing an application.  
+ .NET provides extensive support for the development of world-ready and localized applications. In particular, many type members in the .NET class library aid globalization by returning values that reflect the conventions of either the current user's culture or a specified culture. Also, .NET supports satellite assemblies, which facilitate the process of localizing an application.  
   
  For additional information, see the [Globalization documentation](/globalization/).  
   
@@ -47,7 +47,7 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
  Discusses the final stage of creating a localized application, which involves customizing an application's user interface for specific regions or cultures.  
   
  [Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/culture-insensitive-string-operations.md)  
- Describes how to use .NET Framework methods and classes that are culture-sensitive by default to obtain culture-insensitive results.  
+ Describes how to use .NET methods and classes that are culture-sensitive by default to obtain culture-insensitive results.  
   
  [Best Practices for Developing World-Ready Applications](../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md)  
  Describes the best practices to follow for globalization, localization, and developing world-ready ASP.NET applications.  

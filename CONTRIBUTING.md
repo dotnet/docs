@@ -2,6 +2,9 @@
 
 Thank you for your interest in contributing to the .NET documentation!
 
+> We're in the process of moving our guidelines into a site-wide contribution guide. 
+> For more information, see [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute/).
+
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
 * [Process for contributing](#process-for-contributing)

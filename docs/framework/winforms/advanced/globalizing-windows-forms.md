@@ -16,16 +16,16 @@ ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
 
 ## In this section
 
-[Encoding and Windows Forms Globalization](encoding-and-windows-forms-globalization.md)
+[Encoding and Windows Forms Globalization](encoding-and-windows-forms-globalization.md)  
 Describes full Unicode support and its implications.
 
-[International Fonts in Windows Forms and Controls](international-fonts-in-windows-forms-and-controls.md)
+[International Fonts in Windows Forms and Controls](international-fonts-in-windows-forms-and-controls.md)  
 Explains when and how to select fonts for display of international characters on Windows Forms.
 
-[Bi-Directional Support for Windows Forms Applications](bi-directional-support-for-windows-forms-applications.md)
+[Bi-Directional Support for Windows Forms Applications](bi-directional-support-for-windows-forms-applications.md)  
 Explains how to create Windows-based applications that support bi-directional (right-to-left) languages.
 
-[Display of Asian Characters with the ImeMode Property](display-of-asian-characters-with-the-imemode-property.md)
+[Display of Asian Characters with the ImeMode Property](display-of-asian-characters-with-the-imemode-property.md)  
 Introduces the `ImeMode` property, which is used to control the type of input a Windows Form or control accepts.
 
 ## Related sections

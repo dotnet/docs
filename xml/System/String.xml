@@ -5569,7 +5569,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
 ## Remarks  
   
 > [!TIP]
->  Rather than calling the <xref:System.String.GetEnumerator%2A> method to retrieve a <xref:System.CharEnumerator> object that you then use to enumerate a string, you should instead use your language's iteration construct ( in C#,  in C++/CLR, and  in Visual Basic).                   [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) in C#,                  [for each](http://msdn.microsoft.com/library/0c3a364b-2747-43f3-bb8d-b7d3b7023f79) in C++/CLR, and                  [For Each](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) in Visual Basic).  
+> Rather than calling the <xref:System.String.GetEnumerator%2A> method to retrieve a <xref:System.CharEnumerator> object that you then use to enumerate a string, you should instead use your language's iteration construct (in C#, in C++/CLR, and in Visual Basic). [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) in C#, [for each](/cpp/dotnet/for-each-in) in C++/CLR, and [For Each](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) in Visual Basic).
   
  This method enables you to iterate the individual characters in a string. For example, the Visual Basic `For Each` and C# `foreach` statements invoke this method to return a <xref:System.CharEnumerator> object that can provide read-only access to the characters in this string instance.  
   

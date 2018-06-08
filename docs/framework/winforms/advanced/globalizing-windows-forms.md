@@ -30,7 +30,7 @@ Introduces the `ImeMode` property, which is used to control the type of input a 
 
 ## Related sections
 
-- [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)
+- [Globalizing and localizing .NET applications](../../../standard/globalization-localization/index.md)
 
 - [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer)
 

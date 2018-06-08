@@ -194,7 +194,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the objects returned from WMI should                   contain amended information. Typically, amended information is localizable information attached to the WMI object, such as object and property descriptions.</summary>
+        <summary>Gets or sets a value indicating whether the objects returned from WMI should contain amended information. Typically, amended information is localizable information attached to the WMI object, such as object and property descriptions.</summary>
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned from WMI should contain amended information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

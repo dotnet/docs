@@ -167,7 +167,7 @@ The <xref:System.ValueTuple%607> type is not serializable in .NET Core 1.x or in
       <Docs>
         <param name="other">The tuple to compare with this instance.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`7" /> instance to a specified <see cref="T:System.ValueTuple`7" /> instance.</summary>
-        <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following table.  
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following table.  
   
  <list type="table"><listheader><term> Value  
   
@@ -175,15 +175,15 @@ The <xref:System.ValueTuple%607> type is not serializable in .NET Core 1.x or in
   
  </description></listheader><item><term> A negative integer  
   
- </term><description> This instance precedes                                      <paramref name="other" />.  
+ </term><description> This instance precedes <paramref name="other" />.  
   
  </description></item><item><term> Zero  
   
- </term><description> This instance and                                      <paramref name="other" /> have the same position in the sort order.  
+ </term><description> This instance and <paramref name="other" /> have the same position in the sort order.  
   
  </description></item><item><term> A positive integer  
   
- </term><description> This instance follows                                      <paramref name="other" />.  
+ </term><description> This instance follows <paramref name="other" />.  
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
@@ -239,9 +239,9 @@ The <xref:System.ValueTuple%607> type is not serializable in .NET Core 1.x or in
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The                          `obj` argument is considered to be equal to the current instance under the following conditions:  
+ The `obj` argument is considered to be equal to the current instance under the following conditions:  
   
--   It is a                                  <xref:System.ValueTuple%607> value type.  
+-   It is a <xref:System.ValueTuple%607> value type.  
   
 -   Its components are of the same types as those of the current instance.  
   
@@ -294,7 +294,7 @@ The <xref:System.ValueTuple%607> type is not serializable in .NET Core 1.x or in
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The                          `other` argument is considered to be equal to the current instance under the following conditions:  
+ The `other` argument is considered to be equal to the current instance under the following conditions:  
   
 -   Its components are of the same types as those of the current instance.  
   

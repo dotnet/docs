@@ -98,7 +98,7 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">The distinguished name of the object                       to compare.</param>
+        <param name="distinguishedName">The distinguished name of the object to compare.</param>
         <param name="attributeName">The name of the attribute to compare.</param>
         <param name="value">The value to compare.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Byte[])" /> constructor creates an instance of <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> using the specified distinguished name, attribute, and attribute value.</summary>
@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates an object that compares `attributeName` on the object  `distinguishedName` against `value`.  
+ This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.
   
  ]]></format>
         </remarks>
@@ -166,7 +166,7 @@
         <Parameter Name="value" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">The distinguished name of the object                       to compare.</param>
+        <param name="distinguishedName">The distinguished name of the object to compare.</param>
         <param name="attributeName">The name of the attribute to compare.</param>
         <param name="value">The value to compare.</param>
         <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Uri)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name, attribute, and attribute value.</summary>

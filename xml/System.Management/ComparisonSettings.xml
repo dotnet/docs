@@ -56,7 +56,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>A mode that assumes that the objects being compared are instances of                    the same class. Consequently, this value causes comparison of instance-related information only. Use this flag to optimize performance. If the objects are not of the same class, the results are undefined. Value: 8.</summary>
+        <summary>A mode that assumes that the objects being compared are instances of the same class. Consequently, this value causes comparison of instance-related information only. Use this flag to optimize performance. If the objects are not of the same class, the results are undefined. Value: 8.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreDefaultValues">

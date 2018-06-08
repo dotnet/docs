@@ -5569,7 +5569,7 @@
    
   
 ## Examples  
- The following example uses the                                 <xref:System.Array.Length%2A> property to get the total number of elements in an array. It also uses the                                 <xref:System.Array.GetUpperBound%2A> method to determine the number of elements in each dimension of a multidimensional array.  
+ The following example uses the <xref:System.Array.Length%2A> property to get the total number of elements in an array. It also uses the <xref:System.Array.GetUpperBound%2A> method to determine the number of elements in each dimension of a multidimensional array.  
   
  [!code-csharp[System.Array.Length#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.length/cs/length1.cs#1)]
  [!code-vb[System.Array.Length#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.length/vb/length1.vb#1)]  

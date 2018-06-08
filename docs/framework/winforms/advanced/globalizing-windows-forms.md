@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "global applications [Windows Forms], creating Windows Forms"
 ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
 ---
-# Globalizing Windows Forms
+# Globalizing Windows Forms applications
 
 *Globalization* is the process of designing and developing a software product that functions for multiple cultures.
 

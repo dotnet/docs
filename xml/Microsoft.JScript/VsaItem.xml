@@ -22,8 +22,8 @@
     <forInternalUseOnly />
     <altmember cref="T:Microsoft.JScript.VsaItems" />
     <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-    <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-    <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+    <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+    <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
   </Docs>
   <Members>
     <Member MemberName="flag">
@@ -41,13 +41,13 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the type of the item as <see cref="F:Microsoft.JScript.Vsa.VsaItemFlag.Class" />, <see cref="F:Microsoft.JScript.Vsa.VsaItemFlag.Module" />, or <see cref="F:Microsoft.JScript.Vsa.VsaItemFlag.None" />.</summary>
+        <summary>Specifies the type of the item as <see cref="F:Microsoft.JScript.Vsa.JSVsaItemFlag.Class" />, <see cref="F:Microsoft.JScript.Vsa.JSVsaItemFlag.Module" />, or <see cref="F:Microsoft.JScript.Vsa.JSVsaItemFlag.None" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
       </Docs>
     </Member>
     <Member MemberName="GetOption">
@@ -79,8 +79,8 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="isDirty">
@@ -104,8 +104,8 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -131,8 +131,8 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -160,7 +160,7 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -184,8 +184,8 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -213,8 +213,8 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="SetOption">
@@ -247,8 +247,8 @@
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="type">
@@ -266,13 +266,13 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the type of the item as <see cref="F:Microsoft.JScript.Vsa.VsaItemType.Code" />, <see cref="F:Microsoft.JScript.Vsa.VsaItemType.Reference" />, or <see cref="F:Microsoft.JScript.Vsa.VsaItemType.AppGlobal" />.</summary>
+        <summary>Specifies the type of the item as <see cref="F:Microsoft.JScript.Vsa.JSVsaItemType.Code" />, <see cref="F:Microsoft.JScript.Vsa.JSVsaItemType.Reference" />, or <see cref="F:Microsoft.JScript.Vsa.JSVsaItemType.AppGlobal" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
       </Docs>
     </Member>
   </Members>

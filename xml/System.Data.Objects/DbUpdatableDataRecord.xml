@@ -240,7 +240,7 @@
       </Parameters>
       <Docs>
         <param name="i">The ordinal of the field.</param>
-        <summary>Retrieves the field value as a <see cref="T:System.Common.DbDataReader" />.</summary>
+        <summary>Retrieves the field value as a <see cref="T:System.Data.Common.DbDataReader" />.</summary>
         <returns>The field value as a <see cref="T:System.Data.Common.DbDataReader" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,7 +345,7 @@
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
-        <summary>Retrieves the field value as a <see cref="T:System.Common.DbDataReader" /></summary>
+        <summary>Retrieves the field value as a <see cref="T:System.Data.Common.DbDataReader" /></summary>
         <returns>The field value as a <see cref="T:System.Data.Common.DbDataReader" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

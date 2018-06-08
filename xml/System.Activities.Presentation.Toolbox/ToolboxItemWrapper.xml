@@ -17,7 +17,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a wrapper used to establish link between an actual <see cref="T:System.Drawing.Presentation.ToolboxItem" /> instance and the tool representation, as well as add support for categorization of toolbox items. This class is <see langword="sealed" />, so it cannot be inherited.</summary>
+    <summary>Represents a wrapper used to establish link between an actual <see cref="T:System.Drawing.Design.ToolboxItem" /> instance and the tool representation, as well as add support for categorization of toolbox items. This class is <see langword="sealed" />, so it cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -199,7 +199,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The assembly name has already been specified and cannot be changed after the corresponding <see cref="T:System.Drawing.Desigen.ToolboxItem" /> has been initialized.</exception>
+        <exception cref="T:System.InvalidOperationException">The assembly name has already been specified and cannot be changed after the corresponding <see cref="T:System.Drawing.Design.ToolboxItem" /> has been initialized.</exception>
       </Docs>
     </Member>
     <Member MemberName="Bitmap">
@@ -355,7 +355,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OperationException">The name of the tool cannot be changed after the corresponding <see cref="T:System.Drawing.Desigen.ToolboxItem" /> has been initialized.</exception>
+        <exception cref="T:System.OperationException">The name of the tool cannot be changed after the corresponding <see cref="T:System.Drawing.Design.ToolboxItem" /> has been initialized.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">

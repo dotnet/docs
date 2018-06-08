@@ -135,7 +135,7 @@
       <Docs>
         <param name="itemName">The specified item name.</param>
         <param name="eventSourceName">The specified event source name.</param>
-        <summary>Gets a reference to an event source previously added to a script engine using the <see cref="M:Microsoft.JScript.Vsa.IVsaCodeItem.AddEventSource(System.String,System.String)" /> method.</summary>
+        <summary>Gets a reference to an event source previously added to a script engine using the <see cref="M:Microsoft.JScript.Vsa.IJSVsaCodeItem.AddEventSource(System.String,System.String)" /> method.</summary>
         <returns>Returns the event source to the engine.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,9 +216,9 @@
         <Parameter Name="error" Type="Microsoft.JScript.Vsa.IJSVsaError" />
       </Parameters>
       <Docs>
-        <param name="error">The <see cref="T:Microsoft.JScript.Vsa.IVsaError" /> object representing the offending error.</param>
+        <param name="error">The <see cref="T:Microsoft.JScript.Vsa.IJSVsaError" /> object representing the offending error.</param>
         <summary>Notifies the host about how to respond to compiler errors encountered by the script engine.</summary>
-        <returns>Returns TRUE if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.JScript.Vsa.IVsaSite" /> object. Returns FALSE if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
+        <returns>Returns TRUE if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.JScript.Vsa.IJSVsaSite" /> object. Returns FALSE if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

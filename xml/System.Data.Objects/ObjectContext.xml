@@ -1796,7 +1796,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <paramref name="entity" /> is in a <see cref="F:System.Data.EntityState.Detached" />, <see cref="F:System.Data.EntityState.Added," /> or <see cref="F:System.Data.EntityState.Deleted" /> state,  
+        <exception cref="T:System.InvalidOperationException">The <paramref name="entity" /> is in a <see cref="F:System.Data.EntityState.Detached" />, <see cref="F:System.Data.EntityState.Added" /> or <see cref="F:System.Data.EntityState.Deleted" /> state,  
   
  -or-  
   

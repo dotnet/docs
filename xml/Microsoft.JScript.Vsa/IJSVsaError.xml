@@ -163,7 +163,7 @@
         <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the [IVsaItem](http://msdn.microsoft.com/library/Microsoft.JScript.Vsa.ivsaitem.aspx) object that generated the error.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.JScript.Vsa.IJSVsaItem" /> object that generated the error.</summary>
         <value>Returns a reference to the object that generated the error.</value>
         <remarks>To be added.</remarks>
       </Docs>

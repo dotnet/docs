@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Implements <see cref="T:System.IserviceProvider" /> and provides access to services offered by the editing context.</summary>
+    <summary>Implements <see cref="T:System.IServiceProvider" /> and provides access to services offered by the editing context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -379,7 +379,7 @@
       <Docs>
         <param name="existing">The existing delegate to remove the callback from.</param>
         <param name="toRemove">The callback to remove.</param>
-        <summary>A helper method that performs a <see langword="Delegate.Remove" /> operation, and unwraps delegates that are proxies to generic callbacks. You should use this method in your <see cref="Overload:System.Activities.Presentation.ServiceManager.UnSubscribe" /> implementations.</summary>
+        <summary>A helper method that performs a <see langword="Delegate.Remove" /> operation, and unwraps delegates that are proxies to generic callbacks. You should use this method in your <see cref="Overload:System.Activities.Presentation.ServiceManager.Unsubscribe" /> implementations.</summary>
         <returns>Returns <see cref="T:System.Delegate" />, which is  a new value to assign to the existing delegate.</returns>
         <remarks>To be added.</remarks>
       </Docs>

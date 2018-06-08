@@ -413,7 +413,7 @@ Provider Connection String= 'Data Source=localhost;
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Data.EntityClient.EntityConnection.ConnectionString" /> property after the <see cref="EntityConnection" />’s <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> was initialized. The <see cref="MetadataWorkspace" /> is initialized either when the <see cref="EntityConnection" /> instance is constructed through the overload that takes a <see cref="MetadataWorkspace" /> as a parameter, or when the <see cref="T:System.Data.EntityClient.EntityConnection" /> instance has been opened.</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Data.EntityClient.EntityConnection.ConnectionString" /> property after the <see cref="T:System.Data.EntityClient.EntityConnection" />’s <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> was initialized. The <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> is initialized either when the <see cref="T:System.Data.EntityClient.EntityConnection" /> instance is constructed through the overload that takes a <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> as a parameter, or when the <see cref="T:System.Data.EntityClient.EntityConnection" /> instance has been opened.</exception>
         <exception cref="T:System.ArgumentException">An invalid connection string keyword has been provided or a required connection string keyword has not been provided.</exception>
       </Docs>
     </Member>

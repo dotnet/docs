@@ -206,8 +206,8 @@
         <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaSite" />
       </Parameters>
       <Docs>
-        <param name="rootMoniker">The root moniker of the script engine. For more information, see <see cref="P:Microsoft.JScript.Vsa.IVsaEngine.RootMoniker" />.</param>
-        <param name="site">The host-implemented <see cref="T:Microsoft.JScript.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host. For more information, see <see cref="P:Microsoft.JScript.Vsa.IVsaEngine.Site" />.</param>
+        <param name="rootMoniker">The root moniker of the script engine. For more information, see <see cref="P:Microsoft.JScript.Vsa.IJSVsaEngine.RootMoniker" />.</param>
+        <param name="site">The host-implemented <see cref="T:Microsoft.JScript.Vsa.IJSVsaSite" /> object that is used by the script engine to communicate with the host. For more information, see <see cref="P:Microsoft.JScript.Vsa.IJSVsaEngine.Site" />.</param>
         <summary>When implemented in a class, initializes the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

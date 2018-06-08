@@ -323,7 +323,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <Parameter Name="values" Type="System.Data.OleDb.OleDbParameter[]" />
       </Parameters>
       <Docs>
-        <param name="values">The <see cref="T:System.Data.OleDbParameter" /> values to add.</param>
+        <param name="values">The <see cref="T:System.Data.OleDb.OleDbParameter" /> values to add.</param>
         <summary>Adds an array of <see cref="T:System.Data.OleDb.OleDbParameter" /> values to the end of the <see cref="T:System.Data.OleDb.OleDbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>

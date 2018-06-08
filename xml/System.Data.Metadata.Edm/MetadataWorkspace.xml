@@ -170,7 +170,7 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.EnumType" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.EnumlType" /> that supplies the type in the object space.</param>
+        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.EnumType" /> that supplies the type in the object space.</param>
         <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
         <returns>A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
@@ -966,7 +966,7 @@
         <typeparam name="T">The type returned by the method.</typeparam>
         <param name="identity">The conceptual model on which the item is searched.</param>
         <param name="space">The conceptual model on which the item is searched.</param>
-        <param name="item">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.GlobalIem" /> object. This parameter is passed uninitialized.</param>
+        <param name="item">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object. This parameter is passed uninitialized.</param>
         <summary>Returns an item by using the specified identity and the data model.</summary>
         <returns>
           <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>
@@ -1005,7 +1005,7 @@
         <param name="ignoreCase">
           <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
         <param name="dataSpace">The conceptual model on which the item is searched.</param>
-        <param name="item">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.GlobalIem" /> object. This parameter is passed uninitialized.</param>
+        <param name="item">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object. This parameter is passed uninitialized.</param>
         <summary>Returns an item by using the specified identity and the data model.</summary>
         <returns>
           <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>

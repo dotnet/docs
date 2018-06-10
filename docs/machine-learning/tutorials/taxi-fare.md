@@ -87,7 +87,7 @@ Remove the existing class definition and add the following code, which has two c
 
 `TaxiTrip` is the input data class and has definitions for each of the data set columns. Use the [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) attribute to specify the indices of the source columns in the data set.
 
-The `TaxiTripFarePrediction` class is used for prediction after the model has been trained. It has a single float (`FareAmount`) field with a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied.
+The `TaxiTripFarePrediction` class is used to represent predicted results. It has a single float (`FareAmount`) field with a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied. The **Score** column is the special column in ML.NET. The model outputs predicted values into that column.
 
 ## Define data and model paths
 

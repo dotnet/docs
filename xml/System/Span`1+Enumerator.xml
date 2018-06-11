@@ -27,8 +27,6 @@
 
 The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) of the C# language and the [For Each...Next](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) construct in Visual Basic hides the complexity of enumerators. Instead of directly manipulating the enumerator, using `foreach` or `For Each...Next` is recommended. 
 
-Enumerators can be used to read the data in the <xref:System.Span%601>, but they cannot be used to modify it. 
-
 Initially, the enumerator is positioned before the first element in the <xref:System.Span%601>. At this position, <xref:System.Span%601.Enumerator.Current> is undefined. You must call <xref:System.Span%601.Enumerator.MoveNext%2A> to advance the enumerator to the first item in the <xref:System.Span%601> before reading the value of <xref:System.Span%601.Enumerator.Current>.
 
 <xref:System.Span%601.Enumerator.Current> returns the same value until <xref:System.Span%601.Enumerator.MoveNext%2A> is called. <xref:System.Span%601.Enumerator.MoveNext%2A> sets <xref:System.Span%601.Enumerator.Current> to the next item in the <xref:System.Span%601>.

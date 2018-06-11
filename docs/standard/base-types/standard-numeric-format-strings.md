@@ -21,8 +21,6 @@ ms.author: "ronpet"
 ---
 # Standard Numeric Format Strings
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-culture-note.md)]
-
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  
   
 -   `A` is a single alphabetic character called the *format specifier*. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md).  
@@ -346,7 +344,7 @@ For <xref:System.Double> values, the "R" format specifier in some cases fails to
   
 ## Example  
  
- [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-culture-note.md)]
  
  The following example formats an integral and a floating-point numeric value using the en-US culture and all the standard numeric format specifiers. This example uses two particular numeric types (<xref:System.Double> and <xref:System.Int32>), but would yield similar results for any of the other numeric base types (<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Numerics.BigInteger>, <xref:System.Decimal>, and <xref:System.Single>).  
   

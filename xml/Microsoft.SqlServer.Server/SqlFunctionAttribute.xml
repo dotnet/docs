@@ -98,19 +98,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of a method in the same class as the table-valued function (TVF) that is used by the TVF contract.</summary>
-        <value>A <see cref="T:System.String" /> value representing the name of a method used by the TVF contract.</value>
+        <summary>The name of a method in the same class which is used to fill a row of data in the table returned by the table-valued function.</summary>
+        <value>A <see cref="T:System.String" /> value representing the name of a method in the same class which is used to fill a row of data in the table returned by the table-valued function.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [CLR Triggers](http://go.microsoft.com/fwlink/?LinkId=128026).  
-  
-   
-  
-## Examples  
- [!code-csharp[VbRaddataSQLObjects#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSQLObjects/CS/Function1.cs#10)]
- [!code-vb[VbRaddataSQLObjects#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSQLObjects/VB/Function1.vb#10)]  
   
  ]]></format>
         </remarks>

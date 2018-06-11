@@ -20,7 +20,7 @@ In International applications, the recommended method of selecting fonts is to u
 
 ## Using font fallback
 
-To take advantage of this feature, don't set the <xref:System.Drawing.Font> property for your form or any other element. The application will automatically use the default system font, which differs from one localized language of the operating system to another. When the application runs, the system automatically provides the correct font for the culture selected in the operating system.
+To take advantage of this feature, don't set the <xref:System.Drawing.Font> property for your form or any other element. The application will automatically use the default system font, which differs from one localized language of the operating system to another. When the application runs, the system will automatically provide the correct font for the culture selected in the operating system.
 
 There's an exception to the rule of not setting the font, which is for changing the font style. This might be important for an application in which the user clicks a button to make text in a text box appear in boldface. To do that, you would write a function to change the text box's font style to bold, based on whatever the form's font is. It's important to call this function in two places: in the button's <xref:System.Windows.Forms.Control.Click> event handler and in the <xref:System.Windows.Forms.Control.FontChanged> event handler. If the function is called only in the <xref:System.Windows.Forms.Control.Click> event handler and some other piece of code changes the font family of the entire form, the text box doesn't change with the rest of the form.
 

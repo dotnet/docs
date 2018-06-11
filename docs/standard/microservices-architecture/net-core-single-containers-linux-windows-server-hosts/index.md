@@ -68,7 +68,7 @@ services:
     image: microsoft/mssql-server-linux
 ```
 
-The depends_on directive tells Docker that the eShopWeb image depends on the sql.data image. Lines below that are the instructions to build an image tagged sql.data using the microsoft/mssql-server-linux image.
+The `depends_on` directive tells Docker that the eShopWeb image depends on the sql.data image. The lines below `depends_on` are the instructions to build an image tagged `sql.data` using the `microsoft/mssql-server-linux` image.
 
 The **docker-compose** project displays the other docker-compose files under the main docker-compose.yml node to provide a visual indication that these files are related. The docker-compose-override.yml file contains settings for both services, such as connection strings and other application settings.
 
@@ -120,7 +120,7 @@ If you launch the application in the debugger, Visual Studio will attach to the 
 
 This section describes a few issues that might arise when your run containers locally and suggests some fixes.
 
-### Stopping Docker containers
+### Stop Docker containers
 
 After you launch the containerized application, the containers continue to run, even after you have stopped debugging. You can run the docker ps command from the command line to see which containers are running. The docker stop command stops a running container, as shown in Figure 6-2.
 
@@ -130,7 +130,7 @@ After you launch the containerized application, the containers continue to run, 
 
 You might need to stop running processes when you switch between different configurations. Otherwise, the container that is running the web application is using the port for your application (5106 in this example).
 
-### Adding Docker to your projects
+### Add Docker to your projects
 
 The wizard that adds Docker support communicates with the running Docker process. The wizard will not run correctly if Docker is not running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 

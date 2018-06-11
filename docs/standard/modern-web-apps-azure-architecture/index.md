@@ -3,7 +3,7 @@ title: Architect modern web applications with ASP.NET Core and Azure
 description: Architect Modern Web Applications with ASP.NET Core and Azure | introduction
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/06/2017
+ms.date: 06/11/2018
 ---
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
@@ -38,35 +38,35 @@ All other marks and logos are property of their respective owners.
 
 Author:
 
-> **Steve Smith (@ardalis)**, Software Architecture Advisor, Ardalis.com
+> **Steve Smith (@ardalis)**, Software Architecture Advisor, [Ardalis.com](https://ardalis.com)
 
 ## Introduction
 
 .NET Core and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET Core for your server applications if some or all of the following are important to your application's success:
 
-* Cross-platform support
+- Cross-platform support
 
-* Use of microservices
+- Use of microservices
 
-* Use of Docker containers
+- Use of Docker containers
 
-* High performance and scalability requirements
+- High performance and scalability requirements
 
-* Side-by-side versioning of .NET versions by application on the same server
+- Side-by-side versioning of .NET versions by application on the same server
 
 Traditional .NET applications can and do support these requirements, but ASP.NET Core and .NET Core have been optimized to offer improved support for the above scenarios.
 
 More and more organizations are choosing to host their web applications in the cloud using services like Microsoft Azure. You should consider hosting your application in the cloud if the following are important to your application or organization:
 
-* Reduced investment in data center costs (hardware, software, space, utilities, etc)
+- Reduced investment in data center costs (hardware, software, space, utilities, etc)
 
-* Flexible pricing (pay based on usage, not for idle capacity)
+- Flexible pricing (pay based on usage, not for idle capacity)
 
-* Extreme reliability
+- Extreme reliability
 
-* Improved app mobility; easily change where and how your app is deployed
+- Improved app mobility; easily change where and how your app is deployed
 
-* Flexible capacity; scale up or down based on actual needs
+- Flexible capacity; scale up or down based on actual needs
 
 Building web applications with ASP.NET Core, hosted in Microsoft Azure, offers numerous competitive advantages over traditional alternatives. ASP.NET Core is optimized for modern web application development practices and cloud hosting scenarios. In this guide, you will learn how to architect your ASP.NET Core applications to best take advantage of these capabilities.
 
@@ -74,14 +74,14 @@ Building web applications with ASP.NET Core, hosted in Microsoft Azure, offers n
 
 This guide provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
 
-This guide is complementary to the "_Architecting and Developing Containerized and Microservice-based Applications with .NET_" which focuses more on Docker, Microservices, and Deployment of Containers to host enterprise applications.
+This guide is complementary to the ["_Architecting and Developing Containerized and Microservice-based Applications with .NET_"](https://docs.microsoft.com/dotnet/standard/microservices-architecture/index) which focuses more on Docker, Microservices, and Deployment of Containers to host enterprise applications.
 
-> ### Architecting and Developing Containerized Microservice Based Apps in .NET
->
-> * **e-book**  
->   <http://aka.ms/MicroservicesEbook>
-> * **Sample Application**  
->   <http://aka.ms/microservicesarchitecture>
+### Architecting and Developing Containerized Microservice Based Apps in .NET
+
+- **e-book**  
+  <http://aka.ms/MicroservicesEbook>
+- **Sample Application**  
+  <http://aka.ms/microservicesarchitecture>
 
 ## Who should use this guide
 
@@ -97,7 +97,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 
 ## References
 
-* **Choosing between .NET Core and .NET Framework for server apps**  
+- **Choosing between .NET Core and .NET Framework for server apps**  
   <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
 
 > [!div class="step-by-step"][next] (modern-web-applications-characteristics.md)

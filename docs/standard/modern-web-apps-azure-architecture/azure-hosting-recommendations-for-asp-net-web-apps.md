@@ -3,10 +3,10 @@ title: Azure hosting recommendations for ASP.NET Core web apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Azure hosting recommendations for ASP.NET web apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/07/2017
+ms.date: 06/11/2018
 ---
 
-# Azure Hosting Recommendations for ASP.NET Core Web Apps
+# Azure hosting recommendations for ASP.NET Core web apps
 
 > "Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (aka SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner."  
 > _\- Daryl Plummer, Gartner analyst_
@@ -19,13 +19,13 @@ Whatever your application's needs and architecture, Windows Azure can support it
 
 Web applications can be hosted with:
 
-* App Service Web Apps
+- App Service Web Apps
 
-* Containers
+- Containers
 
-* Azure Service Fabric
+- Azure Service Fabric
 
-* Virtual Machines (VMs)
+- Virtual Machines (VMs)
 
 Of these, App Service Web Apps are the recommended approach for most scenarios. For microservice architectures, consider a container-based approach, or service fabric. If you need more control over the machines running your application, consider Azure Virtual Machines.
 
@@ -33,15 +33,15 @@ Of these, App Service Web Apps are the recommended approach for most scenarios. 
 
 App Service Web Apps offers a fully managed platform optimized for hosting web applications. It is a platform-as-a-service(PaaS) offering that lets you focus on your business logic, while Azure takes care of the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
 
-* DevOps optimization (continuous integration and delivery, multiple environments, A/B testing, scripting support)
+- DevOps optimization (continuous integration and delivery, multiple environments, A/B testing, scripting support)
 
-* Global scale and high availability
+- Global scale and high availability
 
-* Connections to SaaS platforms and your on-premises data
+- Connections to SaaS platforms and your on-premises data
 
-* Security and compliance
+- Security and compliance
 
-* Visual Studio integration
+- Visual Studio integration
 
 Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app.
 
@@ -63,10 +63,10 @@ Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment, makin
 
 AKS reduces the complexity and operational overhead of managing a Kubernetes cluster by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. In addition, you pay only for the agent nodes within your clusters, not for the masters. As a managed Kubernetes service, AKS provides:
 
-    * Automated Kubernetes version upgrades and patching
-    * Easy cluster scaling
-    * Self-healing hosted control plane (masters)
-    * Cost savings - pay only for running agent pool nodes
+- Automated Kubernetes version upgrades and patching
+- Easy cluster scaling
+- Self-healing hosted control plane (masters)
+- Cost savings - pay only for running agent pool nodes
 
 With Azure handling the management of the nodes in your AKS cluster, you no longer need to perform many tasks manually, like cluster upgrades. Because Azure handles these critical maintenance tasks for you, AKS does not provide direct access (such as with SSH) to the cluster.
 
@@ -121,19 +121,19 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 
 **References – Azure Hosting Recommendations**
 
-* Azure Solution Architectures\
+- Azure Solution Architectures\
   <https://azure.microsoft.com/solutions/architecture/>
 
-* Azure Developer Guide\
+- Azure Developer Guide\
   <https://azure.microsoft.com/campaigns/developer-guide/>
 
-* What is Azure App Service?\
+- What is Azure App Service?\
   <https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is>
 
-* Azure App Service, Virtual Machines, Service Fabric and Cloud Services Comparison\
+- Azure App Service, Virtual Machines, Service Fabric and Cloud Services Comparison\
   <https://docs.microsoft.com/azure/app-service-web/choose-web-site-cloud-service-vm>
 
-* Introduction to Azure Kubernetes Service (AKS) preview\
-  <https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes>
+- Introduction to Azure Kubernetes Service (AKS) preview\
+  <https://docs.microsoft.com/azure/aks/intro-kubernetes>
 
 > [!div class="step-by-step"][previous] (development-process-for-azure.md)

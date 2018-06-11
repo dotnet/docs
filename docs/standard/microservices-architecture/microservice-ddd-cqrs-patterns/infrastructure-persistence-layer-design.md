@@ -3,7 +3,7 @@ title: Designing the infrastructure persistence layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing the infrastructure persistence layer
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/08/2017
+ms.date: 06/11/2017
 ---
 
 # Designing the infrastructure persistence layer
@@ -20,7 +20,7 @@ A repository performs the tasks of an intermediary between the domain model laye
 
 ### Define one repository per aggregate
 
-For each aggregate or aggregate root, you should create one repository class. In a microservice based on domain-driven design patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It is okay to query the database through other channels (as you can do following a CQRS approach), because queries do not change the state of the database. However, the transactional area—the updates—must always be controlled by the repositories and the aggregate roots.
+For each aggregate or aggregate root, you should create one repository class. In a microservice based on domain-driven design patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It is okay to query the database through other channels (as you can do following a CQRS approach), because queries do not change the state of the database. However, the transactional area (i.e. the updates) must always be controlled by the repositories and the aggregate roots.
 
 Basically, a repository allows you to populate data in memory that comes from the database in the form of the domain entities. Once the entities are in memory, they can be changed and then persisted back to the database through transactions.
 
@@ -45,6 +45,9 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositor
 {
     public class OrderRepository : IOrderRepository
     {
+      // ...
+    }
+}
 ```
 
 Each specific repository interface implements the generic IRepository interface:
@@ -95,19 +98,19 @@ We find repositories useful, but we acknowledge that they are not critical for y
 
 ## The Specification pattern
 
-The Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
+The specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
 
-The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products, you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an `ISpecification` and run the expected query based on that specification.
+The specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products, you can create a PagedProduct specification that takes the necessary input parameters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an `ISpecification` and run the expected query based on that specification.
 
 There are several benefits to this approach:
 
-* The specification has a name (as opposed to just a bunch of LINQ expressions) that you can discuss about.
+- The specification has a name (as opposed to just a bunch of LINQ expressions) that you can discuss about.
 
-* The specification can be unit tested in isolation to ensure it is right. It can also easily be reused if you need similar behavior. For example, on an MVC View action and a Web API action, as well as in various services.
+- The specification can be unit tested in isolation to ensure it is right. It can also easily be reused if you need similar behavior. For example, on an MVC View action and a Web API action, as well as in various services.
 
-* A specification can also be used to describe the shape of the data to be returned, so that queries can return just the data they required. This eliminates the need for lazy loading in web applications (which is usually not a good idea) and helps keep repository implementations from becoming cluttered with these details.
+- A specification can also be used to describe the shape of the data to be returned, so that queries can return just the data they required. This eliminates the need for lazy loading in web applications (which is usually not a good idea) and helps keep repository implementations from becoming cluttered with these details.
 
-An example of a generic Specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb).
+An example of a generic specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb).
 
 ```csharp
 // https://github.com/dotnet-architecture/eShopOnWeb
@@ -119,7 +122,7 @@ public interface ISpecification<T>
 }
 ```
 
-In the upcoming sections, it is explained how to implement the Specification pattern with Entity Framework Core 2.0 and how to use it from any Repository class.
+In the upcoming sections, it is explained how to implement the specification pattern with Entity Framework Core 2.x and how to use it from any Repository class.
 
 **Important note:** The specification pattern is an old pattern that can be implemented in many different ways, as in the following additional resources. As a pattern/idea, older approaches are good to know, but beware of older implementations that are not taking advantage of modern language capabilities like Linq and expressions.
 
@@ -127,39 +130,34 @@ In the upcoming sections, it is explained how to implement the Specification pat
 
 ### The Repository pattern
 
-* **The Repository pattern**
-  [http://deviq.com/repository-pattern/](http://deviq.com/repository-pattern/)
+- **The Repository pattern**
+  [https://deviq.com/repository-pattern/](https://deviq.com/repository-pattern/)
 
-* **Edward Hieatt and Rob Mee. Repository pattern.**
-  [_http://martinfowler.com/eaaCatalog/repository.html_](http://martinfowler.com/eaaCatalog/repository.html)
+- **Edward Hieatt and Rob Mee. Repository pattern.**
+  [_https://martinfowler.com/eaaCatalog/repository.html_](https://martinfowler.com/eaaCatalog/repository.html)
 
-* **The Repository pattern**
+- **The Repository pattern**
   [_https://msdn.microsoft.com/library/ff649690.aspx_](https://msdn.microsoft.com/library/ff649690.aspx)
 
-* **Repository Pattern: A data persistence abstraction**
-  [_http://deviq.com/repository-pattern/_](http://deviq.com/repository-pattern/)
-
-* **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
   [_https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/_](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### Unit of Work pattern
 
-* **Martin Fowler. Unit of Work pattern.**
-  [_http://martinfowler.com/eaaCatalog/unitOfWork.html_](http://martinfowler.com/eaaCatalog/unitOfWork.html)
+- **Martin Fowler. Unit of Work pattern.**
+  [_https://martinfowler.com/eaaCatalog/unitOfWork.html_](https://martinfowler.com/eaaCatalog/unitOfWork.html)
 
-<!-- -->
-
-* **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
-  [_https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application_](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
+- **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
+  [_https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application_](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 ### The Specification pattern
 
-* **The Specification pattern.**
-  [_http://deviq.com/specification-pattern/_](http://deviq.com/specification-pattern/)
+- **The Specification pattern.**
+  [_https://deviq.com/specification-pattern/_](https://deviq.com/specification-pattern/)
 
-* **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
+- **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
 
-* **Specifications. Martin Fowler**
+- **Specifications. Martin Fowler**
   [_https://www.martinfowler.com/apsupp/spec.pdf/_](https://www.martinfowler.com/apsupp/spec.pdf)
 
 > [!div class="step-by-step"][previous] (domain-events-design-implementation.md)

@@ -3,10 +3,10 @@ title: Common web application architectures
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure | common web application architectures
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/06/2017
+ms.date: 06/11/2018
 ---
 
-# Common Web Application Architectures
+# Common web application architectures
 
 > "If you think good architecture is expensive, try bad architecture."  
 > _- Brian Foote and Joseph Yoder_
@@ -86,7 +86,7 @@ Internally, this project's organization into multiple projects based on responsi
 
 This unit can be scaled up or out to take advantage of cloud-based on-demand scalability. Scaling up means adding additional CPU, memory, disk space, or other resources to the server(s) hosting your app. Scaling out means adding additional instances of such servers, whether these are physical servers or virtual machines. When your app is hosted across multiple instances, a load balancer is used to assign requests to individual app instances.
 
-The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 show the appropriate Azure dashboard screen to configure how many instances are serving an app.
+The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 shows the appropriate Azure dashboard screen to configure how many instances are serving an app.
 
 ![](./media/image5-6.png)
 
@@ -94,12 +94,12 @@ The simplest approach to scaling a web application in Azure is to configure scal
 
 ## Clean architecture
 
-Applications that follow the Dependency Inversion Principle as well as Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). It is this last name, Clean Architecture, that is used as the basis for describing the architecture in this e-book.
+Applications that follow the Dependency Inversion Principle as well as Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this archtiecture in this e-book.
 
 > [!NOTE]
 > The term Clean Architecture can be applied to applications that are built using DDD Principles as well as to those that are not built using DDD. In the case of the former, this combination may be referred to as "Clean DDD Architecture".
 
-Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-X shows an example of this style of architectural representation.
+Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.
 
 ![](./media/image5-7.png)
 
@@ -107,7 +107,7 @@ Clean architecture puts the business logic and application model at the center o
 
 In this diagram, dependencies flow toward the innermost circle. Thus, you can see that the Application Core (which takes its name from its position at the core of this diagram) has no dependencies on other application layers. At the very center are the application's entities and interfaces. Just outside, but still in the Application Core, are domain services, which typically implement interfaces defined in the inner circle. Outside of the Application Core, both the User Interface and the Infrastructure layers depend on the Application Core, but not on one another (necessarily).
 
-Figure 5-X shows a more traditional horizontal layer diagram that better reflects the dependency between the UI and other layers.
+Figure 5-8 shows a more traditional horizontal layer diagram that better reflects the dependency between the UI and other layers.
 
 ![](./media/image5-8.png)
 
@@ -145,32 +145,32 @@ In a Clean Architecture solution, each project has clear responsibilities. As su
 
 The Application Core holds the business model, which includes entities, services, and interfaces. These interfaces include abstractions for operations that will be performed using Infrastructure, such as data access, file system access, network calls, etc. Sometimes services or interfaces defined at this layer will need to work with non-entity types that have no dependencies on UI or Infrastructure. These can be defined as simple Data Transfer Objects (DTOs).
 
-> ### Application Core Types
->
-> * Entities (business model classes that are persisted)
-> * Interfaces
-> * Services
-> * DTOs
+### Application Core Types
+
+- Entities (business model classes that are persisted)
+- Interfaces
+- Services
+- DTOs
 
 The Infrastructure project will typically include data access implementations. In a typical ASP.NET Core web application, this will include the Entity Framework DbContext, any EF Core Migrations that have been defined, and data access implementation classes. The most common way to abstract data access implementation code is through the use of the [Repository design pattern](http://deviq.com/repository-pattern/).
 
 In addition to data access implementations, the Infrastructure project should contain implementations of services that must interact with infrastructure concerns. These services should implement interfaces defined in the Application Core, and so Infrastructure should have a reference to the Application Core project.
 
-> ### Infrastructure Types
->
-> * EF Core types (DbContext, Migrations)
-> * Data access implementation types (Repositories)
-> * Infrastructure-specific services (FileLogger, SmtpNotifier, etc.)
+### Infrastructure Types
+
+- EF Core types (DbContext, Migrations)
+- Data access implementation types (Repositories)
+- Infrastructure-specific services (FileLogger, SmtpNotifier, etc.)
 
 The user interface layer in an ASP.NET Core MVC application will be the entry point for the application, and will be an ASP.NET Core MVC project. This project should reference the Application Core project, and its types should interact with infrastructure strictly through interfaces defined in Application Core. No direct instantiation of (or static calls to) Infrastructure layer types should be permitted in the UI layer.
 
-> ### UI Layer Types
->
-> * Controllers
-> * Filters
-> * Views
-> * ViewModels
-> * Startup
+### UI Layer Types
+
+- Controllers
+- Filters
+- Views
+- ViewModels
+- Startup
 
 The Startup class is responsible for configuring the application, and for wiring up implementation types to interfaces, allowing dependency injection to work properly at run time.
 
@@ -185,7 +185,7 @@ To manage this model, you deploy a single container to represent the application
 
 ![](./media/image5-13.png)
 
-You can include multiple components/libraries or internal layers within each container, as illustrated in Figure 5-X. But, following the container principal of _"a container does one thing, and does it in one process_", the monolithic pattern might be a conflict.
+You can include multiple components/libraries or internal layers within each container, as illustrated in Figure 5-13. But, following the container principle of _"a container does one thing, and does it in one process_", the monolithic pattern might be a conflict.
 
 The downside of this approach comes if/when the application grows, requiring it to scale. If the entire application scaled, it's not really a problem. However, in most cases, a few parts of the application are the choke points requiring scaling, while other components are used less.
 
@@ -301,15 +301,15 @@ If you want to add Docker support to your application using Visual Studio, make 
 
 > ### References – Common Web Architectures
 >
-> * **The Clean Architecture**  
+> - **The Clean Architecture**  
 >   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
-> * **The Onion Architecture**  
+> - **The Onion Architecture**  
 >   <http://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
-> * **The Repository Pattern**  
+> - **The Repository Pattern**  
 >   <http://deviq.com/repository-pattern/>
-> * **Clean Architecture Solution Sample**  
+> - **Clean Architecture Solution Sample**  
 >   <https://github.com/ardalis/cleanarchitecture>
-> * **Architecting Microservices e-book** <http://aka.ms/MicroservicesEbook>
+> - **Architecting Microservices e-book** <http://aka.ms/MicroservicesEbook>
 
 > [!div class="step-by-step"][previous] (architectural-principles.md)
 > [Next](common-client-side-web-technologies.md)

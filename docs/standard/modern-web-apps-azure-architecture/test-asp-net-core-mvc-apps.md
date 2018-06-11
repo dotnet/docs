@@ -232,7 +232,7 @@ public abstract class BaseWebTest
         _contentRoot = GetProjectPath("src", startupAssembly);
         var builder = new WebHostBuilder()
         .UseContentRoot(_contentRoot)
-        .UseStartup&lt;Startup&gt;();
+        .UseStartup<Startup>();
         var server = new TestServer(builder);
         var client = server.CreateClient();
         return client;

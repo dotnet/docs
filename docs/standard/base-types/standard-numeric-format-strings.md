@@ -1,6 +1,6 @@
 ---
 title: "Standard Numeric Format Strings"
-ms.date: "09/10/2017"
+ms.date: "06/10/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -20,6 +20,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Standard Numeric Format Strings
+
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  
   
 -   `A` is a single alphabetic character called the *format specifier*. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md).  
@@ -59,24 +60,27 @@ Standard numeric format strings are supported by:
   
 <a name="Using"></a>   
 ## Using Standard Numeric Format Strings  
- A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-culture-note.md)]
+
+A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:  
   
 -   It can be passed to an overload of the `ToString` method that has a `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).  
   
      [!code-cpp[Formatting.Numeric.Standard#10](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#10)]
-     [!code-csharp[Formatting.Numeric.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#10)]
+     [!code-csharp-interactive[Formatting.Numeric.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#10)]
      [!code-vb[Formatting.Numeric.Standard#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#10)]  
   
 -   It can be supplied as the `formatString` argument in a format item used with such methods as <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>. For more information, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example uses a format item to insert a currency value in a string.  
   
      [!code-cpp[Formatting.Numeric.Standard#11](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#11)]
-     [!code-csharp[Formatting.Numeric.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#11)]
+     [!code-csharp-interactive[Formatting.Numeric.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#11)]
      [!code-vb[Formatting.Numeric.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#11)]  
   
      Optionally, you can supply an `alignment` argument to specify the width of the numeric field and whether its value is right- or left-aligned. The following example left-aligns a currency value in a 28-character field, and it right-aligns a currency value in a 14-character field.  
   
      [!code-cpp[Formatting.Numeric.Standard#12](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#12)]
-     [!code-csharp[Formatting.Numeric.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#12)]
+     [!code-csharp-interactive[Formatting.Numeric.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#12)]
      [!code-vb[Formatting.Numeric.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#12)]  
   
 -   It can be supplied as the `formatString` argument in an interpolated expression item of an interpolated string. For more information, see the [String interpolation](../../csharp/language-reference/tokens/interpolated.md) topic in the C# reference or the [Interpolated strings](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) topic in the Visual Basic reference.  
@@ -105,7 +109,7 @@ Standard numeric format strings are supported by:
  The following example formats a <xref:System.Double> value with the currency format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#1)]
- [!code-csharp[Formatting.Numeric.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#1)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#1)]
  [!code-vb[Formatting.Numeric.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#1)]  
   
  [Back to table](#table)  
@@ -125,7 +129,7 @@ Standard numeric format strings are supported by:
  The following example formats an <xref:System.Int32> value with the decimal format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#2](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#2)]
- [!code-csharp[Formatting.Numeric.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#2)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#2)]
  [!code-vb[Formatting.Numeric.Standard#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#2)]  
   
  [Back to table](#table)  
@@ -149,7 +153,7 @@ Standard numeric format strings are supported by:
  The following example formats a <xref:System.Double> value with the exponential format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#3](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#3)]
- [!code-csharp[Formatting.Numeric.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#3)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#3)]
  [!code-vb[Formatting.Numeric.Standard#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#3)]  
   
  [Back to table](#table)  
@@ -171,7 +175,7 @@ Standard numeric format strings are supported by:
  The following example formats a <xref:System.Double> and an <xref:System.Int32> value with the fixed-point format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#4](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#4)]
- [!code-csharp[Formatting.Numeric.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#4)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#4)]
  [!code-vb[Formatting.Numeric.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#4)]  
   
  [Back to table](#table)  
@@ -200,10 +204,10 @@ Standard numeric format strings are supported by:
  
 Note that, when used with a <xref:System.Double> value, the "G17" format specifier ensures that the original <xref:System.Double> value successfully round-trips. This is because <xref:System.Double> is an IEEE 754-2008-compliant double-precision (`binary64`) floating point number that gives up to 17 significant digits of precision. We recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip double-precision floating point values. The following example illustrates one such case.
 
-[!code-csharp[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/csharp/g17.cs)]   
+[!code-csharp-interactive[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/csharp/g17.cs)]   
 [!code-vb[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/vb/g17.vb)]   
 
-When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. We recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip single-precision floating point values.
+When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. For performance reasons, we recommend its use instead of the ["R" format specifier](#RFormatString).
 
  The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the result string.  
   
@@ -216,7 +220,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
  The following example formats assorted floating-point values with the general format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#5](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#5)]
- [!code-csharp[Formatting.Numeric.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#5)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#5)]
  [!code-vb[Formatting.Numeric.Standard#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#5)]  
   
  [Back to table](#table)  
@@ -239,7 +243,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
  The following example formats assorted floating-point values with the number format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#6](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#6)]
- [!code-csharp[Formatting.Numeric.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#6)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#6)]
  [!code-vb[Formatting.Numeric.Standard#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#6)]  
   
  [Back to table](#table)  
@@ -264,7 +268,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
  The following example formats floating-point values with the percent format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#7](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#7)]
- [!code-csharp[Formatting.Numeric.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#7)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#7)]
  [!code-vb[Formatting.Numeric.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#7)]  
   
  [Back to table](#table)  
@@ -273,7 +277,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
 ## The Round-trip ("R") Format Specifier  
  The round-trip ("R") format specifier attempts to ensure that a numeric value that is converted to a string is parsed back into the same numeric value. This format is supported only for the <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.  
 
-For <xref:System.Double> and <xref:System.Single> values, the "R" format specifier in some cases fails to successfully round-trip the original value and also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
+For <xref:System.Double> values, the "R" format specifier in some cases fails to successfully round-trip the original value. For both <xref:System.Double> and <xref:System.Single> values, it also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
 
  When a <xref:System.Numerics.BigInteger> value is formatted using this specifier, its string representation contains all the significant digits in the <xref:System.Numerics.BigInteger> value.  
   
@@ -289,7 +293,7 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
  The following example formats a <xref:System.Numerics.BigInteger> value with the round-trip format specifier.  
   
  [!code-cpp[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cpp)]
- [!code-csharp[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cs)]
+ [!code-csharp-interactive[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cs)]
  [!code-vb[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.vb)]  
   
 > [!IMPORTANT]
@@ -297,7 +301,7 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
   
  To work around the problem of <xref:System.Double> values formatted with the "R" standard numeric format string not successfully round-tripping if compiled using the `/platform:x64` or `/platform:anycpu` switches and run on 64-bit systems., you can format <xref:System.Double> values by using the "G17" standard numeric format string. The following example uses the "R" format string with a <xref:System.Double> value that does not round-trip successfully, and also uses the "G17" format string to successfully round-trip the original value.  
   
- [!code-csharp[System.Double.ToString#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.ToString/cs/roundtripex1.cs#5)]
+ [!code-csharp-interactive[System.Double.ToString#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.ToString/cs/roundtripex1.cs#5)]
  [!code-vb[System.Double.ToString#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.ToString/vb/roundtripex1.vb#5)]  
   
  [Back to table](#table)  
@@ -313,7 +317,7 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
  The following example formats <xref:System.Int32> values with the hexadecimal format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#9](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#9)]
- [!code-csharp[Formatting.Numeric.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#9)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#9)]
  [!code-vb[Formatting.Numeric.Standard#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#9)]  
   
  [Back to table](#table)  
@@ -338,11 +342,13 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
 ### Floating-Point Infinities and NaN  
  Regardless of the format string, if the value of a <xref:System.Single> or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.  
   
-<a name="example"></a>   
 ## Example  
+ 
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-culture-note.md)]
+ 
  The following example formats an integral and a floating-point numeric value using the en-US culture and all the standard numeric format specifiers. This example uses two particular numeric types (<xref:System.Double> and <xref:System.Int32>), but would yield similar results for any of the other numeric base types (<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Numerics.BigInteger>, <xref:System.Decimal>, and <xref:System.Single>).  
   
- [!code-csharp[system.x.tostring-and-culture#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs/xts.cs#1)]
+ [!code-csharp-interactive[system.x.tostring-and-culture#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs/xts.cs#1)]
  [!code-vb[system.x.tostring-and-culture#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.X.ToString-and-Culture/vb/xts.vb#1)]  
   
 ## See Also  

@@ -103,14 +103,13 @@
 ## Remarks  
  <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A> is undefined under any of the following conditions:  
   
--   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created.   <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A>.  
+- The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A> property.  
   
--   The last call to <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
-  
- <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A> to the next element. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.  
-  
-> [!NOTE]
->  For better performance, this property does not throw an exception if the enumerator is positioned before the first element or after the last element; the value of the property is undefined.  
+- The last call to <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
+
+- The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
+ <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.LinkedList%601.Enumerator.Current%2A> return the same object until either <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
   
  ]]></format>
         </remarks>
@@ -239,17 +238,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After an enumerator is created or after a <xref:System.Collections.IEnumerator.Reset%2A> is called, <xref:System.Collections.IEnumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>; otherwise, <xref:System.Collections.IEnumerator.Current%2A> is undefined.  
+ <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> is undefined under any of the following conditions:  
   
- <xref:System.Collections.IEnumerator.Current%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+- The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property.  
   
- <xref:System.Collections.IEnumerator.Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IEnumerator.Current%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+- The last call to <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
+
+- The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
+ <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Current%2A> return the same object until either <xref:System.Collections.Generic.LinkedList%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.LinkedList%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
         <altmember cref="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Reset" />
         <altmember cref="M:System.Collections.Generic.LinkedList`1.Enumerator.MoveNext" />
       </Docs>

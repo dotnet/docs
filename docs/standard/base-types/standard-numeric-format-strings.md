@@ -1,6 +1,6 @@
 ---
 title: "Standard Numeric Format Strings"
-ms.date: "09/10/2017"
+ms.date: "06/10/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -21,7 +21,7 @@ ms.author: "ronpet"
 ---
 # Standard Numeric Format Strings
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-culture-note.md)]
 
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  
   
@@ -62,7 +62,10 @@ Standard numeric format strings are supported by:
   
 <a name="Using"></a>   
 ## Using Standard Numeric Format Strings  
- A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-culture-note.md)]
+
+A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:  
   
 -   It can be passed to an overload of the `ToString` method that has a `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).  
   
@@ -206,7 +209,7 @@ Note that, when used with a <xref:System.Double> value, the "G17" format specifi
 [!code-csharp-interactive[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/csharp/g17.cs)]   
 [!code-vb[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/vb/g17.vb)]   
 
-When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. We recommend its use instead of the ["R" format specifier](#RFormatString).
+When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. For performance reasons, we recommend its use instead of the ["R" format specifier](#RFormatString).
 
  The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the result string.  
   
@@ -276,7 +279,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
 ## The Round-trip ("R") Format Specifier  
  The round-trip ("R") format specifier attempts to ensure that a numeric value that is converted to a string is parsed back into the same numeric value. This format is supported only for the <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.  
 
-For <xref:System.Double> and <xref:System.Single> values, the "R" format specifier in some cases fails to successfully round-trip the original value and also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
+For <xref:System.Double> values, the "R" format specifier in some cases fails to successfully round-trip the original value. For both <xref:System.Double> and <xref:System.Single> values, it also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
 
  When a <xref:System.Numerics.BigInteger> value is formatted using this specifier, its string representation contains all the significant digits in the <xref:System.Numerics.BigInteger> value.  
   
@@ -341,7 +344,6 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
 ### Floating-Point Infinities and NaN  
  Regardless of the format string, if the value of a <xref:System.Single> or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.  
   
-<a name="example"></a>   
 ## Example  
  
  [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]

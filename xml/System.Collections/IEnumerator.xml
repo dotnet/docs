@@ -55,7 +55,7 @@
   
  To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A>, if it’s implemented, followed by <xref:System.Collections.IEnumerator.MoveNext%2A>. If <xref:System.Collections.IEnumerator.Reset%2A> is not implemented, you must create a new enumerator instance to return to the first element of the collection.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.
+ If changes are made to the collection, such as adding, modifying, or deleting elements, the behavior of the enumerator is undefined.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -174,7 +174,7 @@
   
  If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false` until <xref:System.Collections.IEnumerator.Reset%2A> is called.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
+ If changes are made to the collection, such as adding, modifying, or deleting elements, the behavior of <xref:System.Collections.IEnumerator.MoveNext%2A> is undefined.  
   
    
   
@@ -186,7 +186,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
         <altmember cref="P:System.Collections.IEnumerator.Current" />
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
@@ -226,7 +225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to the <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> method throws an <xref:System.InvalidOperationException>.  
+ If changes are made to the collection, such as adding, modifying, or deleting elements, the behavior of <xref:System.Collections.IEnumerator.Reset%2A> is undefined.  
   
  The <xref:System.Collections.IEnumerator.Reset%2A> method is provided for COM interoperability. It does not necessarily need to be implemented; instead, the implementer can simply throw a <xref:System.NotSupportedException>.  
   
@@ -240,7 +239,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
         <block subset="none" type="overrides">
           <para>All calls to <see cref="M:System.Collections.IEnumerator.Reset" /> must result in the same state for the enumerator. The preferred implementation is to move the enumerator to the beginning of the collection, before the first element. This invalidates the enumerator if the collection has been modified since the enumerator was created, which is consistent with <see cref="M:System.Collections.IEnumerator.MoveNext" /> and <see cref="P:System.Collections.IEnumerator.Current" />.</para>
         </block>

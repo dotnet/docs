@@ -41,7 +41,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Generic.IEnumerable%601> is the base interface for collections in the <xref:System.Collections.Generic> namespace such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and <xref:System.Collections.Generic.Stack%601> and other generic collections such as <xref:System.Collections.ObjectModel.ObservableCollection%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601>. Collections that implement <xref:System.Collections.Generic.IEnumerable%601> can be enumerated by using the `foreach` statement. For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=nameWithType>.  
+ <xref:System.Collections.Generic.IEnumerable%601> is the base interface for collections in the <xref:System.Collections.Generic> namespace such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and <xref:System.Collections.Generic.Stack%601> and other generic collections such as <xref:System.Collections.ObjectModel.ObservableCollection%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601>. Collections that implement <xref:System.Collections.Generic.IEnumerable%601> can be enumerated by using the `foreach` statement.  
   
  For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=nameWithType>.  
   
@@ -110,6 +110,8 @@
  <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called again as <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
   
  If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+
+ If changes are made to the collection, such as adding, modifying, or deleting elements, the behavior of the enumerator is undefined.  
   
  An enumerator does not have exclusive access to the collection so an enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is invalidated and you may get unexpected results. Also, enumerating a collection is not a thread-safe procedure. To guarantee thread-safety, you should lock the collection during enumerator or implement synchronization on the collection.  
   

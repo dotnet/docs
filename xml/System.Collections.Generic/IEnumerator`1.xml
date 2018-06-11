@@ -58,7 +58,7 @@
   
  The <xref:System.Collections.IEnumerator.Reset%2A> method is provided for COM interoperability. It does not necessarily need to be implemented; instead, the implementer can simply throw a <xref:System.NotSupportedException>. However, if you choose to do this, you should make sure no callers are relying on the <xref:System.Collections.IEnumerator.Reset%2A> functionality.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
+ If changes are made to the collection, such as adding, modifying, or deleting elements, the behavior of the enumerator is undefined.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   

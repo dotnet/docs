@@ -3,11 +3,13 @@
     "markdownEngineName": "dfm-latest",
     "content": [
       {
+        "group": "all",
         "files": [
           "api/**/*.md"
         ]
       },
       {
+        "group": "all",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -18,10 +20,12 @@
           "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
-          "***/contributing.md"
+          "***/contributing.md",
+          "core/**/*.*"
         ]
       },
       {
+        "group": "all",
         "files": [
           "**/*.md"
         ],
@@ -34,6 +38,7 @@
         ]
       },
       {
+        "group": "all",
         "files": [
           "**/*.md"
         ],
@@ -46,23 +51,29 @@
         ]
       },
       {
+        "group": "all",
+        "src": "docs/core",
+        "dest": "core",
         "files": [
-          "core/**/*.md",
-          "core/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ]
       },
       {
+        "group": "all",
         "files": [
           "index.md"
         ]
       },
       {
+        "group": "all",
         "files": "toc.yml",
         "dest": "breadcrumb"
       }
     ],
     "resource": [
       {
+        "group": "all",
         "files": [
           "images/**",
           "**/*.png",
@@ -73,6 +84,25 @@
         ],
         "src": "docs",
         "dest": ".",
+        "exclude": [
+          "**/obj/**",
+          "samples/**/*.*",
+          "_themes/DocPacker/**",
+          "core/**/*.*"
+        ]
+      },
+      {
+        "group": "all",
+        "files": [
+          "images/**",
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
+        ],
+        "src": "docs/core",
+        "dest": "core",
         "exclude": [
           "**/obj/**",
           "samples/**/*.*",
@@ -98,6 +128,9 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html" 
     },
     "fileMetadata": {
+      "monikerRange": {
+        "docs/core/**": ">= netcore-1.0"
+      },
       "feedback_product_url": {
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
       },
@@ -191,6 +224,12 @@
     "template": [
       "docs.html"
     ],
+    "groups": {
+      "all": {
+        "moniker_range": ">= netcore-1.0 || >= netframework-1.1 || >= netstandard-1.0 || >= xamarinandroid-7.1 || >= xamarinios-10.8 || >= xamarinmac-3.0",
+        "dest": "all"
+      }
+    },
     "xref": [
       "_zip/office15.zip",
       "_zip/missingapi.yml"

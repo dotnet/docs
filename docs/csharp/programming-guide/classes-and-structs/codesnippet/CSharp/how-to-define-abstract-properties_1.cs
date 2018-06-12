@@ -1,4 +1,4 @@
-// compile with: csc /target:library abstractshape.cs
+// compile with: csc -target:library abstractshape.cs
 public abstract class Shape
 {
     private string name;

@@ -47,7 +47,7 @@ public class LocalFileImageService : IImageService
             var contentRoot = _env.ContentRootPath + "//Pics";
             var path = Path.Combine(contentRoot, id + ".png");
             return File.ReadAllBytes(path);
-    }
+        }
         catch (FileNotFoundException ex)
         {
             throw new CatalogImageMissingException(ex);

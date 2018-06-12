@@ -16,4 +16,4 @@ No changes in Visual Basic in Visual Studio 2015 will prevent an application tha
  [Lambda Expressions](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
  [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md)  
  [Getting Started](../../visual-basic/getting-started/index.md)  
- [When is a non-breaking language fix breaking?](http://go.microsoft.com/fwlink/?LinkId=259542)
+ [When is a non-breaking language fix breaking?](https://blogs.msdn.microsoft.com/lucian/2012/07/19/when-is-a-non-breaking-language-fix-breaking)

@@ -98,6 +98,7 @@
 ### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
 ### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
+### [Self-contained deployment runtime roll forward](core/deploying/runtime-patch-selection.md)
 ### [Runtime package store](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
 ### [Introduction to .NET and Docker](core/docker/intro-net-docker.md)
@@ -165,6 +166,7 @@
 ### [global.json](core/tools/global-json.md)
 ## [.NET Core Additional Tools](core/additional-tools/index.md)
 ### [WCF Web Service Reference Provider](core/additional-tools/wcf-web-service-reference-guide.md)
+### [dotnet-svcutil](core/additional-tools/dotnet-svcutil-guide.md)
 ### [XML Serializer Generator](core/additional-tools/xml-serializer-generator.md)
 ## [Porting from .NET Framework](core/porting/index.md)
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
@@ -1129,12 +1131,13 @@
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
-### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
-### [Taxi Fare Predictor (Regression)](machine-learning/tutorials/taxi-fare.md)
+### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
 ## [Resources](machine-learning/resources/index.md)
-### [Machine Learning Glossary](machine-learning/resources/glossary.md)
-### [Machine Learning Basics](machine-learning/resources/basics.md)
-### [Data Transforms](machine-learning/resources/transforms.md)
+### [Machine learning glossary](machine-learning/resources/glossary.md)
+### [Machine learning basics](machine-learning/resources/basics.md)
+### [Machine learning tasks](machine-learning/resources/tasks.md)
+### [Data transforms](machine-learning/resources/transforms.md)
 
 <!-- End ML.NET Content -->
 

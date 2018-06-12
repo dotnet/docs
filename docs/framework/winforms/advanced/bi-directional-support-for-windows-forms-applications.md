@@ -111,6 +111,7 @@ You can use Visual Studio to create Windows-based applications that support bi-d
   
  Some controls are sealed. Therefore, you cannot derive a new control from them. These include the <xref:System.Windows.Forms.ImageList> and <xref:System.Windows.Forms.ProgressBar> controls.  
   
-## See Also  
- [Bidirectional Support for ASP.NET Web Applications](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)
+## See also
+
+[Bidirectional Support for ASP.NET Web Applications](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[Globalizing Windows Forms applications](globalizing-windows-forms.md)

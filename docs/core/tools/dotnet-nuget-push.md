@@ -3,7 +3,7 @@ title: dotnet nuget push command - .NET Core CLI
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
 ms.author: mairaw
-ms.date: 05/29/2018
+ms.date: 06/01/2018
 ---
 # dotnet nuget push
 
@@ -71,7 +71,7 @@ Doesn't push symbols (even if present).
 
 `--no-service-endpoint`
 
-Doesn't append "api/v2/packages" to the source URL.
+Doesn't append "api/v2/package" to the source URL.
 
 `-s|--source <SOURCE>`
 

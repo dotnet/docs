@@ -110,7 +110,7 @@ For more information, see the [`stackalloc` statement](../language-reference/key
 
 ### More types support the `fixed` statement
 
-The `fixed` statement supported a limited set of types. Starting with C# 7.3, any type that contains a `DangerousGetPinnableReference()` method that returns a `ref T` or `ref readonly T` may be `fixed`. Adding this feature means that `fixed` can be used with <xref:System.Span%601?displayProperty=nameWithType> and related types.
+The `fixed` statement supported a limited set of types. Starting with C# 7.3, any type that contains a `GetPinnableReference()` method that returns a `ref T` or `ref readonly T` may be `fixed`. Adding this feature means that `fixed` can be used with <xref:System.Span%601?displayProperty=nameWithType> and related types.
 
 For more information, see the [`fixed` statement](../language-reference/keywords/fixed-statement.md) article in the language reference.
 

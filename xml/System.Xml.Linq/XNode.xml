@@ -2511,72 +2511,19 @@ NodeType: Element   Child1
   
  For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
   
-   
-  
-## Examples  
- This example uses the following XML file, named Source.xml:  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8" ?>   
-<Root>  
-  <Child Key="01">  
-    <GrandChild>aaa</GrandChild>  
-  </Child>  
-  <Child Key="02">  
-    <GrandChild>bbb</GrandChild>  
-  </Child>  
-  <Child Key="03">  
-    <GrandChild>ccc</GrandChild>  
-  </Child>  
-</Root>  
-```  
-  
- This example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.ReadFrom%2A>. You can query the custom axis by using a LINQ query.  
-  
-> [!NOTE]
->  The following example uses the yield return construct of C#. Because there is no equivalent feature in [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)], this example is provided only in C#.  
-  
-```csharp  
-class Program  
-{  
-    static IEnumerable<XElement> StreamRootChildDoc(string uri)  
-    {  
-        using (XmlReader reader = XmlReader.Create(uri))  
-        {  
-            reader.MoveToContent();  
-            // Parse the file and display each of the nodes.  
-            while (reader.Read())  
-            {  
-                switch (reader.NodeType)  
-                {  
-                    case XmlNodeType.Element:  
-                        if (reader.Name == "Child")  
-                        {  
-                            XElement el = XElement.ReadFrom(reader) as XElement;  
-                            if (el != null)  
-                                yield return el;  
-                        }  
-                        break;  
-                }  
-            }  
-        }  
-    }  
-  
-    static void Main(string[] args)  
-    {  
-        IEnumerable<string> grandChildData =  
-            from el in StreamRootChildDoc("Source.xml")  
-            where (int)el.Attribute("Key") > 1  
-            select (string)el.Element("GrandChild");  
-  
-        foreach (string str in grandChildData)  
-            Console.WriteLine(str);  
-    }  
-}  
-```  
-  
- This example produces the following output.  
-  
+## Examples
+
+This example uses the following XML file, named *Source.xml*:
+
+[!code-xml[Source.xml](~/samples/snippets/csharp/api/system.xml.linq/xnode/readfrom/Source.xml)]
+
+The following example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.ReadFrom%2A> and then queries the custom axis by using a LINQ query:
+
+[!code-csharp[XNode.ReadFromCS](~/samples/snippets/csharp/api/system.xml.linq/xnode/readfrom/Program.cs)]
+[!code-vb[XNode.ReadFromVB](~/samples/snippets/visualbasic/api/system.xml.linq/xnode/readfrom/Program.vb)]
+
+This example produces the following output:
+
 ```  
 bbb  
 ccc  

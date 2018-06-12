@@ -1,4 +1,5 @@
 # [Language Reference](index.md)
+## [Configure language version](configure-language-version.md)
 ## [C# Keywords](keywords/)
 ## [C# Operators](operators/)
 ## [C# Special Characters](tokens/)

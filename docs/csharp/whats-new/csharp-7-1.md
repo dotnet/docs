@@ -12,7 +12,7 @@ the compiler to match a specified version of the language. That enables you to
 separate the decision to upgrade tools from the decision to upgrade language
 versions.
 
-C# 7.1 adds the [language version selection](#language-version-selection)
+C# 7.1 adds the [language version selection](../language-reference/configure-language-version.md)
 configuration element, three new language features and new compiler behavior.
 
 The new language features in this release are:
@@ -27,69 +27,7 @@ The new language features in this release are:
 Finally, the compiler has two options `/refout` and `/refonly` that
 control [reference assembly generation](#reference-assembly-generation).
 
-## Language version selection
-
-The C# compiler supports C# 7.1 starting with Visual Studio 2017 version 15.3, or
-the .NET Core SDK 2.0. However, the 7.1 features are turned
-off by default. To enable the 7.1 features, you need to change the language
-version setting for your project.
-
-In Visual Studio, right-click on the project node in Solution Explorer and select
-**Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown,
-select **C# latest minor version (latest)**, or the specific version **C# 7.1**
-as shown in the image following. The `latest` value means you want to use the latest
-minor version on the current machine. The `C# 7.1` means that you want to use C# 7.1,
-even after newer minor versions are released.
-
-![Setting the language version](./media/csharp-7-1/advanced-build-settings.png)
-
-Alternatively, you can edit the "csproj" file and add or modify the
-following lines:
-
-```xml
-<PropertyGroup>
-  <LangVersion>latest</LangVersion>
-</PropertyGroup>
-```
-
-> [!NOTE]
-> If you use the Visual Studio IDE to update your csproj files, the IDE
-> creates separate nodes for each build configuration. You'll typically
-> set the value the same in all build configurations, but you need to
-> set it explicitly for each build configuration, or select "All Configurations"
-> when you modify this setting. You'll see the following in your csproj file:
-
-```xml
-<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-  <LangVersion>latest</LangVersion>
-</PropertyGroup>
-
-<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-  <LangVersion>latest</LangVersion>
-</PropertyGroup>
-```
-
-Valid settings for the `LangVersion` element are:
-
-* `ISO-1`
-* `ISO-2`
-* `3`
-* `4`
-* `5`
-* `6`
-* `7`
-* `7.1`
-* `default`
-* `latest`
-
-The special strings `default` and `latest` resolve to the latest major
-and minor language versions installed on the build machine, respectively.
-
-This setting decouples installing new versions of the SDK and tools
-in your development environment from choosing to incorporate new language
-features in a project. You can install the latest SDK and tools on your
-build machine. Each project can be configured to use a specific version
-of the language for its build.
+To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version.
 
 ## Async main
 

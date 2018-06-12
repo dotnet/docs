@@ -194,6 +194,10 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/core/whats-new/whats-new-in-core-20.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-core-2-0"
+        },
+        {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
             "redirect_url": "/dotnet/core/tutorials/using-on-windows-full-solution",
             "redirect_document_id": true
@@ -1301,6 +1305,10 @@
         {
             "source_path":"docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url":"/dotnet/csharp/language-reference/keywords/foreach-in"
+        },
+        {
+            "source_path":"docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md",
+            "redirect_url":"/dotnet/framework/windows-workflow-foundation/samples/built-in-activities"
         }
     ]
 }

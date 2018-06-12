@@ -111,7 +111,7 @@ For programs built against the older Windows Cryptographic API:
 ## Finding vulnerable code - managed applications
 
 - The decryption call is to the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor> or <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])> methods on <xref:System.Security.Cryptography.SymmetricAlgorithm?displayProperty=nameWithType>.
-  - This includes the following derived types within the .NET Framework, but may also include third-party types:
+  - This includes the following derived types within the .NET, but may also include third-party types:
     - <xref:System.Security.Cryptography.Aes>
     - <xref:System.Security.Cryptography.AesCng>
     - <xref:System.Security.Cryptography.AesCryptoServiceProvider>

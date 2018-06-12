@@ -1,7 +1,7 @@
 ---
 title: Microservices hosted in Docker - C#
 description: Learn to create asp.net core services that run in Docker containers
-ms.date: 02/03/2017
+ms.date: 06/08/2017
 ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
 ---
 
@@ -11,21 +11,21 @@ This tutorial details the tasks necessary to build and deploy
 an ASP.NET Core microservice in a Docker container. During the course
 of this tutorial, you'll learn:
 
-* How to generate an ASP.NET Core application using Yeoman
-* How to create a development Docker environment
+* How to generate an ASP.NET Core application.
+* How to create a development Docker environment.
 * How to build a Docker image based on an existing image.
 * How to deploy your service into a Docker container.
 
 Along the way, you'll also see some C# language features:
 
 * How to convert C# objects into JSON payloads.
-* How to build immutable Data Transfer Objects
-* How to process incoming HTTP Requests and generate the HTTP Response
-* How to work with nullable value types
+* How to build immutable Data Transfer Objects.
+* How to process incoming HTTP Requests and generate the HTTP Response.
+* How to work with nullable value types.
 
 You can [view or download the sample app](https://github.com/dotnet/samples/tree/master/csharp/getting-started/WeatherMicroservice) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
-### Why Docker?
+## Why Docker?
 
 Docker makes it easy to create standard machine images to
 host your services in a data center, or the public cloud. Docker
@@ -37,10 +37,11 @@ The additional tasks for a Docker installation will work for an ASP.NET
 Core application. 
 
 ## Prerequisites
-You’ll need to setup your machine to run .NET core. You can find the
+
+You’ll need to setup your machine to run .NET Core. You can find the
 installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
 page.
-You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
+You can run this application on Windows, Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
@@ -52,89 +53,58 @@ for instructions for your platform.
 Docker can be installed in many Linux distributions, macOS, or Windows. The page
 referenced above contains sections to each of the available installations.
 
-Most components to be installed are done by a package manager. If you have node.js's package manager `npm` installed you can skip this step. 
-Otherwise install the latest NodeJs from [nodejs.org](https://nodejs.org) which will install the npm package manager. 
-
-At this point you will need to install a number of command line tools that support
-ASP.NET core development. The command line templates use Yeoman, Bower,
-Grunt, and Gulp. If you have them installed that is good, otherwise type the following into your favorite shell:
-
-`npm install -g yo bower grunt-cli gulp`
-
-The `-g` option indicates that it is a global install, and those tools are
-available system wide. (A local install scopes the package to a single
-project). Once you've installed those core tools, you need to install
-the yeoman ASP.NET template generators:
-
-`npm install -g generator-aspnet`
-
 ## Create the Application
 
 Now that you've installed all the tools, create a new ASP.NET Core
-application. To use the command line generator, execute the following
-yeoman command in your favorite shell:
+application. To do that, create a new directory called "WeatherMicroservice"
+and execute the following command in that directory in your favorite shell:
 
-`yo aspnet`
+```console
+dotnet new web
+```
 
-This command prompts you to select what Type of application you want to
-create. For this microservice, you want the simplest, most lightweight
-web application possible, so select 'Empty Web Application'. The template
-will prompt you for a name. Select 'WeatherMicroservice'. 
+The `dotnet` command runs the tools necessary
+for .NET development. Each verb executes a different command.
 
-The template creates eight files for you:
+The `dotnet new` command is used to create .Net Core projects.
 
-* A .gitignore, customized for ASP.NET Core applications.
+For this microservice, we want the simplest, most lightweight
+web application possible, so we used the "ASP.NET Core Empty" template,
+by specifying its short name, `web`.
+
+The template creates four files for you:
+
 * A Startup.cs file. This contains the basis of the application.
 * A Program.cs file. This contains the entry point of the application.
 * A WeatherMicroservice.csproj file. This is the build file for the application.
-* A Dockerfile. This script creates a Docker image for the application.
-* A README.md. This contains links to other ASP.NET Core resources.
-* A web.config file. This contains basic configuration information.
-* A runtimeconfig.template.json file. This contains debugging settings used by IDEs.
+* A Properties/launchSettings.json file. This contains debugging settings used by IDEs.
 
-Now you can run the template generated application. That's done using a series
-of tools from the command line. The `dotnet` command runs the tools necessary
-for .NET development. Each verb executes a different command
-
-The first step is to restore all the dependencies:
-
-```console
-dotnet restore
-```
-
-Dotnet restore uses the NuGet package manager to install all the necessary packages
-into the application directory. It also generates a project.json.lock file. This
-file contains information about each package that is referenced. After restoring
-all the dependencies, you build the application:
-
-```console
-dotnet build
-```
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-
-And once you build the application, you run it from the command line:
+Now you can run the template generated application:
 
 ```console
 dotnet run
 ```
 
+This command will first restore dependencies required to build the application
+and then it will build the application.
+
 The default configuration listens to `http://localhost:5000`. You can open a
 browser and navigate to that page and see a "Hello World!" message.
+
+When you're done, you can shut down the application by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 ### Anatomy of an ASP.NET Core application
 
 Now that you've built the application, let's look at how this functionality
 is implemented. There are two of the generated files that are particularly
-interesting at this point: project.json and Startup.cs. 
+interesting at this point: WeatherMicroservice.csproj and Startup.cs. 
 
-Project.json contains information about the project. The two nodes you'll
-often work with are 'dependencies' and 'frameworks'. The
-dependencies node lists all the packages that are needed for this application.
-At the moment, this is a small node, needing only the packages that run the
-web server.
+The .csproj file contains information about the project.
+The two nodes that are most interesting are `<TargetFramework>` and `<PackageReference>`.
 
-The 'frameworks' node specifies the versions and configurations of the .NET
-framework that will run this application.
+The `<TargetFramework>` node specifies the version of .NET that will run this application.
+
+Each `<PackageReference>` node is used to specify a package that is needed for this application.
 
 The application is implemented in Startup.cs. This file contains the startup
 class.
@@ -164,12 +134,14 @@ our random weather service:
 
 The next sections walk you through each of these steps.
 
-### Parsing the Query String.
+### Parsing the Query String
 
 You'll begin by parsing the query string. The service will accept 
 'lat' and 'long' arguments on the query string in this form:
 
-`http://localhost:5000/?lat=-35.55&long=-12.35`  
+```
+http://localhost:5000/?lat=-35.55&long=-12.35
+```
 
 All the changes you need to make are in the lambda expression
 defined as the argument to `app.Run` in your startup class.
@@ -182,7 +154,7 @@ find the latitude and longitude values:
 
 [!code-csharp[ReadQueryString](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#ReadQueryString "read variables from the query string")]
 
-The Query dictionary values are `StringValue` type. That type can
+The `Query` dictionary values are `StringValue` type. That type can
 contain a collection of strings. For your weather service, each
 value is a single string. That's why there's the call to `FirstOrDefault()`
 in the code above. 
@@ -213,10 +185,13 @@ the extension method for parse:
 
 [!code-csharp[TryParseExtension](../../../samples/csharp/getting-started/WeatherMicroservice/Extensions.cs#TryParseExtension "try parse to a nullable")]
 
-The `default(double?)` expression returns the default value for the
-`double?` type. That default value is the null (or missing) value.
+Before calling the extension method, change the current culture to invariant:
 
-You can use this extension method to convert the query string arguments
+[!code-csharp[SetCulture](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#SetCulture "set current culture to invariant")]
+
+This ensures that your application parses numbers the same on any server, regardless of its default culture.
+
+Now you can use the extension method to convert the query string arguments
 into the double type:
 
 [!code-csharp[UseTryParse](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#UseTryParse "Use the try parse extension method")]
@@ -238,7 +213,7 @@ container that holds the values you'd want for a weather forecast:
 ```csharp
 public class WeatherReport
 {
-    private static readonly string[] PossibleConditions = new string[]
+    private static readonly string[] PossibleConditions =
     {
         "Sunny",
         "Mostly Sunny",
@@ -248,33 +223,42 @@ public class WeatherReport
         "Rain"
     };
 
-    public int HiTemperature { get; }
-    public int LoTemperature { get; }
-    public int AverageWindSpeed { get; }
-    public string Conditions { get; }
+    public int HighTemperatureFahrenheit { get; }
+    public int LowTemperatureFahrenheit { get; }
+    public int AverageWindSpeedMph { get; }
+    public string Condition { get; }
 }
 ```
 
 Next, build a constructor that randomly sets those values. This constructor uses
-the values for the latitude and longitude to seed the Random number generator. That
+the values for the latitude and longitude to seed the `Random` number generator. That
 means the forecast for the same location is the same. If you change the arguments for
 the latitude and longitude, you'll get a different forecast (because you start with a 
-different seed.)
+different seed).
 
 [!code-csharp[WeatherReportConstructor](../../../samples/csharp/getting-started/WeatherMicroservice/WeatherReport.cs#WeatherReportConstructor "Weather Report Constructor")]
 
 You can now generate the 5-day forecast in your response method:
 
-[!code-csharp[GenerateRandomReport](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#GenerateRandomReport "Generate a random weather report")]
-
-### Build the JSON response.
-
-The final code task on the server is to convert the WeatherReport array
-into a JSON packet, and send that back to the client. Let's start by creating
-the JSON packet. You'll add the NewtonSoft JSON Serializer to the
-list of dependencies. You can do that using the `dotnet` CLI:
-
+```csharp
+if (latitude.HasValue && longitude.HasValue)
+{
+    var forecast = new List<WeatherReport>();
+    for (var days = 1; days <= 5; days++)
+    {
+        forecast.Add(new WeatherReport(latitude.Value, longitude.Value, days));
+    }
+}
 ```
+
+### Build the JSON response
+
+The final code task on the server is to convert the `WeatherReport` list
+into JSON document, and send that back to the client. Let's start by creating
+the JSON document. You'll add the Newtonsoft JSON serializer to the
+list of dependencies. You can do that using the following `dotnet` command:
+
+```console
 dotnet add package Newtonsoft.Json
 ```
 
@@ -283,7 +267,7 @@ Then, you can use the `JsonConvert` class to write the object to a string:
 [!code-csharp[ConvertToJson](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#ConvertToJSON "Convert objects to JSON")]
 
 The code above converts the forecast object (a list of `WeatherForecast`
-objects) into a JSON packet. After you've constructed the response packet,
+objects) into a JSON document. After you've constructed the response document,
 you set the content type to `application/json`, and write the string.
 
 The application now runs and returns random forecasts.
@@ -295,18 +279,38 @@ Docker container that runs a Docker image that represents our application.
 
 A ***Docker Image*** is a file that defines the environment for running the application.
 
-A ***Docker Container*** represents a running instance of a Docker image.
+A ***Docker Container*** represents a running instance of a Docker Image.
 
 By analogy, you can think of the *Docker Image* as a *class*, and the
 *Docker Container* as an object, or an instance of that class.  
 
-The Dockerfile created by the ASP.NET template will serve
-for our purposes. Let's go over its contents.
-
-The first line specifies the source image:
+The following Dockerfile will serve for our purposes:
 
 ```
-FROM microsoft/dotnet:1.1-sdk-msbuild
+FROM microsoft/dotnet:2.1-sdk AS build
+WORKDIR /app
+
+# Copy csproj and restore as distinct layers
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy everything else and build
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
+FROM microsoft/dotnet:2.1-aspnetcore-runtime
+WORKDIR /app
+COPY --from=build /app/out .
+ENTRYPOINT ["dotnet", "WeatherMicroservice.dll"]
+```
+
+Let's go over its contents.
+
+The first line specifies the source image used for building the application:
+
+```
+FROM microsoft/dotnet:2.1-sdk AS build
 ```
 
 Docker allows you to configure a machine image based on a
@@ -315,47 +319,51 @@ the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
 
-In this first sample, we'll use the `1.1-sdk-msbuild` version of
-the dotnet image. This is the easiest way to create a working Docker
-environment. This image include the dotnet core runtime, and the dotnet SDK. 
-That makes it easier to get started and build, but does create a larger image.
+In this sample, we'll use the `2.1-sdk` version of
+the `dotnet` image. This is the easiest way to create a working Docker
+environment. This image includes the .NET Core runtime, and the .NET Core SDK.
+That makes it easier to get started and build, but does create a larger image,
+so we'll use this image for building the application and a different image to run it.
 
-The next five lines setup and build your application:
+The next lines setup and build your application:
 
 ```
 WORKDIR /app
 
-# copy csproj and restore as distinct layers
+# Copy csproj and restore as distinct layers
+COPY *.csproj ./
+RUN dotnet restore
 
-COPY WeatherMicroService.csproj .
-RUN dotnet restore 
-
-# copy and build everything else
-
-COPY . .
-
-# RUN dotnet restore
+# Copy everything else and build
+COPY . ./
 RUN dotnet publish -c Release -o out
 ```
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-
 This will copy the project file from the  current directory to the Docker VM, and restore
 all the packages. Using the dotnet CLI means that the Docker image must include the
-.NET Core SDK. After that, the rest of your application gets copied, and the dotnet
-publish command builds and packages your application.
+.NET Core SDK. After that, the rest of your application gets copied, and the `dotnet
+publish` command builds and packages your application.
 
-The final line of the file runs the application:
+Finally, we create a second Docker image that runs the application:
 
 ```
-ENTRYPOINT ["dotnet", "out/WeatherMicroService.dll", "--server.urls", "http://0.0.0.0:5000"]
+# Build runtime image
+FROM microsoft/dotnet:2.1-aspnetcore-runtime
+WORKDIR /app
+COPY --from=build /app/out .
+ENTRYPOINT ["dotnet", "WeatherMicroservice.dll"]
 ```
 
-This configured port is referenced in the `--server.urls`
-argument to `dotnet` on the last  line of the Dockerfile. The `ENTRYPOINT` command
-informs Docker what command and command-line options start the service. 
+This image uses the `2.1-aspnetcore-runtime` version of the `dotnet` image,
+which contains everything necessary to run ASP.NET Core applications,
+but does not include the .NET Core SDK. This means this image can't be used to build
+.NET Core applications, but it also makes the final image smaller.
 
-## Building and running the image in a container.
+To make this work, we copy the built application from the first image to the second one.
+
+The `ENTRYPOINT` command informs Docker what command starts the service.
+
+## Building and running the image in a container
 
 Let's build an image and run the service inside a Docker container. You don't want
 all the files from your local directory copied into the image. Instead, you'll
@@ -386,16 +394,16 @@ Run the following command to start
 the container and launch your service:
 
 ```console
-docker run -d -p 80:5000 --name hello-docker weather-microservice
+docker run -d -p 80:80 --name hello-docker weather-microservice
 ```
 
 The `-d` option means to run the container detached from the current terminal. That means you
 won't see the command output in your terminal. The `-p` option indicates the port mapping between
 the service and the host. Here it says that any incoming request on port 80 should be forwarded
-to port 5000 on the container. Using 5000 matches the port your service is listening on from
-the command line arguments specified in the Dockerfile above. The `--name` argument
+to port 80 on the container. Using 80 matches the port your service is listening on,
+which is the default port for production applications. The `--name` argument
 names your running container. It's a convenient name you can use to work with that
-container. 
+container.
 
 You can see if the image is running by checking the command:
 
@@ -404,7 +412,7 @@ docker ps
 ```
 
 If your container is running, you'll see a line that lists
-it in the running processes. (It may be the only one).
+it in the running processes. (It may be the only one.)
 
 You can test your service by opening a browser and navigating to localhost, and
 specifying a latitude and longitude:
@@ -415,7 +423,7 @@ http://localhost/?lat=35.5&long=40.75
 
 ## Attaching to a running container
 
-When you ran your sevice in a command window, you could see diagnostic information printed
+When you ran your service in a command window, you could see diagnostic information printed
 for each request. You don't see that information when your container is running in detached
 mode. The Docker attach command enables you to attach to a running container so that you
 can see the log information.  Run this command from a command window:
@@ -424,18 +432,18 @@ can see the log information.  Run this command from a command window:
 docker attach --sig-proxy=false hello-docker
 ```
 
-The `--sig-proxy=false` argument means that `Ctrl-C` commands do not get sent to the
+The `--sig-proxy=false` argument means that <kbd>Ctrl</kbd>+<kbd>C</kbd> commands do not get sent to the
 container process, but rather stop the `docker attach` command. The final argument
 is the name given to the container in the `docker run` command. 
 
 > [!NOTE]
 > You can also use the Docker assigned container ID to refer to any container. If you
-> didn't specify a name for your container in `docker run` you must use the container id.
+> didn't specify a name for your container in `docker run` you must use the container ID.
 
 Open a browser and navigate to your service. You'll see the diagnostic messages in
 the command windows from the attached running container.
 
-Press `Ctrl-C` to stop the attach process.
+Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the attach process.
 
 When you are done working with your container, you can stop it:
 

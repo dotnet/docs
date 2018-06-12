@@ -81,7 +81,7 @@ Applications that are unable to change their messaging format but perform unauth
 - Decrypt without allowing the decryptor to verify or remove padding:
   - Any padding that was applied still needs to be removed or ignored, you're moving the burden into your application.
   - The benefit is that the padding verification and removal can be incorporated into other application data verification logic. If the padding verification and data verification can be done in constant time, the threat is reduced.
-  - Since the interpretation of the padding changes, the perceived message length there may still be timing information emitted from this approach.
+  - Since the interpretation of the padding changes the perceived message length, there may still be timing information emitted from this approach.
 - Change the decryption padding mode to ISO10126:
   - ISO10126 decryption padding is compatible with both PKCS7 encryption padding and ANSIX923 encryption padding.
   - Changing the mode reduces the padding oracle knowledge to 1 byte instead of the entire block. However, if the content has a well-known footer, such as a closing XML element, related attacks can continue to attack the rest of the message.

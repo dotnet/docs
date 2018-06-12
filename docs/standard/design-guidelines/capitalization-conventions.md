@@ -31,10 +31,13 @@ The guidelines in this chapter lay out a simple method for using case that, when
   
  `IOStream`  
   
- The camelCasing convention, used only for parameter names, capitalizes the first character of each word except the first word, as shown in the following examples. As the example also shows, two-letter acronyms that begin a camel-cased identifier are both lowercase.  
+ The camelCasing convention, used only for parameter names, capitalizes the first character of each word except the first word, as shown in the following examples. 
   
  `propertyDescriptor`  
  `ioStream`  
+ 
+ As the example also shows, two-letter acronyms that begin a camel-cased identifier are both lowercase.  
+ 
  `htmlTag`  
   
  **✓ DO** use PascalCasing for all public member, type, and namespace names consisting of multiple words.  

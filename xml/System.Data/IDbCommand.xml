@@ -32,9 +32,9 @@
 ## Remarks  
  The <xref:System.Data.IDbCommand> interface enables an inheriting class to implement a Command class, which represents an SQL statement that is executed at a data source. For more information about Command classes, see [Executing a Command](~/docs/framework/data/adonet/executing-a-command.md).  
   
- An application does not create an instance of the <xref:System.Data.IDbCommand> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbCommand>.  
+ An application does not create an instance of the <xref:System.Data.IDbCommand> interface directly, but creates an instance of a class that implements the <xref:System.Data.IDbCommand> interface.  
   
- Classes that inherit <xref:System.Data.IDbCommand> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbCommand> interface defines the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> method. In turn, the <xref:System.Data.SqlClient.SqlCommand> class inherits this method, and also defines the <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> method.  
+ Classes that implement <xref:System.Data.IDbCommand> must implement all its members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbCommand> interface defines the <xref:System.Data.IDbCommand.ExecuteNonQuery%2A> method. In turn, the <xref:System.Data.SqlClient.SqlCommand> class inherits this method, and also defines the <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> method.  
   
    
   

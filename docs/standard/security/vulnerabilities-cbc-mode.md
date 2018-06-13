@@ -7,8 +7,7 @@ ms.author: "mairaw"
 ---
 # Timing vulnerabilities with CBC-mode symmetric decryption using padding
 
-Microsoft, based on currently known cryptographic research, believes that, except for very specific circumstances, it's no longer safe to
-decrypt data encrypted with the Cipher-Block-Chaining (CBC) mode of symmetric encryption when verifiable padding has been applied without first ensuring the integrity of the ciphertext.
+Microsoft believes that it's no longer safe to decrypt data encrypted with the Cipher-Block-Chaining (CBC) mode of symmetric encryption when verifiable padding has been applied without first ensuring the integrity of the ciphertext, except for very specific circumstances. This judgement is based on currently known cryptographic research. 
 
 ## Introduction
 

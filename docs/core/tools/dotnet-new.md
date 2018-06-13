@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/29/2018
+ms.date: 06/12/2018
 ---
 # dotnet new
 
@@ -496,13 +496,13 @@ Create a .NET Standard class library project in the specified directory (availab
 
 `dotnet new classlib -lang VB -o MyLibrary`
 
-Create a new ASP.NET Core C# MVC application project in the current directory with no authentication targeting .NET Core 2.0:
+Create a new ASP.NET Core C# MVC application project in the current directory with no authentication:
 
-`dotnet new mvc -au None -f netcoreapp2.0`
+`dotnet new mvc -au None`
 
-Create a new xUnit application targeting .NET Core 2.0:
+Create a new xUnit application:
 
-`dotnet new xunit --framework netcoreapp2.0`
+`dotnet new xunit`
 
 List all templates available for MVC:
 

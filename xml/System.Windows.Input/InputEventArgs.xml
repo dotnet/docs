@@ -126,7 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the time when this event occurred.</summary>
-        <value>The timestamp.</value>
+        <value>The number of milliseconds that have elapsed since the last reboot. After about 24.9 days this value reaches <see cref="F:System.Int32.MaxValue" /> and restarts at (the negative) <see cref="F:System.Int32.MinValue" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

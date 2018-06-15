@@ -107,8 +107,5 @@ int j = (int) o;
   
 -   [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
   
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

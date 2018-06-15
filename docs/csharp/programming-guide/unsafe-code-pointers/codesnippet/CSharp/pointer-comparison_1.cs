@@ -1,1 +1,1 @@
-// compile with: /unsafe
+// compile with: -unsafe

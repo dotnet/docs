@@ -64,7 +64,9 @@
   
  Developers may want to opt out of this behavior in order to maintain interoperability with their existing SSL3 services OR TLS w/ RC4 services. [This article](https://support.microsoft.com/kb/3069494) explains how to modify your code so that the new behavior is disabled.  
   
- The .NET Framework 4.7 adds new overloads for the methods that authenticate SslStreams that do not specify a TLS version, but instead use the TLS version defined as the system default in [SCHANNEL](https://msdn.microsoft.com/library/windows/desktop/aa380123.aspx). Use these methods in your app as a way to be able to later modify the defaults as TLS version best practice changes over time, without the need to rebuild and redeploy your app.  
+ The .NET Framework 4.7 adds new overloads for the methods that authenticate SslStreams that do not specify a TLS version, but instead use the TLS version defined as the system default in [SCHANNEL](https://msdn.microsoft.com/library/windows/desktop/aa380123.aspx). Use these methods in your app as a way to be able to later modify the defaults as TLS version best practice changes over time, without the need to rebuild and redeploy your app.
+
+ Also see [Transport Layer Security (TLS) best practices with the .NET Framework](~/docs/framework/network-programming/tls.md).
   
    
   

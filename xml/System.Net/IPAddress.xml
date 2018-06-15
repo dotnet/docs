@@ -276,15 +276,6 @@
   
  To convert <xref:System.Net.IPAddress.Address%2A> to dotted-quad notation, use the <xref:System.Net.IPAddress.ToString%2A> method.  
   
-   
-  
-## Examples  
- The following example uses the <xref:System.Net.IPAddress.Address%2A> parameter to retrieve the IP address of the <xref:System.Net.IPAddress> instance.  
-  
- [!code-cpp[IPAddress_Address_AddressFamily#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/CPP/ipaddress_address_addressfamily.cpp#2)]
- [!code-csharp[IPAddress_Address_AddressFamily#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/CS/ipaddress_address_addressfamily.cs#2)]
- [!code-vb[IPAddress_Address_AddressFamily#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPAddress_Address_AddressFamily/VB/ipaddress_address_addressfamily.vb#2)]  
-  
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">The address family is <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" />.</exception>

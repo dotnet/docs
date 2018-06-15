@@ -101,7 +101,16 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class. These constructors are obsolete; see the Remarks section for details. </summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not be used. Call the <xref:System.Net.WebRequest.CreateHttp%2A?displayProperty=nameWithType> method to initialize new <xref:System.Net.HttpWebRequest> objects.     
+  
+      ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -125,7 +134,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class. This constructor is obsolete. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +189,7 @@
       <Docs>
         <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that contains the information required to serialize the new <see cref="T:System.Net.HttpWebRequest" /> object.</param>
         <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that contains the source and destination of the serialized stream associated with the new <see cref="T:System.Net.HttpWebRequest" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes. This constructor is obsolete. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -59,7 +59,7 @@ As with [Options](options.md), the naming convention for a function that returns
 
 ## Value Option properties and methods
 
-There is one property for Value Options at this time: `Value`. A <cref:System.InvalidOperationException> is raised if there is no value present when this property is invoked.
+There is one property for Value Options at this time: `Value`. A <xref:System.InvalidOperationException> is raised if there is no value present when this property is invoked.
 
 ## Value Option functions
 

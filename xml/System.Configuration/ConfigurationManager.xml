@@ -653,7 +653,7 @@ End Module
         <Parameter Name="sectionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sectionName">The configuration section path and name.</param>
+        <param name="sectionName">The configuration section path and name. Node names are separated by forward slashes, for example "system.net/mailSettings/smtp".</param>
         <summary>Retrieves a specified configuration section for the current application's default configuration.</summary>
         <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" /> object, or <see langword="null" /> if the section does not exist.</returns>
         <remarks>

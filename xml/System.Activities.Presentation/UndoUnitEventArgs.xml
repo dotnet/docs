@@ -49,7 +49,7 @@
         <ReturnType>System.Activities.Presentation.UndoUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.UndoUnit" /> to be passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAdd" /> event.</summary>
+        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.UndoUnit" /> to be passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAdded" /> event.</summary>
         <value>Returns <see cref="T:System.Activities.Presentation.UndoUnit" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

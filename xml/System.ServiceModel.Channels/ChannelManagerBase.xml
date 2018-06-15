@@ -157,7 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the close method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the close method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the close method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -194,7 +194,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the open method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the open method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the open method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -231,7 +231,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the receive method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the receive method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the receive method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -268,7 +268,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the send method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the send method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the send method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

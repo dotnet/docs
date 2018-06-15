@@ -210,8 +210,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItem" /> collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</returns>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -462,8 +462,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItem" /> collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</returns>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

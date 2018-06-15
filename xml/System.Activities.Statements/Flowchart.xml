@@ -270,7 +270,7 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of <see cref="T:System.WorkflowModel.Variable" /> objects associated with the <see cref="T:System.Activities.Statements.Flowchart" />, which are available to share state across the child activities contained within the Flowchart.</summary>
+        <summary>Gets or sets the collection of <see cref="T:System.Activities.Variable" /> objects associated with the <see cref="T:System.Activities.Statements.Flowchart" />, which are available to share state across the child activities contained within the Flowchart.</summary>
         <value>The collection of variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

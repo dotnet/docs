@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity.Execute(System.Activities.ActivityExecutionContext)" /> method, which has full access to the runtime’s features.</summary>
+    <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity.Execute(System.Activities.NativeActivityContext)" /> method, which has full access to the runtime’s features.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

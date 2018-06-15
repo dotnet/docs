@@ -32,7 +32,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that the persistence provider reattempts to lock an instance with an exponentially increasing delay between successive attempts. The persistence provider passes the <see cref="T:System.Runtime.Persistence.InstanceLockedException" /> to the caller at the end of the sequence (after retrying predefined number of times).</summary>
+        <summary>Specifies that the persistence provider reattempts to lock an instance with an exponentially increasing delay between successive attempts. The persistence provider passes the <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" /> to the caller at the end of the sequence (after retrying predefined number of times).</summary>
       </Docs>
     </Member>
     <Member MemberName="BasicRetry">
@@ -51,7 +51,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the persistence provider reattempts to lock the instance with a linear retry interval. The persistence provider passes the <see cref="T:System.Runtime.Persistence.InstanceLockedException" /> to the caller at the end of the sequence (after retrying predefined number of times).</summary>
+        <summary>Specifies that the persistence provider reattempts to lock the instance with a linear retry interval. The persistence provider passes the <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" /> to the caller at the end of the sequence (after retrying predefined number of times).</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRetry">

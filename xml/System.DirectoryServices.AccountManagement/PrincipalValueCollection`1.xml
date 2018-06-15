@@ -200,7 +200,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that can be used to iterate through the collection.</summary>
-        <returns>An <see cref="T:SystemCollections.IEnumerator" /> object.</returns>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -606,7 +606,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator for iterating through the collection.</summary>
-        <returns>An <see cref="T:SystemCollections.IEnumerator" /> object.</returns>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>

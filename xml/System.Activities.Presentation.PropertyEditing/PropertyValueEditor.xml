@@ -71,7 +71,7 @@
       </Parameters>
       <Docs>
         <param name="inlineEditorTemplate">The inline editor <see cref="T:System.Windows.DataTemplate" /> used to create the new property value editor.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> class as the specified <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyContainer.InlineEditorTemplate" />.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> class with the specified <see cref="T:System.Windows.DataTemplate" /> that is used for an inline editor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -636,7 +636,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that iterates through the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-        <returns>An <see cref="T:System.Collections.Generic.IEnumerator" /> for the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</returns>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

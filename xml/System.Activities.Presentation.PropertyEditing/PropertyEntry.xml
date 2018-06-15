@@ -30,7 +30,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Design.PropertyEditing.PropertyEntry" /> class.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> class.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -544,7 +544,7 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a set of possible values supported by this <see cref="T:System.Activities.Design.PropertyEditing.PropertyEntry" />.</summary>
+        <summary>Gets a set of possible values supported by this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
         <value>An <see cref="T:System.Collections.ICollection" /> of possible values.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Container for all dialog-editing logic for <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyContainer.PropertyEntry" /> objects.</summary>
+    <summary>Container for all dialog-editing logic for <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -79,9 +79,9 @@
         <Parameter Name="inlineEditorTemplate" Type="System.Windows.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="dialogEditorTemplate">A <see cref="T:System.Window.DataTemplate" /> that is hosted in a host-specific dialog chrome and has its <see cref="P:System.Activities.ActivityContext.DataContext" /> set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
+        <param name="dialogEditorTemplate">A <see cref="T:System.Windows.DataTemplate" /> that is hosted in a host-specific dialog chrome and has its <see cref="P:System.Activities.ActivityContext.DataContext" /> set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
         <param name="inlineEditorTemplate">A <see cref="T:System.Windows.DataTemplate" /> that is used for the inline editor user interface. If used, its <see cref="P:System.Activities.ActivityContext.DataContext" /> is set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Design.PropertyEditing.DialogPropertyValueEditor" /> class with the specified dialog editor and inline editor templates.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor" /> class with the specified dialog editor and inline editor templates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +131,7 @@
       </Parameters>
       <Docs>
         <param name="propertyValue">The <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValue" /> for the property being edited.</param>
-        <param name="commandSource">The <see cref="T:System.Windows.IinputElement" /> that can be used as a source for execution of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands" />.</param>
+        <param name="commandSource">The <see cref="T:System.Windows.IInputElement" /> that can be used as a source for execution of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands" />.</param>
         <summary>Called when the <see cref="P:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate" /> is null and a dialog has been invoked by the user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

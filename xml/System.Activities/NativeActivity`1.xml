@@ -20,7 +20,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="TResult">The result returned by the activity.</typeparam>
-    <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity`1.Execute(System.Activities.ActivityExecutionContext)" /> method, that has full access to the runtime’s features.</summary>
+    <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity`1.Execute(System.Activities.NativeActivityContext)" /> method, that has full access to the runtime’s features.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

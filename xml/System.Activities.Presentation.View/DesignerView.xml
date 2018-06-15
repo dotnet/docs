@@ -157,7 +157,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains the dependency property that represents the <see cref="T:System.Activities.Design.View.CommandMenuMode" /> property.</summary>
+        <summary>Contains the dependency property that represents the <see cref="T:System.Activities.Presentation.View.CommandMenuMode" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -312,7 +312,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The command used to create a new <see cref="T:System.Activities.Design.WorkflowViewElement" /> on the current [!INCLUDE[wfd1](~/includes/wfd1-md.md)] surface when dragging a workflow item from the Toolbox onto the designer surface.</summary>
+        <summary>The command used to create a new <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> on the current [!INCLUDE[wfd1](~/includes/wfd1-md.md)] surface when dragging a workflow item from the Toolbox onto the designer surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -838,7 +838,7 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="modelItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem)" /> that becomes the root designer.</param>
+        <param name="modelItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that becomes the root designer.</param>
         <summary>Places a specified model item at the root (top) of a hierarchy of designers.</summary>
         <remarks>To be added.</remarks>
       </Docs>

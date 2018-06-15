@@ -153,7 +153,7 @@
         <Parameter Name="desiredSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="desiredSize">The desired <see cref="T.Systems.Windows.Size" /> of the image to return.</param>
+        <param name="desiredSize">The desired <see cref="T:System.Windows.Size" /> of the image to return.</param>
         <summary>Returns an <see cref="T:System.Object" /> that the host can display in a <see cref="T:System.Windows.Controls.ContentControl" />.</summary>
         <returns>An <see cref="T:System.Object" /> to display in the <see cref="T:System.Windows.Controls.ContentControl" />.</returns>
         <remarks>To be added.</remarks>

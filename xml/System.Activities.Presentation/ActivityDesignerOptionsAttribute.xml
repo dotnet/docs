@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies drill-down and node viewing mode for an <see cref="T:system.Activities.Presentation.ActivityDesigner" />, such as Flowcharts, that are used to compose activities.</summary>
+    <summary>Specifies drill-down and node viewing mode for an <see cref="T:System.Activities.Presentation.ActivityDesigner" />, such as Flowcharts, that are used to compose activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +68,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether drilling down one level into an <see cref="T:system.Activities.Presentation.ActivityDesigner" /> is allowed.</summary>
+        <summary>Gets or sets a value that indicates whether drilling down one level into an <see cref="T:System.Activities.Presentation.ActivityDesigner" /> is allowed.</summary>
         <value>
           <see langword="true" /> if drilling into the UI elements is allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>

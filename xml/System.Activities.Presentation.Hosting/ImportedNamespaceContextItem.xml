@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.ImportedNamespaceContextItem" /> class.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.Hosting.ImportedNamespaceContextItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -100,7 +100,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the type of the imported namespace context item.</summary>
-        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.Activities.Presentation.View.ImportedNamespaceContextItem" />.</value>
+        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.Activities.Presentation.Hosting.ImportedNamespaceContextItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

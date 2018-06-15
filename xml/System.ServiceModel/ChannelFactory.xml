@@ -246,7 +246,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the default interval of time provided for a close operation to complete.</summary>
-        <value>The default <see cref="T:System.Timespan" /> that specifies how long the close operation has to complete before timing out.</value>
+        <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

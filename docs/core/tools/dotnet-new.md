@@ -218,7 +218,7 @@ Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
 > [!NOTE]
 > To uninstall a template using a source `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not. Additionally, do not include a final terminating directory slash on your template path.
 > 
-> Even if you installed a template using a `PATH` to a local NuGet *.nupkg* package, you will still uninstall it from the package's `NUGET_ID` rather than the source path of the *.nupkg* file.
+> If you are unable to determine the `PATH` or `NUGET_ID` argument needed to uninstall a template, running `dotnet new --uninstall` without an argument will list all installed templates and the argument required to uninstall them.
 
 # [.NET Core 1.x](#tab/netcore1x)
 

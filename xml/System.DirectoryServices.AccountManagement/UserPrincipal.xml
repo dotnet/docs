@@ -174,7 +174,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The user principal object for the current user could not be found. The principal object may contain an access control list to prevent access by unauthorized users.</exception>
-        <exception cref="T:System.MultipleMatchesException">Multiple user principal objects matching the current user were found.</exception>
+        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user were found.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>

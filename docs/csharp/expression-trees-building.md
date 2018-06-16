@@ -51,10 +51,10 @@ Once you've got the addition expression, you can create the lambda
 expression:
 
 ```csharp
-var lamdba = Expression.Lambda(addition);
+var lambda = Expression.Lambda(addition);
 ```
 
-This is a very simple LambdaExpression, because it contains no arguments.
+This is a very simple lambda expression, because it contains no arguments.
 Later in this section, you'll see how to map arguments to parameters
 and build more complicated expressions.
 

@@ -1,7 +1,7 @@
 ---
-title: Signatures (F#)
-description: Learn how to use an F# signature file to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
-ms.date: 05/16/2016
+title: Signature files (F#)
+description: Learn how to use F# signature files to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
+ms.date: 06/15/2018
 ---
 # Signatures
 

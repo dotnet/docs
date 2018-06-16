@@ -4,7 +4,7 @@ description: Discover how to use ML.NET in a binary classification scenario to u
 ms.date: 06/04/2018
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
+#Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 # Tutorial: Use ML.NET in a sentiment analysis binary classification scenario
 
@@ -235,7 +235,7 @@ Add a call to the new method from the `Main` method, right under the `Train` met
 
 [!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#12 "Call the Evaluate method")]
 
-The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
+The <xref:Microsoft.ML.Data.TextLoader> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
 
 [!code-csharp[LoadText](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#13 "Load the test dataset")]
 

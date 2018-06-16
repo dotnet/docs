@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 Computation expressions in F# provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. They can be used to provide a convenient syntax for *monads*, a functional programming feature that can be used to manage data, control, and side effects in functional programs.
 
-
 ## Built-in Workflows
 
 Sequence expressions are an example of a computation expression, as are asynchronous workflows and query expressions. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Query Expressions](query-expressions.md).
@@ -22,12 +21,11 @@ The previous syntax specifies that the given expression is a computation express
 
 In computation expressions, two forms are available for some common language constructs. You can invoke the variant constructs by using a ! (bang) suffix on certain keywords, such as `let!`, `do!`, and so on. These special forms cause certain functions defined in the builder class to replace the ordinary built-in behavior of these operations. These forms resemble the `yield!` form of the `yield` keyword that is used in sequence expressions. For more information, see [Sequences](sequences.md).
 
-
 ## Creating a New Type of Computation Expression
+
 You can define the characteristics of your own computation expressions by creating a builder class and defining certain special methods on the class. The builder class can optionally define the methods as listed in the following table.
 
 The following table describes methods that can be used in a workflow builder class.
-
 
 |**Method**|**Typical signature(s)**|**Description**|
 |----|----|----|

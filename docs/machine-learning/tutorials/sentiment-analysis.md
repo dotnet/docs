@@ -175,7 +175,7 @@ Initialize a new instance of <xref:Microsoft.ML.LearningPipeline> that will incl
 
 [!code-csharp[LearningPipeline](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#5 "Create a learning pipeline")]
 
-The <xref:Microsoft.ML.TextLoader%601> object is the first part of the pipeline, and loads the training file data.
+The <xref:Microsoft.ML.Data.TextLoader> object is the first part of the pipeline, and loads the training file data.
 
 [!code-csharp[TextLoader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#6 "Add a text loader to the pipeline")]
 

@@ -5,21 +5,190 @@ ms.date: 05/16/2016
 ---
 # Computation Expressions
 
-Computation expressions in F# provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. They can be used to provide a convenient syntax for *monads*, a functional programming feature that can be used to manage data, control, and side effects in functional programs.
+Computation expressions in F# provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. Depending on the kind of computation expression, they can be thought of as a way to express monads, monoids, monad transformers, and applicative functors. However, unlike other languages (such as *do-notation* in Haskell), they are not tied to a single kind of abstraction, and do not rely on macros or other forms of metaprogramming to accomplish a convenient and context-sensitive syntax.
 
-## Built-in Workflows
+## Overview
 
-Sequence expressions are an example of a computation expression, as are asynchronous workflows and query expressions. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Query Expressions](query-expressions.md).
+Computations can take many forms. The most common form of computation is single-threaded execution, which is easy to understand and modify. However, not all forms of computation are as straightforward:
 
-Certain features are common to both sequence expressions and asynchronous workflows and illustrate the basic syntax for a computation expression:
+* Non-deterministic computations
+* Asynchronous computations
+* Effectful computations
+* Generative computations
 
-```fsharp
-builder-name { expression }
+More generally, there are *context-sensitive* computations that you must perform in certain parts of an application. Writing context-sensitive code can be challenging, as it is quite easy to "leak" computations outside of a given context without certain abstractions to prevent you from doing so.
+
+Computation expressions offer a uniform syntax and abstraction model for encoding context-sensitive computations.
+
+Every computation expressio is backed by a *builder* type. This builder type defines the operations that are available for the computation expression. Further below, [Creating a New Type of Computation Expression](computation-expressions.md#creating-a-new-type-of-computation-expression) shows how this is done.
+
+### Syntax overview
+
+All computation expressions have the following form:
+
+```
+builder-expr { cexper }
 ```
 
-The previous syntax specifies that the given expression is a computation expression of a type specified by *builder-name*. The computation expression can be a built-in workflow, such as `seq` or `async`, or it can be something you define. The *builder-name* is the identifier for an instance of a special type known as the *builder type*. The builder type is a class type that defines special methods that govern the way the fragments of the computation expression are combined, that is, code that controls how the expression executes. Another way to describe a builder class is to say that it enables you to customize the operation of many F# constructs, such as loops and bindings.
+Where `builder-expr` is a name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
 
-In computation expressions, two forms are available for some common language constructs. You can invoke the variant constructs by using a ! (bang) suffix on certain keywords, such as `let!`, `do!`, and so on. These special forms cause certain functions defined in the builder class to replace the ordinary built-in behavior of these operations. These forms resemble the `yield!` form of the `yield` keyword that is used in sequence expressions. For more information, see [Sequences](sequences.md).
+```fsharp
+let fetchAndDownload url =
+    async {
+        let! data = downloadData url
+
+        let processedData = processData data
+
+        return processedData
+    }
+```
+
+There is a special, additional syntax available within a computation expression, as shown in the previous example. The following expression forms are possible with Computation Expressions:
+
+```fsharp
+expr { let! ... }
+expr { do! ... }
+expr { yield ... }
+expr { yield! ... }
+expr { return ... }
+expr { return! ... }
+expr { match! ... }
+```
+
+Each of these keywords, and other standard F# keywords are only available in a computation expression if they have been defined in the backing builder type. The only exception to this is `match!`, which is itself syntactic sugar for use of `let!` followed by a pattern match on the result.
+
+The builder type is a class type that defines special methods that govern the way the fragments of the computation expression are combined; that is, code that controls how the expression executes. Another way to describe a builder class is to say that it enables you to customize the operation of many F# constructs, such as loops and bindings.
+
+### `let!`
+
+The `let!` keyword binds the result of a call to another computation expression to a name:
+
+```fsharp
+let doThingsAsync url =
+    async {
+        let! data = getDataAsync url
+        ...
+    }
+```
+
+Note that if you bind the call to a computation expression with `let`, you will not get the result of the computation expression. Instead, you will have bound the value of the *unrealized* call to that computation expression. You must use `let!` to bind to the result.
+
+`let!` is defined by the `Bind(x, f)` member on the builder type.
+
+### `do!`
+
+The `do!` keyword is for calling a computation expression that returns a `unit`-like type (defined by the `Zero` member on the builder):
+
+```fsharp
+let doThingsAsync data url =
+    async {
+        do! sumbitData data url
+        ...
+    }
+```
+
+In the case of the [async workflow](asynchronous-workflows.md), this type is `Async<unit>`. For other computation expressions, the type is likely to be `CExpType<unit>`.
+
+`do!` is defined by the `Bind(x, f)` member on the builder type, where `f` produces a `unit`.
+
+### `yield`
+
+The `yield` keyword is for returning a value from the computation expression so that it can be consumed as an <xref:System.Collections.Generic.IEnumerable<T>>:
+
+```fsharp
+let squares =
+    seq {
+        for i in 1..10 do
+            yield i * i
+    }
+
+for sq in squares do
+    printfn "%d" sq
+```
+
+As with the [yield keyword in C#](../../csharp/keywords/yield.md), each element in the computation expression is yielded back as it is iterated.
+
+`yield` is defined by the `Yield(x)` member on the builder type, where `x` is the item to yield back.
+
+### `yield!`
+
+The `yield!` keyword is for flattening a collection of values from a computation expression:
+
+```fsharp
+let squares =
+    seq {
+        for i in 1..3 -> i * i
+    }
+
+let cubes =
+    seq {
+        for i in 1..3 -> i * i * i
+    }
+
+let squaresAndCubes =
+    seq {
+        yield! squares
+        yield! cubes
+    }
+
+printfn "%A" squaresAndCubes // Prints - 1; 4; 9; 1; 8; 27
+```
+
+When evaluated, the computation expression called by `yield!` will have its items yielded back one-by-one, flattening the result.
+
+`yield!` is defined by the `YieldFrom(x)` member on the builder type, where `x` is a collection of values.
+
+### `return`
+
+The `return` keyword takes a value and wraps it in the type corresponding to the computation expression. Aside from computation expressions using `yield`, it is used to "complete" a computation expression:
+
+```fsharp
+let req = // 'req' is of type is 'Async<data>'
+    async {
+        let! data = fetch url
+        return data
+    }
+
+// 'result' is of type 'data'
+let result = Async.RunSynchronously req
+```
+
+`return` is defined by the `Return(x)` member on the builder type, where `x` is the item to wrap.
+
+### `return!`
+
+The `return!` keyword takes a computation expression, realizes its value, and wraps that result in the type corresponding to the computation expression:
+
+```fsharp
+let req = // 'req' is of type is 'Async<data>'
+    async {
+        return! fetch url
+    }
+
+// 'result' is of type 'data'
+let result = Async.RunSynchronously req
+```
+
+`return!` is defined by the `ReturnFrom(x)` member on the builder type, where `x` is another computation expression.
+
+### `match!`
+
+The `match!` keyword allows you to inline a call to another computation expression and pattern match on its result:
+
+```fsharp
+let doThingsAsync url =
+    async {
+        match! callService url with
+        | Some data -> ...
+        | None -> ...
+    }
+```
+
+When calling a computation expression with `match!`, it will realize the result of the call likw `let!`. This is often used when calling a computation expression where the result is an [optional](options.md).
+
+## Built-in computation expressions
+
+The F# core library defines three built-in computation expressions: [Sequence Expressions](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Query Expressions](query-expressions.md).
 
 ## Creating a New Type of Computation Expression
 
@@ -43,6 +212,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`Yield`|`'T -> M<'T>`|Called for `yield` expressions in computation expressions.|
 |`YieldFrom`|`M<'T> -> M<'T>`|Called for `yield!` expressions in computation expressions.|
 |`Zero`|`unit -> M<'T>`|Called for empty `else` branches of `if...then` expressions in computation expressions.|
+
 Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for asynchronous workflows and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next. The compiler, when it parses a computation expression, converts the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression.
 
 The nested expression is of the following form:

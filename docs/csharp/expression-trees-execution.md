@@ -65,7 +65,7 @@ Notice that the delegate type is based on the expression type. You must
 know the return type and the argument list if you want to use the
 delegate object in a strongly typed manner. The `LambdaExpression.Compile()`
 method returns the `Delegate` type. You will have to cast it to the correct
-delegate type to have any compile-time tools check the argument list of
+delegate type to have any compile-time tools check the argument list or
 return type.
 
 ## Execution and Lifetimes

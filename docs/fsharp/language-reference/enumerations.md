@@ -41,6 +41,8 @@ The `enum` function in the F# library can be used to generate an enumeration val
 The default `enum` function works with type `int32`. Therefore, it cannot be used with enumeration types that have other underlying types. Instead, use the following.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2104.fs)]
+
+Additionally, cases for enums are always emitted as `public`. This is so that they align with C# and the rest of the .NET platform.
     
 ## See Also
 [F# Language Reference](index.md)

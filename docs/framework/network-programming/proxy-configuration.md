@@ -32,7 +32,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
 ```xml  
 <system.net>  
     <defaultProxy>  
-      <proxy usesystemdefault="true" />
+      <proxy usesystemdefault="false" />
     </defaultProxy>  
 </system.net>  
 ```  
@@ -55,7 +55,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
 |`proxyaddress` or <xref:System.Net.WebProxy.Address>|The address of the proxy to use.|  
 |`bypassonlocal` or <xref:System.Net.WebProxy.BypassProxyOnLocal>|Controls whether the proxy is bypassed for local addresses.|  
 |`bypasslist` or <xref:System.Net.WebProxy.BypassArrayList>|Describes, with regular expressions, a set of addresses that bypass the proxy.|  
-|`usesystemdefaults`|Controls whether the static proxy settings (proxy address, bypass list, and bypass on local) should be read from the Internet Explorer proxy settings for the user. If this value is set to `true`, then the static proxy settings from Internet Explorer will be used. On .NET Framework 2.0 when this value is set to `true`, the Internet Explorer proxy settings are not overridden by other proxy settings in the configuration file. On .NET Framework 1.1, the Internet Explorer proxy settings can be overridden by other proxy settings in the configuration file.<br /><br /> If this value is `false` or not set, then the static proxy settings can be specified in the configuration and will override the Internet Explorer proxy settings. This value must also be set to `false` or not set for adaptive proxies to be enabled.|  
+|`usesystemdefault`|Controls whether the static proxy settings (proxy address, bypass list, and bypass on local) should be read from the Internet Explorer proxy settings for the user. If this value is set to `true`, then the static proxy settings from Internet Explorer will be used. On .NET Framework 2.0 when this value is set to `true`, the Internet Explorer proxy settings are not overridden by other proxy settings in the configuration file. On .NET Framework 1.1, the Internet Explorer proxy settings can be overridden by other proxy settings in the configuration file.<br /><br /> If this value is `false` or not set, then the static proxy settings can be specified in the configuration and will override the Internet Explorer proxy settings. This value must also be set to `false` or not set for adaptive proxies to be enabled.|  
   
  The following example shows a typical static proxy configuration.  
   

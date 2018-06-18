@@ -9,7 +9,7 @@ ms.date: 06/08/2018
 
 In order to create resilient microservices, you would need to handle possible HTTP failure scenarios. For that purpose, you could create your own implementation of retries with exponential backoff.
 
-**Important note:** The purpose of this section is just to show you how you could try to create your own custom code to implement HTTP call retries. However, it is not recommended to do it by your own but to use more powerful and reliable while simpler to use mechanisms, such as HttpClientFactory with Polly, available since .NET Core 2.1. Those recommended approaches are explained in the next sections. 
+**Important note:** This section shows you how you could create your own custom code to implement HTTP call retries. However, it is not recommended to do it by your own but to use more powerful and reliable while simpler to use mechanisms, such as `HttpClientFactory` with Polly, available since .NET Core 2.1. Those recommended approaches are explained in the next sections. 
 
 As an initial exploration, you could implement your own code with a utility class for exponential backoff as in [RetryWithExponentialBackoff.cs](https://gist.github.com/CESARDELATORRE/6d7f647b29e55fdc219ee1fd2babb260), plus code like the following (which is also available at this [GitHub repo](https://gist.github.com/CESARDELATORRE/d80c6423a1aebaffaf387469f5194f5b)).
 

@@ -3,7 +3,7 @@ title: Implementing the Circuit Breaker pattern
 description: .NET Microservices Architecture for Containerized .NET Applications | Implement the Circuit Breaker pattern as a complementary system to Http retries
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/10/2018
+ms.date: 06/18/2018
 ---
 
 # Implement the Circuit Breaker pattern
@@ -15,7 +15,8 @@ In a distributed environment, calls to remote resources and services can fail du
 However, there can also be situations where faults are due to unanticipated events that might take much longer to fix. These faults can range in severity from a partial loss of connectivity to the complete failure of a service. In these situations, it might be pointless for an application to continually retry an operation that is unlikely to succeed. 
 
 Instead, the application should be coded to accept that the operation has failed and handle the failure accordingly.
-In addition, a dangerous risk you can have when using Http retries is that when any microservice is failing or simply performing very slowly, the other client apps or services might start retrying http requests. If that failure persists for a long time, because of so many Http retries you could be causing a Denial of Service ([DoS](https://en.wikipedia.org/wiki/Denial-of-service_attack)) attack to yourself. 
+
+Using Http retries carelessly could result in creating a Denial of Service ([DoS](https://en.wikipedia.org/wiki/Denial-of-service_attack)) attack within your own software. As a microservice fails or performs slowly, multiple clients might repeatedly retry failed requests. That creates a dangerous risk of exponentially increasing traffic targeted at the failing service.
 
 Therefore, you need some kind of defense barrier so the retries stop requests when it is not worth to keep trying. That defense barrier is precisely the circuit breaker.
 
@@ -37,9 +38,9 @@ services.AddHttpClient<IBasketService, BasketService>()
         .AddPolicyHandler(GetCircuitBreakerPolicy());
 ```
 
-The *AddPolicyHandler()* method is what adds policies to the HttpClient objects you will use. In this case, it is adding a Polly’s policy for a circuit breaker.
+The `AddPolicyHandler()`method is what adds policies to the HttpClient objects you will use. In this case, it is adding a Polly’s policy for a circuit breaker.
 
-In order to have a more modular approach, the Http Retry Policy can be defined in a separate method named GetCircuitBreakerPolicy(), as the following code.
+In order to have a more modular approach, the Circuit Breaker Policy is defined in a separate method named GetCircuitBreakerPolicy(), as the following code.
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
@@ -50,7 +51,7 @@ static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
 }
 ```
 
-In the code example above, the circuit breaker policy is configured so it break or open the circuit when there have been five exceptions when retrying the Http requests. Then, 30 seconds will be the duration or the break.
+In the code example above, the circuit breaker policy is configured so it breaks or opens the circuit when there have been five exceptions when retrying the Http requests. Then, 30 seconds will be the duration or the break.
 
 Circuit breakers should also be used to redirect requests to a fallback infrastructure if you had issues in a particular resource that is deployed in a different environment than the client application or service that is performing the HTTP call. That way, if there is an outage in the datacenter that impacts only your backend microservices but not your client applications, the client applications can redirect to the fallback services. Polly is planning a new policy to automate this [failover policy](https://github.com/App-vNext/Polly/wiki/Polly-Roadmap#failover-policy) scenario. 
 
@@ -139,7 +140,7 @@ Here’s a summary. The Retry policy tries several times to make the HTTP reques
 
 You can implement different logic for when to open/break the circuit. Or you can try an HTTP request against a different back-end microservice if there is a fallback datacenter or redundant back-end system. 
 
-Finally, another possibility for the CircuitBreakerPolicy is to use Isolate (which forces open and holds open the circuit) and Reset (which closes it again). These could be used to build a utility HTTP endpoint that invokes Isolate and Reset directly on the policy.  Such an HTTP endpoint could also be used, suitably secured, in production for temporarily isolating a downstream system, such as when you want to upgrade it. Or it could trip the circuit manually to protect a downstream system you suspect to be faulting.
+Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` (which forces open and holds open the circuit) and `Reset` (which closes it again). These could be used to build a utility HTTP endpoint that invokes Isolate and Reset directly on the policy.  Such an HTTP endpoint could also be used, suitably secured, in production for temporarily isolating a downstream system, such as when you want to upgrade it. Or it could trip the circuit manually to protect a downstream system you suspect to be faulting.
 
 
 ## Additional resources

@@ -761,6 +761,15 @@
       </AssemblyInfo>
       <Docs>
         <summary>Compiles regular expressions and saves them to disk in a single assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System.PlatformNotSupportedException>; writing out an assembly is not supported.
+  
+       ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompileToAssembly">
@@ -827,6 +836,7 @@
  The regular expression pattern of one or more objects in <paramref name="regexinfos" /> contains invalid syntax.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="assemblyname" /> or <paramref name="regexinfos" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: Creating an assembly of compiled regular expressions is not supported. </exception>  
         <block subset="none" type="usage">
           <para>If you are developing on a system that has [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or its point releases installed, you target [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], and you use the <see cref="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" /> method to create an assembly that contains compiled regular expressions. Trying to use one of the regular expressions in that assembly on a system that has [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] throws an exception. To work around this problem, you can do either of the following:  
   
@@ -918,6 +928,7 @@
  The regular expression pattern of one or more objects in <paramref name="regexinfos" /> contains invalid syntax.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="assemblyname" /> or <paramref name="regexinfos" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: Creating an assembly of compiled regular expressions is not supported. </exception>  
         <block subset="none" type="usage">
           <para>If you are developing on a system that has [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or its point releases installed, you target [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], and you use the <see cref="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" /> method to create an assembly that contains compiled regular expressions. Trying to use one of the regular expressions in that assembly on a system that has [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] throws an exception. To work around this problem, you can do either of the following:  
   
@@ -996,6 +1007,7 @@
           <paramref name="assemblyname" /> or <paramref name="regexinfos" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">The <paramref name="resourceFile" /> parameter designates an invalid Win32 resource file.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file designated by the <paramref name="resourceFile" /> parameter cannot be found.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: Creating an assembly of compiled regular expressions is not supported. </exception>  
         <block subset="none" type="usage">
           <para>If you are developing on a system that has [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or its point releases installed, you target [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], and you use the <see cref="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" /> method to create an assembly that contains compiled regular expressions. Trying to use one of the regular expressions in that assembly on a system that has [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] throws an exception. To work around this problem, you can do either of the following:  
   

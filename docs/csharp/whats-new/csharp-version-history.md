@@ -50,7 +50,7 @@ Other C# 2.0 features added capabilities to existing features:
 
 While C# may have started as a generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a significant way.
 
-With generics, you have types and methods that can operate on an arbitrary type while still retaining type safety. So, for instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type safe operations on those strings or integers while you iterate through them. Using generics is better than creating `ListInt` inheritors or casting from `Object` for every operation.
+With generics, types and methods can operate on an arbitrary type while still retaining type safety. For instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type-safe operations on those strings or integers while you iterate through them. Using generics is better than create `ListInt` that derives from `ArrayList`  or casting from `Object` for every operation.
 
 C# version 2.0 brought iterators. To put it succinctly, iterators let you examine all the items in a `List` (or other Enumerable types) with a `foreach` loop. Having iterators as a first-class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
 
@@ -97,7 +97,7 @@ Dynamic binding gives you the potential for errors but also great power within t
 
 ## C# version 5.0
 
-C# version 5.0 was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list:
+C# version 5.0 was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming .  Here is the major features list:
 
 - [Asynchronous members](../async.md)
 - [Caller info attributes](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
@@ -108,7 +108,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 ## C# version 6.0
 
-With versions 3.0 and 5.0, C# had added some impressive features in an object-oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many features that delighted users of the language. Here are some of them:
+With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
 
 - [Static imports](../language-reference/keywords/using-static.md)
 - [Exception filters](https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/)

@@ -47,7 +47,7 @@
   
  If <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.List%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.List%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.List%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -188,7 +188,7 @@
   
  If <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> also return `false`.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> throws an <xref:System.InvalidOperationException>. 
   
  ]]></format>
         </remarks>
@@ -285,9 +285,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After calling <xref:System.Collections.IEnumerator.Reset%2A>, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ After calling <xref:System.Collections.Generic.List%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A>, you must call <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.List%601.Enumerator.Current%2A>.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.List%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.
   
  ]]></format>
         </remarks>

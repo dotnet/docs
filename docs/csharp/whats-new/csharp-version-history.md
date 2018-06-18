@@ -17,6 +17,19 @@ But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacke
 
 C# version 1.0 looked stripped of features, compared to today. You'd find yourself writing some verbose code. But yet, you have to start somewhere. C# version 1.0 was a viable alternative to Java on the Windows platform.
 
+The major features of C# 1.0 included:
+
+- [Classes](../programming-guide/classes-and-structs/classes.md)
+- [Structs](../programming-guide/classes-and-structs/structs.md)
+- [Interfaces](../programming-guide/interfaces/index.md)
+- [Events](../events-overview.md)
+- [Properties](../properties.md)
+- [Delegates](../delegates-overview.md)
+- [Expressions](../programming-guide/statements-expressions-operators/expressions.md)
+- [Statements](../programming-guide/statements-expressions-operators/statements.md)
+- [Attributes](../programming-guide/concepts/attributes/index.md)
+- Literals
+
 ## C# version 2.0
 
 Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
@@ -27,6 +40,13 @@ Now things start to get interesting. Let's take a look at some major features of
 - [Nullable types](../programming-guide/nullable-types/index.md)
 - [Iterators](../programming-guide/concepts/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)
+
+Other C# 2.0 features added capabilities to existing features:
+
+- Getter/setter separate accessibility
+- Method group conversions (delegates)
+- Static classes
+- Delegate inference
 
 While C# may have started as a pretty generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a big way.
 
@@ -46,6 +66,9 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Lambda expression](https://www.daedtech.com/introduction-to-c-lambda-expressions/)
 - [Expression trees](https://blogs.msdn.microsoft.com/charlie/2008/01/31/expression-tree-basics/)
 - [Extension methods](https://www.codeproject.com/Tips/709310/Extension-Method-In-Csharp)
+- [Implicitly typed local variables](../language-reference/keywords/var.md)
+- [Partial methods](../language-reference/keywords/partial-method.md)
+- Object and collection initializers
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
@@ -96,6 +119,11 @@ With versions 3.0 and 5.0, C# had added some impressive features in an object or
 - [nameof operator](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
 - [Index initializers](csharp-6.md#index-initializers)
 
+Other new features include:
+
+- Await in catch/finally blocks
+- Default values for getter-only properties
+
 Each of these features is interesting in its own right. But if you look at them altogether, you see an interesting pattern. In this version, C# eliminated language boilerplate to make code more terse and readable. So for fans of clean, simple code, this language version was a huge win.
 
 They did one other thing along with this version, though it's not a traditional language feature in itself. They released [Roslyn the compiler as a service](https://github.com/dotnet/roslyn). The C# compiler is now written in C#, and you can use the compiler as part of your programming efforts.
@@ -110,6 +138,14 @@ The most recent major version is C# version 7.0. This version has some evolution
 - [Local functions](http://www.infoworld.com/article/3182416/application-development/c-7-in-depth-exploring-local-functions.html)
 - [Expanded expression bodied members](./csharp-7.md#more-expression-bodied-members)
 - [Ref locals and returns](./csharp-7.md#ref-locals-and-returns)
+
+Other features included:
+
+- [Discards](../discards.md)
+- [Binary Literals](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/binary-literals.md)
+- [Digit Separators](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/digit-separators.md)
+- Ref returns and locals
+- [Throw expressions](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/throw-expression.md)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 

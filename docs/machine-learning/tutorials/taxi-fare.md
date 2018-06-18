@@ -152,7 +152,7 @@ pipeline.Add(new CategoricalOneHotVectorizer("VendorId",
                                              "PaymentType"));
 ```
 
-The last step in data preparation combines all of the **features** into one vector using the <xref:Microsoft.ML.Transforms.ColumnConcatenator> transformation class. This necessary step helps the algorithm to easily process the features. Add the following code:
+The last step in data preparation combines all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Transforms.ColumnConcatenator> transformation class. This step is necessary as a learner processes only features from the **Features** column. Add the following code:
 
 ```csharp
 pipeline.Add(new ColumnConcatenator("Features",

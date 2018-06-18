@@ -93,7 +93,7 @@ In the case of the [async workflow](asynchronous-workflows.md), this type is `As
 
 ### `yield`
 
-The `yield` keyword is for returning a value from the computation expression so that it can be consumed as an <xref:System.Collections.Generic.IEnumerable<T>>:
+The `yield` keyword is for returning a value from the computation expression so that it can be consumed as an <xref:system.collections.generic.ienumerable-1>:
 
 ```fsharp
 let squares =
@@ -106,7 +106,7 @@ for sq in squares do
     printfn "%d" sq
 ```
 
-As with the [yield keyword in C#](../../csharp/keywords/yield.md), each element in the computation expression is yielded back as it is iterated.
+As with the [yield keyword in C#](../../csharp/language-reference/keywords/yield.md), each element in the computation expression is yielded back as it is iterated.
 
 `yield` is defined by the `Yield(x)` member on the builder type, where `x` is the item to yield back.
 

@@ -11,9 +11,9 @@ What did the language look like in its earliest incarnations? And how has it evo
 
 ## C# version 1.0
 
-When you go back and look, C# version 1.0 looked a lot like Java. As [part of its stated design goals for ECMA](http://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
+When you go back and look, C# version 1.0 looked a lot like Java. As [part of its stated design goals for ECMA](http://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general-purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
 
-But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacked the built-in async capabilities and some of the slick functionality around generics that we take for granted. As a matter of fact, it lacked generics altogether.  And [LINQ](../linq/index.md)? Not available yet. That would take some years to come out.
+But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacked the built-in async capabilities and some of the slick functionality around generics you take for granted. As a matter of fact, it lacked generics altogether.  And [LINQ](../linq/index.md)? Not available yet. Those additions would take some years to come out.
 
 C# version 1.0 looked stripped of features, compared to today. You'd find yourself writing some verbose code. But yet, you have to start somewhere. C# version 1.0 was a viable alternative to Java on the Windows platform.
 
@@ -48,11 +48,11 @@ Other C# 2.0 features added capabilities to existing features:
 - Static classes
 - Delegate inference
 
-While C# may have started as a pretty generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a big way.
+While C# may have started as a generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a significant way.
 
-With generics, you have types and methods that can operate on an arbitrary type while still retaining type safety. So, for instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type safe operations on those strings or integers while you iterate through them. This is better than creating `ListInt` inheritors or casting from `Object` for every operation.
+With generics, you have types and methods that can operate on an arbitrary type while still retaining type safety. So, for instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type safe operations on those strings or integers while you iterate through them. Using generics is better than creating `ListInt` inheritors or casting from `Object` for every operation.
 
-C# version 2.0 brought iterators. To put it succinctly, this lets you iterate through the items in a `List` (or other Enumerable types) with a `foreach` loop. Having this as a first-class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
+C# version 2.0 brought iterators. To put it succinctly, iterators let you examine all the items in a `List` (or other Enumerable types) with a `foreach` loop. Having iterators as a first-class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
 
 And yet, C# continued to play a bit of catch-up with Java. Java had already released versions that included generics and iterators. But that would soon change as the languages continued to evolve apart.
 
@@ -72,7 +72,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
-A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
+A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object-Oriented / Functional language.
 
 Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made it look as though that list of integers had gotten a whole lot smarter.
 
@@ -93,11 +93,11 @@ Embedded interop types alleviated a deployment pain. Generic covariance and cont
 
 The major feature was the introduction of the `dynamic` keyword. The `dynamic` keyword introduced into C# version 4.0 the ability to override the compiler on compile-time typing. By using the dynamic keyword, you can create constructs similar to dynamically typed languages like JavaScript. You can create a `dynamic x = "a string"` and then add six to it, leaving it up to the runtime to sort out what should happen next.
 
-This gives you the potential for errors but also great power within the language.
+Dynamic binding gives you the potential for errors but also great power within the language.
 
 ## C# version 5.0
 
-C# version 5.0 was a very focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list:
+C# version 5.0 was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list:
 
 - [Asynchronous members](../async.md)
 - [Caller info attributes](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
@@ -108,7 +108,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 ## C# version 6.0
 
-With versions 3.0 and 5.0, C# had added some impressive features in an object oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many features that delighted users of the language. Here are some of them:
+With versions 3.0 and 5.0, C# had added some impressive features in an object-oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many features that delighted users of the language. Here are some of them:
 
 - [Static imports](../language-reference/keywords/using-static.md)
 - [Exception filters](https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/)
@@ -149,6 +149,6 @@ Other features included:
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 
-But C# is being put to ever broader use. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability.  This certainly occupies the language designers' thoughts and time, in addition to coming up with new features.
+But C# is being put to ever broader use. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability.  These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

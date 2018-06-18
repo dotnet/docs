@@ -130,7 +130,7 @@ var pipeline = new LearningPipeline();
 
 ## Load and transform data
 
-The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file, which path is defined by the value of the `_datapath` constant. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
+The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` constant. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
 
 ```csharp
 pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, separator: ','));

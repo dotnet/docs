@@ -3,7 +3,7 @@ title: Use ML.NET to predict New York taxi fares (regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
 ms.author: johalex
-ms.date: 06/11/2018
+ms.date: 06/18/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
@@ -138,7 +138,7 @@ pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, sep
 
 In the next steps we refer to the columns by the names defined in the `TaxiTrip` class.
 
-When the model is trained, the values in the column named **Label** are considered as values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Transforms.ColumnCopier> and add the following code:
+When the model is trained and evaluated, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Transforms.ColumnCopier> and add the following code:
 
 ```csharp
 pipeline.Add(new ColumnCopier(("FareAmount", "Label")));
@@ -163,16 +163,16 @@ pipeline.Add(new ColumnConcatenator("Features",
                                     "PaymentType"));
 ```
 
-Notice that the `TripTime` column, which corresponds to the `trip_time_in_secs` column in the data set, isn't included. You already determined that it isn't a useful prediction feature.
+Notice that the `TripTime` column, which corresponds to the `trip_time_in_secs` column in the data set file, isn't included. You already determined that it isn't a useful prediction feature.
 
 > [!NOTE]
 > These steps must be added to the pipeline in the order specified above for successful execution.
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learning algorithm trains the model. You chose a **regression task** for this problem, so you add a <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner that utilizes **gradient boosting** to the pipeline.
+After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. You chose a **regression task** for this problem, so you add a <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner, which is one of the regression learners provided by ML.NET.
 
-Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
+<xref:Microsoft.ML.Trainers.FastTreeRegressor> learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
 
 Add the following code into the `Train` method following the data processing code added in the previous step:
 

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: f6bb18d8-c86a-4549-8862-323e6b32a8dd
 ---
 # XAML 2009 Language Features
-XAML 2009 is the shorthand term for new XAML language features that extend the existing XAML language specification. XAML 2009 introduces several new directives and constructs. These include the[x:Arguments Directive](../../../docs/framework/xaml-services/x-arguments-directive.md); the [x:FactoryMethod Directive](../../../docs/framework/xaml-services/x-factorymethod-directive.md); the [x:Reference Markup Extension](../../../docs/framework/xaml-services/x-reference-markup-extension.md); the [x:TypeArguments Directive](../../../docs/framework/xaml-services/x-typearguments-directive.md); and built-in types for common language primitives (for example `x:Char`).  
+XAML 2009 is the shorthand term for new XAML language features that extend the existing XAML language specification. XAML 2009 introduces several new directives and constructs. These include the [x:Arguments Directive](../../../docs/framework/xaml-services/x-arguments-directive.md); the [x:FactoryMethod Directive](../../../docs/framework/xaml-services/x-factorymethod-directive.md); the [x:Reference Markup Extension](../../../docs/framework/xaml-services/x-reference-markup-extension.md); the [x:TypeArguments Directive](../../../docs/framework/xaml-services/x-typearguments-directive.md); and built-in types for common language primitives (for example `x:Char`).  
   
 <a name="xaml_2009_support_in_wpf_and_visual_studio"></a>   
 ## XAML 2009 Support in WPF and Visual Studio  

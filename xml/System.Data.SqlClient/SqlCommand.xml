@@ -2669,6 +2669,8 @@ Int32 count = (Int32) cmd.ExecuteScalar();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ The **XmlReader** returned by this method does not support asynchronous operations.
+
  The <xref:System.Data.SqlClient.SqlCommand.CommandText%2A> property ordinarily specifies a [!INCLUDE[tsql](~/includes/tsql-md.md)] statement with a valid FOR XML clause. However, <xref:System.Data.SqlClient.SqlCommand.CommandText%2A> can also specify a statement that returns `ntext` or `nvarchar` data that contains valid XML, or the contents of a column defined with the `xml` data type.  
   
  A typical <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> query can be formatted as in the following Microsoft Visual C# example:  
@@ -2682,9 +2684,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
  The multiple active result set (MARS) feature allows for multiple actions using the same connection.  
   
  If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
-  
-   
-  
+
+
 ## Examples  
  The following example creates a <xref:System.Data.SqlClient.SqlCommand> and then executes it using <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A>. The example is passed a string that is a Transact-SQL FOR XML SELECT statement, and a string to use to connect to the data source.  
   
@@ -2750,7 +2751,10 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+
+The **XmlReader** returned by this method does not support asynchronous operations.
+
+For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -2807,7 +2811,10 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+
+The **XmlReader** returned by this method does not support asynchronous operations.
+
+For more information about asynchronous programming in the .NET Framework Data Provider for SQL Server, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>

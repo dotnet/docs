@@ -25,10 +25,6 @@
 |`proxyaddress`|A URI that identifies the Web proxy server to use.|  
 |`bypassonlocal`|Determines whether the Web proxy is bypassed for local resources.|  
 |`usesystemdefault`|Controls whether the Internet Explorer Web proxy settings are used.|  
-|`useDefaultCredentialsForScriptDownload`|Controls whether default credentials are used when accessing the configuration script.|  
-|`scriptDownloadInterval`|Specifies the number of seconds that elapse before the configuration script is refreshed.|  
-|`scriptDownloadTimeout`|Specifies the number of seconds allowed for the configuration script to be downloaded.|  
-|`useDefaultCredentials`|Controls whether default credentials are used when accessing the Web proxy.|  
   
  This class is used to specify and configure the Web proxy server to use for requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   

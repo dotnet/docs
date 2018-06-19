@@ -11,7 +11,22 @@ This is a general description of .NET Core support.
 
 ## LTS and Current Release Trains
 
-Having two support release trains is a common concept in use throughout the software world, specially for open-source projects like .NET Core. .NET Core has the following support release trains: [Long Term Support (LTS)](https://en.wikipedia.org/wiki/Long-term_support) and Current. LTS releases are maintained for stability over their lifecycle, receiving fixes for important issues and security fixes. New feature work and additional bug fixes take place in Current releases. From a support perspective, these release trains have the following support lifecycle attributes.
+There are two trains of releases for .NET Core: Long Term Support (LTS) and Current. That enables users to pick the level of stability and new features they want, while still being supported.
+
+Having two support release trains is a common concept in use throughout the software world, specially for open-source projects like .NET Core. .NET Core has the following support release trains: [Long Term Support (LTS)](https://en.wikipedia.org/wiki/Long-term_support) and Current. LTS releases are maintained for stability over their lifecycle, receiving fixes for important issues and security fixes. New feature work and additional bug fixes take place in Current releases.
+
+- LTS means you get new features less frequently, but you have a more mature platform. LTS also has a longer period of support.
+- Current means you get new features and APIs more frequently, but the disadvantage is that you have a shorter window of time to install updates, and those updates happen more frequently. Current is also fully supported but the support period is shorter than LTS.
+
+A "Current" version may get promoted to LTS.
+
+"LTS" and "Current" should be considered as labels that we put on specific releases to make a statement about the associated level of support.
+
+For more information, see [.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support).
+
+## Support timeframes
+
+From a support perspective, these release trains have the following support lifecycle attributes.
 
 LTS releases are
 * Supported for three years after the general availability date of a LTS release

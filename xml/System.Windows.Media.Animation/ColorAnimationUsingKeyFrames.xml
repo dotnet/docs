@@ -32,7 +32,7 @@
 ## Remarks  
  A key frame animation's target values are defined by its <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames.KeyFrames%2A> property, which contains a collection of <xref:System.Windows.Media.Animation.ColorKeyFrame> objects. Each <xref:System.Windows.Media.Animation.ColorKeyFrame> defines a segment of the animation with its own target <xref:System.Windows.Media.Animation.ColorKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.ColorKeyFrame.KeyTime%2A>. When the animation runs, it progresses from one key value to the next at the specified key times.  
   
- There are three types of <xref:System.Windows.Media.Animation.ColorKeyFrame> classes, one for each supported interpolation method: <xref:System.Windows.Media.Animation.LinearColorKeyFrame>, <xref:System.Windows.Media.Animation.DiscreteColorKeyFrame>, and <xref:System.Windows.Media.Animation.SplineColorKeyFrame>.  
+ There are four types of <xref:System.Windows.Media.Animation.ColorKeyFrame> classes, one for each supported interpolation method: <xref:System.Windows.Media.Animation.LinearColorKeyFrame>, <xref:System.Windows.Media.Animation.DiscreteColorKeyFrame>, <xref:System.Windows.Media.Animation.EasingColorKeyFrame>, and <xref:System.Windows.Media.Animation.SplineColorKeyFrame>.  
   
  Unlike a <xref:System.Windows.Media.Animation.ColorAnimation>, a <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames> can have more than two of target values. You can also control the interpolation method of individual <xref:System.Windows.Media.Animation.ColorKeyFrame> segments.  
   

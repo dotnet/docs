@@ -2,7 +2,7 @@
   <Docs>
     <summary>The <see langword="System.Collections.Concurrent" /> namespace provides several thread-safe collection classes that should be used in place of the corresponding types in the <see cref="N:System.Collections" /> and <see cref="N:System.Collections.Generic" /> namespaces whenever multiple threads are accessing the collection concurrently.  
   
- However, members accessed through one of the interfaces the current collections implement, including extension methods, are not guaranteed to be thread safe and may need to be synchronized by the caller.</summary>
+However, access to elements of a collection object through extension methods or through explicit interface implementations are not guaranteed to be thread-safe and may need to be synchronized by the caller.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

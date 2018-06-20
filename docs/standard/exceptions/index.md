@@ -47,9 +47,9 @@ The following table lists some common exceptions with examples of what can cause
 | <xref:System.Exception> | Base class for all exceptions. | None (use a derived class of this exception). |
 | <xref:System.IndexOutOfRangeException> | Thrown by the runtime only when an array is indexed improperly. | Indexing an array outside its valid range: <br /> `arr[arr.Length+1]` |
 | <xref:System.NullReferenceException> | Thrown by the runtime only when a null object is referenced. | `object o = null;` <br /> `o.ToString();` |
-| <xref:System.InvalidOperationException> | Thrown by methods when in an invalid state. | Calling `Enumerator.GetNext()` after removing an Item from the underlying collection. |
+| <xref:System.InvalidOperationException> | Thrown by methods when in an invalid state. | Calling `Enumerator.MoveNext()` after removing an item from the underlying collection. |
 | <xref:System.ArgumentException> | Base class for all argument exceptions. | None (use a derived class of this exception). |
-| <xref:System.ArgumentNullException> | Thrown by methods that do not allow an argument to be null. | <code>String s = null;&#13;&#10;"Calculate".IndexOf(s);</code>|
+| <xref:System.ArgumentNullException> | Thrown by methods that do not allow an argument to be null. | <pre><code>String s = null;&#13;&#10;"Calculate".IndexOf(s);</code></pre>|
 | <xref:System.ArgumentOutOfRangeException> | Thrown by methods that verify that arguments are in a given range. | `String s = "string";` <br /> `s.Substring(s.Length+1);` |
 
 ## See also

@@ -163,7 +163,7 @@ The `Train` method executes the following tasks:
 Create the `Train` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static PredictionModel<SentimentData, SentimentPrediction> Train()
+public static async Task<PredictionModel<SentimentData, SentimentPrediction>> Train()
 {
 
 }

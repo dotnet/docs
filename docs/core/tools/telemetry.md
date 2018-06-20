@@ -7,7 +7,7 @@ ms.date: 06/20/2018
 ---
 # .NET Core SDK telemetry
 
-The [.NET Core SDK](index.md) includes a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It's important that the .NET Team understands how the tools are used so they can be improved. For more information, see [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/).
+The [.NET Core SDK](index.md) includes a telemetry feature that collects usage information. It's important that the .NET Team understands how the tools are used so they can be improved. For more information, see [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/).
 
 The collected data is anonymous and published in an aggregated form for use by both Microsoft and the community under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
 

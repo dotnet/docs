@@ -53,7 +53,7 @@ You can view a video that walks through the entire migration: [Lift and shift wi
 
 ## Parse a CSV file and insert into a database
 
-Extract, Transform, and Load (ETL) is a common business function that integrates different systems. Traditional approaches often involve setting up dedicated FTP servers then deploying scheduled jobs to parse files and translate them for business use. Serverless architecture makes the job easier because a trigger can fire when the file is uploaded. Azure Functions tackles tasks like ETL through its ideal  composition of small pieces of code that focus on a specific problem.
+Extract, Transform, and Load (ETL) is a common business function that integrates different systems. Traditional approaches often involve setting up dedicated FTP servers then deploying scheduled jobs to parse files and translate them for business use. Serverless architecture makes the job easier because a trigger can fire when the file is uploaded. Azure Functions tackles tasks like ETL through its ideal composition of small pieces of code that focus on a specific problem.
 
 ![ETL architecture](./media/csvimport.png)
 
@@ -67,7 +67,7 @@ Azure Functions is used to serve a Single Page Application (SPA) that allows you
 
 ![Link shortener architecture](./media/link-shortener-architecture.png)
 
-You can then create a PowerBI dashboard to gather insights about the data collected. On the backend, Application Insights provide important metrics. Telemetry includes how long it takes for the average user to redirect and how long it takes to access Azure Table Storage.
+You can then create a PowerBI dashboard to gather insights about the data collected. On the backend, Application Insights provides important metrics. Telemetry includes how long it takes for the average user to redirect and how long it takes to access Azure Table Storage.
 
 ![Power BI example](./media/power-bi-example.png)
 

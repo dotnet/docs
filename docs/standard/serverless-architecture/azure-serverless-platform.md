@@ -13,7 +13,7 @@ You can also use Application Insights, a serverless platform for capturing diagn
 
 ![Azure serverless platform](./media/azure-serverless-platform.png)
 
-The chapter breaks down the fundamentals of each component.
+This chapter breaks down the fundamentals of each component.
 
 >[!div class="step-by-step"]
 [Previous] (./serverless-design-examples.md)

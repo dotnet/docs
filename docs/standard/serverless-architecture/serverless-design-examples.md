@@ -25,16 +25,16 @@ Using CQRS, a read might involve a special "flattened" entity that models data t
 
 Serverless can accommodate the CQRS pattern by providing the segregated endpoints. One serverless function accommodates queries or reads, and a different serverless function or set of functions handles update operations. A serverless function may also be responsible for keeping the read model up-to-date, and can be triggered by the database's [change feed](/azure/cosmos-db/change-feed). Front-end development is simplified to connecting to the necessary endpoints. Processing of events is handled on the backend. This model also scales well for large projects because different teams may work on different operations.
 
-
 ## Event-based processing
 
-In message-based system, events are often collected in queues or publisher/subscriber topics to be acted upon. These events can trigger serverless functions to execute a piece of business logic. An example of event-based processing is event-sourced systems. An "event" is raised to mark a task as complete. A serverless function triggered by the event updates the appropriate database document. A second serverless function may use the event to update the read model for the system. [Azure Event Grid](/azure/event-grid/overview) provides a way to integrate events with functions as subscribers.
+In message-based systems, events are often collected in queues or publisher/subscriber topics to be acted upon. These events can trigger serverless functions to execute a piece of business logic. An example of event-based processing is event-sourced systems. An "event" is raised to mark a task as complete. A serverless function triggered by the event updates the appropriate database document. A second serverless function may use the event to update the read model for the system. [Azure Event Grid](/azure/event-grid/overview) provides a way to integrate events with functions as subscribers. [SAS: Probably need to go into more detail on event sourcing or make "event-sourced systems" a hyperlink, perhaps to https://martinfowler.com/eaaDev/EventSourcing.html.]
 
 ## File triggers and transformations
 
 Extract, Transform, and Load (ETL) is a common business function. Serverless is a great solution for ETL because it allows code to be triggered as part of a pipeline. Individual code components can address various aspects. One serverless function may download the file, another applies the transformation and another loads the data. The code can be tested and deployed independently, making it easier to maintain and scale where needed.
 
 ![Serverless file triggers and transformations](./media/serverless-file-triggers.png)
+[SAS: What leads to abnormal behavior in this diagram? You should consider labeling the stream analytics icon since I wasn't familiar with it and I'm guessing many readers also won't be by seeing it alone.]
 
 ## Asynchronous background processing and messaging
 
@@ -62,7 +62,7 @@ Devices and sensors often generate streams of data that must be processed in rea
 
 ## API gateway
 
-An API gateway provides a single point of entry for clients and then intelligently routes requests to backend services. It's useful to manage large sets of services. It can also handle versioning and simplify development by easily connecting clients to disparate environments. Serverless can handle backend scaling of individual microservices while presenting a single front via an API gateway.
+An API gateway provides a single point of entry for clients and then intelligently routes requests to backend services. It's useful to manage large sets of services. It can also handle versioning and simplify development by easily connecting clients to disparate environments. Serverless can handle backend scaling of individual microservices while presenting a single front end via an API gateway.
 
 ![Serverless API gateway](./media/serverless-api-gateway.png)
 

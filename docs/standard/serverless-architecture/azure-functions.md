@@ -21,7 +21,7 @@ There are two versions of the Azure Functions runtime: 1.x and 2.x. Version 1.x 
 
 Version 2.x is in preview. It leverages .NET Core and supports cross-platform development on Windows, macOS, and Linux machines. 2.x adds first-class support for Java but does not yet directly support any of the experimental languages. Version 2.x uses a new binding extensibility model that enables third-party extensions to the platform, independent versioning of bindings, and a more streamlined execution environment.
 
-> **There is a known issue in 1.x with [binding redirect support](https://github.com/Azure/azure-functions-host/issues/992).** The issue is specific to .NET development. Projects with dependencies on libraries that are a different version from the libraries included in the runtime are impacted. The functions team has committed to make concrete progress on the problem. The team will address binding redirects in 2.x before it goes into general availability. The official team statement with suggested fixes and workarounds is available here: [Assembly resolution in Azure Functions](https://github.com/Azure/azure-functions-host/wiki/Assembly-Resolution-in-Azure-Functions).
+> **There is a known issue in 1.x with [binding redirect support](https://github.com/Azure/azure-functions-host/issues/992).** The issue is specific to .NET development. Projects with dependencies on libraries that are a different version from the libraries included in the runtime are impacted. The functions team has committed to making concrete progress on the problem. The team will address binding redirects in 2.x before it goes into general availability. The official team statement with suggested fixes and workarounds is available here: [Assembly resolution in Azure Functions](https://github.com/Azure/azure-functions-host/wiki/Assembly-Resolution-in-Azure-Functions).
 
 For more information, see: [Compare 1.x and 2.x](/azure/azure-functions/functions-versions).
 
@@ -169,7 +169,7 @@ The `Domain Redirect` proxy takes a shortened route and maps it to the longer fu
 
 The `Root` proxy takes anything sent to the root URL (`https://--shorturl--/`) and redirects it to the documentation site.
 
-An example of using proxies is shown in the video [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/events/Connect/2017/E102). In real time, an ASP. NET Core application running on local SQL Server is migrated to the Azure Cloud. Proxies are used to help refactor a traditional Web API project to use functions.
+An example of using proxies is shown in the video [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/events/Connect/2017/E102). In real time, an ASP.NET Core application running on local SQL Server is migrated to the Azure Cloud. Proxies are used to help refactor a traditional Web API project to use functions.
 
 For more information about Proxies, see: [Work with Azure Functions Proxies](/azure/azure-functions/functions-proxies).
 

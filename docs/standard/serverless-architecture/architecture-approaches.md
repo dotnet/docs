@@ -25,7 +25,7 @@ Many business applications follow a monolith pattern. Legacy applications are of
 
 There are several advantages to the monolith approach. It is often easy to pull down a single code base and start working. Ramp up time may be less, and creating test environments is as simple as providing a new copy. The monolith may be designed to include multiple components and applications.
 
-Unfortunately, the monolith pattern tends to breakdown at scale. Major disadvantages of the monolith approach include:
+Unfortunately, the monolith pattern tends to break down at scale. Major disadvantages of the monolith approach include:
 
 * Difficult to work in parallel in the same code base
 * Any change, no matter how trivial, requires deploying a new version of the entire application

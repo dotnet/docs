@@ -21,18 +21,18 @@ Some projects may benefit from taking an "all-in" approach to serverless. Applic
 
 The full serverless backend is ideal for several types of scenarios, especially when building new or "green field" applications. An application with a large surface area of APIs may benefit from implementing each API as a serverless function. Apps that are based on microservices architecture are another example that could be implemented as a full serverless backend. The microservices communicate over various protocols with each other. Specific scenarios include:
 
-* API-based SaaS product (example: financial payments processor)
+* API-based SaaS products (example: financial payments processor)
 * Message-driven applications (example: device monitoring solution)
-* App focused on integration between services (example: airline booking application)
+* Apps focused on integration between services (example: airline booking application)
 * Processes that run periodically (example: timer-based database clean-up)
 * Apps focused on data transformation (example: import triggered by file upload)
-* Extract Transform and Load (ETL)
+* Extract Transform and Load (ETL) processes
 
 There are other, more specific use cases that are covered later in this document.
 
 ## Monoliths and "starving the beast"
 
-A common challenge is migrating an existing monolithic application to the cloud. The least risky approach is to "life and shift" entirely onto virtual machines. Many shops prefer to use the migration as an opportunity to modernize their code base. A practical approach to migration is called "starving the beast." In this scenario, the monolith is migrated "as is" to start with. Then, selected services are modernized. In some cases, the signature of the service is identical to the original: it simply is hosted as a function. Clients are updated to use the new service rather than the monolith endpoint. In the interim, steps such as database replication enable microservices to host their own storage even when transactions are still handled by the monolith. Eventually, all clients are migrated onto the new services. The monolith is "starved" (its services no longer called) until all functionality has been replaced. The combination of serverless and proxies can facilitate much of this migration.
+A common challenge is migrating an existing monolithic application to the cloud. The least risky approach is to "lift and shift" entirely onto virtual machines. Many shops prefer to use the migration as an opportunity to modernize their code base. A practical approach to migration is called "starving the beast." In this scenario, the monolith is migrated "as is" to start with. Then, selected services are modernized. In some cases, the signature of the service is identical to the original: it simply is hosted as a function. Clients are updated to use the new service rather than the monolith endpoint. In the interim, steps such as database replication enable microservices to host their own storage even when transactions are still handled by the monolith. Eventually, all clients are migrated onto the new services. The monolith is "starved" (its services no longer called) until all functionality has been replaced. The combination of serverless and proxies can facilitate much of this migration.
 
 ![Serverless monolith migration](./media/serverless-monolith-migration.png)
 
@@ -61,7 +61,7 @@ Internet-of-Things (IoT) refers to physical objects that are networked together.
 The sheer volume of devices and information often dictates an event-driven architecture to route and process messages. Serverless is an ideal solution for several reasons:
 
 * Enables scale as the volume of devices and data increases
-* Accommodates adding new endpoints to accommodate new devices and sensors
+* Accommodates adding new endpoints to support new devices and sensors
 * Facilitates independent versioning so developers can update the business logic for a specific device without having to deploy the entire system
 * Resiliency and less downtime
 

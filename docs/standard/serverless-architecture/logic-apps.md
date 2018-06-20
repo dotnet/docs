@@ -23,7 +23,7 @@ Once the app is triggered, you can use the visual designer to build out steps, l
 
 ![Logic App workflow](./media/logic-app-workflow.png)
 
-The Logic Apps dashboard shows the history of running your workflows and whether or not each run completed successfully or not. You can navigate into any given run and inspect the data used by each step for troubleshooting. Logic Apps also provides existing templates you can edit and are suited for complex enterprise workflows.
+The Logic Apps dashboard shows the history of running your workflows and whether or not each run completed successfully or not. You can navigate into any given run and inspect the data used by each step for troubleshooting. Logic Apps also provides existing templates you can edit and are well suited for complex enterprise workflows.
 
 To learn more, see: [Azure Logic Apps](/azure/logic-apps).
 

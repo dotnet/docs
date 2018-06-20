@@ -29,15 +29,15 @@ There are a few exceptions and solutions. One solution may be to break your proc
 
 ## Startup time
 
-On potential concern with serverless implementations is startup time. To conserve resources, many serverless providers create infrastructure "on demand." When a serverless function is triggered after a period of time, the resources to host the function may need to be created or restarted. In some situations, cold starts may result in delays of several seconds. Startup time varies across providers and service levels. There are a few approaches to address startup time if it's important to minimize for the success of the app.
+One potential concern with serverless implementations is startup time. To conserve resources, many serverless providers create infrastructure "on demand." When a serverless function is triggered after a period of time, the resources to host the function may need to be created or restarted. In some situations, cold starts may result in delays of several seconds. Startup time varies across providers and service levels. There are a few approaches to address startup time if it's important to minimize for the success of the app.
 
 * Some providers allow users to pay for service levels that guarantee infrastructure is "always on"
 * Implement a keep-alive mechanism (ping the endpoint to keep it "awake")
-* Use orchestration like Kubernetes with a containerized function approach
+* Use orchestration like Kubernetes with a containerized function approach [SAS: Can you elaborate on how this helps with Startup time?]
 
 ## Database updates and migrations
 
-An advantage of serverless code is that you can release new functions without having to redeploy the entire application. This advantage can become a disadvantage when there's a relational database involved. Changes to database schemas are difficult to synchronize with serverless updates. Additional challenges are posed when things go wrong and the changes must be rolled back. Data integrity is one reason that a best practice for microservices and serverless functions is to own their own data. It is possible to deploy changes as a single unit of compute and data. The reality is that many legacy systems feature a large backend database that must be reconciled with the serverless architecture.
+An advantage of serverless code is that you can release new functions without having to redeploy the entire application. This advantage can become a disadvantage when there's a relational database involved. Changes to database schemas are difficult to synchronize with serverless updates. Additional challenges are posed when things go wrong and the changes must be rolled back. Data integrity is one reason that a best practice for microservices and serverless functions is that they own their own data. It is possible to deploy changes as a single unit of compute and data. The reality is that many legacy systems feature a large backend database that must be reconciled with the serverless architecture.
 
 A popular approach to solve schema versioning is to never modify existing properties and columns, but instead add new information. For example, consider a change to move from a Boolean "completed" flag for a todo list to a "completed date." Instead of removing the old field, the database change will:
 
@@ -61,13 +61,13 @@ An often overlooked aspect of DevOps is monitoring applications once deployed. I
 
 ## Inter-service dependencies
 
-A serverless architecture may include functions that rely on other functions. In fact, it is not uncommon in a serverless architecture to have multiple services call each other as part of an interaction or distributed transaction. To avoid strong coupling, it is recommended that services don't reference each other directly. When the endpoint for a service needs to change, direct references could result in major refactoring. A suggested solution is to provide a service discovery mechanism, such as a registry, that provides the appropriate end point for a request type.
+A serverless architecture may include functions that rely on other functions. In fact, it is not uncommon in a serverless architecture to have multiple services call each other as part of an interaction or distributed transaction. To avoid strong coupling, it is recommended that services don't reference each other directly. When the endpoint for a service needs to change, direct references could result in major refactoring. A suggested solution is to provide a service discovery mechanism, such as a registry, that provides the appropriate end point for a request type. [SAS: Also mention using tools like message queues as a way to communicate between services without direct dependencies?]
 
 ## Managing failure and providing resiliency
 
 It is also important to consider the *circuit-breaker pattern*: If, for some reason, a service continues to fail, it is not advisable to call that service repeatedly. Instead, an alternative service is called or a message returned until the health of the dependent service is re-established. The serverless architecture needs to take into account the strategy for resolving and managing inter-service dependencies.
 
-To continue the circuit-breaker pattern, services need to be fault tolerant and resilient. Fault tolerance refers to the ability of your application to continue running even after unexpected exceptions or invalid states are encountered. Fault tolerance typically a function of the code itself, and how it is written to handle exceptions. Resiliency refers to how capable the app is at recovering from failures. Resiliency is often managed by the serverless platform. The platform should be able to spin up a new serverless function instance when the existing one fails. The platform should also be intelligent enough to stop spinning up new instances when every new instance fails.
+To continue the circuit-breaker pattern, services need to be fault tolerant and resilient. Fault tolerance refers to the ability of your application to continue running even after unexpected exceptions or invalid states are encountered. Fault tolerance is typically a function of the code itself and how it is written to handle exceptions. Resiliency refers to how capable the app is at recovering from failures. Resiliency is often managed by the serverless platform. The platform should be able to spin up a new serverless function instance when the existing one fails. The platform should also be intelligent enough to stop spinning up new instances when every new instance fails.
 
 For more information, see: [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern.md).
 

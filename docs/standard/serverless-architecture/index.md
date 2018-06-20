@@ -10,7 +10,7 @@ ms.date: 5/24/2018
 
 # Serverless Apps. Architecture, Patterns, and Azure Implementation
 
-DOWNLOAD available at: **TBD**
+> DOWNLOAD available at: **TBD**
 
 PUBLISHED BY
 
@@ -50,6 +50,8 @@ Editors:
 
 Participants and reviewers:
 
+> **[Steve Smith](https://twitter.com/ardalis)**, Owner, Ardalis Services.
+
 ## Introduction
 
 Serverless is the evolution of cloud platforms in the direction of pure cloud native code. Serverless brings developers closer to business logic while insulating them from infrastructure concerns. It's a pattern that doesn't imply "no server" but rather, "less server." Serverless code is event-driven. Code may be triggered by anything from a traditional HTTP web request to a timer or the result of uploading a file. The infrastructure behind serverless allows for instant scale to meet elastic demands and offers micro-billing to truly "pay for what you use." Serverless requires a new way of thinking and approach to building applications and is not the right solution for every problem. As a developer, you must decide:
@@ -57,7 +59,7 @@ Serverless is the evolution of cloud platforms in the direction of pure cloud na
 * What are the pros and cons of serverless?
 * Why should you consider serverless for your own applications?
 * How can you build, test, deploy, and maintain your serverless code?
-* Where does it make sense to migrate code to serverless in existing applications, and what is the best way to accomplish transformation?
+* Where does it make sense to migrate code to serverless in existing applications, and what is the best way to accomplish this transformation?
 
 ## About this guide
 
@@ -67,14 +69,14 @@ This guide explains the components of the Azure serverless platform and focuses 
 
 ## Evolution of cloud platforms
 
-Serverless is the culmination of several iterations of cloud platforms. The evolution began with physical metal in the data center progressed through Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS).
+Serverless is the culmination of several iterations of cloud platforms. The evolution began with physical metal in the data center and progressed through Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS).
 
 ![Evolution from on-premises to serverless](./media/serverless-evolution-iaas-paas.png)
 
-Before the cloud, a discernable boundary existed between development and operations. Deploying an application meant answering myriad questions like:
+Before the cloud, a discernible boundary existed between development and operations. Deploying an application meant answering myriad questions like:
 
 * What hardware should be installed?
-* How is physical access secured to the machine?
+* How is physical access to the machine secured?
 * Does the data center require an Uninterruptible Power Supply (UPS)?
 * Where are storage backups sent?
 * Should there be redundant power?
@@ -118,7 +120,7 @@ This guide was written for developers and solution architects who want to build 
 
 * Understanding the pros and cons of serverless development
 * Learning how to approach serverless architecture
-* Interested in example implementations of serverless apps
+* Example implementations of serverless apps
 
 ## How to use the guide
 
@@ -128,7 +130,7 @@ The first part of this guide examines why serverless is a viable option by compa
 
 The guide and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this guide can be improved, send them to:
 
-[link tbd](mailto:)
+[link tbd](mailto:) **Note: Should this link be to create an issue on GitHub?**
 
 >[!div class="step-by-step"]
 [Next] (architecture-approaches.md)

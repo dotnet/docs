@@ -7,11 +7,11 @@ ms.date: 05/24/2018
 ---
 # Orchestration Patterns
 
-Durable Functions makes easier to create stateful workflows that are composed of discrete, long running activities in a serverless environment. Since Durable Functions is able to track the progress of your workflows and periodically checkpoints the execution history, it lends itself to implementing some interesting patterns.
+Durable Functions makes it easier to create stateful workflows that are composed of discrete, long running activities in a serverless environment. Since Durable Functions is able to track the progress of your workflows and periodically checkpoints the execution history, it lends itself to implementing some interesting patterns.
 
 ## Function chaining
 
-In a typical sequential process, activities need to execute one after the other in a particular order. Optionally, the upcoming activity may require some output from the previous. This dependency on the ordering of activities creates a function chain of execution.
+In a typical sequential process, activities need to execute one after the other in a particular order. Optionally, the upcoming activity may require some output from the previous function. This dependency on the ordering of activities creates a function chain of execution.
 
 The benefit of using Durable Functions to implement this workflow pattern comes from its ability to do checkpointing. If the server crashes, the network times out or some other issue occurs, Durable functions is able to resume from the last known state and continue running your workflow event if it's on another server.
 
@@ -99,7 +99,7 @@ As the process continues, the status response will change to either **Failed** o
 
 ## Monitoring
 
-For simple recurring tasks, Azure Functions provides the TimerTrigger that can be scheduled based on CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios where more flexible scheduled is needed. This scenario is when the monitoring pattern and Durable Functions can help.
+For simple recurring tasks, Azure Functions provides the TimerTrigger that can be scheduled based on a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios where more flexible scheduling is needed. This scenario is when the monitoring pattern and Durable Functions can help.
 
 Durable Functions allows for flexible scheduling intervals, lifetime management, and the creation of multiple monitor processes from a single orchestration function. One use case for this functionality might be to create watchers for stock price changes that complete once a certain threshold is met.
 
@@ -148,6 +148,7 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 ## Recommended Resources
 
 * [Azure Durable Functions](/azure/azure-functions/durable-functions-overview)
+* [Unit Testing in .NET Core and .NET Standard](https://docs.microsoft.com/en-us/dotnet/core/testing/)
 
 >[!div class="step-by-step"]
 [Previous] (./durable-azure-functions.md)

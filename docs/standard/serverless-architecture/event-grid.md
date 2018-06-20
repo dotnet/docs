@@ -51,7 +51,7 @@ For a more in-depth comparison, see: [Compare messaging services](/azure/event-g
 
 Using Event Grid you can take advantage of the following performance guarantees:
 
-* Sub second end-to-end latency in the 99th percentile
+* Sub-second end-to-end latency in the 99th percentile
 * 99.99% availability
 * 10 million events per second per region
 * 100 million subscriptions per region

@@ -427,7 +427,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the dynamic module. Must be less than 260 characters in length.</param>
+        <param name="name">The name of the dynamic module. </param>
         <summary>Defines a named transient dynamic module in this assembly.</summary>
         <returns>A <see cref="T:System.Reflection.Emit.ModuleBuilder" /> representing the defined dynamic module.</returns>
         <remarks>
@@ -466,7 +466,7 @@
   
  -or-  
   
- The length of <paramref name="name" /> is greater than or equal to 260.</exception>
+ The length of <paramref name="name" /> is greater than the system-defined maximum length.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
@@ -498,7 +498,7 @@
         <Parameter Name="emitSymbolInfo" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the dynamic module. Must be less than 260 characters in length.</param>
+        <param name="name">The name of the dynamic module. </param>
         <param name="emitSymbolInfo">
           <see langword="true" /> if symbol information is to be emitted; otherwise, <see langword="false" />.</param>
         <summary>Defines a named transient dynamic module in this assembly and specifies whether symbol information should be emitted.</summary>
@@ -539,7 +539,7 @@
   
  -or-  
   
- The length of <paramref name="name" /> is greater than or equal to 260.</exception>
+ The length of <paramref name="name" /> is greater than the system-defined maximum length.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ExecutionEngineException">The assembly for default symbol writer cannot be loaded.  
@@ -571,7 +571,7 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the dynamic module. Must be less than 260 characters in length.</param>
+        <param name="name">The name of the dynamic module. </param>
         <param name="fileName">The name of the file to which the dynamic module should be saved.</param>
         <summary>Defines a persistable dynamic module with the given name that will be saved to the specified file. No symbol information is emitted.</summary>
         <returns>A <see cref="T:System.Reflection.Emit.ModuleBuilder" /> object representing the defined dynamic module.</returns>
@@ -610,7 +610,7 @@
   
  -or-  
   
- The length of <paramref name="name" /> is greater than or equal to 260.  
+ The length of <paramref name="name" /> is greater than the system-defined maximum length.  
   
  -or-  
   
@@ -652,7 +652,7 @@
         <Parameter Name="emitSymbolInfo" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the dynamic module. Must be less than 260 characters in length.</param>
+        <param name="name">The name of the dynamic module. </param>
         <param name="fileName">The name of the file to which the dynamic module should be saved.</param>
         <param name="emitSymbolInfo">If <see langword="true" />, symbolic information is written using the default symbol writer.</param>
         <summary>Defines a persistable dynamic module, specifying the module name, the name of the file to which the module will be saved, and whether symbol information should be emitted using the default symbol writer.</summary>
@@ -692,7 +692,7 @@
   
  -or-  
   
- The length of <paramref name="name" /> is greater than or equal to 260.  
+ The length of <paramref name="name" /> is greater than the system-defined maximum length.  
   
  -or-  
   

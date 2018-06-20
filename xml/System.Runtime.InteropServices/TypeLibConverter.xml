@@ -176,7 +176,7 @@
   
  -or-  
   
- <paramref name="asmFileName" /> is longer than MAX_PATH.</exception>
+ <paramref name="asmFileName" /> is longer than the system-defined maximum length. For more information, see <see cref="T:System.IO.PathTooLongException" />. </exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="flags" /> is not <see cref="F:System.Runtime.InteropServices.TypeLibImporterFlags.PrimaryInteropAssembly" />.  
   
@@ -263,7 +263,7 @@
   
  -or-  
   
- <paramref name="asmFileName" /> is longer than MAX_PATH.</exception>
+ <paramref name="asmFileName" /> is longer than the system-defined maximum length. For more information, see <see cref="T:System.IO.PathTooLongException" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="flags" /> is not <see cref="F:System.Runtime.InteropServices.TypeLibImporterFlags.PrimaryInteropAssembly" />.  
   

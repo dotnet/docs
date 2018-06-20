@@ -3216,7 +3216,7 @@
  <paramref name="newName" /> is <see langword="Nothing" /> or an empty string.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory does not exist.</exception>
         <exception cref="T:System.IO.IOException">There is an existing file or directory with the name specified in <paramref name="newName" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The path exceeds 248 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The path exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.NotSupportedException">A file or directory name in the path contains a colon (:) or is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The user lacks necessary permissions to view the path.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The user does not have required permission.</exception>

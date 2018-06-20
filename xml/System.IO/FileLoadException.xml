@@ -54,8 +54,8 @@
  **Check to make sure an assembly or module was not loaded twice with two different evidences.**  
  Evidence is the set of information that constitutes input to security policy decisions, such as what permissions can be granted to code. For more information, see <xref:System.EnterpriseServices.Internal.Publish.GacRemove%2A> and <xref:System.Reflection.Assembly.Evidence%2A>  
   
- **If using the RegisterAssembly or UnregisterAssembly methods, check to make sure the assembly name is not longer than MAX_PATH characters.**  
- The assembly name's length cannot exceed MAX_PATH. For more information, see <xref:System.EnterpriseServices.Internal.IComSoapPublisher.RegisterAssembly%2A> and <xref:System.EnterpriseServices.Internal.IComSoapPublisher.UnRegisterAssembly%2A>.  
+ **If using the <xref:System.EnterpriseServices.Internal.IComSoapPublisher.RegisterAssembly%2A> or <xref:System.EnterpriseServices.Internal.IComSoapPublisher.UnRegisterAssembly%2A> methods, check to make sure the assembly name is not longer than the system-defined maximum length.**  
+ The assembly name's length cannot exceed the system-defined maximum. For more information, see <xref:System.IO.PathTooLongException>.  
   
  **If loading a satellite assembly, make sure the specified CultureInfo matches the file's CultureInfo.**  
  Satellite assemblies contain localized resources which contain non-localizable executable code and resources for a single culture that serve as the default or neutral culture. For more information, see <xref:System.Reflection.Assembly.GetSatelliteAssembly%2A>.  

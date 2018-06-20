@@ -580,7 +580,7 @@ On Unix platforms that do not support creation or birth time, this property retu
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.PathTooLongException">The fully qualified path and file name is 260 or more characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The fully qualified path and file name exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
         <altmember cref="T:System.IO.FileSystemWatcher" />
@@ -614,7 +614,7 @@ On Unix platforms that do not support creation or birth time, this property retu
       <Docs>
         <summary>Represents the fully qualified path of the directory or file.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IO.PathTooLongException">The fully qualified path is 260 or more characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The fully qualified path exceeds the system-defined maximum length.</exception>
         <block subset="none" type="overrides">
           <para>Classes derived from <see cref="T:System.IO.FileSystemInfo" /> can use the <see langword="FullPath" /> field to determine the full path of the object being manipulated.  
   

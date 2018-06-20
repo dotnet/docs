@@ -359,7 +359,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">The file name is empty, contains only white spaces, or contains invalid characters.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Access to <paramref name="TypeLibPath" /> is denied.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="TypeLibPath" /> contains a colon (:) in the middle of the string.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
@@ -631,7 +631,7 @@
           <paramref name="AssemblyPath" /> is not found, or a filename extension is not specified.</exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="AssemblyPath" /> is not a valid assembly.</exception>
-        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences, or the assembly name is longer than MAX_PATH characters.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences, or the assembly name exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.InvalidOperationException">A method marked with <see cref="T:System.Runtime.InteropServices.ComUnregisterFunctionAttribute" /> is not <see langword="static" />.  
   
  -or-  
@@ -689,7 +689,7 @@
           <paramref name="AssemblyPath" /> is not found, or a file name extension is not specified.</exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="AssemblyPath" /> is not a valid assembly.</exception>
-        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences, or the assembly name is longer than MAX_PATH characters.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences, or the assembly name exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.InvalidOperationException">A method marked with <see cref="T:System.Runtime.InteropServices.ComUnregisterFunctionAttribute" /> is not <see langword="static" />.  
   
  -or-  

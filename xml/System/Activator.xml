@@ -197,7 +197,11 @@
           <paramref name="typeName" /> or <paramref name="assemblyName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="assemblyName" /> is the empty string ("").</exception>
-        <exception cref="T:System.IO.PathTooLongException">An assembly or module was loaded twice with two different evidences, or the assembly name is longer than MAX_PATH characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">An assembly or module was loaded twice with two different evidences.
+        
+        -or- 
+        
+        <paramref name="assemblyName" /> is longer than the system-defined maximum length.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="assemblyName" /> is not found, or the module you are trying to load does not specify a file name extension.</exception>
         <exception cref="T:System.IO.FileLoadException">

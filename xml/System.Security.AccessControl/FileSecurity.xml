@@ -137,7 +137,7 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Runtime.InteropServices.SEHException">The <paramref name="fileName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Microsoft Windows 2000 or later.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.AccessControl.PrivilegeNotHeldException">The current system account does not have administrative privileges.</exception>
         <exception cref="T:System.SystemException">The file could not be found.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The <paramref name="fileName" /> parameter specified a file that is read-only.  

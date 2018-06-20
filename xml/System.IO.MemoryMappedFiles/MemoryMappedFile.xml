@@ -118,7 +118,7 @@
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.IO.PathTooLongException">
-          <paramref name="path" /> exceeds the maximum length defined by the operating system. In Windows, paths must contain fewer than 248 characters, and file names must contain fewer than 260 characters.</exception>
+          <paramref name="path" /> exceeds the maximum length defined by the operating system. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions for the file.</exception>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
   
  An I/O error occurred.</exception>
         <exception cref="T:System.IO.PathTooLongException">
-          <paramref name="path" /> exceeds the maximum length defined by the operating system. In Windows, paths must contain fewer than 248 characters, and file names must contain fewer than 260 characters.</exception>
+          <paramref name="path" /> exceeds the maximum length defined by the operating system. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions for the file.</exception>
       </Docs>
     </Member>
@@ -262,7 +262,7 @@
   
  An I/O error occurred.</exception>
         <exception cref="T:System.IO.PathTooLongException">
-          <paramref name="path" /> exceeds the maximum length defined by the operating system. In Windows, paths must contain fewer than 248 characters, and file names must contain fewer than 260 characters.</exception>
+          <paramref name="path" /> exceeds the maximum length defined by the operating system. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions for the file.</exception>
       </Docs>
     </Member>
@@ -346,7 +346,7 @@
  <paramref name="capacity" /> is zero, and the size of the file on disk is also zero.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.IO.PathTooLongException">
-          <paramref name="path" /> exceeds the maximum length defined by the operating system. In Windows, paths must contain fewer than 248 characters, and file names must contain fewer than 260 characters.</exception>
+          <paramref name="path" /> exceeds the maximum length defined by the operating system. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions for the file.</exception>
       </Docs>
     </Member>
@@ -446,7 +446,7 @@
   
  An I/O error occurred.</exception>
         <exception cref="T:System.IO.PathTooLongException">
-          <paramref name="path" /> exceeds the maximum length defined by the operating system. In Windows, paths must contain fewer than 248 characters, and file names must contain fewer than 260 characters.</exception>
+          <paramref name="path" /> exceeds the maximum length defined by the operating system. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions for the file.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>

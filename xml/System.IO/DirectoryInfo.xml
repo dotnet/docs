@@ -135,7 +135,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains invalid characters such as ", &lt;, &gt;, or |.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters. The specified path, file name, or both are too long.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files and directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.DriveInfo" />
       </Docs>
@@ -239,7 +239,7 @@
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">Creating a directory with only the colon (:) character was attempted.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to create a directory. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
@@ -293,9 +293,6 @@
 ## Remarks  
  Any and all directories specified in `path` are created, unless some part of `path` is invalid. The `path` parameter specifies a directory path, not a file path. If the subdirectory already exists, this method does nothing.  
   
-> [!NOTE]
->  Path names are limited to 248 characters.  
-  
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
@@ -319,7 +316,7 @@
  -or-  
   
  A file or directory already has the name specified by <paramref name="path" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters. The specified path, file name, or both are too long.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have code access permission to create the directory.  
   
  -or-  
@@ -359,9 +356,6 @@
 ## Remarks  
  Any and all directories specified in `path` are created, unless some part of `path` is invalid. The `path` parameter specifies a directory path, not a file path. If the subdirectory already exists, this method does nothing.  
   
-> [!NOTE]
->  Path names are limited to 248 characters.  
-  
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
@@ -376,7 +370,7 @@
  -or-  
   
  A file or directory already has the name specified by <paramref name="path" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters. The specified path, file name, or both are too long.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have code access permission to create the directory.  
   
  -or-  

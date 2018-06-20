@@ -92,7 +92,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more implementation-specific invalid characters.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,7 +124,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more implementation-specific invalid characters.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,7 +155,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more implementation-specific invalid characters.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -191,7 +191,7 @@
  -or-  
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,7 +224,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more implementation-specific invalid characters.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -262,7 +262,7 @@
  -or-  
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -299,7 +299,7 @@
  -or-  
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -338,7 +338,7 @@
  -or-  
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. For example, on Windows-based computers, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified <paramref name="path" />, file name, or both exceed the system-defined maximum length. </exception>
       </Docs>
     </Member>
     <Member MemberName="Changed">

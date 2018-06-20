@@ -91,7 +91,7 @@ The `TaxiTripFarePrediction` class is used to represent predicted results. It ha
 
 ## Define data and model paths
 
-Go back to the *Program.cs* file and create three global constants to hold the paths to the files with data sets and to save the model:
+Go back to the *Program.cs* file and create three global fields to hold the paths to the files with data sets and to save the model:
 
 * `_datapath` has the path to the data set used to train the model.
 * `_testdatapath` has the path to the data set used to evaluate the model.
@@ -100,6 +100,10 @@ Go back to the *Program.cs* file and create three global constants to hold the p
 Add the following code to the line right above the `Main` method to specify those paths:
 
 [!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define variables to store the data file paths")]
+
+To make the preceding code compile, add the following `using` statements at the top of the *Program.cs* file:
+
+[!code-csharp[AddUsingsForPaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#17 "Using statements for path definitions")]
 
 ## Create a learning pipeline
 
@@ -130,7 +134,7 @@ var pipeline = new LearningPipeline();
 
 ## Load and transform data
 
-The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` constant. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
+The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` field. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
 
 ```csharp
 pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, separator: ','));

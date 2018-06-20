@@ -11,7 +11,7 @@ The API reference links in this article will take you to MSDN.  The docs.microso
 The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.
 
 ## Remarks
-String literals are delimited by the quotation mark (") character. The backslash character (\) is used to encode certain special characters. The backslash and the next character together are known as an *escape sequence*. Escape sequences supported in F# string literals are shown in the following table.
+String literals are delimited by the quotation mark (") character. The backslash character ( \\ ) is used to encode certain special characters. The backslash and the next character together are known as an *escape sequence*. Escape sequences supported in F# string literals are shown in the following table.
 
 |Character|Escape sequence|
 |---------|---------------|

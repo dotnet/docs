@@ -3,7 +3,7 @@ title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 05/30/2018
+ms.date: 06/06/2018
 ---
 # What's new in .NET Core 2.1
 
@@ -13,12 +13,12 @@ ms.date: 05/30/2018
 - [Roll forward](#roll-forward)
 - [Deployment](#deployment)
 - [Windows Compatibility Pack](#windows-compatibility-pack)
-- [JIT compiler improvements](#jit-compiler-improvements)
+- [JIT compilation improvements](#jit-compiler-improvements)
 - [API changes](#api-changes)
 
 ## Tooling
 
-The .NET Core 2.1.300 SDK, the tooling included with .NET Core 2.1, includes the following changes and enhancements:
+The .NET Core 2.1 SDK (v 2.1.300), the tooling included with .NET Core 2.1, includes the following changes and enhancements:
 
 ### Build performance improvements
 
@@ -43,7 +43,9 @@ A number of tools that were available only on a per project basis using [`Dotnet
    ```console
    dotnet watch -- --verbose build
    ```
-
+  
+   Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
+  
    For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch)
 
 - `dotnet dev-certs` generates and manages certificates used during development in ASP.NET Core applications.
@@ -66,26 +68,30 @@ dotnet tool install -g dotnetsay
 
 Once installed, the tool can be run from the command line by specifying the tool name. For more information, see [.NET Core Global Tools overview](../tools/global-tools.md).
 
-### Single-source tool management with the `dotnet tool` command
+### Tool management with the `dotnet tool` command
 
-In .NET Core 2.1, all tools operations use the `dotnet tool` command. The following options are available:
+In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` command. The following options are available:
 
-- `dotnet tool install` to install a tool.
+- [`dotnet tool install`](../tools/dotnet-tool-install.md) to install a tool.
 
-- `dotnet tool update` to uninstall and reinstall a tool, which effectively updates it.
+- [`dotnet tool update`](../tools/dotnet-tool-update.md) to uninstall and reinstall a tool, which effectively updates it.
 
-- `dotnet tool list` to list currently installed tools.
+- [`dotnet tool list`](../tools/dotnet-tool-list.md) to list currently installed tools.
+
+- [`dotnet tool uninstall`](../tools/dotnet-tool-uninstall.md) to uninstall currently installed tools.
 
 ## Roll forward
 
-All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system. That is, if the .NET Core version that an application was built with is not present, the application runs against the latest installed minor version. In other words, if an application is built with .NET Core 2.0 and .NET Core 2.0 itself is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
+All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system. 
+
+Starting with .NET Core 2.0, if the version of .NET Core that an application was built with is not present at runtime, the application automatically runs against the latest installed *minor version* of .NET Core. In other words, if an application is built with .NET Core 2.0, and .NET Core 2.0 is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
 
 > [!IMPORTANT]
 > This roll-forward behavior doesn't apply to preview releases. Nor does it apply to major releases. For example, a .NET Core 1.0 application wouldn't roll forward to .NET Core 2.0 or .NET Core 2.1.
 
 You can also disable minor version roll forward in any of three ways:
 
-- Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable equal to 0,
+- Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to 0.
 
 - Add the following line to the runtimeconfig.json file:
 
@@ -103,11 +109,11 @@ You can also disable minor version roll forward in any of three ways:
 
 ### Self-contained application servicing
 
-`dotnet publish` now publishes self-contained applications with a serviced runtime version. When you publish a self-contained application with the .NET Core 2.1 SDK, your application includes the latest serviced runtime version known by that SDK. When you upgrade to the latest SDK, you’ll publish with the latest .NET Core runtime version. This applies for .NET Core 1.0 runtimes and later.
+`dotnet publish` now publishes self-contained applications with a serviced runtime version. When you publish a self-contained application with the .NET Core 2.1 SDK (v 2.1.300), your application includes the latest serviced runtime version known by that SDK. When you upgrade to the latest SDK, you’ll publish with the latest .NET Core runtime version. This applies for .NET Core 1.0 runtimes and later.
 
 Self-contained publishing relies on runtime versions on NuGet.org. You do not need to have the serviced runtime on your machine.
 
-Using the .NET Core 2.0 SDK, self-contained applications are published with the .NET Core 2.0.0 runtime unless a different version is specified via the `RuntimeFrameworkVersion` property. With this new behavior, you’ll no longer need to set this property to select a higher runtime version for a self-contained application. The easiest approach going forward is to always publish with .NET Core 2.1 SDK.
+Using the .NET Core 2.0 SDK, self-contained applications are published with the .NET Core 2.0.0 runtime unless a different version is specified via the `RuntimeFrameworkVersion` property. With this new behavior, you’ll no longer need to set this property to select a higher runtime version for a self-contained application. The easiest approach going forward is to always publish with .NET Core 2.1 SDK (v 2.1.300).
 
 ## Windows Compatibility Pack
 
@@ -115,7 +121,7 @@ When you port existing code from the .NET Framework to .NET Core, you can use th
 
 ## JIT compiler improvements
 
-.NET Core incorporates a new JIT compiler technology called *tiered compilation* (also known as *adaptive optimization*) that can significantly improve performance.
+.NET Core incorporates a new JIT compiler technology called *tiered compilation* (also known as *adaptive optimization*) that can significantly improve performance. Tiered compilation is an opt-in setting.
 
 One of the important tasks performed by the JIT compiler is optimizing code execution. For little-used code paths, however, the compiler may spend more time optimizing code than the runtime spends running unoptimized code. Tiered compilation introduces two stages in JIT compilation:
 
@@ -123,11 +129,23 @@ One of the important tasks performed by the JIT compiler is optimizing code exec
 
 - A **second tier**, which generates optimized code for those methods that are executed frequently. The second tier of compilation is performed in parallel for enhanced performance.
 
-You can test tiered compilation with a .NET Core 2.1 app by setting the following environment variable:
+You can opt into tiered compilation in either of two ways.
 
-```console
-COMPlus_TieredCompilation="1"
-```
+- To use tiered compilation in all projects that use the .NET Core 2.1 SDK, set the following environment variable:
+
+  ```console
+  COMPlus_TieredCompilation="1"
+  ```
+
+- To use tiered compilation on a per-project basis, add the `<TieredCompilation>` property to the `<PropertyGroup>` section of the MSBuild project file, as the following example shows:
+
+   ```xml
+   <PropertyGroup>
+      <!-- other property definitions -->
+
+      <TieredCompilation>true</TieredCompilation>
+   </PropertyGroup>
+   ```
 
 ## API changes
 
@@ -187,14 +205,18 @@ The sockets implementation introduced in .NET Core 2.1 has a number of advantage
 
 - A significant performance improvement when compared with the previous implementation.
 
-- Elimination on platform dependencies, which simplifies deployment and servicing.
+- Elimination of platform dependencies, which simplifies deployment and servicing.
 
 - Consistent behavior across all .NET Core platforms.
 
-Sockets based on <xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty="nameWithType"> method:
+<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty="nameWithType"> method:
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
+```
+
+```vb
+AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
 ```
 
 You can also use an environment variable to opt out of using sockets implementations based on <xref:System.Net.Http.SocketsHttpHandler>. To do this, set the `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` to either `false` or 0.
@@ -207,4 +229,4 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 
 [What's new in .NET Core](index.md)  
 [New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
-[ASP.NET Core 2.1.0-rc1 now available](https://blogs.msdn.microsoft.com/webdev/2018/05/07/asp-net-core-2-1-0-rc1-now-available/)  
+[What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)

@@ -91,6 +91,7 @@
 ### [Dependency management](core/tools/dependencies.md)
 ### [Additions to the csproj format](core/tools/csproj.md)
 ## Migration
+### [.NET Core 2.0 to 2.1](core/migration/20-21.md)
 ### [Migration to csproj format](core/migration/index.md)
 ### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
@@ -98,6 +99,7 @@
 ### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
 ### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
+### [Self-contained deployment runtime roll forward](core/deploying/runtime-patch-selection.md)
 ### [Runtime package store](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
 ### [Introduction to .NET and Docker](core/docker/intro-net-docker.md)
@@ -165,6 +167,7 @@
 ### [global.json](core/tools/global-json.md)
 ## [.NET Core Additional Tools](core/additional-tools/index.md)
 ### [WCF Web Service Reference Provider](core/additional-tools/wcf-web-service-reference-guide.md)
+### [dotnet-svcutil](core/additional-tools/dotnet-svcutil-guide.md)
 ### [XML Serializer Generator](core/additional-tools/xml-serializer-generator.md)
 ## [Porting from .NET Framework](core/porting/index.md)
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
@@ -412,7 +415,7 @@
 ### [Namespaces](fsharp/language-reference/namespaces.md)
 ### [Modules](fsharp/language-reference/modules.md)
 ### [Import Declarations: The open Keyword](fsharp/language-reference/import-declarations-the-open-keyword.md)
-### [Signatures](fsharp/language-reference/signatures.md)
+### [Signature Files](fsharp/language-reference/signature-files.md)
 ### [Units of Measure](fsharp/language-reference/units-of-measure.md)
 ### [XML Documentation](fsharp/language-reference/xml-documentation.md)
 ### [Lazy Computations](fsharp/language-reference/lazy-computations.md)
@@ -1129,11 +1132,12 @@
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
-### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
-### [Taxi Fare Predictor (Regression)](machine-learning/tutorials/taxi-fare.md)
+### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
 ## [Resources](machine-learning/resources/index.md)
-### [Machine Learning Glossary](machine-learning/resources/glossary.md)
-### [Machine Learning Basics](machine-learning/resources/basics.md)
+### [Machine learning glossary](machine-learning/resources/glossary.md)
+### [Machine learning basics](machine-learning/resources/basics.md)
+### [Machine learning tasks](machine-learning/resources/tasks.md)
 
 <!-- End ML.NET Content -->
 

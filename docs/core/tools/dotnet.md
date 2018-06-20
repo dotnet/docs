@@ -3,9 +3,7 @@ title: dotnet command - .NET Core CLI
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
 author: mairaw
 ms.author: mairaw
-
-
-ms.date: 05/30/2018
+ms.date: 06/04/2018
 ---
 # dotnet command
 
@@ -244,7 +242,7 @@ Command | Function
 
 ### Global Tools commands
 
-[.NET Core Global Tools](global-tools.md) are available strating with .NET Core SDK 2.1.300:
+[.NET Core Global Tools](global-tools.md) are available starting with .NET Core SDK 2.1.300:
 
 Command | Function
 --- | ---
@@ -257,13 +255,13 @@ Command | Function
 
 Starting with .NET Core SDK 2.1.300, a number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET Core SDK. These tools include:
 
-| Tool                                    | Function                                                     |
-| --------------------------------------- | ------------------------------------------------------------ |
-| dev-certs                               | Creates and manages development certificates.                |
-| [ef](/ef/core/miscellaneous/cli/dotnet) | Entity Framework Core command-line tools.                    |
-| sql-cache                               | SQL Server cache command-line tools.                         |
-| user-secrets                            | Manages development user secrets.                            |
-| watch                                   | Starts a file watcher that runs a command when files change. |
+| Tool                                              | Function                                                     |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| dev-certs                                         | Creates and manages development certificates.                |
+| [ef](/ef/core/miscellaneous/cli/dotnet)           | Entity Framework Core command-line tools.                    |
+| sql-cache                                         | SQL Server cache command-line tools.                         |
+| [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
+| [watch](/aspnet/core/tutorials/dotnet-watch)      | Starts a file watcher that runs a command when files change. |
 
 For more information about each tool, execute `dotnet <tool-name> --help`.
 

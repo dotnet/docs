@@ -3,7 +3,7 @@ title: Machine Learning Glossary
 description: A glossary of machine learning terms.
 author: jralexander
 ms.author: johalex
-ms.date: 05/20/2018
+ms.date: 05/31/2018
 ms.topic: conceptual
 ms.prod: dotnet-ml
 ms.devlang: dotnet
@@ -17,21 +17,27 @@ The following list is a compilation of important machine learning terms that are
 
 In [classification](#classification), accuracy is the number of correctly classified items divided by the total number of items in the test set. Ranges from 0 (least accurate) to 1 (most accurate). Accuracy is one of evaluation metrics of the performance of your model. Consider it in conjunction with [precision](#precision), [recall](#recall), and [F-score](#f-score).
 
+Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Accuracy?displayProperty=nameWithType>.
+
 ## Area under the curve (AUC)
 
 In [binary classification](#binary-classification), an evaluation metric that is the value of the area under the curve that plots the true positives rate (on the y-axis) against the false positives rate (on the x-axis). Ranges from 0.5 (worst) to 1 (best). Also known as the area under the ROC curve, i.e., receiver operating characteristic curve. For more information, see the [Receiver operating characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) article on Wikipedia.
 
+Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Auc?displayProperty=nameWithType>.
+
 ## Binary classification
 
-A [classification](#classification) case where the [label](#label) is only one out of two classes. For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
+A [classification](#classification) case where the [label](#label) is only one out of two classes. For more information, see the [Binary classification](tasks.md#binary-classification) section of the [Machine learning tasks](tasks.md) topic.
 
 ## Classification
 
-When the data is used to predict a category, [supervised learning](#supervised-learning) is also called classification. [Binary classification](#binary-classification) refers to predicting only two categories (for example, classifying an image as a picture of either a 'cat' or a 'dog'). [Multiclass classification](#multiclass-classification) refers to predicting multiple categories (for example, when classifying an image as a picture of a specific breed of dog).
+When the data is used to predict a category, [supervised machine learning](#supervised-machine-learning) task is called classification. [Binary classification](#binary-classification) refers to predicting only two categories (for example, classifying an image as a picture of either a 'cat' or a 'dog'). [Multiclass classification](#multiclass-classification) refers to predicting multiple categories (for example, when classifying an image as a picture of a specific breed of dog).
 
 ## Coefficient of determination
 
 In [regression](#regression), an evaluation metric that indicates how well data fits a model. Ranges from 0 to 1. A value of 0 means that the data is random or otherwise cannot be fit to the model. A value of 1 means that the model exactly matches the data. This is often referred to as r<sup>2</sup>, R<sup>2</sup>, or r-squared.
+
+Related ML.NET API: <xref:Microsoft.ML.Models.RegressionMetrics.RSquared?displayProperty=nameWithType>.
 
 ## Feature
 
@@ -45,6 +51,8 @@ Feature engineering is the process that involves defining a set of [features](#f
 
 In [classification](#classification), an evaluation metric that balances [precision](#precision) and [recall](#recall).
 
+Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.F1Score?displayProperty=nameWithType>.
+
 ## Hyperparameter
 
 A parameter of a machine learning algorithm. Examples include the number of trees to learn in a decision forest or the step size in a gradient descent algorithm. Values of *Hyperparameters* are set before training the model and govern the process of finding the parameters of the prediction function, for example, the comparison points in a decision tree or the weights in a linear regression model. For more information, see the [Hyperparameter](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) article on Wikipedia.
@@ -57,9 +65,13 @@ The element to be predicted with the machine learning model. For example, the br
 
 In [classification](#classification), an evaluation metric that characterizes the accuracy of a classifier. The smaller log loss is, the more accurate a classifier is.
 
+Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.LogLoss?displayProperty=nameWithType>.
+
 ## Mean absolute error (MAE)
 
 In [regression](#regression), an evaluation metric that is the average of all the model errors, where model error is the distance between the predicted [label](#label) value and the correct label value.
+
+Related ML.NET API: <xref:Microsoft.ML.Models.RegressionMetrics.L1?displayProperty=nameWithType>.
 
 ## Model
 
@@ -67,7 +79,7 @@ Traditionally, the parameters for the prediction function. For example, the weig
 
 ## Multiclass classification
 
-A [classification](#classification) case where the [label](#label) is one out of three or more classes. For more information, see the [Multiclass classification](https://en.wikipedia.org/wiki/Multiclass_classification) article on Wikipedia.
+A [classification](#classification) case where the [label](#label) is one out of three or more classes. For more information, see the [Multiclass classification](tasks.md#multiclass-classification) section of the [Machine learning tasks](tasks.md) topic.
 
 ## N-gram
 
@@ -85,13 +97,17 @@ All of the operations needed to fit a model to a data set. A pipeline consists o
 
 In [classification](#classification), the precision for a class is the number of items correctly predicted as belonging to that class divided by the total number of items predicted as belonging to the class.
 
+Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.NegativePrecision?displayProperty=nameWithType>, <xref:Microsoft.ML.Models.BinaryClassificationMetrics.PositivePrecision?displayProperty=nameWithType>.
+
 ## Recall
 
 In [classification](#classification), the recall for a class is the number of items correctly predicted as belonging to that class divided by the total number of items that actually belong to the class.
 
+Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.NegativeRecall?displayProperty=nameWithType>, <xref:Microsoft.ML.Models.BinaryClassificationMetrics.PositiveRecall?displayProperty=nameWithType>.
+
 ## Regression
 
-A [supervised machine learning](#supervised-learning) task where the output is a real value, for example, double. Examples include predicting stock prices.
+A [supervised machine learning](#supervised-machine-learning) task where the output is a real value, for example, double. Examples include predicting stock prices. For more information, see the [Regression](tasks.md#regression) section of the [Machine learning tasks](tasks.md) topic.
 
 ## Relative absolute error
 
@@ -104,6 +120,8 @@ In [regression](#regression), an evaluation metric that is the sum of all square
 ## Root of mean squared error (RMSE)
 
 In [regression](#regression), an evaluation metric that is the square root of the average of the squares of the errors.
+
+Related ML.NET API: <xref:Microsoft.ML.Models.RegressionMetrics.Rms?displayProperty=nameWithType>.
 
 ## Supervised machine learning
 

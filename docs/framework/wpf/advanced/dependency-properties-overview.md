@@ -1,7 +1,7 @@
 ---
 title: "Dependency properties overview"
 description: A property that is backed by the WPF property system is known as a dependency property. This overview describes the WPF property system and the capabilities of a dependency property.
-ms.date: "03/30/2017"
+ms.date: "06/06/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,28 +17,28 @@ ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
 ---
 # Dependency properties overview
 
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a set of services that can be used to extend the functionality of a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property. Collectively, these services are typically referred to as the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system. A property that is backed by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system is known as a dependency property. This overview describes the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system and the capabilities of a dependency property. This includes how to use existing dependency properties in XAML and in code. This overview also introduces specialized aspects of dependency properties, such as dependency property metadata, and how to create your own dependency property in a custom class.
+Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a type's [property](../../../standard/base-types/common-type-system.md#Properties). Collectively, these services are typically referred to as the WPF property system. A property that is backed by the WPF property system is known as a dependency property. This overview describes the WPF property system and the capabilities of a dependency property. This includes how to use existing dependency properties in XAML and in code. This overview also introduces specialized aspects of dependency properties, such as dependency property metadata, and how to create your own dependency property in a custom class.
 
 ## Prerequisites
-This topic assumes that you have some basic knowledge of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] and object-oriented programming. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. For more information, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+This topic assumes that you have some basic knowledge of the .NET type system and object-oriented programming. In order to follow the examples in this topic, you should also understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## Dependency properties and CLR properties
- In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], properties are typically exposed as [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] properties. At a basic level, you could interact with these properties directly and never know that they are implemented as a dependency property. However, you should become familiar with some or all of the features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system, so that you can take advantage of these features.
+ In WPF, properties are typically exposed as standard .NET [properties](../../../standard/base-types/common-type-system.md#Properties). At a basic level, you could interact with these properties directly and never know that they are implemented as a dependency property. However, you should become familiar with some or all of the features of the WPF property system, so that you can take advantage of these features.
 
 The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preference, just-in-time property determination mechanisms such as data binding and animations/storyboards, multiple-use templates such as resources and styles, or values known through parent-child relationships with other elements in the element tree. In addition, a dependency property can be implemented to provide self-contained validation, default values, callbacks that monitor changes to other properties, and a system that can coerce property values based on potentially runtime information. Derived classes can also change some specific characteristics of an existing property by overriding dependency property metadata, rather than overriding the actual implementation of existing properties or creating new properties.
 
 In the SDK reference, you can identify which property is a dependency property by the presence of the Dependency Property Information section on the managed reference page for that property. The Dependency Property Information section includes a link to the <xref:System.Windows.DependencyProperty> identifier field for that dependency property, and also includes a list of the metadata options that are set for that property, per-class override information, and other details.
 
 ## Dependency properties back CLR properties
-Dependency properties and the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system extend property functionality by providing a type that backs a property, as an alternative implementation to the standard pattern of backing the property with a private field. The name of this type is <xref:System.Windows.DependencyProperty>. The other important type that defines the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system is <xref:System.Windows.DependencyObject>. <xref:System.Windows.DependencyObject> defines the base class that can register and own a dependency property.
+Dependency properties and the WPF property system extend property functionality by providing a type that backs a property, as an alternative implementation to the standard pattern of backing the property with a private field. The name of this type is <xref:System.Windows.DependencyProperty>. The other important type that defines the WPF property system is <xref:System.Windows.DependencyObject>. <xref:System.Windows.DependencyObject> defines the base class that can register and own a dependency property.
 
-Following is a summation of the terminology that is used in this [!INCLUDE[TLA#tla_sdk](../../../../includes/tlasharptla-sdk-md.md)] documentation when discussing dependency properties:
+The following lists the terminology that is used with dependency properties:
 
 - **Dependency property:** A property that is backed by a <xref:System.Windows.DependencyProperty>.
 
-- **Dependency property identifier:** A <xref:System.Windows.DependencyProperty> instance, which is obtained as a return value when registering a dependency property, and then stored as a static member of a class. This identifier is used as a parameter for many of the [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] that interact with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system.
+- **Dependency property identifier:** A <xref:System.Windows.DependencyProperty> instance, which is obtained as a return value when registering a dependency property, and then stored as a static member of a class. This identifier is used as a parameter for many of the APIs that interact with the WPF property system.
 
-- **CLR "wrapper":** The actual get and set implementations for the property. These implementations incorporate the dependency property identifier by using it in the <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> calls, thus providing the backing for the property using the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system.
+- **CLR "wrapper":** The actual get and set implementations for the property. These implementations incorporate the dependency property identifier by using it in the <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> calls, thus providing the backing for the property using the WPF property system.
 
 The following example defines the `IsSpinning` dependency property, and shows the relationship of the <xref:System.Windows.DependencyProperty> identifier to the property that it backs.
 
@@ -51,7 +51,7 @@ The naming convention of the property and its backing <xref:System.Windows.Depen
 You can set properties either in code or in XAML.
 
 ### Setting property values in XAML 
-The following XAML example specifies the background color of a button as red. This example illustrates a case where the simple string value for a XAML attribute is type-converted by the WPF XAML parser into a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] type (a <xref:System.Windows.Media.Color>, by way of a <xref:System.Windows.Media.SolidColorBrush>) in the generated code.
+The following XAML example specifies the background color of a button as red. This example illustrates a case where the simple string value for a XAML attribute is type-converted by the WPF XAML parser into a WPF type (a <xref:System.Windows.Media.Color>, by way of a <xref:System.Windows.Media.SolidColorBrush>) in the generated code.
 
 [!code-xaml[PropertiesOvwSupport#MostBasicProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]
 
@@ -77,7 +77,7 @@ You can also call the property system [!INCLUDE[TLA2#tla_api#plural](../../../..
 Properties can be also set in XAML and then accessed later in code, through code-behind. For details, see [Code-Behind and XAML in WPF](../../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
 ## Property functionality provided by a dependency property
-A dependency property provides functionality that extends the functionality of a property as opposed to a property that is backed by a field. Often, each such functionality represents or supports a specific feature of the overall [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] set of features:
+A dependency property provides functionality that extends the functionality of a property as opposed to a property that is backed by a field. Often, such functionality represents or supports one of the following specific features:
 
 - [Resources](#resources)
 
@@ -102,7 +102,7 @@ Once the resource is defined, you can reference the resource and use it to provi
 
 [!code-xaml[PropertiesOvwSupport#ResourcesReference](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesreference)]
 
-This particular resource is referenced as a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md) (in WPF XAML, you can use either a static or dynamic resource reference). To use a dynamic resource reference, you must be setting to a dependency property, so it is specifically the dynamic resource reference usage that is enabled by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system. For more information, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).
+This particular resource is referenced as a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md) (in WPF XAML, you can use either a static or dynamic resource reference). To use a dynamic resource reference, you must be setting to a dependency property, so it is specifically the dynamic resource reference usage that is enabled by the WPF property system. For more information, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).
 
 > [!NOTE]
 > Resources are treated as a local value, which means that if you set another local value, you will eliminate the resource reference. For more information, see [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md).
@@ -165,7 +165,7 @@ For more information, see [Property Value Inheritance](../../../../docs/framewor
 A custom control with properties that are implemented as dependency properties will receive appropriate [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] support. One example is the ability to edit direct and attached dependency properties with the **Properties** window. For more information, see [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md).
 
 ## Dependency property value precedence
-When you get the value of a dependency property, you are potentially obtaining a value that was set on that property through any one of the other property-based inputs that participate in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system. Dependency property value precedence exists so that a variety of scenarios for how properties obtain their values can interact in a predictable way.
+When you get the value of a dependency property, you are potentially obtaining a value that was set on that property through any one of the other property-based inputs that participate in the WPF property system. Dependency property value precedence exists so that a variety of scenarios for how properties obtain their values can interact in a predictable way.
 
 Consider the following example. The example includes a style that applies to all buttons and their <xref:System.Windows.Controls.Control.Background%2A> properties, but then also specifies one button with a locally set <xref:System.Windows.Controls.Control.Background%2A> value.
 
@@ -180,7 +180,7 @@ In principle, for the first button, the property is set twice, but only one valu
 Typically, you would not want styles to always apply and to obscure even a locally set value of an individual element (otherwise, it would be very difficult to use either styles or elements in general). Therefore, the values that come from styles operate at a lower precedent than a locally set value. For a more thorough listing of dependency properties and where a dependency property effective value might come from, see [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md).
 
 > [!NOTE]
-> There are a number of properties defined on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements that are not dependency properties. By and large, properties were implemented as dependency properties only when there were needs to support at least one of the scenarios enabled by the property system: data binding, styling, animation, default value support, inheritance, attached properties, or invalidation.
+> There are a number of properties defined on WPF elements that are not dependency properties. By and large, properties were implemented as dependency properties only when there were needs to support at least one of the scenarios enabled by the property system: data binding, styling, animation, default value support, inheritance, attached properties, or invalidation.
 
 ## Learning more about dependency properties  
 

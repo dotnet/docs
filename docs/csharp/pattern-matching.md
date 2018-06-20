@@ -138,7 +138,7 @@ end with a `break`, `return`, or `goto`.
 
 > [!NOTE]
 > The `goto` statements to jump to another label are valid only
-> for the constant pattern, the classic switch statement.
+> for the constant pattern (the classic switch statement).
 
 There are important new rules governing the `switch` statement. The restrictions
 on the type of the variable in the `switch` expression have been removed.

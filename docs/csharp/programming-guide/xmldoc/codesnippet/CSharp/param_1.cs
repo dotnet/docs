@@ -1,4 +1,4 @@
-    // compile with: /doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml 
 
     /// text for class TestClass
     public class TestClass

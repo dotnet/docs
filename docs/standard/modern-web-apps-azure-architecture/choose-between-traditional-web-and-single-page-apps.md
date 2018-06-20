@@ -65,10 +65,10 @@ Note that frequently SPAs need to implement features that are built-in to tradit
 Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-side programming techniques and libraries. Your team should be competent in writing modern JavaScript using a SPA framework like Angular.
 
 > ### References – SPA Frameworks
-> - **AngularJS**  
-> <https://angularjs.org/>
-> - **Comparison of 4 Popular JavaScript Frameworks**  
-> <https://www.developereconomics.com/feature-comparison-of-4-popular-js-mv-frameworks>
+> - **Angular**  
+> <https://angular.io>
+> - **Comparison of JavaScript Frameworks**  
+> <https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/>
 
 **Your application must already expose an API for other (internal or public) clients**
 

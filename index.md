@@ -28,7 +28,7 @@ ms.custom: "updateeachrelease"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.0">
+                <a href="/dotnet/api/?view=netcore-2.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -389,13 +389,14 @@ ms.custom: "updateeachrelease"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/net-docs-cloud-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/azure/cloud-services/cloud-services-dotnet-get-started">
-                                                    <h3>Azure Cloud Services and ASP.NET</h3>
-                                                    <p>Learn to configure, monitor, and scale your cloud services in Azure.</p>
+                                                <a href="/azure/storage/">
+                                                    <h3>Azure Storage</h3>
+                                                    <p>Learn about Azure Storage, and how to create applications using Azure
+                                                        blobs, tables, queues, and files.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -416,26 +417,6 @@ ms.custom: "updateeachrelease"
                                                     <h3>Using F# on Azure</h3>
                                                     <p>Learn how to use various Azure services in F# such as Azure Storage,
                                                         Cloud Services, and Azure Functions.</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/images/hub/net-docs-cloud-4.svg" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <a href="/azure/storage/">
-                                                    <h3>Azure Storage</h3>
-                                                    <p>Learn about Azure Storage, and how to create applications using Azure
-                                                        blobs, tables, queues, and files.</p>
                                                 </a>
                                             </div>
                                         </div>

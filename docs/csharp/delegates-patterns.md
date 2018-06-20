@@ -78,35 +78,18 @@ Let's start small: the initial implementation will accept new messages,
 and write them using any attached delegate. You can start with one delegate
 that writes messages to the console.
 
-```csharp
-public static class Logger
-{
-    public static Action<string> WriteMessage;
-    
-    public static void LogMessage(string msg)
-    {
-        WriteMessage(msg);
-    }
-}
-```
+[!code-csharp[LoggerImplementation](../../samples/csharp/delegates-and-events/Logger.cs#FirstImplementation "A first Logger implementation.")]
 
 The static class above is the simplest thing that can work. We need to
 write the single implementation for the method that writes messages
 to the console: 
 
-```csharp
-public static void LogToConsole(string message)
-{
-    Console.Error.WriteLine(message);
-}
-```
+[!code-csharp[LogToConsole](../../samples/csharp/delegates-and-events/Program.cs#LogToConsole "A Console logger.")]
 
 Finally, you need to hook up the delegate by attaching it to
 the WriteMessage delegate declared in the logger:
 
-```csharp
-Logger.WriteMessage += LogToConsole;
-```
+[!code-csharp[ConnectDelegate](../../samples/csharp/delegates-and-events/Program.cs#ConnectDelegate "Connect to the delegate")]
 
 ## Practices
 
@@ -130,50 +113,14 @@ creating other logging mechanisms.
 Next, let's add a few arguments to the `LogMessage()` method so that
 your log class creates more structured messages:
 
-```csharp
-// Logger implementation two
-public enum Severity
-{
-    Verbose,
-    Trace,
-    Information,
-    Warning,
-    Error,
-    Critical
-}
-
-public static class Logger
-{
-    public static Action<string> WriteMessage;
-    
-    public static void LogMessage(Severity s, string component, string msg)
-    {
-        var outputMsg = $"{DateTime.Now}\t{s}\t{component}\t{msg}";
-        WriteMessage(outputMsg);
-    }
-}
-```
+[!code-csharp[Severity](../../samples/csharp/delegates-and-events/Logger.cs#Severity "Define severities")]
+[!code-csharp[NextLogger](../../samples/csharp/delegates-and-events/Logger.cs#LoggerTwo "Refine the Logger")]
 
 Next, let's make use of that `Severity` argument to filter the messages
 that are sent to the log's output. 
 
-```csharp
-public static class Logger
-{
-    public static Action<string> WriteMessage;
-    
-    public static Severity LogLevel {get;set;} = Severity.Warning;
-    
-    public static void LogMessage(Severity s, string component, string msg)
-    {
-        if (s < LogLevel)
-            return;
-            
-        var outputMsg = $"{DateTime.Now}\t{s}\t{component}\t{msg}";
-        WriteMessage(outputMsg);
-    }
-}
-```
+[!code-csharp[FinalLogger](../../samples/csharp/delegates-and-events/Logger.cs#LoggerFinal "Finish the Logger")]
+
 ## Practices
 
 You've added new features to the logging infrastructure. Because
@@ -198,42 +145,13 @@ each message is generated.
 
 Here is that file based logger:
 
-```csharp
-public class FileLogger
-{
-    private readonly string logPath;
-    public FileLogger(string path)
-    {
-        logPath = path;
-        Logger.WriteMessage += LogMessage;
-    }
-    
-    public void DetachLog() => Logger.WriteMessage -= LogMessage;
+[!code-csharp[FileLogger](../../samples/csharp/delegates-and-events/FileLogger.cs#FileLogger "Log to files")]
 
-    // make sure this can't throw.
-    private void LogMessage(string msg)
-    {
-        try {
-            using (var log = File.AppendText(logPath))
-            {
-                log.WriteLine(msg);
-                log.Flush();
-            }
-        } catch (Exception e)
-        {
-            // Hmm. Not sure what to do.
-            // Logging is failing...
-        }
-    }
-}
-```
 
 Once you've created this class, you can instantiate it and it attaches
 its LogMessage method to the Logger component:
 
-```csharp
-var file = new FileLogger("log.txt");
-```
+[!code-csharp[FileLogger](../../samples/csharp/delegates-and-events/Program.cs#FileLogger "Log to files")]
 
 These two are not mutually exclusive. You could attach both log
 methods and generate messages to the console and a file:

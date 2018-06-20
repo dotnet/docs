@@ -175,7 +175,7 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 ## Creating Custom Commands  
  If the commands in the command library classes do not meet your needs, then you can create your own commands.  There are two ways to create a custom command.  The first is to start from the ground up and implement the <xref:System.Windows.Input.ICommand> interface.  The other way, and the more common approach, is to create a <xref:System.Windows.Input.RoutedCommand> or a <xref:System.Windows.Input.RoutedUICommand>.  
   
- For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980).  
+ For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand).  
   
 ## See Also  
  <xref:System.Windows.Input.RoutedCommand>  
@@ -186,4 +186,4 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)  
  [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)  
- [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980)
+ [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand)

@@ -33,7 +33,7 @@ Integration tests will often have more complex setup and teardown procedures tha
 
 The LocalFileImageService implementation class implements the logic for fetching and returning the bytes of an image file from a particular folder given an id:
 
-```cs
+```csharp
 public class LocalFileImageService : IImageService
 {
     private readonly IHostingEnvironment _env;
@@ -48,7 +48,10 @@ public class LocalFileImageService : IImageService
             var contentRoot = _env.ContentRootPath + "//Pics";
             var path = Path.Combine(contentRoot, id + ".png");
             return File.ReadAllBytes(path);
-            // ...
+        }
+        catch (FileNotFoundException ex)
+        {
+            throw new CatalogImageMissingException(ex);
         }
     }
 }
@@ -130,7 +133,7 @@ In a well-designed ASP.NET Core application, most of the complexity and business
 
 Sometimes you'll need to refactor your code in order to unit test it. Frequently this involves identifying abstractions and using dependency injection to access the abstraction in the code you'd like to test, rather than coding directly against infrastructure. For example, consider this simple action method for displaying images:
 
-```cs
+```csharp
 [HttpGet("[controller]/pic/{id}")]
 public IActionResult GetImage(int id)
 {
@@ -145,7 +148,7 @@ Unit testing this method is made difficult by its direct dependency on System.IO
 
 If you can't unit test the file system behavior directly, and you can't test the route, what is there to test? Well, after refactoring to make unit testing possible, you may discover some test cases and missing behavior, such as error handling. What does the method do when a file isn't found? What should it do? In this example, the refactored method looks like this:
 
-```cs
+```csharp
 [HttpGet("[controller]/pic/{id}")\]
 public IActionResult GetImage(int id)
 {
@@ -169,7 +172,7 @@ The \_logger and \_imageService are both injected as dependencies. Now you can t
 
 To test that a LocalFileImageService works correctly using an integraiton test, you need to create a known test image file and verify that the service returns it given a specific input. You should take care not to use mock objects on the behavior you actually want to test (in this case, reading from the file system). However, mock objects may still be useful to set up integration tests. In this case, you can mock IHostingEnvironment so that its ContentRootPath points to the folder you're going to use for your test image. The complete working integration test class is shown here:
 
-```cs
+```csharp
 public class LocalFileImageServiceGetImageBytesById
 {
     private byte[] _testBytes = new byte[] { 0x01, 0x02, 0x03 };

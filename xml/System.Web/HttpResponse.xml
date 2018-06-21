@@ -983,7 +983,7 @@
   
 -   Make every effort to avoid throwing exceptions from within the callback methods.  
   
- This property is only applicable to Internet Information Service (IIS) 7.5 in integrated mode. If you invoke it without the right IIS version or pipeline mode, a <xref:System.PlatformNotSupportedException> is thrown. To determine the IIS version, use <xref:System.Web.HttpRuntime.IISVersion%2A>. To determine the pipeline mode, use <xref:System.Web.HttpRuntime.UsingIntegratedPipeline%2A>.  
+ This property is only supported in Internet Information Service (IIS) 7.5 or higher in integrated mode. If you invoke it without the right IIS version or pipeline mode, a <xref:System.PlatformNotSupportedException> is thrown. To determine the IIS version, use <xref:System.Web.HttpRuntime.IISVersion%2A>. To determine the pipeline mode, use <xref:System.Web.HttpRuntime.UsingIntegratedPipeline%2A>.  
   
  ]]></format>
         </remarks>

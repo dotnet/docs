@@ -39,14 +39,14 @@ The installer UI in those downloads was also modified to clearly present the nam
 Here are some examples of this format:
 
 ```
-dotnet-runtime-2.0.4-macos.10.12-x64.pkg            # Mac runtime installer
-dotnet-sdk-2.0.4-win10-x64.exe                      # Windows SDK installer
-dotnet-sdk-2.0.4-fedora.24-x64.tar.gz               # Fedora 24 binary archive
+dotnet-runtime-2.0.4-osx.10.12-x64.pkg            # Mac runtime installer
+dotnet-sdk-2.0.4-win-x64.exe                      # Windows SDK installer
+dotnet-sdk-2.0.4-linux-x64.tar.gz                 # Linux binary archive
 
 #Ubuntu file set needed for the SDK
-dotnet-host-2.0.4-ubuntu.16.04-x64.deb              # Host / muxer and host policy
-dotnet-runtime-2.0.4-ubuntu.16.04-x64.deb           # runtime
-dotnet-sdk-2.0.4-ubuntu.16.04-x64.deb               # SDK tools
+dotnet-host-2.0.4-ubuntu.16.04-x64.deb            # Host / muxer and host policy
+dotnet-runtime-2.0.4-ubuntu.16.04-x64.deb         # runtime
+dotnet-sdk-2.0.4-ubuntu.16.04-x64.deb             # SDK tools
 ```
 
 The format is readable and clearly shows what you're downloading, what version it is, and where you can use it. The runtime package name includes `runtime`, and the SDK includes `SDK`.

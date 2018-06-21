@@ -17,8 +17,8 @@ With the latest versions of Docker for Windows, it is easier than ever to develo
 
 If you're using Visual Studio 2015, you must have Update 3 or a later version plus the Visual Studio Tools for Docker.
 
-**More info:** For instructions on installing Visual Studio, go to [https://www.visualstudio.com/\
-products/vs-2015-product-editions](https://www.visualstudio.com/products/vs-2015-product-editions).
+**More info:** For instructions on installing Visual Studio, go to [https://visualstudio.microsoft.com/\
+products/vs-2015-product-editions](https://visualstudio.microsoft.com/products/vs-2015-product-editions).
 
 To see more about installing Visual Studio Tools for Docker, go to <http://aka.ms/vstoolsfordocker> and <https://docs.microsoft.com/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker>.
 

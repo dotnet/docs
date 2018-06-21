@@ -12,7 +12,7 @@ ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 # Walkthrough: Hosting a Win32 Control in WPF
 Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it may be more effective to reuse at least some of that code in your WPF application rather than rewrite it completely. WPF provides a straightforward mechanism for hosting a Win32 window, on a WPF page.  
   
- This topic walks you through an application, [Hosting a Win32 ListBox Control in WPF Sample](https://msdn.microsoft.com/library/ms771289(v=vs.90).aspx), that hosts a Win32 list box control. This general procedure can be extended to hosting any Win32 window.  
+ This topic walks you through an application, [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control), that hosts a Win32 list box control. This general procedure can be extended to hosting any Win32 window.  
   
   
 <a name="requirements"></a>   
@@ -22,7 +22,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  Because the sample that accompanies this topic is implemented in C#, it makes use of Platform Invocation Services (PInvoke) to access the Win32 API. Some familiarity with PInvoke is helpful but not essential.  
   
 > [!NOTE]
->  This topic includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. You can obtain or view complete code from [Hosting a Win32 ListBox Control in WPF Sample](https://msdn.microsoft.com/library/ms771289(v=vs.90).aspx).  
+>  This topic includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. You can obtain or view complete code from [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control).  
   
 <a name="basic_procedure"></a>   
 ## The Basic Procedure  
@@ -122,7 +122,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 <a name="communication"></a>   
 ## Implement Communication Between the Control and the Page  
- You manipulate the control by sending it Windows messages. The control notifies you when the user interacts with it by sending notifications to its host window. The [Hosting a Win32 ListBox Control in WPF](https://msdn.microsoft.com/library/ms771289(v=vs.90).aspx) sample includes a UI that provides several examples of how this works:  
+ You manipulate the control by sending it Windows messages. The control notifies you when the user interacts with it by sending notifications to its host window. The [Hosting a Win32 ListBox Control in WPF](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control) sample includes a UI that provides several examples of how this works:  
   
 -   Append an item to the list.  
   

@@ -37,14 +37,6 @@ While this mechanism was sufficient for most purposes, it suffered from the foll
 
 - Forms and their child controls could only be concurrently designed by multiple developers if their machine resolutions were the same. Likewise it also made inheritance of a form dependent on the resolution associated with the parent form.
 
-> [!NOTE]
-> With the extreme differences in display DPIs, especially in modern 2-in-1 devices, this can still happen with the most current versions of the .NET Framework and Visual Studio. To address this in a team using different DPI displays, make sure Visual Studio always starts in a non-DPI-aware mode, so the Windows Forms designer always bases the layout calculation on 96 DPI. To this end, simply set the following registry key to disable Visual Studio's HighDPI awareness:
->
-> ```
-> [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe]
-> "dpiAwareness"=dword:00000000
-> ```
-
 - It is not compatible with the newer layout managers introduced with the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0, such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>.
 
 - It did not support scaling based directly on the display resolution that is required for compatibility to the [!INCLUDE[compact](../../../includes/compact-md.md)].

@@ -1991,10 +1991,10 @@
         <Parameter Name="comparisonValue" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">The key whose value is compared with <c>comparisonValue</c> and possibly replaced.</param>
+        <param name="key">The key of the value that is compared with <c>comparisonValue</c> and possibly replaced.</param>
         <param name="newValue">The value that replaces the value of the element that has the specified <c>key</c> if the comparison results in equality.</param>
-        <param name="comparisonValue">The value that is compared to the value of the element that has the specified <c>key</c>.</param>
-        <summary>Updates the value associated with <paramref name="key" /> to <paramref name="newValue" /> if the existing value is equal to <paramref name="comparisonValue" />.</summary>
+        <param name="comparisonValue">The value that is compared with the value of the element that has the specified <c>key</c>.</param>
+        <summary>Updates the value associated with <paramref name="key" /> to <paramref name="newValue" /> if the existing value with <paramref name="key" /> is equal to <paramref name="comparisonValue" />.</summary>
         <returns>
           <see langword="true" /> if the value with <paramref name="key" /> was equal to <paramref name="comparisonValue" /> and was replaced with <paramref name="newValue" />; otherwise, <see langword="false" />.</returns>
         <remarks>

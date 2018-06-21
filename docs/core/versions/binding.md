@@ -1,11 +1,13 @@
 ---
 title: .NET Core 2 and later version binding
-description: Learn How the .NET runtime finds and chooses versions during build and run for your program
+description: Learn How the .NET runtime finds and chooses versions during build and run for your program.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/21/2018
 ---
-# .NET Core 2 and later version binding
+# .NET Core version binding
+
+[!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
 .NET Core provides a single entry-point for operating on projects and built applications with the `dotnet` command. You may have multiple runtime and SDK versions installed. The `dotnet` command must:
 
@@ -27,20 +29,19 @@ These policies perform the following roles:
 There are multiple actions where version binding takes place:
 
 - Select an [SDK](#select-an-sdk-version).
-- Select a [target framework](#select-a-target-framework) for the application.
-- Select a [minimum runtime version](#minimum-required-runtime-version)
-- Selecting a runtime to run on
-
+- Select a [target framework](#build-time-version-binding) for the application.
+- Select a [minimum runtime version](#runtime-version-binding).
+- Selecting a runtime to run on.
 
 ## Select an SDK version
 
-Your first experience with .NET Core is typically with an SDK command, for example `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` command must use a chosen version of the SDK for these commands. .NET Core uses the latest SDK. You'll use the .NET Core 99.9 SDK when it's installed, even if you're using the SDK command for .NET Core 2.0 development.
+Your first experience with .NET Core is typically with an SDK command, for example `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` command must use a chosen version of the SDK for these commands. .NET Core uses the latest SDK by default. If you've installed the .NET Core 99.9 SDK, the `dotnet` command uses .NET Core SDK 99.9 even when you're targeting .NET Core 2.0 development. Note that this is true for preview versions as well as released versions.
 
-You take advantage of the latest SDK features and improvements while targeting earlier .NET Core versions. You can target multiple versions of .NET Core on different projects, using the same SDK tools for all projects.
+You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core versions. You can target multiple versions of .NET Core on different projects, using the same SDK tools for all projects.
 
 When needed, you configure `dotnet` to use a different version of the SDK. You specify that version in a [global.json file](../tools/global-json.md). The "use latest" policy means you only use `global.json` to specify a .NET Core version earlier than the latest installed version.
 
-`global.json`can be used at different scopes:
+`global.json` can be used at different scopes:
 
 - Per project, placed beside the project file.
 - For a set of projects, placed at a common [grand-]parent for all of the projects. This location can be as high in the directory structure as the root of a drive.
@@ -55,31 +56,29 @@ The following example shows the `global.json` syntax:
 }
 ```
 
-You only use `global.json` to specify a version when you must lock a specific app or set of apps to an earlier SDK than the latest on the machine.
-
 The process for selecting an SDK version is:
 
-- `dotnet` binds to latest SDK by default.
-- You can override the latest version using global.json.
-- `dotnet` uses the first global.json file found, iteratively reverse-navigating the path upward from the current working directory.
+- `dotnet` searches for a `global.json` file iteratively reverse-navigating the path upward from the current working directory.
+- `dotnet` uses the SDK specified in the first `global.json` found.
+- `dotnet` binds to the latest installed SDK if no `global.json` is found.
 
-## Select a target SDK
+## Build time version binding
 
-You specify the target framework in the project file. Set the `TargetFramework` as shown in the following example:
+You build your project against APIs defined in a **Target Framework Moniker** (TFM). You specify the target framework in the project file. Set the `TargetFramework` element in your project file as shown in the following example:
 
 ``` xml
 <TargetFramework>netcoreapp2.0</TargetFramework>
 ```
 
-You set multiple target frameworks if you need to build different code for different environments. Setting multiple target frameworks is more common for libraries, but can be done with applications as well. You specify a `TargetFrameworks` property (plural of `TargetFramework`). The target frameworks will be semicolon-delimited as shown in the following example:
+You may build your project against multiple frameworks. Setting multiple target frameworks is more common for libraries but can be done with applications as well. You specify a `TargetFrameworks` property (plural of `TargetFramework`). The target frameworks will be semicolon-delimited as shown in the following example:
 
 ``` xml
 <TargetFrameworks>netcoreapp2.0;net47</TargetFrameworks>
 ```
 
-A given SDK will support a fixed set of frameworks, typically capped to the target framework of the runtime(s) it includes. For example, the .NET Core 2.0 SDK includes the .NET Core 2.0 runtime, which is an implementation of the `netcoreapp2.0` target framework. The .NET Core 2.0 SDK will support `netcoreapp1.0`, `netcoreapp1.1`, and `netcoreapp2.0` but not `netcoreapp2.1` (or higher). You'll need to install the .NET Core 2.1 SDK in order to build for `netcoreapp2.1`.
+A given SDK supports a fixed set of frameworks, typically capped to the target framework of the runtimes it includes. For example, the .NET Core 2.0 SDK includes the .NET Core 2.0 runtime, which is an implementation of the `netcoreapp2.0` target framework. The .NET Core 2.0 SDK will support `netcoreapp1.0`, `netcoreapp1.1`, and `netcoreapp2.0` but not `netcoreapp2.1` (or higher). You install the .NET Core 2.1 SDK to build for `netcoreapp2.1`.
 
-.NET Standard target frameworks are also capped in the same way. The .NET Core 2.0 SDK will be capped to `netstandard2.0`.
+.NET Standard target frameworks are also capped in the same way. The .NET Core 2.0 SDK is capped to `netstandard2.0`.
 
 A given SDK defines a fixed minimum runtime patch version for each target framework that it supports. The minimum runtime patch version is maintained at the `.0` version (for example, `2.0.0`) for the lifetime of a major/minor runtime version family.
 
@@ -89,7 +88,7 @@ You can override the minimum runtime patch version (to higher or lower versions)
 <RuntimeFrameworkVersion>2.0.4</RuntimeFrameworkVersion>
 ```
 
-When you target multiple target frameworks, you must specify the minimum runtime patch version to the specific .NET Core target framework, as shown in the following example:
+When you target multiple frameworks, you must specify the minimum runtime patch version to the specific .NET Core target framework, as shown in the following example:
 
 ``` xml
 <TargetFrameworks>netcoreapp2.0;net47</TargetFrameworks>
@@ -98,13 +97,11 @@ When you target multiple target frameworks, you must specify the minimum runtime
 
 A given SDK supports a fixed set of target frameworks. Typically, the target frameworks are the SDK framework version and a set of earlier versions.
 
-## Minimum required runtime version
+## Runtime version binding
 
-You run an application from source with `dotnet run`. `dotnet run` both builds and runs an application.
+You run an application from source with [`dotnet run`](../tools/dotnet-run.md). `dotnet run` both builds and runs an application.
 
-The built application runs on machines that satisfy the minimum required runtime patch version, stored in the `*.runtimeconfig.json` file. The highest patch version is selected. For example, the `2.0.4` runtime is selected in the case that the minimum runtime version is `2.0.0` while `2.0.0`, `2.0.1` and `2.0.4` are all installed on the machine. Higher minor or major versions (for example, `2.1.1` or `3.0.1`) won't be considered. Lower versions also won't be considered.
-
-It's an error if the minimum version specified for an application is not satisfied. However, you may run an application on a machine that is missing the runtime required by the application. If a higher minor version is installed, the minor version is used instead of failing. Higher major versions will not be used to load applications. This behavior is referred to as "minor version roll-forward."
+The built application runs on machines that satisfy the minimum required runtime patch version, stored in the `*.runtimeconfig.json` file. The highest patch version is selected. For example, the `2.0.4` runtime is selected in the case that the minimum runtime version is `2.0.0` while `2.0.0`, `2.0.1` and `2.0.4` are all installed on the machine. This behavior is referred to as "minor version roll-forward." Higher minor or major versions (for example, `2.1.1` or `3.0.1`) won't be considered. Lower versions also won't be considered. When no acceptable runtime is installed, the application will not run.
 
 Consider an application requiring 2.0.4, `dotnet` would search and bind to a runtime in this order:
 
@@ -114,7 +111,7 @@ Consider an application requiring 2.0.4, `dotnet` would search and bind to a run
 If neither is found, you see an error message similar to the following example:
 
 > This application requires .NET Core 2.0.4. Please install .NET Core 2.0.4 or a higher compatible version.
-> Please see https://aka.ms/install-dotnet-core to learn about .NET Core installation and runtime versioning.
+> Please see https://www.microsoft.com/net/download to learn about .NET Core installation and runtime versioning.
 
 A few usage examples demonstrate the behavior:
 
@@ -142,7 +139,7 @@ Developers should remember the following rules:
 
 ## Publish a self-contained application
 
-You can publish an application as a **self-contained distribution**. This approach includes .NET Core. Self-contained distributions do not have a dependency on runtime environments. Runtime binding occurs at publishing time, not run-time.
+You can publish an application as a [**self-contained distribution**](../deploying/#self-contained-deployments-scd). This approach includes .NET Core. Self-contained distributions do not have a dependency on runtime environments. Runtime binding occurs at publishing time, not run-time.
 
 The publishing process will select the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 2.0.4 if it is the latest patch version in the .NET Core 2.0 runtime family, independent of the existence of earlier patch versions or minimum runtime patch version values. The publishing process differs from `dotnet build` runtime selection for two reasons:
 

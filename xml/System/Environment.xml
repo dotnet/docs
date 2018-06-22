@@ -1944,16 +1944,18 @@ goto :EOF
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user name of the person who is currently logged on to the Windows operating system.</summary>
-        <value>The user name of the person who is logged on to Windows.</value>
+        <summary>Gets the user name of the person who is currently logged on to the operating system.</summary>
+        <value>The user name of the person who is logged on to the operating system.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can use the <xref:System.Environment.UserName%2A> property to identify the user on the current thread, to the system and application for security or access purposes. It can also be used to customize a particular application for each user.  
-  
- The <xref:System.Environment.UserName%2A> property wraps a call to the Windows [GetUserName](http://msdn.microsoft.com/library/windows/desktop/ms724432.aspx) function. The domain account credentials for a user are formatted as the user's domain name, the '\\' character, and user name. Use the <xref:System.Environment.UserDomainName%2A> property to obtain the user's domain name and the <xref:System.Environment.UserName%2A> property to obtain the user name.  
-  
+ 
+ On Windows the <xref:System.Environment.UserName%2A> property wraps a call to the Windows [GetUserName](http://msdn.microsoft.com/library/windows/desktop/ms724432.aspx) function. The domain account credentials for a user are formatted as the user's domain name, the '\\' character, and user name. Use the <xref:System.Environment.UserDomainName%2A> property to obtain the user's domain name and the <xref:System.Environment.UserName%2A> property to obtain the user name.  
+ 
+ On Unix platforms the <xref:System.Environment.UserName%2A> property wraps a call to the `getpwuid_r` function.
+ 
  If an ASP.NET application runs in a development environment, the <xref:System.Environment.UserName%2A> property returns the name of the current user. In a published ASP.NET application, this property returns the name of the application pool account (such as Default AppPool).  
   
    

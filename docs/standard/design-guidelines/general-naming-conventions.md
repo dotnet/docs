@@ -79,7 +79,7 @@ This section describes general naming conventions that relate to word choice, gu
   
  **✓ DO** prefer adding a suffix rather than a prefix to indicate a new version of an existing API.  
   
- This will assist discovery when browsing documentation, or using Intellisense. The old version of the API will be organized close to the new APIs, because most browsers and Intellisense show identifiers in alphabetical order.  
+ This will assist discovery when browsing documentation, or using IntelliSense. The old version of the API will be organized close to the new APIs, because most browsers and IntelliSense show identifiers in alphabetical order.  
   
  **✓ CONSIDER** using a brand new, but meaningful identifier, instead of adding a suffix or a prefix.  
   

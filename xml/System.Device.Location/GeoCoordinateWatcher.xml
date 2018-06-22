@@ -142,7 +142,7 @@
       </Parameters>
       <Docs>
         <param name="desiredAccuracy">
-          <see cref="T:System.Device.Location.GeoLocationAccuracy" /> that indicates the requested accuracy level of the location provider.  
+          <see cref="T:System.Device.Location.GeoPositionAccuracy" /> that indicates the requested accuracy level of the location provider.  
   
  An accuracy of <see cref="F:System.Device.Location.GeoPositionAccuracy.High" /> can degrade performance and should be specified only when high accuracy is needed.</param>
         <summary>Initializes a new instance of <see cref="T:System.Device.Location.GeoCoordinateWatcher" />, given an accuracy level.</summary>

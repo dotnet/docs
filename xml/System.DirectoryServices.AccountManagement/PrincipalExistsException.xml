@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Thrown by <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection.Add" /> when an attempt is made to insert a principal that already exists in the collection, or by <see cref="N:System.DirectoryServices.AccountManagement.Principal.Save" /> when an attempt is made to save a new principal that already exists in the store.</summary>
+    <summary>Thrown by <see cref="Overload:System.DirectoryServices.AccountManagement.PrincipalCollection.Add" /> method when an attempt is made to insert a principal that already exists in the collection, or by <see cref="N:System.DirectoryServices.AccountManagement.Principal.Save" /> when an attempt is made to save a new principal that already exists in the store.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>

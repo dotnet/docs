@@ -182,7 +182,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a principal search result that contains a collection of all the principal objects that match the principal specified in the query filter property.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that matches the query filter or an empty collection if no results are found.</returns>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> object that matches the query filter or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

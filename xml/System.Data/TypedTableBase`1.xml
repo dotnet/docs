@@ -35,7 +35,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />.</summary>
+        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase`1" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -51,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This type is not intended to be used directly from your code.</summary>
+        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase`1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This type is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains data to construct the object.</param>
         <param name="context">The streaming context for the object being deserializad.</param>
-        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase'1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This method is not intended to be used directly from your code.</summary>
+        <summary>Initializes a new <see cref="T:System.Data.TypedTableBase`1" />. This method supports typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool. This method is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

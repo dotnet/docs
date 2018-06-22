@@ -191,8 +191,8 @@
         <ReturnType>System.DirectoryServices.AccountManagement.AdvancedFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilter" /> object, for use with [Query By Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
-        <value>An <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilter" /> object.</value>
+        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilters" /> object, for use with [Query By Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
+        <value>An <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilters" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -423,7 +423,7 @@
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
         <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an incorrect password try recorded in the specified date and time range.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

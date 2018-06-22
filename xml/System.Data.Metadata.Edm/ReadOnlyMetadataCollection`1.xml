@@ -24,7 +24,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">The type of elements in the collection.</typeparam>
-    <summary>Represents a collection of members in the ADO.NET metadata hierarchy by providing a read-only collection with advanced lookup capabilities. This class is derived from the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection" /> class.</summary>
+    <summary>Represents a collection of members in the ADO.NET metadata hierarchy by providing a read-only collection with advanced lookup capabilities. This class is derived from the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,7 +70,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that can iterate through this collection.</summary>
-        <returns>A <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator" /> that can be used to iterate through this <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection" />.</returns>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator" /> that can be used to iterate through this <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

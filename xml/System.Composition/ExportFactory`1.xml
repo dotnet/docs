@@ -38,7 +38,7 @@
         <Parameter Name="exportCreator" Type="System.Func&lt;System.Tuple&lt;T,System.Action&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="exportCreator">A function that returns the exported value in <see cref="M:System.Tuple&lt;T1,T2&gt;.Item1" /> and an <see cref="T:System.Action" /> that releases it in <see cref="M:System.Tuple&lt;T1,T2&gt;.Item2" />.</param>
+        <param name="exportCreator">A function that returns the exported value in <see cref="M:System.Tuple`2.Item1" /> and an <see cref="T:System.Action" /> that releases it in <see cref="M:System.Tuple`2.Item2" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportFactory`1" /> class. </summary>
         <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -435,7 +435,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disposes the current instance of the <see cref="T:System.DirectorySerices.AccountManagement.PrincipalContext" /> object.</summary>
+        <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -606,7 +606,7 @@ The `userName` argument must take the form *username* (for example, *mcampbell*)
  
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify <see cref="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" /> when the context type is <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify <see cref="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" /> when the context type is <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" />.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>

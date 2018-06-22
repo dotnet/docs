@@ -59,7 +59,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this <see cref="T:System.Data.Metadata.Edm.Documentation" /> object contains only a null or an empty <see cref="P:System.Data.Metadata.Edm.Documentation.Summary" /> and a <see cref="P:System.Data.Metadata.Edm.Documentation.Longdescription" />.</summary>
+        <summary>Gets a value indicating whether this <see cref="T:System.Data.Metadata.Edm.Documentation" /> object contains only a null or an empty <see cref="P:System.Data.Metadata.Edm.Documentation.Summary" /> and a <see cref="P:System.Data.Metadata.Edm.Documentation.LongDescription" />.</summary>
         <value>
           <see langword="true" /> if this <see cref="T:System.Data.Metadata.Edm.Documentation" /> object contains only a null or an empty <see cref="P:System.Data.Metadata.Edm.Documentation.Summary" /> and a <see cref="P:System.Data.Metadata.Edm.Documentation.LongDescription" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

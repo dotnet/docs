@@ -238,7 +238,7 @@
         <param name="checkETagForEquality">A nullable <see cref="T:System.Boolean" /> value that indicates the type of concurrency check requested by the client.</param>
         <param name="operationContext">The <see cref="T:System.Data.Services.DataServiceOperationContext" /> instance that is used by the data service to process the request.</param>
         <summary>Returns the stream that the data service uses to write the binary data for the media resource received from the client that belongs to the specified entity.</summary>
-        <returns>A valid <see cref="T:System.Stream" /> the data service uses to write the contents of a binary data received from the client.</returns>
+        <returns>A valid <see cref="T:System.IO.Stream" /> the data service uses to write the contents of a binary data received from the client.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -93,7 +93,7 @@
   
  -or-  
   
- Another parameter with the same name as the <paramref name="parameter" /> argument already exists in the collection. Note that the lookup is case-insensitive. This behavior differs from that of most collections, and is more like that of a <see cref="T:System.Collections.Generic.Dictionary" />.</exception>
+ Another parameter with the same name as the <paramref name="parameter" /> argument already exists in the collection. Note that the lookup is case-insensitive. This behavior differs from that of most collections, and is more like that of a <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The type of the <paramref name="parameter" /> is not valid.</exception>
       </Docs>
     </Member>

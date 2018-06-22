@@ -191,7 +191,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 or newer](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 |Runtimes / SDKs                  |Ubuntu 18.04    |Ubuntu 17.10    |Ubuntu 16.04 / Linux Mint 18|Ubuntu 14.04 / Linux Mint 17|
 |---------------------------------|----------------|----------------|----------------------------|----------------------------|
@@ -247,7 +247,7 @@ To install .NET Core on supported Debian versions (64 bit):
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 or newer](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 |Runtimes / SDKs                  |Debian 9       |Debian 8       |
 |---------------------------------|---------------|---------------|
@@ -300,7 +300,7 @@ To install .NET Core on supported Fedora versions:
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 or newer](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 |Runtimes / SDKs                  |Fedora 27          |Fedora 26             |
 |---------------------------------|-------------------|----------------------|
@@ -357,7 +357,7 @@ To install .NET Core for supported CentOS and Oracle Linux distributions/version
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview/).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 or newer](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 * .NET Core Runtime 2.1.0  [install link](https://www.microsoft.com/net/download/linux-package-manager/centos/runtime-2.1.0)
 * .NET Core SDK 2.1.300 [install link](https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-2.1.300)
@@ -417,7 +417,7 @@ To install .NET Core 2.x for supported SUSE Linux Enterprise Server and OpenSUSE
 **.NET Core 2.1**
 
 >[!IMPORTANT]
-> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 Preview 1 or newer](https://www.visualstudio.com/vs/preview).
+> To use .NET Core 2.1 with Visual Studio, you need to [install Visual Studio 2017 15.7 or newer](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 **SUSE Linux Enterprise Server**
 

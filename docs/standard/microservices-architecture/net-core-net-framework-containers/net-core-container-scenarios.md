@@ -19,9 +19,9 @@ Clearly, if your goal is to have an application (web application or service) tha
 
 .NET Core also supports macOS as a development platform. However, when you deploy containers to a Docker host, that host must (currently) be based on Linux or Windows. For example, in a development environment, you could use a Linux VM running on a Mac.
 
-[Visual Studio](https://www.visualstudio.com/) provides an integrated development environment (IDE) for Windows and supports Docker development. 
+[Visual Studio](https://visualstudio.microsoft.com/) provides an integrated development environment (IDE) for Windows and supports Docker development. 
 
-[Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) is an IDE, evolution of Xamarin Studio, running in macOS and supports Docker since mid-2017.
+[Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/) is an IDE, evolution of Xamarin Studio, running in macOS and supports Docker since mid-2017.
 
 You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the [.NET Core command-line interface (CLI) tools](../../../core/tools/index.md). You can also target .NET Core with most third-party editors like Sublime Text, Emacs, vi, and the open-source OmniSharp project, which provides IntelliSense support for .NET languages. In addition to the IDEs and editors, you can use the .NET Core CLI for all supported platforms.
 

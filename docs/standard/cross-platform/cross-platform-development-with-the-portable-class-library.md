@@ -45,8 +45,8 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
 |Visual Studio Express 2010 versions|No.|  
 |Visual Studio 2012 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.0 support, install the [Windows Phone SDK 8.0](https://www.microsoft.com/download/details.aspx?id=35471).|  
 |Visual Studio Express 2012 versions|No.|  
-|Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install the [latest version of Visual Studio 2013](https://www.visualstudio.com/vs/older-downloads/).|  
-|Visual Studio Community 2013 for Windows|Yes, when you install the [latest version of Visual Studio Community 2013](https://www.visualstudio.com/vs/older-downloads/), which includes Update 2.|  
+|Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install the [latest version of Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/).|  
+|Visual Studio Community 2013 for Windows|Yes, when you install the [latest version of Visual Studio Community 2013](https://visualstudio.microsoft.com/vs/older-downloads/), which includes Update 2.|  
   
 <a name="create_pcl"></a>   
 ## Creating a Portable Class Library project  

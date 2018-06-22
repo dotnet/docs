@@ -31,7 +31,7 @@ The delegate must be instantiated with a method or lambda expression that has a 
 
 ## Example
 
- [!code-csharp[csrefKeywordsTypes#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#8)]
+[!code-csharp[csrefKeywordsTypes#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#8)]
 
 ## C# language specification
 
